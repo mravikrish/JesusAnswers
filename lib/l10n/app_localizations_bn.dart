@@ -442,7 +442,16 @@ class AppLocalizationsBn extends AppLocalizations {
   String get feedbackHint => 'কীভাবে এটি আরও ভালো করা যায় জানান';
 
   @override
-  String noEmailApp(String email) {
-    return 'কোনো ইমেল অ্যাপ পাওয়া যায়নি। অনুগ্রহ করে $email এ লিখুন।';
-  }
+  String get feedbackIntro =>
+      'কী সাহায্য করেছে, কী বিভ্রান্তিকর লেগেছে, বা আপনি কী যোগ করতে চান জানান। লিখুন, অথবা বলতে মাইকে চাপুন।';
+
+  @override
+  String get send => 'পাঠান';
+
+  @override
+  String get feedbackThanks => 'ধন্যবাদ! আপনার বার্তা আমাদের কাছে পৌঁছেছে।';
+
+  @override
+  String get feedbackFailed =>
+      'পাঠানো যায়নি। অনুগ্রহ করে ইন্টারনেট দেখে আবার চেষ্টা করুন।';
 }

@@ -443,7 +443,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get feedbackHint => 'Tell us what would make it better';
 
   @override
-  String noEmailApp(String email) {
-    return 'No email app found. Please write to $email.';
-  }
+  String get feedbackIntro =>
+      'Tell us what helped, what was confusing, or what you\'d like added. Type, or tap the mic to speak.';
+
+  @override
+  String get send => 'Send';
+
+  @override
+  String get feedbackThanks => 'Thank you! Your message has reached us.';
+
+  @override
+  String get feedbackFailed =>
+      'Couldn\'t send. Please check your internet and try again.';
 }

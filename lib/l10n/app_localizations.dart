@@ -938,11 +938,29 @@ abstract class AppLocalizations {
   /// **'Tell us what would make it better'**
   String get feedbackHint;
 
-  /// No description provided for @noEmailApp.
+  /// No description provided for @feedbackIntro.
   ///
   /// In en, this message translates to:
-  /// **'No email app found. Please write to {email}.'**
-  String noEmailApp(String email);
+  /// **'Tell us what helped, what was confusing, or what you\'d like added. Type, or tap the mic to speak.'**
+  String get feedbackIntro;
+
+  /// No description provided for @send.
+  ///
+  /// In en, this message translates to:
+  /// **'Send'**
+  String get send;
+
+  /// No description provided for @feedbackThanks.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you! Your message has reached us.'**
+  String get feedbackThanks;
+
+  /// No description provided for @feedbackFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t send. Please check your internet and try again.'**
+  String get feedbackFailed;
 }
 
 class _AppLocalizationsDelegate

@@ -168,12 +168,8 @@
   "topicFaith": "Faith & hope",
   "sendFeedback": "Send feedback",
   "feedbackHint": "Tell us what would make it better",
-  "noEmailApp": "No email app found. Please write to {email}.",
-  "@noEmailApp": {
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  }
+  "feedbackIntro": "Tell us what helped, what was confusing, or what you'd like added. Type, or tap the mic to speak.",
+  "send": "Send",
+  "feedbackThanks": "Thank you! Your message has reached us.",
+  "feedbackFailed": "Couldn't send. Please check your internet and try again."
 }

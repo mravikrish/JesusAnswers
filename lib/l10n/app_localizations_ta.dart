@@ -448,7 +448,16 @@ class AppLocalizationsTa extends AppLocalizations {
       'இதை இன்னும் சிறப்பாக்க என்ன செய்யலாம் என்று சொல்லுங்கள்';
 
   @override
-  String noEmailApp(String email) {
-    return 'மின்னஞ்சல் ஆப் இல்லை. தயவுசெய்து $email க்கு எழுதுங்கள்.';
-  }
+  String get feedbackIntro =>
+      'எது உதவியது, எது குழப்பமாக இருந்தது, அல்லது எதைச் சேர்க்க விரும்புகிறீர்கள் என்று சொல்லுங்கள். தட்டச்சு செய்யுங்கள், அல்லது பேச மைக்கைத் தட்டுங்கள்.';
+
+  @override
+  String get send => 'அனுப்பு';
+
+  @override
+  String get feedbackThanks => 'நன்றி! உங்கள் செய்தி எங்களை வந்தடைந்தது.';
+
+  @override
+  String get feedbackFailed =>
+      'அனுப்ப முடியவில்லை. இணையத்தைச் சரிபார்த்து மீண்டும் முயலுங்கள்.';
 }

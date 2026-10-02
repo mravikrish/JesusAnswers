@@ -444,7 +444,16 @@ class AppLocalizationsKn extends AppLocalizations {
   String get feedbackHint => 'ಇದನ್ನು ಇನ್ನಷ್ಟು ಉತ್ತಮಗೊಳಿಸುವುದು ಹೇಗೆ ಎಂದು ತಿಳಿಸಿ';
 
   @override
-  String noEmailApp(String email) {
-    return 'ಇಮೇಲ್ ಆ್ಯಪ್ ಸಿಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು $email ಗೆ ಬರೆಯಿರಿ.';
-  }
+  String get feedbackIntro =>
+      'ಯಾವುದು ಸಹಾಯವಾಯಿತು, ಯಾವುದು ಗೊಂದಲವಾಯಿತು, ಅಥವಾ ಏನನ್ನು ಸೇರಿಸಬೇಕು ಎಂದು ತಿಳಿಸಿ. ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ ಮಾತನಾಡಲು ಮೈಕ್ ಒತ್ತಿ.';
+
+  @override
+  String get send => 'ಕಳುಹಿಸಿ';
+
+  @override
+  String get feedbackThanks => 'ಧನ್ಯವಾದಗಳು! ನಿಮ್ಮ ಸಂದೇಶ ನಮಗೆ ತಲುಪಿದೆ.';
+
+  @override
+  String get feedbackFailed =>
+      'ಕಳುಹಿಸಲಾಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಇಂಟರ್ನೆಟ್ ಪರಿಶೀಲಿಸಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
 }

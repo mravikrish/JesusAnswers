@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../core/device_settings.dart';
-import '../../core/feedback.dart';
 import '../../core/languages.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/common.dart';
@@ -111,11 +110,11 @@ class ProfileScreen extends ConsumerWidget {
           SoftCard(
             padding: EdgeInsets.zero,
             child: ListTile(
-              leading: const Icon(Icons.mail_outline_rounded),
+              leading: const Icon(Icons.rate_review_outlined),
               title: Text(l.sendFeedback),
               subtitle: Text(l.feedbackHint),
               trailing: const Icon(Icons.chevron_right_rounded),
-              onTap: () => sendFeedback(context, settings.language),
+              onTap: () => context.push('/feedback'),
             ),
           ),
           const SizedBox(height: 16),

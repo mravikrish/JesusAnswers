@@ -444,7 +444,16 @@ class AppLocalizationsTe extends AppLocalizations {
   String get feedbackHint => 'దీన్ని ఇంకా మెరుగ్గా ఎలా చేయాలో చెప్పండి';
 
   @override
-  String noEmailApp(String email) {
-    return 'ఈమెయిల్ యాప్ కనబడలేదు. దయచేసి $emailకు రాయండి.';
-  }
+  String get feedbackIntro =>
+      'ఏది ఉపయోగపడిందో, ఏది గందరగోళంగా ఉందో, లేదా ఏమి జోడించాలనుకుంటున్నారో చెప్పండి. టైప్ చేయండి, లేదా మాట్లాడటానికి మైక్ నొక్కండి.';
+
+  @override
+  String get send => 'పంపండి';
+
+  @override
+  String get feedbackThanks => 'ధన్యవాదాలు! మీ సందేశం మాకు చేరింది.';
+
+  @override
+  String get feedbackFailed =>
+      'పంపలేకపోయాము. దయచేసి ఇంటర్నెట్ చూసి మళ్ళీ ప్రయత్నించండి.';
 }

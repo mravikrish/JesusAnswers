@@ -11,6 +11,7 @@ import 'data/models/painting.dart';
 import 'data/models/verse.dart';
 import 'l10n/app_localizations.dart';
 import 'services/answer/answer_service.dart';
+import 'services/feedback/feedback_service.dart';
 import 'services/reminder_service.dart';
 import 'services/voice/speech_service.dart';
 import 'services/voice/tts_service.dart';
@@ -24,6 +25,7 @@ final bibleProvider = Provider((_) => BibleRepository());
 final ttsProvider = Provider((ref) => TtsService(ref.read(prefsProvider)));
 final speechProvider = Provider((_) => SpeechService());
 final reminderServiceProvider = Provider((_) => ReminderService());
+final feedbackServiceProvider = Provider((_) => FeedbackService());
 
 /// Keeps the scheduled Daily Word reminder in step with its time and the app language.
 /// Watched by the app root, so it also re-schedules on every launch.

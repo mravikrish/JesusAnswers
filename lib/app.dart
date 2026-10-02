@@ -9,6 +9,7 @@ import 'core/widgets/app_shell.dart';
 import 'data/models/answer.dart';
 import 'features/answer/answer_screen.dart';
 import 'features/daily_word/daily_word_screen.dart';
+import 'features/feedback/feedback_screen.dart';
 import 'features/home/home_screen.dart';
 import 'features/journey/journey_screen.dart';
 import 'features/mood/mood_screen.dart';
@@ -43,6 +44,7 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(path: '/mood', builder: (_, _) => const MoodScreen()),
       GoRoute(path: '/listen', builder: (_, _) => const ListeningScreen()),
       GoRoute(path: '/peace', builder: (_, _) => const PeaceNowScreen()),
+      GoRoute(path: '/feedback', builder: (_, _) => const FeedbackScreen()),
       GoRoute(
         path: '/processing',
         builder: (_, state) => ProcessingScreen(request: state.extra! as AnswerRequest),

@@ -443,7 +443,16 @@ class AppLocalizationsPa extends AppLocalizations {
   String get feedbackHint => 'ਦੱਸੋ ਕਿ ਇਸਨੂੰ ਹੋਰ ਵਧੀਆ ਕਿਵੇਂ ਬਣਾਈਏ';
 
   @override
-  String noEmailApp(String email) {
-    return 'ਕੋਈ ਈਮੇਲ ਐਪ ਨਹੀਂ ਮਿਲੀ। ਕਿਰਪਾ ਕਰਕੇ $email ਉੱਤੇ ਲਿਖੋ।';
-  }
+  String get feedbackIntro =>
+      'ਦੱਸੋ ਕਿ ਕੀ ਮਦਦਗਾਰ ਰਿਹਾ, ਕੀ ਉਲਝਣ ਵਾਲਾ ਲੱਗਿਆ, ਜਾਂ ਤੁਸੀਂ ਕੀ ਜੋੜਨਾ ਚਾਹੋਗੇ। ਲਿਖੋ, ਜਾਂ ਬੋਲਣ ਲਈ ਮਾਈਕ ਦਬਾਓ।';
+
+  @override
+  String get send => 'ਭੇਜੋ';
+
+  @override
+  String get feedbackThanks => 'ਧੰਨਵਾਦ! ਤੁਹਾਡਾ ਸੁਨੇਹਾ ਸਾਡੇ ਤੱਕ ਪਹੁੰਚ ਗਿਆ ਹੈ।';
+
+  @override
+  String get feedbackFailed =>
+      'ਭੇਜਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਇੰਟਰਨੈੱਟ ਜਾਂਚ ਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
 }

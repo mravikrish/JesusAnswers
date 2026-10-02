@@ -445,7 +445,16 @@ class AppLocalizationsOr extends AppLocalizations {
   String get feedbackHint => 'ଏହାକୁ କିପରି ଆହୁରି ଭଲ କରାଯିବ କୁହନ୍ତୁ';
 
   @override
-  String noEmailApp(String email) {
-    return 'କୌଣସି ଇମେଲ ଆପ୍ ମିଳିଲା ନାହିଁ। ଦୟାକରି $emailକୁ ଲେଖନ୍ତୁ।';
-  }
+  String get feedbackIntro =>
+      'କଣ ସାହାଯ୍ୟ କଲା, କଣ ଦ୍ୱନ୍ଦ୍ୱରେ ପକାଇଲା, କିମ୍ବା ଆପଣ କଣ ଯୋଡିବାକୁ ଚାହାଁନ୍ତି କୁହନ୍ତୁ। ଲେଖନ୍ତୁ, କିମ୍ବା କହିବା ପାଇଁ ମାଇକ୍ ଦବାନ୍ତୁ।';
+
+  @override
+  String get send => 'ପଠାନ୍ତୁ';
+
+  @override
+  String get feedbackThanks => 'ଧନ୍ୟବାଦ! ଆପଣଙ୍କ ବାର୍ତ୍ତା ଆମ ପାଖରେ ପହଞ୍ଚିଛି।';
+
+  @override
+  String get feedbackFailed =>
+      'ପଠାଯାଇପାରିଲା ନାହିଁ। ଦୟାକରି ଇଣ୍ଟରନେଟ୍ ଯାଞ୍ଚ କରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।';
 }
