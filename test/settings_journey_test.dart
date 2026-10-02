@@ -41,6 +41,19 @@ void main() {
     expect(c.read(journeyProvider).map((a) => a.id), ['c', 'b', 'a']);
   });
 
+  test('welcome pages show once for new people, never for existing ones', () async {
+    var c = await _container();
+    expect(c.read(settingsProvider).onboarded, isFalse);
+    await c.read(settingsProvider.notifier).finishOnboarding();
+    c = await _container();
+    expect(c.read(settingsProvider).onboarded, isTrue);
+
+    // Chose a language before the welcome pages existed.
+    SharedPreferences.setMockInitialValues({'lang': 'ta'});
+    c = await _container();
+    expect(c.read(settingsProvider).onboarded, isTrue);
+  });
+
   test('text size and reminder are saved and can be turned off', () async {
     final c = await _container();
     final settings = c.read(settingsProvider.notifier);

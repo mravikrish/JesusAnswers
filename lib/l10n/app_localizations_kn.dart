@@ -456,4 +456,45 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get feedbackFailed =>
       'ಕಳುಹಿಸಲಾಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಇಂಟರ್ನೆಟ್ ಪರಿಶೀಲಿಸಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
+
+  @override
+  String get onboardTitle1 =>
+      'ಆತನ ವಾಕ್ಯದಲ್ಲಿ ಶಾಂತಿ, ಬಲ ಮತ್ತು ಉತ್ತರಗಳನ್ನು ಕಂಡುಕೊಳ್ಳಿ.';
+
+  @override
+  String get onboardBody1 =>
+      'ನೀವು ಏನನ್ನೇ ಎದುರಿಸುತ್ತಿದ್ದರೂ, ಅದಕ್ಕಾಗಿ ವಾಕ್ಯ, ಪ್ರೋತ್ಸಾಹ ಮತ್ತು ಪ್ರಾರ್ಥನೆ.';
+
+  @override
+  String get onboardTitle2 => 'ನಿಮ್ಮ ಹೃದಯದಿಂದ ಏನನ್ನಾದರೂ ಕೇಳಿ.';
+
+  @override
+  String get onboardBody2 =>
+      'ಮಾತನಾಡಿ ಅಥವಾ ಬರೆಯಿರಿ. ನಿಮ್ಮ ಪರಿಸ್ಥಿತಿಗೆ ಬೈಬಲ್ ವಚನಗಳು, ಪ್ರೋತ್ಸಾಹ ಮತ್ತು ಪ್ರಾರ್ಥನೆಯನ್ನು ಪಡೆಯಿರಿ.';
+
+  @override
+  String get onboardTitle3 => 'ನೀವು ಒಂಟಿಯಲ್ಲ.';
+
+  @override
+  String get onboardBody3 => 'ದೇವರ ವಾಕ್ಯವು ಪ್ರತಿ ಹೆಜ್ಜೆಯಲ್ಲೂ ನಿಮಗೆ ದಾರಿ ತೋರಲಿ.';
+
+  @override
+  String get skip => 'ಬಿಟ್ಟುಬಿಡಿ';
+
+  @override
+  String get next => 'ಮುಂದೆ';
+
+  @override
+  String get begin => 'ಪ್ರಾರಂಭಿಸಿ';
+
+  @override
+  String get previous => 'ಹಿಂದಿನದು';
+
+  @override
+  String get fullScreen => 'ಪೂರ್ಣ ಪರದೆ';
+
+  @override
+  String trackOf(int current, int total) {
+    return '$total ರಲ್ಲಿ $current';
+  }
 }

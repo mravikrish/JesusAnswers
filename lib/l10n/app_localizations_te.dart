@@ -456,4 +456,45 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get feedbackFailed =>
       'పంపలేకపోయాము. దయచేసి ఇంటర్నెట్ చూసి మళ్ళీ ప్రయత్నించండి.';
+
+  @override
+  String get onboardTitle1 => 'ఆయన వాక్యంలో శాంతి, బలం, జవాబులు పొందండి.';
+
+  @override
+  String get onboardBody1 =>
+      'మీరు ఏ పరిస్థితిని ఎదుర్కొంటున్నా, దానికి లేఖనం, ప్రోత్సాహం మరియు ప్రార్థన.';
+
+  @override
+  String get onboardTitle2 => 'మీ హృదయం నుండి ఏదైనా అడగండి.';
+
+  @override
+  String get onboardBody2 =>
+      'మాట్లాడండి లేదా టైప్ చేయండి. మీ పరిస్థితికి బైబిల్ వచనాలు, ప్రోత్సాహం మరియు ప్రార్థన పొందండి.';
+
+  @override
+  String get onboardTitle3 => 'మీరు ఒంటరి కాదు.';
+
+  @override
+  String get onboardBody3 =>
+      'దేవుని వాక్యం ప్రతి అడుగులో మిమ్మల్ని నడిపించును గాక.';
+
+  @override
+  String get skip => 'దాటవేయి';
+
+  @override
+  String get next => 'తర్వాత';
+
+  @override
+  String get begin => 'ప్రారంభించండి';
+
+  @override
+  String get previous => 'మునుపటి';
+
+  @override
+  String get fullScreen => 'పూర్తి స్క్రీన్';
+
+  @override
+  String trackOf(int current, int total) {
+    return '$total లో $current';
+  }
 }

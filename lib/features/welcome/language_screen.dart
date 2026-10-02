@@ -9,7 +9,7 @@ import '../../core/widgets/night_background.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
 
-/// First launch: splash + language choice. Each language is shown in its own
+/// First launch, after the splash: language choice. Each language is shown in its own
 /// script so people can find theirs without reading English.
 class LanguageScreen extends ConsumerWidget {
   const LanguageScreen({super.key});
@@ -59,7 +59,7 @@ class LanguageScreen extends ConsumerWidget {
                     ),
                     onPressed: () async {
                       await ref.read(settingsProvider.notifier).setLanguage(current);
-                      if (context.mounted) context.go('/home');
+                      if (context.mounted) context.go(ref.read(settingsProvider).onboarded ? '/home' : '/onboarding');
                     },
                     child: Text(l.continueLabel),
                   ),

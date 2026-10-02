@@ -454,4 +454,44 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get feedbackFailed =>
       'મોકલી શકાયું નહીં. કૃપા કરીને ઇન્ટરનેટ તપાસીને ફરી પ્રયાસ કરો.';
+
+  @override
+  String get onboardTitle1 => 'તેમના વચનમાં શાંતિ, શક્તિ અને જવાબો મેળવો.';
+
+  @override
+  String get onboardBody1 =>
+      'તમે જે કંઈ પણ સામનો કરી રહ્યા હો, તે માટે શાસ્ત્ર, પ્રોત્સાહન અને પ્રાર્થના.';
+
+  @override
+  String get onboardTitle2 => 'તમારા હૃદયથી કંઈ પણ પૂછો.';
+
+  @override
+  String get onboardBody2 =>
+      'બોલો અથવા લખો. તમારી પરિસ્થિતિ માટે બાઇબલની કલમો, પ્રોત્સાહન અને પ્રાર્થના મેળવો.';
+
+  @override
+  String get onboardTitle3 => 'તમે એકલા નથી.';
+
+  @override
+  String get onboardBody3 => 'ઈશ્વરનું વચન દરેક પગલે તમને માર્ગદર્શન આપે.';
+
+  @override
+  String get skip => 'છોડો';
+
+  @override
+  String get next => 'આગળ';
+
+  @override
+  String get begin => 'શરૂ કરો';
+
+  @override
+  String get previous => 'પાછળ';
+
+  @override
+  String get fullScreen => 'પૂર્ણ સ્ક્રીન';
+
+  @override
+  String trackOf(int current, int total) {
+    return '$total માંથી $current';
+  }
 }

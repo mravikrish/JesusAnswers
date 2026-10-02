@@ -460,4 +460,46 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get feedbackFailed =>
       'அனுப்ப முடியவில்லை. இணையத்தைச் சரிபார்த்து மீண்டும் முயலுங்கள்.';
+
+  @override
+  String get onboardTitle1 =>
+      'அவருடைய வார்த்தையில் சமாதானம், பெலன், பதில்களைக் கண்டடையுங்கள்.';
+
+  @override
+  String get onboardBody1 =>
+      'நீங்கள் எதை எதிர்கொண்டாலும், அதற்கான வேதவசனம், ஊக்கம் மற்றும் ஜெபம்.';
+
+  @override
+  String get onboardTitle2 => 'உங்கள் இதயத்திலிருந்து எதையும் கேளுங்கள்.';
+
+  @override
+  String get onboardBody2 =>
+      'பேசுங்கள் அல்லது தட்டச்சு செய்யுங்கள். உங்கள் சூழ்நிலைக்கான வேதாகம வசனங்கள், ஊக்கம் மற்றும் ஜெபத்தைப் பெறுங்கள்.';
+
+  @override
+  String get onboardTitle3 => 'நீங்கள் தனியாக இல்லை.';
+
+  @override
+  String get onboardBody3 =>
+      'தேவனுடைய வார்த்தை ஒவ்வொரு அடியிலும் உங்களை வழிநடத்தட்டும்.';
+
+  @override
+  String get skip => 'தவிர்';
+
+  @override
+  String get next => 'அடுத்து';
+
+  @override
+  String get begin => 'தொடங்குங்கள்';
+
+  @override
+  String get previous => 'முந்தையது';
+
+  @override
+  String get fullScreen => 'முழுத் திரை';
+
+  @override
+  String trackOf(int current, int total) {
+    return '$total இல் $current';
+  }
 }

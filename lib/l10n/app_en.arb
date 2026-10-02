@@ -171,5 +171,27 @@
   "feedbackIntro": "Tell us what helped, what was confusing, or what you'd like added. Type, or tap the mic to speak.",
   "send": "Send",
   "feedbackThanks": "Thank you! Your message has reached us.",
-  "feedbackFailed": "Couldn't send. Please check your internet and try again."
+  "feedbackFailed": "Couldn't send. Please check your internet and try again.",
+  "onboardTitle1": "Find peace, strength and answers in His Word.",
+  "onboardBody1": "Scripture, encouragement and prayer for whatever you are facing.",
+  "onboardTitle2": "Ask anything from your heart.",
+  "onboardBody2": "Speak or type. Receive Bible verses, encouragement and a prayer for your situation.",
+  "onboardTitle3": "You are not alone.",
+  "onboardBody3": "Let God's Word guide you every step of the way.",
+  "skip": "Skip",
+  "next": "Next",
+  "begin": "Begin",
+  "previous": "Previous",
+  "fullScreen": "Full screen",
+  "trackOf": "{current} of {total}",
+  "@trackOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  }
 }

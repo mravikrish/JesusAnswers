@@ -961,6 +961,78 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Couldn\'t send. Please check your internet and try again.'**
   String get feedbackFailed;
+
+  /// No description provided for @onboardTitle1.
+  ///
+  /// In en, this message translates to:
+  /// **'Find peace, strength and answers in His Word.'**
+  String get onboardTitle1;
+
+  /// No description provided for @onboardBody1.
+  ///
+  /// In en, this message translates to:
+  /// **'Scripture, encouragement and prayer for whatever you are facing.'**
+  String get onboardBody1;
+
+  /// No description provided for @onboardTitle2.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask anything from your heart.'**
+  String get onboardTitle2;
+
+  /// No description provided for @onboardBody2.
+  ///
+  /// In en, this message translates to:
+  /// **'Speak or type. Receive Bible verses, encouragement and a prayer for your situation.'**
+  String get onboardBody2;
+
+  /// No description provided for @onboardTitle3.
+  ///
+  /// In en, this message translates to:
+  /// **'You are not alone.'**
+  String get onboardTitle3;
+
+  /// No description provided for @onboardBody3.
+  ///
+  /// In en, this message translates to:
+  /// **'Let God\'s Word guide you every step of the way.'**
+  String get onboardBody3;
+
+  /// No description provided for @skip.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip'**
+  String get skip;
+
+  /// No description provided for @next.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get next;
+
+  /// No description provided for @begin.
+  ///
+  /// In en, this message translates to:
+  /// **'Begin'**
+  String get begin;
+
+  /// No description provided for @previous.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous'**
+  String get previous;
+
+  /// No description provided for @fullScreen.
+  ///
+  /// In en, this message translates to:
+  /// **'Full screen'**
+  String get fullScreen;
+
+  /// No description provided for @trackOf.
+  ///
+  /// In en, this message translates to:
+  /// **'{current} of {total}'**
+  String trackOf(int current, int total);
 }
 
 class _AppLocalizationsDelegate

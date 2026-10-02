@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
 
 import '../../core/share.dart';
@@ -10,6 +11,7 @@ import '../../core/widgets/playback_controls.dart';
 import '../../data/bible/bible_repository.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
+import '../player/player_screen.dart';
 
 /// Today's Word — like opening a daily letter from Scripture.
 class DailyWordScreen extends ConsumerStatefulWidget {
@@ -26,6 +28,31 @@ class _DailyWordScreenState extends ConsumerState<DailyWordScreen> {
   void deactivate() {
     _tts.stop();
     super.deactivate();
+  }
+
+  /// The full-screen player, on today's Word with the past week a tap away.
+  Future<void> _openPlayer(Settings settings) async {
+    final today = DateTime.now();
+    final days = [for (var back = 6; back >= 0; back--) today.subtract(Duration(days: back))];
+    final verses = await Future.wait([for (final d in days) ref.read(bibleProvider).dailyVerse(d, settings.lang)]);
+    if (!mounted) return;
+    await _tts.stop();
+    if (!mounted) return;
+    context.push(
+      '/player',
+      extra: PlayerArgs(
+        lang: settings.language,
+        start: days.length - 1,
+        tracks: [
+          for (var i = 0; i < days.length; i++)
+            PlayerTrack(
+              verse: verses[i],
+              caption: DateFormat.yMMMMd(settings.lang).format(days[i]),
+              parts: [verses[i].reference, verses[i].text],
+            ),
+        ],
+      ),
+    );
   }
 
   @override
@@ -79,6 +106,7 @@ class _DailyWordScreenState extends ConsumerState<DailyWordScreen> {
                       label: l.listen,
                       onPlay: () =>
                           readAloud(context, [verse.reference, verse.text, l.dailyEncouragement], settings.language),
+                      onExpand: () => _openPlayer(settings),
                     ),
                     const SizedBox(height: 26),
                     SoftCard(

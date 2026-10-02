@@ -39,13 +39,15 @@ Future<void> readAloud(BuildContext context, List<String> parts, AppLanguage lan
   if (download ?? false) await DeviceSettings.ttsVoices();
 }
 
-/// Play → Pause / Resume, Stop, and a "Slower" toggle that is remembered.
+/// Play → Pause / Resume, Stop, a "Slower" toggle that is remembered,
+/// and — with [onExpand] — a button to open the full-screen player.
 class PlaybackControls extends ConsumerWidget {
-  const PlaybackControls({super.key, required this.label, required this.onPlay, this.dark = false});
+  const PlaybackControls({super.key, required this.label, required this.onPlay, this.dark = false, this.onExpand});
 
   /// "Play Answer", "Listen"… shown before anything is playing.
   final String label;
   final VoidCallback onPlay;
+  final VoidCallback? onExpand;
 
   /// White outlined style for night screens; filled gold on light screens.
   final bool dark;
@@ -88,24 +90,43 @@ class PlaybackControls extends ConsumerWidget {
               onPressed: tts.stop,
               icon: Icon(Icons.stop_rounded, color: fg),
             ),
-          ValueListenableBuilder(
-            valueListenable: tts.slow,
-            builder: (_, slow, _) => FilterChip(
-              label: Text(l.speakSlower),
-              avatar: Icon(Icons.slow_motion_video_rounded, size: 18, color: slow ? AppColors.ink : fg),
-              selected: slow,
-              showCheckmark: false,
-              // Explicit for both states: Material 3's default unselected fill is light,
-              // which hid the white label on the night screens.
-              color: WidgetStateProperty.resolveWith(
-                (states) => states.contains(WidgetState.selected) ? AppColors.goldSoft : Colors.transparent,
-              ),
-              labelStyle: TextStyle(color: slow ? AppColors.ink : fg),
-              shape: StadiumBorder(side: BorderSide(color: dark ? Colors.white38 : AppColors.sand)),
-              onSelected: tts.setSlow,
+          SlowerToggle(dark: dark),
+          if (onExpand != null)
+            IconButton(
+              tooltip: l.fullScreen,
+              onPressed: onExpand,
+              icon: Icon(Icons.open_in_full_rounded, color: fg),
             ),
-          ),
         ],
+      ),
+    );
+  }
+}
+
+/// "Slower" on / off, remembered for next time.
+class SlowerToggle extends ConsumerWidget {
+  const SlowerToggle({super.key, this.dark = false});
+  final bool dark;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final tts = ref.watch(ttsProvider);
+    final fg = dark ? Colors.white : AppColors.ink;
+    return ValueListenableBuilder(
+      valueListenable: tts.slow,
+      // A plain button with every colour set by hand: FilterChip took its fill
+      // and label colours from the theme, leaving white text on a cream chip.
+      builder: (_, slow, _) => OutlinedButton.icon(
+        style: OutlinedButton.styleFrom(
+          backgroundColor: slow ? AppColors.goldSoft : Colors.transparent,
+          foregroundColor: slow ? AppColors.ink : fg,
+          iconColor: slow ? AppColors.ink : fg,
+          side: BorderSide(color: slow ? AppColors.goldSoft : (dark ? Colors.white54 : AppColors.sand)),
+          shape: const StadiumBorder(),
+        ),
+        onPressed: () => tts.setSlow(!slow),
+        icon: const Icon(Icons.slow_motion_video_rounded, size: 18),
+        label: Text(AppLocalizations.of(context).speakSlower),
       ),
     );
   }

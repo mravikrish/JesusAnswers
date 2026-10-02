@@ -13,6 +13,7 @@ import '../../core/widgets/playback_controls.dart';
 import '../../data/models/answer.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
+import '../player/player_screen.dart';
 
 /// The answer as a conversation: what you said, then His Word answering —
 /// Scripture → Encouragement → Prayer — arriving gently one after another,
@@ -61,6 +62,19 @@ class _AnswerScreenState extends ConsumerState<AnswerScreen> {
               ],
         languageFor(a.lang),
       );
+
+  /// The full-screen player, one track per verse of the answer.
+  Future<void> _openPlayer(Answer a, AppLocalizations l) async {
+    await _tts.stop();
+    if (!mounted) return;
+    context.push(
+      '/player',
+      extra: PlayerArgs(
+        lang: languageFor(a.lang),
+        tracks: [for (final v in a.verses) PlayerTrack(verse: v, caption: l.godsWord, parts: [v.reference, v.text])],
+      ),
+    );
+  }
 
   void _sendReply() {
     final text = _reply.text.trim();
@@ -159,6 +173,7 @@ class _AnswerScreenState extends ConsumerState<AnswerScreen> {
                     PlaybackControls(
                       label: isPrayer ? l.playPrayer : l.playAnswer,
                       onPlay: () => _play(answer, l),
+                      onExpand: answer.verses.isEmpty ? null : () => _openPlayer(answer, l),
                     ),
                     const SizedBox(height: 6),
                     Row(

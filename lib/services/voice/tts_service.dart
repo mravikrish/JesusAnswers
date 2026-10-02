@@ -30,7 +30,10 @@ class TtsService {
   TtsService(this._prefs) {
     slow.value = _prefs.getBool(_slowKey) ?? false;
     // Remember where we are in the current part, so Pause → Resume carries on from that word.
-    _tts.setProgressHandler((_, start, _, _) => _offset = _partStart + start);
+    _tts.setProgressHandler((_, start, _, _) {
+      _offset = _partStart + start;
+      _report();
+    });
   }
 
   final SharedPreferences _prefs;
@@ -40,6 +43,9 @@ class TtsService {
 
   /// Read more slowly than the normal calm pace. Saved for next time.
   final slow = ValueNotifier(false);
+
+  /// How far through what is being read, 0–1, word by word.
+  final progress = ValueNotifier(0.0);
 
   static const _slowKey = 'ttsSlow';
   static const _normalRate = 0.42, _slowRate = 0.32;
@@ -126,7 +132,38 @@ class TtsService {
     _voice = voice;
     _index = 0;
     _offset = 0;
+    _report();
     await _run();
+  }
+
+  /// Jumps to [fraction] (0–1) of what is being read, at the start of that word.
+  /// Keeps playing if it was; otherwise Resume carries on from there.
+  Future<void> seek(double fraction) async {
+    if (_parts.isEmpty) return;
+    var target = (fraction.clamp(0.0, 1.0) * _parts.fold(0, (n, p) => n + p.length)).round();
+    var i = 0;
+    while (i < _parts.length - 1 && target >= _parts[i].length) {
+      target -= _parts[i].length;
+      i++;
+    }
+    final space = _parts[i].lastIndexOf(' ', target.clamp(0, _parts[i].length));
+    _index = i;
+    _offset = space < 0 ? 0 : space + 1;
+    _report();
+    if (playback.value == Playback.playing) {
+      _session++;
+      await _tts.stop();
+      await _run();
+    } else {
+      playback.value = Playback.paused; // Finished or paused: Resume starts from the new place.
+    }
+  }
+
+  void _report() {
+    final total = _parts.fold(0, (n, p) => n + p.length);
+    if (total == 0) return;
+    final done = _parts.take(_index).fold(0, (n, p) => n + p.length) + _offset;
+    progress.value = (done / total).clamp(0.0, 1.0);
   }
 
   /// Stops mid-sentence; [resume] carries on from the same word.
@@ -165,6 +202,7 @@ class TtsService {
         if (session != _session) return;
         _index++;
         _offset = 0;
+        _report();
         if (_index < _parts.length) await Future<void>.delayed(const Duration(milliseconds: 700));
         if (session != _session) return;
       }
@@ -177,6 +215,7 @@ class TtsService {
   Future<void> stop() async {
     _session++;
     _parts = const [];
+    progress.value = 0;
     playback.value = Playback.idle;
     await _tts.stop();
   }

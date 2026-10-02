@@ -455,4 +455,44 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get feedbackFailed =>
       'ਭੇਜਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਇੰਟਰਨੈੱਟ ਜਾਂਚ ਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
+
+  @override
+  String get onboardTitle1 => 'ਉਸ ਦੇ ਵਚਨ ਵਿੱਚ ਸ਼ਾਂਤੀ, ਤਾਕਤ ਅਤੇ ਜਵਾਬ ਪਾਓ।';
+
+  @override
+  String get onboardBody1 =>
+      'ਤੁਸੀਂ ਜਿਸ ਵੀ ਹਾਲਤ ਦਾ ਸਾਹਮਣਾ ਕਰ ਰਹੇ ਹੋ, ਉਸ ਲਈ ਪਵਿੱਤਰ ਸ਼ਾਸਤਰ, ਹੌਸਲਾ ਅਤੇ ਪ੍ਰਾਰਥਨਾ।';
+
+  @override
+  String get onboardTitle2 => 'ਆਪਣੇ ਦਿਲ ਤੋਂ ਕੁਝ ਵੀ ਪੁੱਛੋ।';
+
+  @override
+  String get onboardBody2 =>
+      'ਬੋਲੋ ਜਾਂ ਲਿਖੋ। ਆਪਣੀ ਹਾਲਤ ਲਈ ਬਾਈਬਲ ਦੀਆਂ ਆਇਤਾਂ, ਹੌਸਲਾ ਅਤੇ ਪ੍ਰਾਰਥਨਾ ਪਾਓ।';
+
+  @override
+  String get onboardTitle3 => 'ਤੁਸੀਂ ਇਕੱਲੇ ਨਹੀਂ ਹੋ।';
+
+  @override
+  String get onboardBody3 => 'ਪਰਮੇਸ਼ੁਰ ਦਾ ਵਚਨ ਹਰ ਕਦਮ ਉੱਤੇ ਤੁਹਾਡੀ ਅਗਵਾਈ ਕਰੇ।';
+
+  @override
+  String get skip => 'ਛੱਡੋ';
+
+  @override
+  String get next => 'ਅੱਗੇ';
+
+  @override
+  String get begin => 'ਸ਼ੁਰੂ ਕਰੋ';
+
+  @override
+  String get previous => 'ਪਿੱਛੇ';
+
+  @override
+  String get fullScreen => 'ਪੂਰੀ ਸਕ੍ਰੀਨ';
+
+  @override
+  String trackOf(int current, int total) {
+    return '$total ਵਿੱਚੋਂ $current';
+  }
 }

@@ -455,4 +455,44 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get feedbackFailed =>
       'Couldn\'t send. Please check your internet and try again.';
+
+  @override
+  String get onboardTitle1 => 'Find peace, strength and answers in His Word.';
+
+  @override
+  String get onboardBody1 =>
+      'Scripture, encouragement and prayer for whatever you are facing.';
+
+  @override
+  String get onboardTitle2 => 'Ask anything from your heart.';
+
+  @override
+  String get onboardBody2 =>
+      'Speak or type. Receive Bible verses, encouragement and a prayer for your situation.';
+
+  @override
+  String get onboardTitle3 => 'You are not alone.';
+
+  @override
+  String get onboardBody3 => 'Let God\'s Word guide you every step of the way.';
+
+  @override
+  String get skip => 'Skip';
+
+  @override
+  String get next => 'Next';
+
+  @override
+  String get begin => 'Begin';
+
+  @override
+  String get previous => 'Previous';
+
+  @override
+  String get fullScreen => 'Full screen';
+
+  @override
+  String trackOf(int current, int total) {
+    return '$current of $total';
+  }
 }

@@ -460,4 +460,45 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get feedbackFailed =>
       'അയയ്ക്കാനായില്ല. ഇന്റർനെറ്റ് പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക.';
+
+  @override
+  String get onboardTitle1 =>
+      'അവന്റെ വചനത്തിൽ സമാധാനവും ശക്തിയും ഉത്തരങ്ങളും കണ്ടെത്തൂ.';
+
+  @override
+  String get onboardBody1 =>
+      'നിങ്ങൾ എന്തു നേരിടുകയാണെങ്കിലും, അതിനായി തിരുവചനവും പ്രോത്സാഹനവും പ്രാർത്ഥനയും.';
+
+  @override
+  String get onboardTitle2 => 'ഹൃദയത്തിൽ നിന്ന് എന്തും ചോദിക്കൂ.';
+
+  @override
+  String get onboardBody2 =>
+      'സംസാരിക്കൂ അല്ലെങ്കിൽ ടൈപ്പ് ചെയ്യൂ. നിങ്ങളുടെ സാഹചര്യത്തിനായി ബൈബിൾ വാക്യങ്ങളും പ്രോത്സാഹനവും പ്രാർത്ഥനയും നേടൂ.';
+
+  @override
+  String get onboardTitle3 => 'നിങ്ങൾ ഒറ്റയ്ക്കല്ല.';
+
+  @override
+  String get onboardBody3 => 'ദൈവവചനം ഓരോ ചുവടിലും നിങ്ങളെ നയിക്കട്ടെ.';
+
+  @override
+  String get skip => 'ഒഴിവാക്കുക';
+
+  @override
+  String get next => 'അടുത്തത്';
+
+  @override
+  String get begin => 'ആരംഭിക്കുക';
+
+  @override
+  String get previous => 'മുമ്പത്തേത്';
+
+  @override
+  String get fullScreen => 'പൂർണ്ണ സ്ക്രീൻ';
+
+  @override
+  String trackOf(int current, int total) {
+    return '$total-ൽ $current';
+  }
 }

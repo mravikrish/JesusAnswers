@@ -14,22 +14,27 @@ import 'features/home/home_screen.dart';
 import 'features/journey/journey_screen.dart';
 import 'features/mood/mood_screen.dart';
 import 'features/peace/peace_now_screen.dart';
+import 'features/player/player_screen.dart';
 import 'features/prayer/prayer_screen.dart';
 import 'features/profile/profile_screen.dart';
 import 'features/talk/listening_screen.dart';
 import 'features/talk/processing_screen.dart';
 import 'features/welcome/language_screen.dart';
+import 'features/welcome/onboarding_screen.dart';
 import 'features/welcome/sign_in_screen.dart';
+import 'features/welcome/splash_screen.dart';
 import 'l10n/app_localizations.dart';
 import 'providers.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
-  final settings = ref.read(settingsProvider);
   return GoRouter(
-    // Straight from language to Home — name and number are optional, set later in Profile.
-    initialLocation: settings.languageChosen ? '/home' : '/welcome',
+    // Splash → language → welcome pages → Home on first launch; splash → Home after that.
+    // Name and number are optional, set later in Profile.
+    initialLocation: '/splash',
     routes: [
+      GoRoute(path: '/splash', builder: (_, _) => const SplashScreen()),
       GoRoute(path: '/welcome', builder: (_, _) => const LanguageScreen()),
+      GoRoute(path: '/onboarding', builder: (_, _) => const OnboardingScreen()),
       GoRoute(path: '/signin', builder: (_, _) => const SignInScreen()),
       StatefulShellRoute.indexedStack(
         builder: (_, _, shell) => AppShell(shell: shell),
@@ -45,6 +50,7 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(path: '/listen', builder: (_, _) => const ListeningScreen()),
       GoRoute(path: '/peace', builder: (_, _) => const PeaceNowScreen()),
       GoRoute(path: '/feedback', builder: (_, _) => const FeedbackScreen()),
+      GoRoute(path: '/player', builder: (_, state) => PlayerScreen(args: state.extra! as PlayerArgs)),
       GoRoute(
         path: '/processing',
         builder: (_, state) => ProcessingScreen(request: state.extra! as AnswerRequest),

@@ -64,6 +64,7 @@ class Settings {
     required this.name,
     required this.phone,
     required this.languageChosen,
+    this.onboarded = false,
     this.voice = '',
     this.textScale = 1.0,
     this.reminder,
@@ -74,6 +75,9 @@ class Settings {
   /// E.164, e.g. "+919876543210". Empty until the user signs in.
   final String phone;
   final bool languageChosen;
+
+  /// Has seen the three welcome pages.
+  final bool onboarded;
 
   /// TTS voice name chosen for [lang]; empty = automatic (a male voice when the device has one).
   final String voice;
@@ -93,6 +97,7 @@ class Settings {
     String? name,
     String? phone,
     bool? languageChosen,
+    bool? onboarded,
     String? voice,
     double? textScale,
     int? Function()? reminder,
@@ -102,6 +107,7 @@ class Settings {
         name: name ?? this.name,
         phone: phone ?? this.phone,
         languageChosen: languageChosen ?? this.languageChosen,
+        onboarded: onboarded ?? this.onboarded,
         voice: voice ?? this.voice,
         textScale: textScale ?? this.textScale,
         reminder: reminder != null ? reminder() : this.reminder,
@@ -121,6 +127,8 @@ class SettingsNotifier extends Notifier<Settings> {
       name: _prefs.getString('name') ?? '',
       phone: _prefs.getString('phone') ?? '',
       languageChosen: saved != null,
+      // People who chose a language before the welcome pages existed don't need them.
+      onboarded: _prefs.getBool('onboarded') ?? saved != null,
       voice: _prefs.getString(TtsService.voiceKey(lang)) ?? '',
       textScale: _prefs.getDouble('textScale') ?? 1.0,
       reminder: _prefs.getInt('reminder'),
@@ -130,6 +138,11 @@ class SettingsNotifier extends Notifier<Settings> {
   Future<void> setLanguage(String code) async {
     await _prefs.setString('lang', code);
     state = state.copyWith(lang: code, languageChosen: true, voice: _prefs.getString(TtsService.voiceKey(code)) ?? '');
+  }
+
+  Future<void> finishOnboarding() async {
+    await _prefs.setBool('onboarded', true);
+    state = state.copyWith(onboarded: true);
   }
 
   /// Saves the TTS voice for the current language; null = back to automatic.

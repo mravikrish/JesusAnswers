@@ -457,4 +457,44 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get feedbackFailed =>
       'ପଠାଯାଇପାରିଲା ନାହିଁ। ଦୟାକରି ଇଣ୍ଟରନେଟ୍ ଯାଞ୍ଚ କରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।';
+
+  @override
+  String get onboardTitle1 => 'ତାହାଙ୍କ ବାକ୍ୟରେ ଶାନ୍ତି, ଶକ୍ତି ଓ ଉତ୍ତର ପାଆନ୍ତୁ।';
+
+  @override
+  String get onboardBody1 =>
+      'ଆପଣ ଯାହା ବି ସାମ୍ନା କରୁଥାଆନ୍ତୁ, ସେଥିପାଇଁ ଶାସ୍ତ୍ର, ଉତ୍ସାହ ଓ ପ୍ରାର୍ଥନା।';
+
+  @override
+  String get onboardTitle2 => 'ହୃଦୟରୁ ଯାହା ବି ପଚାରନ୍ତୁ।';
+
+  @override
+  String get onboardBody2 =>
+      'କୁହନ୍ତୁ କିମ୍ବା ଲେଖନ୍ତୁ। ଆପଣଙ୍କ ପରିସ୍ଥିତି ପାଇଁ ବାଇବେଲ ପଦ, ଉତ୍ସାହ ଓ ପ୍ରାର୍ଥନା ପାଆନ୍ତୁ।';
+
+  @override
+  String get onboardTitle3 => 'ଆପଣ ଏକା ନୁହଁନ୍ତି।';
+
+  @override
+  String get onboardBody3 => 'ପରମେଶ୍ୱରଙ୍କ ବାକ୍ୟ ପ୍ରତି ପାଦରେ ଆପଣଙ୍କୁ ପଥ ଦେଖାଉ।';
+
+  @override
+  String get skip => 'ଛାଡ଼ନ୍ତୁ';
+
+  @override
+  String get next => 'ପରବର୍ତ୍ତୀ';
+
+  @override
+  String get begin => 'ଆରମ୍ଭ କରନ୍ତୁ';
+
+  @override
+  String get previous => 'ପୂର୍ବବର୍ତ୍ତୀ';
+
+  @override
+  String get fullScreen => 'ପୂର୍ଣ୍ଣ ସ୍କ୍ରିନ୍';
+
+  @override
+  String trackOf(int current, int total) {
+    return '$total ମଧ୍ୟରୁ $current';
+  }
 }
