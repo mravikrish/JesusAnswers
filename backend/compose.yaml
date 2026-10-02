@@ -1,0 +1,16 @@
+# Local Postgres for development: `docker compose up -d`
+# (Alternative to a locally installed PostgreSQL; see README.)
+services:
+  postgres:
+    image: postgres:18
+    environment:
+      POSTGRES_DB: jesusanswers
+      POSTGRES_USER: jesusanswers
+      POSTGRES_PASSWORD: devpassword
+    ports:
+      - "5434:5432"   # 5434 so it doesn't clash with a local PostgreSQL on 5432
+    volumes:
+      - pgdata:/var/lib/postgresql
+
+volumes:
+  pgdata:

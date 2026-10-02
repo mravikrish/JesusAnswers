@@ -1,0 +1,201 @@
+import 'dart:convert';
+import 'dart:ui';
+
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+import 'core/languages.dart';
+import 'data/bible/bible_repository.dart';
+import 'data/models/answer.dart';
+import 'data/models/painting.dart';
+import 'data/models/verse.dart';
+import 'l10n/app_localizations.dart';
+import 'services/answer/answer_service.dart';
+import 'services/reminder_service.dart';
+import 'services/voice/speech_service.dart';
+import 'services/voice/tts_service.dart';
+
+/// Set at launch: `flutter run --dart-define=API_BASE_URL=https://api.example.com`
+const apiBaseUrl = String.fromEnvironment('API_BASE_URL');
+
+final prefsProvider = Provider<SharedPreferences>((_) => throw UnimplementedError('overridden in main'));
+
+final bibleProvider = Provider((_) => BibleRepository());
+final ttsProvider = Provider((ref) => TtsService(ref.read(prefsProvider)));
+final speechProvider = Provider((_) => SpeechService());
+final reminderServiceProvider = Provider((_) => ReminderService());
+
+/// Keeps the scheduled Daily Word reminder in step with its time and the app language.
+/// Watched by the app root, so it also re-schedules on every launch.
+final reminderSyncProvider = Provider<void>((ref) {
+  final (lang, minute) = ref.watch(settingsProvider.select((s) => (s.lang, s.reminder)));
+  final l = lookupAppLocalizations(Locale(lang));
+  ref.read(reminderServiceProvider).sync(minute, title: l.todaysWord, body: l.reminderBody).ignore();
+});
+
+final answerServiceProvider = Provider<AnswerService>((ref) {
+  final bible = ref.watch(bibleProvider);
+  final local = LocalAnswerService(bible);
+  return apiBaseUrl.isEmpty ? local : RemoteAnswerService(apiBaseUrl, bible, local);
+});
+
+/// A single verse (by language-neutral ref) in the user's current language.
+final verseProvider = FutureProvider.family<Verse?, String>((ref, verseRef) {
+  final lang = ref.watch(settingsProvider.select((s) => s.lang));
+  return ref.watch(bibleProvider).verse(verseRef, lang);
+});
+
+/// Today's verse in the user's current language.
+final dailyVerseProvider = FutureProvider<Verse>((ref) {
+  final lang = ref.watch(settingsProvider.select((s) => s.lang));
+  return ref.watch(bibleProvider).dailyVerse(DateTime.now(), lang);
+});
+
+/// Today's painting of Jesus (changes every day).
+final dailyPaintingProvider = FutureProvider<Painting>((_) => Painting.forDay(DateTime.now()));
+
+// ── Settings ────────────────────────────────────────────────────────────────
+
+class Settings {
+  const Settings({
+    required this.lang,
+    required this.name,
+    required this.phone,
+    required this.languageChosen,
+    this.voice = '',
+    this.textScale = 1.0,
+    this.reminder,
+  });
+  final String lang;
+  final String name;
+
+  /// E.164, e.g. "+919876543210". Empty until the user signs in.
+  final String phone;
+  final bool languageChosen;
+
+  /// TTS voice name chosen for [lang]; empty = automatic (a male voice when the device has one).
+  final String voice;
+
+  /// Multiplies the phone's own font size: 1.0, 1.15 or 1.3.
+  final double textScale;
+
+  /// Daily Word reminder time as minutes after midnight; null = off.
+  final int? reminder;
+
+  bool get signedIn => name.isNotEmpty && phone.isNotEmpty;
+
+  AppLanguage get language => languageFor(lang);
+
+  Settings copyWith({
+    String? lang,
+    String? name,
+    String? phone,
+    bool? languageChosen,
+    String? voice,
+    double? textScale,
+    int? Function()? reminder,
+  }) =>
+      Settings(
+        lang: lang ?? this.lang,
+        name: name ?? this.name,
+        phone: phone ?? this.phone,
+        languageChosen: languageChosen ?? this.languageChosen,
+        voice: voice ?? this.voice,
+        textScale: textScale ?? this.textScale,
+        reminder: reminder != null ? reminder() : this.reminder,
+      );
+}
+
+class SettingsNotifier extends Notifier<Settings> {
+  SharedPreferences get _prefs => ref.read(prefsProvider);
+
+  @override
+  Settings build() {
+    final saved = _prefs.getString('lang');
+    final device = PlatformDispatcher.instance.locale.languageCode;
+    final lang = saved ?? languageFor(device).code;
+    return Settings(
+      lang: lang,
+      name: _prefs.getString('name') ?? '',
+      phone: _prefs.getString('phone') ?? '',
+      languageChosen: saved != null,
+      voice: _prefs.getString(TtsService.voiceKey(lang)) ?? '',
+      textScale: _prefs.getDouble('textScale') ?? 1.0,
+      reminder: _prefs.getInt('reminder'),
+    );
+  }
+
+  Future<void> setLanguage(String code) async {
+    await _prefs.setString('lang', code);
+    state = state.copyWith(lang: code, languageChosen: true, voice: _prefs.getString(TtsService.voiceKey(code)) ?? '');
+  }
+
+  /// Saves the TTS voice for the current language; null = back to automatic.
+  Future<void> setVoice(String? name) async {
+    final key = TtsService.voiceKey(state.lang);
+    name == null ? await _prefs.remove(key) : await _prefs.setString(key, name);
+    state = state.copyWith(voice: name ?? '');
+  }
+
+  Future<void> setTextScale(double scale) async {
+    await _prefs.setDouble('textScale', scale);
+    state = state.copyWith(textScale: scale);
+  }
+
+  /// [minuteOfDay] after midnight, or null to turn the reminder off.
+  Future<void> setReminder(int? minuteOfDay) async {
+    minuteOfDay == null ? await _prefs.remove('reminder') : await _prefs.setInt('reminder', minuteOfDay);
+    state = state.copyWith(reminder: () => minuteOfDay);
+  }
+
+  Future<void> setName(String name) async {
+    await _prefs.setString('name', name.trim());
+    state = state.copyWith(name: name.trim());
+  }
+
+  Future<void> signIn({required String name, required String phone}) async {
+    await _prefs.setString('name', name.trim());
+    await _prefs.setString('phone', phone);
+    state = state.copyWith(name: name.trim(), phone: phone);
+  }
+}
+
+final settingsProvider = NotifierProvider<SettingsNotifier, Settings>(SettingsNotifier.new);
+
+// ── My Journey ──────────────────────────────────────────────────────────────
+
+class JourneyNotifier extends Notifier<List<Answer>> {
+  static const _key = 'journey';
+  SharedPreferences get _prefs => ref.read(prefsProvider);
+
+  @override
+  List<Answer> build() {
+    final raw = _prefs.getString(_key);
+    if (raw == null) return const [];
+    try {
+      return [for (final j in jsonDecode(raw) as List) Answer.fromJson(j as Map<String, dynamic>)];
+    } catch (_) {
+      return const [];
+    }
+  }
+
+  void add(Answer a) => _save([a, ...state.where((e) => e.id != a.id)]);
+
+  void remove(String id) => _save([for (final a in state) if (a.id != id) a]);
+
+  /// Puts a removed entry back in its place (undo).
+  void restore(Answer a) =>
+      _save([...state.where((e) => e.id != a.id), a]..sort((x, y) => y.createdAt.compareTo(x.createdAt)));
+
+  void toggleFavorite(String id) =>
+      _save([for (final a in state) a.id == id ? a.copyWith(favorite: !a.favorite) : a]);
+
+  Answer? byId(String id) => state.where((a) => a.id == id).firstOrNull;
+
+  void _save(List<Answer> list) {
+    state = list.take(500).toList();
+    _prefs.setString(_key, jsonEncode([for (final a in state) a.toJson()]));
+  }
+}
+
+final journeyProvider = NotifierProvider<JourneyNotifier, List<Answer>>(JourneyNotifier.new);

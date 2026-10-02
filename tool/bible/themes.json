@@ -1,0 +1,78 @@
+{
+  "_comment": "Language-neutral Scripture index. Refs use USFM book codes. Verse text is NEVER written here — it is pulled from published translations by tool/build_bible.dart.",
+  "verses": [
+    { "ref": "MAT 6:34", "themes": ["anxiety", "stress", "work", "future"] },
+    { "ref": "PHP 4:6-7", "themes": ["anxiety", "stress", "peace", "family"] },
+    { "ref": "1PE 5:7", "themes": ["anxiety", "stress", "peace", "sleep"] },
+    { "ref": "PSA 55:22", "themes": ["stress", "anxiety", "strength"] },
+    { "ref": "MAT 11:28", "themes": ["stress", "tired", "work", "peace"] },
+    { "ref": "JHN 14:27", "themes": ["peace", "fear", "anxiety"] },
+    { "ref": "ISA 26:3", "themes": ["peace", "anxiety", "faith"] },
+    { "ref": "PSA 46:10", "themes": ["peace", "stress", "faith"] },
+
+    { "ref": "ISA 41:10", "themes": ["fear", "strength", "loneliness"] },
+    { "ref": "2TI 1:7", "themes": ["fear", "anxiety", "strength"] },
+    { "ref": "PSA 27:1", "themes": ["fear", "strength"] },
+    { "ref": "PSA 56:3", "themes": ["fear", "faith"] },
+    { "ref": "PSA 34:4", "themes": ["fear", "anxiety"] },
+    { "ref": "JOS 1:9", "themes": ["fear", "strength", "work", "future"] },
+
+    { "ref": "PHP 4:13", "themes": ["strength", "work", "failure"] },
+    { "ref": "ISA 40:31", "themes": ["strength", "tired", "hope", "patience"] },
+    { "ref": "2CO 12:9", "themes": ["strength", "failure", "healing"] },
+    { "ref": "GAL 6:9", "themes": ["tired", "patience", "work"] },
+
+    { "ref": "JER 29:11", "themes": ["hope", "future", "lost", "purpose"] },
+    { "ref": "ROM 15:13", "themes": ["hope", "peace", "sad"] },
+    { "ref": "ROM 8:28", "themes": ["hope", "purpose", "failure", "future"] },
+    { "ref": "LAM 3:22-23", "themes": ["hope", "failure", "morning"] },
+    { "ref": "PSA 42:11", "themes": ["sad", "hope"] },
+    { "ref": "PSA 30:5", "themes": ["sad", "grief", "hope"] },
+    { "ref": "ROM 12:12", "themes": ["hope", "patience"] },
+
+    { "ref": "PSA 34:18", "themes": ["hurt", "grief", "sad", "loneliness", "crisis"] },
+    { "ref": "PSA 147:3", "themes": ["hurt", "healing", "grief"] },
+    { "ref": "MAT 5:4", "themes": ["grief", "sad"] },
+    { "ref": "REV 21:4", "themes": ["grief", "hope"] },
+    { "ref": "PSA 103:2-3", "themes": ["healing", "gratitude"] },
+
+    { "ref": "HEB 13:5", "themes": ["finances", "faith"] },
+    { "ref": "DEU 31:6", "themes": ["loneliness", "fear", "strength"] },
+    { "ref": "MAT 28:20", "themes": ["loneliness"] },
+
+    { "ref": "EPH 4:26", "themes": ["anger"] },
+    { "ref": "JAS 1:19", "themes": ["anger", "family", "patience"] },
+    { "ref": "PRO 15:1", "themes": ["anger", "family", "marriage"] },
+    { "ref": "EPH 4:32", "themes": ["forgiveness", "anger", "family", "hurt"] },
+    { "ref": "COL 3:13", "themes": ["forgiveness", "anger", "marriage"] },
+    { "ref": "1JN 1:9", "themes": ["forgiveness", "temptation", "failure"] },
+
+    { "ref": "1CO 13:4", "themes": ["marriage", "family", "patience"] },
+    { "ref": "PSA 127:3", "themes": ["children", "family"] },
+    { "ref": "PRO 22:6", "themes": ["children", "family"] },
+
+    { "ref": "COL 3:23", "themes": ["work", "purpose"] },
+    { "ref": "PHP 4:19", "themes": ["finances", "work", "faith"] },
+    { "ref": "MAT 6:33", "themes": ["finances", "purpose", "faith"] },
+
+    { "ref": "PRO 3:5-6", "themes": ["decision", "lost", "faith", "future"] },
+    { "ref": "JAS 1:5", "themes": ["decision", "lost"] },
+    { "ref": "PSA 32:8", "themes": ["decision", "lost", "purpose"] },
+
+    { "ref": "PRO 24:16", "themes": ["failure", "strength"] },
+    { "ref": "MIC 7:8", "themes": ["failure", "hope"] },
+    { "ref": "1CO 10:13", "themes": ["temptation"] },
+    { "ref": "PSA 37:7", "themes": ["patience", "anger"] },
+
+    { "ref": "EPH 2:10", "themes": ["purpose", "lost"] },
+    { "ref": "PSA 139:14", "themes": ["purpose", "gratitude"] },
+
+    { "ref": "PSA 118:24", "themes": ["gratitude", "morning"] },
+    { "ref": "1TH 5:18", "themes": ["gratitude"] },
+    { "ref": "PSA 107:1", "themes": ["gratitude"] },
+    { "ref": "PSA 23:1", "themes": ["faith", "peace", "morning", "finances"] },
+
+    { "ref": "PSA 4:8", "themes": ["sleep", "peace"] },
+    { "ref": "PRO 3:24", "themes": ["sleep", "fear"] }
+  ]
+}

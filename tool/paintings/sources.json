@@ -1,0 +1,184 @@
+{
+ "_comment": "Curated public-domain paintings of Jesus for the daily Home picture. 'commons' is the Wikimedia Commons file name; focusX/focusY (-1..1) is where His face is, so cropping keeps it in frame. Gentle scenes only — no crucifixion or burial. Build with: python tool/fetch_paintings.py",
+ "paintings": [
+  {
+   "commons": "Christ, by Heinrich Hofmann.jpg",
+   "title": "Christ",
+   "artist": "Heinrich Hofmann",
+   "year": "1889",
+   "focusX": 0,
+   "focusY": -0.5
+  },
+  {
+   "commons": "Bernhard Plockhorst - Good Shephard.jpg",
+   "title": "The Good Shepherd",
+   "artist": "Bernhard Plockhorst",
+   "year": "1878",
+   "focusX": 0,
+   "focusY": -0.9
+  },
+  {
+   "commons": "Carl Heinrich Bloch - Consolator.jpg",
+   "title": "Christ the Consolator",
+   "artist": "Carl Bloch",
+   "year": "c. 1880",
+   "focusX": 0,
+   "focusY": -1
+  },
+  {
+   "commons": "Carl Heinrich Bloch - Woman at the Well.jpg",
+   "title": "The Woman at the Well",
+   "artist": "Carl Bloch",
+   "focusX": 0.3,
+   "focusY": -0.4
+  },
+  {
+   "commons": "Christ in Gethsemane.jpg",
+   "title": "Christ in Gethsemane",
+   "artist": "Heinrich Hofmann",
+   "year": "1886",
+   "focusX": 0,
+   "focusY": -0.4
+  },
+  {
+   "commons": "Carl Heinrich Bloch - Suffer the Children.jpg",
+   "title": "Let the Little Children Come to Me",
+   "artist": "Carl Bloch",
+   "focusX": -0.1,
+   "focusY": -0.5
+  },
+  {
+   "commons": "Gebhard Fugel Jesus und der Gang nach Emmaus.jpg",
+   "title": "The Road to Emmaus",
+   "artist": "Gebhard Fugel",
+   "year": "c. 1900",
+   "focusX": 0.5,
+   "focusY": -0.4
+  },
+  {
+   "commons": "Jesus Christ - Hofmann (cropped).jpg",
+   "title": "Christ",
+   "artist": "Heinrich Hofmann",
+   "year": "1884",
+   "focusX": 0,
+   "focusY": -0.3
+  },
+  {
+   "commons": "Healing of the Blind Man by Jesus Christ.jpg",
+   "title": "Healing of the Blind Man",
+   "artist": "Carl Bloch",
+   "year": "1871",
+   "focusX": 0,
+   "focusY": -0.3
+  },
+  {
+   "commons": "Transfiguration bloch.jpg",
+   "title": "The Transfiguration",
+   "artist": "Carl Bloch",
+   "year": "1872",
+   "focusX": 0,
+   "focusY": -0.7
+  },
+  {
+   "commons": "Jesus the good shepherd.jpg",
+   "title": "The Good Shepherd",
+   "artist": "Bernhard Plockhorst",
+   "focusX": 0,
+   "focusY": -0.9
+  },
+  {
+   "commons": "Bloch-SermonOnTheMount.jpg",
+   "title": "The Sermon on the Mount",
+   "artist": "Carl Bloch",
+   "year": "1877",
+   "focusX": 0.5,
+   "focusY": -0.8
+  },
+  {
+   "commons": "Carl Heinrich Bloch - Gethsemane.jpg",
+   "title": "Gethsemane",
+   "artist": "Carl Bloch",
+   "year": "1873",
+   "focusX": 0,
+   "focusY": -0.2
+  },
+  {
+   "commons": "ChristInTheTemple.jpg",
+   "title": "Jesus in the Temple",
+   "artist": "Heinrich Hofmann",
+   "year": "1884",
+   "focusX": -0.2,
+   "focusY": 0
+  },
+  {
+   "commons": "Carl Heinrich Bloch - The Resurrection.jpg",
+   "title": "The Resurrection",
+   "artist": "Carl Bloch",
+   "year": "1881",
+   "focusX": 0,
+   "focusY": -0.8
+  },
+  {
+   "commons": "Hoffman-ChristAndTheRichYoungRuler.jpg",
+   "title": "Christ and the Rich Young Ruler",
+   "artist": "Heinrich Hofmann",
+   "year": "1889",
+   "focusX": -0.2,
+   "focusY": -0.4
+  },
+  {
+   "commons": "Carl Bloch - Christ and Child.jpg",
+   "title": "Christ and Child",
+   "artist": "Carl Bloch",
+   "year": "1873",
+   "focusX": 0,
+   "focusY": -0.9
+  },
+  {
+   "commons": "Gebhard Fugel Christus heilt Kranke c1920.jpg",
+   "title": "Christ Healing the Sick",
+   "artist": "Gebhard Fugel",
+   "year": "c. 1920",
+   "focusX": 0,
+   "focusY": 0
+  },
+  {
+   "commons": "Gebhard Fugel Herz-Jesu-Darstellung.jpg",
+   "title": "The Sacred Heart of Jesus",
+   "artist": "Gebhard Fugel",
+   "year": "c. 1930",
+   "focusX": 0,
+   "focusY": -0.8
+  },
+  {
+   "commons": "CarlBloch weddingatCana.jpg",
+   "title": "The Wedding at Cana",
+   "artist": "Carl Bloch",
+   "year": "1870",
+   "focusX": 0,
+   "focusY": -0.2
+  },
+  {
+   "commons": "The resurrection day.jpg",
+   "title": "The Resurrection Morning",
+   "artist": "after Heinrich Hofmann",
+   "focusX": 0.5,
+   "focusY": -0.7
+  },
+  {
+   "commons": "Victory over the Grave.jpg",
+   "title": "Victory over the Grave",
+   "artist": "Bernhard Plockhorst",
+   "focusX": 0,
+   "focusY": -0.7
+  },
+  {
+   "commons": "The visit of the wise-men.jpg",
+   "title": "The Visit of the Wise Men",
+   "artist": "after Heinrich Hofmann",
+   "year": "c. 1887",
+   "focusX": 0,
+   "focusY": -0.4
+  }
+ ]
+}

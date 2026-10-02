@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: jesusanswers-api
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/jesusanswers}
+    username: ${DATABASE_USER:jesusanswers}
+    password: ${DATABASE_PASSWORD}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate   # Flyway owns the schema
+  flyway:
+    enabled: true
+
+server:
+  forward-headers-strategy: framework   # real client IP behind a load balancer (rate limiting)
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+
+jesusanswers:
+  claude:
+    model: ${CLAUDE_MODEL:claude-opus-5-5}
+    effort: ${CLAUDE_EFFORT:medium}
+    timeout-seconds: 25
+  firebase:
+    project-id: ${FIREBASE_PROJECT_ID}
+  journey:
+    encryption-key: ${JOURNEY_ENCRYPTION_KEY}   # 32 random bytes, base64 — keep in a secret manager
+  rate-limit:
+    answers-per-hour: ${ANSWERS_PER_HOUR:30}

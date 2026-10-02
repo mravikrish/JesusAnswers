@@ -1,0 +1,40 @@
+{
+  "_comment": "Display names where the source's \\toc2 is an abbreviation and \\toc1 is a full title. Each is a stem of the source's own \\toc1 spelling. Have a native reader confirm before release.",
+  "mr": {
+    "1CO": "1 करिंथकरांस",
+    "1TH": "1 थेस्सलनीकाकरांस",
+    "2TI": "2 तीमथ्याला",
+    "1JN": "1 योहान",
+    "2CO": "2 करिंथकरांस",
+    "2TH": "2 थेस्सलनीकाकरांस",
+    "1TI": "1 तीमथ्याला"
+  },
+  "pa": {
+    "1PE": "1 ਪਤਰਸ"
+  },
+  "gu": {
+    "MAT": "માથ્થી",
+    "JHN": "યોહાન",
+    "ROM": "રોમનો",
+    "1CO": "1 કરિંથીઓ",
+    "2CO": "2 કરિંથીઓ",
+    "GAL": "ગલાતીઓ",
+    "EPH": "એફેસીઓ",
+    "PHP": "ફિલિપ્પીઓ",
+    "COL": "ક્લોસ્સીઓ",
+    "1TH": "1 થેસ્સાલોનિકીઓ",
+    "2TI": "2 તિમોથી",
+    "HEB": "હિબ્રૂઓ",
+    "JAS": "યાકૂબ",
+    "1JN": "1 યોહાન",
+    "1PE": "1 પિતર",
+    "2TH": "2 થેસ્સાલોનિકીઓ",
+    "1TI": "1 તિમોથી",
+    "TIT": "તિતસ",
+    "MRK": "માર્ક",
+    "LUK": "લૂક"
+  },
+  "or": {
+    "TIT": "ତୀତସ"
+  }
+}
