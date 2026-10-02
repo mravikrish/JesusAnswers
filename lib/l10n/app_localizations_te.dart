@@ -436,4 +436,15 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get topicFaith => 'విశ్వాసం & నిరీక్షణ';
+
+  @override
+  String get sendFeedback => 'అభిప్రాయం పంపండి';
+
+  @override
+  String get feedbackHint => 'దీన్ని ఇంకా మెరుగ్గా ఎలా చేయాలో చెప్పండి';
+
+  @override
+  String noEmailApp(String email) {
+    return 'ఈమెయిల్ యాప్ కనబడలేదు. దయచేసి $emailకు రాయండి.';
+  }
 }

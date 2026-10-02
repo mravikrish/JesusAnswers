@@ -925,6 +925,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Faith & hope'**
   String get topicFaith;
+
+  /// No description provided for @sendFeedback.
+  ///
+  /// In en, this message translates to:
+  /// **'Send feedback'**
+  String get sendFeedback;
+
+  /// No description provided for @feedbackHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Tell us what would make it better'**
+  String get feedbackHint;
+
+  /// No description provided for @noEmailApp.
+  ///
+  /// In en, this message translates to:
+  /// **'No email app found. Please write to {email}.'**
+  String noEmailApp(String email);
 }
 
 class _AppLocalizationsDelegate

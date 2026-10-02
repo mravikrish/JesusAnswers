@@ -439,4 +439,16 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get topicFaith => 'விசுவாசம் & நம்பிக்கை';
+
+  @override
+  String get sendFeedback => 'கருத்தை அனுப்பு';
+
+  @override
+  String get feedbackHint =>
+      'இதை இன்னும் சிறப்பாக்க என்ன செய்யலாம் என்று சொல்லுங்கள்';
+
+  @override
+  String noEmailApp(String email) {
+    return 'மின்னஞ்சல் ஆப் இல்லை. தயவுசெய்து $email க்கு எழுதுங்கள்.';
+  }
 }

@@ -165,5 +165,15 @@
   "topicHealth": "Health & rest",
   "topicGuidance": "Guidance",
   "topicForgiveness": "Forgiveness",
-  "topicFaith": "Faith & hope"
+  "topicFaith": "Faith & hope",
+  "sendFeedback": "Send feedback",
+  "feedbackHint": "Tell us what would make it better",
+  "noEmailApp": "No email app found. Please write to {email}.",
+  "@noEmailApp": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  }
 }

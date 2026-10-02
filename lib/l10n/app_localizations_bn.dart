@@ -434,4 +434,15 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get topicFaith => 'বিশ্বাস ও আশা';
+
+  @override
+  String get sendFeedback => 'মতামত পাঠান';
+
+  @override
+  String get feedbackHint => 'কীভাবে এটি আরও ভালো করা যায় জানান';
+
+  @override
+  String noEmailApp(String email) {
+    return 'কোনো ইমেল অ্যাপ পাওয়া যায়নি। অনুগ্রহ করে $email এ লিখুন।';
+  }
 }

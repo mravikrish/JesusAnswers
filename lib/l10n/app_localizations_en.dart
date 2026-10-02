@@ -435,4 +435,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get topicFaith => 'Faith & hope';
+
+  @override
+  String get sendFeedback => 'Send feedback';
+
+  @override
+  String get feedbackHint => 'Tell us what would make it better';
+
+  @override
+  String noEmailApp(String email) {
+    return 'No email app found. Please write to $email.';
+  }
 }

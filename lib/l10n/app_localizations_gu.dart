@@ -434,4 +434,15 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get topicFaith => 'વિશ્વાસ અને આશા';
+
+  @override
+  String get sendFeedback => 'પ્રતિસાદ મોકલો';
+
+  @override
+  String get feedbackHint => 'આને વધુ સારું કેવી રીતે બનાવી શકાય તે કહો';
+
+  @override
+  String noEmailApp(String email) {
+    return 'કોઈ ઈમેલ ઍપ મળી નથી. કૃપા કરીને $email પર લખો.';
+  }
 }

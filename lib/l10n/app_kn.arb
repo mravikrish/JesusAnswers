@@ -134,5 +134,8 @@
   "topicHealth": "ಆರೋಗ್ಯ & ವಿಶ್ರಾಂತಿ",
   "topicGuidance": "ಮಾರ್ಗದರ್ಶನ",
   "topicForgiveness": "ಕ್ಷಮೆ",
-  "topicFaith": "ನಂಬಿಕೆ & ನಿರೀಕ್ಷೆ"
+  "topicFaith": "ನಂಬಿಕೆ & ನಿರೀಕ್ಷೆ",
+  "sendFeedback": "ಅಭಿಪ್ರಾಯ ಕಳುಹಿಸಿ",
+  "feedbackHint": "ಇದನ್ನು ಇನ್ನಷ್ಟು ಉತ್ತಮಗೊಳಿಸುವುದು ಹೇಗೆ ಎಂದು ತಿಳಿಸಿ",
+  "noEmailApp": "ಇಮೇಲ್ ಆ್ಯಪ್ ಸಿಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು {email} ಗೆ ಬರೆಯಿರಿ."
 }

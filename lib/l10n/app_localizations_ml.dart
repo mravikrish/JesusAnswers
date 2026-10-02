@@ -440,4 +440,15 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get topicFaith => 'വിശ്വാസം & പ്രത്യാശ';
+
+  @override
+  String get sendFeedback => 'അഭിപ്രായം അയയ്ക്കുക';
+
+  @override
+  String get feedbackHint => 'ഇത് എങ്ങനെ കൂടുതൽ മികച്ചതാക്കാമെന്ന് പറയൂ';
+
+  @override
+  String noEmailApp(String email) {
+    return 'ഇമെയിൽ ആപ്പ് കണ്ടെത്തിയില്ല. ദയവായി $email എന്ന വിലാസത്തിൽ എഴുതുക.';
+  }
 }

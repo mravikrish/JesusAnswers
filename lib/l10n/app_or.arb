@@ -134,5 +134,8 @@
   "topicHealth": "ସ୍ୱାସ୍ଥ୍ୟ ଓ ବିଶ୍ରାମ",
   "topicGuidance": "ମାର୍ଗଦର୍ଶନ",
   "topicForgiveness": "କ୍ଷମା",
-  "topicFaith": "ବିଶ୍ୱାସ ଓ ଆଶା"
+  "topicFaith": "ବିଶ୍ୱାସ ଓ ଆଶା",
+  "sendFeedback": "ମତାମତ ପଠାନ୍ତୁ",
+  "feedbackHint": "ଏହାକୁ କିପରି ଆହୁରି ଭଲ କରାଯିବ କୁହନ୍ତୁ",
+  "noEmailApp": "କୌଣସି ଇମେଲ ଆପ୍ ମିଳିଲା ନାହିଁ। ଦୟାକରି {email}କୁ ଲେଖନ୍ତୁ।"
 }

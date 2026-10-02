@@ -436,4 +436,15 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get topicFaith => 'ನಂಬಿಕೆ & ನಿರೀಕ್ಷೆ';
+
+  @override
+  String get sendFeedback => 'ಅಭಿಪ್ರಾಯ ಕಳುಹಿಸಿ';
+
+  @override
+  String get feedbackHint => 'ಇದನ್ನು ಇನ್ನಷ್ಟು ಉತ್ತಮಗೊಳಿಸುವುದು ಹೇಗೆ ಎಂದು ತಿಳಿಸಿ';
+
+  @override
+  String noEmailApp(String email) {
+    return 'ಇಮೇಲ್ ಆ್ಯಪ್ ಸಿಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು $email ಗೆ ಬರೆಯಿರಿ.';
+  }
 }

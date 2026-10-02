@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../core/device_settings.dart';
+import '../../core/feedback.dart';
 import '../../core/languages.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/common.dart';
@@ -104,6 +105,17 @@ class ProfileScreen extends ConsumerWidget {
                   onTap: () => _pickReminder(context, ref, settings.reminder ?? 7 * 60),
                 ),
               ],
+            ),
+          ),
+          const SizedBox(height: 16),
+          SoftCard(
+            padding: EdgeInsets.zero,
+            child: ListTile(
+              leading: const Icon(Icons.mail_outline_rounded),
+              title: Text(l.sendFeedback),
+              subtitle: Text(l.feedbackHint),
+              trailing: const Icon(Icons.chevron_right_rounded),
+              onTap: () => sendFeedback(context, settings.language),
             ),
           ),
           const SizedBox(height: 16),
