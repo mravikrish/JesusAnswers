@@ -95,8 +95,11 @@ class PlaybackControls extends ConsumerWidget {
               avatar: Icon(Icons.slow_motion_video_rounded, size: 18, color: slow ? AppColors.ink : fg),
               selected: slow,
               showCheckmark: false,
-              selectedColor: AppColors.goldSoft,
-              backgroundColor: Colors.transparent,
+              // Explicit for both states: Material 3's default unselected fill is light,
+              // which hid the white label on the night screens.
+              color: WidgetStateProperty.resolveWith(
+                (states) => states.contains(WidgetState.selected) ? AppColors.goldSoft : Colors.transparent,
+              ),
               labelStyle: TextStyle(color: slow ? AppColors.ink : fg),
               shape: StadiumBorder(side: BorderSide(color: dark ? Colors.white38 : AppColors.sand)),
               onSelected: tts.setSlow,
