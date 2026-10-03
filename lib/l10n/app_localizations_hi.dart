@@ -505,4 +505,26 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get newTestament => 'नया नियम';
+
+  @override
+  String get picturesTitle => 'यीशु के चित्र';
+
+  @override
+  String get picturesSubtitle =>
+      'कोई चित्र सेव करें, या उसे अपने व्हाट्सऐप स्टेटस पर लगाएँ';
+
+  @override
+  String get whatsappStatus => 'व्हाट्सऐप स्टेटस';
+
+  @override
+  String get savePicture => 'सेव करें';
+
+  @override
+  String get verseOnPicture => 'वचन';
+
+  @override
+  String get pictureSaved => 'आपकी गैलरी में सेव हो गया';
+
+  @override
+  String get pictureSaveFailed => 'सेव नहीं हो सका। कृपया फ़ोटो की अनुमति दें।';
 }

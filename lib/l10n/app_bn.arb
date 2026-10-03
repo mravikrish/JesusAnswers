@@ -156,5 +156,12 @@
   "bibleStories": "বাইবেলের গল্প",
   "bibleStoriesSubtitle": "বাইবেলের নিজের ভাষায়",
   "oldTestament": "পুরাতন নিয়ম",
-  "newTestament": "নতুন নিয়ম"
+  "newTestament": "নতুন নিয়ম",
+  "picturesTitle": "যীশুর ছবি",
+  "picturesSubtitle": "একটি সেভ করুন, অথবা আপনার হোয়াটসঅ্যাপ স্ট্যাটাসে দিন",
+  "whatsappStatus": "হোয়াটসঅ্যাপ স্ট্যাটাস",
+  "savePicture": "সেভ করুন",
+  "verseOnPicture": "বাক্য",
+  "pictureSaved": "আপনার গ্যালারিতে সেভ হয়েছে",
+  "pictureSaveFailed": "সেভ করা গেল না। অনুগ্রহ করে ছবির অনুমতি দিন।"
 }

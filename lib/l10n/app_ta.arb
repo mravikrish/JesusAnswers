@@ -156,5 +156,12 @@
   "bibleStories": "வேதாகமக் கதைகள்",
   "bibleStoriesSubtitle": "வேதாகமத்தின் சொந்த வார்த்தைகளில்",
   "oldTestament": "பழைய ஏற்பாடு",
-  "newTestament": "புதிய ஏற்பாடு"
+  "newTestament": "புதிய ஏற்பாடு",
+  "picturesTitle": "இயேசுவின் படங்கள்",
+  "picturesSubtitle": "ஒன்றைச் சேமியுங்கள், அல்லது உங்கள் வாட்ஸ்அப் ஸ்டேட்டஸாக வையுங்கள்",
+  "whatsappStatus": "வாட்ஸ்அப் ஸ்டேட்டஸ்",
+  "savePicture": "சேமி",
+  "verseOnPicture": "வசனம்",
+  "pictureSaved": "உங்கள் கேலரியில் சேமிக்கப்பட்டது",
+  "pictureSaveFailed": "சேமிக்க முடியவில்லை. புகைப்படங்களுக்கு அனுமதி தாருங்கள்."
 }

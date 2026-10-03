@@ -156,5 +156,12 @@
   "bibleStories": "బైబిల్ కథలు",
   "bibleStoriesSubtitle": "బైబిల్ మాటల్లోనే",
   "oldTestament": "పాత నిబంధన",
-  "newTestament": "కొత్త నిబంధన"
+  "newTestament": "కొత్త నిబంధన",
+  "picturesTitle": "యేసు చిత్రాలు",
+  "picturesSubtitle": "ఒకటి సేవ్ చేయండి, లేదా మీ వాట్సాప్ స్టేటస్‌గా పెట్టండి",
+  "whatsappStatus": "వాట్సాప్ స్టేటస్",
+  "savePicture": "సేవ్ చేయండి",
+  "verseOnPicture": "వచనం",
+  "pictureSaved": "మీ గ్యాలరీలో సేవ్ అయింది",
+  "pictureSaveFailed": "సేవ్ కాలేదు. దయచేసి ఫోటోలకు అనుమతి ఇవ్వండి."
 }

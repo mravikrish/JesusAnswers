@@ -507,4 +507,27 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get newTestament => 'New Testament';
+
+  @override
+  String get picturesTitle => 'Pictures of Jesus';
+
+  @override
+  String get picturesSubtitle =>
+      'Save one, or share it as your WhatsApp status';
+
+  @override
+  String get whatsappStatus => 'WhatsApp Status';
+
+  @override
+  String get savePicture => 'Save';
+
+  @override
+  String get verseOnPicture => 'Verse';
+
+  @override
+  String get pictureSaved => 'Saved to your gallery';
+
+  @override
+  String get pictureSaveFailed =>
+      'Couldn\'t save. Please allow access to photos.';
 }

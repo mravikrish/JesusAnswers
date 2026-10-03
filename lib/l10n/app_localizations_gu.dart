@@ -506,4 +506,26 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get newTestament => 'નવો કરાર';
+
+  @override
+  String get picturesTitle => 'ઈસુનાં ચિત્રો';
+
+  @override
+  String get picturesSubtitle =>
+      'એક સેવ કરો, અથવા તમારા વોટ્સએપ સ્ટેટસ પર મૂકો';
+
+  @override
+  String get whatsappStatus => 'વોટ્સએપ સ્ટેટસ';
+
+  @override
+  String get savePicture => 'સેવ કરો';
+
+  @override
+  String get verseOnPicture => 'વચન';
+
+  @override
+  String get pictureSaved => 'તમારી ગેલેરીમાં સેવ થયું';
+
+  @override
+  String get pictureSaveFailed => 'સેવ ન થયું. કૃપા કરીને ફોટાની પરવાનગી આપો.';
 }

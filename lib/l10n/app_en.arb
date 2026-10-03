@@ -197,5 +197,12 @@
   "bibleStories": "Bible Stories",
   "bibleStoriesSubtitle": "Told in the Bible's own words",
   "oldTestament": "Old Testament",
-  "newTestament": "New Testament"
+  "newTestament": "New Testament",
+  "picturesTitle": "Pictures of Jesus",
+  "picturesSubtitle": "Save one, or share it as your WhatsApp status",
+  "whatsappStatus": "WhatsApp Status",
+  "savePicture": "Save",
+  "verseOnPicture": "Verse",
+  "pictureSaved": "Saved to your gallery",
+  "pictureSaveFailed": "Couldn't save. Please allow access to photos."
 }

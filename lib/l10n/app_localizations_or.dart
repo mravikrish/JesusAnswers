@@ -509,4 +509,27 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get newTestament => 'ନୂତନ ନିୟମ';
+
+  @override
+  String get picturesTitle => 'ଯୀଶୁଙ୍କ ଚିତ୍ର';
+
+  @override
+  String get picturesSubtitle =>
+      'ଗୋଟିଏ ସେଭ୍ କରନ୍ତୁ, କିମ୍ବା ଆପଣଙ୍କ ହ୍ୱାଟସଆପ୍ ଷ୍ଟାଟସ୍‌ରେ ଦିଅନ୍ତୁ';
+
+  @override
+  String get whatsappStatus => 'ହ୍ୱାଟସଆପ୍ ଷ୍ଟାଟସ୍';
+
+  @override
+  String get savePicture => 'ସେଭ୍ କରନ୍ତୁ';
+
+  @override
+  String get verseOnPicture => 'ବାକ୍ୟ';
+
+  @override
+  String get pictureSaved => 'ଆପଣଙ୍କ ଗ୍ୟାଲେରୀରେ ସେଭ୍ ହେଲା';
+
+  @override
+  String get pictureSaveFailed =>
+      'ସେଭ୍ ହୋଇପାରିଲା ନାହିଁ। ଦୟାକରି ଫଟୋ ପାଇଁ ଅନୁମତି ଦିଅନ୍ତୁ।';
 }

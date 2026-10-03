@@ -509,4 +509,27 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get newTestament => 'ಹೊಸ ಒಡಂಬಡಿಕೆ';
+
+  @override
+  String get picturesTitle => 'ಯೇಸುವಿನ ಚಿತ್ರಗಳು';
+
+  @override
+  String get picturesSubtitle =>
+      'ಒಂದನ್ನು ಸೇವ್ ಮಾಡಿ, ಅಥವಾ ನಿಮ್ಮ ವಾಟ್ಸಾಪ್ ಸ್ಟೇಟಸ್ ಆಗಿ ಇಡಿ';
+
+  @override
+  String get whatsappStatus => 'ವಾಟ್ಸಾಪ್ ಸ್ಟೇಟಸ್';
+
+  @override
+  String get savePicture => 'ಸೇವ್ ಮಾಡಿ';
+
+  @override
+  String get verseOnPicture => 'ವಚನ';
+
+  @override
+  String get pictureSaved => 'ನಿಮ್ಮ ಗ್ಯಾಲರಿಯಲ್ಲಿ ಸೇವ್ ಆಯಿತು';
+
+  @override
+  String get pictureSaveFailed =>
+      'ಸೇವ್ ಆಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಫೋಟೋಗಳಿಗೆ ಅನುಮತಿ ನೀಡಿ.';
 }

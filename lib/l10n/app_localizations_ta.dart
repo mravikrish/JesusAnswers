@@ -514,4 +514,27 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get newTestament => 'புதிய ஏற்பாடு';
+
+  @override
+  String get picturesTitle => 'இயேசுவின் படங்கள்';
+
+  @override
+  String get picturesSubtitle =>
+      'ஒன்றைச் சேமியுங்கள், அல்லது உங்கள் வாட்ஸ்அப் ஸ்டேட்டஸாக வையுங்கள்';
+
+  @override
+  String get whatsappStatus => 'வாட்ஸ்அப் ஸ்டேட்டஸ்';
+
+  @override
+  String get savePicture => 'சேமி';
+
+  @override
+  String get verseOnPicture => 'வசனம்';
+
+  @override
+  String get pictureSaved => 'உங்கள் கேலரியில் சேமிக்கப்பட்டது';
+
+  @override
+  String get pictureSaveFailed =>
+      'சேமிக்க முடியவில்லை. புகைப்படங்களுக்கு அனுமதி தாருங்கள்.';
 }

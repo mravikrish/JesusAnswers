@@ -513,4 +513,27 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get newTestament => 'പുതിയ നിയമം';
+
+  @override
+  String get picturesTitle => 'യേശുവിന്റെ ചിത്രങ്ങൾ';
+
+  @override
+  String get picturesSubtitle =>
+      'ഒന്ന് സേവ് ചെയ്യുക, അല്ലെങ്കിൽ നിങ്ങളുടെ വാട്ട്സ്ആപ്പ് സ്റ്റാറ്റസ് ആക്കുക';
+
+  @override
+  String get whatsappStatus => 'വാട്ട്സ്ആപ്പ് സ്റ്റാറ്റസ്';
+
+  @override
+  String get savePicture => 'സേവ് ചെയ്യുക';
+
+  @override
+  String get verseOnPicture => 'വചനം';
+
+  @override
+  String get pictureSaved => 'നിങ്ങളുടെ ഗാലറിയിൽ സേവ് ചെയ്തു';
+
+  @override
+  String get pictureSaveFailed =>
+      'സേവ് ചെയ്യാനായില്ല. ഫോട്ടോകൾക്ക് അനുമതി നൽകുക.';
 }

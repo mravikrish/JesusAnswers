@@ -118,13 +118,19 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                     ),
                   ),
                   const SizedBox(height: 18),
-                  // Daily Word, Pray and Profile are in the bottom bar; Peace Now and Bible Stories are the extra ways in.
+                  // Daily Word, Pray and Profile are in the bottom bar; Peace Now, Bible Stories and Pictures are the extra ways in.
                   _QuickAction(icon: Icons.spa_rounded, label: l.peaceNow, onTap: () => context.push('/peace')),
                   const SizedBox(height: 10),
                   _QuickAction(
                     icon: Icons.auto_stories_rounded,
                     label: l.bibleStories,
                     onTap: () => context.push('/stories'),
+                  ),
+                  const SizedBox(height: 10),
+                  _QuickAction(
+                    icon: Icons.photo_library_rounded,
+                    label: l.picturesTitle,
+                    onTap: () => context.push('/pictures'),
                   ),
                 ],
               ),
@@ -152,6 +158,12 @@ class _Hero extends StatelessWidget {
   final String name;
   final String invite;
 
+  static Future<void> _openInGallery(BuildContext context, Painting painting) async {
+    final all = await Painting.all();
+    if (!context.mounted) return;
+    context.push('/pictures/${all.indexWhere((p) => p.asset == painting.asset)}');
+  }
+
   @override
   Widget build(BuildContext context) {
     final top = MediaQuery.paddingOf(context).top;
@@ -165,17 +177,21 @@ class _Hero extends StatelessWidget {
             left: 0,
             right: 0,
             height: height,
-            child: AnimatedSwitcher(
-              duration: const Duration(milliseconds: 900),
-              child: painting == null
-                  ? const SizedBox.expand()
-                  : Image.asset(
-                      painting!.asset,
-                      key: ValueKey(painting!.asset),
-                      fit: BoxFit.cover,
-                      alignment: painting!.focus,
-                      errorBuilder: (_, _, _) => Image.asset('assets/icon/app_icon.png', fit: BoxFit.cover),
-                    ),
+            // Tap today's picture to open it in the Pictures gallery, ready to save or share.
+            child: GestureDetector(
+              onTap: painting == null ? null : () => _openInGallery(context, painting!),
+              child: AnimatedSwitcher(
+                duration: const Duration(milliseconds: 900),
+                child: painting == null
+                    ? const SizedBox.expand()
+                    : Image.asset(
+                        painting!.asset,
+                        key: ValueKey(painting!.asset),
+                        fit: BoxFit.cover,
+                        alignment: painting!.focus,
+                        errorBuilder: (_, _, _) => Image.asset('assets/icon/app_icon.png', fit: BoxFit.cover),
+                      ),
+              ),
             ),
           ),
           // Fade the painting into the sky: dark at the top for the status bar,
@@ -197,13 +213,13 @@ class _Hero extends StatelessWidget {
             ),
           ),
           const Positioned.fill(child: IgnorePointer(child: DivineLight(intensity: 0.7))),
-          if (painting != null)
+          if (painting?.credit case final credit?)
             Positioned(
               top: top + 18,
               left: 18,
               right: 18,
               child: Text(
-                painting!.credit,
+                credit,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(color: Colors.white.withValues(alpha: 0.6), fontSize: 11),

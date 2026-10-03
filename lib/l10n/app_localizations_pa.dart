@@ -507,4 +507,26 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get newTestament => 'ਨਵਾਂ ਨੇਮ';
+
+  @override
+  String get picturesTitle => 'ਯਿਸੂ ਦੀਆਂ ਤਸਵੀਰਾਂ';
+
+  @override
+  String get picturesSubtitle => 'ਇੱਕ ਸੇਵ ਕਰੋ, ਜਾਂ ਆਪਣੇ ਵਟਸਐਪ ਸਟੇਟਸ ਤੇ ਲਗਾਓ';
+
+  @override
+  String get whatsappStatus => 'ਵਟਸਐਪ ਸਟੇਟਸ';
+
+  @override
+  String get savePicture => 'ਸੇਵ ਕਰੋ';
+
+  @override
+  String get verseOnPicture => 'ਵਚਨ';
+
+  @override
+  String get pictureSaved => 'ਤੁਹਾਡੀ ਗੈਲਰੀ ਵਿੱਚ ਸੇਵ ਹੋ ਗਿਆ';
+
+  @override
+  String get pictureSaveFailed =>
+      'ਸੇਵ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਫੋਟੋਆਂ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ।';
 }

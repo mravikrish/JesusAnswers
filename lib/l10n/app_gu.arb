@@ -156,5 +156,12 @@
   "bibleStories": "બાઇબલની વાર્તાઓ",
   "bibleStoriesSubtitle": "બાઇબલના પોતાના શબ્દોમાં",
   "oldTestament": "જૂનો કરાર",
-  "newTestament": "નવો કરાર"
+  "newTestament": "નવો કરાર",
+  "picturesTitle": "ઈસુનાં ચિત્રો",
+  "picturesSubtitle": "એક સેવ કરો, અથવા તમારા વોટ્સએપ સ્ટેટસ પર મૂકો",
+  "whatsappStatus": "વોટ્સએપ સ્ટેટસ",
+  "savePicture": "સેવ કરો",
+  "verseOnPicture": "વચન",
+  "pictureSaved": "તમારી ગેલેરીમાં સેવ થયું",
+  "pictureSaveFailed": "સેવ ન થયું. કૃપા કરીને ફોટાની પરવાનગી આપો."
 }

@@ -156,5 +156,12 @@
   "bibleStories": "बायबलमधील कथा",
   "bibleStoriesSubtitle": "बायबलच्याच शब्दांत",
   "oldTestament": "जुना करार",
-  "newTestament": "नवा करार"
+  "newTestament": "नवा करार",
+  "picturesTitle": "येशूची चित्रे",
+  "picturesSubtitle": "एखादे चित्र सेव्ह करा, किंवा ते तुमच्या व्हॉट्सॲप स्टेटसवर ठेवा",
+  "whatsappStatus": "व्हॉट्सॲप स्टेटस",
+  "savePicture": "सेव्ह करा",
+  "verseOnPicture": "वचन",
+  "pictureSaved": "तुमच्या गॅलरीत सेव्ह झाले",
+  "pictureSaveFailed": "सेव्ह झाले नाही. कृपया फोटोंना परवानगी द्या."
 }

@@ -156,5 +156,12 @@
   "bibleStories": "बाइबल की कहानियाँ",
   "bibleStoriesSubtitle": "बाइबल के अपने शब्दों में",
   "oldTestament": "पुराना नियम",
-  "newTestament": "नया नियम"
+  "newTestament": "नया नियम",
+  "picturesTitle": "यीशु के चित्र",
+  "picturesSubtitle": "कोई चित्र सेव करें, या उसे अपने व्हाट्सऐप स्टेटस पर लगाएँ",
+  "whatsappStatus": "व्हाट्सऐप स्टेटस",
+  "savePicture": "सेव करें",
+  "verseOnPicture": "वचन",
+  "pictureSaved": "आपकी गैलरी में सेव हो गया",
+  "pictureSaveFailed": "सेव नहीं हो सका। कृपया फ़ोटो की अनुमति दें।"
 }

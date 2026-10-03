@@ -1057,6 +1057,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'New Testament'**
   String get newTestament;
+
+  /// No description provided for @picturesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pictures of Jesus'**
+  String get picturesTitle;
+
+  /// No description provided for @picturesSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Save one, or share it as your WhatsApp status'**
+  String get picturesSubtitle;
+
+  /// No description provided for @whatsappStatus.
+  ///
+  /// In en, this message translates to:
+  /// **'WhatsApp Status'**
+  String get whatsappStatus;
+
+  /// No description provided for @savePicture.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get savePicture;
+
+  /// No description provided for @verseOnPicture.
+  ///
+  /// In en, this message translates to:
+  /// **'Verse'**
+  String get verseOnPicture;
+
+  /// No description provided for @pictureSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved to your gallery'**
+  String get pictureSaved;
+
+  /// No description provided for @pictureSaveFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t save. Please allow access to photos.'**
+  String get pictureSaveFailed;
 }
 
 class _AppLocalizationsDelegate

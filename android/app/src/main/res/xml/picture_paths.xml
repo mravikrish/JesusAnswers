@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Where lib/core/picture_share.dart writes pictures before handing them to WhatsApp. -->
+<paths>
+    <cache-path name="pictures" path="pictures/"/>
+</paths>

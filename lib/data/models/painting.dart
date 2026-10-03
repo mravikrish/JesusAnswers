@@ -3,31 +3,32 @@ import 'dart:convert';
 import 'package:flutter/painting.dart';
 import 'package:flutter/services.dart';
 
-/// A public-domain painting of Jesus, shown as the day's picture on Home.
-/// Bundled under assets/jesus/ by tool/fetch_paintings.py; see paintings.json for sources.
+/// A picture of Jesus: the day's picture on Home, and one page of the Pictures gallery.
+/// Bundled under assets/jesus/; see paintings.json.
 class Painting {
   const Painting({
     required this.asset,
     required this.title,
-    required this.artist,
+    this.artist,
     this.year,
     this.focus = Alignment.center,
   });
 
   final String asset;
   final String title;
-  final String artist;
+  final String? artist;
   final String? year;
 
   /// Where to keep in frame when cover-cropping — His face. (-1,-1) is top-left.
   final Alignment focus;
 
-  String get credit => [artist, ?year].join(', ');
+  /// "Artist, year" — null when the picture needs no credit line.
+  String? get credit => artist == null ? null : [artist, ?year].join(', ');
 
   factory Painting.fromJson(Map<String, dynamic> j) => Painting(
         asset: 'assets/jesus/${j['file']}',
         title: j['title'] as String,
-        artist: j['artist'] as String,
+        artist: j['artist'] as String?,
         year: j['year'] as String?,
         focus: Alignment((j['focusX'] as num? ?? 0).toDouble(), (j['focusY'] as num? ?? -0.4).toDouble()),
       );
@@ -44,7 +45,10 @@ class Painting {
   /// A different painting each day, cycling through the whole collection.
   static Future<Painting> forDay(DateTime day, [AssetBundle? bundle]) async {
     final list = await all(bundle);
-    final dayNumber = DateTime.utc(day.year, day.month, day.day).difference(DateTime.utc(2024)).inDays;
-    return list[dayNumber % list.length];
+    return list[indexForDay(day, list.length)];
   }
+
+  /// Position of [day]'s picture in [all].
+  static int indexForDay(DateTime day, int count) =>
+      DateTime.utc(day.year, day.month, day.day).difference(DateTime.utc(2024)).inDays % count;
 }

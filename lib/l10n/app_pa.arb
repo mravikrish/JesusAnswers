@@ -156,5 +156,12 @@
   "bibleStories": "ਬਾਈਬਲ ਦੀਆਂ ਕਹਾਣੀਆਂ",
   "bibleStoriesSubtitle": "ਬਾਈਬਲ ਦੇ ਆਪਣੇ ਸ਼ਬਦਾਂ ਵਿੱਚ",
   "oldTestament": "ਪੁਰਾਣਾ ਨੇਮ",
-  "newTestament": "ਨਵਾਂ ਨੇਮ"
+  "newTestament": "ਨਵਾਂ ਨੇਮ",
+  "picturesTitle": "ਯਿਸੂ ਦੀਆਂ ਤਸਵੀਰਾਂ",
+  "picturesSubtitle": "ਇੱਕ ਸੇਵ ਕਰੋ, ਜਾਂ ਆਪਣੇ ਵਟਸਐਪ ਸਟੇਟਸ ਤੇ ਲਗਾਓ",
+  "whatsappStatus": "ਵਟਸਐਪ ਸਟੇਟਸ",
+  "savePicture": "ਸੇਵ ਕਰੋ",
+  "verseOnPicture": "ਵਚਨ",
+  "pictureSaved": "ਤੁਹਾਡੀ ਗੈਲਰੀ ਵਿੱਚ ਸੇਵ ਹੋ ਗਿਆ",
+  "pictureSaveFailed": "ਸੇਵ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਫੋਟੋਆਂ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ।"
 }

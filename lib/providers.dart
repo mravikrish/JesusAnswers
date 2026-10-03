@@ -66,6 +66,16 @@ final storyPassagesProvider = FutureProvider.family<List<StoryPassage>, Story>((
 /// Today's painting of Jesus (changes every day).
 final dailyPaintingProvider = FutureProvider<Painting>((_) => Painting.forDay(DateTime.now()));
 
+/// Every picture of Jesus, for the Pictures gallery.
+final paintingsProvider = FutureProvider<List<Painting>>((_) => Painting.all());
+
+/// The verse printed on gallery picture [index], in the user's language. Each picture keeps
+/// its own verse, taken from the Daily Word list two weeks apart so neighbours differ.
+final pictureVerseProvider = FutureProvider.family<Verse, int>((ref, index) {
+  final lang = ref.watch(settingsProvider.select((s) => s.lang));
+  return ref.watch(bibleProvider).dailyVerse(DateTime(2025).add(Duration(days: index * 15)), lang);
+});
+
 // ── Settings ────────────────────────────────────────────────────────────────
 
 class Settings {

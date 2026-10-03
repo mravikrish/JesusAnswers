@@ -1,12 +1,15 @@
 import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:jesus_answers/core/languages.dart';
 import 'package:jesus_answers/data/bible/bible_repository.dart';
 import 'package:jesus_answers/data/models/answer.dart';
 import 'package:jesus_answers/data/models/painting.dart';
+import 'package:jesus_answers/providers.dart';
 import 'package:jesus_answers/services/answer/answer_service.dart';
 import 'package:jesus_answers/services/answer/safety.dart';
 import 'package:jesus_answers/services/answer/theme_classifier.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -64,6 +67,23 @@ void main() {
     final today = DateTime(2026, 10, 2);
     final week = [for (var i = 0; i < 7; i++) (await Painting.forDay(today.add(Duration(days: i)))).asset];
     expect(week.toSet().length, 7, reason: 'no repeats within a week');
+  });
+
+  test('every gallery picture carries its own verse, short enough for a status, in every language', () async {
+    SharedPreferences.setMockInitialValues({});
+    final prefs = await SharedPreferences.getInstance();
+    final count = (await Painting.all(rootBundle)).length;
+    for (final lang in appLanguages) {
+      await prefs.setString('lang', lang.code);
+      final c = ProviderContainer(overrides: [prefsProvider.overrideWithValue(prefs)]);
+      final verses = [for (var i = 0; i < count; i++) await c.read(pictureVerseProvider(i).future)];
+      expect(verses.map((v) => v.ref).toSet().length, count, reason: '${lang.code}: two pictures share a verse');
+      for (final v in verses) {
+        // PictureCard shrinks long verses; past ~400 characters they would crowd the picture.
+        expect(v.text.length, lessThan(400), reason: '${lang.code} ${v.ref}');
+      }
+      c.dispose();
+    }
   });
 
   test('retrieves verbatim KJV text by theme', () async {

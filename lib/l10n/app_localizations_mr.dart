@@ -510,4 +510,27 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get newTestament => 'नवा करार';
+
+  @override
+  String get picturesTitle => 'येशूची चित्रे';
+
+  @override
+  String get picturesSubtitle =>
+      'एखादे चित्र सेव्ह करा, किंवा ते तुमच्या व्हॉट्सॲप स्टेटसवर ठेवा';
+
+  @override
+  String get whatsappStatus => 'व्हॉट्सॲप स्टेटस';
+
+  @override
+  String get savePicture => 'सेव्ह करा';
+
+  @override
+  String get verseOnPicture => 'वचन';
+
+  @override
+  String get pictureSaved => 'तुमच्या गॅलरीत सेव्ह झाले';
+
+  @override
+  String get pictureSaveFailed =>
+      'सेव्ह झाले नाही. कृपया फोटोंना परवानगी द्या.';
 }

@@ -156,5 +156,12 @@
   "bibleStories": "ബൈബിൾ കഥകൾ",
   "bibleStoriesSubtitle": "ബൈബിളിന്റെ സ്വന്തം വാക്കുകളിൽ",
   "oldTestament": "പഴയ നിയമം",
-  "newTestament": "പുതിയ നിയമം"
+  "newTestament": "പുതിയ നിയമം",
+  "picturesTitle": "യേശുവിന്റെ ചിത്രങ്ങൾ",
+  "picturesSubtitle": "ഒന്ന് സേവ് ചെയ്യുക, അല്ലെങ്കിൽ നിങ്ങളുടെ വാട്ട്സ്ആപ്പ് സ്റ്റാറ്റസ് ആക്കുക",
+  "whatsappStatus": "വാട്ട്സ്ആപ്പ് സ്റ്റാറ്റസ്",
+  "savePicture": "സേവ് ചെയ്യുക",
+  "verseOnPicture": "വചനം",
+  "pictureSaved": "നിങ്ങളുടെ ഗാലറിയിൽ സേവ് ചെയ്തു",
+  "pictureSaveFailed": "സേവ് ചെയ്യാനായില്ല. ഫോട്ടോകൾക്ക് അനുമതി നൽകുക."
 }

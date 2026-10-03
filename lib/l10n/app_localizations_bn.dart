@@ -506,4 +506,27 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get newTestament => 'নতুন নিয়ম';
+
+  @override
+  String get picturesTitle => 'যীশুর ছবি';
+
+  @override
+  String get picturesSubtitle =>
+      'একটি সেভ করুন, অথবা আপনার হোয়াটসঅ্যাপ স্ট্যাটাসে দিন';
+
+  @override
+  String get whatsappStatus => 'হোয়াটসঅ্যাপ স্ট্যাটাস';
+
+  @override
+  String get savePicture => 'সেভ করুন';
+
+  @override
+  String get verseOnPicture => 'বাক্য';
+
+  @override
+  String get pictureSaved => 'আপনার গ্যালারিতে সেভ হয়েছে';
+
+  @override
+  String get pictureSaveFailed =>
+      'সেভ করা গেল না। অনুগ্রহ করে ছবির অনুমতি দিন।';
 }

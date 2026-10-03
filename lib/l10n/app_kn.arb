@@ -156,5 +156,12 @@
   "bibleStories": "ಬೈಬಲ್ ಕಥೆಗಳು",
   "bibleStoriesSubtitle": "ಬೈಬಲಿನ ಸ್ವಂತ ಮಾತುಗಳಲ್ಲಿ",
   "oldTestament": "ಹಳೆಯ ಒಡಂಬಡಿಕೆ",
-  "newTestament": "ಹೊಸ ಒಡಂಬಡಿಕೆ"
+  "newTestament": "ಹೊಸ ಒಡಂಬಡಿಕೆ",
+  "picturesTitle": "ಯೇಸುವಿನ ಚಿತ್ರಗಳು",
+  "picturesSubtitle": "ಒಂದನ್ನು ಸೇವ್ ಮಾಡಿ, ಅಥವಾ ನಿಮ್ಮ ವಾಟ್ಸಾಪ್ ಸ್ಟೇಟಸ್ ಆಗಿ ಇಡಿ",
+  "whatsappStatus": "ವಾಟ್ಸಾಪ್ ಸ್ಟೇಟಸ್",
+  "savePicture": "ಸೇವ್ ಮಾಡಿ",
+  "verseOnPicture": "ವಚನ",
+  "pictureSaved": "ನಿಮ್ಮ ಗ್ಯಾಲರಿಯಲ್ಲಿ ಸೇವ್ ಆಯಿತು",
+  "pictureSaveFailed": "ಸೇವ್ ಆಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಫೋಟೋಗಳಿಗೆ ಅನುಮತಿ ನೀಡಿ."
 }

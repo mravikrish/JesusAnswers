@@ -509,4 +509,26 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get newTestament => 'కొత్త నిబంధన';
+
+  @override
+  String get picturesTitle => 'యేసు చిత్రాలు';
+
+  @override
+  String get picturesSubtitle =>
+      'ఒకటి సేవ్ చేయండి, లేదా మీ వాట్సాప్ స్టేటస్‌గా పెట్టండి';
+
+  @override
+  String get whatsappStatus => 'వాట్సాప్ స్టేటస్';
+
+  @override
+  String get savePicture => 'సేవ్ చేయండి';
+
+  @override
+  String get verseOnPicture => 'వచనం';
+
+  @override
+  String get pictureSaved => 'మీ గ్యాలరీలో సేవ్ అయింది';
+
+  @override
+  String get pictureSaveFailed => 'సేవ్ కాలేదు. దయచేసి ఫోటోలకు అనుమతి ఇవ్వండి.';
 }

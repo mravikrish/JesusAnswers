@@ -14,6 +14,7 @@ import 'features/home/home_screen.dart';
 import 'features/journey/journey_screen.dart';
 import 'features/mood/mood_screen.dart';
 import 'features/peace/peace_now_screen.dart';
+import 'features/pictures/pictures_screen.dart';
 import 'features/player/player_screen.dart';
 import 'features/prayer/prayer_screen.dart';
 import 'features/profile/profile_screen.dart';
@@ -51,6 +52,11 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(path: '/listen', builder: (_, _) => const ListeningScreen()),
       GoRoute(path: '/peace', builder: (_, _) => const PeaceNowScreen()),
       GoRoute(path: '/feedback', builder: (_, _) => const FeedbackScreen()),
+      GoRoute(path: '/pictures', builder: (_, _) => const PicturesScreen()),
+      GoRoute(
+        path: '/pictures/:index',
+        builder: (_, state) => PictureViewerScreen(index: int.tryParse(state.pathParameters['index']!) ?? 0),
+      ),
       GoRoute(path: '/stories', builder: (_, _) => const StoriesScreen()),
       GoRoute(path: '/stories/:id', builder: (_, state) => StoryScreen(id: state.pathParameters['id']!)),
       GoRoute(path: '/player', builder: (_, state) => PlayerScreen(args: state.extra! as PlayerArgs)),
