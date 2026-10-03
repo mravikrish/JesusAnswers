@@ -49,3 +49,6 @@ app.*.map.json
 
 # Android Gradle build output
 /android/build/
+
+# Full-size originals of the story pictures (tool/build_story_images.py builds assets/stories/ from them)
+/art/

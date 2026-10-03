@@ -89,6 +89,7 @@ flutter:
     - assets/bible/
     - assets/icon/
     - assets/jesus/
+    - assets/stories/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

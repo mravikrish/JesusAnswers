@@ -1,11 +1,19 @@
 {
-  "_comment": "Bible Stories: each story is told only in Scripture's own words — passages pulled verse by verse from published translations by tool/build_bible.dart. Each passage stays within one chapter. Titles are not Scripture; have a native reader confirm them before release.",
+  "_comment": "Bible Stories: each story is told only in Scripture's own words — passages pulled verse by verse from published translations by tool/build_bible.dart. Each passage stays within one chapter. Each story's picture is art/stories/<id>.png or .jpg, built into assets/stories/ by tool/build_story_images.py; image focusX/focusY (-1..1) is what to keep in frame when cropping. Titles are not Scripture; have a native reader confirm them before release.",
   "stories": [
     {
       "id": "creation",
       "testament": "old",
       "icon": "creation",
-      "passages": ["GEN 1:1-5", "GEN 1:26-31", "GEN 2:1-3"],
+      "passages": [
+        "GEN 1:1-5",
+        "GEN 1:26-31",
+        "GEN 2:1-3"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
       "title": {
         "en": "Creation",
         "hi": "सृष्टि",
@@ -24,7 +32,16 @@
       "id": "noah",
       "testament": "old",
       "icon": "ark",
-      "passages": ["GEN 6:13-22", "GEN 7:17-18", "GEN 8:6-12", "GEN 9:12-16"],
+      "passages": [
+        "GEN 6:13-22",
+        "GEN 7:17-18",
+        "GEN 8:6-12",
+        "GEN 9:12-16"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
       "title": {
         "en": "Noah and the Ark",
         "hi": "नूह और जहाज़",
@@ -40,10 +57,44 @@
       }
     },
     {
+      "id": "jacob",
+      "testament": "old",
+      "icon": "ladder",
+      "passages": [
+        "GEN 28:10-22"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
+      "title": {
+        "en": "Jacob's Ladder",
+        "hi": "याकूब की सीढ़ी",
+        "te": "యాకోబు నిచ్చెన",
+        "ta": "யாக்கோபின் ஏணி",
+        "kn": "ಯಾಕೋಬನ ಏಣಿ",
+        "ml": "യാക്കോബിന്റെ ഗോവണി",
+        "mr": "याकोबाची शिडी",
+        "pa": "ਯਾਕੂਬ ਦੀ ਪੌੜੀ",
+        "bn": "যাকোবের সিঁড়ি",
+        "gu": "યાકૂબની સીડી",
+        "or": "ଯାକୁବଙ୍କ ସିଡ଼ି"
+      }
+    },
+    {
       "id": "joseph",
       "testament": "old",
       "icon": "family",
-      "passages": ["GEN 37:3-4", "GEN 37:23-28", "GEN 45:1-8", "GEN 50:19-21"],
+      "passages": [
+        "GEN 37:3-4",
+        "GEN 37:23-28",
+        "GEN 45:1-8",
+        "GEN 50:19-21"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
       "title": {
         "en": "Joseph Forgives His Brothers",
         "hi": "यूसुफ अपने भाइयों को क्षमा करता है",
@@ -59,10 +110,68 @@
       }
     },
     {
+      "id": "baby_moses",
+      "testament": "old",
+      "icon": "basket",
+      "passages": [
+        "EXO 2:1-10"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
+      "title": {
+        "en": "Baby Moses in the Basket",
+        "hi": "टोकरी में बालक मूसा",
+        "te": "బుట్టలో పసి మోషే",
+        "ta": "பேழையில் குழந்தை மோசே",
+        "kn": "ಬುಟ್ಟಿಯಲ್ಲಿ ಮಗು ಮೋಶೆ",
+        "ml": "പെട്ടകത്തിലെ ശിശു മോശെ",
+        "mr": "टोपलीतील बाळ मोशे",
+        "pa": "ਟੋਕਰੀ ਵਿੱਚ ਬਾਲਕ ਮੂਸਾ",
+        "bn": "ঝুড়িতে শিশু মোশি",
+        "gu": "ટોપલીમાં બાળક મૂસા",
+        "or": "ଟୋକେଇରେ ଶିଶୁ ମୋଶା"
+      }
+    },
+    {
+      "id": "burning_bush",
+      "testament": "old",
+      "icon": "fire",
+      "passages": [
+        "EXO 3:1-12"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
+      "title": {
+        "en": "Moses and the Burning Bush",
+        "hi": "मूसा और जलती हुई झाड़ी",
+        "te": "మోషే మరియు మండుతున్న పొద",
+        "ta": "மோசேயும் எரிகிற முட்செடியும்",
+        "kn": "ಮೋಶೆ ಮತ್ತು ಉರಿಯುವ ಪೊದೆ",
+        "ml": "മോശെയും കത്തുന്ന മുൾപടർപ്പും",
+        "mr": "मोशे आणि जळते झुडूप",
+        "pa": "ਮੂਸਾ ਅਤੇ ਬਲਦੀ ਝਾੜੀ",
+        "bn": "মোশি ও জ্বলন্ত ঝোপ",
+        "gu": "મૂસા અને સળગતું ઝાડવું",
+        "or": "ମୋଶା ଓ ଜଳନ୍ତା ବୁଦା"
+      }
+    },
+    {
       "id": "red_sea",
       "testament": "old",
       "icon": "sea",
-      "passages": ["EXO 14:10-16", "EXO 14:21-22", "EXO 14:26-31"],
+      "passages": [
+        "EXO 14:10-16",
+        "EXO 14:21-22",
+        "EXO 14:26-31"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
       "title": {
         "en": "Crossing the Red Sea",
         "hi": "लाल समुद्र को पार करना",
@@ -78,10 +187,43 @@
       }
     },
     {
+      "id": "jericho",
+      "testament": "old",
+      "icon": "trumpet",
+      "passages": [
+        "JOS 6:1-5",
+        "JOS 6:15-16",
+        "JOS 6:20"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
+      "title": {
+        "en": "The Walls of Jericho",
+        "hi": "यरीहो की शहरपनाह",
+        "te": "యెరికో గోడలు",
+        "ta": "எரிகோவின் மதில்கள்",
+        "kn": "ಯೆರಿಕೋವಿನ ಗೋಡೆಗಳು",
+        "ml": "യെരീഹോവിന്റെ മതിലുകൾ",
+        "mr": "यरीहोच्या भिंती",
+        "pa": "ਯਰੀਹੋ ਦੀਆਂ ਕੰਧਾਂ",
+        "bn": "যিরীহোর প্রাচীর",
+        "gu": "યરીખોની દીવાલો",
+        "or": "ଯିରୀହୋର ପ୍ରାଚୀର"
+      }
+    },
+    {
       "id": "ruth",
       "testament": "old",
       "icon": "loyalty",
-      "passages": ["RUT 1:6-18"],
+      "passages": [
+        "RUT 1:6-18"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
       "title": {
         "en": "Ruth's Loyalty",
         "hi": "रूत की वफ़ादारी",
@@ -97,10 +239,43 @@
       }
     },
     {
+      "id": "samuel",
+      "testament": "old",
+      "icon": "listen",
+      "passages": [
+        "1SA 3:1-10"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
+      "title": {
+        "en": "God Calls Samuel",
+        "hi": "परमेश्वर शमूएल को बुलाता है",
+        "te": "దేవుడు సమూయేలును పిలవడం",
+        "ta": "தேவன் சாமுவேலை அழைத்தல்",
+        "kn": "ದೇವರು ಸಮುವೇಲನನ್ನು ಕರೆದದ್ದು",
+        "ml": "ദൈവം ശമൂവേലിനെ വിളിക്കുന്നു",
+        "mr": "देव शमुवेलाला हाक मारतो",
+        "pa": "ਪਰਮੇਸ਼ੁਰ ਸਮੂਏਲ ਨੂੰ ਬੁਲਾਉਂਦਾ ਹੈ",
+        "bn": "ঈশ্বর শমূয়েলকে ডাকেন",
+        "gu": "ઈશ્વર શમુએલને બોલાવે છે",
+        "or": "ପରମେଶ୍ୱର ଶାମୁୟେଲଙ୍କୁ ଡାକନ୍ତି"
+      }
+    },
+    {
       "id": "david_goliath",
       "testament": "old",
       "icon": "courage",
-      "passages": ["1SA 17:4-11", "1SA 17:32-37", "1SA 17:40-50"],
+      "passages": [
+        "1SA 17:4-11",
+        "1SA 17:32-37",
+        "1SA 17:40-50"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
       "title": {
         "en": "David and Goliath",
         "hi": "दाऊद और गोलियत",
@@ -116,10 +291,93 @@
       }
     },
     {
+      "id": "elijah",
+      "testament": "old",
+      "icon": "bird",
+      "passages": [
+        "1KI 17:1-16"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
+      "title": {
+        "en": "Elijah and the Ravens",
+        "hi": "एलिय्याह और कौवे",
+        "te": "ఏలీయా మరియు కాకులు",
+        "ta": "எலியாவும் காகங்களும்",
+        "kn": "ಎಲೀಯ ಮತ್ತು ಕಾಗೆಗಳು",
+        "ml": "ഏലീയാവും കാക്കകളും",
+        "mr": "एलीया आणि कावळे",
+        "pa": "ਏਲੀਯਾਹ ਅਤੇ ਕਾਂ",
+        "bn": "এলিয় ও দাঁড়কাক",
+        "gu": "એલિયા અને કાગડા",
+        "or": "ଏଲୀୟ ଓ ଡାମରାକାଉ"
+      }
+    },
+    {
+      "id": "esther",
+      "testament": "old",
+      "icon": "crown",
+      "passages": [
+        "EST 4:10-16",
+        "EST 5:1-3"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
+      "title": {
+        "en": "Queen Esther's Courage",
+        "hi": "रानी एस्तेर का साहस",
+        "te": "రాణి ఎస్తేరు ధైర్యం",
+        "ta": "ராணி எஸ்தரின் தைரியம்",
+        "kn": "ರಾಣಿ ಎಸ್ತೇರಳ ಧೈರ್ಯ",
+        "ml": "എസ്ഥേർ രാജ്ഞിയുടെ ധൈര്യം",
+        "mr": "राणी एस्तेरचे धैर्य",
+        "pa": "ਰਾਣੀ ਅਸਤਰ ਦੀ ਹਿੰਮਤ",
+        "bn": "রানী ইষ্টেরের সাহস",
+        "gu": "રાણી એસ્તેરની હિંમત",
+        "or": "ରାଣୀ ଏଷ୍ଟରଙ୍କ ସାହସ"
+      }
+    },
+    {
+      "id": "fiery_furnace",
+      "testament": "old",
+      "icon": "flame",
+      "passages": [
+        "DAN 3:13-28"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
+      "title": {
+        "en": "The Fiery Furnace",
+        "hi": "धधकती हुई भट्ठी",
+        "te": "మండుచున్న అగ్నిగుండం",
+        "ta": "எரிகிற அக்கினிச்சூளை",
+        "kn": "ಉರಿಯುವ ಬೆಂಕಿಯ ಕುಲುಮೆ",
+        "ml": "എരിയുന്ന തീച്ചൂള",
+        "mr": "धगधगती भट्टी",
+        "pa": "ਬਲਦੀ ਹੋਈ ਭੱਠੀ",
+        "bn": "জ্বলন্ত আগুনের চুল্লী",
+        "gu": "ધગધગતી ભઠ્ઠી",
+        "or": "ଜ୍ୱଳନ୍ତ ଅଗ୍ନିକୁଣ୍ଡ"
+      }
+    },
+    {
       "id": "daniel",
       "testament": "old",
       "icon": "lions",
-      "passages": ["DAN 6:10", "DAN 6:16-23"],
+      "passages": [
+        "DAN 6:10",
+        "DAN 6:16-23"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
       "title": {
         "en": "Daniel in the Lions' Den",
         "hi": "शेरों की माँद में दानिय्येल",
@@ -138,7 +396,17 @@
       "id": "jonah",
       "testament": "old",
       "icon": "fish",
-      "passages": ["JON 1:1-4", "JON 1:15-17", "JON 2:10", "JON 3:1-5", "JON 3:10"],
+      "passages": [
+        "JON 1:1-4",
+        "JON 1:15-17",
+        "JON 2:10",
+        "JON 3:1-5",
+        "JON 3:10"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
       "title": {
         "en": "Jonah and the Great Fish",
         "hi": "योना और बड़ी मछली",
@@ -157,7 +425,13 @@
       "id": "nativity",
       "testament": "new",
       "icon": "star",
-      "passages": ["LUK 2:1-20"],
+      "passages": [
+        "LUK 2:1-20"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
       "title": {
         "en": "The Birth of Jesus",
         "hi": "यीशु का जन्म",
@@ -173,10 +447,92 @@
       }
     },
     {
+      "id": "great_catch",
+      "testament": "new",
+      "icon": "fish",
+      "passages": [
+        "LUK 5:1-11"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
+      "title": {
+        "en": "The Great Catch of Fish",
+        "hi": "मछलियों का बड़ा जाल",
+        "te": "విస్తారమైన చేపల వేట",
+        "ta": "திரளான மீன்பிடிப்பு",
+        "kn": "ಅಪಾರ ಮೀನುಗಳ ಬೇಟೆ",
+        "ml": "വലിയ മീൻപിടിത്തം",
+        "mr": "माशांचा मोठा धरा",
+        "pa": "ਮੱਛੀਆਂ ਦਾ ਵੱਡਾ ਜਾਲ",
+        "bn": "প্রচুর মাছ ধরা",
+        "gu": "માછલીઓનો મોટો જથ્થો",
+        "or": "ପ୍ରଚୁର ମାଛ ଧରା"
+      }
+    },
+    {
+      "id": "water_wine",
+      "testament": "new",
+      "icon": "wine",
+      "passages": [
+        "JHN 2:1-11"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
+      "title": {
+        "en": "Water into Wine",
+        "hi": "पानी से दाखरस",
+        "te": "నీళ్లు ద్రాక్షారసంగా మారడం",
+        "ta": "தண்ணீர் திராட்சைரசமானது",
+        "kn": "ನೀರು ದ್ರಾಕ್ಷಾರಸವಾದದ್ದು",
+        "ml": "വെള്ളം വീഞ്ഞാകുന്നു",
+        "mr": "पाण्याचा द्राक्षारस",
+        "pa": "ਪਾਣੀ ਤੋਂ ਦਾਖਰਸ",
+        "bn": "জল থেকে দ্রাক্ষারস",
+        "gu": "પાણીનો દ્રાક્ષારસ",
+        "or": "ଜଳରୁ ଦ୍ରାକ୍ଷାରସ"
+      }
+    },
+    {
+      "id": "sower",
+      "testament": "new",
+      "icon": "seed",
+      "passages": [
+        "MAT 13:3-9",
+        "MAT 13:18-23"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
+      "title": {
+        "en": "The Sower",
+        "hi": "बीज बोने वाला",
+        "te": "విత్తువాడు",
+        "ta": "விதைக்கிறவன்",
+        "kn": "ಬಿತ್ತುವವನು",
+        "ml": "വിതയ്ക്കുന്നവൻ",
+        "mr": "पेरणारा",
+        "pa": "ਬੀਜ ਬੀਜਣ ਵਾਲਾ",
+        "bn": "বীজ বপনকারী",
+        "gu": "વાવનાર",
+        "or": "ବୀଜ ବୁଣାଳି"
+      }
+    },
+    {
       "id": "storm",
       "testament": "new",
       "icon": "storm",
-      "passages": ["MRK 4:35-41"],
+      "passages": [
+        "MRK 4:35-41"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
       "title": {
         "en": "Jesus Calms the Storm",
         "hi": "यीशु आँधी को शांत करते हैं",
@@ -192,10 +548,42 @@
       }
     },
     {
+      "id": "jairus",
+      "testament": "new",
+      "icon": "hand",
+      "passages": [
+        "MRK 5:21-24",
+        "MRK 5:35-43"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
+      "title": {
+        "en": "Jairus' Daughter",
+        "hi": "याईर की बेटी",
+        "te": "యాయీరు కుమార్తె",
+        "ta": "யவீருவின் மகள்",
+        "kn": "ಯಾಯೀರನ ಮಗಳು",
+        "ml": "യായിറോസിന്റെ മകൾ",
+        "mr": "याईराची मुलगी",
+        "pa": "ਜੈਰੁਸ ਦੀ ਧੀ",
+        "bn": "যায়ীরের মেয়ে",
+        "gu": "યાઈરની દીકરી",
+        "or": "ଯାଈରଙ୍କ କନ୍ୟା"
+      }
+    },
+    {
       "id": "five_thousand",
       "testament": "new",
       "icon": "bread",
-      "passages": ["JHN 6:5-14"],
+      "passages": [
+        "JHN 6:5-14"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
       "title": {
         "en": "Feeding the Five Thousand",
         "hi": "पाँच हज़ार को भोजन",
@@ -214,7 +602,13 @@
       "id": "walks_on_water",
       "testament": "new",
       "icon": "water",
-      "passages": ["MAT 14:22-33"],
+      "passages": [
+        "MAT 14:22-33"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
       "title": {
         "en": "Jesus Walks on Water",
         "hi": "यीशु पानी पर चलते हैं",
@@ -233,7 +627,13 @@
       "id": "good_samaritan",
       "testament": "new",
       "icon": "kindness",
-      "passages": ["LUK 10:25-37"],
+      "passages": [
+        "LUK 10:25-37"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
       "title": {
         "en": "The Good Samaritan",
         "hi": "भला सामरी",
@@ -249,10 +649,41 @@
       }
     },
     {
+      "id": "mary_martha",
+      "testament": "new",
+      "icon": "rest",
+      "passages": [
+        "LUK 10:38-42"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
+      "title": {
+        "en": "Mary and Martha",
+        "hi": "मरियम और मार्था",
+        "te": "మరియ మరియు మార్త",
+        "ta": "மரியாளும் மார்த்தாளும்",
+        "kn": "ಮರಿಯಳು ಮತ್ತು ಮಾರ್ಥಳು",
+        "ml": "മറിയയും മാർത്തയും",
+        "mr": "मरीया आणि मार्था",
+        "pa": "ਮਰਿਯਮ ਅਤੇ ਮਾਰਥਾ",
+        "bn": "মরিয়ম ও মার্থা",
+        "gu": "મરિયમ અને માર્થા",
+        "or": "ମରୀୟମ ଓ ମାର୍ଥା"
+      }
+    },
+    {
       "id": "lost_sheep",
       "testament": "new",
       "icon": "sheep",
-      "passages": ["LUK 15:3-7"],
+      "passages": [
+        "LUK 15:3-7"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
       "title": {
         "en": "The Lost Sheep",
         "hi": "खोई हुई भेड़",
@@ -271,7 +702,13 @@
       "id": "prodigal_son",
       "testament": "new",
       "icon": "home",
-      "passages": ["LUK 15:11-32"],
+      "passages": [
+        "LUK 15:11-32"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
       "title": {
         "en": "The Prodigal Son",
         "hi": "उड़ाऊ पुत्र",
@@ -287,29 +724,66 @@
       }
     },
     {
-      "id": "zacchaeus",
+      "id": "ten_lepers",
       "testament": "new",
-      "icon": "tree",
-      "passages": ["LUK 19:1-10"],
+      "icon": "thanks",
+      "passages": [
+        "LUK 17:11-19"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
       "title": {
-        "en": "Zacchaeus",
-        "hi": "जक्कई",
-        "te": "జక్కయ్య",
-        "ta": "சகேயு",
-        "kn": "ಜಕ್ಕಾಯ",
-        "ml": "സക്കായി",
-        "mr": "जक्कय",
-        "pa": "ਜ਼ੱਕੀ",
-        "bn": "সক্কেয়",
-        "gu": "જાખ્ખી",
-        "or": "ଜଖୀୟ"
+        "en": "The Ten Lepers",
+        "hi": "दस कोढ़ी",
+        "te": "పదిమంది కుష్ఠరోగులు",
+        "ta": "பத்து குஷ்டரோகிகள்",
+        "kn": "ಹತ್ತು ಮಂದಿ ಕುಷ್ಠರೋಗಿಗಳು",
+        "ml": "പത്തു കുഷ്ഠരോഗികൾ",
+        "mr": "दहा कुष्ठरोगी",
+        "pa": "ਦਸ ਕੋੜ੍ਹੀ",
+        "bn": "দশজন কুষ্ঠরোগী",
+        "gu": "દસ કુષ્ઠરોગીઓ",
+        "or": "ଦଶ ଜଣ କୁଷ୍ଠରୋଗୀ"
+      }
+    },
+    {
+      "id": "children",
+      "testament": "new",
+      "icon": "child",
+      "passages": [
+        "MRK 10:13-16"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
+      "title": {
+        "en": "Jesus Blesses the Children",
+        "hi": "यीशु बच्चों को आशीष देते हैं",
+        "te": "యేసు చిన్నపిల్లలను ఆశీర్వదించడం",
+        "ta": "இயேசு சிறுபிள்ளைகளை ஆசீர்வதித்தல்",
+        "kn": "ಯೇಸು ಮಕ್ಕಳನ್ನು ಆಶೀರ್ವದಿಸಿದ್ದು",
+        "ml": "യേശു കുഞ്ഞുങ്ങളെ അനുഗ്രഹിക്കുന്നു",
+        "mr": "येशू मुलांना आशीर्वाद देतो",
+        "pa": "ਯਿਸੂ ਬੱਚਿਆਂ ਨੂੰ ਬਰਕਤ ਦਿੰਦਾ ਹੈ",
+        "bn": "যীশু শিশুদের আশীর্বাদ করেন",
+        "gu": "ઈસુ બાળકોને આશીર્વાદ આપે છે",
+        "or": "ଯୀଶୁ ପିଲାମାନଙ୍କୁ ଆଶୀର୍ବାଦ କରନ୍ତି"
       }
     },
     {
       "id": "bartimaeus",
       "testament": "new",
       "icon": "sight",
-      "passages": ["MRK 10:46-52"],
+      "passages": [
+        "MRK 10:46-52"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
       "title": {
         "en": "Blind Bartimaeus Sees",
         "hi": "अंधा बरतिमाई देखने लगा",
@@ -325,10 +799,41 @@
       }
     },
     {
+      "id": "zacchaeus",
+      "testament": "new",
+      "icon": "tree",
+      "passages": [
+        "LUK 19:1-10"
+      ],
+      "image": {
+        "focusX": 0.6,
+        "focusY": 0
+      },
+      "title": {
+        "en": "Zacchaeus",
+        "hi": "जक्कई",
+        "te": "జక్కయ్య",
+        "ta": "சகேயு",
+        "kn": "ಜಕ್ಕಾಯ",
+        "ml": "സക്കായി",
+        "mr": "जक्कय",
+        "pa": "ਜ਼ੱਕੀ",
+        "bn": "সক্কেয়",
+        "gu": "જાખ્ખી",
+        "or": "ଜଖୀୟ"
+      }
+    },
+    {
       "id": "lazarus",
       "testament": "new",
       "icon": "life",
-      "passages": ["JHN 11:32-44"],
+      "passages": [
+        "JHN 11:32-44"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
       "title": {
         "en": "Lazarus Lives Again",
         "hi": "लाज़र फिर से जी उठा",
@@ -344,10 +849,41 @@
       }
     },
     {
+      "id": "washes_feet",
+      "testament": "new",
+      "icon": "serve",
+      "passages": [
+        "JHN 13:3-15"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
+      "title": {
+        "en": "Jesus Washes Their Feet",
+        "hi": "यीशु चेलों के पाँव धोते हैं",
+        "te": "యేసు శిష్యుల పాదాలు కడగడం",
+        "ta": "இயேசு சீடர்களின் கால்களைக் கழுவுதல்",
+        "kn": "ಯೇಸು ಶಿಷ್ಯರ ಪಾದಗಳನ್ನು ತೊಳೆದದ್ದು",
+        "ml": "യേശു ശിഷ്യന്മാരുടെ കാൽ കഴുകുന്നു",
+        "mr": "येशू शिष्यांचे पाय धुतो",
+        "pa": "ਯਿਸੂ ਚੇਲਿਆਂ ਦੇ ਪੈਰ ਧੋਂਦਾ ਹੈ",
+        "bn": "যীশু শিষ্যদের পা ধুয়ে দেন",
+        "gu": "ઈસુ શિષ્યોના પગ ધુએ છે",
+        "or": "ଯୀଶୁ ଶିଷ୍ୟମାନଙ୍କ ପାଦ ଧୁଅନ୍ତି"
+      }
+    },
+    {
       "id": "resurrection",
       "testament": "new",
       "icon": "sunrise",
-      "passages": ["MAT 28:1-10"],
+      "passages": [
+        "MAT 28:1-10"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
       "title": {
         "en": "He Is Risen",
         "hi": "वह जी उठा है",
@@ -360,6 +896,58 @@
         "bn": "তিনি জীবিত হয়ে উঠেছেন",
         "gu": "તે સજીવન થયા છે",
         "or": "ସେ ପୁନରୁତ୍ଥିତ ହୋଇଛନ୍ତି"
+      }
+    },
+    {
+      "id": "emmaus",
+      "testament": "new",
+      "icon": "road",
+      "passages": [
+        "LUK 24:13-16",
+        "LUK 24:28-35"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
+      "title": {
+        "en": "The Road to Emmaus",
+        "hi": "इम्माऊस का मार्ग",
+        "te": "ఎమ్మాయి దారి",
+        "ta": "எம்மாவு ஊருக்குப் போகும் வழி",
+        "kn": "ಎಮ್ಮಾಹು ಊರಿನ ದಾರಿ",
+        "ml": "എമ്മവുസിലേക്കുള്ള വഴി",
+        "mr": "अम्माऊसचा रस्ता",
+        "pa": "ਇੰਮਊਸ ਦਾ ਰਾਹ",
+        "bn": "ইম্মায়ূর পথে",
+        "gu": "એમ્મૌસનો માર્ગ",
+        "or": "ଇମ୍ମାୟୁର ପଥ"
+      }
+    },
+    {
+      "id": "paul",
+      "testament": "new",
+      "icon": "light",
+      "passages": [
+        "ACT 9:1-9",
+        "ACT 9:17-18"
+      ],
+      "image": {
+        "focusX": 0,
+        "focusY": 0
+      },
+      "title": {
+        "en": "Saul Meets Jesus",
+        "hi": "शाऊल का यीशु से मिलना",
+        "te": "సౌలు యేసును కలుసుకోవడం",
+        "ta": "சவுல் இயேசுவைச் சந்தித்தல்",
+        "kn": "ಸೌಲನು ಯೇಸುವನ್ನು ಸಂಧಿಸಿದ್ದು",
+        "ml": "ശൗൽ യേശുവിനെ കണ്ടുമുട്ടുന്നു",
+        "mr": "शौल येशूला भेटतो",
+        "pa": "ਸੌਲੁਸ ਦੀ ਯਿਸੂ ਨਾਲ ਮੁਲਾਕਾਤ",
+        "bn": "শৌল যীশুর দেখা পান",
+        "gu": "શાઉલ ઈસુને મળે છે",
+        "or": "ଶାଉଲ ଯୀଶୁଙ୍କୁ ଭେଟନ୍ତି"
       }
     }
   ]

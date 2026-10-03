@@ -31,8 +31,11 @@ void main() {
 
   test('every Bible story is titled and told in full Scripture, in every language', () async {
     final stories = await bible.stories();
-    expect(stories.length, greaterThanOrEqualTo(15));
+    expect(stories.length, greaterThanOrEqualTo(35));
     expect(stories.map((s) => s.id).toSet().length, stories.length, reason: 'story ids are unique');
+    for (final s in stories) {
+      expect((await rootBundle.load(s.image.asset)).lengthInBytes, greaterThan(20000), reason: s.image.asset);
+    }
     expect(stories.where((s) => s.oldTestament), isNotEmpty);
     expect(stories.where((s) => !s.oldTestament), isNotEmpty);
     for (final lang in appLanguages) {
