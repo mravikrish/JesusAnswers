@@ -152,5 +152,9 @@
   "begin": "શરૂ કરો",
   "previous": "પાછળ",
   "fullScreen": "પૂર્ણ સ્ક્રીન",
-  "trackOf": "{total} માંથી {current}"
+  "trackOf": "{total} માંથી {current}",
+  "bibleStories": "બાઇબલની વાર્તાઓ",
+  "bibleStoriesSubtitle": "બાઇબલના પોતાના શબ્દોમાં",
+  "oldTestament": "જૂનો કરાર",
+  "newTestament": "નવો કરાર"
 }

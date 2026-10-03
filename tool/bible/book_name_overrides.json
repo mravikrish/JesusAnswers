@@ -1,6 +1,7 @@
 {
   "_comment": "Display names where the source's \\toc2 is an abbreviation and \\toc1 is a full title. Each is a stem of the source's own \\toc1 spelling. Have a native reader confirm before release.",
   "mr": {
+    "LUK": "लूक",
     "1CO": "1 करिंथकरांस",
     "1TH": "1 थेस्सलनीकाकरांस",
     "2TI": "2 तीमथ्याला",

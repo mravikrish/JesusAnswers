@@ -152,5 +152,9 @@
   "begin": "ଆରମ୍ଭ କରନ୍ତୁ",
   "previous": "ପୂର୍ବବର୍ତ୍ତୀ",
   "fullScreen": "ପୂର୍ଣ୍ଣ ସ୍କ୍ରିନ୍",
-  "trackOf": "{total} ମଧ୍ୟରୁ {current}"
+  "trackOf": "{total} ମଧ୍ୟରୁ {current}",
+  "bibleStories": "ବାଇବଲ କାହାଣୀ",
+  "bibleStoriesSubtitle": "ବାଇବଲର ନିଜ ଶବ୍ଦରେ",
+  "oldTestament": "ପୁରାତନ ନିୟମ",
+  "newTestament": "ନୂତନ ନିୟମ"
 }

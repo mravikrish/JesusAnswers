@@ -152,5 +152,9 @@
   "begin": "शुरू करें",
   "previous": "पिछला",
   "fullScreen": "पूरी स्क्रीन",
-  "trackOf": "{total} में से {current}"
+  "trackOf": "{total} में से {current}",
+  "bibleStories": "बाइबल की कहानियाँ",
+  "bibleStoriesSubtitle": "बाइबल के अपने शब्दों में",
+  "oldTestament": "पुराना नियम",
+  "newTestament": "नया नियम"
 }

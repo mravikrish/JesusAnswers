@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/services.dart';
 
+import '../models/story.dart';
 import '../models/verse.dart';
 
 class _IndexEntry {
@@ -108,6 +109,36 @@ class BibleRepository {
   Future<Verse> dailyVerse(DateTime day, String lang) async {
     final refs = await _loadDaily();
     return (await verse(refs[dayIndex(day) % refs.length], lang)) ?? (await verse('PSA 23:1', lang))!;
+  }
+
+  List<Story>? _stories;
+
+  /// Bible Stories, in reading order, from assets/bible/stories.json.
+  Future<List<Story>> stories() async {
+    if (_stories != null) return _stories!;
+    final j = jsonDecode(await _bundle.loadString('assets/bible/stories.json'));
+    return _stories = [for (final s in j['stories'] as List) Story.fromJson(s as Map<String, dynamic>)];
+  }
+
+  /// [story]'s passages in [lang], verse by verse.
+  Future<List<StoryPassage>> storyPassages(Story story, String lang) async {
+    final t = await _load(lang);
+    return [for (final p in story.passages) _passage(p, t)];
+  }
+
+  /// "LUK 15:11-32" → each verse stored for it (build_bible.dart stores story verses singly).
+  static StoryPassage _passage(String passage, _Translation t) {
+    final m = RegExp(r'^(\S+) (\d+):(\d+)(?:-(\d+))?$').firstMatch(passage)!;
+    final book = m.group(1)!, ch = m.group(2)!;
+    final from = int.parse(m.group(3)!);
+    final to = int.parse(m.group(4) ?? m.group(3)!);
+    return StoryPassage(
+      reference: '${t.books[book] ?? book} ${passage.substring(passage.indexOf(' ') + 1)}',
+      verses: [
+        for (var v = from; v <= to; v++)
+          if (t.verses['$book $ch:$v'] case final text?) (v, text),
+      ],
+    );
   }
 
   /// 0 (Jan 1) … 364 (Dec 31).

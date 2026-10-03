@@ -152,5 +152,9 @@
   "begin": "सुरू करा",
   "previous": "मागील",
   "fullScreen": "पूर्ण स्क्रीन",
-  "trackOf": "{total} पैकी {current}"
+  "trackOf": "{total} पैकी {current}",
+  "bibleStories": "बायबलमधील कथा",
+  "bibleStoriesSubtitle": "बायबलच्याच शब्दांत",
+  "oldTestament": "जुना करार",
+  "newTestament": "नवा करार"
 }

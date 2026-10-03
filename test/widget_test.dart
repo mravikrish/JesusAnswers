@@ -29,6 +29,29 @@ void main() {
     expect((await bible.dailyVerse(DateTime(2028, 12, 25), 'en')).ref, 'LUK 2:10-11');
   });
 
+  test('every Bible story is titled and told in full Scripture, in every language', () async {
+    final stories = await bible.stories();
+    expect(stories.length, greaterThanOrEqualTo(15));
+    expect(stories.map((s) => s.id).toSet().length, stories.length, reason: 'story ids are unique');
+    expect(stories.where((s) => s.oldTestament), isNotEmpty);
+    expect(stories.where((s) => !s.oldTestament), isNotEmpty);
+    for (final lang in appLanguages) {
+      for (final s in stories) {
+        expect(s.titles[lang.code], isNotEmpty, reason: '${lang.code} ${s.id} title');
+        final passages = await bible.storyPassages(s, lang.code);
+        expect(passages.length, s.passages.length);
+        for (final p in passages) {
+          expect(p.verses, isNotEmpty, reason: '${lang.code} ${s.id} ${p.reference}');
+          expect(p.reference, isNot(matches(RegExp('^[1-3]?[A-Z]{2,3} '))), reason: '${lang.code} book name');
+        }
+      }
+    }
+    final prodigal = (await bible.storyPassages(stories.firstWhere((s) => s.id == 'prodigal_son'), 'en')).single;
+    expect(prodigal.reference, 'Luke 15:11-32');
+    expect(prodigal.verses.length, 22);
+    expect(prodigal.verses.first.$2, startsWith('And he said, A certain man had two sons'));
+  });
+
   test('a different painting of Jesus each day, every one bundled', () async {
     final all = await Painting.all(rootBundle);
     expect(all.length, greaterThanOrEqualTo(20));

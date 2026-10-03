@@ -1033,6 +1033,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{current} of {total}'**
   String trackOf(int current, int total);
+
+  /// No description provided for @bibleStories.
+  ///
+  /// In en, this message translates to:
+  /// **'Bible Stories'**
+  String get bibleStories;
+
+  /// No description provided for @bibleStoriesSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Told in the Bible\'s own words'**
+  String get bibleStoriesSubtitle;
+
+  /// No description provided for @oldTestament.
+  ///
+  /// In en, this message translates to:
+  /// **'Old Testament'**
+  String get oldTestament;
+
+  /// No description provided for @newTestament.
+  ///
+  /// In en, this message translates to:
+  /// **'New Testament'**
+  String get newTestament;
 }
 
 class _AppLocalizationsDelegate

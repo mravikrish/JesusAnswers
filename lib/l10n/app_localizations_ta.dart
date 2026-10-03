@@ -502,4 +502,16 @@ class AppLocalizationsTa extends AppLocalizations {
   String trackOf(int current, int total) {
     return '$total இல் $current';
   }
+
+  @override
+  String get bibleStories => 'வேதாகமக் கதைகள்';
+
+  @override
+  String get bibleStoriesSubtitle => 'வேதாகமத்தின் சொந்த வார்த்தைகளில்';
+
+  @override
+  String get oldTestament => 'பழைய ஏற்பாடு';
+
+  @override
+  String get newTestament => 'புதிய ஏற்பாடு';
 }

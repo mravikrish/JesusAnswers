@@ -152,5 +152,9 @@
   "begin": "ప్రారంభించండి",
   "previous": "మునుపటి",
   "fullScreen": "పూర్తి స్క్రీన్",
-  "trackOf": "{total} లో {current}"
+  "trackOf": "{total} లో {current}",
+  "bibleStories": "బైబిల్ కథలు",
+  "bibleStoriesSubtitle": "బైబిల్ మాటల్లోనే",
+  "oldTestament": "పాత నిబంధన",
+  "newTestament": "కొత్త నిబంధన"
 }

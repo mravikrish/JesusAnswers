@@ -501,4 +501,16 @@ class AppLocalizationsMl extends AppLocalizations {
   String trackOf(int current, int total) {
     return '$total-ൽ $current';
   }
+
+  @override
+  String get bibleStories => 'ബൈബിൾ കഥകൾ';
+
+  @override
+  String get bibleStoriesSubtitle => 'ബൈബിളിന്റെ സ്വന്തം വാക്കുകളിൽ';
+
+  @override
+  String get oldTestament => 'പഴയ നിയമം';
+
+  @override
+  String get newTestament => 'പുതിയ നിയമം';
 }

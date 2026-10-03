@@ -497,4 +497,16 @@ class AppLocalizationsKn extends AppLocalizations {
   String trackOf(int current, int total) {
     return '$total ರಲ್ಲಿ $current';
   }
+
+  @override
+  String get bibleStories => 'ಬೈಬಲ್ ಕಥೆಗಳು';
+
+  @override
+  String get bibleStoriesSubtitle => 'ಬೈಬಲಿನ ಸ್ವಂತ ಮಾತುಗಳಲ್ಲಿ';
+
+  @override
+  String get oldTestament => 'ಹಳೆಯ ಒಡಂಬಡಿಕೆ';
+
+  @override
+  String get newTestament => 'ಹೊಸ ಒಡಂಬಡಿಕೆ';
 }

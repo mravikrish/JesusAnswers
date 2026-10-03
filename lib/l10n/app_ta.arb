@@ -152,5 +152,9 @@
   "begin": "தொடங்குங்கள்",
   "previous": "முந்தையது",
   "fullScreen": "முழுத் திரை",
-  "trackOf": "{total} இல் {current}"
+  "trackOf": "{total} இல் {current}",
+  "bibleStories": "வேதாகமக் கதைகள்",
+  "bibleStoriesSubtitle": "வேதாகமத்தின் சொந்த வார்த்தைகளில்",
+  "oldTestament": "பழைய ஏற்பாடு",
+  "newTestament": "புதிய ஏற்பாடு"
 }

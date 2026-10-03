@@ -493,4 +493,16 @@ class AppLocalizationsHi extends AppLocalizations {
   String trackOf(int current, int total) {
     return '$total में से $current';
   }
+
+  @override
+  String get bibleStories => 'बाइबल की कहानियाँ';
+
+  @override
+  String get bibleStoriesSubtitle => 'बाइबल के अपने शब्दों में';
+
+  @override
+  String get oldTestament => 'पुराना नियम';
+
+  @override
+  String get newTestament => 'नया नियम';
 }

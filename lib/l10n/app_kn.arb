@@ -152,5 +152,9 @@
   "begin": "ಪ್ರಾರಂಭಿಸಿ",
   "previous": "ಹಿಂದಿನದು",
   "fullScreen": "ಪೂರ್ಣ ಪರದೆ",
-  "trackOf": "{total} ರಲ್ಲಿ {current}"
+  "trackOf": "{total} ರಲ್ಲಿ {current}",
+  "bibleStories": "ಬೈಬಲ್ ಕಥೆಗಳು",
+  "bibleStoriesSubtitle": "ಬೈಬಲಿನ ಸ್ವಂತ ಮಾತುಗಳಲ್ಲಿ",
+  "oldTestament": "ಹಳೆಯ ಒಡಂಬಡಿಕೆ",
+  "newTestament": "ಹೊಸ ಒಡಂಬಡಿಕೆ"
 }

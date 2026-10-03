@@ -152,5 +152,9 @@
   "begin": "ਸ਼ੁਰੂ ਕਰੋ",
   "previous": "ਪਿੱਛੇ",
   "fullScreen": "ਪੂਰੀ ਸਕ੍ਰੀਨ",
-  "trackOf": "{total} ਵਿੱਚੋਂ {current}"
+  "trackOf": "{total} ਵਿੱਚੋਂ {current}",
+  "bibleStories": "ਬਾਈਬਲ ਦੀਆਂ ਕਹਾਣੀਆਂ",
+  "bibleStoriesSubtitle": "ਬਾਈਬਲ ਦੇ ਆਪਣੇ ਸ਼ਬਦਾਂ ਵਿੱਚ",
+  "oldTestament": "ਪੁਰਾਣਾ ਨੇਮ",
+  "newTestament": "ਨਵਾਂ ਨੇਮ"
 }

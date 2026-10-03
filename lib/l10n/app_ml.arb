@@ -152,5 +152,9 @@
   "begin": "ആരംഭിക്കുക",
   "previous": "മുമ്പത്തേത്",
   "fullScreen": "പൂർണ്ണ സ്ക്രീൻ",
-  "trackOf": "{total}-ൽ {current}"
+  "trackOf": "{total}-ൽ {current}",
+  "bibleStories": "ബൈബിൾ കഥകൾ",
+  "bibleStoriesSubtitle": "ബൈബിളിന്റെ സ്വന്തം വാക്കുകളിൽ",
+  "oldTestament": "പഴയ നിയമം",
+  "newTestament": "പുതിയ നിയമം"
 }

@@ -17,6 +17,7 @@ import 'features/peace/peace_now_screen.dart';
 import 'features/player/player_screen.dart';
 import 'features/prayer/prayer_screen.dart';
 import 'features/profile/profile_screen.dart';
+import 'features/stories/stories_screen.dart';
 import 'features/talk/listening_screen.dart';
 import 'features/talk/processing_screen.dart';
 import 'features/welcome/language_screen.dart';
@@ -50,6 +51,8 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(path: '/listen', builder: (_, _) => const ListeningScreen()),
       GoRoute(path: '/peace', builder: (_, _) => const PeaceNowScreen()),
       GoRoute(path: '/feedback', builder: (_, _) => const FeedbackScreen()),
+      GoRoute(path: '/stories', builder: (_, _) => const StoriesScreen()),
+      GoRoute(path: '/stories/:id', builder: (_, state) => StoryScreen(id: state.pathParameters['id']!)),
       GoRoute(path: '/player', builder: (_, state) => PlayerScreen(args: state.extra! as PlayerArgs)),
       GoRoute(
         path: '/processing',

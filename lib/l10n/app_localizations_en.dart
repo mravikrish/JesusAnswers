@@ -495,4 +495,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String trackOf(int current, int total) {
     return '$current of $total';
   }
+
+  @override
+  String get bibleStories => 'Bible Stories';
+
+  @override
+  String get bibleStoriesSubtitle => 'Told in the Bible\'s own words';
+
+  @override
+  String get oldTestament => 'Old Testament';
+
+  @override
+  String get newTestament => 'New Testament';
 }

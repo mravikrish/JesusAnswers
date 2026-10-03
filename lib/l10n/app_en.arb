@@ -193,5 +193,9 @@
         "type": "int"
       }
     }
-  }
+  },
+  "bibleStories": "Bible Stories",
+  "bibleStoriesSubtitle": "Told in the Bible's own words",
+  "oldTestament": "Old Testament",
+  "newTestament": "New Testament"
 }

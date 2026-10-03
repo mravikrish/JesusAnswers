@@ -498,4 +498,16 @@ class AppLocalizationsMr extends AppLocalizations {
   String trackOf(int current, int total) {
     return '$total पैकी $current';
   }
+
+  @override
+  String get bibleStories => 'बायबलमधील कथा';
+
+  @override
+  String get bibleStoriesSubtitle => 'बायबलच्याच शब्दांत';
+
+  @override
+  String get oldTestament => 'जुना करार';
+
+  @override
+  String get newTestament => 'नवा करार';
 }

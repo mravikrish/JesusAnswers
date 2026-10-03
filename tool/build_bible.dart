@@ -67,9 +67,16 @@ final _refPattern =RegExp(r'^([1-3]?[A-Z]{2,3}) (\d+):(\d+)(?:-(\d+))?$');
 Future<void> main() async {
   final index = jsonDecode(File('tool/bible/themes.json').readAsStringSync());
   final daily = jsonDecode(File('tool/bible/daily.json').readAsStringSync());
+  final stories = jsonDecode(File('tool/bible/stories.json').readAsStringSync());
+  final storyVerses = {
+    for (final s in stories['stories'])
+      for (final p in (s['passages'] as List).cast<String>()) ..._singleVerses(p),
+  };
   final refs = {
     for (final v in index['verses']) v['ref'] as String,
     for (final m in daily['months']) ...(m['refs'] as List).cast<String>(),
+    // Stories are shown verse by verse, so each verse of a passage is stored on its own.
+    ...storyVerses,
   }.toList();
   final books = {for (final r in refs) _refPattern.firstMatch(r)!.group(1)!};
   final overrides = jsonDecode(File('tool/bible/book_name_overrides.json').readAsStringSync())
@@ -111,7 +118,14 @@ Future<void> main() async {
       final parts = [
         for (var v = from; v <= to; v++) lines['${_vplCodes[book] ?? book} $ch:$v'] ?? '',
       ].where((t) => t.isNotEmpty).toList();
-      if (parts.length != to - from + 1) {
+      // Some translations bridge verses ("4-5" printed as 4), so a story verse
+      // missing right after one that exists is already in the text.
+      final bridged = parts.isEmpty &&
+          storyVerses.contains(ref) &&
+          lines.containsKey('${_vplCodes[book] ?? book} $ch:${from - 1}');
+      if (bridged) {
+        stdout.writeln('  · ${src.lang}: $ref is bridged into the verse before');
+      } else if (parts.length != to - from + 1) {
         problems++;
         stderr.writeln('  ! ${src.lang}: $ref incomplete (${parts.length}/${to - from + 1})');
       }
@@ -139,8 +153,17 @@ Future<void> main() async {
 
   File('tool/bible/themes.json').copySync('${outDir.path}/index.json');
   File('tool/bible/daily.json').copySync('${outDir.path}/daily.json');
+  File('tool/bible/stories.json').copySync('${outDir.path}/stories.json');
   stdout.writeln(problems == 0 ? '✓ done' : '⚠ done with $problems problem(s)');
   if (problems > 0) exitCode = 1;
+}
+
+/// "LUK 15:3-5" → ["LUK 15:3", "LUK 15:4", "LUK 15:5"].
+List<String> _singleVerses(String passage) {
+  final m = _refPattern.firstMatch(passage)!;
+  final from = int.parse(m.group(3)!);
+  final to = int.parse(m.group(4) ?? m.group(3)!);
+  return [for (var v = from; v <= to; v++) '${m.group(1)} ${m.group(2)}:$v'];
 }
 
 Future<Archive> _fetchZip(Directory cache, String name) async {

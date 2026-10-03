@@ -8,6 +8,7 @@ import 'core/languages.dart';
 import 'data/bible/bible_repository.dart';
 import 'data/models/answer.dart';
 import 'data/models/painting.dart';
+import 'data/models/story.dart';
 import 'data/models/verse.dart';
 import 'l10n/app_localizations.dart';
 import 'services/answer/answer_service.dart';
@@ -51,6 +52,15 @@ final verseProvider = FutureProvider.family<Verse?, String>((ref, verseRef) {
 final dailyVerseProvider = FutureProvider<Verse>((ref) {
   final lang = ref.watch(settingsProvider.select((s) => s.lang));
   return ref.watch(bibleProvider).dailyVerse(DateTime.now(), lang);
+});
+
+/// All Bible Stories, in reading order.
+final storiesProvider = FutureProvider<List<Story>>((ref) => ref.watch(bibleProvider).stories());
+
+/// One story's passages in the user's current language.
+final storyPassagesProvider = FutureProvider.family<List<StoryPassage>, Story>((ref, story) {
+  final lang = ref.watch(settingsProvider.select((s) => s.lang));
+  return ref.watch(bibleProvider).storyPassages(story, lang);
 });
 
 /// Today's painting of Jesus (changes every day).

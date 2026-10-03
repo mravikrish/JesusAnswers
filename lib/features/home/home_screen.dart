@@ -118,8 +118,14 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                     ),
                   ),
                   const SizedBox(height: 18),
-                  // Daily Word, Pray and Profile are in the bottom bar; Peace Now is the one extra way in.
+                  // Daily Word, Pray and Profile are in the bottom bar; Peace Now and Bible Stories are the extra ways in.
                   _QuickAction(icon: Icons.spa_rounded, label: l.peaceNow, onTap: () => context.push('/peace')),
+                  const SizedBox(height: 10),
+                  _QuickAction(
+                    icon: Icons.auto_stories_rounded,
+                    label: l.bibleStories,
+                    onTap: () => context.push('/stories'),
+                  ),
                 ],
               ),
             ),
