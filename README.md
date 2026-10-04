@@ -52,6 +52,26 @@ by month with a theme (Jan *New beginnings*, Feb *God's love*, … Dec *Emmanuel
 Christmas). Feb 29 repeats Feb 28. Every ref is checked complete in all 11 translations; some IRV editions
 merge adjacent verses, so refs that are merged in any language were swapped out.
 
+**The whole Bible.** The build also writes `assets/bible/full/<lang>.json.gz`: all 66 books in each
+translation, gzipped (about 1.6 MB each, 17 MB for all 11), for the Holy Bible reader. The app unpacks a
+language off the UI thread the first time it is opened. The backend doesn't need it and leaves it out.
+
+**Book pictures.** In the Holy Bible screen each book is a picture card; tapping one shows its key verse
+and chapters. `tool/bible/books.json` lists every book's key verse (checked present in all 11 translations by
+the build) and a `scene` describing its picture. Put originals in `art/books/<CODE>.png|jpg` (e.g. `GEN.png`,
+`1SA.jpg`; kept out of git like `art/stories/`) and run `python tool/build_story_images.py`. A book with no
+picture yet shows its Bible Story's picture, or else a painting of Jesus.
+
+**Sharing pictures.** Every picture in the app — of Jesus, of each Bible Story, of each book — can be sent as a
+WhatsApp status from Home → Pictures, or from the story or book itself. Story and book art (landscape, title
+painted in) sits whole at the top of the 9:16 card over a blurred copy of itself, with its name and, for books,
+the key verse beneath. A story's text can also be shared on its own (Share story).
+
+**Words of Jesus.** Each translation's USFM marks His words with `\wj … \wj*`. The build lines those up with
+the verse text and stores them as character ranges under `wj` (in both the quoted verses and the full Bible),
+so the app shows them in red: in the Bible and Words of Jesus readers, and wherever a verse appears. A few
+sources close `\wj` late, after the narration; a span that opens with “ is ended at its matching ”.
+
 ## Daily painting of Jesus
 
 Home opens on a different public-domain painting each day (Carl Bloch, Heinrich Hofmann, Bernhard
@@ -142,4 +162,7 @@ keyPassword=…
 - [ ] Replace device TTS with a neural cloud voice for a consistent warm male voice in Indian languages.
 - [ ] Firebase (Auth, Analytics, FCM for the Daily Word notification). Not wired yet. Sign-in currently
       stores name + mobile number on the device only; add OTP (Firebase Phone Auth) in `sign_in_screen.dart`.
+- [ ] Own pictures for the 14 books that borrow a story picture (GEN EXO JOS RUT 1SA 1KI EST DAN JON MAT MRK LUK JHN ACT).
+- [ ] Native-speaker check of the book names new with the full Bible (19 books, mostly Old Testament).
+- [ ] Native-speaker check of the Words of Jesus strings ("Words of Jesus", "Only His words").
 - [ ] Native-speaker check of the new conversational strings ("Jesus is listening…", "Talk to Jesus").

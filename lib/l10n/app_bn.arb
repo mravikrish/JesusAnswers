@@ -163,5 +163,15 @@
   "savePicture": "সেভ করুন",
   "verseOnPicture": "বাক্য",
   "pictureSaved": "আপনার গ্যালারিতে সেভ হয়েছে",
-  "pictureSaveFailed": "সেভ করা গেল না। অনুগ্রহ করে ছবির অনুমতি দিন।"
+  "pictureSaveFailed": "সেভ করা গেল না। অনুগ্রহ করে ছবির অনুমতি দিন।",
+  "wordsOfJesus": "যীশুর বাণী",
+  "wordsOfJesusSubtitle": "তিনি যা কিছু বলেছেন, লাল অক্ষরে",
+  "onlyHisWords": "শুধু তাঁর বাণী",
+  "holyBible": "পবিত্র বাইবেল",
+  "holyBibleSubtitle": "যেকোনো পুস্তক, যেকোনো অধ্যায় পড়ুন",
+  "readChapter": "পুরো অধ্যায় পড়ুন",
+  "continueReading": "পড়া চালিয়ে যান",
+  "pictures": "ছবি",
+  "booksOfTheBible": "বাইবেলের পুস্তক",
+  "shareStory": "গল্পটি শেয়ার করুন"
 }

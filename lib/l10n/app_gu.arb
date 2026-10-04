@@ -163,5 +163,15 @@
   "savePicture": "સેવ કરો",
   "verseOnPicture": "વચન",
   "pictureSaved": "તમારી ગેલેરીમાં સેવ થયું",
-  "pictureSaveFailed": "સેવ ન થયું. કૃપા કરીને ફોટાની પરવાનગી આપો."
+  "pictureSaveFailed": "સેવ ન થયું. કૃપા કરીને ફોટાની પરવાનગી આપો.",
+  "wordsOfJesus": "ઈસુના વચનો",
+  "wordsOfJesusSubtitle": "તેમણે કહેલું બધું, લાલ અક્ષરોમાં",
+  "onlyHisWords": "ફક્ત તેમના વચનો",
+  "holyBible": "પવિત્ર બાઇબલ",
+  "holyBibleSubtitle": "કોઈ પણ પુસ્તક, કોઈ પણ અધ્યાય વાંચો",
+  "readChapter": "આખો અધ્યાય વાંચો",
+  "continueReading": "વાંચન ચાલુ રાખો",
+  "pictures": "ચિત્રો",
+  "booksOfTheBible": "બાઇબલનાં પુસ્તકો",
+  "shareStory": "વાર્તા શેર કરો"
 }

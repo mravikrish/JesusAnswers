@@ -1099,6 +1099,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Couldn\'t save. Please allow access to photos.'**
   String get pictureSaveFailed;
+
+  /// No description provided for @wordsOfJesus.
+  ///
+  /// In en, this message translates to:
+  /// **'Words of Jesus'**
+  String get wordsOfJesus;
+
+  /// No description provided for @wordsOfJesusSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Everything He said, in red letters'**
+  String get wordsOfJesusSubtitle;
+
+  /// No description provided for @onlyHisWords.
+  ///
+  /// In en, this message translates to:
+  /// **'Only His words'**
+  String get onlyHisWords;
+
+  /// No description provided for @holyBible.
+  ///
+  /// In en, this message translates to:
+  /// **'Holy Bible'**
+  String get holyBible;
+
+  /// No description provided for @holyBibleSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Read any book, any chapter'**
+  String get holyBibleSubtitle;
+
+  /// No description provided for @readChapter.
+  ///
+  /// In en, this message translates to:
+  /// **'Read the whole chapter'**
+  String get readChapter;
+
+  /// No description provided for @continueReading.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue reading'**
+  String get continueReading;
+
+  /// No description provided for @pictures.
+  ///
+  /// In en, this message translates to:
+  /// **'Pictures'**
+  String get pictures;
+
+  /// No description provided for @booksOfTheBible.
+  ///
+  /// In en, this message translates to:
+  /// **'Books of the Bible'**
+  String get booksOfTheBible;
+
+  /// No description provided for @shareStory.
+  ///
+  /// In en, this message translates to:
+  /// **'Share story'**
+  String get shareStory;
 }
 
 class _AppLocalizationsDelegate

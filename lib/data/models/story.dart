@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'verse.dart';
+
 /// A Bible story, told only in Scripture's own words: a title and the
 /// passages that tell it. Verse text comes from the bundled translations.
 class Story {
@@ -96,7 +98,6 @@ class StoryPassage {
   /// Localized display reference, e.g. "లూకా 15:11-32".
   final String reference;
 
-  /// (verse number, text). A verse a translation bridges into the one
-  /// before it is simply absent.
-  final List<(int, String)> verses;
+  /// A verse a translation bridges into the one before it is simply absent.
+  final List<NumberedVerse> verses;
 }

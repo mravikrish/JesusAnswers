@@ -536,4 +536,34 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get pictureSaveFailed =>
       'സേവ് ചെയ്യാനായില്ല. ഫോട്ടോകൾക്ക് അനുമതി നൽകുക.';
+
+  @override
+  String get wordsOfJesus => 'യേശുവിന്റെ വാക്കുകൾ';
+
+  @override
+  String get wordsOfJesusSubtitle => 'അവൻ പറഞ്ഞതെല്ലാം, ചുവന്ന അക്ഷരങ്ങളിൽ';
+
+  @override
+  String get onlyHisWords => 'അവന്റെ വാക്കുകൾ മാത്രം';
+
+  @override
+  String get holyBible => 'വിശുദ്ധ ബൈബിൾ';
+
+  @override
+  String get holyBibleSubtitle => 'ഏതു പുസ്തകവും ഏതു അധ്യായവും വായിക്കുക';
+
+  @override
+  String get readChapter => 'മുഴുവൻ അധ്യായം വായിക്കുക';
+
+  @override
+  String get continueReading => 'വായന തുടരുക';
+
+  @override
+  String get pictures => 'ചിത്രങ്ങൾ';
+
+  @override
+  String get booksOfTheBible => 'ബൈബിൾ പുസ്തകങ്ങൾ';
+
+  @override
+  String get shareStory => 'കഥ പങ്കിടുക';
 }

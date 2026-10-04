@@ -163,5 +163,15 @@
   "savePicture": "सेव्ह करा",
   "verseOnPicture": "वचन",
   "pictureSaved": "तुमच्या गॅलरीत सेव्ह झाले",
-  "pictureSaveFailed": "सेव्ह झाले नाही. कृपया फोटोंना परवानगी द्या."
+  "pictureSaveFailed": "सेव्ह झाले नाही. कृपया फोटोंना परवानगी द्या.",
+  "wordsOfJesus": "येशूचे शब्द",
+  "wordsOfJesusSubtitle": "त्याने सांगितलेले सर्व, लाल अक्षरांत",
+  "onlyHisWords": "फक्त त्याचे शब्द",
+  "holyBible": "पवित्र शास्त्र",
+  "holyBibleSubtitle": "कोणतेही पुस्तक, कोणताही अध्याय वाचा",
+  "readChapter": "संपूर्ण अध्याय वाचा",
+  "continueReading": "वाचन सुरू ठेवा",
+  "pictures": "चित्रे",
+  "booksOfTheBible": "बायबलची पुस्तके",
+  "shareStory": "कथा शेअर करा"
 }

@@ -1,5 +1,7 @@
 import 'dart:convert';
+import 'dart:io';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import '../models/story.dart';
@@ -12,11 +14,73 @@ class _IndexEntry {
 }
 
 class _Translation {
-  const _Translation(this.abbrev, this.attribution, this.books, this.verses);
+  const _Translation(this.abbrev, this.attribution, this.books, this.verses, this.jesusWords);
   final String abbrev;
   final String attribution;
   final Map<String, String> books;
   final Map<String, String> verses;
+
+  /// Ref → where Jesus speaks in that verse's text.
+  final Map<String, List<(int, int)>> jesusWords;
+}
+
+/// The whole Bible in one language, for reading (`assets/bible/full/<lang>.json.gz`).
+class _FullBible {
+  const _FullBible(this.books, this.chapters, this.jesusWords);
+  final Map<String, String> books;
+
+  /// Book → chapters → verse text, verse n at index n-1 ("" where the
+  /// translation has no such verse).
+  final Map<String, List<List<String>>> chapters;
+  final Map<String, List<(int, int)>> jesusWords;
+
+  static _FullBible decode(Uint8List gz) {
+    final j = jsonDecode(utf8.decode(GZipCodec().decode(gz))) as Map<String, dynamic>;
+    return _FullBible(
+      (j['books'] as Map).cast<String, String>(),
+      {
+        for (final MapEntry(:key, :value) in (j['chapters'] as Map).entries)
+          key as String: [for (final c in value as List) (c as List).cast<String>()],
+      },
+      {for (final e in (j['wj'] as Map).entries) e.key as String: parseJesusWords(e.value)},
+    );
+  }
+}
+
+/// A book of the Bible, with the chapters there are to read in it.
+class BibleBook {
+  const BibleBook({
+    required this.code,
+    required this.name,
+    required this.chapters,
+    required this.oldTestament,
+    this.keyVerse,
+    this.picture,
+  });
+
+  /// USFM code, e.g. "MAT".
+  final String code;
+  final String name;
+  final List<int> chapters;
+  final bool oldTestament;
+
+  /// The verse that sums the book up, e.g. "PSA 23:1" — shown on its card.
+  final String? keyVerse;
+
+  /// The book's own picture (assets/books/), or its Bible Story's until it has
+  /// one; null when it has neither, and a painting of Jesus is shown instead.
+  final String? picture;
+
+  BibleBook withChapters(List<int> chapters) => BibleBook(
+        code: code,
+        name: name,
+        chapters: chapters,
+        oldTestament: oldTestament,
+        keyVerse: keyVerse,
+        picture: picture,
+      );
+
+  bool get isGospel => BibleRepository.gospels.contains(code);
 }
 
 /// Retrieves real Scripture by theme. The AI layer may *choose* references,
@@ -55,10 +119,14 @@ class BibleRepository {
       j['attribution'] as String,
       (j['books'] as Map).cast<String, String>(),
       (j['verses'] as Map).cast<String, String>(),
+      {for (final e in ((j['wj'] as Map?) ?? const {}).entries) e.key as String: parseJesusWords(e.value)},
     );
   }
 
   Future<String> attribution(String lang) async => (await _load(lang)).attribution;
+
+  /// Translation abbreviation in [lang], e.g. "KJV" or "IRV".
+  Future<String> translation(String lang) async => (await _load(lang)).abbrev;
 
   /// Returns the verse for [ref] in [lang], or null if it isn't in the corpus.
   Future<Verse?> verse(String ref, String lang) async {
@@ -73,6 +141,7 @@ class BibleRepository {
       text: text,
       translation: t.abbrev,
       lang: lang,
+      jesusWords: t.jesusWords[ref] ?? const [],
     );
   }
 
@@ -136,9 +205,113 @@ class BibleRepository {
       reference: '${t.books[book] ?? book} ${passage.substring(passage.indexOf(' ') + 1)}',
       verses: [
         for (var v = from; v <= to; v++)
-          if (t.verses['$book $ch:$v'] case final text?) (v, text),
+          if (t.verses['$book $ch:$v'] case final text?)
+            NumberedVerse(v, text, t.jesusWords['$book $ch:$v'] ?? const []),
       ],
     );
+  }
+
+  static const gospels = {'MAT', 'MRK', 'LUK', 'JHN'};
+
+  final _full = <String, Future<_FullBible>>{};
+
+  /// The whole Bible in [lang] — about 10 MB of text, so it is unpacked off
+  /// the UI thread, once per language.
+  Future<_FullBible> _loadFull(String lang) => _full[lang] ??= () async {
+        ByteData data;
+        try {
+          data = await _bundle.load('assets/bible/full/$lang.json.gz');
+        } catch (_) {
+          data = await _bundle.load('assets/bible/full/en.json.gz');
+        }
+        return compute(_FullBible.decode, data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes));
+      }();
+
+  Map<String, ({String verse, String? picture})>? _bookInfo;
+
+  /// Each book's key verse and picture, from assets/bible/books.json and the
+  /// pictures actually bundled.
+  Future<Map<String, ({String verse, String? picture})>> _loadBookInfo() async {
+    if (_bookInfo != null) return _bookInfo!;
+    final bundled = (await AssetManifest.loadFromAssetBundle(_bundle)).listAssets().toSet();
+    String? found(String path) => bundled.contains(path) ? path : null;
+    final j = jsonDecode(await _bundle.loadString('assets/bible/books.json'));
+    return _bookInfo = {
+      for (final b in j['books'] as List)
+        b['code'] as String: (
+          verse: b['verse'] as String,
+          picture: found('assets/books/${b['code']}.jpg') ??
+              (b['story'] == null ? null : found('assets/stories/${b['story']}.jpg')),
+        ),
+    };
+  }
+
+  /// All 66 books, Genesis to Revelation, every chapter.
+  Future<List<BibleBook>> bibleBooks(String lang) async {
+    final b = await _loadFull(lang);
+    final info = await _loadBookInfo();
+    var oldTestament = true;
+    return [
+      for (final MapEntry(key: code, value: chapters) in b.chapters.entries)
+        BibleBook(
+          code: code,
+          name: b.books[code] ?? code,
+          chapters: [for (var c = 1; c <= chapters.length; c++) c],
+          oldTestament: oldTestament = oldTestament && code != 'MAT',
+          keyVerse: info[code]?.verse,
+          picture: info[code]?.picture,
+        ),
+    ];
+  }
+
+  /// [book]'s key verse in [lang], from the full Bible.
+  Future<Verse?> keyVerse(BibleBook book, String lang) async {
+    final ref = book.keyVerse;
+    final m = ref == null ? null : _verseRef.firstMatch(ref);
+    if (m == null) return null;
+    final verses = await chapter(m.group(1)!, int.parse(m.group(2)!), lang);
+    final v = verses.where((v) => v.number == int.parse(m.group(3)!)).firstOrNull;
+    if (v == null) return null;
+    return Verse(
+      ref: ref!,
+      reference: '${book.name} ${m.group(2)}:${m.group(3)}',
+      text: v.text,
+      translation: (await _load(lang)).abbrev,
+      lang: lang,
+      jesusWords: v.jesusWords,
+    );
+  }
+
+  static final _verseRef = RegExp(r'^(\S+) (\d+):(\d+)$');
+
+  /// The books of the Words of Jesus reader: the four Gospels whole, then
+  /// each other book with the chapters in which He speaks.
+  Future<List<BibleBook>> jesusBooks(String lang) async {
+    final b = await _loadFull(lang);
+    final spoken = <String, Set<int>>{};
+    for (final ref in b.jesusWords.keys) {
+      final space = ref.indexOf(' ');
+      (spoken[ref.substring(0, space)] ??= {}).add(int.parse(ref.substring(space + 1, ref.indexOf(':'))));
+    }
+    return [
+      for (final book in await bibleBooks(lang))
+        if (book.isGospel)
+          book
+        else if (spoken[book.code] case final chapters?)
+          book.withChapters(chapters.toList()..sort()),
+    ];
+  }
+
+  /// [book] [chapter] in [lang], verse by verse, with His words marked.
+  Future<List<NumberedVerse>> chapter(String book, int chapter, String lang) async {
+    final b = await _loadFull(lang);
+    final chapters = b.chapters[book] ?? const [];
+    if (chapter < 1 || chapter > chapters.length) return const [];
+    final verses = chapters[chapter - 1];
+    return [
+      for (var i = 0; i < verses.length; i++)
+        if (verses[i].isNotEmpty) NumberedVerse(i + 1, verses[i], b.jesusWords['$book $chapter:${i + 1}'] ?? const []),
+    ];
   }
 
   /// 0 (Jan 1) … 364 (Dec 31).

@@ -83,6 +83,21 @@ class GlassCard extends StatelessWidget {
 
 /// Scripture quote + reference, styled for light or dark backgrounds.
 /// With [shareable], a long-press or the small share icon copies or shares just this verse.
+/// [text] with the words of Jesus — [words], as [start, end) ranges — in [red].
+TextSpan redLetterSpan(String text, List<(int, int)> words, {Color red = AppColors.redLetter}) {
+  if (words.isEmpty) return TextSpan(text: text);
+  final spans = <TextSpan>[];
+  var pos = 0;
+  for (final (start, end) in words) {
+    if (start < pos || end > text.length) continue;
+    if (start > pos) spans.add(TextSpan(text: text.substring(pos, start)));
+    spans.add(TextSpan(text: text.substring(start, end), style: TextStyle(color: red)));
+    pos = end;
+  }
+  if (pos < text.length) spans.add(TextSpan(text: text.substring(pos)));
+  return TextSpan(children: spans);
+}
+
 class VerseQuote extends StatelessWidget {
   const VerseQuote({
     super.key,
@@ -111,7 +126,15 @@ class VerseQuote extends StatelessWidget {
     final quote = Column(
       crossAxisAlignment: center ? CrossAxisAlignment.center : CrossAxisAlignment.start,
       children: [
-        Text('“${verse.text}”', textAlign: align, style: AppText.serif(size, color: color, height: 1.35)),
+        Text.rich(
+          TextSpan(children: [
+            const TextSpan(text: '“'),
+            redLetterSpan(verse.text, verse.jesusWords, red: dark ? AppColors.redLetter : AppColors.redLetterInk),
+            const TextSpan(text: '”'),
+          ]),
+          textAlign: align,
+          style: AppText.serif(size, color: color, height: 1.35),
+        ),
         SizedBox(height: shareable ? 2 : 10),
         if (!shareable)
           reference

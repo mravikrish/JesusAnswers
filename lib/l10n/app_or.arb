@@ -163,5 +163,15 @@
   "savePicture": "ସେଭ୍ କରନ୍ତୁ",
   "verseOnPicture": "ବାକ୍ୟ",
   "pictureSaved": "ଆପଣଙ୍କ ଗ୍ୟାଲେରୀରେ ସେଭ୍ ହେଲା",
-  "pictureSaveFailed": "ସେଭ୍ ହୋଇପାରିଲା ନାହିଁ। ଦୟାକରି ଫଟୋ ପାଇଁ ଅନୁମତି ଦିଅନ୍ତୁ।"
+  "pictureSaveFailed": "ସେଭ୍ ହୋଇପାରିଲା ନାହିଁ। ଦୟାକରି ଫଟୋ ପାଇଁ ଅନୁମତି ଦିଅନ୍ତୁ।",
+  "wordsOfJesus": "ଯୀଶୁଙ୍କ ବାକ୍ୟ",
+  "wordsOfJesusSubtitle": "ସେ କହିଥିବା ସବୁ କଥା, ନାଲି ଅକ୍ଷରରେ",
+  "onlyHisWords": "କେବଳ ତାଙ୍କ ବାକ୍ୟ",
+  "holyBible": "ପବିତ୍ର ବାଇବଲ",
+  "holyBibleSubtitle": "ଯେକୌଣସି ପୁସ୍ତକ, ଯେକୌଣସି ଅଧ୍ୟାୟ ପଢ଼ନ୍ତୁ",
+  "readChapter": "ସମ୍ପୂର୍ଣ୍ଣ ଅଧ୍ୟାୟ ପଢ଼ନ୍ତୁ",
+  "continueReading": "ପଢ଼ିବା ଜାରି ରଖନ୍ତୁ",
+  "pictures": "ଚିତ୍ର",
+  "booksOfTheBible": "ବାଇବଲର ପୁସ୍ତକ",
+  "shareStory": "କାହାଣୀ ସେୟାର କରନ୍ତୁ"
 }

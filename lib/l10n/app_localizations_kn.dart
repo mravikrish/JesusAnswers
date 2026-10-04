@@ -532,4 +532,34 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get pictureSaveFailed =>
       'ಸೇವ್ ಆಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಫೋಟೋಗಳಿಗೆ ಅನುಮತಿ ನೀಡಿ.';
+
+  @override
+  String get wordsOfJesus => 'ಯೇಸುವಿನ ಮಾತುಗಳು';
+
+  @override
+  String get wordsOfJesusSubtitle => 'ಆತನು ಹೇಳಿದ ಎಲ್ಲವೂ, ಕೆಂಪು ಅಕ್ಷರಗಳಲ್ಲಿ';
+
+  @override
+  String get onlyHisWords => 'ಆತನ ಮಾತುಗಳು ಮಾತ್ರ';
+
+  @override
+  String get holyBible => 'ಪವಿತ್ರ ಗ್ರಂಥ';
+
+  @override
+  String get holyBibleSubtitle => 'ಯಾವುದೇ ಪುಸ್ತಕ, ಯಾವುದೇ ಅಧ್ಯಾಯ ಓದಿ';
+
+  @override
+  String get readChapter => 'ಪೂರ್ಣ ಅಧ್ಯಾಯ ಓದಿ';
+
+  @override
+  String get continueReading => 'ಓದುವುದನ್ನು ಮುಂದುವರಿಸಿ';
+
+  @override
+  String get pictures => 'ಚಿತ್ರಗಳು';
+
+  @override
+  String get booksOfTheBible => 'ಬೈಬಲ್ ಪುಸ್ತಕಗಳು';
+
+  @override
+  String get shareStory => 'ಕಥೆಯನ್ನು ಹಂಚಿಕೊಳ್ಳಿ';
 }

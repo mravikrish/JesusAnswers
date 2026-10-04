@@ -98,6 +98,10 @@
 			<resource>
 				<directory>../assets/bible</directory>
 				<targetPath>bible</targetPath>
+				<!-- The whole Bible is only for reading in the app -->
+				<excludes>
+					<exclude>full/**</exclude>
+				</excludes>
 			</resource>
 		</resources>
 		<plugins>

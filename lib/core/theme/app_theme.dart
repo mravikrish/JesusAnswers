@@ -16,6 +16,10 @@ abstract final class AppColors {
   static const ink = Color(0xFF1C2333);
   static const inkSoft = Color(0xFF5C6475);
   static const heart = Color(0xFFD94A5A);
+
+  /// Words of Jesus — red letters on the night sky, and on ivory cards.
+  static const redLetter = Color(0xFFFF9E94);
+  static const redLetterInk = Color(0xFFB3261E);
 }
 
 abstract final class AppText {

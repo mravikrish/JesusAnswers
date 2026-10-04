@@ -163,5 +163,15 @@
   "savePicture": "ಸೇವ್ ಮಾಡಿ",
   "verseOnPicture": "ವಚನ",
   "pictureSaved": "ನಿಮ್ಮ ಗ್ಯಾಲರಿಯಲ್ಲಿ ಸೇವ್ ಆಯಿತು",
-  "pictureSaveFailed": "ಸೇವ್ ಆಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಫೋಟೋಗಳಿಗೆ ಅನುಮತಿ ನೀಡಿ."
+  "pictureSaveFailed": "ಸೇವ್ ಆಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಫೋಟೋಗಳಿಗೆ ಅನುಮತಿ ನೀಡಿ.",
+  "wordsOfJesus": "ಯೇಸುವಿನ ಮಾತುಗಳು",
+  "wordsOfJesusSubtitle": "ಆತನು ಹೇಳಿದ ಎಲ್ಲವೂ, ಕೆಂಪು ಅಕ್ಷರಗಳಲ್ಲಿ",
+  "onlyHisWords": "ಆತನ ಮಾತುಗಳು ಮಾತ್ರ",
+  "holyBible": "ಪವಿತ್ರ ಗ್ರಂಥ",
+  "holyBibleSubtitle": "ಯಾವುದೇ ಪುಸ್ತಕ, ಯಾವುದೇ ಅಧ್ಯಾಯ ಓದಿ",
+  "readChapter": "ಪೂರ್ಣ ಅಧ್ಯಾಯ ಓದಿ",
+  "continueReading": "ಓದುವುದನ್ನು ಮುಂದುವರಿಸಿ",
+  "pictures": "ಚಿತ್ರಗಳು",
+  "booksOfTheBible": "ಬೈಬಲ್ ಪುಸ್ತಕಗಳು",
+  "shareStory": "ಕಥೆಯನ್ನು ಹಂಚಿಕೊಳ್ಳಿ"
 }

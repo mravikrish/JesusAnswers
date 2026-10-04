@@ -530,4 +530,34 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get pictureSaveFailed =>
       'Couldn\'t save. Please allow access to photos.';
+
+  @override
+  String get wordsOfJesus => 'Words of Jesus';
+
+  @override
+  String get wordsOfJesusSubtitle => 'Everything He said, in red letters';
+
+  @override
+  String get onlyHisWords => 'Only His words';
+
+  @override
+  String get holyBible => 'Holy Bible';
+
+  @override
+  String get holyBibleSubtitle => 'Read any book, any chapter';
+
+  @override
+  String get readChapter => 'Read the whole chapter';
+
+  @override
+  String get continueReading => 'Continue reading';
+
+  @override
+  String get pictures => 'Pictures';
+
+  @override
+  String get booksOfTheBible => 'Books of the Bible';
+
+  @override
+  String get shareStory => 'Share story';
 }

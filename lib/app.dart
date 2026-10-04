@@ -8,9 +8,11 @@ import 'core/theme/app_theme.dart';
 import 'core/widgets/app_shell.dart';
 import 'data/models/answer.dart';
 import 'features/answer/answer_screen.dart';
+import 'features/bible/bible_screen.dart';
 import 'features/daily_word/daily_word_screen.dart';
 import 'features/feedback/feedback_screen.dart';
 import 'features/home/home_screen.dart';
+import 'features/jesus_words/jesus_words_screen.dart';
 import 'features/journey/journey_screen.dart';
 import 'features/mood/mood_screen.dart';
 import 'features/peace/peace_now_screen.dart';
@@ -57,8 +59,28 @@ final routerProvider = Provider<GoRouter>((ref) {
         path: '/pictures/:index',
         builder: (_, state) => PictureViewerScreen(index: int.tryParse(state.pathParameters['index']!) ?? 0),
       ),
+      // 'jesus', 'stories' or 'books', each as WhatsApp status pictures.
+      GoRoute(
+        path: '/pictures/:collection/:index',
+        builder: (_, state) => PictureViewerScreen(
+          collection: state.pathParameters['collection']!,
+          index: int.tryParse(state.pathParameters['index']!) ?? 0,
+        ),
+      ),
       GoRoute(path: '/stories', builder: (_, _) => const StoriesScreen()),
       GoRoute(path: '/stories/:id', builder: (_, state) => StoryScreen(id: state.pathParameters['id']!)),
+      GoRoute(path: '/jesus', builder: (_, _) => const JesusWordsScreen()),
+      GoRoute(path: '/bible', builder: (_, _) => const BibleScreen()),
+      // ?words=1 opens it from Words of Jesus; ?v=19 marks a verse.
+      GoRoute(
+        path: '/bible/:book/:chapter',
+        builder: (_, state) => ChapterScreen(
+          book: state.pathParameters['book']!,
+          chapter: int.tryParse(state.pathParameters['chapter']!) ?? 1,
+          words: state.uri.queryParameters['words'] == '1',
+          highlight: int.tryParse(state.uri.queryParameters['v'] ?? ''),
+        ),
+      ),
       GoRoute(path: '/player', builder: (_, state) => PlayerScreen(args: state.extra! as PlayerArgs)),
       GoRoute(
         path: '/processing',

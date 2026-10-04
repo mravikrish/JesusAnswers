@@ -118,8 +118,21 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                     ),
                   ),
                   const SizedBox(height: 18),
-                  // Daily Word, Pray and Profile are in the bottom bar; Peace Now, Bible Stories and Pictures are the extra ways in.
+                  // Daily Word, Pray and Profile are in the bottom bar; Peace Now, the Bible, Words of Jesus,
+                  // Bible Stories and Pictures are the extra ways in.
                   _QuickAction(icon: Icons.spa_rounded, label: l.peaceNow, onTap: () => context.push('/peace')),
+                  const SizedBox(height: 10),
+                  _QuickAction(
+                    icon: Icons.menu_book_rounded,
+                    label: l.holyBible,
+                    onTap: () => context.push('/bible'),
+                  ),
+                  const SizedBox(height: 10),
+                  _QuickAction(
+                    icon: Icons.format_quote_rounded,
+                    label: l.wordsOfJesus,
+                    onTap: () => context.push('/jesus'),
+                  ),
                   const SizedBox(height: 10),
                   _QuickAction(
                     icon: Icons.auto_stories_rounded,
@@ -129,7 +142,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                   const SizedBox(height: 10),
                   _QuickAction(
                     icon: Icons.photo_library_rounded,
-                    label: l.picturesTitle,
+                    label: l.pictures,
                     onTap: () => context.push('/pictures'),
                   ),
                 ],

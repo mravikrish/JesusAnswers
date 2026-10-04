@@ -88,6 +88,8 @@ flutter:
   generate: true
   assets:
     - assets/bible/
+    - assets/bible/full/
+    - assets/books/
     - assets/icon/
     - assets/jesus/
     - assets/stories/

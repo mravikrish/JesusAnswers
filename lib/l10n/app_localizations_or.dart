@@ -532,4 +532,34 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get pictureSaveFailed =>
       'ସେଭ୍ ହୋଇପାରିଲା ନାହିଁ। ଦୟାକରି ଫଟୋ ପାଇଁ ଅନୁମତି ଦିଅନ୍ତୁ।';
+
+  @override
+  String get wordsOfJesus => 'ଯୀଶୁଙ୍କ ବାକ୍ୟ';
+
+  @override
+  String get wordsOfJesusSubtitle => 'ସେ କହିଥିବା ସବୁ କଥା, ନାଲି ଅକ୍ଷରରେ';
+
+  @override
+  String get onlyHisWords => 'କେବଳ ତାଙ୍କ ବାକ୍ୟ';
+
+  @override
+  String get holyBible => 'ପବିତ୍ର ବାଇବଲ';
+
+  @override
+  String get holyBibleSubtitle => 'ଯେକୌଣସି ପୁସ୍ତକ, ଯେକୌଣସି ଅଧ୍ୟାୟ ପଢ଼ନ୍ତୁ';
+
+  @override
+  String get readChapter => 'ସମ୍ପୂର୍ଣ୍ଣ ଅଧ୍ୟାୟ ପଢ଼ନ୍ତୁ';
+
+  @override
+  String get continueReading => 'ପଢ଼ିବା ଜାରି ରଖନ୍ତୁ';
+
+  @override
+  String get pictures => 'ଚିତ୍ର';
+
+  @override
+  String get booksOfTheBible => 'ବାଇବଲର ପୁସ୍ତକ';
+
+  @override
+  String get shareStory => 'କାହାଣୀ ସେୟାର କରନ୍ତୁ';
 }

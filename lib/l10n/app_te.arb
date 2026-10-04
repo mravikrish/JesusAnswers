@@ -163,5 +163,15 @@
   "savePicture": "సేవ్ చేయండి",
   "verseOnPicture": "వచనం",
   "pictureSaved": "మీ గ్యాలరీలో సేవ్ అయింది",
-  "pictureSaveFailed": "సేవ్ కాలేదు. దయచేసి ఫోటోలకు అనుమతి ఇవ్వండి."
+  "pictureSaveFailed": "సేవ్ కాలేదు. దయచేసి ఫోటోలకు అనుమతి ఇవ్వండి.",
+  "wordsOfJesus": "యేసు మాటలు",
+  "wordsOfJesusSubtitle": "ఆయన పలికిన ప్రతి మాట, ఎరుపు అక్షరాలలో",
+  "onlyHisWords": "ఆయన మాటలు మాత్రమే",
+  "holyBible": "పరిశుద్ధ గ్రంథం",
+  "holyBibleSubtitle": "ఏ పుస్తకమైనా, ఏ అధ్యాయమైనా చదవండి",
+  "readChapter": "పూర్తి అధ్యాయం చదవండి",
+  "continueReading": "చదవడం కొనసాగించండి",
+  "pictures": "చిత్రాలు",
+  "booksOfTheBible": "బైబిలు పుస్తకాలు",
+  "shareStory": "కథను పంచుకోండి"
 }

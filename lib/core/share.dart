@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:go_router/go_router.dart';
 import 'package:share_plus/share_plus.dart';
 
 import '../data/models/verse.dart';
@@ -23,9 +24,11 @@ String verseText(Verse v) => '“${v.text}”\n— ${v.reference} (${v.translati
 Future<void> shareVerse(Verse v, AppLocalizations l) =>
     SharePlus.instance.share(ShareParams(text: '${verseText(v)}\n\n${shareFooter(l)}'));
 
-/// Copy or share just this verse — e.g. to send one verse on WhatsApp.
-Future<void> showVerseActions(BuildContext context, Verse verse) {
+/// Copy or share just this verse — e.g. to send one verse on WhatsApp — or
+/// open its chapter in the Bible ([readChapter]: not when already reading it).
+Future<void> showVerseActions(BuildContext context, Verse verse, {bool readChapter = true}) {
   final l = AppLocalizations.of(context);
+  final at = RegExp(r'^(\S+) (\d+):(\d+)').firstMatch(verse.ref);
   return showModalBottomSheet<void>(
     context: context,
     showDragHandle: true,
@@ -58,6 +61,15 @@ Future<void> showVerseActions(BuildContext context, Verse verse) {
               shareVerse(verse, l);
             },
           ),
+          if (readChapter && at != null)
+            ListTile(
+              leading: const Icon(Icons.menu_book_rounded),
+              title: Text(l.readChapter),
+              onTap: () {
+                Navigator.pop(ctx);
+                context.push('/bible/${at.group(1)}/${at.group(2)}?v=${at.group(3)}');
+              },
+            ),
         ],
       ),
     ),

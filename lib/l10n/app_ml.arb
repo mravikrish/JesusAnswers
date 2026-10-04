@@ -163,5 +163,15 @@
   "savePicture": "സേവ് ചെയ്യുക",
   "verseOnPicture": "വചനം",
   "pictureSaved": "നിങ്ങളുടെ ഗാലറിയിൽ സേവ് ചെയ്തു",
-  "pictureSaveFailed": "സേവ് ചെയ്യാനായില്ല. ഫോട്ടോകൾക്ക് അനുമതി നൽകുക."
+  "pictureSaveFailed": "സേവ് ചെയ്യാനായില്ല. ഫോട്ടോകൾക്ക് അനുമതി നൽകുക.",
+  "wordsOfJesus": "യേശുവിന്റെ വാക്കുകൾ",
+  "wordsOfJesusSubtitle": "അവൻ പറഞ്ഞതെല്ലാം, ചുവന്ന അക്ഷരങ്ങളിൽ",
+  "onlyHisWords": "അവന്റെ വാക്കുകൾ മാത്രം",
+  "holyBible": "വിശുദ്ധ ബൈബിൾ",
+  "holyBibleSubtitle": "ഏതു പുസ്തകവും ഏതു അധ്യായവും വായിക്കുക",
+  "readChapter": "മുഴുവൻ അധ്യായം വായിക്കുക",
+  "continueReading": "വായന തുടരുക",
+  "pictures": "ചിത്രങ്ങൾ",
+  "booksOfTheBible": "ബൈബിൾ പുസ്തകങ്ങൾ",
+  "shareStory": "കഥ പങ്കിടുക"
 }

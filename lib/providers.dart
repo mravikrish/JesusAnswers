@@ -63,6 +63,24 @@ final storyPassagesProvider = FutureProvider.family<List<StoryPassage>, Story>((
   return ref.watch(bibleProvider).storyPassages(story, lang);
 });
 
+/// All 66 books of the Bible, in the user's current language.
+final bibleBooksProvider = FutureProvider<List<BibleBook>>((ref) {
+  final lang = ref.watch(settingsProvider.select((s) => s.lang));
+  return ref.watch(bibleProvider).bibleBooks(lang);
+});
+
+/// The books of the Words of Jesus reader, in the user's current language.
+final jesusBooksProvider = FutureProvider<List<BibleBook>>((ref) {
+  final lang = ref.watch(settingsProvider.select((s) => s.lang));
+  return ref.watch(bibleProvider).jesusBooks(lang);
+});
+
+/// One chapter of the Bible: (book code, chapter).
+final chapterProvider = FutureProvider.family<List<NumberedVerse>, (String, int)>((ref, at) {
+  final lang = ref.watch(settingsProvider.select((s) => s.lang));
+  return ref.watch(bibleProvider).chapter(at.$1, at.$2, lang);
+});
+
 /// Today's painting of Jesus (changes every day).
 final dailyPaintingProvider = FutureProvider<Painting>((_) => Painting.forDay(DateTime.now()));
 

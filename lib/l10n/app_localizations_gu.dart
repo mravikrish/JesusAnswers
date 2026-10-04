@@ -528,4 +528,34 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get pictureSaveFailed => 'સેવ ન થયું. કૃપા કરીને ફોટાની પરવાનગી આપો.';
+
+  @override
+  String get wordsOfJesus => 'ઈસુના વચનો';
+
+  @override
+  String get wordsOfJesusSubtitle => 'તેમણે કહેલું બધું, લાલ અક્ષરોમાં';
+
+  @override
+  String get onlyHisWords => 'ફક્ત તેમના વચનો';
+
+  @override
+  String get holyBible => 'પવિત્ર બાઇબલ';
+
+  @override
+  String get holyBibleSubtitle => 'કોઈ પણ પુસ્તક, કોઈ પણ અધ્યાય વાંચો';
+
+  @override
+  String get readChapter => 'આખો અધ્યાય વાંચો';
+
+  @override
+  String get continueReading => 'વાંચન ચાલુ રાખો';
+
+  @override
+  String get pictures => 'ચિત્રો';
+
+  @override
+  String get booksOfTheBible => 'બાઇબલનાં પુસ્તકો';
+
+  @override
+  String get shareStory => 'વાર્તા શેર કરો';
 }

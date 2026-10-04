@@ -204,5 +204,15 @@
   "savePicture": "Save",
   "verseOnPicture": "Verse",
   "pictureSaved": "Saved to your gallery",
-  "pictureSaveFailed": "Couldn't save. Please allow access to photos."
+  "pictureSaveFailed": "Couldn't save. Please allow access to photos.",
+  "wordsOfJesus": "Words of Jesus",
+  "wordsOfJesusSubtitle": "Everything He said, in red letters",
+  "onlyHisWords": "Only His words",
+  "holyBible": "Holy Bible",
+  "holyBibleSubtitle": "Read any book, any chapter",
+  "readChapter": "Read the whole chapter",
+  "continueReading": "Continue reading",
+  "pictures": "Pictures",
+  "booksOfTheBible": "Books of the Bible",
+  "shareStory": "Share story"
 }

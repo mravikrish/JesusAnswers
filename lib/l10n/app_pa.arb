@@ -163,5 +163,15 @@
   "savePicture": "ਸੇਵ ਕਰੋ",
   "verseOnPicture": "ਵਚਨ",
   "pictureSaved": "ਤੁਹਾਡੀ ਗੈਲਰੀ ਵਿੱਚ ਸੇਵ ਹੋ ਗਿਆ",
-  "pictureSaveFailed": "ਸੇਵ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਫੋਟੋਆਂ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ।"
+  "pictureSaveFailed": "ਸੇਵ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਫੋਟੋਆਂ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ।",
+  "wordsOfJesus": "ਯਿਸੂ ਦੇ ਬਚਨ",
+  "wordsOfJesusSubtitle": "ਉਸ ਨੇ ਜੋ ਕੁਝ ਕਿਹਾ, ਲਾਲ ਅੱਖਰਾਂ ਵਿੱਚ",
+  "onlyHisWords": "ਸਿਰਫ਼ ਉਸ ਦੇ ਬਚਨ",
+  "holyBible": "ਪਵਿੱਤਰ ਬਾਈਬਲ",
+  "holyBibleSubtitle": "ਕੋਈ ਵੀ ਪੁਸਤਕ, ਕੋਈ ਵੀ ਅਧਿਆਇ ਪੜ੍ਹੋ",
+  "readChapter": "ਪੂਰਾ ਅਧਿਆਇ ਪੜ੍ਹੋ",
+  "continueReading": "ਪੜ੍ਹਨਾ ਜਾਰੀ ਰੱਖੋ",
+  "pictures": "ਤਸਵੀਰਾਂ",
+  "booksOfTheBible": "ਬਾਈਬਲ ਦੀਆਂ ਪੁਸਤਕਾਂ",
+  "shareStory": "ਕਹਾਣੀ ਸਾਂਝੀ ਕਰੋ"
 }

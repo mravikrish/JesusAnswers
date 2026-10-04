@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:share_plus/share_plus.dart';
 
+import '../../core/share.dart';
 import '../../core/theme/app_theme.dart';
+import '../../core/widgets/common.dart';
 import '../../core/widgets/divine_light.dart';
 import '../../core/widgets/night_background.dart';
 import '../../core/widgets/playback_controls.dart';
 import '../../data/models/story.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
+import '../pictures/pictures_screen.dart';
 
 /// Bible Stories — well-loved stories as picture cards, Old Testament then New.
 class StoriesScreen extends ConsumerWidget {
@@ -177,7 +181,8 @@ class _StoryScreenState extends ConsumerState<StoryScreen> {
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     final settings = ref.watch(settingsProvider);
-    final story = ref.watch(storiesProvider).value?.where((s) => s.id == widget.id).firstOrNull;
+    final stories = ref.watch(storiesProvider).value;
+    final story = stories?.where((s) => s.id == widget.id).firstOrNull;
     final passages = story == null ? null : ref.watch(storyPassagesProvider(story)).value;
 
     return Scaffold(
@@ -213,9 +218,30 @@ class _StoryScreenState extends ConsumerState<StoryScreen> {
                             context,
                             [
                               story.title(settings.lang),
-                              for (final p in passages) ...[p.reference, for (final (_, text) in p.verses) text],
+                              for (final p in passages) ...[p.reference, for (final v in p.verses) v.text],
                             ],
                             settings.language,
+                          ),
+                        ),
+                        const SizedBox(height: 12),
+                        SizedBox(
+                          height: 48,
+                          child: WhatsAppStatusButton(
+                            onPressed: () => context.push('/pictures/stories/${stories!.indexOf(story)}'),
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        SizedBox(
+                          height: 46,
+                          child: OutlinedButton.icon(
+                            style: OutlinedButton.styleFrom(
+                              foregroundColor: Colors.white,
+                              side: BorderSide(color: Colors.white.withValues(alpha: 0.3)),
+                              shape: const StadiumBorder(),
+                            ),
+                            onPressed: () => _shareText(story, passages, settings.lang, l),
+                            icon: const Icon(Icons.share_rounded, size: 20),
+                            label: Text(l.shareStory),
                           ),
                         ),
                         for (final p in passages) _Passage(passage: p),
@@ -236,6 +262,20 @@ class _StoryScreenState extends ConsumerState<StoryScreen> {
       ),
     );
   }
+}
+
+/// The whole story as text — title, each passage with its verses, and where
+/// it is from — to send on WhatsApp or anywhere.
+Future<void> _shareText(Story story, List<StoryPassage> passages, String lang, AppLocalizations l) async {
+  final text = StringBuffer(story.title(lang));
+  for (final p in passages) {
+    text
+      ..write('\n\n')
+      ..write(p.reference)
+      ..write('\n')
+      ..write([for (final v in p.verses) '${v.number} ${v.text}'].join(' '));
+  }
+  await SharePlus.instance.share(ShareParams(text: '$text\n\n${shareFooter(l)}'));
 }
 
 /// The story's picture, fading into the night sky, with back over it.
@@ -294,12 +334,13 @@ class _Passage extends StatelessWidget {
             const SizedBox(height: 8),
             Text.rich(
               TextSpan(children: [
-                for (final (n, text) in passage.verses) ...[
+                for (final v in passage.verses) ...[
                   TextSpan(
-                    text: '$n ',
+                    text: '${v.number} ',
                     style: const TextStyle(color: AppColors.goldSoft, fontSize: 12, fontWeight: FontWeight.w700),
                   ),
-                  TextSpan(text: '$text '),
+                  redLetterSpan(v.text, v.jesusWords),
+                  const TextSpan(text: ' '),
                 ],
               ]),
               style: AppText.serif(22, color: Colors.white, height: 1.5),

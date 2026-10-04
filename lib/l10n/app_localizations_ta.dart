@@ -537,4 +537,36 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get pictureSaveFailed =>
       'சேமிக்க முடியவில்லை. புகைப்படங்களுக்கு அனுமதி தாருங்கள்.';
+
+  @override
+  String get wordsOfJesus => 'இயேசுவின் வார்த்தைகள்';
+
+  @override
+  String get wordsOfJesusSubtitle =>
+      'அவர் சொன்ன அனைத்தும், சிவப்பு எழுத்துகளில்';
+
+  @override
+  String get onlyHisWords => 'அவருடைய வார்த்தைகள் மட்டும்';
+
+  @override
+  String get holyBible => 'பரிசுத்த வேதாகமம்';
+
+  @override
+  String get holyBibleSubtitle =>
+      'எந்தப் புத்தகத்தையும், எந்த அதிகாரத்தையும் வாசியுங்கள்';
+
+  @override
+  String get readChapter => 'முழு அதிகாரத்தையும் வாசியுங்கள்';
+
+  @override
+  String get continueReading => 'தொடர்ந்து வாசியுங்கள்';
+
+  @override
+  String get pictures => 'படங்கள்';
+
+  @override
+  String get booksOfTheBible => 'வேதாகமப் புத்தகங்கள்';
+
+  @override
+  String get shareStory => 'கதையைப் பகிருங்கள்';
 }

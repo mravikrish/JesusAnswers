@@ -55,7 +55,72 @@ void main() {
     final prodigal = (await bible.storyPassages(stories.firstWhere((s) => s.id == 'prodigal_son'), 'en')).single;
     expect(prodigal.reference, 'Luke 15:11-32');
     expect(prodigal.verses.length, 22);
-    expect(prodigal.verses.first.$2, startsWith('And he said, A certain man had two sons'));
+    expect(prodigal.verses.first.text, startsWith('And he said, A certain man had two sons'));
+  });
+
+  test('the whole Bible can be read, every book and chapter, in every language', () async {
+    for (final lang in appLanguages) {
+      final books = await bible.bibleBooks(lang.code);
+      expect(books.length, 66, reason: lang.code);
+      expect(books.where((b) => b.oldTestament).length, 39, reason: lang.code);
+      final chapters = {for (final b in books) b.code: b.chapters.length};
+      expect([chapters['GEN'], chapters['PSA'], chapters['MAT'], chapters['REV']], [50, 150, 28, 22], reason: lang.code);
+      var verses = 0;
+      for (final b in books) {
+        expect((await bible.keyVerse(b, lang.code))?.text, isNotEmpty, reason: '${lang.code} ${b.code} key verse');
+        expect(b.name, isNot(b.code), reason: '${lang.code} ${b.code} book name');
+        expect(b.name.length, lessThan(30), reason: '${lang.code} ${b.code} book name is a title, not a name');
+        for (final c in b.chapters) {
+          final list = await bible.chapter(b.code, c, lang.code);
+          expect(list, isNotEmpty, reason: '${lang.code} ${b.code} $c');
+          verses += list.length;
+        }
+      }
+      expect(verses, greaterThan(30900), reason: lang.code);
+    }
+    final books = {for (final b in await bible.bibleBooks('en')) b.code: b};
+    // Until a book has its own picture, its Bible Story's stands in.
+    for (final b in books.values) {
+      if (b.picture case final p?) expect((await rootBundle.load(p)).lengthInBytes, greaterThan(20000), reason: p);
+    }
+    expect(books['GEN']!.picture, anyOf('assets/books/GEN.jpg', 'assets/stories/creation.jpg'));
+    final key = (await bible.keyVerse(books['PSA']!, 'en'))!;
+    expect([key.reference, key.text], ['Psalm 23:1', startsWith('A Psalm of David. The LORD is my shepherd')]);
+    final psalm = await bible.chapter('PSA', 23, 'en');
+    expect(psalm.first.text, endsWith('The LORD is my shepherd; I shall not want.'));
+    expect(psalm.length, 6);
+  });
+
+  test('the four Gospels are whole, with the words of Jesus marked, in every language', () async {
+    for (final lang in appLanguages) {
+      final books = await bible.jesusBooks(lang.code);
+      expect(books.take(4).map((b) => b.code), ['MAT', 'MRK', 'LUK', 'JHN'], reason: lang.code);
+      expect([for (final b in books.take(4)) b.chapters.length], [28, 16, 24, 21], reason: lang.code);
+      expect(books.map((b) => b.code), containsAll(['ACT', 'REV']), reason: lang.code);
+      var spoken = 0;
+      for (final b in books) {
+        for (final c in b.chapters) {
+          final verses = await bible.chapter(b.code, c, lang.code);
+          expect(verses, isNotEmpty, reason: '${lang.code} ${b.code} $c');
+          if (!b.isGospel) expect(verses.where((v) => v.jesusWords.isNotEmpty), isNotEmpty, reason: '${lang.code} ${b.code} $c');
+          for (final v in verses) {
+            var pos = 0;
+            for (final (s, e) in v.jesusWords) {
+              expect(s >= pos && s < e && e <= v.text.length, isTrue, reason: '${lang.code} ${b.code} $c:${v.number}');
+              pos = e;
+            }
+            if (v.jesusWords.isNotEmpty) spoken++;
+          }
+        }
+      }
+      // Red-letter editions mark roughly two thousand verses.
+      expect(spoken, inInclusiveRange(1900, 2200), reason: lang.code);
+    }
+    final follow = (await bible.chapter('MAT', 4, 'en')).firstWhere((v) => v.number == 19);
+    expect(follow.spoken, 'Follow me, and I will make you fishers of men.');
+    // Verses chosen by theme carry His words too.
+    expect((await bible.verse('JHN 14:27', 'en'))!.jesusWords, isNotEmpty);
+    expect((await bible.verse('PSA 23:1', 'en'))!.jesusWords, isEmpty);
   });
 
   test('a different painting of Jesus each day, every one bundled', () async {

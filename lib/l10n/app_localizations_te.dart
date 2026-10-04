@@ -531,4 +531,34 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get pictureSaveFailed => 'సేవ్ కాలేదు. దయచేసి ఫోటోలకు అనుమతి ఇవ్వండి.';
+
+  @override
+  String get wordsOfJesus => 'యేసు మాటలు';
+
+  @override
+  String get wordsOfJesusSubtitle => 'ఆయన పలికిన ప్రతి మాట, ఎరుపు అక్షరాలలో';
+
+  @override
+  String get onlyHisWords => 'ఆయన మాటలు మాత్రమే';
+
+  @override
+  String get holyBible => 'పరిశుద్ధ గ్రంథం';
+
+  @override
+  String get holyBibleSubtitle => 'ఏ పుస్తకమైనా, ఏ అధ్యాయమైనా చదవండి';
+
+  @override
+  String get readChapter => 'పూర్తి అధ్యాయం చదవండి';
+
+  @override
+  String get continueReading => 'చదవడం కొనసాగించండి';
+
+  @override
+  String get pictures => 'చిత్రాలు';
+
+  @override
+  String get booksOfTheBible => 'బైబిలు పుస్తకాలు';
+
+  @override
+  String get shareStory => 'కథను పంచుకోండి';
 }

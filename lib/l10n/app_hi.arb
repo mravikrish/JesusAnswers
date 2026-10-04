@@ -163,5 +163,15 @@
   "savePicture": "सेव करें",
   "verseOnPicture": "वचन",
   "pictureSaved": "आपकी गैलरी में सेव हो गया",
-  "pictureSaveFailed": "सेव नहीं हो सका। कृपया फ़ोटो की अनुमति दें।"
+  "pictureSaveFailed": "सेव नहीं हो सका। कृपया फ़ोटो की अनुमति दें।",
+  "wordsOfJesus": "यीशु के वचन",
+  "wordsOfJesusSubtitle": "उन्होंने जो कुछ कहा, लाल अक्षरों में",
+  "onlyHisWords": "केवल उनके वचन",
+  "holyBible": "पवित्र बाइबल",
+  "holyBibleSubtitle": "कोई भी पुस्तक, कोई भी अध्याय पढ़ें",
+  "readChapter": "पूरा अध्याय पढ़ें",
+  "continueReading": "पढ़ना जारी रखें",
+  "pictures": "चित्र",
+  "booksOfTheBible": "बाइबल की पुस्तकें",
+  "shareStory": "कहानी साझा करें"
 }
