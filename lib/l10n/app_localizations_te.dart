@@ -570,4 +570,32 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get illustration => 'చిత్రణ';
+
+  @override
+  String get naturalVoices => 'సహజమైన స్వరాలు';
+
+  @override
+  String get naturalVoicesHint =>
+      'మరింత సహజంగా వినిపించే ఉచిత స్వరాలు. ఒక్కసారి డౌన్‌లోడ్ చేస్తే ఇంటర్నెట్ లేకుండా పనిచేస్తాయి. Wi-Fi లో డౌన్‌లోడ్ చేయండి.';
+
+  @override
+  String get voiceOfJesus => 'యేసు స్వరం';
+
+  @override
+  String get verseReader => 'వచనాలు చదివే స్వరం';
+
+  @override
+  String downloadVoiceSize(int size) {
+    return 'డౌన్‌లోడ్ · $size MB';
+  }
+
+  @override
+  String get removeVoice => 'తీసివేయండి';
+
+  @override
+  String get voiceDownloadFailed =>
+      'డౌన్‌లోడ్ కాలేదు. ఇంటర్నెట్ చూసి మళ్లీ ప్రయత్నించండి.';
+
+  @override
+  String get voiceCredits => 'స్వరాల క్రెడిట్స్';
 }

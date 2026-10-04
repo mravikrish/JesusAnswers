@@ -10,6 +10,7 @@ import 'package:jesus_answers/providers.dart';
 import 'package:jesus_answers/services/answer/answer_service.dart';
 import 'package:jesus_answers/services/answer/safety.dart';
 import 'package:jesus_answers/services/answer/theme_classifier.dart';
+import 'package:jesus_answers/services/voice/natural_voices.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
@@ -162,6 +163,24 @@ void main() {
     }
     final rest = (await bible.fullVerse('MAT 11:28', 'en'))!;
     expect(rest.spoken, 'Come unto me, all ye that labour and are heavy laden, and I will give you rest.');
+  });
+
+  test('natural voices: one per language and role, free to use, credited', () {
+    final codes = {for (final l in appLanguages) l.code};
+    final seen = <String>{};
+    for (final v in naturalVoices) {
+      expect(codes, contains(v.lang), reason: v.id);
+      expect(seen.add('${v.lang}/${v.role}'), isTrue, reason: '${v.id}: two voices for one language and role');
+      expect(v.id, startsWith(v.lang), reason: v.id);
+      expect(v.credit, isNotEmpty, reason: v.id);
+      expect(v.lengthScale, inInclusiveRange(1.0, 1.8), reason: v.id);
+      expect(v.file('${v.id}.onnx').toString(), 'https://huggingface.co/csukuangfj/vits-piper-${v.id}/resolve/main/${v.id}.onnx');
+    }
+    // His words in a male voice, the rest in a female one; skipped languages keep the phone's voice.
+    expect(naturalVoiceFor('de', VoiceRole.jesus)!.name, 'Thorsten');
+    expect(naturalVoiceFor('de', VoiceRole.verse)!.name, 'Kerstin');
+    expect(naturalVoiceFor('te', VoiceRole.jesus), isNull);
+    expect(naturalVoiceFor('uk', VoiceRole.jesus), isNull);
   });
 
   test('retrieves verbatim KJV text by theme', () async {

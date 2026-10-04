@@ -176,5 +176,13 @@
   "shareStory": "ਕਹਾਣੀ ਸਾਂਝੀ ਕਰੋ",
   "getItOnGooglePlay": "Google Play 'ਤੇ ਪ੍ਰਾਪਤ ਕਰੋ",
   "hearHimSpeak": "ਉਸ ਨੂੰ ਬੋਲਦੇ ਸੁਣੋ",
-  "illustration": "ਚਿਤਰਣ"
+  "illustration": "ਚਿਤਰਣ",
+  "naturalVoices": "ਕੁਦਰਤੀ ਆਵਾਜ਼ਾਂ",
+  "naturalVoicesHint": "ਮੁਫ਼ਤ ਆਵਾਜ਼ਾਂ ਜੋ ਵਧੇਰੇ ਕੁਦਰਤੀ ਲੱਗਦੀਆਂ ਹਨ। ਇੱਕ ਵਾਰ ਡਾਊਨਲੋਡ ਕਰੋ, ਫਿਰ ਬਿਨਾਂ ਇੰਟਰਨੈੱਟ ਚੱਲਦੀਆਂ ਹਨ। Wi-Fi ’ਤੇ ਡਾਊਨਲੋਡ ਕਰੋ।",
+  "voiceOfJesus": "ਯਿਸੂ ਦੀ ਆਵਾਜ਼",
+  "verseReader": "ਵਚਨ ਪੜ੍ਹਨ ਵਾਲੀ ਆਵਾਜ਼",
+  "downloadVoiceSize": "ਡਾਊਨਲੋਡ · {size} MB",
+  "removeVoice": "ਹਟਾਓ",
+  "voiceDownloadFailed": "ਡਾਊਨਲੋਡ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਇੰਟਰਨੈੱਟ ਜਾਂਚ ਕੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "voiceCredits": "ਆਵਾਜ਼ਾਂ ਦਾ ਸਿਹਰਾ"
 }

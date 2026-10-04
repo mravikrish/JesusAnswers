@@ -176,5 +176,13 @@
   "shareStory": "କାହାଣୀ ସେୟାର କରନ୍ତୁ",
   "getItOnGooglePlay": "Google Play ରେ ପାଆନ୍ତୁ",
   "hearHimSpeak": "ତାଙ୍କ କଥା ଶୁଣନ୍ତୁ",
-  "illustration": "ଚିତ୍ରଣ"
+  "illustration": "ଚିତ୍ରଣ",
+  "naturalVoices": "ସ୍ୱାଭାବିକ ସ୍ୱର",
+  "naturalVoicesHint": "ଅଧିକ ସ୍ୱାଭାବିକ ଶୁଣାଯାଉଥିବା ମାଗଣା ସ୍ୱର। ଥରେ ଡାଉନଲୋଡ କଲେ ଇଣ୍ଟରନେଟ ବିନା ଚାଲେ। Wi-Fi ରେ ଡାଉନଲୋଡ କରନ୍ତୁ।",
+  "voiceOfJesus": "ଯୀଶୁଙ୍କ ସ୍ୱର",
+  "verseReader": "ପଦ ପଢ଼ୁଥିବା ସ୍ୱର",
+  "downloadVoiceSize": "ଡାଉନଲୋଡ · {size} MB",
+  "removeVoice": "ହଟାନ୍ତୁ",
+  "voiceDownloadFailed": "ଡାଉନଲୋଡ ହେଲା ନାହିଁ। ଇଣ୍ଟରନେଟ ଦେଖି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।",
+  "voiceCredits": "ସ୍ୱରର କୃତଜ୍ଞତା"
 }

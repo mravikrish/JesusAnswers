@@ -10,6 +10,7 @@ import '../../core/widgets/playback_controls.dart';
 import '../../data/models/verse.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
+import '../../services/voice/natural_voices.dart';
 import '../../services/voice/tts_service.dart';
 
 /// The portrait that speaks: art/portrait/jesus_speaking.png, resized into the app.
@@ -96,7 +97,8 @@ class _SpeakScreenState extends ConsumerState<SpeakScreen> with TickerProviderSt
   /// Reads from saying [index] to the end.
   void _play(List<Verse> sayings, int index) {
     setState(() => _from = index.clamp(0, sayings.length - 1));
-    readAloud(context, [for (final v in sayings.skip(_from)) v.spoken], ref.read(settingsProvider).language);
+    readAloud(context, [for (final v in sayings.skip(_from)) v.spoken], ref.read(settingsProvider).language,
+        role: VoiceRole.jesus);
   }
 
   @override

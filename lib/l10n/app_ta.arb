@@ -176,5 +176,13 @@
   "shareStory": "கதையைப் பகிருங்கள்",
   "getItOnGooglePlay": "Google Play இல் பெறுங்கள்",
   "hearHimSpeak": "அவர் பேசுவதைக் கேளுங்கள்",
-  "illustration": "சித்தரிப்பு"
+  "illustration": "சித்தரிப்பு",
+  "naturalVoices": "இயல்பான குரல்கள்",
+  "naturalVoicesHint": "இன்னும் இயல்பாக ஒலிக்கும் இலவசக் குரல்கள். ஒருமுறை பதிவிறக்கினால் இணையம் இல்லாமல் இயங்கும். Wi-Fi இல் பதிவிறக்குங்கள்.",
+  "voiceOfJesus": "இயேசுவின் குரல்",
+  "verseReader": "வசனம் வாசிக்கும் குரல்",
+  "downloadVoiceSize": "பதிவிறக்கு · {size} MB",
+  "removeVoice": "நீக்கு",
+  "voiceDownloadFailed": "பதிவிறக்க முடியவில்லை. இணையத்தைச் சரிபார்த்து மீண்டும் முயலுங்கள்.",
+  "voiceCredits": "குரல்களுக்கான நன்றி"
 }

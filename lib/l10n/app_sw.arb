@@ -176,5 +176,13 @@
   "shareStory": "Shiriki hadithi",
   "getItOnGooglePlay": "Ipate kwenye Google Play",
   "hearHimSpeak": "Msikie akisema",
-  "illustration": "Mchoro"
+  "illustration": "Mchoro",
+  "naturalVoices": "Sauti za asili",
+  "naturalVoicesHint": "Sauti za bure zinazosikika kwa asili zaidi. Pakua mara moja, kisha zinafanya kazi bila intaneti. Tumia Wi-Fi.",
+  "voiceOfJesus": "Sauti ya Yesu",
+  "verseReader": "Msomaji wa mistari",
+  "downloadVoiceSize": "Pakua · {size} MB",
+  "removeVoice": "Ondoa",
+  "voiceDownloadFailed": "Imeshindwa kupakua. Angalia intaneti yako ujaribu tena.",
+  "voiceCredits": "Shukrani kwa sauti"
 }

@@ -578,4 +578,32 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get illustration => 'சித்தரிப்பு';
+
+  @override
+  String get naturalVoices => 'இயல்பான குரல்கள்';
+
+  @override
+  String get naturalVoicesHint =>
+      'இன்னும் இயல்பாக ஒலிக்கும் இலவசக் குரல்கள். ஒருமுறை பதிவிறக்கினால் இணையம் இல்லாமல் இயங்கும். Wi-Fi இல் பதிவிறக்குங்கள்.';
+
+  @override
+  String get voiceOfJesus => 'இயேசுவின் குரல்';
+
+  @override
+  String get verseReader => 'வசனம் வாசிக்கும் குரல்';
+
+  @override
+  String downloadVoiceSize(int size) {
+    return 'பதிவிறக்கு · $size MB';
+  }
+
+  @override
+  String get removeVoice => 'நீக்கு';
+
+  @override
+  String get voiceDownloadFailed =>
+      'பதிவிறக்க முடியவில்லை. இணையத்தைச் சரிபார்த்து மீண்டும் முயலுங்கள்.';
+
+  @override
+  String get voiceCredits => 'குரல்களுக்கான நன்றி';
 }

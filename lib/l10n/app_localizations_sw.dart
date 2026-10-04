@@ -570,4 +570,32 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get illustration => 'Mchoro';
+
+  @override
+  String get naturalVoices => 'Sauti za asili';
+
+  @override
+  String get naturalVoicesHint =>
+      'Sauti za bure zinazosikika kwa asili zaidi. Pakua mara moja, kisha zinafanya kazi bila intaneti. Tumia Wi-Fi.';
+
+  @override
+  String get voiceOfJesus => 'Sauti ya Yesu';
+
+  @override
+  String get verseReader => 'Msomaji wa mistari';
+
+  @override
+  String downloadVoiceSize(int size) {
+    return 'Pakua · $size MB';
+  }
+
+  @override
+  String get removeVoice => 'Ondoa';
+
+  @override
+  String get voiceDownloadFailed =>
+      'Imeshindwa kupakua. Angalia intaneti yako ujaribu tena.';
+
+  @override
+  String get voiceCredits => 'Shukrani kwa sauti';
 }

@@ -575,4 +575,32 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get illustration => 'ചിത്രീകരണം';
+
+  @override
+  String get naturalVoices => 'സ്വാഭാവിക ശബ്ദങ്ങൾ';
+
+  @override
+  String get naturalVoicesHint =>
+      'കൂടുതൽ സ്വാഭാവികമായി കേൾക്കുന്ന സൗജന്യ ശബ്ദങ്ങൾ. ഒരിക്കൽ ഡൗൺലോഡ് ചെയ്താൽ ഇന്റർനെറ്റ് ഇല്ലാതെ പ്രവർത്തിക്കും. Wi-Fi-ൽ ഡൗൺലോഡ് ചെയ്യുക.';
+
+  @override
+  String get voiceOfJesus => 'യേശുവിന്റെ ശബ്ദം';
+
+  @override
+  String get verseReader => 'വാക്യം വായിക്കുന്ന ശബ്ദം';
+
+  @override
+  String downloadVoiceSize(int size) {
+    return 'ഡൗൺലോഡ് · $size MB';
+  }
+
+  @override
+  String get removeVoice => 'നീക്കം ചെയ്യുക';
+
+  @override
+  String get voiceDownloadFailed =>
+      'ഡൗൺലോഡ് ചെയ്യാനായില്ല. ഇന്റർനെറ്റ് പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക.';
+
+  @override
+  String get voiceCredits => 'ശബ്ദങ്ങൾക്ക് കടപ്പാട്';
 }

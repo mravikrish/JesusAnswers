@@ -176,5 +176,13 @@
   "shareStory": "Compartilhar história",
   "getItOnGooglePlay": "Disponível no Google Play",
   "hearHimSpeak": "Ouça-o falar",
-  "illustration": "Ilustração"
+  "illustration": "Ilustração",
+  "naturalVoices": "Vozes naturais",
+  "naturalVoicesHint": "Vozes gratuitas que soam mais naturais. Baixe uma vez e elas funcionam sem internet. Prefira o Wi-Fi.",
+  "voiceOfJesus": "Voz de Jesus",
+  "verseReader": "Leitor de versículos",
+  "downloadVoiceSize": "Baixar · {size} MB",
+  "removeVoice": "Remover",
+  "voiceDownloadFailed": "Não foi possível baixar. Verifique sua internet e tente novamente.",
+  "voiceCredits": "Créditos das vozes"
 }

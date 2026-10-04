@@ -176,5 +176,13 @@
   "shareStory": "Ibahagi ang kuwento",
   "getItOnGooglePlay": "Kunin ito sa Google Play",
   "hearHimSpeak": "Pakinggan Siyang magsalita",
-  "illustration": "Ilustrasyon"
+  "illustration": "Ilustrasyon",
+  "naturalVoices": "Natural na boses",
+  "naturalVoicesHint": "Libreng boses na mas natural pakinggan. I-download nang isang beses at gagana na kahit walang internet. Mas mainam sa Wi-Fi.",
+  "voiceOfJesus": "Boses ni Jesus",
+  "verseReader": "Tagabasa ng talata",
+  "downloadVoiceSize": "I-download · {size} MB",
+  "removeVoice": "Alisin",
+  "voiceDownloadFailed": "Hindi na-download. Tingnan ang iyong internet at subukan muli.",
+  "voiceCredits": "Pagkilala sa mga boses"
 }

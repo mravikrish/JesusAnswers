@@ -93,6 +93,16 @@ spoken — His red-letter words, verbatim — never anything generated, and the 
 The famous sayings it plays are `famousSayings` in `speak_screen.dart`. Next steps: a consistent neural voice
 (pre-generated audio), then lip-synced video for chosen sayings.
 
+**Natural voices (free).** Profile → Natural voices downloads free Piper voices that then speak offline on the
+phone, through sherpa-onnx (`lib/services/voice/natural_voices.dart`, `natural_speech.dart`). His words use the
+male "Voice of Jesus"; verses, stories and everything else the female "Verse reader"; a language or role
+without one keeps the phone's voice. Files come uncompressed from the sherpa-onnx authors' Hugging Face copies
+(`csukuangfj/vits-piper-<voice>`): a shared 17 MB pronunciation folder once, then 20–110 MB per voice. Every
+voice is licensed for app use (CC0, public domain, CC BY, CC BY-SA, Apache); credits are under Profile →
+Voice credits. Chosen voices: male Northern English, Ald (es), Faber (pt), Gilles (fr), Thorsten (de),
+Darkman (pl), Denis (ru); female Cori (en), Daniela (es), Siwis (fr), Kerstin (de), Gosia (pl), Lada (uk).
+Telugu, Bengali, Marathi and Ukrainian male voices exist but aren't hosted in converted form yet.
+
 **Sharing pictures.** Every picture in the app — of Jesus, of each Bible Story, of each book — can be sent as a
 WhatsApp status from Home → Pictures, or from the story or book itself. Story and book art (landscape, title
 painted in) sits whole at the top of the 9:16 card over a blurred copy of itself, with its name and, for books,
@@ -196,6 +206,8 @@ keyPassword=…
       Decide whether to ship it or seek permission for a modern translation (e.g. Ohienko).
 - [ ] Crisis helplines are shown by the phone's country (`_helplines` in `common.dart`); have someone in each
       country confirm the number before launching there.
+- [ ] Natural voices: try each on a mid-range Android phone (speed, memory) before release; host converted
+      Telugu, Bengali, Marathi and Ukrainian male voices (e.g. on Hugging Face) to add them.
 - [ ] Replace device TTS with a neural cloud voice for a consistent warm male voice in Indian languages.
 - [ ] Firebase (Auth, Analytics, FCM for the Daily Word notification). Not wired yet. Sign-in currently
       stores name + mobile number on the device only; add OTP (Firebase Phone Auth) in `sign_in_screen.dart`.

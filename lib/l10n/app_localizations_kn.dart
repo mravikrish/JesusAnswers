@@ -571,4 +571,32 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get illustration => 'ಚಿತ್ರಣ';
+
+  @override
+  String get naturalVoices => 'ಸಹಜ ಧ್ವನಿಗಳು';
+
+  @override
+  String get naturalVoicesHint =>
+      'ಹೆಚ್ಚು ಸಹಜವಾಗಿ ಕೇಳಿಸುವ ಉಚಿತ ಧ್ವನಿಗಳು. ಒಮ್ಮೆ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿದರೆ ಇಂಟರ್ನೆಟ್ ಇಲ್ಲದೆ ಕೆಲಸ ಮಾಡುತ್ತವೆ. Wi-Fi ನಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ.';
+
+  @override
+  String get voiceOfJesus => 'ಯೇಸುವಿನ ಧ್ವನಿ';
+
+  @override
+  String get verseReader => 'ವಚನ ಓದುವ ಧ್ವನಿ';
+
+  @override
+  String downloadVoiceSize(int size) {
+    return 'ಡೌನ್‌ಲೋಡ್ · $size MB';
+  }
+
+  @override
+  String get removeVoice => 'ತೆಗೆದುಹಾಕಿ';
+
+  @override
+  String get voiceDownloadFailed =>
+      'ಡೌನ್‌ಲೋಡ್ ಆಗಲಿಲ್ಲ. ಇಂಟರ್ನೆಟ್ ಪರಿಶೀಲಿಸಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
+
+  @override
+  String get voiceCredits => 'ಧ್ವನಿಗಳ ಕೃತಜ್ಞತೆ';
 }

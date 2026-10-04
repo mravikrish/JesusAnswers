@@ -176,5 +176,13 @@
   "shareStory": "कथा शेअर करा",
   "getItOnGooglePlay": "Google Play वर मिळवा",
   "hearHimSpeak": "त्याचे बोलणे ऐका",
-  "illustration": "चित्रण"
+  "illustration": "चित्रण",
+  "naturalVoices": "नैसर्गिक आवाज",
+  "naturalVoicesHint": "अधिक नैसर्गिक वाटणारे मोफत आवाज. एकदा डाउनलोड केल्यावर इंटरनेटशिवाय चालतात. वाय-फायवर डाउनलोड करा.",
+  "voiceOfJesus": "येशूचा आवाज",
+  "verseReader": "वचन वाचणारा आवाज",
+  "downloadVoiceSize": "डाउनलोड · {size} MB",
+  "removeVoice": "काढा",
+  "voiceDownloadFailed": "डाउनलोड झाले नाही. इंटरनेट तपासून पुन्हा प्रयत्न करा.",
+  "voiceCredits": "आवाजांचे श्रेय"
 }

@@ -576,4 +576,32 @@ class AppLocalizationsTl extends AppLocalizations {
 
   @override
   String get illustration => 'Ilustrasyon';
+
+  @override
+  String get naturalVoices => 'Natural na boses';
+
+  @override
+  String get naturalVoicesHint =>
+      'Libreng boses na mas natural pakinggan. I-download nang isang beses at gagana na kahit walang internet. Mas mainam sa Wi-Fi.';
+
+  @override
+  String get voiceOfJesus => 'Boses ni Jesus';
+
+  @override
+  String get verseReader => 'Tagabasa ng talata';
+
+  @override
+  String downloadVoiceSize(int size) {
+    return 'I-download · $size MB';
+  }
+
+  @override
+  String get removeVoice => 'Alisin';
+
+  @override
+  String get voiceDownloadFailed =>
+      'Hindi na-download. Tingnan ang iyong internet at subukan muli.';
+
+  @override
+  String get voiceCredits => 'Pagkilala sa mga boses';
 }

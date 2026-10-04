@@ -566,4 +566,32 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get illustration => 'चित्रण';
+
+  @override
+  String get naturalVoices => 'स्वाभाविक आवाज़ें';
+
+  @override
+  String get naturalVoicesHint =>
+      'मुफ़्त आवाज़ें जो अधिक स्वाभाविक लगती हैं। एक बार डाउनलोड करें, फिर ये बिना इंटरनेट चलती हैं। वाई-फ़ाई पर डाउनलोड करें।';
+
+  @override
+  String get voiceOfJesus => 'यीशु की आवाज़';
+
+  @override
+  String get verseReader => 'वचन पढ़ने वाली आवाज़';
+
+  @override
+  String downloadVoiceSize(int size) {
+    return 'डाउनलोड · $size MB';
+  }
+
+  @override
+  String get removeVoice => 'हटाएँ';
+
+  @override
+  String get voiceDownloadFailed =>
+      'डाउनलोड नहीं हो सका। इंटरनेट जाँचकर फिर कोशिश करें।';
+
+  @override
+  String get voiceCredits => 'आवाज़ों का श्रेय';
 }

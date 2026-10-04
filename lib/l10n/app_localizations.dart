@@ -1197,6 +1197,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Illustration'**
   String get illustration;
+
+  /// No description provided for @naturalVoices.
+  ///
+  /// In en, this message translates to:
+  /// **'Natural voices'**
+  String get naturalVoices;
+
+  /// No description provided for @naturalVoicesHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Free voices that sound more natural. Download once and they work offline. Wi-Fi recommended.'**
+  String get naturalVoicesHint;
+
+  /// No description provided for @voiceOfJesus.
+  ///
+  /// In en, this message translates to:
+  /// **'Voice of Jesus'**
+  String get voiceOfJesus;
+
+  /// No description provided for @verseReader.
+  ///
+  /// In en, this message translates to:
+  /// **'Verse reader'**
+  String get verseReader;
+
+  /// No description provided for @downloadVoiceSize.
+  ///
+  /// In en, this message translates to:
+  /// **'Download · {size} MB'**
+  String downloadVoiceSize(int size);
+
+  /// No description provided for @removeVoice.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove'**
+  String get removeVoice;
+
+  /// No description provided for @voiceDownloadFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t download. Check your internet and try again.'**
+  String get voiceDownloadFailed;
+
+  /// No description provided for @voiceCredits.
+  ///
+  /// In en, this message translates to:
+  /// **'Voice credits'**
+  String get voiceCredits;
 }
 
 class _AppLocalizationsDelegate

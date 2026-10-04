@@ -570,4 +570,32 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get illustration => 'Иллюстрация';
+
+  @override
+  String get naturalVoices => 'Естественные голоса';
+
+  @override
+  String get naturalVoicesHint =>
+      'Бесплатные голоса, звучащие естественнее. Скачайте один раз, и они работают без интернета. Лучше по Wi-Fi.';
+
+  @override
+  String get voiceOfJesus => 'Голос Иисуса';
+
+  @override
+  String get verseReader => 'Чтец стихов';
+
+  @override
+  String downloadVoiceSize(int size) {
+    return 'Скачать · $size МБ';
+  }
+
+  @override
+  String get removeVoice => 'Удалить';
+
+  @override
+  String get voiceDownloadFailed =>
+      'Не удалось скачать. Проверьте интернет и попробуйте снова.';
+
+  @override
+  String get voiceCredits => 'Авторы голосов';
 }

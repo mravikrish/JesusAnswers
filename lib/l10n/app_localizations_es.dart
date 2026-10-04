@@ -571,4 +571,32 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get illustration => 'Ilustración';
+
+  @override
+  String get naturalVoices => 'Voces naturales';
+
+  @override
+  String get naturalVoicesHint =>
+      'Voces gratuitas que suenan más naturales. Se descargan una vez y luego funcionan sin internet. Mejor con wifi.';
+
+  @override
+  String get voiceOfJesus => 'Voz de Jesús';
+
+  @override
+  String get verseReader => 'Lector de versículos';
+
+  @override
+  String downloadVoiceSize(int size) {
+    return 'Descargar · $size MB';
+  }
+
+  @override
+  String get removeVoice => 'Quitar';
+
+  @override
+  String get voiceDownloadFailed =>
+      'No se pudo descargar. Revisa tu conexión e inténtalo de nuevo.';
+
+  @override
+  String get voiceCredits => 'Créditos de las voces';
 }

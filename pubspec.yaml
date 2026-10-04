@@ -53,6 +53,8 @@ dependencies:
   package_info_plus: ^10.2.2
   device_info_plus: ^13.3.0
   path_provider: ^2.1.6
+  sherpa_onnx: ^1.13.8
+  audioplayers: ^6.8.1
 
 dev_dependencies:
   flutter_test:

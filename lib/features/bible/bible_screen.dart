@@ -13,6 +13,7 @@ import '../../data/models/painting.dart';
 import '../../data/models/verse.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
+import '../../services/voice/natural_voices.dart';
 import '../pictures/pictures_screen.dart';
 
 /// Where the reader last was, e.g. "GEN 3", for Continue reading.
@@ -475,6 +476,7 @@ class _ChapterScreenState extends ConsumerState<ChapterScreen> {
                               context,
                               [title, for (final v in shown) onlyHis ? v.spoken : v.text],
                               settings.language,
+                              role: onlyHis ? VoiceRole.jesus : VoiceRole.verse,
                             ),
                           ),
                           const SizedBox(height: 14),

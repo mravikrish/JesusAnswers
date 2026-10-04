@@ -176,5 +176,13 @@
   "shareStory": "Поделиться историей",
   "getItOnGooglePlay": "Доступно в Google Play",
   "hearHimSpeak": "Послушайте Его слова",
-  "illustration": "Иллюстрация"
+  "illustration": "Иллюстрация",
+  "naturalVoices": "Естественные голоса",
+  "naturalVoicesHint": "Бесплатные голоса, звучащие естественнее. Скачайте один раз, и они работают без интернета. Лучше по Wi-Fi.",
+  "voiceOfJesus": "Голос Иисуса",
+  "verseReader": "Чтец стихов",
+  "downloadVoiceSize": "Скачать · {size} МБ",
+  "removeVoice": "Удалить",
+  "voiceDownloadFailed": "Не удалось скачать. Проверьте интернет и попробуйте снова.",
+  "voiceCredits": "Авторы голосов"
 }

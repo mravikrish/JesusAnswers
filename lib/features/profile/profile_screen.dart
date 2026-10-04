@@ -8,6 +8,7 @@ import '../../core/theme/app_theme.dart';
 import '../../core/widgets/common.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
+import '../../services/voice/natural_voices.dart';
 import 'voice_picker_sheet.dart';
 
 class ProfileScreen extends ConsumerWidget {
@@ -74,6 +75,7 @@ class ProfileScreen extends ConsumerWidget {
                   ),
                 ),
                 const _VoiceMissingNotice(),
+                const _NaturalVoices(),
                 const Divider(height: 1, color: AppColors.sand),
                 ListTile(
                   leading: const Icon(Icons.format_size_rounded),
@@ -254,4 +256,124 @@ class _VoiceMissingNoticeState extends ConsumerState<_VoiceMissingNotice> {
       ),
     );
   }
+}
+
+/// Natural voices for the current language: free voices that run on the phone,
+/// downloaded once. The Voice of Jesus reads His words; the Verse reader the rest.
+class _NaturalVoices extends ConsumerWidget {
+  const _NaturalVoices();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final lang = ref.watch(settingsProvider.select((s) => s.lang));
+    final store = ref.watch(ttsProvider).voices;
+    final available = [for (final role in VoiceRole.values) ?naturalVoiceFor(lang, role)];
+    if (available.isEmpty) return const SizedBox.shrink();
+
+    return ListenableBuilder(
+      listenable: store,
+      builder: (context, _) => Padding(
+        padding: const EdgeInsets.fromLTRB(16, 4, 16, 12),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(l.naturalVoices, style: const TextStyle(fontWeight: FontWeight.w600)),
+            const SizedBox(height: 2),
+            Text(l.naturalVoicesHint, style: const TextStyle(color: AppColors.inkSoft, fontSize: 13, height: 1.35)),
+            for (final v in available) _NaturalVoiceRow(voice: v, store: store),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: TextButton(
+                style: TextButton.styleFrom(padding: EdgeInsets.zero, foregroundColor: AppColors.inkSoft),
+                onPressed: () => showModalBottomSheet<void>(
+                  context: context,
+                  showDragHandle: true,
+                  backgroundColor: AppColors.ivoryCard,
+                  builder: (_) => const _VoiceCredits(),
+                ),
+                child: Text(l.voiceCredits),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _NaturalVoiceRow extends StatelessWidget {
+  const _NaturalVoiceRow({required this.voice, required this.store});
+  final NaturalVoice voice;
+  final NaturalVoiceStore store;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final progress = store.downloading[voice.id];
+    final installed = store.installedNow(voice);
+    return Padding(
+      padding: const EdgeInsets.only(top: 10),
+      child: Row(
+        children: [
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(voice.role == VoiceRole.jesus ? l.voiceOfJesus : l.verseReader),
+                Text(voice.name, style: const TextStyle(color: AppColors.inkSoft, fontSize: 13)),
+                if (progress != null) ...[
+                  const SizedBox(height: 6),
+                  LinearProgressIndicator(value: progress, color: AppColors.gold, backgroundColor: AppColors.sand),
+                ],
+              ],
+            ),
+          ),
+          const SizedBox(width: 12),
+          if (progress != null)
+            const SizedBox.shrink()
+          else if (installed)
+            TextButton(onPressed: () => store.remove(voice), child: Text(l.removeVoice))
+          else
+            FilledButton.tonal(
+              onPressed: () async {
+                try {
+                  await store.download(voice);
+                } catch (_) {
+                  if (!context.mounted) return;
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text(l.voiceDownloadFailed), behavior: SnackBarBehavior.floating),
+                  );
+                }
+              },
+              child: Text(l.downloadVoiceSize(voice.megabytes)),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Who made the voices, as their licences ask.
+class _VoiceCredits extends StatelessWidget {
+  const _VoiceCredits();
+
+  @override
+  Widget build(BuildContext context) => SafeArea(
+        child: ListView(
+          shrinkWrap: true,
+          padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
+          children: [
+            Text(AppLocalizations.of(context).voiceCredits, style: AppText.serif(22, weight: FontWeight.w700)),
+            const SizedBox(height: 8),
+            const Text(naturalVoicesCredit, style: TextStyle(height: 1.4)),
+            const SizedBox(height: 8),
+            for (final v in naturalVoices)
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 4),
+                child: Text('${v.name} (${v.lang}): ${v.credit}', style: const TextStyle(color: AppColors.inkSoft, height: 1.35)),
+              ),
+          ],
+        ),
+      );
 }

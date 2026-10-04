@@ -3,17 +3,21 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
+import '../../services/voice/natural_voices.dart';
 import '../../services/voice/tts_service.dart';
 import '../device_settings.dart';
 import '../languages.dart';
 import '../theme/app_theme.dart';
 
-/// Reads [parts] aloud, or — if the phone has no voice for [lang] — explains
-/// and offers to open the phone's voice download screen.
-Future<void> readAloud(BuildContext context, List<String> parts, AppLanguage lang) async {
+/// Reads [parts] aloud — His words ([VoiceRole.jesus]) in the male voice,
+/// everything else in the female one — or, if there is neither a natural voice
+/// nor a phone voice for [lang], explains and offers the phone's voice download.
+Future<void> readAloud(BuildContext context, List<String> parts, AppLanguage lang,
+    {VoiceRole role = VoiceRole.verse}) async {
   final tts = ProviderScope.containerOf(context, listen: false).read(ttsProvider);
-  if (await tts.hasVoice(lang)) {
-    await tts.speak(parts, lang);
+  final natural = naturalVoiceFor(lang.code, role);
+  if ((natural != null && await tts.voices.isInstalled(natural)) || await tts.hasVoice(lang)) {
+    await tts.speak(parts, lang, role: role);
     return;
   }
   if (!context.mounted) return;

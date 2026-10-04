@@ -568,4 +568,32 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get illustration => 'ਚਿਤਰਣ';
+
+  @override
+  String get naturalVoices => 'ਕੁਦਰਤੀ ਆਵਾਜ਼ਾਂ';
+
+  @override
+  String get naturalVoicesHint =>
+      'ਮੁਫ਼ਤ ਆਵਾਜ਼ਾਂ ਜੋ ਵਧੇਰੇ ਕੁਦਰਤੀ ਲੱਗਦੀਆਂ ਹਨ। ਇੱਕ ਵਾਰ ਡਾਊਨਲੋਡ ਕਰੋ, ਫਿਰ ਬਿਨਾਂ ਇੰਟਰਨੈੱਟ ਚੱਲਦੀਆਂ ਹਨ। Wi-Fi ’ਤੇ ਡਾਊਨਲੋਡ ਕਰੋ।';
+
+  @override
+  String get voiceOfJesus => 'ਯਿਸੂ ਦੀ ਆਵਾਜ਼';
+
+  @override
+  String get verseReader => 'ਵਚਨ ਪੜ੍ਹਨ ਵਾਲੀ ਆਵਾਜ਼';
+
+  @override
+  String downloadVoiceSize(int size) {
+    return 'ਡਾਊਨਲੋਡ · $size MB';
+  }
+
+  @override
+  String get removeVoice => 'ਹਟਾਓ';
+
+  @override
+  String get voiceDownloadFailed =>
+      'ਡਾਊਨਲੋਡ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਇੰਟਰਨੈੱਟ ਜਾਂਚ ਕੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
+
+  @override
+  String get voiceCredits => 'ਆਵਾਜ਼ਾਂ ਦਾ ਸਿਹਰਾ';
 }

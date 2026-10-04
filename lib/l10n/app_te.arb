@@ -176,5 +176,13 @@
   "shareStory": "కథను పంచుకోండి",
   "getItOnGooglePlay": "Google Play లో పొందండి",
   "hearHimSpeak": "ఆయన మాటలు వినండి",
-  "illustration": "చిత్రణ"
+  "illustration": "చిత్రణ",
+  "naturalVoices": "సహజమైన స్వరాలు",
+  "naturalVoicesHint": "మరింత సహజంగా వినిపించే ఉచిత స్వరాలు. ఒక్కసారి డౌన్‌లోడ్ చేస్తే ఇంటర్నెట్ లేకుండా పనిచేస్తాయి. Wi-Fi లో డౌన్‌లోడ్ చేయండి.",
+  "voiceOfJesus": "యేసు స్వరం",
+  "verseReader": "వచనాలు చదివే స్వరం",
+  "downloadVoiceSize": "డౌన్‌లోడ్ · {size} MB",
+  "removeVoice": "తీసివేయండి",
+  "voiceDownloadFailed": "డౌన్‌లోడ్ కాలేదు. ఇంటర్నెట్ చూసి మళ్లీ ప్రయత్నించండి.",
+  "voiceCredits": "స్వరాల క్రెడిట్స్"
 }

@@ -217,5 +217,20 @@
   "shareStory": "Share story",
   "getItOnGooglePlay": "Get it on Google Play",
   "hearHimSpeak": "Hear Him speak",
-  "illustration": "Illustration"
+  "illustration": "Illustration",
+  "naturalVoices": "Natural voices",
+  "naturalVoicesHint": "Free voices that sound more natural. Download once and they work offline. Wi-Fi recommended.",
+  "voiceOfJesus": "Voice of Jesus",
+  "verseReader": "Verse reader",
+  "downloadVoiceSize": "Download · {size} MB",
+  "removeVoice": "Remove",
+  "voiceDownloadFailed": "Couldn't download. Check your internet and try again.",
+  "voiceCredits": "Voice credits",
+  "@downloadVoiceSize": {
+    "placeholders": {
+      "size": {
+        "type": "int"
+      }
+    }
+  }
 }

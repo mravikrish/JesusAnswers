@@ -567,4 +567,32 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get illustration => 'ચિત્રણ';
+
+  @override
+  String get naturalVoices => 'કુદરતી અવાજો';
+
+  @override
+  String get naturalVoicesHint =>
+      'વધુ કુદરતી લાગતા મફત અવાજો. એક વાર ડાઉનલોડ કરો, પછી ઇન્ટરનેટ વગર ચાલે છે. Wi-Fi પર ડાઉનલોડ કરો.';
+
+  @override
+  String get voiceOfJesus => 'ઈસુનો અવાજ';
+
+  @override
+  String get verseReader => 'વચન વાંચનાર અવાજ';
+
+  @override
+  String downloadVoiceSize(int size) {
+    return 'ડાઉનલોડ · $size MB';
+  }
+
+  @override
+  String get removeVoice => 'દૂર કરો';
+
+  @override
+  String get voiceDownloadFailed =>
+      'ડાઉનલોડ ન થયું. ઇન્ટરનેટ તપાસી ફરી પ્રયાસ કરો.';
+
+  @override
+  String get voiceCredits => 'અવાજોનો શ્રેય';
 }

@@ -570,4 +570,32 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get illustration => 'Ілюстрація';
+
+  @override
+  String get naturalVoices => 'Природні голоси';
+
+  @override
+  String get naturalVoicesHint =>
+      'Безкоштовні голоси, що звучать природніше. Завантажте один раз, і вони працюють без інтернету. Краще через Wi-Fi.';
+
+  @override
+  String get voiceOfJesus => 'Голос Ісуса';
+
+  @override
+  String get verseReader => 'Читець віршів';
+
+  @override
+  String downloadVoiceSize(int size) {
+    return 'Завантажити · $size МБ';
+  }
+
+  @override
+  String get removeVoice => 'Видалити';
+
+  @override
+  String get voiceDownloadFailed =>
+      'Не вдалося завантажити. Перевірте інтернет і спробуйте знову.';
+
+  @override
+  String get voiceCredits => 'Автори голосів';
 }

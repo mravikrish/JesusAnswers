@@ -568,4 +568,32 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get illustration => 'চিত্রণ';
+
+  @override
+  String get naturalVoices => 'স্বাভাবিক কণ্ঠ';
+
+  @override
+  String get naturalVoicesHint =>
+      'আরও স্বাভাবিক শোনায় এমন বিনামূল্যের কণ্ঠ। একবার ডাউনলোড করলে ইন্টারনেট ছাড়াই চলে। Wi-Fi-তে ডাউনলোড করুন।';
+
+  @override
+  String get voiceOfJesus => 'যীশুর কণ্ঠ';
+
+  @override
+  String get verseReader => 'পদ পাঠের কণ্ঠ';
+
+  @override
+  String downloadVoiceSize(int size) {
+    return 'ডাউনলোড · $size MB';
+  }
+
+  @override
+  String get removeVoice => 'সরান';
+
+  @override
+  String get voiceDownloadFailed =>
+      'ডাউনলোড হয়নি। ইন্টারনেট দেখে আবার চেষ্টা করুন।';
+
+  @override
+  String get voiceCredits => 'কণ্ঠের কৃতজ্ঞতা';
 }

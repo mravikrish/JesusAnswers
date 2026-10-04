@@ -176,5 +176,13 @@
   "shareStory": "গল্পটি শেয়ার করুন",
   "getItOnGooglePlay": "Google Play-তে পান",
   "hearHimSpeak": "তাঁর কথা শুনুন",
-  "illustration": "চিত্রণ"
+  "illustration": "চিত্রণ",
+  "naturalVoices": "স্বাভাবিক কণ্ঠ",
+  "naturalVoicesHint": "আরও স্বাভাবিক শোনায় এমন বিনামূল্যের কণ্ঠ। একবার ডাউনলোড করলে ইন্টারনেট ছাড়াই চলে। Wi-Fi-তে ডাউনলোড করুন।",
+  "voiceOfJesus": "যীশুর কণ্ঠ",
+  "verseReader": "পদ পাঠের কণ্ঠ",
+  "downloadVoiceSize": "ডাউনলোড · {size} MB",
+  "removeVoice": "সরান",
+  "voiceDownloadFailed": "ডাউনলোড হয়নি। ইন্টারনেট দেখে আবার চেষ্টা করুন।",
+  "voiceCredits": "কণ্ঠের কৃতজ্ঞতা"
 }
