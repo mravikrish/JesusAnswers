@@ -570,4 +570,10 @@ class AppLocalizationsTl extends AppLocalizations {
 
   @override
   String get getItOnGooglePlay => 'Kunin ito sa Google Play';
+
+  @override
+  String get hearHimSpeak => 'Pakinggan Siyang magsalita';
+
+  @override
+  String get illustration => 'Ilustrasyon';
 }

@@ -47,6 +47,10 @@ class TtsService {
   /// How far through what is being read, 0–1, word by word.
   final progress = ValueNotifier(0.0);
 
+  /// Which part is being read and where its current word starts — for
+  /// highlighting words as they are spoken.
+  final position = ValueNotifier((part: 0, offset: 0));
+
   static const _slowKey = 'ttsSlow';
   static const _normalRate = 0.42, _slowRate = 0.32;
 
@@ -160,6 +164,7 @@ class TtsService {
   }
 
   void _report() {
+    position.value = (part: _index, offset: _offset);
     final total = _parts.fold(0, (n, p) => n + p.length);
     if (total == 0) return;
     final done = _parts.take(_index).fold(0, (n, p) => n + p.length) + _offset;
@@ -216,6 +221,7 @@ class TtsService {
     _session++;
     _parts = const [];
     progress.value = 0;
+    position.value = (part: 0, offset: 0);
     playback.value = Playback.idle;
     await _tts.stop();
   }

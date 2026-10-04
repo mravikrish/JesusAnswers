@@ -1185,6 +1185,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Get it on Google Play'**
   String get getItOnGooglePlay;
+
+  /// No description provided for @hearHimSpeak.
+  ///
+  /// In en, this message translates to:
+  /// **'Hear Him speak'**
+  String get hearHimSpeak;
+
+  /// No description provided for @illustration.
+  ///
+  /// In en, this message translates to:
+  /// **'Illustration'**
+  String get illustration;
 }
 
 class _AppLocalizationsDelegate

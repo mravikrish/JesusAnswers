@@ -40,6 +40,13 @@ class JesusWordsScreen extends ConsumerWidget {
                   const SizedBox(height: 4),
                   Text(l.wordsOfJesusSubtitle,
                       textAlign: TextAlign.center, style: const TextStyle(color: AppColors.redLetter, fontSize: 15)),
+                  const SizedBox(height: 12),
+                  FilledButton.icon(
+                    style: FilledButton.styleFrom(backgroundColor: AppColors.gold, foregroundColor: AppColors.midnight),
+                    onPressed: () => context.push('/jesus/speak'),
+                    icon: const Icon(Icons.record_voice_over_rounded),
+                    label: Text(l.hearHimSpeak),
+                  ),
                 ],
               ),
             ),

@@ -564,4 +564,10 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get getItOnGooglePlay => 'Google Play లో పొందండి';
+
+  @override
+  String get hearHimSpeak => 'ఆయన మాటలు వినండి';
+
+  @override
+  String get illustration => 'చిత్రణ';
 }

@@ -563,4 +563,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get getItOnGooglePlay => 'Get it on Google Play';
+
+  @override
+  String get hearHimSpeak => 'Hear Him speak';
+
+  @override
+  String get illustration => 'Illustration';
 }

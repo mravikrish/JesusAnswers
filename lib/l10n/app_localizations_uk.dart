@@ -564,4 +564,10 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get getItOnGooglePlay => 'Доступно в Google Play';
+
+  @override
+  String get hearHimSpeak => 'Послухайте Його слова';
+
+  @override
+  String get illustration => 'Ілюстрація';
 }

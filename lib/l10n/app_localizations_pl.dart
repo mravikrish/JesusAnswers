@@ -563,4 +563,10 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get getItOnGooglePlay => 'Pobierz z Google Play';
+
+  @override
+  String get hearHimSpeak => 'Posłuchaj, jak mówi';
+
+  @override
+  String get illustration => 'Ilustracja';
 }

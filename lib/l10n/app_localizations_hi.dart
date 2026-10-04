@@ -560,4 +560,10 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get getItOnGooglePlay => 'इसे Google Play पर पाएं';
+
+  @override
+  String get hearHimSpeak => 'उन्हें बोलते सुनें';
+
+  @override
+  String get illustration => 'चित्रण';
 }

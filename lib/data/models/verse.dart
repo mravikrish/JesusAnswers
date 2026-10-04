@@ -23,6 +23,9 @@ class Verse {
   /// Where Jesus speaks in [text]: [start, end) character ranges, shown in red.
   final List<(int, int)> jesusWords;
 
+  /// Just His words, for reading aloud only what He said.
+  String get spoken => [for (final (s, e) in jesusWords) text.substring(s, e)].join(' ');
+
   Map<String, dynamic> toJson() => {
         'ref': ref,
         'reference': reference,

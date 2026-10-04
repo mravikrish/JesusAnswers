@@ -564,4 +564,10 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get getItOnGooglePlay => 'Ipate kwenye Google Play';
+
+  @override
+  String get hearHimSpeak => 'Msikie akisema';
+
+  @override
+  String get illustration => 'Mchoro';
 }

@@ -567,4 +567,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get getItOnGooglePlay => 'Disponível no Google Play';
+
+  @override
+  String get hearHimSpeak => 'Ouça-o falar';
+
+  @override
+  String get illustration => 'Ilustração';
 }

@@ -566,4 +566,10 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get getItOnGooglePlay => 'Google Play वर मिळवा';
+
+  @override
+  String get hearHimSpeak => 'त्याचे बोलणे ऐका';
+
+  @override
+  String get illustration => 'चित्रण';
 }

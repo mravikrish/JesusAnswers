@@ -13,6 +13,7 @@ import 'features/daily_word/daily_word_screen.dart';
 import 'features/feedback/feedback_screen.dart';
 import 'features/home/home_screen.dart';
 import 'features/jesus_words/jesus_words_screen.dart';
+import 'features/jesus_words/speak_screen.dart';
 import 'features/journey/journey_screen.dart';
 import 'features/mood/mood_screen.dart';
 import 'features/peace/peace_now_screen.dart';
@@ -70,6 +71,15 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(path: '/stories', builder: (_, _) => const StoriesScreen()),
       GoRoute(path: '/stories/:id', builder: (_, state) => StoryScreen(id: state.pathParameters['id']!)),
       GoRoute(path: '/jesus', builder: (_, _) => const JesusWordsScreen()),
+      // Hear Him speak: ?book=MAT&chapter=5 for His words in a chapter; none for the famous sayings.
+      GoRoute(
+        path: '/jesus/speak',
+        builder: (_, state) {
+          final q = state.uri.queryParameters;
+          final chapter = int.tryParse(q['chapter'] ?? '');
+          return SpeakScreen(chapter: q['book'] == null || chapter == null ? null : (q['book']!, chapter));
+        },
+      ),
       GoRoute(path: '/bible', builder: (_, _) => const BibleScreen()),
       // ?words=1 opens it from Words of Jesus; ?v=19 marks a verse.
       GoRoute(

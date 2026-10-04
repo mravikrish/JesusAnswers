@@ -456,6 +456,17 @@ class _ChapterScreenState extends ConsumerState<ChapterScreen> {
                                 shape: const StadiumBorder(),
                               ),
                             ),
+                          if (hasHisWords) ...[
+                            const SizedBox(height: 8),
+                            Center(
+                              child: TextButton.icon(
+                                style: TextButton.styleFrom(foregroundColor: AppColors.redLetter),
+                                onPressed: () => context.push('/jesus/speak?book=${widget.book}&chapter=${widget.chapter}'),
+                                icon: const Icon(Icons.record_voice_over_rounded),
+                                label: Text(l.hearHimSpeak),
+                              ),
+                            ),
+                          ],
                           const SizedBox(height: 10),
                           PlaybackControls(
                             dark: true,

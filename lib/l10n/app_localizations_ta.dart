@@ -572,4 +572,10 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get getItOnGooglePlay => 'Google Play இல் பெறுங்கள்';
+
+  @override
+  String get hearHimSpeak => 'அவர் பேசுவதைக் கேளுங்கள்';
+
+  @override
+  String get illustration => 'சித்தரிப்பு';
 }

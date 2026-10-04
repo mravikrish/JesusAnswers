@@ -565,4 +565,10 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get getItOnGooglePlay => 'Google Play ରେ ପାଆନ୍ତୁ';
+
+  @override
+  String get hearHimSpeak => 'ତାଙ୍କ କଥା ଶୁଣନ୍ତୁ';
+
+  @override
+  String get illustration => 'ଚିତ୍ରଣ';
 }

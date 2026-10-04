@@ -86,6 +86,13 @@ the build) and a `scene` describing its picture. Put originals in `art/books/<CO
 `1SA.jpg`; kept out of git like `art/stories/`) and run `python tool/build_story_images.py`. A book with no
 picture yet shows its Bible Story's picture, or else a painting of Jesus.
 
+**Hear Him speak.** Words of Jesus (and any chapter where He speaks) can play His words over a living portrait
+(`art/portrait/jesus_speaking.png` → `assets/portrait/jesus_speaking.jpg`): a slow drift, a faint breath, light
+that glows while He speaks, and each word lighting up as the phone's male voice reaches it. Only Scripture is
+spoken — His red-letter words, verbatim — never anything generated, and the screen is labelled "Illustration".
+The famous sayings it plays are `famousSayings` in `speak_screen.dart`. Next steps: a consistent neural voice
+(pre-generated audio), then lip-synced video for chosen sayings.
+
 **Sharing pictures.** Every picture in the app — of Jesus, of each Bible Story, of each book — can be sent as a
 WhatsApp status from Home → Pictures, or from the story or book itself. Story and book art (landscape, title
 painted in) sits whole at the top of the 9:16 card over a blurred copy of itself, with its name and, for books,

@@ -561,4 +561,10 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get getItOnGooglePlay => 'Google Play પર મેળવો';
+
+  @override
+  String get hearHimSpeak => 'તેમને બોલતા સાંભળો';
+
+  @override
+  String get illustration => 'ચિત્રણ';
 }

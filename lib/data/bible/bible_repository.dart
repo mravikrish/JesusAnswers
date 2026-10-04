@@ -265,16 +265,21 @@ class BibleRepository {
   }
 
   /// [book]'s key verse in [lang], from the full Bible.
-  Future<Verse?> keyVerse(BibleBook book, String lang) async {
-    final ref = book.keyVerse;
-    final m = ref == null ? null : _verseRef.firstMatch(ref);
+  Future<Verse?> keyVerse(BibleBook book, String lang) async =>
+      book.keyVerse == null ? null : fullVerse(book.keyVerse!, lang);
+
+  /// Any single verse ("JHN 14:27") from the full Bible in [lang], with its
+  /// localized reference and the words of Jesus in it.
+  Future<Verse?> fullVerse(String ref, String lang) async {
+    final m = _verseRef.firstMatch(ref);
     if (m == null) return null;
-    final verses = await chapter(m.group(1)!, int.parse(m.group(2)!), lang);
+    final book = m.group(1)!;
+    final verses = await chapter(book, int.parse(m.group(2)!), lang);
     final v = verses.where((v) => v.number == int.parse(m.group(3)!)).firstOrNull;
     if (v == null) return null;
     return Verse(
-      ref: ref!,
-      reference: '${book.name} ${m.group(2)}:${m.group(3)}',
+      ref: ref,
+      reference: '${(await _loadFull(lang)).books[book] ?? book} ${m.group(2)}:${m.group(3)}',
       text: v.text,
       translation: (await _load(lang)).abbrev,
       lang: lang,

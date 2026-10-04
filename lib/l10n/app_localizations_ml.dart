@@ -569,4 +569,10 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get getItOnGooglePlay => 'Google Play-യിൽ നേടുക';
+
+  @override
+  String get hearHimSpeak => 'അവൻ സംസാരിക്കുന്നത് കേൾക്കുക';
+
+  @override
+  String get illustration => 'ചിത്രീകരണം';
 }

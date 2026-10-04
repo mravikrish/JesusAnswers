@@ -5,6 +5,7 @@ import 'package:jesus_answers/core/languages.dart';
 import 'package:jesus_answers/data/bible/bible_repository.dart';
 import 'package:jesus_answers/data/models/answer.dart';
 import 'package:jesus_answers/data/models/painting.dart';
+import 'package:jesus_answers/features/jesus_words/speak_screen.dart';
 import 'package:jesus_answers/providers.dart';
 import 'package:jesus_answers/services/answer/answer_service.dart';
 import 'package:jesus_answers/services/answer/safety.dart';
@@ -149,6 +150,18 @@ void main() {
       }
       c.dispose();
     }
+  });
+
+  test('Hear Him speak has His words for every famous saying, in every language', () async {
+    expect((await rootBundle.load(speakingPortrait)).lengthInBytes, greaterThan(100000));
+    for (final lang in appLanguages) {
+      for (final ref in famousSayings) {
+        final v = await bible.fullVerse(ref, lang.code);
+        expect(v?.spoken, isNotEmpty, reason: '${lang.code} $ref');
+      }
+    }
+    final rest = (await bible.fullVerse('MAT 11:28', 'en'))!;
+    expect(rest.spoken, 'Come unto me, all ye that labour and are heavy laden, and I will give you rest.');
   });
 
   test('retrieves verbatim KJV text by theme', () async {

@@ -565,4 +565,10 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get getItOnGooglePlay => 'Google Play ನಲ್ಲಿ ಪಡೆಯಿರಿ';
+
+  @override
+  String get hearHimSpeak => 'ಆತನ ಮಾತು ಕೇಳಿ';
+
+  @override
+  String get illustration => 'ಚಿತ್ರಣ';
 }

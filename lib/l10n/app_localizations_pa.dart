@@ -562,4 +562,10 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get getItOnGooglePlay => 'Google Play \'ਤੇ ਪ੍ਰਾਪਤ ਕਰੋ';
+
+  @override
+  String get hearHimSpeak => 'ਉਸ ਨੂੰ ਬੋਲਦੇ ਸੁਣੋ';
+
+  @override
+  String get illustration => 'ਚਿਤਰਣ';
 }

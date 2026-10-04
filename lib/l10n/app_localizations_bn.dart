@@ -562,4 +562,10 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get getItOnGooglePlay => 'Google Play-তে পান';
+
+  @override
+  String get hearHimSpeak => 'তাঁর কথা শুনুন';
+
+  @override
+  String get illustration => 'চিত্রণ';
 }
