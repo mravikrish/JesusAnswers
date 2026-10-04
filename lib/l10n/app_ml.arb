@@ -184,5 +184,6 @@
   "downloadVoiceSize": "ഡൗൺലോഡ് · {size} MB",
   "removeVoice": "നീക്കം ചെയ്യുക",
   "voiceDownloadFailed": "ഡൗൺലോഡ് ചെയ്യാനായില്ല. ഇന്റർനെറ്റ് പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക.",
-  "voiceCredits": "ശബ്ദങ്ങൾക്ക് കടപ്പാട്"
+  "voiceCredits": "ശബ്ദങ്ങൾക്ക് കടപ്പാട്",
+  "music": "സംഗീതം"
 }

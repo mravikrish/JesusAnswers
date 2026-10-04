@@ -606,4 +606,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get voiceCredits => 'குரல்களுக்கான நன்றி';
+
+  @override
+  String get music => 'இசை';
 }

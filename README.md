@@ -103,6 +103,15 @@ Voice credits. Chosen voices: male Northern English, Ald (es), Faber (pt), Gille
 Darkman (pl), Denis (ru); female Cori (en), Daniela (es), Siwis (fr), Kerstin (de), Gosia (pl), Lada (uk).
 Telugu, Bengali, Marathi and Ukrainian male voices exist but aren't hosted in converted form yet.
 
+**Background music.** Soft music plays under anything read aloud: a strings pad under His words (the male
+voice) and "Amazing Grace" on piano (public domain tune) under everything else (the female voice). Both are
+composed by `tool/build_music.py` into `assets/music/`, so they are the app's own: no licence, no credit. A
+Music toggle sits beside Slower and is remembered.
+
+**Name under the icon.** Launchers show about nine letters, so "JesusAnswers" became "JesusAn…". The icon
+label is **Ask Jesus** (`android:label`, iOS `CFBundleDisplayName`); the app's name stays JesusAnswers
+everywhere else — the store listing, splash screen, recent apps and shared pictures.
+
 **Sharing pictures.** Every picture in the app — of Jesus, of each Bible Story, of each book — can be sent as a
 WhatsApp status from Home → Pictures, or from the story or book itself. Story and book art (landscape, title
 painted in) sits whole at the top of the 9:16 card over a blurred copy of itself, with its name and, for books,

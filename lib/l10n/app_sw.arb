@@ -184,5 +184,6 @@
   "downloadVoiceSize": "Pakua · {size} MB",
   "removeVoice": "Ondoa",
   "voiceDownloadFailed": "Imeshindwa kupakua. Angalia intaneti yako ujaribu tena.",
-  "voiceCredits": "Shukrani kwa sauti"
+  "voiceCredits": "Shukrani kwa sauti",
+  "music": "Muziki"
 }

@@ -73,6 +73,9 @@ class _SpeakScreenState extends ConsumerState<SpeakScreen> with TickerProviderSt
   @override
   void initState() {
     super.initState();
+    // Take the voice now: ref can't be used once the screen is closing, and without
+    // this the voice kept playing after leaving. Warming it up also starts Listen sooner.
+    _tts.warmUp(ref.read(settingsProvider).language, role: VoiceRole.jesus);
     _tts.playback.addListener(_onPlayback);
   }
 
@@ -267,6 +270,8 @@ class _Caption extends StatelessWidget {
                   Text('${index + 1} / ${sayings.length}', style: TextStyle(color: Colors.white.withValues(alpha: 0.6))),
                   const SizedBox(width: 12),
                   const SlowerToggle(dark: true),
+                  const SizedBox(width: 8),
+                  const MusicToggle(dark: true),
                 ],
               ),
             ],

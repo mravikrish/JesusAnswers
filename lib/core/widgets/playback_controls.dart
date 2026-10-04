@@ -95,6 +95,7 @@ class PlaybackControls extends ConsumerWidget {
               icon: Icon(Icons.stop_rounded, color: fg),
             ),
           SlowerToggle(dark: dark),
+          MusicToggle(dark: dark),
           if (onExpand != null)
             IconButton(
               tooltip: l.fullScreen,
@@ -131,6 +132,96 @@ class SlowerToggle extends ConsumerWidget {
         onPressed: () => tts.setSlow(!slow),
         icon: const Icon(Icons.slow_motion_video_rounded, size: 18),
         label: Text(AppLocalizations.of(context).speakSlower),
+      ),
+    );
+  }
+}
+
+/// Shown above the bottom menu while something is being read aloud, so it can
+/// be paused or stopped from anywhere — e.g. after leaving Today's Word playing.
+class NowPlayingBar extends ConsumerWidget {
+  const NowPlayingBar({super.key, required this.dark});
+
+  /// Light text for the night-sky tabs, dark text for the ivory ones.
+  final bool dark;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final tts = ref.watch(ttsProvider);
+    final fg = dark ? Colors.white : AppColors.ink;
+    return ValueListenableBuilder(
+      valueListenable: tts.playback,
+      builder: (_, playback, _) {
+        if (playback == Playback.idle) return const SizedBox.shrink();
+        final playing = playback == Playback.playing;
+        return Padding(
+          padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
+          child: Material(
+            color: AppColors.gold.withValues(alpha: dark ? 0.22 : 0.16),
+            shape: const StadiumBorder(),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 6),
+              child: Row(
+                children: [
+                  const SizedBox(width: 10),
+                  Icon(playing ? Icons.graphic_eq_rounded : Icons.pause_circle_outline_rounded,
+                      color: AppColors.gold, size: 22),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: ValueListenableBuilder(
+                      valueListenable: tts.progress,
+                      builder: (_, progress, _) => LinearProgressIndicator(
+                        value: progress,
+                        minHeight: 3,
+                        color: AppColors.gold,
+                        backgroundColor: fg.withValues(alpha: 0.15),
+                      ),
+                    ),
+                  ),
+                  IconButton(
+                    tooltip: playing ? l.pause : l.resume,
+                    onPressed: playing ? tts.pause : tts.resume,
+                    icon: Icon(playing ? Icons.pause_rounded : Icons.play_arrow_rounded, color: fg),
+                  ),
+                  IconButton(
+                    tooltip: l.stop,
+                    onPressed: tts.stop,
+                    icon: Icon(Icons.stop_rounded, color: fg),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+}
+
+/// Soft music under the voice, on or off, remembered for next time.
+class MusicToggle extends ConsumerWidget {
+  const MusicToggle({super.key, this.dark = false});
+  final bool dark;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final tts = ref.watch(ttsProvider);
+    final fg = dark ? Colors.white : AppColors.ink;
+    return ValueListenableBuilder(
+      valueListenable: tts.music,
+      builder: (_, on, _) => FilterChip(
+        label: Text(AppLocalizations.of(context).music),
+        avatar: Icon(on ? Icons.music_note_rounded : Icons.music_off_rounded,
+            size: 18, color: on ? AppColors.gold : fg.withValues(alpha: 0.7)),
+        selected: on,
+        showCheckmark: false,
+        onSelected: tts.setMusic,
+        labelStyle: TextStyle(color: fg),
+        backgroundColor: Colors.transparent,
+        selectedColor: AppColors.gold.withValues(alpha: 0.18),
+        side: BorderSide(color: fg.withValues(alpha: 0.3)),
+        shape: const StadiumBorder(),
       ),
     );
   }

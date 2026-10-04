@@ -184,5 +184,6 @@
   "downloadVoiceSize": "I-download · {size} MB",
   "removeVoice": "Alisin",
   "voiceDownloadFailed": "Hindi na-download. Tingnan ang iyong internet at subukan muli.",
-  "voiceCredits": "Pagkilala sa mga boses"
+  "voiceCredits": "Pagkilala sa mga boses",
+  "music": "Musika"
 }

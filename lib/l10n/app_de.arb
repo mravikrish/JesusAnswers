@@ -184,5 +184,6 @@
   "downloadVoiceSize": "Laden · {size} MB",
   "removeVoice": "Entfernen",
   "voiceDownloadFailed": "Download fehlgeschlagen. Prüfe deine Internetverbindung und versuch es noch einmal.",
-  "voiceCredits": "Stimmen-Nachweis"
+  "voiceCredits": "Stimmen-Nachweis",
+  "music": "Musik"
 }

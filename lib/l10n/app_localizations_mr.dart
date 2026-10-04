@@ -600,4 +600,7 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get voiceCredits => 'आवाजांचे श्रेय';
+
+  @override
+  String get music => 'संगीत';
 }

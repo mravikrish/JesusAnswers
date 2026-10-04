@@ -184,5 +184,6 @@
   "downloadVoiceSize": "ডাউনলোড · {size} MB",
   "removeVoice": "সরান",
   "voiceDownloadFailed": "ডাউনলোড হয়নি। ইন্টারনেট দেখে আবার চেষ্টা করুন।",
-  "voiceCredits": "কণ্ঠের কৃতজ্ঞতা"
+  "voiceCredits": "কণ্ঠের কৃতজ্ঞতা",
+  "music": "সংগীত"
 }

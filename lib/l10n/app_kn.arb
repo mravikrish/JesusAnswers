@@ -184,5 +184,6 @@
   "downloadVoiceSize": "ಡೌನ್‌ಲೋಡ್ · {size} MB",
   "removeVoice": "ತೆಗೆದುಹಾಕಿ",
   "voiceDownloadFailed": "ಡೌನ್‌ಲೋಡ್ ಆಗಲಿಲ್ಲ. ಇಂಟರ್ನೆಟ್ ಪರಿಶೀಲಿಸಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
-  "voiceCredits": "ಧ್ವನಿಗಳ ಕೃತಜ್ಞತೆ"
+  "voiceCredits": "ಧ್ವನಿಗಳ ಕೃತಜ್ಞತೆ",
+  "music": "ಸಂಗೀತ"
 }

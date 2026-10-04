@@ -184,5 +184,6 @@
   "downloadVoiceSize": "डाउनलोड · {size} MB",
   "removeVoice": "काढा",
   "voiceDownloadFailed": "डाउनलोड झाले नाही. इंटरनेट तपासून पुन्हा प्रयत्न करा.",
-  "voiceCredits": "आवाजांचे श्रेय"
+  "voiceCredits": "आवाजांचे श्रेय",
+  "music": "संगीत"
 }

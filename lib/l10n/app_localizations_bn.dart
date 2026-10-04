@@ -596,4 +596,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get voiceCredits => 'কণ্ঠের কৃতজ্ঞতা';
+
+  @override
+  String get music => 'সংগীত';
 }

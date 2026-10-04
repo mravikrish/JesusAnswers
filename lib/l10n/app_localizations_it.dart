@@ -599,4 +599,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get voiceCredits => 'Crediti delle voci';
+
+  @override
+  String get music => 'Musica';
 }

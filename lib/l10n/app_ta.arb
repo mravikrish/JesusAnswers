@@ -184,5 +184,6 @@
   "downloadVoiceSize": "பதிவிறக்கு · {size} MB",
   "removeVoice": "நீக்கு",
   "voiceDownloadFailed": "பதிவிறக்க முடியவில்லை. இணையத்தைச் சரிபார்த்து மீண்டும் முயலுங்கள்.",
-  "voiceCredits": "குரல்களுக்கான நன்றி"
+  "voiceCredits": "குரல்களுக்கான நன்றி",
+  "music": "இசை"
 }

@@ -601,4 +601,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get voiceCredits => 'Crédits des voix';
+
+  @override
+  String get music => 'Musique';
 }

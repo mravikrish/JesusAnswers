@@ -595,4 +595,7 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get voiceCredits => 'અવાજોનો શ્રેય';
+
+  @override
+  String get music => 'સંગીત';
 }

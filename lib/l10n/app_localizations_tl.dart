@@ -604,4 +604,7 @@ class AppLocalizationsTl extends AppLocalizations {
 
   @override
   String get voiceCredits => 'Pagkilala sa mga boses';
+
+  @override
+  String get music => 'Musika';
 }

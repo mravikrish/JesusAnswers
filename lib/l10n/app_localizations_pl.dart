@@ -597,4 +597,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get voiceCredits => 'Autorzy głosów';
+
+  @override
+  String get music => 'Muzyka';
 }

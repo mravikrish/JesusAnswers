@@ -53,6 +53,9 @@ class _PlayerScreenState extends ConsumerState<PlayerScreen> {
   @override
   void initState() {
     super.initState();
+    // Take the voice now: ref can't be used once the screen is closing, and without
+    // this the voice kept playing after leaving. Warming it up also starts Listen sooner.
+    _tts.warmUp(ref.read(settingsProvider).language);
     WidgetsBinding.instance.addPostFrameCallback((_) => _play());
   }
 

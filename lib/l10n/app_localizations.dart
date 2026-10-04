@@ -1245,6 +1245,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Voice credits'**
   String get voiceCredits;
+
+  /// No description provided for @music.
+  ///
+  /// In en, this message translates to:
+  /// **'Music'**
+  String get music;
 }
 
 class _AppLocalizationsDelegate

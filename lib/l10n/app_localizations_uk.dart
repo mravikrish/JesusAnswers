@@ -598,4 +598,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get voiceCredits => 'Автори голосів';
+
+  @override
+  String get music => 'Музика';
 }

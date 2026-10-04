@@ -594,4 +594,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get voiceCredits => 'आवाज़ों का श्रेय';
+
+  @override
+  String get music => 'संगीत';
 }

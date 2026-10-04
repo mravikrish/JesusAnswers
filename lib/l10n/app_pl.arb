@@ -184,5 +184,6 @@
   "downloadVoiceSize": "Pobierz · {size} MB",
   "removeVoice": "Usuń",
   "voiceDownloadFailed": "Nie udało się pobrać. Sprawdź internet i spróbuj ponownie.",
-  "voiceCredits": "Autorzy głosów"
+  "voiceCredits": "Autorzy głosów",
+  "music": "Muzyka"
 }

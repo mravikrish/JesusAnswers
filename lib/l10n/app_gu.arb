@@ -184,5 +184,6 @@
   "downloadVoiceSize": "ડાઉનલોડ · {size} MB",
   "removeVoice": "દૂર કરો",
   "voiceDownloadFailed": "ડાઉનલોડ ન થયું. ઇન્ટરનેટ તપાસી ફરી પ્રયાસ કરો.",
-  "voiceCredits": "અવાજોનો શ્રેય"
+  "voiceCredits": "અવાજોનો શ્રેય",
+  "music": "સંગીત"
 }

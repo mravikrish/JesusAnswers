@@ -232,5 +232,6 @@
         "type": "int"
       }
     }
-  }
+  },
+  "music": "Music"
 }

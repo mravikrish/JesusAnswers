@@ -27,6 +27,10 @@ class NaturalSpeech {
         return _worker = await ready.future;
       }();
 
+  /// Loads the voice in [model] ahead of time, so the first sentence starts sooner.
+  Future<void> warmUp({required String model, required String tokens, required String dataDir}) =>
+      synthesize(model: model, tokens: tokens, dataDir: dataDir, text: '', lengthScale: 1, wavPath: '');
+
   /// Writes [text] spoken by the voice in [model]/[tokens]/[dataDir] to [wavPath];
   /// returns its length in seconds. [lengthScale] above 1 reads more slowly.
   Future<double> synthesize({
@@ -76,6 +80,11 @@ void _work(SendPort main) {
           ),
         ));
         loaded = model;
+      }
+      // An empty text only loads the voice, so the first real sentence starts sooner.
+      if (text.isEmpty) {
+        main.send((id, 0.0));
+        return;
       }
       final audio = tts!.generate(text: text, speed: speed);
       sherpa.writeWave(filename: wavPath, samples: audio.samples, sampleRate: audio.sampleRate);

@@ -184,5 +184,6 @@
   "downloadVoiceSize": "డౌన్‌లోడ్ · {size} MB",
   "removeVoice": "తీసివేయండి",
   "voiceDownloadFailed": "డౌన్‌లోడ్ కాలేదు. ఇంటర్నెట్ చూసి మళ్లీ ప్రయత్నించండి.",
-  "voiceCredits": "స్వరాల క్రెడిట్స్"
+  "voiceCredits": "స్వరాల క్రెడిట్స్",
+  "music": "సంగీతం"
 }

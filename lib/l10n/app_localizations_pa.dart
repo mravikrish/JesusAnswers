@@ -596,4 +596,7 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get voiceCredits => 'ਆਵਾਜ਼ਾਂ ਦਾ ਸਿਹਰਾ';
+
+  @override
+  String get music => 'ਸੰਗੀਤ';
 }

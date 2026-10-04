@@ -597,4 +597,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get voiceCredits => 'Voice credits';
+
+  @override
+  String get music => 'Music';
 }

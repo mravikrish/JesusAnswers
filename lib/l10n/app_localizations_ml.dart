@@ -603,4 +603,7 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get voiceCredits => 'ശബ്ദങ്ങൾക്ക് കടപ്പാട്';
+
+  @override
+  String get music => 'സംഗീതം';
 }

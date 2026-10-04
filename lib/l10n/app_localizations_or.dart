@@ -599,4 +599,7 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get voiceCredits => 'ସ୍ୱରର କୃତଜ୍ଞତା';
+
+  @override
+  String get music => 'ସଙ୍ଗୀତ';
 }

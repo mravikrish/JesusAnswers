@@ -6,6 +6,7 @@ import '../../data/models/answer.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
 import '../theme/app_theme.dart';
+import 'playback_controls.dart';
 
 /// Bottom navigation: Home · Word · Pray · Journey · Profile.
 /// Talking to Jesus starts from the big mic on Home (and the reply bar on an answer),
@@ -54,17 +55,23 @@ class AppShell extends StatelessWidget {
         ),
         child: SafeArea(
           top: false,
-          child: SizedBox(
-            height: 68,
-            child: Row(
-              children: [
-                item(0, Icons.home_outlined, Icons.home_rounded, l.navHome),
-                item(1, Icons.menu_book_outlined, Icons.menu_book_rounded, l.navWord),
-                item(2, Icons.volunteer_activism_outlined, Icons.volunteer_activism, l.navPray),
-                item(3, Icons.favorite_border_rounded, Icons.favorite_rounded, l.navJourney),
-                item(4, Icons.person_outline_rounded, Icons.person_rounded, l.profileTitle),
-              ],
-            ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              NowPlayingBar(dark: dark),
+              SizedBox(
+                height: 68,
+                child: Row(
+                  children: [
+                    item(0, Icons.home_outlined, Icons.home_rounded, l.navHome),
+                    item(1, Icons.menu_book_outlined, Icons.menu_book_rounded, l.navWord),
+                    item(2, Icons.volunteer_activism_outlined, Icons.volunteer_activism, l.navPray),
+                    item(3, Icons.favorite_border_rounded, Icons.favorite_rounded, l.navJourney),
+                    item(4, Icons.person_outline_rounded, Icons.person_rounded, l.profileTitle),
+                  ],
+                ),
+              ),
+            ],
           ),
         ),
       ),

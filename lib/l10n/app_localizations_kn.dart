@@ -599,4 +599,7 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get voiceCredits => 'ಧ್ವನಿಗಳ ಕೃತಜ್ಞತೆ';
+
+  @override
+  String get music => 'ಸಂಗೀತ';
 }

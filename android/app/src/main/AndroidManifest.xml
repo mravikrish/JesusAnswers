@@ -8,7 +8,7 @@
     <!-- Pictures gallery: save to the phone's gallery (only Android 9 and older need a permission) -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28"/>
     <application
-        android:label="JesusAnswers"
+        android:label="Ask Jesus"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

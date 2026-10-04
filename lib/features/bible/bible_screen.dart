@@ -333,6 +333,9 @@ class _ChapterScreenState extends ConsumerState<ChapterScreen> {
   @override
   void initState() {
     super.initState();
+    // Take the voice now: ref can't be used once the screen is closing, and without
+    // this the voice kept playing after leaving. Warming it up also starts Listen sooner.
+    _tts.warmUp(ref.read(settingsProvider).language, role: _onlyHisFixed ? VoiceRole.jesus : VoiceRole.verse);
     if (!widget.words) ref.read(prefsProvider).setString(_lastReadKey, '${widget.book} ${widget.chapter}');
   }
 

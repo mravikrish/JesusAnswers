@@ -184,5 +184,6 @@
   "downloadVoiceSize": "Завантажити · {size} МБ",
   "removeVoice": "Видалити",
   "voiceDownloadFailed": "Не вдалося завантажити. Перевірте інтернет і спробуйте знову.",
-  "voiceCredits": "Автори голосів"
+  "voiceCredits": "Автори голосів",
+  "music": "Музика"
 }

@@ -598,4 +598,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get voiceCredits => 'Shukrani kwa sauti';
+
+  @override
+  String get music => 'Muziki';
 }

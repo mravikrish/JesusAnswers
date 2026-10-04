@@ -599,4 +599,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get voiceCredits => 'Stimmen-Nachweis';
+
+  @override
+  String get music => 'Musik';
 }

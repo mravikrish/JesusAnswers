@@ -36,6 +36,8 @@ enum Playback { idle, playing, paused }
 class TtsService {
   TtsService(this._prefs, {NaturalVoiceStore? voices}) : voices = voices ?? NaturalVoiceStore() {
     slow.value = _prefs.getBool(_slowKey) ?? false;
+    music.value = _prefs.getBool(_musicKey) ?? true;
+    playback.addListener(_syncMusic);
     // Remember where we are in the current part, so Pause → Resume carries on from that word.
     _tts.setProgressHandler((_, start, _, _) {
       _offset = _partStart + start;
@@ -51,6 +53,11 @@ class TtsService {
   /// Read more slowly than the normal calm pace. Saved for next time.
   final slow = ValueNotifier(false);
 
+  /// Soft music under the voice (our own, built by tool/build_music.py):
+  /// strings under His words, the piano hymn under everything else.
+  /// On unless turned off; saved for next time.
+  final music = ValueNotifier(true);
+
   /// How far through what is being read, 0–1, word by word.
   final progress = ValueNotifier(0.0);
 
@@ -59,6 +66,10 @@ class TtsService {
   final position = ValueNotifier((part: 0, offset: 0));
 
   static const _slowKey = 'ttsSlow';
+  static const _musicKey = 'ttsMusic';
+
+  /// How loud the music plays under the voice: quiet enough never to cover a word.
+  static const _musicVolume = 0.14;
   static const _normalRate = 0.42, _slowRate = 0.32;
 
   int _session = 0;
@@ -68,7 +79,17 @@ class TtsService {
   final NaturalVoiceStore voices;
   final _natural = NaturalSpeech();
   AudioPlayer? _player;
+  AudioPlayer? _musicPlayer;
   VoiceRole _role = VoiceRole.verse;
+
+  /// Music and voice play together, and neither interrupts the other.
+  static final _mix = AudioContextConfig(focus: AudioContextConfigFocus.mixWithOthers).build();
+
+  Future<AudioPlayer> _newPlayer() async {
+    final p = AudioPlayer();
+    await p.setAudioContext(_mix);
+    return p;
+  }
 
   // What is being read, and how far it has got.
   List<String> _parts = const [];
@@ -200,6 +221,46 @@ class TtsService {
     if (playback.value == Playback.paused) await _run();
   }
 
+  Future<void> setMusic(bool value) async {
+    music.value = value;
+    await _prefs.setBool(_musicKey, value);
+    await _syncMusic();
+  }
+
+  /// The music follows the reading: plays while it plays, pauses with it, stops after it.
+  /// One change at a time, so quick pause/resume taps never start it twice.
+  Future<void> _syncMusic() => _musicSync = _musicSync.then((_) => _applyMusic());
+  Future<void> _musicSync = Future.value();
+  String? _musicTrack;
+
+  Future<void> _applyMusic() async {
+    try {
+      final reading = playback.value;
+      if (!music.value || reading == Playback.idle) {
+        await _musicPlayer?.stop();
+        return;
+      }
+      final player = _musicPlayer ??= await _newPlayer();
+      final track = _role == VoiceRole.jesus ? 'music/pad.mp3' : 'music/hymn.mp3';
+      if (track != _musicTrack) {
+        // A reading with the other voice: change the music with it.
+        await player.stop();
+        _musicTrack = track;
+      }
+      if (reading == Playback.paused) {
+        await player.pause();
+      } else if (player.state == PlayerState.paused) {
+        await player.resume();
+      } else if (player.state != PlayerState.playing) {
+        await player.setReleaseMode(ReleaseMode.loop);
+        await player.setVolume(_musicVolume);
+        await player.play(AssetSource(track));
+      }
+    } catch (_) {
+      // Music is a nicety: if it can't play, the reading goes on without it.
+    }
+  }
+
   Future<void> setSlow(bool value) async {
     slow.value = value;
     await _prefs.setBool(_slowKey, value);
@@ -259,50 +320,80 @@ class TtsService {
     await _player?.stop();
   }
 
-  /// Reads the remaining parts with a natural voice. The next part is prepared
-  /// while this one plays, so there are no gaps; the current word is followed
-  /// by how far the audio has played, since the engine gives no word timings.
+  /// Loads the natural voice for [lang] and [role], if downloaded, so the first
+  /// Listen starts at once. Screens that read aloud call this when they open.
+  Future<void> warmUp(AppLanguage lang, {VoiceRole role = VoiceRole.verse}) async {
+    final voice = naturalVoiceFor(lang.code, role);
+    final files = voice == null ? null : await voices.files(voice);
+    if (files == null) return;
+    try {
+      await _natural.warmUp(model: files.model, tokens: files.tokens, dataDir: files.dataDir);
+    } catch (_) {
+      // Not loadable here: speaking falls back to the phone's voice anyway.
+    }
+  }
+
+  /// Reads the remaining parts with a natural voice, a sentence at a time:
+  /// the first sentence plays as soon as it is ready while the next is
+  /// prepared, so there is no long wait and no gap. The current word follows
+  /// how far the audio has played, since the engine gives no word timings.
   Future<void> _runNatural(int session, NaturalVoice voice, ({String model, String tokens, String dataDir}) files) async {
-    final player = _player ??= AudioPlayer();
+    final player = _player ??= await _newPlayer();
     final dir = (await getTemporaryDirectory()).path;
     final scale = voice.lengthScale * (slow.value ? 1.2 : 1);
-    Future<(String, double)> prepare(int index, int from) async {
-      final path = '$dir/voice_${session}_$index.wav';
-      final text = _parts[index].substring(from);
+
+    // Everything still to read, as (part, start offset in it, text), sentence by sentence.
+    final chunks = <(int, int, String)>[
+      for (var i = _index; i < _parts.length; i++)
+        for (final (start, text) in sentences(_parts[i], from: i == _index ? _offset.clamp(0, _parts[i].length) : 0))
+          (i, start, text),
+    ];
+    var made = 0;
+    Future<(String, double)> prepare(int k) async {
+      final path = '$dir/voice_${session}_${made++}.wav';
       final seconds = await _natural.synthesize(
         model: files.model,
         tokens: files.tokens,
         dataDir: files.dataDir,
-        text: text,
+        text: chunks[k].$3,
         lengthScale: scale,
         wavPath: path,
       );
       return (path, seconds);
     }
 
-    var next = prepare(_index, _offset.clamp(0, _parts[_index].length));
-    while (_index < _parts.length) {
-      final part = _parts[_index];
-      _partStart = _offset.clamp(0, part.length);
-      final (path, seconds) = await next;
+    Future<(String, double)>? next = chunks.isEmpty ? null : prepare(0);
+    for (var k = 0; k < chunks.length; k++) {
+      final (part, start, text) = chunks[k];
+      final (path, seconds) = await next!;
       if (session != _session) return;
-      if (_index + 1 < _parts.length) next = prepare(_index + 1, 0);
+      next = k + 1 < chunks.length ? prepare(k + 1) : null;
+      if (part != _index) {
+        // A new part: the pause between parts, as with the phone's voice.
+        await Future<void>.delayed(const Duration(milliseconds: 600));
+        if (session != _session) return;
+      }
+      _index = part;
+      _partStart = start;
+      _offset = start;
+      _report();
 
       final finished = Completer<void>();
-      final spoken = part.substring(_partStart);
       final subs = [
         player.onPlayerComplete.listen((_) {
           if (!finished.isCompleted) finished.complete();
         }),
         player.onPositionChanged.listen((p) {
           if (session != _session || seconds <= 0) return;
-          final at = (spoken.length * p.inMilliseconds / (seconds * 1000)).round().clamp(0, spoken.length);
-          final space = spoken.lastIndexOf(' ', at);
-          _offset = _partStart + (space < 0 ? 0 : space + 1);
+          final at = (text.length * p.inMilliseconds / (seconds * 1000)).round().clamp(0, text.length);
+          final space = text.lastIndexOf(' ', at);
+          _offset = start + (space < 0 ? 0 : space + 1);
           _report();
         }),
       ];
       await player.play(DeviceFileSource(path));
+      // Stopped while it was starting: make sure it is silent.
+      if (session != _session) await player.stop();
       // Paused or stopped: the player is stopped, so stop waiting too.
       while (!finished.isCompleted && session == _session) {
         await Future.any([finished.future, Future<void>.delayed(const Duration(milliseconds: 250))]);
@@ -312,12 +403,51 @@ class TtsService {
       }
       unawaited(File(path).delete().catchError((_) => File(path)));
       if (session != _session) return;
-      _index++;
-      _offset = 0;
-      _report();
-      if (_index < _parts.length) await Future<void>.delayed(const Duration(milliseconds: 600));
-      if (session != _session) return;
     }
+    _index = _parts.length;
+    _offset = 0;
+    _report();
     playback.value = Playback.idle;
+  }
+
+  /// [text] from [from] split into sentences of a comfortable length, as
+  /// (start offset, sentence). Long sentences break at a comma, then a space.
+  @visibleForTesting
+  static List<(int, String)> sentences(String text, {int from = 0}) {
+    const maxLength = 220;
+    final out = <(int, String)>[];
+    final ends = RegExp(r'[.!?;:।॥。]+["”’»)]*\s+');
+    var start = from;
+    void add(int a, int b) {
+      while (b - a > maxLength) {
+        final window = text.substring(a, a + maxLength);
+        var cut = window.lastIndexOf(RegExp(r'[,،、]\s'));
+        if (cut < maxLength ~/ 3) cut = window.lastIndexOf(' ');
+        if (cut <= 0) cut = maxLength - 1;
+        out.add((a, text.substring(a, a + cut + 1).trim()));
+        a += cut + 1;
+        while (a < b && text[a] == ' ') {
+          a++;
+        }
+      }
+      final piece = text.substring(a, b).trim();
+      if (piece.isNotEmpty) out.add((a, piece));
+    }
+
+    for (final m in ends.allMatches(text, from)) {
+      add(start, m.end);
+      start = m.end;
+    }
+    add(start, text.length);
+    // Very short pieces ("Amen.") join the one before, so the voice keeps its flow.
+    final merged = <(int, String)>[];
+    for (final (a, piece) in out) {
+      if (merged.isNotEmpty && piece.length < 25 && merged.last.$2.length + piece.length < maxLength) {
+        merged.last = (merged.last.$1, text.substring(merged.last.$1, a + piece.length).trim());
+      } else {
+        merged.add((a, piece));
+      }
+    }
+    return merged;
   }
 }

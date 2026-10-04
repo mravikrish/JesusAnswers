@@ -184,5 +184,6 @@
   "downloadVoiceSize": "ਡਾਊਨਲੋਡ · {size} MB",
   "removeVoice": "ਹਟਾਓ",
   "voiceDownloadFailed": "ਡਾਊਨਲੋਡ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਇੰਟਰਨੈੱਟ ਜਾਂਚ ਕੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
-  "voiceCredits": "ਆਵਾਜ਼ਾਂ ਦਾ ਸਿਹਰਾ"
+  "voiceCredits": "ਆਵਾਜ਼ਾਂ ਦਾ ਸਿਹਰਾ",
+  "music": "ਸੰਗੀਤ"
 }

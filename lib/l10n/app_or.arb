@@ -184,5 +184,6 @@
   "downloadVoiceSize": "ଡାଉନଲୋଡ · {size} MB",
   "removeVoice": "ହଟାନ୍ତୁ",
   "voiceDownloadFailed": "ଡାଉନଲୋଡ ହେଲା ନାହିଁ। ଇଣ୍ଟରନେଟ ଦେଖି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।",
-  "voiceCredits": "ସ୍ୱରର କୃତଜ୍ଞତା"
+  "voiceCredits": "ସ୍ୱରର କୃତଜ୍ଞତା",
+  "music": "ସଙ୍ଗୀତ"
 }

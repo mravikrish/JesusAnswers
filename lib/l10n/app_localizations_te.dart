@@ -598,4 +598,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get voiceCredits => 'స్వరాల క్రెడిట్స్';
+
+  @override
+  String get music => 'సంగీతం';
 }

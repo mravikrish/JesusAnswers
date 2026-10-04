@@ -11,6 +11,7 @@ import 'package:jesus_answers/services/answer/answer_service.dart';
 import 'package:jesus_answers/services/answer/safety.dart';
 import 'package:jesus_answers/services/answer/theme_classifier.dart';
 import 'package:jesus_answers/services/voice/natural_voices.dart';
+import 'package:jesus_answers/services/voice/tts_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
@@ -181,6 +182,25 @@ void main() {
     expect(naturalVoiceFor('de', VoiceRole.verse)!.name, 'Kerstin');
     expect(naturalVoiceFor('te', VoiceRole.jesus), isNull);
     expect(naturalVoiceFor('uk', VoiceRole.jesus), isNull);
+  });
+
+  test('natural voices read a sentence at a time, without losing a word', () {
+    const text = 'The LORD is my shepherd; I shall not want. He maketh me to lie down in green pastures: '
+        'he leadeth me beside the still waters. Amen.';
+    final parts = TtsService.sentences(text);
+    expect(parts.length, greaterThan(1));
+    for (final (start, piece) in parts) {
+      expect(text.substring(start), startsWith(piece), reason: piece);
+    }
+    // Every word is read once, in order.
+    expect(parts.map((p) => p.$2).join(' ').split(' '), text.split(' '));
+    // A short tail like "Amen." joins the sentence before it.
+    expect(parts.last.$2, endsWith('still waters. Amen.'));
+    // Starting mid-text (after a pause) begins at that offset.
+    expect(TtsService.sentences(text, from: 43).first.$1, 43);
+    // A very long sentence still breaks into comfortable pieces.
+    final long = List.filled(60, 'and the word').join(', ');
+    expect(TtsService.sentences(long).every((p) => p.$2.length <= 220), isTrue);
   });
 
   test('retrieves verbatim KJV text by theme', () async {
