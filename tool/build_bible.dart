@@ -36,6 +36,19 @@ const sources = [
   Source('bn', 'benirv', 'IRV', 'ইন্ডিয়ান রিভাইজড ভার্সন', _irv),
   Source('gu', 'guj2017', 'IRV', 'ઇન્ડિયન રીવાઇઝ્ડ વર્ઝન', _irv),
   Source('or', 'ory', 'IRV', 'ଇଣ୍ଡିୟାନ ରିୱାଇସ୍ଡ୍ ୱରସନ୍', _irv),
+  Source('es', 'spaRV1909', 'RV1909', 'Reina-Valera 1909', 'Public domain.'),
+  Source('pt', 'porbrbsl', 'BPM', 'Bíblia Portuguesa Mundial', 'Public domain.'),
+  Source('fr', 'fraLSG', 'LSG', 'Louis Segond 1910', 'Public domain.'),
+  Source('sw', 'swhonen', 'NEN', 'Neno: Biblia Takatifu',
+      'Copyright © 1984, 1989, 2009, 2015 Biblica, Inc. Licensed CC BY-SA 4.0.'),
+  Source('tl', 'tglulb', 'ULB', 'Banal na Bibliya',
+      'Copyright © 2018 Door43 World Missions Community. Licensed CC BY-SA 4.0.'),
+  Source('de', 'deu1912', 'LUT1912', 'Lutherbibel 1912', 'Public domain.'),
+  Source('it', 'ita1927', 'RIV', 'Riveduta 1927', 'Public domain.'),
+  Source('pl', 'polubg', 'UBG', 'Uwspółcześniona Biblia Gdańska',
+      'Copyright © 2018 Fundacja Wrota Nadziei. Licensed CC BY-ND 4.0.'),
+  Source('ru', 'russyn', 'SYN', 'Синодальный перевод', 'Public domain.'),
+  Source('uk', 'ukr1871', 'UKR', 'Біблія в перекладі П. Куліша та І. Пулюя', 'Public domain.'),
 ];
 
 const englishBooks = {
@@ -95,6 +108,27 @@ Future<void> main() async {
     speech[src.lang] = segments;
   }
 
+  // The KJV's words of Jesus guide red letters in translations whose USFM
+  // doesn't mark them (see _inferSpans).
+  final kjvLines = _parseVpl(utf8.decode((await _fetchZip(cache, 'eng-kjv2006_vpl.zip'))
+      .files
+      .firstWhere((f) => f.name.endsWith('_vpl.txt'))
+      .content as List<int>));
+  final kjvSpeech = <String, (String, List<List<int>>)>{};
+  for (final MapEntry(key: key, value: segs) in speech['en']!.entries) {
+    if (!segs.any((s) => s.$2)) continue;
+    final space = key.indexOf(' ');
+    final book = key.substring(0, space);
+    final text = _clean(kjvLines['${_vplCodes[book] ?? book} ${key.substring(space + 1)}'] ?? '');
+    final spans = text.isEmpty ? null : _speechSpans(segs, text);
+    if (spans != null && spans.isNotEmpty) kjvSpeech[key] = (text, spans);
+  }
+  final versifications = {
+    for (final v in ['org', 'rso']) v: _Versification.parse(File('tool/bible/versification/$v.vrs').readAsStringSync()),
+  };
+  final english = _Versification.parse(File('tool/bible/versification/eng.vrs').readAsStringSync());
+  final kjvChapters = _chapterLengths(kjvLines);
+
   final refs = {
     for (final v in index['verses']) v['ref'] as String,
     for (final m in daily['months']) ...(m['refs'] as List).cast<String>(),
@@ -110,7 +144,57 @@ Future<void> main() async {
     stdout.writeln('▸ ${src.lang} (${src.ebibleId})');
     final vpl = await _fetchZip(cache, '${src.ebibleId}_vpl.zip');
     final vplFile = vpl.files.firstWhere((f) => f.name.endsWith('_vpl.txt'));
-    final lines = _parseVpl(utf8.decode(vplFile.content as List<int>));
+    var lines = _parseVpl(utf8.decode(vplFile.content as List<int>));
+
+    // Renumber into KJV versification, the language-neutral numbering every
+    // ref in the app uses. Translations mix numberings (Hebrew Psalms but
+    // English Numbers, say), so each book takes whichever of "as is", Hebrew
+    // or Russian Synodal numbering makes its chapters line up with the KJV's.
+    final candidates = {
+      'as is': lines,
+      for (final MapEntry(key: name, value: v) in versifications.entries) name: _renumber(lines, v, english),
+    };
+    // Each chapter takes the numbering that gives it the KJV's verse count —
+    // as is when that already does, so a chapter that needs no help gets none.
+    final chosen = <String, String>{};
+    final mappedLengths = {for (final e in candidates.entries) e.key: _chapterLengths(e.value)};
+    for (final chapter in kjvChapters.keys) {
+      chosen[chapter] = candidates.keys.firstWhere(
+        (c) => mappedLengths[c]![chapter] == kjvChapters[chapter],
+        orElse: () => 'as is',
+      );
+    }
+    lines = {
+      for (final MapEntry(key: name, value: l) in candidates.entries)
+        for (final e in l.entries)
+          if ((chosen[e.key.substring(0, e.key.indexOf(':'))] ?? 'as is') == name) e.key: e.value,
+    };
+    final renumbered = {for (final e in chosen.entries) if (e.value != 'as is') e.key: e.value};
+    if (renumbered.isNotEmpty) {
+      final books = {for (final c in renumbered.keys) c.substring(0, c.indexOf(' '))};
+      stdout.writeln('  · renumbered to KJV verses in ${renumbered.length} chapters (${books.join(' ')}) — '
+          '${_chapterMismatches(_chapterLengths(lines), kjvChapters)} chapters still differ');
+      final vplToUsfm = {for (final e in _vplCodes.entries) e.value: e.key};
+      final usfmChosen = {
+        for (final e in renumbered.entries)
+          '${vplToUsfm[e.key.substring(0, e.key.indexOf(' '))] ?? e.key.substring(0, e.key.indexOf(' '))}'
+              '${e.key.substring(e.key.indexOf(' '))}': e.value,
+      };
+      final speechRenumbered = <String, List<(String, bool)>>{};
+      for (final MapEntry(key: key, value: value) in speech[src.lang]!.entries) {
+        final v = versifications[usfmChosen[key.substring(0, key.indexOf(':'))]];
+        for (final to in v == null ? [key] : _toKjv(key, v, english)) {
+          (speechRenumbered[to] ??= []).addAll(value);
+        }
+      }
+      speech[src.lang] = speechRenumbered;
+    }
+
+    // Translations that don't mark His words (or mark only some) take the KJV's, placed in their own text.
+    final marked = speech[src.lang]!.entries.where((e) => e.key.startsWith('MAT ') && e.value.any((p) => p.$2)).length;
+    final kjvMarked = kjvSpeech.keys.where((k) => k.startsWith('MAT ')).length;
+    final inferred = marked < kjvMarked / 2;
+    if (inferred) stdout.writeln('  · words of Jesus placed from the KJV ($marked/$kjvMarked marked in Matthew)');
 
     // Every book's name: the full Bible lists all 66.
     final allNames = <String, String>{};
@@ -138,6 +222,10 @@ Future<void> main() async {
     // Red letters for one verse's cleaned text, from this translation's \wj markers.
     var unaligned = 0;
     List<List<int>> speechIn(String key, String text) {
+      if (inferred) {
+        final kjv = kjvSpeech[key];
+        return kjv == null ? const [] : _inferSpans(kjv.$1, kjv.$2, text);
+      }
       final segs = speech[src.lang]![key];
       if (segs == null || !segs.any((s) => s.$2)) return const [];
       final found = _speechSpans(segs, text);
@@ -488,8 +576,159 @@ List<List<int>> _endAtClosingQuote(String text, int start, int end) {
 
 var _quoteTrims = 0;
 
-/// Strips KJV italics brackets and pilcrows; normalises whitespace.
+/// Paratext versification mappings (tool/bible/versification/*.vrs, from
+/// SIL's libpalaso, MIT licence): how one numbering's verses correspond to
+/// the original Hebrew/Greek numbering ("org").
+class _Versification {
+  _Versification(this.toOrg);
+
+  /// "PSA 23:1" in this numbering → the "org" verse(s) it is.
+  final Map<String, List<String>> toOrg;
+
+  /// "org" verse → the verse(s) of this numbering it is.
+  late final Map<String, List<String>> fromOrg = () {
+    final m = <String, List<String>>{};
+    toOrg.forEach((from, tos) {
+      for (final to in tos) {
+        (m[to] ??= []).add(from);
+      }
+    });
+    return m;
+  }();
+
+  static _Versification parse(String vrs) {
+    final map = <String, List<String>>{};
+    for (final line in const LineSplitter().convert(vrs)) {
+      final parts = line.split('#').first.split(' = ');
+      if (parts.length != 2) continue;
+      final from = _expand(parts[0].trim()), to = _expand(parts[1].trim());
+      if (from.isEmpty || to.isEmpty) continue;
+      for (var i = 0; i < from.length; i++) {
+        // Equal ranges pair verse by verse; one verse against a range maps to all of it.
+        final targets = from.length == to.length ? [to[i]] : (from.length == 1 ? to : [to[min(i, to.length - 1)]]);
+        (map[from[i]] ??= []).addAll(targets);
+      }
+    }
+    return _Versification(map);
+  }
+
+  /// "PSA 51:1-19" → ["PSA 51:1", …, "PSA 51:19"]; "PSA 3:0" → ["PSA 3:0"].
+  static List<String> _expand(String ref) {
+    final m = RegExp(r'^([1-4]?[A-Z]{2,3}) (\d+):(\d+)(?:-(\d+))?$').firstMatch(ref);
+    if (m == null) return const [];
+    final from = int.parse(m.group(3)!), to = int.parse(m.group(4) ?? m.group(3)!);
+    return [for (var v = from; v <= to; v++) '${m.group(1)} ${m.group(2)}:$v'];
+  }
+}
+
+/// The KJV verse(s) that verse [ref] of [from]'s numbering is. A heading
+/// counted as verse 0 in English numbering joins verse 1, as the KJV prints it.
+List<String> _toKjv(String ref, _Versification from, _Versification english) => {
+      for (final org in from.toOrg[ref] ?? [ref])
+        for (final eng in english.fromOrg[org] ?? [org]) eng.endsWith(':0') ? '${eng.substring(0, eng.length - 1)}1' : eng,
+    }.toList();
+
+/// [lines] (VPL, "MAR 4:19" → text) renumbered into KJV versification.
+/// Verses that become one are joined in order.
+Map<String, String> _renumber(Map<String, String> lines, _Versification from, _Versification english) {
+  final vplToUsfm = {for (final e in _vplCodes.entries) e.value: e.key};
+  final out = <String, List<String>>{};
+  for (final MapEntry(key: key, value: text) in lines.entries) {
+    final space = key.indexOf(' ');
+    final book = vplToUsfm[key.substring(0, space)] ?? key.substring(0, space);
+    for (final to in _toKjv('$book ${key.substring(space + 1)}', from, english)) {
+      final toSpace = to.indexOf(' ');
+      final toBook = to.substring(0, toSpace);
+      (out['${_vplCodes[toBook] ?? toBook} ${to.substring(toSpace + 1)}'] ??= []).add(text);
+    }
+  }
+  return {for (final e in out.entries) e.key: e.value.join(' ')};
+}
+
+/// "GEN 1" → highest verse number, from VPL lines.
+Map<String, int> _chapterLengths(Map<String, String> lines) {
+  final out = <String, int>{};
+  for (final key in lines.keys) {
+    final colon = key.indexOf(':');
+    final chapter = key.substring(0, colon);
+    out[chapter] = max(out[chapter] ?? 0, int.parse(key.substring(colon + 1)));
+  }
+  return out;
+}
+
+int _chapterMismatches(Map<String, int> a, Map<String, int> kjv) =>
+    kjv.entries.where((e) => a[e.key] != e.value).length;
+
+/// Red letters for a translation that doesn't mark them: each of the KJV's
+/// spans ([kjv] text, [spans]) placed at the same relative spot in [text],
+/// moved to the nearest place speech starts (a colon or opening quote) and
+/// ends (a sentence end or closing quote). Approximate by nature.
+List<List<int>> _inferSpans(String kjv, List<List<int>> spans, String text) {
+  final out = <List<int>>[];
+  final len = text.length;
+  int? nearest(Iterable<int> candidates, double target, int floor) {
+    int? best;
+    for (final c in candidates) {
+      if (c < floor || (c - target).abs() > len * 0.3) continue;
+      if (best == null || (c - target).abs() < (best - target).abs()) best = c;
+    }
+    return best;
+  }
+
+  for (final [s, e] in spans) {
+    final fa = s / kjv.length, fb = e / kjv.length;
+    var start = 0;
+    if (fa > 0.04) {
+      final openers = [
+        for (var i = 0; i < len; i++)
+          if (text[i] == ':') i + 1 else if ('“«„"`‘'.contains(text[i])) i,
+      ];
+      start = nearest(openers, fa * len, 0) ?? _wordStart(text, (fa * len).round());
+    }
+    var end = len;
+    if (fb < 0.96) {
+      final enders = [
+        for (var i = 0; i < len; i++)
+          if ('.!?;”»"\''.contains(text[i])) i + 1,
+      ];
+      end = nearest(enders, fb * len, start + 1) ?? _wordEnd(text, (fb * len).round());
+    }
+    while (start < end && text[start] == ' ') {
+      start++;
+    }
+    while (end > start && text[end - 1] == ' ') {
+      end--;
+    }
+    if (end <= start) continue;
+    if (out.isNotEmpty && start <= out.last[1]) {
+      out.last[1] = max(out.last[1], end);
+    } else {
+      out.add([start, end]);
+    }
+  }
+  return out;
+}
+
+int _wordStart(String text, int i) {
+  i = i.clamp(0, text.length);
+  while (i > 0 && text[i - 1] != ' ') {
+    i--;
+  }
+  return i;
+}
+
+int _wordEnd(String text, int i) {
+  i = i.clamp(0, text.length);
+  while (i < text.length && text[i] != ' ') {
+    i++;
+  }
+  return i;
+}
+
+/// Strips KJV italics brackets, pilcrows and the original-numbering notes
+/// some sources add after renumbering ("[3:1]"); normalises whitespace.
 String _clean(String s) => s
+    .replaceAll(RegExp(r'\[\d+:\d+[^\]]*\]'), '')
     .replaceAll(RegExp(r'[\[\]¶]'), '')
     .replaceAll(RegExp(r'\s+'), ' ')
     .trim();

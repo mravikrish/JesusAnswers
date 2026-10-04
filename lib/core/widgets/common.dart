@@ -158,6 +158,28 @@ class VerseQuote extends StatelessWidget {
 }
 
 /// Shown before anything else when a message suggests the person may be at risk.
+/// Crisis lines by the phone's country, only where the number is certain.
+/// Everywhere else the card offers findahelpline.com.
+const _helplines = {
+  'GB': 'Samaritans: 116 123',
+  'IE': 'Samaritans: 116 123',
+  'CA': 'Canada — 988: 988',
+  'BR': 'CVV: 188',
+  'MX': 'Línea de la Vida: 800 911 2000',
+  'ES': 'Línea 024: 024',
+  'FR': '3114: 3114',
+  'DE': 'TelefonSeelsorge: 0800 111 0 111',
+  'AT': 'Telefonseelsorge: 142',
+  'CH': 'Die Dargebotene Hand / La Main Tendue: 143',
+  'IT': 'Telefono Amico: 02 2327 2327',
+  'PL': 'Telefon Zaufania: 116 123',
+  'PH': 'NCMH Crisis Hotline: 1553',
+  'UA': 'Lifeline Ukraine: 7333',
+  'AU': 'Lifeline: 13 11 14',
+  'NZ': 'Need to talk?: 1737',
+  'ZA': 'SADAG: 0800 567 567',
+};
+
 class CrisisCard extends StatelessWidget {
   const CrisisCard({super.key});
 
@@ -191,8 +213,18 @@ class CrisisCard extends StatelessWidget {
           const SizedBox(height: 8),
           Text(l.crisisBody, style: const TextStyle(height: 1.4)),
           const SizedBox(height: 8),
-          line(Icons.phone_rounded, l.crisisIndia, 'tel:14416'),
-          line(Icons.phone_rounded, l.crisisUS, 'tel:988'),
+          // The helpline for the phone's country; India and the US where it's unknown or elsewhere.
+          ...switch (View.of(context).platformDispatcher.locale.countryCode) {
+            'IN' => [line(Icons.phone_rounded, l.crisisIndia, 'tel:14416')],
+            'US' => [line(Icons.phone_rounded, l.crisisUS, 'tel:988')],
+            final country when _helplines.containsKey(country) => [
+                line(Icons.phone_rounded, _helplines[country]!, 'tel:${_helplines[country]!.split(': ').last.replaceAll(' ', '')}'),
+              ],
+            _ => [
+                line(Icons.phone_rounded, l.crisisIndia, 'tel:14416'),
+                line(Icons.phone_rounded, l.crisisUS, 'tel:988'),
+              ],
+          },
           line(Icons.public_rounded, l.crisisFind, 'https://findahelpline.com'),
           const SizedBox(height: 4),
           Text(l.crisisEmergency, style: const TextStyle(fontSize: 13, color: AppColors.inkSoft)),

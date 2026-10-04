@@ -25,7 +25,17 @@
         "pa": "ਸ੍ਰਿਸ਼ਟੀ",
         "bn": "সৃষ্টি",
         "gu": "સૃષ્ટિ",
-        "or": "ସୃଷ୍ଟି"
+        "or": "ସୃଷ୍ଟି",
+        "es": "La creación",
+        "pt": "A criação",
+        "fr": "La création",
+        "sw": "Uumbaji",
+        "tl": "Ang paglikha",
+        "de": "Die Schöpfung",
+        "it": "La creazione",
+        "pl": "Stworzenie świata",
+        "ru": "Сотворение мира",
+        "uk": "Створення світу"
       }
     },
     {
@@ -53,7 +63,17 @@
         "pa": "ਨੂਹ ਅਤੇ ਕਿਸ਼ਤੀ",
         "bn": "নোহ ও জাহাজ",
         "gu": "નૂહ અને વહાણ",
-        "or": "ନୋହ ଓ ଜାହାଜ"
+        "or": "ନୋହ ଓ ଜାହାଜ",
+        "es": "Noé y el arca",
+        "pt": "Noé e a arca",
+        "fr": "Noé et l’arche",
+        "sw": "Nuhu na safina",
+        "tl": "Si Noe at ang arka",
+        "de": "Noah und die Arche",
+        "it": "Noè e l’arca",
+        "pl": "Noe i arka",
+        "ru": "Ной и ковчег",
+        "uk": "Ной і ковчег"
       }
     },
     {
@@ -78,7 +98,17 @@
         "pa": "ਯਾਕੂਬ ਦੀ ਪੌੜੀ",
         "bn": "যাকোবের সিঁড়ি",
         "gu": "યાકૂબની સીડી",
-        "or": "ଯାକୁବଙ୍କ ସିଡ଼ି"
+        "or": "ଯାକୁବଙ୍କ ସିଡ଼ି",
+        "es": "La escalera de Jacob",
+        "pt": "A escada de Jacó",
+        "fr": "L’échelle de Jacob",
+        "sw": "Ngazi ya Yakobo",
+        "tl": "Ang hagdan ni Jacob",
+        "de": "Die Himmelsleiter",
+        "it": "La scala di Giacobbe",
+        "pl": "Drabina Jakuba",
+        "ru": "Лестница Иакова",
+        "uk": "Драбина Якова"
       }
     },
     {
@@ -106,7 +136,17 @@
         "pa": "ਯੂਸੁਫ਼ ਆਪਣੇ ਭਰਾਵਾਂ ਨੂੰ ਮਾਫ਼ ਕਰਦਾ ਹੈ",
         "bn": "যোষেফ তাঁর ভাইদের ক্ষমা করেন",
         "gu": "યૂસફ પોતાના ભાઈઓને માફ કરે છે",
-        "or": "ଯୋଷେଫ ତାଙ୍କ ଭାଇମାନଙ୍କୁ କ୍ଷମା କରନ୍ତି"
+        "or": "ଯୋଷେଫ ତାଙ୍କ ଭାଇମାନଙ୍କୁ କ୍ଷମା କରନ୍ତି",
+        "es": "José perdona a sus hermanos",
+        "pt": "José perdoa seus irmãos",
+        "fr": "Joseph pardonne à ses frères",
+        "sw": "Yusufu awasamehe ndugu zake",
+        "tl": "Pinatawad ni Jose ang kanyang mga kapatid",
+        "de": "Josef vergibt seinen Brüdern",
+        "it": "Giuseppe perdona i suoi fratelli",
+        "pl": "Józef przebacza braciom",
+        "ru": "Иосиф прощает братьев",
+        "uk": "Йосип прощає братів"
       }
     },
     {
@@ -131,7 +171,17 @@
         "pa": "ਟੋਕਰੀ ਵਿੱਚ ਬਾਲਕ ਮੂਸਾ",
         "bn": "ঝুড়িতে শিশু মোশি",
         "gu": "ટોપલીમાં બાળક મૂસા",
-        "or": "ଟୋକେଇରେ ଶିଶୁ ମୋଶା"
+        "or": "ଟୋକେଇରେ ଶିଶୁ ମୋଶା",
+        "es": "Moisés en la canasta",
+        "pt": "O bebê Moisés no cesto",
+        "fr": "Le bébé Moïse dans la corbeille",
+        "sw": "Mtoto Musa kikapuni",
+        "tl": "Ang sanggol na si Moises sa basket",
+        "de": "Baby Mose im Körbchen",
+        "it": "Il piccolo Mosè nel cesto",
+        "pl": "Mały Mojżesz w koszyku",
+        "ru": "Младенец Моисей в корзине",
+        "uk": "Немовля Мойсей у кошику"
       }
     },
     {
@@ -156,7 +206,17 @@
         "pa": "ਮੂਸਾ ਅਤੇ ਬਲਦੀ ਝਾੜੀ",
         "bn": "মোশি ও জ্বলন্ত ঝোপ",
         "gu": "મૂસા અને સળગતું ઝાડવું",
-        "or": "ମୋଶା ଓ ଜଳନ୍ତା ବୁଦା"
+        "or": "ମୋଶା ଓ ଜଳନ୍ତା ବୁଦା",
+        "es": "Moisés y la zarza ardiente",
+        "pt": "Moisés e a sarça ardente",
+        "fr": "Moïse et le buisson ardent",
+        "sw": "Musa na kichaka kinachowaka",
+        "tl": "Si Moises at ang nagliliyab na palumpong",
+        "de": "Mose und der brennende Dornbusch",
+        "it": "Mosè e il roveto ardente",
+        "pl": "Mojżesz i płonący krzew",
+        "ru": "Моисей и неопалимая купина",
+        "uk": "Мойсей і палаюча купина"
       }
     },
     {
@@ -183,7 +243,17 @@
         "pa": "ਲਾਲ ਸਮੁੰਦਰ ਪਾਰ ਕਰਨਾ",
         "bn": "লোহিত সাগর পার হওয়া",
         "gu": "લાલ સમુદ્ર પાર કરવો",
-        "or": "ଲୋହିତ ସାଗର ପାର ହେବା"
+        "or": "ଲୋହିତ ସାଗର ପାର ହେବା",
+        "es": "El cruce del mar Rojo",
+        "pt": "A travessia do mar Vermelho",
+        "fr": "La traversée de la mer Rouge",
+        "sw": "Kuvuka Bahari ya Shamu",
+        "tl": "Ang pagtawid sa Dagat na Pula",
+        "de": "Der Weg durchs Rote Meer",
+        "it": "L’attraversamento del Mar Rosso",
+        "pl": "Przejście przez Morze Czerwone",
+        "ru": "Переход через Красное море",
+        "uk": "Перехід через Червоне море"
       }
     },
     {
@@ -210,7 +280,17 @@
         "pa": "ਯਰੀਹੋ ਦੀਆਂ ਕੰਧਾਂ",
         "bn": "যিরীহোর প্রাচীর",
         "gu": "યરીખોની દીવાલો",
-        "or": "ଯିରୀହୋର ପ୍ରାଚୀର"
+        "or": "ଯିରୀହୋର ପ୍ରାଚୀର",
+        "es": "Los muros de Jericó",
+        "pt": "As muralhas de Jericó",
+        "fr": "Les murailles de Jéricho",
+        "sw": "Kuta za Yeriko",
+        "tl": "Ang mga pader ng Jerico",
+        "de": "Die Mauern von Jericho",
+        "it": "Le mura di Gerico",
+        "pl": "Mury Jerycha",
+        "ru": "Стены Иерихона",
+        "uk": "Стіни Єрихону"
       }
     },
     {
@@ -235,7 +315,17 @@
         "pa": "ਰੂਥ ਦੀ ਵਫ਼ਾਦਾਰੀ",
         "bn": "রূতের বিশ্বস্ততা",
         "gu": "રૂથની વફાદારી",
-        "or": "ରୂତଙ୍କ ବିଶ୍ୱସ୍ତତା"
+        "or": "ରୂତଙ୍କ ବିଶ୍ୱସ୍ତତା",
+        "es": "La lealtad de Rut",
+        "pt": "A lealdade de Rute",
+        "fr": "La fidélité de Ruth",
+        "sw": "Uaminifu wa Ruthu",
+        "tl": "Ang katapatan ni Ruth",
+        "de": "Ruths Treue",
+        "it": "La fedeltà di Rut",
+        "pl": "Wierność Rut",
+        "ru": "Верность Руфи",
+        "uk": "Вірність Рут"
       }
     },
     {
@@ -260,7 +350,17 @@
         "pa": "ਪਰਮੇਸ਼ੁਰ ਸਮੂਏਲ ਨੂੰ ਬੁਲਾਉਂਦਾ ਹੈ",
         "bn": "ঈশ্বর শমূয়েলকে ডাকেন",
         "gu": "ઈશ્વર શમુએલને બોલાવે છે",
-        "or": "ପରମେଶ୍ୱର ଶାମୁୟେଲଙ୍କୁ ଡାକନ୍ତି"
+        "or": "ପରମେଶ୍ୱର ଶାମୁୟେଲଙ୍କୁ ଡାକନ୍ତି",
+        "es": "Dios llama a Samuel",
+        "pt": "Deus chama Samuel",
+        "fr": "Dieu appelle Samuel",
+        "sw": "Mungu amwita Samweli",
+        "tl": "Tinawag ng Diyos si Samuel",
+        "de": "Gott ruft Samuel",
+        "it": "Dio chiama Samuele",
+        "pl": "Bóg powołuje Samuela",
+        "ru": "Бог призывает Самуила",
+        "uk": "Бог кличе Самуїла"
       }
     },
     {
@@ -287,7 +387,17 @@
         "pa": "ਦਾਊਦ ਅਤੇ ਗੋਲਿਅਥ",
         "bn": "দায়ূদ ও গলিয়াৎ",
         "gu": "દાઉદ અને ગોલ્યાથ",
-        "or": "ଦାଉଦ ଓ ଗଲୀୟାତ"
+        "or": "ଦାଉଦ ଓ ଗଲୀୟାତ",
+        "es": "David y Goliat",
+        "pt": "Davi e Golias",
+        "fr": "David et Goliath",
+        "sw": "Daudi na Goliathi",
+        "tl": "Si David at si Goliat",
+        "de": "David und Goliat",
+        "it": "Davide e Golia",
+        "pl": "Dawid i Goliat",
+        "ru": "Давид и Голиаф",
+        "uk": "Давид і Голіят"
       }
     },
     {
@@ -312,7 +422,17 @@
         "pa": "ਏਲੀਯਾਹ ਅਤੇ ਕਾਂ",
         "bn": "এলিয় ও দাঁড়কাক",
         "gu": "એલિયા અને કાગડા",
-        "or": "ଏଲୀୟ ଓ ଡାମରାକାଉ"
+        "or": "ଏଲୀୟ ଓ ଡାମରାକାଉ",
+        "es": "Elías y los cuervos",
+        "pt": "Elias e os corvos",
+        "fr": "Élie et les corbeaux",
+        "sw": "Eliya na kunguru",
+        "tl": "Si Elias at ang mga uwak",
+        "de": "Elia und die Raben",
+        "it": "Elia e i corvi",
+        "pl": "Eliasz i kruki",
+        "ru": "Илия и вороны",
+        "uk": "Ілля і круки"
       }
     },
     {
@@ -338,7 +458,17 @@
         "pa": "ਰਾਣੀ ਅਸਤਰ ਦੀ ਹਿੰਮਤ",
         "bn": "রানী ইষ্টেরের সাহস",
         "gu": "રાણી એસ્તેરની હિંમત",
-        "or": "ରାଣୀ ଏଷ୍ଟରଙ୍କ ସାହସ"
+        "or": "ରାଣୀ ଏଷ୍ଟରଙ୍କ ସାହସ",
+        "es": "La valentía de la reina Ester",
+        "pt": "A coragem da rainha Ester",
+        "fr": "Le courage de la reine Esther",
+        "sw": "Ujasiri wa Malkia Esta",
+        "tl": "Ang tapang ni Reyna Ester",
+        "de": "Der Mut der Königin Ester",
+        "it": "Il coraggio della regina Ester",
+        "pl": "Odwaga królowej Estery",
+        "ru": "Мужество царицы Есфири",
+        "uk": "Мужність цариці Естер"
       }
     },
     {
@@ -363,7 +493,17 @@
         "pa": "ਬਲਦੀ ਹੋਈ ਭੱਠੀ",
         "bn": "জ্বলন্ত আগুনের চুল্লী",
         "gu": "ધગધગતી ભઠ્ઠી",
-        "or": "ଜ୍ୱଳନ୍ତ ଅଗ୍ନିକୁଣ୍ଡ"
+        "or": "ଜ୍ୱଳନ୍ତ ଅଗ୍ନିକୁଣ୍ଡ",
+        "es": "El horno de fuego",
+        "pt": "A fornalha ardente",
+        "fr": "La fournaise ardente",
+        "sw": "Tanuru la moto",
+        "tl": "Ang nagniningas na pugon",
+        "de": "Der Feuerofen",
+        "it": "La fornace ardente",
+        "pl": "Piec ognisty",
+        "ru": "Огненная печь",
+        "uk": "Вогняна піч"
       }
     },
     {
@@ -389,7 +529,17 @@
         "pa": "ਸ਼ੇਰਾਂ ਦੀ ਗੁਫ਼ਾ ਵਿੱਚ ਦਾਨੀਏਲ",
         "bn": "সিংহের গর্তে দানিয়েল",
         "gu": "સિંહોના બિલમાં દાનિયેલ",
-        "or": "ସିଂହ ଗୁମ୍ଫାରେ ଦାନିୟେଲ"
+        "or": "ସିଂହ ଗୁମ୍ଫାରେ ଦାନିୟେଲ",
+        "es": "Daniel en el foso de los leones",
+        "pt": "Daniel na cova dos leões",
+        "fr": "Daniel dans la fosse aux lions",
+        "sw": "Danieli katika tundu la simba",
+        "tl": "Si Daniel sa yungib ng mga leon",
+        "de": "Daniel in der Löwengrube",
+        "it": "Daniele nella fossa dei leoni",
+        "pl": "Daniel w jaskini lwów",
+        "ru": "Даниил во рву со львами",
+        "uk": "Даниїл у лев’ячому рові"
       }
     },
     {
@@ -418,7 +568,17 @@
         "pa": "ਯੂਨਾਹ ਅਤੇ ਵੱਡੀ ਮੱਛੀ",
         "bn": "যোনা ও বিশাল মাছ",
         "gu": "યૂના અને મોટી માછલી",
-        "or": "ଯୂନସ ଓ ବଡ଼ ମାଛ"
+        "or": "ଯୂନସ ଓ ବଡ଼ ମାଛ",
+        "es": "Jonás y el gran pez",
+        "pt": "Jonas e o grande peixe",
+        "fr": "Jonas et le grand poisson",
+        "sw": "Yona na samaki mkubwa",
+        "tl": "Si Jonas at ang malaking isda",
+        "de": "Jona und der große Fisch",
+        "it": "Giona e il grande pesce",
+        "pl": "Jonasz i wielka ryba",
+        "ru": "Иона и большая рыба",
+        "uk": "Йона і велика риба"
       }
     },
     {
@@ -443,7 +603,17 @@
         "pa": "ਯਿਸੂ ਦਾ ਜਨਮ",
         "bn": "যীশুর জন্ম",
         "gu": "ઈસુનો જન્મ",
-        "or": "ଯୀଶୁଙ୍କ ଜନ୍ମ"
+        "or": "ଯୀଶୁଙ୍କ ଜନ୍ମ",
+        "es": "El nacimiento de Jesús",
+        "pt": "O nascimento de Jesus",
+        "fr": "La naissance de Jésus",
+        "sw": "Kuzaliwa kwa Yesu",
+        "tl": "Ang kapanganakan ni Jesus",
+        "de": "Die Geburt Jesu",
+        "it": "La nascita di Gesù",
+        "pl": "Narodzenie Jezusa",
+        "ru": "Рождество Иисуса",
+        "uk": "Народження Ісуса"
       }
     },
     {
@@ -468,7 +638,17 @@
         "pa": "ਮੱਛੀਆਂ ਦਾ ਵੱਡਾ ਜਾਲ",
         "bn": "প্রচুর মাছ ধরা",
         "gu": "માછલીઓનો મોટો જથ્થો",
-        "or": "ପ୍ରଚୁର ମାଛ ଧରା"
+        "or": "ପ୍ରଚୁର ମାଛ ଧରା",
+        "es": "La pesca milagrosa",
+        "pt": "A pesca maravilhosa",
+        "fr": "La pêche miraculeuse",
+        "sw": "Samaki wengi ajabu",
+        "tl": "Ang maraming huling isda",
+        "de": "Der wunderbare Fischfang",
+        "it": "La pesca miracolosa",
+        "pl": "Cudowny połów ryb",
+        "ru": "Чудесный улов",
+        "uk": "Чудесний улов"
       }
     },
     {
@@ -493,7 +673,17 @@
         "pa": "ਪਾਣੀ ਤੋਂ ਦਾਖਰਸ",
         "bn": "জল থেকে দ্রাক্ষারস",
         "gu": "પાણીનો દ્રાક્ષારસ",
-        "or": "ଜଳରୁ ଦ୍ରାକ୍ଷାରସ"
+        "or": "ଜଳରୁ ଦ୍ରାକ୍ଷାରସ",
+        "es": "El agua convertida en vino",
+        "pt": "A água transformada em vinho",
+        "fr": "L’eau changée en vin",
+        "sw": "Maji kuwa divai",
+        "tl": "Ang tubig na naging alak",
+        "de": "Wasser wird zu Wein",
+        "it": "L’acqua cambiata in vino",
+        "pl": "Woda przemieniona w wino",
+        "ru": "Вода в вино",
+        "uk": "Вода стає вином"
       }
     },
     {
@@ -519,7 +709,17 @@
         "pa": "ਬੀਜ ਬੀਜਣ ਵਾਲਾ",
         "bn": "বীজ বপনকারী",
         "gu": "વાવનાર",
-        "or": "ବୀଜ ବୁଣାଳି"
+        "or": "ବୀଜ ବୁଣାଳି",
+        "es": "El sembrador",
+        "pt": "O semeador",
+        "fr": "Le semeur",
+        "sw": "Mpanzi",
+        "tl": "Ang manghahasik",
+        "de": "Der Sämann",
+        "it": "Il seminatore",
+        "pl": "Siewca",
+        "ru": "Сеятель",
+        "uk": "Сіяч"
       }
     },
     {
@@ -544,7 +744,17 @@
         "pa": "ਯਿਸੂ ਤੂਫ਼ਾਨ ਨੂੰ ਸ਼ਾਂਤ ਕਰਦਾ ਹੈ",
         "bn": "যীশু ঝড় থামান",
         "gu": "ઈસુ તોફાનને શાંત કરે છે",
-        "or": "ଯୀଶୁ ଝଡ଼କୁ ଶାନ୍ତ କରନ୍ତି"
+        "or": "ଯୀଶୁ ଝଡ଼କୁ ଶାନ୍ତ କରନ୍ତି",
+        "es": "Jesús calma la tormenta",
+        "pt": "Jesus acalma a tempestade",
+        "fr": "Jésus calme la tempête",
+        "sw": "Yesu atuliza dhoruba",
+        "tl": "Pinatahimik ni Jesus ang bagyo",
+        "de": "Jesus stillt den Sturm",
+        "it": "Gesù calma la tempesta",
+        "pl": "Jezus ucisza burzę",
+        "ru": "Иисус усмиряет бурю",
+        "uk": "Ісус утихомирює бурю"
       }
     },
     {
@@ -570,7 +780,17 @@
         "pa": "ਜੈਰੁਸ ਦੀ ਧੀ",
         "bn": "যায়ীরের মেয়ে",
         "gu": "યાઈરની દીકરી",
-        "or": "ଯାଈରଙ୍କ କନ୍ୟା"
+        "or": "ଯାଈରଙ୍କ କନ୍ୟା",
+        "es": "La hija de Jairo",
+        "pt": "A filha de Jairo",
+        "fr": "La fille de Jaïrus",
+        "sw": "Binti wa Yairo",
+        "tl": "Ang anak na babae ni Jairo",
+        "de": "Die Tochter des Jairus",
+        "it": "La figlia di Giairo",
+        "pl": "Córka Jaira",
+        "ru": "Дочь Иаира",
+        "uk": "Донька Яіра"
       }
     },
     {
@@ -595,7 +815,17 @@
         "pa": "ਪੰਜ ਹਜ਼ਾਰ ਨੂੰ ਭੋਜਨ",
         "bn": "পাঁচ হাজার লোককে খাওয়ানো",
         "gu": "પાંચ હજારને ભોજન",
-        "or": "ପାଞ୍ଚ ହଜାର ଲୋକଙ୍କୁ ଭୋଜନ"
+        "or": "ପାଞ୍ଚ ହଜାର ଲୋକଙ୍କୁ ଭୋଜନ",
+        "es": "La multiplicación de los panes",
+        "pt": "A multiplicação dos pães",
+        "fr": "La multiplication des pains",
+        "sw": "Kuwalisha watu elfu tano",
+        "tl": "Pinakain ang limang libo",
+        "de": "Die Speisung der Fünftausend",
+        "it": "La moltiplicazione dei pani",
+        "pl": "Nakarmienie pięciu tysięcy",
+        "ru": "Насыщение пяти тысяч",
+        "uk": "Нагодування п’яти тисяч"
       }
     },
     {
@@ -620,7 +850,17 @@
         "pa": "ਯਿਸੂ ਪਾਣੀ ਉੱਤੇ ਤੁਰਦਾ ਹੈ",
         "bn": "যীশু জলের উপর দিয়ে হাঁটেন",
         "gu": "ઈસુ પાણી પર ચાલે છે",
-        "or": "ଯୀଶୁ ପାଣି ଉପରେ ଚାଲନ୍ତି"
+        "or": "ଯୀଶୁ ପାଣି ଉପରେ ଚାଲନ୍ତି",
+        "es": "Jesús camina sobre el agua",
+        "pt": "Jesus anda sobre as águas",
+        "fr": "Jésus marche sur l’eau",
+        "sw": "Yesu atembea juu ya maji",
+        "tl": "Naglakad si Jesus sa tubig",
+        "de": "Jesus geht auf dem Wasser",
+        "it": "Gesù cammina sulle acque",
+        "pl": "Jezus chodzi po wodzie",
+        "ru": "Иисус идёт по воде",
+        "uk": "Ісус іде по воді"
       }
     },
     {
@@ -645,7 +885,17 @@
         "pa": "ਭਲਾ ਸਾਮਰੀ",
         "bn": "দয়ালু শমরীয়",
         "gu": "ભલો સમરૂની",
-        "or": "ଦୟାଳୁ ଶମିରୋଣୀୟ"
+        "or": "ଦୟାଳୁ ଶମିରୋଣୀୟ",
+        "es": "El buen samaritano",
+        "pt": "O bom samaritano",
+        "fr": "Le bon Samaritain",
+        "sw": "Msamaria mwema",
+        "tl": "Ang mabuting Samaritano",
+        "de": "Der barmherzige Samariter",
+        "it": "Il buon samaritano",
+        "pl": "Miłosierny Samarytanin",
+        "ru": "Милосердный самарянин",
+        "uk": "Милосердний самарянин"
       }
     },
     {
@@ -670,7 +920,17 @@
         "pa": "ਮਰਿਯਮ ਅਤੇ ਮਾਰਥਾ",
         "bn": "মরিয়ম ও মার্থা",
         "gu": "મરિયમ અને માર્થા",
-        "or": "ମରୀୟମ ଓ ମାର୍ଥା"
+        "or": "ମରୀୟମ ଓ ମାର୍ଥା",
+        "es": "Marta y María",
+        "pt": "Marta e Maria",
+        "fr": "Marthe et Marie",
+        "sw": "Martha na Mariamu",
+        "tl": "Si Marta at si Maria",
+        "de": "Maria und Marta",
+        "it": "Marta e Maria",
+        "pl": "Marta i Maria",
+        "ru": "Марфа и Мария",
+        "uk": "Марта і Марія"
       }
     },
     {
@@ -695,7 +955,17 @@
         "pa": "ਗੁਆਚੀ ਹੋਈ ਭੇਡ",
         "bn": "হারানো মেষ",
         "gu": "ખોવાયેલું ઘેટું",
-        "or": "ହଜିଲା ମେଷ"
+        "or": "ହଜିଲା ମେଷ",
+        "es": "La oveja perdida",
+        "pt": "A ovelha perdida",
+        "fr": "La brebis perdue",
+        "sw": "Kondoo aliyepotea",
+        "tl": "Ang nawawalang tupa",
+        "de": "Das verlorene Schaf",
+        "it": "La pecora smarrita",
+        "pl": "Zagubiona owca",
+        "ru": "Потерянная овца",
+        "uk": "Загублена вівця"
       }
     },
     {
@@ -720,7 +990,17 @@
         "pa": "ਗੁਆਚਿਆ ਹੋਇਆ ਪੁੱਤਰ",
         "bn": "হারানো ছেলে",
         "gu": "ખોવાયેલો દીકરો",
-        "or": "ହଜିଲା ପୁଅ"
+        "or": "ହଜିଲା ପୁଅ",
+        "es": "El hijo pródigo",
+        "pt": "O filho pródigo",
+        "fr": "Le fils prodigue",
+        "sw": "Mwana mpotevu",
+        "tl": "Ang alibughang anak",
+        "de": "Der verlorene Sohn",
+        "it": "Il figliol prodigo",
+        "pl": "Syn marnotrawny",
+        "ru": "Блудный сын",
+        "uk": "Блудний син"
       }
     },
     {
@@ -745,7 +1025,17 @@
         "pa": "ਦਸ ਕੋੜ੍ਹੀ",
         "bn": "দশজন কুষ্ঠরোগী",
         "gu": "દસ કુષ્ઠરોગીઓ",
-        "or": "ଦଶ ଜଣ କୁଷ୍ଠରୋଗୀ"
+        "or": "ଦଶ ଜଣ କୁଷ୍ଠରୋଗୀ",
+        "es": "Los diez leprosos",
+        "pt": "Os dez leprosos",
+        "fr": "Les dix lépreux",
+        "sw": "Wakoma kumi",
+        "tl": "Ang sampung ketongin",
+        "de": "Die zehn Aussätzigen",
+        "it": "I dieci lebbrosi",
+        "pl": "Dziesięciu trędowatych",
+        "ru": "Десять прокажённых",
+        "uk": "Десять прокажених"
       }
     },
     {
@@ -770,7 +1060,17 @@
         "pa": "ਯਿਸੂ ਬੱਚਿਆਂ ਨੂੰ ਬਰਕਤ ਦਿੰਦਾ ਹੈ",
         "bn": "যীশু শিশুদের আশীর্বাদ করেন",
         "gu": "ઈસુ બાળકોને આશીર્વાદ આપે છે",
-        "or": "ଯୀଶୁ ପିଲାମାନଙ୍କୁ ଆଶୀର୍ବାଦ କରନ୍ତି"
+        "or": "ଯୀଶୁ ପିଲାମାନଙ୍କୁ ଆଶୀର୍ବାଦ କରନ୍ତି",
+        "es": "Jesús bendice a los niños",
+        "pt": "Jesus abençoa as crianças",
+        "fr": "Jésus bénit les enfants",
+        "sw": "Yesu awabariki watoto",
+        "tl": "Binasbasan ni Jesus ang mga bata",
+        "de": "Jesus segnet die Kinder",
+        "it": "Gesù benedice i bambini",
+        "pl": "Jezus błogosławi dzieci",
+        "ru": "Иисус благословляет детей",
+        "uk": "Ісус благословляє дітей"
       }
     },
     {
@@ -795,7 +1095,17 @@
         "pa": "ਅੰਨ੍ਹੇ ਬਰਤਿਮਈ ਨੂੰ ਨਜ਼ਰ",
         "bn": "অন্ধ বরতীময় দৃষ্টি পান",
         "gu": "આંધળા બાર્તિમાયને દૃષ્ટિ",
-        "or": "ଅନ୍ଧ ବାର୍ଟୀମୟ ଦୃଷ୍ଟି ପାଆନ୍ତି"
+        "or": "ଅନ୍ଧ ବାର୍ଟୀମୟ ଦୃଷ୍ଟି ପାଆନ୍ତି",
+        "es": "El ciego Bartimeo ve",
+        "pt": "O cego Bartimeu volta a ver",
+        "fr": "L’aveugle Bartimée voit",
+        "sw": "Bartimayo kipofu aona",
+        "tl": "Nakakita ang bulag na si Bartimeo",
+        "de": "Der blinde Bartimäus sieht",
+        "it": "Il cieco Bartimeo vede",
+        "pl": "Niewidomy Bartymeusz widzi",
+        "ru": "Слепой Вартимей прозревает",
+        "uk": "Сліпий Вартимей прозріває"
       }
     },
     {
@@ -820,7 +1130,17 @@
         "pa": "ਜ਼ੱਕੀ",
         "bn": "সক্কেয়",
         "gu": "જાખ્ખી",
-        "or": "ଜଖୀୟ"
+        "or": "ଜଖୀୟ",
+        "es": "Zaqueo",
+        "pt": "Zaqueu",
+        "fr": "Zachée",
+        "sw": "Zakayo",
+        "tl": "Si Zaqueo",
+        "de": "Zachäus",
+        "it": "Zaccheo",
+        "pl": "Zacheusz",
+        "ru": "Закхей",
+        "uk": "Закхей"
       }
     },
     {
@@ -845,7 +1165,17 @@
         "pa": "ਲਾਜ਼ਰ ਮੁੜ ਜੀਉਂਦਾ ਹੁੰਦਾ ਹੈ",
         "bn": "লাসার আবার বেঁচে ওঠেন",
         "gu": "લાજરસ ફરી જીવતો થાય છે",
-        "or": "ଲାଜାର ପୁଣି ଜୀବିତ ହୁଅନ୍ତି"
+        "or": "ଲାଜାର ପୁଣି ଜୀବିତ ହୁଅନ୍ତି",
+        "es": "Lázaro vuelve a vivir",
+        "pt": "Lázaro volta a viver",
+        "fr": "Lazare revient à la vie",
+        "sw": "Lazaro afufuka",
+        "tl": "Muling nabuhay si Lazaro",
+        "de": "Lazarus lebt wieder",
+        "it": "Lazzaro torna in vita",
+        "pl": "Łazarz znów żyje",
+        "ru": "Лазарь снова жив",
+        "uk": "Лазар знову живий"
       }
     },
     {
@@ -870,7 +1200,17 @@
         "pa": "ਯਿਸੂ ਚੇਲਿਆਂ ਦੇ ਪੈਰ ਧੋਂਦਾ ਹੈ",
         "bn": "যীশু শিষ্যদের পা ধুয়ে দেন",
         "gu": "ઈસુ શિષ્યોના પગ ધુએ છે",
-        "or": "ଯୀଶୁ ଶିଷ୍ୟମାନଙ୍କ ପାଦ ଧୁଅନ୍ତି"
+        "or": "ଯୀଶୁ ଶିଷ୍ୟମାନଙ୍କ ପାଦ ଧୁଅନ୍ତି",
+        "es": "Jesús lava los pies",
+        "pt": "Jesus lava os pés",
+        "fr": "Jésus lave les pieds",
+        "sw": "Yesu awaosha miguu",
+        "tl": "Hinugasan ni Jesus ang kanilang mga paa",
+        "de": "Jesus wäscht die Füße",
+        "it": "Gesù lava i piedi",
+        "pl": "Jezus umywa nogi",
+        "ru": "Иисус омывает ноги",
+        "uk": "Ісус умиває ноги"
       }
     },
     {
@@ -895,7 +1235,17 @@
         "pa": "ਉਹ ਜੀ ਉੱਠਿਆ ਹੈ",
         "bn": "তিনি জীবিত হয়ে উঠেছেন",
         "gu": "તે સજીવન થયા છે",
-        "or": "ସେ ପୁନରୁତ୍ଥିତ ହୋଇଛନ୍ତି"
+        "or": "ସେ ପୁନରୁତ୍ଥିତ ହୋଇଛନ୍ତି",
+        "es": "¡Ha resucitado!",
+        "pt": "Ele ressuscitou!",
+        "fr": "Il est ressuscité !",
+        "sw": "Amefufuka!",
+        "tl": "Siya ay muling nabuhay!",
+        "de": "Er ist auferstanden!",
+        "it": "È risorto!",
+        "pl": "Zmartwychwstał!",
+        "ru": "Он воскрес!",
+        "uk": "Він воскрес!"
       }
     },
     {
@@ -921,7 +1271,17 @@
         "pa": "ਇੰਮਊਸ ਦਾ ਰਾਹ",
         "bn": "ইম্মায়ূর পথে",
         "gu": "એમ્મૌસનો માર્ગ",
-        "or": "ଇମ୍ମାୟୁର ପଥ"
+        "or": "ଇମ୍ମାୟୁର ପଥ",
+        "es": "El camino a Emaús",
+        "pt": "O caminho de Emaús",
+        "fr": "Le chemin d’Emmaüs",
+        "sw": "Njia ya Emau",
+        "tl": "Ang daan patungong Emaus",
+        "de": "Der Weg nach Emmaus",
+        "it": "La strada per Emmaus",
+        "pl": "Droga do Emaus",
+        "ru": "Путь в Эммаус",
+        "uk": "Дорога до Еммаусу"
       }
     },
     {
@@ -947,7 +1307,17 @@
         "pa": "ਸੌਲੁਸ ਦੀ ਯਿਸੂ ਨਾਲ ਮੁਲਾਕਾਤ",
         "bn": "শৌল যীশুর দেখা পান",
         "gu": "શાઉલ ઈસુને મળે છે",
-        "or": "ଶାଉଲ ଯୀଶୁଙ୍କୁ ଭେଟନ୍ତି"
+        "or": "ଶାଉଲ ଯୀଶୁଙ୍କୁ ଭେଟନ୍ତି",
+        "es": "Saulo encuentra a Jesús",
+        "pt": "Saulo encontra Jesus",
+        "fr": "Saul rencontre Jésus",
+        "sw": "Sauli akutana na Yesu",
+        "tl": "Nakatagpo ni Saulo si Jesus",
+        "de": "Saulus begegnet Jesus",
+        "it": "Saulo incontra Gesù",
+        "pl": "Szaweł spotyka Jezusa",
+        "ru": "Савл встречает Иисуса",
+        "uk": "Савло зустрічає Ісуса"
       }
     }
   ]

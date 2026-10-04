@@ -1,0 +1,1769 @@
+{
+ "lang": "tl",
+ "translation": "ULB",
+ "translationName": "Banal na Bibliya",
+ "attribution": "Banal na Bibliya (ULB). Copyright © 2018 Door43 World Missions Community. Licensed CC BY-SA 4.0. Source: eBible.org/tglulb",
+ "books": {
+  "MAT": "Mateo",
+  "PHP": "Mga Taga-Filipos",
+  "1PE": "1 Pedro",
+  "PSA": "Mga Awit",
+  "JHN": "Juan",
+  "ISA": "Isaias",
+  "2TI": "2 Timoteo",
+  "JOS": "Joshua",
+  "2CO": "2 Corinto",
+  "GAL": "Mga Taga-Galacia",
+  "JER": "Jeremias",
+  "ROM": "Mga Taga-Roma",
+  "LAM": "Mga Panaghoy",
+  "REV": "Pahayag",
+  "HEB": "Mga Hebreo",
+  "DEU": "Deuteronomio",
+  "EPH": "Mga Taga-Efeso",
+  "JAS": "Santiago",
+  "PRO": "Mga Kawikaan",
+  "COL": "Mga Taga-Colosas",
+  "1JN": "1 Juan",
+  "1CO": "1 Corinto",
+  "MIC": "Mikas",
+  "1TH": "1 Tesalonica",
+  "NUM": "Mga Bilang",
+  "ZEP": "Zefanias",
+  "SNG": "Awit ni Solomon",
+  "MRK": "Marcos",
+  "NAM": "Nahum",
+  "LUK": "Lucas",
+  "TIT": "Tito",
+  "ACT": "Mga Gawa",
+  "NEH": "Nehemias",
+  "1CH": "1 Mga Cronica",
+  "HAB": "Habakuk",
+  "2SA": "2 Samuel",
+  "EXO": "Exodo",
+  "2TH": "2 Tesalonica",
+  "GEN": "Genesis",
+  "1TI": "1 Timoteo",
+  "MAL": "Malakias",
+  "RUT": "Ruth",
+  "1SA": "1 Samuel",
+  "1KI": "1 Mga Hari",
+  "EST": "Ester",
+  "DAN": "Daniel",
+  "JON": "Jonas"
+ },
+ "verses": {
+  "MAT 6:34": "Kaya huwag kayong mabahala sa kinabukasan, sapagkat ang bukas ang mababahala sa kaniyang sarili. Ang bawat araw ay may sapat na sariliing kaguluhan.",
+  "PHP 4:6-7": "Huwag mabalisa tungkol sa anumang bagay. Sa halip, hayaan ninyong malaman ng Panginoon ang inyong mga kahilingan sa lahat ng bagay sa pamamagitan ng panalanging may pasasalamat. At ang kapayapaan ng Diyos na humihigit sa lahat ng pang-unawa, ang mag-iingat sa inyong mga puso at isipan kay Cristo Jesus.",
+  "1PE 5:7": "Ibigay niyo ang lahat ng inyong pag-aalala sa kaniya, dahil pinag-iingatan niya kayo.",
+  "PSA 55:22": "Ilagay mo ang iyong pasanin kay Yahweh, at ikaw ay kaniyang aalalayan; hindi niya papayagang sumuray- suray sa paglalakad ang taong matuwid.",
+  "MAT 11:28": "Lumapit kayo sa akin, kayong lahat na nahihirapan at lubhang nabibigatan at bibigyan ko kayo ng kapahingahan.",
+  "JHN 14:27": "Kapayapaan ang iiwan ko sa inyo; ibinibigay ko ang aking kapayapaan sa inyo. Hindi ko ito ibinibigay katulad ng pagbibigay ng mundo. Huwag hayaang mabalisa ang inyong puso, at huwag ito hayaang matakot.",
+  "ISA 26:3": "Nanatili sa iyo ang kaisipan, pananatalihin mo siya sa ganap na kapayapaan, dahil nagtitiwala siya sa iyo.",
+  "PSA 46:10": "Tumahimik kayo at kilalanin ninyo na ako ay Diyos; itatanghal ako sa ginta ng mga bansa; itatanghal ako sa mundo.",
+  "ISA 41:10": "Huwag kang matakot, sapagkat ako ay kasama mo. Huwag kang mabalisa, sapagkat ako ang iyong Diyos. Pagtitibayin kita, at tutulungan kita, at aalalayan kita sa pamamagitan ng aking kanang kamay ng aking marapat na tagumpay.",
+  "2TI 1:7": "Sapagkat hindi tayo binigyan ng Diyos ng espiritu ng pagkatakot, kundi ng kapangyarihan, pag-ibig at disiplina.",
+  "PSA 27:1": "Si Yahweh ang aking liwanag at aking kaligtasan; kanino ako matatakot? Si Yahweh ang kanlungan ng aking buhay; kanino ako mangangamba?",
+  "PSA 56:3": "Kapag ako ay natatakot, magtitiwala ako sa iyo.",
+  "PSA 34:4": "Hinanap ko si Yahweh, at tumugon siya, at sa lahat ng mga takot ko tagumpay ang ibinigay niya.",
+  "JOS 1:9": "Hindi ba iniutos ko sa iyo? Maging malakas at matapang! Huwag matakot. Huwag matakot. Kasama mo si Yahweh na iyong Diyos saan ka man pupunta.”",
+  "PHP 4:13": "Magagawa ko ang lahat ng mga bagay sa pamamagitan niya na nagpapalakas sa akin.",
+  "ISA 40:31": "pero silang naghihintay kay Yahweh ay panunumbalikin ang kanilang kalakasan; pumailanglang sila ng may pakpak tulad ng mga agila; sila ay tatakbo at hindi manghihina; sila ay maglalakad at hindi mahihimatay.",
+  "2CO 12:9": "At sinabi niya sa akin, “Ang aking biyaya ay sapat sa iyo, sapagkat ang kapangyarihan ay nagiging ganap sa kahinaan.” Kung kaya mas mabuti pang ipagmayabang ko ang tungkol sa aking kahinaan, upang ang kapangyarihan ni Cristo ay manahan sa akin.",
+  "GAL 6:9": "Hindi tayo dapat mapagod sa paggawa ng mabuti, dahil sa takdang panahon magkakaroon tayo ng ani kung hindi tayo susuko.",
+  "JER 29:11": "Sapagkat ako mismo ang nakakaalam ng mga plano na mayroon ako para sa inyo, mga plano para sa kapayapaan at hindi para sa sakuna, upang bigyan kayo ng isang kinabukasan at pag-asa. Ito ang pahayag ni Yahweh.",
+  "ROM 15:13": "Ngayon nawa ang Diyos ng pagtitiwala ay punuin kayo ng buong kagalakan at kapayapaan sa inyong paniniwala, upang kayo ay managana sa pagtitiwala sa pamamagitan ng kapangyarihan ng Banal na Espiritu.",
+  "ROM 8:28": "Nalalaman natin na sa mga nagmamahal sa Diyos, sa lahat ng bagay gumagawa siya para sa ikabubuti, ng mga tinawag ayon sa kaniyang layunin.",
+  "LAM 3:22-23": "Ito ay sa pamamagitan ng katapatan sa kasunduan ni Yahweh kaya hindi tayo nalipol, sapagkat ang kaniyang mga kilos ng kahabagan ay hindi nagwakas. Ang mga kilos ng kahabagan niya ay muling nagaganap sa bawat umaga, katapatan mo ay dakila!",
+  "PSA 42:11": "Bakit ka yumuyukod, aking kaluluwa? Bakit ka nababalisa sa aking kalooban? Umasa ka sa Diyos, dahil magpupuri pa ako sa kaniya, na saklolo ng aking mukha at aking Diyos.",
+  "PSA 30:5": "Dahil ang kaniyang galit ay isang saglit lamang; pero ang kaniyang pabor ay panghabangbuhay. Ang pag-iyak ay dumarating sa gabi, pero ang kagalakan ay dumarating sa umaga.",
+  "ROM 12:12": "Magalak sa pag-asang mayroon kayo tungkol sa hinaharap. Maging matiisin sa inyong mga kabalisahan. Magpatuloy sa pananalangin.",
+  "PSA 34:18": "Si Yahweh ay malapit sa mga wasak ang puso, at inililigtas niya ang mga nadurog ang espiritu.",
+  "PSA 147:3": "Ibinabalik niya ang mga taong dinala sa ibang bayan. Pinalalakas niya ulit ang mga pinanghihinaan ng loob at pinagagaling ang kanilang mga sugat.",
+  "MAT 5:4": "Pinagpala ang mga nagdadalamhati sapagkat sila ay aaliwin.",
+  "REV 21:4": "Papahirin niya ang bawat luha mula sa kanilang mga mata, wala nang kamatayan, o pagdadalamhati, o pag-iyak, o sakit. Ang naunang mga bagay ay lumipas na.",
+  "PSA 103:2-3": "Binibigyang papuri ko si Yahweh ng buong buhay ko, at naaalala ko ang lahat ng kanyang mga mabubuting gawa. Pinapatawad niya lahat ng inyong mga kasalanan; pinapagaling niya lahat ng inyong mga sakit.",
+  "HEB 13:5": "Dapat ang paraan ng inyong pamumuhay ay maging malaya mula sa labis na pagmamahal sa pera. Masiyahan sa mga bagay na mayroon kayo, sapagkat sinabi mismo ng Diyos,” Hindi kita iiwan ni pababayaan man.”",
+  "DEU 31:6": "Magpakatatag at magpakatapang, huwag matakot, at huwag matakot sa kanila; sapagkat si Yahweh na inyong Diyos, ang siyang sasama sa inyo; hindi niya kayo bibiguin ni pababayaan.”",
+  "MAT 28:20": "Turuan sila na sumunod sa lahat ng mga iniutos ko sa inyo. At pakinggan ninyo, Ako ay laging nasa inyo, maging sa katapusan ng mundo.”",
+  "EPH 4:26": "“Magalit kayo, ngunit huwag kayong magkasala.” Huwag ninyong hayaan na lumubog ang araw sa inyong galit.",
+  "JAS 1:19": "Alam ninyo ito, mga minamahal kong kapatid. Bawat tao ay dapat mabilis sa pakikinig, dahan-dahan sa pananalita, at hindi agad nagagalit,",
+  "PRO 15:1": "Ang malumanay na sagot ay nag-aalis ng poot, pero ang malupit na salita ay nagsasanhi ng galit.",
+  "EPH 4:32": "Maging mabuti sa isa't-isa. Maging mahabagin. Patawarin ang isa't-isa, katulad ng pagpapatawad sa inyo ng Diyos sa pamamagitan ni Cristo.",
+  "COL 3:13": "Magtiyaga sa bawat isa. Maging maawain sa bawat isa. Kung ang isa ay may hinaing laban sa isa pa, magpatawad kayo gaya ng pagpapatawad sa inyo ng Panginoon.",
+  "1JN 1:9": "Pero kung tayo ay umamin sa ating mga kasalanan, siya ay matapat at matuwid na patawarin tayo sa ating mga kasalanan at linisin tayo mula sa lahat ng kasamaan.",
+  "1CO 13:4": "Ang pag-ibig ay mapagpasensya at magandang loob. Ang pag-ibig ay hindi naiinggit o nagyayabang. Hindi mapagmataas,",
+  "PSA 127:3": "Masdan mo, ang mga bata ay isang pamana mula kay Yahweh at ang bunga ng sinapupunan ay isang gantimpala mula sa kaniya.",
+  "PRO 22:6": "Turuan ang isang bata sa daan kung saan siya nararapat pumunta, at kapag siya ay matanda na hindi siya tatalikod mula sa bilin na iyon.",
+  "COL 3:23": "Anuman ang inyong ginagawa, gumawa kayo mula sa kaluluwa na para sa Panginoon at hindi para sa mga tao.",
+  "PHP 4:19": "At ang aking Diyos ang magpupuno ng inyong mga pangangailangan ayon sa kaniyang mga kayamanan at kaluwalhatian kay Cristo Jesus.",
+  "MAT 6:33": "Sapagkat hanapin muna ninyo ang kaniyang kaharian at ang kaniyang katuwiran at ang lahat na ito ay maibibigay sa inyo.",
+  "PRO 3:5-6": "Magtiwala kay Yahweh ng buong puso at huwag umasa sa sarili mong pang-unawa; sa lahat ng iyong ginagawa ay kilalanin siya at gagawin niyang matuwid ang iyong mga landas.",
+  "JAS 1:5": "Ngunit kung sinuman sa inyo ay nangangailangan ng karunungan, hingin ninyo ito sa Diyos, ang mapagbigay at walang panunumbat sa lahat ng humihingi, at tutugunin niya ito.",
+  "PSA 32:8": "Pangangaralan kita at ituturo sa iyo ang daan na dapat mong lakaran. Pangangaralan kita habang nagmamasid ako sa iyo.",
+  "PRO 24:16": "Sapagkat kung ang isang taong gumagawa ng tama ay bumagsak ng pitong beses, siya ay tatayo muli, ngunit ang mga masasama ay ibabagsak ng kalamidad.",
+  "MIC 7:8": "Huwag kang magalak para sa akin, aking kaaway. Pagkatapos kung bumagsak, titindig ako. Kapag ako ay uupo sa kadiliman, si Yahweh ang magsisilbing liwanag para sa akin.",
+  "1CO 10:13": "Walang tukso ang dumating sa inyo na hindi pangkaraniwan sa lahat ng tao. Sa halip, tapat ang Diyos. Hindi kayo hahayaan ng Diyos na matukso ng higit sa inyong kakayanan. Sa pamamagitan ng tukso ay siya din ang magbibigay ng paraan para makatakas, upang inyo ngang makayanan ang mga ito.",
+  "PSA 37:7": "Tumigil ka sa harap ni Yahweh at matiyagang maghintay sa kaniya. Huwag kang mag-alala kung may taong mapagtatagumpayan ang kaniyang masamang balakin kung ang tao ay gumagawa ng masamang mga plano.",
+  "EPH 2:10": "Sapagkat tayo ay ginawa ng Diyos, nilikha kay Cristo Jesus upang gumawa ng mga mabubuting gawa. Ito ang mga gawa na matagal ng binalak ng Diyos para sa atin, upang makalakad tayo sa mga ito.",
+  "PSA 139:14": "Magpapasalamat ako sa iyo, dahil ang iyong mga gawa ay kahanga-hanga at kamangha-mangha. Alam na alam mo ang aking buhay.",
+  "PSA 118:24": "Ito ang araw na kumilos si Yahweh; tayo ay magalak at magsaya.",
+  "1TH 5:18": "Magpasalamat kayo sa lahat ng bagay. Sapagkat ito ang kalooban ng Diyos para sa inyo kay Cristo Jesus.",
+  "PSA 107:1": "Magpasalamat kay Yahweh, dahil sa kaniyang kabutihan at ang kaniyang katapatan sa tipan ay mananatili magpakailanman.",
+  "PSA 23:1": "Si Yahweh ang aking pastol; hindi ako magkukulang.",
+  "PSA 4:8": "Sa kapayapaan, ako ay hihiga at matutulog, dahil tanging ikaw, Yahweh, ang nagliligtas at nagpapatiwasay sa akin.",
+  "PRO 3:24": "kapag ikaw ay humiga, hindi ka matatakot; kapag ikaw ay humiga, ang iyong tulog ay magiging mahimbing.",
+  "ISA 43:19": "Masdan mo, ako ay gagawa ng isang bagong bagay; ngayon ito ay magsisimulang mangyari; hindi mo ba ito naunawaan? Gagawa ako ng isang daanan sa disyerto at batis ng tubig sa ilang.",
+  "2CO 5:17": "Sapagkat kung sinuman ang kay Cristo, siya ay isang bagong nilalang. Ang luma ay lumipas na. Tingnan, sila ay naging bago na.",
+  "PSA 90:12": "Kaya turuan mo kaming isaalang-alang ang aming buhay para mamuhay kami ng may karunungan.",
+  "PSA 37:4": "Pagkatapos hanapin mo ang kaligayahan kay Yahweh, at ibibigay niya sa iyo ang mga naisin ng iyong puso.",
+  "PHP 3:13-14": "Mga kapatid, hindi ko iniisip na natanggap ko na ito. Ngunit mayroong isang bagay, kinakalimutan ko kung ano ang nakalipas at pinagsisikapan ko kung ano ang nasa hinaharap. Nagpatuloy ako sa layunin upang makamit ang gantimpala ng pagkatawag ng Diyos, kay Cristo Jesus.",
+  "PSA 143:8": "Hayaan mong marinig ko ang iyong katapatan sa tipan sa umaga, dahil nagtitiwala ako sa iyo. Ipakita mo sa akin ang daan kung saan ako dapat lumakad, dahil itinataas ko ang aking kaluluwa sa iyo.",
+  "PSA 5:3": "Yahweh, sa umaga naririnig mo ang aking iyak; sa umaga dadalhin ko ang aking kahilingan sa iyo at maghihintay nang may pananabik.",
+  "HEB 11:1": "Ngayon ang pananampalataya ay ang katiyakan ng sino man kung siya ay nagtitiwalang naghihintay sa isang bagay. Ito ang katiyakan tungkol sa hindi pa nakita.",
+  "PSA 121:1-2": "Itataas ko ang aking mga mata sa mga bundok. Mula saan manggagaling ang aking saklolo? Ang saklolo sa akin ay nanggagaling kay Yahweh, na gumawa ng langit at lupa.",
+  "ISA 30:21": "Maririnig ng inyong mga tainga ang salita sa inyong likuran na nagsasabing, “Ito ang daan, lakaran ninyo ito,” kapag lumiko kayo sa kanan o kapag lumiko kayo sa kaliwa.",
+  "PRO 16:3": "Ipagkatiwala mo ang iyong mga gawain kay Yahweh at magtatagumpay ang mga balak mo.",
+  "EPH 3:20": "Ngayon sa kaniya na kayang gumawa ng lahat, higit pa sa lahat ng ating hinihingi o iniisip, ayon sa kaniyang kapangyarihan na kumikilos sa atin,",
+  "PSA 1:3": "Siya ay matutulad sa isang puno na nakatanim malapit sa mga batis ng tubig na namumunga sa panahon nito, na ang mga dahon ay hindi nalalanta; anuman ang kaniyang gawin ay sasagana.",
+  "NUM 6:24-26": "“Pagpalain ka nawa ni Yahweh at ingatan. Pasisikatin nawa ni Yahweh ang kaniyang liwanag sa iyo, titingin sa iyo, at mahabag sa iyo. Tingnan ka nawa si Yahweh nang may kabutihang loob at bigyan ka ng kapayapaan.'”",
+  "PSA 119:105": "Ang salita mo ay ilawan ng aking mga paa at liwanag para sa aking landas.",
+  "ROM 12:2": "Huwag kayong umayon sa mundong ito, ngunit mag-iba kayo sa pamamagitan ng pagbabago ng inyong pag-iisip. Gawin ninyo ito upang malaman ninyo kung ano ang mabuti, katanggap-tanggap, at ganap na kalooban ng Diyos.",
+  "PHP 1:6": "Nagtitiwala ako sa bagay na ito, na ang nagsimula ng mabuting gawain sa inyo ay ipagpapatuloy na tapusin ito hanggang sa araw ni Jesu-Cristo.",
+  "PSA 46:1": "Ang Diyos ang ating kublihan at kalakasan, ang handang tumulong kapag may kaguluhan.",
+  "PSA 31:15": "Ang aking kapalaran ay nasa iyong mga kamay. Iligtas mo ako sa kamay ng aking mga kaaway at mula sa mga humahabol sa akin.",
+  "MIC 6:8": "Sinabi niya sa inyo, tao, kung ano ang mabuti at kung ano ang nais ni Yahweh mula sa iyo: Kumilos ng makatarungan, umibig na may kabaitan at lumakad na may pagpapakumbaba kasama ang inyong Diyos.",
+  "PSA 27:14": "Maghintay kayo kay Yahweh; maging matatag, at hayaan na maging matapang ang inyong puso! Maghintay kayo kay Yahweh!",
+  "ZEP 3:17": "Nasa iyong kalagitnaan si Yahweh na iyong Diyos, isang makapangyarihang magliligtas sa iyo. Magdiriwang siya sa iyo nang may kagalakan at mananahimik siya dahil sa kaniyang pag-ibig sa iyo. Masisiyahan siya sa iyo at sisigaw nang may kagalakan.",
+  "JHN 3:16": "Dahil labis na inibig ng Diyos ang sangkatauhan, ibinigay niya ang kaniyang natatangi at nag-iisang Anak upang ang sinumang manalig sa kaniya ay hindi mamatay ngunit magkakaroon ng buhay na walang hanggan.",
+  "ROM 5:8": "Ngunit pinatunayan ng Diyos ang kaniyang pag-ibig sa atin, dahil noong makasalanan pa tayo, namatay si Cristo para sa atin.",
+  "1JN 4:19": "Nagmamahal tayo dahil minahal muna tayo ng Diyos.",
+  "1CO 13:4-5": "Ang pag-ibig ay mapagpasensya at magandang loob. Ang pag-ibig ay hindi naiinggit o nagyayabang. Hindi mapagmataas, o hindi marahas. Hindi makasarili, hindi madaling magalit, ni nagkikimkim ng bilang na mga kamalian.",
+  "1CO 13:13": "Ngunit ngayon ang tatlong ito ay mananatili, ang pananampalataya, pag-asa sa hinaharap, at pag-ibig. Ngunit ang higit sa lahat ng mga ito ay ang pag-ibig.",
+  "1JN 4:7": "Minamahal, mahalin natin ang isa't isa, dahil ang pag-ibig ay sa Diyos, at lahat ng nagmamahal ay pinanganak sa Diyos at kilala ang Diyos.",
+  "1JN 4:16": "At alam natin at pinaniwalaan ang pag-ibig na mayroon ang Diyos na nasa sa atin. Ang Diyos ay pag-ibig, at siyang nananatili sa pag-ibig ay nananatili sa Diyos, at ang Diyos ay nananatili sa kanya.",
+  "JER 31:3": "Nagpakita sa akin si Yahweh noong nakaraan at sinabi, “Minahal kita Israel, ng walang hanggang pagmamahal. Kaya inilapit kita sa aking sarili na may matapat na kasunduan.",
+  "PSA 86:15": "Pero kayo, Panginoon, ay maawain at mabait na Diyos, matagal magalit, at sagana sa pagiging tapat at mapagkakatiwalaan sa tipan.",
+  "1JN 3:1": "Masdan kung anong uri ng pag-ibig ng Ama ang ibinigay sa atin, na tayo ay nararapat tawaging mga anak ng Diyos, at ito ang kung ano tayo. Sa dahilang ito, hindi tayo kilala ng mundo dahil hindi siya kilala nito.",
+  "JHN 15:9": "Katulad ng pagmamahal sa akin ng Ama, kayo rin ay minahal ko, manatili kayo sa aking pagmamahal.",
+  "JHN 15:12-13": "Ito ang akin kautusan, na dapat ninyong mahalin ang isa't isa katulad ng pagmamahal ko sa inyo. Walang sinuman ang nagmahal na hihigit pa rito, na kaniyang inaalay ang kaniyang buhay para sa kaniyang mga kaibigan.",
+  "PSA 136:1": "O, magpasalamat kay Yahweh; dahil siya ay mabuti, dahil ang kaniyang katapatan sa tipan ay mananatili magpakailanman.",
+  "SNG 8:7": "Hindi kayang pawiin ng mga tubig na dumadaluyong ang pag-ibig, kahit mga baha ay hindi kayang tangayin nito. Kung ibinigay ng isang lalaki ang lahat ng mga pag-aari sa kaniyang tahanan para sa pag-ibig, ang inaalok niya ay maaaring lubos na hamakin. Ang mga kapatid na lalaki ng dalagang babae ay nagsasalita sa kanilang mga sarili.",
+  "1PE 4:8": "Higit sa lahat ng bagay, magkaroon kayo ng taimtim na pag-ibig para sa isa't isa, dahil ang pag-ibig ay hindi naghahangad na matuklasan ang mga kasalanan ng iba.",
+  "PSA 103:11": "Dahil kung gaano kataas ang kalangitan sa ibabaw ng daigdig, ganoon kadakila ang kanyang katapatan sa tipan sa mga nagbibigay ng parangal sa kanya.",
+  "PSA 103:13": "Kung paanong may pagkahabag ang isang ama sa kanyang mga anak, gayundin pagkahabag ni Yahweh sa mga nagbibigay ng parangal sa kanya.",
+  "ISA 54:10": "Kahit na ang mga bundok ay maaring bumagsak at yayanigin ang mga burol, gayon man ang aking katapatan sa tipan ay hindi hihiwalay mula sa inyo, ni ang aking tipan ng kapayapaan ay mayayanig—sinasabi ni Yahweh, siyang naaawa sa inyo.",
+  "1JN 4:9-10": "Sa pamamagitan nito ang pag-ibig ng Diyos ay nahayag sa atin, na pinadala ng Diyos ang kanyang bugtong na anak sa mundo upang tayo ay maaring mabuhay sa pamamagitan niya. Sa ganito ang pag-ibig, hindi dahil minahal natin siya, kundi minahal niya tayo, at pinadala niya ang kanyang Anak na maging kabayaran ng ating mga kasalanan.",
+  "ROM 13:10": "Ang pag-ibig ay hindi gumagawa ng masama sa kaniyang kapwa. Kaya, pag-ibig ang katuparan ng kautusan.",
+  "GAL 2:20": "Naipako na ako sa krus kasama ni Cristo. Hindi na ako ang nabubuhay, ngunit si Cristo na ang nabubuhay sa akin, at ang buhay ngayon na aking ikinabubuhay sa laman, ay ikinabubuhay ko sa pamamagitan ng pananampalataya sa Anak ng Diyos, na nagmamahal sa akin at nagbigay ng kaniyang sarili para sa akin.",
+  "EPH 5:1-2": "Kaya tularan ninyo ang Diyos, bilang kaniyang mga minamahal na anak. At lumakad sa pag-ibig, katulad ng pagmamahal ni Cristo sa atin at pagbigay ng kaniyang sarili sa atin. Siya ay naging alay at handog na naging kalugod-lugod sa Diyos.",
+  "COL 3:14": "Higit sa lahat ng mga bagay na ito, magkaroon kayo ng pag-ibig na siyang bigkis ng pagiging isang ganap.",
+  "1JN 4:18": "Walang anumang takot sa pag-ibig. Pero ang pag-ibig na lubos ay inaalis ang takot, dahil ang takot ay may kinalaman sa kaparusahan. Pero kung sinuman ang siyang natatakot ay hindi nagawang lubos sa pag-ibig.",
+  "PSA 63:3": "Dahil higit pa sa buhay ang iyong katapatan sa tipan, magpupuri ang aking mga labi sa iyo.",
+  "DEU 7:9": "Kaya kilalanin si Yahweh na inyong Diyos— siya ay Diyos, ang tapat na Diyos, na nagpapanatili ng mga tipan at katapatan sa isang libong salinlahi sa mga nagmamahal sa kaniya at nagpapanatili ng kaniyang mga utos,",
+  "JHN 13:34-35": "Binibigyan ko kayo ng isang bagong kautusan, na dapat ninyong mahalin ang bawat isa, kung paano ko kayo minahal, gayundin naman dapat ninyong mahalin ang bawat isa. Sa pamamagitan nito, malalaman ng lahat ng tao na kayo ay aking mga alagad, kung mahahalin niyo ang bawat isa.”",
+  "MRK 12:30-31": "Ibigin ninyo ang Panginoon ninyong Diyos nang buong puso, nang buong kaluluwa, nang buong pag-iisip, at nang buong kalakasan.' Ito ang ikalawang kautusan, 'Ibigin ninyo ang inyong kapwa gaya ng inyong sarili.' Wala nang iba pang kautusang higit na dakila kaysa mga ito.”",
+  "HEB 11:6": "Kung walang pananampalataya hindi maaaring bigyan ng kaluguran ang Diyos, at ang sino man na lalapit sa Diyos ay kinakailangang manalig na siya ay umiiral at gagantimpalan niya ang sino man na humahanap sa kaniya.",
+  "MRK 11:24": "Kaya sinasabi ko ito sa inyo: Ang lahat ng inyong ipapanalangin at hinihiling, maniwala kayong natanggap na ninyo, at ito ay mapapasa-inyo.",
+  "MAT 17:20": "Sinabi ni Jesus sa kanila, “Dahil maliit ang inyong pananampalataya. Sapagkat katotohanang sinasabi ko sa inyo, kung mayroon kayong pananampalataya na kasinliit ng buto ng mustasa, maaari ninyong sabihin sa bundok na ito, 'Lumipat ka roon,' at lilipat nga ito at walang magiging imposible sa inyo.",
+  "ROM 10:17": "Kaya ang pananampalataya ay nanggagaling sa pakikinig, at pakikinig sa salita ni Cristo.",
+  "2CO 5:7": "Sapagkat lumalakad tayo sa pamamagitan ng pananampalataya at hindi sa mga bagay na nakikita.",
+  "PSA 9:10": "Nagtitiwala ang nakakakilala ng pangalan mo, dahil ikaw, Yahweh, ay hindi nang-iiwan ng mga lumalalapit sa iyo.",
+  "PSA 20:7": "Nagtitiwala ang ilan sa mga kalesang pandigma at ang iba ay sa mga kabayo, pero ang tinatawagan namin ay si Yahweh na aming Diyos.",
+  "ISA 12:2": "Tingnan ninyo, ang Diyos ang aming kaligtasan; magtitiwala kami at hindi matatakot, dahil si Yahweh, oo, si Yahweh ang aming kalakasan at awitin. Siya ang aming naging kaligtasan.”",
+  "MRK 9:23": "Sinabi ni Jesus sa kaniya, “'Kung may magagawa'? Ang lahat ay magagawa sa mga naniniwala.”",
+  "JAS 1:6": "Ngunit humingi nang may pananampalataya, nang walang pag-aalinlangan, sapagkat ang nagdadalawang isip ay katulad ng alon sa dagat, na tinatangay ng hangin, kung saan.",
+  "PSA 62:8": "Magtiwala kayo sa kaniya sa lahat ng oras, kayong mga tao; ibuhos ninyo ang inyong puso sa kaniyang harapan; kanlungan natin ang Diyos. Selah",
+  "PSA 28:7": "Si Yahweh ang aking kalakasan at ang aking kalasag; ang puso ko ay nagtitiwala sa kaniya, at tinulungan ako. Kaya labis na nagagalak ang aking puso, at pupurihin ko siya nang may pag-awit.",
+  "NAM 1:7": "Si Yahweh ay mabuti, isang tanggulan sa panahon ng kaguluhan at tapat siya sa mga naglalagak ng kanilang tiwala sa kaniya.",
+  "PSA 112:7": "Hindi siya natatakot sa masamang balita; siya ay panatag at nagtitiwala kay Yahweh.",
+  "ISA 26:4": "Magtiwala kay Yahweh magpakailanman; dahil kay Yah, Yahweh, ay ang walang hanggang tanggulan.",
+  "JER 17:7-8": "Ngunit mapalad ang tao na nagtitiwala kay Yahweh, sapagkat si Yahweh ang kaniyang pag-asa. Sapagkat magiging katulad siya ng halaman na itinanim sa tabi ng tubig-batis; ang kaniyang mga ugat ay kakalat. Hindi niya makikita ang init na parating, sapagkat ang kaniyang mga dahon ay malalapad at maganda. At sa panahon ng tag-tuyot hindi siya mangangamba, ni titigil ang kaniyang pamumunga.",
+  "HEB 10:23": "Panghawakan ding mabuti ang paghahayag ng ating pananalig ng walang pag-aalinlangan, sapagkat ang Diyos na siyang nangako ay tapat.",
+  "EPH 2:8-9": "Sapagkat sa biyaya kayo ay naligtas sa pamamagitan ng pananampalataya. At hindi ito nagmula sa amin, kaloob ito ng Diyos. Hindi ito dahil sa mga gawa. Bilang resulta, walang sinuman ang maaaring magmalaki.",
+  "ROM 5:1": "Yamang napawalang-sala tayo sa pamamagitan ng pananampalataya, mayroon tayong kapayapaan sa Diyos sa pamamagitan ng ating Panginoong Jesu-Cristo.",
+  "1PE 2:9": "Subalit kayo ay piniling lahi, isang grupo ng maharlikang mga pari, isang banal na bayan, mga taong pag-aari ng Diyos, upang maihayag ninyo ang mga kamangha-manghang ginawa ng tumawag sa inyo mula sa kadiliman patungo sa kaniyang kamangha-manghang kaliwanagan.",
+  "PSA 125:1": "Silang mga nagtitiwala kay Yahweh ay tulad ng bundok ng Sion, hindi matitinag, at mananatili magpakailanman.",
+  "PRO 29:25": "Ang takot ng tao ay gumagawa ng isang bitag, ngunit ang taong nagtitiwala kay Yahweh ay mapapangalagaan.",
+  "PSA 37:3": "Magtiwala ka kay Yahweh at gawin kung ano ang matuwid; tumira ka sa lupain at gawin mong tungkulin ang katapatan.",
+  "PSA 37:5": "Ibigay mo ang iyong pamamaraan kay Yahweh; magtiwala ka sa kaniya, at siya ang kikilos para sa iyo.",
+  "HEB 13:8": "Si Jesu- Cristo ay hindi nagbabago kahapon, ngayon at magpakaylan man.",
+  "JHN 14:1": "Huwag ninyong hayaan mabalisa ang inyong puso. Manampalataya kayo sa Diyos; manampalataya rin kayo sa akin.",
+  "JHN 20:29": "Sinabi sa kaniya ni Jesus, “Dahil nakita mo ako, ikaw ay naniwala”. Pinagpala silang mga hindi nakakita ngunit naniwala.”",
+  "1JN 5:4": "Ang sinumang ipinanganak sa Diyos ay napagtagumpayan ang mundo. At ito ang pagwawagi na napagtagumpayan ng mundo, kahit ang ating pananampalataya.",
+  "MAT 21:22": "Lahat ng hihilingin ninyo sa panalangin na may paniniwala, matatanggap ninyo.”",
+  "PSA 115:11": "Kayong gumagalang kay Yahweh, magtiwala sa kaniya; siya ang iyong saklolo at kalasag.",
+  "ISA 50:10": "Sino sa inyo ang natatakot kay Yahweh? Sino ang sumusunod sa boses ng kaniyang lingkod? Sino ang naglalakad sa malalim na kadiliman nang walang liwanag? Dapat siyang magtiwala sa pangalan ni Yahweh at sumandal sa kaniyang Diyos.",
+  "JHN 11:25": "Sinabi ni Jesus sa kaniya, “Ako ang muling pagkabuhay at ang buhay; ang sumasampalataya sa akin, bagama't siya ay mamamatay, gayon ma'y mabubuhay siya;",
+  "1CO 15:57": "Ngunit salamat sa Diyos, na siyang nagbibigay sa atin ng tagumpay sa pamamagitan ng ating Panginoong Jesu-Cristo!",
+  "ROM 6:4": "Inilibing na tayo kasama niya sa pamamagitan ng bautismo sa kamatayan. Nangyari ito upang gaya ng pagkabuhay ni Cristo mula sa patay sa pamamagitan ng kaluwalhatian ng Ama, lalakad din tayo sa panibagong buhay.",
+  "MAT 28:6": "Wala na siya dito, ngunit bumangon na katulad ng kaniyang sinabi. Halikayo tingnan ang lugar na hinimlayan ng Panginoon.",
+  "1PE 1:3": "Papurihan ang Diyos at Ama ng ating Panginoong Jesu Cristo. Sa kaniyang dakilang kahabagan, nagbigay siya sa atin ng bagong kapanganakan para sa katiyakan ng pamana sa pamamagitan ng pagkabuhay muli ni Jesu Cristo mula sa kamatayan—",
+  "ISA 53:5": "Pero sinaksak siya dahil sa ating mga ginawang paghihimagsik; nadurog siya dahil sa ating mga kasalanan. Ang kaparusahan para sa ating kapayapaan ay nasa kanya, at pinagaling niya tayo sa pamamagitan ng kanyang mga sugat.",
+  "JHN 10:10": "Ang magnanakaw ay hindi pumarito maliban sa pagnanakaw, pagpatay, at pagwasak. Ako ay pumarito upang sila ay magkaroon ng buhay at magkaroon ng kasaganaan nito.",
+  "JHN 10:11": "Ako ang mabuting pastol. Inialay ng mabuting pastol ang kaniyang buhay para sa mga tupa.",
+  "JHN 8:12": "Muli nagsalita si Jesus sa mga tao at sinabi, “Ako ang ilaw ng mundo; ang sumusunod sa akin ay hindi na maglalakad sa kadiliman kundi magkakaroon ng liwanag ng buhay.”",
+  "JHN 6:35": "Sinabi ni Jesus sa kanila, “Ako ang tinapay ng buhay, ang lalapit sa akin ay hindi magugutom at ang sumampalataya sa akin ay hindi mauuhaw kailanman.",
+  "JHN 14:6": "Sabi ni Jesus sa kaniya, “Ako ang daan, ang katotohanan, at ang buhay; walang sinuman ang makararating sa Ama maliban sa pamamagitan ko.",
+  "JHN 15:5": "Ako ang puno ng ubas, kayo ang mga sanga. Ang mananatili sa akin at ako sa kaniya, ang tao ring ito ay namumunga ng marami, sapagka't wala kayong magagawa kung kayo ay hiwalay sa akin.",
+  "REV 3:20": "Tingnan ninyo, ako ay nakatayo sa may pinto at kumakatok. Kung sinuman ang nakaririnig sa aking tinig at nagbubukas ng pinto, papasok ako sa kaniyang tahanan at kakain kasama niya, at siya sa akin.",
+  "LUK 19:10": "Sapagkat ang Anak ng Tao ay naparito upang hanapin at iligtas ang mga taong nawawala.”",
+  "ROM 6:23": "Sapagkat ang kabayaran ng kasalanan ay kamatayan, ngunit ang libreng kaloob ng Diyos ay buhay na walang hanggan kay Cristo Jesus na ating Panginoon.",
+  "2CO 5:21": "Si Jesus ay ginawa niyang handog para sa ating mga kasalanan. Siya na hindi kailan man nagkaroon ng kasalanan. Ginawa niya ito upang tayo ay maging katuwiran ng Diyos sa kaniya.",
+  "COL 1:13-14": "Sinagip niya tayo mula sa pamamahala ng kadiliman at inilipat tayo sa kaharian ng kaniyang minamahal na Anak. Sa kaniyang Anak mayroong tayong katubusan, ang kapatawaran ng mga kasalanan.",
+  "HEB 7:25": "Samakatuwid, siya rin ay lubos na makapagliligtas sa kanila na lalapit sa Diyos sa pamamagitan niya, dahil siya ay laging nabubuhay upang mamagitan para sa kanila.",
+  "HEB 4:15-16": "Sapagkat wala tayong pinaka-punong pari na hindi makakaramdam ng pagkahabag sa ating mga kahinaan, ngunit siya ay tinukso sa lahat ng paraan tulad natin, maliban lang na wala siyang kasalanan. Kaya magsilapit tayo na may pananalig sa trono ng biyaya, ng sa gayon makatanggap tayo ng awa at makahanap ng biyaya na makakatulong sa oras ng pangangailangan.",
+  "ROM 8:1": "Kung gayon, wala ng paghatol sa mga taong na kay Cristo Jesus.",
+  "ROM 8:11": "Kung ang Espiritu ng Diyos na bumuhay kay Jesus mula sa kamatayan ang nananahan sa inyo, siya na bumuhay kay Cristo mula sa kamatayan ang magbibigay din ng buhay sa inyong mga namamatay na katawan sa pamamagitan ng kaniyang Espiritu na siyang nananahan sa inyo.",
+  "1CO 15:20": "Ngunit ngayon si Cristo ay binuhay mula sa mga patay, ang unang bunga ng mga namatay na.",
+  "EPH 2:4-5": "Ngunit sagana ang Diyos sa habag dahil sa kaniyang dakilang pagmamahal kung saan minahal niya tayo. Habang tayo ay patay sa pagkakasala, dinala niya tayo sa bagong buhay kay Cristo. Naligtas tayo sa pamamagitan ng biyaya ng Diyos.",
+  "TIT 3:5": "eto ay hindi sa pamamagitan na ating makatuwirang mga nagawa, kundi dahil sa kanyang habag kaya tayo ay naligtas. Niligtas nya tayo sa pamamagitan ng paghuhugas ng bagong kapanganakan at pagpapabago sa pamamagitan ng Banal na Espirito.",
+  "1PE 2:24": "Siya mismo ang nagdala ng ating mga kasalanan sa kaniyang katawan sa puno, upang hindi na tayo magkaroon ng bahagi sa kasalanan, at upang makapamuhay tayo para sa katuwiran. Sa pamamagitan ng kanyang mga sugat kayo ay gumaling.",
+  "ISA 53:6": "Tayong lahat ay gaya ng mga tupang ligaw; ang bawat isa ay nagkanya-kanyang daan, at ipinataw sa kanya ni Yahweh ang kasamaan nating lahat.",
+  "JHN 1:12": "Ngunit sa kasing-dami nang tumanggap sa kaniya, na naniwala sa kaniyang pangalan, sa kanila niya ipinagkaloob ang karapatang maging mga anak ng Diyos,",
+  "JHN 3:17": "Dahil hindi isinugo ng Diyos ang kaniyang Anak sa mundo para parusahan ang sangkatauhan, ngunit para ang mundo ay marapat na maligtas sa pamamagitan niya.",
+  "REV 1:18": "at ang isa na nabubuhay. Ako ay namatay, pero tingnan mo, ako ay buhay magpakailanman! At nasa akin ang mga susi ng kamatayan at ng hades.",
+  "ACT 4:12": "Walang kaligtasan sa sinumang tao: sapagkat wala ng iba pang pangalan sa silong ng langit, na ibinigay sa mga tao, kung saan tayo maliligtas.”",
+  "PSA 18:2": "Si Yahweh ang aking bato, ang aking tanggulan, ang siyang nagdadala sa akin sa kaligtasan; siya ang aking Diyos, ang aking bato; sa kaniya ako kumukubli. Siya ang aking kalasag, ang tambuli ng aking kaligtasan, at ang aking muog.",
+  "PSA 18:32": "Ang Diyos ang nagbibigay ng lakas sa akin tulad ng isang sinturon, na nagdadala sa isang matuwid na tao sa kaniyang landas.",
+  "NEH 8:10": "Pagkatapos, sinabi ni Nehemias sa kanila, “Humayo na kayo, kainin ninyo ang taba at kumuha kayo ng matamis na maiinom, at ipadala ang ilan nito sa mga walang naihanda, dahil ang araw na ito ay banal sa ating Panginoon. Huwag kayong magdalamhati, dahil ang kagalakan ni Yahweh ang inyong lakas.”",
+  "ISA 40:29": "Nagbibigay siya ng kalakasan sa mga pagod; sa mga mahihina nagbibigay siya ng bagong lakas.",
+  "EPH 6:10": "Sa wakas, magpakatatag kayo sa Panginoon at sa kalakasan ng kaniyang kapangyarihan.",
+  "1CH 16:11": "Hanapin si Yahweh at ang kaniyang kalakasan; patuloy na hanapin ang kaniyang presensiya.",
+  "PSA 73:26": "Humina man ang aking katawan at ang aking puso, pero ang Diyos ang lakas ng aking puso magpakailanman.",
+  "EPH 3:16": "Ipinapanalangin ko na pagkalooban kayo ayon sa kayamanan ng kaniyang kaluwalhatian, na mapalakas kayo ng kapangyarihan sa pamamagitan ng kaniyang Espiritu na nasa inyo.",
+  "HAB 3:19": "Ang Panginoong Yahweh ang aking lakas, at ginagawa niya ang aking paa na tulad ng paa ng usang babae at pinangungunahan ako sa aking mga lugar na matataas! —Sa direktor ng musika, sa aking mga instrumentong may kuwerdas.",
+  "2SA 22:33": "Ang Diyos ay aking kanlungan, at pinamunuan niya ang walang salang tao sa kaniyang daraanan.",
+  "PSA 31:24": "Maging matatag at panatag, lahat kayo na nagtitiwala kay Yahweh para sa tulong.",
+  "1CO 16:13": "Maging mapagmatiyag, at maging matatag sa pananampalataya, kumilos gaya ng mga lalaki, maging malakas.",
+  "PSA 138:3": "Sa araw na tumawag ako sa iyo, sinagot mo ako; pinalakas mo ang aking loob at ang aking kaluluwa.",
+  "ISA 43:2": "Kapag ikaw ay dumaraan sa mga tubigan, ako ay kasama mo; at sa mga ilog, hindi ka malulunod. Kapag ikaw ay lumalakad sa apoy, hindi ka masusunog, ni sa apoy ay hindi ka masasaktan.",
+  "PSA 59:16": "Pero aawit ako tungkol sa iyong kalakasan; dahil ikaw ang naging matayog kong tore at isang kublihan sa araw ng aking kapighatian.",
+  "EXO 15:2": "Si Yahweh ang aking lakas at awitin, at siya ang aking naging kaligtasan. Ito ang aking Diyos, at siya ay aking pupurihin, Diyos ng aking ama, at siya ay aking dadakilain.",
+  "PSA 28:8": "Si Yahweh ang kalakasan ng kaniyang bayan, at kanlungang nagliligtas sa kaniyang hinirang.",
+  "2TH 3:3": "Ngunit tapat ang Panginoon, na magpapatatag at magbabantay sa inyo mula sa masama.",
+  "1PE 5:10": "Pagkatapos ninyong magdusa sa sandaling panahon, ang Diyos ng lahat ng biyaya, na tumawag sa inyo sa walang hanggang kaluwalhatian kay Cristo, ang siyang magbibigay sa inyo ng kaganapan, magpapatibay at magpapalakas sa inyo.",
+  "COL 1:11": "Ipinapanalangin namin na mapalakas kayo sa bawat kakayahang naaayon sa kapangyarihan ng kaniyang kaluwalhatian tungo sa lahat ng pagtitiyaga at pagtitiis.",
+  "DEU 33:27": "Ang walang hanggang Diyos ay isang kublihan para sa kaniyang mga tao, at sa ilalim ay ang walang hanggang mga braso. Itutulak niya palabas ang kaaway mula sa harapan ninyo, at sasabihin niya, “Wasakin!”",
+  "ISA 35:4": "Sabihin ninyo sa mga taong natatakot na puso, “Maging matapang kayo, huwag matakot! Pagmasdan ninyo, ang inyong Diyos ay darating na may paghihiganti, kasama ang paniningil ng Diyos. Darating siya at ililigtas kayo.”",
+  "PSA 118:6": "Si Yahweh ay kasama ko; hindi ako matatakot; anong magagawa ng tao sa akin?",
+  "ROM 8:31": "Ano ngayon ang sasabihin natin sa mga bagay na ito? Kung ang Diyos ay para sa atin, sino ang laban sa atin?",
+  "ROM 8:37": "Sa lahat ng bagay na ito, higit pa tayo sa mga manlulupig sa pamamagitan ng nagmamahal sa atin.",
+  "MAT 11:29-30": "Dalhin ninyo ang aking pamatok at matuto kayo sa akin sapagkat ako ay mahinahon at may mapagpakumbabang puso at makakamit ninyo ang kapahingahan para sa inyong mga kaluluwa. Sapagkat madali ang aking pamatok at ang aking pasanin ay magaan.”",
+  "PSA 23:2-3": "Pinahihiga niya ako sa luntiang mga pastulan; inaakay niya ako sa tabi ng payapang tubigan. Binabalik niya ang aking buhay; ginagabayan niya ako sa tamang landas alang-alang sa kaniyang pangalan.",
+  "PSA 23:4": "Kahit na lumakad ako sa gitna ng napakadilim na anino ng lambak, hindi ko katatakutan ang kapahamakan dahil ikaw ang kasama ko; ang iyong pamalo at iyong tungkod ang nagpapayapa sa akin.",
+  "PSA 23:6": "Tiyak na kabutihan at katapatan sa tipan ang hahabol sa akin sa lahat ng mga araw ng aking buhay; at ako ay mananahanan sa tahanan ni Yahweh habang buhay!",
+  "ISA 32:17": "Ang gawa ng katuwiran ay magiging kapayapaan; at ang bunga ng katuwiran, katahimikan at pagtitiwala magpakailanman.",
+  "COL 3:15": "Hayaang maghari sa inyong mga puso ang kapayapaan ni Cristo. Para sa kapayapaang ito kaya tinawag kayo sa iisang katawan. Maging mapagpasalamat kayo.",
+  "2TH 3:16": "Nawa ang Panginoon ng kapayapaan aymagbigay sa inyo ng kapayapaan sa lahat ng pagkakataon at sa lahat ng paraan. Nawa ang Panginoon ay sumainyong lahat.",
+  "PSA 62:1-2": "Sa Diyos lamang ako naghihintay nang tahimik; magmumula sa kaniya ang aking kaligtasan. Siya lamang ang aking muog at aking kaligtasan; siya ang aking mataas na tore; ako ay hindi matitinag.",
+  "PSA 131:2": "Tunay nga na pinanatili ko at pinatahimik ang aking kaluluwa; tulad ng batang nawalay na sa kaniyang ina, ang aking kaluluwa ay nasa loob ko tulad ng isang batang nawalay na.",
+  "PSA 91:1-2": "Siya na nananahan sa kanlungan ng Kataas-taasan ay mananatili sa lilim ng Makapangyarihan sa lahat. Aking sasabihin kay Yahweh, “Siya ang aking kanlungan at aking tanggulan, aking Diyos, na aking pinagkakatiwalaan.”",
+  "PSA 91:4": "Tatakpan ka niya ng kaniyang mga pakpak, at sa ilalim ng kaniyang mga pakpak ay makakatagpo ka ng kanlungan. Ang kanyang pagiging mapagkakatiwalaan ay isang kalasag at proteksyon.",
+  "PSA 91:11": "Dahil uutusan niya ang kaniyang mga anghel na protektahan ka, para ingatan ka sa lahat ng iyong mga kaparaanan.",
+  "ISA 55:12": "Dahil lalabas kayo ng may kagalakan at magpapatuloy ng may kapayapaan; ang mga bundok at mga burol ay mag-uumpisang sumigaw nang may kagalakan sa inyong harapan at lahat ng mga puno sa mga bukirin ay ipapalakpak ang kanilang mga kamay. Sa halip na mga matitinik na halaman, tutubo ang mga luntiang halaman;",
+  "JHN 16:33": "Sinabi ko na sa inyo ang mga bagay na ito upang magkaroon kayo ng kapayapaan sa akin. Sa mundo, kayo ay mayroong mga kabalisahan, subalit lakasan ninyo ang inyong loob; napagtagumpayan ko na ang mundo.",
+  "PSA 116:7": "Maaaring bumalik ang aking kaluluwa sa lugar ng kaniyang kapahingahan, dahil si Yahweh ay naging mabuti sa akin.",
+  "EXO 33:14": "Sumagot si Yahweh, “Ang sarili kong presensiya ay sasama sa iyo, at bibigyan kita ng pahinga.”",
+  "PSA 127:2": "Walang saysay na ikaw ay gumising ng maaga at umuwi nang gabing-gabi, o kainin ang tinapay na pinaghirapan, dahil si Yahweh ang nagbibigay ng pinakaaasam na tulog.",
+  "ROM 8:6": "Sapagkat ang kaisipan ng laman ay kamatayan, ngunit ang kaisipan ng Espiritu ay buhay at kapayapaan.",
+  "PRO 14:30": "Ang pusong panatag ay buhay para sa katawan, ngunit ang inggit ay binubulok ang mga buto.",
+  "PSA 85:8": "Makikinig ako sa sasabihin ni Yahweh na Diyos, dahil siya ay makikipag-ayos sa kaniyang bayan, ang kaniyang matapat na tagasunod. Pero hindi sila dapat bumalik sa hangal na pamamaraan.",
+  "JER 6:16": "Ito ang sinasabi ni Yahweh, “Tumayo kayo sa panulukang-daan at tumingin, magtanong para sa mga lumang daan. 'Nasaan ang magandang daan na ito?' At pumunta kayo doon at maghanap ng lugar na mapagpapahingahan para sa inyong mga sarili. Ngunit sinabi ng mga tao, 'Hindi kami pupunta.'",
+  "GAL 5:1": "Para sa kalayaan kaya pinalaya tayo ni Cristo. Kaya magpakatatag kayo at huwag kayong magpabitag muli sa ilalim ng kapangyarihan ng pagkabihag.",
+  "JHN 8:36": "Kung gayon, kapag pinalaya na kayo ng Anak, kayo ay tunay ngang malaya.",
+  "2CO 3:17": "Ngayon ang Panginoon ay ang Espiritu. Kung nasaan ang Espiritu ng Panginoon, naroon ang kalayaan.",
+  "PSA 16:11": "Tinuturo mo sa akin ang landas ng buhay; nag-uumapaw na kagalakan ay nananahan sa iyong piling; labis na tuwa ay nananatili sa iyong kanang kamay magpakailanman!",
+  "PSA 126:3": "Gumawa si Yahweh ng dakilang bagay para sa atin; labis kaming nagalak!",
+  "PHP 4:4": "Magalak lagi sa Panginoon. Muli kong sasabihin, magalak.",
+  "PSA 9:2": "Magagalak ako at magsasaya sa iyo; aawit ako ng papuri sa iyong pangalan, Kataas-taasan!",
+  "PSA 100:4-5": "Magsipasok kayo sa loob ng kanyang mga tarangkahan na may pagpapasalamat at sa loob ng kanyang mga silid na may pagpupuri. Pasalamatan at purihin ang kanyang pangalan. Dahil si Yahweh ay mabuti; ang kanyang katapatan sa tipan ay mananatili magpakailanman at ang kanyang pagiging totoo ay magpapatuloy sa lahat ng mga salinlahi.",
+  "PSA 30:11": "Pinalitan mo ang aking pagluluksa ng pagsasayaw; hinubad mo ang aking sako at dinamitan ako ng kagalakan.",
+  "ISA 61:10": "Ako ay lubos na magagalak kay Yahweh; sa aking Diyos ako ay labis na magsasaya. Dahil ako ay binihisan niya ng mga kasuotan ng kaligtasan; binihisan niya ako ng may balabal ng katuwiran, tulad ng isang lalaking ikakasal na ginagayakan ang kaniyang sarili sa pamamagitan ng isang turban, at tulad ng isang babaeng ikakasal na nagpapaganda sa kaniyang sarili ng kaniyang mga hiyas.",
+  "ROM 14:17": "Sapagkat ang kaharian ng Diyos ay hindi tungkol sa pagkain o inumin, ngunit tungkol ito sa pagiging matuwid, kapayapaan at kagalakan sa Banal na Espiritu.",
+  "JAS 1:2-3": "Ituring ninyong kagalakan ito mga kapatid, kung nakakaranas kayo ng ibat-ibang kaguluhan, dahil nalalaman ninyo na ang pagsubok sa inyong pananampalataya ay nagdudulot ng pagtitiis.",
+  "PSA 98:4": "Sumigaw kay Yahweh ng may kagalakan, buong daigdig; isambulat sa awit at umawit ng may kagalakan, umawit ng mga papuri.",
+  "PSA 34:1": "Pupurihin ko si Yahweh sa lahat ng oras; ang kaniyang kapurihan ay laging mamumutawi sa aking bibig.",
+  "PSA 34:8": "Tikman at masdan na si Yahweh ay mabuti; mapalad ang taong kumukubli sa kaniya.",
+  "PSA 150:6": "Purihin si Yahweh ng lahat ng may hininga. Purihin si Yahweh.",
+  "PSA 103:1-2": "Binibigyang papuri ko si Yahweh ng buong buhay ko, at ng lahat ng mayroon ako, binibigyang papuri ko ang kanyang banal na pangalan. Binibigyang papuri ko si Yahweh ng buong buhay ko, at naaalala ko ang lahat ng kanyang mga mabubuting gawa.",
+  "HAB 3:17-18": "Bagaman ang mga puno ng igos ay hindi sumibol at walang bunga mula sa mga puno ng ubas; bagaman ang puno ng olibo ay hindi namunga, at ang mga bukirin ay walang naibibigay na pagkain; bagaman ang kawan ay naihiwalay sa kulungan, at walang baka sa mga kuwadra— Gayon man, magagalak ako kay Yahweh! Matutuwa ako dahil ang Diyos ang aking kaligtasan!",
+  "PSA 95:1-2": "O halika, tayo ay umawit kay Yahweh; tayo ay umawit ng may kagalakan para sa bato ng ating kaligtasan. Tayo ay pumasok sa kaniyang presensya ng may pasasalamat; tayo ay umawit sa kaniya ng may salmong papuri.",
+  "PSA 145:18": "Si Yahweh ay malapit sa lahat ng mga tumatawag sa kaniya, ang lahat ng tumatawag sa kaniya ng may pagtitiwala.",
+  "JHN 15:11": "Sinasabi ko ang mga bagay na ito sa inyo upang ang aking kagalakan ay sumainyo at upang ang inyong kagalakan ay maging lubos.",
+  "ISA 12:3": "Masaya kayong kukuha ng tubig mula sa mga balon ng kaligtasan.",
+  "LUK 15:10": "Gayon din, sinasabi ko sa inyo, may kagalakan sa kinaroroonan ng mga anghel ng Diyos sa isang makasalanang nagsisisi.",
+  "PSA 40:2-3": "Inahon niyo din ako mula sa kakilakilabot na hukay, mula sa putikan, at itinayo niya ang aking mga paa sa isang bato at itinatag ang aking paglalakbay. Siya ang naglagay sa aking mga bibig ng bagong awit, papuri sa ating Diyos. Marami ang makakaalam nito at pararangalan siya at magtitiwala kay Yahweh.",
+  "PSA 63:7": "Dahil ikaw ang aking tulong, at magagalak ako sa anino ng iyong mga pakpak.",
+  "ROM 8:2": "Sapagkat pinalaya ako ng tuntunin ng Espiritu ng buhay na nakay Cristo Jesus mula sa tuntunin ng kasalanan at kamatayan.",
+  "ISA 61:1": "Ang Espiritu ng Panginoong Yahweh ay sumasaakin, dahil hinirang ako ni Yahweh para ipahayag ang mabuting balita sa mapagpakumbaba. Sinugo niya ako para pagalingin ang sugatang-puso, para ipahayag ang kalayaan sa mga nakabilanggo, at ang pagbubukas ng bilangguan sa mga nakagapos.",
+  "LUK 4:18": "“Ang Espiritu ng Panginoon ay nasa akin, dahil itinalaga niya ako upang ipangaral ang magandang balita sa mga mahihirap. Isinugo niya ako upang ipahayag ang kalayaan sa mga bihag, at manumbalik ang paningin ng mga bulag, upang palayain ang mga inaapi,",
+  "PSA 107:9": "Dahil panapawi niya ang pananabik nilang mga nauuhaw, at ang mga pagnanasa nilang mga gutom ay kaniyang pinupuno ng magagandang bagay.",
+  "PRO 2:6": "Sapagkat si Yahweh ang nagbibigay ng karunungan, mula sa kanyang bibig nanggagaling ang kaalaman at kaunawaan.",
+  "PRO 4:23": "Panatilihing ligtas ang iyong puso at bantayan ito nang may buong sigasig, dahil mula dito dumadaloy ang mga bukal ng buhay.",
+  "PRO 9:10": "Ang takot kay Yahweh ang simula ng karunungan, at ang kaalaman sa Isang Banal ay kaunawaan.",
+  "PSA 119:11": "Iningatan ko ang iyong salita sa aking puso para hindi ako magkasala laban sa iyo.",
+  "PSA 119:130": "Ang paglalahad ng mga salita mo ay nagbibigay ng liwanag; nagbibigay ito ng pang-unawa sa mga hindi naturuan.",
+  "PSA 25:4-5": "Ipaalam mo sa akin ang iyong mga kaparaanan, Yahweh, ituro mo sa akin ang iyong mga landas. Patnubayan mo ako sa iyong katotohanan at turuan mo ako, dahil ikaw ang Diyos ng aking kaligtasan; Ako ay umaasa sa iyo buong araw.",
+  "PRO 16:9": "Sa kaniyang puso, ang isang tao ay nagpaplano ng kaniyang landas, pero si Yahweh ang nagtuturo ng kaniyang mga hakbang.",
+  "PRO 19:21": "Marami ang mga plano sa puso ng isang tao, pero ang layunin ni Yahweh ang siyang mananaig.",
+  "ISA 55:8-9": "Dahil ang aking mga kaisipan ay hindi ninyo mga kaisipan, ni ang inyong mga kaparaanan ay aking kaparaanan—ito ay pahayag ni Yahweh tungkol sa kanyang sarili— dahil gaya ng mga langit na mas mataas kaysa sa lupa, kaya ang aking mga pamamaraan ay mas mataas kaysa sa inyong mga pamamaraan, at ang aking mga kaisipan kaysa sa inyong mga kaisipan.",
+  "PRO 11:2": "Kapag dumating ang pagmamataas, saka dumarating ang kahihiyan, pero sa kapakumbabaan dumarating ang karunungan.",
+  "PRO 12:25": "Ang pangamba sa puso ng tao ay nagpapabigat sa kaniya, ngunit nagpapagalak ang mabuting salita.",
+  "PRO 17:17": "Ang kaibigan ay mapagmahal sa lahat ng oras, at ang kapatid ay isinilang para sa mga oras ng kaguluhan.",
+  "PRO 18:10": "Ang pangalan ni Yahweh ay matibay na tore; ang matuwid na tumatakbo patungo rito ay ligtas.",
+  "PRO 27:17": "Bakal ang nagpapatalas sa bakal; gaya ng parehong paraan, ang isang tao ay nagpapatalas sa kaniyang kaibigan.",
+  "PRO 31:30": "Ang pagiging elegante ay mapanlinlang, ang kagandahan ay walang kabuluhan, pero ang babaeng may takot kay Yahweh ay mapapapurihan.",
+  "COL 3:16": "Hayaang mamuhay ang salita ni Cristo ng masagana sa inyo. Buong karunungang turuan at pagsabihan ninyo ang isa't isa sa pamamagitan ng salmo at himno, at mga awiting espiritwal. Umawit kayo ng may pasasalamat sa inyong mga puso para sa Diyos.",
+  "PSA 119:18": "Buksan mo ang aking mga mata para makita ko sa batas mo ang mga kahanga-hangang bagay.",
+  "HEB 4:12": "Dahil ang salita ng Diyos ay buhay, mabisa at mas matalim pa kaysa sa espada na may dalawang talim. Tumatagos ito kahit na sa paghahati ng kaluluwa mula sa espiritu, at sa kasu-kasuan mula sa utak ng buto. May kakayahan itong makunawa sa mga isip at mga layunin ng puso.",
+  "JOS 1:8": "Palagi kang magsasalita tungkol sa aklat ng batas na ito. Pagbubulay-bulayan mo ito sa araw at gabi para masunod mo ang lahat na nakasulat dito. Sa gayon magiging maunlad ka at matagumpay.",
+  "PSA 19:14": "Nawa ang mga salita ng aking bibig at mga saloobin ng aking puso ay maging katanggap-tanggap sa iyong paningin, Yahweh, aking bato at aking manunubos.",
+  "PSA 139:23-24": "Siyasatin mo ako, O Diyos, at kilalanin mo ang aking puso; subukin mo ako at alamin ang aking saloobin. Tingnan mo kung mayroong masamang paraan sa akin, at pangunahan mo ako sa daan ng walang hanggan.",
+  "JAS 3:17": "Ngunit ang karunungang mula sa itaas unang-una ay dalisay, at maibigin sa kapayapaan, mahinahon, may nag-aalab na puso, puno ng awa at mabuting bunga, walang inaayunang ibang tao, at tapat.",
+  "PHP 4:8": "Sa wakas, mga kapatid, anumang mga bagay na totoo, marangal, makatarungan, dalisay, kaibig-ibig, may mabuting ulat, kung may mga bagay na mahusay at dapat papurihan, isipin ang mga bagay na ito.",
+  "COL 3:2": "Isipin ninyo ang tungkol sa mga bagay na nasa itaas, at hindi tungkol sa mga bagay sa lupa.",
+  "MAT 7:7": "Humingi kayo, at ito ay ibibigay sa inyo. Humanap kayo, at kayo ay makakatagpo. Kumatok kayo, at bubuksan ito para sa inyo.",
+  "MAT 7:24": "Kaya ang lahat ng nakikinig sa aking mga salita at sumusunod sa kanila ay maihahalintulad sa isang matalinong tao na nagtayo ng kaniyang bahay sa isang bato.",
+  "PSA 37:23-24": "Sa pamamagitan ni Yahweh naitatag ang mga hakbang ng isang tao, ang tao na ang balakin ay kapuri-puri sa paningin ng Diyos. Bagama't siya ay nadapa, siya ay hindi babagsak, dahil hinahawakan siya ni Yahweh sa kaniyang kamay.",
+  "PSA 48:14": "Dahil ang Diyos na ito ang ating Diyos magpakailanpaman; siya ang ating magiging gabay hanggang sa kamatayan.",
+  "ISA 58:11": "Kung ganoon patuloy kayong pagungunahan ni Yahweh at bibigyan kayo ng kasiyahan sa mga rehiyon kung saan walang tubig, at palalakasin niya ang inyong mga buto. Kayo ay magiging katulad ng isang nadiligang hardin, at katulad ng isang bukal ng tubig, na hindi natutuyuan ng tubig kailanman.",
+  "HEB 12:1": "Samakatwid, sapagkat napapaligiran tayo ng napakaraming mga saksi, itapon nating lahat ang mga bagay na nagpapabigat sa atin at ang kasalanan na madaling makagapos sa atin. Dapat may katiyagaan tayong magpatuloy sa takbuhin na inilagay sa ating harapan.",
+  "JAS 1:12": "Pinagpala ang tao na nagtitiis sa pagsubok, sapagkat pagkatapos niyang mapagtagumpayan ang pagsubok, makakatanggap siya ng korona ng buhay, na ipinangako sa mga nagmamahal sa Diyos.",
+  "ROM 5:5": "Hindi mangbibigo ang pananalig na ito, dahil ang pag-ibig ng Diyos ay ibinuhos sa ating mga puso sa pamamagitan ng Banal na Espiritu, na siyang ibinigay sa atin.",
+  "2CO 4:16-17": "Kaya hindi kami nasiraan ng loob. Kahit na pinanghihinaan kami sa aming panlabas na katawan, patuloy na pinalalakas ang amig kalooban sa araw-araw. Sapagkat, ang panandalian at bahagyang pagdadalamhati na ito ay naghanda sa amin para sa walang hanggang bigat ng kaluwalhatian na hindi masukat.",
+  "2CO 4:8-9": "Nagdurusa kami sa lahat ng bagay, ngunit hindi nagapi. Naguguluhan, ngunit hindi kami nawalan ng pag-asa. Inuusig kami ngunit hindi pinabayaan. Hinahampas kami ngunit hindi nasira.",
+  "PSA 27:13": "Ano kaya ang nangyari sa akin kung hindi ako naniwala na makikita ko ang kabutihan ni Yahweh sa lupain ng mga buhay?",
+  "PSA 40:1": "Matiyaga akong naghintay kay Yahweh; pinakinggan niya ako at dininig ang aking pag-iyak.",
+  "LAM 3:25-26": "Si Yahweh ay mabuti sa sinumang naghihintay sa kaniya, sa buhay na naghahanap sa kaniya. Mabuti ang maghintay sa pagliligtas ni Yahweh nang tahimik.",
+  "2TI 4:7": "Nakipaglaban ako ng mabuti sa paligsahan, natapos ko ang aking takbuhin, napanatili ko ang pananampalataya.",
+  "1CO 15:58": "Kaya nga, aking mga minamahal na kapatid, maging matatag kayo at huwag patitinag. Lagi kayong managana sa gawain ng Panginoon, dahil alam ninyong ang inyong gawain sa Panginoon ay hindi mawawalan ng kabuluhan.",
+  "HEB 10:36": "Sapagkat kailangan ninyo ng pagtitiyaga upang inyong matanggap ang ipinangako ng Diyos pagkatapos ninyong magawa ang kaniyang kalooban.",
+  "JAS 5:11": "Tingnan ninyo, tinatawag namin ang mga nagtitiyaga, na “pinagpala.” Narinig ninyo ang pagtitiis ni Job, at alam ninyo ang layunin ng Panginoon para kay Job, kung paano ang Panginoon ay puno ng kahabagan at awa.",
+  "ROM 8:18": "Sapagkat itinuturing ko na ang mga pagdurusa sa panahong ito ay hindi karapat-dapat na ihalintulad sa kaluwalhatian na maihahayag sa atin.",
+  "PSA 34:19": "Maraming mga problema ang mga matutuwid, pero sa lahat ng iyon si Yahweh ang nagbibigay ng tagumpay.",
+  "2CO 12:10": "Kung kaya ako ay nasisiyahan alang-alang kay Cristo, sa kahinaan man, sa panglalait man, sa kaguluhan man, sa pagmamalupit man, sa mga pangyayari man na nakapagbibigay ng kapighatian. Sa tuwing ako ay mahina, saka ako malakas.",
+  "ISA 43:1": "Pero ngayon ito ang sinasabi ni Yahweh, ang siyang lumikha sa iyo, Jacob, at siyang humubog sa iyo, Israel: “huwag kang matakot, sapagkat tinubos kita; tinawag kita sa iyong pangalan, ikaw ay akin.",
+  "PSA 61:2": "Tumatawag ako mula sa dulo ng daigdig kapag nagapi ang aking puso; dalhin mo ako sa bato na mataas kaysa sa akin.",
+  "PSA 18:6": "Sa aking pagkabalisa, tumawag ako kay Yahweh, tumawag ako para humingi ng tulong sa aking Diyos. Pinakinggan niya ang tinig ko mula sa kaniyang templo; ang aking panawagan ng tulong ay nakarating sa kaniyang presensiya; nakarating ito sa kaniyang tainga.",
+  "PSA 120:1": "Sa aking kahirapan tumawag ako kay Yahweh, at sinagot niya ako.",
+  "JHN 14:18": "Hindi ko kayo iiwanan nang nag-iisa. Babalik ako sa inyo.",
+  "HEB 6:19": "Mayroon tayo nitong pagtitiwala bilang matatag at maaasahan na angkla ng ating mga kaluluwa, ang pagtitiwala na pumapasok sa dakong loob sa likod ng tabing.",
+  "PSA 9:9": "Magiging matibay na tanggulan din si Yahweh para sa mga inaapi, isang matibay na tanggulan sa panahon ng kaguluhan.",
+  "ISA 41:13": "Sapagkat ako, si Yahweh na iyong Diyos, ay hahawakan ang iyong kanang kamay, sasabihin sa iyo, 'Huwag kang matakot; tutulungan kita.'",
+  "MAT 6:26": "Tingnan ninyo ang mga ibon sa himpapawid. Hindi sila nagtatanim o nag-aani ni nag-iipon sa mga kamalig, ngunit pinapakain sila ng inyong Ama na nasa langit. Hindi ba higit kayong mahalaga kaysa sa kanila?",
+  "LUK 12:7": "Ngunit kahit ang mga buhok ninyo sa ulo ay bilang na lahat. Huwag matakot. Higit kayong mas mahalaga kaysa sa maraming maya.",
+  "PSA 37:25": "Ako ay naging bata at ngayon ay matanda na; hindi pa ako nakakakita ng matuwid na pinabayaan o mga anak niyang nagmamakaawa para sa tinapay.",
+  "PSA 34:10": "Ang batang leon minsan ay nagkukulang sa pagkain at nagugutom; pero ang mga humahanap kay Yahweh ay hindi magkukukulang ng anumang bagay na mabuti.",
+  "2CO 9:8": "At may kakayahan ang Diyos na paramihin ang bawat pagpapala para sa inyo, upang, palagi, sa lahat ng bagay, magkakaroon kayo ng lahat ng kailangan ninyo. Nang sa gayon maaari kayong gumawa ng mas maraming mabubuting bagay.",
+  "PSA 84:11": "Dahil si Yahweh na Diyos ay ang ating araw at kalasag; si Yahweh ay magbibigay ng biyaya at kaluwalhatian; hindi niya pinagkakait ang anumang mabuting bagay mula sa lumalakad na may dangal.",
+  "DEU 31:8": "Si Yahweh, ang siyang mangunguna sa inyong harapan; sasama siya sa inyo; hindi niya kayo bibiguin ni iiwan; huwag matakot, huwag mapanghinaan ng loob.”",
+  "PSA 121:7-8": "Iingatan ka ni Yahweh sa lahat ng kapahamakan, at iingatan niya ang iyong buhay. Iingatan ni Yahweh ang lahat ng iyong ginagawa ngayon at magpakailanman.",
+  "GEN 28:15": "Masdan mo, kasama mo ako, iingatan kita saan ka man magpunta. Dadalhin kitang muli sa lupaing ito; dahil hindi kita iiwan. Tutuparin ko ang lahat ng naipangako ko sa iyo.”",
+  "PSA 145:15-16": "Ang mga mata ng lahat ay naghihintay para sa iyo; ibinigay mo sa tamang oras ang kanilang pagkain. Binuksan mo ang iyong kamay at pinupunan ang nais ng bawat may buhay.",
+  "MAT 7:11": "Kaya kung kayong mga masasama ay marunong magbigay ng mga mabubuting kaloob sa inyong mga anak, gaano pa kaya ang inyong Amang nasa langit na nagbibigay ng mga mabubuting bagay sa mga humihingi sa kaniya?",
+  "1PE 5:6": "Kaya nga maging mapagpakumbaba kayo sa ilalim ng makapangyarihang kamay ng Diyos upang kayo ay itaas niya sa tamang panahon.",
+  "PSA 68:19": "Purihin ang Panginoon, siya na bumubuhat ng ating mga pasanin araw-araw, ang Diyos ng ating kaligtasan. Selah.",
+  "PSA 68:5": "Ang ama ng mga walang ama, ang hukom ng mga balo, ay Diyos sa banal na lugar kung saan siya nananahan.",
+  "ISA 49:15-16": "“Makakalimutan ba ng isang babae ang kaniyang sanggol, na pinasususo sa kaniyang suso, kaya wala siyang habag sa kaniyang anak na ipinanganak? Oo, maaaring makalimutan nila, pero hindi kita makakalimutan. Tingnan mo, sinulat ko ang pangalan mo sa aking mga palad; nasa harapan ko palagi ang iyong mga pader.",
+  "PSA 139:9-10": "Kung lilipad ako palayo sa mga pakpak ng umaga at pupunta para mamuhay sa pinakamalayong mga bahagi sa kabila ng karagatan, kahit doon ang iyong kamay ang aakay sa akin, at ang iyong kanang kamay ang hahawak sa akin.",
+  "LUK 12:32": "Huwag matakot, maliit na kawan, dahil ang inyong Ama ay lubos na nalulugod na ibigay sa inyo ang kaharian.",
+  "MAT 10:30-31": "At kahit na ang mga buhok ng inyong ulo ay bilang lahat. Huwag kayong matakot. Mas mahalaga kayo kaysa sa maraming maya.",
+  "GEN 50:20": "At para sa inyo, ninais niyo na ipahamak ako, pero ninais ng Diyos ito para sa kabutihan, para pag-ingatan ang buhay ng maraming tao, gaya ng nakikita ninyo ngayon.",
+  "ROM 8:32": "Siya na hindi ipinagkait ang kaniyang sariling Anak ngunit ibinigay niya para sa ating lahat, paanong hindi niya rin ibibigay sa atin ng libre ang lahat ng bagay?",
+  "PSA 23:5": "Ipinaghahanda mo ako ng isang hapag sa harapan ng aking mga kaaway; binuhusan mo ng langis ang aking ulo; ang saro ko ay nag-uumapaw.",
+  "PSA 145:9": "Si Yahweh ay mabuti sa lahat, ang kaniyang mapagmahal na awa ay nasa kaniyang mga gawa.",
+  "JAS 1:17": "Ang bawat mabuti at ganap na kaloob ay mula sa itaas, bumaba mula sa Ama ng mga liwanag. Hindi siya nagbabago katulad ng paglipat ng anino.",
+  "PSA 103:4-5": "Tinutubos niya ang inyong buhay mula sa pagkawasak; kinokoronahan niya kayo ng kanyang katapatan sa tipan at mga gawain ng pagkahabag. Binibigyang kasiyahan niya ang inyong buhay ng mabubuting bagay para mapanumbalik ang inyong kabataan tulad ng agila.",
+  "ISA 46:4": "Hanggang sa katandaan ay Ako ay siya nga, at hanggang sa magkauban ay dadalhin kita. Ginawa kita, at tutulungan kita, akin kitang dadalhin sa kaligtasan.",
+  "PSA 3:3": "Pero ikaw, Yahweh, ay isang kalasag sa aking paligid, aking kaluwalhatian, at ang siyang nag-aangat ng aking ulo.",
+  "PSA 3:5": "Nahiga ako at natulog; nagising ako, dahil inalagaan ako ni Yahweh.",
+  "PSA 32:7": "Ikaw ang aking kublihan; babantayan mo ako sa kaguluhan. Papalibutan mo ako ng mga awit ng pagtatagumpay. Selah",
+  "PSA 9:1": "Para sa punong manunugtog; nakatakda sa estilo ng Muth Laben. Isang awit ni David. Buong puso akong magpapasalamat kay Yahweh; ihahayag ko ang lahat ng kamangha-mangha mong mga gawain.",
+  "COL 3:17": "At anuman ang inyong ginagawa sa salita man o sa gawa, gawin ninyo ang lahat sa pangalan ng Panginoong Jesus. Magpasalamat sa Diyos Ama sa pamamagitan niya.",
+  "EPH 5:20": "Magpasalamat lagi sa Diyos Ama sa lahat ng bagay sa pangalan ng ating Panginoong Jesu-Cristo.",
+  "PSA 136:26": "O, magpasalamat sa Diyos sa langit, dahil ang kaniyang katapatan sa tipan ay nananatili magpakailanman.",
+  "1CH 16:34": "Magpasalamat kay Yahweh, sapagkat siya ay mabuti, at ang matapat niyang kasunduan ay magtatagal magpakailanman.",
+  "PSA 69:30": "Pupurihin ko ang pangalan ng Diyos ng may awit at dadakilain siya ng may pasasalamat.",
+  "COL 4:2": "Taimtim na magpatuloy sa panalangin. Manatiling handa sa pasasalamat.",
+  "JER 33:3": "'Tumawag ka sa akin at sasagutin kita. Magpapakita ako ng dakilang mga bagay sa iyo, mga hiwaga na hindi mo nauunawaan.'",
+  "MAT 6:6": "Ngunit ikaw, kung mananalangin ka, pumasok ka sa loob ng iyong silid. Isara ang pinto at manalangin ka sa iyong Ama na nasa lihim. At ang iyong Ama na nakakakita sa lihim ang gagantimpala sa inyo.",
+  "MAT 18:20": "Sapagkat kung saan ang dalawa o tatlo ang nagkatipon dahil sa aking pangalan, naroon ako sa kanilang kalagitnaan.”",
+  "1JN 5:14": "At ito ang pananalig na mayroon tayo sa kanyang harapan, na kung anuman ang hilingin natin ayon sa kanyang kalooban, naririnig niya tayo.",
+  "JAS 5:16": "Kaya ihayag ninyo ang inyong mga kasalanan sa bawat isa at ipanalangin ang bawat isa upang kayo ay mapagaling. Ang panalangin ng matuwid ay magdudulot ng malaking bunga.",
+  "ROM 8:26": "Sa ganoon paraan, tumutulong din ang Espiritu sa ating kahinaan. Sapagkat hindi natin alam kung paano tayo dapat manalangin, ngunit ang Espiritu mismo ang namamagitan sa atin ng mga daing na hindi maipahayag na mga daing.",
+  "PSA 17:6": "Nananawagan ako sa iyo, dahil tinutugon mo ako, O Diyos; ibaling mo ang pandinig mo sa akin at pakinggan mo ako sa aking sasabihin.",
+  "EPH 6:18": "Manalangin kayo sa lahat ng oras ng may panalangin at paghingi. Magbantay kayong lagi ng may buong pagtitiyaga at panalangin para sa lahat ng mga mananampalataya.",
+  "1TI 2:1": "Kaya una sa lahat, ipinakikiusap ko na ang mga kahilingan, mga panalangin, mga panalangin para sa iba at mga pasasalamat ay maipaabot para sa lahat ng tao,",
+  "PSA 116:1-2": "Mahal ko si Yahweh dahil naririnig niya ang aking tinig at mga pakiusap para sa awa. Dahil siya ay nakinig sa akin, ako ay tatawag sa kaniya habang ako ay nabubuhay.",
+  "PSA 34:15": "Ang mga mata ni Yahweh ay nasa mga matutuwid, at sa kanilang mga iyak nakatuon ang kaniyang pandinig.",
+  "PSA 92:1-2": "Ito ay isang mabuting bagay para magbigay ng pasasalamat kay Yahweh at para umawit ng papuri sa iyong ngalan, Kataas-taasan, para ipahayag ang iyong katapatan sa tipan sa umaga at ang iyong katotohanan tuwing gabi,",
+  "PSA 63:1": "O Diyos, ikaw ang aking Diyos! Masigasig kitang hinahanap, nauuhaw ang aking kaluluwa sa iyo, at nananabik ang aking laman sa iyo, sa tuyot at tigang na lupa na walang tubig.",
+  "PSA 42:1": "Gaya ng usa na hinihingal at nananabik para sa tubig na umaagos, gayon ang pagkauhaw ko para sa iyo, O Diyos.",
+  "PSA 50:15": "Tumawag kayo sa akin sa araw ng kaguluhan; sasagipin ko kayo, at ako ay inyong luluwalhatiin.”",
+  "PSA 86:12": "Panginoon aking Diyos, pupurihin kita ng buong puso, luluwalhatiin ko ang iyong pangalan magpakailanman.",
+  "2CO 9:15": "Sa Diyos nawa ang lahat ng pasasalamat sa kaniyang hindi maipaliwanag na kaloob!",
+  "PSA 118:29": "O, magpasalamat kay Yahweh; dahil siya ay mabuti; ang kaniyang katapatan sa tipan ay mananatili magpakailanman.",
+  "HEB 13:15": "Sa pamamagitan ni Jesus dapat patuloy tayong mag-alay ng handog na papuri sa Dios, papuri na bunga ng ating mga labi na kumikilala sa kaniyang pangalan.",
+  "PSA 95:6": "O halika, tayo ay magpuri at yumukod; tayo ay lumuhod sa harapan ni Yahweh, ang ating tagapaglikha:",
+  "LUK 18:1": "Pagkatapos, sinabi niya ang isang talinghaga sa kanila tungkol sa kung paano sila dapat laging manalangin, at huwag panghinaan ng loob,",
+  "PSA 141:2": "Nawa ang aking panalangin ay maging gaya ng insenso sa harapan mo; nawa ang nakataas kong mga kamay ay maging katulad ng alay sa gabi.",
+  "ISA 9:2": "Ang mga taong naglalakad sa dilim ay nakakita ng isang dakilang liwanag; silang mga naninirahan sa lambak ng anino ng kamatayan, ang liwanag ay sumikat sa kanila.",
+  "ISA 7:14": "Dahil diyan, ang Panginoon mismo ang magbibigay sa iyo ng tanda: masdan mo, nagbubuntis ang isang babae, magsisilang ng isang sanggol na lalaki, at tatawagin ang kaniyang pangalan na Immanuel.",
+  "MIC 5:2": "Ngunit ikaw Bethlehem Efrata, kahit ikaw ay maliit sa mga angkan ni Juda, mula sa iyo ay may darating sa akin upang pamunuan ang Israel, na ang pinagmulan ay sa mga unang panahon, mula sa walang hanggan.",
+  "JHN 1:1": "Sa simula pa lamang ay ang Salita, at ang Salita ay kasama ng Diyos, at ang Salita ay Diyos.",
+  "JHN 1:5": "Ang liwanag ay sumisinag sa kadiliman, at ito ay hindi napawi nang kadiliman.",
+  "JHN 1:14": "Ngayon ang Salita ay naging laman at namuhay na kasama namin. Nakita namin ang kaniyang kaluwalhatian, kaluwalhatiang katulad ng nasa nag-iisang natatanging katauhan na naparito mula sa Ama, punong-puno ng biyaya at katotohanan.",
+  "ISA 40:1": "“Aliwin, aliwin mo ang aking bayan,” sabi ng inyong Diyos.",
+  "ISA 40:11": "Papakainin niya ang kaniyang kawan tulad ng isang pastol, titipunin niya ang mga tupa sa kaniyang bisig, at dadalhin sila ng malapit sa kaniyang puso, at dahan-dahang pangungunahan ang mga babaing tupa na inaalagaan ang kanilang anak.",
+  "LUK 1:37": "Sapagkat walang hindi kayang gawin ang Diyos.”",
+  "LUK 1:38": "Sinabi ni Maria, “Tingnan mo, ako ay babaeng lingkod ng Panginoon. Mangyari nawa sa akin ayon sa iyong mensahe.” At iniwan na siya ng anghel.",
+  "LUK 1:46-47": "Sinabi ni Maria, “Ang kaluluwa ko ay nagpupuri sa Panginoon, at ang aking espiritu ay nagalak sa Diyos na aking tagapagligtas.”",
+  "MAT 1:21": "Isisilang niya ang isang anak na lalaki at papangalanan mo siyang Jesus, sapagkat ililigtas niya ang kaniyang mga tao mula sa mga kasalanan nila.”",
+  "LUK 1:31": "At makikita mo, ikaw ay magbubuntis sa iyong sinapupunan at magsisilang ng isang anak na lalaki. Tatawagin mo ang kaniyang pangalan na 'Jesus'.",
+  "ISA 60:1": "Bumangon kayo, magliwanag kayo; dahil ang inyong liwanag ay dumating na, at ang kaluwalhatian ni Yahweh ay sumikat na sa inyo.",
+  "MAL 4:2": "Ngunit sa inyong may takot sa aking pangalan, sisikat ang araw nang katuwiran na may kagalingan sa mga pakpak nito. Lalabas kayo na lumulukso katulad ng guya mula sa kulungan.",
+  "ISA 52:7": "Kay ganda sa mga kabundukan ang mga paa ng mensahero na nagdadala ng mabuting balita, na siyang nagpapahayag ng kapayapaan, na nagdadala ng mga mabuting balita, na nagpapahayag ng kaligtasan, na sinasabi sa Sion, “Ang Diyos ninyo ay naghahari!”",
+  "1TI 1:15": "Ang mensaheng ito ay mapagkakatiwalaan at karapat-dapat na tanggapin ng lahat, na si Cristo Jesus ay naparito sa mundo para iligtas ang mga makasalanan. Ako ang pinakamasama sa mga ito.",
+  "JHN 1:16": "Sapagkat mula sa kaniyang kapuspusan tayong lahat ay nakatanggap ng sunod-sunod na libreng kaloob.",
+  "TIT 2:11": "Pagkat ang biyaya ng Diyos ay nahayag sa lahat ng tao.",
+  "2CO 8:9": "Sapagkat nalalaman ninyo ang biyaya ng ating Panginoong Jesu-Cristo. Kahit na siya ay mayaman, para sa inyong kapakanan siya ay naging mahirap, upang sa pamamagitan ng kaniyang kahirapan kayo ay maaaring maging mayaman.",
+  "PSA 24:7": "Bumukas kayo, kayong mga tarangkahan, bumukas kayo, kayong walang-hanggang mga pintuan, para ang Hari ng kaluwalhatian ay makapasok!",
+  "MAT 2:10-11": "Nang nakita nila ang bituin, sila ay nagalak nang may labis na kagalakan. Sila ay pumunta sa bahay at kanilang nakita ang bata kasama ng kaniyang inang si Maria. Yumukod sila at sumamba sa kaniya. Binuksan nila ang kanilang mga kayamanan at inihandog nila ang kanilang mga kaloob na ginto, kamanyang, at mira.",
+  "LUK 2:7": "Siya ay nagsilang ng anak na lalaki, ang kaniyang panganay na anak, at maayos niya itong binalot ng pirasong tela. Pagkatapos ay inilagay niya ito sa sabsaban dahil wala nang bakanteng silid para sa kanila sa bahay-panuluyan.",
+  "ISA 9:6": "Dahil para sa atin, isang sanggol ang isinilang, isang anak na lalaki ang binibigay; at ang kapamahalaan ay nasa kaniyang balikat; at ang pangalang itatawag sa kaniya ay Kahanga-hangang Taga-payo, Makapangyarihang Diyos, Walang-hanggang Ama, Prinsipe ng Kapayapaan.",
+  "LUK 2:10-11": "Pagkatapos, sinabi ng anghel sa kanila, “Huwag kayong matakot, sapagkat ako ay may dala sa inyong mabuting balita na magbibigay ng lubos na kagalakan sa lahat ng tao. Ngayong araw, isang tagapagligtas ang ipinanganak para sa inyo sa lungsod ni David! Siya si Cristo ang Panginoon!",
+  "LUK 2:20": "Bumalik ang mga pastol na niluluwalhati at pinupuri ang Diyos sa lahat ng kanilang narinig at nakita, tulad ng sinabi sa kanila.",
+  "LUK 2:19": "Ngunit laging iniisip ni Maria ang lahat ng bagay na kaniyang narinig, iniingatan ang mga ito sa kaniyang puso.",
+  "MAT 2:2": "“Nasaan siyang ipinanganak na Hari ng mga Judio? Nakita namin ang bituin niya sa silangan kaya pumarito kami upang sumamba sa kaniya.”",
+  "PSA 90:2": "Bago nahubog ang mga bundok, o hinubog mo ang lupa at ang mundo, hanggang sa habang panahon, ikaw ay Diyos.",
+  "REV 21:5": "Siya na nakaupo sa trono ay sinabing, “Tingnan mo! Ginawa kong bago ang lahat ng mga bagay.” Sinabi niya, “Isulat mo ito dahil ang mga salitang ito ay mapagkakatiwalaan at totoo.",
+  "PSA 65:11": "Kinokoronahan mo ang taon ng iyong kabutihan; naghuhulog ng pataba sa lupa ang mga bakas ng iyong karwahe.",
+  "GEN 1:1": "Noong simula nilikha ng Diyos ang langit at ang lupa.",
+  "GEN 1:2": "Ang lupa ay walang anyo at walang laman. Ang kadiliman ay nasa ibabaw ng kalaliman. Ang Espiritu ng Diyos ay kumikilos sa ibabaw ng katubigan.",
+  "GEN 1:3": "Sinabi ng Diyos, ''Magkaroon ng liwanag” at nagkaroon ng liwanag.",
+  "GEN 1:4": "Nakita ng Diyos na ang liwanag ay kaaya-aya. Hiniwalay niya ang liwanag mula sa kadiliman.",
+  "GEN 1:5": "Tinawag ng Diyos ang liwanag na “araw,” at ang kadiliman ay tinawag niyang “gabi”. Naggabi at nag-umaga, ito ang unang araw.",
+  "GEN 1:26": "Sinabi ng Diyos, “Gawin natin ang tao ayon sa ating wangis, ayon sa ating larawan. Hayaan silang mamahala sa isda sa dagat, sa mga ibon sa langit, sa mga hayop, sa buong mundo, at sa lahat ng gumagapang na bagay na gumagapang sa mundo.",
+  "GEN 1:27": "Nilikha ng Diyos ang tao ayon sa kanyang sariling wangis. Ayon sa kanyang wangis nilikha niya siya. Lalaki at babae nilikha niya sila.",
+  "GEN 1:28": "Pinagpala sila ng Diyos at sinabihan silang, “Maging mabunga kayo, at magpakarami. Punuin niyo ang mundo, at supilin ito. Maging tagapamahala kayo sa isda sa dagat, sa mga ibon sa langit, at sa lahat ng buhay na bagay na kumikilos sa ibabaw ng mundo.”",
+  "GEN 1:29": "Sinabi ng Diyos, “Tingnan ninyo, ibinigay ko sa inyo ang bawat pananim na nagbibigay ng buto na nasa ibabaw ng buong mundo, at bawat punong-kahoy kasama ang bungang may buto sa loob nito. Sila ay magiging pagkain ninyo.",
+  "GEN 1:30": "Sa bawa't hayop sa mundo, sa bawat ibon sa kalangitan, at sa lahat ng bagay na gumagapang sa ibabaw ng mundo, at sa bawat nilikhang may hininga ng buhay ibinigay ko ang bawat luntiang halaman para maging pagkain.” At nagkagayon nga.",
+  "GEN 1:31": "Nakita ng Diyos ang lahat ng bagay na kanyang ginawa. Pagmasdan, ito ay napakabuti. Naggabi at nag-umaga, ito ang ika anim araw.",
+  "GEN 2:1": "Kaya’t ang kalangitan at ang mundo ay natapos, at ang lahat ng buhay na mga bagay na pumuno sa kanila.",
+  "GEN 2:2": "Sa ikapitong araw dumating ang Diyos sa pagtatapos ng gawain na kanyang ginawa, at siya ay nagpahinga sa ikapitong araw mula sa lahat niyang gawain.",
+  "GEN 2:3": "Pinagpala ng Diyos ang ikapitong araw at ginawang banal ito, dahil doon siya nagpahinga mula sa lahat ng gawain na kanyang nagawa sa kanyang paglikha.",
+  "GEN 6:13": "Sinabi ng Diyos kay Noe, “Nakikita kong panahon na upang bigyang wakas ang lahat ng laman, sapagkat napuno na ng karahasan ang mundo sa pamamagitan nila. Katunayan, wawasakin ko sila kasama ng mundo.",
+  "GEN 6:14": "Gumawa ka para sa iyong sarili ng arka mula sa kahoy ng saypres. Gumawa ka ng mga silid sa arka, takpan mo ito ng aspalto sa loob at labas.",
+  "GEN 6:15": "Ganito mo ito gagawin: tatlong daang kubit ang haba ng arka, limampung kubit ang luwag nito, at tatlumpung kubit ang taas nito.",
+  "GEN 6:16": "Gumawa ka ng bubong para sa arka, at tapusin mo ito sa isang kubit mula sa itaas ng tagiliran. Maglagay ka ng pinto sa gilid ng arka at gumawa ka ng ilalim, pangalawa, at pangatlong palapag.",
+  "GEN 6:17": "Makinig ka, malapit ko nang ipadala ang baha ng mga tubig sa mundo, upang lipulin ang lahat ng laman na may hininga ng buhay dito mula sa silong ng langit. Lahat ng bagay na nasa mundo ay mamamatay.",
+  "GEN 6:18": "Subalit itatatag ko ang aking tipan sa iyo. Papasok ka sa arka, ikaw, at ang iyong mga anak na lalaki, iyong asawa at mga asawa ng iyong mga anak.",
+  "GEN 6:19": "Mula sa bawat nabubuhay na nilalang ng lahat ng laman, dalawa ng bawat uri ang dapat mong dalhin sa arka, upang mananatili silang buhay kasama mo, kapwa lalaki at babae.",
+  "GEN 6:20": "Mga ibon ayon sa kanilang uri, at ang mga malalaking hayop ayon sa kanilang uri, bawat gumagapang na bagay sa lupa ayon sa kanyang uri, dalawa ng bawat uri ay pupunta sa iyo, upang panatilihin silang buhay.",
+  "GEN 6:21": "Tipunin mo para sa sarili mo ang bawat uri ng pagkaing makakain at itabi ito, para maging pagkain para sa iyo at sa kanila.”",
+  "GEN 6:22": "Kaya ginawa ito ni Noe. Ginawa niya ito, ayon sa lahat ng inutos ng Diyos.",
+  "GEN 7:17": "Pagkatapos dumating ang baha sa mundo sa loob ng apatnapung araw, at tumaas ang tubig at binuhat ang arka. Umangat ito mula sa mundo.",
+  "GEN 7:18": "Rumagasa ang tubig at lubhang tumaas sa mundo, at lumutang ang arka sa ibabaw ng tubig.",
+  "GEN 8:6": "At nangyari pagkaraan ng apatnapung araw na binuksan ni Noe ang bintana ng arka na kanyang ginawa.",
+  "GEN 8:7": "Nagpalipad siya ng isang uwak at ito ay nagparoo't nagparito hanggang sa natuyo ang tubig mula sa mundo.",
+  "GEN 8:8": "Pagkatapos ay nagpalipad siya ng isang kalapati upang tingnan kung ang tubig ay humupa na mula sa ibabaw ng lupa,",
+  "GEN 8:9": "pero ang kalapati ay walang nakitang lugar upang ipahinga ang kanyang paa, at bumalik ito sa kanya sa arka, dahil natatakpan pa rin ng tubig ang buong mundo. Iniabot niya ng kanyang kamay, at kinuha at dinala niya ito kasama niya sa arka.",
+  "GEN 8:10": "Naghintay siya ng pito pang mga araw at pinalipad niyang muli ang kalapati mula sa arka.",
+  "GEN 8:11": "Bumalik ang kalapati sa kanya kinagabihan. Masdan! Sa kanyang bibig ay may sariwang pitas ng dahon ng olibo. Kaya nalaman ni Noe na ang tubig ay humupa mula sa mundo.",
+  "GEN 8:12": "Naghintay siya ng pito pang araw, at pinalipad niyang muli ang kalapati. Hindi na ito muling bumalik sa kanya.",
+  "GEN 9:12": "Sinabi ng Diyos, “Ito ang palatandaan ng kasunduang aking gagawin sa pagitan ko at ninyo at sa bawat nabubuhay na nilalang na kasama ninyo, sa lahat ng hinaharap na salinlahi:",
+  "GEN 9:13": "Inilagay ko ang aking bahaghari sa ulap, at ito ang palatandaan ng kasunduan sa pagitan ko at ng mundo.",
+  "GEN 9:14": "Ito ay mangyayari kapag dinadala ko ang ulap sa ibabaw ng mundo at ang bahaghari ay natatanaw sa ulap,",
+  "GEN 9:15": "sa gayon isasaisip ko ang aking kasunduan sa pagitan ko at ninyo, at sa bawat nabubuhay na nilalang ng lahat ng laman. Ang mga tubig ay hindi kailanman muling magiging bahang wawasak sa lahat ng laman.",
+  "GEN 9:16": "Ang bahag-hari ay mapapaloob sa mga ulap at makikita ko ito, upang gunitain ang walang hangang kasunduan sa pagitan ng Diyos at bawat nabubuhay na nilalang ng lahat ng laman na nasa mundo.”",
+  "GEN 28:10": "Nilisan ni Jacob ang Beer-seba at nagpunta sa Haran.",
+  "GEN 28:11": "Dumating siya sa isang lugar at nanatili roon buong gabi, dahil lumubog na ang araw. Kumuha siya ng isang bato sa lugar na iyon, inilagay iyon sa ilalim ng kanyang ulo at nahiga sa lugar na iyon para matulog.",
+  "GEN 28:12": "Siya ay nanaginip at nakakita ng hagdanang itinayo sa mundo. Ang tuktok nito ay umaabot sa langit at ang mga anghel ng Diyos ay akyat-panaog doon.",
+  "GEN 28:13": "Masdan, si Yahweh ay nakatayo sa ibabaw niyon at nagsabi, “Ako si Yahweh, ang Diyos ni Abraham na iyong ama, at ang Diyos ni Isaac. Ang lupang hinihigaan mo, ibibigay ko sa iyo at sa iyong mga kaapu-apuhan.",
+  "GEN 28:14": "Ang iyong mga kaapu-apuhan ay magiging tulad ng alikabok sa mundo, at ikaw ay kakalat sa kanluran, sa silangan, sa hilaga, at sa timog. Sa iyo at iyong mga kaapu-apuhan, ang lahat ng mga pamilya sa mundo ay pagpapalain.",
+  "GEN 28:16": "Si Jacob ay nagising mula sa kanyang pagtulog at sinabi nya, “Tunay nga na si Yahweh ay nasa lugar na ito, at hindi ko iyon alam.”",
+  "GEN 28:17": "Natakot siya at nagsabi, “Nakakikilabot naman ang lugar na ito! Ito ay walang iba kundi ang tahanan ng Diyos. Ito ang tarangkahan ng langit.”",
+  "GEN 28:18": "Bumangon si Jacob kinaumagahan at kinuha ang batong inilagay niya sa ilalim ng kaniyang ulo. Itinayo niya ito bilang isang haligi at nagbuhos ng langis sa ibabaw nito.",
+  "GEN 28:19": "Tinawag niya ang pangalan ng lugar na iyon na Bethel, pero ang dating pangalan ng lungsod na iyon ay Luz.",
+  "GEN 28:20": "Si Jacob ay sumumpa ng isang panata na nagsasabing, “Kung ang Diyos ay kasama ko at pangangalagaan ako sa daang ito na aking nilalakaran, at bibigyan ako ng tinapay para kainin, at mga damit para suutin,",
+  "GEN 28:21": "nang sa gayon matiwasay akong makabalik sa bahay ng aking ama, pagkatapos si Yahweh ay magiging Diyos ko.",
+  "GEN 28:22": "Pagkatapos ang batong ito na itinayo ko bilang isang haligi ay magiging banal na bato. Mula sa lahat ng ibinigay mo sa akin, tiyak na ibabalik ko sa iyo ang ikasampung bahagi.”",
+  "GEN 37:3": "Minahal ni Israel si Jose nang mas higit sa lahat ng kanyang anak na lalaki dahil siya ang anak niya sa katandaan. Ginawan siya nang isang magandang damit.",
+  "GEN 37:4": "Nakita ng kanyang mga kapatid ang pagmamahal ng kanilang ama na mas higit kaysa sa lahat niyang kapatid na lalaki. Siya ay kinamuhian nila at hindi nakikipag-usap nang maayos.",
+  "GEN 37:23": "Nangyari na nang dumating si Jose sa kanyang mga kapatid, hinubad sa kaniya ang magandang damit.",
+  "GEN 37:24": "Dinala siya at itinapon siya sa loob ng balon. Walang laman ang balon ni wala itong tubig.",
+  "GEN 37:25": "Umupo sila para kumain ng tinapay. Tumingala sila at tumingin, at masdan, may paparating na isang karawan ng mga Ismaelita mula sa Gilead, kasama ang kanilang mga kamelyo na may dala-dalang mga sahog at balsamo at mira. Naglalakbay sila ay para dalhin ang mga iyon pababa sa Ehipto.",
+  "GEN 37:26": "Sabi ni Juda sa kanyang mga kapatid, “Anong pakinabang nito kung papatayin ang ating kapatid at pagtakpan ang kanyang dugo?",
+  "GEN 37:27": "Halina kayo, at ipagbili natin siya sa mga Ismaelita, at huwag natin siyang pagbuhatan ng kamay. Dahil siya ay ating kapatid, ating laman. Pinakinggan siya ng kanyang mga kapatid.",
+  "GEN 37:28": "Dumaan ang mga mangangalakal na Midianita. Inihaon si Jose ng kanyang mga kapatid at iniakyat pataas mula sa balon. Ipinagbili nila si Jose sa mga Ismaelita para sa dalawampung pirasong pilak. Dinala si Jose ng mga Ismaelita sa Ehipto.",
+  "GEN 45:1": "Pagkatapos hindi nakapagpigil si Jose sa kanyang sarili sa harapan ng lahat ng mga lingkod na nakatayo sa kanyang tabi. Sinabi niya ng malakas, “Iwanan ninyo akong lahat.” Kaya walang lingkod na nakatayo sa tabi niya nang siya ay nagpakilala sa kanyang mga kapatid na lalaki.",
+  "GEN 45:2": "Umiyak siya ng malakas, narinig ito ng mga taga-Ehipto at ang tahanan ng Paraon ay nakarinig ito.",
+  "GEN 45:3": "Sinabi ni Jose sa kanyang mga kapatid na lalaki, “Ako si Jose. Buhay pa ba ang aking ama?” Ang kanyang mga kapatid na lalaki ay hindi makasagot sa kanya, sapagkat sila ay nabigla sa kanyang presensiya.",
+  "GEN 45:4": "Pagkatapos sinabi ni Jose sa kanyang mga kapatid na lalaki, “Pakiusap, lumapit kayo sa akin.” Lumapit sila. Sinabi niya, “Ako si Jose ang inyong kapatid na lalaki, na inyong ipinagbili sa Ehipto.",
+  "GEN 45:5": "At ngayon huwag kayong magdalamhati o magalit sa inyong mga sarili na ipinagbili ninyo ako dito, sapagkat nauna na akong ipinadala ng Diyos sa inyo upang pangalagaan ang buhay ninyo.",
+  "GEN 45:6": "Nasa tagtuyot ang lupain nitong mga dalawang taon at magkakaroon pa nang limang dagdag na mga taon na walang pag-aararo o walang ani.",
+  "GEN 45:7": "Nauna na akong ipinadala ng Diyos sa inyo upang pangalagaan kayo bilang mga nalalabi dito sa mundo at nang mapanatili kayong buhay sa pamamagitan ng dakilang kaligtasan.",
+  "GEN 45:8": "Kaya ngayon, hindi kayo ang nagpadala sa akin dito kung hindi ang Diyos, at ginawa niya akong ama ng Paraon, amo ng lahat ng kanyang tahanan, at pinuno ng lahat ng lupain sa Ehipto.",
+  "GEN 50:19": "Pero sinagot sila ni Jose, “Huwag kayong matakot. Nasa lugar ba ako ng Diyos?",
+  "GEN 50:21": "Kaya ngayon huwag kayong matakot. Paglalaanan ko kayo at ang inyong mga anak.” Inaliw niya sila sa paraang ito at nakipag-usap ng may kagandahang-loob sa kanila.",
+  "EXO 2:1": "Ngayon isang lalaki sa lipi ng mga Levi ang nakapag-asawa ng isang babaeng Levi.",
+  "EXO 2:2": "Nabuntis ang babae at nagsilang ng isang anak na lalaki. Nang makita niya na malusog ang bata, itinago niya ito ng tatlong buwan.",
+  "EXO 2:3": "Pero nang hindi na siya maitago nila, kumuha siya ng isang basket na papirus at sinelyohan ito ng aspalto at alkitran. Pagkatapos nilagay niya dito ang bata at inilagay ito sa mga tambo sa tubig sa tabi ng ilog.",
+  "EXO 2:4": "Ang kaniyang kapatid na babae ay nakatayo sa may hindi kalayuan para tingnan kung anong mangyayari sa kaniya.",
+  "EXO 2:5": "Ang anak na babae ni Paraon ay nagpunta sa ilog para maligo doon habang naglalakad ang kaniyang mga katulong sa tabing ilog. Nakita niya ang basket kasama ng mga tambo at pinapuntahan niya sa kaniyang katulong para kunin ito.",
+  "EXO 2:6": "Nang buksan niya ito, nakita niya ang bata. Masdan ito, ang bata ay umiiyak. Siya ay nahabag sa kaniya at sinabing, “Ito ay tiyak na isa sa mga sanggol ng mga Hebreo.”",
+  "EXO 2:7": "Pagkatapos sinabi ng kapatid na babae ng bata sa anak na babae ni Paraon, “Maaari ba akong pumunta at kumuha ng isang babaeng Hebreo para alagaan ang sanggol para sa iyo?”",
+  "EXO 2:8": "Sinabi ng anak na babae ni Paraon sa kaniya, “Pumunta ka”. Kaya nagpunta ang batang babae at kinuha ang ina ng sanggol.",
+  "EXO 2:9": "Sinabi ng anak na babae ni Paraon sa ina ng bata, “Kunin mo ang sanggol na ito at alagaan mo siya para sa akin, at bibigyan kita ng mga kabayaran.” Kaya kinuha ng babae ang sanggol at inalagaan siya.",
+  "EXO 2:10": "Nang lumaki na ang sanggol, siya ay dinala niya sa anak na babae ni Paraon, at siya ay naging lalaking anak niya. Pinangalanan niya siyang Moises at sinabing, “Dahil inahon kita mula sa tubig”",
+  "EXO 3:1": "Ngayon si Moises ay nagpapastol pa rin ng kawan ng biyenan niyang si Jetro, ang pari ng Midian. Pinangunahan ni Moises ang kawan sa malayong dako ng ilang at dumating sa Horeb, ang bundok ng Diyos.",
+  "EXO 3:2": "Doon ang anghel ni Yahweh ay nagpakita sa kaniya sa isang nagliliyab na apoy sa mababang puno. Tumingin si Moises at nakita na nagliliyab ang puno pero ito ay hindi nasusunog.",
+  "EXO 3:3": "Sinabi ni Moises, “Lilingon ako at titingnan ang kahanga-hangang bagay na ito, bakit ang puno ay hindi nasusunog.”",
+  "EXO 3:4": "Nang makita ni Yahweh na lumingon si Moises para tingnan, tumawag ang Diyos sa kaniya mula sa mababang puno at sinabi, “Moises, Moises.” Sinabi ni Moises, “Narito po ako.”",
+  "EXO 3:5": "Sinabi ng Diyos, “Huwag kang lumapit! Hubarin mo ang sapatos sa iyong mga paa, dahil ang lugar na kinatatayuan mo ay lupang inilaan sa akin.”",
+  "EXO 3:6": "Dagdag pa niya, “Ako ang Diyos ng iyong ama, ang Diyos ni Abraham, ang Diyos ni Isaac, at ang Diyos ni Jacob.” Pagkatapos tinakpan ni Moises ang kaniyang mukha, dahil takot siyang tumingin sa Diyos.",
+  "EXO 3:7": "Sinabi ni Yahweh, “Tunay na nakita ko ang pagdurusa ng aking bayan na nasa Ehipto. Narinig ko ang kanilang pagsigaw dahil sa kanilang mahihigpit na tagapangasiwa, dahil alam ko ang tungkol sa kanilang pagdurusa.",
+  "EXO 3:8": "Bumaba ako para palayain sila mula sa kapangyarihan ng mga taga-Ehipto at dalhin sila mula sa lupaing iyon patungo sa mabuti at malawak na lupain, sa isang lupaing dinadaluyan ng gatas at pulot; sa rehiyon ng mga Cananeo, Heteo, Amoreo, Perezeo, Hivita, at mga Jebuseo.",
+  "EXO 3:9": "Ngayon ang mga pagsigaw ng bayan ng Israel ay nakarating sa akin. Bukod dito, nakita ko ang pagmamalupit na dulot ng mga taga-Ehipto.",
+  "EXO 3:10": "Kaya ngayon, ipapadala kita kay Paraon para dalhin mo ang aking bayan, ang mga Israelita, palabas mula sa Ehipto.”",
+  "EXO 3:11": "Pero sinabi ni Moises sa Diyos, “Sino ba ako, na dapat akong magpunta kay Paraon at dalhin ang mga Israelita mula sa Ehipto?”",
+  "EXO 3:12": "Sumagot ang Diyos, “Ako ay tiyak na makakasama mo. Ito ang magiging palatandaan na pinadala kita. Kapag nailabas mo ang bayan mula sa Ehipto, sasambahin ninyo ako sa bundok na ito.”",
+  "EXO 14:10": "Nang malapit na si Paraon, ang mga Israelita ay tumingala at nabigla. Naglalakad ang mga taga-Ehipto patungo sa kanila at sila ay natakot. Umiyak ang mga Israelita kay Yahweh.",
+  "EXO 14:11": "Sinabi nila kay Moises, “Dahil wala na bang mapaglilibingan sa amin sa Ehipto kaya mo kami dinala sa ilang para dito mamatay? Bakit itinuring mo kami ng ganito, dinala mo kami palabas sa Ehipto?",
+  "EXO 14:12": "Hindi ba ito ang sinabi namin sa iyo sa Ehipto? Sinabi namin sa iyo, 'Iwanan kami dito, para makapagtrabaho kami sa mga taga-Ehipto. Mas mabuti pa sa amin ang magtrabaho para sa kanila kaysa kami ay mamatay dito sa ilang.”'",
+  "EXO 14:13": "Sinabi ni Moises sa mga tao, “Huwag kayong matakot. Manatili at tingnan ninyo ang pagliligtas ni Yahweh na ibibigay sa inyo ngayon. Dahil hindi ninyo na makikita muli ang mga taga-Ehipto na nakikita ninyo ngayon.",
+  "EXO 14:14": "Si Yahweh ay makikipaglaban para sa inyo, at kailangan lang ninyong manatili.",
+  "EXO 14:15": "Pagkatapos sinabi ni Yahweh kay Moises, “Bakit ikaw, Moises, patuloy na tumatawag sa akin? Sabihan mo ang mga Israelita na magpatuloy sa pagsulong.",
+  "EXO 14:16": "Itaas mo ang iyong tungkod, iunat mo sa pamamagitan ng iyong kamay sa ibabaw ng dagat at hatiin mo ito sa dalawa, para ang bayan ng Israel ay makarating sa dagat sa tuyong lupa.",
+  "EXO 14:21": "Iniunat ni Moises ang kaniyang kamay sa ibabaw ng dagat. Pinabalik ni Yahweh ang dagat sa pamamagitan ng isang malakas na hanging silangan sa buong gabing iyon at ginawang tuyong lupa. Sa ganitong paraan nahati ang tubig.",
+  "EXO 14:22": "Ang mga Israelita ay pumunta sa gitna ng dagat sa tuyong lupa. Ang tubig ay nag-anyong pader para sa kanila sa kanilang kanang kamay at sa kanilang kaliwa.",
+  "EXO 14:26": "Sinabi ni Yahweh kay Moises, “Iunat mo ang iyong kamay sa ibabaw ng dagat para ang tubig ay bumalik sa mga taga-Ehipto, kanilang mga karwahe at sa kanilang mga nangangabayo.",
+  "EXO 14:27": "Kaya iniunat ni Moises ang kaniyang kamay sa ibabaw ng dagat at ito ay bumalik sa dating anyo bago lumitaw ang umaga. Ang mga taga-Ehipto ay tumakas sa dagat, at dinala sila ni Yahweh sa gitna nito.",
+  "EXO 14:28": "Bumalik ang tubig at bumalot sa mga karwahe ni Paraon, mga nangangabayo at ang lahat ng kaniyang mga hukbo na sumunod sa mga karwahe papuntang dagat. Wala ni isa ang nakaligtas.",
+  "EXO 14:29": "Gayunman, naglakad ang mga Israelita sa tuyong lupa sa gitna ng dagat. Ang tubig ay naging isang pader para sa kanila sa kanang kamay at sa kanilang kaliwa.",
+  "EXO 14:30": "Iniligtas ni Yahweh ang Israel sa araw na iyon sa kamay ng mga taga-Ehipto, at nakita ng Israel ang mga patay na mga taga-Ehipto sa dalampasigan.",
+  "EXO 14:31": "Nang makita ng Israel ang kapangyarihan ni Yahweh na ginamit laban sa mga taga-Ehipto, pinarangalan ng mga tao si Yahweh, at sila ay nagtiwala kay Yahweh at sa kaniyang lingkod na si Moises.",
+  "JOS 6:1": "Ngayon nakasara lahat ang mga pasukan ng Jerico dahil sa hukbo ng Israel. Walang sinuman ang lumalabas at pumapasok.",
+  "JOS 6:2": "Sinabi ni Yahweh kay Josue, “Tingnan mo, ibinigay ko sa inyo ang Jerico, ang hari nito at mga sundalong sinanay nito.",
+  "JOS 6:3": "Dapat kayong magmartsa sa palibot ng lungsod, lahat ng kalalakihan sa digmaan ay lilibutin ang lungsod nang minsanan. Dapat ninyong gawin ito sa loob ng anim na araw.",
+  "JOS 6:4": "Dapat dalhin ng pitong pari ang pitong trumpetang gawa sa mga sungay ng lalaking tupa sa harapan ng kaban. Sa ikapitong araw, dapat kayong magmartsa ng pitong beses palibot ng lungsod at patunugin ng malakas ang mga trumpeta ng mga pari.",
+  "JOS 6:5": "Dapat silang magpatunog ng isang mahabang tunog gamit ang sungay ng lalaking tupa at kapag marinig ninyo ang tunog ng trumpeta dapat sumigaw ng napakalakas ang lahat ng mga tao at guguho ang pader ng lungsod. Dapat lumusob ang mga sundalo, bawat isa ng deretso lang.”",
+  "JOS 6:15": "Maaga silang gumising nang magbubukang liwayway nang ikapitong araw at nagmartsa sila palibot ng lungsod ayon sa nakasanayan nila, sa pagkakataong ito pitong ulit. Sa araw na ito sila nagmartsa palibot ng slungsod nang pitong ulit.",
+  "JOS 6:16": "Ito ay nasa ikapitong araw nang pinatunog nang malakas ng mga pari ang mga trumpeta, at iniutos ni Josue sa mga tao, “Sumigaw! Dahil ibinigay sa inyo ni Yahweh ang lungsod.",
+  "JOS 6:20": "Kaya sumigaw ang mga tao at pinatunog nila nang malakas ang mga trumpeta. Nangyari ito nang narinig ng mga tao ang tunog ng trumpeta, sumigaw sila nang napakalakas na sigaw at gumuho ang pader kaya umakyat ang mga tao sa lungsod, sumugod ang bawat isa. At nabihag nila ang lungsod.",
+  "RUT 1:6": "Pagkatapos nagpasya si Naomi na umalis ng Moab kasama ang kaniyang mga manugang at bumalik sa Juda dahil narinig niya sa rehiyon ng Maob na tinulungan ni Yahweh ang kaniyang bayan na nangangailangan at binigyan sila ng pagkain.",
+  "RUT 1:7": "Kaya umalis siya sa lugar kung saan siya naroon kasama ang kaniyang mga manugang na babae at naglakad sila pababa sa daan para bumalik sa lupain ng Juda.",
+  "RUT 1:8": "Sinabi ni Naomi sa kaniyang dalawang manugang na babae, “Lumakad, bumalik, kayo bawat isa sa inyo, sa bahay ng inyong ina. Nawa ipakita ni Yahweh ang kabaitan sa inyo, tulad ng pagpapakita ninyo ng katapatan sa namatay at sa akin.",
+  "RUT 1:9": "Nawa idulot sa inyo ng Panginoon ang pahinga, bawat isa sa inyo sa bahay ng panibagong asawa.” Pagkatapos hinalikan niya sila at nagtaas sila ng mga boses at umiyak.",
+  "RUT 1:10": "Sinabi nila sa kaniya, “Hindi! Babalik kami kasama mo sa iyong lahi.”",
+  "RUT 1:11": "Pero sinabi ni Naomi, “Bumalik kayo, aking mga anak! Bakit kayo sasama sa akin? May mga anak pa ba ako sa aking sinapupunan para sa inyo, para maging asawa ninyo?",
+  "RUT 1:12": "Bumalik kayo, aking mga anak, lumakad sa sarili ninyong landas dahil ako ay napakatanda na para magkaroon ng asawa. Kung sabihin ko, “Umaasa akong makakuha ako ng asawa ngayong gabi,' at pagkatapos magsilang ng mga anak na lalaki,",
+  "RUT 1:13": "kung gayon maghihintay pa ba kayo hanggang lumaki sila? Maghihintay pa ba kayo at hindi magpapakasal sa mga lalaki ngayon? Huwag, mga anak ko! Ito ay higit na magpapahirap sa akin kaysa magpapahirap sa inyo, dahil bumaling laban sa akin ang kamay ni Yahweh.",
+  "RUT 1:14": "Pagkatapos ang kaniyang mga manugang ay nagtaas ng kanilang mga boses at muling umiyak. Hinalikan ni Orpah ang kaniyang biyenan nang may pamamaalam, pero si Ruth ay nanatili sa kaniya.",
+  "RUT 1:15": "Sinabi ni Naomi, “Makinig ka, ang hipag mo ay bumalik na sa kaniyang bayan at sa kaniyang mga diyos! Bumalik ka kasama ang iyong hipag.”",
+  "RUT 1:16": "Pero sinabi ni Ruth, “Huwag mo akong palayuin mula sa iyo, sapagkat kung saan ka pupunta, doon ako pupunta; kung saan ka titira, doon ako titira; ang iyong bayan ay magiging aking bayan, at ang iyong Diyos ay magiging aking Diyos.",
+  "RUT 1:17": "Kung saan ka mamamatay, doon ako mamamatay at doon din ako ililibing. Nawa parusahan ako ni Yahweh, at kahit higit pa, kung anuman pero kamatayan kailanman ang magpahiwalay sa atin.",
+  "RUT 1:18": "Nang makita ni Naomi na nagpasya nang sumama si Ruth sa kanya, tumigil na siyang makipagtalo sa kaniya.",
+  "1SA 3:1": "Naglingkod kay Yahweh ang batang si Samuel na nakapailalim kay Eli. Madalang ang mga salita ni Yahweh sa mga panahong iyon; walang madalas na pangitain.",
+  "1SA 3:2": "Sa panahong iyon, nang si Eli, na ang paningin ay nagsimulang lumabo kaya hindi na siya makakita nang mabuti, ay nakahiga sa kanyang sariling higaan.",
+  "1SA 3:3": "Hindi pa namamatay ang ilawan ng Diyos, at nakahiga si Samuel upang matulog sa bahay ni Yahweh, kung saan naroon ang kaban ng Diyos.",
+  "1SA 3:4": "Tumawag si Yahweh kay Samuel, na nagsabing, “Narito ako.”",
+  "1SA 3:5": "Tumakbo si Samuel kay Eli at sinabing, “Narito ako, dahil tinawag mo ako.” Sinabi ni Eli, “Hindi kita tinawag; humiga ka ulit.” Umalis si Samuel at humiga.",
+  "1SA 3:6": "Tumawag muli si Yahweh, “Samuel.” Bumangon muli si Samuel at nagtungo kay Eli at sinabing, “Narito ako, dahil tinawag mo ako.” Sumagot si Eli, “Hindi kita tinawag, aking anak; humiga ka muli.”",
+  "1SA 3:7": "Ngayon wala pang anumang karanasan si Samuel kay Yahweh, ni nagkaroon ng anumang mensahe mula kay Yahweh na naibunhayag sa kanya.",
+  "1SA 3:8": "Tinawag muli ni Yahweh si Samuel sa ikatlong pagkakataon. Muling bumangon si Samuel at nagtungo kay Eli at sinabing, “Narito ako, sapagka't tinawag mo ako.” Pagkatapos napagtanto ni Eli na tinawag ni Yahweh ang bata.",
+  "1SA 3:9": "Pagkatapos sinabi ni Eli kay Samuel, “Umalis ka at humigang muli; kung tatawagin ka niya muli, dapat mong sabihin, 'Magsalita ka, Yahweh, sapagka't nakikinig ang iyong lingkod.''' Kaya umalis si Samuel at minsan pang humiga sa kanyang sariling lugar.",
+  "1SA 3:10": "Dumating si Yahweh at tumayo; tumawag siya tulad ng ibang mga pagkakataon, “Samuel, Samuel.” Pagkatapos sinabi ni Samuel, “Magsalita ka, sapagka't nakikinig ang iyong lingkod.”",
+  "1SA 17:4": "Isang malakas na tao ang lumabas mula sa kampo ng mga Filisteo, isang taong nagngangalang Goliat na mula sa Gat, na ang tangkad ay anim na kubit at isang dangkal.",
+  "1SA 17:5": "Mayroon siyang isang salakot na tanso sa kanyang ulo, at nasusuutan siya ng isang baluti sa katawan. Tumitimbang ang baluti ng limang libong siklong tanso.",
+  "1SA 17:6": "Mayroon siyang tansong baluti sa kanyang mga binti at isang sibat na tanso sa pagitan ng kanyang mga balikat.",
+  "1SA 17:7": "At ang hawakan ng kanyang sibat ay malaki, na may isang silong panghabi para sa paghahagis nito gaya ng tali sa isang panghabi ng manghahabi. Tumitimbang ang ulo ng kanyang sibat ng anim na raang siklong bakal. Ang kanyang tagadala ng kalasag ay nauuna sa kanya.",
+  "1SA 17:8": "Tumayo siya at sumigaw sa mga hukbo ng Israel, “Bakit kayo lumabas para humanay sa pakikipaglaban? Hindi ba ako isang Filisteo, at hindi ba kayo mga lingkod ni Saul? Pumili kayo ng isang lalaki para sa inyong sarili at hayaan siyang bumaba rito sa akin.",
+  "1SA 17:9": "Kung kaya niya akong labanan at mapatay ako, sa gayon magiging mga alipin ninyo kami. Ngunit kung matalo at mapatay ko siya, sa gayon magiging mga lingkod namin kayo at maglingkod sa amin.”",
+  "1SA 17:10": "Muling sinabi ng Filisteo, “Hinahamon ko ang mga hukbo ng Israel ngayon. Bigyan ninyo ako ng isang tao para makapaglaban kami.”",
+  "1SA 17:11": "Nang marinig ni Saul at ng buong Israel ang sinabi ng Filisteo, pinanghinaan sila ng loob at labis na natakot.",
+  "1SA 17:32": "Pagkatapos sinabi ni David kay Saul, “Hayaang walang puso ang mabigo dahil sa Filisteong iyon; pupunta ang iyong lingkod at makikipaglaban sa Filisteong ito.”",
+  "1SA 17:33": "Sinabi ni Saul kay David, “Hindi mo kayang pumunta sa Filisteong iyon para makipaglaban sa kanya; sapagkat isang kabataan ka lamang, at isa siyang taong mandirigma mula sa kanyang kabataan.”",
+  "1SA 17:34": "Pero sinabi ni David kay Saul, “Isang tagapangalaga ng tupa ng kanyang ama ang iyong lingkod. Kapag dumating ang isang leon o oso at kinuha ang isang kordero sa kawan,",
+  "1SA 17:35": "hinahabol ko ito at sinasalakay ito, at inililigtas ito mula sa kanyang bibig. At kapag lumaban ito sa akin, hinuhuli ko ito sa kanyang balbas, hinahampas at pinapatay ito.",
+  "1SA 17:36": "Parehong pinatay ng iyong lingkod ang isang leon at isang oso. Ang hindi tuling Filisteong ito ay magiging tulad ng isa sa kanila, yamang hinahamon niya ang mga hukbo ng buhay na Diyos.”",
+  "1SA 17:37": "Sinabi ni David, “Iniligtas ako ni Yahweh mula sa pangalmot ng leon at mula sa pangalmot ng oso. Ililigtas niya ako mula sa kamay ng Filisteong ito.” Pagkatapos sinabi ni Saul kay David, “Humayo ka, at sumaiyo nawa si Yahweh.”",
+  "1SA 17:40": "Kinuha niya ang kanyang tungkod at pumili ng limang makinis na bato mula sa batis; inilagay niya ang mga ito sa kanyang supot pangpastol. Nasa kanyang kamay ang kanyang tirador habang lumalapit siya sa Filisteo.",
+  "1SA 17:41": "Dumating ang Palestina at lumapit kay David, kasama ang tagadala ng kanyang kalasag sa kanyang harapan.",
+  "1SA 17:42": "Nang tumingin sa palibot ang Palestina at nakita si David, kinamuhian niya siya, sapagka't isa lamang siyang bata, at malusog na may isang magandang anyo.",
+  "1SA 17:43": "Pagkatapos sinabi ng Palestina kay David, “Isa ba akong aso, na pumarito kang may dalang tungkod?” At isinumpa ng Palestina si David sa pamamagitan ng kanyang mga diyos.",
+  "1SA 17:44": "Sinabi ng Filisteo kay David, “Lumapit ka sa akin, at ibibigay ko ang iyong laman sa mga ibon sa kalangitan at sa mga mababanigs na hayop ng parang.”",
+  "1SA 17:45": "Sumagot si David sa Filisteo, “Pumarito ka sa akin na may isang espada, isang sibat, at isang mahabang sibat. Ngunit pumarito ako sa iyo sa pangalan ni Yahweh ng mga hukbo, ang Diyos ng mga hukbo ng Israel, na iyong kinamumuhian.",
+  "1SA 17:46": "Ngayon, bibigyan ako ni Yahweh ng tagumpay laban sa iyo, at papatayin kita at aalisin ang iyong ulo mula sa iyong katawan. Ngayon ibibigay ko ang mga patay na katawan ng hukbong Filisteo sa mga ibon ng kalangitan at sa mababangis na mga hayop ng mundo, upang malaman ng lahat ng mundo na may Diyos ang Israel,",
+  "1SA 17:47": "at upang malaman ng lahat ng nagtitipong ito na hindi nagbibigay ng tagumpay si Yahweh gamit ang espada o sibat. Sapagka't ang pakikipaglaban ay kay Yahweh, at ibibigay niya kayo sa aming mga kamay.”",
+  "1SA 17:48": "Nang tumayo ang Filisteo at lumapit kay David, sa gayon tumakbo ng mabilis si David patungo sa hukbo ng mga kaaway upang salubungin siya.",
+  "1SA 17:49": "Isinuot ni David ang kanyang kamay sa kanyang supot, kumuha ng isang bato mula rito, tinirador ito, at tinamaan ang Filisteo sa kanyang noo. Bumaon ang bato sa noo ng Filisteo, at sumubsob ang kanyang mukha sa lupa.",
+  "1SA 17:50": "Tinalo ni David ang ang Palestina gamit ang isang tirador at isang bato. Tinamaan niya ang ang Palestina at pinatay siya. Walang espada sa kamay ni David.",
+  "1KI 17:1": "Sinabihan ni Elias na taga-Tisbe sa Galaad si Ahab, “Habang si Yahweh, na Diyos ng Israel na aking kinakatawan, ay totoong buhay, hindi magkakaroon ng hamog o kaya ulan sa mga susunod na taon hanggang hindi ko sinasabi.”",
+  "1KI 17:2": "Ang mensahe ng Diyos ay dumating kay Elias, na nagsasabing,",
+  "1KI 17:3": "“Lisanin mo ang lugar na ito at pumunta ka pasilangan; magtago ka sa batis ng Kerit sa silangan ng Jordan.",
+  "1KI 17:4": "Mangyayari na iinom ka sa tubig mula sa batis at inutusan ko ang mga uwak na pakainin ka doon.",
+  "1KI 17:5": "Kaya umalis si Elias at ginawa ang inutos ni Yahweh. Pumunta siya para mamuhay sa batis ng Kerit sa silangan ng Jordan.",
+  "1KI 17:6": "Dinalhan siya ng mga uwak ng tinapay at karne sa umaga at sa gabi, at uminom siya mula sa batis.",
+  "1KI 17:7": "Pero hindi katagalan natuyo ang batis dahil hindi umuulan sa lupain.",
+  "1KI 17:8": "Dumating ang mensahe ng Diyos sa kaniya na nagsasabing,",
+  "1KI 17:9": "“Bumangon ka, pumunta ka sa Sarepta na sakop ng Sidon, at doon ka manahan. Tingnan mo, inutusan ko ang isang balo para alagaan ka.",
+  "1KI 17:10": "Kaya bumangon siya at pumunta sa Sarepta, at nang makarating siya sa tarangkahan ng lungsod isang balo ang namumulot ng mga kahoy. Kaya tinawag niya ito at sinabi, “Pakidalhan mo naman ako ng kaunting tubig na nasa banga para maka-inom ako.”",
+  "1KI 17:11": "Habang siya ay papunta para kumuha ng tubig tinawag siya ni Elias at sinabi, “Pahingi naman ng tinapay na nasa kamay mo.”",
+  "1KI 17:12": "Sumagot siya, “Si Yahweh na iyong Diyos ay buhay, wala na akong tinapay, maliban na lang sa isang dakot ng harina at kaunting mantika sa lalagyan. Tingnan mo, namulot ako ng dalawang kahoy para lutuin ito para sa akin at sa anak ko, para kami makakain, at mamatay.”",
+  "1KI 17:13": "Sinabi ni Elias sa kaniya, “Huwag kang matakot. Pumunta ka at gawin ang sinabi mo pero magluto ka muna ng maliit na tinapay at dalhin mo sa akin. At pagkatapos magluto ka na ng para sa inyo ng anak mo.",
+  "1KI 17:14": "Dahil sinabi ni Yahweh, na Diyos ng Israel, “Hindi mauubusan ng laman ang banga ng harina, maging ang lalagyan ng mantika ay hindi hihinto sa pagdaloy, hanggang sa magpadala si Yahweh ng ulan sa buong lupain.”",
+  "1KI 17:15": "Pagkatapos, ginawa niya ang sinabi ni Elias, at siya, si Elias at ang bata ay kumain nang maraming araw.",
+  "1KI 17:16": "Hindi naubos ang harina sa banga maging ang mantika sa lalagyan ay hindi huminto sa pagdaloy, na siyang sinabi ni Yahweh sa pamamagitan ni Elias.",
+  "EST 4:10": "Pagkatapos kinausap ni Esther si Hathach at sinabi sa kanyang bumalik kay Mordecai.",
+  "EST 4:11": "Sinabi niya, “Ang lahat ng mga lingkod ng hari at mga tao sa mga lalawigan ng hari ay nakakaalam na kung sinumang lalaki o babae ang pumunta sa hari sa panloob na bulwagan nang hindi pinapatawag, mayroon lamang isang batas: na siya ay dapat patayin—maliban sa sinuman na iunat ng hari sa kaniya ang gintong setro upang mabuhay siya. Hindi pa ako pinapatawag upang pumunta sa hari sa tatlumpung araw na ito.”",
+  "EST 4:12": "Kaya iniulat ni Hathach ang sinabi ni Esther kay Mordecai.",
+  "EST 4:13": "Pinabalik ni Mordecai ang mensaheng ito: “Hindi mo dapat isipin na sa palasyo ng hari, makakatakas ka higit pa sa ibang mga Judio.",
+  "EST 4:14": "Kung mananatili kang tahimik sa oras na ito, ang pagsaklolo at pagliligtas ay darating para sa mga Judio mula sa ibang lugar, subalit ikaw at ang sambahayan ng iyong ama ay mamamatay. Sinong nakakaalam kung dumating ka sa maharlikang kalagayan para sa panahong tulad nito?”",
+  "EST 4:15": "Pagkatapos pinadala ni Esther ang mensaheng ito kay Mordecai,",
+  "EST 4:16": "“Pumunta ka, tipunin mo ang lahat ng mga Judio na naninirahan sa Susa, at mag-ayuno kayo para sa akin. Huwag kayong kumain o uminom ng tatlong araw, gabi o araw. Ako at ang aking mga kabataang babae ay mag-aayuno sa parehong paraan. Pagkatapos pupunta ako sa hari, kahit na labag ito sa batas. At kung ako ay mamatay, ako ay mamamatay.”",
+  "EST 5:1": "Makalipas ng tatlong araw, isinuot ni Esther ang kanyang damit pangreyna at nagtungo upang tumayo sa panloob na patyo ng palasyo ng hari, sa tapat ng bahay ng hari. Nakaupo ang hari sa kanyang trono sa loob ng palasyo, paharap sa pasukan ng maharlikang tahanan.",
+  "EST 5:2": "Nang makita ng hari si Reyna Esther na nakatayo sa patyo, nakasumpong ito ng pabor sa kanyang paningin. Itinuro niya sa kanya ang kanyang gintong setro na nasa kanyang kamay. Kaya lumapit at hinawakan ni Esther ang dulo ng kanyang setro.",
+  "EST 5:3": "Pagkatapos sinabi ng hari sa kanya, “Ano ang nais mo, Reyna Esther? Ano ang iyong kahilingan?” Ibibigay sa iyo hanggang sa kalahati ng aking kaharian.”",
+  "DAN 3:13": "At napuno ng galit at poot si Nebucadnezar at iniutos na dalhin sa kaniya sina Shadrac, Meshac at Abednego. Kaya dinala nila ang mga kalalakihang ito sa harapan ng hari.",
+  "DAN 3:14": "Sinabi ni Nebuchadnezar sa kanila, nakapagpasya na ba kayo, Shadrac, Meshac at Abednego upang hindi sambahin ang aking mga diyos o magpatirapa sa harapan ng gintong imahen na aking ipinatayo?",
+  "DAN 3:15": "Ngayon, kung handa na kayo—kapag maririnig ninyo ang mga tunog ng mga tambuli, mga plauta, mga sitar, mga lira, mga alpa at mga saltero at lahat ng uri ng tugtugin—magpatirapa at dumapa sa imahen na aking ginawa at magiging maayos ang lahat. Ngunit kapag hindi kayo sasamba, kaagad kayong itatapon sa naglalagablab na pugon. Sinong diyos ang maaaring magligtas sa inyo mula sa aking mga kamay?”",
+  "DAN 3:16": "Sumagot sa hari sina Shadrac, Meshac at Abednego, “Nebucadnezar, hindi namin kailangang sumagot sa usaping ito.",
+  "DAN 3:17": "Kung mayroon mang sagot, ito ay ang aming Diyos na aming pinaglilingkuran ang may kakayahan na magligtas sa amin mula sa naglalagablab na pugon at ililigtas niya kami mula sa inyong mga kamay, o hari.",
+  "DAN 3:18": "Ngunit kung hindi man, nais naming malaman mo ito, o hari, na hindi kami sasamba sa iyong mga diyos at hindi kami magpatirapa sa gintong imahen na iyong ipinatayo.”",
+  "DAN 3:19": "Pagkatapos, napuno ng poot si Nebucadnezar, nagbago ang kaniyang mukha laban kay Shadrac, Meshac at Abednego. Iniutos niya na painitin ang pugon ng pitong beses na mas mainit kaysa sa karaniwang init nito.",
+  "DAN 3:20": "At iniutos niya sa ilan ng kaniyang pinakamalakas na mga kalalakihan ng kaniyang hukbo upang gapusin sina Shadrac, Meshac at Abednego at itapon sila sa naglalagablab na pugon.",
+  "DAN 3:21": "Tinalian sila na suot pa ang kanilang mga balabal, mga tunika, mga turban at iba pang mga kasuotan at itinapon sila sa loob ng naglalagablab na pugon.",
+  "DAN 3:22": "Dahil mahigpit na sinunod ang utos ng hari at pinainit ang pugon, ang apoy ang pumatay sa mga kalalakihan na nagdala kina Shadrac, Meshac at Abednego.",
+  "DAN 3:23": "Bumagsak ang tatlong kalalakihang ito sa naglalagablab na pugon nang nakagapos.",
+  "DAN 3:24": "At namangha ang haring si Nebucadnezar at agad na tumayo. Tinanong niya ng kaniyang mga tagapayo, Hindi ba't tatlong kalalakihan na nakagapos ang ating itinapon sa apoy?” Sumagot sila sa hari, “totoo mahal na hari.”",
+  "DAN 3:25": "Sumagot siya, “Ngunit apat na kalalakihan ang aking nakikita na hindi nakagapos at naglalakad sa gitna ng apoy at hindi sila nasaktan. Ang kinang ng ika-apat ay tulad ng anak ng mga diyos.”",
+  "DAN 3:26": "Pagkatapos, lumapit si Nebucadnezar sa pintuan ng naglalagablab na pugon at tumatawag, “Shadrac, Meshac at Abednego, mga lingkod ng Kataas-taasang Diyos, lumabas kayo! Halikayo rito” Pagkatapos, lumabas mula sa apoy sila Shadrac, Meshac at Abednego.",
+  "DAN 3:27": "Nakita ang mga kalalakihang ito ng mga gobernador ng lalawigan, mga gobernador ng rehiyon at iba pang mga gobernador at nang mga konsehal ng mga hari na sama-samang nagtitipon. Hindi nasaktan ng apoy ang kanilang mga katawan, hindi natupok ang buhok sa kanilang mga ulo, hindi nasira ang kanilang mga balabal at hindi sila nag-amoy sunog.",
+  "DAN 3:28": "Sinabi ni Nebucadnezar, “Purihin natin ang Diyos nina Shadrac, Meshac at Abednego na nagpadala ng kaniyang mensahero at nagbigay ng kaniyang mensahe sa kaniyang mga lingkod. Nagtiwala sila sa kaniya nang isinantabi nila ang aking utos at isinuko ang kanilang mga katawan kaysa sumamba o magpatirapa sa sinumang diyos maliban sa kanilang Diyos.",
+  "DAN 6:10": "Nang nalaman ni Daniel na nalagdaan na ang kasulatan na isina-batas, pumunta siya sa kaniyang bahay (ngayon ang kaniyang bintana sa itaas ay nakabukas sa dakong Jerusalem) at siya ay lumuhod, gaya ng ginagawa niya ng tatlong beses sa isang araw, at nanalangin at nagpapasalamat sa harapan ng kaniyang Diyos, gaya ng kaniyang dating ginagawa.",
+  "DAN 6:16": "At nagbigay ng utos ang hari, at dinala nila sa loob si Daniel at inihagis nila siya sa yungib ng mga leon. At sinabi ng hari kay Daniel, “Iligtas ka nawa ng iyong Diyos na patuloy mong pinaglilingkuran.”",
+  "DAN 6:17": "Dinala ang isang bato sa pasukan ng yungib, at tinatakan ito ng hari ng kaniyang singsing na pangtatak at kasama ng mga tatak ng singsing ng mga maharlika upang walang anumang mabago tungkol kay Daniel.",
+  "DAN 6:18": "Pagkatapos, pumunta ang hari sa kaniyang palasyo at magdamag siyang nag-ayuno. Walang mang-aaliw na dinala sa harapan niya at hindi siya nakatulog.",
+  "DAN 6:19": "At nang madaling araw, bumangon ang hari at nagmamadaling nagtungo sa yungib ng mga leon.",
+  "DAN 6:20": "Habang siya ay papalapit sa yungib, tinawag niya si Daniel, na may tinig na puno ng pagdadalamhati. Sinabi niya kay Daniel, “Daniel, lingkod ng buhay na Diyos, nailigtas ka ba ng iyong Diyos na lagi mong pinaglilingkuran mula sa mga leon?”",
+  "DAN 6:21": "Pagkatapos sinabi ni Daniel sa hari, “Hari, mabuhay ka magpakailanman!",
+  "DAN 6:22": "Nagsugo ang aking Diyos ng kaniyang mensahero at tinikom ang mga bibig ng mga leon at hindi nila ako sinaktan. Sapagkat nalaman nilang wala akong sala sa harapan niya at gayundin sa harapan mo, hari at hindi kita ginawan ng anumang kasamaan.”",
+  "DAN 6:23": "Pagkatapos, ang hari ay masayang masaya. Nagbigay siya ng utos na kailangang ilabas sa yungib si Daniel. Kaya itinaas nila si Daniel palabas ng yungib. Walang nakitang sugat sa kaniya, dahil siya ay nagtiwala sa kaniyang Diyos.",
+  "JON 1:1": "Ngayon ang salita ni Yahweh ay dumating kay Jonas na anak ni Amitai, na nagsasabing,",
+  "JON 1:2": "“Bumangon ka at pumunta sa Ninive, iyong malaking lungsod, at magsalita ka laban dito, dahil ang kasamaan nila ay umabot sa akin.”",
+  "JON 1:3": "Subalit bumangon si Jonas at tumakbo palayo mula sa presensya ni Yahweh at nagtungo sa Tarsis. Bumaba siya sa Joppa at nakakita ng isang barko patungong Tarsis. Kaya nagbayad siya ng pamasahe at sumakay sa barko upang sumama sa kanila patungong Tarsis, palayo mula sa presensya ni Yahweh.",
+  "JON 1:4": "Subalit nagpadala si Yahweh ng malakas na hangin sa dagat at ito ay naging malakas na bagyo sa dagat. Hindi nagtagal ang barko ay parang masisira na.",
+  "JON 1:15": "Kaya binuhat nila si Jonas at itinapon siya sa dagat, at tumigil ang matinding galit ng dagat.",
+  "JON 1:16": "Pagkatapos lalong natakot ang mga tao kay Yahweh. Naghandog sila ng mga alay kay Yahweh at gumawa ng mga panata.",
+  "JON 1:17": "Ngayon inihanda ni Yahweh ang isang malaking isda upang lunukin si Jonas, at si Jonas ay nasa loob ng tiyan ng isda nang tatlong araw at tatlong gabi.",
+  "JON 2:10": "Pagkatapos nangusap si Yahweh sa isda, at iniluwa nito si Jonas paitaas sa ibabaw ng tuyong lupa.",
+  "JON 3:1": "Ang salita ni Yahweh ay dumating kay Jonas sa pangalawang pagkakataon, na nagsasabing,",
+  "JON 3:2": "“Tumindig ka, pumunta ka sa Ninive, iyong malaking lungsod, at ipahayag dito ang mensaheng iniutos ko sa iyo para ibigay.”",
+  "JON 3:3": "Kaya tumayo si Jonas at pumunta sa Ninive bilang pagsunod sa salita ni Yahweh. Ngayon ang Nineve ay isang napakalaking lungsod, isang lungsod na may tatlong araw na paglalakbay.",
+  "JON 3:4": "Nagsimulang pumasok si Jonas sa lungsod at pagkatapos ng isang araw na paglalakbay sumigaw siya at sinabing, “Sa loob ng apatnapung araw ang Ninive ay ibabagsak.”",
+  "JON 3:5": "Ang mga tao sa Ninive ay naniwala sa Diyos at nagpahayag sila ng isang pag-aayuno. Nagsuot silang lahat ng magaspang na tela, mula sa pinakamatasas sa kanila hanggang sa pinakamababa sa kanila.",
+  "JON 3:10": "Nakita ng Diyos kung ano ang kanilang ginawa, na tumalikod sila mula sa kanilang masasamang mga gawi. Kung kaya binago ng Diyos ang kanyang isipan tungkol sa parusang sinabi niyang gagawin niya sa kanila, at hindi niya ginawa ito.",
+  "LUK 2:1": "Ngayon sa mga araw na iyon, nangyari na si Cesar Agustus ay naglabas ng isang batas na nag-uutos na magkaroon ng sensus sa lahat ng tao na nabubuhay sa mundo.",
+  "LUK 2:2": "Ito ang unang sensus na ginawa habang si Cirenio ang gobernador ng Syria.",
+  "LUK 2:3": "Kaya pumunta ang bawat isa sa kaniyang sariling bayan upang mailista para sa sensus.",
+  "LUK 2:4": "Si Jose ay umalis din mula sa lungsod ng Nazaret sa Galilea at naglakbay papunta sa Betlehem na bayan ng Judea na kilala bilang lungsod ni David, dahil siya ay kaapu-apuhan mula sa pamilya ni David.",
+  "LUK 2:5": "Pumunta siya doon upang magpalista kasama si Maria na nakatakdang ikasal sa kaniya at kasalukuyang nagdadalang tao.",
+  "LUK 2:6": "At nangyari nang habang sila ay naroroon, dumating ang oras para ipanganak niya ang kaniyang sanggol.",
+  "LUK 2:8": "Sa rehiyon ding iyon, may mga pastol na naninirahan sa parang at nagbabantay sa kanilang mga kawan ng tupa sa gabi.",
+  "LUK 2:9": "Biglang lumitaw sa kanila ang isang anghel ng Panginoon, at ang kaluwalhatian ng Panginoon ay nagliwanag sa palibot nila at lubha silang natakot.",
+  "LUK 2:10": "Pagkatapos, sinabi ng anghel sa kanila, “Huwag kayong matakot, sapagkat ako ay may dala sa inyong mabuting balita na magbibigay ng lubos na kagalakan sa lahat ng tao.",
+  "LUK 2:11": "Ngayong araw, isang tagapagligtas ang ipinanganak para sa inyo sa lungsod ni David! Siya si Cristo ang Panginoon!",
+  "LUK 2:12": "Ito ang palatandaan na maibibigay sa inyo, matatagpuan ninyo ang isang sanggol na nababalot ng pirasong tela na nakahiga sa isang sabsaban.”",
+  "LUK 2:13": "Kasama ng anghel, biglang may malaking bilang ng hukbong makalangit na nagpupuri sa Diyos, at sinasabi,",
+  "LUK 2:14": "“Kaluwalhatian sa Diyos sa kaitaasan, at nawa ay magkaroon ng kapayapaan dito sa lupa sa mga tao na kaniyang kinalulugdan.”",
+  "LUK 2:15": "At nangyari nang umalis ang mga anghel mula sa kanila patungong langit, sinabi ng mga pastol sa bawat isa, “Tayo na pumunta sa Betlehem, at tingnan ang bagay na ito na nangyari na ipinaalam ng Panginoon sa atin”.",
+  "LUK 2:16": "Sila ay nagmadaling pumunta doon at natagpuan sina Maria at Jose, at nakita ang sanggol na nakahiga sa sabsaban.",
+  "LUK 2:17": "Pagkatapos nilang makita ito, ipinaalam nila sa mga tao kung ano ang sinabi sa kanila tungkol sa batang ito.",
+  "LUK 2:18": "Lahat ng nakarinig nito ay namangha sa sinabi sa kanila ng mga pastol.",
+  "LUK 5:1": "Ngayon nangyari na habang nagsisiksikan ang maraming tao sa palibot ni Jesus at nakikinig sila sa salita ng Diyos, si Jesus ay nakatayo sa tabi ng lawa ng Genesaret.",
+  "LUK 5:2": "Nakakita siya ng dalawang bangka na nakapagilid sa pampang ng lawa. Nakababa na ang mga mangingisda mula dito at naglilinis sila ng kanilang mga lambat.",
+  "LUK 5:3": "Sumakay si Jesus sa isa sa mga bangka, na pagmamay-ari ni Simon at hiniling niya sa kaniya na dalhin niya ito sa tubig na hindi kalayuan sa dalampasigan. Pagkatapos ay umupo siya at nagturo sa mga tao habang nasa bangka.",
+  "LUK 5:4": "Nang matapos na siyang magsalita, sinabi niya kay Simon, “Dalhin mo ang bangka sa mas malalim na tubig at ibaba ang inyong mga lambat para manghuli”.",
+  "LUK 5:5": "Sumagot si Simon at sinabi, “Panginoon, magdamag kaming nangisda ngunit wala kaming nahuli, ngunit sa iyong salita, ibababa ko ang mga lambat.”",
+  "LUK 5:6": "Nang ginawa nila ito, nakahuli sila ng napakaraming bilang ng isda, at ang kanilang mga lambat ay nagsimulang mapunit.",
+  "LUK 5:7": "Kaya't kumaway sila kanilang kasamahan sa kabilang bangka upang puntahan at tulungan sila. Dumating sila at napuno ang dalawang bangka, kaya't sila ay nagsimulang lumubog.",
+  "LUK 5:8": "Ngunit nang makita ito ni Simon Pedro, siya ay lumuhod sa paanan ni Jesus, na nagsasabi, “Lumayo ka sa akin, Panginoon, sapagkat ako ay taong makasalanan.”",
+  "LUK 5:9": "Sapagkat siya ay namangha at ang lahat din na kaniyang mga kasama, sa dami ng isdang kanilang nahuli.",
+  "LUK 5:10": "Kasama dito sina Santiago at Juan na mga anak ni Zebedeo, na mga kasama ni Simon. At sinabi ni Jesus kay Simon, “Huwag kang matakot, sapagkat mula ngayon, mangingisda ka na ng tao.”",
+  "LUK 5:11": "Nang madala nila sa dalampasigan ang kanilang mga bangka, iniwan nila ang lahat at sumunod sa kaniya.",
+  "JHN 2:1": "Matapos ang tatlong araw, may kasalan sa Cana ng Galilea, at ang ina ni Jesus ay naroon.",
+  "JHN 2:2": "Si Jesus at ang kaniyang mga alagad ay naanyayahan sa kasalan.",
+  "JHN 2:3": "Nang maubos ang alak, sinabi ng ina ni Jesus sa kaniya, “Wala silang alak.”",
+  "JHN 2:4": "Sumagot si Jesus, “Babae, ano ang kinalaman niyan sa akin? Ang oras ko ay hindi pa dumarating.”",
+  "JHN 2:5": "Sinabi nang kaniyang ina sa mga lingkod, “Anumang sabihin niya sa inyo, gawin ninyo.”",
+  "JHN 2:6": "Ngayon mayroon doong anim na mga banga ng tubig na ginagamit sa seremonya ng paghuhugas ng mga Judio, na ang bawa't isa ay naglalaman ng may dalawa hanggang tatlong metretes.",
+  "JHN 2:7": "Sinabi ni Jesus sa kanila, “Punuin ninyo ang banga ng tubig.” Kaya pinuno nila ang mga ito hanggang labi.",
+  "JHN 2:8": "Pagkatapos ay sinabi niya sa mga lingkod, “Kumuha kayo ng kaunti at ibigay sa punong tagapag-silbi.” Kaya ginawa nga nila.",
+  "JHN 2:9": "Tinikman ng punong tagapag-silbi ang tubig na naging alak, ngunit hindi niya alam kung saan ito nanggaling (ngunit alam ito ng mga lingkod na kumuha ng tubig). Pagkatapos ay tinawag niya ang lalaking bagong kasal",
+  "JHN 2:10": "at sinabi sa kaniya, “Ang unang hinahain ng bawa't isa ay ang mainam na alak at pagkatapos ay ang murang alak kapag ang mga tao ay lasing na. Ngunit itinira mo ang napakainam na alak hanggang ngayon.”",
+  "JHN 2:11": "Ang himalang ito sa Cana ng Galilea ay ang simula ng mga mahimalang tanda na ginawa ni Jesus, ipinapahayag ang kaniyang kaluwalhatian, kaya ang mga alagad ay nananampalataya sa kaniya.",
+  "MAT 13:3": "At nagsabi si Jesus sa kanila ng maraming bagay sa pamamagitan ng talinghaga. Kaniyang sinabi, “Masdan ito, isang manghahasik ang lumabas upang maghasik.",
+  "MAT 13:4": "Sa kaniyang paghahasik, nahulog ang ilang mga binhi sa tabi ng daan, dumating ang mga ibon at kinain ang mga ito.",
+  "MAT 13:5": "Ang ibang mga binhi naman ay nahulog sa mabatong lupa kung saan kakaunti lamang ang lupa. Ang mga ito ay mabilis na tumubo sapagkat mababaw lamang ang lupa.",
+  "MAT 13:6": "Ngunit nang sumikat na ang araw, ang mga ito ay natuyo dahil wala itong mga ugat, at nalanta ang mga ito.",
+  "MAT 13:7": "Ang ibang mga binhi ay nahulog sa may mga matitinik na halaman. Lumaki ang mga halamang may tinik at sinakal ang mga ito.",
+  "MAT 13:8": "Ang ibang mga binhi ay nahulog sa mabuting lupa at ang mga ito ay namunga, ang iba ay tig-iisandaan, ang iba ay tig-aanimnapu, at ang iba ay tigtatatlumpu.",
+  "MAT 13:9": "Ang may taingang pandinig, ay makinig.”",
+  "MAT 13:18": "Ngayon, makinig kayo sa talinghaga ng manghahasik.",
+  "MAT 13:19": "Kapag mapakinggan ng sinuman ang salita ng kaharian ngunit hindi ito nauunawaan, darating ang masama at nanakawin ang mga binhi na naihasik sa kaniyang puso. Ito ay ang binhi na naihasik sa tabi ng daan.",
+  "MAT 13:20": "Siya na naihasik sa mabatong lupa ay siyang nakakarinig sa salita at agad itong tinatanggap nang may galak.",
+  "MAT 13:21": "Gayunman wala siyang mga ugat at tumatagal lamang ng panandalian. At kung ang kapighatian at pag-uusig ay dumating dahil sa salita, siya ay agad nadadapa.",
+  "MAT 13:22": "Siya na naihasik sa may mga matitinik na halaman ay nakaririnig ng salita, ngunit ang pagkabalisa sa mundo at ang panlilinlang ng mga yaman ang siyang sumakal sa salita, at hindi siya namunga.",
+  "MAT 13:23": "Siya na naihasik sa mabuting lupa ay siyang nakarinig sa salita at nakaunawa dito. Siya ang tunay na namumunga at nagpapayabong nito; ang ilan ay namunga ng tig-iisandaan, ang iba ay tig-aanimnapu, at ang iba ay tig-tatatlumpu..”",
+  "MRK 4:35": "Kinagabihan, nang araw ding iyon, sinabi niya sa kanila, “Tumawid tayo sa kabilang dako.”",
+  "MRK 4:36": "Kaya iniwan nila ang maraming tao na isinama nila si Jesus dahil nakasakay na siya sa bangka. Mayroon ding ibang mga bangkang sumama sa kaniya.",
+  "MRK 4:37": "Nagkaroon ng matinding unos at hinampas ng mga alon ang bangka kaya halos mapuno na ito ng tubig.",
+  "MRK 4:38": "Ngunit si Jesus naman ay nasa dulo ng bangka at natutulog sa unan. Ginising nila si Jesus at sinabi, “Guro, hindi ba kayo nababahala na malapit na tayong mamatay?",
+  "MRK 4:39": "At gumising siya at sinaway ang hangin at sinabi sa dagat, “Pumayapa ka, tigil.” Tumigil ang hangin, at nagkaroon ng labis na kapayapaan.",
+  "MRK 4:40": "At sinabi niya sa kanila, “Bakit kayo natatakot? Wala pa rin ba kayong pananampalataya?”",
+  "MRK 4:41": "Lubha silang natakot at sinabi nila sa isa't isa, “Sino ba talaga siya, dahil maging ang hangin at ang dagat ay sumusunod sa kaniya?”",
+  "MRK 5:21": "At nang si Jesus ay muling tumawid sa kabilang dako, maraming mga tao ang pumalibot sa kaniya sa bangka, sapagkat siya ay nasa tabing dagat.",
+  "MRK 5:22": "At isa sa mga pinuno ng sinagoga na nagngangalang Jairo ang dumating, at nang makita niya si Jesus, nagpatirapa siya sa kaniyang paanan.",
+  "MRK 5:23": "Nagmakaawa siya nang paulit-ulit na nagsasabi, “Ang aking anak na babae ay malapit nang mamatay. Nakikiusap ako sa iyo, halika ka at ipatong ang iyong mga kamay sa kaniya upang siya ay gumaling at mabuhay.”",
+  "MRK 5:24": "Kaya sumama siya sa kaniya at sumunod sa kaniya ang napakaraming tao at sila ay nag-uumpukan sa palibot niya.",
+  "MRK 5:35": "Habang siya ay nagsasalita, ilang tao mula sa pinuno ng sinagoga ang dumating at nagsabi, “Patay na ang iyong anak. Bakit mo pa aabalahin ang Guro?”",
+  "MRK 5:36": "Ngunit nang marinig ni Jesus ang kanilang sinabi, sinabi niya sa pinuno ng sinagoga, “Huwag kang matakot, maniwala ka lang.”",
+  "MRK 5:37": "Hindi niya pinayagan ang kahit sino na sumama sa kaniya maliban kay Pedro, Santiago, at Juan na kapatid ni Santiago.",
+  "MRK 5:38": "Nakarating sila sa bahay ng pinuno nang sinagoga at nakita niya ang kaguluhan, napakaraming iyakan at pagtangis.",
+  "MRK 5:39": "Nang pumasok siya sa bahay, sinabi niya sa kanila, “Bakit kayo nababalisa at bakit kayo umiiyak? Ang bata ay hindi patay kundi natutulog.”",
+  "MRK 5:40": "Siya ay pinagtawanan nila, ngunit pinalabas niya silang lahat, isinama niya ang ama at ina ng bata at maging ang mga kasama niya, at pumunta sila kung saan naroroon ang bata.",
+  "MRK 5:41": "Kinuha niya ang kamay ng bata at sinabi sa kaniya, “Talitha koum,” na ang ibig sabihin ay “Batang babae, sinasabi ko sa iyo, bumangon ka.”",
+  "MRK 5:42": "Agad na tumayo ang bata at naglakad (sapagkat siya ay labindalawang taon). At kaagad labis silang namangha.",
+  "MRK 5:43": "Mahigpit niya silang pinagbilinan na walang dapat makaalam ng tungkol dito. At inutusan niya sila na bigyan ang bata ng makakain.",
+  "JHN 6:5": "Nang tumanaw si Jesus at nakita ang napakaraming taong lumalapit sa kaniya, sinabi niya kay Felipe, “Saan tayo makabili ng tinapay upang ang mga taong ito ay makakain?”",
+  "JHN 6:6": "(Ngunit sinabi ito ni Jesus upang subukin si Felipe, sapagkat alam niya sa kaniyang sarili kung ano ang kaniyang gagawin.)",
+  "JHN 6:7": "Sumagot si Felipe sa kaniya, “Ang tinapay na nagkakahalaga ng dalawang daang denario ay hindi magkakasya para sa bawa't isa kahit na bigyan ng tig-kakaunti.”",
+  "JHN 6:8": "Isa sa mga alagad, si Andres, kapatid ni Simon Pedro, ay nagsabi kay Jesus,",
+  "JHN 6:9": "“Mayroong isang batang narito na mayroong limang sebadang tinapay at dalawang isda, ngunit ano ang mga ito sa ganito karaming tao?”",
+  "JHN 6:10": "Sinabi ni Jesus, “Paupuin ninyo ang mga tao.” (Ngayon madamo sa lugar na iyon.) Kaya naupo ang mga tao, mga limang libo ang bilang.",
+  "JHN 6:11": "At kinuha ni Jesus ang mga tinapay at matapos makapagpasalamat ay ipinamahagi niya sa mga taong nakaupo. Sa ganoon ding paraan, ipinamahagi din niya ang mga isda, hangga't sa gusto nila.",
+  "JHN 6:12": "Nang nabusog na ang mga tao, sinabi niya sa kaniyang mga alagad, “Ipunin ang natirang mga pira-piraso, para walang masayang.”",
+  "JHN 6:13": "Kaya inipon nila ang mga ito at puno ang labindalawang kaing ng mga pira-pirasong mula sa limang sebadang tinapay - ang mga pirasong natira mula sa mga nakakain.",
+  "JHN 6:14": "At nang makita ng mga tao ang tandang ito na kaniyang ginawa, sinabi nila, “Ito ang tunay na propeta na siyang darating sa mundo.”",
+  "MAT 14:22": "Kaagad na pinasakay niya ang mga alagad sa bangka upang mauna silang tumungo sa kabilang dako, habang pina-uuwi niya ang mga tao.",
+  "MAT 14:23": "Pagkatapos niyang mapauwi ang mga tao, umakyat siyang mag-isa sa isang bundok upang manalangin. Nang lumalim na ang gabi, mag-isa lamang siya roon.",
+  "MAT 14:24": "Ngunit ang bangka ay nasa kalagitnaan na ng dagat, halos hindi na ito mapigilan dahil sa mga alon, sapagkat pasalubong ang hangin.",
+  "MAT 14:25": "Nang madaling araw na, nilapitan sila ni Jesus na naglalakad sa dagat.",
+  "MAT 14:26": "Nang makita siya ng kaniyang mga alagad na naglalakad sa dagat, natakot sila at sinabi, “Multo,” at sila ay nagsigawan sa takot.",
+  "MAT 14:27": "Ngunit agad nagsalita si Jesus sa kanila at sinabi, “Magpakatapang kayo! Ako ito! Huwag kayong matakot.”",
+  "MAT 14:28": "Sumagot si Pedro sa kaniya at sinabi, “Panginoon, kung ikaw iyan, utusan mo akong pumunta sa iyo sa tubig.”",
+  "MAT 14:29": "Sinabi ni Jesus, “Halika.” Kaya bumaba si Pedro sa bangka at lumakad sa tubig papunta kay Jesus.",
+  "MAT 14:30": "Ngunit nang napansin ni Pedro ang hangin, siya ay natakot. Habang siya ay nagsimulang lumubog, sumigaw siya at sinabi, “Panginoon, iligtas mo ako!”",
+  "MAT 14:31": "Kaagad iniunat ni Jesus ang kaniyang kamay at inabot si Pedro at sinabi sa kaniya, “Ikaw na may maliit na pananampalataya, bakit ka nag-alinlangan?”",
+  "MAT 14:32": "At nang sumakay si Jesus at Pedro sa bangka, huminto ang hangin sa pag-ihip.",
+  "MAT 14:33": "At ang mga alagad sa bangka ay sumamba kay Jesus at sinabi, “Tunay ngang ikaw ang Anak ng Diyos.”",
+  "LUK 10:25": "Masdan ito, may isang guro ng kautusan ng Judio na tumindig at sinubukan siya, sinabi, “Guro, anong dapat kong gawin upang magmana ng walang hanggang buhay?”",
+  "LUK 10:26": "Sinabi ni Jesus sa kaniya, “Ano ang nakasulat sa kautusan? Paano mo ito binabasa?”",
+  "LUK 10:27": "Sumagot na nagsabi siya, “Ibigin mo ang Panginoon mong Diyos nang buong puso, nang buong kaluluwa, nang buong lakas, at nang buong kaisipan, at ang iyong kapwa gaya ng iyong sarili.”",
+  "LUK 10:28": "Sinabi ni Jesus sa kaniya, “Tama ang iyong sinabi. Gawin mo ito, at mabubuhay ka.”",
+  "LUK 10:29": "Ngunit ang guro na naghahangad na na bigyang katuwiran ang kaniyang sarili, ay nagsabi kay Jesus, “At sino ang aking kapwa?”",
+  "LUK 10:30": "Sumagot na nagsabi si Jesus, “May isang tao na bumaba sa Jerico mula sa Jerusalem. Nahulog siya sa kamay ng mga magnanakaw, na sumamsam sa kaniyang mga ari-arian, at binugbog siya, at iniwan siyang halos patay na.",
+  "LUK 10:31": "Nagkataon na may isang pari ang bumaba sa daang iyon, at nang siya ay nakita nito, siya ay dumaan sa kabila ng daan.",
+  "LUK 10:32": "Gayon din naman sa isang Levita, nang siya ay dumating sa lugar at nakita siya, ay dumaan sa kabila ng daan.",
+  "LUK 10:33": "Ngunit isang Samaritano, sa kaniyang paglalakbay, ay dumating sa kinaroroonan niya. Nang makita siya, siya ay nahabag.",
+  "LUK 10:34": "Lumapit siya sa kaniya at binendahan ang kaniyang mga sugat, nilagyan ng langis at alak ang mga ito. Sinakay siya sa kaniyang sariling hayop, at dinala siya sa bahay-panuluyan, at inalagaan siya.",
+  "LUK 10:35": "Nang sumunod na araw, siya ay kumuha ng dalawang denaryo, at ibinigay sa katiwala ng bahay-panuluyan, at sinabi, 'Alagaan mo siya at anumang magagastos mong labis, sa aking pagbalik, babayaran kita.'",
+  "LUK 10:36": "Sino sa tatlong ito, sa tingin mo, ang naging isang kapwa sa kaniya na nahulog sa mga magnanakaw?”",
+  "LUK 10:37": "Sinabi ng guro, “Ang nagpakita ng awa sa kaniya.” Sinabi ni Jesus sa kaniya, “Humayo ka at gayon din ang gawin mo.”",
+  "LUK 10:38": "Ngayon sa pagpapatuloy ng kanilang paglalakbay, siya ay pumunta sa isang nayon, at isang babaeng nagngangalang Marta ang tumanggap sa kaniya sa loob ng kaniyang bahay.",
+  "LUK 10:39": "Mayroon siyang isang kapatid na nagngangalang Maria, na nakaupo sa paanan ng Panginoon at nakinig sa kaniyang salita.",
+  "LUK 10:40": "Ngunit si Marta ay sobrang abala sa paghahanda ng pagkain. Lumapit siya kay Jesus, at sinabi, “Panginoon, pababayaan mo ba na iniwan ako ng aking kapatid na mag-isang maglingkod? Kaya sabihin mo sa kaniya na tulungan ako.”",
+  "LUK 10:41": "Ngunit sumagot ang Panginoon at sinabi sa kaniya, “Marta, Marta, masyado kang abala tungkol sa maraming bagay,",
+  "LUK 10:42": "ngunit iisang bagay lamang ang kinakailangan. Pinili ni Maria kung ano ang pinakamabuti, na hindi makukuha mula sa kaniya.”",
+  "LUK 15:3": "Sinabi ni Jesus ang talinghagang ito sa kanila, sinasabi,",
+  "LUK 15:4": "“Sino sa inyo, kung mayroon siyang isang daang tupa at pagkatapos nawala ang isa sa kanila, ang hindi iiwanan ang siyamnapu't siyam sa ilang, at hahanapin ang nawawala hanggang sa matagpuan niya ito?",
+  "LUK 15:5": "Pagkatapos, kapag natagpuan niya ito, pinapasan niya ito sa kaniyang mga balikat at nagagalak.",
+  "LUK 15:6": "Pagdating niya sa bahay, tinitipon niya ang kaniyang mga kaibigan at mga kapitbahay, sinasabi sa kanila, 'Makisaya kayo sa akin, sapagkat natagpuan ko ang aking nawawalang tupa.'",
+  "LUK 15:7": "Sinasabi ko sa inyo na gayon din, magkakaroon ng kagalakan sa langit sa isang makasalanang nagsisisi, higit pa sa siyamnapu't siyam na taong matuwid na hindi kailangang magsisi.",
+  "LUK 15:11": "Pagkatapos, sinabi ni Jesus, “May isang lalaking may dalawang lalaking anak,",
+  "LUK 15:12": "at sinabi ng nakababata sa kanila sa kaniyang ama, 'Ama, ibigay mo na sa akin ngayon ang ari-arian na nararapat na manahin ko.' Kaya hinati niya ang kaniyang kayamanan sa pagitan nila.",
+  "LUK 15:13": "Pagkaraan ng ilang mga araw, tinipon ng nakababatang anak ang lahat ng kaniyang pag-aari at pumunta sa isang malayong bansa, at doon ay winaldas niya ang kaniyang pera sa pagbili ng mga bagay na hindi niya kailangan, at pag-aaksaya ng kaniyang pera sa masamang pamumuhay.",
+  "LUK 15:14": "Ngayon, nang naubos na niya ang lahat, matinding taggutom ang lumaganap sa buong bansang iyon, at siya ay nagsimulang mangailangan.",
+  "LUK 15:15": "Siya ay pumunta at namasukan sa isa sa mga mamamayan ng bansang iyon, na nagpapunta sa kaniya sa kaniyang bukirin upang magpakain ng mga baboy.",
+  "LUK 15:16": "At nais na sana niyang kainin ang mga balat ng buto na kinakain ng mga baboy dahil walang nagbigay sa kaniya ng anumang makakain.",
+  "LUK 15:17": "Ngunit nang nakapag-isip-isip ang nakababatang anak, sinabi niya, 'Napakaraming mga upahang utusan ng aking ama ang may higit pa sa sapat na pagkain, at ako ay nandito, namamatay sa gutom!",
+  "LUK 15:18": "Aalis ako rito at pupunta sa aking ama, at sasabihin ko sa kaniya, “Ama, ako ay nagkasala laban sa langit at sa iyong paningin.",
+  "LUK 15:19": "Hindi na ako karapat-dapat na tawaging anak mo; gawin mo akong isa sa iyong mga upahang utusan.'”",
+  "LUK 15:20": "Kaya umalis ang nakababatang anak at pumunta sa kaniyang ama. Habang siya ay malayo pa, nakita siya ng kaniyang ama, at siya ay nahabag, at tumakbo, at niyakap at hinagkan siya.",
+  "LUK 15:21": "Sinabi ng anak sa kaniya, “Ama, ako ay nagkasala laban sa langit at sa iyong paningin. Hindi ako karapat-dapat na tawaging anak mo.”",
+  "LUK 15:22": "Sinabi ng ama sa kaniyang mga utusan, 'Kunin ninyo kaagad ang pinakamagandang balabal, at isuot sa kaniya, at lagyan ng sing-sing ang kaniyang kamay, at sandalyas ang kaniyang mga paa.",
+  "LUK 15:23": "Pagkatapos, dalhin ninyo dito ang pinatabang guya at katayin. Tayo ay magsikain at magdiwang.",
+  "LUK 15:24": "Sapagkat ang anak ko ay namatay, at ngayon siya ay nabuhay. Siya ay nawala, at ngayon siya ay natagpuan.' At sila ay nagsimulang magdiwang.",
+  "LUK 15:25": "Sa panahong iyon, ang kaniyang nakatatandang anak ay nasa bukid. Nang siya ay dumating at palapit na sa bahay, narinig niya ang tugtugan at sayawan.",
+  "LUK 15:26": "Tinawag niya ang isa sa mga utusan at tinanong kung ano ang mga bagay na ito.",
+  "LUK 15:27": "Sinabi ng utusan sa kaniya, 'Dumating ang iyong kapatid at nagpakatay ang iyong ama ng pinatabang guya, dahil nakabalik siya nang ligtas.'",
+  "LUK 15:28": "Nagalit ang nakatatandang anak, at ayaw niyang pumasok, at lumabas ang kaniyang ama, at pinakiusapan siya.",
+  "LUK 15:29": "Ngunit sumagot ang nakatatandang anak at sinabi sa kaniyang ama, 'Tingnan mo, nagpa-alipin ako sa iyo sa loob ng maraming taon, at kailanman ay hindi ako sumuway sa iyong utos, ngunit kailanman ay hindi mo ako binigyan ng isang batang kambing upang magdiwang ako kasama ng aking mga kaibigan,",
+  "LUK 15:30": "ngunit nang dumating ang iyong anak, na umubos ng iyong kabuhayan sa mga babaing nagbebenta ng aliw, nagpakatay ka ng pinatabang guya para sa kaniya.'",
+  "LUK 15:31": "Sinabi ng ama sa kaniya, 'Anak, lagi kitang kasama, at lahat ng sa akin ay sa iyo.",
+  "LUK 15:32": "Ngunit dapat lang na tayo ay magdiwang at maging masaya, sapagkat ang kapatid mong ito ay namatay, at ngayon ay nabuhay; siya ay nawala, at ngayon ay natagpuan.'”",
+  "LUK 17:11": "Nangyari na habang sila ay nasa daan patungong Jerusalem, siya ay naglalakbay sa lupaing pagitan ng Samaria at Galilea.",
+  "LUK 17:12": "At sa kaniyang pagpasok sa isang nayon, doon ay sinalubong siya ng sampung lalaking ketongin. Tumayo sila nang malayo sa kaniya",
+  "LUK 17:13": "at nilakasan nila ang kanilang tinig, sinasabi, “Jesus, Amo, maawa ka sa amin.”",
+  "LUK 17:14": "Nang makita niya sila, sinabi niya sa kanila, “Pumunta kayo at ipakita ninyo ang inyong mga sarili sa mga pari.” At nangyari nga na habang sila ay papunta, sila ay nalinisan.",
+  "LUK 17:15": "Nang makita ng isa sa kanila na gumaling siya, bumalik siya nang may malakas na tinig na niluluwalhati ang Diyos.",
+  "LUK 17:16": "Yumuko siya sa paanan ni Jesus, nagpapasalamat sa kaniya. Isa siyang Samaritano.",
+  "LUK 17:17": "Sumagot si Jesus, sinabi, “Hindi ba sampu ang nilinis?",
+  "LUK 17:18": "Nasaan ang siyam? Wala bang ibang bumalik upang luwalhatiin ang Diyos, maliban sa dayuhang ito?”",
+  "LUK 17:19": "Sinabi niya sa kaniya, “Tumayo ka, at humayo. Pinagaling ka ng iyong pananampalataya.”",
+  "MRK 10:13": "At dinala nila ang kanilang mga anak sa kaniya upang sila ay maaari niyang hawakan, ngunit sinaway sila ng mga alagad.",
+  "MRK 10:14": "Ngunit nang mabatid ito ni Jesus, labis na sumama ang kaniyang loob at sinabi sa kanila, “Pahintulutan ninyong pumunta sa akin ang mga maliliit na bata at huwag ninyo silang pagbawalan, dahil nabibilang ang mga katulad nila sa kaharian ng Diyos.",
+  "MRK 10:15": "Totoo, sinasabi ko ito sa inyo, sinumang hindi tatanggap sa kaharian ng Diyos na tulad ng isang maliit na bata ay tiyak na hindi makakapasok dito.”",
+  "MRK 10:16": "Pagkatapos, kinalong niya ang mga bata at binasbasan niya sila sa pagpatong ng kaniyang kamay sa kanila.",
+  "MRK 10:46": "Nakarating sila sa Jerico. Nang paalis na si Jesus sa Jerico kasama ang kaniyang mga alagad at ang napakaraming tao, ang anak ni Timeo, na si Bartimeo, isang bulag na pulubi ay nakaupo sa tabi ng daan.",
+  "MRK 10:47": "Nang marinig niyang si Jesus na taga-Nazaret iyon, nagsimula siyang sumigaw at nagsabi, “Jesus, Anak ni David, maawa ka sa akin!”",
+  "MRK 10:48": "Maraming sumusuway sa bulag, na nagsasabi na manahimik siya. Ngunit lalo pa siyang sumigaw, “Anak ni David, maawa ka sa akin!”",
+  "MRK 10:49": "Huminto si Jesus at iniutos na siya ay tawagin. Tinawag nila ang bulag na sinasabi, “Maging matapang ka! Tumayo ka! Tinatawag ka niya.”",
+  "MRK 10:50": "Inihagis niya ang kaniyang balabal, lumukso at pumunta kay Jesus.",
+  "MRK 10:51": "At sinagot siya ni Jesus at sinabi, “Anong gusto mong gawin ko para sa iyo?” Sinabi ng bulag, “Rabi, gusto kong matanggap ang aking paningin.”",
+  "MRK 10:52": "Sinabi ni Jesus sa kaniya, “Humayo ka. Ang iyong pananampalataya ang nagpagaling sa iyo.” Kaagad niyang natanggap ang kaniyang paningin at sumunod siya kay Jesus sa daan.",
+  "LUK 19:1": "Pumasok si Jesus at dumaraan sa Jerico.",
+  "LUK 19:2": "Masdan ninyo, mayroong lalaki doon na nagngangalang Zaqueo. Siya ay isang pinuno ng mga maniningil ng buwis at siya ay mayaman.",
+  "LUK 19:3": "Sinusubukan niyang makita kung sino si Jesus, ngunit hindi niya makita sa dami ng tao, dahil siya ay maliit.",
+  "LUK 19:4": "Kaya tumakbo siya sa unahan ng mga tao at umakyat sa isang puno ng sikamoro upang makita siya, dahil daraan si Jesus sa daang iyon.",
+  "LUK 19:5": "Nang makarating si Jesus sa dakong iyon, tumingala siya at sinabi sa kaniya, “Zaqueo, bumaba ka agad, sapagkat sa araw na ito, kinakailangan kong manatili sa iyong tahanan.”",
+  "LUK 19:6": "Kaya nagmadali siya, bumaba at tinanggap siya nang may galak.",
+  "LUK 19:7": "Nang makita ito ng lahat, dumaing silang lahat, sinasabi, “Pumunta siya upang bisitahin ang isang taong makasalanan.”",
+  "LUK 19:8": "Tumayo si Zaqueo at sinabi niya sa Panginoon, “Tingnan mo, Panginoon, ibabahagi ko sa mga mahihirap ang kalahati ng aking mga ari-arian, at kung ako ay may nadayang sinuman sa anuman, ibabalik ang halaga ng maka-apat na beses.”",
+  "LUK 19:9": "Sinabi ni Jesus sa kaniya, “Sa araw na ito, dumating ang kaligtasan sa bahay na ito, dahil anak din siya ni Abraham.",
+  "JHN 11:32": "Nang makarating si Maria kung saan naroroon si Jesus, at siya ay nakita niya, nagpatirapa siya sa kaniyang mga paa at sinabi sa kaniya, “Panginoon, kung nandito lamang kayo, hindi sana namatay ang aking kapatid.”",
+  "JHN 11:33": "Nang makita ni Jesus na siya ay umiiyak at ang mga Judio na kasama niya ay umiiyak din, naghinagpis ang kaniyang espirtu at nabagabag;",
+  "JHN 11:34": "sinabi niya, “Saan niyo sya inilibing?” Sinabi nila sa kaniya, “Panginoon, pumarito kayo at tingnan.”",
+  "JHN 11:35": "Si Jesus ay tumangis.",
+  "JHN 11:36": "Pagkatapos, sinabi ng mga Judio, “Tignan ninyo kung gaano niya kamahal si Lazaro!”",
+  "JHN 11:37": "Pero sinabi ng ilan, “Hindi ba kaya ng taong ito na siyang nagmulat ng mga mata ng dati ay bulag, na gawin ring hindi mamatay ang lalaking ito?”",
+  "JHN 11:38": "Pagkatapos, habang si Jesus ay muling naghihinagpis, pumunta siya sa libingan. Ngayon ito ay isang kuweba at may isang batong nakatakip dito.",
+  "JHN 11:39": "Sinabi ni Jesus, “Alisin ang bato.” Si Martha, na kapatid ni Lazaro na namatay, ay nagsabi kay Jesus, “Panginoon, sa mga oras na ito ang kaniyang katawan ay naaagnas na, sapagkat apat na araw na ang nakalipas mula nang siya ay mamatay.”",
+  "JHN 11:40": "Sinabi ni Jesus sa kaniya, “Hindi ko ba sinabi sa iyo na kung ikaw ay maniwala makita mo ang kaluwalhatian ng Diyos?”",
+  "JHN 11:41": "Kaya inalis nila ang bato. Tumingala si Jesus at sinabi, “Ama, nagpapasalamat ako sa iyo dahil pinakinggan mo ako.",
+  "JHN 11:42": "Alam ko na lagi mo akong pinakikinggan, pero ito ay dahil sa mga taong nakatayong palibot sa akin kaya sinabi ko ito, upang maniwala sila na isinugo mo ako.”",
+  "JHN 11:43": "Matapos niyang sabihin ito, sumigaw siya nang may malakas na boses, “Lazaro, lumabas ka!”",
+  "JHN 11:44": "Lumabas ang patay na lalaki, na nakabalot ang mga kamay at mga paa ng damit panglibing at ang kaniyang mukha ay nababalot din ng tela. Sinabi ni Jesus sa kanila, kalagan ninyo siya at pakawalan.”",
+  "JHN 13:3": "Alam ni Jesus na ibinigay ng Ama sa kaniyang mga kamay ang lahat ng mga bagay at siya ay galing sa Diyos at babalik sa Diyos.",
+  "JHN 13:4": "Tumayo siya nang hapunan at ibinaba ang kaniyang panglabas na kasuotan. At kumuha siya ng tuwalya at ibinigkis ito sa kaniyang sarili.",
+  "JHN 13:5": "Pagkatapos, nagbuhos siya ng tubig sa palanggana at sinimulang hugasan ang mga paa ng mga alagad at upang punasan sila ng tuwalya na ibinigkis sa kaniyang sarili.",
+  "JHN 13:6": "Lumapit si Jesus kay Simon Pedro, at sinabi ni Simon Pedro sa kaniya, “Panginoon, huhugasan mo ba ang aking mga paa?”",
+  "JHN 13:7": "Sumagot si Jesus at sinabi sa kaniya, “Sa ngayon ang ginagawa ko ay hindi mo pa maintindihan, ngunit sa darating na panahon ay maiintindihan mo rin ito”",
+  "JHN 13:8": "Sinabi ni Pedro sa kaniya, “Hindi mo kailanman huhugasan ang aking mga paa.” Sumagot si Jesus, “Kung hindi kita huhugasan, hindi ka magkakaroon ng bahagi sa akin.”",
+  "JHN 13:9": "Sinabi ni Simon Pedro sa kaniya, “Panginoon, huwag lamang ang aking mga paa ang iyong hugasan, ngunit pati na rin ang aking mga kamay at aking ulo.”",
+  "JHN 13:10": "Sinabi sa kaniya ni Jesus, “Ang sinuman na nakaligo na ay hindi na kailangang maghugas ng kahit ano pa maliban sa kaniyang mga paa, at siya ay malinis na malinis na; malinis ka na, ngunit hindi lahat kayo.”",
+  "JHN 13:11": "Dahil alam ni Jesus kung sino ang magkakanulo sa kaniya; kaya sinabi niya; “Hindi ang lahat sa inyo ay malinis.”",
+  "JHN 13:12": "Pagkatapos hugasan ni Jesus ang kanilang mga paa at kunin ang kaniyang mga damit at muling umupo, sinabi niya sa kanila, “Alam ba ninyo ang ginawa ko para sa inyo?",
+  "JHN 13:13": "Tinatawag ninyo akong 'Guro' at 'Panginoon', at tama ang sinasabi ninyo, dahil ako nga iyon.",
+  "JHN 13:14": "Kung ako nga na Panginoon at Guro, ay hinugasan ang iyong mga paa, dapat ninyo ring hugasan ang mga paa ng iba.",
+  "JHN 13:15": "Dahil binigyan ko kayo ng halimbawa upang dapat gawin din ninyo tulad ng ginawa ko sa inyo.",
+  "MAT 28:1": "Nang matapos na ang araw ng Pamamahinga at magsimulang magbukang liwayway sa unang araw ng linggo, si Maria Magdalena at ang isa pang Maria ay pumunta upang tingnan ang libingan.",
+  "MAT 28:2": "Masdan ito, may malakas na lindol, dahil bumaba mula langit ang anghel ng Panginoon, dumating at ginulong ang bato at naupo sa ibabaw nito.",
+  "MAT 28:3": "Ang kaniyang anyo ay katulad ng kidlat at ang kaniyang kasuotan ay kasing puti ng niyebe.",
+  "MAT 28:4": "At nayanig ng takot ang mga tagapagbantay at naging tulad ng patay na mga tao.",
+  "MAT 28:5": "Kinausap ng anghel ang mga babae at sinabi sa kanila, “Huwag kayong matakot, dahil alam kong hinanap ninyo si Jesus na ipinako sa krus.",
+  "MAT 28:7": "Pumunta kayo kaagad at sabihin sa kaniyang mga alagad, 'Siya ay bumangon na mula sa mga patay. Makinig kayo, siya ay mauuna sa inyo sa Galilea. At doon makikita ninyo siya.' Makinig kayo, nasabi ko na sa inyo.”",
+  "MAT 28:8": "At kaagad na umalis ang mga babae sa libingan na may takot at malaking tuwa at nagsitakbo upang sabihin sa mga alagad.",
+  "MAT 28:9": "Masdan ito, sinalubong sila ni Jesus at sinabi, “Binabati ko kayo.” At lumapit ang mga babae, hinawakan ang kaniyang mga paa at sinamba siya.",
+  "MAT 28:10": "Pagkatapos nito sinabi ni Jesus sa kanila, “Huwag kayong matakot. Pumunta kayo at sabihin sa aking mga kapatid na pumunta sa Galilea. Doon makikita nila ako.”",
+  "LUK 24:13": "Masdan ninyo, sa araw ding iyon, dalawa sa kanila ang papunta sa nayon na tinatawag na Emaus, na animnapung stadia ang layo mula sa Jerusalem.",
+  "LUK 24:14": "Pinag-uusapan nila ang tungkol sa lahat ng nangyari.",
+  "LUK 24:15": "Nangyari na, habang nag-uusap sila at nagtatanungan sa isat-isa, lumapit si Jesus mismo at sumama sa kanila.",
+  "LUK 24:16": "Ngunit ang kanilang mga mata ay nahadlangan upang hindi siya makilala.",
+  "LUK 24:28": "Habang papalapit sila sa nayon, na kanilang pupuntahan, lumakad si Jesus na wari magpapatuloy pa.",
+  "LUK 24:29": "Ngunit siya ay pinigilan nila, sinasabi, “Manatili ka sa amin, sapagkat malapit nang gumabi at dumidilim na.” Kaya pumasok si Jesus upang tumuloy sa kanila.",
+  "LUK 24:30": "At nangyari, nang siya ay umupong kasalo nila upang kumain, kinuha niya ang tinapay, at pinagpasalamatan ito, at pinagpira-piraso ito, at ibinigay niya ito sa kanila.",
+  "LUK 24:31": "Pagkatapos, nabuksan ang kanilang mga mata, at siya ay nakilala nila, at siya ay naglaho sa kanilang paningin.",
+  "LUK 24:32": "At sinabi nila sa isa't-isa, “Hindi ba umaalab ang ating puso, habang kinakausap niya tayo sa daan, habang binubuksan niya sa atin ang mga Kasulatan?”",
+  "LUK 24:33": "Tumayo sila sa oras ding iyon, at bumalik sa Jerusalem. Natagpuan nila ang labing-isa na nagtipon-tipon at ang iba pang kasama nila,",
+  "LUK 24:34": "sinasabi, “Totoo ngang muling nabuhay ang Panginoon, at nagpakita siya kay Simon”.",
+  "LUK 24:35": "Kaya ikinuwento nila ang nangyari sa daan, at kung paano nila nakilala si Jesus nang pagpira-pirasuhin niya ang tinapay.",
+  "ACT 9:1": "Subalit si Saulo na patuloy pa rin na nagsasalita ng mga banta at pagpatay laban sa mga alagad ng Panginoon ay nagtungo sa mga pinakapunong pari",
+  "ACT 9:2": "at humingi sa kaniya ng mga sulat para sa mga sinagoga sa Damasco, upang kung may makita siyang sinumang kabilang sa Daan, maging lalaki o babae, ay maari niyang dalhin na nakagapos sa Jerusalem.",
+  "ACT 9:3": "Habang siya ay naglalakbay, nangyari nga na nang malapit na siya sa Damasco, biglang may nagningning na liwanag mula sa langit sa buong paligid;",
+  "ACT 9:4": "at siya ay natumba sa lupa at narinig niya ang isang tinig na nagsasabi sa kanyang, “Saulo, Saulo, bakit mo ako inuusig?”",
+  "ACT 9:5": "Sumagot si Saulo, “Sino kayo Panginoon? “Sumagot ang Panginoon, “Ako si Jesus na iyong inuusig;",
+  "ACT 9:6": "ngunit bumangon ka, pumasok ka sa lungsod, at sasabihin saiyo kung ano ang dapat mong gawin.”",
+  "ACT 9:7": "Ang mga lalaking kasama ni Saulo sa paglalakbay ay hindi nakapagsalita, naririnig ang tinig, ngunit walang nakikita.",
+  "ACT 9:8": "Tumayo si Saulo sa lupa, at nang imulat niya ang kaniyang mga mata, wala na siyang nakita kaya inakay siya at dinala sa Damasco.",
+  "ACT 9:9": "Hindi siya nakakita sa loob ng tatlongaraw at hindi kumain ni uminom.",
+  "ACT 9:17": "Kaya umalis si Ananias, at pumasok sa tahanan. Ipinatong nito ang kaniyang kamay sa kaniya at sinabi, “Kapatid na Saulo, ang Panginoon Jesus, na siyang nagpakita sa iyo sa daan nang papunta ka rito, ay sinugo ako upang ikaw ay makakita at mapuspos ng Banal na Espiritu.”",
+  "ACT 9:18": "Kaagad may isang bagay na parang kaliskis ang nahulog mula sa mga mata ni Saulo, at bumalik ang kaniyang paningin; Tumayo siya at nabautismuhan;"
+ },
+ "wj": {
+  "MAT 6:34": [
+   [
+    0,
+    148
+   ]
+  ],
+  "MAT 11:28": [
+   [
+    0,
+    109
+   ]
+  ],
+  "JHN 14:27": [
+   [
+    0,
+    202
+   ]
+  ],
+  "2CO 12:9": [
+   [
+    24,
+    117
+   ]
+  ],
+  "MAT 5:4": [
+   [
+    0,
+    58
+   ]
+  ],
+  "MAT 28:20": [
+   [
+    0,
+    133
+   ]
+  ],
+  "MAT 6:33": [
+   [
+    0,
+    118
+   ]
+  ],
+  "JHN 3:16": [
+   [
+    0,
+    205
+   ]
+  ],
+  "JHN 15:9": [
+   [
+    0,
+    96
+   ]
+  ],
+  "JHN 15:12-13": [
+   [
+    0,
+    95
+   ],
+   [
+    96,
+    213
+   ]
+  ],
+  "JHN 13:34-35": [
+   [
+    0,
+    164
+   ],
+   [
+    165,
+    276
+   ]
+  ],
+  "MRK 12:30-31": [
+   [
+    0,
+    126
+   ],
+   [
+    127,
+    270
+   ]
+  ],
+  "MRK 11:24": [
+   [
+    0,
+    139
+   ]
+  ],
+  "MAT 17:20": [
+   [
+    27,
+    297
+   ]
+  ],
+  "MRK 9:23": [
+   [
+    27,
+    90
+   ]
+  ],
+  "JHN 14:1": [
+   [
+    0,
+    107
+   ]
+  ],
+  "JHN 20:29": [
+   [
+    27,
+    121
+   ]
+  ],
+  "MAT 21:22": [
+   [
+    0,
+    78
+   ]
+  ],
+  "JHN 11:25": [
+   [
+    27,
+    151
+   ]
+  ],
+  "JHN 10:10": [
+   [
+    0,
+    160
+   ]
+  ],
+  "JHN 10:11": [
+   [
+    0,
+    88
+   ]
+  ],
+  "JHN 8:12": [
+   [
+    46,
+    167
+   ]
+  ],
+  "JHN 6:35": [
+   [
+    27,
+    149
+   ]
+  ],
+  "JHN 14:6": [
+   [
+    25,
+    136
+   ]
+  ],
+  "JHN 15:5": [
+   [
+    0,
+    184
+   ]
+  ],
+  "REV 3:20": [
+   [
+    0,
+    197
+   ]
+  ],
+  "LUK 19:10": [
+   [
+    0,
+    86
+   ]
+  ],
+  "JHN 3:17": [
+   [
+    0,
+    154
+   ]
+  ],
+  "REV 1:18": [
+   [
+    0,
+    138
+   ]
+  ],
+  "MAT 11:29-30": [
+   [
+    0,
+    173
+   ],
+   [
+    174,
+    240
+   ]
+  ],
+  "JHN 16:33": [
+   [
+    0,
+    201
+   ]
+  ],
+  "JHN 8:36": [
+   [
+    0,
+    71
+   ]
+  ],
+  "JHN 15:11": [
+   [
+    0,
+    125
+   ]
+  ],
+  "LUK 15:10": [
+   [
+    0,
+    117
+   ]
+  ],
+  "LUK 4:18": [
+   [
+    0,
+    251
+   ]
+  ],
+  "MAT 7:7": [
+   [
+    0,
+    123
+   ]
+  ],
+  "MAT 7:24": [
+   [
+    0,
+    157
+   ]
+  ],
+  "JHN 14:18": [
+   [
+    0,
+    57
+   ]
+  ],
+  "MAT 6:26": [
+   [
+    0,
+    204
+   ]
+  ],
+  "LUK 12:7": [
+   [
+    0,
+    124
+   ]
+  ],
+  "MAT 7:11": [
+   [
+    0,
+    204
+   ]
+  ],
+  "LUK 12:32": [
+   [
+    0,
+    106
+   ]
+  ],
+  "MAT 10:30-31": [
+   [
+    0,
+    56
+   ],
+   [
+    57,
+    120
+   ]
+  ],
+  "MAT 6:6": [
+   [
+    0,
+    196
+   ]
+  ],
+  "MAT 18:20": [
+   [
+    0,
+    114
+   ]
+  ],
+  "LUK 5:4": [
+   [
+    57,
+    149
+   ]
+  ],
+  "LUK 5:10": [
+   [
+    112,
+    181
+   ]
+  ],
+  "JHN 2:4": [
+   [
+    18,
+    95
+   ]
+  ],
+  "JHN 2:7": [
+   [
+    27,
+    61
+   ]
+  ],
+  "JHN 2:8": [
+   [
+    42,
+    99
+   ]
+  ],
+  "MAT 13:3": [
+   [
+    95,
+    153
+   ]
+  ],
+  "MAT 13:4": [
+   [
+    0,
+    113
+   ]
+  ],
+  "MAT 13:5": [
+   [
+    0,
+    156
+   ]
+  ],
+  "MAT 13:6": [
+   [
+    0,
+    105
+   ]
+  ],
+  "MAT 13:7": [
+   [
+    0,
+    121
+   ]
+  ],
+  "MAT 13:8": [
+   [
+    0,
+    155
+   ]
+  ],
+  "MAT 13:9": [
+   [
+    0,
+    39
+   ]
+  ],
+  "MAT 13:18": [
+   [
+    0,
+    50
+   ]
+  ],
+  "MAT 13:19": [
+   [
+    0,
+    203
+   ]
+  ],
+  "MAT 13:20": [
+   [
+    0,
+    107
+   ]
+  ],
+  "MAT 13:21": [
+   [
+    0,
+    154
+   ]
+  ],
+  "MAT 13:22": [
+   [
+    0,
+    192
+   ]
+  ],
+  "MAT 13:23": [
+   [
+    0,
+    229
+   ]
+  ],
+  "MRK 4:35": [
+   [
+    57,
+    89
+   ]
+  ],
+  "MRK 4:39": [
+   [
+    59,
+    80
+   ]
+  ],
+  "MRK 4:40": [
+   [
+    26,
+    88
+   ]
+  ],
+  "MRK 5:36": [
+   [
+    85,
+    124
+   ]
+  ],
+  "MRK 5:39": [
+   [
+    51,
+    138
+   ]
+  ],
+  "MRK 5:41": [
+   [
+    51,
+    66
+   ]
+  ],
+  "JHN 6:5": [
+   [
+    100,
+    168
+   ]
+  ],
+  "JHN 6:10": [
+   [
+    17,
+    44
+   ]
+  ],
+  "JHN 6:12": [
+   [
+    65,
+    125
+   ]
+  ],
+  "MAT 14:27": [
+   [
+    52,
+    104
+   ]
+  ],
+  "MAT 14:29": [
+   [
+    17,
+    25
+   ]
+  ],
+  "MAT 14:31": [
+   [
+    83,
+    148
+   ]
+  ],
+  "LUK 10:26": [
+   [
+    27,
+    82
+   ]
+  ],
+  "LUK 10:28": [
+   [
+    27,
+    82
+   ]
+  ],
+  "LUK 10:30": [
+   [
+    29,
+    213
+   ]
+  ],
+  "LUK 10:31": [
+   [
+    0,
+    116
+   ]
+  ],
+  "LUK 10:32": [
+   [
+    0,
+    108
+   ]
+  ],
+  "LUK 10:33": [
+   [
+    0,
+    118
+   ]
+  ],
+  "LUK 10:34": [
+   [
+    0,
+    195
+   ]
+  ],
+  "LUK 10:35": [
+   [
+    0,
+    199
+   ]
+  ],
+  "LUK 10:36": [
+   [
+    0,
+    98
+   ]
+  ],
+  "LUK 10:37": [
+   [
+    77,
+    115
+   ]
+  ],
+  "LUK 10:41": [
+   [
+    50,
+    110
+   ]
+  ],
+  "LUK 10:42": [
+   [
+    0,
+    123
+   ]
+  ],
+  "LUK 15:4": [
+   [
+    0,
+    199
+   ]
+  ],
+  "LUK 15:5": [
+   [
+    0,
+    94
+   ]
+  ],
+  "LUK 15:6": [
+   [
+    0,
+    178
+   ]
+  ],
+  "LUK 15:7": [
+   [
+    0,
+    177
+   ]
+  ],
+  "LUK 15:11": [
+   [
+    29,
+    76
+   ]
+  ],
+  "LUK 15:12": [
+   [
+    0,
+    184
+   ]
+  ],
+  "LUK 15:13": [
+   [
+    0,
+    271
+   ]
+  ],
+  "LUK 15:14": [
+   [
+    0,
+    131
+   ]
+  ],
+  "LUK 15:15": [
+   [
+    0,
+    143
+   ]
+  ],
+  "LUK 15:16": [
+   [
+    0,
+    129
+   ]
+  ],
+  "LUK 15:17": [
+   [
+    0,
+    188
+   ]
+  ],
+  "LUK 15:18": [
+   [
+    0,
+    127
+   ]
+  ],
+  "LUK 15:19": [
+   [
+    0,
+    97
+   ]
+  ],
+  "LUK 15:20": [
+   [
+    0,
+    177
+   ]
+  ],
+  "LUK 15:21": [
+   [
+    0,
+    132
+   ]
+  ],
+  "LUK 15:22": [
+   [
+    0,
+    184
+   ]
+  ],
+  "LUK 15:23": [
+   [
+    0,
+    93
+   ]
+  ],
+  "LUK 15:24": [
+   [
+    0,
+    139
+   ]
+  ],
+  "LUK 15:25": [
+   [
+    0,
+    148
+   ]
+  ],
+  "LUK 15:26": [
+   [
+    0,
+    77
+   ]
+  ],
+  "LUK 15:27": [
+   [
+    0,
+    138
+   ]
+  ],
+  "LUK 15:28": [
+   [
+    0,
+    106
+   ]
+  ],
+  "LUK 15:29": [
+   [
+    0,
+    292
+   ]
+  ],
+  "LUK 15:30": [
+   [
+    0,
+    150
+   ]
+  ],
+  "LUK 15:31": [
+   [
+    0,
+    82
+   ]
+  ],
+  "LUK 15:32": [
+   [
+    0,
+    162
+   ]
+  ],
+  "LUK 17:14": [
+   [
+    46,
+    111
+   ]
+  ],
+  "LUK 17:17": [
+   [
+    26,
+    54
+   ]
+  ],
+  "LUK 17:18": [
+   [
+    0,
+    96
+   ]
+  ],
+  "LUK 17:19": [
+   [
+    23,
+    86
+   ]
+  ],
+  "MRK 10:14": [
+   [
+    89,
+    245
+   ]
+  ],
+  "MRK 10:15": [
+   [
+    0,
+    147
+   ]
+  ],
+  "MRK 10:51": [
+   [
+    36,
+    76
+   ]
+  ],
+  "MRK 10:52": [
+   [
+    27,
+    88
+   ]
+  ],
+  "LUK 19:5": [
+   [
+    77,
+    173
+   ]
+  ],
+  "LUK 19:9": [
+   [
+    27,
+    116
+   ]
+  ],
+  "JHN 11:34": [
+   [
+    13,
+    39
+   ]
+  ],
+  "JHN 11:39": [
+   [
+    17,
+    35
+   ]
+  ],
+  "JHN 11:40": [
+   [
+    27,
+    117
+   ]
+  ],
+  "JHN 11:41": [
+   [
+    57,
+    114
+   ]
+  ],
+  "JHN 11:42": [
+   [
+    0,
+    157
+   ]
+  ],
+  "JHN 11:43": [
+   [
+    68,
+    89
+   ]
+  ],
+  "JHN 11:44": [
+   [
+    162,
+    195
+   ]
+  ],
+  "JHN 13:7": [
+   [
+    38,
+    152
+   ]
+  ],
+  "JHN 13:8": [
+   [
+    95,
+    163
+   ]
+  ],
+  "JHN 13:10": [
+   [
+    27,
+    206
+   ]
+  ],
+  "JHN 13:12": [
+   [
+    121,
+    163
+   ]
+  ],
+  "JHN 13:13": [
+   [
+    0,
+    92
+   ]
+  ],
+  "JHN 13:14": [
+   [
+    0,
+    111
+   ]
+  ],
+  "JHN 13:15": [
+   [
+    0,
+    91
+   ]
+  ],
+  "MAT 28:9": [
+   [
+    48,
+    67
+   ]
+  ],
+  "MAT 28:10": [
+   [
+    43,
+    158
+   ]
+  ],
+  "ACT 9:4": [
+   [
+    84,
+    121
+   ]
+  ],
+  "ACT 9:5": [
+   [
+    40,
+    95
+   ]
+  ],
+  "ACT 9:6": [
+   [
+    46,
+    93
+   ]
+  ]
+ }
+}

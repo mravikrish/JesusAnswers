@@ -26,7 +26,8 @@ import tools.jackson.databind.json.JsonMapper;
 public class BibleCorpus {
 
     public static final List<String> LANGUAGES =
-            List.of("en", "hi", "te", "ta", "kn", "ml", "mr", "pa", "bn", "gu", "or");
+            List.of("en", "hi", "te", "ta", "kn", "ml", "mr", "pa", "bn", "gu", "or",
+                    "es", "pt", "fr", "sw", "tl", "de", "it", "pl", "ru", "uk");
 
     public record IndexEntry(String ref, List<String> themes) {}
 

@@ -3,7 +3,7 @@
 *You ask. His Word answers.*
 
 A Flutter app (Android + iOS) that listens to what's on someone's heart and responds with
-**Scripture → Encouragement → Prayer**, read aloud in a calm voice, in 11 languages.
+**Scripture → Encouragement → Prayer**, read aloud in a calm voice, in 21 languages.
 
 ## Run
 
@@ -29,6 +29,30 @@ flutter test
 | bn   | বাংলা      | IRV                |
 | gu   | ગુજરાતી     | IRV                |
 | or   | ଓଡ଼ିଆ       | IRV                |
+| es   | Español   | Reina-Valera 1909 (public domain) * |
+| pt   | Português | Bíblia Portuguesa Mundial (public domain) |
+| fr   | Français  | Louis Segond 1910 (public domain) |
+| sw   | Kiswahili | Neno: Biblia Takatifu, Biblica (CC BY-SA 4.0) |
+| tl   | Tagalog   | Tagalog ULB, Door43 (CC BY-SA 4.0) * |
+| de   | Deutsch   | Lutherbibel 1912 (public domain) * |
+| it   | Italiano  | Riveduta 1927 (public domain) * |
+| pl   | Polski    | Uwspółcześniona Biblia Gdańska (CC BY-ND 4.0: never altered, as with every text here) * |
+| ru   | Русский   | Синодальный перевод (public domain) * |
+| uk   | Українська | Kulish–Puluj 1905 (public domain) |
+
+\* These sources don't mark the words of Jesus, so their red letters are placed from the KJV's: each KJV span
+is set at the same point of the verse and moved to the nearest colon or quotation mark (start) and sentence end
+(finish). The words are always the translation's own; only where the red falls is approximate.
+
+**Verse numbering.** Every ref in the app uses KJV numbering. Some sources number differently (Louis Segond's
+Psalms follow the Hebrew; the Synodal follows the Septuagint), so the build renumbers each chapter with the
+Paratext versification maps in `tool/bible/versification/` (from SIL's libpalaso, MIT licence), choosing per
+chapter whichever of "as is", Hebrew or Synodal numbering gives the KJV's verse count. A few chapters still
+differ by a merged verse, as in the IRV; French Job 39–41 and Spanish Job 39–41 keep their own numbering.
+
+**Not yet:** Korean (the only public-domain Bible on eBible.org, 1910, is missing whole passages, e.g. all of
+1 Peter 5) and Amharic (New Testament only, and commercial use needs the Bible Society of Ethiopia's
+permission).
 
 IRV = Indian Revised Version © Bridge Connectivity Solutions, via eBible.org. CC BY-SA 4.0 requires
 attribution (shown in Profile → Scripture source) and share-alike for the *verse text*.
@@ -49,15 +73,15 @@ To add verses: add refs + themes to `tool/bible/themes.json` and re-run the buil
 
 **Daily Word — 365 verses.** `tool/bible/daily.json` holds one reference per day (Jan 1 → Dec 31), grouped
 by month with a theme (Jan *New beginnings*, Feb *God's love*, … Dec *Emmanuel*, with Luke 2:10–11 on
-Christmas). Feb 29 repeats Feb 28. Every ref is checked complete in all 11 translations; some IRV editions
+Christmas). Feb 29 repeats Feb 28. Every ref is checked complete in all 21 translations; some IRV editions
 merge adjacent verses, so refs that are merged in any language were swapped out.
 
 **The whole Bible.** The build also writes `assets/bible/full/<lang>.json.gz`: all 66 books in each
-translation, gzipped (about 1.6 MB each, 17 MB for all 11), for the Holy Bible reader. The app unpacks a
+translation, gzipped (about 1.2–1.7 MB each, 31 MB for all 21), for the Holy Bible reader. The app unpacks a
 language off the UI thread the first time it is opened. The backend doesn't need it and leaves it out.
 
 **Book pictures.** In the Holy Bible screen each book is a picture card; tapping one shows its key verse
-and chapters. `tool/bible/books.json` lists every book's key verse (checked present in all 11 translations by
+and chapters. `tool/bible/books.json` lists every book's key verse (checked present in all 21 translations by
 the build) and a `scene` describing its picture. Put originals in `art/books/<CODE>.png|jpg` (e.g. `GEN.png`,
 `1SA.jpg`; kept out of git like `art/stories/`) and run `python tool/build_story_images.py`. A book with no
 picture yet shows its Bible Story's picture, or else a painting of Jesus.
@@ -91,7 +115,7 @@ Only gentle scenes are used for the daily greeting — no crucifixion or burial 
 
 ```
 lib/
-  core/languages.dart          the 11 languages (TTS/STT locale tags)
+  core/languages.dart          the 21 languages (TTS/STT locale tags)
   data/bible/                  BibleRepository: retrieval by theme, daily verse
   services/answer/
     answer_service.dart        LocalAnswerService (offline) · RemoteAnswerService (backend)
@@ -159,6 +183,12 @@ keyPassword=…
       Christian reader for each language should check tone and church vocabulary.
 - [ ] Review `tool/bible/book_name_overrides.json` (Marathi, Punjabi, Gujarati short names).
 - [ ] Have a native speaker check the crisis keywords in `safety.dart` for each language.
+- [ ] Native-speaker review of the 10 new languages (es pt fr sw tl de it pl ru uk): app text, story titles,
+      book names (Russian and some Tagalog/Ukrainian names are overrides in `book_name_overrides.json`).
+- [ ] Ukrainian: the Kulish–Puluj text (1905) uses «жид/жидовин» for Jews, now offensive in modern Ukrainian.
+      Decide whether to ship it or seek permission for a modern translation (e.g. Ohienko).
+- [ ] Crisis helplines are shown by the phone's country (`_helplines` in `common.dart`); have someone in each
+      country confirm the number before launching there.
 - [ ] Replace device TTS with a neural cloud voice for a consistent warm male voice in Indian languages.
 - [ ] Firebase (Auth, Analytics, FCM for the Daily Word notification). Not wired yet. Sign-in currently
       stores name + mobile number on the device only; add OTP (Firebase Phone Auth) in `sign_in_screen.dart`.

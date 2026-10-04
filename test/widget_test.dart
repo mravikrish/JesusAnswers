@@ -168,7 +168,18 @@ void main() {
     expect(Safety.isCrisis('I want to end my life'), isTrue);
     expect(Safety.isCrisis('ఆత్మహత్య ఆలోచనలు వస్తున్నాయి'), isTrue);
     expect(Safety.isCrisis('मैं आत्महत्या के बारे में सोच रहा हूँ'), isTrue);
+    expect(Safety.isCrisis('Ya no quiero vivir'), isTrue);
+    expect(Safety.isCrisis('Estou pensando em suicídio'), isTrue);
+    expect(Safety.isCrisis('Je veux mourir'), isTrue);
+    expect(Safety.isCrisis('Nataka kufa'), isTrue);
+    expect(Safety.isCrisis('Gusto ko nang mamatay'), isTrue);
+    expect(Safety.isCrisis('Ich denke an Selbstmord'), isTrue);
+    expect(Safety.isCrisis('Voglio morire'), isTrue);
+    expect(Safety.isCrisis('Myślę o samobójstwie'), isTrue);
+    expect(Safety.isCrisis('Я не хочу жить'), isTrue);
+    expect(Safety.isCrisis('Думаю про самогубство'), isTrue);
     expect(Safety.isCrisis('I am worried about my exam'), isFalse);
+    expect(Safety.isCrisis('Estoy preocupado por mi examen'), isFalse);
   });
 
   test('local answer is localized and grounded in real verses', () async {

@@ -6,16 +6,26 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
 import 'app_localizations_bn.dart';
+import 'app_localizations_de.dart';
 import 'app_localizations_en.dart';
+import 'app_localizations_es.dart';
+import 'app_localizations_fr.dart';
 import 'app_localizations_gu.dart';
 import 'app_localizations_hi.dart';
+import 'app_localizations_it.dart';
 import 'app_localizations_kn.dart';
 import 'app_localizations_ml.dart';
 import 'app_localizations_mr.dart';
 import 'app_localizations_or.dart';
 import 'app_localizations_pa.dart';
+import 'app_localizations_pl.dart';
+import 'app_localizations_pt.dart';
+import 'app_localizations_ru.dart';
+import 'app_localizations_sw.dart';
 import 'app_localizations_ta.dart';
 import 'app_localizations_te.dart';
+import 'app_localizations_tl.dart';
+import 'app_localizations_uk.dart';
 
 // ignore_for_file: type=lint
 
@@ -104,16 +114,26 @@ abstract class AppLocalizations {
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('bn'),
+    Locale('de'),
     Locale('en'),
+    Locale('es'),
+    Locale('fr'),
     Locale('gu'),
     Locale('hi'),
+    Locale('it'),
     Locale('kn'),
     Locale('ml'),
     Locale('mr'),
     Locale('or'),
     Locale('pa'),
+    Locale('pl'),
+    Locale('pt'),
+    Locale('ru'),
+    Locale('sw'),
     Locale('ta'),
     Locale('te'),
+    Locale('tl'),
+    Locale('uk'),
   ];
 
   /// No description provided for @languageName.
@@ -1179,16 +1199,26 @@ class _AppLocalizationsDelegate
   @override
   bool isSupported(Locale locale) => <String>[
     'bn',
+    'de',
     'en',
+    'es',
+    'fr',
     'gu',
     'hi',
+    'it',
     'kn',
     'ml',
     'mr',
     'or',
     'pa',
+    'pl',
+    'pt',
+    'ru',
+    'sw',
     'ta',
     'te',
+    'tl',
+    'uk',
   ].contains(locale.languageCode);
 
   @override
@@ -1200,12 +1230,20 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   switch (locale.languageCode) {
     case 'bn':
       return AppLocalizationsBn();
+    case 'de':
+      return AppLocalizationsDe();
     case 'en':
       return AppLocalizationsEn();
+    case 'es':
+      return AppLocalizationsEs();
+    case 'fr':
+      return AppLocalizationsFr();
     case 'gu':
       return AppLocalizationsGu();
     case 'hi':
       return AppLocalizationsHi();
+    case 'it':
+      return AppLocalizationsIt();
     case 'kn':
       return AppLocalizationsKn();
     case 'ml':
@@ -1216,10 +1254,22 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsOr();
     case 'pa':
       return AppLocalizationsPa();
+    case 'pl':
+      return AppLocalizationsPl();
+    case 'pt':
+      return AppLocalizationsPt();
+    case 'ru':
+      return AppLocalizationsRu();
+    case 'sw':
+      return AppLocalizationsSw();
     case 'ta':
       return AppLocalizationsTa();
     case 'te':
       return AppLocalizationsTe();
+    case 'tl':
+      return AppLocalizationsTl();
+    case 'uk':
+      return AppLocalizationsUk();
   }
 
   throw FlutterError(

@@ -20,7 +20,12 @@ public class PromptBuilder {
             Map.entry("en", "English"), Map.entry("hi", "Hindi (हिन्दी)"), Map.entry("te", "Telugu (తెలుగు)"),
             Map.entry("ta", "Tamil (தமிழ்)"), Map.entry("kn", "Kannada (ಕನ್ನಡ)"), Map.entry("ml", "Malayalam (മലയാളം)"),
             Map.entry("mr", "Marathi (मराठी)"), Map.entry("pa", "Punjabi (ਪੰਜਾਬੀ, Gurmukhi script)"),
-            Map.entry("bn", "Bengali (বাংলা)"), Map.entry("gu", "Gujarati (ગુજરાતી)"), Map.entry("or", "Odia (ଓଡ଼ିଆ)"));
+            Map.entry("bn", "Bengali (বাংলা)"), Map.entry("gu", "Gujarati (ગુજરાતી)"), Map.entry("or", "Odia (ଓଡ଼ିଆ)"),
+            Map.entry("es", "Spanish (Español)"), Map.entry("pt", "Brazilian Portuguese (Português)"),
+            Map.entry("fr", "French (Français)"), Map.entry("sw", "Swahili (Kiswahili)"),
+            Map.entry("tl", "Tagalog / Filipino"), Map.entry("de", "German (Deutsch)"),
+            Map.entry("it", "Italian (Italiano)"), Map.entry("pl", "Polish (Polski)"),
+            Map.entry("ru", "Russian (Русский)"), Map.entry("uk", "Ukrainian (Українська)"));
 
     private final String systemPrompt;
 
@@ -31,7 +36,9 @@ public class PromptBuilder {
         this.systemPrompt = """
                 You are the voice behind JesusAnswers, a mobile app that helps people bring what is on \
                 their heart to God's Word. People write or speak to you about worry, grief, family, work, \
-                failure, loneliness, and joy, often at difficult moments and often in an Indian language. \
+                failure, loneliness, and joy, often at difficult moments and often in their own language: \
+                an Indian language, Spanish, Portuguese, French, Swahili, Tagalog, German, Italian, Polish, \
+                Russian or Ukrainian. \
                 Your reply becomes three things in the app: a Scripture passage (the app displays the verse \
                 text itself), a short encouragement, and a short prayer, which are then read aloud in a \
                 calm voice.

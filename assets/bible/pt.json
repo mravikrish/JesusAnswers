@@ -1,0 +1,1795 @@
+{
+ "lang": "pt",
+ "translation": "BPM",
+ "translationName": "Bíblia Portuguesa Mundial",
+ "attribution": "Bíblia Portuguesa Mundial (BPM). Public domain. Source: eBible.org/porbrbsl",
+ "books": {
+  "MAT": "Mateus",
+  "PHP": "Filipenses",
+  "1PE": "1 Pedro",
+  "PSA": "Salmos",
+  "JHN": "João",
+  "ISA": "Isaías",
+  "2TI": "2 Timóteo",
+  "JOS": "Josué",
+  "2CO": "2 Coríntios",
+  "GAL": "Gálatas",
+  "JER": "Jeremias",
+  "ROM": "Romanos",
+  "LAM": "Lamentações",
+  "REV": "Apocalipse",
+  "HEB": "Hebreus",
+  "DEU": "Deuteronômio",
+  "EPH": "Efésios",
+  "JAS": "Tiago",
+  "PRO": "Provérbios",
+  "COL": "Colossenses",
+  "1JN": "1 João",
+  "1CO": "1 Coríntios",
+  "MIC": "Miqueias",
+  "1TH": "1 Tessalonicenses",
+  "NUM": "Números",
+  "ZEP": "Zephaniah",
+  "SNG": "Cantares de Salomão",
+  "MRK": "Marcos",
+  "NAM": "Naum",
+  "LUK": "Lucas",
+  "TIT": "Tito",
+  "ACT": "Atos",
+  "NEH": "Neemias",
+  "1CH": "1 Crônicas",
+  "HAB": "Habacuque",
+  "2SA": "2 Samuel",
+  "EXO": "Êxodo",
+  "2TH": "2 Tessalonicenses",
+  "GEN": "Gênesis",
+  "1TI": "1 Timóteo",
+  "MAL": "Malaquias",
+  "RUT": "Rute",
+  "1SA": "1 Samuel",
+  "1KI": "1 Reis",
+  "EST": "Ester",
+  "DAN": "Daniel",
+  "JON": "Jonas"
+ },
+ "verses": {
+  "MAT 6:34": "Portanto, não andem ansiosos com o dia de amanhã, pois o amanhã terá suas próprias preocupações. Cada dia já tem os seus próprios males.”",
+  "PHP 4:6-7": "Não andem ansiosos por coisa alguma, mas, em tudo, pela oração e súplica com ações de graças, apresentem seus pedidos a Deus. E a paz de Deus, que excede todo o entendimento, guardará os seus corações e os seus pensamentos em Cristo Jesus.",
+  "1PE 5:7": "Lancem sobre ele todas as suas preocupações, porque ele cuida de vocês.",
+  "PSA 55:22": "Lance o seu fardo sobre o SENHOR e ele o sustentará. Ele nunca permitirá que o justo seja abalado.",
+  "MAT 11:28": "“Venham a mim, todos vocês que estão cansados e sobrecarregados, e eu lhes darei descanso.",
+  "JHN 14:27": "Deixo-lhes a paz. A minha paz lhes dou; não a dou como o mundo a dá. Que o coração de vocês não fique perturbado nem tenha medo.",
+  "ISA 26:3": "Você guardará em perfeita paz aquele cuja mente é firme, porque ele confia em você.",
+  "PSA 46:10": "“Aquietem-se, e saibam que eu sou Deus. Serei exaltado entre as nações. Serei exaltado na terra.”",
+  "ISA 41:10": "Não tenha medo, pois eu estou com você. Não se apavore, pois eu sou o seu Deus. Eu o fortalecerei. Sim, eu o ajudarei. Sim, eu o sustentarei com a destra da minha justiça.",
+  "2TI 1:7": "Pois Deus não nos deu um espírito de covardia, mas de poder, de amor e de domínio próprio.",
+  "PSA 27:1": "De Davi. O SENHOR é a minha luz e a minha salvação. A quem temerei? O SENHOR é a fortaleza da minha vida. De quem terei medo?",
+  "PSA 56:3": "Quando eu tiver medo, colocarei a minha confiança em ti.",
+  "PSA 34:4": "Busquei o SENHOR, e ele me respondeu, e me livrou de todos os meus temores.",
+  "JOS 1:9": "Eu não lhe ordenei? Seja forte e corajoso. Não tenha medo. Não se apavore, pois o SENHOR, seu Deus, está com você por onde quer que você andar.”",
+  "PHP 4:13": "Posso todas as coisas por meio de Cristo que me fortalece.",
+  "ISA 40:31": "mas aqueles que esperam no SENHOR renovarão as suas forças. Eles subirão com asas como águias. Eles correrão, e não se cansarão. Eles caminharão, e não desfalecerão.",
+  "2CO 12:9": "Ele me disse: “A minha graça é suficiente para você, pois o meu poder se aperfeiçoa na fraqueza.” Portanto, de muito boa vontade me gloriarei ainda mais nas minhas fraquezas, para que o poder de Cristo repouse sobre mim.",
+  "GAL 6:9": "Não nos cansemos de fazer o bem, pois no tempo devido colheremos, se não desistirmos.",
+  "JER 29:11": "Pois eu sei os pensamentos que tenho a respeito de vocês”, diz o SENHOR, “pensamentos de paz, e não de mal, para dar a vocês esperança e um futuro.",
+  "ROM 15:13": "Ora, que o Deus da esperança os encha de toda alegria e paz ao crerem, para que vocês transbordem de esperança no poder do Espírito Santo.",
+  "ROM 8:28": "Sabemos que todas as coisas cooperam para o bem daqueles que amam a Deus, daqueles que são chamados segundo o seu propósito.",
+  "LAM 3:22-23": "É por causa das bondades do SENHOR que não somos consumidos, porque as suas misericórdias não falham. Elas se renovam a cada manhã. Grande é a sua fidelidade.",
+  "PSA 42:11": "Por que você está desesperada, ó minha alma? Por que você está perturbada dentro de mim? Espere em Deus! Pois eu ainda o louvarei, o auxílio salvador do meu semblante, e o meu Deus.",
+  "PSA 30:5": "Pois a sua ira dura só um momento. O seu favor dura a vida inteira. O choro pode durar uma noite, mas a alegria vem pela manhã.",
+  "ROM 12:12": "alegrando-se na esperança, suportando as tribulações, perseverando continuamente na oração,",
+  "PSA 34:18": "O SENHOR está perto dos que têm o coração quebrantado, e salva os que têm o espírito abatido.",
+  "PSA 147:3": "Ele cura os de coração quebrantado, e enfaixa as suas feridas.",
+  "MAT 5:4": "Bem-aventurados os que choram, pois eles serão consolados.",
+  "REV 21:4": "Ele enxugará dos seus olhos toda lágrima. Não haverá mais morte; nem haverá mais pranto, nem lamento, nem dor. As primeiras coisas já passaram.”",
+  "PSA 103:2-3": "Louve ao SENHOR, minha alma, e não se esqueça de nenhum de seus benefícios, que perdoa todos os seus pecados, que cura todas as suas doenças,",
+  "HEB 13:5": "Sejam livres do amor ao dinheiro, contentando-se com o que vocês têm, pois ele mesmo disse: “De maneira nenhuma o deixarei, nem jamais o abandonarei.”",
+  "DEU 31:6": "Sejam fortes e corajosos. Não tenham medo nem se apavorem diante deles, pois o SENHOR, o seu Deus, ele mesmo é quem vai com vocês. Ele não os deixará nem os abandonará.”",
+  "MAT 28:20": "ensinando-os a guardar todas as coisas que eu lhes ordenei. Eis que estou com vocês sempre, até o fim dos tempos.” Amém.",
+  "EPH 4:26": "“Irem-se, e não pequem.” Não deixem o sol se pôr sobre a sua ira,",
+  "JAS 1:19": "Portanto, meus amados irmãos, que cada um seja pronto para ouvir, tardio para falar e tardio para se irar;",
+  "PRO 15:1": "A resposta branda desvia o furor, mas a palavra dura suscita a ira.",
+  "EPH 4:32": "E sejam bondosos uns para com os outros, compassivos, perdoando-se mutuamente, assim como Deus também os perdoou em Cristo.",
+  "COL 3:13": "suportando uns aos outros e perdoando uns aos outros, se alguém tiver queixa contra outro; assim como Cristo perdoou vocês, façam vocês também.",
+  "1JN 1:9": "Se confessarmos os nossos pecados, ele é fiel e justo para nos perdoar os pecados e nos purificar de toda injustiça.",
+  "1CO 13:4": "O amor é paciente e é bondoso. O amor não inveja. O amor não se vangloria, não se orgulha,",
+  "PSA 127:3": "Eis que os filhos são herança do SENHOR. O fruto do ventre é a sua recompensa.",
+  "PRO 22:6": "Ensine a criança no caminho em que deve andar, e, ainda quando for velho, não se desviará dele.",
+  "COL 3:23": "E tudo o que fizerem, trabalhem de todo o coração, como para o Senhor e não para os homens,",
+  "PHP 4:19": "O meu Deus suprirá cada uma das necessidades de vocês, segundo as suas riquezas em glória, em Cristo Jesus.",
+  "MAT 6:33": "Mas busquem primeiro o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.",
+  "PRO 3:5-6": "Confie no SENHOR de todo o seu coração, e não se apoie no seu próprio entendimento. Reconheça-o em todos os seus caminhos, e ele endireitará as suas veredas.",
+  "JAS 1:5": "Mas, se algum de vocês precisa de sabedoria, peça-a a Deus, que dá generosamente a todos, sem censurar, e ela lhe será dada.",
+  "PSA 32:8": "Eu o instruirei e o ensinarei no caminho em que você deve andar. Eu o aconselharei com os meus olhos sobre você.",
+  "PRO 24:16": "pois ainda que um homem justo caia sete vezes, ele se levanta de novo, mas os ímpios são derrubados pela calamidade.",
+  "MIC 7:8": "Não se regozije contra mim, meu inimigo. Quando eu cair, eu irei me levantar. Quando eu sentar na escuridão, Yahweh será uma luz para mim.",
+  "1CO 10:13": "Nenhuma tentação sobreveio a vocês, senão a que é comum aos homens. E Deus é fiel; ele não permitirá que vocês sejam tentados além do que podem suportar, mas com a tentação também providenciará uma saída, para que a possam suportar.",
+  "PSA 37:7": "Descanse no SENHOR e espere pacientemente por ele; não se irrite por causa daquele que prospera em seu caminho, por causa do homem que realiza planos perversos.",
+  "EPH 2:10": "Pois somos obra dele, criados em Cristo Jesus para as boas obras, as quais Deus preparou de antemão para que andássemos nelas.",
+  "PSA 139:14": "Eu te darei graças, pois fui feito de modo assombroso e maravilhoso. As tuas obras são maravilhosas. A minha alma sabe muito bem disso.",
+  "PSA 118:24": "Este é o dia que o SENHOR fez. Vamos nos alegrar e exultar nele!",
+  "1TH 5:18": "Em tudo deem graças, pois esta é a vontade de Deus para vocês em Cristo Jesus.",
+  "PSA 107:1": "Deem graças ao SENHOR, porque ele é bom, porque o seu amor leal dura para sempre.",
+  "PSA 23:1": "Um Salmo de Davi. O SENHOR é o meu pastor; nada me faltará.",
+  "PSA 4:8": "Em paz me deitarei e também dormirei, pois só tu, SENHOR, me fazes viver em segurança.",
+  "PRO 3:24": "Quando você se deitar, não terá medo. Sim, você se deitará, e o seu sono será suave.",
+  "ISA 43:19": "Eis que farei uma coisa nova. Ela brota agora. Vocês não a percebem? Até mesmo farei um caminho no deserto, e rios no ermo.",
+  "2CO 5:17": "Portanto, se alguém está em Cristo, é uma nova criação. As coisas antigas já passaram. Eis que todas as coisas se tornaram novas.",
+  "PSA 90:12": "Ensina-nos a contar os nossos dias, para que alcancemos um coração de sabedoria.",
+  "PSA 37:4": "Deleite-se também no SENHOR, e ele concederá a você os desejos do seu coração.",
+  "PHP 3:13-14": "Irmãos, não considero que eu mesmo já o tenha alcançado, mas uma coisa faço: esquecendo-me das coisas que ficaram para trás e avançando para as que estão adiante, prossigo para o alvo, pelo prêmio do chamado do alto de Deus em Cristo Jesus.",
+  "PSA 143:8": "Faze-me ouvir do teu amor leal pela manhã, pois em ti confio. Faze-me saber o caminho em que devo andar, pois a ti elevo a minha alma.",
+  "PSA 5:3": "SENHOR, de manhã você ouvirá a minha voz. De manhã apresentarei meus pedidos a você, e aguardarei com expectativa.",
+  "HEB 11:1": "Ora, a fé é a certeza daquilo que esperamos, a prova das coisas que não se veem.",
+  "PSA 121:1-2": "Um Cântico de Subidas. Levantarei os meus olhos para os montes. De onde vem o meu socorro? O meu socorro vem do SENHOR, que fez o céu e a terra.",
+  "ISA 30:21": "e quando você se desviar para a direita, e quando se desviar para a esquerda, os seus ouvidos ouvirão uma voz atrás de você, dizendo: “Este é o caminho. Ande nele.”",
+  "PRO 16:3": "Consagre ao SENHOR tudo o que você faz, e os seus planos serão bem-sucedidos.",
+  "EPH 3:20": "Ora, àquele que é poderoso para fazer infinitamente mais do que tudo o que pedimos ou pensamos, de acordo com o poder que opera em nós,",
+  "PSA 1:3": "Ele será como uma árvore plantada junto a correntes de águas, que dá o seu fruto na estação própria, e cuja folha não murcha. Tudo o que ele fizer prosperará.",
+  "NUM 6:24-26": "‘O SENHOR te abençoe e te guarde. O SENHOR faça resplandecer o seu rosto sobre ti, e tenha misericórdia de ti. O SENHOR levante o seu rosto sobre ti, e te dê a paz.’",
+  "PSA 119:105": "A tua palavra é lâmpada para os meus pés, e luz para o meu caminho.",
+  "ROM 12:2": "Não se conformem com este mundo, mas sejam transformados pela renovação da sua mente, para que possam comprovar qual é a boa, agradável e perfeita vontade de Deus.",
+  "PHP 1:6": "Tenho plena confiança de que aquele que começou uma boa obra em vocês a completará até o dia de Jesus Cristo.",
+  "PSA 46:1": "Para o mestre de música. Dos filhos de Corá. De acordo com Alamote. Deus é o nosso refúgio e fortaleza, socorro bem presente na angústia.",
+  "PSA 31:15": "Os meus dias estão nas tuas mãos. Livra-me das mãos dos meus inimigos e daqueles que me perseguem.",
+  "MIC 6:8": "Ele lhe mostrou, ó homem, o que é bom. E o que o SENHOR exige de você, senão que pratique a justiça, ame a misericórdia, e ande humildemente com o seu Deus?",
+  "PSA 27:14": "Espere no SENHOR. Seja forte, e anime-se o seu coração. Sim, espere no SENHOR.",
+  "ZEP 3:17": "Yahweh, seu Deus, está entre vocês, um poderoso que salvará. Ele se regozijará com alegria sobre vocês. Ele vai te acalmar em seu amor. Ele se regozijará por você com o canto.",
+  "JHN 3:16": "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito , para que todo aquele que nele crê não pereça, mas tenha a vida eterna.",
+  "ROM 5:8": "Mas Deus demonstra o seu próprio amor para conosco: enquanto ainda éramos pecadores, Cristo morreu por nós.",
+  "1JN 4:19": "Nós o amamos, porque ele nos amou primeiro.",
+  "1CO 13:4-5": "O amor é paciente e é bondoso. O amor não inveja. O amor não se vangloria, não se orgulha, não se comporta de maneira inadequada, não busca os seus próprios interesses, não se irrita, não leva em conta o mal;",
+  "1CO 13:13": "Mas agora permanecem a fé, a esperança e o amor—estes três. O maior destes é o amor.",
+  "1JN 4:7": "Amados, amemo-nos uns aos outros, pois o amor procede de Deus; e todo aquele que ama é nascido de Deus e conhece a Deus.",
+  "1JN 4:16": "E nós conhecemos e cremos no amor que Deus tem por nós. Deus é amor, e aquele que permanece no amor permanece em Deus, e Deus permanece nele.",
+  "JER 31:3": "O SENHOR me apareceu no passado, dizendo: “Sim, eu amei você com um amor eterno. Portanto, eu a atraí com bondade.",
+  "PSA 86:15": "Mas tu, Senhor, és um Deus misericordioso e compassivo, tardio em irar-se e abundante em amor leal e verdade.",
+  "1JN 3:1": "Vejam quão grande amor o Pai nos concedeu, para que fôssemos chamados filhos de Deus! Por esta razão o mundo não nos conhece, porque não o conheceu.",
+  "JHN 15:9": "Assim como o Pai me amou, eu também amei vocês. Permaneçam no meu amor.",
+  "JHN 15:12-13": "“Este é o meu mandamento: que vocês amem uns aos outros, assim como eu os amei. Ninguém tem maior amor do que este: dar a própria vida pelos seus amigos.",
+  "PSA 136:1": "Deem graças ao SENHOR, porque ele é bom, porque o seu amor leal dura para sempre.",
+  "SNG 8:7": "As muitas águas não podem apagar o amor, nem as inundações podem afogá-lo. Se um homem desse toda a riqueza de sua casa pelo amor, ele seria totalmente desprezado.",
+  "1PE 4:8": "E, acima de tudo, tenham amor fervoroso uns para com os outros, pois o amor cobre uma multidão de pecados.",
+  "PSA 103:11": "Pois assim como os céus são altos acima da terra, assim é grande o seu amor leal para com os que o temem.",
+  "PSA 103:13": "Como um pai tem compaixão de seus filhos, assim o SENHOR tem compaixão dos que o temem.",
+  "ISA 54:10": "Pois os montes podem se retirar, e as colinas serem removidas, mas a minha bondade não se retirará de você, e a minha aliança de paz não será removida”, diz o SENHOR, que tem misericórdia de você.",
+  "1JN 4:9-10": "Nisto o amor de Deus foi revelado entre nós: que Deus enviou o seu Filho unigênito ao mundo, para que pudéssemos viver por meio dele. Nisto consiste o amor, não em que nós tenhamos amado a Deus, mas em que ele nos amou e enviou o seu Filho como propiciação pelos nossos pecados.",
+  "ROM 13:10": "O amor não faz mal ao próximo. O amor, portanto, é o cumprimento da lei.",
+  "GAL 2:20": "Fui crucificado com Cristo; e já não sou eu quem vive, mas Cristo vive em mim. A vida que agora vivo na carne, vivo pela fé no Filho de Deus, que me amou e se entregou por mim.",
+  "EPH 5:1-2": "Portanto, sejam imitadores de Deus, como filhos amados. Andem em amor, assim como Cristo também nos amou e se entregou por nós, como oferta e sacrifício a Deus, de aroma suave.",
+  "COL 3:14": "Acima de todas essas coisas, andem em amor, que é o vínculo da perfeição.",
+  "1JN 4:18": "No amor não há medo; antes, o perfeito amor lança fora o medo, porque o medo traz castigo. Aquele que tem medo não está aperfeiçoado no amor.",
+  "PSA 63:3": "Porque o teu amor leal é melhor do que a vida, os meus lábios te louvarão.",
+  "DEU 7:9": "Saiba, portanto, que o SENHOR, o seu Deus, ele mesmo é Deus, o Deus fiel, que guarda a aliança e a bondade amorosa até mil gerações para com aqueles que o amam e guardam os seus mandamentos,",
+  "JHN 13:34-35": "Um novo mandamento lhes dou: que vocês se amem uns aos outros. Assim como eu os amei, que vocês também se amem uns aos outros. Nisto todos saberão que vocês são meus discípulos, se tiverem amor uns pelos outros.”",
+  "MRK 12:30-31": "Amarás o Senhor teu Deus de todo o teu coração, de toda a tua alma, de todo o teu entendimento e de todas as tuas forças.’ Este é o primeiro mandamento. O segundo é semelhante a este: ‘Amarás o teu próximo como a ti mesmo.’ Não há outro mandamento maior do que estes.”",
+  "HEB 11:6": "Sem fé é impossível agradar a Deus, pois aquele que se aproxima dele deve crer que ele existe e que recompensa os que o buscam.",
+  "MRK 11:24": "Portanto, eu lhes digo: tudo o que vocês pedirem em oração, creiam que já o receberam, e o terão.",
+  "MAT 17:20": "Ele lhes disse: “Por causa da incredulidade de vocês. Pois em verdade lhes digo: se vocês tiverem fé como um grão de mostarda, dirão a este monte: ‘Mova-se daqui para lá’, e ele se moverá; e nada será impossível para vocês.",
+  "ROM 10:17": "Logo, a fé vem pelo ouvir, e o ouvir pela palavra de Deus.",
+  "2CO 5:7": "pois andamos por fé, não por vista.",
+  "PSA 9:10": "Aqueles que conhecem o teu nome colocarão a sua confiança em ti, pois tu, SENHOR, não abandonaste aqueles que te buscam.",
+  "PSA 20:7": "Alguns confiam em carros, e outros em cavalos, mas nós confiamos no nome do SENHOR, o nosso Deus.",
+  "ISA 12:2": "Eis que Deus é a minha salvação. Eu confiarei e não terei medo; pois o SENHOR, o SENHOR, é a minha força e o meu cântico; e ele se tornou a minha salvação.”",
+  "MRK 9:23": "Jesus lhe disse: “Se tu podes crer, todas as coisas são possíveis ao que crê.”",
+  "JAS 1:6": "Peça, porém, com fé, sem duvidar de nada, pois aquele que duvida é semelhante à onda do mar, impelida e agitada pelo vento.",
+  "PSA 62:8": "Confiem nele em todo o tempo, ó povo. Derramem o seu coração diante dele. Deus é um refúgio para nós. Selá.",
+  "PSA 28:7": "O SENHOR é a minha força e o meu escudo. O meu coração confiou nele, e eu sou ajudado. Por isso o meu coração muito se alegra. Com o meu cântico eu lhe darei graças.",
+  "NAM 1:7": "O SENHOR é bom, uma fortaleza no dia da angústia; e ele conhece os que nele se refugiam.",
+  "PSA 112:7": "Ele não terá medo de más notícias. Seu coração está firme, confiando no SENHOR.",
+  "ISA 26:4": "Confiem no SENHOR para sempre; pois no SENHOR, o SENHOR, está a Rocha eterna.",
+  "JER 17:7-8": "“Bendito é o homem que confia no SENHOR, e cuja confiança está no SENHOR. Pois ele será como uma árvore plantada junto às águas, que estende as suas raízes para o ribeiro, e não temerá quando chegar o calor, mas a sua folha ficará verde, e não se preocupará no ano da seca. Nem deixará de dar fruto.",
+  "HEB 10:23": "retenhamos firme a confissão da nossa esperança sem vacilar; pois aquele que prometeu é fiel.",
+  "EPH 2:8-9": "pois pela graça vocês foram salvos por meio da fé, e isso não vem de vocês; é dom de Deus, não de obras, para que ninguém se glorie.",
+  "ROM 5:1": "Sendo, portanto, justificados pela fé, temos paz com Deus por meio de nosso Senhor Jesus Cristo;",
+  "1PE 2:9": "Mas vocês são raça eleita, sacerdócio real, nação santa, povo de propriedade exclusiva de Deus, para que proclamem as excelências daquele que os chamou das trevas para a sua maravilhosa luz.",
+  "PSA 125:1": "Um Cântico dos Degraus. Aqueles que confiam no SENHOR são como o monte Sião, que não pode ser abalado, mas permanece para sempre.",
+  "PRO 29:25": "O medo dos homens prova ser uma armadilha, mas quem confia no SENHOR está seguro.",
+  "PSA 37:3": "Confie no SENHOR e faça o bem; habite na terra e desfrute de pastagem segura.",
+  "PSA 37:5": "Entregue o seu caminho ao SENHOR; confie também nele, e ele o fará:",
+  "HEB 13:8": "Jesus Cristo é o mesmo ontem, hoje e para sempre.",
+  "JHN 14:1": "“Que o coração de vocês não fique perturbado. Creiam em Deus. Creiam também em mim.",
+  "JHN 20:29": "Jesus lhe disse: “Porque você me viu, você creu. Bem-aventurados os que não viram e creram.”",
+  "1JN 5:4": "Pois tudo o que é nascido de Deus vence o mundo. E esta é a vitória que venceu o mundo: a fé de vocês.",
+  "MAT 21:22": "E tudo o que pedirem em oração, crendo, vocês receberão.”",
+  "PSA 115:11": "Vocês que temem ao SENHOR, confiem no SENHOR! Ele é o seu auxílio e o seu escudo.",
+  "ISA 50:10": "Quem entre vocês teme ao SENHOR e obedece à voz do seu servo? Aquele que anda em trevas e não tem luz, que ele confie no nome do SENHOR, e se apoie no seu Deus.",
+  "JHN 11:25": "Jesus lhe disse: “Eu sou a ressurreição e a vida. Aquele que crê em mim, ainda que morra, viverá.",
+  "1CO 15:57": "Mas graças a Deus, que nos dá a vitória por meio de nosso Senhor Jesus Cristo.",
+  "ROM 6:4": "Fomos, portanto, sepultados com ele pelo batismo na morte, para que, assim como Cristo foi ressuscitado dentre os mortos pela glória do Pai, assim também nós vivamos uma vida nova.",
+  "MAT 28:6": "Ele não está aqui, pois ressuscitou, assim como ele disse. Venham, vejam o lugar onde o Senhor estava deitado.",
+  "1PE 1:3": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua grande misericórdia, nos fez nascer de novo para uma esperança viva, pela ressurreição de Jesus Cristo dentre os mortos,",
+  "ISA 53:5": "Mas ele foi traspassado por nossas transgressões. Ele foi esmagado por nossas iniquidades. O castigo que nos trouxe a paz estava sobre ele; e pelas suas feridas fomos curados.",
+  "JHN 10:10": "O ladrão vem somente para roubar, matar e destruir. Eu vim para que tenham vida, e a tenham em abundância.",
+  "JHN 10:11": "“Eu sou o bom pastor. O bom pastor dá a sua vida pelas ovelhas.",
+  "JHN 8:12": "Novamente, portanto, Jesus lhes falou, dizendo: “Eu sou a luz do mundo. Aquele que me segue não andará nas trevas, mas terá a luz da vida.”",
+  "JHN 6:35": "Jesus lhes disse: “Eu sou o pão da vida. Aquele que vem a mim não terá fome, e aquele que crê em mim nunca terá sede.",
+  "JHN 14:6": "Jesus lhe disse: “Eu sou o caminho, a verdade e a vida. Ninguém vem ao Pai, a não ser por mim.",
+  "JHN 15:5": "Eu sou a videira. Vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto, pois sem mim vocês não podem fazer nada.",
+  "REV 3:20": "Eis que estou à porta e bato. Se alguém ouvir a minha voz e abrir a porta, eu entrarei em sua casa e cearei com ele, e ele comigo.",
+  "LUK 19:10": "Pois o Filho do Homem veio buscar e salvar o que estava perdido.”",
+  "ROM 6:23": "Pois o salário do pecado é a morte, mas o dom gratuito de Deus é a vida eterna em Cristo Jesus, nosso Senhor.",
+  "2CO 5:21": "Pois àquele que não conheceu pecado, ele o fez pecado em nosso favor, para que nele nos tornássemos a justiça de Deus.",
+  "COL 1:13-14": "que nos libertou do poder das trevas e nos transportou para o Reino de seu Filho amado, em quem temos a nossa redenção, o perdão dos nossos pecados.",
+  "HEB 7:25": "Portanto, ele também é capaz de salvar perfeitamente aqueles que se aproximam de Deus por meio dele, visto que vive para sempre para interceder por eles.",
+  "HEB 4:15-16": "Pois não temos um sumo sacerdote incapaz de se compadecer das nossas fraquezas, mas um que foi tentado em todas as coisas à nossa semelhança, contudo, sem pecado. Acheguemo-nos, portanto, com confiança ao trono da graça, para que recebamos misericórdia e encontremos graça para nos ajudar no momento da necessidade.",
+  "ROM 8:1": "Portanto, agora já não há condenação para os que estão em Cristo Jesus, que não andam segundo a carne, mas segundo o Espírito.",
+  "ROM 8:11": "Mas, se o Espírito daquele que ressuscitou Jesus dentre os mortos habita em vocês, aquele que ressuscitou Cristo Jesus dentre os mortos também dará vida aos seus corpos mortais, por meio do seu Espírito que habita em vocês.",
+  "1CO 15:20": "Mas agora Cristo ressuscitou dentre os mortos. Ele se tornou as primícias dos que adormeceram.",
+  "EPH 2:4-5": "Mas Deus, sendo rico em misericórdia, por causa do grande amor que teve por nós, mesmo quando estávamos mortos em nossas transgressões, nos vivificou juntamente com Cristo — pela graça vocês foram salvos —",
+  "TIT 3:5": "ele nos salvou, não por obras de justiça que nós mesmos tivéssemos feito, mas segundo a sua misericórdia, por meio do lavar da regeneração e da renovação pelo Espírito Santo,",
+  "1PE 2:24": "Ele mesmo levou os nossos pecados em seu corpo no madeiro, para que nós, tendo morrido para os pecados, vivamos para a justiça. Pelas suas feridas vocês foram curados.",
+  "ISA 53:6": "Todos nós, como ovelhas, nos desviamos. Cada um se voltou para o seu próprio caminho; e o SENHOR fez cair sobre ele a iniquidade de todos nós.",
+  "JHN 1:12": "Mas, a todos os que o receberam, ele deu o direito de se tornarem filhos de Deus, isto é, aos que creem no seu nome:",
+  "JHN 3:17": "Porque Deus não enviou o seu Filho ao mundo para julgar o mundo, mas para que o mundo fosse salvo por ele.",
+  "REV 1:18": "e o Vivente. Estive morto, mas eis que estou vivo para todo o sempre. Amém. Eu tenho as chaves da Morte e do Hades.",
+  "ACT 4:12": "Não há salvação em nenhum outro, pois não há nenhum outro nome sob o céu, dado entre os homens, pelo qual devamos ser salvos!”",
+  "PSA 18:2": "O SENHOR é a minha rocha, a minha fortaleza e o meu libertador; o meu Deus, o meu rochedo, em quem me refugio; o meu escudo, o poder da minha salvação, a minha torre alta.",
+  "PSA 18:32": "o Deus que me arma de força e torna perfeito o meu caminho?",
+  "NEH 8:10": "Então ele lhes disse: “Vão. Comam as carnes gordas, bebam as bebidas doces e enviem porções àqueles para quem nada está preparado, pois hoje é dia santo para o nosso Senhor. Não se entristeçam, pois a alegria do SENHOR é a força de vocês.”",
+  "ISA 40:29": "Ele dá poder ao fraco. Ele aumenta a força daquele que não tem vigor.",
+  "EPH 6:10": "Finalmente, fortaleçam-se no Senhor e na força do seu poder.",
+  "1CH 16:11": "Busquem o SENHOR e a sua força. Busquem a sua face para sempre.",
+  "PSA 73:26": "A minha carne e o meu coração desfalecem, mas Deus é a força do meu coração e a minha porção para sempre.",
+  "EPH 3:16": "para que ele lhes conceda, de acordo com as riquezas da sua glória, que vocês sejam fortalecidos com poder por meio do seu Espírito no ser interior,",
+  "HAB 3:19": "DEUS, o Senhor, é a minha força. Ele faz os meus pés como os pés da corça, e me permite andar em lugares altos. Para o diretor de música, nos meus instrumentos de corda.",
+  "2SA 22:33": "Deus é a minha forte fortaleza. Ele torna perfeito o meu caminho.",
+  "PSA 31:24": "Sejam fortes, e que o coração de vocês se encha de coragem, todos vocês que esperam no SENHOR.",
+  "1CO 16:13": "Vigiem! Permaneçam firmes na fé! Sejam corajosos! Sejam fortes!",
+  "PSA 138:3": "No dia em que clamei, você me respondeu. Você me encorajou, dando força à minha alma.",
+  "ISA 43:2": "Quando você passar pelas águas, eu estarei com você, e pelos rios, eles não o submergirão. Quando você andar pelo fogo, não se queimará, e a chama não o abrasará.",
+  "PSA 59:16": "Mas eu cantarei da tua força. Sim, eu cantarei em alta voz do teu amor leal pela manhã. Pois tu tens sido a minha alta torre, um refúgio no dia da minha angústia.",
+  "EXO 15:2": "O SENHOR é a minha força e o meu cântico. Ele se tornou a minha salvação. Este é o meu Deus, e eu o louvarei; o Deus de meu pai, e eu o exaltarei.",
+  "PSA 28:8": "O SENHOR é a força deles. Ele é uma fortaleza de salvação para o seu ungido.",
+  "2TH 3:3": "Mas o Senhor é fiel; ele os fortalecerá e os guardará do maligno.",
+  "1PE 5:10": "Mas que o Deus de toda a graça, que os chamou para a sua glória eterna por Cristo Jesus, depois de vocês terem sofrido por um pouco de tempo, os aperfeiçoe, estabeleça, fortaleça e consolide.",
+  "COL 1:11": "fortalecidos com todo o poder, conforme a força da sua glória, para toda perseverança e constância, com alegria,",
+  "DEU 33:27": "O Deus eterno é a sua habitação. Por baixo estão os braços eternos. Ele expulsou o inimigo de diante de você, e disse: ‘Destrua!’",
+  "ISA 35:4": "Digam aos que têm o coração medroso: “Sejam fortes! Não tenham medo! Eis que o seu Deus virá com vingança, a retribuição de Deus. Ele virá e os salvará.",
+  "PSA 118:6": "O SENHOR está do meu lado. Não terei medo. O que o homem pode me fazer?",
+  "ROM 8:31": "O que diremos, então, diante destas coisas? Se Deus é por nós, quem será contra nós?",
+  "ROM 8:37": "Não, em todas estas coisas somos mais que vencedores, por meio daquele que nos amou.",
+  "MAT 11:29-30": "Tomem sobre vocês o meu jugo e aprendam de mim, pois sou manso e humilde de coração; e vocês encontrarão descanso para as suas almas. Pois o meu jugo é suave e o meu fardo é leve.”",
+  "PSA 23:2-3": "Ele me faz repousar em pastos verdejantes. Ele me conduz junto a águas tranquilas. Ele restaura a minha alma. Ele me guia pelos caminhos da justiça por amor do seu nome.",
+  "PSA 23:4": "Ainda que eu ande pelo vale da sombra da morte, não temerei mal algum, pois tu estás comigo. A tua vara e o teu cajado, eles me consolam.",
+  "PSA 23:6": "Certamente a bondade e a misericórdia me seguirão todos os dias da minha vida, e habitarei na casa do SENHOR para sempre.",
+  "ISA 32:17": "A obra da justiça será a paz, e o efeito da justiça, tranquilidade e confiança para sempre.",
+  "COL 3:15": "E que a paz de Deus domine em seus corações, para a qual vocês também foram chamados em um só corpo; e sejam gratos.",
+  "2TH 3:16": "Que o próprio Senhor da paz lhes dê a paz em todos os momentos e de todas as maneiras. O Senhor seja com todos vocês.",
+  "PSA 62:1-2": "Para o mestre de música. Para Jedutum. Salmo de Davi. Somente em Deus a minha alma descansa. Dele vem a minha salvação. Só ele é a minha rocha, a minha salvação e a minha fortaleza. Jamais serei grandemente abalado.",
+  "PSA 131:2": "Certamente aquietei e tranquilizei a minha alma; como uma criança desmamada junto a sua mãe, como uma criança desmamada está a minha alma dentro de mim.",
+  "PSA 91:1-2": "Aquele que habita no esconderijo do Altíssimo descansará à sombra do Todo-Poderoso. Direi do SENHOR: “Ele é o meu refúgio e a minha fortaleza; o meu Deus, em quem confio.”",
+  "PSA 91:4": "Ele o cobrirá com as suas penas. Sob as suas asas você encontrará refúgio. A fidelidade dele é o seu escudo e baluarte.",
+  "PSA 91:11": "Pois ele dará ordens aos seus anjos a seu respeito, para guardá-lo em todos os seus caminhos.",
+  "ISA 55:12": "Pois vocês sairão com alegria, e serão guiados em paz. Os montes e as colinas romperão em cânticos diante de vocês; e todas as árvores do campo baterão palmas.",
+  "JHN 16:33": "Eu lhes disse estas coisas para que em mim vocês tenham paz. No mundo vocês têm aflições; mas tenham bom ânimo! Eu venci o mundo.”",
+  "PSA 116:7": "Volte ao seu descanso, minha alma, pois o SENHOR tem sido generoso com você.",
+  "EXO 33:14": "Ele disse: “A minha presença irá com você, e eu lhe darei descanso.”",
+  "PSA 127:2": "É inútil que vocês se levantem de madrugada, que fiquem acordados até tarde, comendo o pão do trabalho árduo, pois ele dá sono aos seus amados.",
+  "ROM 8:6": "Porque a mentalidade da carne é morte, mas a mentalidade do Espírito é vida e paz;",
+  "PRO 14:30": "O coração em paz é vida para o corpo, mas a inveja apodrece os ossos.",
+  "PSA 85:8": "Ouvirei o que Deus, o SENHOR, falará, pois ele falará de paz ao seu povo, aos seus santos; mas que eles não voltem à insensatez.",
+  "JER 6:16": "O SENHOR diz: “Fiquem nos caminhos e vejam, e perguntem pelas veredas antigas: ‘Onde está o bom caminho?’ e andem nele, e vocês encontrarão descanso para as suas almas. Mas eles disseram: ‘Não andaremos nele.’",
+  "GAL 5:1": "Permaneçam firmes, portanto, na liberdade que Cristo nos concedeu, e não se deixem prender novamente a um jugo de escravidão.",
+  "JHN 8:36": "Se, portanto, o Filho os libertar, vocês serão verdadeiramente livres.",
+  "2CO 3:17": "Ora, o Senhor é o Espírito; e onde está o Espírito do Senhor, aí há liberdade.",
+  "PSA 16:11": "Você me mostrará o caminho da vida. Na sua presença há plenitude de alegria. Na sua mão direita há delícias para todo o sempre.",
+  "PSA 126:3": "O SENHOR fez grandes coisas por nós, e estamos alegres.",
+  "PHP 4:4": "Alegrem-se no Senhor sempre! Outra vez direi: “Alegrem-se!”",
+  "PSA 9:2": "Em ti me alegrarei e exultarei. Cantarei louvores ao teu nome, ó Altíssimo.",
+  "PSA 100:4-5": "Entrem por suas portas com ação de graças, e em seus átrios com louvor. Rendam-lhe graças e bendigam o seu nome. Pois o SENHOR é bom. Seu amor leal dura para sempre, sua fidelidade a todas as gerações.",
+  "PSA 30:11": "Tu transformaste o meu pranto em dança. Tiraste o meu pano de saco, e me vestiste de alegria,",
+  "ISA 61:10": "Eu me alegrarei grandemente no SENHOR! A minha alma se alegrará no meu Deus, pois ele me vestiu com as vestes da salvação. Ele me cobriu com o manto de justiça, como um noivo se adorna com uma coroa e como uma noiva se enfeita com as suas joias.",
+  "ROM 14:17": "pois o Reino de Deus não é comida nem bebida, mas justiça, paz e alegria no Espírito Santo.",
+  "JAS 1:2-3": "Considerem motivo de grande alegria, meus irmãos, quando passarem por diversas provações, sabendo que a provação da sua fé produz perseverança.",
+  "PSA 98:4": "Aclamem com alegria ao SENHOR, toda a terra! Irrompam em cantos de alegria, sim, cantem louvores!",
+  "PSA 34:1": "De Davi; quando ele fingiu estar louco diante de Abimeleque, que o expulsou, e ele partiu. Bendirei o SENHOR em todo o tempo. O seu louvor estará sempre na minha boca.",
+  "PSA 34:8": "Oh, provem e vejam que o SENHOR é bom. Bem-aventurado é o homem que nele se refugia.",
+  "PSA 150:6": "Tudo o que tem fôlego louve o SENHOR! Louvem o SENHOR!",
+  "PSA 103:1-2": "De Davi. Louve ao SENHOR, minha alma! Tudo o que há em mim louve o seu santo nome! Louve ao SENHOR, minha alma, e não se esqueça de nenhum de seus benefícios,",
+  "HAB 3:17-18": "Pois ainda que a figueira não floresça, nem haja fruto nas videiras, o trabalho da oliveira falhe, os campos não produzam alimento, os rebanhos sejam cortados do aprisco, e não haja gado nos currais, ainda assim eu me alegrarei no SENHOR. Eu exultarei no Deus da minha salvação!",
+  "PSA 95:1-2": "Oh, venham, cantemos ao SENHOR. Aclamemos em alta voz à rocha da nossa salvação! Acheguemo-nos à sua presença com ações de graças. Exaltemo-lo com cânticos!",
+  "PSA 145:18": "O SENHOR está perto de todos os que o invocam, de todos os que o invocam em verdade.",
+  "JHN 15:11": "Tenho dito estas coisas a vocês para que a minha alegria permaneça em vocês, e para que a alegria de vocês seja completa.",
+  "ISA 12:3": "Portanto, com alegria vocês tirarão água das fontes da salvação.",
+  "LUK 15:10": "Da mesma forma, eu lhes digo, há alegria na presença dos anjos de Deus por um pecador que se arrepende.”",
+  "PSA 40:2-3": "Ele também me tirou de um poço de destruição, do barro lamacento. Ele colocou os meus pés sobre uma rocha, e firmou os meus passos. Ele pôs um novo cântico na minha boca, um louvor ao nosso Deus. Muitos verão isso, temerão, e confiarão no SENHOR.",
+  "PSA 63:7": "Pois tu tens sido o meu auxílio. Eu me regozijarei à sombra das tuas asas.",
+  "ROM 8:2": "Porque a lei do Espírito da vida, em Cristo Jesus, me libertou da lei do pecado e da morte.",
+  "ISA 61:1": "O Espírito do Senhor DEUS está sobre mim, porque o SENHOR me ungiu para pregar boas-novas aos humildes. Ele me enviou para ligar as feridas dos quebrantados de coração, para proclamar liberdade aos cativos e libertação aos que estão presos,",
+  "LUK 4:18": "“O Espírito do Senhor está sobre mim, porque ele me ungiu para pregar boas-novas aos pobres. Ele me enviou para curar os quebrantados de coração, para proclamar libertação aos cativos, recuperação da vista aos cegos, para libertar os oprimidos,",
+  "PSA 107:9": "Pois ele satisfaz a alma anelante. Ele enche de bens a alma faminta.",
+  "PRO 2:6": "Pois o SENHOR dá a sabedoria. Da sua boca procedem o conhecimento e o entendimento.",
+  "PRO 4:23": "Guarde o seu coração com toda a diligência, pois dele procedem as fontes da vida.",
+  "PRO 9:10": "O temor do SENHOR é o princípio da sabedoria. O conhecimento do Santo é o entendimento.",
+  "PSA 119:11": "Escondi a tua palavra no meu coração, para não pecar contra ti.",
+  "PSA 119:130": "A revelação das tuas palavras traz luz. Dá entendimento aos simples.",
+  "PSA 25:4-5": "Mostre-me os seus caminhos, SENHOR. Ensine-me as suas veredas. Guie-me na sua verdade e ensine-me, pois o Senhor é o Deus da minha salvação. Eu espero no Senhor o dia todo.",
+  "PRO 16:9": "O coração do homem planeja o seu caminho, mas o SENHOR dirige os seus passos.",
+  "PRO 19:21": "Há muitos planos no coração do homem, mas o propósito do SENHOR prevalecerá.",
+  "ISA 55:8-9": "“Pois os meus pensamentos não são os pensamentos de vocês, nem os caminhos de vocês são os meus caminhos”, diz o SENHOR. “Porque assim como os céus são mais altos do que a terra, assim os meus caminhos são mais altos do que os caminhos de vocês, e os meus pensamentos do que os pensamentos de vocês.",
+  "PRO 11:2": "Quando vem o orgulho, chega também a desonra, mas com os humildes está a sabedoria.",
+  "PRO 12:25": "A ansiedade no coração do homem o abate, mas uma boa palavra o alegra.",
+  "PRO 17:17": "O amigo ama em todos os momentos; e um irmão nasce para a hora da adversidade.",
+  "PRO 18:10": "O nome do SENHOR é uma torre forte: os justos correm para ele e estão seguros.",
+  "PRO 27:17": "O ferro afia o ferro; assim o homem afia o rosto do seu amigo.",
+  "PRO 31:30": "O encanto é enganoso, e a beleza é vã; mas a mulher que teme ao SENHOR, essa será louvada.",
+  "COL 3:16": "Que a palavra de Cristo habite ricamente em vocês; em toda a sabedoria, ensinando e admoestando uns aos outros com salmos, hinos e cânticos espirituais, cantando com graça em seus corações ao Senhor.",
+  "PSA 119:18": "Abre os meus olhos, para que eu veja as maravilhas da tua lei.",
+  "HEB 4:12": "Pois a palavra de Deus é viva e eficaz, mais afiada do que qualquer espada de dois gumes, penetrando até a divisão de alma e espírito, de juntas e medulas, e é capaz de discernir os pensamentos e intenções do coração.",
+  "JOS 1:8": "Este livro da lei não se apartará da sua boca, mas você meditará nele dia e noite, para que tenha o cuidado de fazer conforme tudo o que nele está escrito; pois então você fará prosperar o seu caminho, e então será bem-sucedido.",
+  "PSA 19:14": "Que as palavras da minha boca e a meditação do meu coração sejam aceitáveis à sua vista, SENHOR, minha rocha e meu redentor.",
+  "PSA 139:23-24": "Sonda-me, ó Deus, e conhece o meu coração. Prova-me, e conhece os meus pensamentos. Vê se há em mim algum caminho mau, e guia-me pelo caminho eterno.",
+  "JAS 3:17": "Mas a sabedoria que vem do alto é primeiramente pura, depois pacífica, amável, razoável, cheia de misericórdia e de bons frutos, sem parcialidade e sem hipocrisia.",
+  "PHP 4:8": "Finalmente, irmãos, tudo o que é verdadeiro, tudo o que é respeitável, tudo o que é justo, tudo o que é puro, tudo o que é amável, tudo o que é de boa fama: se há alguma virtude e se há algo digno de louvor, pensem nestas coisas.",
+  "COL 3:2": "Pensem nas coisas lá do alto, não nas coisas que são da terra.",
+  "MAT 7:7": "“Peçam, e lhes será dado. Busquem, e encontrarão. Batam, e lhes será aberto.",
+  "MAT 7:24": "“Todo aquele, pois, que ouve estas minhas palavras e as pratica, eu o compararei a um homem sábio que construiu a sua casa sobre a rocha.",
+  "PSA 37:23-24": "Os passos do homem são firmados pelo SENHOR; ele se agrada do seu caminho. Ainda que tropece, não cairá, pois o SENHOR o sustenta com a sua mão.",
+  "PSA 48:14": "Pois este Deus é o nosso Deus para todo o sempre. Ele será o nosso guia até a morte.",
+  "ISA 58:11": "e o SENHOR o guiará continuamente, satisfará a sua alma em lugares secos, e fortalecerá os seus ossos. Você será como um jardim regado, e como um manancial de águas cujas águas não falham.",
+  "HEB 12:1": "Portanto, nós também, visto que estamos rodeados por tão grande nuvem de testemunhas, deixemos de lado todo peso e o pecado que tão facilmente nos enreda, e corramos com perseverança a corrida que está diante de nós,",
+  "JAS 1:12": "Bem-aventurado é aquele que suporta a provação, pois, depois de ser aprovado, receberá a coroa da vida, que o Senhor prometeu aos que o amam.",
+  "ROM 5:5": "e a esperança não nos decepciona, porque o amor de Deus foi derramado em nossos corações por meio do Espírito Santo que nos foi dado.",
+  "2CO 4:16-17": "Portanto, não desanimamos. Ainda que exteriormente estejamos nos desgastando, interiormente somos renovados dia após dia. Pois a nossa leve e momentânea aflição produz para nós um eterno peso de glória muito além de toda comparação,",
+  "2CO 4:8-9": "Somos pressionados de todos os lados, mas não esmagados; perplexos, mas não desesperados; perseguidos, mas não desamparados; abatidos, mas não destruídos;",
+  "PSA 27:13": "Ainda estou confiante nisto: verei a bondade do SENHOR na terra dos viventes.",
+  "PSA 40:1": "Para o Mestre de Música. Um Salmo de Davi. Esperei pacientemente pelo SENHOR. Ele se inclinou para mim e ouviu o meu clamor.",
+  "LAM 3:25-26": "O SENHOR é bom para aqueles que esperam por ele, para a alma que o busca. É bom que o homem espere e aguarde em silêncio pela salvação do SENHOR.",
+  "2TI 4:7": "Combati o bom combate. Terminei a corrida. Guardei a fé.",
+  "1CO 15:58": "Portanto, meus amados irmãos, sejam firmes, inabaláveis, sempre abundantes na obra do Senhor, porque vocês sabem que o seu trabalho não é em vão no Senhor.",
+  "HEB 10:36": "Pois vocês precisam de perseverança, para que, tendo feito a vontade de Deus, possam receber a promessa.",
+  "JAS 5:11": "Eis que consideramos bem-aventurados os que perseveraram. Vocês ouviram falar da perseverança de Jó e viram o desfecho que o Senhor lhe deu, e como o Senhor é cheio de compaixão e misericórdia.",
+  "ROM 8:18": "Pois considero que os sofrimentos deste tempo presente não se comparam com a glória que será revelada em nós.",
+  "PSA 34:19": "Muitas são as aflições do justo, mas o SENHOR o livra de todas elas.",
+  "2CO 12:10": "Por isso, sinto prazer nas fraquezas, nas injúrias, nas necessidades, nas perseguições e nas angústias por amor de Cristo. Pois quando sou fraco, então é que sou forte.",
+  "ISA 43:1": "Mas agora, o SENHOR que o criou, ó Jacó, e aquele que o formou, ó Israel, diz: “Não tenha medo, pois eu o redimi. Eu o chamei pelo seu nome. Você é meu.",
+  "PSA 61:2": "Desde os confins da terra eu clamo a ti, quando o meu coração está abatido. Guia-me para a rocha que é mais alta do que eu.",
+  "PSA 18:6": "Na minha angústia, clamei ao SENHOR, e gritei por socorro ao meu Deus. Do seu templo ele ouviu a minha voz. O meu clamor diante dele chegou aos seus ouvidos.",
+  "PSA 120:1": "Cântico dos Degraus. Em minha angústia, clamei ao SENHOR. Ele me respondeu.",
+  "JHN 14:18": "Não os deixarei órfãos. Voltarei para vocês.",
+  "HEB 6:19": "Temos essa esperança como âncora da alma, segura e firme, que entra até o interior do véu,",
+  "PSA 9:9": "O SENHOR também será um alto refúgio para os oprimidos; um alto refúgio em tempos de angústia.",
+  "ISA 41:13": "Pois eu, o SENHOR, o seu Deus, segurarei a sua mão direita, dizendo a você: ‘Não tenha medo. Eu o ajudarei.’",
+  "MAT 6:26": "Observem as aves do céu, que não semeiam, não colhem, nem ajuntam em celeiros. O seu Pai celestial as alimenta. Vocês não têm muito mais valor do que elas?",
+  "LUK 12:7": "Mas até os cabelos da cabeça de vocês estão todos contados. Portanto, não tenham medo. Vocês valem mais do que muitos pardais.",
+  "PSA 37:25": "Fui jovem e agora sou velho, contudo, nunca vi o justo desamparado, nem os seus filhos mendigando o pão.",
+  "PSA 34:10": "Os leõezinhos passam necessidade e sofrem fome, mas aos que buscam o SENHOR não faltará bem algum.",
+  "2CO 9:8": "E Deus é poderoso para lhes conceder toda graça em abundância, para que, tendo sempre em tudo toda a suficiência, vocês transbordem em toda boa obra.",
+  "PSA 84:11": "Pois o SENHOR Deus é sol e escudo. O SENHOR dará graça e glória. Ele não retém nenhum bem daqueles que andam em integridade.",
+  "DEU 31:8": "O SENHOR mesmo é quem vai adiante de você. Ele estará com você. Ele não o deixará nem o abandonará. Não tenha medo. Não desanime.”",
+  "PSA 121:7-8": "O SENHOR o guardará de todo o mal. Ele guardará a sua alma. O SENHOR guardará a sua saída e a sua entrada, desde agora e para todo o sempre.",
+  "GEN 28:15": "Eis que eu estou com você e o guardarei por onde quer que você vá, e o trarei de volta a esta terra. Pois não o deixarei até que tenha feito aquilo de que lhe falei.”",
+  "PSA 145:15-16": "Os olhos de todos esperam em ti. Tu lhes dás o seu alimento no tempo certo. Tu abres a tua mão, e satisfazes o desejo de todos os seres vivos.",
+  "MAT 7:11": "Se vocês, então, sendo maus, sabem dar boas dádivas aos seus filhos, quanto mais o seu Pai, que está nos céus, dará coisas boas aos que lhe pedirem!",
+  "1PE 5:6": "Humilhem-se, portanto, debaixo da poderosa mão de Deus, para que ele os exalte no tempo devido,",
+  "PSA 68:19": "Bendito seja o Senhor, que diariamente leva as nossas cargas, o Deus que é a nossa salvação. Selá.",
+  "PSA 68:5": "Pai dos órfãos e defensor das viúvas, é Deus em sua santa habitação.",
+  "ISA 49:15-16": "“Pode uma mulher esquecer-se da criança que amamenta, a ponto de não se compadecer do filho do seu ventre? Sim, estas podem se esquecer, mas eu não me esquecerei de você! Eis que eu gravei você nas palmas das minhas mãos. Seus muros estão continuamente diante de mim.",
+  "PSA 139:9-10": "Se eu tomar as asas da alvorada, e habitar nas extremidades do mar, mesmo ali a tua mão me guiará, e a tua mão direita me segurará.",
+  "LUK 12:32": "“Não tenham medo, pequeno rebanho, pois foi do agrado do Pai de vocês dar-lhes o Reino.",
+  "MAT 10:30-31": "Mas até os cabelos da cabeça de vocês estão todos contados. Portanto, não tenham medo. Vocês valem mais do que muitos pardais.",
+  "GEN 50:20": "Quanto a vocês, vocês planejaram o mal contra mim, mas Deus o planejou para o bem, para conservar muitas pessoas vivas, como está acontecendo hoje.",
+  "ROM 8:32": "Aquele que não poupou seu próprio Filho, mas o entregou por todos nós, como não nos dará também com ele, graciosamente, todas as coisas?",
+  "PSA 23:5": "Tu preparas uma mesa diante de mim na presença dos meus inimigos. Tu unges a minha cabeça com óleo. O meu cálice transborda.",
+  "PSA 145:9": "O SENHOR é bom para com todos. As suas ternas misericórdias estão sobre todas as suas obras.",
+  "JAS 1:17": "Toda boa dádiva e todo dom perfeito vêm do alto, descendo do Pai das luzes, em quem não pode haver variação nem sombra de mudança.",
+  "PSA 103:4-5": "que redime a sua vida da destruição, que coroa você com amor leal e ternas misericórdias, que satisfaz o seu desejo com coisas boas, de modo que a sua juventude se renova como a da águia.",
+  "ISA 46:4": "Mesmo até a velhice eu sou o mesmo, e até os cabelos brancos eu os carregarei. Eu os fiz, e eu os levarei. Sim, eu os carregarei, e os livrarei.",
+  "PSA 3:3": "Mas tu, SENHOR, és um escudo ao meu redor, minha glória, e aquele que levanta a minha cabeça.",
+  "PSA 3:5": "Eu me deitei e dormi. Acordei, pois o SENHOR me sustenta.",
+  "PSA 32:7": "Tu és o meu esconderijo. Tu me preservarás da angústia. Tu me cercarás com cânticos de livramento. Selá.",
+  "PSA 9:1": "Para o mestre de música. Ao som de “A Morte do Filho”. Salmo de Davi. Darei graças ao SENHOR de todo o meu coração. Contarei todas as tuas maravilhas.",
+  "COL 3:17": "Tudo o que fizerem, seja em palavra ou em ação, façam tudo em nome do Senhor Jesus, dando graças a Deus, o Pai, por meio dele.",
+  "EPH 5:20": "dando graças sempre por todas as coisas, em nome de nosso Senhor Jesus Cristo, a Deus, o Pai;",
+  "PSA 136:26": "Oh, deem graças ao Deus dos céus, porque o seu amor leal dura para sempre.",
+  "1CH 16:34": "Deem graças ao SENHOR, porque ele é bom, porque a sua misericórdia dura para sempre.",
+  "PSA 69:30": "Louvarei o nome de Deus com uma canção, e o engrandecerei com ações de graças.",
+  "COL 4:2": "Perseverem na oração, mantendo-se vigilantes nela, com ações de graças,",
+  "JER 33:3": "‘Clame a mim, e eu lhe responderei, e lhe mostrarei coisas grandes e insondáveis, que você não conhece.’",
+  "MAT 6:6": "Mas você, quando orar, entre no seu quarto e, tendo fechado a porta, ore ao seu Pai, que está em secreto; e o seu Pai, que vê em secreto, o recompensará publicamente.",
+  "MAT 18:20": "Pois onde dois ou três estiverem reunidos em meu nome, ali estou eu no meio deles.”",
+  "1JN 5:14": "E esta é a confiança que temos diante dele: se pedirmos alguma coisa segundo a sua vontade, ele nos ouve.",
+  "JAS 5:16": "Confessem os seus pecados uns aos outros e orem uns pelos outros, para que sejam curados. A oração insistente de um justo é poderosamente eficaz.",
+  "ROM 8:26": "Da mesma forma, o Espírito também nos ajuda em nossas fraquezas, pois não sabemos como orar como convém. Mas o próprio Espírito intercede por nós com gemidos inexprimíveis.",
+  "PSA 17:6": "Eu clamo a ti, pois tu me responderás, ó Deus. Inclina os teus ouvidos para mim. Ouve as minhas palavras.",
+  "EPH 6:18": "com toda oração e súplica, orando em todo tempo no Espírito, e sendo vigilantes para este fim com toda perseverança e súplicas por todos os santos.",
+  "1TI 2:1": "Exorto, portanto, antes de tudo, que se façam súplicas, orações, intercessões e ações de graças por todos os homens,",
+  "PSA 116:1-2": "Eu amo o SENHOR, porque ele ouve a minha voz, e as minhas súplicas por misericórdia. Porque ele inclinou o seu ouvido para mim, portanto, eu o invocarei enquanto eu viver.",
+  "PSA 34:15": "Os olhos do SENHOR estão voltados para os justos. Seus ouvidos escutam o seu clamor.",
+  "PSA 92:1-2": "Um Salmo. Um cântico para o dia de sábado. É bom dar graças ao SENHOR, cantar louvores ao teu nome, ó Altíssimo, anunciar a tua bondade pela manhã, e a tua fidelidade todas as noites,",
+  "PSA 63:1": "Salmo de Davi, quando ele estava no deserto de Judá. Ó Deus, tu és o meu Deus. Eu te buscarei intensamente. A minha alma tem sede de ti. A minha carne anseia por ti, em uma terra seca e exausta, onde não há água.",
+  "PSA 42:1": "Para o Mestre de Música. Uma contemplação dos filhos de Corá. Assim como a corça suspira pelas correntes de água, assim a minha alma suspira por ti, ó Deus.",
+  "PSA 50:15": "Clame a mim no dia da angústia. Eu o livrarei, e você me honrará.”",
+  "PSA 86:12": "Eu te louvarei, Senhor meu Deus, de todo o meu coração. Glorificarei o teu nome para sempre.",
+  "2CO 9:15": "Graças a Deus por seu dom indescritível!",
+  "PSA 118:29": "Deem graças ao SENHOR, porque ele é bom, porque o seu amor leal dura para sempre.",
+  "HEB 13:15": "Por meio dele, então, ofereçamos continuamente a Deus um sacrifício de louvor, ou seja, o fruto de lábios que proclamam lealdade ao seu nome.",
+  "PSA 95:6": "Oh, venham, adoremos e prostremo-nos. Ajoelhemo-nos diante do SENHOR, o nosso Criador,",
+  "LUK 18:1": "Ele também lhes contou uma parábola para mostrar que deviam orar sempre e não desanimar,",
+  "PSA 141:2": "Que a minha oração seja apresentada diante de ti como incenso; e o levantar das minhas mãos como o sacrifício da tarde.",
+  "ISA 9:2": "O povo que andava nas trevas viu uma grande luz. A luz brilhou sobre aqueles que viviam na terra da sombra da morte.",
+  "ISA 7:14": "Portanto, o próprio Senhor lhes dará um sinal. Eis que a virgem conceberá e dará à luz um filho, e chamará o seu nome Emanuel.",
+  "MIC 5:2": "Mas você, Belém Efrata, sendo pequena entre os clãs de Judá, de você sairá para mim aquele que será o governante em Israel; cujas origens são desde os tempos antigos, desde a antiguidade.",
+  "JHN 1:1": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+  "JHN 1:5": "A luz brilha nas trevas, e as trevas não a venceram.",
+  "JHN 1:14": "O Verbo se fez carne e viveu entre nós. Vimos a sua glória, glória como do Filho unigênito do Pai, cheio de graça e de verdade.",
+  "ISA 40:1": "“Consolem, consolem o meu povo”, diz o seu Deus.",
+  "ISA 40:11": "Ele apascentará o seu rebanho como um pastor. Ele reunirá os cordeiros em seu braço, e os carregará em seu colo. Ele guiará mansamente as que têm crias.",
+  "LUK 1:37": "Pois nada do que Deus diz é impossível.”",
+  "LUK 1:38": "Maria disse: “Eis aqui a serva do Senhor; que se cumpra em mim segundo a sua palavra.” Então o anjo retirou-se dela.",
+  "LUK 1:46-47": "Maria disse: “A minha alma engrandece ao Senhor. O meu espírito se alegrou em Deus, meu Salvador,",
+  "MAT 1:21": "Ela dará à luz um filho. Você lhe dará o nome de Jesus, pois é ele quem salvará o seu povo dos pecados deles.”",
+  "LUK 1:31": "Eis que você conceberá no seu ventre e dará à luz um filho, e o chamará pelo nome de ‘Jesus’.",
+  "ISA 60:1": "“Levante-se, resplandeça; porque a sua luz chegou, e a glória do SENHOR raiou sobre você!",
+  "MAL 4:2": "Mas para vocês que temem o meu nome, nascerá o sol da justiça com cura em suas asas. Vocês sairão e saltarão como bezerros da estrebaria.",
+  "ISA 52:7": "Quão formosos sobre os montes são os pés daquele que traz boas-novas, que proclama a paz, que traz boas notícias, que proclama a salvação, que diz a Sião: “O seu Deus reina!”",
+  "1TI 1:15": "Esta palavra é fiel e digna de toda aceitação: Cristo Jesus veio ao mundo para salvar os pecadores, dos quais eu sou o maior.",
+  "JHN 1:16": "Da sua plenitude todos nós recebemos graça sobre graça.",
+  "TIT 2:11": "Porque a graça de Deus se manifestou, trazendo salvação a todos os homens,",
+  "2CO 8:9": "Pois vocês conhecem a graça de nosso Senhor Jesus Cristo, que, sendo rico, por amor a vocês se fez pobre, para que vocês, por meio da sua pobreza, se tornassem ricos.",
+  "PSA 24:7": "Levantem as suas cabeças, ó portas! Ergam-se, ó portais eternos, e o Rei da glória entrará.",
+  "MAT 2:10-11": "Ao verem a estrela, alegraram-se imensamente. Entrando na casa, viram o menino com Maria, sua mãe, e, prostrando-se, o adoraram. Abrindo os seus tesouros, ofereceram-lhe presentes: ouro, incenso e mirra.",
+  "LUK 2:7": "Ela deu à luz o seu filho primogênito. Envolveu-o em faixas de pano e o deitou em uma manjedoura, porque não havia lugar para eles na hospedaria.",
+  "ISA 9:6": "Pois um menino nos nasceu. Um filho nos foi dado; e o governo estará sobre os seus ombros. O seu nome será chamado Maravilhoso Conselheiro, Deus Forte, Pai da Eternidade, Príncipe da Paz.",
+  "LUK 2:10-11": "O anjo lhes disse: “Não tenham medo, pois eis que lhes trago uma boa notícia de grande alegria, que será para todo o povo. Pois hoje lhes nasceu, na cidade de Davi, um Salvador, que é Cristo o Senhor.",
+  "LUK 2:20": "Os pastores voltaram, glorificando e louvando a Deus por todas as coisas que tinham ouvido e visto, exatamente como lhes havia sido dito.",
+  "LUK 2:19": "Mas Maria guardava todas essas palavras, meditando nelas em seu coração.",
+  "MAT 2:2": "“Onde está aquele que nasceu Rei dos judeus? Pois vimos a sua estrela no oriente e viemos adorá-lo.”",
+  "PSA 90:2": "Antes que os montes nascessem, antes que formasses a terra e o mundo, de eternidade a eternidade, tu és Deus.",
+  "REV 21:5": "Aquele que está assentado no trono disse: “Eis que faço novas todas as coisas.” E disse: “Escreva, pois estas palavras de Deus são fiéis e verdadeiras.”",
+  "PSA 65:11": "Tu coroas o ano com a tua fartura. As tuas carroças transbordam de abundância.",
+  "GEN 1:1": "No princípio, Deus criou os céus e a terra.",
+  "GEN 1:2": "A terra era sem forma e vazia. As trevas estavam sobre a superfície do abismo e o Espírito de Deus pairava sobre a superfície das águas.",
+  "GEN 1:3": "Disse Deus: “Haja luz”, e houve luz.",
+  "GEN 1:4": "Deus viu a luz, e viu que era boa. Deus separou a luz das trevas.",
+  "GEN 1:5": "Deus chamou à luz “dia”, e às trevas ele chamou “noite”. Houve tarde e houve manhã, o primeiro dia.",
+  "GEN 1:26": "Disse Deus: “Façamos o homem à nossa imagem, conforme a nossa semelhança. Que eles tenham domínio sobre os peixes do mar, e sobre as aves do céu, e sobre o gado, e sobre toda a terra, e sobre todo animal rastejante que rasteja sobre a terra.”",
+  "GEN 1:27": "Deus criou o homem à sua própria imagem. À imagem de Deus ele o criou; macho e fêmea ele os criou.",
+  "GEN 1:28": "Deus os abençoou. Deus lhes disse: “Sejam férteis, multipliquem-se, encham a terra e subjuguem-na. Tenham domínio sobre os peixes do mar, sobre as aves do céu e sobre todo ser vivo que se move sobre a terra.”",
+  "GEN 1:29": "Disse Deus: “Eis que, eu lhes dei toda erva que dá semente, que está sobre a superfície de toda a terra, e toda árvore que dá fruto com semente. Isso servirá de alimento para vocês.",
+  "GEN 1:30": "E a todo animal da terra, e a toda ave do céu, e a tudo o que rasteja sobre a terra, em que há vida, eu dei toda erva verde como alimento”; e assim foi.",
+  "GEN 1:31": "Deus viu tudo o que havia feito, e eis que era muito bom. Houve tarde e houve manhã, o sexto dia.",
+  "GEN 2:1": "Os céus, a terra e todo o seu vasto exército foram concluídos.",
+  "GEN 2:2": "No sétimo dia, Deus concluiu a sua obra que havia feito; e descansou no sétimo dia de toda a sua obra que havia feito.",
+  "GEN 2:3": "Deus abençoou o sétimo dia e o santificou, porque nele descansou de toda a sua obra de criação que havia feito.",
+  "GEN 6:13": "Deus disse a Noé: “Darei fim a toda a carne, pois a terra está cheia de violência por causa deles. Eis que os destruirei juntamente com a terra.",
+  "GEN 6:14": "Faça uma arca de madeira de gofer. Você fará compartimentos na arca, e a revestirá com piche por dentro e por fora.",
+  "GEN 6:15": "É assim que você a fará. O comprimento da arca será de trezentos côvados, sua largura de cinquenta côvados, e sua altura de trinta côvados.",
+  "GEN 6:16": "Você fará um teto na arca, e a terminará a um côvado da parte de cima. Você colocará a porta da arca na sua lateral. Você a fará com um andar inferior, um segundo e um terceiro.",
+  "GEN 6:17": "Eu, sim, eu mesmo, trarei o dilúvio de águas sobre esta terra, para destruir debaixo do céu toda a carne que tem o fôlego de vida. Tudo o que há na terra morrerá.",
+  "GEN 6:18": "Mas eu estabelecerei a minha aliança com você. Você entrará na arca, você, seus filhos, sua esposa e as esposas de seus filhos com você.",
+  "GEN 6:19": "De todo ser vivo de toda a carne, você trará dois de cada espécie para dentro da arca, para conservá-los vivos com você. Eles serão macho e fêmea.",
+  "GEN 6:20": "Das aves segundo a sua espécie, do gado segundo a sua espécie, de todo réptil da terra segundo a sua espécie, dois de cada espécie virão a você, para conservá-los vivos.",
+  "GEN 6:21": "Leve com você um pouco de toda comida que se come, e ajunte-a para si; e servirá de alimento para você e para eles.”",
+  "GEN 6:22": "Assim fez Noé. Ele fez tudo o que Deus lhe ordenou.",
+  "GEN 7:17": "O dilúvio durou quarenta dias sobre a terra. As águas aumentaram e levantaram a arca, e ela se elevou acima da terra.",
+  "GEN 7:18": "As águas subiram e aumentaram muito sobre a terra; e a arca flutuava na superfície das águas.",
+  "GEN 8:6": "Ao fim de quarenta dias, Noé abriu a janela da arca que ele havia feito,",
+  "GEN 8:7": "e soltou um corvo. Ele voava de um lado para o outro, até que as águas secassem de sobre a terra.",
+  "GEN 8:8": "Ele também soltou uma pomba, para ver se as águas haviam baixado da superfície da terra,",
+  "GEN 8:9": "mas a pomba não encontrou lugar para pousar o pé, e voltou para ele na arca, pois as águas cobriam a superfície de toda a terra. Ele estendeu a mão, pegou-a e a trouxe para junto de si, para dentro da arca.",
+  "GEN 8:10": "Ele esperou ainda outros sete dias; e novamente soltou a pomba fora da arca.",
+  "GEN 8:11": "A pomba voltou para ele ao entardecer e, eis que em seu bico havia uma folha de oliveira recém-arrancada. Assim Noé soube que as águas haviam baixado da terra.",
+  "GEN 8:12": "Ele esperou ainda outros sete dias, e soltou a pomba; e ela não voltou mais para ele.",
+  "GEN 9:12": "Deus disse: “Este é o sinal da aliança que faço entre mim e vocês, e toda criatura vivente que está com vocês, para todas as gerações perpétuas:",
+  "GEN 9:13": "Coloco o meu arco-íris na nuvem, e ele será um sinal de uma aliança entre mim e a terra.",
+  "GEN 9:14": "Quando eu trouxer uma nuvem sobre a terra, e o arco-íris for visto na nuvem,",
+  "GEN 9:15": "eu me lembrarei da minha aliança, que há entre mim e vocês e toda criatura vivente de todas as espécies, e as águas nunca mais se tornarão um dilúvio para destruir toda a carne.",
+  "GEN 9:16": "O arco-íris estará na nuvem. Eu olharei para ele, para me lembrar da aliança eterna entre Deus e toda criatura vivente de toda a carne que está sobre a terra.”",
+  "GEN 28:10": "Jacó partiu de Berseba e foi em direção a Harã.",
+  "GEN 28:11": "Ele chegou a um certo lugar e passou a noite ali, porque o sol já havia se posto. Ele pegou uma das pedras do lugar, colocou-a debaixo da cabeça e deitou-se naquele lugar para dormir.",
+  "GEN 28:12": "Ele sonhou e viu uma escada apoiada na terra, e seu topo chegava ao céu. Eis que os anjos de Deus subiam e desciam por ela.",
+  "GEN 28:13": "Eis que o SENHOR estava acima dela e disse: “Eu sou o SENHOR, o Deus de Abraão, seu pai, e o Deus de Isaque. Eu darei a terra em que você está deitado a você e à sua descendência.",
+  "GEN 28:14": "Sua descendência será como o pó da terra, e você se espalhará para o oeste, para o leste, para o norte e para o sul. Em você e na sua descendência, todas as famílias da terra serão abençoadas.",
+  "GEN 28:16": "Jacó despertou do seu sono e disse: “Certamente o SENHOR está neste lugar, e eu não sabia.”",
+  "GEN 28:17": "Ele teve medo e disse: “Quão temível é este lugar! Esta não é outra senão a casa de Deus, e esta é a porta do céu.”",
+  "GEN 28:18": "Jacó levantou-se de manhã cedo, pegou a pedra que havia colocado debaixo da cabeça, ergueu-a como uma coluna e derramou óleo sobre o seu topo.",
+  "GEN 28:19": "Ele chamou o nome daquele lugar de Betel, mas o nome da cidade era Luz no princípio.",
+  "GEN 28:20": "Jacó fez um voto, dizendo: “Se Deus estiver comigo e me guardar neste caminho em que ando, e me der pão para comer e roupas para vestir,",
+  "GEN 28:21": "de modo que eu volte em paz à casa de meu pai, e o SENHOR for o meu Deus,",
+  "GEN 28:22": "então esta pedra, que ergui como coluna, será a casa de Deus. De tudo o que me der, certamente lhe darei o dízimo.”",
+  "GEN 37:3": "Ora, Israel amava mais a José do que a todos os seus filhos, porque era o filho da sua velhice; e fez para ele uma túnica de muitas cores.",
+  "GEN 37:4": "Seus irmãos viram que o pai o amava mais do que a todos os seus irmãos, e o odiaram, e não conseguiam falar pacificamente com ele.",
+  "GEN 37:23": "Quando José chegou aos seus irmãos, eles despojaram José de sua túnica, a túnica de muitas cores que ele vestia;",
+  "GEN 37:24": "e o pegaram, e o jogaram na cisterna. A cisterna estava vazia. Não havia água nela.",
+  "GEN 37:25": "Eles se sentaram para comer pão, e levantaram os olhos e olharam, e viram uma caravana de ismaelitas vindo de Gileade, com seus camelos carregando especiarias, bálsamo e mirra, descendo para levá-los ao Egito.",
+  "GEN 37:26": "Judá disse a seus irmãos: “Que proveito haverá se matarmos nosso irmão e ocultarmos o seu sangue?",
+  "GEN 37:27": "Venham, e vamos vendê-lo aos ismaelitas, e não deixemos que a nossa mão esteja sobre ele; pois ele é nosso irmão, nossa carne.” Seus irmãos o ouviram.",
+  "GEN 37:28": "Passavam por ali mercadores midianitas, e eles puxaram e tiraram José da cisterna, e venderam José aos ismaelitas por vinte peças de prata. Os mercadores levaram José para o Egito.",
+  "GEN 45:1": "Então José não conseguiu mais se conter diante de todos os que estavam perante ele, e clamou: “Façam todos sair da minha presença!” Ninguém mais ficou com ele, enquanto José se dava a conhecer aos seus irmãos.",
+  "GEN 45:2": "Ele chorou em alta voz. Os egípcios ouviram, e a casa de Faraó também ouviu.",
+  "GEN 45:3": "José disse aos seus irmãos: “Eu sou José! Meu pai ainda vive?” Seus irmãos não conseguiam lhe responder, pois estavam aterrorizados diante dele.",
+  "GEN 45:4": "José disse aos seus irmãos: “Cheguem perto de mim, por favor.” Eles se aproximaram. Ele disse: “Eu sou José, seu irmão, a quem vocês venderam para o Egito.",
+  "GEN 45:5": "Agora, não se entristeçam, nem fiquem irados com vocês mesmos por terem me vendido para cá, pois foi para preservar vidas que Deus me enviou adiante de vocês.",
+  "GEN 45:6": "Pois já houve dois anos de fome na terra, e ainda restam cinco anos em que não haverá arado nem colheita.",
+  "GEN 45:7": "Deus me enviou adiante de vocês para lhes preservar um remanescente na terra, e para salvar a vida de vocês por meio de um grande livramento.",
+  "GEN 45:8": "Assim, não foram vocês que me enviaram para cá, mas Deus. Ele me fez como um pai para Faraó, senhor de toda a sua casa e governador sobre toda a terra do Egito.",
+  "GEN 50:19": "José lhes disse: “Não tenham medo, pois estou eu no lugar de Deus?",
+  "GEN 50:21": "Agora, portanto, não tenham medo. Eu sustentarei vocês e as suas crianças.” Ele os consolou e lhes falou com bondade.",
+  "EXO 2:1": "Um homem da casa de Levi foi e tomou por mulher uma filha de Levi.",
+  "EXO 2:2": "A mulher concebeu e deu à luz um filho. Quando viu que era um menino formoso, ela o escondeu por três meses.",
+  "EXO 2:3": "Quando já não podia mais escondê-lo, pegou para ele um cesto de papiro e o revestiu com betume e piche. Colocou o menino dentro dele e o deixou entre os juncos à margem do rio.",
+  "EXO 2:4": "A irmã do menino ficou de longe, para ver o que lhe aconteceria.",
+  "EXO 2:5": "A filha do faraó desceu para se banhar no rio. Suas servas andavam pela margem do rio. Ela viu o cesto entre os juncos e mandou sua serva buscá-lo.",
+  "EXO 2:6": "Ela o abriu e viu o menino, e eis que o bebê chorava. Ela teve compaixão dele e disse: “Este é um dos filhos dos hebreus.”",
+  "EXO 2:7": "Então a irmã dele disse à filha do faraó: “Devo ir e chamar uma ama dentre as mulheres hebreias, para que amamente o menino para você?”",
+  "EXO 2:8": "A filha do faraó lhe disse: “Vá.” A jovem foi e chamou a mãe do menino.",
+  "EXO 2:9": "A filha do faraó lhe disse: “Leve este menino e amamente-o para mim, e eu lhe darei o seu salário.” A mulher pegou o menino e o amamentou.",
+  "EXO 2:10": "O menino cresceu, e ela o levou à filha do faraó, e ele se tornou seu filho. Ela o chamou de Moisés, e disse: “Porque eu o tirei da água.”",
+  "EXO 3:1": "Ora, Moisés apascentava o rebanho de Jetro, seu sogro, sacerdote de Midiã. Ele conduziu o rebanho para o interior do deserto e chegou ao monte de Deus, a Horebe.",
+  "EXO 3:2": "O anjo do SENHOR apareceu a ele em uma chama de fogo do meio de uma sarça. Ele olhou, e eis que a sarça ardia no fogo, e a sarça não era consumida.",
+  "EXO 3:3": "Moisés disse: “Irei agora e verei esta grande visão, por que a sarça não se queima.”",
+  "EXO 3:4": "Quando o SENHOR viu que ele se aproximava para ver, Deus o chamou do meio da sarça, e disse: “Moisés! Moisés!” Ele disse: “Eis-me aqui.”",
+  "EXO 3:5": "Ele disse: “Não se aproxime. Tire as suas sandálias, pois o lugar em que você está pisando é terra santa.”",
+  "EXO 3:6": "Disse mais: “Eu sou o Deus de seu pai, o Deus de Abraão, o Deus de Isaque e o Deus de Jacó.” Moisés escondeu o rosto, porque teve medo de olhar para Deus.",
+  "EXO 3:7": "O SENHOR disse: “Certamente tenho visto a aflição do meu povo que está no Egito, e tenho ouvido o seu clamor por causa dos seus feitores, pois conheço as suas dores.",
+  "EXO 3:8": "Eu desci para livrá-los da mão dos egípcios, e para fazê-los subir daquela terra para uma terra boa e ampla, para uma terra que mana leite e mel; para o lugar do cananeu, do heteu, do amorreu, do ferezeu, do heveu e do jebuseu.",
+  "EXO 3:9": "Agora, eis que o clamor dos filhos de Israel chegou a mim. Além disso, tenho visto a opressão com que os egípcios os oprimem.",
+  "EXO 3:10": "Venha agora, portanto, e eu o enviarei a Faraó, para que você tire o meu povo, os filhos de Israel, do Egito.”",
+  "EXO 3:11": "Moisés disse a Deus: “Quem sou eu, para que eu vá a Faraó e tire os filhos de Israel do Egito?”",
+  "EXO 3:12": "Ele disse: “Certamente eu estarei com você. Este será o sinal para você de que eu o enviei: quando você tiver tirado o povo do Egito, vocês servirão a Deus neste monte.”",
+  "EXO 14:10": "Quando Faraó se aproximou, os filhos de Israel levantaram os olhos e eis que os egípcios marchavam atrás deles; e ficaram com muito medo. Os filhos de Israel clamaram ao SENHOR.",
+  "EXO 14:11": "Eles disseram a Moisés: “Foi por não haver túmulos no Egito que você nos tirou para morrermos no deserto? Por que você nos tratou desta maneira, tirando-nos do Egito?",
+  "EXO 14:12": "Não é esta a palavra que lhe falamos no Egito, dizendo: ‘Deixe-nos em paz, para que sirvamos aos egípcios’? Pois teria sido melhor para nós servirmos aos egípcios do que morrermos no deserto.”",
+  "EXO 14:13": "Moisés disse ao povo: “Não tenham medo. Fiquem firmes e vejam a salvação do SENHOR, que ele realizará por vocês hoje; pois os egípcios que vocês veem hoje, nunca mais os verão.",
+  "EXO 14:14": "O SENHOR lutará por vocês, e vocês ficarão quietos.”",
+  "EXO 14:15": "O SENHOR disse a Moisés: “Por que você clama a mim? Diga aos filhos de Israel que marchem.",
+  "EXO 14:16": "Levante a sua vara, estenda a mão sobre o mar e divida-o. Então os filhos de Israel entrarão pelo meio do mar em terra seca.",
+  "EXO 14:21": "Moisés estendeu a mão sobre o mar, e o SENHOR fez o mar recuar por um forte vento oriental durante toda a noite, e tornou o mar em terra seca, e as águas foram divididas.",
+  "EXO 14:22": "Os filhos de Israel entraram pelo meio do mar em terra seca; e as águas foram como um muro para eles à sua direita e à sua esquerda.",
+  "EXO 14:26": "O SENHOR disse a Moisés: “Estenda a mão sobre o mar, para que as águas voltem sobre os egípcios, sobre os seus carros e sobre os seus cavaleiros.”",
+  "EXO 14:27": "Moisés estendeu a mão sobre o mar, e o mar retomou a sua força ao amanhecer; e os egípcios fugiram de encontro a ele. O SENHOR precipitou os egípcios no meio do mar.",
+  "EXO 14:28": "As águas retornaram e cobriram os carros e os cavaleiros, e todo o exército de Faraó que havia entrado atrás deles no mar. Não restou nem sequer um deles.",
+  "EXO 14:29": "Mas os filhos de Israel caminharam em terra seca pelo meio do mar, e as águas foram como um muro para eles à sua direita e à sua esquerda.",
+  "EXO 14:30": "Assim o SENHOR salvou Israel naquele dia da mão dos egípcios; e Israel viu os egípcios mortos na praia do mar.",
+  "EXO 14:31": "Israel viu a grande obra que o SENHOR realizou contra os egípcios, e o povo temeu ao SENHOR; e creram no SENHOR e em seu servo Moisés.",
+  "JOS 6:1": "Ora, Jericó estava rigorosamente fechada por causa dos filhos de Israel. Ninguém saía, e ninguém entrava.",
+  "JOS 6:2": "O SENHOR disse a Josué: “Eis que entreguei Jericó em suas mãos, com seu rei e seus valentes guerreiros.",
+  "JOS 6:3": "Todos os seus homens de guerra marcharão ao redor da cidade, rodeando a cidade uma vez. Vocês farão isso por seis dias.",
+  "JOS 6:4": "Sete sacerdotes levarão sete trombetas de chifres de carneiro adiante da arca. No sétimo dia, vocês marcharão ao redor da cidade sete vezes, e os sacerdotes tocarão as trombetas.",
+  "JOS 6:5": "Acontecerá que, quando fizerem um longo toque com o chifre de carneiro, e quando vocês ouvirem o som da trombeta, todo o povo gritará com grande brado; então a muralha da cidade cairá rente ao chão, e o povo subirá, cada homem indo direto para a frente.”",
+  "JOS 6:15": "No sétimo dia, levantaram-se de madrugada, ao romper do dia, e marcharam ao redor da cidade da mesma maneira sete vezes. Somente neste dia marcharam ao redor da cidade sete vezes.",
+  "JOS 6:16": "Na sétima vez, quando os sacerdotes tocaram as trombetas, Josué disse ao povo: “Gritem, pois o SENHOR lhes entregou a cidade!",
+  "JOS 6:20": "Então o povo gritou e os sacerdotes tocaram as trombetas. Quando o povo ouviu o som da trombeta, o povo gritou com grande brado, e a muralha caiu rente ao chão, de modo que o povo subiu à cidade, cada homem indo direto para a frente, e tomaram a cidade.",
+  "RUT 1:6": "Então ela se levantou com as suas noras, para voltar das terras de Moabe; pois ela tinha ouvido nas terras de Moabe como o SENHOR havia visitado o seu povo, dando-lhes pão.",
+  "RUT 1:7": "Ela partiu do lugar onde estava, e as suas duas noras com ela. Elas seguiram pelo caminho de volta para a terra de Judá.",
+  "RUT 1:8": "Noemi disse às suas duas noras: “Vão, volte cada uma para a casa da sua mãe. Que o SENHOR as trate com bondade, assim como vocês trataram os falecidos e a mim.",
+  "RUT 1:9": "Que o SENHOR lhes conceda que encontrem descanso, cada uma na casa de seu marido.” Então ela as beijou, e elas levantaram as suas vozes e choraram.",
+  "RUT 1:10": "E disseram a ela: “Não, nós voltaremos com você para o seu povo.”",
+  "RUT 1:11": "Noemi respondeu: “Voltem, minhas filhas. Por que vocês querem ir comigo? Por acaso ainda tenho filhos no meu ventre, para que sejam seus maridos?",
+  "RUT 1:12": "Voltem, minhas filhas, sigam o seu caminho; pois estou velha demais para ter marido. Se eu dissesse: ‘Tenho esperança’, ou se eu ainda tivesse um marido esta noite, e também desse à luz filhos,",
+  "RUT 1:13": "vocês os esperariam até que crescessem? Vocês deixariam de se casar por causa deles? Não, minhas filhas, pois me amargura muito por causa de vocês que a mão do SENHOR tenha se voltado contra mim.”",
+  "RUT 1:14": "Elas levantaram as suas vozes e choraram novamente; então Orfa beijou a sua sogra, mas Rute apegou-se a ela.",
+  "RUT 1:15": "Ela disse: “Eis que a sua cunhada voltou para o seu povo e para o seu deus. Siga a sua cunhada.”",
+  "RUT 1:16": "Rute respondeu: “Não me insista para deixá-la, nem para que eu pare de segui-la, pois aonde quer que você for, eu irei; e onde quer que você ficar, eu ficarei. O seu povo será o meu povo, e o seu Deus o meu Deus.",
+  "RUT 1:17": "Onde você morrer, eu morrerei, e ali serei sepultada. Que o SENHOR me castigue com severidade, se qualquer outra coisa que não a morte separar você e mim.”",
+  "RUT 1:18": "Quando Noemi viu que ela estava decidida a ir com ela, parou de insistir.",
+  "1SA 3:1": "O menino Samuel ministrava ao SENHOR perante Eli. Naqueles dias, a palavra do SENHOR era rara; não havia muitas visões.",
+  "1SA 3:2": "Naquele tempo, estando Eli deitado no seu aposento (ora, os seus olhos já começavam a escurecer, de modo que ele não podia ver),",
+  "1SA 3:3": "e não tendo ainda se apagado a lâmpada de Deus, e estando Samuel deitado no templo do SENHOR, onde estava a arca de Deus,",
+  "1SA 3:4": "O SENHOR chamou a Samuel. E ele respondeu: “Eis-me aqui.”",
+  "1SA 3:5": "Ele correu até Eli e disse: “Eis-me aqui, pois o senhor me chamou.” Eli respondeu: “Eu não o chamei. Volte a deitar-se.” Ele foi e se deitou.",
+  "1SA 3:6": "O SENHOR o chamou outra vez: “Samuel!” Samuel se levantou, foi até Eli e disse: “Eis-me aqui, pois o senhor me chamou.” Ele respondeu: “Não o chamei, meu filho. Volte a deitar-se.”",
+  "1SA 3:7": "Ora, Samuel ainda não conhecia o SENHOR, nem a palavra do SENHOR lhe havia sido revelada.",
+  "1SA 3:8": "O SENHOR chamou a Samuel novamente, pela terceira vez. Ele se levantou, foi até Eli e disse: “Eis-me aqui, pois o senhor me chamou.” Então Eli percebeu que o SENHOR estava chamando o menino.",
+  "1SA 3:9": "Por isso Eli disse a Samuel: “Vá, deite-se. E se ele o chamar, você dirá: ‘Fala, SENHOR; porque o teu servo ouve.’” Então Samuel foi e deitou-se no seu lugar.",
+  "1SA 3:10": "O SENHOR veio, ficou ali e chamou como das outras vezes: “Samuel! Samuel!” Então Samuel respondeu: “Fala, porque o teu servo ouve.”",
+  "1SA 17:4": "Do acampamento dos filisteus saiu um guerreiro chamado Golias, de Gate, cuja altura era de seis côvados e um palmo.",
+  "1SA 17:5": "Ele usava um capacete de bronze na cabeça e vestia uma couraça de escamas; e o peso da couraça era de cinco mil siclos de bronze.",
+  "1SA 17:6": "Ele usava caneleiras de bronze nas pernas e carregava um dardo de bronze nas costas.",
+  "1SA 17:7": "A haste da sua lança era como um eixo de tecelão, e a ponta de ferro da lança pesava seiscentos siclos. E o seu escudeiro ia à sua frente.",
+  "1SA 17:8": "Ele parou e gritou para as fileiras de Israel: “Por que vocês saíram para formar a linha de batalha? Não sou eu um filisteu, e vocês não são servos de Saul? Escolham um homem e mandem-no descer para lutar comigo.",
+  "1SA 17:9": "Se ele puder lutar comigo e me matar, nós seremos seus servos; mas se eu o vencer e o matar, vocês serão nossos servos e nos servirão.”",
+  "1SA 17:10": "O filisteu acrescentou: “Eu desafio as tropas de Israel no dia de hoje! Dêem-me um homem para lutarmos sozinhos!”",
+  "1SA 17:11": "Quando Saul e todo o Israel ouviram essas palavras do filisteu, ficaram apavorados e com muito medo.",
+  "1SA 17:32": "Davi disse a Saul: “Ninguém deve perder a coragem por causa desse filisteu. O seu servo irá e lutará contra ele.”",
+  "1SA 17:33": "Saul respondeu a Davi: “Você não tem condições de lutar contra esse filisteu. Você é apenas um jovem, e ele é um guerreiro desde a sua juventude.”",
+  "1SA 17:34": "Mas Davi disse a Saul: “O seu servo estava apascentando as ovelhas de seu pai; e quando vinha um leão ou um urso e levava uma ovelha do rebanho,",
+  "1SA 17:35": "eu ia atrás dele, o atacava e resgatava a ovelha da sua boca. Quando ele se voltava contra mim, eu o agarrava pela barba, o feria e o matava.",
+  "1SA 17:36": "O seu servo matou tanto o leão como o urso. Este filisteu incircunciso será como um deles, pois desafiou os exércitos do Deus vivo.”",
+  "1SA 17:37": "Davi acrescentou: “O SENHOR, que me livrou das garras do leão e das garras do urso, me livrará das mãos deste filisteu.” Saul disse a Davi: “Vá, e que o SENHOR esteja com você.”",
+  "1SA 17:40": "Ele pegou o seu cajado na mão, escolheu cinco pedras lisas no riacho e as colocou na bolsa de pastor que trazia consigo. Com a sua funda na mão, ele se aproximou do filisteu.",
+  "1SA 17:41": "O filisteu foi se aproximando de Davi, e o seu escudeiro ia à sua frente.",
+  "1SA 17:42": "Quando o filisteu olhou e viu Davi, olhou-o com desprezo; pois Davi era apenas um jovem, ruivo e de bela aparência.",
+  "1SA 17:43": "O filisteu disse a Davi: “Acaso sou um cachorro, para que você venha a mim com pedaços de pau?” E o filisteu amaldiçoou Davi pelos seus deuses.",
+  "1SA 17:44": "O filisteu disse ainda: “Venha cá, e eu darei a sua carne às aves do céu e aos animais do campo.”",
+  "1SA 17:45": "Davi, porém, disse ao filisteu: “Você vem contra mim com espada, lança e dardo; mas eu vou contra você em nome do SENHOR dos Exércitos, o Deus dos exércitos de Israel, a quem você desafiou.",
+  "1SA 17:46": "Hoje mesmo o SENHOR o entregará nas minhas mãos. Eu o ferirei e cortarei a sua cabeça. E hoje mesmo darei os cadáveres do exército filisteu às aves do céu e aos animais selvagens da terra, para que toda a terra saiba que há um Deus em Israel.",
+  "1SA 17:47": "E todos os que estão aqui saberão que o SENHOR não salva com espada e com lança; pois a batalha é do SENHOR, e ele entregará todos vocês em nossas mãos.”",
+  "1SA 17:48": "Quando o filisteu se levantou e começou a avançar para atacar Davi, Davi correu depressa para a linha de batalha para enfrentar o filisteu.",
+  "1SA 17:49": "Davi colocou a mão na bolsa, pegou uma pedra, atirou-a com a funda e atingiu o filisteu na testa. A pedra cravou-se na sua testa, e ele caiu com o rosto em terra.",
+  "1SA 17:50": "Assim Davi venceu o filisteu com uma funda e uma pedra; ele feriu o filisteu e o matou, embora não houvesse espada na mão de Davi.",
+  "1KI 17:1": "Elias, o tesbita, que era um dos moradores de Gileade, disse a Acabe: “Tão certo como vive o SENHOR, o Deus de Israel, perante quem estou, não haverá orvalho nem chuva nestes anos, senão segundo a minha palavra.”",
+  "1KI 17:2": "Então a palavra do SENHOR veio a ele, dizendo:",
+  "1KI 17:3": "“Vá embora daqui, vire para o leste e esconda-se junto ao ribeiro de Querite, que está diante do Jordão.",
+  "1KI 17:4": "Você beberá do ribeiro. Eu ordenei aos corvos que o alimentem ali.”",
+  "1KI 17:5": "Então ele foi e fez segundo a palavra do SENHOR, pois foi e morou junto ao ribeiro de Querite, que está diante do Jordão.",
+  "1KI 17:6": "Os corvos lhe traziam pão e carne pela manhã, e pão e carne à tarde; e ele bebia do ribeiro.",
+  "1KI 17:7": "Depois de algum tempo, o ribeiro secou, porque não havia chuva na terra.",
+  "1KI 17:8": "A palavra do SENHOR veio a ele, dizendo:",
+  "1KI 17:9": "“Levante-se, vá para Sarepta, que pertence a Sidom, e fique lá. Eis que ordenei a uma viúva ali que o sustente.”",
+  "1KI 17:10": "Então ele se levantou e foi para Sarepta; e quando chegou à porta da cidade, eis que uma viúva estava ali apanhando lenha. Ele a chamou e disse: “Por favor, traga-me um pouco de água numa vasilha, para que eu possa beber.”",
+  "1KI 17:11": "Enquanto ela estava indo buscar, ele a chamou e disse: “Por favor, traga-me também um pedaço de pão na sua mão.”",
+  "1KI 17:12": "Ela disse: “Tão certo como vive o SENHOR, o seu Deus, não tenho nada assado, mas apenas um punhado de farinha num pote e um pouco de azeite num jarro. Eis que estou apanhando dois pedaços de lenha, para que eu possa entrar e prepará-lo para mim e para o meu filho, para que o comamos e morramos.”",
+  "1KI 17:13": "Elias disse a ela: “Não tenha medo. Vá e faça como você disse; mas primeiro faça-me um pequeno bolo com isso, e traga-o para mim, e depois faça um pouco para você e para o seu filho.",
+  "1KI 17:14": "Pois assim diz o SENHOR, o Deus de Israel: 'O pote de farinha não se acabará, e o jarro de azeite não faltará, até o dia em que o SENHOR enviar chuva sobre a terra.'”",
+  "1KI 17:15": "Ela foi e fez segundo a palavra de Elias; e ela, ele e a sua casa comeram por muitos dias.",
+  "1KI 17:16": "O pote de farinha não se acabou e o jarro de azeite não faltou, segundo a palavra do SENHOR, que ele falou por meio de Elias.",
+  "EST 4:10": "Então Ester falou a Hatá e lhe deu uma mensagem para Mardoqueu:",
+  "EST 4:11": "“Todos os servos do rei e o povo das províncias do rei sabem que para qualquer pessoa, seja homem ou mulher, que se aproximar do rei no pátio interno sem ser chamado, existe uma única lei: que seja morto, exceto aqueles a quem o rei estender o cetro de ouro, para que vivam. E eu não fui chamada para ir ao rei nestes trinta dias.”",
+  "EST 4:12": "Relataram as palavras de Ester a Mardoqueu.",
+  "EST 4:13": "Então Mardoqueu pediu que dessem esta resposta a Ester: “Não pense consigo mesma que, por estar na casa do rei, você escapará mais do que todos os outros judeus.",
+  "EST 4:14": "Pois, se você ficar calada agora, alívio e livramento virão para os judeus de outro lugar, mas você e a casa de seu pai perecerão. E quem sabe se não foi para um momento como este que você chegou ao reino?”",
+  "EST 4:15": "Então Ester pediu que respondessem a Mardoqueu:",
+  "EST 4:16": "“Vá, reúna todos os judeus que estão presentes em Susã, e jejuem por mim; não comam nem bebam por três dias, nem de noite nem de dia. Eu e as minhas servas também jejuaremos da mesma forma. Depois, irei ao rei, o que é contra a lei; e se eu perecer, pereci.”",
+  "EST 5:1": "Ora, no terceiro dia, Ester vestiu seus trajes reais e ficou no pátio interno do palácio do rei, em frente ao palácio do rei. O rei estava assentado em seu trono real no palácio real, de frente para a entrada do palácio.",
+  "EST 5:2": "Quando o rei viu a rainha Ester em pé no pátio, ela alcançou favor diante dele; e o rei estendeu para Ester o cetro de ouro que estava em sua mão. Então Ester se aproximou e tocou a ponta do cetro.",
+  "EST 5:3": "Então o rei lhe perguntou: “O que você deseja, rainha Ester? Qual é o seu pedido? Lhe será concedido, até mesmo a metade do reino.”",
+  "DAN 3:13": "Então Nabucodonosor, em ira e fúria, ordenou que trouxessem Sadraque, Mesaque e Abede-Nego. Assim, estes homens foram trazidos perante o rei.",
+  "DAN 3:14": "Nabucodonosor lhes respondeu: “É verdade, Sadraque, Mesaque e Abede-Nego, que vocês não servem aos meus deuses e não adoram a estátua de ouro que eu ergui?",
+  "DAN 3:15": "Agora, se vocês estiverem prontos para, no momento em que ouvirem o som da trombeta, da flauta, da cítara, da lira, da harpa, do pífaro e de todos os tipos de música, se prostrarem e adorarem a estátua que eu fiz, muito bem; mas, se não a adorarem, vocês serão lançados na mesma hora no meio de uma fornalha de fogo ardente. E quem é o deus que os livrará das minhas mãos?”",
+  "DAN 3:16": "Sadraque, Mesaque e Abede-Nego responderam ao rei: “Ó Nabucodonosor, não temos necessidade de lhe responder sobre este assunto.",
+  "DAN 3:17": "Se isso acontecer, o nosso Deus, a quem servimos, é capaz de nos livrar da fornalha de fogo ardente; e ele nos livrará da sua mão, ó rei.",
+  "DAN 3:18": "Mas, se não, fique sabendo, ó rei, que não serviremos aos seus deuses nem adoraremos a estátua de ouro que você ergueu.”",
+  "DAN 3:19": "Então Nabucodonosor se encheu de fúria, e a expressão do seu rosto mudou contra Sadraque, Mesaque e Abede-Nego. Ele falou e ordenou que aquecessem a fornalha sete vezes mais do que o costume.",
+  "DAN 3:20": "Ele ordenou a alguns homens valentes que estavam em seu exército que amarrassem Sadraque, Mesaque e Abede-Nego, e os lançassem na fornalha de fogo ardente.",
+  "DAN 3:21": "Então estes homens foram amarrados vestindo suas calças, suas túnicas, seus mantos e suas outras roupas, e foram lançados no meio da fornalha de fogo ardente.",
+  "DAN 3:22": "Portanto, como a ordem do rei era urgente e a fornalha estava excessivamente quente, a chama do fogo matou os homens que levaram Sadraque, Mesaque e Abede-Nego.",
+  "DAN 3:23": "E estes três homens, Sadraque, Mesaque e Abede-Nego, caíram amarrados no meio da fornalha de fogo ardente.",
+  "DAN 3:24": "Então o rei Nabucodonosor ficou atônito e se levantou apressadamente. Ele falou e disse aos seus conselheiros: “Não lançamos três homens amarrados no meio do fogo?” Eles responderam ao rei: “É verdade, ó rei.”",
+  "DAN 3:25": "Ele respondeu: “Vejam! Eu vejo quatro homens soltos, andando no meio do fogo, e eles estão ilesos. A aparência do quarto é semelhante a um filho dos deuses.”",
+  "DAN 3:26": "Então Nabucodonosor se aproximou da abertura da fornalha de fogo ardente. Ele falou e disse: “Sadraque, Mesaque e Abede-Nego, servos do Deus Altíssimo, saiam e venham aqui!” Então Sadraque, Mesaque e Abede-Nego saíram do meio do fogo.",
+  "DAN 3:27": "Os sátrapas, os prefeitos, os governadores e os conselheiros do rei, estando reunidos, viram estes homens, que o fogo não teve poder sobre os seus corpos. O cabelo da cabeça deles não foi chamuscado. Suas calças não sofreram alteração. Nem mesmo o cheiro de fogo estava neles.",
+  "DAN 3:28": "Nabucodonosor falou e disse: “Bendito seja o Deus de Sadraque, Mesaque e Abede-Nego, que enviou o seu anjo e livrou os seus servos que confiaram nele, e desafiaram a palavra do rei, e entregaram os seus corpos, para que não servissem nem adorassem a nenhum deus, exceto o seu próprio Deus.",
+  "DAN 6:10": "Quando Daniel soube que o documento havia sido assinado, ele foi para sua casa (ora, as janelas do seu quarto estavam abertas em direção a Jerusalém) e ele se ajoelhou três vezes ao dia, e orou, e deu graças diante do seu Deus, como costumava fazer antes.",
+  "DAN 6:16": "Então o rei ordenou, e trouxeram Daniel e o lançaram na cova dos leões. O rei falou e disse a Daniel: “O seu Deus, a quem você serve continuamente, ele o livrará.”",
+  "DAN 6:17": "Uma pedra foi trazida e colocada sobre a boca da cova; e o rei a selou com o seu próprio anel, e com o anel dos seus senhores; para que nada fosse alterado a respeito de Daniel.",
+  "DAN 6:18": "Então o rei foi para o seu palácio, e passou a noite jejuando. Nenhum instrumento musical foi trazido à sua presença; e o seu sono fugiu dele.",
+  "DAN 6:19": "Então o rei se levantou muito cedo pela manhã, e foi apressadamente à cova dos leões.",
+  "DAN 6:20": "Quando ele se aproximou da cova de Daniel, ele clamou com uma voz angustiada. O rei falou e disse a Daniel: “Daniel, servo do Deus vivo, será que o seu Deus, a quem você serve continuamente, pôde livrá-lo dos leões?”",
+  "DAN 6:21": "Então Daniel disse ao rei: “Ó rei, viva para sempre!",
+  "DAN 6:22": "O meu Deus enviou o seu anjo, e fechou a boca dos leões, e eles não me fizeram mal, porque inocência foi achada em mim diante dele; e também diante de você, ó rei, eu não fiz nenhum mal.”",
+  "DAN 6:23": "Então o rei ficou extremamente alegre, e ordenou que tirassem Daniel da cova. Assim Daniel foi tirado da cova, e nenhum tipo de ferimento foi encontrado nele, porque ele havia confiado no seu Deus.",
+  "JON 1:1": "A palavra do SENHOR veio a Jonas, filho de Amitai, dizendo:",
+  "JON 1:2": "“Levante-se, vá à grande cidade de Nínive e pregue contra ela, porque a sua maldade subiu diante de mim.”",
+  "JON 1:3": "Mas Jonas se levantou para fugir da presença do SENHOR para Társis. Ele desceu a Jope e encontrou um navio que ia para Társis; então pagou a passagem e desceu para dentro dele, para ir com eles para Társis, para longe da presença do SENHOR.",
+  "JON 1:4": "Mas o SENHOR mandou um grande vento sobre o mar, e houve uma tempestade tão violenta no mar, que o navio estava a ponto de se despedaçar.",
+  "JON 1:15": "Então pegaram Jonas e o lançaram ao mar; e o mar cessou a sua fúria.",
+  "JON 1:16": "Então os homens temeram grandemente ao SENHOR; ofereceram um sacrifício ao SENHOR e fizeram votos.",
+  "JON 1:17": "O SENHOR preparou um grande peixe para engolir Jonas, e Jonas esteve no ventre do peixe três dias e três noites.",
+  "JON 2:10": "Então o SENHOR falou ao peixe, e ele vomitou Jonas na terra seca.",
+  "JON 3:1": "A palavra do SENHOR veio a Jonas pela segunda vez, dizendo:",
+  "JON 3:2": "“Levante-se, vá à grande cidade de Nínive, e pregue a ela a mensagem que eu lhe dou.”",
+  "JON 3:3": "Então Jonas se levantou e foi a Nínive, de acordo com a palavra do SENHOR. Ora, Nínive era uma cidade extremamente grande, de três dias de caminhada.",
+  "JON 3:4": "Jonas começou a entrar na cidade, caminhando a distância de um dia, e clamou, dizendo: “Em quarenta dias, Nínive será destruída!”",
+  "JON 3:5": "O povo de Nínive creu em Deus; e proclamaram um jejum e vestiram-se de pano de saco, desde o maior até o menor deles.",
+  "JON 3:10": "Deus viu as obras deles, que se desviaram do seu mau caminho. Deus se arrependeu do mal que disse que faria a eles, e não o fez.",
+  "LUK 2:1": "Naqueles dias, saiu um decreto da parte de César Augusto para que todo o mundo fosse recenseado.",
+  "LUK 2:2": "Este foi o primeiro recenseamento feito quando Quirino era governador da Síria.",
+  "LUK 2:3": "Todos iam recensear-se, cada um à sua própria cidade.",
+  "LUK 2:4": "José também subiu da Galileia, da cidade de Nazaré, para a Judeia, à cidade de Davi, chamada Belém, por ser ele da casa e família de Davi,",
+  "LUK 2:5": "a fim de recensear-se com Maria, que estava prometida em casamento a ele e estava grávida.",
+  "LUK 2:6": "Enquanto estavam lá, chegou o dia de ela dar à luz.",
+  "LUK 2:8": "Havia pastores na mesma região, que permaneciam no campo e vigiavam o seu rebanho durante a noite.",
+  "LUK 2:9": "Eis que um anjo do Senhor apareceu a eles, e a glória do Senhor brilhou ao redor deles, e ficaram aterrorizados.",
+  "LUK 2:10": "O anjo lhes disse: “Não tenham medo, pois eis que lhes trago uma boa notícia de grande alegria, que será para todo o povo.",
+  "LUK 2:11": "Pois hoje lhes nasceu, na cidade de Davi, um Salvador, que é Cristo o Senhor.",
+  "LUK 2:12": "Este será o sinal para vocês: encontrarão um bebê envolto em faixas de pano, deitado em uma manjedoura.”",
+  "LUK 2:13": "De repente, apareceu com o anjo uma multidão do exército celestial, louvando a Deus e dizendo:",
+  "LUK 2:14": "“Glória a Deus nas maiores alturas, e paz na terra, boa vontade para com os homens.”",
+  "LUK 2:15": "Quando os anjos se afastaram deles em direção ao céu, os pastores disseram uns aos outros: “Vamos agora a Belém e vejamos isso que aconteceu, o que o Senhor nos deu a conhecer.”",
+  "LUK 2:16": "Eles foram apressadamente e encontraram Maria e José, e o bebê deitado na manjedoura.",
+  "LUK 2:17": "Quando o viram, contaram a todos o que lhes havia sido dito a respeito daquele menino.",
+  "LUK 2:18": "Todos os que ouviram ficaram admirados com o que os pastores lhes contaram.",
+  "LUK 5:1": "Ora, enquanto a multidão o apertava para ouvir a palavra de Deus, ele estava em pé junto ao lago de Genesaré.",
+  "LUK 5:2": "Ele viu dois barcos parados junto ao lago, mas os pescadores haviam descido deles e estavam lavando as suas redes.",
+  "LUK 5:3": "Ele entrou em um dos barcos, que era o de Simão, e pediu-lhe que o afastasse um pouco da terra. Ele se assentou e do barco ensinava as multidões.",
+  "LUK 5:4": "Quando ele terminou de falar, disse a Simão: “Vá para águas mais profundas e lancem as redes para pescar.”",
+  "LUK 5:5": "Simão lhe respondeu: “Mestre, trabalhamos a noite toda e não pegamos nada; mas, porque o senhor está dizendo, lançarei a rede.”",
+  "LUK 5:6": "Quando fizeram isso, pegaram uma grande quantidade de peixes, e a rede deles começou a se romper.",
+  "LUK 5:7": "Eles fizeram sinais aos seus companheiros no outro barco, para que viessem ajudá-los. Eles vieram e encheram ambos os barcos, de modo que começaram a afundar.",
+  "LUK 5:8": "Mas Simão Pedro, vendo isso, prostrou-se aos joelhos de Jesus, dizendo: “Afasta-te de mim, pois sou um homem pecador, Senhor.”",
+  "LUK 5:9": "Pois o espanto havia se apoderado dele, e de todos os que estavam com ele, por causa da pesca que haviam feito;",
+  "LUK 5:10": "e assim também de Tiago e João, filhos de Zebedeu, que eram companheiros de Simão. Jesus disse a Simão: “Não tenha medo. De agora em diante você pescará homens.”",
+  "LUK 5:11": "Quando trouxeram os seus barcos para a terra, deixaram tudo e o seguiram.",
+  "JHN 2:1": "No terceiro dia, houve um casamento em Caná da Galileia. A mãe de Jesus estava lá.",
+  "JHN 2:2": "Jesus também foi convidado, com seus discípulos, para o casamento.",
+  "JHN 2:3": "Quando o vinho acabou, a mãe de Jesus lhe disse: “Eles não têm vinho.”",
+  "JHN 2:4": "Jesus lhe disse: “Mulher, o que isso tem a ver com você e comigo? Minha hora ainda não chegou.”",
+  "JHN 2:5": "Sua mãe disse aos servos: “Tudo o que ele lhes disser, façam.”",
+  "JHN 2:6": "Ora, havia ali seis talhas de pedra para água, colocadas segundo o costume de purificação dos judeus, contendo duas ou três metretas cada uma.",
+  "JHN 2:7": "Jesus lhes disse: “Encham as talhas de água.” Então eles as encheram até a borda.",
+  "JHN 2:8": "Ele lhes disse: “Agora tirem um pouco, e levem ao mestre-sala.” Então eles o levaram.",
+  "JHN 2:9": "Quando o mestre-sala provou a água que havia se transformado em vinho, sem saber de onde ela tinha vindo (embora os servos que haviam tirado a água soubessem), chamou o noivo",
+  "JHN 2:10": "e lhe disse: “Todos servem primeiro o vinho bom, e quando os convidados já beberam à vontade, então o inferior. Você guardou o vinho bom até agora!”",
+  "JHN 2:11": "Jesus fez este primeiro de seus sinais em Caná da Galileia e revelou a sua glória; e os seus discípulos creram nele.",
+  "MAT 13:3": "Ele lhes falou muitas coisas por parábolas, dizendo: “Eis que o semeador saiu a semear.",
+  "MAT 13:4": "Enquanto semeava, algumas sementes caíram à beira do caminho, e os pássaros vieram e as devoraram.",
+  "MAT 13:5": "Outras caíram em solo rochoso, onde não havia muita terra, e logo brotaram, porque a terra não era profunda.",
+  "MAT 13:6": "Mas, quando o sol nasceu, foram queimadas. E, porque não tinham raiz, secaram.",
+  "MAT 13:7": "Outras caíram entre os espinhos. Os espinhos cresceram e as sufocaram.",
+  "MAT 13:8": "Outras caíram em boa terra e deram fruto: algumas cem, outras sessenta e outras trinta vezes mais.",
+  "MAT 13:9": "Aquele que tem ouvidos para ouvir, ouça.”",
+  "MAT 13:18": "“Ouçam, então, a parábola do semeador.",
+  "MAT 13:19": "Quando alguém ouve a palavra do Reino e não a entende, o maligno vem e arrebata o que foi semeado em seu coração. Este é o que foi semeado à beira do caminho.",
+  "MAT 13:20": "O que foi semeado em lugares rochosos, este é o que ouve a palavra e imediatamente a recebe com alegria;",
+  "MAT 13:21": "contudo, ele não tem raiz em si mesmo, mas dura pouco tempo. Quando surge tribulação ou perseguição por causa da palavra, logo ele tropeça.",
+  "MAT 13:22": "O que foi semeado entre os espinhos, este é o que ouve a palavra, mas as preocupações desta era e o engano das riquezas sufocam a palavra, e ele se torna infrutífero.",
+  "MAT 13:23": "O que foi semeado na boa terra, este é o que ouve a palavra e a entende, e certamente dá fruto e produz: uns a cem, outros a sessenta e outros a trinta por um.”",
+  "MRK 4:35": "Naquele dia, ao cair da tarde, ele lhes disse: “Passemos para o outro lado.”",
+  "MRK 4:36": "Deixando a multidão, eles levaram Jesus consigo no barco em que ele já estava. Outros pequenos barcos também o acompanhavam.",
+  "MRK 4:37": "Levantou-se um forte vendaval, e as ondas batiam no barco, de modo que o barco já estava se enchendo de água.",
+  "MRK 4:38": "Ele mesmo estava na popa, dormindo sobre um travesseiro; e eles o acordaram e lhe perguntaram: “Mestre, não te importas que pereçamos?”",
+  "MRK 4:39": "Ele despertou, repreendeu o vento e disse ao mar: “Paz! Aquiete-se!” O vento cessou e houve grande calmaria.",
+  "MRK 4:40": "Ele lhes disse: “Por que vocês estão com tanto medo? Como é que vocês não têm fé?”",
+  "MRK 4:41": "Eles ficaram com muito medo e diziam uns aos outros: “Quem é este, que até o vento e o mar lhe obedecem?”",
+  "MRK 5:21": "Quando Jesus atravessou novamente o mar de barco, uma grande multidão se reuniu ao seu redor; e ele ficou à beira-mar.",
+  "MRK 5:22": "Eis que chegou um dos chefes da sinagoga, chamado Jairo; e, ao vê-lo, prostrou-se aos seus pés",
+  "MRK 5:23": "e lhe suplicou insistentemente: “Minha filhinha está à beira da morte. Por favor, venha e imponha as suas mãos sobre ela, para que seja curada e viva.”",
+  "MRK 5:24": "Jesus foi com ele. Uma grande multidão o seguia e se apertava ao redor dele.",
+  "MRK 5:35": "Enquanto ele ainda falava, chegaram pessoas da casa do chefe da sinagoga, dizendo: “Sua filha está morta. Por que incomodar mais o Mestre?”",
+  "MRK 5:36": "Mas Jesus, ao ouvir o que diziam, imediatamente falou ao chefe da sinagoga: “Não tenha medo, apenas creia.”",
+  "MRK 5:37": "Ele não permitiu que ninguém o seguisse, exceto Pedro, Tiago e João, o irmão de Tiago.",
+  "MRK 5:38": "Ele chegou à casa do chefe da sinagoga, e viu um alvoroço, choro e grande lamento.",
+  "MRK 5:39": "Quando ele entrou, disse-lhes: “Por que vocês fazem alvoroço e choram? A criança não está morta, mas dorme.”",
+  "MRK 5:40": "Eles riram dele. Mas ele, depois de mandar todos saírem, tomou o pai da criança, a mãe dela e os que estavam com ele, e entrou onde a criança estava deitada.",
+  "MRK 5:41": "Tomando a criança pela mão, disse-lhe: “Talita cumi!” que quer dizer: “Menina, eu lhe digo, levante-se!”",
+  "MRK 5:42": "Imediatamente a menina se levantou e começou a andar, pois tinha doze anos de idade. Eles ficaram tomados de grande espanto.",
+  "MRK 5:43": "Ele lhes ordenou severamente que ninguém soubesse disso, e mandou que lhe dessem algo para comer.",
+  "JHN 6:5": "Então Jesus, levantando os olhos e vendo que uma grande multidão vinha a ele, disse a Filipe: “Onde compraremos pão para que eles comam?”",
+  "JHN 6:6": "Ele dizia isso para testá-lo, pois ele mesmo sabia o que estava para fazer.",
+  "JHN 6:7": "Filipe lhe respondeu: “Duzentos denários de pão não seriam suficientes para que cada um deles recebesse um pouco.”",
+  "JHN 6:8": "Um de seus discípulos, André, irmão de Simão Pedro, disse a ele:",
+  "JHN 6:9": "“Há um rapaz aqui que tem cinco pães de cevada e dois peixes, mas o que é isso para tantos?”",
+  "JHN 6:10": "Jesus disse: “Façam todos se sentarem.” Ora, havia muita relva naquele lugar. Então os homens se sentaram; eram cerca de cinco mil.",
+  "JHN 6:11": "Jesus tomou os pães e, depois de dar graças, distribuiu-os aos discípulos, e os discípulos aos que estavam sentados; fez o mesmo com os peixes, dando-lhes quanto queriam.",
+  "JHN 6:12": "Quando estavam satisfeitos, ele disse aos seus discípulos: “Recolham os pedaços que sobraram, para que nada se perca.”",
+  "JHN 6:13": "Então eles os recolheram, e encheram doze cestos com os pedaços dos cinco pães de cevada, que sobraram dos que haviam comido.",
+  "JHN 6:14": "Quando as pessoas viram o sinal que Jesus havia feito, disseram: “Este é verdadeiramente o profeta que vem ao mundo.”",
+  "MAT 14:22": "Imediatamente Jesus fez com que os discípulos entrassem no barco e fossem adiante dele para o outro lado, enquanto ele despedia as multidões.",
+  "MAT 14:23": "Depois de despedir as multidões, ele subiu ao monte, à parte, para orar. Ao cair da tarde, ele estava ali sozinho.",
+  "MAT 14:24": "Mas o barco já estava no meio do mar, açoitado pelas ondas, pois o vento era contrário.",
+  "MAT 14:25": "Na quarta vigília da noite, Jesus foi até eles, andando sobre o mar.",
+  "MAT 14:26": "Quando os discípulos o viram andando sobre o mar, ficaram apavorados, dizendo: “É um fantasma!” e gritaram de medo.",
+  "MAT 14:27": "Mas imediatamente Jesus falou com eles, dizendo: “Coragem! Sou eu! Não tenham medo.”",
+  "MAT 14:28": "Pedro lhe respondeu e disse: “Senhor, se é você, mande-me ir até você sobre as águas.”",
+  "MAT 14:29": "Ele disse: “Venha!” Pedro desceu do barco e andou sobre as águas para ir até Jesus.",
+  "MAT 14:30": "Mas, quando viu que o vento era forte, teve medo e, começando a afundar, gritou, dizendo: “Senhor, salva-me!”",
+  "MAT 14:31": "Imediatamente Jesus estendeu a mão, segurou-o e lhe disse: “Homem de pouca fé, por que você duvidou?”",
+  "MAT 14:32": "Quando eles subiram no barco, o vento cessou.",
+  "MAT 14:33": "Os que estavam no barco vieram e o adoraram, dizendo: “Verdadeiramente você é o Filho de Deus!”",
+  "LUK 10:25": "Eis que um certo intérprete da lei se levantou e o testou, dizendo: “Mestre, o que farei para herdar a vida eterna?”",
+  "LUK 10:26": "Ele lhe disse: “O que está escrito na lei? Como você lê?”",
+  "LUK 10:27": "Ele respondeu: “Amarás o Senhor teu Deus de todo o teu coração, de toda a tua alma, de todas as tuas forças e de todo o teu entendimento; e ao teu próximo como a ti mesmo.”",
+  "LUK 10:28": "Ele lhe disse: “Você respondeu corretamente. Faça isso, e viverá.”",
+  "LUK 10:29": "Mas ele, desejando justificar a si mesmo, perguntou a Jesus: “E quem é o meu próximo?”",
+  "LUK 10:30": "Jesus respondeu: “Um certo homem descia de Jerusalém para Jericó e caiu nas mãos de salteadores, os quais o despojaram e o espancaram, e se retiraram, deixando-o quase morto.",
+  "LUK 10:31": "Por acaso, um certo sacerdote descia por aquele caminho. Quando o viu, passou pelo outro lado.",
+  "LUK 10:32": "Do mesmo modo, também um levita, quando chegou ao lugar e o viu, passou pelo outro lado.",
+  "LUK 10:33": "Mas um certo samaritano, estando de viagem, chegou onde ele estava. Quando o viu, moveu-se de compaixão,",
+  "LUK 10:34": "aproximou-se dele e atou-lhe as feridas, derramando nelas óleo e vinho. Ele o colocou sobre o seu próprio animal, levou-o para uma hospedaria e cuidou dele.",
+  "LUK 10:35": "No dia seguinte, ao partir, ele tirou dois denários, deu-os ao hospedeiro e lhe disse: 'Cuide dele. O que gastar além disso, eu lhe pagarei quando voltar.'",
+  "LUK 10:36": "Qual destes três, pois, lhe parece ter sido o próximo daquele que caiu nas mãos dos salteadores?”",
+  "LUK 10:37": "Ele disse: “Aquele que teve misericórdia dele.” Então Jesus lhe disse: “Vai, e faze tu o mesmo.”",
+  "LUK 10:38": "Enquanto seguiam o seu caminho, ele entrou em uma certa aldeia, e uma certa mulher chamada Marta o recebeu em sua casa.",
+  "LUK 10:39": "Ela tinha uma irmã chamada Maria, a qual também se assentou aos pés de Jesus e ouvia a sua palavra.",
+  "LUK 10:40": "Mas Marta estava distraída com muito serviço; aproximando-se dele, disse: “Senhor, não se importa que minha irmã me deixe servir sozinha? Diga a ela, então, que me ajude.”",
+  "LUK 10:41": "Jesus lhe respondeu: “Marta, Marta, você está ansiosa e perturbada com muitas coisas,",
+  "LUK 10:42": "mas uma só coisa é necessária. Maria escolheu a boa parte, a qual não lhe será tirada.”",
+  "LUK 15:3": "Então ele lhes contou esta parábola:",
+  "LUK 15:4": "“Qual de vocês, se tivesse cem ovelhas e perdesse uma delas, não deixaria as noventa e nove no deserto e iria atrás daquela que se perdeu, até encontrá-la?",
+  "LUK 15:5": "Quando a encontra, ele a coloca sobre os ombros, alegrando-se.",
+  "LUK 15:6": "Ao chegar em casa, reúne seus amigos e vizinhos, dizendo-lhes: ‘Alegrem-se comigo, pois encontrei a minha ovelha que estava perdida!’",
+  "LUK 15:7": "Eu lhes digo que, da mesma forma, haverá mais alegria no céu por um pecador que se arrepende, do que por noventa e nove justos que não precisam de arrependimento.",
+  "LUK 15:11": "Ele disse: “Certo homem tinha dois filhos.",
+  "LUK 15:12": "O mais jovem deles disse ao pai: ‘Pai, dá-me a parte dos bens que me cabe.’ Então ele dividiu os seus bens entre eles.",
+  "LUK 15:13": "Poucos dias depois, o filho mais jovem juntou tudo o que era seu e viajou para um país distante. Lá ele desperdiçou os seus bens vivendo de forma desregrada.",
+  "LUK 15:14": "Depois de ter gasto tudo, houve uma grande fome naquele país, e ele começou a passar necessidade.",
+  "LUK 15:15": "Então ele se pôs a serviço de um dos cidadãos daquele país, que o mandou para os seus campos para apascentar porcos.",
+  "LUK 15:16": "Ele desejava encher o estômago com as vagens que os porcos comiam, mas ninguém lhe dava nada.",
+  "LUK 15:17": "Mas, quando caiu em si, disse: ‘Quantos empregados de meu pai têm pão com fartura, e eu aqui morrendo de fome!",
+  "LUK 15:18": "Eu me levantarei, irei para meu pai e lhe direi: “Pai, pequei contra o céu e diante de ti.",
+  "LUK 15:19": "Já não sou digno de ser chamado teu filho. Trata-me como um dos teus empregados.”’",
+  "LUK 15:20": "“Ele se levantou e foi para seu pai. Mas, estando ele ainda longe, seu pai o viu e, movido de compaixão, correu, lançou-se ao seu pescoço e o beijou.",
+  "LUK 15:21": "O filho lhe disse: ‘Pai, pequei contra o céu e diante de ti. Já não sou digno de ser chamado teu filho.’",
+  "LUK 15:22": "“Mas o pai disse aos seus servos: ‘Tragam a melhor veste e vistam-no com ela. Coloquem um anel em sua mão e sandálias em seus pés.",
+  "LUK 15:23": "Tragam o bezerro gordo, matem-no, e vamos comer e celebrar;",
+  "LUK 15:24": "pois este meu filho estava morto e voltou à vida. Ele estava perdido e foi achado.’ Então começaram a celebrar.",
+  "LUK 15:25": "“Ora, o seu filho mais velho estava no campo. Quando se aproximou da casa, ouviu música e dança.",
+  "LUK 15:26": "Ele chamou um dos servos e perguntou o que estava acontecendo.",
+  "LUK 15:27": "Ele lhe disse: ‘Seu irmão chegou, e seu pai matou o bezerro gordo, porque o recebeu de volta são e salvo.’",
+  "LUK 15:28": "Mas ele ficou irado e não queria entrar. Então seu pai saiu e implorou que entrasse.",
+  "LUK 15:29": "Mas ele respondeu ao seu pai: ‘Há tantos anos eu sirvo você e nunca desobedeci a uma ordem sua, mas você nunca me deu um cabrito para que eu pudesse celebrar com os meus amigos.",
+  "LUK 15:30": "Mas, quando veio este seu filho, que devorou os seus bens com prostitutas, você matou o bezerro gordo para ele.’",
+  "LUK 15:31": "“Ele lhe disse: ‘Filho, você está sempre comigo, e tudo o que é meu é seu.",
+  "LUK 15:32": "Mas era apropriado celebrar e alegrar-se, pois este seu irmão estava morto, e voltou à vida. Ele estava perdido, e foi achado.’”",
+  "LUK 17:11": "Estando ele a caminho de Jerusalém, passava pelas fronteiras de Samaria e da Galileia.",
+  "LUK 17:12": "Ao entrar em uma certa aldeia, dez homens leprosos vieram ao seu encontro, os quais pararam de longe.",
+  "LUK 17:13": "Eles levantaram a voz, dizendo: “Jesus, Mestre, tem misericórdia de nós!”",
+  "LUK 17:14": "Quando ele os viu, disse-lhes: “Vão e mostrem-se aos sacerdotes.” E aconteceu que, enquanto iam, foram purificados.",
+  "LUK 17:15": "Um deles, vendo que estava curado, voltou, glorificando a Deus em alta voz.",
+  "LUK 17:16": "Ele prostrou-se com o rosto em terra aos pés de Jesus, dando-lhe graças; e ele era samaritano.",
+  "LUK 17:17": "Jesus respondeu: “Não foram purificados os dez? Mas onde estão os nove?",
+  "LUK 17:18": "Não se achou nenhum que voltasse para dar glória a Deus, exceto este estrangeiro?”",
+  "LUK 17:19": "Então ele lhe disse: “Levante-se e siga o seu caminho. A sua fé o curou.”",
+  "MRK 10:13": "Traziam-lhe crianças para que ele as tocasse, mas os discípulos repreendiam os que as traziam.",
+  "MRK 10:14": "Mas quando Jesus viu isso, indignou-se e lhes disse: “Deixem vir a mim as crianças! Não as impeçam, pois o Reino de Deus pertence aos que são semelhantes a elas.",
+  "MRK 10:15": "Com toda a certeza lhes digo: quem não receber o Reino de Deus como uma criança, de modo algum entrará nele.”",
+  "MRK 10:16": "Então ele as tomou em seus braços e as abençoou, impondo-lhes as mãos.",
+  "MRK 10:46": "Eles chegaram a Jericó. Quando ele estava saindo de Jericó com seus discípulos e uma grande multidão, o filho de Timeu, Bartimeu, um mendigo cego, estava sentado à beira do caminho.",
+  "MRK 10:47": "Quando ele ouviu que era Jesus, o Nazareno, começou a gritar: “Jesus, Filho de Davi, tem misericórdia de mim!”",
+  "MRK 10:48": "Muitos o repreendiam para que ficasse quieto, mas ele clamava ainda mais: “Filho de Davi, tem misericórdia de mim!”",
+  "MRK 10:49": "Jesus parou e disse: “Chamem-no.” Eles chamaram o cego, dizendo-lhe: “Anime-se! Levante-se. Ele está chamando você!”",
+  "MRK 10:50": "Ele, jogando de lado a sua capa, deu um salto e foi até Jesus.",
+  "MRK 10:51": "Jesus lhe perguntou: “O que você quer que eu lhe faça?” O cego lhe disse: “Raboni, quero voltar a enxergar.”",
+  "MRK 10:52": "Jesus lhe disse: “Vá. A sua fé o curou.” Imediatamente ele recuperou a visão e seguiu Jesus pelo caminho.",
+  "LUK 19:1": "Ele entrou e estava passando por Jericó.",
+  "LUK 19:2": "Havia ali um homem chamado Zaqueu. Ele era chefe dos cobradores de impostos e era rico.",
+  "LUK 19:3": "Ele tentava ver quem era Jesus, e não conseguia por causa da multidão, porque era de baixa estatura.",
+  "LUK 19:4": "Ele correu adiante e subiu em um sicômoro para vê-lo, pois ele ia passar por ali.",
+  "LUK 19:5": "Quando Jesus chegou àquele lugar, olhou para cima e o viu, e disse-lhe: “Zaqueu, desça depressa, pois hoje devo ficar em sua casa.”",
+  "LUK 19:6": "Ele se apressou, desceu e o recebeu com alegria.",
+  "LUK 19:7": "Quando viram isso, todos murmuraram, dizendo: “Ele entrou para hospedar-se com um homem pecador.”",
+  "LUK 19:8": "Zaqueu levantou-se e disse ao Senhor: “Eis que, Senhor, dou a metade dos meus bens aos pobres. Se defraudei alguém em alguma coisa, restituo quatro vezes mais.”",
+  "LUK 19:9": "Jesus lhe disse: “Hoje, a salvação chegou a esta casa, porque ele também é filho de Abraão.",
+  "JHN 11:32": "Portanto, quando Maria chegou onde Jesus estava e o viu, prostrou-se aos seus pés, dizendo-lhe: “Senhor, se estivesses aqui, meu irmão não teria morrido.”",
+  "JHN 11:33": "Jesus, ao vê-la chorando e ao ver também chorando os judeus que vieram com ela, gemeu no espírito e ficou profundamente perturbado,",
+  "JHN 11:34": "e disse: “Onde o colocaram?” Disseram-lhe: “Senhor, vem e vê.”",
+  "JHN 11:35": "Jesus chorou.",
+  "JHN 11:36": "Os judeus, portanto, disseram: “Vejam quanto carinho ele tinha por ele!”",
+  "JHN 11:37": "Alguns deles, porém, disseram: “Não poderia este homem, que abriu os olhos do cego, ter feito com que este também não morresse?”",
+  "JHN 11:38": "Jesus, novamente gemendo no íntimo, foi ao túmulo. Ora, era uma caverna, e uma pedra estava posta sobre ela.",
+  "JHN 11:39": "Jesus disse: “Tirem a pedra.” Marta, a irmã daquele que estava morto, disse-lhe: “Senhor, a esta altura já cheira mal, pois já está morto há quatro dias.”",
+  "JHN 11:40": "Jesus lhe disse: “Não te disse eu que, se creres, verás a glória de Deus?”",
+  "JHN 11:41": "Então tiraram a pedra do lugar onde o morto estava deitado. Jesus levantou os olhos e disse: “Pai, graças te dou porque me ouviste.",
+  "JHN 11:42": "Eu sei que sempre me ouves, mas por causa da multidão que está ao redor eu disse isso, para que creiam que tu me enviaste.”",
+  "JHN 11:43": "Depois de dizer isso, clamou em alta voz: “Lázaro, vem para fora!”",
+  "JHN 11:44": "Aquele que estava morto saiu, com as mãos e os pés amarrados com faixas, e o seu rosto envolto num lenço. Jesus lhes disse: “Desatem-no e deixem-no ir.”",
+  "JHN 13:3": "Jesus, sabendo que o Pai tinha dado todas as coisas em suas mãos, e que viera de Deus e ia para Deus,",
+  "JHN 13:4": "levantou-se da ceia e tirou as suas vestes exteriores. Ele pegou uma toalha e a enrolou ao redor da cintura.",
+  "JHN 13:5": "Depois derramou água na bacia e começou a lavar os pés dos discípulos e a enxugá-los com a toalha que estava presa à sua cintura.",
+  "JHN 13:6": "Então ele chegou a Simão Pedro. Ele lhe disse: “Senhor, você vai lavar os meus pés?”",
+  "JHN 13:7": "Jesus lhe respondeu: “Você não sabe o que estou fazendo agora, mas entenderá mais tarde.”",
+  "JHN 13:8": "Pedro lhe disse: “Você nunca lavará os meus pés!” Jesus lhe respondeu: “Se eu não o lavar, você não tem parte comigo.”",
+  "JHN 13:9": "Simão Pedro lhe disse: “Senhor, não apenas os meus pés, mas também as minhas mãos e a minha cabeça!”",
+  "JHN 13:10": "Jesus lhe disse: “Aquele que já se banhou só precisa lavar os pés, pois está completamente limpo. Vocês estão limpos, mas não todos.”",
+  "JHN 13:11": "Pois ele sabia quem o trairia; por isso disse: “Nem todos vocês estão limpos.”",
+  "JHN 13:12": "Então, quando ele terminou de lavar os pés deles, vestiu novamente sua veste exterior e sentou-se outra vez, e lhes disse: “Vocês sabem o que eu lhes fiz?",
+  "JHN 13:13": "Vocês me chamam de ‘Mestre’ e ‘Senhor’. E têm razão, pois de fato sou.",
+  "JHN 13:14": "Se eu, então, o Senhor e o Mestre, lavei os pés de vocês, vocês também devem lavar os pés uns dos outros.",
+  "JHN 13:15": "Pois eu lhes dei um exemplo, para que vocês também façam como eu lhes fiz.",
+  "MAT 28:1": "Depois do sábado, ao raiar do primeiro dia da semana, Maria Madalena e a outra Maria foram ver o sepulcro.",
+  "MAT 28:2": "Eis que houve um grande terremoto, pois um anjo do Senhor desceu do céu, veio, rolou a pedra da entrada e sentou-se sobre ela.",
+  "MAT 28:3": "Seu aspecto era como um relâmpago, e suas vestes brancas como a neve.",
+  "MAT 28:4": "De medo dele, os guardas tremeram e ficaram como mortos.",
+  "MAT 28:5": "O anjo respondeu às mulheres: “Não tenham medo, pois sei que vocês procuram Jesus, que foi crucificado.",
+  "MAT 28:7": "Vão depressa e digam aos discípulos dele: ‘Ele ressuscitou dos mortos e eis que irá antes de vocês para a Galileia; lá vocês o verão.’ Eis que eu lhes disse.”",
+  "MAT 28:8": "Elas partiram depressa do sepulcro, com medo e grande alegria, e correram para levar a notícia aos discípulos dele.",
+  "MAT 28:9": "Enquanto iam contar aos discípulos dele, eis que Jesus foi ao encontro delas, dizendo: “Alegrem-se!” Elas se aproximaram, abraçaram os seus pés e o adoraram.",
+  "MAT 28:10": "Então Jesus lhes disse: “Não tenham medo. Vão e digam aos meus irmãos para que vão à Galileia, e lá eles me verão.”",
+  "LUK 24:13": "Eis que dois deles estavam indo naquele mesmo dia para uma aldeia chamada Emaús, que ficava a sessenta estádios de Jerusalém.",
+  "LUK 24:14": "Eles conversavam um com o outro sobre todas essas coisas que haviam acontecido.",
+  "LUK 24:15": "Enquanto conversavam e discutiam entre si, o próprio Jesus se aproximou e foi com eles.",
+  "LUK 24:16": "Mas os olhos deles foram impedidos de reconhecê-lo.",
+  "LUK 24:28": "Eles se aproximaram da aldeia para onde iam, e ele fez como se fosse para mais longe.",
+  "LUK 24:29": "Eles insistiram com ele, dizendo: “Fique conosco, pois já é quase noite, e o dia está quase no fim.” Ele entrou para ficar com eles.",
+  "LUK 24:30": "Quando ele se sentou à mesa com eles, tomou o pão e deu graças. Partindo-o, deu-o a eles.",
+  "LUK 24:31": "Os olhos deles foram abertos e eles o reconheceram; então ele desapareceu da vista deles.",
+  "LUK 24:32": "Eles disseram um ao outro: “Não ardia o nosso coração dentro de nós enquanto ele nos falava pelo caminho, e enquanto nos abria as Escrituras?”",
+  "LUK 24:33": "Levantaram-se naquela mesma hora, voltaram para Jerusalém e encontraram os onze reunidos, e os que estavam com eles,",
+  "LUK 24:34": "dizendo: “O Senhor ressuscitou de fato, e apareceu a Simão!”",
+  "LUK 24:35": "Eles relataram as coisas que aconteceram pelo caminho, e como ele foi reconhecido por eles no partir do pão.",
+  "ACT 9:1": "Saulo, porém, ainda respirava ameaças e morte contra os discípulos do Senhor. Ele se apresentou ao sumo sacerdote",
+  "ACT 9:2": "e pediu-lhe cartas para as sinagogas de Damasco, para que, se encontrasse alguns que fossem do Caminho, quer homens quer mulheres, pudesse levá-los presos para Jerusalém.",
+  "ACT 9:3": "Em sua viagem, quando se aproximava de Damasco, de repente uma luz do céu brilhou ao seu redor.",
+  "ACT 9:4": "Ele caiu por terra e ouviu uma voz que lhe dizia: “Saulo, Saulo, por que você me persegue?”",
+  "ACT 9:5": "Ele perguntou: “Quem és tu, Senhor?” O Senhor disse: “Eu sou Jesus, a quem você persegue.",
+  "ACT 9:6": "Mas levante-se e entre na cidade, e lhe será dito o que você deve fazer.”",
+  "ACT 9:7": "Os homens que viajavam com ele pararam emudecidos, ouvindo o som, mas não vendo ninguém.",
+  "ACT 9:8": "Saulo levantou-se do chão e, abrindo os olhos, não via ninguém. Então o conduziram pela mão até Damasco.",
+  "ACT 9:9": "Ele ficou sem ver por três dias, e não comeu nem bebeu.",
+  "ACT 9:17": "Ananias partiu e entrou na casa. Impondo-lhe as mãos, disse: “Irmão Saulo, o Senhor, que lhe apareceu no caminho por onde você vinha, enviou-me para que você recupere a visão e seja cheio do Espírito Santo.”",
+  "ACT 9:18": "Imediatamente caiu dos seus olhos algo como escamas, e ele recuperou a visão. Ele se levantou e foi batizado."
+ },
+ "wj": {
+  "MAT 6:34": [
+   [
+    0,
+    137
+   ]
+  ],
+  "MAT 11:28": [
+   [
+    0,
+    90
+   ]
+  ],
+  "JHN 14:27": [
+   [
+    0,
+    128
+   ]
+  ],
+  "2CO 12:9": [
+   [
+    14,
+    97
+   ]
+  ],
+  "MAT 5:4": [
+   [
+    0,
+    58
+   ]
+  ],
+  "MAT 28:20": [
+   [
+    0,
+    114
+   ]
+  ],
+  "MAT 6:33": [
+   [
+    0,
+    100
+   ]
+  ],
+  "JHN 3:16": [
+   [
+    0,
+    142
+   ]
+  ],
+  "JHN 15:9": [
+   [
+    0,
+    71
+   ]
+  ],
+  "JHN 15:12-13": [
+   [
+    0,
+    79
+   ],
+   [
+    80,
+    153
+   ]
+  ],
+  "JHN 13:34-35": [
+   [
+    0,
+    126
+   ],
+   [
+    127,
+    212
+   ]
+  ],
+  "MRK 12:30-31": [
+   [
+    0,
+    152
+   ],
+   [
+    153,
+    268
+   ]
+  ],
+  "MRK 11:24": [
+   [
+    0,
+    97
+   ]
+  ],
+  "MAT 17:20": [
+   [
+    16,
+    223
+   ]
+  ],
+  "MRK 9:23": [
+   [
+    17,
+    78
+   ]
+  ],
+  "JHN 14:1": [
+   [
+    0,
+    83
+   ]
+  ],
+  "JHN 20:29": [
+   [
+    17,
+    92
+   ]
+  ],
+  "MAT 21:22": [
+   [
+    0,
+    57
+   ]
+  ],
+  "JHN 11:25": [
+   [
+    17,
+    97
+   ]
+  ],
+  "JHN 10:10": [
+   [
+    0,
+    106
+   ]
+  ],
+  "JHN 10:11": [
+   [
+    0,
+    63
+   ]
+  ],
+  "JHN 8:12": [
+   [
+    48,
+    139
+   ]
+  ],
+  "JHN 6:35": [
+   [
+    18,
+    117
+   ]
+  ],
+  "JHN 14:6": [
+   [
+    17,
+    94
+   ]
+  ],
+  "JHN 15:5": [
+   [
+    0,
+    139
+   ]
+  ],
+  "REV 3:20": [
+   [
+    0,
+    130
+   ]
+  ],
+  "LUK 19:10": [
+   [
+    0,
+    65
+   ]
+  ],
+  "JHN 3:17": [
+   [
+    0,
+    106
+   ]
+  ],
+  "REV 1:18": [
+   [
+    0,
+    115
+   ]
+  ],
+  "MAT 11:29-30": [
+   [
+    0,
+    133
+   ],
+   [
+    134,
+    180
+   ]
+  ],
+  "JHN 16:33": [
+   [
+    0,
+    130
+   ]
+  ],
+  "JHN 8:36": [
+   [
+    0,
+    70
+   ]
+  ],
+  "JHN 15:11": [
+   [
+    0,
+    121
+   ]
+  ],
+  "LUK 15:10": [
+   [
+    0,
+    104
+   ]
+  ],
+  "LUK 4:18": [
+   [
+    0,
+    244
+   ]
+  ],
+  "MAT 7:7": [
+   [
+    0,
+    76
+   ]
+  ],
+  "MAT 7:24": [
+   [
+    0,
+    137
+   ]
+  ],
+  "JHN 14:18": [
+   [
+    0,
+    44
+   ]
+  ],
+  "MAT 6:26": [
+   [
+    0,
+    155
+   ]
+  ],
+  "LUK 12:7": [
+   [
+    0,
+    126
+   ]
+  ],
+  "MAT 7:11": [
+   [
+    0,
+    148
+   ]
+  ],
+  "LUK 12:32": [
+   [
+    0,
+    87
+   ]
+  ],
+  "MAT 10:30-31": [
+   [
+    0,
+    59
+   ],
+   [
+    60,
+    126
+   ]
+  ],
+  "MAT 6:6": [
+   [
+    0,
+    166
+   ]
+  ],
+  "MAT 18:20": [
+   [
+    0,
+    83
+   ]
+  ],
+  "REV 21:5": [
+   [
+    42,
+    79
+   ],
+   [
+    89,
+    152
+   ]
+  ],
+  "LUK 5:4": [
+   [
+    45,
+    106
+   ]
+  ],
+  "LUK 5:10": [
+   [
+    104,
+    161
+   ]
+  ],
+  "JHN 2:4": [
+   [
+    17,
+    95
+   ]
+  ],
+  "JHN 2:7": [
+   [
+    18,
+    45
+   ]
+  ],
+  "JHN 2:8": [
+   [
+    16,
+    63
+   ]
+  ],
+  "MAT 13:3": [
+   [
+    53,
+    87
+   ]
+  ],
+  "MAT 13:4": [
+   [
+    0,
+    98
+   ]
+  ],
+  "MAT 13:5": [
+   [
+    0,
+    108
+   ]
+  ],
+  "MAT 13:6": [
+   [
+    0,
+    78
+   ]
+  ],
+  "MAT 13:7": [
+   [
+    0,
+    70
+   ]
+  ],
+  "MAT 13:8": [
+   [
+    0,
+    98
+   ]
+  ],
+  "MAT 13:9": [
+   [
+    0,
+    41
+   ]
+  ],
+  "MAT 13:18": [
+   [
+    0,
+    38
+   ]
+  ],
+  "MAT 13:19": [
+   [
+    0,
+    158
+   ]
+  ],
+  "MAT 13:20": [
+   [
+    0,
+    104
+   ]
+  ],
+  "MAT 13:21": [
+   [
+    0,
+    139
+   ]
+  ],
+  "MAT 13:22": [
+   [
+    0,
+    166
+   ]
+  ],
+  "MAT 13:23": [
+   [
+    0,
+    160
+   ]
+  ],
+  "MRK 4:35": [
+   [
+    47,
+    76
+   ]
+  ],
+  "MRK 4:39": [
+   [
+    50,
+    68
+   ]
+  ],
+  "MRK 4:40": [
+   [
+    16,
+    82
+   ]
+  ],
+  "MRK 5:36": [
+   [
+    76,
+    107
+   ]
+  ],
+  "MRK 5:39": [
+   [
+    31,
+    108
+   ]
+  ],
+  "MRK 5:41": [
+   [
+    39,
+    53
+   ],
+   [
+    70,
+    104
+   ]
+  ],
+  "JHN 6:5": [
+   [
+    94,
+    137
+   ]
+  ],
+  "JHN 6:10": [
+   [
+    13,
+    39
+   ]
+  ],
+  "JHN 6:12": [
+   [
+    59,
+    118
+   ]
+  ],
+  "MAT 14:27": [
+   [
+    49,
+    84
+   ]
+  ],
+  "MAT 14:29": [
+   [
+    11,
+    19
+   ]
+  ],
+  "MAT 14:31": [
+   [
+    59,
+    101
+   ]
+  ],
+  "LUK 10:26": [
+   [
+    15,
+    57
+   ]
+  ],
+  "LUK 10:28": [
+   [
+    15,
+    66
+   ]
+  ],
+  "LUK 10:30": [
+   [
+    17,
+    174
+   ]
+  ],
+  "LUK 10:31": [
+   [
+    0,
+    94
+   ]
+  ],
+  "LUK 10:32": [
+   [
+    0,
+    88
+   ]
+  ],
+  "LUK 10:33": [
+   [
+    0,
+    104
+   ]
+  ],
+  "LUK 10:34": [
+   [
+    0,
+    156
+   ]
+  ],
+  "LUK 10:35": [
+   [
+    0,
+    155
+   ]
+  ],
+  "LUK 10:36": [
+   [
+    0,
+    97
+   ]
+  ],
+  "LUK 10:37": [
+   [
+    71,
+    96
+   ]
+  ],
+  "LUK 10:41": [
+   [
+    21,
+    85
+   ]
+  ],
+  "LUK 10:42": [
+   [
+    0,
+    87
+   ]
+  ],
+  "LUK 15:4": [
+   [
+    0,
+    155
+   ]
+  ],
+  "LUK 15:5": [
+   [
+    0,
+    62
+   ]
+  ],
+  "LUK 15:6": [
+   [
+    0,
+    133
+   ]
+  ],
+  "LUK 15:7": [
+   [
+    0,
+    162
+   ]
+  ],
+  "LUK 15:11": [
+   [
+    11,
+    42
+   ]
+  ],
+  "LUK 15:12": [
+   [
+    0,
+    118
+   ]
+  ],
+  "LUK 15:13": [
+   [
+    0,
+    157
+   ]
+  ],
+  "LUK 15:14": [
+   [
+    0,
+    97
+   ]
+  ],
+  "LUK 15:15": [
+   [
+    0,
+    116
+   ]
+  ],
+  "LUK 15:16": [
+   [
+    0,
+    93
+   ]
+  ],
+  "LUK 15:17": [
+   [
+    0,
+    110
+   ]
+  ],
+  "LUK 15:18": [
+   [
+    0,
+    90
+   ]
+  ],
+  "LUK 15:19": [
+   [
+    0,
+    82
+   ]
+  ],
+  "LUK 15:20": [
+   [
+    0,
+    149
+   ]
+  ],
+  "LUK 15:21": [
+   [
+    0,
+    104
+   ]
+  ],
+  "LUK 15:22": [
+   [
+    0,
+    130
+   ]
+  ],
+  "LUK 15:23": [
+   [
+    0,
+    59
+   ]
+  ],
+  "LUK 15:24": [
+   [
+    0,
+    111
+   ]
+  ],
+  "LUK 15:25": [
+   [
+    0,
+    96
+   ]
+  ],
+  "LUK 15:26": [
+   [
+    0,
+    62
+   ]
+  ],
+  "LUK 15:27": [
+   [
+    0,
+    106
+   ]
+  ],
+  "LUK 15:28": [
+   [
+    0,
+    84
+   ]
+  ],
+  "LUK 15:29": [
+   [
+    0,
+    177
+   ]
+  ],
+  "LUK 15:30": [
+   [
+    0,
+    112
+   ]
+  ],
+  "LUK 15:31": [
+   [
+    0,
+    74
+   ]
+  ],
+  "LUK 15:32": [
+   [
+    0,
+    128
+   ]
+  ],
+  "LUK 17:14": [
+   [
+    31,
+    65
+   ]
+  ],
+  "LUK 17:17": [
+   [
+    17,
+    71
+   ]
+  ],
+  "LUK 17:18": [
+   [
+    0,
+    82
+   ]
+  ],
+  "LUK 17:19": [
+   [
+    21,
+    73
+   ]
+  ],
+  "MRK 10:14": [
+   [
+    53,
+    161
+   ]
+  ],
+  "MRK 10:15": [
+   [
+    0,
+    109
+   ]
+  ],
+  "MRK 10:49": [
+   [
+    21,
+    33
+   ]
+  ],
+  "MRK 10:51": [
+   [
+    21,
+    55
+   ]
+  ],
+  "MRK 10:52": [
+   [
+    17,
+    40
+   ]
+  ],
+  "LUK 19:5": [
+   [
+    72,
+    131
+   ]
+  ],
+  "LUK 19:9": [
+   [
+    17,
+    91
+   ]
+  ],
+  "JHN 11:34": [
+   [
+    9,
+    28
+   ]
+  ],
+  "JHN 11:39": [
+   [
+    13,
+    29
+   ]
+  ],
+  "JHN 11:40": [
+   [
+    17,
+    74
+   ]
+  ],
+  "JHN 11:41": [
+   [
+    93,
+    131
+   ]
+  ],
+  "JHN 11:42": [
+   [
+    0,
+    123
+   ]
+  ],
+  "JHN 11:43": [
+   [
+    42,
+    66
+   ]
+  ],
+  "JHN 11:44": [
+   [
+    124,
+    152
+   ]
+  ],
+  "JHN 13:7": [
+   [
+    21,
+    89
+   ]
+  ],
+  "JHN 13:8": [
+   [
+    71,
+    118
+   ]
+  ],
+  "JHN 13:10": [
+   [
+    17,
+    133
+   ]
+  ],
+  "JHN 13:11": [
+   [
+    47,
+    78
+   ]
+  ],
+  "JHN 13:12": [
+   [
+    123,
+    154
+   ]
+  ],
+  "JHN 13:13": [
+   [
+    0,
+    70
+   ]
+  ],
+  "JHN 13:14": [
+   [
+    0,
+    105
+   ]
+  ],
+  "JHN 13:15": [
+   [
+    0,
+    74
+   ]
+  ],
+  "MAT 28:9": [
+   [
+    87,
+    100
+   ]
+  ],
+  "MAT 28:10": [
+   [
+    24,
+    115
+   ]
+  ],
+  "ACT 9:4": [
+   [
+    50,
+    91
+   ]
+  ],
+  "ACT 9:5": [
+   [
+    53,
+    89
+   ]
+  ],
+  "ACT 9:6": [
+   [
+    0,
+    73
+   ]
+  ]
+ }
+}

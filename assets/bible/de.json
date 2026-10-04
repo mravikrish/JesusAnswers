@@ -1,0 +1,1769 @@
+{
+ "lang": "de",
+ "translation": "LUT1912",
+ "translationName": "Lutherbibel 1912",
+ "attribution": "Lutherbibel 1912 (LUT1912). Public domain. Source: eBible.org/deu1912",
+ "books": {
+  "MAT": "Matthäus",
+  "PHP": "Philipper",
+  "1PE": "1. Petrus",
+  "PSA": "Psalmen",
+  "JHN": "Johannes",
+  "ISA": "Jesaja",
+  "2TI": "2. Timotheus",
+  "JOS": "Josua",
+  "2CO": "2. Korinther",
+  "GAL": "Galater",
+  "JER": "Jeremia",
+  "ROM": "Römer",
+  "LAM": "Klagelieder",
+  "REV": "Offenbarung",
+  "HEB": "Hebräer",
+  "DEU": "5. Mose",
+  "EPH": "Epheser",
+  "JAS": "Jakobus",
+  "PRO": "Sprüche",
+  "COL": "Kolosser",
+  "1JN": "1. Johannes",
+  "1CO": "1. Korinther",
+  "MIC": "Micha",
+  "1TH": "1. Thessalonicher",
+  "NUM": "4. Mose",
+  "ZEP": "Zephanja",
+  "SNG": "Hohelied",
+  "MRK": "Markus",
+  "NAM": "Nahum",
+  "LUK": "Lukas",
+  "TIT": "Titus",
+  "ACT": "Apostelgeschichte",
+  "NEH": "Nehemia",
+  "1CH": "1. Chonik",
+  "HAB": "Habakuk",
+  "2SA": "2. Samuel",
+  "EXO": "2. Mose",
+  "2TH": "2. Thessalonicher",
+  "GEN": "1. Mose",
+  "1TI": "1. Timotheus",
+  "MAL": "Maleachi",
+  "RUT": "Ruth",
+  "1SA": "1. Samuel",
+  "1KI": "1. Könige",
+  "EST": "Esther",
+  "DAN": "Daniel",
+  "JON": "Jona"
+ },
+ "verses": {
+  "MAT 6:34": "Darum sorgt nicht für den andern Morgen; denn der morgende Tag wird für das Seine sorgen. Es ist genug, daß ein jeglicher Tag seine eigene Plage habe.",
+  "PHP 4:6-7": "Sorget nichts! sondern in allen Dingen lasset eure Bitten im Gebet und Flehen mit Danksagung vor Gott kund werden. Und der Friede Gottes, welcher höher ist denn alle Vernunft, bewahre eure Herzen und Sinne in Christo Jesu!",
+  "1PE 5:7": "Alle Sorge werfet auf ihn; denn er sorgt für euch.",
+  "PSA 55:22": "Wirf dein Anliegen auf den HERRN; der wird dich versorgen und wird den Gerechten nicht ewiglich in Unruhe lassen.",
+  "MAT 11:28": "Kommet her zu mir alle, die ihr mühselig und beladen seid; ich will euch erquicken.",
+  "JHN 14:27": "Den Frieden lasse ich euch, meinen Frieden gebe ich euch. Nicht gebe ich euch, wie die Welt gibt. Euer Herz erschrecke nicht und fürchte sich nicht.",
+  "ISA 26:3": "Du erhältst stets Frieden nach gewisser Zusage; denn man verläßt sich auf dich.",
+  "PSA 46:10": "Seid stille und erkennet, daß ich GOTT bin. Ich will Ehre einlegen unter den Heiden; ich will Ehre einlegen auf Erden.",
+  "ISA 41:10": "fürchte dich nicht, ich bin mit dir; weiche nicht, denn ich bin dein Gott; ich stärke dich, ich helfe dir auch, ich erhalte dich durch die rechte Hand meiner Gerechtigkeit.",
+  "2TI 1:7": "Denn Gott hat uns nicht gegeben den Geist der Furcht, sondern der Kraft und der Liebe und der Zucht.",
+  "PSA 27:1": "Ein Psalm Davids. Der HERR ist mein Licht und mein Heil; vor wem sollte ich mich fürchten! Der HERR ist meines Lebens Kraft; vor wem sollte mir grauen!",
+  "PSA 56:3": "Wenn ich mich fürchte, so hoffe ich auf dich.",
+  "PSA 34:4": "Da ich den HERRN suchte, antwortete er mir und errettete mich aus aller meiner Furcht.",
+  "JOS 1:9": "Siehe, ich habe dir geboten, daß du getrost und freudig seist. Laß dir nicht grauen und entsetze dich nicht; denn der HERR, dein Gott, ist mit dir in allem, was du tun wirst.",
+  "PHP 4:13": "Ich vermag alles durch den, der mich mächtig macht, Christus.",
+  "ISA 40:31": "aber die auf den HERRN harren, kriegen neue Kraft, daß sie auffahren mit Flügeln wie Adler, daß sie laufen und nicht matt werden, daß sie wandeln und nicht müde werden.",
+  "2CO 12:9": "Und er hat zu mir gesagt: Laß dir an meiner Gnade genügen; denn meine Kraft ist in den Schwachen mächtig. Darum will ich mich am allerliebsten rühmen meiner Schwachheit, auf daß die Kraft Christi bei mir wohne.",
+  "GAL 6:9": "Lasset uns aber Gutes tun und nicht müde werden; denn zu seiner Zeit werden wir auch ernten ohne Aufhören.",
+  "JER 29:11": "Denn ich weiß wohl, was ich für Gedanken über euch habe, spricht der HERR: Gedanken des Friedens und nicht des Leidens, daß ich euch gebe das Ende, des ihr wartet.",
+  "ROM 15:13": "Der Gott aber der Hoffnung erfülle euch mit aller Freude und Frieden im Glauben, daß ihr völlige Hoffnung habet durch die Kraft des heiligen Geistes.",
+  "ROM 8:28": "Wir wissen aber, daß denen, die Gott lieben, alle Dinge zum Besten dienen, denen, die nach dem Vorsatz berufen sind.",
+  "LAM 3:22-23": "Die Güte des HERRN ist's, daß wir nicht gar aus sind; seine Barmherzigkeit hat noch kein Ende, sondern sie ist alle Morgen neu, und deine Treue ist groß.",
+  "PSA 42:11": "Was betrübst du dich, meine Seele, und bist so unruhig in mir? Harre auf Gott! denn ich werde ihm noch danken, daß er meines Angesichts Hilfe und mein Gott ist.",
+  "PSA 30:5": "Denn sein Zorn währt einen Augenblick, und lebenslang seine Gnade; den Abend lang währt das Weinen, aber des Morgens ist Freude.",
+  "ROM 12:12": "Seid fröhlich in Hoffnung, geduldig in Trübsal, haltet an am Gebet.",
+  "PSA 34:18": "Der HERR ist nahe bei denen, die zerbrochnes Herzens sind, und hilft denen, die ein zerschlagen Gemüt haben.",
+  "PSA 147:3": "Er heilt, die zerbrochnes Herzens sind, und verbindet ihre Schmerzen.",
+  "MAT 5:4": "Selig sind, die da Leid tragen; denn sie sollen getröstet werden.",
+  "REV 21:4": "und Gott wird abwischen alle Tränen von ihren Augen, und der Tod wird nicht mehr sein, noch Leid noch Geschrei noch Schmerz wird mehr sein; denn das Erste ist vergangen.",
+  "PSA 103:2-3": "Lobe den HERRN, meine Seele, und vergiß nicht, was er dir Gutes getan hat: der dir alle deine Sünden vergibt und heilet alle deine Gebrechen,",
+  "HEB 13:5": "Der Wandel sei ohne Geiz; und laßt euch genügen an dem, was da ist. Denn er hat gesagt: “Ich will dich nicht verlassen noch versäumen”;",
+  "DEU 31:6": "Seid getrost und unverzagt, fürchtet euch nicht und laßt euch nicht vor ihnen grauen; denn der HERR, dein Gott, wird selber mit dir wandeln und wird die Hand nicht abtun noch dich verlassen.",
+  "MAT 28:20": "und lehret sie halten alles, was ich euch befohlen habe. Und siehe, ich bin bei euch alle Tage bis an der Welt Ende.",
+  "EPH 4:26": "Zürnet, und sündiget nicht; lasset die Sonne nicht über eurem Zorn untergehen.",
+  "JAS 1:19": "Darum, liebe Brüder, ein jeglicher Mensch sei schnell, zu hören, langsam aber, zu reden, und langsam zum Zorn.",
+  "PRO 15:1": "Eine linde Antwort stillt den Zorn; aber ein hartes Wort richtet Grimm an.",
+  "EPH 4:32": "Seid aber untereinander freundlich, herzlich und vergebet einer dem andern, gleichwie Gott euch auch vergeben hat in Christo.",
+  "COL 3:13": "und vertrage einer den andern und vergebet euch untereinander, so jemand Klage hat wider den andern; gleichwie Christus euch vergeben hat, also auch ihr.",
+  "1JN 1:9": "So wir aber unsre Sünden bekennen, so ist er treu und gerecht, daß er uns die Sünden vergibt und reinigt uns von aller Untugend.",
+  "1CO 13:4": "Die Liebe ist langmütig und freundlich, die Liebe eifert nicht, die Liebe treibt nicht Mutwillen, sie blähet sich nicht,",
+  "PSA 127:3": "Siehe, Kinder sind eine Gabe des HERRN, und Leibesfrucht ist ein Geschenk.",
+  "PRO 22:6": "Wie man einen Knaben gewöhnt, so läßt er nicht davon, wenn er alt wird.",
+  "COL 3:23": "Alles, was ihr tut, das tut von Herzen als dem HERRN und nicht den Menschen,",
+  "PHP 4:19": "Mein Gott aber fülle aus alle eure Notdurft nach seinem Reichtum in der Herrlichkeit in Christo Jesu.",
+  "MAT 6:33": "Trachtet am ersten nach dem Reich Gottes und nach seiner Gerechtigkeit, so wird euch solches alles zufallen.",
+  "PRO 3:5-6": "Verlaß dich auf den HERRN von ganzem Herzen und verlaß dich nicht auf deinen Verstand; sondern gedenke an ihn in allen deinen Wegen, so wird er dich recht führen.",
+  "JAS 1:5": "So aber jemand unter euch Weisheit mangelt, der bitte Gott, der da gibt einfältig jedermann und rücket's niemand auf, so wird sie ihm gegeben werden.",
+  "PSA 32:8": "“Ich will dich unterweisen und dir den Weg zeigen, den du wandeln sollst; ich will dich mit meinen Augen leiten.”",
+  "PRO 24:16": "Denn ein Gerechter fällt siebenmal und steht wieder auf; aber die Gottlosen versinken im Unglück.",
+  "MIC 7:8": "Freue dich nicht, meine Feindin, daß ich darniederliege! Ich werde wieder aufkommen; und so ich im Finstern sitze, so ist doch der HERR mein Licht.",
+  "1CO 10:13": "Es hat euch noch keine denn menschliche Versuchung betreten; aber Gott ist getreu, der euch nicht läßt versuchen über euer Vermögen, sondern macht, daß die Versuchung so ein Ende gewinne, daß ihr's könnet ertragen.",
+  "PSA 37:7": "Sei stille dem HERRN und warte auf ihn; erzürne dich nicht über den, dem sein Mutwille glücklich fortgeht.",
+  "EPH 2:10": "Denn wir sind sein Werk, geschaffen in Christo Jesu zu guten Werken, zu welchen Gott uns zuvor bereitet hat, daß wir darin wandeln sollen.",
+  "PSA 139:14": "Ich danke dir dafür, daß ich wunderbar gemacht bin; wunderbar sind deine Werke, und das erkennt meine Seele wohl.",
+  "PSA 118:24": "Dies ist der Tag, den der HERR macht; lasset uns freuen und fröhlich darinnen sein.",
+  "1TH 5:18": "seid dankbar in allen Dingen; denn das ist der Wille Gottes in Christo Jesu an euch.",
+  "PSA 107:1": "Danket dem HERRN; denn er ist freundlich, und seine Güte währet ewiglich.",
+  "PSA 23:1": "Ein Psalm Davids. Der HERR ist mein Hirte; mir wird nichts mangeln.",
+  "PSA 4:8": "Ich liege und schlafe ganz mit Frieden; denn allein du, HERR, hilfst mir, daß ich sicher wohne.",
+  "PRO 3:24": "Legst du dich, so wirst du dich nicht fürchten, sondern süß schlafen,",
+  "ISA 43:19": "Denn siehe, ich will ein Neues machen; jetzt soll es aufwachsen, und ihr werdet's erfahren, daß ich Weg in der Wüste mache und Wasserströme in der Einöde,",
+  "2CO 5:17": "Darum, ist jemand in Christo, so ist er eine neue Kreatur; das Alte ist vergangen, siehe, es ist alles neu geworden!",
+  "PSA 90:12": "Lehre uns bedenken, daß wir sterben müssen, auf daß wir klug werden.",
+  "PSA 37:4": "Habe Deine Lust am HERRN; der wird dir geben, was dein Herz wünschet.",
+  "PHP 3:13-14": "Meine Brüder, ich schätze mich selbst noch nicht, daß ich's ergriffen habe. Eines aber sage ich: Ich vergesse, was dahinten ist, und strecke mich zu dem, was da vorne ist, und jage nach dem vorgesteckten Ziel, nach dem Kleinod, welches vorhält die himmlische Berufung Gottes in Christo Jesu.",
+  "PSA 143:8": "Laß mich frühe hören deine Gnade; denn ich hoffe auf dich. Tue mir kund den Weg, darauf ich gehen soll; denn mich verlangt nach dir.",
+  "PSA 5:3": "HERR, frühe wollest du meine Stimme hören; frühe will ich mich zu dir schicken und aufmerken.",
+  "HEB 11:1": "Es ist aber der Glaube eine gewisse Zuversicht des, das man hofft, und ein Nichtzweifeln an dem, das man nicht sieht.",
+  "PSA 121:1-2": "Ein Lied im höhern Chor. Ich hebe meine Augen auf zu den Bergen von welchen mir Hilfe kommt. Meine Hilfe kommt von dem HERRN, der Himmel und Erde gemacht hat.",
+  "ISA 30:21": "und deine Ohren werden hören hinter dir her das Wort sagen also: dies ist der Weg; den gehet, sonst weder zur Rechten noch zur Linken!",
+  "PRO 16:3": "Befiehl dem HERRN deine Werke, so werden deine Anschläge fortgehen.",
+  "EPH 3:20": "Dem aber, der überschwenglich tun kann über alles, das wir bitten oder verstehen, nach der Kraft, die da in uns wirkt,",
+  "PSA 1:3": "Der ist wie ein Baum, gepflanzt an den Wasserbächen, der seine Frucht bringt zu seiner Zeit, und seine Blätter verwelken nicht; und was er macht, das gerät wohl.",
+  "NUM 6:24-26": "Der HERR segne dich und behüte dich; der HERR lasse sein Angesicht leuchten über dir und sei dir gnädig; der HERR hebe sein Angesicht über dich und gebe dir Frieden.",
+  "PSA 119:105": "Dein Wort ist meine Fußes Leuchte und ein Licht auf meinem Wege.",
+  "ROM 12:2": "Und stellet euch nicht dieser Welt gleich, sondern verändert euch durch die Erneuerung eures Sinnes, auf daß ihr prüfen möget, welches da sei der gute, wohlgefällige und vollkommene Gotteswille.",
+  "PHP 1:6": "und bin desselben in guter Zuversicht, daß, der in euch angefangen hat das gute Werk, der wird's auch vollführen bis an den Tag Jesu Christi.",
+  "PSA 46:1": "Ein Lied der Kinder Korah, von der Jugend, vorzusingen. Gott ist unsre Zuversicht und Stärke. Eine Hilfe in den großen Nöten, die uns getroffen haben.",
+  "PSA 31:15": "Meine Zeit steht in deinen Händen. Errette mich von der Hand meiner Feinde und von denen, die mich verfolgen.",
+  "MIC 6:8": "Es ist dir gesagt, Mensch, was gut ist und was der HERR von dir fordert, nämlich Gottes Wort halten und Liebe üben und demütig sein vor deinem Gott.",
+  "PSA 27:14": "Harre des HERRN! Sei getrost und unverzagt und harre des HERRN!",
+  "ZEP 3:17": "denn der HERR, dein Gott, ist bei dir, ein starker Heiland; er wird sich über dich freuen und dir freundlich sein und vergeben und wird über dir mit Schall fröhlich sein.",
+  "JHN 3:16": "Also hat Gott die Welt geliebt, daß er seinen eingeborenen Sohn gab, auf daß alle, die an ihn glauben, nicht verloren werden, sondern das ewige Leben haben.",
+  "ROM 5:8": "Darum preiset Gott seine Liebe gegen uns, daß Christus für uns gestorben ist, da wir noch Sünder waren.",
+  "1JN 4:19": "Lasset uns ihn lieben; denn er hat uns zuerst geliebt.",
+  "1CO 13:4-5": "Die Liebe ist langmütig und freundlich, die Liebe eifert nicht, die Liebe treibt nicht Mutwillen, sie blähet sich nicht, sie stellet sich nicht ungebärdig, sie suchet nicht das Ihre, sie läßt sich nicht erbittern, sie rechnet das Böse nicht zu,",
+  "1CO 13:13": "Nun aber bleibt Glaube, Hoffnung, Liebe, diese drei; aber die Liebe ist die größte unter ihnen.",
+  "1JN 4:7": "Ihr Lieben, lasset uns untereinander liebhaben; denn die Liebe ist von Gott, und wer liebhat, der ist von Gott geboren und kennt Gott.",
+  "1JN 4:16": "Und wir haben erkannt und geglaubt die Liebe, die Gott zu uns hat. Gott ist die Liebe; und wer in der Liebe bleibt, der bleibt in Gott und Gott in ihm.",
+  "JER 31:3": "Der HERR ist mir erschienen von ferne: Ich habe dich je und je geliebt; darum habe ich dich zu mir gezogen aus lauter Güte.",
+  "PSA 86:15": "Du aber, Herr, Gott, bist barmherzig und gnädig, geduldig und von großer Güte und Treue.",
+  "1JN 3:1": "Sehet, welch eine Liebe hat uns der Vater erzeigt, daß wir Gottes Kinder sollen heißen! Darum kennt euch die Welt nicht; denn sie kennt ihn nicht.",
+  "JHN 15:9": "Gleichwie mich mein Vater liebt, also liebe ich euch auch. Bleibet in meiner Liebe!",
+  "JHN 15:12-13": "Das ist mein Gebot, daß ihr euch untereinander liebet, gleichwie ich euch liebe. Niemand hat größere Liebe denn die, daß er sein Leben läßt für seine Freunde.",
+  "PSA 136:1": "Danket dem HERRN; denn er ist freundlich, denn seine Güte währet ewiglich.",
+  "SNG 8:7": "daß auch viele Wasser nicht mögen die Liebe auslöschen noch die Ströme sie ertränken. Wenn einer alles Gut in seinem Hause um die Liebe geben wollte, so gölte es alles nichts.",
+  "1PE 4:8": "So seid nun mäßig und nüchtern zum Gebet. Vor allen Dingen aber habt untereinander eine inbrünstige Liebe; denn die Liebe deckt auch der Sünden Menge.",
+  "PSA 103:11": "Denn so hoch der Himmel über der Erde ist, läßt er seine Gnade walten über die, so ihn fürchten.",
+  "PSA 103:13": "Wie sich ein Vater über Kinder erbarmt, so erbarmt sich der HERR über die, so ihn fürchten.",
+  "ISA 54:10": "Denn es sollen wohl Berge weichen und Hügel hinfallen; aber meine Gnade soll nicht von dir weichen, und der Bund meines Friedens soll nicht hinfallen, spricht der HERR, dein Erbarmer.",
+  "1JN 4:9-10": "Daran ist erschienen die Liebe Gottes gegen uns, daß Gott seinen eingeborenen Sohn gesandt hat in die Welt, daß wir durch ihn leben sollen. Darin steht die Liebe: nicht, daß wir Gott geliebt haben, sondern daß er uns geliebt hat und gesandt seinen Sohn zur Versöhnung für unsre Sünden.",
+  "ROM 13:10": "Denn Liebe tut dem Nächsten nichts Böses. So ist nun die Liebe des Gesetzes Erfüllung.",
+  "GAL 2:20": "Ich lebe aber; doch nun nicht ich, sondern Christus lebt in mir. Denn was ich jetzt lebe im Fleisch, das lebe ich in dem Glauben des Sohnes Gottes, der mich geliebt hat und sich selbst für mich dargegeben.",
+  "EPH 5:1-2": "So seid nun Gottes Nachfolger als die lieben Kinder und wandelt in der Liebe, gleichwie Christus uns hat geliebt und sich selbst dargegeben für uns als Gabe und Opfer, Gott zu einem süßen Geruch.",
+  "COL 3:14": "Über alles aber ziehet an die Liebe, die da ist das Band der Vollkommenheit.",
+  "1JN 4:18": "Furcht ist nicht in der Liebe, sondern die völlige Liebe treibt die Furcht aus; denn die Furcht hat Pein. Wer sich aber fürchtet, der ist nicht völlig in der Liebe.",
+  "PSA 63:3": "Denn deine Güte ist besser denn Leben; meine Lippen preisen dich.",
+  "DEU 7:9": "So sollst du nun wissen, daß der HERR, dein Gott, ein Gott ist, ein treuer Gott, der den Bund und die Barmherzigkeit hält denen, die ihn lieben und seine Gebote halten, in tausend Glieder,",
+  "JHN 13:34-35": "Ein neu Gebot gebe ich euch, daß ihr euch untereinander liebet, wie ich euch geliebt habe, auf daß auch ihr einander liebhabet. Dabei wird jedermann erkennen, daß ihr meine Jünger seid, so ihr Liebe untereinander habt.",
+  "MRK 12:30-31": "und du sollst Gott, deinen HERRN, lieben von ganzem Herzen, von ganzer Seele, von ganzem Gemüte und von allen deinen Kräften.” Das ist das vornehmste Gebot. Und das andere ist ihm gleich: “Du sollst deinen Nächsten lieben wie dich selbst.” Es ist kein anderes Gebot größer denn diese.",
+  "HEB 11:6": "Aber ohne Glauben ist's unmöglich, Gott zu gefallen; denn wer zu Gott kommen will, der muß glauben, daß er sei und denen, die ihn suchen, ein Vergelter sein werde.",
+  "MRK 11:24": "Darum sage ich euch: Alles, was ihr bittet in eurem Gebet, glaubet nur, daß ihr's empfangen werdet, so wird's euch werden.",
+  "MAT 17:20": "Jesus aber antwortete und sprach zu ihnen: Um eures Unglaubens willen. Denn wahrlich ich sage euch: So ihr Glauben habt wie ein Senfkorn, so mögt ihr sagen zu diesem Berge: Hebe dich von hinnen dorthin! so wird er sich heben; und euch wird nichts unmöglich sein.",
+  "ROM 10:17": "So kommt der Glaube aus der Predigt, das Predigen aber aus dem Wort Gottes.",
+  "2CO 5:7": "denn wir wandeln im Glauben, und nicht im Schauen.",
+  "PSA 9:10": "Darum hoffen auf dich, die deinen Namen kennen; denn du verlässest nicht, die dich, HERR, suchen.",
+  "PSA 20:7": "Jene verlassen sich auf Wagen und Rosse; wir aber denken an den Namen des HERRN, unsers Gottes.",
+  "ISA 12:2": "Siehe, Gott ist mein Heil, ich bin sicher und fürchte mich nicht; denn Gott der HERR ist meine Stärke und mein Psalm und ist mein Heil.",
+  "MRK 9:23": "Jesus aber sprach zu ihm: Wenn du könntest Glauben! Alle Dinge sind möglich dem, der da glaubt.",
+  "JAS 1:6": "Er bitte aber im Glauben und zweifle nicht; denn wer da zweifelt, der ist wie die Meereswoge, die vom Winde getrieben und gewebt wird.",
+  "PSA 62:8": "Hoffet auf ihn allezeit, liebe Leute, schüttet euer Herz vor ihm aus; Gott ist unsre Zuversicht. (Sela.)",
+  "PSA 28:7": "Der HERR ist meine Stärke und mein Schild; auf ihn hofft mein Herz, und mir ist geholfen. Und mein Herz ist fröhlich, und ich will ihm danken mit meinem Lied.",
+  "NAM 1:7": "Der HERR ist gütig und eine Feste zur Zeit der Not und kennt die, die auf ihn trauen.",
+  "PSA 112:7": "Wenn eine Plage kommen will, so fürchtet er sich nicht; sein Herz hofft unverzagt auf den HERRN.",
+  "ISA 26:4": "Verlasset euch auf den HERRN ewiglich; denn Gott der HERR ist ein Fels ewiglich.",
+  "JER 17:7-8": "Gesegnet aber ist der Mann, der sich auf den HERRN verläßt und des Zuversicht der HERR ist. Der ist wie ein Baum, am Wasser gepflanzt und am Bach gewurzelt. Denn obgleich eine Hitze kommt, fürchtet er sich doch nicht, sondern seine Blätter bleiben grün, und sorgt nicht, wenn ein dürres Jahr kommt sondern er bringt ohne Aufhören Früchte.",
+  "HEB 10:23": "und lasset uns halten an dem Bekenntnis der Hoffnung und nicht wanken; denn er ist treu, der sie verheißen hat;",
+  "EPH 2:8-9": "Denn aus Gnade seid ihr selig geworden durch den Glauben, und das nicht aus euch: Gottes Gabe ist es, nicht aus den Werken, auf daß sich nicht jemand rühme.",
+  "ROM 5:1": "Nun wir denn sind gerecht geworden durch den Glauben, so haben wir Frieden mit Gott durch unsern HERRN Jesus Christus,",
+  "1PE 2:9": "Ihr aber seid das auserwählte Geschlecht, das königliche Priestertum, das heilige Volk, das Volk des Eigentums, daß ihr verkündigen sollt die Tugenden des, der euch berufen hat von der Finsternis zu seinem wunderbaren Licht;",
+  "PSA 125:1": "Ein Lied im Höhern Chor. Die auf den HERRN hoffen, die werden nicht fallen, sondern ewig bleiben wie der Berg Zion.",
+  "PRO 29:25": "Vor Menschen sich scheuen bringt zu Fall; wer sich aber auf den HERRN verläßt, wird beschützt.",
+  "PSA 37:3": "Hoffe auf den HERRN und tue Gutes; bleibe im Lande und nähre dich redlich.",
+  "PSA 37:5": "Befiehl dem HERRN deine Wege und hoffe auf ihn; er wird's wohl machen",
+  "HEB 13:8": "Jesus Christus gestern und heute und derselbe auch in Ewigkeit.",
+  "JHN 14:1": "Und er sprach zu seinen Jüngern: Euer Herz erschrecke nicht! Glaubet an Gott und glaubet an mich!",
+  "JHN 20:29": "Spricht Jesus zu ihm: Dieweil du mich gesehen hast, Thomas, glaubest du. Selig sind, die nicht sehen und doch glauben!",
+  "1JN 5:4": "Denn alles, was von Gott geboren ist, überwindet die Welt; und unser Glaube ist der Sieg, der die Welt überwunden hat.",
+  "MAT 21:22": "Und alles, was ihr bittet im Gebet, so ihr glaubet, werdet ihr's empfangen.",
+  "PSA 115:11": "Die den HERRN fürchten, hoffen auf den HERRN! Der ist ihre Hilfe und Schild.",
+  "ISA 50:10": "Wer ist unter euch, der den HERRN fürchtet, der seines Knechtes Stimme gehorche? Der im Finstern wandelt und scheint ihm kein Licht, der hoffe auf den HERRN und verlasse sich auf seinen Gott.",
+  "JHN 11:25": "Jesus spricht zu ihr: Ich bin die Auferstehung und das Leben. Wer an mich glaubt, der wird leben, ob er gleich stürbe;",
+  "1CO 15:57": "Gott aber sei Dank, der uns den Sieg gegeben hat durch unsern HERRN Jesus Christus!",
+  "ROM 6:4": "So sind wir ja mit ihm begraben durch die Taufe in den Tod, auf daß, gleichwie Christus ist auferweckt von den Toten durch die Herrlichkeit des Vaters, also sollen auch wir in einem neuen Leben wandeln.",
+  "MAT 28:6": "Er ist nicht hier; er ist auferstanden, wie er gesagt hat. Kommt her und seht die Stätte, da der HERR gelegen hat.",
+  "1PE 1:3": "Gelobet sei Gott und der Vater unsers HERRN Jesu Christi, der uns nach seiner Barmherzigkeit wiedergeboren hat zu einer lebendigen Hoffnung durch die Auferstehung Jesu Christi von den Toten,",
+  "ISA 53:5": "Aber er ist um unsrer Missetat willen verwundet und um unsrer Sünde willen zerschlagen. Die Strafe liegt auf ihm, auf daß wir Frieden hätten, und durch seine Wunden sind wir geheilt.",
+  "JHN 10:10": "Ein Dieb kommt nur, daß er stehle, würge und umbringe.",
+  "JHN 10:11": "Ich bin gekommen, daß sie das Leben und volle Genüge haben sollen.",
+  "JHN 8:12": "Da redete Jesus abermals zu ihnen und sprach: Ich bin das Licht der Welt; wer mir nachfolgt, der wird nicht wandeln in der Finsternis, sondern wir das Licht des Lebens haben.",
+  "JHN 6:35": "Jesus aber sprach zu ihnen: Ich bin das Brot des Lebens. Wer zu mir kommt, den wird nicht hungern; und wer an mich glaubt, den wird nimmermehr dürsten.",
+  "JHN 14:6": "Jesus spricht zu ihm: Ich bin der Weg und die Wahrheit und das Leben; niemand kommt zum Vater denn durch mich.",
+  "JHN 15:5": "Ich bin der Weinstock, ihr seid die Reben. Wer in mir bleibt und ich in ihm, der bringt viele Frucht, denn ohne mich könnt ihr nichts tun.",
+  "REV 3:20": "Siehe, ich stehe vor der Tür und klopfe an. So jemand meine Stimme hören wird und die Tür auftun, zu dem werde ich eingehen und das Abendmahl mit ihm halten und er mit mir.",
+  "LUK 19:10": "Denn des Menschen Sohn ist gekommen, zu suchen und selig zu machen, das verloren ist.",
+  "ROM 6:23": "Denn der Tod ist der Sünde Sold; aber die Gabe Gottes ist das ewige Leben in Christo Jesu, unserm HERRN.",
+  "2CO 5:21": "Denn er hat den, der von keiner Sünde wußte, für uns zur Sünde gemacht, auf daß wir würden in ihm die Gerechtigkeit, die vor Gott gilt.",
+  "COL 1:13-14": "welcher uns errettet hat von der Obrigkeit der Finsternis und hat uns versetzt in das Reich seines lieben Sohnes, an welchem wir haben die Erlösung durch sein Blut, die Vergebung der Sünden;",
+  "HEB 7:25": "Daher kann er auch selig machen immerdar, die durch ihn zu Gott kommen, und lebt immerdar und bittet für sie.",
+  "HEB 4:15-16": "Denn wir haben nicht einen Hohenpriester, der nicht könnte Mitleiden haben mit unsern Schwachheiten, sondern der versucht ist allenthalben gleichwie wir, doch ohne Sünde. Darum laßt uns hinzutreten mit Freudigkeit zu dem Gnadenstuhl, auf daß wir Barmherzigkeit empfangen und Gnade finden auf die Zeit, wenn uns Hilfe not sein wird.",
+  "ROM 8:1": "So ist nun nichts Verdammliches an denen, die in Christo Jesu sind, die nicht nach dem Fleisch wandeln, sondern nach dem Geist.",
+  "ROM 8:11": "So nun der Geist des, der Jesum von den Toten auferweckt hat, in euch wohnt, so wird auch derselbe, der Christum von den Toten auferweckt hat, eure sterblichen Leiber lebendig machen um deswillen, daß sein Geist in euch wohnt.",
+  "1CO 15:20": "Nun ist aber Christus auferstanden von den Toten und der Erstling geworden unter denen, die da schlafen.",
+  "EPH 2:4-5": "Aber Gott, der da reich ist an Barmherzigkeit, durch seine große Liebe, damit er uns geliebt hat, da wir tot waren in den Sünden, hat er uns samt Christo lebendig gemacht (denn aus Gnade seid ihr selig geworden)",
+  "TIT 3:5": "nicht um der Werke willen der Gerechtigkeit, die wir getan hatten, sondern nach seiner Barmherzigkeit machte er uns selig durch das Bad der Wiedergeburt und Erneuerung des heiligen Geistes,",
+  "1PE 2:24": "welcher unsre Sünden selbst hinaufgetragen hat an seinem Leibe auf das Holz, auf daß wir, der Sünde abgestorben, der Gerechtigkeit leben; durch welches Wunden ihr seid heil geworden.",
+  "ISA 53:6": "Wir gingen alle in der Irre wie Schafe, ein jeglicher sah auf seinen Weg; aber der HERR warf unser aller Sünde auf ihn.",
+  "JHN 1:12": "Wie viele ihn aber aufnahmen, denen gab er Macht, Kinder Gottes zu werden, die an seinen Namen glauben;",
+  "JHN 3:17": "Denn Gott hat seinen Sohn nicht gesandt in die Welt, daß er die Welt richte, sondern daß die Welt durch ihn selig werde.",
+  "REV 1:18": "und der Lebendige; ich war tot, und siehe, ich bin lebendig von Ewigkeit zu Ewigkeit und habe die Schlüssel der Hölle und des Todes.",
+  "ACT 4:12": "Und ist in keinem andern-Heil, ist auch kein andrer Name unter dem Himmel den Menschen gegeben, darin wir sollen selig werden.",
+  "PSA 18:2": "HERR, mein Fels, meine Burg, mein Erretter, mein Gott, mein Hort, auf den ich traue, mein Schild und Horn meines Heils und mein Schutz!",
+  "PSA 18:32": "Gott rüstet mich mit Kraft und macht meine Wege ohne Tadel.",
+  "NEH 8:10": "Darum sprach er zu ihnen: Geht hin und eßt das Fette und trinkt das Süße und sendet denen auch Teile, die nichts für sich bereitet haben; denn dieser Tag ist heilig unserm HERRN. Und bekümmert euch nicht; denn die Freude am HERRN ist eure Stärke.",
+  "ISA 40:29": "Er gibt den Müden Kraft, und Stärke genug dem Unvermögenden.",
+  "EPH 6:10": "Zuletzt, meine Brüder, seid stark in dem HERRN und in der Macht seiner Stärke.",
+  "1CH 16:11": "Fraget nach dem HERRN und nach seiner Macht; suchet sein Angesicht allezeit!",
+  "PSA 73:26": "Wenn mir gleich Leib und Seele verschmachtet, so bist du doch, Gott, allezeit meines Herzens Trost und mein Teil.",
+  "EPH 3:16": "daß er euch Kraft gebe nach dem Reichtum seiner Herrlichkeit, stark zu werden durch seinen Geist an dem inwendigen Menschen,",
+  "HAB 3:19": "Denn der HERR ist meine Kraft und wird meine Füße machen wie Hirschfüße und wird mich auf meine Höhen führen. Vorzusingen auf meinem Saitenspiel.",
+  "2SA 22:33": "Gott stärkt mich mit Kraft und weist mir einen Weg ohne Tadel.",
+  "PSA 31:24": "Seid getrost und unverzagt, alle, die ihr des HERRN harret!",
+  "1CO 16:13": "Wachet, stehet im Glauben, seid männlich und seid stark!",
+  "PSA 138:3": "Wenn ich dich anrufe, so erhörst du mich und gibst meiner Seele große Kraft.",
+  "ISA 43:2": "Denn so du durch Wasser gehst, will ich bei dir sein, daß dich die Ströme nicht sollen ersäufen; und so du ins Feuer gehst, sollst du nicht brennen, und die Flamme soll dich nicht versengen.",
+  "PSA 59:16": "Ich aber will von deiner Macht singen und des Morgens rühmen deine Güte; denn du bist mir Schutz und Zuflucht in meiner Not.",
+  "EXO 15:2": "Der HERR ist meine Stärke und mein Lobgesang und ist mein Heil. Das ist mein Gott, ich will ihn preisen; er ist meines Vaters Gott, ich will ihn erheben.",
+  "PSA 28:8": "Der HERR ist meine Stärke; er ist die Stärke, die seinem Gesalbten hilft.",
+  "2TH 3:3": "Aber der HERR ist treu; der wird euch stärken und bewahren vor dem Argen.",
+  "1PE 5:10": "Der Gott aber aller Gnade, der uns berufen hat zu seiner ewigen Herrlichkeit in Christo Jesu, der wird euch, die ihr eine kleine Zeit leidet, vollbereiten, stärken, kräftigen, gründen.",
+  "COL 1:11": "und wachset in der Erkenntnis Gottes und gestärkt werdet mit aller Kraft nach seiner herrlichen Macht zu aller Geduld und Langmütigkeit mit Freuden,",
+  "DEU 33:27": "Zuflucht ist bei dem alten Gott und unter den ewigen Armen. Und er wird vor dir her deinen Feind austreiben und sagen: Sei vertilgt!",
+  "ISA 35:4": "Saget den verzagten Herzen: Seid getrost, fürchtet euch nicht! Sehet, euer Gott, der kommt zur Rache; Gott, der da vergilt, kommt und wird euch helfen.",
+  "PSA 118:6": "Der HERR ist mit mir, darum fürchte ich mich nicht; was können mir Menschen tun?",
+  "ROM 8:31": "Was wollen wir nun hierzu sagen? Ist Gott für uns, wer mag wider uns sein?",
+  "ROM 8:37": "Aber in dem allem überwinden wir weit um deswillen, der uns geliebt hat.",
+  "MAT 11:29-30": "Nehmet auf euch mein Joch und lernet von mir; denn ich bin sanftmütig und von Herzen demütig; so werdet ihr Ruhe finden für eure Seelen. Denn mein Joch ist sanft, und meine Last ist leicht.",
+  "PSA 23:2-3": "Er weidet mich auf einer grünen Aue und führet mich zum frischen Wasser. Er erquicket meine Seele; er führet mich auf rechter Straße um seines Namens willen.",
+  "PSA 23:4": "Und ob ich schon wanderte im finstern Tal, fürchte ich kein Unglück; denn du bist bei mir, dein Stecken und dein Stab trösten mich.",
+  "PSA 23:6": "Gutes und Barmherzigkeit werden mir folgen mein Leben lang, und ich werde bleiben im Hause des HERRN immerdar.",
+  "ISA 32:17": "und der Gerechtigkeit Frucht wird Friede sein, und der Gerechtigkeit Nutzen wird ewige Stille und Sicherheit sein,",
+  "COL 3:15": "Und der Friede Gottes regiere in euren Herzen, zu welchem ihr auch berufen seid in einem Leibe; und seid dankbar!",
+  "2TH 3:16": "Er aber, der HERR des Friedens, gebe euch Frieden allenthalben und auf allerlei Weise. Der HERR sei mit euch allen!",
+  "PSA 62:1-2": "Ein Psalm Davids für Jeduthun, vorzusingen. Meine Seele sei stille zu Gott, der mir hilft. Denn er ist mein Hort, meine Hilfe, meine Schutz, daß mich kein Fall stürzen wird, wie groß er ist.",
+  "PSA 131:2": "Ja, ich habe meine Seele gesetzt und gestillt; so ist meine Seele in mir wie ein entwöhntes Kind bei seiner Mutter.",
+  "PSA 91:1-2": "Wer unter dem Schirm des Höchsten sitzt und unter dem Schatten des Allmächtigen bleibt, der spricht zu dem HERRN: Meine Zuversicht und meine Burg, mein Gott, auf den ich hoffe.",
+  "PSA 91:4": "Er wird dich mit seinen Fittichen decken, und deine Zuversicht wird sein unter seinen Flügeln. Seine Wahrheit ist Schirm und Schild,",
+  "PSA 91:11": "Denn er hat seinen Engeln befohlen über dir, daß sie dich behüten auf allen deinen Wegen,",
+  "ISA 55:12": "Denn ihr sollt in Freuden ausziehen und im Frieden geleitet werden. Berge und Hügel sollen vor euch her frohlocken mit Ruhm und alle Bäume auf dem Felde mit den Händen klatschen.",
+  "JHN 16:33": "Solches habe ich mit euch geredet, daß ihr in mir Frieden habet. In der Welt habt ihr Angst; aber seid getrost, ich habe die Welt überwunden.",
+  "PSA 116:7": "Sei nun wieder zufrieden, meine Seele; denn der HERR tut dir Gutes.",
+  "EXO 33:14": "Er sprach: Mein Angesicht soll vorangehen; damit will ich dich leiten.",
+  "PSA 127:2": "Es ist umsonst, daß ihr früh aufstehet und hernach lange sitzet und esset euer Brot mit Sorgen; denn seinen Freunden gibt er's schlafend.",
+  "ROM 8:6": "Aber fleischlich gesinnt sein ist der Tod, und geistlich gesinnt sein ist Leben und Friede.",
+  "PRO 14:30": "Ein gütiges Herz ist des Leibes Leben; aber Neid ist Eiter in den Gebeinen.",
+  "PSA 85:8": "Ach, daß ich hören sollte, was Gott der HERR redet; daß er Frieden zusagte seinem Volk und seinen Heiligen, auf daß sie nicht auf eine Torheit geraten!",
+  "JER 6:16": "So spricht der HERR: Tretet auf die Wege und schauet und fraget nach den vorigen Wegen, welches der gute Weg sei, und wandelt darin, so werdet ihr Ruhe finden für eure Seele! Aber sie sprechen: Wir wollen's nicht tun!",
+  "GAL 5:1": "So bestehet nun in der Freiheit, zu der uns Christus befreit hat, und lasset euch nicht wiederum in das knechtische Joch fangen.",
+  "JHN 8:36": "So euch nun der Sohn frei macht, so seid ihr recht frei.",
+  "2CO 3:17": "Denn der HERR ist der Geist; wo aber der Geist des HERRN ist, da ist Freiheit.",
+  "PSA 16:11": "Du tust mir kund den Weg zum Leben; vor dir ist Freude die Fülle und liebliches Wesen zu deiner Rechten ewiglich.",
+  "PSA 126:3": "Der HERR hat Großes an uns getan; des sind wir fröhlich.",
+  "PHP 4:4": "Freuet euch in dem HERRN allewege! Und abermals sage ich: Freuet euch!",
+  "PSA 9:2": "Ich freue mich und bin fröhlich in dir und lobe deinen Namen, du Allerhöchster,",
+  "PSA 100:4-5": "Geht zu seinen Toren ein mit Danken, zu seinen Vorhöfen mit Loben; danket ihm, lobet seinen Namen! Denn der HERR ist freundlich, und seine Gnade währet ewig und seine Wahrheit für und für.",
+  "PSA 30:11": "Du hast meine Klage verwandelt in einen Reigen; du hast mir meinen Sack ausgezogen und mich mit Freude gegürtet,",
+  "ISA 61:10": "Ich freue mich im Herrn, und meine Seele ist fröhlich in meinem Gott; denn er hat mich angezogen mit Kleidern des Heils und mit dem Rock der Gerechtigkeit gekleidet, wie einen Bräutigam, mit priesterlichem Schmuck geziert, und wie eine Braut, die in ihrem Geschmeide prangt.",
+  "ROM 14:17": "Denn das Reich Gottes ist nicht Essen und Trinken, sondern Gerechtigkeit und Friede und Freude in dem heiligen Geiste.",
+  "JAS 1:2-3": "Meine lieben Brüder, achtet es für eitel Freude, wenn ihr in mancherlei Anfechtungen fallet, und wisset, daß euer Glaube, wenn er rechtschaffen ist, Geduld wirkt.",
+  "PSA 98:4": "Jauchzet dem HERRN, alle Welt; singet, rühmet und lobet!",
+  "PSA 34:1": "Ein Psalm Davids, da er seine Gebärde verstellte vor Abimelech, als der ihn von sich trieb und er wegging. Ich will den HERRN loben allezeit; sein Lob soll immerdar in meinem Munde sein.",
+  "PSA 34:8": "Schmecket und sehet, wie freundlich der HERR ist. Wohl dem, der auf ihn traut!",
+  "PSA 150:6": "Alles, was Odem hat, lobe den HERRN! Halleluja!",
+  "PSA 103:1-2": "Ein Psalm Davids. Lobe den HERRN, meine Seele, und was in mir ist, seinen heiligen Namen! Lobe den HERRN, meine Seele, und vergiß nicht, was er dir Gutes getan hat:",
+  "HAB 3:17-18": "Denn der Feigenbaum wird nicht grünen, und wird kein Gewächs sein an den Weinstöcken; die Arbeit am Ölbaum ist vergeblich, und die Äcker bringen keine Nahrung; und Schafe werden aus den Hürden gerissen, und werden keine Rinder in den Ställen sein. Aber ich will mich freuen des HERRN und fröhlich sein in Gott, meinem Heil.",
+  "PSA 95:1-2": "Kommt herzu, laßt uns dem HERRN frohlocken und jauchzen dem Hort unsers Heils! Lasset uns mit Danken vor sein Angesicht kommen und mit Psalmen ihm jauchzen!",
+  "PSA 145:18": "Der HERR ist nahe allen, die ihn anrufen, allen, die ihn mit Ernst anrufen.",
+  "JHN 15:11": "Solches rede ich zu euch, auf daß meine Freude in euch bleibe und eure Freude vollkommen werde.",
+  "ISA 12:3": "Ihr werdet mit Freuden Wasser schöpfen aus den Heilsbrunnen",
+  "LUK 15:10": "Also auch, sage ich euch, wird Freude sein vor den Engeln Gottes über einen Sünder, der Buße tut.",
+  "PSA 40:2-3": "und zog mich aus der grausamen Grube und aus dem Schlamm und stellte meine Füße auf einen Fels, daß ich gewiß treten kann; und hat mir ein neues Lied in meinen Mund gegeben, zu loben unsern Gott. Das werden viele sehen und den HERRN fürchten und auf ihn hoffen.",
+  "PSA 63:7": "Denn du bist mein Helfer, und unter dem Schatten deiner Flügel frohlocke ich.",
+  "ROM 8:2": "Denn das Gesetz des Geistes, der da lebendig macht in Christo Jesu, hat mich frei gemacht von dem Gesetz der Sünde und des Todes.",
+  "ISA 61:1": "Der Geist des Herrn HERRN ist über mir, darum daß mich der HERR gesalbt hat. Er hat mich gesandt, den Elenden zu predigen, die zerbrochenen Herzen zu verbinden, zu verkündigen den Gefangenen die Freiheit, den Gebundenen, daß ihnen geöffnet werde,",
+  "LUK 4:18": "“Der Geist des HERRN ist bei mir, darum, daß er mich gesalbt hat; er hat mich gesandt, zu verkündigen das Evangelium den Armen, zu heilen die zerstoßenen Herzen, zu predigen den Gefangenen, daß sie los sein sollten, und den Blinden das Gesicht und den Zerschlagenen, daß sie frei und ledig sein sollen,",
+  "PSA 107:9": "daß er sättigt die durstige Seele und füllt die hungrige Seele mit Gutem.",
+  "PRO 2:6": "Denn der HERR gibt Weisheit, und aus seinem Munde kommt Erkenntnis und Verstand.",
+  "PRO 4:23": "Behüte dein Herz mit allem Fleiß; denn daraus geht das Leben.",
+  "PRO 9:10": "Der Weisheit Anfang ist des HERRN Furcht, und den Heiligen erkennen ist Verstand.",
+  "PSA 119:11": "Ich behalte dein Wort in meinem Herzen, auf daß ich nicht wieder dich sündige.",
+  "PSA 119:130": "Wenn dein Wort offenbar wird, so erfreut es und macht klug die Einfältigen.",
+  "PSA 25:4-5": "HERR, zeige mir deine Wege und lehre mich deine Steige; leite mich in deiner Wahrheit und lehre mich! Denn du bist der Gott, der mir hilft; täglich harre ich dein.",
+  "PRO 16:9": "Des Menschen Herz erdenkt sich seinen Weg; aber der HERR allein gibt, daß er fortgehe.",
+  "PRO 19:21": "Es sind viel Anschläge in eines Mannes Herzen; aber der Rat des HERRN besteht.",
+  "ISA 55:8-9": "Denn meine Gedanken sind nicht eure Gedanken, und eure Wege sind nicht meine Wege, spricht der HERR; sondern soviel der Himmel höher ist denn die Erde, so sind auch meine Wege höher denn eure Wege und meine Gedanken denn eure Gedanken.",
+  "PRO 11:2": "Wo Stolz ist, da ist auch Schmach; aber Weisheit ist bei den Demütigen.",
+  "PRO 12:25": "Sorge im Herzen kränkt, aber ein freundliches Wort erfreut.",
+  "PRO 17:17": "Ein Freund liebt allezeit, und als ein Bruder wird er in Not erfunden.",
+  "PRO 18:10": "Der Name des HERRN ist ein festes Schloß; der Gerechte läuft dahin und wird beschirmt.",
+  "PRO 27:17": "Ein Messer wetzt das andere und ein Mann den andern.",
+  "PRO 31:30": "Lieblich und schön sein ist nichts; ein Weib, das den HERRN fürchtet, soll man loben.",
+  "COL 3:16": "Lasset das Wort Christi unter euch reichlich wohnen in aller Weisheit; lehret und vermahnet euch selbst mit Psalmen und Lobgesängen und geistlichen lieblichen Liedern und singt dem HERRN in eurem Herzen.",
+  "PSA 119:18": "Öffne mir die Augen, daß ich sehe die Wunder an deinem Gesetz.",
+  "HEB 4:12": "Denn das Wort Gottes ist lebendig und kräftig und schärfer denn kein zweischneidig Schwert, und dringt durch, bis daß es scheidet Seele und Geist, auch Mark und Bein, und ist ein Richter der Gedanken und Sinne des Herzens.",
+  "JOS 1:8": "Und laß dieses Buch des Gesetzes nicht von deinem Munde kommen, sondern betrachte es Tag und Nacht, auf daß du haltest und tust allerdinge nach dem, was darin geschrieben steht. Alsdann wird es dir gelingen in allem, was du tust, und wirst weise handeln können.",
+  "PSA 19:14": "Laß dir wohl gefallen die Rede meines Mundes und das Gespräch meines Herzens vor dir, HERR, mein Hort und mein Erlöser.",
+  "PSA 139:23-24": "Erforsche mich, Gott, und erfahre mein Herz; prüfe mich und erfahre, wie ich's meine. Und siehe, ob ich auf bösem Wege bin, und leite mich auf ewigem Wege.",
+  "JAS 3:17": "Die Weisheit von obenher ist auf's erste keusch, darnach friedsam, gelinde, läßt sich sagen, voll Barmherzigkeit und guter Früchte, unparteiisch, ohne Heuchelei.",
+  "PHP 4:8": "Weiter, liebe Brüder, was wahrhaftig ist, was ehrbar, was gerecht, was keusch, was lieblich, was wohllautet, ist etwa eine Tugend, ist etwa ein Lob, dem denket nach!",
+  "COL 3:2": "Trachtet nach dem, was droben ist, nicht nach dem, was auf Erden ist.",
+  "MAT 7:7": "Bittet, so wird euch gegeben; suchet, so werdet ihr finden; klopfet an, so wird euch aufgetan.",
+  "MAT 7:24": "Darum, wer diese meine Rede hört und tut sie, den vergleiche ich einem klugen Mann, der sein Haus auf einen Felsen baute.",
+  "PSA 37:23-24": "Von dem HERRN wird solches Mannes Gang gefördert, und er hat Lust an seinem Wege. Fällt er, so wird er nicht weggeworfen; denn der HERR hält ihn bei der Hand.",
+  "PSA 48:14": "daß dieser Gott sei unser Gott immer und ewiglich. Er führt uns wie die Jugend.",
+  "ISA 58:11": "und der HERR wird dich immerdar führen und deine Seele sättigen in der Dürre und deine Gebeine stärken; und du wirst sein wie ein gewässerter Garten und wie eine Wasserquelle, welcher es nimmer an Wasser fehlt;",
+  "HEB 12:1": "Darum wir auch, dieweil wir eine solche Wolke von Zeugen um uns haben, lasset uns ablegen die Sünde, so uns immer anklebt und träge macht, und lasset uns laufen durch Geduld in dem Kampf, der uns verordnet ist.",
+  "JAS 1:12": "Selig ist der Mann, der die Anfechtung erduldet; denn nachdem er bewährt ist, wird er die Krone des Lebens empfangen, welche Gott verheißen hat denen, die ihn liebhaben.",
+  "ROM 5:5": "Hoffnung aber läßt nicht zu Schanden werden. Denn die Liebe Gottes ist ausgegossen in unser Herz durch den heiligen Geist, welcher uns gegeben ist.",
+  "2CO 4:16-17": "Darum werden wir nicht müde; sondern, ob unser äußerlicher Mensch verdirbt, so wird doch der innerliche von Tag zu Tag erneuert. Denn unsre Trübsal, die zeitlich und leicht ist, schafft eine ewige und über alle Maßen wichtige Herrlichkeit",
+  "2CO 4:8-9": "Wir haben allenthalben Trübsal, aber wir ängsten uns nicht; uns ist bange, aber wir verzagen nicht; wir leiden Verfolgung, aber wir werden nicht verlassen; wir werden unterdrückt, aber wir kommen nicht um;",
+  "PSA 27:13": "Ich glaube aber doch, daß ich sehen werde das Gute des HERRN im Lande der Lebendigen.",
+  "PSA 40:1": "Ein Psalm Davids, vorzusingen. Ich harrte des HERRN; und er neigte sich zu mir und hörte mein Schreien",
+  "LAM 3:25-26": "Denn der HERR ist freundlich dem, der auf sie harrt, und der Seele, die nach ihm fragt. Es ist ein köstlich Ding, geduldig sein und auf die Hilfe des HERRN hoffen.",
+  "2TI 4:7": "Ich habe einen guten Kampf gekämpft, ich habe den Lauf vollendet, ich habe Glauben gehalten;",
+  "1CO 15:58": "Darum, meine lieben Brüder, seid fest, unbeweglich, und nehmet immer zu in dem Werk des HERRN, sintemal ihr wisset, daß eure Arbeit nicht vergeblich ist in dem HERRN.",
+  "HEB 10:36": "Geduld aber ist euch not, auf daß ihr den Willen Gottes tut und die Verheißung empfanget.",
+  "JAS 5:11": "Siehe, wir preisen selig, die erduldet haben. Die Geduld Hiobs habt ihr gehört, und das Ende des HERRN habt ihr gesehen; denn der HERR ist barmherzig und ein Erbarmer.",
+  "ROM 8:18": "Denn ich halte es dafür, daß dieser Zeit Leiden der Herrlichkeit nicht wert sei, die an uns soll offenbart werden.",
+  "PSA 34:19": "Der Gerechte muß viel Leiden; aber der HERR hilft ihm aus dem allem.",
+  "2CO 12:10": "Darum bin ich gutes Muts in Schwachheiten, in Mißhandlungen, in Nöten, in Verfolgungen, in Ängsten, um Christi willen; denn, wenn ich schwach bin, so bin ich stark.",
+  "ISA 43:1": "Und nun spricht der HERR, der dich geschaffen hat, Jakob, und dich gemacht hat, Israel: Fürchte dich nicht, denn ich habe dich erlöst; ich habe dich bei deinem Namen gerufen; du bist mein!",
+  "PSA 61:2": "Hienieden auf Erden rufe ich zu dir, wenn mein Herz in Angst ist, du wollest mich führen auf einen hohen Felsen.",
+  "PSA 18:6": "Da mir angst war, rief ich den HERRN an und schrie zu meinem Gott; da erhörte er meine Stimme von seinem Tempel, und mein Schreien kam vor ihn zu seinen Ohren.",
+  "PSA 120:1": "Ein Lied im höhern Chor. Ich rufe zu dem HERRN in meiner Not, und er erhört mich.",
+  "JHN 14:18": "Ich will euch nicht Waisen lassen; ich komme zu euch.",
+  "HEB 6:19": "welche wir haben als einen sichern und festen Anker unsrer Seele, der auch hineingeht in das Inwendige des Vorhangs,",
+  "PSA 9:9": "Und der HERR ist des Armen Schutz, ein Schutz in der Not.",
+  "ISA 41:13": "Denn ich bin der HERR, dein Gott, der deine rechte Hand stärkt und zu dir spricht: Fürchte dich nicht, ich helfe dir!",
+  "MAT 6:26": "Sehet die Vögel unter dem Himmel an: sie säen nicht, sie ernten nicht, sie sammeln nicht in die Scheunen; und euer himmlischer Vater nährt sie doch. Seid ihr denn nicht viel mehr denn sie?",
+  "LUK 12:7": "Aber auch die Haare auf eurem Haupt sind alle gezählt. Darum fürchtet euch nicht; ihr seid besser denn viele Sperlinge.",
+  "PSA 37:25": "Ich bin jung gewesen und alt geworden und habe noch nie gesehen den Gerechten verlassen oder seinen Samen nach Brot gehen.",
+  "PSA 34:10": "Reiche müssen darben und hungern; aber die den HERRN suchen, haben keinen Mangel an irgend einem Gut.",
+  "2CO 9:8": "Gott aber kann machen, daß allerlei Gnade unter euch reichlich sei, daß ihr in allen Dingen volle Genüge habt und reich seid zu allerlei guten Werken;",
+  "PSA 84:11": "Denn Gott der HERR ist Sonne und Schild; der HERR gibt Gnade und Ehre: er wird kein Gutes mangeln lassen den Frommen.",
+  "DEU 31:8": "Der HERR aber, der selber vor euch her geht, der wird mit dir sein und wird die Hand nicht abtun noch dich verlassen. Fürchte dich nicht und erschrick nicht.",
+  "PSA 121:7-8": "Der HERR behüte dich vor allem Übel, er behüte deine Seele; der HERR behüte deinen Ausgang und Eingang von nun an bis in Ewigkeit.",
+  "GEN 28:15": "Und siehe, ich bin mit dir und will dich behüten, wo du hin ziehst, und will dich wieder herbringen in dies Land. Denn ich will dich nicht lassen, bis daß ich tue alles, was ich dir geredet habe.",
+  "PSA 145:15-16": "Aller Augen warten auf dich, und du gibst ihnen ihre Speise zu seiner Zeit. Du tust deine Hand auf und erfüllst alles, was lebt, mit Wohlgefallen.",
+  "MAT 7:11": "So denn ihr, die ihr doch arg seid, könnt dennoch euren Kindern gute Gaben geben, wie viel mehr wird euer Vater im Himmel Gutes geben denen, die ihn bitten!",
+  "1PE 5:6": "So demütiget euch nun unter die gewaltige Hand Gottes, daß er euch erhöhe zu seiner Zeit.",
+  "PSA 68:19": "Gelobet sei der Herr täglich. Gott legt uns eine Last auf; aber er hilft uns auch. (Sela.)",
+  "PSA 68:5": "der ein Vater ist der Waisen und ein Richter der Witwen. Er ist Gott in seiner heiligen Wohnung,",
+  "ISA 49:15-16": "Kann auch ein Weib ihres Kindleins vergessen, daß sie sich nicht erbarme über den Sohn ihres Leibes? Und ob sie desselben vergäße, so will ich doch dein nicht vergessen. Siehe, in die Hände habe ich dich gezeichnet; deine Mauern sind immerdar vor mir.",
+  "PSA 139:9-10": "Nähme ich Flügel der Morgenröte und bliebe am äußersten Meer, so würde mich doch deine Hand daselbst führen und deine Rechte mich halten.",
+  "LUK 12:32": "Fürchte dich nicht, du kleine Herde! denn es ist eures Vaters Wohlgefallen, euch das Reich zu geben.",
+  "MAT 10:30-31": "Nun aber sind auch eure Haare auf dem Haupte alle gezählt. So fürchtet euch denn nicht; ihr seid besser als viele Sperlinge.",
+  "GEN 50:20": "Ihr gedachtet's böse mit mir zu machen; aber Gott gedachte es gut zu machen, daß er täte, wie es jetzt am Tage ist, zu erhalten viel Volks.",
+  "ROM 8:32": "welcher auch seines eigenen Sohnes nicht hat verschont, sondern hat ihn für uns alle dahingegeben; wie sollte er uns mit ihm nicht alles schenken?",
+  "PSA 23:5": "Du bereitest vor mir einen Tisch im Angesicht meiner Feinde. Du salbest mein Haupt mit Öl und schenkest mir voll ein.",
+  "PSA 145:9": "Der HERR ist allen gütig und erbarmt sich aller seiner Werke.",
+  "JAS 1:17": "Alle gute Gabe und alle vollkommene Gabe kommt von obenherab, von dem Vater des Lichts, bei welchem ist keine Veränderung noch Wechsel des Lichtes und der Finsternis.",
+  "PSA 103:4-5": "der dein Leben vom Verderben erlöst, der dich krönt mit Gnade und Barmherzigkeit, der deinen Mund fröhlich macht, und du wieder jung wirst wie ein Adler.",
+  "ISA 46:4": "Ja, ich will euch tragen bis ins Alter und bis ihr grau werdet. Ich will es tun, ich will heben und tragen und erretten.",
+  "PSA 3:3": "Aber du, HERR, bist der Schild für mich und der mich zu Ehren setzt und mein Haupt aufrichtet.",
+  "PSA 3:5": "Ich liege und schlafe und erwache; denn der HERR hält mich.",
+  "PSA 32:7": "Du bist mein Schirm; du wirst mich vor Angst behüten, daß ich errettet gar fröhlich rühmen kann. (Sela.)",
+  "PSA 9:1": "Ein Psalm Davids, von der schönen Jugend, vorzusingen. Ich danke dem HERRN von ganzem Herzen und erzähle alle deine Wunder.",
+  "COL 3:17": "Und alles, was ihr tut mit Worten oder mit Werken, das tut alles in dem Namen des HERRN Jesu, und danket Gott und dem Vater durch ihn.",
+  "EPH 5:20": "und saget Dank allezeit für alles Gott und dem Vater in dem Namen unsers HERRN Jesu Christi,",
+  "PSA 136:26": "Dankt dem Gott des Himmels, denn seine Güte währet ewiglich.",
+  "1CH 16:34": "Danket dem HERRN; denn er ist freundlich, und seine Güte währet ewiglich.",
+  "PSA 69:30": "Ich will den Namen Gottes loben mit einem Lied und will ihn hoch ehren mit Dank.",
+  "COL 4:2": "Haltet an am Gebet und wachet in demselben mit Danksagung;",
+  "JER 33:3": "Rufe mich an, so will ich dir antworten und will dir anzeigen große und gewaltige Dinge, die du nicht weißt.",
+  "MAT 6:6": "Wenn aber du betest, so gehe in dein Kämmerlein und schließ die Tür zu und bete zu deinem Vater im Verborgenen; und dein Vater, der in das Verborgene sieht, wird dir's vergelten öffentlich.",
+  "MAT 18:20": "Denn wo zwei oder drei versammelt sind in meinem Namen, da bin ich mitten unter ihnen.",
+  "1JN 5:14": "Und das ist die Freudigkeit, die wir haben zu ihm, daß, so wir etwas bitten nach seinem Willen, so hört er uns.",
+  "JAS 5:16": "Bekenne einer dem andern seine Sünden und betet füreinander, daß ihr gesund werdet. Des Gerechten Gebet vermag viel, wenn es ernstlich ist.",
+  "ROM 8:26": "Desgleichen auch der Geist hilft unsrer Schwachheit auf. Denn wir wissen nicht, was wir beten sollen, wie sich's gebührt; sondern der Geist selbst vertritt uns aufs beste mit unaussprechlichem Seufzen.",
+  "PSA 17:6": "Ich rufe zu dir, daß du, Gott, wollest mich erhören; neige deine Ohren zu mir, höre meine Rede.",
+  "EPH 6:18": "Und betet stets in allem Anliegen mit Bitten und Flehen im Geist, und wachet dazu mit allem Anhalten und Flehen für alle Heiligen",
+  "1TI 2:1": "So ermahne ich euch nun, daß man vor allen Dingen zuerst tue Bitte, Gebet, Fürbitte und Danksagung für alle Menschen,",
+  "PSA 116:1-2": "Das ist mir lieb, daß der HERR meine Stimme und mein Flehen hört. Denn er neigte sein Ohr zu mir; darum will ich mein Leben lang ihn anrufen.",
+  "PSA 34:15": "Die Augen des HERRN merken auf die Gerechten und seine Ohren auf ihr Schreien;",
+  "PSA 92:1-2": "Ein Psalmlied auf den Sabbattag. Das ist ein köstlich Ding, dem HERRN danken, und lobsingen deinem Namen, du Höchster, des Morgens deine Gnade und des Nachts deine Wahrheit verkündigen",
+  "PSA 63:1": "Ein Psalm Davids, da er war in der Wüste Juda. Gott, du bist mein Gott; frühe wache ich zu dir. Es dürstet meine Seele nach dir; mein Fleisch verlangt nach dir in einem trockenen und dürren Land, wo kein Wasser ist.",
+  "PSA 42:1": "Eine Unterweisung der Kinder Korah, vorzusingen. Wie der Hirsch schreit nach frischem Wasser, so schreit meine Seele, Gott, zu dir.",
+  "PSA 50:15": "und rufe mich an in der Not, so will ich dich erretten, so sollst du mich preisen.”",
+  "PSA 86:12": "Ich danke dir, Herr, mein Gott, von ganzem Herzen und ehre deinen Namen ewiglich.",
+  "2CO 9:15": "Gott aber sei Dank für seine unaussprechliche Gabe!",
+  "PSA 118:29": "Danket dem HERRN; denn er ist freundlich, und sein Güte währet ewiglich.",
+  "HEB 13:15": "So lasset uns nun opfern durch ihn das Lobopfer Gott allezeit, das ist die Frucht der Lippen, die seinen Namen bekennen.",
+  "PSA 95:6": "Kommt, laßt uns anbeten und knieen und niederfallen vor dem HERRN, der uns gemacht hat.",
+  "LUK 18:1": "Er sagte ihnen aber ein Gleichnis davon, daß man allezeit beten und nicht laß werden solle,",
+  "PSA 141:2": "Mein Gebet müsse vor dir Taugen wie ein Räuchopfer, mein Händeaufheben wie ein Abendopfer.",
+  "ISA 9:2": "Das Volk das im Finstern wandelt, sieht ein großes Licht; und über die da wohnen im finstern Lande, scheint es hell.",
+  "ISA 7:14": "Darum so wird euch der Herr selbst ein Zeichen geben: Siehe, eine Jungfrau ist schwanger und wird einen Sohn gebären, den wird sie heißen Immanuel.",
+  "MIC 5:2": "Und du Bethlehem Ephrata, die du klein bist unter den Städten in Juda, aus dir soll mir kommen, der in Israel HERR sei, welches Ausgang von Anfang und von Ewigkeit her gewesen ist.",
+  "JHN 1:1": "Im Anfang war das Wort, und das Wort war bei Gott, und Gott war das Wort.",
+  "JHN 1:5": "Und das Licht scheint in der Finsternis, und die Finsternis hat's nicht begriffen.",
+  "JHN 1:14": "Und das Wort ward Fleisch und wohnte unter uns, und wir sahen seine Herrlichkeit, eine Herrlichkeit als des eingeborenen Sohnes vom Vater, voller Gnade und Wahrheit.",
+  "ISA 40:1": "Tröstet, tröstet mein Volk! spricht euer Gott;",
+  "ISA 40:11": "Er wird seine Herde weiden wie ein Hirte; er wird die Lämmer in seine Arme sammeln und in seinem Busen tragen und die Schafmütter führen.",
+  "LUK 1:37": "Denn bei Gott ist kein Ding unmöglich.",
+  "LUK 1:38": "Maria aber sprach: Siehe ich bin des HERRN Magd; mir geschehe, wie du gesagt hast. Und der Engel schied von ihr.",
+  "LUK 1:46-47": "Und Maria sprach: Meine Seele erhebt den HERRN, und mein Geist freuet sich Gottes, meines Heilands;",
+  "MAT 1:21": "Und sie wird einen Sohn gebären, des Namen sollst du Jesus heißen; denn er wird sein Volk selig machen von ihren Sünden.",
+  "LUK 1:31": "Siehe, du wirst schwanger werden und einen Sohn gebären, des Namen sollst du Jesus heißen.",
+  "ISA 60:1": "Mache dich auf, werde licht! denn dein Licht kommt, und die Herrlichkeit des HERRN geht auf über dir.",
+  "MAL 4:2": "Euch aber, die ihr meinen Namen fürchtet, soll aufgehen die Sonne der Gerechtigkeit und Heil unter ihren Flügeln; und ihr sollt aus und eingehen und hüpfen wie die Mastkälber.",
+  "ISA 52:7": "Wie lieblich sind auf den Bergen die Füße der Boten, die da Frieden verkündigen, Gutes predigen, Heil verkündigen, die da sagen zu Zion: Dein Gott ist König!",
+  "1TI 1:15": "Das ist gewißlich wahr und ein teuer wertes Wort, daß Christus Jesus gekommen ist in die Welt, die Sünder selig zu machen, unter welchen ich der vornehmste bin.",
+  "JHN 1:16": "Und von seiner Fülle haben wir alle genommen Gnade um Gnade.",
+  "TIT 2:11": "Denn es ist erschienen die heilsame Gnade Gottes allen Menschen",
+  "2CO 8:9": "Denn ihr wisset die Gnade unsers HERRN Jesu Christi, daß, ob er wohl reich ist, ward er doch arm um euretwillen, auf daß ihr durch seine Armut reich würdet.",
+  "PSA 24:7": "Machet die Tore weit und die Türen in der Welt hoch, daß der König der Ehren einziehe!",
+  "MAT 2:10-11": "Da sie den Stern sahen, wurden sie hoch erfreut und gingen in das Haus und fanden das Kindlein mit Maria, seiner Mutter, und fielen nieder und beteten es an und taten ihre Schätze auf und schenkten ihm Gold, Weihrauch und Myrrhe.",
+  "LUK 2:7": "Und sie gebar ihren ersten Sohn und wickelte ihn in Windeln und legte ihn in eine Krippe; denn sie hatten sonst keinen Raum in der Herberge.",
+  "ISA 9:6": "Denn uns ist ein Kind geboren, ein Sohn ist uns gegeben, und die Herrschaft ist auf seiner Schulter; er heißt Wunderbar, Rat, Held, Ewig-Vater Friedefürst;",
+  "LUK 2:10-11": "Und der Engel sprach zu ihnen: Fürchtet euch nicht! siehe, ich verkündige euch große Freude, die allem Volk widerfahren wird; denn euch ist heute der Heiland geboren, welcher ist Christus, der HERR, in der Stadt Davids.",
+  "LUK 2:20": "Und die Hirten kehrten wieder um, priesen und lobten Gott um alles, was sie gehört und gesehen hatten, wie denn zu ihnen gesagt war.",
+  "LUK 2:19": "Maria aber behielt alle diese Worte und bewegte sie in ihrem Herzen.",
+  "MAT 2:2": "Wo ist der neugeborene König der Juden? Wir haben seinen Stern gesehen im Morgenland und sind gekommen, ihn anzubeten.",
+  "PSA 90:2": "Ehe denn die Berge wurden und die Erde und die Welt geschaffen wurden, bist du, Gott, von Ewigkeit zu Ewigkeit,",
+  "REV 21:5": "Und der auf dem Stuhl saß, sprach: Siehe, ich mache alles neu! Und er spricht zu mir: Schreibe; denn diese Worte sind wahrhaftig und gewiß!",
+  "PSA 65:11": "Du krönst das Jahr mit deinem Gut, und deine Fußtapfen triefen von Fett.",
+  "GEN 1:1": "Am Anfang schuf Gott Himmel und Erde.",
+  "GEN 1:2": "Und die Erde war wüst und leer, und es war finster auf der Tiefe; und der Geist Gottes schwebte auf dem Wasser.",
+  "GEN 1:3": "Und Gott sprach: Es werde Licht! und es ward Licht.",
+  "GEN 1:4": "Und Gott sah, daß das Licht gut war. Da schied Gott das Licht von der Finsternis",
+  "GEN 1:5": "und nannte das Licht Tag und die Finsternis Nacht. Da ward aus Abend und Morgen der erste Tag.",
+  "GEN 1:26": "Und Gott sprach: Laßt uns Menschen machen, ein Bild, das uns gleich sei, die da herrschen über die Fische im Meer und über die Vögel unter dem Himmel und über das Vieh und über die ganze Erde und über alles Gewürm, das auf Erden kriecht.",
+  "GEN 1:27": "Und Gott schuf den Menschen ihm zum Bilde, zum Bilde Gottes schuf er ihn; und schuf sie einen Mann und ein Weib.",
+  "GEN 1:28": "Und Gott segnete sie und sprach zu ihnen: Seid fruchtbar und mehrt euch und füllt die Erde und macht sie euch untertan und herrscht über die Fische im Meer und über die Vögel unter dem Himmel und über alles Getier, das auf Erden kriecht.",
+  "GEN 1:29": "Und Gott sprach: Seht da, ich habe euch gegeben allerlei Kraut, das sich besamt, auf der ganzen Erde und allerlei fruchtbare Bäume, die sich besamen, zu eurer Speise,",
+  "GEN 1:30": "und allem Getier auf Erden und allen Vögeln unter dem Himmel und allem Gewürm, das da lebt auf Erden, daß sie allerlei grünes Kraut essen. Und es geschah also.",
+  "GEN 1:31": "Und Gott sah alles an, was er gemacht hatte; und siehe da, es war sehr gut. Da ward aus Abend und Morgen der sechste Tag.",
+  "GEN 2:1": "Also ward vollendet Himmel und Erde mit ihrem ganzen Heer.",
+  "GEN 2:2": "Und also vollendete Gott am siebenten Tage seine Werke, die er machte, und ruhte am siebenten Tage von allen seinen Werken, die er machte.",
+  "GEN 2:3": "Und Gott segnete den siebenten Tag und heiligte ihn, darum daß er an demselben geruht hatte von allen seinen Werken, die Gott schuf und machte.",
+  "GEN 6:13": "Da sprach Gott zu Noah: Alles Fleisches Ende ist vor mich gekommen; denn die Erde ist voll Frevels von ihnen; und siehe da, ich will sie verderben mit der Erde.",
+  "GEN 6:14": "Mache dir einen Kasten von Tannenholz und mache Kammern darin und verpiche ihn mit Pech inwendig und auswendig.",
+  "GEN 6:15": "Und mache ihn also: Dreihundert Ellen sei die Länge, fünfzig Ellen die Weite und dreißig Ellen die Höhe.",
+  "GEN 6:16": "Ein Fenster sollst du daran machen obenan, eine Elle groß. Die Tür sollst du mitten in seine Seite setzen. Und er soll drei Boden haben: einen unten, den andern in der Mitte, den dritten in der Höhe.",
+  "GEN 6:17": "Denn siehe, ich will eine Sintflut mit Wasser kommen lassen auf Erden, zu verderben alles Fleisch, darin ein lebendiger Odem ist, unter dem Himmel. Alles, was auf Erden ist, soll untergehen.",
+  "GEN 6:18": "Aber mit dir will ich einen Bund aufrichten; und du sollst in den Kasten gehen mit deinen Söhnen, mit deinem Weibe und mit deiner Söhne Weibern.",
+  "GEN 6:19": "Und du sollst in den Kasten tun allerlei Tiere von allem Fleisch, je ein Paar, Männlein und Weiblein, daß sie lebendig bleiben bei dir.",
+  "GEN 6:20": "Von den Vögeln nach ihrer Art, von dem Vieh nach seiner Art und von allerlei Gewürm auf Erden nach seiner Art: von den allen soll je ein Paar zu dir hineingehen, daß sie leben bleiben.",
+  "GEN 6:21": "Und du sollst allerlei Speise zu dir nehmen, die man ißt, und sollst sie bei dir sammeln, daß sie dir und ihnen zur Nahrung da sei.",
+  "GEN 6:22": "Und Noah tat alles, was ihm Gott gebot.",
+  "GEN 7:17": "Da kam die Sintflut vierzig Tage auf Erden, und die Wasser wuchsen und hoben den Kasten auf und trugen ihn empor über die Erde.",
+  "GEN 7:18": "Also nahm das Gewässer überhand und wuchs sehr auf Erden, daß der Kasten auf dem Gewässer fuhr.",
+  "GEN 8:6": "Nach vierzig Tagen tat Noah das Fenster auf an dem Kasten, das er gemacht hatte,",
+  "GEN 8:7": "und ließ einen Raben ausfliegen; der flog immer hin und wieder her, bis das Gewässer vertrocknete auf Erden.",
+  "GEN 8:8": "Darnach ließ er eine Taube von sich ausfliegen, auf daß er erführe, ob das Gewässer gefallen wäre auf Erden.",
+  "GEN 8:9": "Da aber die Taube nicht fand, da ihr Fuß ruhen konnte, kam sie wieder zu ihm in den Kasten; denn das Gewässer war noch auf dem ganzen Erdboden. Da tat er die Hand heraus und nahm sie zu sich in den Kasten.",
+  "GEN 8:10": "Da harrte er noch weitere sieben Tage und ließ abermals eine Taube fliegen aus dem Kasten.",
+  "GEN 8:11": "Die kam zu ihm zur Abendzeit, und siehe, ein Ölblatt hatte sie abgebrochen und trug's in ihrem Munde. Da merkte Noah, daß das Gewässer gefallen wäre auf Erden.",
+  "GEN 8:12": "Aber er harrte noch weiter sieben Tage und ließ eine Taube ausfliegen; die kam nicht wieder zu ihm.",
+  "GEN 9:12": "Und Gott sprach: Das ist das Zeichen des Bundes, den ich gemacht habe zwischen mir und euch und allen lebendigen Seelen bei euch hinfort ewiglich:",
+  "GEN 9:13": "Meinen Bogen habe ich gesetzt in die Wolken; der soll das Zeichen sein des Bundes zwischen mir und der Erde.",
+  "GEN 9:14": "Und wenn es kommt, daß ich Wolken über die Erde führe, so soll man meinen Bogen sehen in den Wolken.",
+  "GEN 9:15": "Alsdann will ich gedenken an meinen Bund zwischen mir und euch und allen lebendigen Seelen in allerlei Fleisch, daß nicht mehr hinfort eine Sintflut komme, die alles Fleisch verderbe.",
+  "GEN 9:16": "Darum soll mein Bogen in den Wolken sein, daß ich ihn ansehe und gedenke an den ewigen Bund zwischen Gott und allen lebendigen Seelen in allem Fleisch, das auf Erden ist.",
+  "GEN 28:10": "Aber Jakob zog aus von Beer-Seba und reiste gen Haran",
+  "GEN 28:11": "und kam an einen Ort, da blieb er über Nacht; denn die Sonne war untergegangen. Und er nahm einen Stein des Orts und legte ihn zu seinen Häupten und legte sich an dem Ort schlafen.",
+  "GEN 28:12": "Und ihm träumte; und siehe, eine Leiter stand auf der Erde, die rührte mit der Spitze an den Himmel, und siehe, die Engel Gottes stiegen daran auf und nieder;",
+  "GEN 28:13": "und der HERR stand obendarauf und sprach: Ich bin der HERR, Abrahams, deines Vaters, Gott und Isaaks Gott; das Land darauf du liegst, will ich dir und deinem Samen geben.",
+  "GEN 28:14": "Und dein Same soll werden wie der Staub auf Erden, und du sollst ausgebreitet werden gegen Abend, Morgen, Mitternacht und Mittag; und durch dich und deinen Samen sollen alle Geschlechter auf Erden gesegnet werden.",
+  "GEN 28:16": "Da nun Jakob von seinem Schlaf aufwachte, sprach er: Gewiß ist der HERR an diesem Ort, und ich wußte es nicht;",
+  "GEN 28:17": "und fürchtete sich und sprach: Wie heilig ist diese Stätte! Hier ist nichts anderes als Gottes Haus, und hier ist die Pforte des Himmels.",
+  "GEN 28:18": "Und Jakob stand des Morgens früh auf und nahm den Stein, den er zu seinen Häupten gelegt hatte, und richtete ihn auf zu einem Mal und goß Öl obendarauf",
+  "GEN 28:19": "und hieß die Stätte Beth-El; zuvor aber hieß die Stadt Lus.",
+  "GEN 28:20": "Und Jakob tat ein Gelübde und sprach: So Gott wird mit mir sein und mich behüten auf dem Wege, den ich reise, und mir Brot zu essen geben und Kleider anzuziehen",
+  "GEN 28:21": "und mich in Frieden wieder heim zu meinem Vater bringen, so soll der HERR mein Gott sein;",
+  "GEN 28:22": "und dieser Stein, den ich aufgerichtet habe zu einem Mal, soll ein Gotteshaus werden; und von allem, was du mir gibst, will ich dir den Zehnten geben.",
+  "GEN 37:3": "Israel aber hatte Joseph lieber als alle seine Kinder, darum daß er ihn im Alter gezeugt hatte; und machte ihm einen bunten Rock.",
+  "GEN 37:4": "Da nun seine Brüder sahen, daß ihn ihr Vater lieber hatte als alle seine Brüder, waren sie ihm feind und konnten ihm kein freundlich Wort zusprechen.",
+  "GEN 37:23": "Als nun Joseph zu seinen Brüdern kam, zogen sie ihm seinen Rock, den bunten Rock, aus, den er anhatte,",
+  "GEN 37:24": "und nahmen ihn und warfen ihn in die Grube; aber die Grube war leer und kein Wasser darin.",
+  "GEN 37:25": "Und setzten sich nieder, zu essen. Indes hoben sie ihre Augen auf und sahen einen Haufen Ismaeliter kommen von Gilead mit ihren Kamelen; die trugen Würze, Balsam und Myrrhe und zogen hinab nach Ägypten.",
+  "GEN 37:26": "Da sprach Juda zu seinen Brüdern: Was hilft's uns, daß wir unseren Bruder erwürgen und sein Blut verbergen?",
+  "GEN 37:27": "Kommt, laßt uns ihn den Ismaeliten verkaufen, daß sich unsre Hände nicht an ihm vergreifen; denn er ist unser Bruder, unser Fleisch und Blut. Und sie gehorchten ihm.",
+  "GEN 37:28": "Und da die Midianiter, die Kaufleute, vorüberreisten, zogen sie ihn heraus aus der Grube und verkauften ihn den Ismaeliten um zwanzig Silberlinge; die brachte ihn nach Ägypten.",
+  "GEN 45:1": "Da konnte sich Joseph nicht länger enthalten vor allen, die um ihn her standen, und er rief: Laßt jedermann von mir hinausgehen! Und kein Mensch stand bei ihm, da sich Joseph seinen Brüdern zu erkennen gab.",
+  "GEN 45:2": "Und er weinte laut, daß es die Ägypter und das Gesinde des Pharao hörten,",
+  "GEN 45:3": "und sprach zu seinen Brüdern: Ich bin Joseph. Lebt mein Vater noch? und seine Brüder konnten ihm nicht antworten, so erschraken sie vor seinem Angesicht.",
+  "GEN 45:4": "Er aber sprach zu seinen Brüdern: Tretet doch her zu mir! Und sie traten herzu. Und er sprach: Ich bin Joseph euer Bruder, den ihr nach Ägypten verkauft habt.",
+  "GEN 45:5": "Und nun bekümmert euch nicht und denkt nicht, daß ich darum zürne, daß ihr mich hierher verkauft habt; denn um eures Lebens willen hat mich Gott vor euch her gesandt.",
+  "GEN 45:6": "Denn dies sind zwei Jahre, daß es teuer im Lande ist; und sind noch fünf Jahre, daß kein Pflügen und Ernten sein wird.",
+  "GEN 45:7": "Aber Gott hat mich vor euch her gesandt, daß er euch übrig behalte auf Erden und euer Leben errette durch eine große Errettung.",
+  "GEN 45:8": "Und nun, ihr habt mich nicht hergesandt, sondern Gott, der hat mich Pharao zum Vater gesetzt und zum Herrn über all sein Haus und zum Fürsten in ganz Ägyptenland.",
+  "GEN 50:19": "Joseph sprach zu ihnen: Fürchtet euch nicht, denn ich bin unter Gott.",
+  "GEN 50:21": "So fürchtet euch nun nicht; ich will euch versorgen und eure Kinder. Und er tröstete sie und redete freundlich mit ihnen.",
+  "EXO 2:1": "Und es ging ein Mann vom Hause Levi und nahm eine Tochter Levi.",
+  "EXO 2:2": "Und das Weib ward schwanger und gebar einen Sohn. Und da sie sah, daß es ein feines Kind war, verbarg sie ihn drei Monate.",
+  "EXO 2:3": "Und da sie ihn nicht länger verbergen konnte, machte sie ein Kästlein von Rohr und verklebte es mit Erdharz und Pech und legte das Kind darein und legte ihn in das Schilf am Ufer des Wassers.",
+  "EXO 2:4": "Aber seine Schwester stand von ferne, daß sie erfahren wollte, wie es ihm gehen würde.",
+  "EXO 2:5": "Und die Tochter Pharaos ging hernieder und wollte baden im Wasser; und ihre Jungfrauen gingen an dem Rande des Wassers. Und da sie das Kästlein im Schilf sah, sandte sie ihre Magd hin und ließ es holen.",
+  "EXO 2:6": "Und da sie es auftat, sah sie das Kind; und siehe, das Knäblein weinte. Da jammerte es sie, und sprach: Es ist der hebräischen Kindlein eins.",
+  "EXO 2:7": "Da sprach seine Schwester zu der Tochter Pharaos: Soll ich hingehen und der hebräischen Weiber eine rufen, die da säugt, daß sie dir das Kindlein säuge?",
+  "EXO 2:8": "Die Tochter Pharaos sprach zu ihr: Gehe hin. Die Jungfrau ging hin und rief des Kindes Mutter.",
+  "EXO 2:9": "Da sprach Pharaos Tochter zu ihr: Nimm hin das Kindlein und säuge mir's; ich will dir lohnen. Das Weib nahm das Kind und säugte es.",
+  "EXO 2:10": "Und da das Kind groß war, brachte sie es der Tochter Pharaos, und es ward ihr Sohn, und sie hieß ihn Mose; denn sie sprach: Ich habe ihn aus dem Wasser gezogen.",
+  "EXO 3:1": "Mose aber hütete die Schafe Jethros, seines Schwiegervaters, des Priesters in Midian, und trieb die Schafe hinter die Wüste und kam an den Berg Gottes, Horeb.",
+  "EXO 3:2": "Und der Engel des HERRN erschien ihm in einer feurigen Flamme aus dem Busch. Und er sah, daß der Busch mit Feuer brannte und ward doch nicht verzehrt;",
+  "EXO 3:3": "und sprach: ich will dahin und beschauen dies große Gesicht, warum der Busch nicht verbrennt.",
+  "EXO 3:4": "Da aber der HERR sah, daß er hinging, zu sehen, rief ihm Gott aus dem Busch und sprach: Mose, Mose! Er antwortete: Hier bin ich.",
+  "EXO 3:5": "Er sprach: Tritt nicht herzu, zieh deine Schuhe aus von deinen Füßen; denn der Ort, darauf du stehst, ist ein heilig Land!",
+  "EXO 3:6": "Und sprach weiter: Ich bin der Gott deines Vaters, der Gott Abrahams, der Gott Isaaks und der Gott Jakobs. Und Mose verhüllte sein Angesicht; denn er fürchtete sich Gott anzuschauen.",
+  "EXO 3:7": "Und der HERR sprach: Ich habe gesehen das Elend meines Volkes in Ägypten und habe ihr Geschrei gehört über die, so sie drängen; ich habe ihr Leid erkannt",
+  "EXO 3:8": "und bin herniedergefahren, daß ich sie errette von der Ägypter Hand und sie ausführe aus diesem Lande in ein gutes und weites Land, in ein Land, darin Milch und Honig fließt, an den Ort der Kanaaniter, Hethiter, Amoriter, Pheresiter, Heviter und Jebusiter.",
+  "EXO 3:9": "Weil nun das Geschrei der Kinder Israel vor mich gekommen ist, und ich auch dazu ihre Angst gesehen habe, wie die Ägypter sie ängsten,",
+  "EXO 3:10": "so gehe nun hin, ich will dich zu Pharao senden, daß du mein Volk, die Kinder Israel, aus Ägypten führest.",
+  "EXO 3:11": "Mose sprach zu Gott: Wer bin ich, daß ich zu Pharao gehe und führe die Kinder Israel aus Ägypten?",
+  "EXO 3:12": "Er sprach: Ich will mit dir sein. Und das soll dir ein Zeichen sein, daß ich dich gesandt habe: Wenn du mein Volk aus Ägypten geführt hast, werdet ihr Gott opfern auf diesem Berge.",
+  "EXO 14:10": "Und da Pharao zu ihnen nahe kam, hoben die Kinder Israel ihre Augen auf, und siehe, die Ägypter zogen hinter ihnen her; und sie fürchteten sich sehr und schrieen zu dem HERRN",
+  "EXO 14:11": "und sprachen zu Mose: Waren nicht genug Gräber in Ägypten, daß du uns mußtest wegführen, daß wir in der Wüste sterben? Warum hast du uns das getan, daß du uns aus Ägypten geführt hast?",
+  "EXO 14:12": "Ist's nicht das, das wir dir sagten in Ägypten: Höre auf und laß uns den Ägyptern dienen? Denn es wäre uns ja besser den Ägyptern dienen als in der Wüste sterben.",
+  "EXO 14:13": "Mose sprach zum Volk: Fürchtet euch nicht, stehet fest und sehet zu, was für ein Heil der HERR heute an euch tun wird. Denn diese Ägypter, die ihr heute sehet, werdet ihr nimmermehr sehen ewiglich.",
+  "EXO 14:14": "Der HERR wird für euch streiten, und ihr werdet still sein.",
+  "EXO 14:15": "Der HERR sprach zu Mose: Was schreist du zu mir? sage den Kindern Israel, daß sie ziehen.",
+  "EXO 14:16": "Du aber hebe deinen Stab auf und recke deine Hand aus über das Meer und teile es voneinander, daß die Kinder Israel hineingehen, mitten hindurch auf dem Trockenen.",
+  "EXO 14:21": "Da nun Mose seine Hand reckte über das Meer, ließ es der HERR hinwegfahren durch einen starken Ostwind die ganze Nacht und machte das Meer trocken; und die Wasser teilten sich voneinander.",
+  "EXO 14:22": "Und die Kinder Israel gingen hinein, mitten ins Meer auf dem Trockenen; und das Wasser war ihnen für Mauern zur Rechten und zur Linken.",
+  "EXO 14:26": "Aber der HERR sprach zu Mose: Recke deine Hand aus über das Meer, daß das Wasser wieder herfalle über die Ägypter, über ihre Wagen und Reiter.",
+  "EXO 14:27": "Da reckte Mose seine Hand aus über das Meer, und das Meer kam wieder vor morgens in seinen Strom, und die Ägypter flohen ihm entgegen. Also stürzte sie der HERR mitten ins Meer,",
+  "EXO 14:28": "daß das Wasser wiederkam und bedeckte Wagen und Reiter und alle Macht des Pharao, die ihnen nachgefolgt waren ins Meer, daß nicht einer aus ihnen übrigblieb.",
+  "EXO 14:29": "Aber die Kinder Israel gingen trocken mitten durchs Meer; und das Wasser war ihnen für Mauern zur Rechten und zur Linken.",
+  "EXO 14:30": "Also half der HERR Israel an dem Tage von der Ägypter Hand. Und sie sahen die Ägypter tot am Ufer des Meeres",
+  "EXO 14:31": "und die große Hand, die der HERR an den Ägyptern erzeigt hatte. Und das Volk fürchtete den HERRN, und sie glaubten ihm und seinem Knecht Mose.",
+  "JOS 6:1": "Jericho aber war verschlossen und verwahrt vor den Kindern Israel, daß niemand aus oder ein kommen konnte,",
+  "JOS 6:2": "Aber der HERR sprach zu Josua: Siehe da, ich habe Jericho samt seinem König und seinen Kriegsleuten in deine Hände gegeben.",
+  "JOS 6:3": "Laß alle Kriegsmänner rings um die Stadt her gehen einmal, und tue sechs Tage also.",
+  "JOS 6:4": "Und laß sieben Priester sieben Posaunen des Halljahrs tragen vor der Lade her, und am siebenten Tage geht siebenmal um die Stadt, und laß die Priester die Posaunen blasen.",
+  "JOS 6:5": "Und wenn man das Halljahrshorn bläst und es lange tönt, daß ihr die Posaune hört, so soll das ganze Volk ein großes Feldgeschrei machen, so werden der Stadt Mauern umfallen, und das Volk soll hineinsteigen, ein jeglicher stracks vor sich.",
+  "JOS 6:15": "Am siebenten Tage aber, da die Morgenröte aufging, machten sie sich früh auf und gingen nach derselben Weise siebenmal um die Stadt, daß sie desselben einen Tages siebenmal um die Stadt kamen.",
+  "JOS 6:16": "Und beim siebentenmal, da die Priester die Posaunen bliesen, sprach Josua zum Volk: Macht ein Feldgeschrei; denn der HERR hat euch die Stadt gegeben.",
+  "JOS 6:20": "Da machte das Volk ein Feldgeschrei, und man blies die Posaunen. Denn als das Volk den Hall der Posaunen hörte, machte es ein großes Feldgeschrei. Und die Mauer fielen um, und das Volk erstieg die Stadt, ein jeglicher stracks vor sich. Also gewannen sie die Stadt",
+  "RUT 1:6": "Da machte sie sich auf mit ihren zwei Schwiegertöchtern und zog wieder aus der Moabiter Lande; denn sie hatte erfahren im Moabiterlande, daß der HERR sein Volk hatte heimgesucht und ihnen Brot gegeben.",
+  "RUT 1:7": "Und sie ging aus von dem Ort, da sie gewesen war, und ihre beiden Schwiegertöchter mit ihr. Und da sie ging auf dem Wege, daß sie wiederkäme ins Land Juda,",
+  "RUT 1:8": "sprach sie zu ihren beiden Schwiegertöchtern: Geht hin und kehrt um, eine jegliche zu ihrer Mutter Haus. Der HERR tue an euch Barmherzigkeit, wie ihr an den Toten und mir getan habt!",
+  "RUT 1:9": "Der HERR gebe euch, daß ihr Ruhe findet, eine jegliche in ihres Mannes Hause! Und küßte sie. Da hoben sie ihre Stimmen auf und weinten",
+  "RUT 1:10": "und sprachen zu ihr: Wir wollen mit dir zu deinem Volk gehen.",
+  "RUT 1:11": "Aber Naemi sprach: Kehrt um, meine Töchter! warum wollt ihr mit mir gehen? Wie kann ich fürder Kinder in meinem Leibe haben, die eure Männer sein könnten?",
+  "RUT 1:12": "Kehrt um, meine Töchter, und geht hin! denn ich bin nun zu alt, daß ich einen Mann nehme. Und wenn ich spräche: Es ist zu hoffen, daß ich diese Nacht einen Mann nehme und Kinder gebäre,",
+  "RUT 1:13": "wie könntet ihr doch harren, bis sie groß würden? wie wolltet ihr verziehen, daß ihr nicht Männer solltet nehmen? Nicht, meine Töchter! denn mich jammert euer sehr; denn des HERRN Hand ist über mich ausgegangen.",
+  "RUT 1:14": "Da hoben sie ihre Stimme auf und weinten noch mehr. Und Opra küßte ihre Schwiegermutter; Ruth aber blieb bei ihr.",
+  "RUT 1:15": "Sie aber sprach: Siehe, deine Schwägerin ist umgewandt zu ihrem Volk und zu ihrem Gott; kehre auch du um, deiner Schwägerin nach.",
+  "RUT 1:16": "Ruth antwortete: Rede mir nicht ein, daß ich dich verlassen sollte und von dir umkehren. Wo du hin gehst, da will ich auch hin gehen; wo du bleibst, da bleibe ich auch. Dein Volk ist mein Volk, und dein Gott ist mein Gott.",
+  "RUT 1:17": "Wo du stirbst, da sterbe ich auch, da will ich auch begraben werden. Der HERR tue mir dies und das, der Tod muß mich und dich scheiden.",
+  "RUT 1:18": "Als sie nun sah, daß sie fest im Sinn war, mit ihr zu gehen, ließ sie ab, mit ihr davon zu reden.",
+  "1SA 3:1": "Und da Samuel, der Knabe, dem HERRN diente unter Eli, war des HERRN Wort teuer zu derselben Zeit, und war wenig Weissagung.",
+  "1SA 3:2": "Und es begab sich, zur selben Zeit lag Eli an seinem Ort, und seine Augen fingen an, dunkel zu werden, daß er nicht sehen konnte.",
+  "1SA 3:3": "Und Samuel hatte sich gelegt im Tempel des HERRN, da die Lade Gottes war, und die Lampe Gottes war noch nicht verloschen.",
+  "1SA 3:4": "Und der HERR rief Samuel. Er aber antwortete: Siehe, hier bin ich!",
+  "1SA 3:5": "und lief zu Eli und sprach: Siehe, hier bin ich! du hast mich gerufen. Er aber sprach: Ich habe dich nicht gerufen; gehe wieder hin und lege dich schlafen. Und er ging hin und legte sich schlafen.",
+  "1SA 3:6": "Der HERR rief abermals: Samuel! Und Samuel stand auf und ging zu Eli und sprach: Siehe, hier bin ich! du hast mich gerufen. Er aber sprach: Ich habe nicht gerufen, mein Sohn; gehe wieder hin und lege dich schlafen.",
+  "1SA 3:7": "Aber Samuel kannte den HERRN noch nicht, und des HERRN Wort war ihm noch nicht offenbart.",
+  "1SA 3:8": "Und der HERR rief Samuel wieder, zum drittenmal. Und er stand auf und ging zu Eli und sprach: Siehe, hier bin ich! du hast mich gerufen. Da merkte Eli, daß der HERR den Knaben rief,",
+  "1SA 3:9": "und sprach zu ihm: Gehe wieder hin und lege dich schlafen; und so du gerufen wirst, so sprich: Rede, HERR, denn dein Knecht hört. Samuel ging hin und legte sich an seinen Ort.",
+  "1SA 3:10": "Da kam der HERR und trat dahin und rief wie vormals: Samuel, Samuel! Und Samuel sprach: Rede, denn dein Knecht hört.",
+  "1SA 17:4": "Da trat aus den Lagern der Philister ein Riese mit Namen Goliath von Gath, sechs Ellen und eine Handbreit hoch;",
+  "1SA 17:5": "und er hatte einen ehernen Helm auf seinem Haupt und einen schuppendichten Panzer an, und das Gewicht seines Panzers war fünftausend Lot Erz,",
+  "1SA 17:6": "und hatte eherne Beinharnische an seinen Schenkeln und einen ehernen Schild auf seinen Schultern.",
+  "1SA 17:7": "Und der Schaft seines Spießes war wie ein Weberbaum, und das Eisen seines Spießes hatte sechshundert Lot Eisen; und sein Schildträger ging vor ihm her.",
+  "1SA 17:8": "Und er stand und rief zu dem Heer Israels und sprach zu ihnen: Was seid ihr ausgezogen, euch zu rüsten in einen Streit? Bin ich nicht ein Philister und ihr Sauls Knechte? Erwählt einen unter euch, der zu mir herabkomme.",
+  "1SA 17:9": "Vermag er wider mich zu streiten und schlägt mich, so wollen wir eure Knechte sein; vermag ich aber wider ihn und schlage ihn, so sollt ihr unsre Knechte sein, daß ihr uns dient.",
+  "1SA 17:10": "Und der Philister sprach: Ich habe heutigestages dem Heer Israels Hohn gesprochen: Gebt mir einen und laßt uns miteinander streiten.",
+  "1SA 17:11": "Da Saul und ganz Israel diese Rede des Philisters hörten, entsetzten sie sich und fürchteten sich sehr.",
+  "1SA 17:32": "Und David sprach zu Saul: Es entfalle keinem Menschen das Herz um deswillen; Dein Knecht soll hingehen und mit dem Philister streiten.",
+  "1SA 17:33": "Saul aber sprach zu David: Du kannst nicht hingehen wider diesen Philister, mit ihm zu streiten; denn du bist ein Knabe, dieser aber ist ein Kriegsmann von seiner Jugend auf.",
+  "1SA 17:34": "David aber sprach zu Saul: Dein Knecht hütete die Schafe seines Vaters, und es kam ein Löwe und ein Bär und trug ein Schaf weg von der Herde;",
+  "1SA 17:35": "und ich lief ihm nach und schlug ihn und errettete es aus seinem Maul. Und da er sich über mich machte, ergriff ich ihn bei seinem Bart und schlug ihn und tötete ihn.",
+  "1SA 17:36": "Also hat dein Knecht geschlagen beide, den Löwen und den Bären. So soll nun dieser Philister, der Unbeschnittene, sein gleich wie deren einer; denn er hat geschändet das Heer des lebendigen Gottes.",
+  "1SA 17:37": "Und David sprach: Der HERR, der mich von dem Löwen und Bären errettet hat, der wird mich auch erretten von diesem Philister.",
+  "1SA 17:40": "und nahm seinen Stab in seine Hand und erwählte fünf glatte Steine aus dem Bach und tat sie in seine Hirtentasche, die er hatte, und in den Sack und nahm die Schleuder in seine Hand und machte sich zu dem Philister.",
+  "1SA 17:41": "Und der Philister ging auch einher und machte sich zu David und sein Schildträger vor ihm her.",
+  "1SA 17:42": "Da nun der Philister sah und schaute David an, verachtete er ihn; denn er war ein Knabe, bräunlich und schön.",
+  "1SA 17:43": "Und der Philister sprach zu David: Bin ich denn ein Hund, daß du mit Stecken zu mir kommst? und fluchte dem David bei seinem Gott",
+  "1SA 17:44": "und sprach zu David: Komm her zu mir, ich will dein Fleisch geben den Vögeln unter dem Himmel und den Tieren auf dem Felde!",
+  "1SA 17:45": "David aber sprach zu dem Philister: Du kommst zu mir mit Schwert, Spieß und Schild; ich aber komme zu dir im Namen des HERRN Zebaoth, des Gottes des Heeres Israels, das du gehöhnt hast.",
+  "1SA 17:46": "Heutigestages wird dich der HERR in meine Hand überantworten, daß ich dich schlage und nehme dein Haupt von dir und gebe die Leichname des Heeres der Philister heute den Vögeln unter dem Himmel und dem Wild auf Erden, daß alles Land innewerde, daß Israel einen Gott hat,",
+  "1SA 17:47": "und daß alle diese Gemeinde innewerde, daß der HERR nicht durch Schwert noch Spieß hilft; denn der Streit ist des HERRN, und er wird euch geben in unsre Hände.",
+  "1SA 17:48": "Da sich nun der Philister aufmachte und daherging und nahte sich zu David, eilte David und lief auf das Heer zu, dem Philister entgegen.",
+  "1SA 17:49": "Und David tat seine Hand in die Tasche und nahm einen Stein daraus und schleuderte und traf den Philister an seine Stirn, daß der Stein in seine Stirn fuhr und er zur Erde fiel auf sein Angesicht.",
+  "1SA 17:50": "Also überwand David den Philister mit der Schleuder und mit dem Stein und schlug ihn und tötete ihn. Und da David kein Schwert in seiner Hand hatte,",
+  "1KI 17:1": "Und es sprach Elia, der Thisbiter, aus den Bürgern Gileads, zu Ahab: So wahr der HERR, der Gott Israels, lebt, vor dem ich stehe, es soll diese Jahre weder Tau noch Regen kommen, ich sage es denn.",
+  "1KI 17:2": "Und das Wort des HERRN kam zu ihm und sprach:",
+  "1KI 17:3": "Gehe weg von hinnen und wende dich gegen Morgen und verbirg dich am Bach Krith, der gegen den Jordan fließt;",
+  "1KI 17:4": "und sollst vom Bach trinken; und ich habe den Raben geboten, daß sie dich daselbst sollen versorgen.",
+  "1KI 17:5": "Er aber ging hin und tat nach dem Wort des HERRN und ging weg und setzte sich am Bach Krith, der gegen den Jordan fließt.",
+  "1KI 17:6": "Und die Raben brachten ihm das Brot und Fleisch des Morgens und des Abends, und er trank vom Bach.",
+  "1KI 17:7": "Und es geschah nach etlicher Zeit, daß der Bach vertrocknete; denn es war kein Regen im Lande.",
+  "1KI 17:8": "Da kam das Wort des HERRN zu ihm und sprach:",
+  "1KI 17:9": "Mache dich auf und gehe gen Zarpath, welches bei Sidon liegt, und bleibe daselbst; denn ich habe einer Witwe geboten, daß sie dich versorge.",
+  "1KI 17:10": "Und er machte sich auf und ging gen Zarpath. Und da er kam an das Tor der Stadt, siehe, da war eine Witwe und las Holz auf. Und er rief ihr und sprach: Hole mir ein wenig Wasser im Gefäß, daß ich trinke!",
+  "1KI 17:11": "Da sie aber hinging, zu holen, rief er ihr und sprach: Bringe mir auch einen Bissen Brot mit!",
+  "1KI 17:12": "Sie sprach: So wahr der HERR, dein Gott, lebt, ich habe nichts gebackenes, nur eine Handvoll Mehl im Kad und ein wenig Öl im Krug. Und siehe, ich habe ein Holz oder zwei aufgelesen und gehe hinein und will mir und meinem Sohn zurichten, daß wir essen und sterben.",
+  "1KI 17:13": "Elia sprach zu ihr: Fürchte dich nicht! Gehe hin und mach's, wie du gesagt hast. Doch mache mir am ersten ein kleines Gebackenes davon und bringe mir's heraus; dir aber und deinem Sohn sollst du darnach auch machen.",
+  "1KI 17:14": "Denn also spricht der HERR, der Gott Israels: Das Mehl im Kad soll nicht verzehrt werden, und dem Ölkrug soll nichts mangeln bis auf den Tag, da der HERR regnen lassen wird auf Erden.",
+  "1KI 17:15": "Sie ging hin und machte, wie Elia gesagt hatte. Und er aß und sie auch und ihr Haus eine Zeitlang.",
+  "1KI 17:16": "Das Mehl im Kad ward nicht verzehrt, und dem Ölkrug mangelte nichts nach dem Wort des HERRN, daß er geredet hatte durch Elia.",
+  "EST 4:10": "sprach Esther zu Hathach und gebot ihm an Mardochai:",
+  "EST 4:11": "Es wissen alle Knechte des Königs und das Volk in den Landen des Königs, daß, wer zum König hineingeht inwendig in den Hof, er sei Mann oder Weib, der nicht gerufen ist, der soll stracks nach dem Gebot sterben; es sei denn, daß der König das goldene Zepter gegen ihn recke, damit er lebendig bleibe. Ich aber bin nun in dreißig Tagen nicht gerufen, zum König hineinzukommen.",
+  "EST 4:12": "Und da die Worte Esthers wurden Mardochai angesagt,",
+  "EST 4:13": "hieß Mardochai Esther wieder sagen: Gedenke nicht, daß du dein Leben errettest, weil du im Hause des Königs bist, vor allen Juden;",
+  "EST 4:14": "denn wo du wirst zu dieser Zeit schweigen, so wird eine Hilfe und Errettung von einem andern Ort her den Juden entstehen, und du und deines Vaters Haus werdet umkommen. Und wer weiß, ob du nicht um dieser Zeit willen zur königlichen Würde gekommen bist?",
+  "EST 4:15": "Esther hieß Mardochai antworten:",
+  "EST 4:16": "So gehe hin und versammle alle Juden, die zu Susan vorhanden sind, und fastet für mich, daß ihr nicht esset und trinket in drei Tagen, weder Tag noch Nacht; ich und meine Dirnen wollen auch also fasten. Und ich will zum König hineingehen wider das Gebot; komme ich um, so komme ich um.",
+  "EST 5:1": "Und am dritten Tage zog sich Esther königlich an und trat in den inneren Hof am Hause des Königs gegenüber dem Hause des Königs. Und der König saß auf seinem königlichen Stuhl im königlichen Hause, gegenüber der Tür des Hauses.",
+  "EST 5:2": "Und da der König sah Esther, die Königin, stehen im Hofe, fand sie Gnade vor seinen Augen. Und der König reckte das goldene Zepter in seiner Hand gegen Esther. Da trat Esther herzu und rührte die Spitze des Zepters an.",
+  "EST 5:3": "Da sprach der König zu ihr: Was ist dir, Esther, Königin? und was forderst du? Auch die Hälfte des Königreichs soll dir gegeben werden.",
+  "DAN 3:13": "Da befahl Nebukadnezar mit Grimm und Zorn, daß man vor ihn stellte Sadrach, Mesach und Abed-Nego. Und die Männer wurden vor den König gestellt.",
+  "DAN 3:14": "Da fing Nebukadnezar an und sprach zu ihnen: Wie? wollt ihr Sadrach, Mesach, Abed-Nego, meinen Gott nicht ehren und das goldenen Bild nicht anbeten, das ich habe setzen lassen?",
+  "DAN 3:15": "Wohlan schickt euch! Sobald ihr hören werdet den Schall der Posaunen, Drommeten, Harfen, Geigen, Psalter, Lauten und allerlei Saitenspiel, so fallt nieder und betet das Bild an, das ich habe machen lassen! Werdet ihr's nicht anbeten, so sollt ihr von Stund an in den glühenden Ofen geworfen werden. Laßt sehen, wer der Gott sei, der euch aus meiner Hand erretten werde!",
+  "DAN 3:16": "Da fingen an Sadrach, Mesach, Abed-Nego und sprachen zum König Nebukadnezar: Es ist nicht not, daß wir darauf antworten.",
+  "DAN 3:17": "Siehe, unser Gott, den wir ehren, kann uns wohl erretten aus dem glühenden Ofen, dazu auch von deiner Hand erretten.",
+  "DAN 3:18": "Und wo er's nicht tun will, so sollst du dennoch wissen, daß wir deine Götter nicht ehren noch das goldene Bild, das du hast setzen lassen, anbeten wollen.",
+  "DAN 3:19": "Da ward Nebukadnezar voll Grimms, und sein Angesicht verstellte sich wider Sadrach, Mesach und Abed-Nego, und er befahl man sollte den Ofen siebenmal heißer machen, denn man sonst zu tun pflegte.",
+  "DAN 3:20": "Und er befahl den besten Kriegsleuten, die in seinem Heer waren, daß sie Sadrach, Mesach und Abed-Nego bänden und in den glühenden Ofen würfen.",
+  "DAN 3:21": "Also wurden diese Männer in ihren Mänteln, Schuhen, Hüten und andern Kleidern gebunden und in den glühenden Ofen geworfen;",
+  "DAN 3:22": "denn des Königs Gebot mußte man eilends tun. Und man schürte das Feuer im Ofen so sehr, daß die Männer, so den Sadrach, Mesach und Abed-Nego hinaufbrachten, verdarben von des Feuers Flammen.",
+  "DAN 3:23": "Aber die drei Männer, Sadrach, Mesach und Abed-Nego fielen hinab in den glühenden Ofen, wie sie gebunden waren.",
+  "DAN 3:24": "Da entsetzte sich der König Nebukadnezar und fuhr auf und sprach zu seinen Räten: Haben wir nicht drei Männer gebunden in das Feuer lassen werfen? Sie antworteten und sprachen zum König: Ja, Herr König.",
+  "DAN 3:25": "Er antwortete und sprach: Sehe ich doch vier Männer frei im Feuer gehen, und sie sind unversehrt; und der vierte ist gleich, als wäre er ein Sohn der Götter.",
+  "DAN 3:26": "Und Nebukadnezar trat hinzu vor das Loch des glühenden Ofens und sprach: Sadrach, Mesach, Abed-Nego, ihr Knechte Gottes des Höchsten, geht heraus und kommt her! Da gingen Sadrach, Mesach und Abed-Nego heraus aus dem Feuer.",
+  "DAN 3:27": "Und die Fürsten, Herren, Vögte und Räte kamen zusammen und sahen, daß das Feuer keine Macht am Leibe dieser Männer bewiesen hatte und ihr Haupthaar nicht versengt und ihre Mäntel nicht versehrt waren; ja man konnte keinen Brand an ihnen riechen.",
+  "DAN 3:28": "Da fing Nebukadnezar an und sprach: Gelobt sei der Gott Sadrachs, Mesachs und Abed-Negos, der seinen Engel gesandt und seine Knechte errettet hat, die ihm vertraut und des Königs Gebot nicht gehalten, sondern ihren Leib dargegeben haben, daß sie keinen Gott ehren noch anbeten wollten als allein ihren Gott!",
+  "DAN 6:10": "Als nun Daniel erfuhr, daß solch Gebot unterschrieben wäre, ging er hinein in sein Haus (er hatte aber an seinem Söller offene Fenster gegen Jerusalem); und er fiel des Tages dreimal auf seine Kniee, betete, lobte und dankte seinem Gott, wie er denn bisher zu tun pflegte.",
+  "DAN 6:16": "Da befahl der König, daß man Daniel herbrächte; und sie warfen ihn zu den Löwen in den Graben. Der König aber sprach zu Daniel: Dein Gott, dem du ohne Unterlaß dienst, der helfe dir!",
+  "DAN 6:17": "Und sie brachten einen Stein, den legten sie vor die Tür am Graben; den versiegelte der König mit seinem eigenen Ring und mit dem Ring der Gewaltigen, auf daß nichts anderes mit Daniel geschähe.",
+  "DAN 6:18": "Und der König ging weg in seine Burg und blieb ungegessen und ließ auch kein Essen vor sich bringen, konnte auch nicht schlafen.",
+  "DAN 6:19": "Des Morgens früh, da der Tag anbrach, stand der König auf und ging eilend zum Graben, da die Löwen waren.",
+  "DAN 6:20": "Und als er zum Graben kam rief er Daniel mit kläglicher Stimme. Und der König sprach zu Daniel: Daniel, du Knecht des lebendigen Gottes, hat dich auch dein Gott, dem du ohne Unterlaß dienst, können vor den Löwen erlösen?",
+  "DAN 6:21": "Daniel aber redete mit dem König: Der König lebe ewiglich!",
+  "DAN 6:22": "Mein Gott hat seinen Engel gesandt, der den Löwen den Rachen zugehalten hat, daß sie mir kein Leid getan haben; denn vor ihm bin ich unschuldig erfunden; so habe ich auch wider dich, Herr König, nichts getan.",
+  "DAN 6:23": "Da ward der König sehr froh und hieß Daniel aus dem Graben ziehen. Und sie zogen Daniel aus dem Graben, und man spürte keinen Schaden an ihm; denn er hatte seinem Gott vertraut.",
+  "JON 1:1": "Es geschah das Wort des HERRN zu Jona, dem Sohn Amitthais, und sprach:",
+  "JON 1:2": "Mache dich auf und gehe in die große Stadt Ninive und predige wider sie! denn ihre Bosheit ist heraufgekommen vor mich.",
+  "JON 1:3": "Aber Jona machte sich auf und floh vor dem HERRN und wollte gen Tharsis und kam hinab gen Japho. Und da er ein Schiff fand, das gen Tharsis wollte fahren, gab er Fährgeld und trat hinein, daß er mit ihnen gen Tharsis führe vor dem HERRN.",
+  "JON 1:4": "Da ließ der HERR einen großen Wind aufs Meer kommen, und es erhob sich ein großes Ungewitter auf dem Meer, daß man meinte, das Schiff würde zerbrechen.",
+  "JON 1:15": "Und sie nahmen Jona und warfen ihn ins Meer; das stand das Meer still von seinem Wüten.",
+  "JON 1:16": "Und die Leute fürchteten den HERR sehr und taten dem HERRN Opfer und Gelübde.",
+  "JON 1:17": "Aber der HERR verschaffte einen großen Fisch, Jona zu verschlingen. Und Jona war im Leibe des Fisches drei Tage und drei Nächte.",
+  "JON 2:10": "Und der HERR sprach zum Fisch, und der spie Jona aus ans Land.",
+  "JON 3:1": "Und es geschah das Wort des HERRN zum andernmal zu Jona und sprach:",
+  "JON 3:2": "Mache dich auf, gehe in die große Stadt Ninive und predige ihr die Predigt, die ich dir sage!",
+  "JON 3:3": "Da machte sich Jona auf und ging hin gen Ninive, wie der HERR gesagt hatte. Ninive aber war eine große Stadt vor Gott, drei Tagereisen groß.",
+  "JON 3:4": "Und da Jona anfing hineinzugehen eine Tagereise in die Stadt, predigte er und sprach: Es sind noch vierzig Tage, so wird Ninive untergehen.",
+  "JON 3:5": "Da glaubten die Leute zu Ninive an Gott und ließen predigen, man sollte fasten, und zogen Säcke an, beide, groß und klein.",
+  "JON 3:10": "Da aber Gott sah ihre Werke, daß sie sich bekehrten von ihrem bösen Wege, reute ihn des Übels, das er geredet hatte ihnen zu tun, und tat's nicht.",
+  "LUK 2:1": "Es begab sich aber zu der Zeit, daß ein Gebot von dem Kaiser Augustus ausging, daß alle Welt geschätzt würde.",
+  "LUK 2:2": "Und diese Schätzung war die allererste und geschah zu der Zeit, da Cyrenius Landpfleger von Syrien war.",
+  "LUK 2:3": "Und jedermann ging, daß er sich schätzen ließe, ein jeglicher in seine Stadt.",
+  "LUK 2:4": "Da machte sich auch auf Joseph aus Galiläa, aus der Stadt Nazareth, in das jüdische Land zur Stadt Davids, die da heißt Bethlehem, darum daß er von dem Hause und Geschlechte Davids war,",
+  "LUK 2:5": "auf daß er sich schätzen ließe mit Maria, seinem vertrauten Weibe, die ward schwanger.",
+  "LUK 2:6": "Und als sie daselbst waren, kam die Zeit, da sie gebären sollte.",
+  "LUK 2:8": "Und es waren Hirten in derselben Gegend auf dem Felde bei den Hürden, die hüteten des Nachts ihre Herde.",
+  "LUK 2:9": "Und siehe, des HERRN Engel trat zu ihnen, und die Klarheit des HERRN leuchtete um sie; und sie fürchteten sich sehr.",
+  "LUK 2:10": "Und der Engel sprach zu ihnen: Fürchtet euch nicht! siehe, ich verkündige euch große Freude, die allem Volk widerfahren wird;",
+  "LUK 2:11": "denn euch ist heute der Heiland geboren, welcher ist Christus, der HERR, in der Stadt Davids.",
+  "LUK 2:12": "Und das habt zum Zeichen: ihr werdet finden das Kind in Windeln gewickelt und in einer Krippe liegen.",
+  "LUK 2:13": "Und alsbald war da bei dem Engel die Menge der himmlischen Heerscharen, die lobten Gott und sprachen:",
+  "LUK 2:14": "Ehre sei Gott in der Höhe und Frieden auf Erden und den Menschen ein Wohlgefallen.",
+  "LUK 2:15": "Und da die Engel von ihnen gen Himmel fuhren, sprachen die Hirten untereinander: Laßt uns nun gehen gen Bethlehem und die Geschichte sehen, die da geschehen ist, die uns der HERR kundgetan hat.",
+  "LUK 2:16": "Und sie kamen eilend und fanden beide, Maria und Joseph, dazu das Kind in der Krippe liegen.",
+  "LUK 2:17": "Da sie es aber gesehen hatten, breiteten sie das Wort aus, welches zu ihnen von diesem Kinde gesagt war.",
+  "LUK 2:18": "Und alle, vor die es kam, wunderten sich der Rede, die ihnen die Hirten gesagt hatten.",
+  "LUK 5:1": "Es begab sich aber, da sich das Volk zu ihm drängte, zu hören das Wort Gottes, daß er stand am See Genezareth",
+  "LUK 5:2": "und sah zwei Schiffe am See stehen, die Fischer aber waren ausgetreten und wuschen ihre Netze.",
+  "LUK 5:3": "Da trat er in der Schiffe eines, welches Simons war, und bat ihn, daß er's ein wenig vom Lande führte. Und er setzte sich und lehrte das Volk aus dem Schiff.",
+  "LUK 5:4": "Und als er hatte aufgehört zu reden, sprach er zu Simon: Fahre auf die Höhe und werfet eure Netze aus, daß ihr einen Zug tut.",
+  "LUK 5:5": "Und Simon antwortete und sprach zu ihm: Meister, wir haben die ganze Nacht gearbeitet und nichts gefangen, aber auf dein Wort will ich das Netz auswerfen.",
+  "LUK 5:6": "Und da sie das taten, beschlossen sie eine große Menge Fische, und ihr Netz zerriß.",
+  "LUK 5:7": "Und sie winkten ihren Gesellen, die im andern Schiff waren, daß sie kämen und hülfen ihnen ziehen. Und sie kamen und füllten beide Schiffe voll, also daß sie sanken.",
+  "LUK 5:8": "Da das Simon Petrus sah, fiel er Jesu zu den Knieen und sprach: HERR, gehe von mir hinaus! ich bin ein sündiger Mensch.",
+  "LUK 5:9": "Denn es war ihn ein Schrecken angekommen, ihn und alle, die mit ihm waren, über diesen Fischzug, den sie miteinander getan hatten;",
+  "LUK 5:10": "desgleichen auch Jakobus und Johannes, die Söhne des Zebedäus, Simons Gesellen. Und Jesus sprach zu Simon: Fürchte dich nicht; denn von nun an wirst du Menschen fangen.",
+  "LUK 5:11": "Und sie führten die Schiffe zu Lande und verließen alles und folgten ihm nach.",
+  "JHN 2:1": "Und am dritten Tag ward eine Hochzeit zu Kana in Galiläa; und die Mutter Jesu war da.",
+  "JHN 2:2": "Jesus aber und seine Jünger wurden auch auf die Hochzeit geladen.",
+  "JHN 2:3": "Und da es an Wein gebrach, spricht die Mutter Jesu zu ihm: Sie haben nicht Wein.",
+  "JHN 2:4": "Jesus spricht zu ihr: Weib, was habe ich mit dir zu schaffen? Meine Stunde ist noch nicht gekommen.",
+  "JHN 2:5": "Seine Mutter spricht zu den Dienern: Was er euch sagt, das tut.",
+  "JHN 2:6": "Es waren aber allda sechs steinerne Wasserkrüge gesetzt nach der Weise der jüdischen Reinigung, und ging in je einen zwei oder drei Maß.",
+  "JHN 2:7": "Jesus spricht zu ihnen: Füllet die Wasserkrüge mit Wasser! Und sie füllten sie bis obenan.",
+  "JHN 2:8": "Und er spricht zu ihnen: Schöpfet nun und bringet's dem Speisemeister! Und sie brachten's.",
+  "JHN 2:9": "Als aber der Speisemeister kostete den Wein, der Wasser gewesen war, und wußte nicht, woher er kam (die Diener aber wußten's, die das Wasser geschöpft hatten), ruft der Speisemeister den Bräutigam",
+  "JHN 2:10": "und spricht zu ihm: Jedermann gibt zum ersten guten Wein, und wenn sie trunken geworden sind, alsdann den geringeren; du hast den guten Wein bisher behalten.",
+  "JHN 2:11": "Das ist das erste Zeichen, das Jesus tat, geschehen zu Kana in Galiläa, und offenbarte seine Herrlichkeit. Und seine Jünger glaubten an ihn.",
+  "MAT 13:3": "Und er redete zu ihnen mancherlei durch Gleichnisse und sprach: Siehe, es ging ein Säemann aus, zu säen.",
+  "MAT 13:4": "Und indem er säte, fiel etliches an den Weg; da kamen die Vögel und fraßen's auf.",
+  "MAT 13:5": "Etliches fiel in das Steinige, wo es nicht viel Erde hatte; und ging bald auf, darum daß es nicht tiefe Erde hatte.",
+  "MAT 13:6": "Als aber die Sonne aufging, verwelkte es, und dieweil es nicht Wurzel hatte, ward es dürre.",
+  "MAT 13:7": "Etliches fiel unter die Dornen; und die Dornen wuchsen auf und erstickten's.",
+  "MAT 13:8": "Etliches fiel auf gutes Land und trug Frucht, etliches hundertfältig, etliches sechzigfältig, etliches dreißigfältig.",
+  "MAT 13:9": "Wer Ohren hat zu hören, der höre!",
+  "MAT 13:18": "So hört nun ihr dieses Gleichnis von dem Säemann:",
+  "MAT 13:19": "Wenn jemand das Wort von dem Reich hört und nicht versteht, so kommt der Arge und reißt hinweg, was da gesät ist in sein Herz; und das ist der, bei welchem an dem Wege gesät ist.",
+  "MAT 13:20": "Das aber auf das Steinige gesät ist, das ist, wenn jemand das Wort hört und es alsbald aufnimmt mit Freuden;",
+  "MAT 13:21": "aber er hat nicht Wurzel in sich, sondern ist wetterwendisch; wenn sich Trübsal und Verfolgung erhebt um des Wortes willen, so ärgert er sich alsbald.",
+  "MAT 13:22": "Das aber unter die Dornen gesät ist, das ist, wenn jemand das Wort hört, und die Sorge dieser Welt und der Betrug des Reichtums erstickt das Wort, und er bringt nicht Frucht.",
+  "MAT 13:23": "Das aber in das gute Land gesät ist, das ist, wenn jemand das Wort hört und versteht es und dann auch Frucht bringt; und etlicher trägt hundertfältig, etlicher aber sechzigfältig, etlicher dreißigfältig.",
+  "MRK 4:35": "Und an demselben Tage des Abends sprach er zu ihnen: Laßt uns hinüberfahren.",
+  "MRK 4:36": "Und sie ließen das Volk gehen und nahmen ihn, wie er im Schiff war; und es waren mehr Schiffe bei ihm.",
+  "MRK 4:37": "Und es erhob sich ein großer Windwirbel und warf Wellen in das Schiff, also daß das Schiff voll ward.",
+  "MRK 4:38": "Und er war hinten auf dem Schiff und schlief auf einem Kissen. Und sie weckten ihn auf und sprachen zu ihm: Meister, fragst du nichts darnach, daß wir verderben?",
+  "MRK 4:39": "Und er stand auf und bedrohte den Wind und sprach zu dem Meer: Schweig und verstumme! Und der Wind legte sich, und es ward eine große Stille.",
+  "MRK 4:40": "Und er sprach zu ihnen: Wie seid ihr so furchtsam? Wie, daß ihr keinen Glauben habt?",
+  "MRK 4:41": "Und sie fürchteten sich sehr und sprachen untereinander: Wer ist der? denn Wind und Meer sind ihm gehorsam.",
+  "MRK 5:21": "Und da Jesus wieder herüberfuhr im Schiff, versammelte sich viel Volks zu ihm, und er war an dem Meer.",
+  "MRK 5:22": "Und siehe, da kam der Obersten einer von der Schule, mit Namen Jairus; und da er ihn sah, fiel er ihm zu Füßen",
+  "MRK 5:23": "und bat ihn sehr und sprach: Meine Tochter ist in den letzten Zügen; Du wollest kommen und deine Hand auf sie legen, daß sie gesund werde und lebe.",
+  "MRK 5:24": "Und er ging hin mit ihm; und es folgte ihm viel Volks nach, und sie drängten ihn.",
+  "MRK 5:35": "Da er noch also redete, kamen etliche vom Gesinde des Obersten der Schule und sprachen: Deine Tochter ist gestorben; was bemühst du weiter den Meister?",
+  "MRK 5:36": "Jesus aber hörte alsbald die Rede, die da gesagt ward, und sprach zu dem Obersten der Schule: Fürchte dich nicht, glaube nur!",
+  "MRK 5:37": "Und ließ niemand ihm nachfolgen denn Petrus und Jakobus und Johannes, den Bruder des Jakobus.",
+  "MRK 5:38": "Und er kam in das Haus des Obersten der Schule und sah das Getümmel und die da weinten und heulten.",
+  "MRK 5:39": "Und er ging hinein und sprach zu ihnen: Was tummelt und weinet ihr? Das Kind ist nicht gestorben, sondern es schläft. Und sie verlachten ihn.",
+  "MRK 5:40": "Und er trieb sie alle aus und nahm mit sich den Vater des Kindes und die Mutter die bei ihm waren, und ging hinein, da das Kind lag,",
+  "MRK 5:41": "und ergriff das Kind bei der Hand und sprach zu ihr: Talitha kumi! das ist verdolmetscht: Mägdlein, ich sage dir stehe auf!",
+  "MRK 5:42": "Und alsbald stand das Mägdlein auf und wandelte; es war aber zwölf Jahre alt. Und sie entsetzten sich über die Maßen.",
+  "MRK 5:43": "Und er verbot ihnen hart, daß es niemand wissen sollte, und sagte, sie sollten ihr zu essen geben.",
+  "JHN 6:5": "Da hob Jesus seine Augen auf und sieht, daß viel Volks zu ihm kommt, und spricht zu Philippus: Wo kaufen wir Brot, daß diese essen?",
+  "JHN 6:6": "(Das sagte er aber, ihn zu versuchen; denn er wußte wohl, was er tun wollte.)",
+  "JHN 6:7": "Philippus antwortete ihm: Für zweihundert Groschen Brot ist nicht genug unter sie, daß ein jeglicher unter ihnen ein wenig nehme.",
+  "JHN 6:8": "Spricht zu ihm einer seiner Jünger, Andreas, der Bruder des Simon Petrus:",
+  "JHN 6:9": "Es ist ein Knabe hier, der hat fünf Gerstenbrote und zwei Fische; aber was ist das unter so viele?",
+  "JHN 6:10": "Jesus aber sprach: Schaffet, daß sich das Volk lagert. Es war aber viel Gras an dem Ort. Da lagerten sich bei fünftausend Mann.",
+  "JHN 6:11": "Jesus aber nahm die Brote, dankte und gab sie den Jüngern, die Jünger aber denen, die sich gelagert hatten; desgleichen auch von den Fischen, wieviel sie wollten.",
+  "JHN 6:12": "Da sie aber satt waren, sprach er zu seinen Jüngern: Sammelt die übrigen Brocken, daß nichts umkommt.",
+  "JHN 6:13": "Da sammelten sie und füllten zwölf Körbe mit Brocken von den fünf Gerstenbroten, die übrig blieben denen, die gespeist worden.",
+  "JHN 6:14": "Da nun die Menschen das Zeichen sahen, das Jesus tat, sprachen sie: Das ist wahrlich der Prophet, der in die Welt kommen soll.",
+  "MAT 14:22": "Und alsbald trieb Jesus seine Jünger, daß sie in das Schiff traten und vor ihm herüberfuhren, bis er das Volk von sich ließe.",
+  "MAT 14:23": "Und da er das Volk von sich gelassen hatte, stieg er auf einen Berg allein, daß er betete. Und am Abend war er allein daselbst.",
+  "MAT 14:24": "Und das Schiff war schon mitten auf dem Meer und litt Not von den Wellen; denn der Wind war ihnen zuwider.",
+  "MAT 14:25": "Aber in der vierten Nachtwache kam Jesus zu ihnen und ging auf dem Meer.",
+  "MAT 14:26": "Und da ihn die Jünger sahen auf dem Meer gehen, erschraken sie und sprachen: Es ist ein Gespenst! und schrieen vor Furcht.",
+  "MAT 14:27": "Aber alsbald redete Jesus mit ihnen und sprach: Seid getrost, Ich bin's; fürchtet euch nicht!",
+  "MAT 14:28": "Petrus aber antwortete ihm und sprach: HERR, bist du es, so heiß mich zu dir kommen auf dem Wasser.",
+  "MAT 14:29": "Und er sprach: Komm her! Und Petrus trat aus dem Schiff und ging auf dem Wasser, daß er zu Jesu käme.",
+  "MAT 14:30": "Er sah aber einen starken Wind; da erschrak er und hob an zu sinken, schrie und sprach: HERR, hilf mir!",
+  "MAT 14:31": "Jesus reckte alsbald die Hand aus und ergriff ihn und sprach zu ihm: O du Kleingläubiger, warum zweifeltest du?",
+  "MAT 14:32": "Und sie traten in das Schiff, und der Wind legte sich.",
+  "MAT 14:33": "Die aber im Schiff waren, kamen und fielen vor ihm nieder und sprachen: Du bist wahrlich Gottes Sohn!",
+  "LUK 10:25": "Und siehe, da stand ein Schriftgelehrter auf, versuchte ihn und sprach: Meister, was muß ich tun, daß ich das ewige Leben ererbe?",
+  "LUK 10:26": "Er aber sprach zu ihm: Wie steht im Gesetz geschrieben? Wie lieset du?",
+  "LUK 10:27": "Er antwortete und sprach: “Du sollst Gott, deinen HERRN, lieben von ganzem Herzen, von ganzer Seele, von allen Kräften und von ganzem Gemüte und deinen Nächsten als dich selbst.”",
+  "LUK 10:28": "Er aber sprach zu ihm: Du hast recht geantwortet; tue das, so wirst du leben.",
+  "LUK 10:29": "Er aber wollte sich selbst rechtfertigen und sprach zu Jesus: “Wer ist denn mein Nächster?”",
+  "LUK 10:30": "Da antwortete Jesus und sprach: Es war ein Mensch, der ging von Jerusalem hinab gen Jericho und fiel unter die Mörder; die zogen ihn aus und schlugen ihn und gingen davon und ließen ihn halbtot liegen.",
+  "LUK 10:31": "Es begab sich aber ungefähr, daß ein Priester dieselbe Straße hinabzog; und da er ihn sah, ging er vorüber.",
+  "LUK 10:32": "Desgleichen auch ein Levit; da er kam zu der Stätte und sah ihn, ging er vorüber.",
+  "LUK 10:33": "Ein Samariter aber reiste und kam dahin; und da er ihn sah, jammerte ihn sein,",
+  "LUK 10:34": "ging zu ihm, verband ihm seine Wunden und goß darein Öl und Wein und hob ihn auf sein Tier und führte ihn in die Herberge und pflegte sein.",
+  "LUK 10:35": "Des anderen Tages reiste er und zog heraus zwei Groschen und gab sie dem Wirte und sprach zu ihm: Pflege sein; und so du was mehr wirst dartun, will ich dir's bezahlen, wenn ich wiederkomme.",
+  "LUK 10:36": "Welcher dünkt dich, der unter diesen Dreien der Nächste sei gewesen dem, der unter die Mörder gefallen war?",
+  "LUK 10:37": "Er sprach: Der die Barmherzigkeit an ihn tat. Da sprach Jesus zu ihm: So gehe hin und tue desgleichen!",
+  "LUK 10:38": "Es begab sich aber, da sie wandelten, ging er in einen Markt. Da war ein Weib mit Namen Martha, die nahm ihn auf in ihr Haus.",
+  "LUK 10:39": "Und sie hatte eine Schwester, die hieß Maria; die setzte sich zu Jesu Füßen und hörte seiner Rede zu.",
+  "LUK 10:40": "Martha aber machte sich viel zu schaffen, ihm zu dienen. Und sie trat hinzu und sprach: HERR, fragst du nicht darnach, daß mich meine Schwester läßt allein dienen? Sage ihr doch, daß sie es auch angreife!",
+  "LUK 10:41": "Jesus aber antwortete und sprach zu ihr: Martha, Martha, du hast viel Sorge und Mühe;",
+  "LUK 10:42": "eins aber ist not. Maria hat das gute Teil erwählt; das soll nicht von ihr genommen werden.",
+  "LUK 15:3": "Er sagte aber zu ihnen dies Gleichnis und sprach:",
+  "LUK 15:4": "Welcher Mensch ist unter euch, der hundert Schafe hat und, so er der eines verliert, der nicht lasse die neunundneunzig in der Wüste und hingehe nach dem verlorenen, bis daß er's finde?",
+  "LUK 15:5": "Und wenn er's gefunden hat, so legt er's auf seine Achseln mit Freuden.",
+  "LUK 15:6": "Und wenn er heimkommt, ruft er seine Freunde und Nachbarn und spricht zu ihnen: Freuet euch mit mir; denn ich habe mein Schaf gefunden, das verloren war.",
+  "LUK 15:7": "Ich sage euch: Also wird auch Freude im Himmel sein über einen Sünder, der Buße tut, vor neunundneunzig Gerechten, die der Buße nicht bedürfen.",
+  "LUK 15:11": "Und er sprach: Ein Mensch hatte zwei Söhne.",
+  "LUK 15:12": "Und der jüngste unter ihnen sprach zu dem Vater: Gib mir, Vater, das Teil der Güter, das mir gehört. Und er teilte ihnen das Gut.",
+  "LUK 15:13": "Und nicht lange darnach sammelte der jüngste Sohn alles zusammen und zog ferne über Land; und daselbst brachte er sein Gut um mit Prassen.",
+  "LUK 15:14": "Da er nun all das Seine verzehrt hatte, ward eine große Teuerung durch dasselbe ganze Land, und er fing an zu darben.",
+  "LUK 15:15": "Und ging hin und hängte sich an einen Bürger des Landes; der schickte ihn auf seinen Acker, die Säue zu hüten.",
+  "LUK 15:16": "Und er begehrte seinen Bauch zu füllen mit Trebern, die die Säue aßen; und niemand gab sie ihm.",
+  "LUK 15:17": "Da schlug er in sich und sprach: Wie viel Tagelöhner hat mein Vater, die Brot die Fülle haben, und ich verderbe im Hunger!",
+  "LUK 15:18": "Ich will mich aufmachen und zu meinem Vater gehen und zu ihm sagen: Vater, ich habe gesündigt gegen den Himmel und vor dir",
+  "LUK 15:19": "und bin hinfort nicht mehr wert, daß ich dein Sohn heiße; mache mich zu einem deiner Tagelöhner!",
+  "LUK 15:20": "Und er machte sich auf und kam zu seinem Vater. Da er aber noch ferne von dannen war, sah ihn sein Vater, und es jammerte ihn, lief und fiel ihm um seinen Hals und küßte ihn.",
+  "LUK 15:21": "Der Sohn aber sprach zu ihm: Vater, ich habe gesündigt gegen den Himmel und vor dir; ich bin hinfort nicht mehr wert, daß ich dein Sohn heiße.",
+  "LUK 15:22": "Aber der Vater sprach zu seinen Knechten: Bringet das beste Kleid hervor und tut es ihm an, und gebet ihm einen Fingerreif an seine Hand und Schuhe an seine Füße,",
+  "LUK 15:23": "und bringet ein gemästet Kalb her und schlachtet's; lasset uns essen und fröhlich sein!",
+  "LUK 15:24": "denn dieser mein Sohn war tot und ist wieder lebendig geworden; er war verloren und ist gefunden worden. Und sie fingen an fröhlich zu sein.",
+  "LUK 15:25": "Aber der älteste Sohn war auf dem Felde. Und als er nahe zum Hause kam, hörte er das Gesänge und den Reigen;",
+  "LUK 15:26": "und er rief zu sich der Knechte einen und fragte, was das wäre.",
+  "LUK 15:27": "Der aber sagte ihm: Dein Bruder ist gekommen, und dein Vater hat ein gemästet Kalb geschlachtet, daß er ihn gesund wieder hat.",
+  "LUK 15:28": "Da ward er zornig und wollte nicht hineingehen. Da ging sein Vater heraus und bat ihn.",
+  "LUK 15:29": "Er aber antwortete und sprach zum Vater: Siehe, so viel Jahre diene ich dir und habe dein Gebot noch nie übertreten; und du hast mir nie einen Bock gegeben, daß ich mit meinen Freunden fröhlich wäre.",
+  "LUK 15:30": "Nun aber dieser dein Sohn gekommen ist, der sein Gut mit Huren verschlungen hat, hast du ihm ein gemästet Kalb geschlachtet.",
+  "LUK 15:31": "Er aber sprach zu ihm: Mein Sohn, du bist allezeit bei mir, und alles, was mein ist, das ist dein.",
+  "LUK 15:32": "Du solltest aber fröhlich und gutes Muts sein; denn dieser dein Bruder war tot und ist wieder lebendig geworden; er war verloren und ist wieder gefunden.",
+  "LUK 17:11": "Und es begab sich, da er reiste gen Jerusalem, zog er mitten durch Samarien und Galiläa.",
+  "LUK 17:12": "Und als er in einen Markt kam, begegneten ihm zehn aussätzige Männer, die standen von ferne",
+  "LUK 17:13": "und erhoben ihre Stimme und sprachen: Jesu, lieber Meister, erbarme dich unser!",
+  "LUK 17:14": "Und da er sie sah, sprach er zu ihnen: Gehet hin und zeiget euch den Priestern! Und es geschah, da sie hingingen, wurden sie rein.",
+  "LUK 17:15": "Einer aber unter ihnen, da er sah, daß er geheilt war, kehrte um und pries Gott mit lauter Stimme",
+  "LUK 17:16": "und fiel auf sein Angesicht zu seinen Füßen und dankte ihm. Und das war ein Samariter.",
+  "LUK 17:17": "Jesus aber antwortete und sprach: Sind ihrer nicht zehn rein geworden? Wo sind aber die neun?",
+  "LUK 17:18": "Hat sich sonst keiner gefunden, der wieder umkehrte und gäbe Gott die Ehre, denn dieser Fremdling?",
+  "LUK 17:19": "Und er sprach zu ihm: Stehe auf, gehe hin; dein Glaube hat dir geholfen.",
+  "MRK 10:13": "Und sie brachten Kindlein zu ihm, daß er sie anrührte. Die Jünger aber fuhren die an, die sie trugen.",
+  "MRK 10:14": "Da es aber Jesus sah, ward er unwillig und sprach zu ihnen: Lasset die Kindlein zu mir kommen und wehret ihnen nicht; denn solcher ist das Reich Gottes.",
+  "MRK 10:15": "Wahrlich ich sage euch: Wer das Reich Gottes nicht empfängt wie ein Kindlein, der wird nicht hineinkommen.",
+  "MRK 10:16": "Und er herzte sie und legte die Hände auf sie und segnete sie.",
+  "MRK 10:46": "Und sie kamen gen Jericho. Und da er aus Jericho ging, er und seine Jünger und ein großes Volk, da saß ein Blinder, Bartimäus, des Timäus Sohn, am Wege und bettelte.",
+  "MRK 10:47": "Und da er hörte, daß es Jesus von Nazareth war, fing er an, zu schreien und zu sagen: Jesu, du Sohn Davids, erbarme dich mein!",
+  "MRK 10:48": "Und viele bedrohten ihn, er sollte stillschweigen. Er aber schrie viel mehr: Du Sohn Davids, erbarme dich mein!",
+  "MRK 10:49": "Und Jesus stand still und ließ ihn rufen. Und sie riefen den Blinden und sprachen zu ihm: Sei getrost! stehe auf, er ruft dich!",
+  "MRK 10:50": "Und er warf sein Kleid von sich, stand auf und kam zu Jesu.",
+  "MRK 10:51": "Und Jesus antwortete und sprach zu ihm: Was willst du, daß ich dir tun soll? Der Blinde sprach zu ihm: Rabbuni, daß ich sehend werde.",
+  "MRK 10:52": "Jesus aber sprach zu ihm: Gehe hin; dein Glaube hat dir geholfen. Und alsbald ward er sehend und folgte ihm nach auf dem Wege.",
+  "LUK 19:1": "Und er zog hinein und ging durch Jericho.",
+  "LUK 19:2": "Und siehe, da war ein Mann, genannt Zachäus, der war ein Oberster der Zöllner und war reich.",
+  "LUK 19:3": "Und er begehrte Jesum zu sehen, wer er wäre, und konnte nicht vor dem Volk; denn er war klein von Person.",
+  "LUK 19:4": "Und er lief voraus und stieg auf einen Maulbeerbaum, auf daß er ihn sähe: denn allda sollte er durchkommen.",
+  "LUK 19:5": "Und als Jesus kam an die Stätte, sah er auf und ward sein gewahr und sprach zu ihm: Zachäus, steig eilend hernieder; denn ich muß heute in deinem Hause einkehren!",
+  "LUK 19:6": "Und er stieg eilend hernieder und nahm ihn auf mit Freuden.",
+  "LUK 19:7": "Da sie das sahen, murrten sie alle, daß er bei einem Sünder einkehrte.",
+  "LUK 19:8": "Zachäus aber trat dar und sprach zu dem HERRN: Siehe, HERR, die Hälfte meiner Güter gebe ich den Armen, und so ich jemand betrogen habe, das gebe ich vierfältig wieder.",
+  "LUK 19:9": "Jesus aber sprach zu ihm: Heute ist diesem Hause Heil widerfahren, sintemal er auch Abrahams Sohn ist.",
+  "JHN 11:32": "Als nun Maria kam, da Jesus war, und sah ihn, fiel sie zu seinen Füßen und sprach zu ihm: HERR, wärest du hier gewesen, mein Bruder wäre nicht gestorben!",
+  "JHN 11:33": "Als Jesus sie sah weinen und die Juden auch weinen, die mit ihr kamen, ergrimmte er im Geist und betrübte sich selbst",
+  "JHN 11:34": "und sprach: Wo habt ihr ihn hingelegt? Sie sprachen zu ihm: HERR, komm und sieh es!",
+  "JHN 11:35": "Und Jesus gingen die Augen über.",
+  "JHN 11:36": "Da sprachen die Juden: Siehe, wie hat er ihn so liebgehabt!",
+  "JHN 11:37": "Etliche aber unter ihnen sprachen: Konnte, der den Blinden die Augen aufgetan hat, nicht verschaffen, daß auch dieser nicht stürbe?",
+  "JHN 11:38": "Da ergrimmte Jesus abermals in sich selbst und kam zum Grabe. Es war aber eine Kluft, und ein Stein daraufgelegt.",
+  "JHN 11:39": "Jesus sprach: Hebt den Stein ab! Spricht zu ihm Martha, die Schwester des Verstorbenen: HERR, er stinkt schon; denn er ist vier Tage gelegen.",
+  "JHN 11:40": "Jesus spricht zu ihr: Habe ich dir nicht gesagt, so du glauben würdest, du würdest die Herrlichkeit Gottes sehen?",
+  "JHN 11:41": "Da hoben sie den Stein ab, da der Verstorbene lag. Jesus aber hob seine Augen empor und sprach: Vater, ich danke dir, daß du mich erhört hast.",
+  "JHN 11:42": "Doch ich weiß, daß du mich allezeit hörst; aber um des Volkes willen, das umhersteht, sage ich's, daß sie glauben, du habest mich gesandt.",
+  "JHN 11:43": "Da er das gesagt hatte, rief er mit lauter Stimme: Lazarus, komm heraus!",
+  "JHN 11:44": "Und der Verstorbene kam heraus, gebunden mit Grabtüchern an Füßen und Händen und sein Angesicht verhüllt mit dem Schweißtuch. Jesus spricht zu ihnen: Löset ihn auf und lasset ihn gehen!",
+  "JHN 13:3": "und Jesus wußte, daß ihm der Vater alles in seine Hände gegeben und daß er von Gott gekommen war und zu Gott ging:",
+  "JHN 13:4": "stand er von Abendmahl auf, legte seine Kleider ab und nahm einen Schurz und umgürtete sich.",
+  "JHN 13:5": "Darnach goß er Wasser in ein Becken, hob an, den Jüngern die Füße zu waschen, und trocknete sie mit dem Schurz, damit er umgürtet war.",
+  "JHN 13:6": "Da kam er zu Simon Petrus; und der sprach zu ihm: HERR, sollst du mir meine Füße waschen?",
+  "JHN 13:7": "Jesus antwortete und sprach zu ihm: Was ich tue, das weißt du jetzt nicht; du wirst es aber hernach erfahren.",
+  "JHN 13:8": "Da sprach Petrus zu ihm: Nimmermehr sollst du meine Füße waschen! Jesus antwortete ihm: Werde ich dich nicht waschen, so hast du kein Teil mit mir.",
+  "JHN 13:9": "So spricht zu ihm Simon Petrus: HERR, nicht die Füße allein, sondern auch die Hände und das Haupt!",
+  "JHN 13:10": "Spricht Jesus zu ihm: Wer gewaschen ist, bedarf nichts denn die Füße waschen, sondern er ist ganz rein. Und ihr seid rein, aber nicht alle.",
+  "JHN 13:11": "(Denn er wußte seinen Verräter wohl; darum sprach er: Ihr seid nicht alle rein.)",
+  "JHN 13:12": "Da er nun ihre Füße gewaschen hatte, nahm er wieder seine Kleider und setzte sich wieder nieder und sprach abermals zu ihnen: Wisset ihr, was ich euch getan habe?",
+  "JHN 13:13": "Ihr heißet mich Meister und HERR und saget recht daran, denn ich bin es auch.",
+  "JHN 13:14": "So nun ich, euer HERR und Meister, euch die Füße gewaschen habe, so sollt ihr auch euch untereinander die Füße waschen.",
+  "JHN 13:15": "Ein Beispiel habe ich euch gegeben, daß ihr tut, wie ich euch getan habe.",
+  "MAT 28:1": "Als aber der Sabbat um war und der erste Tag der Woche anbrach, kam Maria Magdalena und die andere Maria, das Grab zu besehen.",
+  "MAT 28:2": "Und siehe, es geschah ein großes Erdbeben. Denn der Engel des HERRN kam vom Himmel herab, trat hinzu und wälzte den Stein von der Tür und setzte sich darauf.",
+  "MAT 28:3": "Und seine Gestalt war wie der Blitz und sein Kleid weiß wie Schnee.",
+  "MAT 28:4": "Die Hüter aber erschraken vor Furcht und wurden, als wären sie tot.",
+  "MAT 28:5": "Aber der Engel antwortete und sprach zu den Weibern: Fürchtet euch nicht! Ich weiß, daß ihr Jesus, den Gekreuzigten, sucht.",
+  "MAT 28:7": "Und gehet eilend hin und sagt es seinen Jüngern, daß er auferstanden sei von den Toten. Und siehe, er wird vor euch hingehen nach Galiläa; da werdet ihr ihn sehen. Siehe, ich habe es euch gesagt.",
+  "MAT 28:8": "Und sie gingen eilend zum Grabe hinaus mit Furcht und großer Freude und liefen, daß sie es seinen Jüngern verkündigten. Und da sie gingen seinen Jüngern zu verkündigen,",
+  "MAT 28:9": "siehe, da begegnete ihnen Jesus und sprach: Seid gegrüßet! Und sie traten zu ihm und griffen an seine Füße und fielen vor ihm nieder.",
+  "MAT 28:10": "Da sprach Jesus zu ihnen: Fürchtet euch nicht! Geht hin und verkündigt es meinen Brüdern, daß sie gehen nach Galiläa; daselbst werden sie mich sehen.",
+  "LUK 24:13": "Und siehe, zwei aus ihnen gingen an demselben Tage in einen Flecken, der war von Jerusalem sechzig Feld Wegs weit; des Name heißt Emmaus.",
+  "LUK 24:14": "Und sie redeten miteinander von allen diesen Geschichten.",
+  "LUK 24:15": "Und es geschah, da sie so redeten und befragten sich miteinander, nahte sich Jesus zu ihnen und wandelte mit ihnen.",
+  "LUK 24:16": "Aber ihre Augen wurden gehalten, daß sie ihn nicht kannten.",
+  "LUK 24:28": "Und sie kamen nahe zum Flecken, da sie hineingingen; und er stellte sich, als wollte er weiter gehen.",
+  "LUK 24:29": "Und sie nötigten ihn und sprachen: Bleibe bei uns; denn es will Abend werden, und der Tag hat sich geneigt. Und er ging hinein, bei ihnen zu bleiben.",
+  "LUK 24:30": "Und es geschah, da er mit ihnen zu Tische saß, nahm er das Brot, dankte, brach's und gab's ihnen.",
+  "LUK 24:31": "Da wurden ihre Augen geöffnet, und sie erkannten ihn. Und er verschwand vor ihnen.",
+  "LUK 24:32": "Und sie sprachen untereinander: Brannte nicht unser Herz in uns, da er mit uns redete auf dem Wege, als er uns die Schrift öffnete?",
+  "LUK 24:33": "Und sie standen auf zu derselben Stunde, kehrten wieder gen Jerusalem und fanden die Elf versammelt und die bei ihnen waren,",
+  "LUK 24:34": "welche sprachen: Der HERR ist wahrhaftig auferstanden und Simon erschienen.",
+  "LUK 24:35": "Und sie erzählten ihnen, was auf dem Wege geschehen war und wie er von ihnen erkannt wäre an dem, da er das Brot brach.",
+  "ACT 9:1": "Saulus aber schnaubte noch mit Drohen und Morden wider die Jünger des HERRN und ging zum Hohenpriester",
+  "ACT 9:2": "und bat ihn um Briefe gen Damaskus an die Schulen, auf daß, so er etliche dieses Weges fände, Männer und Weiber, er sie gebunden führte gen Jerusalem.",
+  "ACT 9:3": "Und da er auf dem Wege war und nahe an Damaskus kam, umleuchtete ihn plötzlich ein Licht vom Himmel;",
+  "ACT 9:4": "und er fiel auf die Erde und hörte eine Stimme, die sprach zu ihm: Saul, Saul, was verfolgst du mich?",
+  "ACT 9:5": "Er aber sprach: HERR, wer bist du? Der HERR sprach: Ich bin Jesus, den du verfolgst. Es wird dir schwer werden, wider den Stachel zu lecken.",
+  "ACT 9:6": "Und er sprach mit Zittern und Zagen: HERR, was willst du, daß ich tun soll? Der HERR sprach zu ihm: Stehe auf und gehe in die Stadt; da wird man dir sagen, was du tun sollst.",
+  "ACT 9:7": "Die Männer aber, die seine Gefährten waren, standen und waren erstarrt; denn sie hörten die Stimme, und sahen niemand.",
+  "ACT 9:8": "Saulus aber richtete sich auf von der Erde; und als er seine Augen auftat, sah er niemand. Sie nahmen ihn bei der Hand und führten ihn gen Damaskus;",
+  "ACT 9:9": "und er war drei Tage nicht sehend und aß nicht und trank nicht.",
+  "ACT 9:17": "Und Ananias ging hin und kam in das Haus und legte die Hände auf ihn und sprach: Lieber Bruder Saul, der HERR hat mich gesandt (der dir erschienen ist auf dem Wege, da du her kamst), daß du wieder sehend und mit dem heiligen Geist erfüllt werdest.",
+  "ACT 9:18": "Und alsobald fiel es von seinen Augen wie Schuppen, und er ward wieder sehend"
+ },
+ "wj": {
+  "MAT 6:34": [
+   [
+    0,
+    150
+   ]
+  ],
+  "MAT 11:28": [
+   [
+    0,
+    83
+   ]
+  ],
+  "JHN 14:27": [
+   [
+    0,
+    148
+   ]
+  ],
+  "2CO 12:9": [
+   [
+    26,
+    105
+   ]
+  ],
+  "MAT 5:4": [
+   [
+    0,
+    65
+   ]
+  ],
+  "MAT 28:20": [
+   [
+    0,
+    116
+   ]
+  ],
+  "MAT 6:33": [
+   [
+    0,
+    108
+   ]
+  ],
+  "JHN 3:16": [
+   [
+    0,
+    156
+   ]
+  ],
+  "JHN 15:9": [
+   [
+    0,
+    83
+   ]
+  ],
+  "JHN 15:12-13": [
+   [
+    0,
+    80
+   ],
+   [
+    81,
+    158
+   ]
+  ],
+  "JHN 13:34-35": [
+   [
+    0,
+    127
+   ],
+   [
+    128,
+    218
+   ]
+  ],
+  "MRK 12:30-31": [
+   [
+    0,
+    156
+   ],
+   [
+    157,
+    284
+   ]
+  ],
+  "MRK 11:24": [
+   [
+    0,
+    122
+   ]
+  ],
+  "MAT 17:20": [
+   [
+    43,
+    262
+   ]
+  ],
+  "MRK 9:23": [
+   [
+    26,
+    95
+   ]
+  ],
+  "JHN 14:1": [
+   [
+    0,
+    97
+   ]
+  ],
+  "JHN 20:29": [
+   [
+    22,
+    118
+   ]
+  ],
+  "MAT 21:22": [
+   [
+    0,
+    75
+   ]
+  ],
+  "JHN 11:25": [
+   [
+    22,
+    118
+   ]
+  ],
+  "JHN 10:10": [
+   [
+    0,
+    54
+   ]
+  ],
+  "JHN 10:11": [
+   [
+    0,
+    66
+   ]
+  ],
+  "JHN 8:12": [
+   [
+    46,
+    174
+   ]
+  ],
+  "JHN 6:35": [
+   [
+    28,
+    151
+   ]
+  ],
+  "JHN 14:6": [
+   [
+    22,
+    110
+   ]
+  ],
+  "JHN 15:5": [
+   [
+    0,
+    138
+   ]
+  ],
+  "REV 3:20": [
+   [
+    0,
+    172
+   ]
+  ],
+  "LUK 19:10": [
+   [
+    0,
+    85
+   ]
+  ],
+  "JHN 3:17": [
+   [
+    0,
+    120
+   ]
+  ],
+  "REV 1:18": [
+   [
+    0,
+    132
+   ]
+  ],
+  "MAT 11:29-30": [
+   [
+    0,
+    136
+   ],
+   [
+    137,
+    189
+   ]
+  ],
+  "JHN 16:33": [
+   [
+    0,
+    141
+   ]
+  ],
+  "JHN 8:36": [
+   [
+    0,
+    56
+   ]
+  ],
+  "JHN 15:11": [
+   [
+    0,
+    95
+   ]
+  ],
+  "LUK 15:10": [
+   [
+    0,
+    97
+   ]
+  ],
+  "LUK 4:18": [
+   [
+    0,
+    302
+   ]
+  ],
+  "MAT 7:7": [
+   [
+    0,
+    94
+   ]
+  ],
+  "MAT 7:24": [
+   [
+    0,
+    121
+   ]
+  ],
+  "JHN 14:18": [
+   [
+    0,
+    53
+   ]
+  ],
+  "MAT 6:26": [
+   [
+    0,
+    188
+   ]
+  ],
+  "LUK 12:7": [
+   [
+    0,
+    119
+   ]
+  ],
+  "MAT 7:11": [
+   [
+    0,
+    156
+   ]
+  ],
+  "LUK 12:32": [
+   [
+    0,
+    100
+   ]
+  ],
+  "MAT 10:30-31": [
+   [
+    0,
+    58
+   ],
+   [
+    59,
+    124
+   ]
+  ],
+  "MAT 6:6": [
+   [
+    0,
+    189
+   ]
+  ],
+  "MAT 18:20": [
+   [
+    0,
+    86
+   ]
+  ],
+  "LUK 5:4": [
+   [
+    57,
+    125
+   ]
+  ],
+  "LUK 5:10": [
+   [
+    107,
+    168
+   ]
+  ],
+  "JHN 2:4": [
+   [
+    22,
+    99
+   ]
+  ],
+  "JHN 2:7": [
+   [
+    24,
+    58
+   ]
+  ],
+  "JHN 2:8": [
+   [
+    25,
+    70
+   ]
+  ],
+  "MAT 13:3": [
+   [
+    64,
+    104
+   ]
+  ],
+  "MAT 13:4": [
+   [
+    0,
+    81
+   ]
+  ],
+  "MAT 13:5": [
+   [
+    0,
+    115
+   ]
+  ],
+  "MAT 13:6": [
+   [
+    0,
+    91
+   ]
+  ],
+  "MAT 13:7": [
+   [
+    0,
+    76
+   ]
+  ],
+  "MAT 13:8": [
+   [
+    0,
+    117
+   ]
+  ],
+  "MAT 13:9": [
+   [
+    0,
+    33
+   ]
+  ],
+  "MAT 13:18": [
+   [
+    0,
+    49
+   ]
+  ],
+  "MAT 13:19": [
+   [
+    0,
+    178
+   ]
+  ],
+  "MAT 13:20": [
+   [
+    0,
+    108
+   ]
+  ],
+  "MAT 13:21": [
+   [
+    0,
+    150
+   ]
+  ],
+  "MAT 13:22": [
+   [
+    0,
+    174
+   ]
+  ],
+  "MAT 13:23": [
+   [
+    0,
+    203
+   ]
+  ],
+  "MRK 4:35": [
+   [
+    53,
+    76
+   ]
+  ],
+  "MRK 4:39": [
+   [
+    63,
+    85
+   ]
+  ],
+  "MRK 4:40": [
+   [
+    24,
+    84
+   ]
+  ],
+  "MRK 5:36": [
+   [
+    94,
+    125
+   ]
+  ],
+  "MRK 5:39": [
+   [
+    40,
+    141
+   ]
+  ],
+  "MRK 5:41": [
+   [
+    53,
+    66
+   ]
+  ],
+  "JHN 6:5": [
+   [
+    95,
+    131
+   ]
+  ],
+  "JHN 6:10": [
+   [
+    19,
+    54
+   ]
+  ],
+  "JHN 6:12": [
+   [
+    53,
+    101
+   ]
+  ],
+  "MAT 14:27": [
+   [
+    48,
+    93
+   ]
+  ],
+  "MAT 14:29": [
+   [
+    15,
+    24
+   ]
+  ],
+  "MAT 14:31": [
+   [
+    69,
+    111
+   ]
+  ],
+  "LUK 10:26": [
+   [
+    23,
+    70
+   ]
+  ],
+  "LUK 10:28": [
+   [
+    23,
+    77
+   ]
+  ],
+  "LUK 10:30": [
+   [
+    32,
+    201
+   ]
+  ],
+  "LUK 10:31": [
+   [
+    0,
+    107
+   ]
+  ],
+  "LUK 10:32": [
+   [
+    0,
+    81
+   ]
+  ],
+  "LUK 10:33": [
+   [
+    0,
+    78
+   ]
+  ],
+  "LUK 10:34": [
+   [
+    0,
+    139
+   ]
+  ],
+  "LUK 10:35": [
+   [
+    0,
+    190
+   ]
+  ],
+  "LUK 10:36": [
+   [
+    0,
+    107
+   ]
+  ],
+  "LUK 10:37": [
+   [
+    70,
+    102
+   ]
+  ],
+  "LUK 10:41": [
+   [
+    41,
+    85
+   ]
+  ],
+  "LUK 10:42": [
+   [
+    0,
+    91
+   ]
+  ],
+  "LUK 15:4": [
+   [
+    0,
+    185
+   ]
+  ],
+  "LUK 15:5": [
+   [
+    0,
+    71
+   ]
+  ],
+  "LUK 15:6": [
+   [
+    0,
+    153
+   ]
+  ],
+  "LUK 15:7": [
+   [
+    0,
+    143
+   ]
+  ],
+  "LUK 15:11": [
+   [
+    15,
+    43
+   ]
+  ],
+  "LUK 15:12": [
+   [
+    0,
+    129
+   ]
+  ],
+  "LUK 15:13": [
+   [
+    0,
+    138
+   ]
+  ],
+  "LUK 15:14": [
+   [
+    0,
+    117
+   ]
+  ],
+  "LUK 15:15": [
+   [
+    0,
+    110
+   ]
+  ],
+  "LUK 15:16": [
+   [
+    0,
+    95
+   ]
+  ],
+  "LUK 15:17": [
+   [
+    0,
+    122
+   ]
+  ],
+  "LUK 15:18": [
+   [
+    0,
+    122
+   ]
+  ],
+  "LUK 15:19": [
+   [
+    0,
+    96
+   ]
+  ],
+  "LUK 15:20": [
+   [
+    0,
+    174
+   ]
+  ],
+  "LUK 15:21": [
+   [
+    0,
+    142
+   ]
+  ],
+  "LUK 15:22": [
+   [
+    0,
+    162
+   ]
+  ],
+  "LUK 15:23": [
+   [
+    0,
+    87
+   ]
+  ],
+  "LUK 15:24": [
+   [
+    0,
+    140
+   ]
+  ],
+  "LUK 15:25": [
+   [
+    0,
+    108
+   ]
+  ],
+  "LUK 15:26": [
+   [
+    0,
+    63
+   ]
+  ],
+  "LUK 15:27": [
+   [
+    0,
+    126
+   ]
+  ],
+  "LUK 15:28": [
+   [
+    0,
+    86
+   ]
+  ],
+  "LUK 15:29": [
+   [
+    0,
+    199
+   ]
+  ],
+  "LUK 15:30": [
+   [
+    0,
+    124
+   ]
+  ],
+  "LUK 15:31": [
+   [
+    0,
+    98
+   ]
+  ],
+  "LUK 15:32": [
+   [
+    0,
+    153
+   ]
+  ],
+  "LUK 17:14": [
+   [
+    39,
+    79
+   ]
+  ],
+  "LUK 17:17": [
+   [
+    34,
+    93
+   ]
+  ],
+  "LUK 17:18": [
+   [
+    0,
+    98
+   ]
+  ],
+  "LUK 17:19": [
+   [
+    22,
+    72
+   ]
+  ],
+  "MRK 10:14": [
+   [
+    60,
+    152
+   ]
+  ],
+  "MRK 10:15": [
+   [
+    0,
+    106
+   ]
+  ],
+  "MRK 10:51": [
+   [
+    40,
+    76
+   ]
+  ],
+  "MRK 10:52": [
+   [
+    26,
+    65
+   ]
+  ],
+  "LUK 19:5": [
+   [
+    84,
+    162
+   ]
+  ],
+  "LUK 19:9": [
+   [
+    26,
+    102
+   ]
+  ],
+  "JHN 11:34": [
+   [
+    12,
+    38
+   ]
+  ],
+  "JHN 11:39": [
+   [
+    14,
+    32
+   ]
+  ],
+  "JHN 11:40": [
+   [
+    22,
+    113
+   ]
+  ],
+  "JHN 11:41": [
+   [
+    96,
+    142
+   ]
+  ],
+  "JHN 11:42": [
+   [
+    0,
+    138
+   ]
+  ],
+  "JHN 11:43": [
+   [
+    51,
+    72
+   ]
+  ],
+  "JHN 11:44": [
+   [
+    150,
+    185
+   ]
+  ],
+  "JHN 13:7": [
+   [
+    36,
+    109
+   ]
+  ],
+  "JHN 13:8": [
+   [
+    88,
+    147
+   ]
+  ],
+  "JHN 13:10": [
+   [
+    22,
+    139
+   ]
+  ],
+  "JHN 13:12": [
+   [
+    126,
+    162
+   ]
+  ],
+  "JHN 13:13": [
+   [
+    0,
+    77
+   ]
+  ],
+  "JHN 13:14": [
+   [
+    0,
+    119
+   ]
+  ],
+  "JHN 13:15": [
+   [
+    0,
+    73
+   ]
+  ],
+  "MAT 28:9": [
+   [
+    44,
+    58
+   ]
+  ],
+  "MAT 28:10": [
+   [
+    26,
+    149
+   ]
+  ],
+  "ACT 9:4": [
+   [
+    67,
+    101
+   ]
+  ],
+  "ACT 9:5": [
+   [
+    52,
+    140
+   ]
+  ],
+  "ACT 9:6": [
+   [
+    100,
+    174
+   ]
+  ]
+ }
+}

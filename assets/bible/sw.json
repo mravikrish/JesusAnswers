@@ -1,0 +1,1779 @@
+{
+ "lang": "sw",
+ "translation": "NEN",
+ "translationName": "Neno: Biblia Takatifu",
+ "attribution": "Neno: Biblia Takatifu (NEN). Copyright © 1984, 1989, 2009, 2015 Biblica, Inc. Licensed CC BY-SA 4.0. Source: eBible.org/swhonen",
+ "books": {
+  "MAT": "Mathayo",
+  "PHP": "Wafilipi",
+  "1PE": "1 Petro",
+  "PSA": "Zaburi",
+  "JHN": "Yohana",
+  "ISA": "Isaya",
+  "2TI": "2 Timotheo",
+  "JOS": "Yoshua",
+  "2CO": "2 Wakorintho",
+  "GAL": "Wagalatia",
+  "JER": "Yeremia",
+  "ROM": "Warumi",
+  "LAM": "Maombolezo",
+  "REV": "Ufunuo",
+  "HEB": "Waebrania",
+  "DEU": "Kumbukumbu",
+  "EPH": "Waefeso",
+  "JAS": "Yakobo",
+  "PRO": "Mithali",
+  "COL": "Wakolosai",
+  "1JN": "1 Yohana",
+  "1CO": "1 Wakorintho",
+  "MIC": "Mika",
+  "1TH": "1 Wathesalonike",
+  "NUM": "Hesabu",
+  "ZEP": "Sefania",
+  "SNG": "Wimbo",
+  "MRK": "Marko",
+  "NAM": "Nahumu",
+  "LUK": "Luka",
+  "TIT": "Tito",
+  "ACT": "Matendo",
+  "NEH": "Nehemia",
+  "1CH": "1 Nyakati",
+  "HAB": "Habakuki",
+  "2SA": "2 Samweli",
+  "EXO": "Kutoka",
+  "2TH": "2 Wathesalonike",
+  "GEN": "Mwanzo",
+  "1TI": "1 Timotheo",
+  "MAL": "Malaki",
+  "RUT": "Ruthu",
+  "1SA": "1 Samweli",
+  "1KI": "1 Wafalme",
+  "EST": "Esta",
+  "DAN": "Danieli",
+  "JON": "Yona"
+ },
+ "verses": {
+  "MAT 6:34": "Kwa hiyo msiwe na wasiwasi kuhusu kesho, kwa sababu kesho itajitaabikia yenyewe. Yatosha kwa siku masumbufu yake.",
+  "PHP 4:6-7": "Msijisumbue kwa jambo lolote, bali katika kila jambo kwa kuomba na kusihi pamoja na kushukuru, haja zenu na zijulikane na Mungu. Nayo amani ya Mungu, inayopita fahamu zote, itailinda mioyo yenu na nia zenu katika Kristo Yesu.",
+  "1PE 5:7": "Mtwikeni yeye fadhaa zenu zote, kwa maana yeye hujishughulisha sana na mambo yenu.",
+  "PSA 55:22": "Mtwike Bwana fadhaa zako, naye atakutegemeza, hatamwacha kamwe mwenye haki wake aanguke.",
+  "MAT 11:28": "“Njooni kwangu, ninyi nyote mnaotaabika na kulemewa na mizigo, nami nitawapumzisha.",
+  "JHN 14:27": "Amani nawaachia, amani yangu nawapa, amani hii niwapayo si kama ile ulimwengu utoayo. Msifadhaike mioyoni mwenu, wala msiogope.",
+  "ISA 26:3": "Utamlinda katika amani kamilifu yeye ambaye moyo wake ni thabiti kwa sababu anakutumaini wewe.",
+  "PSA 46:10": "“Tulieni, mjue ya kwamba mimi ndimi Mungu; nitatukuzwa katikati ya mataifa, nitatukuzwa katika dunia.”",
+  "ISA 41:10": "Hivyo usiogope, kwa maana niko pamoja nawe; usifadhaike, kwa maana mimi ni Mungu wako. Nitakutia nguvu na kukusaidia; nitakutegemeza kwa mkono wa kuume wa haki yangu.",
+  "2TI 1:7": "Maana Mungu hakutupa roho ya woga, bali roho ya nguvu, ya upendo na ya moyo wa kiasi.",
+  "PSA 27:1": "Zaburi ya Daudi. Bwana ni nuru yangu na wokovu wangu, nimwogope nani? Bwana ni ngome ya uzima wangu, nimhofu nani?",
+  "PSA 56:3": "Wakati ninapoogopa, nitakutumaini wewe.",
+  "PSA 34:4": "Nilimtafuta Bwana naye akanijibu, akaniokoa kwenye hofu zangu zote.",
+  "JOS 1:9": "Je, si mimi niliyekuamuru? Uwe hodari na shujaa. Usihofu wala usivunjike moyo, kwa kuwa Bwana Mungu wako atakuwa pamoja nawe kokote uendako.”",
+  "PHP 4:13": "Naweza kuyafanya mambo yote katika yeye anitiaye nguvu.",
+  "ISA 40:31": "bali wale wamtumainio Bwana atafanya upya nguvu zao. Watapaa juu kwa mbawa kama tai; watapiga mbio wala hawatachoka, watatembea kwa miguu wala hawatazimia.",
+  "2CO 12:9": "Lakini aliniambia, “Neema yangu inakutosha, kwa kuwa uweza wangu hukamilika katika udhaifu.” Kwa hiyo nitajisifu kwa furaha zaidi kuhusu udhaifu wangu, ili uweza wa Kristo ukae juu yangu.",
+  "GAL 6:9": "Hivyo, tusichoke katika kutenda mema, kwa kuwa tutavuna kwa wakati wake tusipokata tamaa.",
+  "JER 29:11": "Kwa maana ninajua mipango niliyo nayo kwa ajili yenu,” asema Bwana, “ni mipango ya kuwafanikisha na wala si ya kuwadhuru, ni mipango ya kuwapa tumaini katika siku zijazo.",
+  "ROM 15:13": "Mungu wa tumaini awajaze ninyi furaha yote na amani katika kumwamini, ili mpate kujawa na tumaini tele kwa nguvu ya Roho Mtakatifu.",
+  "ROM 8:28": "Nasi tunajua ya kuwa katika mambo yote Mungu hutenda kazi pamoja na wote wampendao, katika kuwapatia mema, yaani, wale walioitwa kwa kusudi lake.",
+  "LAM 3:22-23": "Kwa sababu ya upendo mkuu wa Bwana, hatuangamii, kwa kuwa huruma zake hazikomi kamwe. Ni mpya kila asubuhi, uaminifu wako ni mkuu.",
+  "PSA 42:11": "Ee nafsi yangu, kwa nini unasononeka? Kwa nini unafadhaika hivyo ndani yangu? Weka tumaini lako kwa Mungu, kwa sababu bado nitamsifu, Mwokozi wangu na Mungu wangu.",
+  "PSA 30:5": "Kwa maana hasira yake ni ya muda mfupi, bali upendo wake hudumu siku zote. Inawezekana kilio kiwepo usiku kucha, lakini asubuhi kukawa na furaha.",
+  "ROM 12:12": "Kuweni na furaha katika tumaini, katika dhiki kuweni na saburi, dumuni katika maombi.",
+  "PSA 34:18": "Bwana yu karibu na waliovunjika moyo, na huwaokoa waliopondeka roho.",
+  "PSA 147:3": "Anawaponya waliovunjika mioyo na kuvifunga vidonda vyao.",
+  "MAT 5:4": "Heri wale wanaohuzunika, maana hao watafarijiwa.",
+  "REV 21:4": "Atafuta kila chozi kutoka macho yao. Mauti haitakuwepo tena, wala maombolezo, wala kilio, wala maumivu, kwa maana mambo ya kwanza yamekwisha kupita.”",
+  "PSA 103:2-3": "Ee nafsi yangu, umhimidi Bwana, wala usisahau wema wake wote, akusamehe dhambi zako zote, akuponya magonjwa yako yote,",
+  "HEB 13:5": "Yalindeni maisha yenu msiwe na tabia ya kupenda fedha, bali mridhike na vile mlivyo navyo, kwa sababu Mungu amesema, “Kamwe sitakuacha, wala sitakupungukia.”",
+  "DEU 31:6": "Kuweni imara na moyo wa ushujaa. Msiogope wala msifadhaike kwa sababu yao, kwa kuwa Bwana Mungu wenu anakwenda pamoja nanyi; kamwe hatawaacha wala hatawatupa ninyi.”",
+  "MAT 28:20": "nanyi wafundisheni kuyashika mambo yote niliyowaamuru ninyi. Hakika mimi niko pamoja nanyi siku zote, hadi mwisho wa nyakati.”",
+  "EPH 4:26": "Mkikasirika, msitende dhambi, wala jua lisichwe mkiwa bado mmekasirika,",
+  "JAS 1:19": "Ndugu zangu wapendwa, fahamuni jambo hili: Kila mtu awe mwepesi wa kusikiliza, lakini asiwe mwepesi wa kusema wala wa kukasirika.",
+  "PRO 15:1": "Jawabu la upole hugeuza ghadhabu, bali neno liumizalo huchochea hasira.",
+  "EPH 4:32": "Kuweni wafadhili na wenye kuhurumiana ninyi kwa ninyi, mkisameheana, kama vile naye Mungu katika Kristo alivyowasamehe ninyi.",
+  "COL 3:13": "Vumilianeni na kusameheana mtu akiwa na lalamiko lolote dhidi ya mwenzake. Sameheaneni kama vile Bwana alivyowasamehe ninyi.",
+  "1JN 1:9": "Kama tukiziungama dhambi zetu, yeye ni mwaminifu na wa haki, atatusamehe dhambi zetu na kutusafisha kutoka kwenye udhalimu wote.",
+  "1CO 13:4": "Upendo huvumilia, upendo hufadhili, upendo hauoni wivu, hauna majivuno, hauna kiburi.",
+  "PSA 127:3": "Wana ni urithi utokao kwa Bwana, watoto ni zawadi kutoka kwake.",
+  "PRO 22:6": "Mfundishe mtoto njia impasayo kuiendea, naye hataiacha hata akiwa mzee.",
+  "COL 3:23": "Lolote mfanyalo, fanyeni kwa moyo kama watu wanaomtumikia Bwana, na si wanadamu,",
+  "PHP 4:19": "Naye Mungu wangu atawajaza ninyi na kila mnachohitaji kwa kadiri ya utajiri wake katika utukufu ndani ya Kristo Yesu.",
+  "MAT 6:33": "Lakini utafuteni kwanza Ufalme wa Mungu na haki yake, na haya yote atawapa pia.",
+  "PRO 3:5-6": "Mtumaini Bwana kwa moyo wako wote wala usizitegemee akili zako mwenyewe; katika njia zako zote mkiri yeye, naye atayanyoosha mapito yako.",
+  "JAS 1:5": "Kama mtu yeyote miongoni mwenu amepungukiwa na hekima na amwombe Mungu, yeye awapaye watu wote kwa ukarimu wala hana kinyongo, naye atapewa.",
+  "PSA 32:8": "Nitakufundisha na kukuonyesha njia utakayoiendea; nitakushauri na kukuangalia.",
+  "PRO 24:16": "Kwa maana ingawa mtu mwenye haki huanguka mara saba, huinuka tena, lakini waovu huangushwa chini na maafa.",
+  "MIC 7:8": "Usifurahie msiba wangu, ee adui yangu! Ingawa nimeanguka, nitainuka. Japo ninaketi gizani, Bwana atakuwa nuru yangu.",
+  "1CO 10:13": "Hakuna jaribu lolote lililowapata ambalo si la kawaida kwa wanadamu. Naye Mungu ni mwaminifu; hataruhusu mjaribiwe kupita mnavyoweza. Lakini mnapojaribiwa atawapa njia ya kutokea ili mweze kustahimili.",
+  "PSA 37:7": "Tulia mbele za Bwana na umngojee kwa uvumilivu; usisumbuke watu wanapofanikiwa katika njia zao, wanapotekeleza mipango yao miovu.",
+  "EPH 2:10": "Kwa maana sisi ni kazi ya mikono ya Mungu, tulioumbwa katika Kristo Yesu, ili tupate kutenda matendo mema, ambayo Mungu alitangulia kuyaandaa tupate kuishi katika hayo.",
+  "PSA 139:14": "Ninakusifu kwa sababu nimeumbwa kwa namna ya ajabu na ya kutisha; kazi zako ni za ajabu, ninajua hayo kikamilifu.",
+  "PSA 118:24": "Hii ndiyo siku Bwana aliyoifanya, tushangilie na kufurahi ndani yake.",
+  "1TH 5:18": "shukuruni kwa kila jambo, kwa maana haya ndiyo mapenzi ya Mungu kwa ajili yenu katika Kristo Yesu.",
+  "PSA 107:1": "Mshukuruni Bwana, kwa kuwa yeye ni mwema, upendo wake wadumu milele.",
+  "PSA 23:1": "Zaburi ya Daudi. Bwana ndiye mchungaji wangu, sitapungukiwa na kitu.",
+  "PSA 4:8": "Nitajilaza chini na kulala kwa amani, kwa kuwa wewe peke yako, Ee Bwana, waniwezesha kukaa kwa salama.",
+  "PRO 3:24": "ulalapo, hautaogopa; ulalapo usingizi wako utakuwa mtamu.",
+  "ISA 43:19": "Tazama, nitafanya jambo jipya! Sasa litachipuka, je, hamtalitambua? Nitafanya njia jangwani na vijito vya maji katika nchi kame.",
+  "2CO 5:17": "Kwa hiyo kama mtu akiwa ndani ya Kristo, amekuwa kiumbe kipya; ya kale yamepita, tazama, yamekuwa mapya.",
+  "PSA 90:12": "Tufundishe kuzihesabu siku zetu vizuri, ili tujipatie moyo wa hekima.",
+  "PSA 37:4": "Jifurahishe katika Bwana naye atakupa haja za moyo wako.",
+  "PHP 3:13-14": "Ndugu zangu, sijihesabu kuwa nimekwisha kushika. Lakini ninafanya jambo moja: Ninasahau mambo yale yaliyopita, nakaza mwendo kufikia yale yaliyo mbele. Nakaza mwendo nifikie ile alama ya ushindi iliyowekwa ili nipate tuzo ya mwito mkuu wa Mungu ambao nimeitiwa huko juu mbinguni katika Kristo Yesu.",
+  "PSA 143:8": "Asubuhi uniletee neno la upendo wako usiokoma, kwa kuwa nimeweka tumaini langu kwako. Nionyeshe njia nitakayoiendea, kwa kuwa kwako nainua nafsi yangu.",
+  "PSA 5:3": "Asubuhi, unasikia sauti yangu, Ee Bwana; asubuhi naleta haja zangu mbele zako, na kusubiri kwa matumaini.",
+  "HEB 11:1": "Basi imani ni kuwa na hakika ya mambo yatarajiwayo, na udhahiri wa mambo yasiyoonekana.",
+  "PSA 121:1-2": "Wimbo wa kwenda juu. Nayainua macho yangu nitazame vilima, msaada wangu utatoka wapi? Msaada wangu hutoka kwa Bwana, Muumba wa mbingu na dunia.",
+  "ISA 30:21": "Mkigeuka kuume au kushoto, masikio yenu yatasikia sauti nyuma yenu ikisema, “Hii ndiyo njia, ifuateni.”",
+  "PRO 16:3": "Mkabidhi Bwana lolote ufanyalo, nayo mipango yako itafanikiwa.",
+  "EPH 3:20": "Basi kwa yeye awezaye kutenda mambo ya ajabu yasiyopimika kuliko yote tuyaombayo au tuyawazayo, kwa kadiri ya uweza wake ule utendao kazi ndani yetu,",
+  "PSA 1:3": "Mtu huyo ni kama mti uliopandwa kando ya vijito vya maji, ambao huzaa matunda kwa majira yake na majani yake hayanyauki. Lolote afanyalo hufanikiwa.",
+  "NUM 6:24-26": "“ ‘ “Bwana akubariki na kukulinda; Bwana akuangazie nuru ya uso wake na kukufadhili; Bwana akugeuzie uso wake na kukupa amani.” ’",
+  "PSA 119:105": "Neno lako ni taa ya miguu yangu na mwanga katika njia yangu.",
+  "ROM 12:2": "Msifuatishe tena mfano wa ulimwengu huu, bali mgeuzwe kwa kufanywa upya nia zenu. Ndipo mtaweza kuonja na kuhakikisha ni nini mapenzi ya Mungu yaliyo mema, yanayopendeza machoni pake na ukamilifu.",
+  "PHP 1:6": "Nina hakika kwamba yeye aliyeianza kazi njema mioyoni mwenu, ataiendeleza na kuikamilisha hata siku ya Kristo Yesu.",
+  "PSA 46:1": "Kwa mwimbishaji. Zaburi ya wana wa Kora. Mtindo wa alamothi. Mungu kwetu sisi ni kimbilio na nguvu, msaada utakaoonekana tele wakati wa mateso.",
+  "PSA 31:15": "Siku za maisha yangu ziko mikononi mwako, uniokoe mikononi mwa adui zangu na wale wanifuatiao.",
+  "MIC 6:8": "Amekuonyesha yaliyo mema, ee mwanadamu. Bwana anataka nini kwako? Ila kutenda kwa haki na kupenda rehema, na kwenda kwa unyenyekevu na Mungu wako.",
+  "PSA 27:14": "Mngojee Bwana, uwe hodari na mwenye moyo mkuu, nawe, umngojee Bwana.",
+  "ZEP 3:17": "Bwana Mungu wako yu pamoja nawe, yeye ni mwenye nguvu kuokoa. Atakufurahia kwa furaha kubwa, atakutuliza kwa pendo lake, atakufurahia kwa kuimba.”",
+  "JHN 3:16": "“Kwa maana jinsi hii Mungu aliupenda ulimwengu hata akamtoa Mwanawe wa pekee, ili kila mtu amwaminiye asipotee, bali awe na uzima wa milele.",
+  "ROM 5:8": "Lakini Mungu anaudhihirisha upendo wake kwetu kwamba: Tulipokuwa tungali wenye dhambi, Kristo alikufa kwa ajili yetu.",
+  "1JN 4:19": "Twampenda yeye kwa sababu yeye alitupenda kwanza.",
+  "1CO 13:4-5": "Upendo huvumilia, upendo hufadhili, upendo hauoni wivu, hauna majivuno, hauna kiburi. Haukosi kuwa na adabu, hautafuti mambo yake, haukasiriki upesi, hauweki kumbukumbu ya mabaya.",
+  "1CO 13:13": "Basi sasa, yanadumu mambo haya matatu: Imani, tumaini na upendo. Lakini lililo kuu miongoni mwa haya matatu ni upendo.",
+  "1JN 4:7": "Wapendwa, tupendane, kwa kuwa pendo latoka kwa Mungu. Kila apendaye amezaliwa na Mungu, naye anamjua Mungu.",
+  "1JN 4:16": "Hivyo nasi twajua na kulitumainia pendo la Mungu alilo nalo kwa ajili yetu. Mungu ni Upendo. Kila akaaye katika upendo hukaa ndani ya Mungu na Mungu hukaa ndani yake.",
+  "JER 31:3": "Bwana alitutokea wakati uliopita, akisema: “Nimekupenda kwa upendo wa milele, nimekuvuta kwa wema.",
+  "PSA 86:15": "Lakini wewe, Ee Bwana, ni Mungu wa huruma na neema, si mwepesi wa hasira, bali ni mwingi wa upendo na uaminifu.",
+  "1JN 3:1": "Tazameni ni pendo kuu namna gani alilotupa Baba, kwamba sisi tuitwe wana wa Mungu! Na ndivyo tulivyo. Kwa sababu hii ulimwengu haututambui, kwa kuwa haukumtambua yeye.",
+  "JHN 15:9": "“Kama vile Baba alivyonipenda mimi, hivyo ndivyo mimi nilivyowapenda ninyi. Basi kaeni katika pendo langu.",
+  "JHN 15:12-13": "Amri yangu ndiyo hii: Mpendane kama mimi nilivyowapenda ninyi. Hakuna mtu mwenye upendo mkuu kuliko huu, mtu kuutoa uhai wake kwa ajili ya rafiki zake.",
+  "PSA 136:1": "Mshukuruni Bwana, kwa kuwa ni mwema. Fadhili zake zadumu milele.",
+  "SNG 8:7": "Maji mengi hayawezi kuuzimisha upendo, mito haiwezi kuugharikisha. Kama mtu angelitoa mali yote ya nyumbani mwake kwa ajili ya upendo, angelidharauliwa kabisa.",
+  "1PE 4:8": "Zaidi ya yote, dumuni katika upendo kwa maana upendo husitiri wingi wa dhambi.",
+  "PSA 103:11": "Kama vile mbingu zilivyo juu ya dunia sana, ndivyo wema wake ulivyo mwingi kwa wanaomcha;",
+  "PSA 103:13": "Kama baba alivyo na huruma kwa watoto wake, ndivyo Bwana anavyowahurumia wale wanaomcha;",
+  "ISA 54:10": "Ijapotikisika milima, na vilima viondolewe, hata hivyo upendo wangu usiokoma kwenu hautatikisika, wala agano langu la amani halitaondolewa,” asema Bwana, mwenye huruma juu yenu.",
+  "1JN 4:9-10": "Hivi ndivyo Mungu alivyoonyesha pendo lake kwetu: Mungu alimtuma Mwanawe wa pekee ulimwenguni, ili tupate uzima kupitia kwake. Hili ndilo pendo: si kwamba tulimpenda Mungu, bali yeye alitupenda, akamtuma Mwanawe, ili yeye awe dhabihu ya upatanisho kwa ajili ya dhambi zetu.",
+  "ROM 13:10": "Upendo haumfanyii jirani jambo baya. Kwa hiyo upendo ndio utimilifu wa sheria.",
+  "GAL 2:20": "Nimesulubiwa pamoja na Kristo, wala si mimi tena ninayeishi, bali Kristo ndiye aishiye ndani yangu. Uhai nilio nao sasa katika mwili, ninaishi kwa imani ya Mwana wa Mungu, aliyenipenda na kujitoa kwa ajili yangu.",
+  "EPH 5:1-2": "Kwa hiyo, mfuateni Mungu kama watoto wapendwao, mkiishi maisha ya upendo, kama vile Kristo alivyotupenda sisi akajitoa kwa ajili yetu kuwa sadaka yenye harufu nzuri na dhabihu kwa Mungu.",
+  "COL 3:14": "Zaidi ya maadili haya yote jivikeni upendo, ambao ndio unaofunga kila kitu pamoja katika umoja mkamilifu.",
+  "1JN 4:18": "Katika pendo hakuna hofu. Lakini pendo lililo kamili huitupa nje hofu, kwa sababu hofu inahusika na adhabu. Kila mwenye hofu hakukamilika katika pendo.",
+  "PSA 63:3": "Kwa sababu upendo wako ni bora kuliko uhai, midomo yangu itakuadhimisha.",
+  "DEU 7:9": "Basi ujue kwamba Bwana Mungu wako ndiye Mungu; ni Mungu mwaminifu, anayetunza Agano la upendo kwa maelfu ya vizazi vya wale wanaompenda na kuzishika amri zake.",
+  "JHN 13:34-35": "“Amri mpya nawapa: Mpendane kama mimi nilivyowapenda ninyi, vivyo hivyo nanyi mpendane. Kama mkipendana ninyi kwa ninyi, kwa njia hii, watu wote watajua kuwa ninyi ni wanafunzi wangu.”",
+  "MRK 12:30-31": "Mpende Bwana Mungu wako kwa moyo wako wote, kwa roho yako yote, kwa akili zako zote, na kwa nguvu zako zote.’ Ya pili ndiyo hii: ‘Mpende jirani yako kama nafsi yako.’ Hakuna amri nyingine iliyo kuu kuliko hizi.”",
+  "HEB 11:6": "Lakini pasipo imani haiwezekani kumpendeza Mungu, kwa maana yeyote anayemjia Mungu lazima aamini kwamba yeye yuko na ya kuwa huwapa thawabu wale wamtafutao kwa bidii.",
+  "MRK 11:24": "Kwa sababu hiyo nawaambia, yoyote mtakayoyaomba mkisali, aminini ya kwamba mmeyapokea, nayo yatakuwa yenu.",
+  "MAT 17:20": "Akawajibu, “Kwa sababu ya imani yenu ndogo. Ninawaambia kweli, mkiwa na imani ndogo kama punje ya haradali, mtauambia mlima huu, ‘Ondoka hapa uende pale,’ nao utaondoka. Wala hakutakuwa na jambo lisilowezekana kwenu.",
+  "ROM 10:17": "Basi, imani chanzo chake ni kusikia, na kusikia huja kwa neno la Kristo.",
+  "2CO 5:7": "kwa maana twaenenda kwa imani wala si kwa kuona.",
+  "PSA 9:10": "Wote wanaolijua jina lako watakutumaini wewe, kwa maana wewe Bwana, hujawaacha kamwe wakutafutao.",
+  "PSA 20:7": "Wengine wanatumaini magari ya vita, na wengine farasi, bali sisi tutalitumainia jina la Bwana, Mungu wetu.",
+  "ISA 12:2": "Hakika Mungu ni wokovu wangu; nitamtumaini wala sitaogopa. Bwana, Bwana, ni nguvu zangu na wimbo wangu; amekuwa wokovu wangu.”",
+  "MRK 9:23": "Yesu akamwambia, “Kama ukiweza kuamini, yote yawezekana kwake yeye aaminiye.”",
+  "JAS 1:6": "Lakini anapoomba, lazima aamini wala asiwe na shaka, kwa sababu mtu aliye na shaka ni kama wimbi la bahari, lililochukuliwa na upepo na kutupwa huku na huku.",
+  "PSA 62:8": "Enyi watu, mtumainini yeye wakati wote, miminieni mioyo yenu kwake, kwa kuwa Mungu ni kimbilio letu.",
+  "PSA 28:7": "Bwana ni nguvu zangu na ngao yangu, moyo wangu umemtumaini yeye, nami nimesaidiwa. Moyo wangu unarukaruka kwa furaha nami nitamshukuru kwa wimbo.",
+  "NAM 1:7": "Bwana ni Mwema, kimbilio wakati wa taabu. Huwatunza wale wanaomtegemea,",
+  "PSA 112:7": "Hataogopa habari mbaya, moyo wake ni thabiti, ukimtegemea Bwana.",
+  "ISA 26:4": "Mtumaini Bwana milele, kwa kuwa Bwana, Bwana, ni Mwamba wa milele.",
+  "JER 17:7-8": "“Lakini amebarikiwa mtu ambaye tumaini lake ni katika Bwana, ambaye matumaini yake ni katika Bwana. Atakuwa kama mti uliopandwa kando ya maji uenezao mizizi yake karibu na kijito cha maji. Hauogopi wakati wa joto ujapo; majani yake ni mabichi daima. Hauna hofu katika mwaka wa ukame na hautaacha kuzaa matunda.”",
+  "HEB 10:23": "Tushike kwa uthabiti lile tumaini la ukiri wetu bila kuyumbayumba, kwa maana yeye aliyeahidi ni mwaminifu.",
+  "EPH 2:8-9": "Kwa maana mmeokolewa kwa neema, kwa njia ya imani, wala si kwa matendo yenu mema. Hii ni zawadi kutoka kwa Mungu, si kwa matendo, ili mtu yeyote asije akajisifu.",
+  "ROM 5:1": "Kwa hiyo, kwa kuwa tumekwisha kuhesabiwa haki kwa imani, tuna amani na Mungu kwa njia ya Bwana wetu Yesu Kristo,",
+  "1PE 2:9": "Lakini ninyi ni taifa teule, ukuhani wa kifalme, taifa takatifu, watu walio milki ya Mungu, mlioitwa ili kutangaza sifa zake yeye aliyewaita kutoka gizani mkaingie katika nuru yake ya ajabu.",
+  "PSA 125:1": "Wimbo wa kwenda juu. Wale wamtumainio Bwana ni kama mlima Sayuni, ambao hauwezi kutikisika, bali wadumu milele.",
+  "PRO 29:25": "Kuwaogopa watu huwa ni mtego, bali yeyote amtumainiaye Bwana atakuwa salama.",
+  "PSA 37:3": "Mtumaini Bwana na utende yaliyo mema; Kaa katika nchi ukafurahie malisho salama.",
+  "PSA 37:5": "Mkabidhi Bwana njia yako, mtumaini yeye, naye atatenda hili:",
+  "HEB 13:8": "Yesu Kristo ni yeye yule jana, leo na hata milele.",
+  "JHN 14:1": "Yesu akawaambia, “Msifadhaike mioyoni mwenu, mnamwamini Mungu, niaminini na mimi pia.",
+  "JHN 20:29": "Yesu akamwambia, “Umeamini kwa kuwa umeniona? Wamebarikiwa wale ambao hawajaona lakini wameamini.”",
+  "1JN 5:4": "Kwa maana kila aliyezaliwa na Mungu huushinda ulimwengu. Huku ndiko kushinda kuushindako ulimwengu, yaani, hiyo imani yetu.",
+  "MAT 21:22": "Yoyote mtakayoyaomba mkisali na mkiamini, mtayapokea.”",
+  "PSA 115:11": "Ninyi mnaomcha, mtumainini Bwana, yeye ni msaada na ngao yao.",
+  "ISA 50:10": "Ni nani miongoni mwenu amchaye Bwana, na kulitii neno la mtumishi wake? Yeye atembeaye gizani, yeye asiye na nuru, na alitumainie jina la Bwana, na amtegemee Mungu wake.",
+  "JHN 11:25": "Yesu akamwambia, “Mimi ndiye huo ufufuo na uzima. Yeye aniaminiye mimi, hata akifa atakuwa anaishi",
+  "1CO 15:57": "Lakini ashukuriwe Mungu, yeye atupaye ushindi kwa njia ya Bwana wetu Yesu Kristo.",
+  "ROM 6:4": "Kwa hiyo tulizikwa pamoja naye kwa njia ya ubatizo katika mauti, ili kama vile Kristo alivyofufuliwa kutoka kwa wafu kwa utukufu wa Baba, vivyo hivyo sisi nasi pia tupate kuenenda katika upya wa uzima.",
+  "MAT 28:6": "Hayupo hapa, kwa kuwa amefufuka, kama vile alivyosema. Njooni mpatazame mahali alipokuwa amelazwa.",
+  "1PE 1:3": "Ahimidiwe Mungu, Baba wa Bwana wetu Yesu Kristo! Kwa rehema zake kuu ametuzaa sisi mara ya pili katika tumaini lenye uzima kupitia kwa kufufuka kwa Yesu Kristo kutoka kwa wafu,",
+  "ISA 53:5": "Lakini alitobolewa kwa ajili ya makosa yetu, alichubuliwa kwa ajili ya maovu yetu; adhabu iliyotuletea sisi amani ilikuwa juu yake, na kwa majeraha yake sisi tumepona.",
+  "JHN 10:10": "Mwizi huja ili aibe, kuua na kuangamiza. Mimi nimekuja ili wapate uzima kisha wawe nao tele.",
+  "JHN 10:11": "“Mimi ndimi mchungaji mwema. Mchungaji mwema huutoa uhai wake kwa ajili ya kondoo.",
+  "JHN 8:12": "Kisha Yesu akasema nao tena akawaambia, “Mimi ni nuru ya ulimwengu. Mtu yeyote akinifuata hatatembea gizani kamwe, bali atakuwa na nuru ya uzima.”",
+  "JHN 6:35": "Yesu akawaambia, “Mimi ndimi mkate wa uzima. Yeye ajaye kwangu, hataona njaa kamwe na yeye aniaminiye, hataona kiu kamwe.",
+  "JHN 14:6": "Yesu akawaambia, “Mimi ndimi njia na kweli na uzima. Mtu hawezi kuja kwa Baba isipokuwa kwa kupitia kwangu.",
+  "JHN 15:5": "“Mimi ni mzabibu, ninyi ni matawi. Akaaye ndani yangu, nami ndani yake, huyo huzaa sana, maana pasipo mimi ninyi hamwezi kufanya jambo lolote.",
+  "REV 3:20": "Tazama! Nasimama mlangoni nabisha. Kama mtu yeyote akisikia sauti yangu na kufungua mlango, nitaingia ndani na kula pamoja naye, naye pamoja nami.",
+  "LUK 19:10": "Kwa maana Mwana wa Adamu amekuja kutafuta na kuokoa kile kilichopotea.”",
+  "ROM 6:23": "Kwa maana mshahara wa dhambi ni mauti, bali karama ya Mungu ni uzima wa milele katika Kristo Yesu Bwana wetu.",
+  "2CO 5:21": "Kwa maana Mungu alimfanya yeye asiyekuwa na dhambi kuwa dhambi kwa ajili yetu, ili sisi tupate kufanywa haki ya Mungu kwake yeye.",
+  "COL 1:13-14": "Kwa maana ametuokoa kutoka ufalme wa giza na kutuingiza katika ufalme wa Mwana wake mpendwa, ambaye katika yeye tunao ukombozi, yaani msamaha wa dhambi.",
+  "HEB 7:25": "Kwa hiyo anaweza kuwaokoa kabisa wale wanaomjia Mungu kupitia kwake, kwa sababu yeye adumu daima kuomba kwa ajili yao.",
+  "HEB 4:15-16": "Kwa kuwa hatuna Kuhani Mkuu asiyeweza kuchukuliana na sisi katika udhaifu wetu, lakini tunaye mmoja ambaye alijaribiwa kwa kila namna, kama vile sisi tujaribiwavyo: lakini yeye hakutenda dhambi. Basi na tukikaribie kiti cha rehema kwa ujasiri, ili tupewe rehema na kupata neema ya kutusaidia wakati wa mahitaji.",
+  "ROM 8:1": "Kwa hiyo, sasa hakuna hukumu ya adhabu kwa wale walio ndani ya Kristo Yesu, wale ambao hawaenendi kwa kuufuata mwili bali kwa kufuata Roho.",
+  "ROM 8:11": "Nanyi ikiwa Roho wa Mungu aliyemfufua Yesu kutoka kwa wafu anakaa ndani yenu, yeye aliyemfufua Kristo Yesu kutoka kwa wafu ataihuisha pia miili yenu ambayo hufa, kwa njia ya Roho wake akaaye ndani yenu.",
+  "1CO 15:20": "Lakini kweli Kristo amefufuliwa kutoka kwa wafu, tunda la kwanza la wale wote waliolala.",
+  "EPH 2:4-5": "Lakini Mungu kwa upendo wake mwingi kwetu sisi, ambaye ni mwingi wa rehema, hata tulipokuwa wafu kwa ajili ya makosa yetu, alitufanya tuwe hai pamoja na Kristo Yesu, yaani, mmeokolewa kwa neema.",
+  "TIT 3:5": "alituokoa, si kwa sababu ya matendo ya haki tuliyotenda, bali kwa sababu ya rehema zake. Alituokoa kwa kutuosha kwa kuzaliwa mara ya pili na kwa kufanywa wapya kwa njia ya Roho Mtakatifu,",
+  "1PE 2:24": "Yeye mwenyewe alizichukua dhambi zetu katika mwili wake juu ya mti, ili tufe kwa mambo ya dhambi, bali tupate kuishi katika haki. Kwa kupigwa kwake, ninyi mmeponywa.",
+  "ISA 53:6": "Sisi sote, kama kondoo, tumepotea, kila mmoja wetu amegeukia njia yake mwenyewe, naye Bwana aliweka juu yake maovu yetu sisi sote.",
+  "JHN 1:12": "Bali wote waliompokea, aliwapa uwezo wa kufanyika watoto wa Mungu, ndio wale waliaminio jina lake.",
+  "JHN 3:17": "Kwa maana Mungu hakumtuma Mwanawe kuuhukumu ulimwengu, bali kupitia kwake ulimwengu upate kuokolewa.",
+  "REV 1:18": "Mimi ni Yeye Aliye Hai, niliyekuwa nimekufa, na tazama, ni hai milele na milele! Nami ninazo funguo za mauti na kuzimu.",
+  "ACT 4:12": "Wala hakuna wokovu katika mwingine awaye yote, kwa maana hakuna jina jingine chini ya mbingu walilopewa wanadamu litupasalo sisi kuokolewa kwalo.”",
+  "PSA 18:2": "Bwana ni mwamba wangu, ngome yangu na mwokozi wangu, Mungu wangu ni mwamba, ambaye kwake ninakimbilia. Yeye ni ngao yangu na pembe ya wokovu wangu, ngome yangu.",
+  "PSA 18:32": "Mungu ndiye anivikaye nguvu na kufanya njia yangu kuwa kamilifu.",
+  "NEH 8:10": "Nehemia akasema, “Nendeni mkafurahie chakula kizuri na vinywaji vitamu, na mpeleke sehemu kwa wale ambao hawana chochote cha kula. Siku hii ni takatifu kwa Bwana. Msihuzunike, kwa kuwa furaha ya Bwana ni nguvu zenu.”",
+  "ISA 40:29": "Huwapa nguvu waliolegea na huongeza nguvu za wadhaifu.",
+  "EPH 6:10": "Hatimaye, mzidi kuwa hodari katika Bwana na katika uweza wa nguvu zake.",
+  "1CH 16:11": "Mtafuteni Bwana na nguvu zake; utafuteni uso wake siku zote.",
+  "PSA 73:26": "Mwili na moyo wangu vyaweza kushindwa, bali Mungu ni nguvu ya moyo wangu na fungu langu milele.",
+  "EPH 3:16": "Namwomba Mungu awaimarishe kwa kuwatia nguvu mioyo yenu kwa njia ya Roho wake kwa kadiri ya utajiri wa utukufu wake,",
+  "HAB 3:19": "Bwana Mwenyezi ni nguvu yangu; huifanya miguu yangu kama miguu ya ayala, huniwezesha kupita juu ya vilima. Kwa kiongozi wa uimbaji. Kwa vinanda vyangu vya nyuzi.",
+  "2SA 22:33": "Mungu ndiye anivikaye nguvu na kufanya njia yangu kuwa kamilifu.",
+  "PSA 31:24": "Kuweni hodari na mjipe moyo, ninyi nyote mnaomtumaini Bwana.",
+  "1CO 16:13": "Kesheni, simameni imara katika imani, fanyeni kiume, kuweni mashujaa kuweni hodari.",
+  "PSA 138:3": "Nilipoita, ulinijibu; ulinifanya jasiri na mwenye moyo hodari.",
+  "ISA 43:2": "Unapopita kwenye maji makuu, nitakuwa pamoja nawe, unapopita katika mito ya maji, hayatakugharikisha. Utakapopita katika moto, hutaungua, miali ya moto haitakuunguza.",
+  "PSA 59:16": "Lakini mimi nitaziimba nguvu zako, asubuhi nitaimba juu ya upendo wako; kwa maana wewe ndiwe ngome yangu na kimbilio langu wakati wa shida.",
+  "EXO 15:2": "Bwana ni nguvu zangu na wimbo wangu; amekuwa wokovu wangu. Yeye ni Mungu wangu, nami nitamsifu, Mungu wa baba yangu, nami nitamtukuza.",
+  "PSA 28:8": "Bwana ni nguvu ya watu wake, ngome ya wokovu kwa mpakwa mafuta wake.",
+  "2TH 3:3": "Lakini Bwana ni mwaminifu, naye atawaimarisha ninyi na kuwalinda kutokana na yule mwovu.",
+  "1PE 5:10": "Nanyi mkiisha kuteswa kwa kitambo kidogo, Mungu wa neema yote, aliyewaita kuingia katika utukufu wake wa milele ndani ya Kristo, yeye mwenyewe atawarejesha na kuwatia nguvu, akiwaimarisha na kuwathibitisha.",
+  "COL 1:11": "mkiwa mmetiwa nguvu kwa uwezo wote kwa kadiri ya nguvu yake yenye utukufu, ili mpate kuwa na wingi wa saburi na uvumilivu. Nanyi kwa furaha",
+  "DEU 33:27": "Mungu wa milele ni kimbilio lako, na chini kuna mikono ya milele. Atamfukuza adui yako mbele yako, akisema, ‘Mwangamize yeye!’",
+  "ISA 35:4": "waambieni wale wenye mioyo ya hofu, “Kuweni hodari, msiogope; tazama, Mungu wenu atakuja, pamoja na malipo ya Mungu, atakuja na kuwaokoa ninyi.”",
+  "PSA 118:6": "Bwana yuko pamoja nami, sitaogopa. Mwanadamu anaweza kunitenda nini?",
+  "ROM 8:31": "Tuseme nini basi kuhusu haya? Ikiwa Mungu yuko upande wetu, ni nani awezaye kuwa kinyume chetu?",
+  "ROM 8:37": "Lakini katika mambo haya yote tunashinda, naam na zaidi ya kushinda, kwa yeye aliyetupenda.",
+  "MAT 11:29-30": "Jifungeni nira yangu, mjifunze kutoka kwangu, kwa maana mimi ni mpole na mnyenyekevu wa moyo, nanyi mtapata raha nafsini mwenu. Kwa maana nira yangu ni laini na mzigo wangu ni mwepesi.”",
+  "PSA 23:2-3": "Hunilaza katika malisho ya majani mabichi, kando ya maji matulivu huniongoza, hunihuisha nafsi yangu. Huniongoza katika njia za haki kwa ajili ya jina lake.",
+  "PSA 23:4": "Hata kama nikipita katikati ya bonde la uvuli wa mauti, sitaogopa mabaya, kwa maana wewe upo pamoja nami; fimbo yako na mkongojo wako vyanifariji.",
+  "PSA 23:6": "Hakika wema na upendo vitanifuata siku zote za maisha yangu, nami nitakaa nyumbani mwa Bwana milele.",
+  "ISA 32:17": "Matunda ya haki yatakuwa amani, matokeo ya haki yatakuwa utulivu na matumaini milele.",
+  "COL 3:15": "Amani ya Kristo na itawale mioyoni mwenu, kwa kuwa ninyi kama viungo vya mwili mmoja mmeitiwa amani. Tena kuweni watu wa shukrani.",
+  "2TH 3:16": "Basi, Bwana wa amani mwenyewe awapeni amani nyakati zote na kwa kila njia. Bwana awe nanyi nyote.",
+  "PSA 62:1-2": "Kwa mwimbishaji. Mtindo wa Yeduthuni. Zaburi ya Daudi. Kwa Mungu peke yake nafsi yangu inapata pumziko; wokovu wangu watoka kwake. Yeye peke yake ndiye mwamba wangu na wokovu wangu; yeye ni ngome yangu, sitatikisika kamwe.",
+  "PSA 131:2": "Lakini nimetuliza na kunyamazisha nafsi yangu; kama mtoto aliyeachishwa kunyonya na mama yake, kama mtoto aliyeachishwa kunyonya ndivyo ilivyo nafsi iliyoko ndani yangu.",
+  "PSA 91:1-2": "Yeye akaaye mahali pa salama pake Yeye Aliye Juu Sana, atadumu katika uvuli wake Mwenyezi. Nitasema kumhusu Bwana, “Yeye ndiye kimbilio langu na ngome yangu, Mungu wangu, ambaye ninamtumaini.”",
+  "PSA 91:4": "Atakufunika kwa manyoya yake, chini ya mbawa zake utapata kimbilio, uaminifu wake utakuwa ngao na kinga yako.",
+  "PSA 91:11": "Kwa kuwa atawaagiza malaika zake kwa ajili yako, wakulinde katika njia zako zote.",
+  "ISA 55:12": "Mtatoka nje kwa furaha na kuongozwa kwa amani; milima na vilima vitapaza sauti kwa nyimbo mbele yenu, nayo miti yote ya shambani itapiga makofi.",
+  "JHN 16:33": "Nimewaambia mambo haya, ili mpate kuwa na amani mkiwa ndani yangu. Ulimwenguni mtapata dhiki. Lakini jipeni moyo, kwa maana mimi nimeushinda ulimwengu.”",
+  "PSA 116:7": "Ee nafsi yangu, tulia tena, kwa kuwa Bwana amekuwa mwema kwako.",
+  "EXO 33:14": "Bwana akajibu, “Uso wangu utakwenda pamoja nawe, nami nitakupa raha.”",
+  "PSA 127:2": "Mnajisumbua bure kuamka mapema na kuchelewa kulala, mkitaabikia chakula: kwa maana yeye huwapa usingizi wapenzi wake.",
+  "ROM 8:6": "Kwa maana kuwa na nia ya mwili ni mauti, bali kuwa na nia inayoongozwa na Roho ni uzima na amani.",
+  "PRO 14:30": "Moyo wenye amani huupa mwili uzima, bali wivu huozesha mifupa.",
+  "PSA 85:8": "Nitasikiliza lile atakalosema Mungu aliye Bwana; anaahidi amani kwa watu wake, watakatifu wake: lakini nao wasirudie upumbavu.",
+  "JER 6:16": "Hivi ndivyo asemavyo Bwana: “Simama kwenye njia panda utazame, ulizia mapito ya zamani, ulizia wapi ilipo njia nzuri, uifuate hiyo, nanyi mtapata raha nafsini mwenu. Lakini ninyi mlisema, ‘Hatutaipita hiyo.’",
+  "GAL 5:1": "Kristo alitupa uhuru, akataka tubaki huru. Hivyo simameni imara wala msikubali tena kulemewa na kongwa la utumwa.",
+  "JHN 8:36": "Hivyo Mwana akiwaweka huru mtakuwa huru kweli kweli.",
+  "2CO 3:17": "Basi Bwana ndiye Roho. Mahali alipo Roho wa Bwana hapo pana uhuru.",
+  "PSA 16:11": "Umenijulisha njia ya uzima; utanijaza na furaha mbele zako, pamoja na furaha za milele katika mkono wako wa kuume.",
+  "PSA 126:3": "Bwana ametutendea mambo makuu, nasi tumejaa furaha.",
+  "PHP 4:4": "Furahini katika Bwana siku zote, tena nasema furahini!",
+  "PSA 9:2": "Nitafurahi na kushangilia ndani yako. Nitaliimbia sifa jina lako, Ewe Uliye Juu Sana.",
+  "PSA 100:4-5": "Ingieni malangoni mwake kwa shukrani na katika nyua zake kwa kusifu, mshukuruni yeye na kulisifu jina lake. Kwa maana Bwana ni mwema na upendo wake wadumu milele; uaminifu wake unadumu kwa vizazi vyote.",
+  "PSA 30:11": "Uligeuza maombolezo yangu kuwa kucheza, ulinivua nguo za gunia ukanivika shangwe,",
+  "ISA 61:10": "Ninafurahia sana katika Bwana, nafsi yangu inashangilia katika Mungu wangu. Kwa maana amenivika mavazi ya wokovu, na kunipamba kwa joho la haki, kama vile bwana arusi apambavyo kichwa chake kama kuhani, na kama bibi arusi ajipambavyo kwa vito vyake vya thamani.",
+  "ROM 14:17": "Kwa maana Ufalme wa Mungu si kula na kunywa, bali ni haki, amani na furaha katika Roho Mtakatifu.",
+  "JAS 1:2-3": "Ndugu zangu, hesabuni kuwa ni furaha tupu mnapopatwa na majaribu mbalimbali, kwa sababu mnajua ya kuwa kujaribiwa kwa imani yenu huleta saburi.",
+  "PSA 98:4": "Mpigieni Bwana kelele za shangwe, dunia yote, ipaze sauti kwa nyimbo za shangwe na vinanda;",
+  "PSA 34:1": "Zaburi ya Daudi, alipojifanya mwendawazimu mbele ya Abimeleki, ambaye alimfukuza, naye akaondoka. Nitamtukuza Bwana nyakati zote, sifa zake zitakuwa midomoni mwangu siku zote.",
+  "PSA 34:8": "Onjeni mwone kwamba Bwana ni mwema, heri mtu yule anayemkimbilia.",
+  "PSA 150:6": "Kila chenye pumzi na kimsifu Bwana. Msifuni Bwana!",
+  "PSA 103:1-2": "Zaburi ya Daudi. Ee nafsi yangu, umhimidi Bwana. Vyote vilivyomo ndani yangu vilihimidi jina lake takatifu. Ee nafsi yangu, umhimidi Bwana, wala usisahau wema wake wote,",
+  "HAB 3:17-18": "Ingawa mtini hauchanui maua na hakuna zabibu juu ya mizabibu, ingawaje mzeituni hauzai, na hata mashamba hayatoi chakula, iwapo hakuna kondoo katika banda, wala ngʼombe katika zizi, hata hivyo nitashangilia katika Bwana, nitamfurahia Mungu Mwokozi wangu.",
+  "PSA 95:1-2": "Njooni, tumwimbie Bwana kwa furaha; tumfanyie kelele za shangwe Mwamba wa wokovu wetu. Tuje mbele zake kwa shukrani, tumtukuze kwa vinanda na nyimbo.",
+  "PSA 145:18": "Bwana yu karibu na wote wamwitao, karibu na wote wamwitao kwa uaminifu.",
+  "JHN 15:11": "Nimewaambia mambo haya ili furaha yangu iwe ndani yenu na furaha yenu iwe kamili.",
+  "ISA 12:3": "Kwa furaha mtachota maji kutoka visima vya wokovu.",
+  "LUK 15:10": "Vivyo hivyo, nawaambia, kuna furaha mbele ya malaika wa Mungu juu ya mwenye dhambi mmoja atubuye.”",
+  "PSA 40:2-3": "Akanipandisha kutoka shimo la uharibifu, kutoka matope na utelezi; akaiweka miguu yangu juu ya mwamba na kunipa mahali imara pa kusimama. Akaweka wimbo mpya kinywani mwangu, wimbo wa sifa kwa Mungu wetu. Wengi wataona na kuogopa na kuweka tumaini lao kwa Bwana.",
+  "PSA 63:7": "Kwa sababu wewe ndiwe msaada wangu, chini ya uvuli wa mbawa zako naimba.",
+  "ROM 8:2": "Kwa sababu sheria ya Roho wa uzima katika Kristo Yesu imeniweka huru mbali na sheria ya dhambi na mauti.",
+  "ISA 61:1": "Roho wa Bwana Mwenyezi yu juu yangu, kwa sababu Bwana amenitia mafuta kuwahubiria maskini habari njema. Amenituma kuwaganga waliovunjika moyo, kuwatangazia mateka uhuru wao, na hao waliofungwa habari za kufunguliwa kwao;",
+  "LUK 4:18": "“Roho wa Bwana yu juu yangu, kwa sababu amenitia mafuta kuwahubiria maskini habari njema. Amenituma kuwatangazia wafungwa kufunguliwa kwao, na vipofu kupata kuona tena, kuwaweka huru wanaoonewa,",
+  "PSA 107:9": "kwa maana yeye humtosheleza mwenye kiu, na kumshibisha mwenye njaa kwa vitu vyema.",
+  "PRO 2:6": "Kwa maana Bwana hutoa hekima, na kinywani mwake hutoka maarifa na ufahamu.",
+  "PRO 4:23": "Zaidi ya yote, linda moyo wako, kuliko yote uyalindayo, maana ndiko zitokako chemchemi za uzima.",
+  "PRO 9:10": "“Kumcha Bwana ndicho chanzo cha hekima, na kumjua Aliye Mtakatifu ni ufahamu.",
+  "PSA 119:11": "Nimelificha neno lako moyoni mwangu ili nisikutende dhambi.",
+  "PSA 119:130": "Kuingia kwa maneno yako kunaleta nuru, kunampa mjinga ufahamu.",
+  "PSA 25:4-5": "Nionyeshe njia zako, Ee Bwana, nifundishe mapito yako, niongoze katika kweli yako na kunifundisha, kwa maana wewe ni Mungu Mwokozi wangu, nalo tumaini langu liko kwako wakati wote.",
+  "PRO 16:9": "Moyo wa mtu huifikiri njia yake, bali Bwana huelekeza hatua zake.",
+  "PRO 19:21": "Kuna mipango mingi ndani ya moyo wa mtu, lakini kusudi la Bwana ndilo litakalosimama.",
+  "ISA 55:8-9": "“Kwa kuwa mawazo yangu si mawazo yenu, wala njia zenu si njia zangu,” asema Bwana. “Kama vile mbingu zilivyo juu kuliko dunia, ndivyo njia zangu zilivyo juu kuliko njia zenu na mawazo yangu kuliko mawazo yenu.",
+  "PRO 11:2": "Kiburi kinapokuja, ndipo huja aibu, bali unyenyekevu huja na hekima.",
+  "PRO 12:25": "Moyo wa wasiwasi humlemea mtu, bali neno la huruma humfurahisha.",
+  "PRO 17:17": "Rafiki hupenda wakati wote naye ndugu amezaliwa kwa ajili ya wakati wa shida.",
+  "PRO 18:10": "Jina la Bwana ni ngome imara, wenye haki huikimbilia na kuwa salama.",
+  "PRO 27:17": "Kama vile chuma kinoavyo chuma, ndivyo mtu amnoavyo mwenzake.",
+  "PRO 31:30": "Kujipamba ili kuvutia ni udanganyifu na uzuri unapita upesi, bali mwanamke anayemcha Bwana atasifiwa.",
+  "COL 3:16": "Neno la Kristo na likae kwa wingi ndani yenu, mkifundishana na kuonyana katika hekima yote, mkimwimbia Mungu zaburi, nyimbo na tenzi za rohoni, huku mkiwa na shukrani mioyoni mwenu.",
+  "PSA 119:18": "Yafungue macho yangu nipate kuona mambo ya ajabu katika sheria yako.",
+  "HEB 4:12": "Kwa maana Neno la Mungu li hai tena lina nguvu. Lina makali kuliko upanga wowote wenye makali kuwili, hivyo linachoma hata kuzigawanya nafsi na roho, viungo na mafuta yaliyo ndani yake; tena li jepesi kuyatambua mawazo na makusudi ya moyo.",
+  "JOS 1:8": "Usiache Kitabu hiki cha Sheria kiondoke kinywani mwako; yatafakari maneno yake usiku na mchana, ili upate kuwa mwangalifu kufanya kila kitu sawasawa na yote yaliyoandikwa ndani yake. Ndipo utakapofanikiwa na kisha utastawi.",
+  "PSA 19:14": "Maneno ya kinywa changu na mawazo ya moyo wangu, yapate kibali mbele zako, Ee Bwana, Mwamba wangu na Mkombozi wangu.",
+  "PSA 139:23-24": "Ee Mungu, nichunguze, uujue moyo wangu, nijaribu na ujue mawazo yangu. Uone kama kuna njia iletayo machukizo ndani yangu, uniongoze katika njia ya milele.",
+  "JAS 3:17": "Lakini hekima itokayo mbinguni kwanza ni safi, kisha inapenda amani, tena ni ya upole, iliyo tayari kusikiliza wengine kwa unyenyekevu, iliyojaa huruma na matunda mema, isiyopendelea mtu, tena isiyokuwa na unafiki.",
+  "PHP 4:8": "Hatimaye, ndugu zangu, mambo yote yaliyo ya kweli, yoyote yaliyo na sifa njema, yoyote yaliyo ya haki, yoyote yaliyo safi, yoyote ya kupendeza, yoyote yenye staha, ukiwepo uzuri wowote, pakiwepo chochote kinachostahili kusifiwa, tafakarini mambo hayo.",
+  "COL 3:2": "Yafikirini mambo yaliyo juu, wala si ya duniani.",
+  "MAT 7:7": "“Ombeni nanyi mtapewa; tafuteni nanyi mtapata; bisheni nanyi mtafunguliwa mlango.",
+  "MAT 7:24": "“Kwa hiyo kila mtu ayasikiaye haya maneno yangu na kuyatenda, ni kama mtu mwenye busara aliyejenga nyumba yake kwenye mwamba.",
+  "PSA 37:23-24": "Kama Bwana akipendezwa na njia ya mtu, yeye huimarisha hatua zake, ajapojikwaa, hataanguka, kwa maana Bwana humtegemeza kwa mkono wake.",
+  "PSA 48:14": "Kwa kuwa huyu Mungu ni Mungu wetu milele na milele; atakuwa kiongozi wetu hata mwisho.",
+  "ISA 58:11": "Bwana atakuongoza siku zote, atayatosheleza mahitaji yako katika nchi kame, naye ataitia nguvu mifupa yako. Utakuwa kama bustani iliyonyweshwa vizuri, kama chemchemi ambayo maji yake hayakauki kamwe.",
+  "HEB 12:1": "Kwa sababu hii, kwa kuwa tumezungukwa na wingu kubwa namna hii la mashahidi, basi na tuweke kando kila kitu kinachotuzuia na ile dhambi inayotuzinga kwa urahisi, nasi tupige mbio kwa saburi katika yale mashindano yaliyowekwa kwa ajili yetu.",
+  "JAS 1:12": "Heri mtu anayevumilia wakati wa majaribu, kwa sababu akiisha kushinda hilo jaribio atapewa taji la uzima Mungu alilowaahidia wale wampendao.",
+  "ROM 5:5": "wala tumaini halitukatishi tamaa, kwa sababu Mungu amekwisha kumimina pendo lake mioyoni mwetu kwa njia ya Roho Mtakatifu ambaye ametupatia.",
+  "2CO 4:16-17": "Kwa hiyo, hatukati tamaa. Ingawa utu wetu wa nje unachakaa, utu wetu wa ndani unafanywa upya siku kwa siku. Kwa maana dhiki yetu nyepesi iliyo ya kitambo inatutayarisha kwa ajili ya utukufu wa milele unaozidi kuwa mwingi kupita kiasi,",
+  "2CO 4:8-9": "Twataabika kila upande lakini hatuangamizwi; twaona wasiwasi lakini hatukati tamaa; twateswa lakini hatuachwi; twatupwa chini lakini hatupondwi.",
+  "PSA 27:13": "Nami bado nina tumaini hili: nitauona wema wa Bwana katika nchi ya walio hai.",
+  "PSA 40:1": "Kwa mwimbishaji. Zaburi ya Daudi. Nilimngoja Bwana kwa saburi, naye akaniinamia, akasikia kilio changu.",
+  "LAM 3:25-26": "Bwana ni mwema kwa wale ambao tumaini lao ni kwake, kwa yule ambaye humtafuta; ni vyema kungojea kwa utulivu kwa ajili ya wokovu wa Bwana.",
+  "2TI 4:7": "Nimevipiga vita vizuri, mashindano nimeyamaliza, imani nimeilinda.",
+  "1CO 15:58": "Kwa hiyo, ndugu zangu wapenzi, simameni imara, msitikisike, mzidi sana katika kuitenda kazi ya Bwana, kwa maana mnajua ya kuwa, kazi yenu katika Bwana si bure.",
+  "HEB 10:36": "Inawapasa kuvumilia ili mkiisha kufanya mapenzi ya Mungu mpate kile alichoahidi.",
+  "JAS 5:11": "Kama mnavyojua, tunawahesabu kuwa wabarikiwa wale waliovumilia. Mmesikia habari za uvumilivu wake Ayubu na mmeona kile ambacho hatimaye Bwana alimtendea. Bwana ni mwingi wa huruma, na amejaa rehema.",
+  "ROM 8:18": "Nayahesabu mateso yetu ya wakati huu kuwa si kitu kulinganisha na utukufu utakaodhihirishwa kwetu.",
+  "PSA 34:19": "Mwenye haki ana mateso mengi, lakini Bwana humwokoa nayo yote,",
+  "2CO 12:10": "Hii ndiyo sababu, kwa ajili ya Kristo, nafurahia udhaifu, katika kutukanwa, katika taabu, katika mateso na katika shida, kwa maana ninapokuwa dhaifu, ndipo nina nguvu.",
+  "ISA 43:1": "Lakini sasa hili ndilo asemalo Bwana, yeye aliyekuumba, ee Yakobo, yeye aliyekuhuluku, ee Israeli: “Usiogope kwa maana nimekukomboa, nimekuita wewe kwa jina lako, wewe u wangu.",
+  "PSA 61:2": "Kutoka miisho ya dunia ninakuita, ninaita huku moyo wangu unadhoofika; uniongoze kwenye mwamba ule ulio juu kuliko mimi.",
+  "PSA 18:6": "Katika shida yangu nalimwita Bwana, nilimlilia Mungu wangu anisaidie. Kutoka hekaluni mwake alisikia sauti yangu, kilio changu kikafika mbele zake, masikioni mwake.",
+  "PSA 120:1": "Wimbo wa kwenda juu. Katika dhiki yangu namwita Bwana, naye hunijibu.",
+  "JHN 14:18": "Sitawaacha ninyi yatima, naja kwenu.",
+  "HEB 6:19": "Tunalo tumaini hili kama nanga ya roho iliyo imara na thabiti. Tumaini hili huingia katika sehemu takatifu iliyopo nyuma ya pazia,",
+  "PSA 9:9": "Bwana ni kimbilio la watu wanaoonewa, ni ngome imara wakati wa shida.",
+  "ISA 41:13": "Kwa maana Mimi ndimi Bwana, Mungu wako, nikushikaye mkono wako wa kuume na kukuambia, Usiwe na hofu, nitakusaidia.",
+  "MAT 6:26": "Waangalieni ndege wa angani; wao hawapandi wala hawavuni au kuweka ghalani, lakini Baba yenu wa mbinguni huwalisha. Je, ninyi si wa thamani zaidi kuliko hao ndege?",
+  "LUK 12:7": "Naam, hata nywele za vichwa vyenu zote zimehesabiwa. Hivyo msiogope, kwa maana ninyi ni wa thamani kubwa kuliko shomoro wengi.",
+  "PSA 37:25": "Nilikuwa kijana na sasa ni mzee, lakini sijaona kamwe wenye haki wameachwa au watoto wao wakiombaomba chakula.",
+  "PSA 34:10": "Wana simba wenye nguvu hutindikiwa na kuona njaa, bali wale wamtafutao Bwana hawatakosa kitu chochote kilicho chema.",
+  "2CO 9:8": "Naye Mungu aweza kuwapa kila baraka kwa wingi, ili katika mambo yote kila wakati, mwe na kila kitu mnachohitaji, ili mweze kushiriki kwa wingi katika kila kazi njema.",
+  "PSA 84:11": "Kwa kuwa Bwana ni jua na ngao, Bwana hutoa wema na heshima; hakuna kitu chema anachowanyima wale ambao hawana hatia.",
+  "DEU 31:8": "Bwana mwenyewe atakutangulia naye atakuwa pamoja nawe; kamwe hatakuacha wala hatakutupa. Usiogope, wala usifadhaike.”",
+  "PSA 121:7-8": "Bwana atakukinga na madhara yote, atayalinda maisha yako, Bwana atakulinda unapoingia na unapotoka, tangu sasa na hata milele.",
+  "GEN 28:15": "Niko pamoja nawe nami nitakulinda kila uendako na nitakurudisha katika nchi hii. Sitakuacha mpaka nitakapofanya hayo niliyokuahidi.”",
+  "PSA 145:15-16": "Macho yao wote yanakutazama wewe, nawe huwapa chakula chao wakati wake. Waufumbua mkono wako, watosheleza haja ya kila kitu kilicho hai.",
+  "MAT 7:11": "Ikiwa ninyi basi mlio waovu mnajua kuwapa watoto wenu vitu vizuri, si zaidi sana Baba yenu aliye mbinguni atawapa vitu vizuri wale wamwombao?",
+  "1PE 5:6": "Basi, nyenyekeeni chini ya mkono wa Mungu ulio hodari, ili awakweze kwa wakati wake.",
+  "PSA 68:19": "Sifa apewe Bwana, Mungu Mwokozi wetu, ambaye siku kwa siku hutuchukulia mizigo yetu.",
+  "PSA 68:5": "Baba wa yatima, mtetezi wa wajane, ni Mungu katika makao yake matakatifu.",
+  "ISA 49:15-16": "“Je, mama aweza kumsahau mtoto aliyeko matitini mwake akinyonya, wala asiwe na huruma juu ya mtoto aliyemzaa? Ingawa anaweza kusahau, mimi sitakusahau wewe! Tazama, nimekuchora kama muhuri katika vitanga vya mikono yangu, kuta zako zi mbele yangu daima.",
+  "PSA 139:9-10": "Kama nikipanda juu ya mbawa za mapambazuko, kama nikikaa pande za mbali za bahari, hata huko mkono wako utaniongoza, mkono wako wa kuume utanishika kwa uthabiti.",
+  "LUK 12:32": "“Msiogope enyi kundi dogo, kwa maana Baba yenu ameona vyema kuwapa ninyi Ufalme.",
+  "MAT 10:30-31": "Hata nywele za vichwa vyenu zote zimehesabiwa. Hivyo msiogope; kwa maana ninyi ni wa thamani kubwa kuliko shomoro wengi.",
+  "GEN 50:20": "Mlikusudia kunidhuru, lakini Mungu alikusudia mema, ili litimie hili linalofanyika sasa, kuokoa maisha ya watu wengi.",
+  "ROM 8:32": "Ikiwa Mungu hakumhurumia Mwanawe, bali alimtoa kwa ajili yetu sote, atakosaje basi kutupatia vitu vyote kwa ukarimu pamoja naye?",
+  "PSA 23:5": "Waandaa meza mbele yangu machoni pa adui zangu. Umenipaka mafuta kichwani pangu, kikombe changu kinafurika.",
+  "PSA 145:9": "Bwana ni mwema kwa wote, ana huruma kwa vyote alivyovifanya.",
+  "JAS 1:17": "Kila kitolewacho kilicho chema na kilicho kamili, hutoka juu, na hushuka kutoka kwa Baba wa mianga, ambaye kwake hakuna kubadilika, wala kivuli cha kugeukageuka.",
+  "PSA 103:4-5": "aukomboa uhai wako na kaburi, akuvika taji ya upendo na huruma, atosheleza mahitaji yako kwa vitu vyema, ili ujana wako uhuishwe kama wa tai.",
+  "ISA 46:4": "Hata mpaka wakati wa uzee wenu na mvi, Mimi ndiye, Mimi ndiye nitakayewasaidia ninyi. Nimewahuluku, nami nitawabeba, nitawasaidia ninyi na kuwaokoa.",
+  "PSA 3:3": "Lakini wewe, Ee Bwana, ni ngao pande zote; umeniwekea utukufu na kuinua kichwa changu.",
+  "PSA 3:5": "Ninajilaza na kupata usingizi; naamka tena, kwa maana Bwana hunitegemeza.",
+  "PSA 32:7": "Wewe ndiwe mahali pangu pa kujificha, utaniepusha na taabu na kunizunguka kwa nyimbo za wokovu.",
+  "PSA 9:1": "Kwa mwimbishaji. Mtindo wa muth-labeni. Zaburi ya Daudi. Ee Bwana, nitakutukuza kwa moyo wangu wote, nitayasimulia matendo yako yote ya ajabu.",
+  "COL 3:17": "Lolote mfanyalo, ikiwa ni kwa neno au kwa tendo, fanyeni yote katika jina la Bwana Yesu, mkimshukuru Mungu Baba katika yeye.",
+  "EPH 5:20": "siku zote mkimshukuru Mungu Baba kwa kila jambo katika Jina la Bwana wetu Yesu Kristo.",
+  "PSA 136:26": "Mshukuruni Mungu wa mbinguni, Fadhili zake zadumu milele.",
+  "1CH 16:34": "Mshukuruni Bwana kwa kuwa ni mwema; upendo wake wadumu milele.",
+  "PSA 69:30": "Nitalisifu jina la Mungu kwa wimbo, nami nitamtukuza kwa kumtolea shukrani.",
+  "COL 4:2": "Dumuni sana katika maombi, mkikesha katika hayo pamoja na kushukuru.",
+  "JER 33:3": "‘Niite nami nitakuitika na kukuambia mambo makuu na yasiyochunguzika, usiyoyajua.’",
+  "MAT 6:6": "Lakini wewe unaposali, ingia chumbani mwako, funga mlango na umwombe Baba yako aliye sirini. Naye Baba yako aonaye sirini atakupa thawabu yako.",
+  "MAT 18:20": "Kwa kuwa wanapokusanyika pamoja watu wawili au watatu kwa Jina langu, mimi niko papo hapo pamoja nao.”",
+  "1JN 5:14": "Huu ndio ujasiri tulio nao tunapomkaribia Mungu, kwamba kama tukiomba kitu sawasawa na mapenzi yake, atusikia.",
+  "JAS 5:16": "Kwa hiyo ungamianeni dhambi zenu ninyi kwa ninyi na kuombeana ili mpate kuponywa. Maombi ya mwenye haki yana nguvu tena yanafaa sana.",
+  "ROM 8:26": "Vivyo hivyo, Roho hutusaidia katika udhaifu wetu, kwa sababu hatujui kuomba ipasavyo. Lakini Roho mwenyewe hutuombea kwa uchungu usioweza kutamkwa.",
+  "PSA 17:6": "Ee Mungu, ninakuita, kwa kuwa utanijibu, nitegee sikio lako na usikie ombi langu.",
+  "EPH 6:18": "Mkiomba kwa Roho siku zote katika sala zote na maombi, mkikesha kila wakati mkiwaombea watakatifu wote.",
+  "1TI 2:1": "Awali ya yote, nasihi kwamba dua, sala, maombezi na shukrani zifanyike kwa ajili ya watu wote:",
+  "PSA 116:1-2": "Ninampenda Bwana kwa maana amesikia sauti yangu; amesikia kilio changu ili anihurumie. Kwa sababu amenitegea sikio lake, nitamwita siku zote za maisha yangu.",
+  "PSA 34:15": "Macho ya Bwana huwaelekea wenye haki, na masikio yake yako makini kusikiliza kilio chao.",
+  "PSA 92:1-2": "Zaburi. Wimbo wa siku ya Sabato. Ni vyema kumshukuru Bwana na kuliimbia jina lako, Ee Uliye Juu Sana, kuutangaza upendo wako asubuhi, na uaminifu wako wakati wa usiku,",
+  "PSA 63:1": "Zaburi ya Daudi. Wakati alipokuwa katika Jangwa la Yuda. Ee Mungu, wewe ni Mungu wangu, nakutafuta kwa moyo wote; nafsi yangu inakuonea kiu, mwili wangu unakuonea wewe shauku, katika nchi kame na iliyochoka mahali ambapo hapana maji.",
+  "PSA 42:1": "Kwa mwimbishaji. Utenzi wa wana wa Kora. Kama vile ayala aoneavyo shauku vijito vya maji, ndivyo nafsi yangu ikuoneavyo shauku, Ee Mungu.",
+  "PSA 50:15": "na uniite siku ya taabu; nami nitakuokoa, nawe utanitukuza.”",
+  "PSA 86:12": "Ee Bwana wangu, nitakusifu kwa moyo wote; nitaliadhimisha jina lako milele.",
+  "2CO 9:15": "Ashukuriwe Mungu kwa karama yake isiyoelezeka.",
+  "PSA 118:29": "Mshukuruni Bwana kwa kuwa ni mwema; upendo wake wadumu milele.",
+  "HEB 13:15": "Basi kwa njia ya Yesu, tuzidi kumtolea Mungu dhabihu ya sifa, yaani matunda ya midomo inayolikiri Jina lake.",
+  "PSA 95:6": "Njooni, tusujudu, tumwabudu, tupige magoti mbele za Bwana Muumba wetu,",
+  "LUK 18:1": "Kisha Yesu akawapa wanafunzi wake mfano ili kuwaonyesha kuwa yawapasa kuomba pasipo kukata tamaa.",
+  "PSA 141:2": "Maombi yangu na yafike mbele zako kama uvumba; kuinua mikono yangu juu na kuwe kama dhabihu ya jioni.",
+  "ISA 9:2": "Watu wanaotembea katika giza wameona nuru kuu, wale wanaoishi katika nchi ya uvuli wa mauti, nuru imewazukia.",
+  "ISA 7:14": "Kwa hiyo Bwana mwenyewe atawapa ishara: Bikira atachukua mimba, naye atamzaa mwana, na ataitwa Imanueli.",
+  "MIC 5:2": "“Lakini wewe, Bethlehemu Efrathi, ingawa u mdogo miongoni mwa koo za Yuda, kutoka kwako atatokea kwa ajili yangu yeye atakayekuwa mtawala katika Israeli, ambaye asili yake ni kutoka zamani, kutoka milele.”",
+  "JHN 1:1": "Hapo mwanzo alikuwako Neno, huyo Neno alikuwa pamoja na Mungu, naye Neno alikuwa Mungu.",
+  "JHN 1:5": "Nuru hungʼaa gizani nalo giza halikuishinda.",
+  "JHN 1:14": "Neno alifanyika mwili, akakaa miongoni mwetu, nasi tukauona utukufu wake, utukufu kama wa Mwana pekee atokaye kwa Baba, amejaa neema na kweli.",
+  "ISA 40:1": "Wafarijini, wafarijini watu wangu, asema Mungu wenu.",
+  "ISA 40:11": "Huchunga kundi lake kama mchungaji wa mifugo: Hukusanya wana-kondoo katika mikono yake na kuwachukua karibu na moyo wake, huwaongoza taratibu wale wanyonyeshao.",
+  "LUK 1:37": "Kwa maana kwa Mungu hakuna lisilowezekana.”",
+  "LUK 1:38": "Maria akasema, “Tazama, mimi ni mtumishi wa Bwana. Na iwe kwangu kama ulivyosema.” Kisha malaika akaondoka, akamwacha.",
+  "LUK 1:46-47": "Naye Maria akasema: “Moyo wangu wamwadhimisha Bwana, nayo roho yangu inamfurahia Mungu Mwokozi wangu,",
+  "MAT 1:21": "Naye atamzaa mwana, nawe utamwita Jina lake Yesu, kwa maana yeye ndiye atakayewaokoa watu wake kutoka dhambi zao.”",
+  "LUK 1:31": "Tazama, utachukua mimba, nawe utamzaa mtoto mwanaume na utamwita jina lake Yesu.",
+  "ISA 60:1": "“Ondoka, angaza, kwa kuwa nuru yako imekuja na utukufu wa Bwana umezuka juu yako.",
+  "MAL 4:2": "Bali kwenu ninyi mnaoliheshimu Jina langu, jua la haki litawazukia, lenye kuponya katika mabawa yake. Nanyi mtatoka nje na kurukaruka kama ndama aliyeachiwa kutoka zizini.",
+  "ISA 52:7": "Tazama jinsi miguu ya wale waletao habari njema ilivyo mizuri juu ya milima, wale wanaotangaza amani, wanaoleta habari njema, wanaotangaza wokovu, wauambiao Sayuni, “Mungu wako anatawala!”",
+  "1TI 1:15": "Msemo huu ni wa kweli na unaostahili kukubalika, usemao kwamba: Kristo Yesu alikuja ulimwenguni kuokoa wenye dhambi, ambao mimi ndiye niliye mbaya kuliko wote.",
+  "JHN 1:16": "Kutokana na ukamilifu wake, sisi sote tumepokea neema juu ya neema.",
+  "TIT 2:11": "Kwa maana neema ya Mungu ambayo inawaokoa wanadamu wote imefunuliwa.",
+  "2CO 8:9": "Kwa maana mnajua neema ya Bwana wetu Yesu Kristo, kwamba ingawa alikuwa tajiri, kwa ajili yenu alikubali kuwa maskini, ili kwa umaskini wake ninyi mpate kuwa matajiri.",
+  "PSA 24:7": "Inueni vichwa vyenu, enyi malango, inukeni enyi milango ya kale, ili mfalme wa utukufu apate kuingia.",
+  "MAT 2:10-11": "Walipoiona ile nyota wakajawa na furaha kubwa mno. Walipoingia ndani ya ile nyumba, wakamwona mtoto pamoja na Maria mama yake, wakamsujudu na kumwabudu yule mtoto Yesu. Ndipo wakafungua hazina zao, wakamtolea zawadi za dhahabu, uvumba na manemane.",
+  "LUK 2:7": "naye akamzaa mwanawe, kifungua mimba. Akamfunika nguo za kitoto na kumlaza katika hori ya kulia ngʼombe, kwa sababu hapakuwa na nafasi katika nyumba ya wageni.",
+  "ISA 9:6": "Kwa maana, kwa ajili yetu mtoto amezaliwa, tumepewa mtoto mwanaume, nao utawala utakuwa mabegani mwake. Naye ataitwa Mshauri wa Ajabu, Mungu Mwenye Nguvu, Baba wa Milele, Mfalme wa Amani.",
+  "LUK 2:10-11": "Lakini malaika akawaambia: “Msiogope. Kwa maana tazama nawaletea habari njema za furaha itakayokuwa kwa watu wote. Leo katika mji wa Daudi kwa ajili yenu amezaliwa Mwokozi, ndiye Kristo Bwana.",
+  "LUK 2:20": "Wale wachungaji wakarudi, huku wakimtukuza Mungu na kumsifu kwa ajili ya mambo yote waliyokuwa wameambiwa na kuyaona.",
+  "LUK 2:19": "Lakini Maria akayaweka mambo haya yote moyoni mwake na kuyatafakari.",
+  "MAT 2:2": "wakiuliza, “Yuko wapi huyo aliyezaliwa mfalme wa Wayahudi? Kwa maana tumeona nyota yake ikitokea mashariki, nasi tumekuja kumwabudu.”",
+  "PSA 90:2": "Kabla ya kuzaliwa milima au hujaumba dunia na ulimwengu, wewe ni Mungu tangu milele hata milele.",
+  "REV 21:5": "Naye yule aliyeketi juu ya kile kiti cha enzi akasema, “Tazama, nayafanya mambo yote kuwa mapya!” Kisha akasema, “Andika haya, maana maneno haya ni ya kuaminika tena ni kweli.”",
+  "PSA 65:11": "Umeuvika mwaka taji ya baraka, magari yako yanafurika kwa wingi.",
+  "GEN 1:1": "Hapo mwanzo Mungu aliumba mbingu na dunia.",
+  "GEN 1:2": "Wakati huu dunia ilikuwa haina umbo, tena ilikuwa tupu. Giza lilikuwa juu ya uso wa vilindi vya maji, naye Roho wa Mungu alikuwa ametulia juu ya maji.",
+  "GEN 1:3": "Mungu akasema, “Iwepo nuru,” nayo nuru ikawepo.",
+  "GEN 1:4": "Mungu akaona ya kuwa nuru ni njema, ndipo Mungu akatenganisha nuru na giza.",
+  "GEN 1:5": "Mungu akaiita nuru “mchana,” na giza akaliita “usiku.” Ikawa jioni, ikawa asubuhi, siku ya kwanza.",
+  "GEN 1:26": "Ndipo Mungu akasema, “Tufanye mtu kwa mfano wetu, kwa sura yetu, wakatawale juu ya samaki wa baharini na ndege wa angani, juu ya mifugo, juu ya dunia yote, na juu ya viumbe wote watambaao juu ya nchi.”",
+  "GEN 1:27": "Kwa hiyo Mungu akamuumba mtu kwa mfano wake mwenyewe, kwa mfano wa Mungu alimuumba; mwanaume na mwanamke aliwaumba.",
+  "GEN 1:28": "Mungu akawabariki na akawaambia, “Zaeni na mkaongezeke, mkaijaze tena dunia na kuitiisha. Mkatawale samaki wa baharini, ndege wa angani, na kila kiumbe hai kiendacho juu ya ardhi.”",
+  "GEN 1:29": "Kisha Mungu akasema, “Nimewapa kila mche utoao mbegu juu ya uso wa dunia yote, na kila mti wenye matunda yenye mbegu ndani yake. Vitakuwa chakula chenu.",
+  "GEN 1:30": "Nao wanyama wote wa dunia, ndege wote wa angani, na viumbe vyote viendavyo juu ya ardhi: yaani kila kiumbe chenye pumzi ya uhai, ninawapa kila mche wa kijani kuwa chakula.” Ikawa hivyo.",
+  "GEN 1:31": "Mungu akaona vyote alivyoumba, na tazama, ilikuwa vizuri sana. Ikawa jioni, ikawa asubuhi, siku ya sita.",
+  "GEN 2:1": "Kwa hiyo mbingu na dunia zikakamilika, pamoja na vyote vilivyomo.",
+  "GEN 2:2": "Katika siku ya saba Mungu alikuwa amekamilisha kazi aliyokuwa akiifanya, hivyo siku ya saba akapumzika kutoka kazi zake zote.",
+  "GEN 2:3": "Mungu akaibariki siku ya saba akaifanya takatifu, kwa sababu katika siku hiyo alipumzika kutoka kazi zote za kuumba alizokuwa amefanya.",
+  "GEN 6:13": "Kwa hiyo Mungu akamwambia Noa, “Nitawaangamiza watu wote, kwa kuwa dunia imejaa ukatili kwa sababu yao. Hakika mimi nitaangamiza watu pamoja na dunia.",
+  "GEN 6:14": "Kwa hiyo jitengenezee safina kubwa kwa mbao za mvinje, tengeneza vyumba ndani yake na uipake lami ndani na nje.",
+  "GEN 6:15": "Hivi ndivyo utakavyoitengeneza: Safina iwe na urefu wa dhiraa 300, upana wake dhiraa hamsini na kimo chake dhiraa thelathini.",
+  "GEN 6:16": "Itengenezee paa na umalizie safina kwa kuacha nafasi ya dhiraa moja juu. Weka mlango ubavuni mwa safina, na uifanye ya ghorofa ya chini, ya kati na ya juu.",
+  "GEN 6:17": "Nitaleta gharika ya maji juu ya nchi ili kuangamiza uhai wote chini ya mbingu, kila kiumbe chenye pumzi ya uhai ndani yake. Kila kitu juu ya nchi kitaangamia.",
+  "GEN 6:18": "Lakini Mimi nitaweka Agano langu na wewe, nawe utaingia ndani ya Safina, wewe pamoja na mke wako, wanao na wake zao.",
+  "GEN 6:19": "Utaingiza ndani ya Safina kila aina ya kiumbe hai wawili wawili, wa kiume na wa kike, ili kuwahifadhi hai pamoja na wewe.",
+  "GEN 6:20": "Wawili wa kila aina ya ndege, wa kila aina ya mnyama na wa kila aina ya kitambaacho ardhini watakuja kwako ili wahifadhiwe hai.",
+  "GEN 6:21": "Utachukua kila aina ya chakula kitakacholiwa, na ukiweke akiba kama chakula kwa ajili yako na yao.”",
+  "GEN 6:22": "Noa akafanya kila kitu kama vile Mungu alivyomwamuru.",
+  "GEN 7:17": "Kwa siku arobaini mafuriko yaliendelea kujaa duniani na maji yalivyozidi kuongezeka, yaliinua safina juu sana kutoka kwenye uso wa nchi.",
+  "GEN 7:18": "Maji yakajaa na kuongezeka sana juu ya nchi, na safina ikaelea juu ya uso wa maji.",
+  "GEN 8:6": "Baada ya siku arobaini Noa akafungua dirisha alilokuwa amelifanya katika safina",
+  "GEN 8:7": "na akamtoa kunguru, akawa akiruka kwenda na kurudi mpaka maji yalipokwisha kukauka juu ya nchi.",
+  "GEN 8:8": "Kisha akamtoa hua ili aone kama maji yameondoka juu ya uso wa ardhi.",
+  "GEN 8:9": "Lakini hua hakupata mahali pa kutua kwa kuwa maji yalienea juu ya uso wa dunia yote, kwa hiyo akarudi kwa Noa ndani ya safina. Noa akanyoosha mkono akamchukua yule hua akamrudisha ndani ya safina.",
+  "GEN 8:10": "Noa akangojea siku saba zaidi kisha akamtoa tena hua kutoka safina.",
+  "GEN 8:11": "Wakati hua aliporejea kwa Noa jioni, alikuwa amechukua katika mdomo wake jani bichi la mzeituni, lililochumwa wakati ule ule! Ndipo Noa akajua ya kuwa maji yameondoka juu ya uso wa dunia.",
+  "GEN 8:12": "Akangojea siku saba zaidi na akamtuma tena hua, lakini wakati huu hua hakurudi tena kwa Noa.",
+  "GEN 9:12": "Mungu akasema, “Hii ni ishara ya Agano ninalofanya kati yangu na ninyi na kila kiumbe hai kilicho pamoja nanyi, Agano kwa vizazi vyote vijavyo:",
+  "GEN 9:13": "Nimeweka upinde wangu wa mvua mawinguni, nao utakuwa ishara ya Agano nifanyalo kati yangu na dunia.",
+  "GEN 9:14": "Wakati wowote ninapotanda mawingu juu ya dunia na upinde wa mvua ukijitokeza mawinguni,",
+  "GEN 9:15": "nitakumbuka Agano langu kati yangu na ninyi na viumbe vyote vilivyo hai vya kila aina. Kamwe maji hayatakuwa tena gharika ya kuangamiza uhai wote.",
+  "GEN 9:16": "Wakati wowote upinde wa mvua unapotokea mawinguni, nitauona na kukumbuka Agano la milele kati ya Mungu na viumbe vyote vilivyo hai vya kila aina duniani.”",
+  "GEN 28:10": "Yakobo akatoka Beer-Sheba kwenda Harani.",
+  "GEN 28:11": "Alipofika mahali fulani, akalala hapo kwa sababu jua lilikuwa limetua. Akachukua jiwe moja la mahali pale, akaliweka chini ya kichwa chake akajinyoosha akalala usingizi.",
+  "GEN 28:12": "Akaota ndoto ambayo aliona ngazi imesimamishwa juu ya ardhi, ncha yake ikiwa imefika mbinguni na malaika wa Mungu wakawa wakipanda na kushuka juu yake.",
+  "GEN 28:13": "Juu yake alisimama Bwana, akasema, “Mimi ni Bwana, Mungu wa baba yako Abrahamu na Mungu wa Isaki. Nchi ambayo umelala juu yake, nitakupa wewe na uzao wako.",
+  "GEN 28:14": "Uzao wako utakuwa kama mavumbi ya nchi, nawe utaenea upande wa magharibi na mashariki, kaskazini na kusini. Kupitia wewe na uzao wako mataifa yote ya duniani yatabarikiwa.",
+  "GEN 28:16": "Yakobo alipoamka kutoka usingizini, akawaza, “Hakika Bwana yuko mahali hapa, wala mimi sikujua.”",
+  "GEN 28:17": "Kwa hiyo akaogopa, akasema, “Mahali hapa panatisha kama nini! Bila shaka hapa ndipo nyumba ya Mungu ilipo, hili ni lango la mbinguni.”",
+  "GEN 28:18": "Asubuhi yake na mapema, Yakobo akalichukua lile jiwe aliloliweka chini ya kichwa chake, akalisimamisha kama nguzo na kumimina mafuta juu yake.",
+  "GEN 28:19": "Mahali pale akapaita Betheli, ingawa mji ule hapo kwanza uliitwa Luzu.",
+  "GEN 28:20": "Kisha Yakobo akaweka nadhiri, akisema, “Kama Mungu akiwa pamoja nami na kunilinda katika safari niendayo, akinipa chakula nile na nguo nivae",
+  "GEN 28:21": "na nirudi salama nyumbani kwa baba yangu, hapo ndipo Bwana atakuwa Mungu wangu,",
+  "GEN 28:22": "nalo jiwe hili nililolisimamisha kama nguzo litakuwa nyumba ya Mungu na katika yote utakayonipa nitakutolea wewe sehemu ya kumi.”",
+  "GEN 37:3": "Basi, Israeli akampenda Yosefu kuliko yeyote miongoni mwa kaka zake, kwani ni mwanawe wa uzeeni, akamshonea joho lililorembwa vizuri sana.",
+  "GEN 37:4": "Ndugu zake walipoona kwamba baba yao anampenda Yosefu kuliko yeyote mwingine miongoni mwao, walimchukia na hawakusema naye neno lolote jema.",
+  "GEN 37:23": "Kwa hiyo Yosefu alipowafikia ndugu zake, walimvua lile joho lake, lile joho lililorembwa vizuri alilokuwa amevaa.",
+  "GEN 37:24": "Kisha wakamchukua wakamtupa katika shimo. Wakati huo shimo lilikuwa tupu, halikuwa na maji ndani yake.",
+  "GEN 37:25": "Walipokaa ili wale chakula chao, wakainua macho wakaona msafara wa Waishmaeli ukija kutoka Gileadi. Ngamia wao walikuwa wamepakizwa mizigo ya vikolezo, uvumba na manemane, nao walikuwa njiani kuvipeleka Misri.",
+  "GEN 37:26": "Yuda akawaambia ndugu zake, “Tutafaidi nini ikiwa tutamuua ndugu yetu na kuificha damu yake?",
+  "GEN 37:27": "Njooni, tumuuze kwa hawa Waishmaeli. Tusimguse, kwa kuwa hata hivyo yeye ni ndugu yetu, nyama yetu na damu yetu wenyewe.” Ndugu zake wakakubali.",
+  "GEN 37:28": "Kwa hiyo wale wafanyabiashara Wamidiani walipofika pale, ndugu zake wakamtoa Yosefu kutoka kwenye lile shimo, na kumuuza kwa shekeli ishirini za fedha kwa wale Waishmaeli, ambao walimpeleka Misri.",
+  "GEN 45:1": "Hapo Yosefu hakuweza kujizuia zaidi mbele ya wote waliokuwa wamesimama karibu naye, akapaza sauti, akasema, “Mwondoeni kila mtu mbele yangu!” Kwa hiyo hapakuwepo mtu yeyote pamoja na Yosefu alipojitambulisha kwa ndugu zake.",
+  "GEN 45:2": "Naye akalia kwa sauti kubwa kiasi kwamba Wamisri walimsikia, hata watu wa nyumbani mwa Farao wakapata hizo habari.",
+  "GEN 45:3": "Yosefu akawaambia ndugu zake, “Mimi ni Yosefu! Je, baba yangu angali hai bado?” Lakini ndugu zake hawakuweza kumjibu, kwa sababu walipatwa na hofu kuu mbele yake.",
+  "GEN 45:4": "Ndipo Yosefu akawaambia ndugu zake, “Sogeeni karibu nami.” Waliposogea, akasema, “Mimi ni ndugu yenu Yosefu, yule ambaye mlimuuza Misri!",
+  "GEN 45:5": "Sasa, msihuzunike wala msijichukie wenyewe kwa kuniuza huku, kwa sababu ilikuwa ni ili kuokoa maisha ya watu ndiyo sababu Mungu alinituma niwatangulie ninyi.",
+  "GEN 45:6": "Kwa miaka miwili sasa imekuwepo njaa katika nchi, pia kwa miaka mitano ijayo hapatakuwepo kulima wala kuvuna.",
+  "GEN 45:7": "Lakini Mungu alinitanguliza mbele yenu ili kuhifadhi mabaki kwa ajili yenu katika nchi, na kuokoa maisha yenu kwa wokovu mkuu.",
+  "GEN 45:8": "“Kwa hiyo basi, si ninyi mlionileta huku, bali ni Mungu. Alinifanya kuwa baba kwa Farao, bwana wa watu wa nyumbani mwake wote, na mtawala wa Misri yote.",
+  "GEN 50:19": "Lakini Yosefu akawaambia, “Msiogope. Je, mimi ni badala ya Mungu?",
+  "GEN 50:21": "Hivyo basi, msiogope. Mimi nitawatunza ninyi nyote pamoja na watoto wenu.” Akawahakikishia na kusema nao kwa wema.",
+  "EXO 2:1": "Basi mtu mmoja wa nyumba ya Lawi akaoa mwanamke Mlawi,",
+  "EXO 2:2": "naye mwanamke huyo akapata mimba, akazaa mtoto wa kiume. Alipoona mtoto huyo ni mzuri, akamficha kwa miezi mitatu.",
+  "EXO 2:3": "Lakini alipoona hawezi kumficha zaidi, akamtengenezea kisafina cha mafunjo, akakipaka lami. Kisha akamweka huyo mtoto ndani yake, akakificha katikati ya matete kando ya ukingo wa Mto Naili.",
+  "EXO 2:4": "Dada ya huyo mtoto akasimama mbali ili kuona kitakachompata mtoto.",
+  "EXO 2:5": "Ndipo binti Farao akateremka mtoni Naili kuoga, nao wahudumu wake wakawa wanatembea ukingoni mwa mto. Binti mfalme akaona kisafina katikati ya manyasi, akamtuma mmoja wa watumwa wake wa kike kukichukua.",
+  "EXO 2:6": "Alifungua kisafina akaona mtoto ndani yake. Mtoto alikuwa akilia, akamhurumia. Akasema, “Huyu ni mmoja wa watoto wa Kiebrania.”",
+  "EXO 2:7": "Ndipo dada wa huyo mtoto akamuuliza binti Farao, “Je, niende nikakutafutie mmoja wa wanawake wa Kiebrania akulelee huyu mtoto?”",
+  "EXO 2:8": "Binti Farao akamjibu, “Ndiyo, nenda.” Yule msichana akaenda akamleta mama wa mtoto.",
+  "EXO 2:9": "Binti Farao akamwambia, “Mchukue huyu mtoto unisaidie kumlea, nami nitakulipa.” Basi yule mwanamke akamchukua mtoto na kumlea.",
+  "EXO 2:10": "Mtoto alipokua, akampeleka kwa binti Farao, naye akawa mwanawe. Akamwita jina lake Mose akisema, “Nilimtoa kwenye maji.”",
+  "EXO 3:1": "Basi Mose alikuwa anachunga mifugo ya Yethro mkwewe, kuhani wa Midiani. Mose akapeleka mifugo mbali nyuma ya jangwa, naye akafika Horebu, mlima wa Mungu.",
+  "EXO 3:2": "Huko malaika wa Bwana akamtokea Mose katika mwali wa moto kutoka kichakani. Mose akaona kwamba ingawa kile kichaka kilikuwa kinawaka moto, kilikuwa hakiteketei.",
+  "EXO 3:3": "Ndipo Mose akawaza, “Nitageuka sasa nione kitu hiki cha ajabu, nami nione ni kwa nini kichaka hiki hakiteketei.”",
+  "EXO 3:4": "Bwana alipoona kuwa amegeuka ili aone, Mungu akamwita kutoka ndani ya kile kichaka, “Mose! Mose!” Naye Mose akajibu, “Mimi hapa.”",
+  "EXO 3:5": "Mungu akamwambia, “Usikaribie zaidi. Vua viatu vyako, kwa maana mahali unaposimama ni patakatifu.”",
+  "EXO 3:6": "Kisha akamwambia, “Mimi ni Mungu wa baba yako, Mungu wa Abrahamu, Mungu wa Isaki, na Mungu wa Yakobo.” Mose aliposikia hayo, akafunika uso wake kwa sababu aliogopa kumtazama Mungu.",
+  "EXO 3:7": "Bwana akamwambia, “Hakika nimeona mateso ya watu wangu katika Misri. Nimesikia kilio chao kwa sababu ya wasimamizi wao, nami naguswa na mateso yao.",
+  "EXO 3:8": "Basi nimeshuka niwaokoe kutoka mkono wa Wamisri, niwatoe na kuwapandisha kutoka nchi hiyo, niwapeleke katika nchi nzuri na kubwa, nchi itiririkayo maziwa na asali, nchi ya Wakanaani, Wahiti, Waamori, Waperizi, Wahivi na Wayebusi.",
+  "EXO 3:9": "Sasa kilio cha Waisraeli kimenifikia, nami nimeona jinsi Wamisri wanavyowatesa.",
+  "EXO 3:10": "Basi, sasa nenda. Ninakutuma kwa Farao ili kuwatoa watu wangu Waisraeli kutoka Misri.”",
+  "EXO 3:11": "Lakini Mose akamwambia Mungu, “Mimi ni nani hata niende kwa Farao kuwatoa Waisraeli nchini Misri?”",
+  "EXO 3:12": "Naye Mungu akasema, “Mimi nitakuwa pamoja nawe. Hii itakuwa ishara kwako kwamba ni Mimi nimekutuma: Hapo utakapokuwa umewatoa watu Misri, mtamwabudu Mungu katika mlima huu.”",
+  "EXO 14:10": "Farao alipokaribia, Waisraeli wakainua macho yao, wakawaona Wamisri wakija nyuma yao. Wakashikwa na hofu, wakamlilia Bwana.",
+  "EXO 14:11": "Wakamwambia Mose, “Je, ni kwamba hayakuwako makaburi huko Misri hata umetuleta tufe huku jangwani? Umetufanyia nini kututoa Misri?",
+  "EXO 14:12": "Hatukukuambia tulipokuwa huko Misri, tuache tuwatumikie Wamisri? Ingekuwa vyema zaidi kwetu kuwatumikia Wamisri kuliko kufa jangwani!”",
+  "EXO 14:13": "Mose akawajibu Waisraeli, “Msiogope. Simameni imara, nanyi mtauona wokovu Bwana atakaowapatia leo. Hao Wamisri mnaowaona leo kamwe hamtawaona tena.",
+  "EXO 14:14": "Bwana atawapigania ninyi, nanyi mnatakiwa kutulia tu.”",
+  "EXO 14:15": "Ndipo Bwana akamwambia Mose, “Kwa nini wewe unanililia? Waambie Waisraeli waendelee mbele.",
+  "EXO 14:16": "Inua fimbo yako na unyooshe mkono wako juu ya bahari ili kuyagawa maji, hivyo kwamba Waisraeli wapate kupita mahali pakavu baharini.",
+  "EXO 14:21": "Ndipo Mose akanyoosha mkono wake juu ya bahari, naye Bwana akayasukuma maji ya bahari nyuma kwa upepo mkali wa mashariki usiku ule wote na kupafanya nchi kavu. Maji yakagawanyika,",
+  "EXO 14:22": "nao Waisraeli wakapita baharini mahali pakavu, maji yakiwa ukuta upande wao wa kuume na upande wao wa kushoto.",
+  "EXO 14:26": "Ndipo Bwana akamwambia Mose, “Nyoosha mkono wako juu ya bahari ili maji yarudiane yawafunike Wamisri, magari yao ya vita na wapanda farasi wao.”",
+  "EXO 14:27": "Mose akanyoosha mkono wake juu ya bahari, wakati wa mapambazuko bahari ikarudiana na kuwa kama kawaida. Wamisri wakajaribu kuyakimbia maji, lakini Bwana akawasukumia ndani ya bahari.",
+  "EXO 14:28": "Maji yakarudiana na kuyafunika magari ya vita na wapanda farasi pamoja na jeshi lote la Farao lililokuwa limewafuata Waisraeli ndani ya bahari. Hakuna hata mmoja wao aliyenusurika.",
+  "EXO 14:29": "Lakini Waisraeli wakapita baharini mahali pakavu, ukiwepo ukuta wa maji upande wao wa kuume na upande wao wa kushoto.",
+  "EXO 14:30": "Siku ile Bwana akawaokoa Waisraeli kutoka mikononi mwa Wamisri, nao Waisraeli wakawaona Wamisri wamelala ufuoni mwa bahari wakiwa wamekufa.",
+  "EXO 14:31": "Basi Waisraeli walipoona uwezo mkubwa Bwana aliodhihirisha dhidi ya Wamisri, watu wakamwogopa Bwana na wakaweka tumaini lao kwake na kwa Mose mtumishi wake.",
+  "JOS 6:1": "Basi malango ya Yeriko yalifungwa kwa uthabiti kwa ajili ya Waisraeli. Hakuna mtu yeyote aliyetoka au kuingia.",
+  "JOS 6:2": "Kisha Bwana akamwambia Yoshua, “Tazama, nimeitia Yeriko mikononi mwako, pamoja na mfalme wake na watu wake wa vita.",
+  "JOS 6:3": "Zunguka mji mara moja pamoja na watu wote wenye silaha. Fanya hivi kwa siku sita.",
+  "JOS 6:4": "Uwe na makuhani saba wakibeba mabaragumu ya pembe za kondoo dume mbele ya Sanduku. Siku ya saba, mzunguke mji mara saba, nao makuhani wakipiga baragumu hizo.",
+  "JOS 6:5": "Utakapowasikia wamepaliza sauti kubwa ya baragumu, watu wote wapige kelele kwa sauti kuu, kisha ukuta wa mji utaanguka na watu watapanda, kila mtu akiendelea mbele.”",
+  "JOS 6:15": "Siku ya saba, wakaamka asubuhi na mapema wakauzunguka mji kama walivyokuwa wakifanya, isipokuwa siku ile waliuzunguka mji mara saba.",
+  "JOS 6:16": "Walipouzunguka mara ya saba, makuhani walipopiga baragumu kwa sauti kubwa, Yoshua akawaamuru watu akisema, “Pigeni kelele! Kwa maana Bwana amewapa mji huu!",
+  "JOS 6:20": "Wakati baragumu zilipopigwa, watu walipiga kelele, na katika sauti ya baragumu, na watu kupaza sauti, ukuta ukaanguka; hivyo kila mtu akapanda akiendelea mbele na kuuteka mji.",
+  "RUT 1:6": "Aliposikia akiwa huko Moabu kwamba Bwana amewasaidia watu wake kwa kuwapa chakula, Naomi na wakweze wakajiandaa kurudi nyumbani.",
+  "RUT 1:7": "Yeye na wakweze wawili wakaondoka pale walipokuwa wakiishi na kushika njia kurudi nchi ya Yuda.",
+  "RUT 1:8": "Ndipo Naomi akawaambia wale wakwe zake wawili, “Rudini, kila mmoja wenu nyumbani kwa mama yake. Bwana na awatendee fadhili kama mlivyowatendea hao waliofariki, na pia mimi.",
+  "RUT 1:9": "Bwana na amjalie kila mmoja wenu maisha mema nyumbani kwa mume mwingine.” Kisha akawabusu, nao wakalia kwa sauti kubwa,",
+  "RUT 1:10": "wakamwambia, “Tutarudi pamoja na wewe nyumbani kwa watu wako.”",
+  "RUT 1:11": "Lakini Naomi akasema, “Rudini nyumbani, binti zangu. Kwa nini mnifuate? Je, mimi nitaweza tena kuwa na wana wengine ambao wataweza kuwaoa ninyi?",
+  "RUT 1:12": "Rudini nyumbani, binti zangu; mimi ni mzee kiasi kwamba siwezi kumpata mume mwingine. Hata kama ningefikiria kuwa bado kuna tumaini kwangu, hata kama ningekuwa na mume usiku huu na kuwazaa wana,",
+  "RUT 1:13": "je, mngesubiri mpaka wakue? Mngebakia bila kuolewa mkiwasubiri? La, hasha, binti zangu. Nimepata uchungu kuliko ninyi, kwa sababu mkono wa Bwana umekuwa kinyume nami!”",
+  "RUT 1:14": "Kisha wakalia tena kwa sauti. Orpa akambusu mama mkwe wake, akaenda zake, lakini Ruthu akaambatana naye.",
+  "RUT 1:15": "Naomi akamwambia, “Tazama, mwenzako anarejea kwa watu wake na kwa miungu yake. Rudi pamoja naye.”",
+  "RUT 1:16": "Lakini Ruthu akajibu, “Usinisihi nikuache au niache kukufuata. Utakakokwenda nami nitakwenda, na wewe utakapoishi nitaishi. Watu wako watakuwa watu wangu, na Mungu wako atakuwa Mungu wangu.",
+  "RUT 1:17": "Pale utakapofia nami nitafia hapo, na papo hapo nitazikwa. Bwana na aniadhibu vikali, kama kitu kingine chochote kitanitenga nawe isipokuwa kifo.”",
+  "RUT 1:18": "Naomi alipotambua kwamba Ruthu amenuia kufuatana naye, hakuendelea kumsihi tena.",
+  "1SA 3:1": "Kijana Samweli alihudumu mbele za Bwana chini ya Eli. Katika siku zile neno la Mungu lilikuwa adimu, hapakuwepo na maono mengi.",
+  "1SA 3:2": "Usiku mmoja Eli, ambaye macho yake yalikuwa yamefifia sana kiasi kwamba aliona kwa shida sana, alikuwa amelala mahali pake pa kawaida.",
+  "1SA 3:3": "Taa ya Mungu bado ilikuwa haijazimika, na Samweli alikuwa amelala Hekaluni mwa Bwana, ambapo Sanduku la Mungu lilikuwako.",
+  "1SA 3:4": "Kisha Bwana akamwita Samweli. Samweli akajibu, “Mimi hapa.”",
+  "1SA 3:5": "Naye akakimbia kwa Eli na kumwambia, “Mimi hapa, kwa kuwa umeniita.” Lakini Eli akasema, “Sikukuita; rudi ukalale.” Hivyo akaenda kulala.",
+  "1SA 3:6": "Bwana akaita tena, “Samweli!” Naye Samweli akaamka, kwenda kwa Eli na kusema, “Mimi hapa, kwa kuwa umeniita.” Eli akasema, “Mwanangu, sikukuita, rudi ukalale.”",
+  "1SA 3:7": "Wakati huu Samweli alikuwa bado hajamjua Bwana. Neno la Bwana lilikuwa bado halijafunuliwa kwake.",
+  "1SA 3:8": "Bwana akamwita Samweli mara ya tatu, naye Samweli akaamka kwenda kwa Eli na kusema, “Mimi hapa, kwa kuwa umeniita.” Ndipo Eli akatambua kuwa Bwana alikuwa akimwita kijana.",
+  "1SA 3:9": "Hivyo Eli akamwambia Samweli, “Nenda ukalale, na kama akikuita, sema, ‘Nena Bwana, kwa kuwa mtumishi wako anasikiliza.’ ” Hivyo Samweli akaenda na kulala mahali pake.",
+  "1SA 3:10": "Bwana akaja akasimama hapo, akiita kama mara zile nyingine, “Samweli! Samweli!” Kisha Samweli akasema, “Nena Bwana, kwa kuwa mtumishi wako anasikiliza.”",
+  "1SA 17:4": "Shujaa aliyeitwa Goliathi, aliyetoka Gathi, akajitokeza kutoka kambi ya Wafilisti. Alikuwa na urefu dhiraa sita na shibiri moja.",
+  "1SA 17:5": "Alikuwa na chapeo ya shaba kichwani mwake, na alivaa dirii ya shaba kifuani mwake yenye uzito wa shekeli elfu tano.",
+  "1SA 17:6": "Miguuni mwake alivaa mabamba ya shaba, na alikuwa na mkuki wa shaba mgongoni mwake.",
+  "1SA 17:7": "Mpini wa huo mkuki ulikuwa kama mti wa mfumaji, na ncha ya chuma yake ilikuwa na uzito wa shekeli mia sita. Mbeba ngao wake alitangulia mbele yake.",
+  "1SA 17:8": "Goliathi alisimama na kuwapigia kelele majeshi ya Israeli, akisema, “Kwa nini mmetoka kupanga vita? Je, mimi si Mfilisti, na ninyi ni watumishi wa Sauli? Chagueni mtu na anishukie mimi.",
+  "1SA 17:9": "Kama anaweza kupigana nami na kuniua, tutakuwa chini yenu; lakini kama nikimshinda na kumuua, ninyi mtakuwa chini yetu na mtatutumikia.”",
+  "1SA 17:10": "Kisha yule Mfilisti akasema, “Siku hii ya leo nayatukana majeshi ya Israeli! Nipeni mtu tupigane.”",
+  "1SA 17:11": "Kwa kusikia maneno ya Wafilisti, Sauli na Waisraeli wote wakafadhaika na kuogopa.",
+  "1SA 17:32": "Daudi akamwambia Sauli, “Mtu yeyote asife moyo kwa habari ya huyu Mfilisti; mtumishi wako atakwenda kupigana naye.”",
+  "1SA 17:33": "Sauli akamjibu Daudi, “Wewe hutaweza kwenda kupigana dhidi ya huyu Mfilisti; wewe ni kijana tu, naye amekuwa mtu wa vita tangu ujana wake.”",
+  "1SA 17:34": "Lakini Daudi akamwambia Sauli, “Mtumishi wako amekuwa akichunga kondoo wa baba yake. Wakati simba au dubu alikuja na kuchukua kondoo kutoka kundi,",
+  "1SA 17:35": "nilifuatia, nikampiga na nikampokonya kondoo kwenye kinywa chake. Aliponigeukia, nilimkamata nywele zake, nikampiga na kumuua.",
+  "1SA 17:36": "Mtumishi wako ameshaua simba na dubu pia; huyu Mfilisti asiyetahiriwa atakuwa kama mmoja wa hao, kwa sababu ameyatukana majeshi ya Mungu aliye hai.",
+  "1SA 17:37": "Bwana ambaye aliniokoa toka katika makucha ya simba na makucha ya dubu ataniokoa kutoka mikono ya huyu Mfilisti.” Sauli akamwambia Daudi, “Nenda, naye Bwana na awe pamoja nawe.”",
+  "1SA 17:40": "Kisha akachukua fimbo yake mkononi, akachagua mawe laini matano kutoka kwenye kijito, akayaweka kwenye kifuko ndani ya mfuko wake wa kichungaji, akiwa na kombeo yake mkononi mwake, akamkaribia yule Mfilisti.",
+  "1SA 17:41": "Wakati ule ule, yule Mfilisti, akiwa na mbeba ngao wake mbele yake, akaendelea kujongea karibu na Daudi.",
+  "1SA 17:42": "Mfilisti akamwangalia Daudi kote na kumwona kuwa ni kijana tu, mwekundu na mzuri wa kupendeza, naye akamdharau.",
+  "1SA 17:43": "Akamwambia Daudi, “Je, mimi ni mbwa, hata unanijia na fimbo?” Yule Mfilisti akamlaani Daudi kwa miungu yake.",
+  "1SA 17:44": "Tena Mfilisti akamwambia, “Njoo hapa, nami nitawapa ndege wa angani na wanyama wa mwituni nyama yako.”",
+  "1SA 17:45": "Daudi akamwambia yule Mfilisti. “Wewe unanijia na upanga, mkuki na fumo, lakini mimi ninakujia kwa jina la Bwana Mwenye Nguvu Zote, Mungu wa majeshi ya Israeli, ambaye wewe umemtukana.",
+  "1SA 17:46": "Siku hii leo Bwana atakutia mkononi mwangu, nami nitakupiga na kukukata kichwa chako. Leo nitawapa ndege wa angani na wanyama wa nchi mizoga ya jeshi la Wafilisti, nayo dunia yote itajua kuwa yuko Mungu katika Israeli.",
+  "1SA 17:47": "Wale wote waliokusanyika hapa watajua kuwa Bwana haokoi kwa upanga wala kwa mkuki; kwa kuwa vita ni vya Bwana, naye atawatia wote mikononi mwetu.”",
+  "1SA 17:48": "Yule Mfilisti aliposogea karibu ili kumshambulia, Daudi akaenda mbio kuelekea safu ya vita kukutana naye.",
+  "1SA 17:49": "Daudi akatia mkono wake mfukoni na kuchukua jiwe, akalirusha kwa kombeo, nalo likampiga yule Mfilisti kwenye paji la uso. Lile jiwe likaingia kipajini mwa uso, akaanguka chini kifudifudi.",
+  "1SA 17:50": "Basi Daudi akamshinda huyo Mfilisti kwa kombeo na jiwe; bila kuwa na upanga mikononi mwake akampiga huyo Mfilisti na kumuua.",
+  "1KI 17:1": "Basi Eliya, Mtishbi kutoka Tishbi katika Gileadi, akamwambia Ahabu, “Kama Bwana, Mungu wa Israeli, aishivyo, ambaye ninamtumikia, hapatakuwa na umande wala mvua katika miaka hii, isipokuwa kwa neno langu.”",
+  "1KI 17:2": "Kisha neno la Bwana likamjia Eliya, kusema,",
+  "1KI 17:3": "“Ondoka hapa, elekea upande wa mashariki ukajifiche katika Kijito cha Kerithi, mashariki mwa Yordani.",
+  "1KI 17:4": "Utakunywa maji kutoka kile kijito, nami nimeagiza kunguru wakulishe huko.”",
+  "1KI 17:5": "Hivyo akafanya kile alichoambiwa na Bwana. Akaenda katika Kijito cha Kerithi, mashariki ya Yordani na akakaa huko.",
+  "1KI 17:6": "Kunguru wakamletea mkate na nyama asubuhi na mkate na nyama jioni, naye akanywa maji kutoka kile kijito.",
+  "1KI 17:7": "Baada ya muda, kile kijito kikakauka kwa sababu mvua haikuwa imenyesha katika nchi.",
+  "1KI 17:8": "Kisha neno la Bwana likamjia, kusema,",
+  "1KI 17:9": "“Ondoka, uende Sarepta ya Sidoni na ukae huko. Nimemwagiza mjane katika sehemu ile akupatie chakula.”",
+  "1KI 17:10": "Hivyo akaenda Sarepta. Alipofika kwenye lango la mji, mjane alikuwa huko akiokota kuni. Akamwita na kumwambia, “Naomba uniletee maji kidogo kwenye gudulia ili niweze kunywa.”",
+  "1KI 17:11": "Alipokuwa anakwenda kumletea, akamwita akasema, “Tafadhali niletee pia kipande cha mkate.”",
+  "1KI 17:12": "Akamjibu, “Hakika kama Bwana Mungu wako aishivyo, sina mkate wowote, isipokuwa konzi ya unga kwenye gudulia na mafuta kidogo kwenye chupa. Ninakusanya kuni chache nipeleke nyumbani na nikapike chakula kwa ajili yangu na mwanangu, ili kwamba tule, kiishe, tukafe.”",
+  "1KI 17:13": "Eliya akamwambia, “Usiogope. Nenda nyumbani ukafanye kama ulivyosema. Lakini kwanza unitengenezee mimi mkate mdogo kutoka vile ulivyo navyo kisha uniletee na ndipo utayarishe chochote kwa ajili yako na mwanao.",
+  "1KI 17:14": "Kwa kuwa hivi ndivyo asemavyo Bwana, Mungu wa Israeli: ‘Lile gudulia la unga halitakwisha wala ile chupa ya mafuta haitakauka hadi siku ile Bwana atakapoleta mvua juu ya nchi.’ ”",
+  "1KI 17:15": "Akaondoka na kufanya kama Eliya alivyomwambia. Kwa hiyo kukawa na chakula kila siku kwa ajili ya Eliya, yule mwanamke na jamaa yake.",
+  "1KI 17:16": "Kwa kuwa lile gudulia la unga halikwisha na ile chupa ya mafuta haikukauka, sawasawa na lile neno la Bwana alilosema Eliya.",
+  "EST 4:10": "Kisha Esta akamwamuru Hathaki amweleze Mordekai,",
+  "EST 4:11": "“Maafisa wote wa mfalme na watu wa majimbo ya ufalme wanajua kuwa mwanaume au mwanamke yeyote ambaye ataingia kumwona mfalme katika ua wa ndani bila kuitwa, mfalme ana sheria moja tu: Atauawa. Njia pekee kinyume na hili ni mfalme kumnyooshea fimbo ya dhahabu ili aishi. Lakini siku thelathini zimepita tangu nilipoitwa kwenda kwa mfalme.”",
+  "EST 4:12": "Wakati Mordekai aliarifiwa maneno ya Esta,",
+  "EST 4:13": "Mordekai alirudisha jibu hili: “Usifikiri kwamba kwa sababu uko katika nyumba ya mfalme wewe pekee katika Wayahudi wote utapona.",
+  "EST 4:14": "Kwa kuwa kama utakaa kimya wakati huu, msaada na ukombozi kwa Wayahudi utatoka mahali pengine, lakini wewe na jamaa ya baba yako mtaangamia. Nani ajuaye kwamba hukuja kwenye nafasi ya mamlaka kwa ajili ya wakati kama huu?”",
+  "EST 4:15": "Kisha Esta alituma jibu hili kwa Mordekai:",
+  "EST 4:16": "“Nenda, kusanya pamoja Wayahudi wote walioko Shushani, nanyi mfunge kwa ajili yangu. Msile wala kunywa kwa siku tatu, usiku na mchana. Mimi na wajakazi wangu tutafunga kama mnavyofanya. Baada ya kufanyika hili, nitakwenda kwa mfalme, hata ingawa ni kinyume cha sheria. Ikiwa ni kuangamia na niangamie.”",
+  "EST 5:1": "Siku ya tatu, Esta alivaa mavazi yake ya kimalkia, naye akasimama katika ua wa ndani wa jumba la mfalme, mbele ya ukumbi wa mfalme. Naye mfalme alikuwa akiketi katika kiti chake cha kifalme katika ukumbi, akielekea langoni.",
+  "EST 5:2": "Alipomwona Malkia Esta amesimama uani alipendezwa naye, akamnyooshea fimbo ya utawala ya dhahabu ile iliyokuwa mkononi mwake. Kwa hiyo Esta alikaribia na kuigusa ncha ya fimbo ya mfalme.",
+  "EST 5:3": "Kisha mfalme aliuliza, “Malkia Esta, ni nini? Ombi lako ni nini? Hata kama ni nusu ya ufalme, utapewa.”",
+  "DAN 3:13": "Mfalme Nebukadneza, akiwa amekasirika na mwenye ghadhabu kali, akawaita Shadraki, Meshaki na Abednego. Hivyo watu hawa wakaletwa mbele ya mfalme,",
+  "DAN 3:14": "naye Nebukadneza akawauliza, “Je, ni kweli kwamba ninyi Shadraki, Meshaki na Abednego hamuitumikii miungu yangu wala kuiabudu sanamu ya dhahabu niliyoisimamisha?",
+  "DAN 3:15": "Basi wakati mtakaposikia sauti ya baragumu, filimbi, marimba, zeze, kinubi, zumari na aina zote za ala za uimbaji, kama mtakuwa tayari kusujudu na kuiabudu hiyo sanamu niliyoitengeneza, vyema sana. Lakini kama hamtaiabudu, mtatupwa saa iyo hiyo ndani ya tanuru iwakayo moto. Naye ni mungu yupi atakayeweza kuwaokoa ninyi, kutoka mkono wangu?”",
+  "DAN 3:16": "Shadraki, Meshaki na Abednego wakamjibu mfalme, “Ee Nebukadneza, hatuhitaji kujitetea mbele zako kuhusu jambo hili.",
+  "DAN 3:17": "Ikiwa tutatupwa ndani ya tanuru iwakayo moto, Mungu tunayemtumikia anaweza kutuokoa na moto, naye atatuokoa kutoka mkononi mwako, ee mfalme.",
+  "DAN 3:18": "Lakini hata ikiwa hatatuokoa, ee mfalme, tunataka ufahamu kwamba, hatutaitumikia miungu yako wala kuiabudu sanamu ya dhahabu uliyoisimamisha.”",
+  "DAN 3:19": "Ndipo Nebukadneza akawa na ghadhabu kali sana kwa Shadraki, Meshaki na Abednego, nayo nia yake ikabadilika kwao. Akaagiza tanuru ichochewe moto mara saba kuliko kawaida yake",
+  "DAN 3:20": "na kuwaamuru baadhi ya askari wake wenye nguvu zaidi katika jeshi lake kuwafunga Shadraki, Meshaki na Abednego na kuwatupa ndani ya tanuru iwakayo moto.",
+  "DAN 3:21": "Hivyo watu hawa, walifungwa na kutupwa ndani ya tanuru iwakayo moto wakiwa wamevaa majoho yao, suruali, vilemba na nguo zao nyingine.",
+  "DAN 3:22": "Amri ya mfalme ilikuwa ya haraka sana na tanuru ilikuwa na moto mkali kiasi kwamba miali ya moto iliwaua wale askari waliowapeleka Shadraki, Meshaki na Abednego.",
+  "DAN 3:23": "Watu hawa watatu walianguka ndani ya tanuru iwakayo moto wakiwa wamefungwa kwa uthabiti sana.",
+  "DAN 3:24": "Ndipo Mfalme Nebukadneza akashangaa, akainuka kwa haraka na kuwauliza washauri wake, “Je, hawakuwa watu watatu ambao tuliwafunga na kuwatupa ndani ya moto?” Washauri wakajibu, “Hakika, ee mfalme.”",
+  "DAN 3:25": "Mfalme akasema, “Tazama! Naona watu wanne wakitembeatembea ndani ya moto, hawajafungwa wala kudhurika, naye mtu yule wa nne anaonekana kama mwana wa miungu.”",
+  "DAN 3:26": "Ndipo Nebukadneza akaukaribia mdomo wa ile tanuru iwakayo moto na kupaza sauti, “Shadraki, Meshaki na Abednego, watumishi wa Mungu Aliye Juu Sana, tokeni! Njooni hapa!” Ndipo Shadraki, Meshaki na Abednego wakatoka ndani ya moto.",
+  "DAN 3:27": "Nao maliwali, wasimamizi, watawala na washauri wa mfalme wakakusanyika kuwazunguka. Waliona kwamba moto haukudhuru miili yao, wala unywele wa vichwa vyao haukuungua, majoho yao hayakuungua, wala hapakuwepo na harufu ya moto kwenye miili yao.",
+  "DAN 3:28": "Ndipo Nebukadneza akasema, “Ahimidiwe Mungu wa Shadraki, Meshaki na Abednego, ambaye amemtuma malaika wake na kuwaokoa watumishi wake. Walimtumaini na kukaidi amri ya mfalme, nao wakawa tayari kufa kuliko kutumikia au kuabudu mungu mwingine yeyote isipokuwa Mungu wao.",
+  "DAN 6:10": "Basi Danieli alipofahamu kuwa amri ile imetangazwa, alikwenda nyumbani kwenye chumba chake cha ghorofani ambako madirisha yalifunguka kuelekea Yerusalemu. Akapiga magoti na kuomba mara tatu kwa siku, akimshukuru Mungu wake kama alivyokuwa akifanya mwanzoni.",
+  "DAN 6:16": "Basi mfalme akatoa amri, nao wakamleta Danieli, na wakamtupa ndani ya tundu la simba. Mfalme akamwambia Danieli, “Mungu wako unayemtumikia daima na akuokoe!”",
+  "DAN 6:17": "Jiwe likaletwa na kuwekwa kwenye mdomo wa tundu, naye mfalme akalitia muhuri kwa pete yake mwenyewe pamoja na kwa pete za wakuu wake, ili hali ya Danieli isiweze kubadilishwa.",
+  "DAN 6:18": "Kisha mfalme akarudi kwenye jumba lake la kifalme, naye usiku kucha hakula chakula wala kutumia viburudisho alivyoletewa. Lakini hakuweza kulala.",
+  "DAN 6:19": "Asubuhi na mapema, mfalme akaondoka na kuharakisha kwenda kwenye tundu la simba.",
+  "DAN 6:20": "Wakati alipokaribia lile tundu, akamwita Danieli kwa sauti ya uchungu, “Danieli, mtumishi wa Mungu aliye hai! Je, Mungu wako unayemtumikia daima, ameweza kukuokoa kwa simba?”",
+  "DAN 6:21": "Danieli akajibu, “Ee mfalme, uishi milele!",
+  "DAN 6:22": "Mungu wangu alimtuma malaika wake, naye akafunga vinywa vya hawa simba. Hawajanidhuru, kwa sababu nilionekana sina hatia mbele zake. Wala kamwe sijafanya jambo lolote baya mbele yako, ee mfalme.”",
+  "DAN 6:23": "Mfalme akafurahi mno, naye akatoa amri Danieli atolewe kutoka kwa lile tundu. Danieli alipotolewa kutoka kwa lile tundu, hakukutwa na jeraha lolote, kwa sababu alikuwa amemtumaini Mungu wake.",
+  "JON 1:1": "Neno la Bwana lilimjia Yona mwana wa Amitai:",
+  "JON 1:2": "“Nenda katika mji mkubwa wa Ninawi ukahubiri juu yake, kwa sababu uovu wake umekuja juu mbele zangu.”",
+  "JON 1:3": "Lakini Yona alimkimbia Bwana na kuelekea Tarshishi. Alishuka mpaka Yafa, ambapo alikuta meli iliyokuwa imepangwa kuelekea bandari ile. Baada ya kulipa nauli, akapanda melini na kuelekea Tarshishi ili kumkimbia Bwana.",
+  "JON 1:4": "Ndipo Bwana akatuma upepo mkali baharini, nayo dhoruba kali sana ikavuma hata meli ikawa hatarini kuvunjika.",
+  "JON 1:15": "Kisha walimchukua Yona, wakamtupa baharini nayo bahari iliyokuwa imechafuka ikatulia.",
+  "JON 1:16": "Katika jambo hili watu wakamwogopa Bwana sana, wakamtolea Bwana dhabihu na kumwekea nadhiri.",
+  "JON 1:17": "Lakini Bwana akamwandaa nyangumi kummeza Yona, naye Yona alikuwa ndani ya tumbo la nyangumi kwa siku tatu, usiku na mchana.",
+  "JON 2:10": "Basi Bwana akamwamuru yule nyangumi, naye akamtapika Yona katika nchi kavu.",
+  "JON 3:1": "Ndipo neno la Bwana likamjia Yona mara ya pili:",
+  "JON 3:2": "“Ondoka uende katika mji mkubwa wa Ninawi, ukautangazie ujumbe ninaokupa.”",
+  "JON 3:3": "Yona akalitii neno la Bwana naye akaenda Ninawi. Basi Ninawi ulikuwa mji maarufu sana, ilichukua siku tatu kuuzunguka.",
+  "JON 3:4": "Siku ya kwanza, Yona aliingia mjini. Akatangaza: “Baada ya siku arobaini Ninawi utaangamizwa.”",
+  "JON 3:5": "Watu wa Ninawi wakamwamini Mungu, wakatangaza kufunga, watu wote kuanzia mkubwa sana hadi yule mdogo kabisa, wakavaa nguo za gunia.",
+  "JON 3:10": "Mungu alipoona walivyofanya na jinsi walivyogeuka kutoka njia zao mbaya, akawa na huruma wala hakuleta maangamizi juu yao kama alivyokuwa ameonya.",
+  "LUK 2:1": "Siku zile Kaisari Augusto alitoa amri kwamba watu wote waandikishwe katika ulimwengu wa Kirumi.",
+  "LUK 2:2": "(Orodha hii ndiyo ya kwanza iliyofanyika wakati Krenio alikuwa mtawala wa Shamu).",
+  "LUK 2:3": "Kila mtu alikwenda kuandikishwa katika mji wake alikozaliwa.",
+  "LUK 2:4": "Hivyo Yosefu akapanda kutoka mji wa Nazareti ulioko Galilaya kwenda Uyahudi, mpaka Bethlehemu, mji wa Daudi, kwa sababu yeye alikuwa wa ukoo na wa nyumba ya Daudi.",
+  "LUK 2:5": "Alikwenda huko kujiandikisha pamoja na Maria, ambaye alikuwa amemposa naye alikuwa mjamzito.",
+  "LUK 2:6": "Wakiwa Bethlehemu, wakati wa Maria wa kujifungua ukawa umetimia,",
+  "LUK 2:8": "Katika eneo lile walikuwako wachungaji waliokuwa wakikaa mashambani, wakilinda makundi yao ya kondoo usiku.",
+  "LUK 2:9": "Ghafula tazama, malaika wa Bwana akawatokea, nao utukufu wa Bwana ukawangʼaria kotekote, wakaingiwa na hofu.",
+  "LUK 2:10": "Lakini malaika akawaambia: “Msiogope. Kwa maana tazama nawaletea habari njema za furaha itakayokuwa kwa watu wote.",
+  "LUK 2:11": "Leo katika mji wa Daudi kwa ajili yenu amezaliwa Mwokozi, ndiye Kristo Bwana.",
+  "LUK 2:12": "Hii ndiyo itakayokuwa ishara kwenu: Mtamkuta mtoto mchanga amefunikwa nguo za kitoto na kulazwa katika hori ya kulia ngʼombe.”",
+  "LUK 2:13": "Ghafula pakawa na jeshi kubwa la mbinguni pamoja na huyo malaika wakimsifu Mungu wakisema,",
+  "LUK 2:14": "“Atukuzwe Mungu juu mbinguni, na duniani iwe amani kwa watu aliowaridhia.”",
+  "LUK 2:15": "Hao malaika walipokwisha kuondoka na kwenda zao mbinguni, wale wachungaji wakasemezana wao kwa wao, “Twendeni Bethlehemu tukaone mambo haya ya ajabu yaliyotukia, ambayo Bwana ametuambia habari zake.”",
+  "LUK 2:16": "Hivyo wakaenda haraka Bethlehemu, wakawakuta Maria na Yosefu na yule mtoto mchanga akiwa amelala katika hori la kulia ngʼombe.",
+  "LUK 2:17": "Walipomwona yule mtoto, wakawaeleza yale waliyokuwa wameambiwa kuhusu huyo mtoto.",
+  "LUK 2:18": "Nao wote waliosikia habari hizi wakastaajabia yale waliyoambiwa na wale wachungaji wa kondoo.",
+  "LUK 5:1": "Siku moja Yesu alipokuwa amesimama karibu na Ziwa la Genesareti, watu wengi wakiwa wanasongana kumzunguka ili wapate kusikia neno la Mungu,",
+  "LUK 5:2": "akaona mashua mbili ukingoni mwa ziwa, zikiwa zimeachwa hapo na wavuvi waliokuwa wanaosha nyavu zao.",
+  "LUK 5:3": "Akaingia katika mojawapo ya hizo mashua ambayo ilikuwa ya Simoni, akamwomba aisogeze ndani ya maji kidogo kutoka ufuoni. Kisha akaketi na kufundisha watu akiwa mle ndani ya mashua.",
+  "LUK 5:4": "Alipomaliza kunena, akamwambia Simoni, “Sasa peleka mashua hadi kilindini kisha mshushe nyavu zenu mkavue samaki.”",
+  "LUK 5:5": "Simoni akamjibu, “Bwana, tumefanya kazi ya kuchosha usiku kucha na hatukuvua chochote. Lakini, kwa neno lako nitazishusha nyavu.”",
+  "LUK 5:6": "Nao walipozishusha nyavu zao, wakavua samaki wengi sana, nyavu zao zikajaa zikaanza kukatika.",
+  "LUK 5:7": "Wakawaashiria wavuvi wenzao kwenye ile mashua nyingine ili waje kuwasaidia. Wakaja, wakajaza mashua zote mbili samaki hata zikaanza kuzama.",
+  "LUK 5:8": "Simoni Petro alipoona haya yaliyotukia, alianguka miguuni mwa Yesu na kumwambia, “Bwana, ondoka kwangu. Mimi ni mtu mwenye dhambi!”",
+  "LUK 5:9": "Kwa kuwa yeye na wavuvi wenzake walikuwa wameshangazwa sana na wingi wa samaki waliokuwa wamepata.",
+  "LUK 5:10": "Vivyo hivyo wenzake Simoni, yaani Yakobo na Yohana, wana wa Zebedayo, walishangazwa pia. Ndipo Yesu akamwambia Simoni, “Usiogope, tangu sasa utakuwa mvuvi wa watu.”",
+  "LUK 5:11": "Hivyo wakasogeza mashua zao mpaka ufuoni mwa bahari, wakaacha kila kitu na kumfuata.",
+  "JHN 2:1": "Siku ya tatu kulikuwa na arusi katika mji wa Kana ya Galilaya, naye mama yake Yesu alikuwepo pale.",
+  "JHN 2:2": "Yesu pamoja na wanafunzi wake walikuwa wamealikwa arusini pia.",
+  "JHN 2:3": "Divai ilipokwisha, mama yake Yesu akamwambia, “Wameishiwa na divai.”",
+  "JHN 2:4": "Yesu akamwambia, “Mwanamke, nina nini nawe? Saa yangu haijawadia.”",
+  "JHN 2:5": "Mama yake akawaambia wale watumishi, “Lolote atakalowaambia, fanyeni.”",
+  "JHN 2:6": "Basi ilikuwepo mitungi sita ya kuhifadhia maji iliyotengenezwa kwa mawe kwa ajili ya kujitakasa kwa desturi ya Kiyahudi; kila mtungi ungeweza kuchukua vipipa viwili au vitatu.",
+  "JHN 2:7": "Yesu akawaambia wale watumishi, “Ijazeni hiyo mitungi maji.” Nao wakaijaza ile mitungi mpaka juu.",
+  "JHN 2:8": "Kisha akawaambia, “Sasa choteni hayo maji kidogo, mpelekeeni mkuu wa meza.” Hivyo wakachota, wakampelekea.",
+  "JHN 2:9": "Yule mkuu wa meza akayaonja yale maji ambayo yalikuwa yamebadilika kuwa divai. Hakujua divai hiyo ilikotoka ingawa wale watumishi waliochota yale maji wao walifahamu. Basi akamwita bwana arusi kando",
+  "JHN 2:10": "akamwambia, “Watu wote hutoa kwanza divai nzuri, kisha huleta ile divai hafifu wageni wakisha kunywa vya kutosha, lakini wewe umeiweka ile nzuri kupita zote mpaka sasa.”",
+  "JHN 2:11": "Huu, ndio uliokuwa muujiza wa kwanza Yesu aliofanya Kana ya Galilaya. Hivyo Yesu alidhihirisha utukufu wake, nao wanafunzi wake wakamwamini.",
+  "MAT 13:3": "Ndipo akawaambia mambo mengi kwa mifano, akisema: “Mpanzi alitoka kwenda kupanda mbegu zake.",
+  "MAT 13:4": "Alipokuwa akitawanya mbegu, nyingine zilianguka kando ya njia, nao ndege wakaja na kuzila.",
+  "MAT 13:5": "Nyingine zilianguka kwenye ardhi yenye mwamba isiyo na udongo wa kutosha. Zikaota haraka, kwa kuwa udongo ulikuwa haba.",
+  "MAT 13:6": "Lakini jua lilipozidi, mimea ikanyauka na kukauka kwa kuwa mizizi yake haikuwa na kina.",
+  "MAT 13:7": "Mbegu nyingine zilianguka kwenye miiba, nayo miiba hiyo ikakua, ikaisonga hiyo mimea.",
+  "MAT 13:8": "Mbegu nyingine zilianguka kwenye udongo mzuri ambapo zilitoa mazao, nyingine mara mia moja, nyingine mara sitini, na nyingine mara thelathini.",
+  "MAT 13:9": "Mwenye masikio ya kusikia, na asikie.”",
+  "MAT 13:18": "“Sikilizeni basi maana ya ule mfano wa mpanzi:",
+  "MAT 13:19": "Mtu yeyote anaposikia neno la Ufalme naye asilielewe, yule mwovu huja na kunyakua kile kilichopandwa moyoni mwake. Hii ndiyo ile mbegu iliyopandwa kando ya njia.",
+  "MAT 13:20": "Ile mbegu iliyopandwa kwenye sehemu yenye mawe ni mtu yule ambaye hulisikia neno na mara hulipokea kwa furaha.",
+  "MAT 13:21": "Lakini kwa kuwa hana mizizi yenye kina ndani yake, lile neno hudumu kwa muda mfupi tu. Kisha dhiki au mateso yanapoinuka kwa ajili ya lile neno, yeye mara huchukizwa.",
+  "MAT 13:22": "Ile mbegu iliyopandwa katika miiba ni yule mtu alisikiaye neno, lakini masumbufu ya maisha haya na udanganyifu wa mali hulisonga lile neno na kulifanya lisizae matunda.",
+  "MAT 13:23": "Lakini ile mbegu iliyopandwa kwenye udongo mzuri ni yule mtu ambaye hulisikia neno na kulielewa. Naye hakika huzaa matunda, akizaa mara mia, au mara sitini, au mara thelathini ya mbegu iliyopandwa.”",
+  "MRK 4:35": "Siku hiyo ilipokaribia jioni, aliwaambia wanafunzi wake, “Tuvukeni twende mpaka ngʼambo.”",
+  "MRK 4:36": "Wakauacha ule umati wa watu, na wakamchukua vile alivyokuwa kwenye mashua. Palikuwa pia na mashua nyingine nyingi pamoja naye.",
+  "MRK 4:37": "Kukawa na dhoruba kali, nayo mawimbi yakaipiga ile mashua hata ikawa karibu kujaa maji.",
+  "MRK 4:38": "Yesu alikuwa katika shetri, akiwa analala juu ya mto. Wanafunzi wake wakamwamsha, wakamwambia, “Mwalimu, hujali kama tunazama?”",
+  "MRK 4:39": "Akaamka, akaukemea ule upepo, akayaambia yale mawimbi, “Uwe kimya! Tulia!” Ule upepo ukatulia, kukawa shwari kabisa.",
+  "MRK 4:40": "Yesu akawaambia wanafunzi wake, “Kwa nini mnaogopa hivyo? Je, bado hamna imani?”",
+  "MRK 4:41": "Nao wakawa wameogopa sana, wakaulizana, “Ni nani huyu ambaye hata upepo na mawimbi vinamtii?”",
+  "MRK 5:21": "Yesu alipokwisha kuvuka tena na kufika ngʼambo, umati mkubwa wa watu ukamzunguka yeye akiwa hapo kando ya bahari.",
+  "MRK 5:22": "Kisha mmoja wa viongozi wa sinagogi aliyeitwa Yairo akafika pale. Naye alipomwona Yesu, akapiga magoti miguuni pake,",
+  "MRK 5:23": "akamsihi akisema, “Binti yangu mdogo ni mgonjwa mahututi. Tafadhali nakusihi, njoo uweke mikono yako juu yake ili apate kupona, naye atakuwa hai.”",
+  "MRK 5:24": "Hivyo Yesu akaenda pamoja naye. Umati mkubwa wa watu ukamfuata, nao watu wakawa wanamsonga.",
+  "MRK 5:35": "Alipokuwa bado anaongea, watu wakafika kutoka nyumbani kwa Yairo. Wakamwambia, “Binti yako amekufa. Kwa nini kuendelea kumsumbua Mwalimu?”",
+  "MRK 5:36": "Aliposikia hayo waliyosema, Yesu akamwambia huyo kiongozi wa sinagogi, “Usiogope. Amini tu.”",
+  "MRK 5:37": "Hakumruhusu mtu mwingine yeyote amfuate isipokuwa Petro, Yakobo na Yohana, nduguye Yakobo.",
+  "MRK 5:38": "Walipofika nyumbani kwa yule kiongozi wa sinagogi, Yesu akaona ghasia, watu wakilia na kuomboleza kwa sauti kubwa.",
+  "MRK 5:39": "Alipokwisha kuingia ndani, akawaambia, “Kwa nini mnafanya ghasia na kulia? Mtoto hajafa, bali amelala tu.”",
+  "MRK 5:40": "Wale watu wakamcheka kwa dharau. Lakini yeye akawatoa wote nje, akawachukua baba na mama wa yule mtoto, pamoja na wale wanafunzi aliokuwa nao. Wakaingia ndani mpaka pale alipokuwa yule mtoto.",
+  "MRK 5:41": "Akamshika mtoto mkono, akamwambia, “Talitha koum!” (maana yake ni, “Msichana, nakuambia: amka!”)",
+  "MRK 5:42": "Mara yule msichana akasimama, akaanza kutembea (alikuwa na umri wa miaka kumi na miwili). Walipoona haya, wakastaajabu sana.",
+  "MRK 5:43": "Yesu akawaagiza kwa ukali wasimweleze mtu yeyote jambo hilo, naye akawaambia wampe yule msichana chakula.",
+  "JHN 6:5": "Yesu alipotazama na kuuona ule umati mkubwa wa watu ukimjia, akamwambia Filipo, “Tutanunua wapi mikate ili watu hawa wale?”",
+  "JHN 6:6": "Aliuliza swali hili kumpima, kwa maana alishajua la kufanya.",
+  "JHN 6:7": "Filipo akamjibu, “Hata fedha kiasi cha dinari mia mbili, hazitoshi kununua mikate ya kuwapa watu hawa ili kila mtu apate kidogo.”",
+  "JHN 6:8": "Mmoja wa wanafunzi wake aitwaye Andrea, ndugu yake Simoni Petro, akamwambia,",
+  "JHN 6:9": "“Hapa kuna mvulana mmoja mwenye mikate mitano ya shayiri na samaki wawili wadogo. Lakini hivi vitatosha nini kwa umati huu wote?”",
+  "JHN 6:10": "Yesu akasema, “Waketisheni watu chini.” Palikuwa na majani mengi katika eneo lile, nao watu wakaketi. Palikuwa na wanaume wapatao 5,000.",
+  "JHN 6:11": "Ndipo Yesu akachukua ile mikate, akamshukuru Mungu na kuwagawia wale watu waliokuwa wameketi. Akafanya vivyo hivyo na wale samaki. Kila mtu akapata kadiri alivyotaka.",
+  "JHN 6:12": "Watu wote walipokwisha kula na kushiba, akawaambia wanafunzi wake, “Kusanyeni vipande vilivyobaki vya ile mikate, kisipotee chochote.”",
+  "JHN 6:13": "Hivyo wakavikusanya, wakajaza vikapu kumi na viwili kwa vipande vya ile mikate mitano ya shayiri na samaki wale wawili wadogo vilivyobakishwa na waliokula.",
+  "JHN 6:14": "Baada ya watu kuona muujiza ule Yesu aliofanya, walianza kusema, “Hakika huyu ndiye Nabii ajaye ulimwenguni!”",
+  "MAT 14:22": "Mara Yesu akawaambia wanafunzi wake waingie kwenye mashua watangulie kwenda ngʼambo ya bahari, wakati yeye alikuwa akiwaaga wale makutano.",
+  "MAT 14:23": "Baada ya kuwaaga, akaenda zake mlimani peke yake kuomba. Jioni ilipofika, Yesu alikuwa huko peke yake.",
+  "MAT 14:24": "Wakati huo ile mashua ilikuwa mbali kutoka nchi kavu ikisukwasukwa na mawimbi, kwa sababu upepo ulikuwa wa mbisho.",
+  "MAT 14:25": "Wakati wa zamu ya nne ya usiku, Yesu akawaendea wanafunzi wake akiwa anatembea juu ya maji.",
+  "MAT 14:26": "Wanafunzi wake walipomwona akitembea juu ya maji, waliingiwa na hofu kuu, wakasema, “Ni mzimu.” Wakapiga yowe kwa kuogopa.",
+  "MAT 14:27": "Lakini mara Yesu akasema nao, akawaambia, “Jipeni moyo! Ni mimi. Msiogope.”",
+  "MAT 14:28": "Petro akamjibu, “Bwana, ikiwa ni wewe, niambie nije kwako nikitembea juu ya maji.”",
+  "MAT 14:29": "Yesu akamwambia, “Njoo.” Basi Petro akatoka kwenye chombo, akatembea juu ya maji kumwelekea Yesu.",
+  "MAT 14:30": "Lakini alipoona upepo mkali aliingiwa na hofu, naye akaanza kuzama, huku akipiga kelele, “Bwana, niokoe!”",
+  "MAT 14:31": "Mara Yesu akaunyoosha mkono wake na kumshika, akamwambia, “Wewe mwenye imani haba, kwa nini uliona shaka?”",
+  "MAT 14:32": "Nao walipoingia ndani ya mashua, upepo ukakoma.",
+  "MAT 14:33": "Ndipo wote waliokuwa ndani ya ile mashua wakamwabudu Yesu, wakisema, “Hakika, wewe ndiwe Mwana wa Mungu.”",
+  "LUK 10:25": "Wakati huo mtaalamu mmoja wa sheria alisimama ili kumjaribu Yesu, akamuuliza, “Mwalimu, nifanye nini ili niurithi uzima wa milele?”",
+  "LUK 10:26": "Yesu akamjibu, “Imeandikwaje katika Sheria? Kwani unasoma nini humo?”",
+  "LUK 10:27": "Akajibu, “ ‘Mpende Bwana Mungu wako kwa moyo wako wote, kwa roho yako yote, kwa nguvu zako zote, na kwa akili zako zote’; tena, ‘Mpende jirani yako kama unavyojipenda mwenyewe.’ ”",
+  "LUK 10:28": "Yesu akamwambia, “Umejibu vyema. Fanya hivyo nawe utaishi.”",
+  "LUK 10:29": "Lakini yule mtaalamu wa sheria, akitaka kujionyesha kuwa mwenye haki, akamuuliza Yesu, “Jirani yangu ni nani?”",
+  "LUK 10:30": "Yesu akamjibu akasema, “Mtu mmoja alikuwa akiteremka kutoka Yerusalemu kwenda Yeriko, naye akaangukia mikononi mwa wanyangʼanyi. Wakampiga, wakaondoka, wakamwacha akiwa karibu kufa.",
+  "LUK 10:31": "Kuhani mmoja alikuwa akipitia njia ile, alipomwona huyo mtu, akapita upande mwingine, akamwacha hapo barabarani.",
+  "LUK 10:32": "Vivyo hivyo, Mlawi mmoja naye alipofika mahali pale, alimwona, akapita upande mwingine, akamwacha hapo barabarani",
+  "LUK 10:33": "Lakini Msamaria mmoja aliyekuwa akisafiri alipomwona, alimhurumia.",
+  "LUK 10:34": "Akaenda alipokuwa na akasafisha majeraha yake kwa divai na mafuta, kisha akayafunga. Ndipo akampandisha kwenye punda wake, akampeleka mpaka kwenye nyumba ya wageni na kumtunza.",
+  "LUK 10:35": "Kesho yake, yule Msamaria akachukua dinari mbili akampa yule mwenye nyumba ya wageni na kusema, ‘Mtunze, nami nirudipo nitakulipa gharama yoyote ya ziada uliyotumia kwa ajili yake.’",
+  "LUK 10:36": "“Ni yupi basi miongoni mwa hawa watatu wewe unadhani ni jirani yake yule mtu aliyeangukia mikononi mwa wanyangʼanyi?”",
+  "LUK 10:37": "Yule mtaalamu wa sheria akajibu, “Ni yule aliyemhurumia.” Ndipo Yesu akamwambia, “Nenda, ukafanye vivyo hivyo.”",
+  "LUK 10:38": "Ikawa Yesu na wanafunzi wake walipokuwa wakienda Yerusalemu, akaingia kwenye kijiji kimoja ambapo mwanamke mmoja aliyeitwa Martha alimkaribisha nyumbani kwake.",
+  "LUK 10:39": "Martha alikuwa na mdogo wake aliyeitwa Maria, ambaye aliketi chini miguuni mwa Bwana akisikiliza yale aliyokuwa akisema.",
+  "LUK 10:40": "Lakini Martha alikuwa akihangaika na maandalizi yote yaliyokuwa yafanyike. Martha akaja kwa Yesu na kumuuliza, “Bwana, hujali kwamba ndugu yangu ameniachia kazi zote mwenyewe? Basi mwambie anisaidie.”",
+  "LUK 10:41": "Lakini Bwana akamjibu, “Martha, Martha, mbona unasumbuka na kuhangaika na mengi?",
+  "LUK 10:42": "Lakini kunahitajika kitu kimoja tu. Maria amechagua kile kilicho bora, wala hakuna mtu atakayemwondolea.”",
+  "LUK 15:3": "Ndipo Yesu akawaambia mfano huu:",
+  "LUK 15:4": "“Ikiwa mmoja wenu ana kondoo mia moja, naye akapoteza mmoja wao, je, hawaachi wale tisini na tisa nyikani na kwenda kumtafuta huyo aliyepotea mpaka ampate?",
+  "LUK 15:5": "Naye akishampata, humbeba mabegani mwake kwa furaha",
+  "LUK 15:6": "na kwenda nyumbani. Kisha huwaita rafiki zake na majirani, na kuwaambia, ‘Furahini pamoja nami; nimempata kondoo wangu aliyepotea.’",
+  "LUK 15:7": "Nawaambieni, vivyo hivyo kutakuwa na furaha zaidi mbinguni kwa sababu ya mwenye dhambi mmoja atubuye, kuliko kwa wenye haki tisini na tisa ambao hawana haja ya kutubu.”",
+  "LUK 15:11": "Yesu akaendelea kusema: “Kulikuwa na mtu mmoja aliyekuwa na wana wawili.",
+  "LUK 15:12": "Yule mdogo akamwambia baba yake, ‘Baba, nipe urithi wangu.’ Hivyo akawagawia wanawe mali yake.",
+  "LUK 15:13": "“Baada ya muda mfupi, yule mdogo akakusanya vitu vyote alivyokuwa navyo, akaenda nchi ya mbali, na huko akaitapanya mali yake kwa maisha ya anasa.",
+  "LUK 15:14": "Baada ya kutumia kila kitu alichokuwa nacho, kukawa na njaa kali katika nchi ile yote, naye akawa hana chochote.",
+  "LUK 15:15": "Kwa hiyo akaenda akaajiriwa na mwenyeji mmoja wa nchi ile ambaye alimpeleka shambani kwake kulisha nguruwe.",
+  "LUK 15:16": "Akatamani kujishibisha kwa maganda waliyokula wale nguruwe, wala hakuna mtu aliyempa chochote.",
+  "LUK 15:17": "“Lakini alipozingatia moyoni mwake, akasema, ‘Ni watumishi wangapi walioajiriwa na baba yangu ambao wana chakula cha kuwatosha na kusaza, bali mimi hapa nakufa kwa njaa!",
+  "LUK 15:18": "Nitaondoka na kurudi kwa baba yangu na kumwambia: Baba, nimetenda dhambi mbele za Mungu na mbele yako.",
+  "LUK 15:19": "Sistahili tena kuitwa mwanao; nifanye kama mmoja wa watumishi wako.’",
+  "LUK 15:20": "Basi akaondoka, akaenda kwa baba yake. “Lakini alipokuwa bado yuko mbali, baba yake akamwona, moyo wake ukajawa na huruma. Akamkimbilia mwanawe, akamkumbatia na kumbusu.",
+  "LUK 15:21": "“Yule mwana akamwambia baba yake, ‘Baba, nimekosa mbele za Mungu na mbele yako. Sistahili kuitwa mwanao tena.’",
+  "LUK 15:22": "“Lakini baba yake akawaambia watumishi, ‘Leteni upesi joho lililo bora sana, tieni pete kidoleni mwake na viatu miguuni mwake.",
+  "LUK 15:23": "Leteni ndama aliyenona, mkamchinje ili tuwe na karamu, tule na kufurahi.",
+  "LUK 15:24": "Kwa maana huyu mwanangu alikuwa amekufa na sasa yu hai tena; alikuwa amepotea na sasa amepatikana!’ Nao wakaanza kufanya tafrija.",
+  "LUK 15:25": "“Wakati huo, yule mwana mkubwa alikuwa shambani. Alipokaribia nyumbani, akasikia sauti ya nyimbo na watu wakicheza.",
+  "LUK 15:26": "Akamwita mmoja wa watumishi na kumuuliza, ‘Kuna nini?’",
+  "LUK 15:27": "Akamwambia, ‘Ndugu yako amekuja, naye baba yako amemchinjia ndama aliyenona kwa sababu mwanawe amerudi nyumbani akiwa salama na mzima.’",
+  "LUK 15:28": "“Yule mwana mkubwa akakasirika, akakataa kuingia ndani. Basi baba yake akatoka nje na kumsihi.",
+  "LUK 15:29": "Lakini yeye akamjibu baba yake, ‘Tazama! Miaka yote hii nimekutumikia na hata siku moja sijaacha kutii amri zako, lakini hujanipa hata mwana-mbuzi ili nifurahi na rafiki zangu.",
+  "LUK 15:30": "Lakini huyu mwanao ambaye ametapanya mali yako kwa makahaba aliporudi nyumbani, wewe umemchinjia ndama aliyenona!’",
+  "LUK 15:31": "“Baba yake akamjibu, ‘Mwanangu, umekuwa nami siku zote na vyote nilivyo navyo ni vyako.",
+  "LUK 15:32": "Lakini ilitubidi tufurahi na kushangilia kwa sababu huyu ndugu yako alikuwa amekufa na sasa yu hai; alikuwa amepotea naye amepatikana.’ ”",
+  "LUK 17:11": "Yesu alipokuwa njiani akienda Yerusalemu, alipitia mpakani mwa Samaria na Galilaya.",
+  "LUK 17:12": "Alipokuwa akiingia kwenye kijiji kimoja, watu kumi waliokuwa na ukoma wakakutana naye. Wakasimama mbali,",
+  "LUK 17:13": "wakapaza sauti, wakasema, “Yesu, Bwana, tuhurumie!”",
+  "LUK 17:14": "Alipowaona akawaambia, “Nendeni mkajionyeshe kwa makuhani.” Nao walipokuwa njiani wakienda, wakatakasika.",
+  "LUK 17:15": "Mmoja wao alipoona kwamba amepona, akarudi kwa Yesu, akimsifu Mungu kwa sauti kuu.",
+  "LUK 17:16": "Akajitupa miguuni mwa Yesu akamshukuru. Yeye alikuwa Msamaria.",
+  "LUK 17:17": "Yesu akauliza, “Je, hawakutakaswa wote kumi? Wako wapi wale wengine tisa?",
+  "LUK 17:18": "Hakuna hata mmoja aliyeonekana kurudi ili kumshukuru Mungu isipokuwa huyu mgeni?”",
+  "LUK 17:19": "Yesu akamwambia, “Inuka na uende zako, imani yako imekuponya.”",
+  "MRK 10:13": "Watu walikuwa wakimletea Yesu watoto wadogo ili awaguse, lakini wanafunzi wake wakawakemea.",
+  "MRK 10:14": "Yesu alipoona yaliyokuwa yakitukia, akachukizwa. Akawaambia wanafunzi wake, “Waacheni watoto wadogo waje kwangu, wala msiwazuie, kwa maana Ufalme wa Mungu ni wa wale walio kama hawa.",
+  "MRK 10:15": "Amin, nawaambia, mtu yeyote asiyeupokea Ufalme wa Mungu kama mtoto mdogo, hatauingia kamwe.”",
+  "MRK 10:16": "Akawachukua watoto mikononi mwake, akawakumbatia, akaweka mikono yake juu yao, akawabariki.",
+  "MRK 10:46": "Kisha wakafika Yeriko. Yesu alipokuwa akiondoka mjini na wanafunzi wake pamoja na umati mkubwa wa watu, kipofu mmoja, jina lake Bartimayo, mwana wa Timayo, alikuwa ameketi kando ya njia akiomba msaada.",
+  "MRK 10:47": "Aliposikia kuwa ni Yesu wa Nazareti aliyekuwa anapita, akaanza kupaza sauti akisema, “Yesu, Mwana wa Daudi, nihurumie!”",
+  "MRK 10:48": "Watu wengi wakamkemea, wakamwambia akae kimya, lakini yeye akazidi kupaza sauti, akisema, “Mwana wa Daudi, nihurumie!”",
+  "MRK 10:49": "Yesu akasimama na kusema, “Mwiteni.” Hivyo wakamwita yule mtu kipofu, wakamwambia, “Jipe moyo! Inuka, anakuita.”",
+  "MRK 10:50": "Akiwa analivua lile joho lake, alisimama na kumwendea Yesu.",
+  "MRK 10:51": "Yesu akamuuliza, “Unataka nikufanyie nini?” Yule kipofu akajibu, “Mwalimu, nataka kuona.”",
+  "MRK 10:52": "Yesu akamwambia, “Nenda zako, imani yako imekuponya.” Mara akapata kuona, akamfuata Yesu njiani.",
+  "LUK 19:1": "Yesu akaingia Yeriko, naye alikuwa anapita katikati ya huo mji.",
+  "LUK 19:2": "Tazama, palikuwa na mtu mmoja mkuu wa watoza ushuru naye alikuwa tajiri, jina lake Zakayo.",
+  "LUK 19:3": "Yeye alikuwa akijitahidi kumwona Yesu ni mtu wa namna gani. Lakini kutokana na umati mkubwa wa watu hakuweza kwa sababu alikuwa mfupi wa kimo.",
+  "LUK 19:4": "Kwa hiyo akatangulia mbio mbele ya umati wa watu akapanda juu ya mkuyu ili amwone Yesu, kwa sababu angeipitia njia ile.",
+  "LUK 19:5": "Yesu alipofika pale chini ya huo mkuyu, akatazama juu, akamwambia, “Zakayo, shuka upesi, kwa maana leo nitakuwa mgeni nyumbani kwako!”",
+  "LUK 19:6": "Hivyo Zakayo akashuka upesi, akamkaribisha Yesu nyumbani kwake kwa furaha kubwa.",
+  "LUK 19:7": "Watu wote walipoona hivyo, wakaanza kunungʼunika wakisema, “Amekwenda kuwa mgeni wa ‘mtu mwenye dhambi.’ ”",
+  "LUK 19:8": "Lakini Zakayo akasimama na kumwambia Bwana, “Tazama, Bwana! Sasa hivi nusu ya mali yangu ninawapa maskini, nami kama nimemdhulumu mtu yeyote kitu chochote, nitamrudishia mara nne ya hicho kiwango.”",
+  "LUK 19:9": "Ndipo Yesu akamwambia, “Leo, wokovu umeingia nyumbani humu, kwa sababu huyu naye ni mwana wa Abrahamu.",
+  "JHN 11:32": "Maria alipofika mahali pale Yesu alipokuwa, alipiga magoti miguuni Pake na kusema, “Bwana, kama ungalikuwa hapa, ndugu yangu hangalikufa.”",
+  "JHN 11:33": "Yesu alipomwona Maria akilia na wale Wayahudi waliokuja pamoja naye pia wakilia, Yesu alisikia uchungu moyoni, akafadhaika sana.",
+  "JHN 11:34": "Akauliza, “Mmemweka wapi?” Wakamwambia, “Bwana, njoo upaone.”",
+  "JHN 11:35": "Yesu akalia machozi.",
+  "JHN 11:36": "Ndipo Wayahudi wakasema, “Tazama jinsi alivyompenda Lazaro!”",
+  "JHN 11:37": "Lakini wengine wakasema, “Je, yule aliyefungua macho ya kipofu, hakuweza kumfanya na huyu asife?”",
+  "JHN 11:38": "Yesu kwa mara nyingine akiwa amefadhaika sana, akafika penye kaburi. Hilo kaburi lilikuwa pango ambalo jiwe lilikuwa limewekwa kwenye ingilio lake.",
+  "JHN 11:39": "Yesu akasema, “Liondoeni hilo jiwe.” Martha ndugu yake yule aliyekuwa amekufa akasema, “Lakini Bwana, wakati huu atakuwa ananuka kwani amekwisha kuwa kaburini siku nne.”",
+  "JHN 11:40": "Yesu akamwambia, “Sikukuambia kwamba kama ukiamini utauona utukufu wa Mungu?”",
+  "JHN 11:41": "Kwa hiyo wakaliondoa lile jiwe kutoka kaburini. Yesu akainua macho yake juu akasema, “Baba, ninakushukuru kwa kuwa wanisikia.",
+  "JHN 11:42": "Ninajua ya kuwa wewe hunisikia siku zote, lakini nimesema haya kwa ajili ya umati huu uliosimama hapa, ili wapate kuamini ya kuwa wewe umenituma.”",
+  "JHN 11:43": "Baada ya kusema haya, Yesu akapaza sauti yake akaita, “Lazaro, njoo huku!”",
+  "JHN 11:44": "Yule aliyekuwa amekufa akatoka nje, mikono yake na miguu yake ikiwa imeviringishiwa vitambaa vya kitani na leso usoni pake. Yesu akawaambia, “Mfungueni, mwacheni aende zake.”",
+  "JHN 13:3": "Yesu akijua ya kwamba Baba ameweka vitu vyote chini ya mamlaka yake na kwamba yeye alitoka kwa Mungu na alikuwa anarudi kwa Mungu,",
+  "JHN 13:4": "hivyo aliondoka chakulani, akavua vazi lake la nje, akajifunga kitambaa kiunoni.",
+  "JHN 13:5": "Kisha akamimina maji kwenye sinia na kuanza kuwanawisha wanafunzi wake miguu na kuikausha kwa kile kitambaa alichokuwa amejifunga kiunoni.",
+  "JHN 13:6": "Alipomfikia Simoni Petro, Petro akamwambia, “Bwana, je, wewe utaninawisha mimi miguu?”",
+  "JHN 13:7": "Yesu akamjibu, “Hivi sasa hutambui lile ninalofanya, lakini baadaye utaelewa.”",
+  "JHN 13:8": "Petro akamwambia, “La, wewe hutaninawisha miguu kamwe.” Yesu akamjibu, “Kama nisipokunawisha, wewe huna sehemu nami.”",
+  "JHN 13:9": "Ndipo Simoni Petro akajibu, “Usininawishe miguu peke yake, Bwana, bali pamoja na mikono na kichwa pia!”",
+  "JHN 13:10": "Yesu akamjibu, “Mtu aliyekwisha kuoga anahitaji kunawa miguu tu, kwani mwili wake wote ni safi. Ninyi ni safi, ingawa si kila mmoja wenu.”",
+  "JHN 13:11": "Kwa kuwa yeye alijua ni nani ambaye angemsaliti, ndiyo sababu akasema si kila mmoja aliyekuwa safi.",
+  "JHN 13:12": "Alipomaliza kuwanawisha miguu yao, alivaa tena mavazi yake, akarudi alikokuwa ameketi, akawauliza, “Je, mmeelewa nililowafanyia?",
+  "JHN 13:13": "Ninyi mnaniita mimi ‘Mwalimu’ na ‘Bwana,’ hii ni sawa, maana ndivyo nilivyo.",
+  "JHN 13:14": "Kwa hiyo, ikiwa mimi niliye Bwana wenu na Mwalimu wenu nimewanawisha ninyi miguu, pia hamna budi kunawishana miguu ninyi kwa ninyi.",
+  "JHN 13:15": "Mimi nimewawekea kielelezo kwamba imewapasa kutenda kama vile nilivyowatendea ninyi.",
+  "MAT 28:1": "Baada ya Sabato, alfajiri mapema siku ya kwanza ya juma, Maria Magdalene na yule Maria mwingine walikwenda kulitazama kaburi.",
+  "MAT 28:2": "Ghafula, pakawa na tetemeko kubwa la ardhi, kwa sababu malaika wa Bwana alishuka kutoka mbinguni, akaenda penye kaburi, akalivingirisha lile jiwe na kulikalia.",
+  "MAT 28:3": "Sura ya huyo malaika ilikuwa kama umeme, na mavazi yake yalikuwa meupe kama theluji.",
+  "MAT 28:4": "Wale walinzi wa kaburi walimwogopa sana, wakatetemeka hata wakawa kama wafu.",
+  "MAT 28:5": "Yule malaika akawaambia wale wanawake, “Msiogope, kwa maana ninajua kuwa mnamtafuta Yesu aliyesulubiwa.",
+  "MAT 28:7": "Kisha nendeni upesi mkawaambie wanafunzi wake kwamba, ‘Amefufuka kutoka kwa wafu, naye awatangulia kwenda Galilaya. Huko ndiko mtamwona. Sasa nimekwisha kuwaambia.’ ”",
+  "MAT 28:8": "Hivyo wale wanawake wakaondoka pale kaburini wakiwa wamejawa na hofu, bali wakiwa na furaha nyingi. Wakaenda mbio kuwaeleza wanafunzi wake habari hizo.",
+  "MAT 28:9": "Ghafula, Yesu akakutana nao, akasema, “Salamu!” Wale wanawake wakamkaribia, wakaishika miguu yake, wakamwabudu.",
+  "MAT 28:10": "Ndipo Yesu akawaambia, “Msiogope. Nendeni mkawaambie ndugu zangu waende Galilaya, ndiko watakakoniona.”",
+  "LUK 24:13": "Ikawa siku iyo hiyo, wanafunzi wawili wa Yesu walikuwa njiani wakienda kijiji kilichoitwa Emau, yapata maili saba kutoka Yerusalemu.",
+  "LUK 24:14": "Walikuwa wakizungumza wao kwa wao kuhusu mambo yote yaliyotukia.",
+  "LUK 24:15": "Walipokuwa wakizungumza na kujadiliana, Yesu mwenyewe akaja akatembea pamoja nao,",
+  "LUK 24:16": "lakini macho yao yakazuiliwa ili wasimtambue.",
+  "LUK 24:28": "Nao walipokaribia kile kijiji walichokuwa wakienda, Yesu akawa kama anaendelea mbele.",
+  "LUK 24:29": "Lakini wao wakamsihi sana akae nao, wakisema, “Kaa hapa nasi, kwa maana sasa ni jioni na usiku unaingia.” Basi akaingia ndani kukaa nao.",
+  "LUK 24:30": "Alipokuwa mezani pamoja nao, akachukua mkate, akashukuru, akaumega, akaanza kuwagawia.",
+  "LUK 24:31": "Ndipo macho yao yakafumbuliwa, nao wakamtambua, naye akatoweka machoni pao. Hawakumwona tena.",
+  "LUK 24:32": "Wakaulizana wao kwa wao, “Je, mioyo yetu haikuwakawaka kwa furaha ndani yetu alipokuwa anazungumza nasi njiani na kutufafanulia Maandiko?”",
+  "LUK 24:33": "Wakaondoka mara, wakarudi Yerusalemu. Wakawakuta wale wanafunzi kumi na mmoja na wale waliokuwa pamoja nao, wamekusanyika",
+  "LUK 24:34": "wakisema, “Ni kweli! Bwana amefufuka, naye amemtokea Simoni.”",
+  "LUK 24:35": "Kisha wale wanafunzi wawili wakaeleza yaliyotukia njiani na jinsi walivyomtambua Yesu alipoumega mkate.",
+  "ACT 9:1": "Wakati ule ule, Sauli alikuwa bado anazidisha vitisho vya kuua wanafunzi wa Bwana, akamwendea kuhani mkuu,",
+  "ACT 9:2": "naye akamwomba kuhani mkuu ampe barua za kwenda kwenye masinagogi huko Dameski, ili akimkuta mtu yeyote wa Njia Ile, akiwa mwanaume au mwanamke, aweze kuwafunga na kuwaleta Yerusalemu.",
+  "ACT 9:3": "Basi akiwa katika safari yake, alipokaribia Dameski, ghafula nuru kutoka mbinguni ikamwangaza kotekote.",
+  "ACT 9:4": "Akaanguka chini, akasikia sauti ikimwambia, “Sauli, Sauli, mbona unanitesa?”",
+  "ACT 9:5": "Sauli akajibu, “U nani wewe, Bwana?” Ile sauti ikajibu, “Mimi ni Yesu unayemtesa.",
+  "ACT 9:6": "Sasa inuka uingie mjini, nawe utaambiwa yakupasayo kutenda.”",
+  "ACT 9:7": "Watu waliokuwa wakisafiri pamoja na Sauli wakasimama bila kuwa na la kusema, kwa sababu walisikia sauti lakini hawakumwona aliyekuwa akizungumza.",
+  "ACT 9:8": "Sauli akainuka kutoka pale chini na alipojaribu kufungua macho yake hakuweza kuona kitu chochote. Basi wakamshika mkono wakamwongoza mpaka Dameski.",
+  "ACT 9:9": "Naye kwa muda wa siku tatu alikuwa kipofu naye hakula wala kunywa chochote.",
+  "ACT 9:17": "Kisha Anania akaenda kwenye ile nyumba, akaingia ndani. Akaweka mikono yake juu ya Sauli akasema, “Ndugu Sauli, Bwana Yesu aliyekutokea njiani amenituma kwako ili upate kuona tena na ujazwe Roho Mtakatifu.”",
+  "ACT 9:18": "Ghafula vitu kama magamba vikaanguka chini, kutoka machoni mwa Sauli, akapata kuona tena. Akasimama, akabatizwa."
+ },
+ "wj": {
+  "MAT 6:34": [
+   [
+    0,
+    113
+   ]
+  ],
+  "MAT 11:28": [
+   [
+    0,
+    83
+   ]
+  ],
+  "JHN 14:27": [
+   [
+    0,
+    127
+   ]
+  ],
+  "2CO 12:9": [
+   [
+    19,
+    92
+   ]
+  ],
+  "MAT 5:4": [
+   [
+    0,
+    48
+   ]
+  ],
+  "MAT 28:20": [
+   [
+    0,
+    126
+   ]
+  ],
+  "MAT 6:33": [
+   [
+    0,
+    79
+   ]
+  ],
+  "JHN 3:16": [
+   [
+    0,
+    140
+   ]
+  ],
+  "JHN 15:9": [
+   [
+    0,
+    106
+   ]
+  ],
+  "JHN 15:12-13": [
+   [
+    0,
+    62
+   ],
+   [
+    63,
+    151
+   ]
+  ],
+  "JHN 13:34-35": [
+   [
+    0,
+    87
+   ],
+   [
+    88,
+    184
+   ]
+  ],
+  "MRK 12:30-31": [
+   [
+    0,
+    109
+   ],
+   [
+    110,
+    211
+   ]
+  ],
+  "MRK 11:24": [
+   [
+    0,
+    106
+   ]
+  ],
+  "MAT 17:20": [
+   [
+    11,
+    216
+   ]
+  ],
+  "MRK 9:23": [
+   [
+    17,
+    77
+   ]
+  ],
+  "JHN 14:1": [
+   [
+    17,
+    85
+   ]
+  ],
+  "JHN 20:29": [
+   [
+    17,
+    98
+   ]
+  ],
+  "MAT 21:22": [
+   [
+    0,
+    54
+   ]
+  ],
+  "JHN 11:25": [
+   [
+    17,
+    98
+   ]
+  ],
+  "JHN 10:10": [
+   [
+    0,
+    92
+   ]
+  ],
+  "JHN 10:11": [
+   [
+    0,
+    82
+   ]
+  ],
+  "JHN 8:12": [
+   [
+    40,
+    146
+   ]
+  ],
+  "JHN 6:35": [
+   [
+    17,
+    121
+   ]
+  ],
+  "JHN 14:6": [
+   [
+    17,
+    107
+   ]
+  ],
+  "JHN 15:5": [
+   [
+    0,
+    142
+   ]
+  ],
+  "REV 3:20": [
+   [
+    0,
+    146
+   ]
+  ],
+  "LUK 19:10": [
+   [
+    0,
+    71
+   ]
+  ],
+  "JHN 3:17": [
+   [
+    0,
+    100
+   ]
+  ],
+  "REV 1:18": [
+   [
+    0,
+    119
+   ]
+  ],
+  "MAT 11:29-30": [
+   [
+    0,
+    127
+   ],
+   [
+    128,
+    185
+   ]
+  ],
+  "JHN 16:33": [
+   [
+    0,
+    152
+   ]
+  ],
+  "JHN 8:36": [
+   [
+    0,
+    52
+   ]
+  ],
+  "JHN 15:11": [
+   [
+    0,
+    81
+   ]
+  ],
+  "LUK 15:10": [
+   [
+    0,
+    98
+   ]
+  ],
+  "LUK 4:18": [
+   [
+    0,
+    194
+   ]
+  ],
+  "MAT 7:7": [
+   [
+    0,
+    81
+   ]
+  ],
+  "MAT 7:24": [
+   [
+    0,
+    125
+   ]
+  ],
+  "JHN 14:18": [
+   [
+    0,
+    36
+   ]
+  ],
+  "MAT 6:26": [
+   [
+    0,
+    163
+   ]
+  ],
+  "LUK 12:7": [
+   [
+    0,
+    126
+   ]
+  ],
+  "MAT 7:11": [
+   [
+    0,
+    141
+   ]
+  ],
+  "LUK 12:32": [
+   [
+    0,
+    80
+   ]
+  ],
+  "MAT 10:30-31": [
+   [
+    0,
+    46
+   ],
+   [
+    47,
+    120
+   ]
+  ],
+  "MAT 6:6": [
+   [
+    0,
+    143
+   ]
+  ],
+  "MAT 18:20": [
+   [
+    0,
+    102
+   ]
+  ],
+  "LUK 5:4": [
+   [
+    39,
+    114
+   ]
+  ],
+  "LUK 5:10": [
+   [
+    119,
+    164
+   ]
+  ],
+  "JHN 2:4": [
+   [
+    17,
+    66
+   ]
+  ],
+  "JHN 2:7": [
+   [
+    32,
+    60
+   ]
+  ],
+  "JHN 2:8": [
+   [
+    18,
+    75
+   ]
+  ],
+  "MAT 13:3": [
+   [
+    50,
+    92
+   ]
+  ],
+  "MAT 13:4": [
+   [
+    0,
+    90
+   ]
+  ],
+  "MAT 13:5": [
+   [
+    0,
+    119
+   ]
+  ],
+  "MAT 13:6": [
+   [
+    0,
+    87
+   ]
+  ],
+  "MAT 13:7": [
+   [
+    0,
+    85
+   ]
+  ],
+  "MAT 13:8": [
+   [
+    0,
+    142
+   ]
+  ],
+  "MAT 13:9": [
+   [
+    0,
+    38
+   ]
+  ],
+  "MAT 13:18": [
+   [
+    0,
+    46
+   ]
+  ],
+  "MAT 13:19": [
+   [
+    0,
+    161
+   ]
+  ],
+  "MAT 13:20": [
+   [
+    0,
+    110
+   ]
+  ],
+  "MAT 13:21": [
+   [
+    0,
+    166
+   ]
+  ],
+  "MAT 13:22": [
+   [
+    0,
+    168
+   ]
+  ],
+  "MAT 13:23": [
+   [
+    0,
+    198
+   ]
+  ],
+  "MRK 4:35": [
+   [
+    57,
+    89
+   ]
+  ],
+  "MRK 4:39": [
+   [
+    55,
+    74
+   ]
+  ],
+  "MRK 4:40": [
+   [
+    32,
+    80
+   ]
+  ],
+  "MRK 5:36": [
+   [
+    71,
+    92
+   ]
+  ],
+  "MRK 5:39": [
+   [
+    39,
+    106
+   ]
+  ],
+  "MRK 5:41": [
+   [
+    35,
+    50
+   ],
+   [
+    67,
+    95
+   ]
+  ],
+  "JHN 6:5": [
+   [
+    80,
+    123
+   ]
+  ],
+  "JHN 6:10": [
+   [
+    14,
+    39
+   ]
+  ],
+  "JHN 6:12": [
+   [
+    67,
+    134
+   ]
+  ],
+  "MAT 14:27": [
+   [
+    42,
+    75
+   ]
+  ],
+  "MAT 14:29": [
+   [
+    17,
+    24
+   ]
+  ],
+  "MAT 14:31": [
+   [
+    58,
+    106
+   ]
+  ],
+  "LUK 10:26": [
+   [
+    15,
+    69
+   ]
+  ],
+  "LUK 10:28": [
+   [
+    17,
+    59
+   ]
+  ],
+  "LUK 10:30": [
+   [
+    23,
+    181
+   ]
+  ],
+  "LUK 10:31": [
+   [
+    0,
+    112
+   ]
+  ],
+  "LUK 10:32": [
+   [
+    0,
+    113
+   ]
+  ],
+  "LUK 10:33": [
+   [
+    0,
+    66
+   ]
+  ],
+  "LUK 10:34": [
+   [
+    0,
+    176
+   ]
+  ],
+  "LUK 10:35": [
+   [
+    0,
+    181
+   ]
+  ],
+  "LUK 10:36": [
+   [
+    0,
+    117
+   ]
+  ],
+  "LUK 10:37": [
+   [
+    81,
+    111
+   ]
+  ],
+  "LUK 10:41": [
+   [
+    23,
+    80
+   ]
+  ],
+  "LUK 10:42": [
+   [
+    0,
+    105
+   ]
+  ],
+  "LUK 15:4": [
+   [
+    0,
+    155
+   ]
+  ],
+  "LUK 15:5": [
+   [
+    0,
+    51
+   ]
+  ],
+  "LUK 15:6": [
+   [
+    0,
+    131
+   ]
+  ],
+  "LUK 15:7": [
+   [
+    0,
+    168
+   ]
+  ],
+  "LUK 15:11": [
+   [
+    24,
+    72
+   ]
+  ],
+  "LUK 15:12": [
+   [
+    0,
+    94
+   ]
+  ],
+  "LUK 15:13": [
+   [
+    0,
+    146
+   ]
+  ],
+  "LUK 15:14": [
+   [
+    0,
+    112
+   ]
+  ],
+  "LUK 15:15": [
+   [
+    0,
+    107
+   ]
+  ],
+  "LUK 15:16": [
+   [
+    0,
+    94
+   ]
+  ],
+  "LUK 15:17": [
+   [
+    0,
+    169
+   ]
+  ],
+  "LUK 15:18": [
+   [
+    0,
+    102
+   ]
+  ],
+  "LUK 15:19": [
+   [
+    0,
+    68
+   ]
+  ],
+  "LUK 15:20": [
+   [
+    0,
+    169
+   ]
+  ],
+  "LUK 15:21": [
+   [
+    0,
+    110
+   ]
+  ],
+  "LUK 15:22": [
+   [
+    0,
+    126
+   ]
+  ],
+  "LUK 15:23": [
+   [
+    0,
+    72
+   ]
+  ],
+  "LUK 15:24": [
+   [
+    0,
+    129
+   ]
+  ],
+  "LUK 15:25": [
+   [
+    0,
+    115
+   ]
+  ],
+  "LUK 15:26": [
+   [
+    0,
+    54
+   ]
+  ],
+  "LUK 15:27": [
+   [
+    0,
+    135
+   ]
+  ],
+  "LUK 15:28": [
+   [
+    0,
+    94
+   ]
+  ],
+  "LUK 15:29": [
+   [
+    0,
+    176
+   ]
+  ],
+  "LUK 15:30": [
+   [
+    0,
+    114
+   ]
+  ],
+  "LUK 15:31": [
+   [
+    0,
+    87
+   ]
+  ],
+  "LUK 15:32": [
+   [
+    0,
+    137
+   ]
+  ],
+  "LUK 17:14": [
+   [
+    23,
+    59
+   ]
+  ],
+  "LUK 17:17": [
+   [
+    15,
+    73
+   ]
+  ],
+  "LUK 17:18": [
+   [
+    0,
+    81
+   ]
+  ],
+  "LUK 17:19": [
+   [
+    17,
+    62
+   ]
+  ],
+  "MRK 10:14": [
+   [
+    76,
+    182
+   ]
+  ],
+  "MRK 10:15": [
+   [
+    0,
+    92
+   ]
+  ],
+  "MRK 10:49": [
+   [
+    26,
+    36
+   ]
+  ],
+  "MRK 10:51": [
+   [
+    17,
+    43
+   ]
+  ],
+  "MRK 10:52": [
+   [
+    17,
+    53
+   ]
+  ],
+  "LUK 19:5": [
+   [
+    67,
+    134
+   ]
+  ],
+  "LUK 19:9": [
+   [
+    23,
+    102
+   ]
+  ],
+  "JHN 11:34": [
+   [
+    10,
+    26
+   ]
+  ],
+  "JHN 11:39": [
+   [
+    14,
+    36
+   ]
+  ],
+  "JHN 11:40": [
+   [
+    17,
+    77
+   ]
+  ],
+  "JHN 11:41": [
+   [
+    85,
+    125
+   ]
+  ],
+  "JHN 11:42": [
+   [
+    0,
+    146
+   ]
+  ],
+  "JHN 11:43": [
+   [
+    54,
+    74
+   ]
+  ],
+  "JHN 11:44": [
+   [
+    141,
+    174
+   ]
+  ],
+  "JHN 13:7": [
+   [
+    15,
+    78
+   ]
+  ],
+  "JHN 13:8": [
+   [
+    71,
+    117
+   ]
+  ],
+  "JHN 13:10": [
+   [
+    15,
+    138
+   ]
+  ],
+  "JHN 13:12": [
+   [
+    99,
+    128
+   ]
+  ],
+  "JHN 13:13": [
+   [
+    0,
+    76
+   ]
+  ],
+  "JHN 13:14": [
+   [
+    0,
+    131
+   ]
+  ],
+  "JHN 13:15": [
+   [
+    0,
+    84
+   ]
+  ],
+  "MAT 28:9": [
+   [
+    38,
+    47
+   ]
+  ],
+  "MAT 28:10": [
+   [
+    23,
+    103
+   ]
+  ],
+  "ACT 9:4": [
+   [
+    44,
+    76
+   ]
+  ],
+  "ACT 9:5": [
+   [
+    56,
+    81
+   ]
+  ],
+  "ACT 9:6": [
+   [
+    0,
+    60
+   ]
+  ]
+ }
+}
