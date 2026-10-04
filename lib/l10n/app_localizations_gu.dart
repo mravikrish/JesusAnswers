@@ -558,4 +558,7 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get shareStory => 'વાર્તા શેર કરો';
+
+  @override
+  String get getItOnGooglePlay => 'Google Play પર મેળવો';
 }

@@ -1159,6 +1159,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Share story'**
   String get shareStory;
+
+  /// No description provided for @getItOnGooglePlay.
+  ///
+  /// In en, this message translates to:
+  /// **'Get it on Google Play'**
+  String get getItOnGooglePlay;
 }
 
 class _AppLocalizationsDelegate

@@ -561,4 +561,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get shareStory => 'కథను పంచుకోండి';
+
+  @override
+  String get getItOnGooglePlay => 'Google Play లో పొందండి';
 }

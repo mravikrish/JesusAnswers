@@ -483,6 +483,22 @@ class PictureCard extends StatelessWidget {
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(color: Colors.white.withValues(alpha: 0.75), fontSize: 9.5),
               ),
+              // A saved or forwarded picture carries no link, so it says where to find the app.
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Icon(Icons.play_arrow_rounded, size: 11, color: AppColors.goldSoft),
+                  const SizedBox(width: 2),
+                  Flexible(
+                    child: Text(
+                      l.getItOnGooglePlay,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(color: AppColors.goldSoft, fontSize: 9.5, fontWeight: FontWeight.w600),
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),

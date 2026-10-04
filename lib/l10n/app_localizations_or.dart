@@ -562,4 +562,7 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get shareStory => 'କାହାଣୀ ସେୟାର କରନ୍ତୁ';
+
+  @override
+  String get getItOnGooglePlay => 'Google Play ରେ ପାଆନ୍ତୁ';
 }

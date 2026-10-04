@@ -559,4 +559,7 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get shareStory => 'ਕਹਾਣੀ ਸਾਂਝੀ ਕਰੋ';
+
+  @override
+  String get getItOnGooglePlay => 'Google Play \'ਤੇ ਪ੍ਰਾਪਤ ਕਰੋ';
 }

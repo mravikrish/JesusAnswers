@@ -563,4 +563,7 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get shareStory => 'कथा शेअर करा';
+
+  @override
+  String get getItOnGooglePlay => 'Google Play वर मिळवा';
 }

@@ -559,4 +559,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get shareStory => 'গল্পটি শেয়ার করুন';
+
+  @override
+  String get getItOnGooglePlay => 'Google Play-তে পান';
 }

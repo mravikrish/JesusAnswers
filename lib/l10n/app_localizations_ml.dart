@@ -566,4 +566,7 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get shareStory => 'കഥ പങ്കിടുക';
+
+  @override
+  String get getItOnGooglePlay => 'Google Play-യിൽ നേടുക';
 }

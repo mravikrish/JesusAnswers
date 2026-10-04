@@ -557,4 +557,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get shareStory => 'कहानी साझा करें';
+
+  @override
+  String get getItOnGooglePlay => 'इसे Google Play पर पाएं';
 }

@@ -569,4 +569,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get shareStory => 'கதையைப் பகிருங்கள்';
+
+  @override
+  String get getItOnGooglePlay => 'Google Play இல் பெறுங்கள்';
 }

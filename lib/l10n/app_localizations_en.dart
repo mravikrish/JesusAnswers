@@ -560,4 +560,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get shareStory => 'Share story';
+
+  @override
+  String get getItOnGooglePlay => 'Get it on Google Play';
 }

@@ -562,4 +562,7 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get shareStory => 'ಕಥೆಯನ್ನು ಹಂಚಿಕೊಳ್ಳಿ';
+
+  @override
+  String get getItOnGooglePlay => 'Google Play ನಲ್ಲಿ ಪಡೆಯಿರಿ';
 }
