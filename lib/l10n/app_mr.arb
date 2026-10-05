@@ -185,5 +185,20 @@
   "removeVoice": "काढा",
   "voiceDownloadFailed": "डाउनलोड झाले नाही. इंटरनेट तपासून पुन्हा प्रयत्न करा.",
   "voiceCredits": "आवाजांचे श्रेय",
-  "music": "संगीत"
+  "music": "संगीत",
+  "readyPrayers": "तयार प्रार्थना",
+  "readyPrayersHint": "प्रत्येक दिवसासाठी आणि प्रत्येक गरजेसाठी प्रार्थना. ऐकण्यासाठी एकावर टॅप करा.",
+  "voiceMan": "पुरुष आवाज",
+  "voiceWoman": "स्त्री आवाज",
+  "sharePrayer": "प्रार्थना शेअर करा",
+  "searchPrayers": "प्रार्थना शोधा",
+  "forMe": "माझ्यासाठी",
+  "forSomeone": "दुसऱ्यासाठी",
+  "forSomeoneHint": "त्यांचे नाव लिहा, प्रार्थना त्यांच्यासाठी तयार होईल, पाठवण्यासाठी.",
+  "theirName": "त्यांचे नाव",
+  "theirNameHint": "ज्यांच्यासाठी तुम्ही प्रार्थना करत आहात त्यांचे नाव",
+  "enterNameFirst": "आधी त्यांचे नाव लिहा",
+  "noPrayersFound": "एकही प्रार्थना सापडली नाही",
+  "whatsappMessage": "WhatsApp",
+  "copyText": "कॉपी करा"
 }

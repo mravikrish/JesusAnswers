@@ -185,5 +185,20 @@
   "removeVoice": "Ondoa",
   "voiceDownloadFailed": "Imeshindwa kupakua. Angalia intaneti yako ujaribu tena.",
   "voiceCredits": "Shukrani kwa sauti",
-  "music": "Muziki"
+  "music": "Muziki",
+  "readyPrayers": "Maombi Tayari",
+  "readyPrayersHint": "Maombi kwa kila siku na kila hitaji. Gusa moja ili kuisikiliza.",
+  "voiceMan": "Sauti ya mwanamume",
+  "voiceWoman": "Sauti ya mwanamke",
+  "sharePrayer": "Shiriki ombi",
+  "searchPrayers": "Tafuta maombi",
+  "forMe": "Kwa ajili yangu",
+  "forSomeone": "Kwa ajili ya mtu",
+  "forSomeoneHint": "Andika jina lake, na ombi litaandikwa kwa ajili yake, tayari kutuma.",
+  "theirName": "Jina lake",
+  "theirNameHint": "Jina la mtu unayemwombea",
+  "enterNameFirst": "Kwanza andika jina lake",
+  "noPrayersFound": "Hakuna maombi yaliyopatikana",
+  "whatsappMessage": "WhatsApp",
+  "copyText": "Nakili"
 }

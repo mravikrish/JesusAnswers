@@ -1,0 +1,376 @@
+{
+  "_comment": "Ready prayers, by group. A prayer with a passage is read in Scripture's own words from the bundled Bible; every other prayer's words are in assets/prayers/<lang>.json, with each title and group name. 'forText' is the same prayer for someone else, with {name} where their name goes; 'forTitle' replaces the title then. 'picture' is the painting of Jesus (assets/jesus/) shown behind it. Translations are not Scripture; have a native reader confirm them before release.",
+  "groups": [
+    {
+      "id": "bible",
+      "prayers": [
+        {
+          "id": "lords_prayer",
+          "icon": "hands",
+          "picture": "12.jpg"
+        },
+        {
+          "id": "psalm23",
+          "icon": "sheep",
+          "passage": "PSA 23:1-6",
+          "picture": "02.jpg"
+        },
+        {
+          "id": "psalm91",
+          "icon": "shield",
+          "passage": "PSA 91:1-16",
+          "picture": "11.jpg"
+        },
+        {
+          "id": "psalm121",
+          "icon": "mountain",
+          "passage": "PSA 121:1-8",
+          "picture": "10.jpg"
+        },
+        {
+          "id": "psalm27",
+          "icon": "light",
+          "passage": "PSA 27:1-5",
+          "picture": "08.jpg"
+        },
+        {
+          "id": "psalm103",
+          "icon": "praise",
+          "passage": "PSA 103:1-5",
+          "picture": "19.jpg"
+        },
+        {
+          "id": "psalm51",
+          "icon": "heart",
+          "passage": "PSA 51:10-12",
+          "picture": "13.jpg"
+        },
+        {
+          "id": "psalm139",
+          "icon": "search",
+          "passage": "PSA 139:23-24",
+          "picture": "05.jpg"
+        },
+        {
+          "id": "blessing",
+          "icon": "sunrise",
+          "passage": "NUM 6:24-26",
+          "picture": "01.jpg"
+        },
+        {
+          "id": "magnificat",
+          "icon": "star",
+          "passage": "LUK 1:46-55",
+          "picture": "23.jpg"
+        },
+        {
+          "id": "ephesians3",
+          "icon": "love",
+          "passage": "EPH 3:14-21",
+          "picture": "19.jpg"
+        },
+        {
+          "id": "john17",
+          "icon": "people",
+          "passage": "JHN 17:20-26",
+          "picture": "05.jpg"
+        }
+      ]
+    },
+    {
+      "id": "daily",
+      "prayers": [
+        {
+          "id": "morning",
+          "icon": "sunrise",
+          "picture": "21.jpg"
+        },
+        {
+          "id": "night",
+          "icon": "moon",
+          "picture": "13.jpg"
+        },
+        {
+          "id": "meals",
+          "icon": "meal",
+          "picture": "12.jpg"
+        },
+        {
+          "id": "work",
+          "icon": "work",
+          "picture": "16.jpg"
+        },
+        {
+          "id": "thanksgiving",
+          "icon": "thanks",
+          "picture": "19.jpg"
+        }
+      ]
+    },
+    {
+      "id": "needs",
+      "prayers": [
+        {
+          "id": "healing",
+          "icon": "healing",
+          "picture": "18.jpg"
+        },
+        {
+          "id": "peace",
+          "icon": "peace",
+          "picture": "03.jpg"
+        },
+        {
+          "id": "strength",
+          "icon": "strength",
+          "picture": "05.jpg"
+        },
+        {
+          "id": "forgiveness",
+          "icon": "heart",
+          "picture": "04.jpg"
+        },
+        {
+          "id": "guidance",
+          "icon": "road",
+          "picture": "07.jpg"
+        },
+        {
+          "id": "protection",
+          "icon": "shield",
+          "picture": "11.jpg"
+        },
+        {
+          "id": "grief",
+          "icon": "tear",
+          "picture": "03.jpg"
+        },
+        {
+          "id": "loneliness",
+          "icon": "hug",
+          "picture": "04.jpg"
+        },
+        {
+          "id": "provision",
+          "icon": "basket",
+          "picture": "12.jpg"
+        }
+      ]
+    },
+    {
+      "id": "others",
+      "prayers": [
+        {
+          "id": "family",
+          "icon": "family",
+          "picture": "17.jpg"
+        },
+        {
+          "id": "children",
+          "icon": "child",
+          "picture": "06.jpg"
+        },
+        {
+          "id": "marriage",
+          "icon": "rings",
+          "picture": "20.jpg"
+        },
+        {
+          "id": "sick",
+          "icon": "healing",
+          "picture": "09.jpg"
+        },
+        {
+          "id": "forgive_others",
+          "icon": "hands",
+          "picture": "08.jpg"
+        },
+        {
+          "id": "country",
+          "icon": "flag",
+          "picture": "12.jpg"
+        }
+      ]
+    },
+    {
+      "id": "faith",
+      "prayers": [
+        {
+          "id": "salvation",
+          "icon": "cross",
+          "picture": "01.jpg"
+        },
+        {
+          "id": "surrender",
+          "icon": "surrender",
+          "picture": "05.jpg"
+        },
+        {
+          "id": "praise",
+          "icon": "praise",
+          "picture": "10.jpg"
+        }
+      ]
+    },
+    {
+      "id": "celebrations",
+      "prayers": [
+        {
+          "id": "birthday",
+          "icon": "cake",
+          "picture": "17.jpg"
+        },
+        {
+          "id": "wedding",
+          "icon": "rings",
+          "picture": "20.jpg"
+        },
+        {
+          "id": "anniversary",
+          "icon": "love",
+          "picture": "20.jpg"
+        },
+        {
+          "id": "new_baby",
+          "icon": "child",
+          "picture": "23.jpg"
+        },
+        {
+          "id": "new_home",
+          "icon": "home",
+          "picture": "19.jpg"
+        },
+        {
+          "id": "success",
+          "icon": "trophy",
+          "picture": "10.jpg"
+        },
+        {
+          "id": "christmas",
+          "icon": "star",
+          "picture": "23.jpg"
+        },
+        {
+          "id": "easter",
+          "icon": "sunrise",
+          "picture": "15.jpg"
+        },
+        {
+          "id": "new_year",
+          "icon": "calendar",
+          "picture": "21.jpg"
+        }
+      ]
+    },
+    {
+      "id": "beginnings",
+      "prayers": [
+        {
+          "id": "journey",
+          "icon": "travel",
+          "picture": "07.jpg"
+        },
+        {
+          "id": "new_business",
+          "icon": "store",
+          "picture": "16.jpg"
+        },
+        {
+          "id": "new_job",
+          "icon": "work",
+          "picture": "14.jpg"
+        },
+        {
+          "id": "interview",
+          "icon": "handshake",
+          "picture": "14.jpg"
+        },
+        {
+          "id": "school",
+          "icon": "school",
+          "picture": "14.jpg"
+        },
+        {
+          "id": "exams",
+          "icon": "exam",
+          "picture": "14.jpg"
+        },
+        {
+          "id": "new_vehicle",
+          "icon": "car",
+          "picture": "07.jpg"
+        }
+      ]
+    },
+    {
+      "id": "health",
+      "prayers": [
+        {
+          "id": "surgery",
+          "icon": "hospital",
+          "picture": "18.jpg"
+        },
+        {
+          "id": "hospital",
+          "icon": "bed",
+          "picture": "09.jpg"
+        },
+        {
+          "id": "recovery",
+          "icon": "healing",
+          "picture": "22.jpg"
+        },
+        {
+          "id": "pregnancy",
+          "icon": "pregnant",
+          "picture": "17.jpg"
+        },
+        {
+          "id": "hopeless",
+          "icon": "light",
+          "picture": "03.jpg"
+        },
+        {
+          "id": "addiction",
+          "icon": "chain",
+          "picture": "22.jpg"
+        }
+      ]
+    },
+    {
+      "id": "troubles",
+      "prayers": [
+        {
+          "id": "travel_trouble",
+          "icon": "warning",
+          "picture": "02.jpg"
+        },
+        {
+          "id": "job_loss",
+          "icon": "work_off",
+          "picture": "16.jpg"
+        },
+        {
+          "id": "money",
+          "icon": "money",
+          "picture": "12.jpg"
+        },
+        {
+          "id": "legal",
+          "icon": "gavel",
+          "picture": "08.jpg"
+        },
+        {
+          "id": "quarrel",
+          "icon": "family",
+          "picture": "17.jpg"
+        },
+        {
+          "id": "disaster",
+          "icon": "storm",
+          "picture": "11.jpg"
+        }
+      ]
+    }
+  ]
+}

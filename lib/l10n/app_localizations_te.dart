@@ -601,4 +601,51 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get music => 'సంగీతం';
+
+  @override
+  String get readyPrayers => 'సిద్ధమైన ప్రార్థనలు';
+
+  @override
+  String get readyPrayersHint =>
+      'ప్రతి రోజుకు, ప్రతి అవసరానికి ప్రార్థనలు. వినడానికి ఒకదాన్ని నొక్కండి.';
+
+  @override
+  String get voiceMan => 'పురుష స్వరం';
+
+  @override
+  String get voiceWoman => 'స్త్రీ స్వరం';
+
+  @override
+  String get sharePrayer => 'ప్రార్థనను షేర్ చేయండి';
+
+  @override
+  String get searchPrayers => 'ప్రార్థనలు వెతకండి';
+
+  @override
+  String get forMe => 'నా కోసం';
+
+  @override
+  String get forSomeone => 'ఇతరుల కోసం';
+
+  @override
+  String get forSomeoneHint =>
+      'వారి పేరు రాయండి, ప్రార్థన వారి కోసం సిద్ధమవుతుంది, పంపడానికి.';
+
+  @override
+  String get theirName => 'వారి పేరు';
+
+  @override
+  String get theirNameHint => 'మీరు ఎవరి కోసం ప్రార్థిస్తున్నారో వారి పేరు';
+
+  @override
+  String get enterNameFirst => 'ముందు వారి పేరు రాయండి';
+
+  @override
+  String get noPrayersFound => 'ప్రార్థనలు కనబడలేదు';
+
+  @override
+  String get whatsappMessage => 'WhatsApp';
+
+  @override
+  String get copyText => 'కాపీ';
 }

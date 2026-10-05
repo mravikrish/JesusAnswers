@@ -12,12 +12,12 @@ import '../theme/app_theme.dart';
 /// Reads [parts] aloud — His words ([VoiceRole.jesus]) in the male voice,
 /// everything else in the female one — or, if there is neither a natural voice
 /// nor a phone voice for [lang], explains and offers the phone's voice download.
+/// [male] asks for a man's or a woman's voice instead (prayers).
 Future<void> readAloud(BuildContext context, List<String> parts, AppLanguage lang,
-    {VoiceRole role = VoiceRole.verse}) async {
+    {VoiceRole role = VoiceRole.verse, bool? male}) async {
   final tts = ProviderScope.containerOf(context, listen: false).read(ttsProvider);
-  final natural = naturalVoiceFor(lang.code, role);
-  if ((natural != null && await tts.voices.isInstalled(natural)) || await tts.hasVoice(lang)) {
-    await tts.speak(parts, lang, role: role);
+  if (await tts.hasNaturalVoice(lang, role: role, male: male) || await tts.hasVoice(lang)) {
+    await tts.speak(parts, lang, role: role, male: male);
     return;
   }
   if (!context.mounted) return;

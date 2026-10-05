@@ -185,5 +185,20 @@
   "removeVoice": "తీసివేయండి",
   "voiceDownloadFailed": "డౌన్‌లోడ్ కాలేదు. ఇంటర్నెట్ చూసి మళ్లీ ప్రయత్నించండి.",
   "voiceCredits": "స్వరాల క్రెడిట్స్",
-  "music": "సంగీతం"
+  "music": "సంగీతం",
+  "readyPrayers": "సిద్ధమైన ప్రార్థనలు",
+  "readyPrayersHint": "ప్రతి రోజుకు, ప్రతి అవసరానికి ప్రార్థనలు. వినడానికి ఒకదాన్ని నొక్కండి.",
+  "voiceMan": "పురుష స్వరం",
+  "voiceWoman": "స్త్రీ స్వరం",
+  "sharePrayer": "ప్రార్థనను షేర్ చేయండి",
+  "searchPrayers": "ప్రార్థనలు వెతకండి",
+  "forMe": "నా కోసం",
+  "forSomeone": "ఇతరుల కోసం",
+  "forSomeoneHint": "వారి పేరు రాయండి, ప్రార్థన వారి కోసం సిద్ధమవుతుంది, పంపడానికి.",
+  "theirName": "వారి పేరు",
+  "theirNameHint": "మీరు ఎవరి కోసం ప్రార్థిస్తున్నారో వారి పేరు",
+  "enterNameFirst": "ముందు వారి పేరు రాయండి",
+  "noPrayersFound": "ప్రార్థనలు కనబడలేదు",
+  "whatsappMessage": "WhatsApp",
+  "copyText": "కాపీ"
 }

@@ -609,4 +609,52 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get music => 'இசை';
+
+  @override
+  String get readyPrayers => 'தயாரான ஜெபங்கள்';
+
+  @override
+  String get readyPrayersHint =>
+      'ஒவ்வொரு நாளுக்கும் ஒவ்வொரு தேவைக்கும் ஜெபங்கள். கேட்க ஒன்றைத் தொடுங்கள்.';
+
+  @override
+  String get voiceMan => 'ஆண் குரல்';
+
+  @override
+  String get voiceWoman => 'பெண் குரல்';
+
+  @override
+  String get sharePrayer => 'ஜெபத்தைப் பகிர்';
+
+  @override
+  String get searchPrayers => 'ஜெபங்களைத் தேடுங்கள்';
+
+  @override
+  String get forMe => 'எனக்காக';
+
+  @override
+  String get forSomeone => 'பிறருக்காக';
+
+  @override
+  String get forSomeoneHint =>
+      'அவர்களுடைய பெயரை எழுதுங்கள், ஜெபம் அவர்களுக்காகத் தயாராகும், அனுப்பலாம்.';
+
+  @override
+  String get theirName => 'அவர்களுடைய பெயர்';
+
+  @override
+  String get theirNameHint =>
+      'நீங்கள் யாருக்காக ஜெபிக்கிறீர்களோ அவர்களுடைய பெயர்';
+
+  @override
+  String get enterNameFirst => 'முதலில் அவர்களுடைய பெயரை எழுதுங்கள்';
+
+  @override
+  String get noPrayersFound => 'ஜெபங்கள் எதுவும் கிடைக்கவில்லை';
+
+  @override
+  String get whatsappMessage => 'WhatsApp';
+
+  @override
+  String get copyText => 'நகலெடு';
 }

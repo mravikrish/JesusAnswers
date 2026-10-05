@@ -20,6 +20,7 @@ import 'features/peace/peace_now_screen.dart';
 import 'features/pictures/pictures_screen.dart';
 import 'features/player/player_screen.dart';
 import 'features/prayer/prayer_screen.dart';
+import 'features/prayer/prayers_screen.dart';
 import 'features/profile/profile_screen.dart';
 import 'features/stories/stories_screen.dart';
 import 'features/talk/listening_screen.dart';
@@ -66,6 +67,15 @@ final routerProvider = Provider<GoRouter>((ref) {
         builder: (_, state) => PictureViewerScreen(
           collection: state.pathParameters['collection']!,
           index: int.tryParse(state.pathParameters['index']!) ?? 0,
+        ),
+      ),
+      GoRoute(path: '/prayers', builder: (_, _) => const PrayersScreen()),
+      // ?for=1 opens it to pray for someone else, by name.
+      GoRoute(
+        path: '/prayers/:id',
+        builder: (_, state) => PrayerReadScreen(
+          id: state.pathParameters['id']!,
+          forSomeone: state.uri.queryParameters['for'] == '1',
         ),
       ),
       GoRoute(path: '/stories', builder: (_, _) => const StoriesScreen()),

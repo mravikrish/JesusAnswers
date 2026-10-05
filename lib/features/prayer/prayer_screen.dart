@@ -105,6 +105,24 @@ class _PrayerScreenState extends State<PrayerScreen> {
                   ),
                   const SizedBox(height: 18),
                   FilledButton(onPressed: _generate, child: Text(l.generatePrayer)),
+                  const SizedBox(height: 28),
+                  // Or choose a ready prayer and hear it.
+                  Material(
+                    color: Colors.white.withValues(alpha: 0.75),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                      side: const BorderSide(color: AppColors.goldSoft),
+                    ),
+                    clipBehavior: Clip.antiAlias,
+                    child: ListTile(
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                      leading: const Icon(Icons.menu_book_rounded, color: AppColors.ember, size: 30),
+                      title: Text(l.readyPrayers, style: AppText.serif(20, weight: FontWeight.w700)),
+                      subtitle: Text(l.readyPrayersHint),
+                      trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.gold),
+                      onTap: () => context.push('/prayers'),
+                    ),
+                  ),
                 ],
               ),
             ),

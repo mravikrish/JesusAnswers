@@ -1,0 +1,279 @@
+{
+  "groups": {
+    "bible": "Gebete aus der Bibel",
+    "daily": "Jeden Tag",
+    "needs": "Für meine Anliegen",
+    "others": "Für andere",
+    "faith": "Glaube und Lobpreis",
+    "celebrations": "Feste und Dank",
+    "beginnings": "Neuanfänge",
+    "health": "Gesundheit und Krankenhaus",
+    "troubles": "Wenn etwas schiefgeht"
+  },
+  "prayers": {
+    "lords_prayer": {
+      "title": "Das Vaterunser",
+      "text": "Vater unser im Himmel, geheiligt werde dein Name. Dein Reich komme. Dein Wille geschehe, wie im Himmel, so auf Erden. Unser tägliches Brot gib uns heute. Und vergib uns unsere Schuld, wie auch wir vergeben unsern Schuldigern. Und führe uns nicht in Versuchung, sondern erlöse uns von dem Bösen. Denn dein ist das Reich und die Kraft und die Herrlichkeit in Ewigkeit. Amen."
+    },
+    "psalm23": {
+      "title": "Der Herr ist mein Hirte"
+    },
+    "psalm91": {
+      "title": "Unter seinen Flügeln"
+    },
+    "psalm121": {
+      "title": "Der Herr behütet dich"
+    },
+    "psalm27": {
+      "title": "Der Herr ist mein Licht"
+    },
+    "psalm103": {
+      "title": "Lobe den Herrn, meine Seele"
+    },
+    "psalm51": {
+      "title": "Schaffe in mir ein reines Herz"
+    },
+    "psalm139": {
+      "title": "Erforsche mich, Gott"
+    },
+    "blessing": {
+      "title": "Der Herr segne dich"
+    },
+    "magnificat": {
+      "title": "Der Lobgesang der Maria"
+    },
+    "ephesians3": {
+      "title": "Die Liebe Christi erkennen"
+    },
+    "john17": {
+      "title": "Jesus betet für uns"
+    },
+    "morning": {
+      "title": "Morgengebet",
+      "text": "Herr Jesus, danke für diesen neuen Tag und dass du mich durch die Nacht bewahrt hast. Ich gebe dir diesen Tag. Lenke meine Schritte, bewahre meine Worte und erfülle mein Herz mit deinem Frieden. Hilf mir, freundlich und geduldig mit allen zu sein, denen ich begegne. Was auch immer heute kommt, lass mich mit dir gehen. Amen."
+    },
+    "night": {
+      "title": "Abendgebet",
+      "text": "Herr Jesus, danke, dass du heute bei mir warst. Vergib mir, wo ich versagt habe, und heile, was mich verletzt hat. Ich lege jede Sorge dieses Tages in deine Hände. Wache über mich und meine Familie, während wir schlafen. Schenk mir tiefe Ruhe und ein stilles Herz, und lass mich in deiner Liebe zu einem neuen Morgen erwachen. Amen."
+    },
+    "meals": {
+      "title": "Tischgebet",
+      "text": "Herr, danke für dieses Essen und für die Hände, die es zubereitet haben. Segne es, damit es unseren Körper stärkt, und segne uns, wenn wir diese Mahlzeit miteinander teilen. Mach uns dankbar für alles, was wir haben, und erinnere uns an die, die heute hungern. Amen."
+    },
+    "work": {
+      "title": "Vor der Arbeit oder dem Lernen",
+      "text": "Herr, ich gebe dir die Arbeit und das Lernen, das heute vor mir liegt. Schenk mir einen klaren Kopf, ein bereites Herz und Kraft, mein Bestes zu geben. Hilf mir, ehrlich und fleißig zu sein und andere mit Respekt zu behandeln. Wenn es schwer wird, halte mich ruhig. Möge alles, was ich tue, dich ehren. Amen."
+    },
+    "thanksgiving": {
+      "title": "Dankgebet",
+      "text": "Vater, danke für deine Güte zu mir. Danke für das Leben und den Atem, für meine Familie und meine Freunde, für Essen und ein Dach über dem Kopf, und für jeden Segen, den ich zu zählen vergessen habe. Vor allem danke ich dir für Jesus, der mich liebt und sich für mich hingegeben hat. Schenk mir jeden Tag ein dankbares Herz. Amen."
+    },
+    "healing": {
+      "title": "Um Heilung",
+      "text": "Herr Jesus, du hast Kranke geheilt und die berührt, die litten. Ich komme jetzt zu dir mit meinem Körper und meinem Herzen. Berühre mich mit deiner heilenden Kraft. Nimm meinen Schmerz und meine Angst, und gib mir Kraft für jeden Tag. Leite die Ärzte und alle, die für mich sorgen. Ich lege mein Leben in deine Hände. Amen.",
+      "forText": "Herr Jesus, du hast Kranke geheilt und die berührt, die litten. Ich bringe dir jetzt {name}. Berühre {name} mit deiner heilenden Kraft. Nimm Schmerz und Angst weg, und schenk {name} Kraft für jeden Tag. Leite die Ärzte und alle, die für {name} sorgen. Ich lege dieses Leben in deine Hände. Amen."
+    },
+    "peace": {
+      "title": "Um Frieden in der Angst",
+      "text": "Herr Jesus, mein Herz ist unruhig, und meine Gedanken kommen nicht zur Ruhe. Du hast gesagt: Kommt her zu mir, ich will euch erquicken. Ich komme jetzt zu dir. Ich gebe dir jede Sorge und jede Angst, die ich trage. Beruhige meinen Geist und meinen Atem. Erfülle mich mit deinem Frieden, der höher ist als alle Vernunft, und hilf mir, dir Schritt für Schritt zu vertrauen. Amen.",
+      "forText": "Herr Jesus, {name} ist voller Angst, und das Herz ist unruhig. Du hast gesagt: Kommt her zu mir, ich will euch erquicken. Zieh {name} jetzt nahe zu dir. Nimm jede Sorge und jede Angst, die {name} trägt. Beruhige die Gedanken, erfülle das Herz mit deinem Frieden, der höher ist als alle Vernunft, und hilf {name}, dir Schritt für Schritt zu vertrauen. Amen."
+    },
+    "strength": {
+      "title": "Um Kraft in schweren Zeiten",
+      "text": "Herr, ich fühle mich schwach und müde, und der Weg vor mir ist schwer. Du hast versprochen, dass deine Kraft in der Schwachheit stark ist. Sei heute meine Kraft. Halte mich, wenn ich aufgeben will, und gib mir Mut weiterzugehen. Erinnere mich daran, dass ich nie allein bin, weil du bei mir bist. Amen."
+    },
+    "forgiveness": {
+      "title": "Um Vergebung bitten",
+      "text": "Herr Jesus, es tut mir leid, was ich falsch gemacht habe, in Gedanken, Worten und Taten. Ich verberge es nicht vor dir. Bitte vergib mir und mach mein Herz rein. Danke, dass deine Barmherzigkeit größer ist als meine Schuld. Hilf mir, mich vom Bösen abzuwenden und in deinem Licht zu leben. Amen."
+    },
+    "guidance": {
+      "title": "Um Führung",
+      "text": "Herr, ich weiß nicht, welchen Weg ich gehen soll, aber du kennst den Weg. Ich bringe dir diese Entscheidung. Schenk mir Weisheit und zeig mir klar den richtigen Weg. Schließe die Türen, die nicht von dir sind, und öffne die, die von dir sind. Hilf mir, geduldig zu warten und dir vertrauensvoll zu folgen. Amen."
+    },
+    "protection": {
+      "title": "Um Schutz",
+      "text": "Herr, du bist meine Zuflucht und mein sicherer Ort. Beschütze mich und meine Familie vor allem Bösen und jeder Gefahr, sichtbar und unsichtbar. Wache über uns, wenn wir unterwegs sind, wenn wir arbeiten und wenn wir schlafen. Halte das Böse fern von unserem Zuhause. Umgib uns mit deiner Liebe und lass uns in deiner Obhut ruhen. Amen.",
+      "forText": "Herr, du bist Zuflucht und sicherer Ort. Beschütze {name} vor allem Bösen und jeder Gefahr, sichtbar und unsichtbar. Wache über {name} unterwegs, bei der Arbeit und im Schlaf. Halte das Böse fern von diesem Leben und diesem Zuhause. Umgib {name} mit deiner Liebe, und lass {name} in deiner Obhut ruhen. Amen."
+    },
+    "grief": {
+      "title": "Um Trost in der Trauer",
+      "text": "Herr Jesus, mein Herz ist gebrochen, und der Verlust wiegt so schwer. Du hast mit den Trauernden geweint, und du bist nahe denen, die zerbrochenen Herzens sind. Halte mich fest in meinem Schmerz. Tröste mich, wenn die Tränen kommen, und trag mich an den Tagen, an denen ich nicht mehr kann. Schenk mir Hoffnung durch dein Versprechen des Lebens, das nie endet. Amen.",
+      "forText": "Herr Jesus, {name} trauert, und das Herz ist gebrochen. Du bist nahe denen, die zerbrochenen Herzens sind. Halte {name} fest in diesem Schmerz. Tröste, wenn die Tränen kommen, und trage {name} an den Tagen, an denen die Kraft fehlt. Umgib {name} mit Menschen, die lieben, und schenk Hoffnung durch dein Versprechen des Lebens, das nie endet. Amen."
+    },
+    "loneliness": {
+      "title": "Wenn ich mich allein fühle",
+      "text": "Herr Jesus, ich fühle mich allein, und niemand scheint mich zu verstehen. Aber du siehst mich, du kennst mich und du liebst mich. Danke für dein Versprechen, mich nie zu verlassen. Sei mir jetzt nahe. Bring gute und treue Menschen in mein Leben, und hilf mir, anderen ein Freund zu sein. Amen."
+    },
+    "provision": {
+      "title": "Für das tägliche Auskommen",
+      "text": "Vater, du ernährst die Vögel unter dem Himmel und weißt, was ich brauche. Ich bringe dir, was mir fehlt: meine Arbeit, mein Geld, mein Zuhause und meine Familie. Versorge uns, öffne Türen zur Arbeit und schenk mir Weisheit, gut mit dem umzugehen, was du gibst. Befreie mich von Sorgen und hilf mir, dir jeden Tag zu vertrauen. Amen."
+    },
+    "family": {
+      "title": "Für meine Familie",
+      "text": "Herr, danke für meine Familie. Segne jeden von uns. Bewahre uns sicher, gesund und nahe bei dir. Erfülle unser Zuhause mit Liebe, Geduld und Frieden. Heile jede Verletzung zwischen uns und lehre uns, einander zu vergeben. Möge unsere Familie dich in allem ehren, was wir tun. Amen."
+    },
+    "children": {
+      "title": "Für meine Kinder",
+      "text": "Herr Jesus, du hast die Kinder zu dir kommen lassen und sie gesegnet. Ich bringe dir meine Kinder. Beschütze sie, führe sie und hilf ihnen, in Weisheit und Güte zu wachsen. Bewahre sie vor Schaden und vor schlechtem Umgang. Hilf ihnen, dich ihr Leben lang zu kennen und zu lieben. Schenk mir als Mutter oder Vater Geduld und Weisheit. Amen."
+    },
+    "marriage": {
+      "title": "Für meine Ehe",
+      "text": "Herr, danke für meinen Mann oder meine Frau. Segne unsere Ehe. Hilf uns, einander mit Geduld und Freundlichkeit zu lieben, gut zuzuhören und schnell zu vergeben. Bewahre uns treu zueinander und zu dir. Lass unsere Liebe Jahr für Jahr stärker werden, und sei du die Mitte unseres Zuhauses. Amen."
+    },
+    "sick": {
+      "title": "Für einen kranken Menschen",
+      "text": "Herr Jesus, ich bringe dir den Menschen, den ich liebe und der krank ist. Du kennst seinen Schmerz und seine Angst. Bitte berühre ihn mit deiner heilenden Hand. Schenk ihm Kraft, Ruhe und Frieden. Leite die Ärzte und Pflegenden, die sich um ihn kümmern. Tröste seine Familie, und lass ihn deine Liebe ganz nahe spüren. Amen."
+    },
+    "forgive_others": {
+      "title": "Um jemandem zu vergeben",
+      "text": "Herr, jemand hat mich verletzt, und es fällt mir schwer, loszulassen. Du hast mir vergeben, obwohl ich es nicht verdient hatte. Hilf mir zu vergeben, wie du mir vergeben hast. Heile mein Herz von Zorn und Bitterkeit. Ich entscheide mich, diesen Menschen in deine Hände zu legen. Segne ihn, und schenk mir deinen Frieden. Amen."
+    },
+    "country": {
+      "title": "Für mein Land",
+      "text": "Herr, ich bete für mein Land und alle Menschen darin. Schenk unseren Regierenden Weisheit und Ehrlichkeit. Bring Frieden, wo Streit ist, und Gerechtigkeit, wo Unrecht geschieht. Beschütze die Armen, die Schwachen und die Vergessenen. Segne unser Land und wende unsere Herzen zu dir. Amen."
+    },
+    "salvation": {
+      "title": "Jesus annehmen",
+      "text": "Herr Jesus, ich glaube, dass du der Sohn Gottes bist, dass du für meine Sünden am Kreuz gestorben und auferstanden bist. Es tut mir leid, was ich falsch gemacht habe, und ich wende mich dir zu. Bitte vergib mir und komm in mein Leben. Ich nehme dich an als meinen Herrn und Retter. Danke, dass du mich liebst und mir neues Leben schenkst. Amen.",
+      "forTitle": "Dass ein lieber Mensch Jesus kennenlernt",
+      "forText": "Herr, ich bete für {name}. Du liebst {name} mehr, als ich je lieben könnte. Öffne das Herz von {name}, damit es dich erkennt. Zeige {name}, dass Jesus auch für diesen Menschen gestorben und auferstanden ist. Zieh {name} sanft zu dir, und schick Menschen, die deine Liebe zeigen. Lass {name} deine Vergebung und neues Leben empfangen. Amen."
+    },
+    "surrender": {
+      "title": "Mein Leben Gott geben",
+      "text": "Herr, ich gebe dir mein ganzes Leben: meine Pläne, meine Ängste, meine Hoffnungen und meine Vergangenheit. Nicht mein Wille, sondern deiner geschehe. Nimm, was ich zu fest halte, und lehre mich, dir zu vertrauen. Führe mich, wohin du mich haben willst, und mach mich zu dem Menschen, als den du mich geschaffen hast. Amen."
+    },
+    "praise": {
+      "title": "Lobgebet",
+      "text": "Herr, mein Gott, du bist heilig, mächtig und gut. Du hast Himmel und Erde gemacht, und deine Liebe währt ewig. Ich lobe dich für das, was du bist. Ich lobe dich für Jesus, meinen Retter, und für deine Treue an jedem Tag. Von ganzem Herzen bete ich dich an. Amen."
+    },
+    "birthday": {
+      "title": "Zum Geburtstag",
+      "text": "Herr, danke für das Geschenk meines Lebens und für ein weiteres Jahr. Danke für jeden Menschen, der mich liebt, und für alles, was du für mich getan hast. Vergib mir, wo ich versagt habe, und führe mich im neuen Lebensjahr. Hilf mir, in Glauben, Güte und Freude zu wachsen. Meine Zeit steht in deinen Händen. Amen.",
+      "forText": "Herr, danke für {name} und für das Geschenk dieses Lebens. Segne {name} zum Geburtstag mit Freude, Gesundheit und Frieden. Danke für jedes Jahr, das du geschenkt hast. Führe {name} im neuen Lebensjahr, beschütze {name}, und lass {name} spüren, wie tief deine Liebe ist. Amen."
+    },
+    "wedding": {
+      "title": "Zur Hochzeit",
+      "text": "Herr, danke, dass du uns zusammengeführt hast. Jetzt, wo unser Eheleben beginnt, sei du die Mitte unseres Zuhauses. Lehre uns, einander mit Geduld zu lieben, schnell zu vergeben und einander zu dienen. Bewahre uns treu in guten und in schweren Zeiten. Segne unsere Familien, und lass unsere Ehe dich ehren. Amen.",
+      "forText": "Herr, danke für {name} an diesem Hochzeitstag. Segne diese Ehe und sei die Mitte ihres Zuhauses. Lehre sie, einander mit Geduld zu lieben, schnell zu vergeben und einander zu dienen. Bewahre sie treu in guten und in schweren Zeiten, und erfülle ihr gemeinsames Leben mit Freude. Amen."
+    },
+    "anniversary": {
+      "title": "Zum Hochzeitstag",
+      "text": "Herr, danke für ein weiteres Jahr unserer Ehe. Danke für die Freude, die wir geteilt haben, und dass du uns durch die schweren Tage getragen hast. Vergib uns, wo wir einander verletzt haben. Erneuere unsere Liebe, vertiefe unsere Freundschaft, und halte uns nahe bei dir und beieinander in allen kommenden Jahren. Amen.",
+      "forText": "Herr, danke für {name} und für ein weiteres Ehejahr. Danke für die Freude, die sie geteilt haben, und dass du sie durch die schweren Tage getragen hast. Erneuere ihre Liebe, vertiefe ihre Freundschaft, und halte sie nahe bei dir und beieinander für viele Jahre. Amen."
+    },
+    "new_baby": {
+      "title": "Für ein neugeborenes Kind",
+      "text": "Herr, danke für das kostbare Geschenk unseres Babys und für eine gute Geburt. Segne dieses kleine Kind mit Gesundheit und Kraft, und beschütze es Tag und Nacht. Schenk uns als Eltern Weisheit, Geduld und Liebe. Lass unser Kind aufwachsen, dich zu kennen und zu lieben. Amen.",
+      "forText": "Herr, danke für das kostbare Geschenk des Babys, {name}. Segne dieses kleine Kind mit Gesundheit und Kraft, und beschütze es Tag und Nacht. Schenk der Mutter Ruhe und Erholung, und den Eltern Weisheit, Geduld und Liebe. Lass dieses Kind aufwachsen, dich zu kennen und zu lieben. Amen."
+    },
+    "new_home": {
+      "title": "Segen für ein neues Zuhause",
+      "text": "Herr, danke für dieses Zuhause. Wir weihen es dir. Lass deinen Frieden jeden Raum erfüllen, und lass Liebe, Freundlichkeit und Gebet hier wohnen. Beschütze dieses Haus und alle, die darin leben. Möge jeder Gast hier willkommen sein, und möge dieses Zuhause dich immer ehren. Amen."
+    },
+    "success": {
+      "title": "Dank für einen Erfolg",
+      "text": "Herr, danke für diesen Erfolg. Du hast mir die Kraft, die Hilfe und alles Gute gegeben, das ihn möglich gemacht hat. Bewahre mein Herz demütig und dankbar. Hilf mir, das Empfangene zu nutzen, um anderen Gutes zu tun, und dir weiter zu vertrauen, was auch kommt. Alle Ehre gehört dir. Amen.",
+      "forText": "Herr, danke für den Erfolg, den du {name} geschenkt hast. Du hast auf dem Weg Kraft und Hilfe gegeben. Bewahre das Herz von {name} demütig und dankbar, und führe die nächsten Schritte. Hilf {name}, das Empfangene zu nutzen, um anderen Gutes zu tun. Alle Ehre gehört dir. Amen."
+    },
+    "christmas": {
+      "title": "Weihnachtsgebet",
+      "text": "Herr Jesus, danke, dass du als kleines Kind in die Welt gekommen bist. Du hast die Herrlichkeit des Himmels verlassen, um bei uns zu sein. Erfülle unsere Herzen und Häuser mit der Freude und dem Frieden von Weihnachten. Hilf uns, deine Liebe mit Armen und Einsamen zu teilen. Werde heute neu in unseren Herzen geboren. Amen."
+    },
+    "easter": {
+      "title": "Ostergebet",
+      "text": "Herr Jesus, du bist für unsere Sünden gestorben und am dritten Tag auferstanden. Der Tod konnte dich nicht halten. Danke für den Sieg des leeren Grabes. Erfülle uns mit der Hoffnung deiner Auferstehung, und hilf uns, jeden Tag in der Kraft deines neuen Lebens zu leben. Halleluja, du bist auferstanden. Amen."
+    },
+    "new_year": {
+      "title": "Gebet zum neuen Jahr",
+      "text": "Herr, danke, dass du mich durch das vergangene Jahr getragen hast. Ich lasse seine Sorgen und meine Fehler bei dir. Ich gebe dir dieses neue Jahr: meine Pläne, meine Familie, meine Arbeit und meine Gesundheit. Geh jeden Tag mit mir. Hilf mir, dir näherzukommen, und lass es ein Jahr deines Segens sein. Amen."
+    },
+    "journey": {
+      "title": "Vor einer Reise",
+      "text": "Herr, ich mache mich auf die Reise und lege sie in deine Hände. Beschütze mich auf der Straße, in der Luft und auf dem Wasser. Bewahre mich vor Unfällen und jeder Gefahr. Schenk allen Weisheit, die für unsere Reise verantwortlich sind. Wache über mein Zuhause, solange ich fort bin, und bring mich sicher ans Ziel. Amen.",
+      "forText": "Herr, {name} macht sich auf die Reise, und ich lege diese Reise in deine Hände. Beschütze {name} auf der Straße, in der Luft und auf dem Wasser. Bewahre {name} vor Unfällen und jeder Gefahr. Schenk allen Weisheit, die für diese Reise verantwortlich sind, und bring {name} sicher ans Ziel und wieder nach Hause. Amen."
+    },
+    "new_business": {
+      "title": "Zur Gründung eines Geschäfts",
+      "text": "Herr, ich beginne dieses Geschäft und weihe es dir. Schenk mir Weisheit bei jeder Entscheidung, und führe mich zu den richtigen Menschen. Hilf mir, ehrlich zu arbeiten und meine Kunden und Mitarbeiter gerecht zu behandeln. Segne das Werk meiner Hände und gib, was wir brauchen. Lass dieses Geschäft dich ehren. Amen.",
+      "forText": "Herr, ich bete für {name} zur Gründung eines Geschäfts. Schenk Weisheit bei jeder Entscheidung, und führe {name} zu den richtigen Menschen. Hilf {name}, ehrlich zu arbeiten und alle gerecht zu behandeln. Segne das Werk dieser Hände, öffne Türen und gib alles, was nötig ist. Lass dieses Geschäft dich ehren. Amen."
+    },
+    "new_job": {
+      "title": "Für eine neue Arbeitsstelle",
+      "text": "Herr, danke für diese neue Arbeit. Hilf mir am Anfang, schnell zu lernen und treu zu arbeiten. Schenk mir Wohlwollen bei meinen Kollegen, und hilf mir, ehrlich, freundlich und geduldig zu sein. Wenn ich unsicher bin, gib mir Zuversicht. Möge meine Arbeit dich ehren und gut für meine Familie sorgen. Amen.",
+      "forText": "Herr, danke für die neue Arbeit, die du {name} geschenkt hast. Hilf {name} am Anfang, schnell zu lernen und treu zu arbeiten. Schenk Wohlwollen bei den Kollegen, und Zuversicht in Momenten der Unsicherheit. Segne diese Arbeit, und lass sie gut für die Familie sorgen. Amen."
+    },
+    "interview": {
+      "title": "Vor einem Vorstellungsgespräch",
+      "text": "Herr, ich habe ein Vorstellungsgespräch und bin nervös. Beruhige mein Herz und mach meine Gedanken klar. Hilf mir, mich an das Vorbereitete zu erinnern und ehrlich und zuversichtlich zu sprechen. Schenk mir Wohlwollen bei den Menschen, die ich treffe. Wenn dies der richtige Ort für mich ist, öffne die Tür; wenn nicht, führe mich zu etwas Besserem. Amen.",
+      "forText": "Herr, ich bete für {name} vor dem Vorstellungsgespräch. Beruhige das Herz und mach die Gedanken klar. Hilf {name}, ehrlich und zuversichtlich zu sprechen, und schenk Wohlwollen bei den Menschen dort. Wenn dies der richtige Ort ist, öffne die Tür; wenn nicht, führe {name} zu etwas Besserem. Amen."
+    },
+    "school": {
+      "title": "Zum Beginn von Schule oder Studium",
+      "text": "Herr, für mich beginnt eine neue Zeit des Lernens. Danke für diese Gelegenheit. Schenk mir einen Verstand, der begreift, und ein Herz, das bereit ist, sich anzustrengen. Hilf mir, gute Freunde zu finden und mich vom Bösen fernzuhalten. Segne meine Lehrer, und lass mich in Weisheit und Glauben wachsen. Amen.",
+      "forText": "Herr, ich bete für {name} zum Beginn von Schule oder Studium. Schenk einen Verstand, der begreift, und ein Herz, das bereit ist, sich anzustrengen. Hilf {name}, gute Freunde zu finden und sich vom Bösen fernzuhalten. Segne die Lehrer, und lass {name} in Weisheit und Glauben wachsen. Amen."
+    },
+    "exams": {
+      "title": "Vor Prüfungen",
+      "text": "Herr, meine Prüfungen sind nah, und ich spüre den Druck. Hilf mir, gut zu lernen und mich an das Gelernte zu erinnern. Halte mich am Prüfungstag ruhig und schenk mir einen klaren Kopf. Hilf mir, mein Bestes zu geben und ehrlich zu sein. Was auch herauskommt, erinnere mich daran, dass mein Wert in dir liegt. Amen.",
+      "forText": "Herr, ich bete für {name} vor den Prüfungen. Hilf {name}, gut zu lernen und sich an das Gelernte zu erinnern. Schenk am Prüfungstag Ruhe und einen klaren Kopf. Hilf {name}, das Beste zu geben, und erinnere {name} daran, dass der wahre Wert in dir liegt, was auch herauskommt. Amen."
+    },
+    "new_vehicle": {
+      "title": "Segen für ein neues Fahrzeug",
+      "text": "Herr, danke für dieses neue Fahrzeug. Ich weihe es dir. Beschütze alle, die darin fahren, und bewahre es vor Unfällen und Schaden. Schenk allen, die es lenken, Geduld, Sorgfalt und Umsicht auf der Straße. Hilf mir, es zu nutzen, um meiner Familie und anderen zu dienen. Amen."
+    },
+    "surgery": {
+      "title": "Vor einer Operation",
+      "text": "Herr Jesus, ich werde operiert und habe Angst. Ich lege meinen Körper und mein Leben in deine Hände. Leite die Hände und Gedanken der Chirurgen, Ärzte und Pflegekräfte. Bewahre mich während der Operation und bring mich gut hindurch. Schenk mir eine schnelle und vollständige Genesung, und erfülle mein Herz mit deinem Frieden. Amen.",
+      "forText": "Herr Jesus, {name} wird operiert, und ich lege dieses Leben in deine Hände. Leite die Hände und Gedanken der Chirurgen, Ärzte und Pflegekräfte. Bewahre {name} während der Operation und bring {name} gut hindurch. Nimm die Angst, schenk eine schnelle und vollständige Genesung, und tröste die Familie, während sie wartet. Amen."
+    },
+    "hospital": {
+      "title": "Im Krankenhaus",
+      "text": "Herr, ich liege im Krankenhaus, und die Tage werden lang. Sei bei mir in diesem Zimmer. Schenk mir Geduld beim Warten, Kraft für die Behandlung und Ruhe in der Nacht. Segne die Ärzte und Pflegekräfte, die für mich sorgen. Tröste meine Familie, und lass mich spüren, dass du nahe bist. Bring mich zur rechten Zeit nach Hause. Amen.",
+      "forText": "Herr, {name} liegt im Krankenhaus, und ich lege dieses Leben in deine Hände. Sei bei {name} in diesem Zimmer. Schenk Geduld beim Warten, Kraft für die Behandlung und Ruhe in der Nacht. Segne die Ärzte und Pflegekräfte, die für {name} sorgen. Tröste die Familie, und bring {name} zur rechten Zeit gesund nach Hause. Amen."
+    },
+    "recovery": {
+      "title": "Dank für die Genesung",
+      "text": "Herr, danke, dass du mich durch diese Krankheit gebracht hast. Danke für die Ärzte, die Medizin und jeden Menschen, der für mich gesorgt und für mich gebetet hat. Stärke mich weiter Tag für Tag. Hilf mir, deine Güte nie zu vergessen, und meine Gesundheit zu nutzen, um dir und anderen zu dienen. Amen."
+    },
+    "pregnancy": {
+      "title": "Für eine gute Schwangerschaft",
+      "text": "Herr, danke für das Leben, das in mir wächst. Beschütze dieses Kind und lass es gesund und stark heranwachsen. Erhalte mich gesund an Leib und Seele, und beruhige meine Ängste. Leite die Ärzte und alle, die für uns sorgen. Bring uns sicher durch die Geburt, und erfülle unser Zuhause mit Freude. Amen.",
+      "forText": "Herr, danke für das Kind, das {name} unter dem Herzen trägt. Beschütze dieses kleine Leben und lass es gesund und stark heranwachsen. Erhalte die Mutter gesund an Leib und Seele, und beruhige ihre Ängste. Leite die Ärzte und alle, die für sie sorgen. Bring Mutter und Kind sicher durch die Geburt, und erfülle ihr Zuhause mit Freude. Amen."
+    },
+    "hopeless": {
+      "title": "Wenn alles hoffnungslos scheint",
+      "text": "Herr, ich fühle mich leer und hoffnungslos, und mir fehlt die Kraft, viel zu beten. Aber ich komme zu dir, so wie ich bin. Halte mich in dieser Dunkelheit. Erinnere mich daran, dass ich dir kostbar bin und dass dies nicht für immer bleibt. Führe mich zu Menschen, die mir helfen können. Schenk mir Licht für einen weiteren Tag. Amen.",
+      "forText": "Herr, {name} geht durch eine dunkle Zeit und sieht keine Hoffnung. Halte {name} nahe bei dir in dieser Dunkelheit. Erinnere {name} daran, kostbar in deinen Augen zu sein, und dass dies nicht für immer bleibt. Stell Menschen an die Seite von {name}, die helfen können, und schenk Licht und Hoffnung für einen weiteren Tag. Amen."
+    },
+    "addiction": {
+      "title": "Befreiung von einer Sucht",
+      "text": "Herr Jesus, ich kämpfe mit etwas, das ich allein nicht beenden kann. Ich bekenne es dir. Zerbrich die Ketten, die mich halten, und gib mir Kraft, Nein zu sagen, einen Tag nach dem anderen. Heile, was in mir zerbrochen ist. Führe mich zu Menschen, die helfen können, und hilf mir, in Freiheit zu leben. Amen.",
+      "forText": "Herr Jesus, ich bete für {name}, gefangen in einer Sucht. Zerbrich die Ketten, die {name} halten, und gib Kraft, Nein zu sagen, einen Tag nach dem anderen. Heile, was im Innern zerbrochen ist. Führe {name} zu Menschen, die helfen können, und lass {name} in Freiheit leben. Schenk der Familie Geduld und Hoffnung. Amen."
+    },
+    "travel_trouble": {
+      "title": "Wenn unterwegs etwas passiert",
+      "text": "Herr, auf dieser Reise ist etwas schiefgegangen, und ich mache mir Sorgen. Sei jetzt bei mir. Beschütze mich und alle, die bei mir sind. Wenn jemand verletzt ist, heile ihn und schick schnell Hilfe. Schenk mir einen ruhigen Kopf, damit ich weiß, was zu tun ist. Mach einen Weg, wo kein Weg zu sein scheint, und bring uns sicher nach Hause. Amen."
+    },
+    "job_loss": {
+      "title": "Nach dem Verlust der Arbeit",
+      "text": "Herr, ich habe meine Arbeit verloren, und ich bin besorgt und beschämt. Du weißt, was meine Familie braucht. Tröste mein Herz und erinnere mich daran, dass mein Wert in dir liegt. Gib mir Kraft, weiterzusuchen, und öffne die richtige Tür zur richtigen Zeit. Versorge uns bis dahin jeden Tag. Amen.",
+      "forText": "Herr, {name} hat die Arbeit verloren, und ich lege dieses Leben in deine Hände. Du weißt, was die Familie braucht. Tröste das Herz von {name} und erinnere daran, dass der wahre Wert in dir liegt. Gib Kraft, weiterzusuchen, öffne die richtige Tür zur richtigen Zeit, und versorge {name} bis dahin jeden Tag. Amen."
+    },
+    "money": {
+      "title": "In Geldnot",
+      "text": "Herr, Geld und Schulden setzen mich stark unter Druck. Du kennst jede Not. Schenk mir Weisheit, mit dem umzugehen, was ich habe, und Mut, mich dem zu stellen, was ich schulde. Versorge meine Familie, und öffne Wege, ehrlich zu verdienen. Befreie mich von Angst und Scham, und hilf mir, dir für heute zu vertrauen. Amen."
+    },
+    "legal": {
+      "title": "Bei rechtlichen Problemen",
+      "text": "Herr, ich stehe vor einem rechtlichen Problem, und es lastet auf mir. Du bist ein Gott der Gerechtigkeit und der Wahrheit. Schenk mir Weisheit und guten Rat. Lass die Wahrheit ans Licht kommen, und gib denen, die entscheiden, Gerechtigkeit. Bewahre mich ehrlich und ruhig, und schenk mir Frieden, wie es auch ausgeht. Amen."
+    },
+    "quarrel": {
+      "title": "Wenn es zu Hause Streit gibt",
+      "text": "Herr, in unserem Zuhause gibt es Zorn und Verletzungen, und ich bin den Streit leid. Beruhige unsere Herzen und unsere Worte. Hilf uns, einander zuzuhören, zuzugeben, wo wir falsch liegen, und zu vergeben. Heile die Wunden zwischen uns, und bring den Frieden in unsere Familie zurück. Fang bei mir an. Amen."
+    },
+    "disaster": {
+      "title": "In einer Katastrophe",
+      "text": "Herr, eine Katastrophe ist geschehen, und wir haben Angst. Beschütze uns und alle Menschen in Gefahr. Rette die Eingeschlossenen, heile die Verletzten, und tröste alle, die Angehörige und ihr Zuhause verloren haben. Gib allen Helfern Kraft. Sei unsere Zuversicht und Stärke, eine Hilfe in den großen Nöten. Amen."
+    }
+  }
+}

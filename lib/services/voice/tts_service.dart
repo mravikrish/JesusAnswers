@@ -37,6 +37,7 @@ class TtsService {
   TtsService(this._prefs, {NaturalVoiceStore? voices}) : voices = voices ?? NaturalVoiceStore() {
     slow.value = _prefs.getBool(_slowKey) ?? false;
     music.value = _prefs.getBool(_musicKey) ?? true;
+    prayerMale.value = _prefs.getBool(_prayerMaleKey) ?? false;
     playback.addListener(_syncMusic);
     // Remember where we are in the current part, so Pause → Resume carries on from that word.
     _tts.setProgressHandler((_, start, _, _) {
@@ -58,6 +59,9 @@ class TtsService {
   /// On unless turned off; saved for next time.
   final music = ValueNotifier(true);
 
+  /// Prayers are read in a man's voice or a woman's, as the user chooses. Saved for next time.
+  final prayerMale = ValueNotifier(false);
+
   /// How far through what is being read, 0–1, word by word.
   final progress = ValueNotifier(0.0);
 
@@ -67,6 +71,7 @@ class TtsService {
 
   static const _slowKey = 'ttsSlow';
   static const _musicKey = 'ttsMusic';
+  static const _prayerMaleKey = 'prayerMale';
 
   /// How loud the music plays under the voice: quiet enough never to cover a word.
   static const _musicVolume = 0.14;
@@ -81,6 +86,9 @@ class TtsService {
   AudioPlayer? _player;
   AudioPlayer? _musicPlayer;
   VoiceRole _role = VoiceRole.verse;
+
+  /// A man's (true) or a woman's (false) voice asked for; null = by [_role].
+  bool? _male;
 
   /// Music and voice play together, and neither interrupts the other.
   static final _mix = AudioContextConfig(focus: AudioContextConfigFocus.mixWithOthers).build();
@@ -148,28 +156,51 @@ class TtsService {
 
   Future<void> _configure(AppLanguage lang, TtsVoice? override) async {
     final wanted = override?.name ?? _prefs.getString(voiceKey(lang.code));
-    final key = '${lang.code}|$wanted|${slow.value}';
+    final male = override == null ? _male : null;
+    final key = '${lang.code}|$wanted|${slow.value}|$male';
     if (_configuredFor == key) return;
     await _tts.awaitSpeakCompletion(true);
     await _tts.setLanguage(lang.ttsTag);
     await _tts.setSpeechRate(slow.value ? _slowRate : _normalRate);
-    await _tts.setPitch(0.88);
 
     final voices = await voicesFor(lang);
-    final pick = voices.where((v) => v.name == wanted).firstOrNull ?? voices.where((v) => v.male).firstOrNull;
+    final saved = voices.where((v) => v.name == wanted);
+    final pick = male == null
+        ? saved.firstOrNull ?? voices.where((v) => v.male).firstOrNull
+        : saved.where((v) => v.male == male).firstOrNull ?? voices.where((v) => v.male == male).firstOrNull;
+    // No voice of the wanted kind on this phone: lower or raise the one there is instead.
+    await _tts.setPitch(male == null || pick != null ? 0.88 : (male ? 0.72 : 1.15));
     if (pick != null) await _tts.setVoice(pick.toMap());
     _configuredFor = key;
+  }
+
+  /// The natural voice for [lang]: a man's or a woman's when [male] is given, else by [role].
+  static NaturalVoice? _naturalFor(String lang, VoiceRole role, bool? male) =>
+      naturalVoiceFor(lang, male == null ? role : (male ? VoiceRole.jesus : VoiceRole.verse));
+
+  /// The natural voice that would read [lang] for [role] / [male], if it is downloaded.
+  Future<bool> hasNaturalVoice(AppLanguage lang, {VoiceRole role = VoiceRole.verse, bool? male}) async {
+    final v = _naturalFor(lang.code, role, male);
+    return v != null && await voices.isInstalled(v);
+  }
+
+  Future<void> setPrayerMale(bool value) async {
+    prayerMale.value = value;
+    await _prefs.setBool(_prayerMaleKey, value);
   }
 
   /// Speaks [parts] in order with a gentle pause between each.
   /// [role] picks the natural voice: His words take the male one.
   /// [voice] overrides the saved phone voice (used to preview voices).
-  Future<void> speak(List<String> parts, AppLanguage lang, {TtsVoice? voice, VoiceRole role = VoiceRole.verse}) async {
+  /// [male] asks for a man's or a woman's voice whatever the [role] (used for prayers).
+  Future<void> speak(List<String> parts, AppLanguage lang,
+      {TtsVoice? voice, VoiceRole role = VoiceRole.verse, bool? male}) async {
     await stop();
     _parts = [for (final p in parts) if (p.trim().isNotEmpty) p];
     _lang = lang;
     _voice = voice;
     _role = role;
+    _male = male;
     _index = 0;
     _offset = 0;
     _report();
@@ -276,7 +307,7 @@ class TtsService {
     final lang = _lang;
     if (lang == null) return;
     playback.value = Playback.playing;
-    final natural = _voice == null ? naturalVoiceFor(lang.code, _role) : null;
+    final natural = _voice == null ? _naturalFor(lang.code, _role, _male) : null;
     final files = natural == null ? null : await voices.files(natural);
     if (natural != null && files != null) {
       try {
@@ -322,8 +353,8 @@ class TtsService {
 
   /// Loads the natural voice for [lang] and [role], if downloaded, so the first
   /// Listen starts at once. Screens that read aloud call this when they open.
-  Future<void> warmUp(AppLanguage lang, {VoiceRole role = VoiceRole.verse}) async {
-    final voice = naturalVoiceFor(lang.code, role);
+  Future<void> warmUp(AppLanguage lang, {VoiceRole role = VoiceRole.verse, bool? male}) async {
+    final voice = _naturalFor(lang.code, role, male);
     final files = voice == null ? null : await voices.files(voice);
     if (files == null) return;
     try {

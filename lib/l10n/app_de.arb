@@ -185,5 +185,20 @@
   "removeVoice": "Entfernen",
   "voiceDownloadFailed": "Download fehlgeschlagen. Prüfe deine Internetverbindung und versuch es noch einmal.",
   "voiceCredits": "Stimmen-Nachweis",
-  "music": "Musik"
+  "music": "Musik",
+  "readyPrayers": "Gebete",
+  "readyPrayersHint": "Gebete für jeden Tag und jedes Anliegen. Tippe eines an, um es zu hören.",
+  "voiceMan": "Männerstimme",
+  "voiceWoman": "Frauenstimme",
+  "sharePrayer": "Gebet teilen",
+  "searchPrayers": "Gebete suchen",
+  "forMe": "Für mich",
+  "forSomeone": "Für jemanden",
+  "forSomeoneHint": "Schreib den Namen, und das Gebet wird für diesen Menschen geschrieben, bereit zum Senden.",
+  "theirName": "Name",
+  "theirNameHint": "Name des Menschen, für den du betest",
+  "enterNameFirst": "Schreib zuerst den Namen",
+  "noPrayersFound": "Keine Gebete gefunden",
+  "whatsappMessage": "WhatsApp",
+  "copyText": "Kopieren"
 }

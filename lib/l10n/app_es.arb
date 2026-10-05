@@ -185,5 +185,20 @@
   "removeVoice": "Quitar",
   "voiceDownloadFailed": "No se pudo descargar. Revisa tu conexión e inténtalo de nuevo.",
   "voiceCredits": "Créditos de las voces",
-  "music": "Música"
+  "music": "Música",
+  "readyPrayers": "Oraciones",
+  "readyPrayersHint": "Oraciones para cada día y cada necesidad. Toca una para escucharla.",
+  "voiceMan": "Voz masculina",
+  "voiceWoman": "Voz femenina",
+  "sharePrayer": "Compartir oración",
+  "searchPrayers": "Buscar oraciones",
+  "forMe": "Por mí",
+  "forSomeone": "Por alguien",
+  "forSomeoneHint": "Escribe su nombre y la oración queda escrita para esa persona, lista para enviar.",
+  "theirName": "Su nombre",
+  "theirNameHint": "Nombre de la persona por quien oras",
+  "enterNameFirst": "Primero escribe su nombre",
+  "noPrayersFound": "No se encontraron oraciones",
+  "whatsappMessage": "WhatsApp",
+  "copyText": "Copiar"
 }

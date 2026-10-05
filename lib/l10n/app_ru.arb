@@ -185,5 +185,20 @@
   "removeVoice": "Удалить",
   "voiceDownloadFailed": "Не удалось скачать. Проверьте интернет и попробуйте снова.",
   "voiceCredits": "Авторы голосов",
-  "music": "Музыка"
+  "music": "Музыка",
+  "readyPrayers": "Молитвы",
+  "readyPrayersHint": "Молитвы на каждый день и на всякую нужду. Нажмите на молитву, чтобы послушать.",
+  "voiceMan": "Мужской голос",
+  "voiceWoman": "Женский голос",
+  "sharePrayer": "Поделиться молитвой",
+  "searchPrayers": "Поиск молитв",
+  "forMe": "За себя",
+  "forSomeone": "За другого",
+  "forSomeoneHint": "Напишите имя, и молитва будет написана за этого человека, готовая к отправке.",
+  "theirName": "Имя",
+  "theirNameHint": "Имя человека, за которого вы молитесь",
+  "enterNameFirst": "Сначала напишите имя",
+  "noPrayersFound": "Молитвы не найдены",
+  "whatsappMessage": "WhatsApp",
+  "copyText": "Копировать"
 }

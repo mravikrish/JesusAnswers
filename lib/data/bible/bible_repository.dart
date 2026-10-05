@@ -2,8 +2,11 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart' show Icons;
 import 'package:flutter/services.dart';
 
+import '../models/painting.dart';
+import '../models/prayer.dart';
 import '../models/story.dart';
 import '../models/verse.dart';
 
@@ -208,6 +211,54 @@ class BibleRepository {
           if (t.verses['$book $ch:$v'] case final text?)
             NumberedVerse(v, text, t.jesusWords['$book $ch:$v'] ?? const []),
       ],
+    );
+  }
+
+  /// The ready prayers in [lang], by group; English words where [lang] has none.
+  Future<List<PrayerGroup>> prayerGroups(String lang) async {
+    final index = jsonDecode(await _bundle.loadString('assets/prayers/prayers.json'));
+    final en = jsonDecode(await _bundle.loadString('assets/prayers/en.json')) as Map<String, dynamic>;
+    Map<String, dynamic> own = const {};
+    try {
+      own = jsonDecode(await _bundle.loadString('assets/prayers/$lang.json')) as Map<String, dynamic>;
+    } catch (_) {}
+    Map<String, dynamic> words(String id) =>
+        (own['prayers'] as Map?)?[id] as Map<String, dynamic>? ?? en['prayers'][id] as Map<String, dynamic>;
+    final paintings = {for (final p in await Painting.all(_bundle)) p.asset: p};
+    return [
+      for (final g in index['groups'] as List)
+        PrayerGroup(
+          id: g['id'] as String,
+          title: ((own['groups'] as Map?)?[g['id']] ?? en['groups'][g['id']]) as String,
+          prayers: [
+            for (final p in g['prayers'] as List)
+              Prayer(
+                id: p['id'] as String,
+                group: g['id'] as String,
+                icon: prayerIcons[p['icon']] ?? Icons.volunteer_activism_rounded,
+                title: words(p['id'] as String)['title'] as String,
+                text: words(p['id'] as String)['text'] as String?,
+                passage: p['passage'] as String?,
+                forText: words(p['id'] as String)['forText'] as String?,
+                forTitle: words(p['id'] as String)['forTitle'] as String?,
+                picture: paintings['assets/jesus/${p['picture']}'],
+              ),
+          ],
+        ),
+    ];
+  }
+
+  /// A Scripture prayer ("PSA 23:1-6") in [lang], from the full Bible.
+  Future<PrayerPassage?> prayerPassage(String passage, String lang) async {
+    final m = RegExp(r'^(\S+) (\d+):(\d+)(?:-(\d+))?$').firstMatch(passage);
+    if (m == null) return null;
+    final book = m.group(1)!, ch = int.parse(m.group(2)!);
+    final from = int.parse(m.group(3)!), to = int.parse(m.group(4) ?? m.group(3)!);
+    final verses = [for (final v in await chapter(book, ch, lang)) if (v.number >= from && v.number <= to) v.text];
+    if (verses.isEmpty) return null;
+    return PrayerPassage(
+      reference: '${(await _loadFull(lang)).books[book] ?? book} ${passage.substring(passage.indexOf(' ') + 1)}',
+      text: verses.join(' '),
     );
   }
 

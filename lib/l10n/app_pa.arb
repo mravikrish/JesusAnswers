@@ -185,5 +185,20 @@
   "removeVoice": "ਹਟਾਓ",
   "voiceDownloadFailed": "ਡਾਊਨਲੋਡ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਇੰਟਰਨੈੱਟ ਜਾਂਚ ਕੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
   "voiceCredits": "ਆਵਾਜ਼ਾਂ ਦਾ ਸਿਹਰਾ",
-  "music": "ਸੰਗੀਤ"
+  "music": "ਸੰਗੀਤ",
+  "readyPrayers": "ਤਿਆਰ ਪ੍ਰਾਰਥਨਾਵਾਂ",
+  "readyPrayersHint": "ਹਰ ਦਿਨ ਅਤੇ ਹਰ ਲੋੜ ਲਈ ਪ੍ਰਾਰਥਨਾਵਾਂ। ਸੁਣਨ ਲਈ ਕਿਸੇ ਇੱਕ 'ਤੇ ਟੈਪ ਕਰੋ।",
+  "voiceMan": "ਮਰਦ ਆਵਾਜ਼",
+  "voiceWoman": "ਔਰਤ ਆਵਾਜ਼",
+  "sharePrayer": "ਪ੍ਰਾਰਥਨਾ ਸਾਂਝੀ ਕਰੋ",
+  "searchPrayers": "ਪ੍ਰਾਰਥਨਾਵਾਂ ਲੱਭੋ",
+  "forMe": "ਮੇਰੇ ਲਈ",
+  "forSomeone": "ਕਿਸੇ ਹੋਰ ਲਈ",
+  "forSomeoneHint": "ਉਨ੍ਹਾਂ ਦਾ ਨਾਮ ਲਿਖੋ, ਪ੍ਰਾਰਥਨਾ ਉਨ੍ਹਾਂ ਲਈ ਤਿਆਰ ਹੋ ਜਾਵੇਗੀ, ਭੇਜਣ ਲਈ।",
+  "theirName": "ਉਨ੍ਹਾਂ ਦਾ ਨਾਮ",
+  "theirNameHint": "ਜਿਨ੍ਹਾਂ ਲਈ ਤੁਸੀਂ ਪ੍ਰਾਰਥਨਾ ਕਰ ਰਹੇ ਹੋ, ਉਨ੍ਹਾਂ ਦਾ ਨਾਮ",
+  "enterNameFirst": "ਪਹਿਲਾਂ ਉਨ੍ਹਾਂ ਦਾ ਨਾਮ ਲਿਖੋ",
+  "noPrayersFound": "ਕੋਈ ਪ੍ਰਾਰਥਨਾ ਨਹੀਂ ਮਿਲੀ",
+  "whatsappMessage": "WhatsApp",
+  "copyText": "ਕਾਪੀ ਕਰੋ"
 }

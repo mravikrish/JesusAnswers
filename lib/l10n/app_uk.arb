@@ -185,5 +185,20 @@
   "removeVoice": "Видалити",
   "voiceDownloadFailed": "Не вдалося завантажити. Перевірте інтернет і спробуйте знову.",
   "voiceCredits": "Автори голосів",
-  "music": "Музика"
+  "music": "Музика",
+  "readyPrayers": "Молитви",
+  "readyPrayersHint": "Молитви на кожен день і на всяку потребу. Торкніться молитви, щоб послухати.",
+  "voiceMan": "Чоловічий голос",
+  "voiceWoman": "Жіночий голос",
+  "sharePrayer": "Поділитися молитвою",
+  "searchPrayers": "Пошук молитов",
+  "forMe": "За себе",
+  "forSomeone": "За іншого",
+  "forSomeoneHint": "Напишіть ім'я, і молитва буде написана за цю людину, готова до надсилання.",
+  "theirName": "Ім'я",
+  "theirNameHint": "Ім'я людини, за яку ви молитеся",
+  "enterNameFirst": "Спершу напишіть ім'я",
+  "noPrayersFound": "Молитов не знайдено",
+  "whatsappMessage": "WhatsApp",
+  "copyText": "Копіювати"
 }

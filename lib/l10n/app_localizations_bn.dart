@@ -599,4 +599,51 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get music => 'সংগীত';
+
+  @override
+  String get readyPrayers => 'প্রস্তুত প্রার্থনা';
+
+  @override
+  String get readyPrayersHint =>
+      'প্রতিদিনের ও প্রতিটি প্রয়োজনের জন্য প্রার্থনা। শুনতে একটিতে ট্যাপ করুন।';
+
+  @override
+  String get voiceMan => 'পুরুষ কণ্ঠ';
+
+  @override
+  String get voiceWoman => 'নারী কণ্ঠ';
+
+  @override
+  String get sharePrayer => 'প্রার্থনা শেয়ার করুন';
+
+  @override
+  String get searchPrayers => 'প্রার্থনা খুঁজুন';
+
+  @override
+  String get forMe => 'আমার জন্য';
+
+  @override
+  String get forSomeone => 'অন্য কারো জন্য';
+
+  @override
+  String get forSomeoneHint =>
+      'তাঁর নাম লিখুন, প্রার্থনাটি তাঁর জন্য তৈরি হয়ে যাবে, পাঠানোর জন্য।';
+
+  @override
+  String get theirName => 'তাঁর নাম';
+
+  @override
+  String get theirNameHint => 'যাঁর জন্য প্রার্থনা করছেন তাঁর নাম';
+
+  @override
+  String get enterNameFirst => 'আগে তাঁর নাম লিখুন';
+
+  @override
+  String get noPrayersFound => 'কোনো প্রার্থনা পাওয়া যায়নি';
+
+  @override
+  String get whatsappMessage => 'WhatsApp';
+
+  @override
+  String get copyText => 'কপি করুন';
 }

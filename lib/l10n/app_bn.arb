@@ -185,5 +185,20 @@
   "removeVoice": "সরান",
   "voiceDownloadFailed": "ডাউনলোড হয়নি। ইন্টারনেট দেখে আবার চেষ্টা করুন।",
   "voiceCredits": "কণ্ঠের কৃতজ্ঞতা",
-  "music": "সংগীত"
+  "music": "সংগীত",
+  "readyPrayers": "প্রস্তুত প্রার্থনা",
+  "readyPrayersHint": "প্রতিদিনের ও প্রতিটি প্রয়োজনের জন্য প্রার্থনা। শুনতে একটিতে ট্যাপ করুন।",
+  "voiceMan": "পুরুষ কণ্ঠ",
+  "voiceWoman": "নারী কণ্ঠ",
+  "sharePrayer": "প্রার্থনা শেয়ার করুন",
+  "searchPrayers": "প্রার্থনা খুঁজুন",
+  "forMe": "আমার জন্য",
+  "forSomeone": "অন্য কারো জন্য",
+  "forSomeoneHint": "তাঁর নাম লিখুন, প্রার্থনাটি তাঁর জন্য তৈরি হয়ে যাবে, পাঠানোর জন্য।",
+  "theirName": "তাঁর নাম",
+  "theirNameHint": "যাঁর জন্য প্রার্থনা করছেন তাঁর নাম",
+  "enterNameFirst": "আগে তাঁর নাম লিখুন",
+  "noPrayersFound": "কোনো প্রার্থনা পাওয়া যায়নি",
+  "whatsappMessage": "WhatsApp",
+  "copyText": "কপি করুন"
 }

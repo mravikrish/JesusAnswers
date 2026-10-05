@@ -233,5 +233,20 @@
       }
     }
   },
-  "music": "Music"
+  "music": "Music",
+  "readyPrayers": "Ready Prayers",
+  "readyPrayersHint": "Prayers for every day and every need. Tap one to hear it.",
+  "voiceMan": "Male voice",
+  "voiceWoman": "Female voice",
+  "sharePrayer": "Share prayer",
+  "searchPrayers": "Search prayers",
+  "forMe": "For me",
+  "forSomeone": "For someone",
+  "forSomeoneHint": "Type their name and the prayer is written for them, ready to send.",
+  "theirName": "Their name",
+  "theirNameHint": "Name of the person you are praying for",
+  "enterNameFirst": "Type their name first",
+  "noPrayersFound": "No prayers found",
+  "whatsappMessage": "WhatsApp",
+  "copyText": "Copy"
 }

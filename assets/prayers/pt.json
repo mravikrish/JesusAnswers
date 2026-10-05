@@ -1,0 +1,279 @@
+{
+  "groups": {
+    "bible": "Orações da Bíblia",
+    "daily": "Todos os dias",
+    "needs": "Pelas minhas necessidades",
+    "others": "Pelos outros",
+    "faith": "Fé e louvor",
+    "celebrations": "Celebrações e gratidão",
+    "beginnings": "Novos começos",
+    "health": "Saúde e hospital",
+    "troubles": "Quando algo dá errado"
+  },
+  "prayers": {
+    "lords_prayer": {
+      "title": "O Pai Nosso",
+      "text": "Pai nosso, que estás nos céus, santificado seja o teu nome. Venha o teu reino. Seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje. E perdoa-nos as nossas dívidas, assim como nós perdoamos aos nossos devedores. E não nos deixes cair em tentação, mas livra-nos do mal; porque teu é o reino, e o poder, e a glória, para sempre. Amém."
+    },
+    "psalm23": {
+      "title": "O Senhor é o meu pastor"
+    },
+    "psalm91": {
+      "title": "Debaixo das suas asas"
+    },
+    "psalm121": {
+      "title": "O Senhor que te guarda"
+    },
+    "psalm27": {
+      "title": "O Senhor é a minha luz"
+    },
+    "psalm103": {
+      "title": "Bendize, ó minha alma, ao Senhor"
+    },
+    "psalm51": {
+      "title": "Cria em mim um coração puro"
+    },
+    "psalm139": {
+      "title": "Sonda-me, ó Deus"
+    },
+    "blessing": {
+      "title": "O Senhor te abençoe"
+    },
+    "magnificat": {
+      "title": "O cântico de Maria"
+    },
+    "ephesians3": {
+      "title": "Conhecer o amor de Cristo"
+    },
+    "john17": {
+      "title": "Jesus ora por nós"
+    },
+    "morning": {
+      "title": "Oração da manhã",
+      "text": "Senhor Jesus, obrigado por este novo dia e por me guardares durante a noite. Entrego-te este dia. Guia os meus passos, guarda as minhas palavras e enche o meu coração da tua paz. Ajuda-me a ser gentil e paciente com todos que eu encontrar. Seja o que for que este dia trouxer, quero caminhar contigo. Amém."
+    },
+    "night": {
+      "title": "Oração da noite",
+      "text": "Senhor Jesus, obrigado por estares comigo hoje. Perdoa-me onde eu falhei e cura o que me feriu. Coloco nas tuas mãos cada preocupação deste dia. Cuida de mim e da minha família enquanto dormimos. Dá-me um descanso profundo e um coração tranquilo, e desperta-me para uma nova manhã no teu amor. Amém."
+    },
+    "meals": {
+      "title": "Oração antes das refeições",
+      "text": "Senhor, obrigado por este alimento e pelas mãos que o prepararam. Abençoa-o para fortalecer o nosso corpo, e abençoa-nos enquanto partilhamos esta refeição. Torna-nos gratos por tudo o que temos, e lembra-nos dos que hoje têm fome. Amém."
+    },
+    "work": {
+      "title": "Antes do trabalho ou do estudo",
+      "text": "Senhor, entrego-te o trabalho e o estudo que tenho hoje. Dá-me uma mente clara, um coração disposto e força para fazer o meu melhor. Ajuda-me a ser honesto e dedicado, e a tratar os outros com respeito. Quando for difícil, mantém-me calmo. Que tudo o que eu fizer te honre. Amém."
+    },
+    "thanksgiving": {
+      "title": "Oração de gratidão",
+      "text": "Pai, obrigado pela tua bondade para comigo. Obrigado pela vida e pelo fôlego, pela minha família e pelos meus amigos, pelo alimento e pelo abrigo, e por cada bênção que me esqueci de contar. Acima de tudo, obrigado por Jesus, que me ama e se entregou por mim. Dá-me um coração grato todos os dias. Amém."
+    },
+    "healing": {
+      "title": "Por cura",
+      "text": "Senhor Jesus, tu curaste os doentes e tocaste os que sofriam. Venho a ti agora com o meu corpo e o meu coração. Toca-me com o teu poder que cura. Tira a minha dor e o meu medo, e dá-me força para cada dia. Guia os médicos e todos os que cuidam de mim. Entrego a minha vida nas tuas mãos. Amém.",
+      "forText": "Senhor Jesus, tu curaste os doentes e tocaste os que sofriam. Trago-te agora {name}. Toca {name} com o teu poder que cura. Tira a sua dor e o seu medo, e dá-lhe força para cada dia. Guia os médicos e todos os que cuidam de {name}. Entrego a sua vida nas tuas mãos. Amém."
+    },
+    "peace": {
+      "title": "Por paz na ansiedade",
+      "text": "Senhor Jesus, o meu coração está aflito e os meus pensamentos não descansam. Tu disseste: Vinde a mim, e eu vos aliviarei. Venho a ti agora. Entrego-te cada preocupação e cada medo que carrego. Acalma a minha mente e a minha respiração. Enche-me da tua paz que excede todo o entendimento, e ajuda-me a confiar em ti passo a passo. Amém.",
+      "forText": "Senhor Jesus, {name} vive com ansiedade e o seu coração está aflito. Tu disseste: Vinde a mim, e eu vos aliviarei. Traz {name} para perto de ti agora. Toma cada preocupação e cada medo que carrega. Acalma a sua mente, enche o seu coração da tua paz que excede todo o entendimento, e ajuda-lhe a confiar em ti passo a passo. Amém."
+    },
+    "strength": {
+      "title": "Por força em tempos difíceis",
+      "text": "Senhor, sinto-me fraco e cansado, e o caminho é difícil. Tu prometeste que o teu poder se aperfeiçoa na fraqueza. Sê a minha força hoje. Sustenta-me quando eu quiser desistir, e dá-me coragem para continuar. Lembra-me de que nunca estou sozinho, porque tu estás comigo. Amém."
+    },
+    "forgiveness": {
+      "title": "Pedindo perdão",
+      "text": "Senhor Jesus, arrependo-me do mal que fiz, nos meus pensamentos, nas minhas palavras e nas minhas ações. Não o escondo de ti. Por favor, perdoa-me e lava o meu coração. Obrigado porque a tua misericórdia é maior do que o meu pecado. Ajuda-me a afastar-me do mal e a viver na tua luz. Amém."
+    },
+    "guidance": {
+      "title": "Por direção",
+      "text": "Senhor, não sei que caminho seguir, mas tu conheces o caminho. Trago-te esta decisão. Dá-me sabedoria e mostra-me com clareza o caminho certo. Fecha as portas que não vêm de ti e abre as que vêm. Ajuda-me a esperar com paciência e a seguir-te com confiança. Amém."
+    },
+    "protection": {
+      "title": "Por proteção",
+      "text": "Senhor, tu és o meu refúgio e o meu lugar seguro. Protege-me a mim e à minha família de todo o mal e perigo, visível e invisível. Guarda-nos quando viajamos, quando trabalhamos e quando dormimos. Afasta o mal do nosso lar. Cobre-nos com o teu amor e deixa-nos descansar no teu cuidado. Amém.",
+      "forText": "Senhor, tu és refúgio e lugar seguro. Protege {name} de todo o mal e perigo, visível e invisível. Guarda {name} quando viaja, quando trabalha e quando dorme. Afasta o mal da sua vida e do seu lar. Cobre {name} com o teu amor e dá-lhe descanso no teu cuidado. Amém."
+    },
+    "grief": {
+      "title": "Por consolo no luto",
+      "text": "Senhor Jesus, o meu coração está partido e a perda pesa tanto. Tu choraste com os que choravam, e estás perto dos que têm o coração quebrantado. Abraça-me na minha tristeza. Consola-me quando as lágrimas vierem, e carrega-me nos dias em que não consigo seguir. Dá-me esperança na tua promessa de vida que não tem fim. Amém.",
+      "forText": "Senhor Jesus, {name} está de luto e o seu coração está partido. Tu estás perto dos que têm o coração quebrantado. Abraça {name} na sua tristeza. Consola-lhe o coração quando as lágrimas vierem, e dá-lhe forças nos dias em que não consegue seguir. Põe ao seu lado pessoas que amam {name}, e dá-lhe esperança na tua promessa de vida sem fim. Amém."
+    },
+    "loneliness": {
+      "title": "Quando me sinto sozinho",
+      "text": "Senhor Jesus, sinto-me sozinho e parece que ninguém me entende. Mas tu me vês, me conheces e me amas. Obrigado pela tua promessa de nunca me deixar. Fica perto de mim agora. Traz para a minha vida pessoas boas e fiéis, e ajuda-me a ser amigo dos outros. Amém."
+    },
+    "provision": {
+      "title": "Pelas necessidades e pelo trabalho",
+      "text": "Pai, tu alimentas as aves do céu e sabes do que eu preciso. Trago-te as minhas necessidades: o meu trabalho, o meu dinheiro, a minha casa e a minha família. Provê para nós, abre portas de trabalho e dá-me sabedoria para usar bem o que me dás. Livra-me da preocupação e ajuda-me a confiar em ti cada dia. Amém."
+    },
+    "family": {
+      "title": "Pela minha família",
+      "text": "Senhor, obrigado pela minha família. Abençoa cada um de nós. Guarda-nos seguros, saudáveis e perto de ti. Enche o nosso lar de amor, paciência e paz. Cura qualquer ferida entre nós, e ensina-nos a perdoar uns aos outros. Que a nossa família te honre em tudo o que fazemos. Amém."
+    },
+    "children": {
+      "title": "Pelos meus filhos",
+      "text": "Senhor Jesus, tu acolheste as criancinhas e as abençoaste. Trago-te os meus filhos. Protege-os, guia-os e ajuda-os a crescer em sabedoria e bondade. Guarda-os do mal e das más companhias. Ajuda-os a conhecer-te e a amar-te por toda a vida. Dá-me paciência e sabedoria como pai ou mãe. Amém."
+    },
+    "marriage": {
+      "title": "Pelo meu casamento",
+      "text": "Senhor, obrigado pelo meu marido ou pela minha esposa. Abençoa o nosso casamento. Ajuda-nos a amar-nos com paciência e bondade, a ouvir bem e a perdoar depressa. Guarda-nos fiéis um ao outro e a ti. Torna o nosso amor mais forte ano após ano, e sê tu o centro do nosso lar. Amém."
+    },
+    "sick": {
+      "title": "Por alguém que está doente",
+      "text": "Senhor Jesus, apresento-te a pessoa que amo e que está doente. Tu conheces a sua dor e o seu medo. Por favor, toca-a com a tua mão que cura. Dá-lhe força, descanso e paz. Guia os médicos e enfermeiros que cuidam dela. Consola a sua família, e que ela sinta o teu amor por perto. Amém."
+    },
+    "forgive_others": {
+      "title": "Para perdoar alguém",
+      "text": "Senhor, alguém me magoou, e é difícil deixar isso ir. Tu me perdoaste quando eu não merecia. Ajuda-me a perdoar como tu me perdoaste. Cura o meu coração da raiva e da amargura. Escolho entregar esta pessoa nas tuas mãos. Abençoa-a, e dá-me a tua paz. Amém."
+    },
+    "country": {
+      "title": "Pelo meu país",
+      "text": "Senhor, oro pelo meu país e por todo o seu povo. Dá sabedoria e honestidade aos nossos governantes. Traz paz onde há conflito, e justiça onde há injustiça. Protege os pobres, os fracos e os esquecidos. Abençoa a nossa terra e volta os nossos corações para ti. Amém."
+    },
+    "salvation": {
+      "title": "Para receber Jesus",
+      "text": "Senhor Jesus, creio que és o Filho de Deus, que morreste na cruz pelos meus pecados e ressuscitaste. Arrependo-me dos meus pecados e volto-me para ti. Por favor, perdoa-me e entra na minha vida. Recebo-te como meu Senhor e Salvador. Obrigado por me amares e me dares uma nova vida. Amém.",
+      "forTitle": "Para que conheça Jesus",
+      "forText": "Senhor, oro por {name}. Tu amas {name} mais do que eu poderia amar. Abre o seu coração para te conhecer. Mostra-lhe que Jesus morreu e ressuscitou por sua vida. Atrai {name} para ti com ternura, e põe no seu caminho pessoas que lhe mostrem o teu amor. Que receba o teu perdão e uma vida nova. Amém."
+    },
+    "surrender": {
+      "title": "Entregar a minha vida a Deus",
+      "text": "Senhor, entrego-te toda a minha vida: os meus planos, os meus medos, as minhas esperanças e o meu passado. Não seja feita a minha vontade, mas a tua. Toma o que eu seguro com demasiada força e ensina-me a confiar em ti. Leva-me aonde queres que eu vá, e faz de mim a pessoa que criaste para eu ser. Amém."
+    },
+    "praise": {
+      "title": "Oração de louvor",
+      "text": "Senhor Deus, tu és santo, poderoso e bom. Fizeste os céus e a terra, e o teu amor dura para sempre. Eu te louvo por quem tu és. Eu te louvo por Jesus, o meu Salvador, e pela tua fidelidade cada dia. De todo o meu coração eu te adoro. Amém."
+    },
+    "birthday": {
+      "title": "Por um aniversário de vida",
+      "text": "Senhor, obrigado pelo presente da minha vida e por mais um ano. Obrigado por cada pessoa que me ama e por tudo o que fizeste por mim. Perdoa-me onde eu falhei, e guia-me no ano que começa. Ajuda-me a crescer em fé, bondade e alegria. Os meus tempos estão nas tuas mãos. Amém.",
+      "forText": "Senhor, obrigado por {name} e pelo presente da sua vida. Abençoa {name} no seu aniversário com alegria, saúde e paz. Obrigado por cada ano que lhe deste. Guia os seus passos no ano que começa, guarda a sua vida, e mostra-lhe a grandeza do teu amor. Amém."
+    },
+    "wedding": {
+      "title": "Por um casamento",
+      "text": "Senhor, obrigado por nos unires. Ao começarmos a nossa vida de casados, sê o centro do nosso lar. Ensina-nos a amar-nos com paciência, a perdoar depressa e a servir um ao outro. Guarda-nos fiéis nos bons e nos maus momentos. Abençoa as nossas famílias, e que o nosso casamento te dê glória. Amém.",
+      "forText": "Senhor, obrigado por {name} no dia do seu casamento. Abençoa a sua união e sê o centro do seu lar. Ensina-lhes a amar-se com paciência, a perdoar depressa e a servir um ao outro. Guarda-os fiéis nos bons e nos maus momentos, e enche de alegria a sua vida juntos. Amém."
+    },
+    "anniversary": {
+      "title": "Por um aniversário de casamento",
+      "text": "Senhor, obrigado por mais um ano do nosso casamento. Obrigado pelas alegrias que partilhamos e por nos sustentares nos dias difíceis. Perdoa-nos onde nos ferimos. Renova o nosso amor, aprofunda a nossa amizade, e mantém-nos perto de ti e um do outro em todos os anos que virão. Amém.",
+      "forText": "Senhor, obrigado por {name} e por mais um ano do seu casamento. Obrigado pelas alegrias que partilharam e por os sustentares nos dias difíceis. Renova o seu amor, aprofunda a sua amizade, e mantém-os perto de ti e um do outro por muitos anos. Amém."
+    },
+    "new_baby": {
+      "title": "Por um bebê que nasceu",
+      "text": "Senhor, obrigado pelo precioso presente do nosso bebê e por um parto seguro. Abençoa esta criança com saúde e força, e protege-a de dia e de noite. Dá-nos sabedoria, paciência e amor como pais. Que a nossa criança cresça a conhecer-te e a amar-te. Amém.",
+      "forText": "Senhor, obrigado pelo precioso presente do bebê, {name}. Abençoa esta criança com saúde e força, e protege-a de dia e de noite. Dá à mãe descanso e recuperação, e aos pais sabedoria, paciência e amor. Que esta criança cresça a conhecer-te e a amar-te. Amém."
+    },
+    "new_home": {
+      "title": "Bênção de um novo lar",
+      "text": "Senhor, obrigado por este lar. Nós o dedicamos a ti. Que a tua paz encha cada cômodo, e que aqui morem o amor, a bondade e a oração. Protege esta casa e todos os que nela vivem. Que cada visita encontre aqui acolhimento, e que este lar sempre te honre. Amém."
+    },
+    "success": {
+      "title": "Gratidão por uma conquista",
+      "text": "Senhor, obrigado por esta conquista. Tu me deste a força, a ajuda e todo o bem que a tornou possível. Guarda o meu coração humilde e grato. Ajuda-me a usar o que recebi para abençoar os outros, e a continuar a confiar em ti no que vier. Toda a glória é tua. Amém.",
+      "forText": "Senhor, obrigado pela conquista que deste a {name}. Tu lhe deste força e ajuda pelo caminho. Guarda o seu coração humilde e grato, e guia os seus próximos passos. Ajuda-lhe a usar o que recebeu para abençoar os outros. Toda a glória é tua. Amém."
+    },
+    "christmas": {
+      "title": "Oração de Natal",
+      "text": "Senhor Jesus, obrigado por vires ao mundo como uma criancinha. Deixaste a glória do céu para estar conosco. Enche os nossos corações e os nossos lares da alegria e da paz do Natal. Ajuda-nos a partilhar o teu amor com os pobres e com os que estão sozinhos. Nasce hoje de novo nos nossos corações. Amém."
+    },
+    "easter": {
+      "title": "Oração de Páscoa",
+      "text": "Senhor Jesus, morreste pelos nossos pecados e ressuscitaste ao terceiro dia. A morte não te pôde reter. Obrigado pela vitória do túmulo vazio. Enche-nos da esperança da tua ressurreição, e ajuda-nos a viver cada dia no poder da tua vida nova. Aleluia, tu ressuscitaste. Amém."
+    },
+    "new_year": {
+      "title": "Oração de Ano Novo",
+      "text": "Senhor, obrigado por me sustentares durante o ano que passou. Deixo contigo as suas tristezas e os meus erros. Entrego-te este ano novo: os meus planos, a minha família, o meu trabalho e a minha saúde. Caminha comigo cada dia. Ajuda-me a ficar mais perto de ti, e que este seja um ano da tua bênção. Amém."
+    },
+    "journey": {
+      "title": "Antes de uma viagem",
+      "text": "Senhor, vou viajar e coloco esta viagem nas tuas mãos. Protege-me na estrada, no ar e na água. Livra-me de acidentes e de todo o perigo. Dá sabedoria a todos os responsáveis pela nossa viagem. Guarda a minha casa enquanto eu estiver fora, e leva-me em segurança ao meu destino. Amém.",
+      "forText": "Senhor, {name} vai viajar, e coloco a sua viagem nas tuas mãos. Protege {name} na estrada, no ar e na água. Livra {name} de acidentes e de todo o perigo. Dá sabedoria a todos os responsáveis pela sua viagem, e leva {name} em segurança ao seu destino e de volta para casa. Amém."
+    },
+    "new_business": {
+      "title": "Ao começar um negócio",
+      "text": "Senhor, estou começando este negócio, e o dedico a ti. Dá-me sabedoria em cada decisão, e leva-me às pessoas certas. Ajuda-me a trabalhar com honestidade e a tratar com justiça os meus clientes e trabalhadores. Abençoa o trabalho das minhas mãos e provê o que precisamos. Que este negócio te dê glória. Amém.",
+      "forText": "Senhor, oro por {name}, que está começando um negócio. Dá-lhe sabedoria em cada decisão, e conduz {name} às pessoas certas. Ajuda-lhe a trabalhar com honestidade e a tratar todos com justiça. Abençoa o trabalho das suas mãos, abre portas no seu caminho e provê tudo o que precisa. Que o seu negócio te dê glória. Amém."
+    },
+    "new_job": {
+      "title": "Ao começar um novo trabalho",
+      "text": "Senhor, obrigado por este novo trabalho. Ao começar, ajuda-me a aprender depressa e a trabalhar com fidelidade. Dá-me favor com os meus colegas, e ajuda-me a ser honesto, gentil e paciente. Quando eu duvidar de mim, dá-me confiança. Que o meu trabalho te honre e sustente bem a minha família. Amém.",
+      "forText": "Senhor, obrigado pelo novo trabalho que deste a {name}. Ao começar, ajuda-lhe a aprender depressa e a trabalhar com fidelidade. Dá-lhe favor com os colegas, e confiança quando sentir dúvidas. Abençoa o seu trabalho, e que ele sustente bem a sua família. Amém."
+    },
+    "interview": {
+      "title": "Antes de uma entrevista",
+      "text": "Senhor, tenho uma entrevista e sinto nervosismo. Acalma o meu coração e clareia a minha mente. Ajuda-me a lembrar o que preparei e a falar com honestidade e confiança. Dá-me favor diante das pessoas que me receberem. Se este é o lugar para mim, abre a porta; se não, leva-me a algo melhor. Amém.",
+      "forText": "Senhor, oro por {name}, que tem uma entrevista. Acalma o seu coração e clareia a sua mente. Ajuda-lhe a falar com honestidade e confiança, e dá-lhe favor diante de quem fizer a entrevista. Se este é o lugar para a sua vida, abre a porta; se não, abre-lhe um caminho melhor. Amém."
+    },
+    "school": {
+      "title": "Ao começar a escola ou a faculdade",
+      "text": "Senhor, começo uma nova etapa de estudos. Obrigado por esta oportunidade. Dá-me uma mente que entenda e um coração disposto a esforçar-se. Ajuda-me a fazer boas amizades e a afastar-me do que é errado. Abençoa os meus professores, e ajuda-me a crescer em sabedoria e em fé. Amém.",
+      "forText": "Senhor, oro por {name}, que começa a escola ou a faculdade. Dá-lhe uma mente que entenda e um coração disposto a esforçar-se. Ajuda-lhe a fazer boas amizades e a afastar-se do que é errado. Abençoa os seus professores, e ajuda-lhe a crescer em sabedoria e em fé. Amém."
+    },
+    "exams": {
+      "title": "Antes das provas",
+      "text": "Senhor, as minhas provas estão perto e sinto a pressão. Ajuda-me a estudar bem e a lembrar o que aprendi. No dia da prova, dá-me calma e uma mente clara. Ajuda-me a dar o meu melhor e a agir com honestidade. Seja qual for o resultado, lembra-me de que o meu valor está em ti. Amém.",
+      "forText": "Senhor, oro por {name}, que tem provas em breve. Ajuda-lhe a estudar bem e a lembrar o que aprendeu. No dia da prova, dá-lhe calma e uma mente clara. Ajuda-lhe a dar o seu melhor, e lembra-lhe de que o seu valor está em ti, seja qual for o resultado. Amém."
+    },
+    "new_vehicle": {
+      "title": "Bênção de um veículo novo",
+      "text": "Senhor, obrigado por este veículo novo. Eu o dedico a ti. Protege todos os que viajarem nele, e guarda-o de acidentes e danos. Dá a quem o conduzir paciência, cuidado e bom juízo na estrada. Ajuda-me a usá-lo para servir a minha família e os outros. Amém."
+    },
+    "surgery": {
+      "title": "Antes de uma cirurgia",
+      "text": "Senhor Jesus, vou fazer uma cirurgia e tenho medo. Coloco o meu corpo e a minha vida nas tuas mãos. Guia as mãos e a mente dos cirurgiões, médicos e enfermeiros. Guarda-me durante a cirurgia e faz-me passar por ela bem. Dá-me uma recuperação rápida e completa, e enche o meu coração da tua paz. Amém.",
+      "forText": "Senhor Jesus, {name} vai fazer uma cirurgia, e coloco a sua vida nas tuas mãos. Guia as mãos e a mente dos cirurgiões, médicos e enfermeiros. Guarda {name} durante a cirurgia e faz que tudo corra bem. Tira o seu medo, dá-lhe uma recuperação rápida e completa, e consola a sua família enquanto espera. Amém."
+    },
+    "hospital": {
+      "title": "No hospital",
+      "text": "Senhor, estou no hospital e os dias parecem longos. Fica comigo neste quarto. Dá-me paciência na espera, força para o tratamento e descanso à noite. Abençoa os médicos e enfermeiros que cuidam de mim. Consola a minha família, e deixa-me sentir que estás perto. Leva-me para casa no teu bom tempo. Amém.",
+      "forText": "Senhor, {name} está no hospital, e coloco a sua vida nas tuas mãos. Fica com {name} naquele quarto. Dá-lhe paciência na espera, força para o tratamento e descanso à noite. Abençoa os médicos e enfermeiros que cuidam de {name}. Consola a sua família, e leva {name} para casa com saúde no teu bom tempo. Amém."
+    },
+    "recovery": {
+      "title": "Gratidão pela recuperação",
+      "text": "Senhor, obrigado por me tirares desta doença. Obrigado pelos médicos, pelos remédios e por cada pessoa que cuidou de mim e orou por mim. Continua a restaurar as minhas forças dia após dia. Ajuda-me a nunca esquecer a tua bondade, e a usar a minha saúde para servir a ti e aos outros. Amém."
+    },
+    "pregnancy": {
+      "title": "Por uma gravidez segura",
+      "text": "Senhor, obrigado pela vida que cresce dentro de mim. Protege esta criança e ajuda-a a crescer saudável e forte. Guarda-me bem no corpo e na mente, e acalma os meus medos. Guia os médicos e todos os que cuidam de nós. Leva-nos em segurança pelo parto, e enche o nosso lar de alegria. Amém.",
+      "forText": "Senhor, obrigado pelo bebê que {name} traz no ventre. Protege esta criança e ajuda-a a crescer saudável e forte. Guarda a mãe bem no corpo e na mente, e acalma os seus medos. Guia os médicos e todos os que cuidam delas. Leva mãe e bebê em segurança pelo parto, e enche o seu lar de alegria. Amém."
+    },
+    "hopeless": {
+      "title": "Quando falta esperança",
+      "text": "Senhor, sinto um vazio e não vejo esperança, e não tenho forças para orar muito. Mas venho a ti como estou. Segura-me nesta escuridão. Lembra-me de que a minha vida é preciosa para ti e de que isto não vai durar para sempre. Leva-me a pessoas que possam ajudar-me. Dá-me luz para mais um dia. Amém.",
+      "forText": "Senhor, {name} está passando por um tempo escuro e não vê esperança. Segura {name} nesta escuridão. Lembra-lhe de que a sua vida é preciosa para ti e de que isto não vai durar para sempre. Põe ao seu lado pessoas que possam ajudar, e dá-lhe luz e esperança para mais um dia. Amém."
+    },
+    "addiction": {
+      "title": "Libertação de um vício",
+      "text": "Senhor Jesus, luto com algo que não consigo deixar com as minhas próprias forças. Confesso-o a ti. Quebra as correntes que me prendem, e dá-me força para dizer não, um dia de cada vez. Cura o que está quebrado dentro de mim. Leva-me a pessoas que possam ajudar, e ajuda-me a andar em liberdade. Amém.",
+      "forText": "Senhor Jesus, oro por {name}, que luta contra um vício. Quebra as correntes que prendem {name}, e dá-lhe força para dizer não, um dia de cada vez. Cura o que está quebrado no seu interior. Põe no seu caminho pessoas que possam ajudar, e que ande em liberdade. Dá à sua família paciência e esperança. Amém."
+    },
+    "travel_trouble": {
+      "title": "Quando há problemas na viagem",
+      "text": "Senhor, algo deu errado nesta viagem e sinto preocupação. Fica comigo agora mesmo. Guarda-me a mim e a todos os que estão comigo. Se alguém se feriu, cura-o e manda ajuda depressa. Dá-me uma mente calma para saber o que fazer. Abre caminho onde parece não haver caminho, e leva-nos para casa em segurança. Amém."
+    },
+    "job_loss": {
+      "title": "Depois de perder o emprego",
+      "text": "Senhor, perdi o meu emprego e sinto preocupação e vergonha. Tu sabes do que a minha família precisa. Consola o meu coração e lembra-me de que o meu valor está em ti. Dá-me força para continuar a procurar, e abre a porta certa no tempo certo. Provê para nós cada dia até lá. Amém.",
+      "forText": "Senhor, {name} perdeu o emprego, e coloco a sua vida nas tuas mãos. Tu sabes do que a sua família precisa. Consola o seu coração e lembra-lhe de que o seu valor está em ti. Dá-lhe força para continuar a procurar, abre a porta certa no tempo certo, e provê para as suas necessidades cada dia até lá. Amém."
+    },
+    "money": {
+      "title": "Em dificuldades financeiras",
+      "text": "Senhor, vivo sob muita pressão por causa de dinheiro e dívidas. Tu conheces cada necessidade. Dá-me sabedoria para administrar o que tenho e coragem para enfrentar o que devo. Provê para a minha família, e abre caminhos para ganhar com honestidade. Livra-me do medo e da vergonha, e ajuda-me a confiar em ti hoje. Amém."
+    },
+    "legal": {
+      "title": "Num problema na justiça",
+      "text": "Senhor, enfrento um problema na justiça e isso pesa sobre mim. Tu és um Deus de justiça e de verdade. Dá-me sabedoria e bons conselhos. Que a verdade venha à luz, e dá imparcialidade a quem vai decidir. Guarda-me na honestidade e na calma, e dá-me paz seja qual for o resultado. Amém."
+    },
+    "quarrel": {
+      "title": "Quando há brigas em casa",
+      "text": "Senhor, há raiva e mágoa no nosso lar, e estou cansado das brigas. Acalma os nossos corações e as nossas palavras. Ajuda-nos a ouvir um ao outro, a reconhecer onde erramos e a perdoar. Cura as feridas entre nós, e traz de volta a paz à nossa família. Começa por mim. Amém."
+    },
+    "disaster": {
+      "title": "Numa calamidade",
+      "text": "Senhor, aconteceu uma calamidade e temos medo. Protege-nos e a todos os que estão em perigo. Salva os que estão presos, cura os feridos e consola os que perderam pessoas queridas e casas. Dá forças a todos os que estão ajudando. Sê o nosso refúgio e fortaleza, socorro bem presente na angústia. Amém."
+    }
+  }
+}

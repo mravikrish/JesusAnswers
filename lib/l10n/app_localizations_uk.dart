@@ -601,4 +601,51 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get music => 'Музика';
+
+  @override
+  String get readyPrayers => 'Молитви';
+
+  @override
+  String get readyPrayersHint =>
+      'Молитви на кожен день і на всяку потребу. Торкніться молитви, щоб послухати.';
+
+  @override
+  String get voiceMan => 'Чоловічий голос';
+
+  @override
+  String get voiceWoman => 'Жіночий голос';
+
+  @override
+  String get sharePrayer => 'Поділитися молитвою';
+
+  @override
+  String get searchPrayers => 'Пошук молитов';
+
+  @override
+  String get forMe => 'За себе';
+
+  @override
+  String get forSomeone => 'За іншого';
+
+  @override
+  String get forSomeoneHint =>
+      'Напишіть ім\'я, і молитва буде написана за цю людину, готова до надсилання.';
+
+  @override
+  String get theirName => 'Ім\'я';
+
+  @override
+  String get theirNameHint => 'Ім\'я людини, за яку ви молитеся';
+
+  @override
+  String get enterNameFirst => 'Спершу напишіть ім\'я';
+
+  @override
+  String get noPrayersFound => 'Молитов не знайдено';
+
+  @override
+  String get whatsappMessage => 'WhatsApp';
+
+  @override
+  String get copyText => 'Копіювати';
 }

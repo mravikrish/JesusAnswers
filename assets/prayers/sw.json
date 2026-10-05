@@ -1,0 +1,279 @@
+{
+  "groups": {
+    "bible": "Maombi kutoka Biblia",
+    "daily": "Kila siku",
+    "needs": "Kwa mahitaji yangu",
+    "others": "Kwa ajili ya wengine",
+    "faith": "Imani na sifa",
+    "celebrations": "Sherehe na shukrani",
+    "beginnings": "Mwanzo mpya",
+    "health": "Afya na hospitali",
+    "troubles": "Jambo likienda vibaya"
+  },
+  "prayers": {
+    "lords_prayer": {
+      "title": "Sala ya Bwana",
+      "text": "Baba yetu uliye mbinguni, jina lako litukuzwe. Ufalme wako uje. Mapenzi yako yatimizwe hapa duniani kama huko mbinguni. Utupe leo riziki yetu. Utusamehe makosa yetu, kama sisi tunavyowasamehe waliotukosea. Na usitutie majaribuni, lakini utuokoe na yule mwovu. Kwa kuwa ufalme ni wako, na nguvu, na utukufu, hata milele. Amina."
+    },
+    "psalm23": {
+      "title": "Bwana ndiye mchungaji wangu"
+    },
+    "psalm91": {
+      "title": "Chini ya mabawa yake"
+    },
+    "psalm121": {
+      "title": "Bwana akulindaye"
+    },
+    "psalm27": {
+      "title": "Bwana ni nuru yangu"
+    },
+    "psalm103": {
+      "title": "Ee nafsi yangu, umhimidi Bwana"
+    },
+    "psalm51": {
+      "title": "Uniumbie moyo safi"
+    },
+    "psalm139": {
+      "title": "Unichunguze, Ee Mungu"
+    },
+    "blessing": {
+      "title": "Bwana akubariki"
+    },
+    "magnificat": {
+      "title": "Wimbo wa Mariamu"
+    },
+    "ephesians3": {
+      "title": "Kujua upendo wa Kristo"
+    },
+    "john17": {
+      "title": "Yesu anatuombea"
+    },
+    "morning": {
+      "title": "Sala ya asubuhi",
+      "text": "Bwana Yesu, asante kwa siku hii mpya na kwa kunilinda usiku. Nakupa siku hii. Uongoze hatua zangu, ulinde maneno yangu, na ujaze moyo wangu amani yako. Nisaidie kuwa mpole na mvumilivu kwa kila mtu nitakayekutana naye. Lolote litakaloletwa na siku hii, nataka kutembea pamoja nawe. Amina."
+    },
+    "night": {
+      "title": "Sala ya usiku",
+      "text": "Bwana Yesu, asante kwa kuwa pamoja nami leo. Unisamehe pale nilipokosea, na uponye kilichoniumiza. Naweka kila wasiwasi wa siku hii mikononi mwako. Unilinde mimi na familia yangu tunapolala. Unipe pumziko tele na moyo uliotulia, na uniamshe asubuhi mpya katika upendo wako. Amina."
+    },
+    "meals": {
+      "title": "Sala kabla ya kula",
+      "text": "Bwana, asante kwa chakula hiki na kwa mikono iliyokiandaa. Ukibariki kiimarishe miili yetu, na utubariki tunaposhiriki mlo huu pamoja. Utufanye tuwe na shukrani kwa yote tuliyo nayo, na utukumbushe wale walio na njaa leo. Amina."
+    },
+    "work": {
+      "title": "Kabla ya kazi au masomo",
+      "text": "Bwana, nakukabidhi kazi na masomo yaliyo mbele yangu leo. Unipe akili safi, moyo ulio tayari, na nguvu ya kufanya kwa ubora wangu wote. Nisaidie kuwa mwaminifu na mwenye bidii, na kuwaheshimu wengine. Ikiwa vigumu, unituliza. Kila nifanyalo likuletee heshima. Amina."
+    },
+    "thanksgiving": {
+      "title": "Sala ya shukrani",
+      "text": "Baba, asante kwa wema wako kwangu. Asante kwa uhai na pumzi, kwa familia yangu na marafiki, kwa chakula na makao, na kwa kila baraka niliyosahau kuihesabu. Zaidi ya yote, asante kwa Yesu, anayenipenda na aliyejitoa kwa ajili yangu. Unipe moyo wa shukrani kila siku. Amina."
+    },
+    "healing": {
+      "title": "Kwa uponyaji",
+      "text": "Bwana Yesu, uliwaponya wagonjwa na kuwagusa walioumia. Nakuja kwako sasa na mwili wangu na moyo wangu. Unigusa kwa nguvu yako ya uponyaji. Uniondolee maumivu na hofu, na unipe nguvu kwa kila siku. Uwaongoze madaktari na wote wanaonihudumia. Nakabidhi maisha yangu mikononi mwako. Amina.",
+      "forText": "Bwana Yesu, uliwaponya wagonjwa na kuwagusa walioumia. Namleta kwako sasa {name}. Mguse {name} kwa nguvu yako ya uponyaji. Mwondolee maumivu na hofu, na umpe nguvu kwa kila siku. Uwaongoze madaktari na wote wanaomhudumia {name}. Nakabidhi maisha yake mikononi mwako. Amina."
+    },
+    "peace": {
+      "title": "Kwa amani wakati wa wasiwasi",
+      "text": "Bwana Yesu, moyo wangu unafadhaika na mawazo yangu hayapumziki. Ulisema, Njooni kwangu, nami nitawapumzisha. Nakuja kwako sasa. Nakupa kila wasiwasi na kila hofu ninayobeba. Tuliza akili yangu na pumzi yangu. Unijaze amani yako ipitayo akili zote, na unisaidie kukutumaini hatua kwa hatua. Amina.",
+      "forText": "Bwana Yesu, {name} ana wasiwasi, na moyo wake unafadhaika. Ulisema, Njooni kwangu, nami nitawapumzisha. Mvute {name} karibu nawe sasa. Chukua kila wasiwasi na kila hofu anayobeba. Tuliza akili yake, ujaze moyo wake amani yako ipitayo akili zote, na umsaidie kukutumaini hatua kwa hatua. Amina."
+    },
+    "strength": {
+      "title": "Kwa nguvu wakati mgumu",
+      "text": "Bwana, najisikia dhaifu na nimechoka, na njia iliyo mbele ni ngumu. Uliahidi kwamba nguvu zako hukamilika katika udhaifu. Uwe nguvu yangu leo. Unishike ninapotaka kukata tamaa, na unipe ujasiri wa kuendelea. Unikumbushe kwamba sijawahi kuwa peke yangu, kwa sababu uko pamoja nami. Amina."
+    },
+    "forgiveness": {
+      "title": "Kuomba msamaha",
+      "text": "Bwana Yesu, ninasikitika kwa mabaya niliyofanya, katika mawazo, maneno na matendo yangu. Sikufichi. Tafadhali unisamehe na unioshe moyo wangu. Asante kwa kuwa rehema yako ni kubwa kuliko dhambi yangu. Nisaidie kuacha mabaya na kuishi katika nuru yako. Amina."
+    },
+    "guidance": {
+      "title": "Kwa uongozi",
+      "text": "Bwana, sijui njia ipi ya kuchagua, lakini wewe unaijua njia. Nakuletea uamuzi huu. Unipe hekima, na unionyeshe wazi njia iliyo sahihi. Funga milango isiyotoka kwako, na ufungue ile inayotoka kwako. Nisaidie kungoja kwa subira na kukufuata kwa imani. Amina."
+    },
+    "protection": {
+      "title": "Kwa ulinzi",
+      "text": "Bwana, wewe ni kimbilio langu na mahali pangu salama. Unilinde mimi na familia yangu na kila baya na hatari, inayoonekana na isiyoonekana. Utulinde tunaposafiri, tunapofanya kazi na tunapolala. Uyaweke mabaya mbali na nyumba yetu. Utufunike kwa upendo wako na utupumzishe katika ulinzi wako. Amina.",
+      "forText": "Bwana, wewe ni kimbilio na mahali salama. Mlinde {name} na kila baya na hatari, inayoonekana na isiyoonekana. Mlinde anaposafiri, anapofanya kazi na anapolala. Weka mabaya mbali na maisha yake na nyumba yake. Mfunike {name} kwa upendo wako, na umpumzishe katika ulinzi wako. Amina."
+    },
+    "grief": {
+      "title": "Kwa faraja katika msiba",
+      "text": "Bwana Yesu, moyo wangu umevunjika, na msiba huu ni mzito sana. Ulilia pamoja na waliolia, na uko karibu na waliovunjika moyo. Unikumbatie katika huzuni yangu. Unifariji machozi yanapokuja, na unibebe siku nisizoweza kujibeba. Unipe tumaini katika ahadi yako ya uzima usio na mwisho. Amina.",
+      "forText": "Bwana Yesu, {name} yuko katika msiba, na moyo wake umevunjika. Uko karibu na waliovunjika moyo. Mkumbatie {name} katika huzuni yake. Mfariji machozi yanapokuja, na umbebe siku asizoweza kujibeba. Mzungushe na watu wanaompenda, na umpe tumaini katika ahadi yako ya uzima usio na mwisho. Amina."
+    },
+    "loneliness": {
+      "title": "Ninapojisikia peke yangu",
+      "text": "Bwana Yesu, najisikia peke yangu, na inaonekana hakuna anayenielewa. Lakini wewe unaniona, unanijua na unanipenda. Asante kwa ahadi yako ya kutoniacha kamwe. Uwe karibu nami sasa. Ulete watu wema na waaminifu maishani mwangu, na unisaidie kuwa rafiki kwa wengine. Amina."
+    },
+    "provision": {
+      "title": "Kwa mahitaji na kazi",
+      "text": "Baba, unawalisha ndege wa angani na unajua ninachohitaji. Nakuletea mahitaji yangu: kazi yangu, fedha zangu, nyumba yangu na familia yangu. Utupatie riziki, ufungue milango ya kazi, na unipe hekima ya kutumia vizuri unachonipa. Uniweke huru na wasiwasi, na unisaidie kukutumaini kila siku. Amina."
+    },
+    "family": {
+      "title": "Kwa ajili ya familia yangu",
+      "text": "Bwana, asante kwa familia yangu. Umbariki kila mmoja wetu. Utulinde tukiwa salama, wenye afya na karibu nawe. Ujaze nyumba yetu upendo, uvumilivu na amani. Uponye kila jeraha kati yetu, na utufundishe kusameheana. Familia yetu ikuheshimu katika yote tufanyayo. Amina."
+    },
+    "children": {
+      "title": "Kwa ajili ya watoto wangu",
+      "text": "Bwana Yesu, uliwakaribisha watoto wadogo na kuwabariki. Nakuletea watoto wangu. Uwalinde, uwaongoze, na uwasaidie kukua katika hekima na wema. Uwaepushe na madhara na marafiki wabaya. Uwasaidie kukujua na kukupenda maisha yao yote. Unipe subira na hekima kama mzazi. Amina."
+    },
+    "marriage": {
+      "title": "Kwa ajili ya ndoa yangu",
+      "text": "Bwana, asante kwa mume wangu au mke wangu. Ubariki ndoa yetu. Utusaidie kupendana kwa uvumilivu na upole, kusikilizana vizuri na kusameheana haraka. Utulinde tuwe waaminifu kwa kila mmoja na kwako. Uufanye upendo wetu uwe imara mwaka hadi mwaka, na uwe katikati ya nyumba yetu. Amina."
+    },
+    "sick": {
+      "title": "Kwa ajili ya mgonjwa",
+      "text": "Bwana Yesu, namleta kwako mpendwa wangu aliye mgonjwa. Unajua maumivu yake na hofu yake. Tafadhali mguse kwa mkono wako wa uponyaji. Mpe nguvu, pumziko na amani. Uwaongoze madaktari na wauguzi wanaomhudumia. Uifariji familia yake, na aweze kuhisi upendo wako karibu naye. Amina."
+    },
+    "forgive_others": {
+      "title": "Kumsamehe mtu",
+      "text": "Bwana, mtu ameniumiza, na ni vigumu kuachilia. Ulinisamehe wakati sikustahili. Nisaidie kusamehe kama ulivyonisamehe. Uponye moyo wangu na hasira na uchungu. Naamua kumweka mtu huyu mikononi mwako. Umbariki, na unipe amani yako. Amina."
+    },
+    "country": {
+      "title": "Kwa ajili ya nchi yangu",
+      "text": "Bwana, naiombea nchi yangu na watu wake wote. Uwape viongozi wetu hekima na uaminifu. Ulete amani palipo na migogoro, na haki palipo na dhuluma. Uwalinde maskini, wanyonge na waliosahauliwa. Ubariki nchi yetu, na uigeuze mioyo yetu kwako. Amina."
+    },
+    "salvation": {
+      "title": "Kumpokea Yesu",
+      "text": "Bwana Yesu, naamini kwamba wewe ni Mwana wa Mungu, kwamba ulikufa msalabani kwa ajili ya dhambi zangu na ukafufuka. Ninasikitika kwa dhambi zangu, na ninakugeukia. Tafadhali unisamehe na uingie maishani mwangu. Nakupokea kama Bwana na Mwokozi wangu. Asante kwa kunipenda na kunipa uzima mpya. Amina.",
+      "forTitle": "Ili ampate kumjua Yesu",
+      "forText": "Bwana, namwombea {name}. Unampenda kuliko ninavyoweza kumpenda mimi. Fungua moyo wake akujue. Mwonyeshe kwamba Yesu alikufa na kufufuka kwa ajili yake. Mvute {name} kwako kwa upole, na uwalete maishani mwake watu watakaomwonyesha upendo wako. Apokee msamaha wako na uzima mpya. Amina."
+    },
+    "surrender": {
+      "title": "Kumpa Mungu maisha yangu",
+      "text": "Bwana, nakupa maisha yangu yote: mipango yangu, hofu zangu, matumaini yangu na yaliyopita. Si mapenzi yangu, bali yako yatendeke. Chukua kile ninachokishikilia kwa nguvu sana, na unifundishe kukutumaini. Uniongoze unakotaka niende, na unifanye kuwa mtu uliyeniumba niwe. Amina."
+    },
+    "praise": {
+      "title": "Sala ya sifa",
+      "text": "Bwana Mungu, wewe ni mtakatifu, mwenye nguvu na mwema. Uliziumba mbingu na nchi, na upendo wako ni wa milele. Nakusifu kwa jinsi ulivyo. Nakusifu kwa ajili ya Yesu, Mwokozi wangu, na kwa uaminifu wako kila siku. Kwa moyo wangu wote nakuabudu. Amina."
+    },
+    "birthday": {
+      "title": "Kwa siku ya kuzaliwa",
+      "text": "Bwana, asante kwa zawadi ya maisha yangu na kwa mwaka mwingine. Asante kwa kila mtu anayenipenda na kwa yote uliyonitendea. Unisamehe pale nilipokosea, na uniongoze katika mwaka ujao. Nisaidie kukua katika imani, wema na furaha. Nyakati zangu ziko mikononi mwako. Amina.",
+      "forText": "Bwana, asante kwa {name} na kwa zawadi ya maisha yake. Mbariki {name} siku yake ya kuzaliwa kwa furaha, afya njema na amani. Asante kwa kila mwaka uliompa. Mwongoze katika mwaka ujao, mlinde, na umjulishe jinsi unavyompenda sana. Amina."
+    },
+    "wedding": {
+      "title": "Kwa harusi",
+      "text": "Bwana, asante kwa kutuunganisha. Tunapoanza maisha yetu ya ndoa, uwe katikati ya nyumba yetu. Utufundishe kupendana kwa uvumilivu, kusameheana haraka na kutumikiana. Utulinde tuwe waaminifu katika nyakati nzuri na ngumu. Zibariki familia zetu, na ndoa yetu ikuletee utukufu. Amina.",
+      "forText": "Bwana, asante kwa {name} siku ya harusi yao. Ibariki ndoa yao na uwe katikati ya nyumba yao. Uwafundishe kupendana kwa uvumilivu, kusameheana haraka na kutumikiana. Uwalinde wawe waaminifu katika nyakati nzuri na ngumu, na ujaze maisha yao pamoja furaha. Amina."
+    },
+    "anniversary": {
+      "title": "Kwa kumbukumbu ya ndoa",
+      "text": "Bwana, asante kwa mwaka mwingine wa ndoa yetu. Asante kwa furaha tuliyoshiriki na kwa kutubeba katika siku ngumu. Utusamehe pale tulipoumizana. Upya upendo wetu, uuzidishe urafiki wetu, na utuweke karibu nawe na karibu sisi kwa sisi miaka yote ijayo. Amina.",
+      "forText": "Bwana, asante kwa {name} na kwa mwaka mwingine wa ndoa yao. Asante kwa furaha waliyoshiriki na kwa kuwabeba katika siku ngumu. Upya upendo wao, uuzidishe urafiki wao, na uwaweke karibu nawe na karibu wao kwa wao kwa miaka mingi. Amina."
+    },
+    "new_baby": {
+      "title": "Kwa mtoto mchanga",
+      "text": "Bwana, asante kwa zawadi ya thamani ya mtoto wetu na kwa kujifungua salama. Mbariki mtoto huyu kwa afya na nguvu, na umlinde mchana na usiku. Utupe hekima, uvumilivu na upendo kama wazazi. Mtoto wetu akue akikujua na kukupenda. Amina.",
+      "forText": "Bwana, asante kwa zawadi ya thamani ya mtoto, {name}. Mbariki mtoto huyu kwa afya na nguvu, na umlinde mchana na usiku. Mpe mama pumziko na kupona, na uwape wazazi hekima, uvumilivu na upendo. Mtoto huyu akue akikujua na kukupenda. Amina."
+    },
+    "new_home": {
+      "title": "Kubariki nyumba mpya",
+      "text": "Bwana, asante kwa nyumba hii. Tunaiweka wakfu kwako. Amani yako ijaze kila chumba, na upendo, wema na maombi vikae hapa. Ilinde nyumba hii na wote wanaoishi ndani yake. Kila mgeni anayeingia apate makaribisho, na nyumba hii ikuheshimu daima. Amina."
+    },
+    "success": {
+      "title": "Shukrani kwa mafanikio",
+      "text": "Bwana, asante kwa mafanikio haya. Ulinipa nguvu, msaada na kila jema lililoyawezesha. Unilinde niwe mnyenyekevu na mwenye shukrani. Nisaidie kutumia nilichopokea kuwabariki wengine, na kuendelea kukutumaini katika yajayo. Utukufu wote ni wako. Amina.",
+      "forText": "Bwana, asante kwa mafanikio uliyompa {name}. Ulimpa nguvu na msaada njiani. Mlinde awe mnyenyekevu na mwenye shukrani, na umwongoze katika hatua zinazofuata. Msaidie kutumia alichopokea kuwabariki wengine. Utukufu wote ni wako. Amina."
+    },
+    "christmas": {
+      "title": "Sala ya Krismasi",
+      "text": "Bwana Yesu, asante kwa kuja duniani kama mtoto mdogo. Uliacha utukufu wa mbinguni ili uwe pamoja nasi. Ujaze mioyo yetu na nyumba zetu furaha na amani ya Krismasi. Utusaidie kushiriki upendo wako na maskini na walio peke yao. Uzaliwe upya leo mioyoni mwetu. Amina."
+    },
+    "easter": {
+      "title": "Sala ya Pasaka",
+      "text": "Bwana Yesu, ulikufa kwa ajili ya dhambi zetu na ukafufuka siku ya tatu. Mauti haikuweza kukushikilia. Asante kwa ushindi wa kaburi tupu. Utujaze tumaini la ufufuo wako, na utusaidie kuishi kila siku katika nguvu ya uzima wako mpya. Haleluya, umefufuka. Amina."
+    },
+    "new_year": {
+      "title": "Sala ya Mwaka Mpya",
+      "text": "Bwana, asante kwa kunibeba katika mwaka uliopita. Nakuachia huzuni zake na makosa yangu. Nakupa mwaka huu mpya: mipango yangu, familia yangu, kazi yangu na afya yangu. Tembea nami kila siku. Nisaidie kukaribia zaidi kwako, na uwe mwaka wa baraka zako. Amina."
+    },
+    "journey": {
+      "title": "Kabla ya safari",
+      "text": "Bwana, ninakaribia kusafiri, na naweka safari hii mikononi mwako. Unilinde barabarani, angani na majini. Uniepushe na ajali na kila hatari. Uwape hekima wote wanaohusika na safari yetu. Ilinde nyumba yangu nisipokuwepo, na unifikishe salama ninakoenda. Amina.",
+      "forText": "Bwana, {name} anakaribia kusafiri, na naweka safari yake mikononi mwako. Mlinde barabarani, angani na majini. Mwepushe na ajali na kila hatari. Uwape hekima wote wanaohusika na safari yake, na umfikishe {name} salama anakoenda na kurudi nyumbani. Amina."
+    },
+    "new_business": {
+      "title": "Kuanza biashara mpya",
+      "text": "Bwana, ninaanza biashara hii, na naiweka wakfu kwako. Unipe hekima katika kila uamuzi, na uniongoze kwa watu sahihi. Nisaidie kufanya kazi kwa uaminifu na kuwatendea haki wateja na wafanyakazi wangu. Ubariki kazi ya mikono yangu na utupatie tunachohitaji. Biashara hii ikuletee utukufu. Amina.",
+      "forText": "Bwana, namwombea {name}, anayeanza biashara mpya. Mpe hekima katika kila uamuzi, na umwongoze kwa watu sahihi. Msaidie kufanya kazi kwa uaminifu na kuwatendea wote haki. Ubariki kazi ya mikono yake, umfungulie milango, na umpatie yote anayohitaji. Biashara yake ikuletee utukufu. Amina."
+    },
+    "new_job": {
+      "title": "Kuanza kazi mpya",
+      "text": "Bwana, asante kwa kazi hii mpya. Ninapoanza, nisaidie kujifunza haraka na kufanya kazi kwa uaminifu. Unipe kibali mbele ya wenzangu, na unisaidie kuwa mwaminifu, mpole na mvumilivu. Ninapokosa uhakika, unipe ujasiri. Kazi yangu ikuheshimu na itoshe kuitunza familia yangu. Amina.",
+      "forText": "Bwana, asante kwa kazi mpya uliyompa {name}. Anapoanza, msaidie kujifunza haraka na kufanya kazi kwa uaminifu. Mpe kibali mbele ya wenzake, na ujasiri anapokosa uhakika. Ubariki kazi yake, na itoshe kuitunza familia yake. Amina."
+    },
+    "interview": {
+      "title": "Kabla ya usaili",
+      "text": "Bwana, nina usaili, na nina wasiwasi. Tuliza moyo wangu na usafishe akili yangu. Nisaidie kukumbuka nilichoandaa na kuzungumza kwa uaminifu na ujasiri. Unipe kibali mbele ya watu nitakaokutana nao. Ikiwa mahali hapa ni pangu, fungua mlango; kama sivyo, uniongoze kwa kitu bora zaidi. Amina.",
+      "forText": "Bwana, {name} ana usaili, na namleta kwako. Tuliza moyo wake na usafishe akili yake. Msaidie kuzungumza kwa uaminifu na ujasiri, na umpe kibali mbele ya watu atakaokutana nao. Ikiwa mahali hapa ni pake, fungua mlango; kama sivyo, umwongoze kwa kitu bora zaidi. Amina."
+    },
+    "school": {
+      "title": "Kuanza shule au chuo",
+      "text": "Bwana, ninaanza kipindi kipya cha masomo. Asante kwa nafasi hii. Unipe akili inayoelewa na moyo ulio tayari kufanya bidii. Nisaidie kupata marafiki wema na kukaa mbali na mabaya. Uwabariki walimu wangu, na unisaidie kukua katika hekima na imani. Amina.",
+      "forText": "Bwana, {name} anaanza shule au chuo, na namleta kwako. Mpe akili inayoelewa na moyo ulio tayari kufanya bidii. Msaidie kupata marafiki wema na kukaa mbali na mabaya. Uwabariki walimu wake, na umsaidie kukua katika hekima na imani. Amina."
+    },
+    "exams": {
+      "title": "Kabla ya mitihani",
+      "text": "Bwana, mitihani yangu imekaribia, na nahisi shinikizo. Nisaidie kusoma vizuri na kukumbuka nilichojifunza. Siku ya mtihani, unitulize na unipe akili safi. Nisaidie kufanya kwa ubora wangu wote na kuwa mwaminifu. Matokeo yoyote yatakavyokuwa, unikumbushe kwamba thamani yangu iko kwako. Amina.",
+      "forText": "Bwana, {name} ana mitihani hivi karibuni, na namleta kwako. Msaidie kusoma vizuri na kukumbuka alichojifunza. Siku ya mtihani, mtulize na umpe akili safi. Msaidie kufanya kwa ubora wake wote, na umkumbushe kwamba thamani yake iko kwako, matokeo yoyote yatakavyokuwa. Amina."
+    },
+    "new_vehicle": {
+      "title": "Kubariki gari jipya",
+      "text": "Bwana, asante kwa gari hili jipya. Naliweka wakfu kwako. Uwalinde wote watakaosafiri ndani yake, na ulilinde na ajali na madhara. Mpe kila atakayeliendesha uvumilivu, uangalifu na busara barabarani. Nisaidie kulitumia kuitumikia familia yangu na wengine. Amina."
+    },
+    "surgery": {
+      "title": "Kabla ya upasuaji",
+      "text": "Bwana Yesu, nakwenda kufanyiwa upasuaji, na naogopa. Naweka mwili wangu na maisha yangu mikononi mwako. Uongoze mikono na akili za madaktari wapasuaji, madaktari na wauguzi. Unilinde wakati wa upasuaji na unipitishe salama. Unipe kupona haraka na kikamilifu, na ujaze moyo wangu amani yako. Amina.",
+      "forText": "Bwana Yesu, {name} anakwenda kufanyiwa upasuaji, na namweka mikononi mwako. Uongoze mikono na akili za madaktari wapasuaji, madaktari na wauguzi. Mlinde wakati wa upasuaji na umpitishe salama. Mwondolee hofu, mpe kupona haraka na kikamilifu, na uifariji familia yake inaposubiri. Amina."
+    },
+    "hospital": {
+      "title": "Nikiwa hospitalini",
+      "text": "Bwana, niko hospitalini, na siku zinaonekana ndefu. Uwe pamoja nami katika chumba hiki. Unipe uvumilivu katika kungoja, nguvu kwa matibabu na pumziko usiku. Uwabariki madaktari na wauguzi wanaonihudumia. Uifariji familia yangu, na unijalie nihisi uko karibu. Unirudishe nyumbani kwa wakati wako mwema. Amina.",
+      "forText": "Bwana, {name} yuko hospitalini, na namleta kwako. Uwe pamoja naye katika chumba kile. Mpe uvumilivu katika kungoja, nguvu kwa matibabu na pumziko usiku. Uwabariki madaktari na wauguzi wanaomhudumia. Uifariji familia yake, na umrudishe {name} nyumbani akiwa mzima kwa wakati wako mwema. Amina."
+    },
+    "recovery": {
+      "title": "Shukrani kwa kupona",
+      "text": "Bwana, asante kwa kunipitisha katika ugonjwa huu. Asante kwa madaktari, dawa na kila mtu aliyenihudumia na kuniombea. Endelea kurudisha nguvu zangu siku kwa siku. Nisaidie nisisahau kamwe wema wako, na kutumia afya yangu kukutumikia wewe na wengine. Amina."
+    },
+    "pregnancy": {
+      "title": "Kwa ujauzito salama",
+      "text": "Bwana, asante kwa uhai unaokua ndani yangu. Umlinde mtoto huyu na umsaidie kukua akiwa na afya na nguvu. Unilinde nikiwa mzima mwilini na akilini, na utulize hofu zangu. Uwaongoze madaktari na wote wanaotuhudumia. Utupitishe salama katika kujifungua, na ujaze nyumba yetu furaha. Amina.",
+      "forText": "Bwana, asante kwa mtoto ambaye {name} amembeba tumboni. Umlinde mtoto huyu na umsaidie kukua akiwa na afya na nguvu. Mlinde mama awe mzima mwilini na akilini, na utulize hofu zake. Uwaongoze madaktari na wote wanaowahudumia. Uwapitishe mama na mtoto salama katika kujifungua, na ujaze nyumba yao furaha. Amina."
+    },
+    "hopeless": {
+      "title": "Ninapokosa tumaini",
+      "text": "Bwana, najisikia mtupu na bila tumaini, na sina nguvu ya kuomba sana. Lakini nakuja kwako kama nilivyo. Unishike katika giza hili. Unikumbushe kwamba mimi ni wa thamani kwako na kwamba hali hii haitadumu milele. Uniongoze kwa watu wanaoweza kunisaidia. Unipe nuru kwa siku moja zaidi. Amina.",
+      "forText": "Bwana, {name} anapitia wakati wa giza na anakosa tumaini. Mshike {name} karibu nawe katika giza hili. Mkumbushe kwamba yeye ni wa thamani kwako na kwamba hali hii haitadumu milele. Uwalete karibu naye watu wanaoweza kusaidia, na umpe nuru na tumaini kwa siku moja zaidi. Amina."
+    },
+    "addiction": {
+      "title": "Kuwekwa huru na uraibu",
+      "text": "Bwana Yesu, ninapambana na kitu ambacho siwezi kukiacha peke yangu. Nakiri mbele zako. Vunja minyororo inayonifunga, na unipe nguvu ya kusema hapana, siku moja baada ya nyingine. Ponya kilichovunjika ndani yangu. Uniongoze kwa watu wanaoweza kusaidia, na unisaidie kutembea katika uhuru. Amina.",
+      "forText": "Bwana Yesu, namwombea {name}, aliyenaswa na uraibu. Vunja minyororo inayomfunga, na umpe nguvu ya kusema hapana, siku moja baada ya nyingine. Ponya kilichovunjika ndani yake. Mwongoze kwa watu wanaoweza kusaidia, na umjalie atembee katika uhuru. Uipe familia yake uvumilivu na tumaini. Amina."
+    },
+    "travel_trouble": {
+      "title": "Shida ikitokea safarini",
+      "text": "Bwana, jambo limeharibika katika safari hii, na nina wasiwasi. Uwe pamoja nami sasa hivi. Unilinde mimi na wote walio pamoja nami. Ikiwa mtu ameumia, mponye na ulete msaada haraka. Unipe akili tulivu nijue la kufanya. Fanya njia mahali pasipo na njia, na utufikishe nyumbani salama. Amina."
+    },
+    "job_loss": {
+      "title": "Baada ya kupoteza kazi",
+      "text": "Bwana, nimepoteza kazi yangu, na nina wasiwasi na aibu. Unajua familia yangu inahitaji nini. Ufariji moyo wangu na unikumbushe kwamba thamani yangu iko kwako. Unipe nguvu ya kuendelea kutafuta, na ufungue mlango sahihi kwa wakati sahihi. Utupatie riziki kila siku mpaka wakati huo. Amina.",
+      "forText": "Bwana, {name} amepoteza kazi yake, na namleta kwako. Unajua familia yake inahitaji nini. Ufariji moyo wake na umkumbushe kwamba thamani yake iko kwako. Mpe nguvu ya kuendelea kutafuta, fungua mlango sahihi kwa wakati sahihi, na umpatie riziki kila siku mpaka wakati huo. Amina."
+    },
+    "money": {
+      "title": "Katika matatizo ya fedha",
+      "text": "Bwana, niko chini ya shinikizo kubwa kwa sababu ya fedha na madeni. Unajua kila hitaji. Unipe hekima ya kusimamia nilicho nacho na ujasiri wa kukabili ninachodaiwa. Uipatie familia yangu riziki, na ufungue njia za kupata kipato kwa uaminifu. Uniweke huru na hofu na aibu, na unisaidie kukutumaini leo. Amina."
+    },
+    "legal": {
+      "title": "Katika shauri la kisheria",
+      "text": "Bwana, ninakabiliwa na shauri la kisheria, na linanilemea. Wewe ni Mungu wa haki na kweli. Unipe hekima na ushauri mzuri. Kweli ijitokeze wazi, na uwape haki wale watakaoamua. Unilinde niwe mwaminifu na mtulivu, na unipe amani matokeo yoyote yatakavyokuwa. Amina."
+    },
+    "quarrel": {
+      "title": "Kukiwa na ugomvi nyumbani",
+      "text": "Bwana, kuna hasira na maumivu nyumbani kwetu, na nimechoka na ugomvi. Tuliza mioyo yetu na maneno yetu. Utusaidie kusikilizana, kukiri tulipokosea na kusameheana. Ponya majeraha kati yetu, na urudishe amani katika familia yetu. Anza na mimi. Amina."
+    },
+    "disaster": {
+      "title": "Katika maafa",
+      "text": "Bwana, maafa yametokea, na tunaogopa. Utulinde sisi na watu wote walio hatarini. Waokoe waliokwama, waponye waliojeruhiwa, na uwafariji waliopoteza wapendwa na nyumba zao. Uwape nguvu wote wanaosaidia. Uwe kimbilio letu na nguvu zetu, msaada utakaoonekana tele wakati wa mateso. Amina."
+    }
+  }
+}

@@ -604,4 +604,51 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get music => 'Música';
+
+  @override
+  String get readyPrayers => 'Orações';
+
+  @override
+  String get readyPrayersHint =>
+      'Orações para cada dia e cada necessidade. Toque em uma para ouvi-la.';
+
+  @override
+  String get voiceMan => 'Voz masculina';
+
+  @override
+  String get voiceWoman => 'Voz feminina';
+
+  @override
+  String get sharePrayer => 'Compartilhar oração';
+
+  @override
+  String get searchPrayers => 'Buscar orações';
+
+  @override
+  String get forMe => 'Por mim';
+
+  @override
+  String get forSomeone => 'Por alguém';
+
+  @override
+  String get forSomeoneHint =>
+      'Escreva o nome e a oração fica pronta para essa pessoa, para enviar.';
+
+  @override
+  String get theirName => 'Nome da pessoa';
+
+  @override
+  String get theirNameHint => 'Nome de quem você está orando';
+
+  @override
+  String get enterNameFirst => 'Primeiro escreva o nome';
+
+  @override
+  String get noPrayersFound => 'Nenhuma oração encontrada';
+
+  @override
+  String get whatsappMessage => 'WhatsApp';
+
+  @override
+  String get copyText => 'Copiar';
 }

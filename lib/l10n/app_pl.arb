@@ -185,5 +185,20 @@
   "removeVoice": "Usuń",
   "voiceDownloadFailed": "Nie udało się pobrać. Sprawdź internet i spróbuj ponownie.",
   "voiceCredits": "Autorzy głosów",
-  "music": "Muzyka"
+  "music": "Muzyka",
+  "readyPrayers": "Modlitwy",
+  "readyPrayersHint": "Modlitwy na każdy dzień i w każdej potrzebie. Dotknij jednej, aby jej posłuchać.",
+  "voiceMan": "Głos męski",
+  "voiceWoman": "Głos żeński",
+  "sharePrayer": "Udostępnij modlitwę",
+  "searchPrayers": "Szukaj modlitw",
+  "forMe": "Za mnie",
+  "forSomeone": "Za kogoś",
+  "forSomeoneHint": "Wpisz imię, a modlitwa zostanie napisana za tę osobę, gotowa do wysłania.",
+  "theirName": "Imię",
+  "theirNameHint": "Imię osoby, za którą się modlisz",
+  "enterNameFirst": "Najpierw wpisz imię",
+  "noPrayersFound": "Nie znaleziono modlitw",
+  "whatsappMessage": "WhatsApp",
+  "copyText": "Kopiuj"
 }

@@ -1,0 +1,279 @@
+{
+  "groups": {
+    "bible": "Mga panalangin mula sa Bibliya",
+    "daily": "Araw-araw",
+    "needs": "Para sa aking pangangailangan",
+    "others": "Para sa iba",
+    "faith": "Pananampalataya at papuri",
+    "celebrations": "Pagdiriwang at pasasalamat",
+    "beginnings": "Bagong simula",
+    "health": "Kalusugan at ospital",
+    "troubles": "Kapag may nangyaring masama"
+  },
+  "prayers": {
+    "lords_prayer": {
+      "title": "Ama Namin",
+      "text": "Ama namin, sumasalangit Ka, sambahin ang ngalan Mo. Mapasaamin ang kaharian Mo. Sundin ang loob Mo, dito sa lupa, para nang sa langit. Bigyan Mo kami ngayon ng aming kakanin sa araw-araw. At patawarin Mo kami sa aming mga sala, para nang pagpapatawad namin sa nagkakasala sa amin. At huwag Mo kaming ipahintulot sa tukso, at iadya Mo kami sa lahat ng masama. Sapagkat Iyo ang kaharian, ang kapangyarihan, at ang kaluwalhatian magpakailanman. Amen."
+    },
+    "psalm23": {
+      "title": "Ang Panginoon ang aking pastol"
+    },
+    "psalm91": {
+      "title": "Sa ilalim ng Kanyang mga pakpak"
+    },
+    "psalm121": {
+      "title": "Ang Panginoong nag-iingat sa iyo"
+    },
+    "psalm27": {
+      "title": "Ang Panginoon ang aking ilaw"
+    },
+    "psalm103": {
+      "title": "Purihin mo ang Panginoon, O kaluluwa ko"
+    },
+    "psalm51": {
+      "title": "Likhaan Mo ako ng malinis na puso"
+    },
+    "psalm139": {
+      "title": "Siyasatin Mo ako, O Diyos"
+    },
+    "blessing": {
+      "title": "Pagpalain ka ng Panginoon"
+    },
+    "magnificat": {
+      "title": "Ang awit ni Maria"
+    },
+    "ephesians3": {
+      "title": "Makilala ang pag-ibig ni Cristo"
+    },
+    "john17": {
+      "title": "Ipinapanalangin tayo ni Jesus"
+    },
+    "morning": {
+      "title": "Panalangin sa umaga",
+      "text": "Panginoong Jesus, salamat sa bagong araw na ito at sa pag-iingat Mo sa akin buong gabi. Iniaalay ko sa Iyo ang araw na ito. Gabayan Mo ang aking mga hakbang, bantayan ang aking mga salita, at punuin ng Iyong kapayapaan ang aking puso. Tulungan Mo akong maging mabait at mapagpasensya sa lahat ng makakasalubong ko. Anuman ang dalhin ng araw na ito, nais kong lumakad kasama Mo. Amen."
+    },
+    "night": {
+      "title": "Panalangin sa gabi",
+      "text": "Panginoong Jesus, salamat sa pagsama Mo sa akin ngayong araw. Patawarin Mo ako kung saan ako nagkulang, at pagalingin ang sumakit sa akin. Inilalagay ko sa Iyong mga kamay ang bawat alalahanin ng araw na ito. Bantayan Mo ako at ang aking pamilya habang kami ay natutulog. Bigyan Mo ako ng mahimbing na pahinga at tahimik na puso, at gisingin Mo ako sa bagong umaga sa Iyong pag-ibig. Amen."
+    },
+    "meals": {
+      "title": "Panalangin bago kumain",
+      "text": "Panginoon, salamat sa pagkaing ito at sa mga kamay na naghanda nito. Pagpalain Mo ito upang palakasin ang aming katawan, at pagpalain Mo kami habang pinagsasaluhan namin ito. Gawin Mo kaming mapagpasalamat sa lahat ng mayroon kami, at ipaalala Mo sa amin ang mga nagugutom ngayon. Amen."
+    },
+    "work": {
+      "title": "Bago magtrabaho o mag-aral",
+      "text": "Panginoon, iniaalay ko sa Iyo ang trabaho at pag-aaral na nasa harap ko ngayon. Bigyan Mo ako ng malinaw na isip, bukas na puso at lakas upang gawin ang aking makakaya. Tulungan Mo akong maging tapat at masipag, at igalang ang kapwa. Kapag mahirap, panatilihin Mo akong kalmado. Nawa'y magbigay-dangal sa Iyo ang lahat ng aking gagawin. Amen."
+    },
+    "thanksgiving": {
+      "title": "Panalangin ng pasasalamat",
+      "text": "Ama, salamat sa Iyong kabutihan sa akin. Salamat sa buhay at hininga, sa aking pamilya at mga kaibigan, sa pagkain at tirahan, at sa bawat pagpapalang nakalimutan kong bilangin. Higit sa lahat, salamat kay Jesus, na umiibig sa akin at nag-alay ng Kanyang sarili para sa akin. Bigyan Mo ako ng pusong mapagpasalamat araw-araw. Amen."
+    },
+    "healing": {
+      "title": "Para sa kagalingan",
+      "text": "Panginoong Jesus, pinagaling Mo ang mga maysakit at hinipo ang mga nasasaktan. Lumalapit ako sa Iyo ngayon dala ang aking katawan at puso. Hipuin Mo ako ng Iyong nagpapagaling na kapangyarihan. Alisin Mo ang aking sakit at takot, at bigyan Mo ako ng lakas sa bawat araw. Gabayan Mo ang mga doktor at lahat ng nag-aalaga sa akin. Ipinagkakatiwala ko ang aking buhay sa Iyong mga kamay. Amen.",
+      "forText": "Panginoong Jesus, pinagaling Mo ang mga maysakit at hinipo ang mga nasasaktan. Inilalapit ko sa Iyo ngayon si {name}. Hipuin Mo si {name} ng Iyong nagpapagaling na kapangyarihan. Alisin Mo ang kanyang sakit at takot, at bigyan Mo siya ng lakas sa bawat araw. Gabayan Mo ang mga doktor at lahat ng nag-aalaga sa kanya. Ipinagkakatiwala ko ang kanyang buhay sa Iyong mga kamay. Amen."
+    },
+    "peace": {
+      "title": "Para sa kapayapaan sa pag-aalala",
+      "text": "Panginoong Jesus, nababagabag ang aking puso at hindi mapakali ang aking isip. Sinabi Mo, Lumapit kayo sa Akin, at bibigyan Ko kayo ng kapahingahan. Lumalapit ako sa Iyo ngayon. Ibinibigay ko sa Iyo ang bawat alalahanin at takot na pasan ko. Payapain Mo ang aking isip at paghinga. Punuin Mo ako ng Iyong kapayapaang hindi kayang unawain, at tulungan Mo akong magtiwala sa Iyo nang hakbang-hakbang. Amen.",
+      "forText": "Panginoong Jesus, si {name} ay nag-aalala, at nababagabag ang kanyang puso. Sinabi Mo, Lumapit kayo sa Akin, at bibigyan Ko kayo ng kapahingahan. Ilapit Mo siya sa Iyo ngayon. Kunin Mo ang bawat alalahanin at takot na pasan niya. Payapain Mo ang kanyang isip, punuin Mo ang kanyang puso ng Iyong kapayapaang hindi kayang unawain, at tulungan Mo siyang magtiwala sa Iyo nang hakbang-hakbang. Amen."
+    },
+    "strength": {
+      "title": "Para sa lakas sa mahirap na panahon",
+      "text": "Panginoon, mahina at pagod ang pakiramdam ko, at mahirap ang daang nasa harapan. Ipinangako Mo na ang Iyong kapangyarihan ay nagiging ganap sa kahinaan. Ikaw ang maging lakas ko ngayon. Alalayan Mo ako kapag gusto ko nang sumuko, at bigyan Mo ako ng tapang na magpatuloy. Ipaalala Mo sa akin na hindi ako kailanman nag-iisa, sapagkat kasama kita. Amen."
+    },
+    "forgiveness": {
+      "title": "Paghingi ng tawad",
+      "text": "Panginoong Jesus, pinagsisisihan ko ang mga maling nagawa ko, sa isip, sa salita at sa gawa. Hindi ko ito itinatago sa Iyo. Patawarin Mo po ako at linisin ang aking puso. Salamat at ang Iyong awa ay mas malaki kaysa sa aking kasalanan. Tulungan Mo akong talikuran ang masama at mamuhay sa Iyong liwanag. Amen."
+    },
+    "guidance": {
+      "title": "Para sa paggabay",
+      "text": "Panginoon, hindi ko alam kung aling daan ang tatahakin, ngunit alam Mo ang daan. Dinadala ko sa Iyo ang desisyong ito. Bigyan Mo ako ng karunungan, at ipakita Mo nang malinaw ang tamang landas. Isara Mo ang mga pintong hindi mula sa Iyo, at buksan ang mga mula sa Iyo. Tulungan Mo akong maghintay nang may pasensya at sumunod sa Iyo nang may tiwala. Amen."
+    },
+    "protection": {
+      "title": "Para sa proteksyon",
+      "text": "Panginoon, Ikaw ang aking kanlungan at ligtas na lugar. Ingatan Mo ako at ang aking pamilya mula sa lahat ng masama at panganib, nakikita man o hindi. Bantayan Mo kami sa paglalakbay, sa trabaho at sa pagtulog. Ilayo Mo ang masama sa aming tahanan. Takpan Mo kami ng Iyong pag-ibig at hayaan kaming magpahinga sa Iyong pag-aalaga. Amen.",
+      "forText": "Panginoon, Ikaw ang kanlungan at ligtas na lugar. Ingatan Mo si {name} mula sa lahat ng masama at panganib, nakikita man o hindi. Bantayan Mo siya sa paglalakbay, sa trabaho at sa pagtulog. Ilayo Mo ang masama sa kanyang buhay at tahanan. Takpan Mo si {name} ng Iyong pag-ibig, at hayaan Mo siyang magpahinga sa Iyong pag-aalaga. Amen."
+    },
+    "grief": {
+      "title": "Para sa aliw sa pagdadalamhati",
+      "text": "Panginoong Jesus, wasak ang aking puso, at napakabigat ng pagkawalang ito. Umiyak Ka kasama ng mga nagdadalamhati, at malapit Ka sa mga bagbag ang puso. Yakapin Mo ako sa aking kalungkutan. Aliwin Mo ako kapag dumarating ang luha, at buhatin Mo ako sa mga araw na hindi ko na kaya. Bigyan Mo ako ng pag-asa sa Iyong pangako ng buhay na walang hanggan. Amen.",
+      "forText": "Panginoong Jesus, si {name} ay nagdadalamhati, at wasak ang kanyang puso. Malapit Ka sa mga bagbag ang puso. Yakapin Mo si {name} sa kanyang kalungkutan. Aliwin Mo siya kapag dumarating ang luha, at buhatin Mo siya sa mga araw na hindi na niya kaya. Palibutan Mo siya ng mga taong nagmamahal sa kanya, at bigyan Mo siya ng pag-asa sa Iyong pangako ng buhay na walang hanggan. Amen."
+    },
+    "loneliness": {
+      "title": "Kapag pakiramdam ko'y nag-iisa",
+      "text": "Panginoong Jesus, pakiramdam ko'y nag-iisa ako, at tila walang nakauunawa sa akin. Ngunit nakikita Mo ako, kilala Mo ako, at mahal Mo ako. Salamat sa Iyong pangakong hindi Mo ako iiwan kailanman. Manatili Kang malapit sa akin ngayon. Magdala Ka ng mabubuti at tapat na tao sa aking buhay, at tulungan Mo akong maging kaibigan sa iba. Amen."
+    },
+    "provision": {
+      "title": "Para sa pangangailangan at trabaho",
+      "text": "Ama, pinapakain Mo ang mga ibon sa himpapawid at alam Mo ang aking kailangan. Dinadala ko sa Iyo ang aking mga pangangailangan: ang aking trabaho, pera, tahanan at pamilya. Tustusan Mo kami, buksan ang mga pinto ng trabaho, at bigyan Mo ako ng karunungan na gamitin nang mabuti ang ibinibigay Mo. Palayain Mo ako sa pag-aalala, at tulungan Mo akong magtiwala sa Iyo araw-araw. Amen."
+    },
+    "family": {
+      "title": "Para sa aking pamilya",
+      "text": "Panginoon, salamat sa aking pamilya. Pagpalain Mo ang bawat isa sa amin. Ingatan Mo kaming ligtas, malusog at malapit sa Iyo. Punuin Mo ang aming tahanan ng pag-ibig, pasensya at kapayapaan. Pagalingin Mo ang anumang sugat sa pagitan namin, at turuan Mo kaming magpatawaran. Nawa'y parangalan Ka ng aming pamilya sa lahat ng aming ginagawa. Amen."
+    },
+    "children": {
+      "title": "Para sa aking mga anak",
+      "text": "Panginoong Jesus, tinanggap Mo ang maliliit na bata at pinagpala sila. Dinadala ko sa Iyo ang aking mga anak. Ingatan Mo sila, gabayan, at tulungang lumaki sa karunungan at kabaitan. Ilayo Mo sila sa kapahamakan at sa masamang barkada. Tulungan Mo silang makilala at mahalin Ka habambuhay. Bigyan Mo ako ng pasensya at karunungan bilang magulang. Amen."
+    },
+    "marriage": {
+      "title": "Para sa aking pag-aasawa",
+      "text": "Panginoon, salamat sa aking asawa. Pagpalain Mo ang aming pagsasama. Tulungan Mo kaming magmahalan nang may pasensya at kabaitan, makinig nang mabuti sa isa't isa at agad magpatawad. Panatilihin Mo kaming tapat sa isa't isa at sa Iyo. Patatagin Mo ang aming pag-ibig taon-taon, at Ikaw ang maging sentro ng aming tahanan. Amen."
+    },
+    "sick": {
+      "title": "Para sa isang maysakit",
+      "text": "Panginoong Jesus, inilalapit ko sa Iyo ang mahal ko sa buhay na maysakit. Alam Mo ang kanyang sakit at takot. Hipuin Mo po siya ng Iyong nagpapagaling na kamay. Bigyan Mo siya ng lakas, pahinga at kapayapaan. Gabayan Mo ang mga doktor at nars na nag-aalaga sa kanya. Aliwin Mo ang kanyang pamilya, at ipadama Mo sa kanya ang Iyong pag-ibig. Amen."
+    },
+    "forgive_others": {
+      "title": "Upang magpatawad",
+      "text": "Panginoon, may nakasakit sa akin, at mahirap itong bitawan. Pinatawad Mo ako kahit hindi ako karapat-dapat. Tulungan Mo akong magpatawad gaya ng pagpapatawad Mo sa akin. Pagalingin Mo ang aking puso mula sa galit at pait. Pinipili kong ipagkatiwala ang taong ito sa Iyong mga kamay. Pagpalain Mo siya, at bigyan Mo ako ng Iyong kapayapaan. Amen."
+    },
+    "country": {
+      "title": "Para sa aking bayan",
+      "text": "Panginoon, ipinapanalangin ko ang aking bayan at ang lahat ng mamamayan nito. Bigyan Mo ng karunungan at katapatan ang aming mga pinuno. Magdala Ka ng kapayapaan kung saan may hidwaan, at katarungan kung saan may kawalang-katarungan. Ingatan Mo ang mahihirap, mahihina at mga nakalimutan. Pagpalain Mo ang aming lupain, at ibaling Mo ang aming mga puso sa Iyo. Amen."
+    },
+    "salvation": {
+      "title": "Upang tanggapin si Jesus",
+      "text": "Panginoong Jesus, naniniwala ako na Ikaw ang Anak ng Diyos, na namatay Ka sa krus para sa aking mga kasalanan at muling nabuhay. Pinagsisisihan ko ang aking mga kasalanan, at bumabaling ako sa Iyo. Patawarin Mo po ako at pumasok Ka sa aking buhay. Tinatanggap kita bilang aking Panginoon at Tagapagligtas. Salamat sa pag-ibig Mo at sa pagbibigay sa akin ng bagong buhay. Amen.",
+      "forTitle": "Upang makilala niya si Jesus",
+      "forText": "Panginoon, ipinapanalangin ko si {name}. Mahal Mo siya nang higit pa sa kaya kong magmahal. Buksan Mo ang kanyang puso upang makilala Ka. Ipakita Mo sa kanya na si Jesus ay namatay at muling nabuhay para sa kanya. Akayin Mo si {name} sa Iyo nang may kahinahunan, at magdala Ka sa kanyang buhay ng mga taong magpapakita sa kanya ng Iyong pag-ibig. Nawa'y tanggapin niya ang Iyong kapatawaran at bagong buhay. Amen."
+    },
+    "surrender": {
+      "title": "Pag-aalay ng buhay sa Diyos",
+      "text": "Panginoon, iniaalay ko sa Iyo ang buo kong buhay: ang aking mga plano, takot, pag-asa at nakaraan. Hindi ang aking kalooban, kundi ang Iyo ang mangyari. Kunin Mo ang mga mahigpit kong hinahawakan, at turuan Mo akong magtiwala sa Iyo. Akayin Mo ako saan Mo man ako nais pumunta, at gawin Mo akong taong nilikha Mo sa akin. Amen."
+    },
+    "praise": {
+      "title": "Panalangin ng papuri",
+      "text": "Panginoong Diyos, Ikaw ay banal, makapangyarihan at mabuti. Nilikha Mo ang langit at lupa, at ang Iyong pag-ibig ay magpakailanman. Pinupuri kita dahil sa kung sino Ka. Pinupuri kita dahil kay Jesus, ang aking Tagapagligtas, at sa Iyong katapatan araw-araw. Sa buong puso ko, sinasamba kita. Amen."
+    },
+    "birthday": {
+      "title": "Para sa kaarawan",
+      "text": "Panginoon, salamat sa regalo ng aking buhay at sa isa pang taon. Salamat sa bawat taong nagmamahal sa akin at sa lahat ng ginawa Mo para sa akin. Patawarin Mo ako kung saan ako nagkulang, at gabayan Mo ako sa darating na taon. Tulungan Mo akong lumago sa pananampalataya, kabutihan at kagalakan. Ang aking mga panahon ay nasa Iyong mga kamay. Amen.",
+      "forText": "Panginoon, salamat kay {name} at sa regalo ng kanyang buhay. Pagpalain Mo si {name} sa kanyang kaarawan ng kagalakan, mabuting kalusugan at kapayapaan. Salamat sa bawat taong ibinigay Mo sa kanya. Gabayan Mo siya sa darating na taon, ingatan Mo siya, at ipadama Mo sa kanya kung gaano Mo siya kamahal. Amen."
+    },
+    "wedding": {
+      "title": "Para sa kasal",
+      "text": "Panginoon, salamat sa pagbubuklod Mo sa amin. Sa pagsisimula ng aming buhay mag-asawa, Ikaw ang maging sentro ng aming tahanan. Turuan Mo kaming magmahalan nang may pasensya, agad magpatawad at maglingkod sa isa't isa. Panatilihin Mo kaming tapat sa hirap at ginhawa. Pagpalain Mo ang aming mga pamilya, at nawa'y magbigay-luwalhati sa Iyo ang aming pagsasama. Amen.",
+      "forText": "Panginoon, salamat kina {name} sa araw ng kanilang kasal. Pagpalain Mo ang kanilang pagsasama at Ikaw ang maging sentro ng kanilang tahanan. Turuan Mo silang magmahalan nang may pasensya, agad magpatawad at maglingkod sa isa't isa. Panatilihin Mo silang tapat sa hirap at ginhawa, at punuin Mo ng kagalakan ang kanilang buhay na magkasama. Amen."
+    },
+    "anniversary": {
+      "title": "Para sa anibersaryo ng kasal",
+      "text": "Panginoon, salamat sa isa pang taon ng aming pagsasama. Salamat sa mga kagalakang pinagsaluhan namin at sa pagbuhat Mo sa amin sa mahihirap na araw. Patawarin Mo kami kung saan kami nagkasakitan. Panibaguhin Mo ang aming pag-ibig, palalimin ang aming pagkakaibigan, at panatilihin Mo kaming malapit sa Iyo at sa isa't isa sa lahat ng darating na taon. Amen.",
+      "forText": "Panginoon, salamat kina {name} at sa isa pang taon ng kanilang pagsasama. Salamat sa mga kagalakang pinagsaluhan nila at sa pagbuhat Mo sa kanila sa mahihirap na araw. Panibaguhin Mo ang kanilang pag-ibig, palalimin ang kanilang pagkakaibigan, at panatilihin Mo silang malapit sa Iyo at sa isa't isa sa maraming taon. Amen."
+    },
+    "new_baby": {
+      "title": "Para sa bagong silang na sanggol",
+      "text": "Panginoon, salamat sa mahalagang regalo ng aming sanggol at sa ligtas na panganganak. Pagpalain Mo ang munting ito ng kalusugan at lakas, at ingatan Mo siya araw at gabi. Bigyan Mo kami ng karunungan, pasensya at pag-ibig bilang mga magulang. Nawa'y lumaki ang aming anak na kilala Ka at mahal Ka. Amen.",
+      "forText": "Panginoon, salamat sa mahalagang regalo ng sanggol na si {name}. Pagpalain Mo ang munting ito ng kalusugan at lakas, at ingatan Mo siya araw at gabi. Bigyan Mo ang ina ng pahinga at paggaling, at ang mga magulang ng karunungan, pasensya at pag-ibig. Nawa'y lumaki ang batang ito na kilala Ka at mahal Ka. Amen."
+    },
+    "new_home": {
+      "title": "Pagbabasbas sa bagong tahanan",
+      "text": "Panginoon, salamat sa tahanang ito. Iniaalay namin ito sa Iyo. Nawa'y punuin ng Iyong kapayapaan ang bawat silid, at manirahan dito ang pag-ibig, kabutihan at panalangin. Ingatan Mo ang bahay na ito at ang lahat ng naninirahan dito. Nawa'y makatagpo ng mainit na pagtanggap ang bawat bisita, at nawa'y laging magbigay-dangal sa Iyo ang tahanang ito. Amen."
+    },
+    "success": {
+      "title": "Pasasalamat sa tagumpay",
+      "text": "Panginoon, salamat sa tagumpay na ito. Ibinigay Mo sa akin ang lakas, ang tulong at ang bawat mabuting bagay na nagpangyari nito. Panatilihin Mo akong mapagpakumbaba at mapagpasalamat. Tulungan Mo akong gamitin ang natanggap ko upang pagpalain ang iba, at patuloy na magtiwala sa Iyo sa anumang darating. Sa Iyo ang lahat ng luwalhati. Amen.",
+      "forText": "Panginoon, salamat sa tagumpay na ibinigay Mo kay {name}. Binigyan Mo siya ng lakas at tulong sa daan. Panatilihin Mo siyang mapagpakumbaba at mapagpasalamat, at gabayan Mo ang kanyang mga susunod na hakbang. Tulungan Mo siyang gamitin ang kanyang natanggap upang pagpalain ang iba. Sa Iyo ang lahat ng luwalhati. Amen."
+    },
+    "christmas": {
+      "title": "Panalangin sa Pasko",
+      "text": "Panginoong Jesus, salamat sa pagdating Mo sa mundo bilang isang munting sanggol. Iniwan Mo ang luwalhati ng langit upang makasama kami. Punuin Mo ang aming mga puso at tahanan ng kagalakan at kapayapaan ng Pasko. Tulungan Mo kaming ibahagi ang Iyong pag-ibig sa mga dukha at nag-iisa. Isilang Ka muli ngayon sa aming mga puso. Amen."
+    },
+    "easter": {
+      "title": "Panalangin sa Pasko ng Pagkabuhay",
+      "text": "Panginoong Jesus, namatay Ka para sa aming mga kasalanan at muling nabuhay sa ikatlong araw. Hindi Ka napigilan ng kamatayan. Salamat sa tagumpay ng walang lamang libingan. Punuin Mo kami ng pag-asa ng Iyong muling pagkabuhay, at tulungan Mo kaming mamuhay araw-araw sa kapangyarihan ng Iyong bagong buhay. Aleluya, Ikaw ay muling nabuhay. Amen."
+    },
+    "new_year": {
+      "title": "Panalangin sa Bagong Taon",
+      "text": "Panginoon, salamat sa pagbuhat Mo sa akin sa nakaraang taon. Iniiwan ko sa Iyo ang mga kalungkutan nito at ang aking mga pagkakamali. Ibinibigay ko sa Iyo ang bagong taong ito: ang aking mga plano, pamilya, trabaho at kalusugan. Samahan Mo ako araw-araw. Tulungan Mo akong mapalapit sa Iyo, at nawa'y maging taon ito ng Iyong pagpapala. Amen."
+    },
+    "journey": {
+      "title": "Bago maglakbay",
+      "text": "Panginoon, malapit na akong maglakbay, at inilalagay ko ang paglalakbay na ito sa Iyong mga kamay. Ingatan Mo ako sa daan, sa himpapawid at sa tubig. Ilayo Mo ako sa aksidente at sa lahat ng panganib. Bigyan Mo ng karunungan ang lahat ng may pananagutan sa aming paglalakbay. Bantayan Mo ang aking tahanan habang wala ako, at dalhin Mo ako nang ligtas sa aking pupuntahan. Amen.",
+      "forText": "Panginoon, malapit nang maglakbay si {name}, at inilalagay ko ang kanyang paglalakbay sa Iyong mga kamay. Ingatan Mo siya sa daan, sa himpapawid at sa tubig. Ilayo Mo siya sa aksidente at sa lahat ng panganib. Bigyan Mo ng karunungan ang lahat ng may pananagutan sa kanyang paglalakbay, at dalhin Mo si {name} nang ligtas sa kanyang pupuntahan at pauwi. Amen."
+    },
+    "new_business": {
+      "title": "Pagsisimula ng negosyo",
+      "text": "Panginoon, sinisimulan ko ang negosyong ito, at iniaalay ko ito sa Iyo. Bigyan Mo ako ng karunungan sa bawat desisyon, at akayin Mo ako sa mga tamang tao. Tulungan Mo akong magtrabaho nang tapat at maging makatarungan sa aking mga kustomer at manggagawa. Pagpalain Mo ang gawa ng aking mga kamay at ibigay ang aming kailangan. Nawa'y magbigay-luwalhati sa Iyo ang negosyong ito. Amen.",
+      "forText": "Panginoon, ipinapanalangin ko si {name}, na nagsisimula ng bagong negosyo. Bigyan Mo siya ng karunungan sa bawat desisyon, at akayin Mo siya sa mga tamang tao. Tulungan Mo siyang magtrabaho nang tapat at maging makatarungan sa lahat. Pagpalain Mo ang gawa ng kanyang mga kamay, buksan Mo ang mga pinto para sa kanya, at ibigay ang lahat ng kanyang kailangan. Nawa'y magbigay-luwalhati sa Iyo ang kanyang negosyo. Amen."
+    },
+    "new_job": {
+      "title": "Pagsisimula ng bagong trabaho",
+      "text": "Panginoon, salamat sa bagong trabahong ito. Sa aking pagsisimula, tulungan Mo akong matuto agad at magtrabaho nang tapat. Bigyan Mo ako ng pabor sa aking mga katrabaho, at tulungan Mo akong maging tapat, mabait at mapagpasensya. Kapag ako'y nag-aalinlangan, bigyan Mo ako ng tiwala sa sarili. Nawa'y magbigay-dangal sa Iyo ang aking trabaho at sapat itong tumustos sa aking pamilya. Amen.",
+      "forText": "Panginoon, salamat sa bagong trabahong ibinigay Mo kay {name}. Sa kanyang pagsisimula, tulungan Mo siyang matuto agad at magtrabaho nang tapat. Bigyan Mo siya ng pabor sa kanyang mga katrabaho, at ng tiwala sa sarili kapag siya'y nag-aalinlangan. Pagpalain Mo ang kanyang trabaho, at nawa'y sapat itong tumustos sa kanyang pamilya. Amen."
+    },
+    "interview": {
+      "title": "Bago ang interbyu",
+      "text": "Panginoon, may interbyu ako, at kinakabahan ako. Payapain Mo ang aking puso at linawin ang aking isip. Tulungan Mo akong maalala ang aking inihanda at magsalita nang tapat at may tiwala. Bigyan Mo ako ng pabor sa mga taong makakaharap ko. Kung ito ang tamang lugar para sa akin, buksan Mo ang pinto; kung hindi, akayin Mo ako sa mas mabuti. Amen.",
+      "forText": "Panginoon, may interbyu si {name}, at inilalapit ko siya sa Iyo. Payapain Mo ang kanyang puso at linawin ang kanyang isip. Tulungan Mo siyang magsalita nang tapat at may tiwala, at bigyan Mo siya ng pabor sa mga taong makakaharap niya. Kung ito ang tamang lugar para sa kanya, buksan Mo ang pinto; kung hindi, akayin Mo siya sa mas mabuti. Amen."
+    },
+    "school": {
+      "title": "Pagsisimula ng pag-aaral",
+      "text": "Panginoon, nagsisimula ako ng bagong panahon ng pag-aaral. Salamat sa pagkakataong ito. Bigyan Mo ako ng isip na nakauunawa at pusong handang magsikap. Tulungan Mo akong makahanap ng mabubuting kaibigan at lumayo sa masama. Pagpalain Mo ang aking mga guro, at tulungan Mo akong lumago sa karunungan at pananampalataya. Amen.",
+      "forText": "Panginoon, nagsisimula si {name} sa paaralan o kolehiyo, at inilalapit ko siya sa Iyo. Bigyan Mo siya ng isip na nakauunawa at pusong handang magsikap. Tulungan Mo siyang makahanap ng mabubuting kaibigan at lumayo sa masama. Pagpalain Mo ang kanyang mga guro, at tulungan Mo siyang lumago sa karunungan at pananampalataya. Amen."
+    },
+    "exams": {
+      "title": "Bago ang pagsusulit",
+      "text": "Panginoon, malapit na ang aking mga pagsusulit, at nararamdaman ko ang presyon. Tulungan Mo akong mag-aral nang mabuti at maalala ang aking natutunan. Sa araw ng pagsusulit, panatilihin Mo akong kalmado at bigyan ng malinaw na isip. Tulungan Mo akong gawin ang aking makakaya at maging tapat. Anuman ang resulta, ipaalala Mo sa akin na ang aking halaga ay nasa Iyo. Amen.",
+      "forText": "Panginoon, malapit na ang mga pagsusulit ni {name}, at inilalapit ko siya sa Iyo. Tulungan Mo siyang mag-aral nang mabuti at maalala ang kanyang natutunan. Sa araw ng pagsusulit, panatilihin Mo siyang kalmado at bigyan ng malinaw na isip. Tulungan Mo siyang gawin ang kanyang makakaya, at ipaalala Mo sa kanya na ang kanyang halaga ay nasa Iyo, anuman ang resulta. Amen."
+    },
+    "new_vehicle": {
+      "title": "Pagbabasbas sa bagong sasakyan",
+      "text": "Panginoon, salamat sa bagong sasakyang ito. Iniaalay ko ito sa Iyo. Ingatan Mo ang lahat ng sasakay rito, at ilayo Mo ito sa aksidente at pinsala. Bigyan Mo ang sinumang magmamaneho nito ng pasensya, pag-iingat at mabuting pagpapasya sa daan. Tulungan Mo akong gamitin ito sa paglilingkod sa aking pamilya at sa iba. Amen."
+    },
+    "surgery": {
+      "title": "Bago ang operasyon",
+      "text": "Panginoong Jesus, ooperahan ako, at natatakot ako. Inilalagay ko ang aking katawan at buhay sa Iyong mga kamay. Gabayan Mo ang mga kamay at isip ng mga siruhano, doktor at nars. Ingatan Mo ako sa operasyon at dalhin Mo ako rito nang maayos. Bigyan Mo ako ng mabilis at ganap na paggaling, at punuin Mo ang aking puso ng Iyong kapayapaan. Amen.",
+      "forText": "Panginoong Jesus, ooperahan si {name}, at inilalagay ko siya sa Iyong mga kamay. Gabayan Mo ang mga kamay at isip ng mga siruhano, doktor at nars. Ingatan Mo si {name} sa operasyon at dalhin Mo siya rito nang maayos. Alisin Mo ang kanyang takot, bigyan Mo siya ng mabilis at ganap na paggaling, at aliwin Mo ang kanyang pamilya habang naghihintay. Amen."
+    },
+    "hospital": {
+      "title": "Sa ospital",
+      "text": "Panginoon, nasa ospital ako, at mahahaba ang mga araw. Samahan Mo ako sa silid na ito. Bigyan Mo ako ng pasensya sa paghihintay, lakas sa gamutan at pahinga sa gabi. Pagpalain Mo ang mga doktor at nars na nag-aalaga sa akin. Aliwin Mo ang aking pamilya, at ipadama Mo sa akin na malapit Ka. Iuwi Mo ako sa Iyong mabuting panahon. Amen.",
+      "forText": "Panginoon, nasa ospital si {name}, at inilalapit ko siya sa Iyo. Samahan Mo siya sa silid na iyon. Bigyan Mo siya ng pasensya sa paghihintay, lakas sa gamutan at pahinga sa gabi. Pagpalain Mo ang mga doktor at nars na nag-aalaga sa kanya. Aliwin Mo ang kanyang pamilya, at iuwi Mo si {name} nang malusog sa Iyong mabuting panahon. Amen."
+    },
+    "recovery": {
+      "title": "Pasasalamat sa paggaling",
+      "text": "Panginoon, salamat sa pagtawid Mo sa akin sa sakit na ito. Salamat sa mga doktor, gamot at bawat taong nag-alaga at nanalangin para sa akin. Patuloy Mong ibalik ang aking lakas araw-araw. Tulungan Mo akong huwag kailanman makalimot sa Iyong kabutihan, at gamitin ang aking kalusugan sa paglilingkod sa Iyo at sa iba. Amen."
+    },
+    "pregnancy": {
+      "title": "Para sa ligtas na pagbubuntis",
+      "text": "Panginoon, salamat sa buhay na lumalaki sa aking sinapupunan. Ingatan Mo ang sanggol na ito at tulungan Mo siyang lumaking malusog at malakas. Panatilihin Mo akong malusog sa katawan at isip, at payapain ang aking mga takot. Gabayan Mo ang mga doktor at lahat ng nag-aalaga sa amin. Dalhin Mo kami nang ligtas sa panganganak, at punuin Mo ng kagalakan ang aming tahanan. Amen.",
+      "forText": "Panginoon, salamat sa sanggol na dinadala ni {name}. Ingatan Mo ang munting ito at tulungan Mo siyang lumaking malusog at malakas. Panatilihin Mo ang ina na malusog sa katawan at isip, at payapain ang kanyang mga takot. Gabayan Mo ang mga doktor at lahat ng nag-aalaga sa kanila. Dalhin Mo nang ligtas ang ina at sanggol sa panganganak, at punuin Mo ng kagalakan ang kanilang tahanan. Amen."
+    },
+    "hopeless": {
+      "title": "Kapag nawawalan ng pag-asa",
+      "text": "Panginoon, pakiramdam ko'y walang laman at walang pag-asa, at wala akong lakas na manalangin nang mahaba. Ngunit lumalapit ako sa Iyo kung ano ako. Hawakan Mo ako sa dilim na ito. Ipaalala Mo sa akin na mahalaga ako sa Iyo at hindi ito magtatagal magpakailanman. Akayin Mo ako sa mga taong makatutulong sa akin. Bigyan Mo ako ng liwanag para sa isa pang araw. Amen.",
+      "forText": "Panginoon, dumaraan si {name} sa madilim na panahon at nawawalan siya ng pag-asa. Hawakan Mo si {name} nang malapit sa Iyo sa dilim na ito. Ipaalala Mo sa kanya na mahalaga siya sa Iyo at hindi ito magtatagal magpakailanman. Maglagay Ka sa kanyang tabi ng mga taong makatutulong, at bigyan Mo siya ng liwanag at pag-asa para sa isa pang araw. Amen."
+    },
+    "addiction": {
+      "title": "Paglaya sa adiksyon",
+      "text": "Panginoong Jesus, nakikipaglaban ako sa isang bagay na hindi ko kayang tigilan nang mag-isa. Ipinagtatapat ko ito sa Iyo. Lagutin Mo ang mga tanikalang gumagapos sa akin, at bigyan Mo ako ng lakas na tumanggi, isang araw sa bawat pagkakataon. Pagalingin Mo ang nasira sa aking kalooban. Akayin Mo ako sa mga taong makatutulong, at tulungan Mo akong mamuhay nang malaya. Amen.",
+      "forText": "Panginoong Jesus, ipinapanalangin ko si {name}, na nakagapos sa adiksyon. Lagutin Mo ang mga tanikalang gumagapos sa kanya, at bigyan Mo siya ng lakas na tumanggi, isang araw sa bawat pagkakataon. Pagalingin Mo ang nasira sa kanyang kalooban. Akayin Mo siya sa mga taong makatutulong, at hayaan Mo siyang mamuhay nang malaya. Bigyan Mo ang kanyang pamilya ng pasensya at pag-asa. Amen."
+    },
+    "travel_trouble": {
+      "title": "Kapag may problema sa paglalakbay",
+      "text": "Panginoon, may nangyaring masama sa paglalakbay na ito, at nag-aalala ako. Samahan Mo ako ngayon din. Ingatan Mo ako at ang lahat ng kasama ko. Kung may nasaktan, pagalingin Mo siya at magpadala Ka agad ng tulong. Bigyan Mo ako ng mahinahong isip upang malaman ang dapat gawin. Gumawa Ka ng daan kung saan tila walang daan, at iuwi Mo kami nang ligtas. Amen."
+    },
+    "job_loss": {
+      "title": "Matapos mawalan ng trabaho",
+      "text": "Panginoon, nawalan ako ng trabaho, at nag-aalala at nahihiya ako. Alam Mo ang kailangan ng aking pamilya. Aliwin Mo ang aking puso at ipaalala Mo na ang aking halaga ay nasa Iyo. Bigyan Mo ako ng lakas na patuloy na maghanap, at buksan Mo ang tamang pinto sa tamang panahon. Tustusan Mo kami araw-araw hanggang sa panahong iyon. Amen.",
+      "forText": "Panginoon, nawalan ng trabaho si {name}, at inilalapit ko siya sa Iyo. Alam Mo ang kailangan ng kanyang pamilya. Aliwin Mo ang kanyang puso at ipaalala Mo sa kanya na ang kanyang halaga ay nasa Iyo. Bigyan Mo siya ng lakas na patuloy na maghanap, buksan Mo ang tamang pinto sa tamang panahon, at tustusan Mo siya araw-araw hanggang sa panahong iyon. Amen."
+    },
+    "money": {
+      "title": "Sa problema sa pera",
+      "text": "Panginoon, nasa matinding presyon ako dahil sa pera at mga utang. Alam Mo ang bawat pangangailangan. Bigyan Mo ako ng karunungan na pamahalaan ang mayroon ako at ng lakas ng loob na harapin ang aking mga utang. Tustusan Mo ang aking pamilya, at magbukas Ka ng mga paraan upang kumita nang tapat. Palayain Mo ako sa takot at hiya, at tulungan Mo akong magtiwala sa Iyo ngayon. Amen."
+    },
+    "legal": {
+      "title": "Sa problemang legal",
+      "text": "Panginoon, may hinaharap akong problemang legal, at mabigat ito sa akin. Ikaw ay Diyos ng katarungan at katotohanan. Bigyan Mo ako ng karunungan at mabuting payo. Nawa'y lumabas ang katotohanan, at bigyan Mo ng pagkamakatarungan ang mga magpapasya. Panatilihin Mo akong tapat at mahinahon, at bigyan Mo ako ng kapayapaan anuman ang kalabasan. Amen."
+    },
+    "quarrel": {
+      "title": "Kapag may away sa tahanan",
+      "text": "Panginoon, may galit at sakit sa aming tahanan, at pagod na ako sa pag-aaway. Payapain Mo ang aming mga puso at salita. Tulungan Mo kaming makinig sa isa't isa, aminin ang aming mga pagkakamali at magpatawad. Pagalingin Mo ang mga sugat sa pagitan namin, at ibalik Mo ang kapayapaan sa aming pamilya. Magsimula Ka sa akin. Amen."
+    },
+    "disaster": {
+      "title": "Sa panahon ng sakuna",
+      "text": "Panginoon, may dumating na sakuna, at natatakot kami. Ingatan Mo kami at ang lahat ng nasa panganib. Iligtas Mo ang mga naipit, pagalingin ang mga nasugatan, at aliwin ang mga nawalan ng mahal sa buhay at tahanan. Bigyan Mo ng lakas ang lahat ng tumutulong. Ikaw ang aming kanlungan at kalakasan, handang saklolo sa panahon ng kagipitan. Amen."
+    }
+  }
+}

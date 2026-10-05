@@ -602,4 +602,51 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get music => 'ಸಂಗೀತ';
+
+  @override
+  String get readyPrayers => 'ಸಿದ್ಧ ಪ್ರಾರ್ಥನೆಗಳು';
+
+  @override
+  String get readyPrayersHint =>
+      'ಪ್ರತಿದಿನಕ್ಕೂ ಪ್ರತಿ ಅಗತ್ಯಕ್ಕೂ ಪ್ರಾರ್ಥನೆಗಳು. ಕೇಳಲು ಒಂದನ್ನು ಒತ್ತಿ.';
+
+  @override
+  String get voiceMan => 'ಪುರುಷ ಧ್ವನಿ';
+
+  @override
+  String get voiceWoman => 'ಸ್ತ್ರೀ ಧ್ವನಿ';
+
+  @override
+  String get sharePrayer => 'ಪ್ರಾರ್ಥನೆಯನ್ನು ಹಂಚಿಕೊಳ್ಳಿ';
+
+  @override
+  String get searchPrayers => 'ಪ್ರಾರ್ಥನೆಗಳನ್ನು ಹುಡುಕಿ';
+
+  @override
+  String get forMe => 'ನನಗಾಗಿ';
+
+  @override
+  String get forSomeone => 'ಇತರರಿಗಾಗಿ';
+
+  @override
+  String get forSomeoneHint =>
+      'ಅವರ ಹೆಸರನ್ನು ಬರೆಯಿರಿ, ಪ್ರಾರ್ಥನೆ ಅವರಿಗಾಗಿ ಸಿದ್ಧವಾಗುತ್ತದೆ, ಕಳುಹಿಸಲು.';
+
+  @override
+  String get theirName => 'ಅವರ ಹೆಸರು';
+
+  @override
+  String get theirNameHint => 'ನೀವು ಯಾರಿಗಾಗಿ ಪ್ರಾರ್ಥಿಸುತ್ತಿದ್ದೀರೋ ಅವರ ಹೆಸರು';
+
+  @override
+  String get enterNameFirst => 'ಮೊದಲು ಅವರ ಹೆಸರನ್ನು ಬರೆಯಿರಿ';
+
+  @override
+  String get noPrayersFound => 'ಯಾವುದೇ ಪ್ರಾರ್ಥನೆ ಸಿಗಲಿಲ್ಲ';
+
+  @override
+  String get whatsappMessage => 'WhatsApp';
+
+  @override
+  String get copyText => 'ನಕಲಿಸಿ';
 }

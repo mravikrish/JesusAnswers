@@ -601,4 +601,51 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get music => 'Muziki';
+
+  @override
+  String get readyPrayers => 'Maombi Tayari';
+
+  @override
+  String get readyPrayersHint =>
+      'Maombi kwa kila siku na kila hitaji. Gusa moja ili kuisikiliza.';
+
+  @override
+  String get voiceMan => 'Sauti ya mwanamume';
+
+  @override
+  String get voiceWoman => 'Sauti ya mwanamke';
+
+  @override
+  String get sharePrayer => 'Shiriki ombi';
+
+  @override
+  String get searchPrayers => 'Tafuta maombi';
+
+  @override
+  String get forMe => 'Kwa ajili yangu';
+
+  @override
+  String get forSomeone => 'Kwa ajili ya mtu';
+
+  @override
+  String get forSomeoneHint =>
+      'Andika jina lake, na ombi litaandikwa kwa ajili yake, tayari kutuma.';
+
+  @override
+  String get theirName => 'Jina lake';
+
+  @override
+  String get theirNameHint => 'Jina la mtu unayemwombea';
+
+  @override
+  String get enterNameFirst => 'Kwanza andika jina lake';
+
+  @override
+  String get noPrayersFound => 'Hakuna maombi yaliyopatikana';
+
+  @override
+  String get whatsappMessage => 'WhatsApp';
+
+  @override
+  String get copyText => 'Nakili';
 }

@@ -185,5 +185,20 @@
   "removeVoice": "हटाएँ",
   "voiceDownloadFailed": "डाउनलोड नहीं हो सका। इंटरनेट जाँचकर फिर कोशिश करें।",
   "voiceCredits": "आवाज़ों का श्रेय",
-  "music": "संगीत"
+  "music": "संगीत",
+  "readyPrayers": "तैयार प्रार्थनाएँ",
+  "readyPrayersHint": "हर दिन और हर ज़रूरत के लिए प्रार्थनाएँ। सुनने के लिए किसी पर टैप करें।",
+  "voiceMan": "पुरुष आवाज़",
+  "voiceWoman": "महिला आवाज़",
+  "sharePrayer": "प्रार्थना शेयर करें",
+  "searchPrayers": "प्रार्थना खोजें",
+  "forMe": "मेरे लिए",
+  "forSomeone": "किसी और के लिए",
+  "forSomeoneHint": "उनका नाम लिखें, प्रार्थना उनके लिए तैयार हो जाएगी, भेजने के लिए।",
+  "theirName": "उनका नाम",
+  "theirNameHint": "जिनके लिए आप प्रार्थना कर रहे हैं, उनका नाम",
+  "enterNameFirst": "पहले उनका नाम लिखें",
+  "noPrayersFound": "कोई प्रार्थना नहीं मिली",
+  "whatsappMessage": "WhatsApp",
+  "copyText": "कॉपी करें"
 }

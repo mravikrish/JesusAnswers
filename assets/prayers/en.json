@@ -1,0 +1,279 @@
+{
+  "groups": {
+    "bible": "Prayers from the Bible",
+    "daily": "Every Day",
+    "needs": "For My Needs",
+    "others": "For Others",
+    "faith": "Faith and Praise",
+    "celebrations": "Celebrations and Thanks",
+    "beginnings": "New Beginnings",
+    "health": "Health and Hospital",
+    "troubles": "When Something Goes Wrong"
+  },
+  "prayers": {
+    "lords_prayer": {
+      "title": "The Lord's Prayer",
+      "text": "Our Father in heaven, hallowed be Your name. Your kingdom come, Your will be done, on earth as it is in heaven. Give us this day our daily bread. And forgive us our sins, as we forgive those who sin against us. And lead us not into temptation, but deliver us from evil. For Yours is the kingdom, and the power, and the glory, forever. Amen."
+    },
+    "psalm23": {
+      "title": "The Lord Is My Shepherd"
+    },
+    "psalm91": {
+      "title": "Under His Wings"
+    },
+    "psalm121": {
+      "title": "The Lord Who Keeps You"
+    },
+    "psalm27": {
+      "title": "The Lord Is My Light"
+    },
+    "psalm103": {
+      "title": "Bless the Lord, O My Soul"
+    },
+    "psalm51": {
+      "title": "Create in Me a Clean Heart"
+    },
+    "psalm139": {
+      "title": "Search Me, O God"
+    },
+    "blessing": {
+      "title": "The Lord Bless You"
+    },
+    "magnificat": {
+      "title": "Mary's Song of Praise"
+    },
+    "ephesians3": {
+      "title": "To Know the Love of Christ"
+    },
+    "john17": {
+      "title": "Jesus Prays for Us"
+    },
+    "morning": {
+      "title": "Morning Prayer",
+      "text": "Lord Jesus, thank You for this new day and for keeping me through the night. I give this day to You. Guide my steps, guard my words, and fill my heart with Your peace. Help me to be kind and patient with everyone I meet. Whatever today brings, let me walk with You. Amen."
+    },
+    "night": {
+      "title": "Night Prayer",
+      "text": "Lord Jesus, thank You for being with me today. Forgive me where I have failed, and heal what has hurt me. I place every worry of this day into Your hands. Watch over me and my family as we sleep. Give me deep rest and a quiet heart, and wake me to a new morning in Your love. Amen."
+    },
+    "meals": {
+      "title": "Prayer Before Meals",
+      "text": "Lord, thank You for this food and for the hands that prepared it. Bless it to strengthen our bodies, and bless us as we share this meal together. Make us thankful for all we have, and remind us of those who are hungry today. Amen."
+    },
+    "work": {
+      "title": "Before Work or Study",
+      "text": "Lord, I give You the work and study before me today. Give me a clear mind, a willing heart and strength to do my best. Help me to be honest and diligent, and to treat others with respect. When it is hard, keep me calm. May all I do bring honour to You. Amen."
+    },
+    "thanksgiving": {
+      "title": "A Prayer of Thanks",
+      "text": "Father, thank You for Your goodness to me. Thank You for life and breath, for my family and friends, for food and shelter, and for every blessing I have forgotten to count. Above all, thank You for Jesus, who loves me and gave Himself for me. Give me a thankful heart every day. Amen."
+    },
+    "healing": {
+      "title": "For Healing",
+      "text": "Lord Jesus, You healed the sick and touched those who were hurting. I come to You now with my body and my heart. Touch me with Your healing power. Take away my pain and fear, and give me strength for each day. Guide the doctors and everyone who cares for me. I trust my life into Your hands. Amen.",
+      "forText": "Lord Jesus, You healed the sick and touched those who were hurting. I bring {name} to You now. Touch them with Your healing power. Take away their pain and fear, and give them strength for each day. Guide the doctors and everyone who cares for them. I trust {name} into Your hands. Amen."
+    },
+    "peace": {
+      "title": "For Peace When Anxious",
+      "text": "Lord Jesus, my heart is troubled and my thoughts will not rest. You said, Come to Me, and I will give you rest. I come to You now. I give You every worry and fear I carry. Calm my mind and slow my breathing. Fill me with Your peace that is beyond understanding, and help me to trust You one step at a time. Amen.",
+      "forText": "Lord Jesus, {name} is anxious, and their heart is troubled. You said, Come to Me, and I will give you rest. Draw them close to You now. Take every worry and fear they are carrying. Calm their mind, fill them with Your peace that is beyond understanding, and help them to trust You one step at a time. Amen."
+    },
+    "strength": {
+      "title": "For Strength in Hard Times",
+      "text": "Lord, I feel weak and tired, and the road ahead is hard. You promised that Your strength is made perfect in weakness. Be my strength today. Hold me up when I want to give up, and give me courage to keep going. Remind me that I am never alone, because You are with me. Amen."
+    },
+    "forgiveness": {
+      "title": "Asking Forgiveness",
+      "text": "Lord Jesus, I am sorry for the wrong I have done, in my thoughts, my words and my actions. I do not hide it from You. Please forgive me and wash my heart clean. Thank You that Your mercy is greater than my sin. Help me to turn away from what is wrong and to live in Your light. Amen."
+    },
+    "guidance": {
+      "title": "For Guidance",
+      "text": "Lord, I do not know which way to go, but You know the way. I bring this decision to You. Give me wisdom, and make the right path clear to me. Close the doors that are not from You, and open the ones that are. Help me to wait patiently and to follow You with trust. Amen."
+    },
+    "protection": {
+      "title": "For Protection",
+      "text": "Lord, You are my refuge and my safe place. Protect me and my family from all harm and danger, seen and unseen. Watch over us when we travel, when we work and when we sleep. Keep evil far from our home. Cover us with Your love and let us rest in Your care. Amen.",
+      "forText": "Lord, You are a refuge and a safe place. Protect {name} from all harm and danger, seen and unseen. Watch over them when they travel, when they work and when they sleep. Keep evil far from them and their home. Cover them with Your love, and let them rest in Your care. Amen."
+    },
+    "grief": {
+      "title": "For Comfort in Grief",
+      "text": "Lord Jesus, my heart is broken, and the loss is so heavy. You wept with those who mourned, and You are near to the broken-hearted. Hold me close in my sorrow. Comfort me when the tears come, and carry me on the days I cannot carry myself. Give me hope in Your promise of life that never ends. Amen.",
+      "forText": "Lord Jesus, {name} is grieving, and their heart is broken. You are near to the broken-hearted. Hold them close in their sorrow. Comfort them when the tears come, and carry them on the days they cannot carry themselves. Surround them with people who love them, and give them hope in Your promise of life that never ends. Amen."
+    },
+    "loneliness": {
+      "title": "When I Feel Alone",
+      "text": "Lord Jesus, I feel alone, and no one seems to understand. But You see me, You know me, and You love me. Thank You for Your promise never to leave me. Be close to me now. Bring good and faithful people into my life, and help me to be a friend to others. Amen."
+    },
+    "provision": {
+      "title": "For Daily Needs and Work",
+      "text": "Father, You feed the birds of the air and You know what I need. I bring my needs to You: my work, my money, my home and my family. Provide for us, open doors of work, and give me wisdom to use well what You give. Free me from worry, and help me to trust You for each day. Amen."
+    },
+    "family": {
+      "title": "For My Family",
+      "text": "Lord, thank You for my family. Bless each one of us. Keep us safe, healthy and close to You. Fill our home with love, patience and peace. Heal any hurt between us, and teach us to forgive one another. May our family honour You in all we do. Amen."
+    },
+    "children": {
+      "title": "For My Children",
+      "text": "Lord Jesus, You welcomed the little children and blessed them. I bring my children to You. Protect them, guide them and help them to grow in wisdom and kindness. Keep them from harm and from bad company. Help them to know You and love You all their lives. Give me patience and wisdom as their parent. Amen."
+    },
+    "marriage": {
+      "title": "For My Marriage",
+      "text": "Lord, thank You for my husband or wife. Bless our marriage. Help us to love each other with patience and kindness, to listen well and to forgive quickly. Keep us faithful to each other and to You. Make our love stronger year by year, and let You be at the centre of our home. Amen."
+    },
+    "sick": {
+      "title": "For Someone Who Is Sick",
+      "text": "Lord Jesus, I lift up to You the one I love who is sick. You know their pain and their fear. Please touch them with Your healing hand. Give them strength, rest and peace. Guide the doctors and nurses who care for them. Comfort their family, and let them feel Your love near them. Amen."
+    },
+    "forgive_others": {
+      "title": "To Forgive Someone",
+      "text": "Lord, someone has hurt me, and it is hard to let it go. You forgave me when I did not deserve it. Help me to forgive as You have forgiven me. Heal my heart of anger and bitterness. I choose to release this person into Your hands. Bless them, and give me Your peace. Amen."
+    },
+    "country": {
+      "title": "For My Country",
+      "text": "Lord, I pray for my country and all its people. Give wisdom and honesty to our leaders. Bring peace where there is conflict, and justice where there is wrong. Protect the poor, the weak and the forgotten. Bless our land, and turn our hearts to You. Amen."
+    },
+    "salvation": {
+      "title": "To Receive Jesus",
+      "text": "Lord Jesus, I believe that You are the Son of God, that You died on the cross for my sins and rose again. I am sorry for my sins, and I turn to You. Please forgive me and come into my life. I receive You as my Lord and Saviour. Thank You for loving me and for giving me new life. Amen.",
+      "forText": "Lord, I pray for {name}. You love them more than I ever could. Open their heart to know You. Show them that Jesus died and rose again for them. Draw them gently to Yourself, and bring people into their life who will show them Your love. Let them receive Your forgiveness and new life. Amen.",
+      "forTitle": "That They May Know Jesus"
+    },
+    "surrender": {
+      "title": "Giving My Life to God",
+      "text": "Lord, I give my whole life to You: my plans, my fears, my hopes and my past. Not my will, but Yours be done. Take what I am holding too tightly and teach me to trust You. Lead me where You want me to go, and make me the person You created me to be. Amen."
+    },
+    "praise": {
+      "title": "A Prayer of Praise",
+      "text": "Lord God, You are holy, mighty and good. You made the heavens and the earth, and Your love lasts forever. I praise You for who You are. I praise You for Jesus, my Saviour, and for Your faithfulness every day. With all my heart I worship You. Amen."
+    },
+    "birthday": {
+      "title": "For a Birthday",
+      "text": "Lord, thank You for the gift of my life and for another year. Thank You for every person who loves me and for all You have done for me. Forgive me where I have failed, and lead me in the year ahead. Help me to grow in faith, kindness and joy. My times are in Your hands. Amen.",
+      "forText": "Lord, thank You for {name} and for the gift of their life. Bless them on their birthday with joy, good health and peace. Thank You for every year You have given them. Guide them in the year ahead, keep them safe, and let them know how deeply You love them. Amen."
+    },
+    "wedding": {
+      "title": "For a Wedding",
+      "text": "Lord, thank You for bringing us together. As we begin our married life, be the centre of our home. Teach us to love each other with patience, to forgive quickly and to serve one another. Keep us faithful in good times and hard times. Bless our families, and let our marriage bring glory to You. Amen.",
+      "forText": "Lord, thank You for {name} on their wedding day. Bless their marriage and be the centre of their home. Teach them to love each other with patience, to forgive quickly and to serve one another. Keep them faithful in good times and hard times, and fill their life together with joy. Amen."
+    },
+    "anniversary": {
+      "title": "For an Anniversary",
+      "text": "Lord, thank You for another year of our marriage. Thank You for the joys we have shared and for carrying us through the hard days. Forgive us where we have hurt each other. Renew our love, deepen our friendship, and keep us close to You and to each other for all the years ahead. Amen.",
+      "forText": "Lord, thank You for {name} and for another year of their marriage. Thank You for the joys they have shared and for carrying them through the hard days. Renew their love, deepen their friendship, and keep them close to You and to each other for many years to come. Amen."
+    },
+    "new_baby": {
+      "title": "For a New Baby",
+      "text": "Lord, thank You for the precious gift of our baby and for a safe birth. Bless this little one with health and strength, and protect them day and night. Give us wisdom, patience and love as parents. May our child grow up to know You and love You. Amen.",
+      "forText": "Lord, thank You for the precious gift of the baby, {name}. Bless this little one with health and strength, and protect them day and night. Give the mother rest and healing, and give the parents wisdom, patience and love. May this child grow up to know You and love You. Amen."
+    },
+    "new_home": {
+      "title": "Blessing a New Home",
+      "text": "Lord, thank You for this home. We dedicate it to You. Let Your peace fill every room, and let love, kindness and prayer live here. Protect this house and everyone who lives in it. May every guest who enters find a welcome, and may this home always honour You. Amen."
+    },
+    "success": {
+      "title": "Thanks for Success",
+      "text": "Lord, thank You for this success. You gave me the strength, the help and every good thing that made it possible. Keep me humble and grateful. Help me to use what I have received to bless others, and to keep trusting You in whatever comes next. All the glory belongs to You. Amen.",
+      "forText": "Lord, thank You for the success You have given {name}. You gave them strength and help along the way. Keep them humble and grateful, and guide them in the next steps of their life. Help them to use what they have received to bless others. All the glory belongs to You. Amen."
+    },
+    "christmas": {
+      "title": "A Christmas Prayer",
+      "text": "Lord Jesus, thank You for coming into the world as a little child. You left the glory of heaven to be with us. Fill our hearts and our homes with the joy and peace of Christmas. Help us to share Your love with the poor and the lonely. Be born again in our hearts today. Amen."
+    },
+    "easter": {
+      "title": "An Easter Prayer",
+      "text": "Lord Jesus, You died for our sins and rose again on the third day. Death could not hold You. Thank You for the victory of the empty tomb. Fill us with the hope of Your resurrection, and help us to live each day in the power of Your new life. Hallelujah, You are risen. Amen."
+    },
+    "new_year": {
+      "title": "A New Year Prayer",
+      "text": "Lord, thank You for carrying me through the past year. I leave its sorrows and mistakes with You. I give You this new year: my plans, my family, my work and my health. Walk with me every day. Help me to grow closer to You, and let this be a year of Your blessing. Amen."
+    },
+    "journey": {
+      "title": "Before a Journey",
+      "text": "Lord, I am about to travel, and I put this journey in Your hands. Protect me on the road, in the air and on the water. Keep me safe from accidents and every danger. Give wisdom to everyone responsible for our travel. Watch over my home while I am away, and bring me safely to where I am going. Amen.",
+      "forText": "Lord, {name} is about to travel, and I put their journey in Your hands. Protect them on the road, in the air and on the water. Keep them safe from accidents and every danger. Give wisdom to everyone responsible for their travel, and bring them safely to where they are going and home again. Amen."
+    },
+    "new_business": {
+      "title": "Starting a New Business",
+      "text": "Lord, I am starting this new business, and I dedicate it to You. Give me wisdom in every decision, and lead me to the right people. Help me to work honestly and to treat my customers and workers fairly. Bless the work of my hands and provide what we need. Let this business bring glory to You. Amen.",
+      "forText": "Lord, I lift up {name}, who is starting a new business. Give them wisdom in every decision, and lead them to the right people. Help them to work honestly and to treat everyone fairly. Bless the work of their hands, open doors for them, and provide all they need. Let their business bring glory to You. Amen."
+    },
+    "new_job": {
+      "title": "Starting a New Job",
+      "text": "Lord, thank You for this new job. As I begin, help me to learn quickly and to work faithfully. Give me favour with the people I work with, and help me to be honest, kind and patient. When I feel unsure, give me confidence. May my work honour You and provide well for my family. Amen.",
+      "forText": "Lord, thank You for the new job You have given {name}. As they begin, help them to learn quickly and to work faithfully. Give them favour with the people they work with, and confidence when they feel unsure. Bless their work, and let it provide well for their family. Amen."
+    },
+    "interview": {
+      "title": "Before an Interview",
+      "text": "Lord, I have an interview, and I feel nervous. Calm my heart and clear my mind. Help me to remember what I have prepared and to speak with honesty and confidence. Give me favour with the people I meet. If this is the right place for me, open the door; if not, lead me to something better. Amen.",
+      "forText": "Lord, {name} has an interview, and I bring them to You. Calm their heart and clear their mind. Help them to speak with honesty and confidence, and give them favour with the people they meet. If this is the right place for them, open the door; if not, lead them to something better. Amen."
+    },
+    "school": {
+      "title": "Starting School or College",
+      "text": "Lord, I am starting a new time of learning. Thank You for this opportunity. Give me a mind that understands and a heart that is willing to work hard. Help me to make good friends and to stay away from what is wrong. Bless my teachers, and help me to grow in wisdom and in faith. Amen.",
+      "forText": "Lord, {name} is starting school or college, and I bring them to You. Give them a mind that understands and a heart that is willing to work hard. Help them to make good friends and to stay away from what is wrong. Bless their teachers, and help them to grow in wisdom and in faith. Amen."
+    },
+    "exams": {
+      "title": "Before Exams",
+      "text": "Lord, my exams are near, and I feel the pressure. Help me to study well and to remember what I have learned. On the day of the exam, keep me calm and give me a clear mind. Help me to do my best and to be honest. Whatever the result, remind me that my worth is in You. Amen.",
+      "forText": "Lord, {name} has exams soon, and I bring them to You. Help them to study well and to remember what they have learned. On the day of the exam, keep them calm and give them a clear mind. Help them to do their best, and remind them that their worth is in You, whatever the result. Amen."
+    },
+    "new_vehicle": {
+      "title": "Blessing a New Vehicle",
+      "text": "Lord, thank You for this new vehicle. I dedicate it to You. Protect everyone who travels in it, and keep it safe from accidents and harm. Give whoever drives it patience, care and good judgement on the road. Help me to use it to serve my family and others. Amen."
+    },
+    "surgery": {
+      "title": "Before an Operation",
+      "text": "Lord Jesus, I am going for an operation, and I am afraid. I place my body and my life in Your hands. Guide the hands and minds of the surgeons, doctors and nurses. Keep me safe during the operation and bring me through it well. Give me a quick and full recovery, and fill my heart with Your peace. Amen.",
+      "forText": "Lord Jesus, {name} is going for an operation, and I place them in Your hands. Guide the hands and minds of the surgeons, doctors and nurses. Keep them safe during the operation and bring them through it well. Take away their fear, give them a quick and full recovery, and comfort their family as they wait. Amen."
+    },
+    "hospital": {
+      "title": "In the Hospital",
+      "text": "Lord, I am in the hospital, and the days feel long. Be with me in this room. Give me patience with the waiting, strength for the treatment and rest at night. Bless the doctors and nurses who care for me. Comfort my family, and let me feel that You are near. Bring me home in Your good time. Amen.",
+      "forText": "Lord, {name} is in the hospital, and I bring them to You. Be with them in that room. Give them patience with the waiting, strength for the treatment and rest at night. Bless the doctors and nurses who care for them. Comfort their family, and bring them home healthy in Your good time. Amen."
+    },
+    "recovery": {
+      "title": "Thanks for Recovery",
+      "text": "Lord, thank You for bringing me through this illness. Thank You for the doctors, the medicine and every person who cared for me and prayed for me. Keep restoring my strength day by day. Help me never to forget Your goodness, and to use my health to serve You and others. Amen."
+    },
+    "pregnancy": {
+      "title": "For a Safe Pregnancy",
+      "text": "Lord, thank You for the life growing within me. Protect this baby and help them to grow healthy and strong. Keep me well in body and mind, and calm my fears. Guide the doctors and everyone who cares for us. Bring us safely through the birth, and fill our home with joy. Amen.",
+      "forText": "Lord, thank You for the baby that {name} is carrying. Protect this little one and help them to grow healthy and strong. Keep the mother well in body and mind, and calm her fears. Guide the doctors and everyone who cares for them. Bring mother and baby safely through the birth, and fill their home with joy. Amen."
+    },
+    "hopeless": {
+      "title": "When Feeling Hopeless",
+      "text": "Lord, I feel empty and hopeless, and I do not have the strength to pray much. But I come to You as I am. Hold me in this darkness. Remind me that I am precious to You and that this will not last forever. Lead me to people who can help me. Give me light for one more day. Amen.",
+      "forText": "Lord, {name} is going through a dark time and feels hopeless. Hold them close in this darkness. Remind them that they are precious to You and that this will not last forever. Bring people around them who can help, and give them light and hope for one more day. Amen."
+    },
+    "addiction": {
+      "title": "Freedom from Addiction",
+      "text": "Lord Jesus, I am struggling with something I cannot stop by myself. I confess it to You. Break the chains that hold me, and give me strength to say no, one day at a time. Heal what is broken inside me. Lead me to people who can help, and help me to walk in freedom. Amen.",
+      "forText": "Lord Jesus, I lift up {name}, who is caught in an addiction. Break the chains that hold them, and give them strength to say no, one day at a time. Heal what is broken inside them. Lead them to people who can help, and let them walk in freedom. Give their family patience and hope. Amen."
+    },
+    "travel_trouble": {
+      "title": "When Trouble Comes on a Journey",
+      "text": "Lord, something has gone wrong on this journey, and I am worried. Be with me right now. Keep me and everyone with me safe. If anyone is hurt, heal them and bring help quickly. Give me a calm mind to know what to do. Make a way where there seems to be no way, and bring us home safely. Amen."
+    },
+    "job_loss": {
+      "title": "After Losing a Job",
+      "text": "Lord, I have lost my job, and I feel worried and ashamed. You know what my family needs. Comfort my heart and remind me that my worth is in You. Give me strength to keep looking, and open the right door at the right time. Provide for us each day until then. Amen.",
+      "forText": "Lord, {name} has lost their job, and I bring them to You. You know what their family needs. Comfort their heart and remind them that their worth is in You. Give them strength to keep looking, open the right door at the right time, and provide for them each day until then. Amen."
+    },
+    "money": {
+      "title": "In Money Troubles",
+      "text": "Lord, I am under heavy pressure because of money and debts. You know every need. Give me wisdom to manage what I have and the courage to face what I owe. Provide for my family, and open ways to earn honestly. Free me from fear and shame, and help me to trust You for today. Amen."
+    },
+    "legal": {
+      "title": "In a Legal Problem",
+      "text": "Lord, I am facing a legal problem, and it weighs on me. You are a God of justice and truth. Give me wisdom and good advice. Let the truth come to light, and give fairness to those who will decide. Keep me honest and calm, and give me peace whatever the outcome. Amen."
+    },
+    "quarrel": {
+      "title": "When There Is a Quarrel at Home",
+      "text": "Lord, there is anger and hurt in our home, and I am tired of the fighting. Calm our hearts and our words. Help us to listen to each other, to admit where we are wrong and to forgive. Heal the wounds between us, and bring peace back into our family. Begin with me. Amen."
+    },
+    "disaster": {
+      "title": "In a Disaster",
+      "text": "Lord, a disaster has struck, and we are afraid. Protect us and all the people in danger. Save those who are trapped, heal the injured, and comfort those who have lost loved ones and homes. Give strength to everyone who is helping. Be our refuge and strength, our help in this time of trouble. Amen."
+    }
+  }
+}

@@ -607,4 +607,51 @@ class AppLocalizationsTl extends AppLocalizations {
 
   @override
   String get music => 'Musika';
+
+  @override
+  String get readyPrayers => 'Mga Panalangin';
+
+  @override
+  String get readyPrayersHint =>
+      'Mga panalangin para sa bawat araw at bawat pangangailangan. Pindutin ang isa para pakinggan.';
+
+  @override
+  String get voiceMan => 'Boses ng lalaki';
+
+  @override
+  String get voiceWoman => 'Boses ng babae';
+
+  @override
+  String get sharePrayer => 'Ibahagi ang panalangin';
+
+  @override
+  String get searchPrayers => 'Maghanap ng panalangin';
+
+  @override
+  String get forMe => 'Para sa akin';
+
+  @override
+  String get forSomeone => 'Para sa iba';
+
+  @override
+  String get forSomeoneHint =>
+      'Isulat ang kanyang pangalan, at isusulat ang panalangin para sa kanya, handang ipadala.';
+
+  @override
+  String get theirName => 'Kanyang pangalan';
+
+  @override
+  String get theirNameHint => 'Pangalan ng ipinapanalangin mo';
+
+  @override
+  String get enterNameFirst => 'Isulat muna ang kanyang pangalan';
+
+  @override
+  String get noPrayersFound => 'Walang nakitang panalangin';
+
+  @override
+  String get whatsappMessage => 'WhatsApp';
+
+  @override
+  String get copyText => 'Kopyahin';
 }

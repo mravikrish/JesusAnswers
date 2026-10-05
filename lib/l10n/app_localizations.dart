@@ -1251,6 +1251,96 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Music'**
   String get music;
+
+  /// No description provided for @readyPrayers.
+  ///
+  /// In en, this message translates to:
+  /// **'Ready Prayers'**
+  String get readyPrayers;
+
+  /// No description provided for @readyPrayersHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Prayers for every day and every need. Tap one to hear it.'**
+  String get readyPrayersHint;
+
+  /// No description provided for @voiceMan.
+  ///
+  /// In en, this message translates to:
+  /// **'Male voice'**
+  String get voiceMan;
+
+  /// No description provided for @voiceWoman.
+  ///
+  /// In en, this message translates to:
+  /// **'Female voice'**
+  String get voiceWoman;
+
+  /// No description provided for @sharePrayer.
+  ///
+  /// In en, this message translates to:
+  /// **'Share prayer'**
+  String get sharePrayer;
+
+  /// No description provided for @searchPrayers.
+  ///
+  /// In en, this message translates to:
+  /// **'Search prayers'**
+  String get searchPrayers;
+
+  /// No description provided for @forMe.
+  ///
+  /// In en, this message translates to:
+  /// **'For me'**
+  String get forMe;
+
+  /// No description provided for @forSomeone.
+  ///
+  /// In en, this message translates to:
+  /// **'For someone'**
+  String get forSomeone;
+
+  /// No description provided for @forSomeoneHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Type their name and the prayer is written for them, ready to send.'**
+  String get forSomeoneHint;
+
+  /// No description provided for @theirName.
+  ///
+  /// In en, this message translates to:
+  /// **'Their name'**
+  String get theirName;
+
+  /// No description provided for @theirNameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Name of the person you are praying for'**
+  String get theirNameHint;
+
+  /// No description provided for @enterNameFirst.
+  ///
+  /// In en, this message translates to:
+  /// **'Type their name first'**
+  String get enterNameFirst;
+
+  /// No description provided for @noPrayersFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No prayers found'**
+  String get noPrayersFound;
+
+  /// No description provided for @whatsappMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'WhatsApp'**
+  String get whatsappMessage;
+
+  /// No description provided for @copyText.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy'**
+  String get copyText;
 }
 
 class _AppLocalizationsDelegate

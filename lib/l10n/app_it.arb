@@ -185,5 +185,20 @@
   "removeVoice": "Rimuovi",
   "voiceDownloadFailed": "Download non riuscito. Controlla la connessione e riprova.",
   "voiceCredits": "Crediti delle voci",
-  "music": "Musica"
+  "music": "Musica",
+  "readyPrayers": "Preghiere",
+  "readyPrayersHint": "Preghiere per ogni giorno e ogni bisogno. Toccane una per ascoltarla.",
+  "voiceMan": "Voce maschile",
+  "voiceWoman": "Voce femminile",
+  "sharePrayer": "Condividi la preghiera",
+  "searchPrayers": "Cerca preghiere",
+  "forMe": "Per me",
+  "forSomeone": "Per qualcuno",
+  "forSomeoneHint": "Scrivi il nome e la preghiera è scritta per quella persona, pronta da inviare.",
+  "theirName": "Il nome",
+  "theirNameHint": "Nome della persona per cui preghi",
+  "enterNameFirst": "Prima scrivi il nome",
+  "noPrayersFound": "Nessuna preghiera trovata",
+  "whatsappMessage": "WhatsApp",
+  "copyText": "Copia"
 }

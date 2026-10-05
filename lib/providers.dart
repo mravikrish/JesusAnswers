@@ -8,6 +8,7 @@ import 'core/languages.dart';
 import 'data/bible/bible_repository.dart';
 import 'data/models/answer.dart';
 import 'data/models/painting.dart';
+import 'data/models/prayer.dart';
 import 'data/models/story.dart';
 import 'data/models/verse.dart';
 import 'l10n/app_localizations.dart';
@@ -61,6 +62,18 @@ final storiesProvider = FutureProvider<List<Story>>((ref) => ref.watch(bibleProv
 final storyPassagesProvider = FutureProvider.family<List<StoryPassage>, Story>((ref, story) {
   final lang = ref.watch(settingsProvider.select((s) => s.lang));
   return ref.watch(bibleProvider).storyPassages(story, lang);
+});
+
+/// The ready prayers, by group, in the user's current language.
+final prayerGroupsProvider = FutureProvider<List<PrayerGroup>>((ref) {
+  final lang = ref.watch(settingsProvider.select((s) => s.lang));
+  return ref.watch(bibleProvider).prayerGroups(lang);
+});
+
+/// A Scripture prayer's words ("PSA 23:1-6") in the user's current language.
+final prayerPassageProvider = FutureProvider.family<PrayerPassage?, String>((ref, passage) {
+  final lang = ref.watch(settingsProvider.select((s) => s.lang));
+  return ref.watch(bibleProvider).prayerPassage(passage, lang);
 });
 
 /// All 66 books of the Bible, in the user's current language.

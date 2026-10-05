@@ -603,4 +603,52 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get music => 'संगीत';
+
+  @override
+  String get readyPrayers => 'तयार प्रार्थना';
+
+  @override
+  String get readyPrayersHint =>
+      'प्रत्येक दिवसासाठी आणि प्रत्येक गरजेसाठी प्रार्थना. ऐकण्यासाठी एकावर टॅप करा.';
+
+  @override
+  String get voiceMan => 'पुरुष आवाज';
+
+  @override
+  String get voiceWoman => 'स्त्री आवाज';
+
+  @override
+  String get sharePrayer => 'प्रार्थना शेअर करा';
+
+  @override
+  String get searchPrayers => 'प्रार्थना शोधा';
+
+  @override
+  String get forMe => 'माझ्यासाठी';
+
+  @override
+  String get forSomeone => 'दुसऱ्यासाठी';
+
+  @override
+  String get forSomeoneHint =>
+      'त्यांचे नाव लिहा, प्रार्थना त्यांच्यासाठी तयार होईल, पाठवण्यासाठी.';
+
+  @override
+  String get theirName => 'त्यांचे नाव';
+
+  @override
+  String get theirNameHint =>
+      'ज्यांच्यासाठी तुम्ही प्रार्थना करत आहात त्यांचे नाव';
+
+  @override
+  String get enterNameFirst => 'आधी त्यांचे नाव लिहा';
+
+  @override
+  String get noPrayersFound => 'एकही प्रार्थना सापडली नाही';
+
+  @override
+  String get whatsappMessage => 'WhatsApp';
+
+  @override
+  String get copyText => 'कॉपी करा';
 }

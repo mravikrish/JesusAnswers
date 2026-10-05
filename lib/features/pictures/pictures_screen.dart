@@ -421,7 +421,6 @@ class PictureCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final l = AppLocalizations.of(context);
     final verse = this.verse;
     final wide = picture.wide;
     // Long verses get smaller type so every word fits — Scripture is never cut short.
@@ -467,43 +466,7 @@ class PictureCard extends StatelessWidget {
         ),
       ],
     ];
-    final appName = Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        const LogoMark(size: 24),
-        const SizedBox(width: 8),
-        Flexible(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Wordmark(size: 17),
-              Text(
-                l.tagline,
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: TextStyle(color: Colors.white.withValues(alpha: 0.75), fontSize: 9.5),
-              ),
-              // A saved or forwarded picture carries no link, so it says where to find the app.
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  const Icon(Icons.play_arrow_rounded, size: 11, color: AppColors.goldSoft),
-                  const SizedBox(width: 2),
-                  Flexible(
-                    child: Text(
-                      l.getItOnGooglePlay,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: const TextStyle(color: AppColors.goldSoft, fontSize: 9.5, fontWeight: FontWeight.w600),
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
-      ],
-    );
+    const appName = StatusAppName();
 
     if (wide) {
       // A blurred copy fills the card; the picture sits whole at the top, and the
@@ -585,6 +548,53 @@ class PictureCard extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+/// The app's mark, name, tagline and "Get it on Google Play" along the foot of a shared picture.
+class StatusAppName extends StatelessWidget {
+  const StatusAppName({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        const LogoMark(size: 24),
+        const SizedBox(width: 8),
+        Flexible(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Wordmark(size: 17),
+              Text(
+                l.tagline,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(color: Colors.white.withValues(alpha: 0.75), fontSize: 9.5),
+              ),
+              // A saved or forwarded picture carries no link, so it says where to find the app.
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Icon(Icons.play_arrow_rounded, size: 11, color: AppColors.goldSoft),
+                  const SizedBox(width: 2),
+                  Flexible(
+                    child: Text(
+                      l.getItOnGooglePlay,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(color: AppColors.goldSoft, fontSize: 9.5, fontWeight: FontWeight.w600),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }

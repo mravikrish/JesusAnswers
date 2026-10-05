@@ -185,5 +185,20 @@
   "removeVoice": "Alisin",
   "voiceDownloadFailed": "Hindi na-download. Tingnan ang iyong internet at subukan muli.",
   "voiceCredits": "Pagkilala sa mga boses",
-  "music": "Musika"
+  "music": "Musika",
+  "readyPrayers": "Mga Panalangin",
+  "readyPrayersHint": "Mga panalangin para sa bawat araw at bawat pangangailangan. Pindutin ang isa para pakinggan.",
+  "voiceMan": "Boses ng lalaki",
+  "voiceWoman": "Boses ng babae",
+  "sharePrayer": "Ibahagi ang panalangin",
+  "searchPrayers": "Maghanap ng panalangin",
+  "forMe": "Para sa akin",
+  "forSomeone": "Para sa iba",
+  "forSomeoneHint": "Isulat ang kanyang pangalan, at isusulat ang panalangin para sa kanya, handang ipadala.",
+  "theirName": "Kanyang pangalan",
+  "theirNameHint": "Pangalan ng ipinapanalangin mo",
+  "enterNameFirst": "Isulat muna ang kanyang pangalan",
+  "noPrayersFound": "Walang nakitang panalangin",
+  "whatsappMessage": "WhatsApp",
+  "copyText": "Kopyahin"
 }

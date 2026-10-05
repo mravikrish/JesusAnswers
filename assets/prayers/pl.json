@@ -1,0 +1,279 @@
+{
+  "groups": {
+    "bible": "Modlitwy z Biblii",
+    "daily": "Na każdy dzień",
+    "needs": "W moich potrzebach",
+    "others": "Za innych",
+    "faith": "Wiara i uwielbienie",
+    "celebrations": "Święta i wdzięczność",
+    "beginnings": "Nowe początki",
+    "health": "Zdrowie i szpital",
+    "troubles": "Gdy coś idzie źle"
+  },
+  "prayers": {
+    "lords_prayer": {
+      "title": "Ojcze nasz",
+      "text": "Ojcze nasz, który jesteś w niebie, święć się imię Twoje, przyjdź królestwo Twoje, bądź wola Twoja jako w niebie, tak i na ziemi. Chleba naszego powszedniego daj nam dzisiaj. I odpuść nam nasze winy, jako i my odpuszczamy naszym winowajcom. I nie wódź nas na pokuszenie, ale nas zbaw ode złego. Albowiem Twoje jest królestwo i potęga, i chwała na wieki. Amen."
+    },
+    "psalm23": {
+      "title": "Pan jest moim pasterzem"
+    },
+    "psalm91": {
+      "title": "Pod Jego skrzydłami"
+    },
+    "psalm121": {
+      "title": "Pan, który cię strzeże"
+    },
+    "psalm27": {
+      "title": "Pan moim światłem"
+    },
+    "psalm103": {
+      "title": "Błogosław, duszo moja, Pana"
+    },
+    "psalm51": {
+      "title": "Stwórz we mnie serce czyste"
+    },
+    "psalm139": {
+      "title": "Zbadaj mnie, Boże"
+    },
+    "blessing": {
+      "title": "Niech cię Pan błogosławi"
+    },
+    "magnificat": {
+      "title": "Pieśń Maryi"
+    },
+    "ephesians3": {
+      "title": "Poznać miłość Chrystusa"
+    },
+    "john17": {
+      "title": "Jezus modli się za nas"
+    },
+    "morning": {
+      "title": "Modlitwa poranna",
+      "text": "Panie Jezu, dziękuję Ci za ten nowy dzień i za to, że strzegłeś mnie w nocy. Oddaję Ci ten dzień. Prowadź moje kroki, strzeż moich słów i napełnij moje serce swoim pokojem. Pomóż mi być życzliwym i cierpliwym wobec każdego, kogo spotkam. Cokolwiek przyniesie ten dzień, chcę iść z Tobą. Amen."
+    },
+    "night": {
+      "title": "Modlitwa wieczorna",
+      "text": "Panie Jezu, dziękuję, że byłeś dziś ze mną. Przebacz mi, w czym zawiodłem, i ulecz to, co mnie zraniło. Składam w Twoje ręce każde zmartwienie tego dnia. Czuwaj nade mną i nad moją rodziną, gdy śpimy. Daj mi głęboki odpoczynek i spokojne serce, i obudź mnie do nowego poranka w Twojej miłości. Amen."
+    },
+    "meals": {
+      "title": "Modlitwa przed posiłkiem",
+      "text": "Panie, dziękuję Ci za to jedzenie i za ręce, które je przygotowały. Pobłogosław je, aby wzmocniło nasze ciała, i pobłogosław nas, gdy dzielimy ten posiłek. Uczyń nas wdzięcznymi za wszystko, co mamy, i przypominaj nam o tych, którzy dziś są głodni. Amen."
+    },
+    "work": {
+      "title": "Przed pracą lub nauką",
+      "text": "Panie, oddaję Ci pracę i naukę, które mnie dziś czekają. Daj mi jasny umysł, chętne serce i siłę, by dać z siebie wszystko. Pomóż mi być uczciwym i pilnym, i traktować innych z szacunkiem. Gdy będzie trudno, zachowaj mnie w spokoju. Niech wszystko, co robię, przynosi Ci chwałę. Amen."
+    },
+    "thanksgiving": {
+      "title": "Modlitwa dziękczynna",
+      "text": "Ojcze, dziękuję Ci za Twoją dobroć dla mnie. Dziękuję za życie i oddech, za moją rodzinę i przyjaciół, za jedzenie i dach nad głową, i za każde błogosławieństwo, o którym zapomniałem. Przede wszystkim dziękuję Ci za Jezusa, który mnie kocha i wydał siebie za mnie. Daj mi wdzięczne serce każdego dnia. Amen."
+    },
+    "healing": {
+      "title": "O uzdrowienie",
+      "text": "Panie Jezu, uzdrawiałeś chorych i dotykałeś cierpiących. Przychodzę teraz do Ciebie z moim ciałem i sercem. Dotknij mnie swoją uzdrawiającą mocą. Zabierz mój ból i lęk, i daj mi siłę na każdy dzień. Prowadź lekarzy i wszystkich, którzy się mną opiekują. Powierzam moje życie w Twoje ręce. Amen.",
+      "forText": "Panie Jezu, uzdrawiałeś chorych i dotykałeś cierpiących. Polecam Ci teraz bliską mi osobę: {name}. Dotknij tę osobę swoją uzdrawiającą mocą. Zabierz jej ból i lęk, i daj jej siłę na każdy dzień. Prowadź lekarzy i wszystkich, którzy się nią opiekują. Powierzam jej życie w Twoje ręce. Amen."
+    },
+    "peace": {
+      "title": "O pokój w niepokoju",
+      "text": "Panie Jezu, moje serce jest niespokojne, a myśli nie mogą odpocząć. Powiedziałeś: Przyjdźcie do Mnie, a Ja was pokrzepię. Przychodzę teraz do Ciebie. Oddaję Ci każde zmartwienie i każdy lęk, który noszę. Uspokój mój umysł i mój oddech. Napełnij mnie swoim pokojem, który przewyższa wszelkie zrozumienie, i pomóż mi ufać Ci krok po kroku. Amen.",
+      "forText": "Panie Jezu, {name} żyje w lęku, a serce tej osoby jest niespokojne. Powiedziałeś: Przyjdźcie do Mnie, a Ja was pokrzepię. Przyciągnij tę osobę teraz blisko siebie. Weź każde zmartwienie i każdy lęk, który nosi. Uspokój jej myśli, napełnij jej serce swoim pokojem, który przewyższa wszelkie zrozumienie, i pomóż jej ufać Ci krok po kroku. Amen."
+    },
+    "strength": {
+      "title": "O siłę w trudnych chwilach",
+      "text": "Panie, czuję się słaby i zmęczony, a droga przede mną jest trudna. Obiecałeś, że Twoja moc doskonali się w słabości. Bądź dziś moją siłą. Podtrzymuj mnie, gdy chcę się poddać, i daj mi odwagę, by iść dalej. Przypominaj mi, że nigdy nie jestem sam, bo Ty jesteś ze mną. Amen."
+    },
+    "forgiveness": {
+      "title": "O przebaczenie",
+      "text": "Panie Jezu, żałuję zła, które wyrządziłem, w myślach, słowach i czynach. Nie ukrywam tego przed Tobą. Proszę, przebacz mi i obmyj moje serce. Dziękuję, że Twoje miłosierdzie jest większe niż mój grzech. Pomóż mi odwrócić się od zła i żyć w Twoim świetle. Amen."
+    },
+    "guidance": {
+      "title": "O prowadzenie",
+      "text": "Panie, nie wiem, którą drogą iść, ale Ty znasz drogę. Przynoszę Ci tę decyzję. Daj mi mądrość i pokaż mi jasno właściwą drogę. Zamknij drzwi, które nie są od Ciebie, i otwórz te, które są. Pomóż mi cierpliwie czekać i z ufnością iść za Tobą. Amen."
+    },
+    "protection": {
+      "title": "O ochronę",
+      "text": "Panie, Ty jesteś moją ucieczką i bezpiecznym miejscem. Chroń mnie i moją rodzinę od wszelkiego zła i niebezpieczeństwa, widzialnego i niewidzialnego. Czuwaj nad nami w podróży, w pracy i we śnie. Oddal zło od naszego domu. Okryj nas swoją miłością i pozwól nam odpocząć pod Twoją opieką. Amen.",
+      "forText": "Panie, Ty jesteś ucieczką i bezpiecznym miejscem. Polecam Ci bliską mi osobę: {name}. Chroń tę osobę od wszelkiego zła i niebezpieczeństwa, widzialnego i niewidzialnego. Czuwaj nad nią w podróży, w pracy i we śnie. Oddal zło od jej życia i jej domu. Okryj ją swoją miłością i pozwól jej odpocząć pod Twoją opieką. Amen."
+    },
+    "grief": {
+      "title": "O pocieszenie w żałobie",
+      "text": "Panie Jezu, moje serce jest złamane, a strata jest tak ciężka. Płakałeś z płaczącymi i jesteś blisko ludzi o złamanym sercu. Przytul mnie w moim smutku. Pocieszaj mnie, gdy przychodzą łzy, i nieś mnie w dni, gdy nie mam sił. Daj mi nadzieję w Twojej obietnicy życia, które nigdy się nie kończy. Amen.",
+      "forText": "Panie Jezu, {name} przeżywa żałobę, a serce tej osoby jest złamane. Jesteś blisko ludzi o złamanym sercu. Przytul tę osobę w jej smutku. Pocieszaj ją, gdy przychodzą łzy, i nieś ją w dni, gdy brakuje jej sił. Otocz ją ludźmi, którzy ją kochają, i daj jej nadzieję w Twojej obietnicy życia, które nigdy się nie kończy. Amen."
+    },
+    "loneliness": {
+      "title": "Gdy czuję się samotny",
+      "text": "Panie Jezu, czuję się samotny i wydaje się, że nikt mnie nie rozumie. Ale Ty mnie widzisz, znasz mnie i kochasz. Dziękuję za Twoją obietnicę, że nigdy mnie nie opuścisz. Bądź teraz blisko mnie. Postaw na mojej drodze dobrych i wiernych ludzi, i pomóż mi być przyjacielem dla innych. Amen."
+    },
+    "provision": {
+      "title": "W codziennych potrzebach i pracy",
+      "text": "Ojcze, Ty karmisz ptaki niebieskie i wiesz, czego potrzebuję. Przynoszę Ci moje potrzeby: moją pracę, pieniądze, dom i rodzinę. Zatroszcz się o nas, otwórz drzwi do pracy i daj mi mądrość, bym dobrze korzystał z tego, co mi dajesz. Uwolnij mnie od zmartwień i pomóż mi ufać Ci każdego dnia. Amen."
+    },
+    "family": {
+      "title": "Za moją rodzinę",
+      "text": "Panie, dziękuję Ci za moją rodzinę. Błogosław każdemu z nas. Zachowaj nas bezpiecznych, zdrowych i blisko Ciebie. Napełnij nasz dom miłością, cierpliwością i pokojem. Ulecz każdą ranę między nami i naucz nas przebaczać sobie nawzajem. Niech nasza rodzina oddaje Ci chwałę we wszystkim, co robimy. Amen."
+    },
+    "children": {
+      "title": "Za moje dzieci",
+      "text": "Panie Jezu, przyjmowałeś dzieci i błogosławiłeś je. Przynoszę Ci moje dzieci. Chroń je, prowadź i pomóż im wzrastać w mądrości i dobroci. Strzeż je od krzywdy i od złego towarzystwa. Pomóż im znać Cię i kochać przez całe życie. Daj mi cierpliwość i mądrość jako rodzicowi. Amen."
+    },
+    "marriage": {
+      "title": "Za moje małżeństwo",
+      "text": "Panie, dziękuję Ci za mojego męża lub moją żonę. Błogosław naszemu małżeństwu. Pomóż nam kochać się z cierpliwością i życzliwością, dobrze się słuchać i szybko przebaczać. Zachowaj nas wiernych sobie nawzajem i Tobie. Niech nasza miłość rośnie z roku na rok, i bądź Ty w centrum naszego domu. Amen."
+    },
+    "sick": {
+      "title": "Za osobę chorą",
+      "text": "Panie Jezu, polecam Ci osobę, którą kocham i która jest chora. Znasz jej ból i jej lęk. Proszę, dotknij jej swoją uzdrawiającą ręką. Daj jej siłę, odpoczynek i pokój. Prowadź lekarzy i pielęgniarki, którzy się nią opiekują. Pociesz jej rodzinę i pozwól jej poczuć Twoją bliską miłość. Amen."
+    },
+    "forgive_others": {
+      "title": "By komuś przebaczyć",
+      "text": "Panie, ktoś mnie zranił i trudno mi o tym zapomnieć. Ty przebaczyłeś mi, choć na to nie zasłużyłem. Pomóż mi przebaczyć tak, jak Ty mi przebaczyłeś. Ulecz moje serce z gniewu i goryczy. Postanawiam oddać tę osobę w Twoje ręce. Błogosław jej i daj mi swój pokój. Amen."
+    },
+    "country": {
+      "title": "Za moją ojczyznę",
+      "text": "Panie, modlę się za moją ojczyznę i wszystkich jej mieszkańców. Daj mądrość i uczciwość naszym przywódcom. Przynieś pokój tam, gdzie jest konflikt, i sprawiedliwość tam, gdzie dzieje się krzywda. Chroń ubogich, słabych i zapomnianych. Błogosław naszej ziemi i zwróć nasze serca ku Tobie. Amen."
+    },
+    "salvation": {
+      "title": "By przyjąć Jezusa",
+      "text": "Panie Jezu, wierzę, że jesteś Synem Bożym, że umarłeś na krzyżu za moje grzechy i zmartwychwstałeś. Żałuję za moje grzechy i zwracam się do Ciebie. Proszę, przebacz mi i wejdź do mojego życia. Przyjmuję Cię jako mojego Pana i Zbawiciela. Dziękuję, że mnie kochasz i dajesz mi nowe życie. Amen.",
+      "forTitle": "By bliska osoba poznała Jezusa",
+      "forText": "Panie, modlę się za bliską mi osobę: {name}. Kochasz tę osobę bardziej, niż ja kiedykolwiek potrafię. Otwórz jej serce, by Cię poznała. Pokaż jej, że Jezus umarł i zmartwychwstał także dla niej. Przyciągnij ją łagodnie do siebie, i postaw na jej drodze ludzi, którzy pokażą jej Twoją miłość. Niech przyjmie Twoje przebaczenie i nowe życie. Amen."
+    },
+    "surrender": {
+      "title": "Oddać życie Bogu",
+      "text": "Panie, oddaję Ci całe moje życie: moje plany, lęki, nadzieje i moją przeszłość. Nie moja wola, lecz Twoja niech się stanie. Weź to, co trzymam zbyt mocno, i naucz mnie ufać Tobie. Prowadź mnie tam, gdzie chcesz, i uczyń mnie człowiekiem, jakim mnie stworzyłeś. Amen."
+    },
+    "praise": {
+      "title": "Modlitwa uwielbienia",
+      "text": "Panie Boże, Ty jesteś święty, potężny i dobry. Stworzyłeś niebo i ziemię, a Twoja miłość trwa na wieki. Wielbię Cię za to, kim jesteś. Wielbię Cię za Jezusa, mojego Zbawiciela, i za Twoją wierność każdego dnia. Z całego serca oddaję Ci cześć. Amen."
+    },
+    "birthday": {
+      "title": "Na urodziny",
+      "text": "Panie, dziękuję Ci za dar mojego życia i za kolejny rok. Dziękuję za każdego, kto mnie kocha, i za wszystko, co dla mnie uczyniłeś. Przebacz mi, w czym zawiodłem, i prowadź mnie w nadchodzącym roku. Pomóż mi wzrastać w wierze, dobroci i radości. W Twoim ręku są moje losy. Amen.",
+      "forText": "Panie, dziękuję Ci za bliską mi osobę: {name}, i za dar jej życia. Pobłogosław ją w dniu urodzin radością, zdrowiem i pokojem. Dziękuję za każdy rok, który jej dałeś. Prowadź ją w nadchodzącym roku, strzeż jej, i pozwól jej poznać, jak bardzo ją kochasz. Amen."
+    },
+    "wedding": {
+      "title": "Na ślub",
+      "text": "Panie, dziękuję, że nas połączyłeś. Gdy zaczynamy nasze małżeńskie życie, bądź w centrum naszego domu. Naucz nas kochać się cierpliwie, szybko przebaczać i służyć sobie nawzajem. Zachowaj nas wiernych w dobrych i trudnych chwilach. Błogosław naszym rodzinom, i niech nasze małżeństwo oddaje Ci chwałę. Amen.",
+      "forText": "Panie, dziękuję Ci za tę parę: {name}, w dniu ich ślubu. Pobłogosław ich małżeństwo i bądź w centrum ich domu. Naucz ich kochać się cierpliwie, szybko przebaczać i służyć sobie nawzajem. Zachowaj ich wiernych w dobrych i trudnych chwilach, i napełnij radością ich wspólne życie. Amen."
+    },
+    "anniversary": {
+      "title": "Na rocznicę ślubu",
+      "text": "Panie, dziękuję za kolejny rok naszego małżeństwa. Dziękuję za radości, które dzieliliśmy, i za to, że niosłeś nas w trudne dni. Przebacz nam, w czym się zraniliśmy. Odnów naszą miłość, pogłęb naszą przyjaźń, i zachowaj nas blisko siebie i blisko Ciebie przez wszystkie nadchodzące lata. Amen.",
+      "forText": "Panie, dziękuję Ci za tę parę: {name}, i za kolejny rok ich małżeństwa. Dziękuję za radości, które dzielili, i za to, że niosłeś ich w trudne dni. Odnów ich miłość, pogłęb ich przyjaźń, i zachowaj ich blisko siebie i blisko Ciebie przez wiele lat. Amen."
+    },
+    "new_baby": {
+      "title": "Za nowo narodzone dziecko",
+      "text": "Panie, dziękuję za cenny dar naszego dziecka i za szczęśliwy poród. Pobłogosław to maleństwo zdrowiem i siłą, i chroń je dniem i nocą. Daj nam jako rodzicom mądrość, cierpliwość i miłość. Niech nasze dziecko wzrasta, znając Cię i kochając. Amen.",
+      "forText": "Panie, dziękuję za cenny dar dziecka: {name}. Pobłogosław to maleństwo zdrowiem i siłą, i chroń je dniem i nocą. Daj mamie odpoczynek i powrót do sił, a rodzicom mądrość, cierpliwość i miłość. Niech to dziecko wzrasta, znając Cię i kochając. Amen."
+    },
+    "new_home": {
+      "title": "Błogosławieństwo nowego domu",
+      "text": "Panie, dziękujemy Ci za ten dom. Poświęcamy go Tobie. Niech Twój pokój wypełni każdy pokój, i niech mieszkają tu miłość, życzliwość i modlitwa. Chroń ten dom i wszystkich, którzy w nim mieszkają. Niech każdy gość znajdzie tu dobre przyjęcie, i niech ten dom zawsze oddaje Ci cześć. Amen."
+    },
+    "success": {
+      "title": "Dziękczynienie za sukces",
+      "text": "Panie, dziękuję Ci za ten sukces. Dałeś mi siłę, pomoc i wszystko dobre, co go umożliwiło. Zachowaj moje serce pokorne i wdzięczne. Pomóż mi wykorzystać to, co otrzymałem, by błogosławić innym, i dalej ufać Ci w tym, co nadejdzie. Cała chwała należy do Ciebie. Amen.",
+      "forText": "Panie, dziękuję Ci za sukces, który dałeś bliskiej mi osobie: {name}. Dałeś jej siłę i pomoc w drodze. Zachowaj jej serce pokorne i wdzięczne, i prowadź jej kolejne kroki. Pomóż jej wykorzystać to, co otrzymała, by błogosławić innym. Cała chwała należy do Ciebie. Amen."
+    },
+    "christmas": {
+      "title": "Modlitwa na Boże Narodzenie",
+      "text": "Panie Jezu, dziękuję, że przyszedłeś na świat jako małe dziecko. Zostawiłeś chwałę nieba, by być z nami. Napełnij nasze serca i domy radością i pokojem Bożego Narodzenia. Pomóż nam dzielić się Twoją miłością z ubogimi i samotnymi. Narodź się dziś na nowo w naszych sercach. Amen."
+    },
+    "easter": {
+      "title": "Modlitwa wielkanocna",
+      "text": "Panie Jezu, umarłeś za nasze grzechy i zmartwychwstałeś trzeciego dnia. Śmierć nie mogła Cię zatrzymać. Dziękuję za zwycięstwo pustego grobu. Napełnij nas nadzieją Twojego zmartwychwstania, i pomóż nam żyć każdego dnia mocą Twojego nowego życia. Alleluja, zmartwychwstałeś. Amen."
+    },
+    "new_year": {
+      "title": "Modlitwa na Nowy Rok",
+      "text": "Panie, dziękuję, że przeprowadziłeś mnie przez miniony rok. Zostawiam Ci jego smutki i moje błędy. Oddaję Ci ten nowy rok: moje plany, moją rodzinę, moją pracę i moje zdrowie. Idź ze mną każdego dnia. Pomóż mi zbliżyć się do Ciebie, i niech to będzie rok Twojego błogosławieństwa. Amen."
+    },
+    "journey": {
+      "title": "Przed podróżą",
+      "text": "Panie, wyruszam w podróż i oddaję ją w Twoje ręce. Chroń mnie na drodze, w powietrzu i na wodzie. Strzeż mnie od wypadków i wszelkiego niebezpieczeństwa. Daj mądrość wszystkim, którzy odpowiadają za naszą podróż. Czuwaj nad moim domem, gdy mnie nie ma, i doprowadź mnie bezpiecznie do celu. Amen.",
+      "forText": "Panie, {name} wyrusza w podróż, a ja oddaję tę podróż w Twoje ręce. Chroń tę osobę na drodze, w powietrzu i na wodzie. Strzeż ją od wypadków i wszelkiego niebezpieczeństwa. Daj mądrość wszystkim, którzy odpowiadają za tę podróż, i doprowadź ją bezpiecznie do celu i z powrotem do domu. Amen."
+    },
+    "new_business": {
+      "title": "Na początek firmy",
+      "text": "Panie, zaczynam tę działalność i poświęcam ją Tobie. Daj mi mądrość w każdej decyzji, i prowadź mnie do właściwych ludzi. Pomóż mi pracować uczciwie i sprawiedliwie traktować klientów i pracowników. Pobłogosław pracę moich rąk i daj to, czego potrzebujemy. Niech ta firma oddaje Ci chwałę. Amen.",
+      "forText": "Panie, {name} zaczyna własną działalność, a ja polecam Ci tę osobę. Daj jej mądrość w każdej decyzji, i prowadź ją do właściwych ludzi. Pomóż jej pracować uczciwie i sprawiedliwie traktować wszystkich. Pobłogosław pracę jej rąk, otwórz przed nią drzwi i daj wszystko, czego potrzebuje. Niech jej firma oddaje Ci chwałę. Amen."
+    },
+    "new_job": {
+      "title": "Na początek nowej pracy",
+      "text": "Panie, dziękuję Ci za tę nową pracę. Na początku pomóż mi szybko się uczyć i wiernie pracować. Daj mi życzliwość współpracowników, i pomóż mi być uczciwym, życzliwym i cierpliwym. Gdy brak mi pewności, daj mi ufność. Niech moja praca oddaje Ci cześć i dobrze utrzymuje moją rodzinę. Amen.",
+      "forText": "Panie, dziękuję za nową pracę, którą dałeś bliskiej mi osobie: {name}. Na początku pomóż jej szybko się uczyć i wiernie pracować. Daj jej życzliwość współpracowników, i ufność, gdy brak jej pewności. Pobłogosław jej pracę, i niech dobrze utrzymuje jej rodzinę. Amen."
+    },
+    "interview": {
+      "title": "Przed rozmową o pracę",
+      "text": "Panie, mam rozmowę o pracę i czuję zdenerwowanie. Uspokój moje serce i rozjaśnij mój umysł. Pomóż mi pamiętać, co przygotowałem, i mówić szczerze i z ufnością. Daj mi przychylność ludzi, których spotkam. Jeśli to właściwe miejsce dla mnie, otwórz drzwi; jeśli nie, poprowadź mnie do czegoś lepszego. Amen.",
+      "forText": "Panie, {name} ma rozmowę o pracę, a ja polecam Ci tę osobę. Uspokój jej serce i rozjaśnij jej umysł. Pomóż jej mówić szczerze i z ufnością, i daj jej przychylność ludzi, których spotka. Jeśli to właściwe miejsce dla niej, otwórz drzwi; jeśli nie, poprowadź ją do czegoś lepszego. Amen."
+    },
+    "school": {
+      "title": "Na początek szkoły lub studiów",
+      "text": "Panie, zaczynam nowy czas nauki. Dziękuję za tę szansę. Daj mi umysł, który rozumie, i serce gotowe do pracy. Pomóż mi znaleźć dobrych przyjaciół i trzymać się z dala od zła. Błogosław moim nauczycielom, i pomóż mi wzrastać w mądrości i w wierze. Amen.",
+      "forText": "Panie, {name} zaczyna szkołę lub studia, a ja polecam Ci tę osobę. Daj jej umysł, który rozumie, i serce gotowe do pracy. Pomóż jej znaleźć dobrych przyjaciół i trzymać się z dala od zła. Błogosław jej nauczycielom, i pomóż jej wzrastać w mądrości i w wierze. Amen."
+    },
+    "exams": {
+      "title": "Przed egzaminami",
+      "text": "Panie, moje egzaminy są blisko i czuję presję. Pomóż mi dobrze się uczyć i pamiętać, czego się nauczyłem. W dniu egzaminu zachowaj mnie w spokoju i daj mi jasny umysł. Pomóż mi dać z siebie wszystko i być uczciwym. Jakikolwiek będzie wynik, przypominaj mi, że moja wartość jest w Tobie. Amen.",
+      "forText": "Panie, {name} ma wkrótce egzaminy, a ja polecam Ci tę osobę. Pomóż jej dobrze się uczyć i pamiętać to, czego się nauczyła. W dniu egzaminu daj jej spokój i jasny umysł. Pomóż jej dać z siebie wszystko, i przypominaj jej, że jej wartość jest w Tobie, jakikolwiek będzie wynik. Amen."
+    },
+    "new_vehicle": {
+      "title": "Błogosławieństwo nowego pojazdu",
+      "text": "Panie, dziękuję Ci za ten nowy pojazd. Poświęcam go Tobie. Chroń wszystkich, którzy nim podróżują, i strzeż go od wypadków i szkód. Daj każdemu, kto go prowadzi, cierpliwość, ostrożność i rozwagę na drodze. Pomóż mi używać go, by służyć mojej rodzinie i innym. Amen."
+    },
+    "surgery": {
+      "title": "Przed operacją",
+      "text": "Panie Jezu, czeka mnie operacja i boję się. Składam moje ciało i moje życie w Twoje ręce. Prowadź ręce i umysły chirurgów, lekarzy i pielęgniarek. Strzeż mnie podczas operacji i pozwól mi ją dobrze przejść. Daj mi szybki i pełny powrót do zdrowia, i napełnij moje serce swoim pokojem. Amen.",
+      "forText": "Panie Jezu, {name} ma operację, a ja składam życie tej osoby w Twoje ręce. Prowadź ręce i umysły chirurgów, lekarzy i pielęgniarek. Strzeż jej podczas operacji i pozwól jej ją dobrze przejść. Zabierz jej lęk, daj szybki i pełny powrót do zdrowia, i pociesz jej rodzinę, gdy czeka. Amen."
+    },
+    "hospital": {
+      "title": "W szpitalu",
+      "text": "Panie, jestem w szpitalu, a dni się dłużą. Bądź ze mną w tej sali. Daj mi cierpliwość w czekaniu, siłę na leczenie i odpoczynek w nocy. Błogosław lekarzom i pielęgniarkom, którzy się mną opiekują. Pociesz moją rodzinę, i pozwól mi poczuć, że jesteś blisko. Przyprowadź mnie do domu we właściwym czasie. Amen.",
+      "forText": "Panie, {name} jest w szpitalu, a ja składam życie tej osoby w Twoje ręce. Bądź z nią w tej sali. Daj jej cierpliwość w czekaniu, siłę na leczenie i odpoczynek w nocy. Błogosław lekarzom i pielęgniarkom, którzy się nią opiekują. Pociesz jej rodzinę, i przyprowadź ją zdrową do domu we właściwym czasie. Amen."
+    },
+    "recovery": {
+      "title": "Dziękczynienie za powrót do zdrowia",
+      "text": "Panie, dziękuję, że przeprowadziłeś mnie przez tę chorobę. Dziękuję za lekarzy, leki i każdego, kto się mną opiekował i modlił się za mnie. Przywracaj mi siły dzień po dniu. Pomóż mi nigdy nie zapomnieć Twojej dobroci, i używać zdrowia, by służyć Tobie i innym. Amen."
+    },
+    "pregnancy": {
+      "title": "O szczęśliwą ciążę",
+      "text": "Panie, dziękuję za życie, które rośnie we mnie. Chroń to dziecko i pozwól mu rosnąć zdrowo i silnie. Zachowaj mnie zdrową na ciele i duszy, i uspokój moje lęki. Prowadź lekarzy i wszystkich, którzy się nami opiekują. Przeprowadź nas bezpiecznie przez poród, i napełnij nasz dom radością. Amen.",
+      "forText": "Panie, dziękuję za dziecko, które nosi pod sercem {name}. Chroń to maleństwo i pozwól mu rosnąć zdrowo i silnie. Zachowaj mamę zdrową na ciele i duszy, i uspokój jej lęki. Prowadź lekarzy i wszystkich, którzy się nimi opiekują. Przeprowadź mamę i dziecko bezpiecznie przez poród, i napełnij ich dom radością. Amen."
+    },
+    "hopeless": {
+      "title": "Gdy brak nadziei",
+      "text": "Panie, czuję pustkę i brak nadziei, i nie mam siły, by wiele się modlić. Ale przychodzę do Ciebie taki, jaki jestem. Trzymaj mnie w tej ciemności. Przypominaj mi, że jestem dla Ciebie cenny i że to nie będzie trwać wiecznie. Prowadź mnie do ludzi, którzy mogą mi pomóc. Daj mi światło na jeszcze jeden dzień. Amen.",
+      "forText": "Panie, {name} przechodzi przez ciemny czas i nie widzi nadziei. Trzymaj tę osobę blisko siebie w tej ciemności. Przypominaj jej, że jest dla Ciebie cenna i że to nie będzie trwać wiecznie. Postaw obok niej ludzi, którzy mogą pomóc, i daj jej światło i nadzieję na jeszcze jeden dzień. Amen."
+    },
+    "addiction": {
+      "title": "O wolność od uzależnienia",
+      "text": "Panie Jezu, zmagam się z czymś, czego nie potrafię sam przerwać. Wyznaję Ci to. Skrusz łańcuchy, które mnie trzymają, i daj mi siłę mówić nie, dzień po dniu. Ulecz to, co we mnie złamane. Prowadź mnie do ludzi, którzy mogą pomóc, i pomóż mi żyć w wolności. Amen.",
+      "forText": "Panie Jezu, {name} zmaga się z uzależnieniem, a ja polecam Ci tę osobę. Skrusz łańcuchy, które ją trzymają, i daj jej siłę mówić nie, dzień po dniu. Ulecz to, co w niej złamane. Prowadź ją do ludzi, którzy mogą pomóc, i pozwól jej żyć w wolności. Daj jej rodzinie cierpliwość i nadzieję. Amen."
+    },
+    "travel_trouble": {
+      "title": "Gdy w podróży coś się dzieje",
+      "text": "Panie, w tej podróży coś poszło nie tak i martwię się. Bądź ze mną teraz. Chroń mnie i wszystkich, którzy są ze mną. Jeśli ktoś jest ranny, ulecz go i ześlij szybko pomoc. Daj mi spokojny umysł, bym wiedział, co robić. Otwórz drogę tam, gdzie zdaje się jej nie być, i doprowadź nas bezpiecznie do domu. Amen."
+    },
+    "job_loss": {
+      "title": "Po utracie pracy",
+      "text": "Panie, straciłem pracę i czuję niepokój i wstyd. Ty wiesz, czego potrzebuje moja rodzina. Pociesz moje serce i przypominaj mi, że moja wartość jest w Tobie. Daj mi siłę, by dalej szukać, i otwórz właściwe drzwi we właściwym czasie. Zatroszcz się o nas każdego dnia do tego czasu. Amen.",
+      "forText": "Panie, {name} szuka nowej pracy po jej utracie, a ja polecam Ci tę osobę. Ty wiesz, czego potrzebuje jej rodzina. Pociesz jej serce i przypominaj jej, że jej wartość jest w Tobie. Daj jej siłę, by dalej szukać, otwórz właściwe drzwi we właściwym czasie, i zatroszcz się o nią każdego dnia do tego czasu. Amen."
+    },
+    "money": {
+      "title": "W kłopotach finansowych",
+      "text": "Panie, pieniądze i długi bardzo mnie przytłaczają. Znasz każdą potrzebę. Daj mi mądrość, by dobrze zarządzać tym, co mam, i odwagę, by stawić czoło temu, co jestem winien. Zatroszcz się o moją rodzinę, i otwórz drogi uczciwego zarobku. Uwolnij mnie od lęku i wstydu, i pomóż mi ufać Ci na dziś. Amen."
+    },
+    "legal": {
+      "title": "W problemie prawnym",
+      "text": "Panie, mierzę się z problemem prawnym i to mnie przygniata. Jesteś Bogiem sprawiedliwości i prawdy. Daj mi mądrość i dobrą radę. Niech prawda wyjdzie na jaw, i daj bezstronność tym, którzy będą decydować. Zachowaj mnie w uczciwości i spokoju, i daj mi pokój bez względu na wynik. Amen."
+    },
+    "quarrel": {
+      "title": "Gdy w domu jest kłótnia",
+      "text": "Panie, w naszym domu jest gniew i zranienie, a ja jestem zmęczony kłótniami. Uspokój nasze serca i nasze słowa. Pomóż nam słuchać się nawzajem, przyznać się do błędów i przebaczać. Ulecz rany między nami, i przywróć pokój naszej rodzinie. Zacznij ode mnie. Amen."
+    },
+    "disaster": {
+      "title": "W czasie klęski",
+      "text": "Panie, wydarzyła się klęska i boimy się. Chroń nas i wszystkich ludzi w niebezpieczeństwie. Ratuj uwięzionych, lecz rannych, i pocieszaj tych, którzy stracili bliskich i domy. Daj siłę wszystkim, którzy pomagają. Bądź naszą ucieczką i mocą, pomocą w niedoli najpewniejszą. Amen."
+    }
+  }
+}

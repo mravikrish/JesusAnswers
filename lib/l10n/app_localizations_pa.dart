@@ -599,4 +599,52 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get music => 'ਸੰਗੀਤ';
+
+  @override
+  String get readyPrayers => 'ਤਿਆਰ ਪ੍ਰਾਰਥਨਾਵਾਂ';
+
+  @override
+  String get readyPrayersHint =>
+      'ਹਰ ਦਿਨ ਅਤੇ ਹਰ ਲੋੜ ਲਈ ਪ੍ਰਾਰਥਨਾਵਾਂ। ਸੁਣਨ ਲਈ ਕਿਸੇ ਇੱਕ \'ਤੇ ਟੈਪ ਕਰੋ।';
+
+  @override
+  String get voiceMan => 'ਮਰਦ ਆਵਾਜ਼';
+
+  @override
+  String get voiceWoman => 'ਔਰਤ ਆਵਾਜ਼';
+
+  @override
+  String get sharePrayer => 'ਪ੍ਰਾਰਥਨਾ ਸਾਂਝੀ ਕਰੋ';
+
+  @override
+  String get searchPrayers => 'ਪ੍ਰਾਰਥਨਾਵਾਂ ਲੱਭੋ';
+
+  @override
+  String get forMe => 'ਮੇਰੇ ਲਈ';
+
+  @override
+  String get forSomeone => 'ਕਿਸੇ ਹੋਰ ਲਈ';
+
+  @override
+  String get forSomeoneHint =>
+      'ਉਨ੍ਹਾਂ ਦਾ ਨਾਮ ਲਿਖੋ, ਪ੍ਰਾਰਥਨਾ ਉਨ੍ਹਾਂ ਲਈ ਤਿਆਰ ਹੋ ਜਾਵੇਗੀ, ਭੇਜਣ ਲਈ।';
+
+  @override
+  String get theirName => 'ਉਨ੍ਹਾਂ ਦਾ ਨਾਮ';
+
+  @override
+  String get theirNameHint =>
+      'ਜਿਨ੍ਹਾਂ ਲਈ ਤੁਸੀਂ ਪ੍ਰਾਰਥਨਾ ਕਰ ਰਹੇ ਹੋ, ਉਨ੍ਹਾਂ ਦਾ ਨਾਮ';
+
+  @override
+  String get enterNameFirst => 'ਪਹਿਲਾਂ ਉਨ੍ਹਾਂ ਦਾ ਨਾਮ ਲਿਖੋ';
+
+  @override
+  String get noPrayersFound => 'ਕੋਈ ਪ੍ਰਾਰਥਨਾ ਨਹੀਂ ਮਿਲੀ';
+
+  @override
+  String get whatsappMessage => 'WhatsApp';
+
+  @override
+  String get copyText => 'ਕਾਪੀ ਕਰੋ';
 }
