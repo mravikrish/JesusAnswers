@@ -69,6 +69,8 @@ void main() {
     expect(journey.words(name: ' Ravi '), allOf(contains('Ravi is about to travel'), isNot(contains('{name}'))));
     expect(journey.words(), journey.text);
     expect(journey.picture?.asset, 'assets/jesus/07.jpg');
+    expect(journey.crisis, isFalse);
+    expect(groups.expand((g) => g.prayers).firstWhere((p) => p.id == 'hopeless').crisis, isTrue);
   });
 
   test('every Scripture prayer is found in every language', () async {

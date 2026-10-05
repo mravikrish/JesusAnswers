@@ -1,5 +1,5 @@
 {
-  "_comment": "Ready prayers, by group. A prayer with a passage is read in Scripture's own words from the bundled Bible; every other prayer's words are in assets/prayers/<lang>.json, with each title and group name. 'forText' is the same prayer for someone else, with {name} where their name goes; 'forTitle' replaces the title then. 'picture' is the painting of Jesus (assets/jesus/) shown behind it. Translations are not Scripture; have a native reader confirm them before release.",
+  "_comment": "Ready prayers, by group. A prayer with a passage is read in Scripture's own words from the bundled Bible; every other prayer's words are in assets/prayers/<lang>.json, with each title and group name. 'forText' is the same prayer for someone else, with {name} where their name goes; 'forTitle' replaces the title then. 'picture' is the painting of Jesus (assets/jesus/) shown behind it. Translations are not Scripture; have a native reader confirm them before release. 'crisis' shows the helplines (CrisisCard) above a prayer someone at risk may be reading.",
   "groups": [
     {
       "id": "bible",
@@ -328,7 +328,8 @@
         {
           "id": "hopeless",
           "icon": "light",
-          "picture": "03.jpg"
+          "picture": "03.jpg",
+          "crisis": true
         },
         {
           "id": "addiction",

@@ -388,6 +388,8 @@ class _PrayerReadScreenState extends ConsumerState<PrayerReadScreen> {
                         textAlign: TextAlign.center,
                         style: const TextStyle(color: AppColors.goldSoft, fontWeight: FontWeight.w600)),
                   ],
+                  // Help from people first, for anyone who may be in danger.
+                  if (prayer.crisis) ...[const SizedBox(height: 16), const CrisisCard()],
                   if (prayer.canPrayForSomeone) ...[
                     const SizedBox(height: 16),
                     Center(

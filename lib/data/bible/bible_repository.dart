@@ -242,6 +242,7 @@ class BibleRepository {
                 forText: words(p['id'] as String)['forText'] as String?,
                 forTitle: words(p['id'] as String)['forTitle'] as String?,
                 picture: paintings['assets/jesus/${p['picture']}'],
+                crisis: p['crisis'] == true,
               ),
           ],
         ),

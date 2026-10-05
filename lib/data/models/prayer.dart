@@ -15,6 +15,7 @@ class Prayer {
     this.forText,
     this.forTitle,
     this.picture,
+    this.crisis = false,
   });
 
   final String id;
@@ -36,6 +37,9 @@ class Prayer {
 
   /// The painting of Jesus shown behind it.
   final Painting? picture;
+
+  /// Someone reading it may be at risk: the helplines are shown above it.
+  final bool crisis;
 
   bool get canPrayForSomeone => forText != null;
 
