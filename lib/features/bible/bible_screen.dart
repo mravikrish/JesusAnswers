@@ -609,12 +609,14 @@ class PaintingHero extends StatelessWidget {
     super.key,
     required this.painting,
     required this.height,
-    required this.onBack,
+    this.onBack,
     required this.child,
   });
   final Painting? painting;
   final double height;
-  final VoidCallback onBack;
+
+  /// No back button when null (a tab of its own).
+  final VoidCallback? onBack;
   final Widget child;
 
   @override
@@ -637,15 +639,16 @@ class PaintingHero extends StatelessWidget {
             ),
           ),
           const IgnorePointer(child: DivineLight(intensity: 0.5)),
-          Positioned(
-            top: top + 4,
-            left: 8,
-            child: IconButton(
-              tooltip: MaterialLocalizations.of(context).backButtonTooltip,
-              icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
-              onPressed: onBack,
+          if (onBack != null)
+            Positioned(
+              top: top + 4,
+              left: 8,
+              child: IconButton(
+                tooltip: MaterialLocalizations.of(context).backButtonTooltip,
+                icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
+                onPressed: onBack,
+              ),
             ),
-          ),
           Positioned(left: 22, right: 22, bottom: 14, child: child),
         ],
       ),

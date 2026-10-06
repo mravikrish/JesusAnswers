@@ -19,7 +19,7 @@ class AppShell extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
-    final dark = shell.currentIndex <= 1;
+    final dark = shell.currentIndex <= 3; // Home, Word, Pray and Journey are night screens
     final fg = dark ? Colors.white : AppColors.ink;
     final bg = dark ? AppColors.midnight : AppColors.ivoryCard;
 

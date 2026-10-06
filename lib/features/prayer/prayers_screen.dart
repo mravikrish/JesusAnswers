@@ -11,11 +11,13 @@ import '../../core/share.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/common.dart';
 import '../../core/widgets/community.dart';
+import '../../core/widgets/night_background.dart';
 import '../../core/widgets/playback_controls.dart';
 import '../../data/models/prayer.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
 import '../../services/community_service.dart';
+import '../bible/bible_screen.dart';
 import '../pictures/pictures_screen.dart';
 
 /// Ready Prayers — prayers for every day, every need and every occasion, by
@@ -54,78 +56,114 @@ class _PrayersScreenState extends ConsumerState<PrayersScreen> {
         if (g.prayers.where((p) => shown(g, p)).toList() case final list when list.isNotEmpty) (g, list),
     ];
 
+    final painting = ref.watch(dailyPaintingProvider).value;
+    final soft = TextStyle(color: Colors.white.withValues(alpha: 0.75));
+
     return Scaffold(
-      backgroundColor: AppColors.ivory,
-      appBar: AppBar(
-        backgroundColor: AppColors.ivory,
-        title: Text(l.readyPrayers, style: AppText.serif(26, weight: FontWeight.w600)),
-      ),
-      body: groups == null
-          ? const Center(child: CircularProgressIndicator(color: AppColors.gold))
-          : ListView(
-              padding: const EdgeInsets.fromLTRB(18, 4, 18, 40),
-              children: [
-                Text(l.readyPrayersHint, textAlign: TextAlign.center, style: const TextStyle(color: AppColors.inkSoft)),
-                const SizedBox(height: 14),
-                TextField(
-                  controller: _search,
-                  onChanged: (_) => setState(() {}),
-                  textInputAction: TextInputAction.search,
-                  decoration: InputDecoration(
-                    hintText: l.searchPrayers,
-                    prefixIcon: const Icon(Icons.search_rounded),
-                    suffixIcon: query.isEmpty
-                        ? null
-                        : IconButton(
-                            icon: const Icon(Icons.close_rounded),
-                            onPressed: () => setState(_search.clear),
-                          ),
-                  ),
-                ),
-                const SizedBox(height: 12),
-                Center(
-                  child: _ForWhomToggle(forSomeone: _forSomeone, onChanged: (v) => setState(() => _forSomeone = v)),
-                ),
-                if (_forSomeone) ...[
-                  const SizedBox(height: 8),
-                  Text(l.forSomeoneHint,
-                      textAlign: TextAlign.center, style: const TextStyle(color: AppColors.inkSoft, fontSize: 13)),
-                ],
-                const SizedBox(height: 10),
-                const Center(child: VoiceToggle.prayers()),
-                if (query.isEmpty && groups.isNotEmpty) _LovedThisWeek(groups: groups, forSomeone: _forSomeone),
-                if (visible.isEmpty)
-                  Padding(
-                    padding: const EdgeInsets.only(top: 40),
-                    child: Text(l.noPrayersFound,
-                        textAlign: TextAlign.center, style: const TextStyle(color: AppColors.inkSoft)),
-                  ),
-                for (final (g, list) in visible) ...[
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(4, 22, 4, 8),
-                    child: Text(g.title, style: AppText.serif(22, weight: FontWeight.w700)),
-                  ),
-                  Card(
-                    color: Colors.white,
-                    elevation: 0,
-                    margin: EdgeInsets.zero,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18),
-                      side: const BorderSide(color: AppColors.sand),
-                    ),
-                    clipBehavior: Clip.antiAlias,
+      body: NightBackground(
+        child: groups == null
+            ? const Center(child: CircularProgressIndicator(color: AppColors.goldSoft))
+            : ListView(
+                padding: const EdgeInsets.only(bottom: 40),
+                children: [
+                  PaintingHero(
+                    painting: painting,
+                    height: MediaQuery.sizeOf(context).height * 0.36,
+                    onBack: () => context.canPop() ? context.pop() : context.go('/home'),
                     child: Column(
                       children: [
-                        for (final (i, p) in list.indexed) ...[
-                          if (i > 0) const Divider(height: 1, indent: 72, color: AppColors.sand),
-                          _PrayerTile(prayer: p, forSomeone: _forSomeone),
+                        Text(l.readyPrayers,
+                            textAlign: TextAlign.center,
+                            style: AppText.serif(34, color: Colors.white, weight: FontWeight.w600)),
+                        const SizedBox(height: 4),
+                        Text(l.readyPrayersHint, textAlign: TextAlign.center, style: soft),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 18),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        const SizedBox(height: 14),
+                        TextField(
+                          controller: _search,
+                          onChanged: (_) => setState(() {}),
+                          textInputAction: TextInputAction.search,
+                          style: const TextStyle(color: Colors.white),
+                          decoration: InputDecoration(
+                            hintText: l.searchPrayers,
+                            hintStyle: TextStyle(color: Colors.white.withValues(alpha: 0.5)),
+                            prefixIcon: const Icon(Icons.search_rounded, color: AppColors.goldSoft),
+                            suffixIcon: query.isEmpty
+                                ? null
+                                : IconButton(
+                                    icon: const Icon(Icons.close_rounded, color: Colors.white70),
+                                    onPressed: () => setState(_search.clear),
+                                  ),
+                            fillColor: Colors.white.withValues(alpha: 0.07),
+                            enabledBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(18),
+                              borderSide: BorderSide(color: Colors.white.withValues(alpha: 0.14)),
+                            ),
+                            focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(18),
+                              borderSide: const BorderSide(color: AppColors.gold),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 12),
+                        Center(
+                          child: _ForWhomToggle(
+                            dark: true,
+                            forSomeone: _forSomeone,
+                            onChanged: (v) => setState(() => _forSomeone = v),
+                          ),
+                        ),
+                        if (_forSomeone) ...[
+                          const SizedBox(height: 8),
+                          Text(l.forSomeoneHint,
+                              textAlign: TextAlign.center, style: soft.copyWith(fontSize: 13)),
+                        ],
+                        const SizedBox(height: 10),
+                        const Center(child: VoiceToggle.prayers(dark: true)),
+                        if (query.isEmpty && groups.isNotEmpty) _LovedThisWeek(groups: groups, forSomeone: _forSomeone),
+                        if (visible.isEmpty)
+                          Padding(
+                            padding: const EdgeInsets.only(top: 40),
+                            child: Text(l.noPrayersFound,
+                                textAlign: TextAlign.center, style: soft),
+                          ),
+                        for (final (g, list) in visible) ...[
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(4, 22, 4, 8),
+                            child: Text(g.title, style: AppText.serif(22, color: Colors.white, weight: FontWeight.w700)),
+                          ),
+                          Card(
+                            color: Colors.white.withValues(alpha: 0.07),
+                            elevation: 0,
+                            margin: EdgeInsets.zero,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18),
+                              side: BorderSide(color: AppColors.goldSoft.withValues(alpha: 0.18)),
+                            ),
+                            clipBehavior: Clip.antiAlias,
+                            child: Column(
+                              children: [
+                                for (final (i, p) in list.indexed) ...[
+                                  if (i > 0) const Divider(height: 1, indent: 72, color: Color(0x1FFFFFFF)),
+                                  _PrayerTile(prayer: p, forSomeone: _forSomeone),
+                                ],
+                              ],
+                            ),
+                          ),
                         ],
                       ],
                     ),
                   ),
                 ],
-              ],
-            ),
+              ),
+      ),
     );
   }
 }
@@ -159,24 +197,24 @@ class _LovedThisWeek extends ConsumerWidget {
                   const SizedBox(width: 8),
                   Flexible(
                     child: Text(AppLocalizations.of(context).lovedThisWeek,
-                        style: AppText.serif(22, weight: FontWeight.w700)),
+                        style: AppText.serif(22, color: Colors.white, weight: FontWeight.w700)),
                   ),
                 ],
               ),
             ),
             Card(
-              color: Colors.white,
+              color: Colors.white.withValues(alpha: 0.07),
               elevation: 0,
               margin: EdgeInsets.zero,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18),
-                side: const BorderSide(color: AppColors.sand),
+                side: BorderSide(color: AppColors.goldSoft.withValues(alpha: 0.18)),
               ),
               clipBehavior: Clip.antiAlias,
               child: Column(
                 children: [
                   for (final (i, p) in list.indexed) ...[
-                    if (i > 0) const Divider(height: 1, indent: 72, color: AppColors.sand),
+                    if (i > 0) const Divider(height: 1, indent: 72, color: Color(0x1FFFFFFF)),
                     _PrayerTile(prayer: p, forSomeone: forSomeone),
                   ],
                 ],
@@ -223,7 +261,7 @@ class _PrayerTile extends StatelessWidget {
       ),
       title: Text(
         forSomeone ? prayer.forTitle ?? prayer.title : prayer.title,
-        style: const TextStyle(fontWeight: FontWeight.w600),
+        style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
       ),
       trailing: Row(
         mainAxisSize: MainAxisSize.min,
@@ -231,9 +269,9 @@ class _PrayerTile extends StatelessWidget {
           if (prayer.canPrayForSomeone && !forSomeone)
             const Padding(
               padding: EdgeInsets.only(right: 4),
-              child: Icon(Icons.group_rounded, size: 18, color: AppColors.inkSoft),
+              child: Icon(Icons.group_rounded, size: 18, color: Colors.white70),
             ),
-          const Icon(Icons.play_circle_outline_rounded, color: AppColors.gold),
+          const Icon(Icons.play_circle_outline_rounded, color: AppColors.goldSoft),
         ],
       ),
       onTap: () => context.push('/prayers/${prayer.id}${forSomeone ? '?for=1' : ''}'),

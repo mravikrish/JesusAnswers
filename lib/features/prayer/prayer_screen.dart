@@ -1,21 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/app_shell.dart';
-import '../../core/widgets/divine_light.dart';
+import '../../core/widgets/night_background.dart';
 import '../../data/models/answer.dart';
 import '../../l10n/app_localizations.dart';
+import '../../providers.dart';
+import '../bible/bible_screen.dart';
 
 /// "Pray With Me" — the user shares a request and receives a Scripture-based prayer.
-class PrayerScreen extends StatefulWidget {
+/// Under today's painting of Jesus in the night sky, as on Home.
+class PrayerScreen extends ConsumerStatefulWidget {
   const PrayerScreen({super.key});
 
   @override
-  State<PrayerScreen> createState() => _PrayerScreenState();
+  ConsumerState<PrayerScreen> createState() => _PrayerScreenState();
 }
 
-class _PrayerScreenState extends State<PrayerScreen> {
+class _PrayerScreenState extends ConsumerState<PrayerScreen> {
   final _text = TextEditingController();
 
   @override
@@ -41,59 +45,44 @@ class _PrayerScreenState extends State<PrayerScreen> {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
+    final painting = ref.watch(dailyPaintingProvider).value;
+    final soft = Colors.white.withValues(alpha: 0.75);
     return Scaffold(
-      body: DecoratedBox(
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [Color(0xFFF6E3C2), AppColors.ivory],
-            stops: [0, 0.45],
-          ),
-        ),
-        child: Stack(
+      body: NightBackground(
+        warm: true,
+        child: ListView(
+          padding: const EdgeInsets.only(bottom: 120),
           children: [
-            const Positioned.fill(
-              child: IgnorePointer(child: DivineLight(color: AppColors.gold, intensity: 0.5)),
-            ),
-            SafeArea(
-              bottom: false,
-              child: ListView(
-                padding: const EdgeInsets.fromLTRB(24, 32, 24, 120),
+            PaintingHero(
+              painting: painting,
+              height: MediaQuery.sizeOf(context).height * 0.42,
+              child: Column(
                 children: [
-                  Container(
-                    width: 96,
-                    height: 96,
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Colors.white.withValues(alpha: 0.6),
-                      boxShadow: [BoxShadow(color: AppColors.gold.withValues(alpha: 0.35), blurRadius: 40)],
-                    ),
-                    child: const Icon(Icons.volunteer_activism_rounded, size: 48, color: AppColors.ember),
-                  ),
+                  const Icon(Icons.volunteer_activism_rounded, size: 40, color: AppColors.goldSoft),
+                  const SizedBox(height: 8),
+                  Text(l.prayTitle,
+                      textAlign: TextAlign.center,
+                      style: AppText.serif(34, color: Colors.white, weight: FontWeight.w600)),
+                  const SizedBox(height: 4),
+                  Text(l.prayPrompt, textAlign: TextAlign.center, style: TextStyle(color: soft)),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
                   const SizedBox(height: 18),
-                  Text(
-                    l.prayTitle,
-                    textAlign: TextAlign.center,
-                    style: AppText.serif(34, weight: FontWeight.w600),
-                  ),
-                  const SizedBox(height: 6),
-                  Text(
-                    l.prayPrompt,
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(color: AppColors.inkSoft),
-                  ),
-                  const SizedBox(height: 26),
                   OutlinedButton.icon(
                     onPressed: _speak,
                     style: OutlinedButton.styleFrom(
                       minimumSize: const Size.fromHeight(54),
                       shape: const StadiumBorder(),
                       side: const BorderSide(color: AppColors.gold),
-                      foregroundColor: AppColors.ink,
+                      foregroundColor: Colors.white,
                     ),
-                    icon: const Icon(Icons.mic_rounded, color: AppColors.gold),
+                    icon: const Icon(Icons.mic_rounded, color: AppColors.goldSoft),
                     label: Text(l.speakFreely),
                   ),
                   const SizedBox(height: 16),
@@ -101,25 +90,43 @@ class _PrayerScreenState extends State<PrayerScreen> {
                     controller: _text,
                     minLines: 4,
                     maxLines: 8,
-                    decoration: InputDecoration(hintText: l.prayHint),
+                    style: const TextStyle(color: Colors.white),
+                    decoration: InputDecoration(
+                      hintText: l.prayHint,
+                      hintStyle: TextStyle(color: Colors.white.withValues(alpha: 0.5)),
+                      fillColor: Colors.white.withValues(alpha: 0.07),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(18),
+                        borderSide: BorderSide(color: Colors.white.withValues(alpha: 0.14)),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(18),
+                        borderSide: const BorderSide(color: AppColors.gold),
+                      ),
+                    ),
                   ),
                   const SizedBox(height: 18),
-                  FilledButton(onPressed: _generate, child: Text(l.generatePrayer)),
+                  FilledButton(
+                    style: FilledButton.styleFrom(backgroundColor: AppColors.gold, foregroundColor: AppColors.midnight),
+                    onPressed: _generate,
+                    child: Text(l.generatePrayer),
+                  ),
                   const SizedBox(height: 28),
                   // Or choose a ready prayer and hear it.
                   Material(
-                    color: Colors.white.withValues(alpha: 0.75),
+                    color: Colors.white.withValues(alpha: 0.07),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),
-                      side: const BorderSide(color: AppColors.goldSoft),
+                      side: BorderSide(color: AppColors.goldSoft.withValues(alpha: 0.3)),
                     ),
                     clipBehavior: Clip.antiAlias,
                     child: ListTile(
                       contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
-                      leading: const Icon(Icons.menu_book_rounded, color: AppColors.ember, size: 30),
-                      title: Text(l.readyPrayers, style: AppText.serif(20, weight: FontWeight.w700)),
-                      subtitle: Text(l.readyPrayersHint),
-                      trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.gold),
+                      leading: const Icon(Icons.menu_book_rounded, color: AppColors.goldSoft, size: 30),
+                      title: Text(l.readyPrayers,
+                          style: AppText.serif(20, color: Colors.white, weight: FontWeight.w700)),
+                      subtitle: Text(l.readyPrayersHint, style: TextStyle(color: soft)),
+                      trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.goldSoft),
                       onTap: () => context.push('/prayers'),
                     ),
                   ),

@@ -4,16 +4,18 @@ import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
 
 import '../../core/theme/app_theme.dart';
-import '../../core/widgets/divine_light.dart';
+import '../../core/widgets/night_background.dart';
 import '../../data/models/answer.dart';
 import '../../data/models/mood.dart';
 import '../../data/models/topic.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
+import '../bible/bible_screen.dart';
 
 enum _Filter { all, questions, prayers, favorites }
 
-/// My Journey — a record of questions, Scriptures and prayers over time.
+/// My Journey — a record of questions, Scriptures and prayers over time,
+/// under today's painting of Jesus in the night sky, as on Home.
 class JourneyScreen extends ConsumerStatefulWidget {
   const JourneyScreen({super.key});
 
@@ -41,15 +43,21 @@ class _JourneyScreenState extends ConsumerState<JourneyScreen> {
         for (final v in a.verses) ...[v.reference, v.text],
       ].any((t) => t.toLowerCase().contains(query));
 
-  Widget _chip(String label, bool selected, VoidCallback onTap, {bool dark = true}) => Padding(
+  /// [strong]: the main filters in gold; topics softer.
+  Widget _chip(String label, bool selected, VoidCallback onTap, {bool strong = true}) => Padding(
         padding: const EdgeInsets.only(right: 8),
         child: ChoiceChip(
           label: Text(label),
           selected: selected,
           showCheckmark: false,
-          selectedColor: dark ? AppColors.navy : AppColors.goldSoft,
-          labelStyle: TextStyle(color: selected && dark ? Colors.white : AppColors.ink),
-          shape: const StadiumBorder(side: BorderSide(color: AppColors.sand)),
+          // Set as a state colour: the app theme's light chip colour would otherwise win.
+          color: WidgetStateProperty.resolveWith(
+            (states) => states.contains(WidgetState.selected)
+                ? (strong ? AppColors.gold : AppColors.goldSoft)
+                : Colors.white.withValues(alpha: 0.07),
+          ),
+          labelStyle: TextStyle(color: selected ? AppColors.midnight : Colors.white),
+          shape: StadiumBorder(side: BorderSide(color: Colors.white.withValues(alpha: 0.2))),
           onSelected: (_) => onTap(),
         ),
       );
@@ -82,114 +90,120 @@ class _JourneyScreenState extends ConsumerState<JourneyScreen> {
       _Filter.favorites: l.filterFavorites,
     };
 
+    final painting = ref.watch(dailyPaintingProvider).value;
+
     return Scaffold(
-      body: Stack(
-        children: [
-          const Positioned.fill(
-            child: IgnorePointer(child: DivineLight(color: AppColors.gold, intensity: 0.35)),
-          ),
-          SafeArea(
-            bottom: false,
-            child: CustomScrollView(
-              keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
-              slivers: [
-                SliverPadding(
-                  padding: const EdgeInsets.fromLTRB(20, 20, 8, 8),
-                  sliver: SliverToBoxAdapter(
-                    child: Row(
-                      children: [
-                        Expanded(child: Text(l.journeyTitle, style: AppText.serif(34, weight: FontWeight.w600))),
-                        if (all.isNotEmpty)
-                          IconButton(
-                            tooltip: l.searchJourney,
-                            icon: Icon(_searching ? Icons.close_rounded : Icons.search_rounded),
-                            onPressed: () => setState(() {
-                              _searching = !_searching;
-                              if (!_searching) _search.clear();
-                            }),
-                          ),
-                      ],
+      body: NightBackground(
+        child: CustomScrollView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+          slivers: [
+            SliverToBoxAdapter(
+              child: PaintingHero(
+                painting: painting,
+                height: MediaQuery.sizeOf(context).height * 0.32,
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Text(l.journeyTitle,
+                          style: AppText.serif(34, color: Colors.white, weight: FontWeight.w600)),
                     ),
-                  ),
+                    if (all.isNotEmpty)
+                      IconButton(
+                        tooltip: l.searchJourney,
+                        color: Colors.white,
+                        icon: Icon(_searching ? Icons.close_rounded : Icons.search_rounded),
+                        onPressed: () => setState(() {
+                          _searching = !_searching;
+                          if (!_searching) _search.clear();
+                        }),
+                      ),
+                  ],
                 ),
-                if (_searching)
-                  SliverPadding(
-                    padding: const EdgeInsets.fromLTRB(20, 0, 20, 10),
-                    sliver: SliverToBoxAdapter(
-                      child: TextField(
-                        controller: _search,
-                        autofocus: true,
-                        textInputAction: TextInputAction.search,
-                        onChanged: (_) => setState(() {}),
-                        decoration: InputDecoration(
-                          hintText: l.searchJourney,
-                          prefixIcon: const Icon(Icons.search_rounded),
-                          isDense: true,
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(24),
-                            borderSide: const BorderSide(color: AppColors.sand),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                SliverToBoxAdapter(
-                  child: SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Row(
-                      children: [
-                        for (final f in _Filter.values)
-                          _chip(labels[f]!, _filter == f, () => setState(() => _filter = f)),
-                      ],
-                    ),
-                  ),
-                ),
-                if (topics.length > 1)
-                  SliverToBoxAdapter(
-                    child: SingleChildScrollView(
-                      scrollDirection: Axis.horizontal,
-                      padding: const EdgeInsets.fromLTRB(20, 4, 20, 0),
-                      child: Row(
-                        children: [
-                          for (final t in topics)
-                            _chip(
-                              t.label(l),
-                              topic == t,
-                              () => setState(() => _topic = topic == t ? null : t),
-                              dark: false,
-                            ),
-                        ],
-                      ),
-                    ),
-                  ),
-                if (entries.isEmpty)
-                  SliverFillRemaining(
-                    hasScrollBody: false,
-                    child: Center(
-                      child: Padding(
-                        padding: const EdgeInsets.all(40),
-                        child: Text(
-                          all.isEmpty ? l.journeyEmpty : l.noMatches,
-                          textAlign: TextAlign.center,
-                          style: AppText.serif(20, color: AppColors.inkSoft),
-                        ),
-                      ),
-                    ),
-                  )
-                else
-                  SliverPadding(
-                    padding: const EdgeInsets.fromLTRB(20, 12, 20, 120),
-                    sliver: SliverList.separated(
-                      itemCount: entries.length,
-                      separatorBuilder: (_, _) => const SizedBox(height: 10),
-                      itemBuilder: (_, i) => _JourneyTile(answer: entries[i], lang: lang),
-                    ),
-                  ),
-              ],
+              ),
             ),
-          ),
-        ],
+            if (_searching)
+              SliverPadding(
+                padding: const EdgeInsets.fromLTRB(20, 0, 20, 10),
+                sliver: SliverToBoxAdapter(
+                  child: TextField(
+                    controller: _search,
+                    autofocus: true,
+                    textInputAction: TextInputAction.search,
+                    onChanged: (_) => setState(() {}),
+                    style: const TextStyle(color: Colors.white),
+                    decoration: InputDecoration(
+                      hintText: l.searchJourney,
+                      hintStyle: TextStyle(color: Colors.white.withValues(alpha: 0.5)),
+                      prefixIcon: const Icon(Icons.search_rounded, color: AppColors.goldSoft),
+                      isDense: true,
+                      fillColor: Colors.white.withValues(alpha: 0.07),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(24),
+                        borderSide: BorderSide(color: Colors.white.withValues(alpha: 0.14)),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(24),
+                        borderSide: const BorderSide(color: AppColors.gold),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            SliverToBoxAdapter(
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Row(
+                  children: [
+                    for (final f in _Filter.values)
+                      _chip(labels[f]!, _filter == f, () => setState(() => _filter = f)),
+                  ],
+                ),
+              ),
+            ),
+            if (topics.length > 1)
+              SliverToBoxAdapter(
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  padding: const EdgeInsets.fromLTRB(20, 4, 20, 0),
+                  child: Row(
+                    children: [
+                      for (final t in topics)
+                        _chip(
+                          t.label(l),
+                          topic == t,
+                          () => setState(() => _topic = topic == t ? null : t),
+                          strong: false,
+                        ),
+                    ],
+                  ),
+                ),
+              ),
+            if (entries.isEmpty)
+              SliverFillRemaining(
+                hasScrollBody: false,
+                child: Center(
+                  child: Padding(
+                    padding: const EdgeInsets.all(40),
+                    child: Text(
+                      all.isEmpty ? l.journeyEmpty : l.noMatches,
+                      textAlign: TextAlign.center,
+                      style: AppText.serif(20, color: Colors.white.withValues(alpha: 0.75)),
+                    ),
+                  ),
+                ),
+              )
+            else
+              SliverPadding(
+                padding: const EdgeInsets.fromLTRB(20, 12, 20, 120),
+                sliver: SliverList.separated(
+                  itemCount: entries.length,
+                  separatorBuilder: (_, _) => const SizedBox(height: 10),
+                  itemBuilder: (_, i) => _JourneyTile(answer: entries[i], lang: lang),
+                ),
+              ),
+          ],
+        ),
       ),
     );
   }
@@ -234,10 +248,10 @@ class _JourneyTile extends ConsumerWidget {
 
   Widget _card(BuildContext context, WidgetRef ref, Mood? mood, bool isPrayer, Color tint) {
     return Material(
-      color: AppColors.ivoryCard,
+      color: Colors.white.withValues(alpha: 0.07),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(18),
-        side: const BorderSide(color: AppColors.sand),
+        side: BorderSide(color: AppColors.goldSoft.withValues(alpha: 0.18)),
       ),
       child: InkWell(
         borderRadius: BorderRadius.circular(18),
@@ -265,17 +279,18 @@ class _JourneyTile extends ConsumerWidget {
                   children: [
                     Text(
                       DateFormat.yMMMd(lang).format(answer.createdAt),
-                      style: const TextStyle(fontSize: 12, color: AppColors.inkSoft),
+                      style: TextStyle(fontSize: 12, color: Colors.white.withValues(alpha: 0.6)),
                     ),
                     const SizedBox(height: 2),
                     Text(
                       answer.question,
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
-                      style: const TextStyle(fontWeight: FontWeight.w600),
+                      style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
                     ),
                     if (answer.verses.isNotEmpty)
-                      Text(answer.verses.first.reference, style: const TextStyle(fontSize: 13, color: AppColors.ember)),
+                      Text(answer.verses.first.reference,
+                          style: const TextStyle(fontSize: 13, color: AppColors.goldSoft)),
                   ],
                 ),
               ),
@@ -283,7 +298,7 @@ class _JourneyTile extends ConsumerWidget {
                 onPressed: () => ref.read(journeyProvider.notifier).toggleFavorite(answer.id),
                 icon: Icon(
                   answer.favorite ? Icons.favorite_rounded : Icons.favorite_border_rounded,
-                  color: answer.favorite ? AppColors.heart : AppColors.inkSoft,
+                  color: answer.favorite ? AppColors.heart : Colors.white70,
                 ),
               ),
             ],
