@@ -176,7 +176,7 @@ class _StoryScreenState extends ConsumerState<StoryScreen> {
     super.initState();
     // Take the voice now: ref can't be used once the screen is closing, and without
     // this the voice kept playing after leaving. Warming it up also starts Listen sooner.
-    _tts.warmUp(ref.read(settingsProvider).language);
+    _tts.warmUp(ref.read(settingsProvider).language, male: _tts.readingMale.value);
   }
 
   @override
@@ -192,6 +192,15 @@ class _StoryScreenState extends ConsumerState<StoryScreen> {
     final stories = ref.watch(storiesProvider).value;
     final story = stories?.where((s) => s.id == widget.id).firstOrNull;
     final passages = story == null ? null : ref.watch(storyPassagesProvider(story)).value;
+    void listen() => readAloud(
+          context,
+          [
+            story!.title(settings.lang),
+            for (final p in passages!) ...[p.reference, for (final v in p.verses) v.text],
+          ],
+          settings.language,
+          male: _tts.readingMale.value,
+        );
 
     return Scaffold(
       body: NightBackground(
@@ -219,18 +228,9 @@ class _StoryScreenState extends ConsumerState<StoryScreen> {
                               const TextStyle(color: AppColors.goldSoft, fontSize: 13, fontWeight: FontWeight.w600),
                         ),
                         const SizedBox(height: 18),
-                        PlaybackControls(
-                          dark: true,
-                          label: l.listen,
-                          onPlay: () => readAloud(
-                            context,
-                            [
-                              story.title(settings.lang),
-                              for (final p in passages) ...[p.reference, for (final v in p.verses) v.text],
-                            ],
-                            settings.language,
-                          ),
-                        ),
+                        Center(child: VoiceToggle.reading(dark: true, onChanged: listen)),
+                        const SizedBox(height: 10),
+                        PlaybackControls(dark: true, label: l.listen, onPlay: listen),
                         const SizedBox(height: 12),
                         SizedBox(
                           height: 48,

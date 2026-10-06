@@ -335,7 +335,8 @@ class _ChapterScreenState extends ConsumerState<ChapterScreen> {
     super.initState();
     // Take the voice now: ref can't be used once the screen is closing, and without
     // this the voice kept playing after leaving. Warming it up also starts Listen sooner.
-    _tts.warmUp(ref.read(settingsProvider).language, role: _onlyHisFixed ? VoiceRole.jesus : VoiceRole.verse);
+    _tts.warmUp(ref.read(settingsProvider).language,
+        role: VoiceRole.jesus, male: _onlyHisFixed ? null : _tts.readingMale.value);
     if (!widget.words) ref.read(prefsProvider).setString(_lastReadKey, '${widget.book} ${widget.chapter}');
   }
 
@@ -420,6 +421,13 @@ class _ChapterScreenState extends ConsumerState<ChapterScreen> {
     final next = books == null ? null : _neighbour(books, 1);
     void go((BibleBook, int) to) =>
         context.pushReplacement('/bible/${to.$1.code}/${to.$2}${widget.words ? '?words=1' : ''}');
+    void listen() => readAloud(
+          context,
+          [title, for (final v in shown) onlyHis ? v.spoken : v.text],
+          settings.language,
+          role: onlyHis ? VoiceRole.jesus : VoiceRole.verse,
+          male: onlyHis ? null : _tts.readingMale.value,
+        );
 
     return Scaffold(
       body: NightBackground(
@@ -472,16 +480,12 @@ class _ChapterScreenState extends ConsumerState<ChapterScreen> {
                             ),
                           ],
                           const SizedBox(height: 10),
-                          PlaybackControls(
-                            dark: true,
-                            label: l.listen,
-                            onPlay: () => readAloud(
-                              context,
-                              [title, for (final v in shown) onlyHis ? v.spoken : v.text],
-                              settings.language,
-                              role: onlyHis ? VoiceRole.jesus : VoiceRole.verse,
-                            ),
-                          ),
+                          // His words alone are always read in the voice of Jesus.
+                          if (!onlyHis) ...[
+                            Center(child: VoiceToggle.reading(dark: true, onChanged: listen)),
+                            const SizedBox(height: 10),
+                          ],
+                          PlaybackControls(dark: true, label: l.listen, onPlay: listen),
                           const SizedBox(height: 14),
                           ...body,
                           const SizedBox(height: 24),

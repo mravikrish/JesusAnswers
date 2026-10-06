@@ -14,7 +14,6 @@ import '../../core/widgets/playback_controls.dart';
 import '../../data/models/prayer.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
-import '../../services/voice/tts_service.dart';
 import '../pictures/pictures_screen.dart';
 
 /// Ready Prayers — prayers for every day, every need and every occasion, by
@@ -91,7 +90,7 @@ class _PrayersScreenState extends ConsumerState<PrayersScreen> {
                       textAlign: TextAlign.center, style: const TextStyle(color: AppColors.inkSoft, fontSize: 13)),
                 ],
                 const SizedBox(height: 10),
-                const Center(child: PrayerVoiceToggle()),
+                const Center(child: VoiceToggle.prayers()),
                 if (visible.isEmpty)
                   Padding(
                     padding: const EdgeInsets.only(top: 40),
@@ -434,7 +433,7 @@ class _PrayerReadScreenState extends ConsumerState<PrayerReadScreen> {
                     ],
                   ],
                   const SizedBox(height: 16),
-                  Center(child: PrayerVoiceToggle(dark: true, onChanged: () => _play(prayer, words))),
+                  Center(child: VoiceToggle.prayers(dark: true, onChanged: () => _play(prayer, words))),
                   const SizedBox(height: 12),
                   PlaybackControls(dark: true, label: l.playPrayer, onPlay: () => _play(prayer, words)),
                   const SizedBox(height: 18),
@@ -685,44 +684,6 @@ class PrayerPictureCard extends StatelessWidget {
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-/// Male voice / Female voice for prayers, remembered for next time.
-/// [onChanged] runs after a change while a prayer is being read, to read it again in the new voice.
-class PrayerVoiceToggle extends ConsumerWidget {
-  const PrayerVoiceToggle({super.key, this.onChanged, this.dark = false});
-  final VoidCallback? onChanged;
-
-  /// White text for the prayer page, over its painting.
-  final bool dark;
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final l = AppLocalizations.of(context);
-    final tts = ref.watch(ttsProvider);
-    return ValueListenableBuilder(
-      valueListenable: tts.prayerMale,
-      builder: (_, male, _) => SegmentedButton<bool>(
-        showSelectedIcon: false,
-        style: SegmentedButton.styleFrom(
-          selectedBackgroundColor: AppColors.gold.withValues(alpha: dark ? 0.5 : 0.22),
-          selectedForegroundColor: dark ? Colors.white : AppColors.ink,
-          foregroundColor: dark ? Colors.white70 : AppColors.inkSoft,
-          side: BorderSide(color: dark ? Colors.white38 : AppColors.sand),
-        ),
-        segments: [
-          ButtonSegment(value: true, icon: const Icon(Icons.man_rounded), label: Text(l.voiceMan)),
-          ButtonSegment(value: false, icon: const Icon(Icons.woman_rounded), label: Text(l.voiceWoman)),
-        ],
-        selected: {male},
-        onSelectionChanged: (s) async {
-          final reading = tts.playback.value != Playback.idle;
-          await tts.setPrayerMale(s.first);
-          if (reading) onChanged?.call();
-        },
       ),
     );
   }

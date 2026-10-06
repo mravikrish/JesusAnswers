@@ -226,3 +226,44 @@ class MusicToggle extends ConsumerWidget {
     );
   }
 }
+
+/// Man's voice / Woman's voice, remembered for next time: one choice for prayers,
+/// another for the Bible and Bible stories.
+/// [onChanged] runs after a change while something is being read, to read it again in the new voice.
+class VoiceToggle extends ConsumerWidget {
+  const VoiceToggle.prayers({super.key, this.onChanged, this.dark = false}) : _prayers = true;
+  const VoiceToggle.reading({super.key, this.onChanged, this.dark = false}) : _prayers = false;
+  final VoidCallback? onChanged;
+  final bool _prayers;
+
+  /// White text for night screens and paintings.
+  final bool dark;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final tts = ref.watch(ttsProvider);
+    return ValueListenableBuilder(
+      valueListenable: _prayers ? tts.prayerMale : tts.readingMale,
+      builder: (_, male, _) => SegmentedButton<bool>(
+        showSelectedIcon: false,
+        style: SegmentedButton.styleFrom(
+          selectedBackgroundColor: AppColors.gold.withValues(alpha: dark ? 0.5 : 0.22),
+          selectedForegroundColor: dark ? Colors.white : AppColors.ink,
+          foregroundColor: dark ? Colors.white70 : AppColors.inkSoft,
+          side: BorderSide(color: dark ? Colors.white38 : AppColors.sand),
+        ),
+        segments: [
+          ButtonSegment(value: true, icon: const Icon(Icons.man_rounded), label: Text(l.voiceMan)),
+          ButtonSegment(value: false, icon: const Icon(Icons.woman_rounded), label: Text(l.voiceWoman)),
+        ],
+        selected: {male},
+        onSelectionChanged: (s) async {
+          final reading = tts.playback.value != Playback.idle;
+          await (_prayers ? tts.setPrayerMale(s.first) : tts.setReadingMale(s.first));
+          if (reading) onChanged?.call();
+        },
+      ),
+    );
+  }
+}

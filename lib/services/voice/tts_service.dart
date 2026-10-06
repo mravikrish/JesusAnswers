@@ -38,6 +38,7 @@ class TtsService {
     slow.value = _prefs.getBool(_slowKey) ?? false;
     music.value = _prefs.getBool(_musicKey) ?? true;
     prayerMale.value = _prefs.getBool(_prayerMaleKey) ?? false;
+    readingMale.value = _prefs.getBool(_readingMaleKey) ?? false;
     playback.addListener(_syncMusic);
     // Remember where we are in the current part, so Pause → Resume carries on from that word.
     _tts.setProgressHandler((_, start, _, _) {
@@ -62,6 +63,9 @@ class TtsService {
   /// Prayers are read in a man's voice or a woman's, as the user chooses. Saved for next time.
   final prayerMale = ValueNotifier(false);
 
+  /// The Bible and Bible stories are read in a man's voice or a woman's, as the user chooses. Saved for next time.
+  final readingMale = ValueNotifier(false);
+
   /// How far through what is being read, 0–1, word by word.
   final progress = ValueNotifier(0.0);
 
@@ -72,6 +76,7 @@ class TtsService {
   static const _slowKey = 'ttsSlow';
   static const _musicKey = 'ttsMusic';
   static const _prayerMaleKey = 'prayerMale';
+  static const _readingMaleKey = 'readingMale';
 
   /// How loud the music plays under the voice: quiet enough never to cover a word.
   static const _musicVolume = 0.14;
@@ -189,10 +194,15 @@ class TtsService {
     await _prefs.setBool(_prayerMaleKey, value);
   }
 
+  Future<void> setReadingMale(bool value) async {
+    readingMale.value = value;
+    await _prefs.setBool(_readingMaleKey, value);
+  }
+
   /// Speaks [parts] in order with a gentle pause between each.
   /// [role] picks the natural voice: His words take the male one.
   /// [voice] overrides the saved phone voice (used to preview voices).
-  /// [male] asks for a man's or a woman's voice whatever the [role] (used for prayers).
+  /// [male] asks for a man's or a woman's voice whatever the [role] (prayers, the Bible, stories).
   Future<void> speak(List<String> parts, AppLanguage lang,
       {TtsVoice? voice, VoiceRole role = VoiceRole.verse, bool? male}) async {
     await stop();
