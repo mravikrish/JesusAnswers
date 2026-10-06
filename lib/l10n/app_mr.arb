@@ -200,5 +200,11 @@
   "enterNameFirst": "आधी त्यांचे नाव लिहा",
   "noPrayersFound": "एकही प्रार्थना सापडली नाही",
   "whatsappMessage": "WhatsApp",
-  "copyText": "कॉपी करा"
+  "copyText": "कॉपी करा",
+  "love": "आवडले",
+  "lovedCount": "{count} जणांना आवडले",
+  "prayedCount": "{count} जणांनी प्रार्थना केली",
+  "listenedCount": "{count} जणांनी ऐकले",
+  "lovedThisWeek": "या आठवड्यात सर्वाधिक आवडलेले",
+  "prayedWithYouToday": "आज {count} जणांनी तुमच्यासोबत प्रार्थना केली"
 }

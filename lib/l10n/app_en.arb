@@ -248,5 +248,39 @@
   "enterNameFirst": "Type their name first",
   "noPrayersFound": "No prayers found",
   "whatsappMessage": "WhatsApp",
-  "copyText": "Copy"
+  "copyText": "Copy",
+  "love": "Love this",
+  "lovedCount": "{count} loved",
+  "@lovedCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "prayedCount": "{count} prayed",
+  "@prayedCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "listenedCount": "{count} listened",
+  "@listenedCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "lovedThisWeek": "Loved this week",
+  "prayedWithYouToday": "Today {count} people prayed with you",
+  "@prayedWithYouToday": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -200,5 +200,11 @@
   "enterNameFirst": "ಮೊದಲು ಅವರ ಹೆಸರನ್ನು ಬರೆಯಿರಿ",
   "noPrayersFound": "ಯಾವುದೇ ಪ್ರಾರ್ಥನೆ ಸಿಗಲಿಲ್ಲ",
   "whatsappMessage": "WhatsApp",
-  "copyText": "ನಕಲಿಸಿ"
+  "copyText": "ನಕಲಿಸಿ",
+  "love": "ಇಷ್ಟಪಡಿ",
+  "lovedCount": "{count} ಜನರು ಇಷ್ಟಪಟ್ಟರು",
+  "prayedCount": "{count} ಜನರು ಪ್ರಾರ್ಥಿಸಿದರು",
+  "listenedCount": "{count} ಜನರು ಕೇಳಿದರು",
+  "lovedThisWeek": "ಈ ವಾರ ಹೆಚ್ಚು ಇಷ್ಟಪಟ್ಟವು",
+  "prayedWithYouToday": "ಇಂದು {count} ಜನರು ನಿಮ್ಮೊಂದಿಗೆ ಪ್ರಾರ್ಥಿಸಿದರು"
 }

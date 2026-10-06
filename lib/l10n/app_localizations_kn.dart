@@ -649,4 +649,30 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get copyText => 'ನಕಲಿಸಿ';
+
+  @override
+  String get love => 'ಇಷ್ಟಪಡಿ';
+
+  @override
+  String lovedCount(String count) {
+    return '$count ಜನರು ಇಷ್ಟಪಟ್ಟರು';
+  }
+
+  @override
+  String prayedCount(String count) {
+    return '$count ಜನರು ಪ್ರಾರ್ಥಿಸಿದರು';
+  }
+
+  @override
+  String listenedCount(String count) {
+    return '$count ಜನರು ಕೇಳಿದರು';
+  }
+
+  @override
+  String get lovedThisWeek => 'ಈ ವಾರ ಹೆಚ್ಚು ಇಷ್ಟಪಟ್ಟವು';
+
+  @override
+  String prayedWithYouToday(String count) {
+    return 'ಇಂದು $count ಜನರು ನಿಮ್ಮೊಂದಿಗೆ ಪ್ರಾರ್ಥಿಸಿದರು';
+  }
 }

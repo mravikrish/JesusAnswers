@@ -648,4 +648,30 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get copyText => 'కాపీ';
+
+  @override
+  String get love => 'ఇష్టపడండి';
+
+  @override
+  String lovedCount(String count) {
+    return '$count మంది ఇష్టపడ్డారు';
+  }
+
+  @override
+  String prayedCount(String count) {
+    return '$count మంది ప్రార్థించారు';
+  }
+
+  @override
+  String listenedCount(String count) {
+    return '$count మంది విన్నారు';
+  }
+
+  @override
+  String get lovedThisWeek => 'ఈ వారం ఎక్కువ మంది ఇష్టపడినవి';
+
+  @override
+  String prayedWithYouToday(String count) {
+    return 'ఈ రోజు $count మంది మీతో కలిసి ప్రార్థించారు';
+  }
 }

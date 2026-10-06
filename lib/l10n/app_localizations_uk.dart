@@ -648,4 +648,30 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get copyText => 'Копіювати';
+
+  @override
+  String get love => 'Подобається';
+
+  @override
+  String lovedCount(String count) {
+    return 'Подобається: $count';
+  }
+
+  @override
+  String prayedCount(String count) {
+    return 'Помолилися: $count';
+  }
+
+  @override
+  String listenedCount(String count) {
+    return 'Послухали: $count';
+  }
+
+  @override
+  String get lovedThisWeek => 'Улюблене цього тижня';
+
+  @override
+  String prayedWithYouToday(String count) {
+    return 'Сьогодні з вами молилися: $count';
+  }
 }

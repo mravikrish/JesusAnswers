@@ -651,4 +651,30 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get copyText => 'Copiar';
+
+  @override
+  String get love => 'Amei';
+
+  @override
+  String lovedCount(String count) {
+    return '$count amaram';
+  }
+
+  @override
+  String prayedCount(String count) {
+    return '$count oraram';
+  }
+
+  @override
+  String listenedCount(String count) {
+    return '$count ouviram';
+  }
+
+  @override
+  String get lovedThisWeek => 'Mais amados da semana';
+
+  @override
+  String prayedWithYouToday(String count) {
+    return 'Hoje $count pessoas oraram com você';
+  }
 }

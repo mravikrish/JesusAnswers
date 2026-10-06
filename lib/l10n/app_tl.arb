@@ -200,5 +200,11 @@
   "enterNameFirst": "Isulat muna ang kanyang pangalan",
   "noPrayersFound": "Walang nakitang panalangin",
   "whatsappMessage": "WhatsApp",
-  "copyText": "Kopyahin"
+  "copyText": "Kopyahin",
+  "love": "Gustuhin",
+  "lovedCount": "{count} ang nagustuhan",
+  "prayedCount": "{count} ang nanalangin",
+  "listenedCount": "{count} ang nakinig",
+  "lovedThisWeek": "Pinakagusto ngayong linggo",
+  "prayedWithYouToday": "Ngayong araw, {count} tao ang nanalanging kasama mo"
 }

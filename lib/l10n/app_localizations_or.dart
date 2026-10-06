@@ -649,4 +649,30 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get copyText => 'କପି କରନ୍ତୁ';
+
+  @override
+  String get love => 'ଭଲ ପାଆନ୍ତୁ';
+
+  @override
+  String lovedCount(String count) {
+    return '$count ଜଣ ଭଲ ପାଇଲେ';
+  }
+
+  @override
+  String prayedCount(String count) {
+    return '$count ଜଣ ପ୍ରାର୍ଥନା କଲେ';
+  }
+
+  @override
+  String listenedCount(String count) {
+    return '$count ଜଣ ଶୁଣିଲେ';
+  }
+
+  @override
+  String get lovedThisWeek => 'ଏହି ସପ୍ତାହର ସବୁଠାରୁ ପ୍ରିୟ';
+
+  @override
+  String prayedWithYouToday(String count) {
+    return 'ଆଜି $count ଜଣ ଆପଣଙ୍କ ସହ ପ୍ରାର୍ଥନା କଲେ';
+  }
 }

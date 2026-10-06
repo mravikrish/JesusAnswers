@@ -644,4 +644,30 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get copyText => 'कॉपी करें';
+
+  @override
+  String get love => 'पसंद करें';
+
+  @override
+  String lovedCount(String count) {
+    return '$count ने पसंद किया';
+  }
+
+  @override
+  String prayedCount(String count) {
+    return '$count ने प्रार्थना की';
+  }
+
+  @override
+  String listenedCount(String count) {
+    return '$count ने सुना';
+  }
+
+  @override
+  String get lovedThisWeek => 'इस सप्ताह सबसे पसंदीदा';
+
+  @override
+  String prayedWithYouToday(String count) {
+    return 'आज $count लोगों ने आपके साथ प्रार्थना की';
+  }
 }

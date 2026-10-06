@@ -34,6 +34,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(HttpMethod.POST, "/v1/answers").permitAll()
                         .requestMatchers(HttpMethod.GET, "/v1/voice-sources").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/v1/reactions").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/v1/counts").permitAll()
                         .requestMatchers("/actuator/health/**").permitAll()
                         .requestMatchers("/error").permitAll() // so 400s aren't masked as 401
                         .requestMatchers("/v1/journey/**", "/v1/me").authenticated()

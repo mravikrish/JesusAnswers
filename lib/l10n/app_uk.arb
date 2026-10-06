@@ -200,5 +200,11 @@
   "enterNameFirst": "Спершу напишіть ім'я",
   "noPrayersFound": "Молитов не знайдено",
   "whatsappMessage": "WhatsApp",
-  "copyText": "Копіювати"
+  "copyText": "Копіювати",
+  "love": "Подобається",
+  "lovedCount": "Подобається: {count}",
+  "prayedCount": "Помолилися: {count}",
+  "listenedCount": "Послухали: {count}",
+  "lovedThisWeek": "Улюблене цього тижня",
+  "prayedWithYouToday": "Сьогодні з вами молилися: {count}"
 }

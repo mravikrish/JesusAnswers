@@ -5,11 +5,13 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../core/theme/app_theme.dart';
+import '../../core/widgets/community.dart';
 import '../../core/widgets/divine_light.dart';
 import '../../core/widgets/playback_controls.dart';
 import '../../data/models/verse.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
+import '../../services/community_service.dart';
 import '../../services/voice/natural_voices.dart';
 import '../../services/voice/tts_service.dart';
 
@@ -55,6 +57,7 @@ class SpeakScreen extends ConsumerStatefulWidget {
 
 class _SpeakScreenState extends ConsumerState<SpeakScreen> with TickerProviderStateMixin {
   late final _tts = ref.read(ttsProvider);
+  late final _community = ref.read(communityProvider);
 
   /// A slow drift across the portrait, there and back.
   late final _drift = AnimationController(vsync: this, duration: const Duration(seconds: 26))..repeat(reverse: true);
@@ -102,6 +105,7 @@ class _SpeakScreenState extends ConsumerState<SpeakScreen> with TickerProviderSt
     setState(() => _from = index.clamp(0, sayings.length - 1));
     readAloud(context, [for (final v in sayings.skip(_from)) v.spoken], ref.read(settingsProvider).language,
         role: VoiceRole.jesus);
+    _community.listened(CommunityService.saying(sayings[_from].ref));
   }
 
   @override
@@ -213,7 +217,7 @@ class _Caption extends StatelessWidget {
             children: [
               Text('${verse.reference} · ${verse.translation}',
                   style: const TextStyle(color: AppColors.goldSoft, fontSize: 13, fontWeight: FontWeight.w600)),
-              const SizedBox(height: 10),
+              CommunityBar(item: CommunityService.saying(verse.ref)),
               ConstrainedBox(
                 constraints: BoxConstraints(maxHeight: MediaQuery.sizeOf(context).height * 0.3),
                 child: SingleChildScrollView(

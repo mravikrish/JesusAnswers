@@ -645,4 +645,30 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get copyText => 'કૉપિ કરો';
+
+  @override
+  String get love => 'ગમ્યું';
+
+  @override
+  String lovedCount(String count) {
+    return '$count લોકોને ગમ્યું';
+  }
+
+  @override
+  String prayedCount(String count) {
+    return '$count લોકોએ પ્રાર્થના કરી';
+  }
+
+  @override
+  String listenedCount(String count) {
+    return '$count લોકોએ સાંભળ્યું';
+  }
+
+  @override
+  String get lovedThisWeek => 'આ અઠવાડિયે સૌથી વધુ ગમેલું';
+
+  @override
+  String prayedWithYouToday(String count) {
+    return 'આજે $count લોકોએ તમારી સાથે પ્રાર્થના કરી';
+  }
 }

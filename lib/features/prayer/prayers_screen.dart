@@ -10,10 +10,12 @@ import '../../core/picture_share.dart';
 import '../../core/share.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/common.dart';
+import '../../core/widgets/community.dart';
 import '../../core/widgets/playback_controls.dart';
 import '../../data/models/prayer.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
+import '../../services/community_service.dart';
 import '../pictures/pictures_screen.dart';
 
 /// Ready Prayers — prayers for every day, every need and every occasion, by
@@ -91,6 +93,7 @@ class _PrayersScreenState extends ConsumerState<PrayersScreen> {
                 ],
                 const SizedBox(height: 10),
                 const Center(child: VoiceToggle.prayers()),
+                if (query.isEmpty && groups.isNotEmpty) _LovedThisWeek(groups: groups, forSomeone: _forSomeone),
                 if (visible.isEmpty)
                   Padding(
                     padding: const EdgeInsets.only(top: 40),
@@ -123,6 +126,65 @@ class _PrayersScreenState extends ConsumerState<PrayersScreen> {
                 ],
               ],
             ),
+    );
+  }
+}
+
+/// The prayers most prayed this week, as their own group above the rest; nothing until enough people have.
+class _LovedThisWeek extends ConsumerWidget {
+  const _LovedThisWeek({required this.groups, required this.forSomeone});
+  final List<PrayerGroup> groups;
+  final bool forSomeone;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final community = ref.watch(communityProvider);
+    return ListenableBuilder(
+      listenable: community,
+      builder: (context, _) {
+        final byId = {for (final g in groups) for (final p in g.prayers) p.id: p};
+        final list = [
+          for (final id in community.popular('prayer:'))
+            if (byId[id] case final p? when !p.crisis && (!forSomeone || p.canPrayForSomeone)) p,
+        ];
+        if (list.isEmpty) return const SizedBox.shrink();
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(4, 22, 4, 8),
+              child: Row(
+                children: [
+                  const Icon(Icons.favorite_rounded, color: AppColors.redLetter, size: 20),
+                  const SizedBox(width: 8),
+                  Flexible(
+                    child: Text(AppLocalizations.of(context).lovedThisWeek,
+                        style: AppText.serif(22, weight: FontWeight.w700)),
+                  ),
+                ],
+              ),
+            ),
+            Card(
+              color: Colors.white,
+              elevation: 0,
+              margin: EdgeInsets.zero,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(18),
+                side: const BorderSide(color: AppColors.sand),
+              ),
+              clipBehavior: Clip.antiAlias,
+              child: Column(
+                children: [
+                  for (final (i, p) in list.indexed) ...[
+                    if (i > 0) const Divider(height: 1, indent: 72, color: AppColors.sand),
+                    _PrayerTile(prayer: p, forSomeone: forSomeone),
+                  ],
+                ],
+              ),
+            ),
+          ],
+        );
+      },
     );
   }
 }
@@ -223,6 +285,7 @@ class PrayerReadScreen extends ConsumerStatefulWidget {
 class _PrayerReadScreenState extends ConsumerState<PrayerReadScreen> {
   // Taken now: ref can't be used once the screen is closing, and the voice must stop then.
   late final _tts = ref.read(ttsProvider);
+  late final _community = ref.read(communityProvider);
   final _name = TextEditingController();
   final _nameFocus = FocusNode();
   late bool _forSomeone = widget.forSomeone;
@@ -265,6 +328,7 @@ class _PrayerReadScreenState extends ConsumerState<PrayerReadScreen> {
 
   void _play(Prayer p, PrayerPassage? passage) {
     if (!_ready(p)) return;
+    if (!p.crisis) _community.prayed(CommunityService.prayer(p.id));
     readAloud(
       context,
       [_title(p), if (passage != null) passage.reference, _text(p, passage)],
@@ -386,6 +450,10 @@ class _PrayerReadScreenState extends ConsumerState<PrayerReadScreen> {
                     Text(words.reference,
                         textAlign: TextAlign.center,
                         style: const TextStyle(color: AppColors.goldSoft, fontWeight: FontWeight.w600)),
+                  ],
+                  if (!prayer.crisis) ...[
+                    const SizedBox(height: 4),
+                    CommunityBar(item: CommunityService.prayer(prayer.id)),
                   ],
                   // Help from people first, for anyone who may be in danger.
                   if (prayer.crisis) ...[const SizedBox(height: 16), const CrisisCard()],

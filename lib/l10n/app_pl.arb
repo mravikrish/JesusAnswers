@@ -200,5 +200,11 @@
   "enterNameFirst": "Najpierw wpisz imię",
   "noPrayersFound": "Nie znaleziono modlitw",
   "whatsappMessage": "WhatsApp",
-  "copyText": "Kopiuj"
+  "copyText": "Kopiuj",
+  "love": "Lubię to",
+  "lovedCount": "Polubienia: {count}",
+  "prayedCount": "Modliło się: {count}",
+  "listenedCount": "Wysłuchało: {count}",
+  "lovedThisWeek": "Najbardziej lubiane w tym tygodniu",
+  "prayedWithYouToday": "Dziś modliło się z tobą: {count}"
 }

@@ -200,5 +200,11 @@
   "enterNameFirst": "ਪਹਿਲਾਂ ਉਨ੍ਹਾਂ ਦਾ ਨਾਮ ਲਿਖੋ",
   "noPrayersFound": "ਕੋਈ ਪ੍ਰਾਰਥਨਾ ਨਹੀਂ ਮਿਲੀ",
   "whatsappMessage": "WhatsApp",
-  "copyText": "ਕਾਪੀ ਕਰੋ"
+  "copyText": "ਕਾਪੀ ਕਰੋ",
+  "love": "ਪਸੰਦ ਕਰੋ",
+  "lovedCount": "{count} ਨੇ ਪਸੰਦ ਕੀਤਾ",
+  "prayedCount": "{count} ਨੇ ਪ੍ਰਾਰਥਨਾ ਕੀਤੀ",
+  "listenedCount": "{count} ਨੇ ਸੁਣਿਆ",
+  "lovedThisWeek": "ਇਸ ਹਫ਼ਤੇ ਸਭ ਤੋਂ ਪਸੰਦੀਦਾ",
+  "prayedWithYouToday": "ਅੱਜ {count} ਲੋਕਾਂ ਨੇ ਤੁਹਾਡੇ ਨਾਲ ਪ੍ਰਾਰਥਨਾ ਕੀਤੀ"
 }

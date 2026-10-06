@@ -654,4 +654,30 @@ class AppLocalizationsTl extends AppLocalizations {
 
   @override
   String get copyText => 'Kopyahin';
+
+  @override
+  String get love => 'Gustuhin';
+
+  @override
+  String lovedCount(String count) {
+    return '$count ang nagustuhan';
+  }
+
+  @override
+  String prayedCount(String count) {
+    return '$count ang nanalangin';
+  }
+
+  @override
+  String listenedCount(String count) {
+    return '$count ang nakinig';
+  }
+
+  @override
+  String get lovedThisWeek => 'Pinakagusto ngayong linggo';
+
+  @override
+  String prayedWithYouToday(String count) {
+    return 'Ngayong araw, $count tao ang nanalanging kasama mo';
+  }
 }

@@ -657,4 +657,30 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get copyText => 'நகலெடு';
+
+  @override
+  String get love => 'விரும்பு';
+
+  @override
+  String lovedCount(String count) {
+    return '$count பேர் விரும்பினர்';
+  }
+
+  @override
+  String prayedCount(String count) {
+    return '$count பேர் ஜெபித்தனர்';
+  }
+
+  @override
+  String listenedCount(String count) {
+    return '$count பேர் கேட்டனர்';
+  }
+
+  @override
+  String get lovedThisWeek => 'இந்த வாரம் அதிகம் விரும்பப்பட்டவை';
+
+  @override
+  String prayedWithYouToday(String count) {
+    return 'இன்று $count பேர் உங்களுடன் ஜெபித்தனர்';
+  }
 }

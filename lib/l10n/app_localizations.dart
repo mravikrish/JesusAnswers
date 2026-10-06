@@ -1341,6 +1341,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Copy'**
   String get copyText;
+
+  /// No description provided for @love.
+  ///
+  /// In en, this message translates to:
+  /// **'Love this'**
+  String get love;
+
+  /// No description provided for @lovedCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} loved'**
+  String lovedCount(String count);
+
+  /// No description provided for @prayedCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} prayed'**
+  String prayedCount(String count);
+
+  /// No description provided for @listenedCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} listened'**
+  String listenedCount(String count);
+
+  /// No description provided for @lovedThisWeek.
+  ///
+  /// In en, this message translates to:
+  /// **'Loved this week'**
+  String get lovedThisWeek;
+
+  /// No description provided for @prayedWithYouToday.
+  ///
+  /// In en, this message translates to:
+  /// **'Today {count} people prayed with you'**
+  String prayedWithYouToday(String count);
 }
 
 class _AppLocalizationsDelegate

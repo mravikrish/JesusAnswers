@@ -6,12 +6,14 @@ import 'package:share_plus/share_plus.dart';
 import '../../core/share.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/common.dart';
+import '../../core/widgets/community.dart';
 import '../../core/widgets/divine_light.dart';
 import '../../core/widgets/night_background.dart';
 import '../../core/widgets/playback_controls.dart';
 import '../../data/models/story.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
+import '../../services/community_service.dart';
 import '../pictures/pictures_screen.dart';
 
 /// Bible Stories — well-loved stories as picture cards, Old Testament then New.
@@ -23,6 +25,7 @@ class StoriesScreen extends ConsumerWidget {
     final l = AppLocalizations.of(context);
     final lang = ref.watch(settingsProvider.select((s) => s.lang));
     final stories = ref.watch(storiesProvider).value;
+    final community = ref.watch(communityProvider);
 
     List<Widget> section(String label, Iterable<Story> list) => [
           SliverToBoxAdapter(
@@ -45,46 +48,53 @@ class StoriesScreen extends ConsumerWidget {
       body: NightBackground(
         child: SafeArea(
           bottom: false,
-          child: CustomScrollView(
-            slivers: [
-              SliverPadding(
-                padding: const EdgeInsets.fromLTRB(18, 4, 18, 40),
-                sliver: SliverMainAxisGroup(
-                  slivers: [
-                    SliverToBoxAdapter(
-                      child: Column(
-                        children: [
-                          Align(
-                            alignment: Alignment.centerLeft,
-                            child: IconButton(
-                              tooltip: MaterialLocalizations.of(context).backButtonTooltip,
-                              icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
-                              onPressed: () => context.canPop() ? context.pop() : context.go('/home'),
+          child: ListenableBuilder(
+            listenable: community,
+            builder: (context, _) => CustomScrollView(
+              slivers: [
+                SliverPadding(
+                  padding: const EdgeInsets.fromLTRB(18, 4, 18, 40),
+                  sliver: SliverMainAxisGroup(
+                    slivers: [
+                      SliverToBoxAdapter(
+                        child: Column(
+                          children: [
+                            Align(
+                              alignment: Alignment.centerLeft,
+                              child: IconButton(
+                                tooltip: MaterialLocalizations.of(context).backButtonTooltip,
+                                icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
+                                onPressed: () => context.canPop() ? context.pop() : context.go('/home'),
+                              ),
                             ),
-                          ),
-                          Text(l.bibleStories,
-                              textAlign: TextAlign.center, style: AppText.serif(34, color: Colors.white)),
-                          Text(l.bibleStoriesSubtitle,
-                              textAlign: TextAlign.center,
-                              style: TextStyle(color: Colors.white.withValues(alpha: 0.75))),
-                        ],
-                      ),
-                    ),
-                    if (stories == null)
-                      const SliverToBoxAdapter(
-                        child: Padding(
-                          padding: EdgeInsets.only(top: 60),
-                          child: Center(child: CircularProgressIndicator(color: AppColors.goldSoft)),
+                            Text(l.bibleStories,
+                                textAlign: TextAlign.center, style: AppText.serif(34, color: Colors.white)),
+                            Text(l.bibleStoriesSubtitle,
+                                textAlign: TextAlign.center,
+                                style: TextStyle(color: Colors.white.withValues(alpha: 0.75))),
+                          ],
                         ),
-                      )
-                    else ...[
-                      ...section(l.oldTestament, stories.where((s) => s.oldTestament)),
-                      ...section(l.newTestament, stories.where((s) => !s.oldTestament)),
+                      ),
+                      if (stories == null)
+                        const SliverToBoxAdapter(
+                          child: Padding(
+                            padding: EdgeInsets.only(top: 60),
+                            child: Center(child: CircularProgressIndicator(color: AppColors.goldSoft)),
+                          ),
+                        )
+                      else ...[
+                        if (community.popular('story:') case final ids when ids.isNotEmpty)
+                          ...section(l.lovedThisWeek, [
+                            for (final id in ids) ?stories.where((s) => s.id == id).firstOrNull,
+                          ]),
+                        ...section(l.oldTestament, stories.where((s) => s.oldTestament)),
+                        ...section(l.newTestament, stories.where((s) => !s.oldTestament)),
+                      ],
                     ],
-                  ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
@@ -170,6 +180,7 @@ class StoryScreen extends ConsumerStatefulWidget {
 
 class _StoryScreenState extends ConsumerState<StoryScreen> {
   late final _tts = ref.read(ttsProvider);
+  late final _community = ref.read(communityProvider);
 
   @override
   void initState() {
@@ -192,15 +203,18 @@ class _StoryScreenState extends ConsumerState<StoryScreen> {
     final stories = ref.watch(storiesProvider).value;
     final story = stories?.where((s) => s.id == widget.id).firstOrNull;
     final passages = story == null ? null : ref.watch(storyPassagesProvider(story)).value;
-    void listen() => readAloud(
-          context,
-          [
-            story!.title(settings.lang),
-            for (final p in passages!) ...[p.reference, for (final v in p.verses) v.text],
-          ],
-          settings.language,
-          male: _tts.readingMale.value,
-        );
+    void listen() {
+      _community.listened(CommunityService.story(story!.id));
+      readAloud(
+        context,
+        [
+          story.title(settings.lang),
+          for (final p in passages!) ...[p.reference, for (final v in p.verses) v.text],
+        ],
+        settings.language,
+        male: _tts.readingMale.value,
+      );
+    }
 
     return Scaffold(
       body: NightBackground(
@@ -227,7 +241,8 @@ class _StoryScreenState extends ConsumerState<StoryScreen> {
                           style:
                               const TextStyle(color: AppColors.goldSoft, fontSize: 13, fontWeight: FontWeight.w600),
                         ),
-                        const SizedBox(height: 18),
+                        CommunityBar(item: CommunityService.story(story.id)),
+                        const SizedBox(height: 8),
                         Center(child: VoiceToggle.reading(dark: true, onChanged: listen)),
                         const SizedBox(height: 10),
                         PlaybackControls(dark: true, label: l.listen, onPlay: listen),

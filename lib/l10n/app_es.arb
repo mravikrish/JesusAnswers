@@ -200,5 +200,11 @@
   "enterNameFirst": "Primero escribe su nombre",
   "noPrayersFound": "No se encontraron oraciones",
   "whatsappMessage": "WhatsApp",
-  "copyText": "Copiar"
+  "copyText": "Copiar",
+  "love": "Me encanta",
+  "lovedCount": "A {count} les encantó",
+  "prayedCount": "{count} oraron",
+  "listenedCount": "{count} escucharon",
+  "lovedThisWeek": "Lo más amado esta semana",
+  "prayedWithYouToday": "Hoy {count} personas oraron contigo"
 }

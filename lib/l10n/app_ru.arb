@@ -200,5 +200,11 @@
   "enterNameFirst": "Сначала напишите имя",
   "noPrayersFound": "Молитвы не найдены",
   "whatsappMessage": "WhatsApp",
-  "copyText": "Копировать"
+  "copyText": "Копировать",
+  "love": "Нравится",
+  "lovedCount": "Нравится: {count}",
+  "prayedCount": "Помолились: {count}",
+  "listenedCount": "Послушали: {count}",
+  "lovedThisWeek": "Любимое на этой неделе",
+  "prayedWithYouToday": "Сегодня с вами молились: {count}"
 }

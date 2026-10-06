@@ -200,5 +200,11 @@
   "enterNameFirst": "ముందు వారి పేరు రాయండి",
   "noPrayersFound": "ప్రార్థనలు కనబడలేదు",
   "whatsappMessage": "WhatsApp",
-  "copyText": "కాపీ"
+  "copyText": "కాపీ",
+  "love": "ఇష్టపడండి",
+  "lovedCount": "{count} మంది ఇష్టపడ్డారు",
+  "prayedCount": "{count} మంది ప్రార్థించారు",
+  "listenedCount": "{count} మంది విన్నారు",
+  "lovedThisWeek": "ఈ వారం ఎక్కువ మంది ఇష్టపడినవి",
+  "prayedWithYouToday": "ఈ రోజు {count} మంది మీతో కలిసి ప్రార్థించారు"
 }

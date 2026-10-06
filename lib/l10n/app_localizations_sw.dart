@@ -648,4 +648,30 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get copyText => 'Nakili';
+
+  @override
+  String get love => 'Penda';
+
+  @override
+  String lovedCount(String count) {
+    return '$count wamependa';
+  }
+
+  @override
+  String prayedCount(String count) {
+    return '$count wameomba';
+  }
+
+  @override
+  String listenedCount(String count) {
+    return '$count wamesikiliza';
+  }
+
+  @override
+  String get lovedThisWeek => 'Vilivyopendwa wiki hii';
+
+  @override
+  String prayedWithYouToday(String count) {
+    return 'Leo watu $count wameomba pamoja nawe';
+  }
 }

@@ -200,5 +200,11 @@
   "enterNameFirst": "Kwanza andika jina lake",
   "noPrayersFound": "Hakuna maombi yaliyopatikana",
   "whatsappMessage": "WhatsApp",
-  "copyText": "Nakili"
+  "copyText": "Nakili",
+  "love": "Penda",
+  "lovedCount": "{count} wamependa",
+  "prayedCount": "{count} wameomba",
+  "listenedCount": "{count} wamesikiliza",
+  "lovedThisWeek": "Vilivyopendwa wiki hii",
+  "prayedWithYouToday": "Leo watu {count} wameomba pamoja nawe"
 }

@@ -200,5 +200,11 @@
   "enterNameFirst": "முதலில் அவர்களுடைய பெயரை எழுதுங்கள்",
   "noPrayersFound": "ஜெபங்கள் எதுவும் கிடைக்கவில்லை",
   "whatsappMessage": "WhatsApp",
-  "copyText": "நகலெடு"
+  "copyText": "நகலெடு",
+  "love": "விரும்பு",
+  "lovedCount": "{count} பேர் விரும்பினர்",
+  "prayedCount": "{count} பேர் ஜெபித்தனர்",
+  "listenedCount": "{count} பேர் கேட்டனர்",
+  "lovedThisWeek": "இந்த வாரம் அதிகம் விரும்பப்பட்டவை",
+  "prayedWithYouToday": "இன்று {count} பேர் உங்களுடன் ஜெபித்தனர்"
 }

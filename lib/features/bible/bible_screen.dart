@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../../core/share.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/common.dart';
+import '../../core/widgets/community.dart';
 import '../../core/widgets/divine_light.dart';
 import '../../core/widgets/night_background.dart';
 import '../../core/widgets/playback_controls.dart';
@@ -13,6 +14,7 @@ import '../../data/models/painting.dart';
 import '../../data/models/verse.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
+import '../../services/community_service.dart';
 import '../../services/voice/natural_voices.dart';
 import '../pictures/pictures_screen.dart';
 
@@ -320,6 +322,7 @@ class ChapterScreen extends ConsumerStatefulWidget {
 
 class _ChapterScreenState extends ConsumerState<ChapterScreen> {
   late final _tts = ref.read(ttsProvider);
+  late final _community = ref.read(communityProvider);
   bool? _onlyHisChoice;
   final _highlightKey = GlobalKey();
   var _scrolled = false;
@@ -421,13 +424,16 @@ class _ChapterScreenState extends ConsumerState<ChapterScreen> {
     final next = books == null ? null : _neighbour(books, 1);
     void go((BibleBook, int) to) =>
         context.pushReplacement('/bible/${to.$1.code}/${to.$2}${widget.words ? '?words=1' : ''}');
-    void listen() => readAloud(
-          context,
-          [title, for (final v in shown) onlyHis ? v.spoken : v.text],
-          settings.language,
-          role: onlyHis ? VoiceRole.jesus : VoiceRole.verse,
-          male: onlyHis ? null : _tts.readingMale.value,
-        );
+    void listen() {
+      _community.listened(CommunityService.chapter(widget.book, widget.chapter));
+      readAloud(
+        context,
+        [title, for (final v in shown) onlyHis ? v.spoken : v.text],
+        settings.language,
+        role: onlyHis ? VoiceRole.jesus : VoiceRole.verse,
+        male: onlyHis ? null : _tts.readingMale.value,
+      );
+    }
 
     return Scaffold(
       body: NightBackground(
@@ -479,7 +485,8 @@ class _ChapterScreenState extends ConsumerState<ChapterScreen> {
                               ),
                             ),
                           ],
-                          const SizedBox(height: 10),
+                          const SizedBox(height: 6),
+                          CommunityBar(item: CommunityService.chapter(widget.book, widget.chapter)),
                           // His words alone are always read in the voice of Jesus.
                           if (!onlyHis) ...[
                             Center(child: VoiceToggle.reading(dark: true, onChanged: listen)),

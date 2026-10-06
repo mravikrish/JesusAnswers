@@ -13,6 +13,7 @@ import 'data/models/story.dart';
 import 'data/models/verse.dart';
 import 'l10n/app_localizations.dart';
 import 'services/answer/answer_service.dart';
+import 'services/community_service.dart';
 import 'services/feedback/feedback_service.dart';
 import 'services/reminder_service.dart';
 import 'services/voice/natural_voices.dart';
@@ -30,6 +31,14 @@ final ttsProvider = Provider((ref) {
   return TtsService(prefs, voices: NaturalVoiceStore(sources: VoiceSources(prefs, baseUrl: apiBaseUrl)));
 });
 final speechProvider = Provider((_) => SpeechService());
+
+/// Hearts, and what other people loved, prayed and listened to. Counts are fetched at most hourly.
+final communityProvider = Provider((ref) {
+  final community = CommunityService(ref.read(prefsProvider), baseUrl: apiBaseUrl);
+  community.refresh();
+  ref.onDispose(community.dispose);
+  return community;
+});
 final reminderServiceProvider = Provider((_) => ReminderService());
 final feedbackServiceProvider = Provider((_) => FeedbackService());
 

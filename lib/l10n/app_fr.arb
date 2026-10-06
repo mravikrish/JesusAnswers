@@ -200,5 +200,11 @@
   "enterNameFirst": "Écrivez d'abord son prénom",
   "noPrayersFound": "Aucune prière trouvée",
   "whatsappMessage": "WhatsApp",
-  "copyText": "Copier"
+  "copyText": "Copier",
+  "love": "J'aime",
+  "lovedCount": "{count} ont aimé",
+  "prayedCount": "{count} ont prié",
+  "listenedCount": "{count} ont écouté",
+  "lovedThisWeek": "Les plus aimés cette semaine",
+  "prayedWithYouToday": "Aujourd'hui, {count} personnes ont prié avec vous"
 }

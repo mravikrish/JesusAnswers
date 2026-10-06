@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/app_shell.dart';
 import '../../core/widgets/common.dart';
+import '../../core/widgets/community.dart';
 import '../../core/widgets/divine_light.dart';
 import '../../core/widgets/glow_mic_button.dart';
 import '../../core/widgets/night_background.dart';
@@ -85,6 +86,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                         ),
                       ),
                     ),
+                  const PrayedTodayLine(),
                   const SizedBox(height: 4),
                   GlowMicButton(size: 104, onTap: () => talk(context)),
                   Text(l.tapToTalk, textAlign: TextAlign.center, style: AppText.serif(30, color: Colors.white)),
