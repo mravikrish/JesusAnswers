@@ -12,6 +12,7 @@ import '../../core/widgets/night_background.dart';
 import '../../data/models/painting.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
+import 'days_card.dart';
 
 /// Home — opens on today's painting of Jesus, as if coming into His presence,
 /// with one clear invitation: talk to Him.
@@ -86,6 +87,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                         ),
                       ),
                     ),
+                  const MilestoneCard(),
+                  const DaysCard(),
                   const PrayedTodayLine(),
                   const SizedBox(height: 4),
                   GlowMicButton(size: 104, onTap: () => talk(context)),

@@ -674,4 +674,27 @@ class AppLocalizationsSw extends AppLocalizations {
   String prayedWithYouToday(String count) {
     return 'Leo watu $count wameomba pamoja nawe';
   }
+
+  @override
+  String get daysWithJesus => 'Siku pamoja na Yesu';
+
+  @override
+  String daysInARow(int count) {
+    return 'Siku $count mfululizo';
+  }
+
+  @override
+  String daysInAll(int count) {
+    return 'Siku $count kwa jumla';
+  }
+
+  @override
+  String milestoneTitle(int count) {
+    return 'Siku $count pamoja na Yesu';
+  }
+
+  @override
+  String milestoneShare(int count) {
+    return 'Nimekaa siku $count pamoja na Yesu.';
+  }
 }

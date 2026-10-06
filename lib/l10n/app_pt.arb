@@ -206,5 +206,10 @@
   "prayedCount": "{count} oraram",
   "listenedCount": "{count} ouviram",
   "lovedThisWeek": "Mais amados da semana",
-  "prayedWithYouToday": "Hoje {count} pessoas oraram com você"
+  "prayedWithYouToday": "Hoje {count} pessoas oraram com você",
+  "daysWithJesus": "Dias com Jesus",
+  "daysInARow": "{count} dias seguidos",
+  "daysInAll": "{count} dias no total",
+  "milestoneTitle": "{count} dias com Jesus",
+  "milestoneShare": "Já passei {count} dias com Jesus."
 }

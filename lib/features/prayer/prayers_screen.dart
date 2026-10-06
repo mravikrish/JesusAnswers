@@ -294,6 +294,7 @@ class _PrayerReadScreenState extends ConsumerState<PrayerReadScreen> {
   @override
   void initState() {
     super.initState();
+    ref.read(daysProvider).mark(); // a day with Jesus
     _tts.warmUp(ref.read(settingsProvider).language, male: _tts.prayerMale.value);
   }
 

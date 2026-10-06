@@ -206,5 +206,10 @@
   "prayedCount": "{count} ang nanalangin",
   "listenedCount": "{count} ang nakinig",
   "lovedThisWeek": "Pinakagusto ngayong linggo",
-  "prayedWithYouToday": "Ngayong araw, {count} tao ang nanalanging kasama mo"
+  "prayedWithYouToday": "Ngayong araw, {count} tao ang nanalanging kasama mo",
+  "daysWithJesus": "Mga araw kasama si Hesus",
+  "daysInARow": "{count} sunod-sunod na araw",
+  "daysInAll": "{count} araw sa kabuuan",
+  "milestoneTitle": "{count} araw kasama si Hesus",
+  "milestoneShare": "Nakasama ko si Hesus nang {count} araw."
 }

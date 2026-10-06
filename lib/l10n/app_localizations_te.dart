@@ -674,4 +674,27 @@ class AppLocalizationsTe extends AppLocalizations {
   String prayedWithYouToday(String count) {
     return 'ఈ రోజు $count మంది మీతో కలిసి ప్రార్థించారు';
   }
+
+  @override
+  String get daysWithJesus => 'యేసుతో రోజులు';
+
+  @override
+  String daysInARow(int count) {
+    return 'వరుసగా $count రోజులు';
+  }
+
+  @override
+  String daysInAll(int count) {
+    return 'మొత్తం $count రోజులు';
+  }
+
+  @override
+  String milestoneTitle(int count) {
+    return 'యేసుతో $count రోజులు';
+  }
+
+  @override
+  String milestoneShare(int count) {
+    return 'నేను యేసుతో $count రోజులు గడిపాను.';
+  }
 }

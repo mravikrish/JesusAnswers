@@ -673,4 +673,27 @@ class AppLocalizationsPa extends AppLocalizations {
   String prayedWithYouToday(String count) {
     return 'ਅੱਜ $count ਲੋਕਾਂ ਨੇ ਤੁਹਾਡੇ ਨਾਲ ਪ੍ਰਾਰਥਨਾ ਕੀਤੀ';
   }
+
+  @override
+  String get daysWithJesus => 'ਯਿਸੂ ਨਾਲ ਦਿਨ';
+
+  @override
+  String daysInARow(int count) {
+    return 'ਲਗਾਤਾਰ $count ਦਿਨ';
+  }
+
+  @override
+  String daysInAll(int count) {
+    return 'ਕੁੱਲ $count ਦਿਨ';
+  }
+
+  @override
+  String milestoneTitle(int count) {
+    return 'ਯਿਸੂ ਨਾਲ $count ਦਿਨ';
+  }
+
+  @override
+  String milestoneShare(int count) {
+    return 'ਮੈਂ ਯਿਸੂ ਨਾਲ $count ਦਿਨ ਬਿਤਾਏ ਹਨ।';
+  }
 }

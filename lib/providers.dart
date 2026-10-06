@@ -14,6 +14,7 @@ import 'data/models/verse.dart';
 import 'l10n/app_localizations.dart';
 import 'services/answer/answer_service.dart';
 import 'services/community_service.dart';
+import 'services/days_service.dart';
 import 'services/feedback/feedback_service.dart';
 import 'services/reminder_service.dart';
 import 'services/voice/natural_voices.dart';
@@ -38,6 +39,12 @@ final communityProvider = Provider((ref) {
   community.refresh();
   ref.onDispose(community.dispose);
   return community;
+});
+/// Days with Jesus, kept on the phone.
+final daysProvider = Provider((ref) {
+  final days = DaysService(ref.read(prefsProvider));
+  ref.onDispose(days.dispose);
+  return days;
 });
 final reminderServiceProvider = Provider((_) => ReminderService());
 final feedbackServiceProvider = Provider((_) => FeedbackService());

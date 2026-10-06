@@ -206,5 +206,10 @@
   "prayedCount": "{count} ଜଣ ପ୍ରାର୍ଥନା କଲେ",
   "listenedCount": "{count} ଜଣ ଶୁଣିଲେ",
   "lovedThisWeek": "ଏହି ସପ୍ତାହର ସବୁଠାରୁ ପ୍ରିୟ",
-  "prayedWithYouToday": "ଆଜି {count} ଜଣ ଆପଣଙ୍କ ସହ ପ୍ରାର୍ଥନା କଲେ"
+  "prayedWithYouToday": "ଆଜି {count} ଜଣ ଆପଣଙ୍କ ସହ ପ୍ରାର୍ଥନା କଲେ",
+  "daysWithJesus": "ଯୀଶୁଙ୍କ ସହ ଦିନ",
+  "daysInARow": "ଲଗାତାର {count} ଦିନ",
+  "daysInAll": "ମୋଟ {count} ଦିନ",
+  "milestoneTitle": "ଯୀଶୁଙ୍କ ସହ {count} ଦିନ",
+  "milestoneShare": "ମୁଁ ଯୀଶୁଙ୍କ ସହ {count} ଦିନ ବିତାଇଛି।"
 }

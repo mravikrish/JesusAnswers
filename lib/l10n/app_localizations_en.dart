@@ -673,4 +673,39 @@ class AppLocalizationsEn extends AppLocalizations {
   String prayedWithYouToday(String count) {
     return 'Today $count people prayed with you';
   }
+
+  @override
+  String get daysWithJesus => 'Days with Jesus';
+
+  @override
+  String daysInARow(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count days in a row',
+      one: '1 day in a row',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String daysInAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count days in all',
+      one: '1 day in all',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String milestoneTitle(int count) {
+    return '$count days with Jesus';
+  }
+
+  @override
+  String milestoneShare(int count) {
+    return 'I have spent $count days with Jesus.';
+  }
 }

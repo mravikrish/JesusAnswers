@@ -1377,6 +1377,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Today {count} people prayed with you'**
   String prayedWithYouToday(String count);
+
+  /// No description provided for @daysWithJesus.
+  ///
+  /// In en, this message translates to:
+  /// **'Days with Jesus'**
+  String get daysWithJesus;
+
+  /// No description provided for @daysInARow.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 day in a row} other{{count} days in a row}}'**
+  String daysInARow(int count);
+
+  /// No description provided for @daysInAll.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 day in all} other{{count} days in all}}'**
+  String daysInAll(int count);
+
+  /// No description provided for @milestoneTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} days with Jesus'**
+  String milestoneTitle(int count);
+
+  /// No description provided for @milestoneShare.
+  ///
+  /// In en, this message translates to:
+  /// **'I have spent {count} days with Jesus.'**
+  String milestoneShare(int count);
 }
 
 class _AppLocalizationsDelegate

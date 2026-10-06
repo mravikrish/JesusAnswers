@@ -282,5 +282,38 @@
         "type": "String"
       }
     }
+  },
+  "daysWithJesus": "Days with Jesus",
+  "daysInARow": "{count, plural, =1{1 day in a row} other{{count} days in a row}}",
+  "@daysInARow": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysInAll": "{count, plural, =1{1 day in all} other{{count} days in all}}",
+  "@daysInAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "milestoneTitle": "{count} days with Jesus",
+  "@milestoneTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "milestoneShare": "I have spent {count} days with Jesus.",
+  "@milestoneShare": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   }
 }

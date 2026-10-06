@@ -674,4 +674,27 @@ class AppLocalizationsRu extends AppLocalizations {
   String prayedWithYouToday(String count) {
     return 'Сегодня с вами молились: $count';
   }
+
+  @override
+  String get daysWithJesus => 'Дни с Иисусом';
+
+  @override
+  String daysInARow(int count) {
+    return 'Дней подряд: $count';
+  }
+
+  @override
+  String daysInAll(int count) {
+    return 'Всего дней: $count';
+  }
+
+  @override
+  String milestoneTitle(int count) {
+    return 'Дней с Иисусом: $count';
+  }
+
+  @override
+  String milestoneShare(int count) {
+    return 'Дней, проведённых с Иисусом: $count.';
+  }
 }

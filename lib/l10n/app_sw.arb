@@ -206,5 +206,10 @@
   "prayedCount": "{count} wameomba",
   "listenedCount": "{count} wamesikiliza",
   "lovedThisWeek": "Vilivyopendwa wiki hii",
-  "prayedWithYouToday": "Leo watu {count} wameomba pamoja nawe"
+  "prayedWithYouToday": "Leo watu {count} wameomba pamoja nawe",
+  "daysWithJesus": "Siku pamoja na Yesu",
+  "daysInARow": "Siku {count} mfululizo",
+  "daysInAll": "Siku {count} kwa jumla",
+  "milestoneTitle": "Siku {count} pamoja na Yesu",
+  "milestoneShare": "Nimekaa siku {count} pamoja na Yesu."
 }
