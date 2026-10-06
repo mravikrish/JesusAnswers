@@ -51,12 +51,13 @@ class _JourneyScreenState extends ConsumerState<JourneyScreen> {
           selected: selected,
           showCheckmark: false,
           // Set as a state colour: the app theme's light chip colour would otherwise win.
+          // Light chips with black text, gold when chosen.
           color: WidgetStateProperty.resolveWith(
             (states) => states.contains(WidgetState.selected)
                 ? (strong ? AppColors.gold : AppColors.goldSoft)
-                : Colors.white.withValues(alpha: 0.07),
+                : AppColors.ivory,
           ),
-          labelStyle: TextStyle(color: selected ? AppColors.midnight : Colors.white),
+          labelStyle: const TextStyle(color: Colors.black, fontWeight: FontWeight.w600),
           shape: StadiumBorder(side: BorderSide(color: Colors.white.withValues(alpha: 0.2))),
           onSelected: (_) => onTap(),
         ),
@@ -90,7 +91,7 @@ class _JourneyScreenState extends ConsumerState<JourneyScreen> {
       _Filter.favorites: l.filterFavorites,
     };
 
-    final painting = ref.watch(dailyPaintingProvider).value;
+    final painting = ref.watch(screenPaintingProvider(PaintingSpot.journey)).value;
 
     return Scaffold(
       body: NightBackground(

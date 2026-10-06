@@ -45,7 +45,7 @@ class _PrayerScreenState extends ConsumerState<PrayerScreen> {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
-    final painting = ref.watch(dailyPaintingProvider).value;
+    final painting = ref.watch(screenPaintingProvider(PaintingSpot.pray)).value;
     final soft = Colors.white.withValues(alpha: 0.75);
     return Scaffold(
       body: NightBackground(

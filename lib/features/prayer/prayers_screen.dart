@@ -56,7 +56,7 @@ class _PrayersScreenState extends ConsumerState<PrayersScreen> {
         if (g.prayers.where((p) => shown(g, p)).toList() case final list when list.isNotEmpty) (g, list),
     ];
 
-    final painting = ref.watch(dailyPaintingProvider).value;
+    final painting = ref.watch(screenPaintingProvider(PaintingSpot.readyPrayers)).value;
     final soft = TextStyle(color: Colors.white.withValues(alpha: 0.75));
 
     return Scaffold(

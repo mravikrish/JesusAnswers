@@ -43,7 +43,7 @@ class ProfileScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
     final settings = ref.watch(settingsProvider);
-    final painting = ref.watch(dailyPaintingProvider).value;
+    final painting = ref.watch(screenPaintingProvider(PaintingSpot.profile)).value;
 
     return Scaffold(
       body: NightBackground(

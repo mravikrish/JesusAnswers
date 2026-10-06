@@ -330,8 +330,9 @@ class TtsService {
         await player.setReleaseMode(idle ? ReleaseMode.stop : ReleaseMode.loop);
         await player.play(AssetSource(track));
       }
-    } catch (_) {
+    } catch (e) {
       // Music is a nicety: if it can't play, the reading goes on without it.
+      debugPrint('Music could not play: $e');
     }
   }
 

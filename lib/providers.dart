@@ -128,6 +128,18 @@ final chapterProvider = FutureProvider.family<List<NumberedVerse>, (String, int)
 /// Today's painting of Jesus (changes every day).
 final dailyPaintingProvider = FutureProvider<Painting>((_) => Painting.forDay(DateTime.now()));
 
+/// Where a screen's own painting sits in the collection, away from Home's.
+enum PaintingSpot { pray, journey, profile, readyPrayers }
+
+/// Each main screen opens on a painting of its own, different from Home's and from each other's,
+/// changing every day along with Home's.
+final screenPaintingProvider = FutureProvider.family<Painting, PaintingSpot>((_, spot) async {
+  final all = await Painting.all();
+  // Spread through the collection, so neighbouring screens don't show neighbouring pictures.
+  final step = all.length ~/ (PaintingSpot.values.length + 1);
+  return all[(Painting.indexForDay(DateTime.now(), all.length) + step * (spot.index + 1)) % all.length];
+});
+
 /// Every picture of Jesus, for the Pictures gallery.
 final paintingsProvider = FutureProvider<List<Painting>>((_) => Painting.all());
 
