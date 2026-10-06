@@ -1455,6 +1455,222 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Today\'s Word is waiting for you. Read it, pray, and listen to Him.'**
   String get reminder7;
+
+  /// No description provided for @circlesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Prayer Circles'**
+  String get circlesTitle;
+
+  /// No description provided for @circlesHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Pray for each other with family and friends'**
+  String get circlesHint;
+
+  /// No description provided for @circlesIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Start a circle and send its code to the people you pray with, or join a circle with a code someone sent you.'**
+  String get circlesIntro;
+
+  /// No description provided for @circleStart.
+  ///
+  /// In en, this message translates to:
+  /// **'Start a circle'**
+  String get circleStart;
+
+  /// No description provided for @circleJoin.
+  ///
+  /// In en, this message translates to:
+  /// **'Join with a code'**
+  String get circleJoin;
+
+  /// No description provided for @circleName.
+  ///
+  /// In en, this message translates to:
+  /// **'Circle name'**
+  String get circleName;
+
+  /// No description provided for @circleNameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. Family, Youth group'**
+  String get circleNameHint;
+
+  /// No description provided for @circleYourName.
+  ///
+  /// In en, this message translates to:
+  /// **'Your name'**
+  String get circleYourName;
+
+  /// No description provided for @circleYourNameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'As the others will see it'**
+  String get circleYourNameHint;
+
+  /// No description provided for @circleCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Code'**
+  String get circleCode;
+
+  /// No description provided for @circleMembers.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 member} other{{count} members}}'**
+  String circleMembers(int count);
+
+  /// No description provided for @circleNew.
+  ///
+  /// In en, this message translates to:
+  /// **'New'**
+  String get circleNew;
+
+  /// No description provided for @circleInvite.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite'**
+  String get circleInvite;
+
+  /// No description provided for @circleInviteCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite code'**
+  String get circleInviteCode;
+
+  /// No description provided for @circleInviteText.
+  ///
+  /// In en, this message translates to:
+  /// **'Join my prayer circle \"{name}\" on JesusAnswers, so we can pray for each other.\nOpen the app, tap Pray → Prayer Circles → Join with a code, and enter: {code}'**
+  String circleInviteText(String name, String code);
+
+  /// No description provided for @circleAskHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Share a prayer request…'**
+  String get circleAskHint;
+
+  /// No description provided for @circleEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No prayer requests yet. Share yours, and the others will pray for you.'**
+  String get circleEmpty;
+
+  /// No description provided for @circleIPrayed.
+  ///
+  /// In en, this message translates to:
+  /// **'I prayed'**
+  String get circleIPrayed;
+
+  /// No description provided for @circleAnswered.
+  ///
+  /// In en, this message translates to:
+  /// **'Prayer answered'**
+  String get circleAnswered;
+
+  /// No description provided for @circleMarkAnswered.
+  ///
+  /// In en, this message translates to:
+  /// **'God answered this'**
+  String get circleMarkAnswered;
+
+  /// No description provided for @circleDelete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get circleDelete;
+
+  /// No description provided for @circleReport.
+  ///
+  /// In en, this message translates to:
+  /// **'Report'**
+  String get circleReport;
+
+  /// No description provided for @circleReported.
+  ///
+  /// In en, this message translates to:
+  /// **'Reported. You won\'t see it again.'**
+  String get circleReported;
+
+  /// No description provided for @circleMembersTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Members'**
+  String get circleMembersTitle;
+
+  /// No description provided for @circleOwner.
+  ///
+  /// In en, this message translates to:
+  /// **'Started the circle'**
+  String get circleOwner;
+
+  /// No description provided for @circleYou.
+  ///
+  /// In en, this message translates to:
+  /// **'You'**
+  String get circleYou;
+
+  /// No description provided for @circleRemoveMember.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove from circle'**
+  String get circleRemoveMember;
+
+  /// No description provided for @circleRemoveConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove {name}? Their requests will be deleted, and they won\'t be able to join again.'**
+  String circleRemoveConfirm(String name);
+
+  /// No description provided for @circleLeave.
+  ///
+  /// In en, this message translates to:
+  /// **'Leave circle'**
+  String get circleLeave;
+
+  /// No description provided for @circleLeaveConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Leave this circle? Your prayer requests in it will be deleted.'**
+  String get circleLeaveConfirm;
+
+  /// No description provided for @circleReachOut.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} may be going through something very hard. Please call or visit them today.'**
+  String circleReachOut(String name);
+
+  /// No description provided for @circleNotFound.
+  ///
+  /// In en, this message translates to:
+  /// **'There is no circle with this code. Check it and try again.'**
+  String get circleNotFound;
+
+  /// No description provided for @circleFull.
+  ///
+  /// In en, this message translates to:
+  /// **'This circle is full.'**
+  String get circleFull;
+
+  /// No description provided for @circleTooMany.
+  ///
+  /// In en, this message translates to:
+  /// **'You are in too many circles. Leave one to join another.'**
+  String get circleTooMany;
+
+  /// No description provided for @circleNotAllowed.
+  ///
+  /// In en, this message translates to:
+  /// **'You can\'t do that in this circle.'**
+  String get circleNotAllowed;
+
+  /// No description provided for @circleOffline.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t connect. Check your internet and try again.'**
+  String get circleOffline;
 }
 
 class _AppLocalizationsDelegate

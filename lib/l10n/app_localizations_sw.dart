@@ -727,4 +727,132 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get reminder7 =>
       'Neno la leo linakusubiri. Lisome, omba, na umsikilize.';
+
+  @override
+  String get circlesTitle => 'Vikundi vya Maombi';
+
+  @override
+  String get circlesHint => 'Ombeaneni pamoja na familia na marafiki';
+
+  @override
+  String get circlesIntro =>
+      'Anzisha kikundi na utume msimbo wake kwa watu unaoomba nao, au jiunge na kikundi kwa msimbo uliotumiwa na mtu.';
+
+  @override
+  String get circleStart => 'Anzisha kikundi';
+
+  @override
+  String get circleJoin => 'Jiunge kwa msimbo';
+
+  @override
+  String get circleName => 'Jina la kikundi';
+
+  @override
+  String get circleNameHint => 'k.m. Familia, Kikundi cha vijana';
+
+  @override
+  String get circleYourName => 'Jina lako';
+
+  @override
+  String get circleYourNameHint => 'Kama wengine watakavyoliona';
+
+  @override
+  String get circleCode => 'Msimbo';
+
+  @override
+  String circleMembers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wanachama $count',
+      one: 'Mwanachama 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleNew => 'Mpya';
+
+  @override
+  String get circleInvite => 'Alika';
+
+  @override
+  String get circleInviteCode => 'Msimbo wa mwaliko';
+
+  @override
+  String circleInviteText(String name, String code) {
+    return 'Jiunge na kikundi changu cha maombi \"$name\" kwenye JesusAnswers, ili tuombeane.\nFungua programu, gusa Omba → Vikundi vya Maombi → Jiunge kwa msimbo, kisha weka: $code';
+  }
+
+  @override
+  String get circleAskHint => 'Shiriki ombi la maombi…';
+
+  @override
+  String get circleEmpty =>
+      'Bado hakuna maombi. Shiriki lako, na wengine watakuombea.';
+
+  @override
+  String get circleIPrayed => 'Nimeomba';
+
+  @override
+  String get circleAnswered => 'Ombi limejibiwa';
+
+  @override
+  String get circleMarkAnswered => 'Mungu amejibu hili';
+
+  @override
+  String get circleDelete => 'Futa';
+
+  @override
+  String get circleReport => 'Ripoti';
+
+  @override
+  String get circleReported => 'Imeripotiwa. Hutaliona tena.';
+
+  @override
+  String get circleMembersTitle => 'Wanachama';
+
+  @override
+  String get circleOwner => 'Alianzisha kikundi';
+
+  @override
+  String get circleYou => 'Wewe';
+
+  @override
+  String get circleRemoveMember => 'Ondoa kwenye kikundi';
+
+  @override
+  String circleRemoveConfirm(String name) {
+    return 'Kumwondoa $name? Maombi yake yatafutwa, na hataweza kujiunga tena.';
+  }
+
+  @override
+  String get circleLeave => 'Toka kwenye kikundi';
+
+  @override
+  String get circleLeaveConfirm =>
+      'Kutoka kwenye kikundi hiki? Maombi yako ndani yake yatafutwa.';
+
+  @override
+  String circleReachOut(String name) {
+    return '$name huenda anapitia jambo gumu sana. Tafadhali mpigie simu au umtembelee leo.';
+  }
+
+  @override
+  String get circleNotFound =>
+      'Hakuna kikundi chenye msimbo huu. Kagua na ujaribu tena.';
+
+  @override
+  String get circleFull => 'Kikundi hiki kimejaa.';
+
+  @override
+  String get circleTooMany =>
+      'Uko kwenye vikundi vingi mno. Toka kimoja ili ujiunge na kingine.';
+
+  @override
+  String get circleNotAllowed => 'Huwezi kufanya hivyo katika kikundi hiki.';
+
+  @override
+  String get circleOffline =>
+      'Imeshindwa kuunganisha. Kagua intaneti yako na ujaribu tena.';
 }

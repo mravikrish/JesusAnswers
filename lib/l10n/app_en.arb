@@ -323,5 +323,72 @@
   "reminder4": "Be still for a moment. God is near, and He hears you.",
   "reminder5": "Tell Jesus what is on your heart today. He is listening.",
   "reminder6": "Open His Word today and let Him speak to you.",
-  "reminder7": "Today's Word is waiting for you. Read it, pray, and listen to Him."
+  "reminder7": "Today's Word is waiting for you. Read it, pray, and listen to Him.",
+  "circlesTitle": "Prayer Circles",
+  "circlesHint": "Pray for each other with family and friends",
+  "circlesIntro": "Start a circle and send its code to the people you pray with, or join a circle with a code someone sent you.",
+  "circleStart": "Start a circle",
+  "circleJoin": "Join with a code",
+  "circleName": "Circle name",
+  "circleNameHint": "e.g. Family, Youth group",
+  "circleYourName": "Your name",
+  "circleYourNameHint": "As the others will see it",
+  "circleCode": "Code",
+  "circleMembers": "{count, plural, =1{1 member} other{{count} members}}",
+  "@circleMembers": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "circleNew": "New",
+  "circleInvite": "Invite",
+  "circleInviteCode": "Invite code",
+  "circleInviteText": "Join my prayer circle \"{name}\" on JesusAnswers, so we can pray for each other.\nOpen the app, tap Pray → Prayer Circles → Join with a code, and enter: {code}",
+  "@circleInviteText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "circleAskHint": "Share a prayer request…",
+  "circleEmpty": "No prayer requests yet. Share yours, and the others will pray for you.",
+  "circleIPrayed": "I prayed",
+  "circleAnswered": "Prayer answered",
+  "circleMarkAnswered": "God answered this",
+  "circleDelete": "Delete",
+  "circleReport": "Report",
+  "circleReported": "Reported. You won't see it again.",
+  "circleMembersTitle": "Members",
+  "circleOwner": "Started the circle",
+  "circleYou": "You",
+  "circleRemoveMember": "Remove from circle",
+  "circleRemoveConfirm": "Remove {name}? Their requests will be deleted, and they won't be able to join again.",
+  "@circleRemoveConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "circleLeave": "Leave circle",
+  "circleLeaveConfirm": "Leave this circle? Your prayer requests in it will be deleted.",
+  "circleReachOut": "{name} may be going through something very hard. Please call or visit them today.",
+  "@circleReachOut": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "circleNotFound": "There is no circle with this code. Check it and try again.",
+  "circleFull": "This circle is full.",
+  "circleTooMany": "You are in too many circles. Leave one to join another.",
+  "circleNotAllowed": "You can't do that in this circle.",
+  "circleOffline": "Couldn't connect. Check your internet and try again."
 }

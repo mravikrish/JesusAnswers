@@ -113,22 +113,19 @@ class _PrayerScreenState extends ConsumerState<PrayerScreen> {
                   ),
                   const SizedBox(height: 28),
                   // Or choose a ready prayer and hear it.
-                  Material(
-                    color: Colors.white.withValues(alpha: 0.07),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                      side: BorderSide(color: AppColors.goldSoft.withValues(alpha: 0.3)),
-                    ),
-                    clipBehavior: Clip.antiAlias,
-                    child: ListTile(
-                      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
-                      leading: const Icon(Icons.menu_book_rounded, color: AppColors.goldSoft, size: 30),
-                      title: Text(l.readyPrayers,
-                          style: AppText.serif(20, color: Colors.white, weight: FontWeight.w700)),
-                      subtitle: Text(l.readyPrayersHint, style: TextStyle(color: soft)),
-                      trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.goldSoft),
-                      onTap: () => context.push('/prayers'),
-                    ),
+                  _Choice(
+                    icon: Icons.menu_book_rounded,
+                    title: l.readyPrayers,
+                    hint: l.readyPrayersHint,
+                    onTap: () => context.push('/prayers'),
+                  ),
+                  const SizedBox(height: 12),
+                  // Or pray for each other with family and friends.
+                  _Choice(
+                    icon: Icons.groups_rounded,
+                    title: l.circlesTitle,
+                    hint: l.circlesHint,
+                    onTap: () => context.push('/circles'),
                   ),
                 ],
               ),
@@ -138,4 +135,30 @@ class _PrayerScreenState extends ConsumerState<PrayerScreen> {
       ),
     );
   }
+}
+
+/// A way on from praying here: Ready Prayers, Prayer Circles.
+class _Choice extends StatelessWidget {
+  const _Choice({required this.icon, required this.title, required this.hint, required this.onTap});
+  final IconData icon;
+  final String title, hint;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) => Material(
+    color: Colors.white.withValues(alpha: 0.07),
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(20),
+      side: BorderSide(color: AppColors.goldSoft.withValues(alpha: 0.3)),
+    ),
+    clipBehavior: Clip.antiAlias,
+    child: ListTile(
+      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+      leading: Icon(icon, color: AppColors.goldSoft, size: 30),
+      title: Text(title, style: AppText.serif(20, color: Colors.white, weight: FontWeight.w700)),
+      subtitle: Text(hint, style: TextStyle(color: Colors.white.withValues(alpha: 0.75))),
+      trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.goldSoft),
+      onTap: onTap,
+    ),
+  );
 }

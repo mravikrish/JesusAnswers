@@ -728,4 +728,133 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get reminder7 =>
       'ఈ రోజు వాక్యం మీ కోసం ఎదురుచూస్తోంది. చదవండి, ప్రార్థించండి, ఆయన మాట వినండి.';
+
+  @override
+  String get circlesTitle => 'ప్రార్థనా బృందాలు';
+
+  @override
+  String get circlesHint =>
+      'కుటుంబం, స్నేహితులతో కలిసి ఒకరి కోసం ఒకరు ప్రార్థించండి';
+
+  @override
+  String get circlesIntro =>
+      'ఒక బృందం ప్రారంభించి, మీతో ప్రార్థించే వారికి దాని కోడ్ పంపండి, లేదా ఎవరైనా పంపిన కోడ్‌తో బృందంలో చేరండి.';
+
+  @override
+  String get circleStart => 'బృందం ప్రారంభించండి';
+
+  @override
+  String get circleJoin => 'కోడ్‌తో చేరండి';
+
+  @override
+  String get circleName => 'బృందం పేరు';
+
+  @override
+  String get circleNameHint => 'ఉదా. కుటుంబం, యువజన సహవాసం';
+
+  @override
+  String get circleYourName => 'మీ పేరు';
+
+  @override
+  String get circleYourNameHint => 'ఇతరులకు కనిపించేలా';
+
+  @override
+  String get circleCode => 'కోడ్';
+
+  @override
+  String circleMembers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count మంది సభ్యులు',
+      one: '1 సభ్యుడు',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleNew => 'కొత్తది';
+
+  @override
+  String get circleInvite => 'ఆహ్వానించండి';
+
+  @override
+  String get circleInviteCode => 'ఆహ్వాన కోడ్';
+
+  @override
+  String circleInviteText(String name, String code) {
+    return 'JesusAnswers లో నా ప్రార్థనా బృందం \"$name\" లో చేరండి, మనం ఒకరి కోసం ఒకరు ప్రార్థిద్దాం.\nయాప్ తెరిచి, ప్రార్థన → ప్రార్థనా బృందాలు → కోడ్‌తో చేరండి నొక్కి, ఇది నమోదు చేయండి: $code';
+  }
+
+  @override
+  String get circleAskHint => 'ప్రార్థనా విన్నపం రాయండి…';
+
+  @override
+  String get circleEmpty =>
+      'ఇంకా ప్రార్థనా విన్నపాలు లేవు. మీది రాయండి, ఇతరులు మీ కోసం ప్రార్థిస్తారు.';
+
+  @override
+  String get circleIPrayed => 'నేను ప్రార్థించాను';
+
+  @override
+  String get circleAnswered => 'ప్రార్థనకు జవాబు వచ్చింది';
+
+  @override
+  String get circleMarkAnswered => 'దేవుడు జవాబిచ్చాడు';
+
+  @override
+  String get circleDelete => 'తొలగించండి';
+
+  @override
+  String get circleReport => 'రిపోర్ట్ చేయండి';
+
+  @override
+  String get circleReported => 'రిపోర్ట్ అయింది. ఇది మీకు మళ్ళీ కనిపించదు.';
+
+  @override
+  String get circleMembersTitle => 'సభ్యులు';
+
+  @override
+  String get circleOwner => 'బృందాన్ని ప్రారంభించారు';
+
+  @override
+  String get circleYou => 'మీరు';
+
+  @override
+  String get circleRemoveMember => 'బృందం నుండి తొలగించండి';
+
+  @override
+  String circleRemoveConfirm(String name) {
+    return '$name ను తొలగించాలా? వారి విన్నపాలు తొలగిపోతాయి, వారు మళ్ళీ చేరలేరు.';
+  }
+
+  @override
+  String get circleLeave => 'బృందం నుండి వెళ్ళండి';
+
+  @override
+  String get circleLeaveConfirm =>
+      'ఈ బృందం నుండి వెళ్ళిపోవాలా? ఇందులోని మీ ప్రార్థనా విన్నపాలు తొలగిపోతాయి.';
+
+  @override
+  String circleReachOut(String name) {
+    return '$name చాలా కష్టమైన పరిస్థితిలో ఉండవచ్చు. దయచేసి ఈ రోజే వారికి ఫోన్ చేయండి లేదా వెళ్ళి కలవండి.';
+  }
+
+  @override
+  String get circleNotFound =>
+      'ఈ కోడ్‌తో ఏ బృందం లేదు. కోడ్ సరిచూసి మళ్ళీ ప్రయత్నించండి.';
+
+  @override
+  String get circleFull => 'ఈ బృందం నిండిపోయింది.';
+
+  @override
+  String get circleTooMany =>
+      'మీరు చాలా బృందాల్లో ఉన్నారు. మరొకదానిలో చేరడానికి ఒకటి వదిలేయండి.';
+
+  @override
+  String get circleNotAllowed => 'ఈ బృందంలో మీరు అది చేయలేరు.';
+
+  @override
+  String get circleOffline =>
+      'కనెక్ట్ కాలేదు. మీ ఇంటర్నెట్ చూసి మళ్ళీ ప్రయత్నించండి.';
 }

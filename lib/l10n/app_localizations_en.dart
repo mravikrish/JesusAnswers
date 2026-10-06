@@ -738,4 +738,132 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get reminder7 =>
       'Today\'s Word is waiting for you. Read it, pray, and listen to Him.';
+
+  @override
+  String get circlesTitle => 'Prayer Circles';
+
+  @override
+  String get circlesHint => 'Pray for each other with family and friends';
+
+  @override
+  String get circlesIntro =>
+      'Start a circle and send its code to the people you pray with, or join a circle with a code someone sent you.';
+
+  @override
+  String get circleStart => 'Start a circle';
+
+  @override
+  String get circleJoin => 'Join with a code';
+
+  @override
+  String get circleName => 'Circle name';
+
+  @override
+  String get circleNameHint => 'e.g. Family, Youth group';
+
+  @override
+  String get circleYourName => 'Your name';
+
+  @override
+  String get circleYourNameHint => 'As the others will see it';
+
+  @override
+  String get circleCode => 'Code';
+
+  @override
+  String circleMembers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count members',
+      one: '1 member',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleNew => 'New';
+
+  @override
+  String get circleInvite => 'Invite';
+
+  @override
+  String get circleInviteCode => 'Invite code';
+
+  @override
+  String circleInviteText(String name, String code) {
+    return 'Join my prayer circle \"$name\" on JesusAnswers, so we can pray for each other.\nOpen the app, tap Pray → Prayer Circles → Join with a code, and enter: $code';
+  }
+
+  @override
+  String get circleAskHint => 'Share a prayer request…';
+
+  @override
+  String get circleEmpty =>
+      'No prayer requests yet. Share yours, and the others will pray for you.';
+
+  @override
+  String get circleIPrayed => 'I prayed';
+
+  @override
+  String get circleAnswered => 'Prayer answered';
+
+  @override
+  String get circleMarkAnswered => 'God answered this';
+
+  @override
+  String get circleDelete => 'Delete';
+
+  @override
+  String get circleReport => 'Report';
+
+  @override
+  String get circleReported => 'Reported. You won\'t see it again.';
+
+  @override
+  String get circleMembersTitle => 'Members';
+
+  @override
+  String get circleOwner => 'Started the circle';
+
+  @override
+  String get circleYou => 'You';
+
+  @override
+  String get circleRemoveMember => 'Remove from circle';
+
+  @override
+  String circleRemoveConfirm(String name) {
+    return 'Remove $name? Their requests will be deleted, and they won\'t be able to join again.';
+  }
+
+  @override
+  String get circleLeave => 'Leave circle';
+
+  @override
+  String get circleLeaveConfirm =>
+      'Leave this circle? Your prayer requests in it will be deleted.';
+
+  @override
+  String circleReachOut(String name) {
+    return '$name may be going through something very hard. Please call or visit them today.';
+  }
+
+  @override
+  String get circleNotFound =>
+      'There is no circle with this code. Check it and try again.';
+
+  @override
+  String get circleFull => 'This circle is full.';
+
+  @override
+  String get circleTooMany =>
+      'You are in too many circles. Leave one to join another.';
+
+  @override
+  String get circleNotAllowed => 'You can\'t do that in this circle.';
+
+  @override
+  String get circleOffline =>
+      'Couldn\'t connect. Check your internet and try again.';
 }

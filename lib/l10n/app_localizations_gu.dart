@@ -723,4 +723,131 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get reminder7 =>
       'આજનું વચન તમારી રાહ જુએ છે. તે વાંચો, પ્રાર્થના કરો, અને તેમનું સાંભળો.';
+
+  @override
+  String get circlesTitle => 'પ્રાર્થના મંડળ';
+
+  @override
+  String get circlesHint => 'પરિવાર અને મિત્રો સાથે એકબીજા માટે પ્રાર્થના કરો';
+
+  @override
+  String get circlesIntro =>
+      'એક મંડળ શરૂ કરો અને તમારી સાથે પ્રાર્થના કરનારાઓને તેનો કોડ મોકલો, અથવા કોઈએ મોકલેલા કોડથી મંડળમાં જોડાઓ.';
+
+  @override
+  String get circleStart => 'મંડળ શરૂ કરો';
+
+  @override
+  String get circleJoin => 'કોડથી જોડાઓ';
+
+  @override
+  String get circleName => 'મંડળનું નામ';
+
+  @override
+  String get circleNameHint => 'દા.ત. પરિવાર, યુવા સંગત';
+
+  @override
+  String get circleYourName => 'તમારું નામ';
+
+  @override
+  String get circleYourNameHint => 'બીજાઓ જોશે તે રીતે';
+
+  @override
+  String get circleCode => 'કોડ';
+
+  @override
+  String circleMembers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count સભ્યો',
+      one: '1 સભ્ય',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleNew => 'નવું';
+
+  @override
+  String get circleInvite => 'આમંત્રણ આપો';
+
+  @override
+  String get circleInviteCode => 'આમંત્રણ કોડ';
+
+  @override
+  String circleInviteText(String name, String code) {
+    return 'JesusAnswers પર મારા પ્રાર્થના મંડળ \"$name\" માં જોડાઓ, જેથી આપણે એકબીજા માટે પ્રાર્થના કરી શકીએ.\nએપ ખોલો, પ્રાર્થના → પ્રાર્થના મંડળ → કોડથી જોડાઓ પર ટેપ કરો, અને આ લખો: $code';
+  }
+
+  @override
+  String get circleAskHint => 'પ્રાર્થના વિનંતી લખો…';
+
+  @override
+  String get circleEmpty =>
+      'હજી કોઈ પ્રાર્થના વિનંતી નથી. તમારી લખો, અને બીજાઓ તમારા માટે પ્રાર્થના કરશે.';
+
+  @override
+  String get circleIPrayed => 'મેં પ્રાર્થના કરી';
+
+  @override
+  String get circleAnswered => 'પ્રાર્થનાનો જવાબ મળ્યો';
+
+  @override
+  String get circleMarkAnswered => 'ઈશ્વરે જવાબ આપ્યો';
+
+  @override
+  String get circleDelete => 'કાઢી નાખો';
+
+  @override
+  String get circleReport => 'રિપોર્ટ કરો';
+
+  @override
+  String get circleReported => 'રિપોર્ટ થઈ ગયું. આ તમને ફરી દેખાશે નહીં.';
+
+  @override
+  String get circleMembersTitle => 'સભ્યો';
+
+  @override
+  String get circleOwner => 'મંડળ શરૂ કર્યું';
+
+  @override
+  String get circleYou => 'તમે';
+
+  @override
+  String get circleRemoveMember => 'મંડળમાંથી કાઢો';
+
+  @override
+  String circleRemoveConfirm(String name) {
+    return '$name ને કાઢવા છે? તેમની વિનંતીઓ કાઢી નખાશે, અને તેઓ ફરી જોડાઈ શકશે નહીં.';
+  }
+
+  @override
+  String get circleLeave => 'મંડળ છોડો';
+
+  @override
+  String get circleLeaveConfirm =>
+      'આ મંડળ છોડવું છે? આમાંની તમારી પ્રાર્થના વિનંતીઓ કાઢી નખાશે.';
+
+  @override
+  String circleReachOut(String name) {
+    return '$name કદાચ ખૂબ મુશ્કેલ સમયમાંથી પસાર થઈ રહ્યા છે. કૃપા કરીને આજે જ તેમને ફોન કરો અથવા મળો.';
+  }
+
+  @override
+  String get circleNotFound => 'આ કોડનું કોઈ મંડળ નથી. તપાસીને ફરી પ્રયાસ કરો.';
+
+  @override
+  String get circleFull => 'આ મંડળ ભરાઈ ગયું છે.';
+
+  @override
+  String get circleTooMany =>
+      'તમે ઘણાં મંડળોમાં છો. બીજામાં જોડાવા માટે એક છોડો.';
+
+  @override
+  String get circleNotAllowed => 'આ મંડળમાં તમે એ કરી શકતા નથી.';
+
+  @override
+  String get circleOffline =>
+      'જોડાઈ શક્યું નહીં. તમારું ઇન્ટરનેટ તપાસો અને ફરી પ્રયાસ કરો.';
 }

@@ -734,4 +734,133 @@ class AppLocalizationsTl extends AppLocalizations {
   @override
   String get reminder7 =>
       'Naghihintay sa iyo ang Salita ngayong araw. Basahin ito, manalangin, at pakinggan Siya.';
+
+  @override
+  String get circlesTitle => 'Mga Prayer Circle';
+
+  @override
+  String get circlesHint =>
+      'Ipanalangin ang isa\'t isa kasama ang pamilya at mga kaibigan';
+
+  @override
+  String get circlesIntro =>
+      'Magsimula ng circle at ipadala ang code nito sa mga kasama mong nananalangin, o sumali sa circle gamit ang code na ipinadala sa iyo.';
+
+  @override
+  String get circleStart => 'Magsimula ng circle';
+
+  @override
+  String get circleJoin => 'Sumali gamit ang code';
+
+  @override
+  String get circleName => 'Pangalan ng circle';
+
+  @override
+  String get circleNameHint => 'hal. Pamilya, Youth group';
+
+  @override
+  String get circleYourName => 'Pangalan mo';
+
+  @override
+  String get circleYourNameHint => 'Gaya ng makikita ng iba';
+
+  @override
+  String get circleCode => 'Code';
+
+  @override
+  String circleMembers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count miyembro',
+      one: '1 miyembro',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleNew => 'Bago';
+
+  @override
+  String get circleInvite => 'Mag-imbita';
+
+  @override
+  String get circleInviteCode => 'Invite code';
+
+  @override
+  String circleInviteText(String name, String code) {
+    return 'Sumali sa prayer circle kong \"$name\" sa JesusAnswers, para maipanalangin natin ang isa\'t isa.\nBuksan ang app, i-tap ang Manalangin → Mga Prayer Circle → Sumali gamit ang code, at ilagay: $code';
+  }
+
+  @override
+  String get circleAskHint => 'Magbahagi ng prayer request…';
+
+  @override
+  String get circleEmpty =>
+      'Wala pang prayer request. Ibahagi ang sa iyo, at ipapanalangin ka ng iba.';
+
+  @override
+  String get circleIPrayed => 'Nanalangin ako';
+
+  @override
+  String get circleAnswered => 'Sinagot ang panalangin';
+
+  @override
+  String get circleMarkAnswered => 'Sinagot ito ng Diyos';
+
+  @override
+  String get circleDelete => 'Burahin';
+
+  @override
+  String get circleReport => 'I-report';
+
+  @override
+  String get circleReported => 'Na-report. Hindi mo na ito makikita.';
+
+  @override
+  String get circleMembersTitle => 'Mga miyembro';
+
+  @override
+  String get circleOwner => 'Nagsimula ng circle';
+
+  @override
+  String get circleYou => 'Ikaw';
+
+  @override
+  String get circleRemoveMember => 'Alisin sa circle';
+
+  @override
+  String circleRemoveConfirm(String name) {
+    return 'Alisin si $name? Mabubura ang kanyang mga request, at hindi na siya makakasali ulit.';
+  }
+
+  @override
+  String get circleLeave => 'Umalis sa circle';
+
+  @override
+  String get circleLeaveConfirm =>
+      'Umalis sa circle na ito? Mabubura ang mga prayer request mo rito.';
+
+  @override
+  String circleReachOut(String name) {
+    return 'Maaaring may pinagdaraanang napakabigat si $name. Pakitawagan o dalawin siya ngayong araw.';
+  }
+
+  @override
+  String get circleNotFound =>
+      'Walang circle na may ganitong code. Suriin ito at subukang muli.';
+
+  @override
+  String get circleFull => 'Puno na ang circle na ito.';
+
+  @override
+  String get circleTooMany =>
+      'Masyado ka nang maraming circle. Umalis sa isa para makasali sa iba.';
+
+  @override
+  String get circleNotAllowed => 'Hindi mo iyan magagawa sa circle na ito.';
+
+  @override
+  String get circleOffline =>
+      'Hindi makakonekta. Suriin ang internet mo at subukang muli.';
 }

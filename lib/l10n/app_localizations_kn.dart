@@ -728,4 +728,133 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get reminder7 =>
       'ಇಂದಿನ ವಾಕ್ಯ ನಿಮಗಾಗಿ ಕಾಯುತ್ತಿದೆ. ಓದಿರಿ, ಪ್ರಾರ್ಥಿಸಿರಿ, ಅವರ ಮಾತು ಕೇಳಿರಿ.';
+
+  @override
+  String get circlesTitle => 'ಪ್ರಾರ್ಥನಾ ಗುಂಪುಗಳು';
+
+  @override
+  String get circlesHint =>
+      'ಕುಟುಂಬ ಮತ್ತು ಸ್ನೇಹಿತರೊಂದಿಗೆ ಒಬ್ಬರಿಗೊಬ್ಬರು ಪ್ರಾರ್ಥಿಸಿ';
+
+  @override
+  String get circlesIntro =>
+      'ಒಂದು ಗುಂಪನ್ನು ಆರಂಭಿಸಿ ಮತ್ತು ನಿಮ್ಮೊಂದಿಗೆ ಪ್ರಾರ್ಥಿಸುವವರಿಗೆ ಅದರ ಕೋಡ್ ಕಳುಹಿಸಿ, ಅಥವಾ ಯಾರಾದರೂ ಕಳುಹಿಸಿದ ಕೋಡ್‌ನಿಂದ ಗುಂಪಿಗೆ ಸೇರಿ.';
+
+  @override
+  String get circleStart => 'ಗುಂಪು ಆರಂಭಿಸಿ';
+
+  @override
+  String get circleJoin => 'ಕೋಡ್‌ನಿಂದ ಸೇರಿ';
+
+  @override
+  String get circleName => 'ಗುಂಪಿನ ಹೆಸರು';
+
+  @override
+  String get circleNameHint => 'ಉದಾ. ಕುಟುಂಬ, ಯುವಜನ ಅನ್ಯೋನ್ಯತೆ';
+
+  @override
+  String get circleYourName => 'ನಿಮ್ಮ ಹೆಸರು';
+
+  @override
+  String get circleYourNameHint => 'ಇತರರಿಗೆ ಕಾಣುವಂತೆ';
+
+  @override
+  String get circleCode => 'ಕೋಡ್';
+
+  @override
+  String circleMembers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ಸದಸ್ಯರು',
+      one: '1 ಸದಸ್ಯ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleNew => 'ಹೊಸದು';
+
+  @override
+  String get circleInvite => 'ಆಹ್ವಾನಿಸಿ';
+
+  @override
+  String get circleInviteCode => 'ಆಹ್ವಾನ ಕೋಡ್';
+
+  @override
+  String circleInviteText(String name, String code) {
+    return 'JesusAnswers ನಲ್ಲಿ ನನ್ನ ಪ್ರಾರ್ಥನಾ ಗುಂಪು \"$name\" ಗೆ ಸೇರಿ, ನಾವು ಒಬ್ಬರಿಗೊಬ್ಬರು ಪ್ರಾರ್ಥಿಸೋಣ.\nಆ್ಯಪ್ ತೆರೆದು, ಪ್ರಾರ್ಥನೆ → ಪ್ರಾರ್ಥನಾ ಗುಂಪುಗಳು → ಕೋಡ್‌ನಿಂದ ಸೇರಿ ಒತ್ತಿ, ಇದನ್ನು ನಮೂದಿಸಿ: $code';
+  }
+
+  @override
+  String get circleAskHint => 'ಪ್ರಾರ್ಥನಾ ವಿನಂತಿ ಬರೆಯಿರಿ…';
+
+  @override
+  String get circleEmpty =>
+      'ಇನ್ನೂ ಪ್ರಾರ್ಥನಾ ವಿನಂತಿಗಳಿಲ್ಲ. ನಿಮ್ಮದನ್ನು ಬರೆಯಿರಿ, ಇತರರು ನಿಮಗಾಗಿ ಪ್ರಾರ್ಥಿಸುತ್ತಾರೆ.';
+
+  @override
+  String get circleIPrayed => 'ನಾನು ಪ್ರಾರ್ಥಿಸಿದೆ';
+
+  @override
+  String get circleAnswered => 'ಪ್ರಾರ್ಥನೆಗೆ ಉತ್ತರ ಸಿಕ್ಕಿತು';
+
+  @override
+  String get circleMarkAnswered => 'ದೇವರು ಉತ್ತರಿಸಿದರು';
+
+  @override
+  String get circleDelete => 'ಅಳಿಸಿ';
+
+  @override
+  String get circleReport => 'ವರದಿ ಮಾಡಿ';
+
+  @override
+  String get circleReported => 'ವರದಿ ಮಾಡಲಾಗಿದೆ. ಇದು ನಿಮಗೆ ಮತ್ತೆ ಕಾಣಿಸುವುದಿಲ್ಲ.';
+
+  @override
+  String get circleMembersTitle => 'ಸದಸ್ಯರು';
+
+  @override
+  String get circleOwner => 'ಗುಂಪನ್ನು ಆರಂಭಿಸಿದವರು';
+
+  @override
+  String get circleYou => 'ನೀವು';
+
+  @override
+  String get circleRemoveMember => 'ಗುಂಪಿನಿಂದ ತೆಗೆದುಹಾಕಿ';
+
+  @override
+  String circleRemoveConfirm(String name) {
+    return '$name ಅವರನ್ನು ತೆಗೆದುಹಾಕಬೇಕೆ? ಅವರ ವಿನಂತಿಗಳು ಅಳಿಸಿಹೋಗುತ್ತವೆ, ಅವರು ಮತ್ತೆ ಸೇರಲಾರರು.';
+  }
+
+  @override
+  String get circleLeave => 'ಗುಂಪಿನಿಂದ ಹೊರಬನ್ನಿ';
+
+  @override
+  String get circleLeaveConfirm =>
+      'ಈ ಗುಂಪಿನಿಂದ ಹೊರಬರಬೇಕೆ? ಇದರಲ್ಲಿನ ನಿಮ್ಮ ಪ್ರಾರ್ಥನಾ ವಿನಂತಿಗಳು ಅಳಿಸಿಹೋಗುತ್ತವೆ.';
+
+  @override
+  String circleReachOut(String name) {
+    return '$name ಬಹಳ ಕಷ್ಟದ ಸಮಯದಲ್ಲಿರಬಹುದು. ದಯವಿಟ್ಟು ಇಂದೇ ಅವರಿಗೆ ಕರೆ ಮಾಡಿ ಅಥವಾ ಭೇಟಿ ಮಾಡಿ.';
+  }
+
+  @override
+  String get circleNotFound =>
+      'ಈ ಕೋಡ್‌ನ ಯಾವುದೇ ಗುಂಪು ಇಲ್ಲ. ಪರಿಶೀಲಿಸಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
+
+  @override
+  String get circleFull => 'ಈ ಗುಂಪು ತುಂಬಿದೆ.';
+
+  @override
+  String get circleTooMany =>
+      'ನೀವು ತುಂಬಾ ಗುಂಪುಗಳಲ್ಲಿದ್ದೀರಿ. ಇನ್ನೊಂದಕ್ಕೆ ಸೇರಲು ಒಂದನ್ನು ಬಿಡಿ.';
+
+  @override
+  String get circleNotAllowed => 'ಈ ಗುಂಪಿನಲ್ಲಿ ನೀವು ಅದನ್ನು ಮಾಡಲಾಗದು.';
+
+  @override
+  String get circleOffline =>
+      'ಸಂಪರ್ಕವಾಗಲಿಲ್ಲ. ನಿಮ್ಮ ಇಂಟರ್ನೆಟ್ ಪರಿಶೀಲಿಸಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
 }

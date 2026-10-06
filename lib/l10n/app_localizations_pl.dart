@@ -724,4 +724,135 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get reminder7 =>
       'Dzisiejsze Słowo czeka na ciebie. Przeczytaj je, pomódl się i posłuchaj Go.';
+
+  @override
+  String get circlesTitle => 'Kręgi modlitwy';
+
+  @override
+  String get circlesHint =>
+      'Módlcie się za siebie nawzajem z rodziną i przyjaciółmi';
+
+  @override
+  String get circlesIntro =>
+      'Załóż krąg i wyślij jego kod osobom, z którymi się modlisz, albo dołącz do kręgu kodem, który ktoś ci wysłał.';
+
+  @override
+  String get circleStart => 'Załóż krąg';
+
+  @override
+  String get circleJoin => 'Dołącz kodem';
+
+  @override
+  String get circleName => 'Nazwa kręgu';
+
+  @override
+  String get circleNameHint => 'np. Rodzina, Grupa młodzieżowa';
+
+  @override
+  String get circleYourName => 'Twoje imię';
+
+  @override
+  String get circleYourNameHint => 'Tak zobaczą je inni';
+
+  @override
+  String get circleCode => 'Kod';
+
+  @override
+  String circleMembers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count członka',
+      many: '$count członków',
+      few: '$count członków',
+      one: '1 członek',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleNew => 'Nowe';
+
+  @override
+  String get circleInvite => 'Zaproś';
+
+  @override
+  String get circleInviteCode => 'Kod zaproszenia';
+
+  @override
+  String circleInviteText(String name, String code) {
+    return 'Dołącz do mojego kręgu modlitwy „$name” w JesusAnswers, abyśmy modlili się za siebie nawzajem.\nOtwórz aplikację, stuknij Modlitwa → Kręgi modlitwy → Dołącz kodem i wpisz: $code';
+  }
+
+  @override
+  String get circleAskHint => 'Podziel się intencją modlitwy…';
+
+  @override
+  String get circleEmpty =>
+      'Nie ma jeszcze intencji. Podziel się swoją, a inni będą się za ciebie modlić.';
+
+  @override
+  String get circleIPrayed => 'Modlę się';
+
+  @override
+  String get circleAnswered => 'Modlitwa wysłuchana';
+
+  @override
+  String get circleMarkAnswered => 'Bóg odpowiedział';
+
+  @override
+  String get circleDelete => 'Usuń';
+
+  @override
+  String get circleReport => 'Zgłoś';
+
+  @override
+  String get circleReported => 'Zgłoszono. Nie zobaczysz tego więcej.';
+
+  @override
+  String get circleMembersTitle => 'Członkowie';
+
+  @override
+  String get circleOwner => 'Założył(a) krąg';
+
+  @override
+  String get circleYou => 'Ty';
+
+  @override
+  String get circleRemoveMember => 'Usuń z kręgu';
+
+  @override
+  String circleRemoveConfirm(String name) {
+    return 'Usunąć: $name? Intencje tej osoby zostaną usunięte i nie będzie mogła dołączyć ponownie.';
+  }
+
+  @override
+  String get circleLeave => 'Opuść krąg';
+
+  @override
+  String get circleLeaveConfirm =>
+      'Opuścić ten krąg? Twoje intencje w nim zostaną usunięte.';
+
+  @override
+  String circleReachOut(String name) {
+    return '$name może przechodzić przez coś bardzo trudnego. Zadzwoń lub odwiedź tę osobę jeszcze dziś.';
+  }
+
+  @override
+  String get circleNotFound =>
+      'Nie ma kręgu z tym kodem. Sprawdź go i spróbuj ponownie.';
+
+  @override
+  String get circleFull => 'Ten krąg jest pełny.';
+
+  @override
+  String get circleTooMany =>
+      'Należysz do zbyt wielu kręgów. Opuść jeden, aby dołączyć do innego.';
+
+  @override
+  String get circleNotAllowed => 'Nie możesz tego zrobić w tym kręgu.';
+
+  @override
+  String get circleOffline =>
+      'Nie udało się połączyć. Sprawdź internet i spróbuj ponownie.';
 }

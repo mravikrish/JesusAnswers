@@ -58,8 +58,8 @@ public class CommunityService {
         return item != null && ITEM.matcher(item).matches();
     }
 
-    /** The install id is never stored as sent: only a salted hash of it. */
-    String device(String installId) {
+    /** The install id is never stored as sent: only a salted hash of it. Prayer circles use the same. */
+    public String device(String installId) {
         try {
             byte[] hash = MessageDigest.getInstance("SHA-256")
                     .digest((salt + ':' + installId).getBytes(StandardCharsets.UTF_8));

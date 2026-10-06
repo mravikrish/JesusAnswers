@@ -9,6 +9,7 @@ import 'core/widgets/app_shell.dart';
 import 'data/models/answer.dart';
 import 'features/answer/answer_screen.dart';
 import 'features/bible/bible_screen.dart';
+import 'features/circles/circles_screen.dart';
 import 'features/daily_word/daily_word_screen.dart';
 import 'features/feedback/feedback_screen.dart';
 import 'features/home/home_screen.dart';
@@ -78,6 +79,8 @@ final routerProvider = Provider<GoRouter>((ref) {
           forSomeone: state.uri.queryParameters['for'] == '1',
         ),
       ),
+      GoRoute(path: '/circles', builder: (_, _) => const CirclesScreen()),
+      GoRoute(path: '/circles/:code', builder: (_, state) => CircleScreen(code: state.pathParameters['code']!)),
       GoRoute(path: '/stories', builder: (_, _) => const StoriesScreen()),
       GoRoute(path: '/stories/:id', builder: (_, state) => StoryScreen(id: state.pathParameters['id']!)),
       GoRoute(path: '/jesus', builder: (_, _) => const JesusWordsScreen()),

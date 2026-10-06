@@ -13,6 +13,7 @@ import 'data/models/story.dart';
 import 'data/models/verse.dart';
 import 'l10n/app_localizations.dart';
 import 'services/answer/answer_service.dart';
+import 'services/circle_service.dart';
 import 'services/community_service.dart';
 import 'services/days_service.dart';
 import 'services/feedback/feedback_service.dart';
@@ -40,6 +41,12 @@ final communityProvider = Provider((ref) {
   ref.onDispose(community.dispose);
   return community;
 });
+/// Prayer circles, with the same random install id as the counts.
+final circleServiceProvider = Provider((ref) {
+  final community = ref.read(communityProvider);
+  return CircleService(ref.read(prefsProvider), baseUrl: apiBaseUrl, installId: () => community.installId);
+});
+
 /// Days with Jesus, kept on the phone.
 final daysProvider = Provider((ref) {
   final days = DaysService(ref.read(prefsProvider));

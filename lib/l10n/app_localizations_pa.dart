@@ -726,4 +726,132 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get reminder7 =>
       'ਅੱਜ ਦਾ ਬਚਨ ਤੁਹਾਡੀ ਉਡੀਕ ਕਰ ਰਿਹਾ ਹੈ। ਇਸਨੂੰ ਪੜ੍ਹੋ, ਪ੍ਰਾਰਥਨਾ ਕਰੋ, ਅਤੇ ਉਨ੍ਹਾਂ ਦੀ ਸੁਣੋ।';
+
+  @override
+  String get circlesTitle => 'ਪ੍ਰਾਰਥਨਾ ਮੰਡਲੀ';
+
+  @override
+  String get circlesHint => 'ਪਰਿਵਾਰ ਅਤੇ ਦੋਸਤਾਂ ਨਾਲ ਇੱਕ-ਦੂਜੇ ਲਈ ਪ੍ਰਾਰਥਨਾ ਕਰੋ';
+
+  @override
+  String get circlesIntro =>
+      'ਇੱਕ ਮੰਡਲੀ ਸ਼ੁਰੂ ਕਰੋ ਅਤੇ ਜਿਨ੍ਹਾਂ ਨਾਲ ਤੁਸੀਂ ਪ੍ਰਾਰਥਨਾ ਕਰਦੇ ਹੋ ਉਨ੍ਹਾਂ ਨੂੰ ਇਸਦਾ ਕੋਡ ਭੇਜੋ, ਜਾਂ ਕਿਸੇ ਦੇ ਭੇਜੇ ਕੋਡ ਨਾਲ ਮੰਡਲੀ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ।';
+
+  @override
+  String get circleStart => 'ਮੰਡਲੀ ਸ਼ੁਰੂ ਕਰੋ';
+
+  @override
+  String get circleJoin => 'ਕੋਡ ਨਾਲ ਸ਼ਾਮਲ ਹੋਵੋ';
+
+  @override
+  String get circleName => 'ਮੰਡਲੀ ਦਾ ਨਾਮ';
+
+  @override
+  String get circleNameHint => 'ਜਿਵੇਂ ਪਰਿਵਾਰ, ਨੌਜਵਾਨ ਸੰਗਤ';
+
+  @override
+  String get circleYourName => 'ਤੁਹਾਡਾ ਨਾਮ';
+
+  @override
+  String get circleYourNameHint => 'ਜਿਵੇਂ ਦੂਜੇ ਵੇਖਣਗੇ';
+
+  @override
+  String get circleCode => 'ਕੋਡ';
+
+  @override
+  String circleMembers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਮੈਂਬਰ',
+      one: '1 ਮੈਂਬਰ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleNew => 'ਨਵਾਂ';
+
+  @override
+  String get circleInvite => 'ਸੱਦਾ ਦਿਓ';
+
+  @override
+  String get circleInviteCode => 'ਸੱਦਾ ਕੋਡ';
+
+  @override
+  String circleInviteText(String name, String code) {
+    return 'JesusAnswers \'ਤੇ ਮੇਰੀ ਪ੍ਰਾਰਥਨਾ ਮੰਡਲੀ \"$name\" ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ, ਤਾਂ ਜੋ ਅਸੀਂ ਇੱਕ-ਦੂਜੇ ਲਈ ਪ੍ਰਾਰਥਨਾ ਕਰ ਸਕੀਏ।\nਐਪ ਖੋਲ੍ਹੋ, ਪ੍ਰਾਰਥਨਾ → ਪ੍ਰਾਰਥਨਾ ਮੰਡਲੀ → ਕੋਡ ਨਾਲ ਸ਼ਾਮਲ ਹੋਵੋ \'ਤੇ ਟੈਪ ਕਰੋ, ਅਤੇ ਇਹ ਲਿਖੋ: $code';
+  }
+
+  @override
+  String get circleAskHint => 'ਪ੍ਰਾਰਥਨਾ ਬੇਨਤੀ ਲਿਖੋ…';
+
+  @override
+  String get circleEmpty =>
+      'ਅਜੇ ਕੋਈ ਪ੍ਰਾਰਥਨਾ ਬੇਨਤੀ ਨਹੀਂ ਹੈ। ਆਪਣੀ ਲਿਖੋ, ਅਤੇ ਦੂਜੇ ਤੁਹਾਡੇ ਲਈ ਪ੍ਰਾਰਥਨਾ ਕਰਨਗੇ।';
+
+  @override
+  String get circleIPrayed => 'ਮੈਂ ਪ੍ਰਾਰਥਨਾ ਕੀਤੀ';
+
+  @override
+  String get circleAnswered => 'ਪ੍ਰਾਰਥਨਾ ਦਾ ਜਵਾਬ ਮਿਲਿਆ';
+
+  @override
+  String get circleMarkAnswered => 'ਪਰਮੇਸ਼ੁਰ ਨੇ ਜਵਾਬ ਦਿੱਤਾ';
+
+  @override
+  String get circleDelete => 'ਮਿਟਾਓ';
+
+  @override
+  String get circleReport => 'ਰਿਪੋਰਟ ਕਰੋ';
+
+  @override
+  String get circleReported => 'ਰਿਪੋਰਟ ਹੋ ਗਈ। ਇਹ ਤੁਹਾਨੂੰ ਮੁੜ ਨਹੀਂ ਦਿਸੇਗਾ।';
+
+  @override
+  String get circleMembersTitle => 'ਮੈਂਬਰ';
+
+  @override
+  String get circleOwner => 'ਮੰਡਲੀ ਸ਼ੁਰੂ ਕੀਤੀ';
+
+  @override
+  String get circleYou => 'ਤੁਸੀਂ';
+
+  @override
+  String get circleRemoveMember => 'ਮੰਡਲੀ ਵਿੱਚੋਂ ਹਟਾਓ';
+
+  @override
+  String circleRemoveConfirm(String name) {
+    return '$name ਨੂੰ ਹਟਾਉਣਾ ਹੈ? ਉਨ੍ਹਾਂ ਦੀਆਂ ਬੇਨਤੀਆਂ ਮਿਟ ਜਾਣਗੀਆਂ, ਅਤੇ ਉਹ ਮੁੜ ਸ਼ਾਮਲ ਨਹੀਂ ਹੋ ਸਕਣਗੇ।';
+  }
+
+  @override
+  String get circleLeave => 'ਮੰਡਲੀ ਛੱਡੋ';
+
+  @override
+  String get circleLeaveConfirm =>
+      'ਇਹ ਮੰਡਲੀ ਛੱਡਣੀ ਹੈ? ਇਸ ਵਿੱਚ ਤੁਹਾਡੀਆਂ ਪ੍ਰਾਰਥਨਾ ਬੇਨਤੀਆਂ ਮਿਟ ਜਾਣਗੀਆਂ।';
+
+  @override
+  String circleReachOut(String name) {
+    return '$name ਸ਼ਾਇਦ ਬਹੁਤ ਔਖੇ ਸਮੇਂ ਵਿੱਚੋਂ ਲੰਘ ਰਹੇ ਹਨ। ਕਿਰਪਾ ਕਰਕੇ ਅੱਜ ਹੀ ਉਨ੍ਹਾਂ ਨੂੰ ਫ਼ੋਨ ਕਰੋ ਜਾਂ ਮਿਲੋ।';
+  }
+
+  @override
+  String get circleNotFound =>
+      'ਇਸ ਕੋਡ ਦੀ ਕੋਈ ਮੰਡਲੀ ਨਹੀਂ ਹੈ। ਜਾਂਚ ਕੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
+
+  @override
+  String get circleFull => 'ਇਹ ਮੰਡਲੀ ਭਰ ਚੁੱਕੀ ਹੈ।';
+
+  @override
+  String get circleTooMany =>
+      'ਤੁਸੀਂ ਬਹੁਤ ਸਾਰੀਆਂ ਮੰਡਲੀਆਂ ਵਿੱਚ ਹੋ। ਹੋਰ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਲਈ ਇੱਕ ਛੱਡੋ।';
+
+  @override
+  String get circleNotAllowed => 'ਤੁਸੀਂ ਇਸ ਮੰਡਲੀ ਵਿੱਚ ਇਹ ਨਹੀਂ ਕਰ ਸਕਦੇ।';
+
+  @override
+  String get circleOffline =>
+      'ਜੁੜ ਨਹੀਂ ਸਕੇ। ਆਪਣਾ ਇੰਟਰਨੈੱਟ ਜਾਂਚੋ ਅਤੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
 }

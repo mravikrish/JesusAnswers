@@ -729,4 +729,133 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get reminder7 =>
       'ଆଜିର ବାକ୍ୟ ଆପଣଙ୍କୁ ଅପେକ୍ଷା କରୁଛି। ପଢ଼ନ୍ତୁ, ପ୍ରାର୍ଥନା କରନ୍ତୁ, ଆଉ ତାଙ୍କ କଥା ଶୁଣନ୍ତୁ।';
+
+  @override
+  String get circlesTitle => 'ପ୍ରାର୍ଥନା ମଣ୍ଡଳୀ';
+
+  @override
+  String get circlesHint =>
+      'ପରିବାର ଓ ବନ୍ଧୁମାନଙ୍କ ସହ ପରସ୍ପର ପାଇଁ ପ୍ରାର୍ଥନା କରନ୍ତୁ';
+
+  @override
+  String get circlesIntro =>
+      'ଏକ ମଣ୍ଡଳୀ ଆରମ୍ଭ କରି ଆପଣଙ୍କ ସହ ପ୍ରାର୍ଥନା କରୁଥିବା ଲୋକଙ୍କୁ ଏହାର କୋଡ୍ ପଠାନ୍ତୁ, କିମ୍ବା କେହି ପଠାଇଥିବା କୋଡ୍ ଦ୍ୱାରା ମଣ୍ଡଳୀରେ ଯୋଗ ଦିଅନ୍ତୁ।';
+
+  @override
+  String get circleStart => 'ମଣ୍ଡଳୀ ଆରମ୍ଭ କରନ୍ତୁ';
+
+  @override
+  String get circleJoin => 'କୋଡ୍ ଦ୍ୱାରା ଯୋଗ ଦିଅନ୍ତୁ';
+
+  @override
+  String get circleName => 'ମଣ୍ଡଳୀର ନାମ';
+
+  @override
+  String get circleNameHint => 'ଯେପରି ପରିବାର, ଯୁବ ସହଭାଗିତା';
+
+  @override
+  String get circleYourName => 'ଆପଣଙ୍କ ନାମ';
+
+  @override
+  String get circleYourNameHint => 'ଅନ୍ୟମାନେ ଯେପରି ଦେଖିବେ';
+
+  @override
+  String get circleCode => 'କୋଡ୍';
+
+  @override
+  String circleMembers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ଜଣ ସଦସ୍ୟ',
+      one: '1 ଜଣ ସଦସ୍ୟ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleNew => 'ନୂଆ';
+
+  @override
+  String get circleInvite => 'ନିମନ୍ତ୍ରଣ କରନ୍ତୁ';
+
+  @override
+  String get circleInviteCode => 'ନିମନ୍ତ୍ରଣ କୋଡ୍';
+
+  @override
+  String circleInviteText(String name, String code) {
+    return 'JesusAnswers ରେ ମୋର ପ୍ରାର୍ଥନା ମଣ୍ଡଳୀ \"$name\" ରେ ଯୋଗ ଦିଅନ୍ତୁ, ଯେପରି ଆମେ ପରସ୍ପର ପାଇଁ ପ୍ରାର୍ଥନା କରିପାରିବା।\nଆପ୍ ଖୋଲି, ପ୍ରାର୍ଥନା → ପ୍ରାର୍ଥନା ମଣ୍ଡଳୀ → କୋଡ୍ ଦ୍ୱାରା ଯୋଗ ଦିଅନ୍ତୁ ଟ୍ୟାପ୍ କରନ୍ତୁ, ଏବଂ ଏହା ଲେଖନ୍ତୁ: $code';
+  }
+
+  @override
+  String get circleAskHint => 'ପ୍ରାର୍ଥନା ନିବେଦନ ଲେଖନ୍ତୁ…';
+
+  @override
+  String get circleEmpty =>
+      'ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ପ୍ରାର୍ଥନା ନିବେଦନ ନାହିଁ। ଆପଣଙ୍କର ଲେଖନ୍ତୁ, ଅନ୍ୟମାନେ ଆପଣଙ୍କ ପାଇଁ ପ୍ରାର୍ଥନା କରିବେ।';
+
+  @override
+  String get circleIPrayed => 'ମୁଁ ପ୍ରାର୍ଥନା କଲି';
+
+  @override
+  String get circleAnswered => 'ପ୍ରାର୍ଥନାର ଉତ୍ତର ମିଳିଲା';
+
+  @override
+  String get circleMarkAnswered => 'ଈଶ୍ୱର ଉତ୍ତର ଦେଲେ';
+
+  @override
+  String get circleDelete => 'ବିଲୋପ କରନ୍ତୁ';
+
+  @override
+  String get circleReport => 'ରିପୋର୍ଟ କରନ୍ତୁ';
+
+  @override
+  String get circleReported => 'ରିପୋର୍ଟ ହେଲା। ଏହା ଆପଣଙ୍କୁ ଆଉ ଦେଖାଯିବ ନାହିଁ।';
+
+  @override
+  String get circleMembersTitle => 'ସଦସ୍ୟମାନେ';
+
+  @override
+  String get circleOwner => 'ମଣ୍ଡଳୀ ଆରମ୍ଭ କଲେ';
+
+  @override
+  String get circleYou => 'ଆପଣ';
+
+  @override
+  String get circleRemoveMember => 'ମଣ୍ଡଳୀରୁ ହଟାନ୍ତୁ';
+
+  @override
+  String circleRemoveConfirm(String name) {
+    return '$name ଙ୍କୁ ହଟାଇବେ? ତାଙ୍କ ନିବେଦନଗୁଡ଼ିକ ବିଲୋପ ହେବ, ଏବଂ ସେ ପୁଣି ଯୋଗ ଦେଇପାରିବେ ନାହିଁ।';
+  }
+
+  @override
+  String get circleLeave => 'ମଣ୍ଡଳୀ ଛାଡ଼ନ୍ତୁ';
+
+  @override
+  String get circleLeaveConfirm =>
+      'ଏହି ମଣ୍ଡଳୀ ଛାଡ଼ିବେ? ଏଥିରେ ଥିବା ଆପଣଙ୍କ ପ୍ରାର୍ଥନା ନିବେଦନ ବିଲୋପ ହେବ।';
+
+  @override
+  String circleReachOut(String name) {
+    return '$name ହୁଏତ ବହୁତ କଠିନ ସମୟ ଦେଇ ଗତି କରୁଛନ୍ତି। ଦୟାକରି ଆଜି ହିଁ ତାଙ୍କୁ ଫୋନ୍ କରନ୍ତୁ କିମ୍ବା ଦେଖା କରନ୍ତୁ।';
+  }
+
+  @override
+  String get circleNotFound =>
+      'ଏହି କୋଡ୍‌ର କୌଣସି ମଣ୍ଡଳୀ ନାହିଁ। ଯାଞ୍ଚ କରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।';
+
+  @override
+  String get circleFull => 'ଏହି ମଣ୍ଡଳୀ ପୂର୍ଣ୍ଣ ହୋଇଯାଇଛି।';
+
+  @override
+  String get circleTooMany =>
+      'ଆପଣ ଅନେକ ମଣ୍ଡଳୀରେ ଅଛନ୍ତି। ଅନ୍ୟଟିରେ ଯୋଗ ଦେବାକୁ ଗୋଟିଏ ଛାଡ଼ନ୍ତୁ।';
+
+  @override
+  String get circleNotAllowed => 'ଏହି ମଣ୍ଡଳୀରେ ଆପଣ ତାହା କରିପାରିବେ ନାହିଁ।';
+
+  @override
+  String get circleOffline =>
+      'ସଂଯୋଗ ହେଲା ନାହିଁ। ଆପଣଙ୍କ ଇଣ୍ଟରନେଟ୍ ଯାଞ୍ଚ କରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।';
 }

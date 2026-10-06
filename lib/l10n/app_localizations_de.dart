@@ -728,4 +728,132 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get reminder7 =>
       'Das Wort für heute wartet auf dich. Lies es, bete, und hör auf Ihn.';
+
+  @override
+  String get circlesTitle => 'Gebetskreise';
+
+  @override
+  String get circlesHint => 'Betet füreinander, mit Familie und Freunden';
+
+  @override
+  String get circlesIntro =>
+      'Gründe einen Kreis und schick seinen Code an die Menschen, mit denen du betest, oder tritt mit einem Code, den dir jemand geschickt hat, einem Kreis bei.';
+
+  @override
+  String get circleStart => 'Kreis gründen';
+
+  @override
+  String get circleJoin => 'Mit Code beitreten';
+
+  @override
+  String get circleName => 'Name des Kreises';
+
+  @override
+  String get circleNameHint => 'z. B. Familie, Jugendgruppe';
+
+  @override
+  String get circleYourName => 'Dein Name';
+
+  @override
+  String get circleYourNameHint => 'So sehen ihn die anderen';
+
+  @override
+  String get circleCode => 'Code';
+
+  @override
+  String circleMembers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Mitglieder',
+      one: '1 Mitglied',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleNew => 'Neu';
+
+  @override
+  String get circleInvite => 'Einladen';
+
+  @override
+  String get circleInviteCode => 'Einladungscode';
+
+  @override
+  String circleInviteText(String name, String code) {
+    return 'Komm in meinen Gebetskreis „$name“ bei JesusAnswers, damit wir füreinander beten können.\nÖffne die App, tippe auf Beten → Gebetskreise → Mit Code beitreten und gib ein: $code';
+  }
+
+  @override
+  String get circleAskHint => 'Teile ein Gebetsanliegen…';
+
+  @override
+  String get circleEmpty =>
+      'Noch keine Gebetsanliegen. Teile deins, und die anderen beten für dich.';
+
+  @override
+  String get circleIPrayed => 'Ich habe gebetet';
+
+  @override
+  String get circleAnswered => 'Gebet erhört';
+
+  @override
+  String get circleMarkAnswered => 'Gott hat das erhört';
+
+  @override
+  String get circleDelete => 'Löschen';
+
+  @override
+  String get circleReport => 'Melden';
+
+  @override
+  String get circleReported => 'Gemeldet. Du siehst es nicht mehr.';
+
+  @override
+  String get circleMembersTitle => 'Mitglieder';
+
+  @override
+  String get circleOwner => 'Hat den Kreis gegründet';
+
+  @override
+  String get circleYou => 'Du';
+
+  @override
+  String get circleRemoveMember => 'Aus dem Kreis entfernen';
+
+  @override
+  String circleRemoveConfirm(String name) {
+    return '$name entfernen? Die Anliegen werden gelöscht, und ein erneuter Beitritt ist nicht möglich.';
+  }
+
+  @override
+  String get circleLeave => 'Kreis verlassen';
+
+  @override
+  String get circleLeaveConfirm =>
+      'Diesen Kreis verlassen? Deine Gebetsanliegen darin werden gelöscht.';
+
+  @override
+  String circleReachOut(String name) {
+    return '$name geht vielleicht gerade durch etwas sehr Schweres. Bitte ruf heute noch an oder besuche sie oder ihn.';
+  }
+
+  @override
+  String get circleNotFound =>
+      'Es gibt keinen Kreis mit diesem Code. Prüfe ihn und versuch es noch einmal.';
+
+  @override
+  String get circleFull => 'Dieser Kreis ist voll.';
+
+  @override
+  String get circleTooMany =>
+      'Du bist in zu vielen Kreisen. Verlass einen, um einem anderen beizutreten.';
+
+  @override
+  String get circleNotAllowed => 'Das kannst du in diesem Kreis nicht tun.';
+
+  @override
+  String get circleOffline =>
+      'Keine Verbindung. Prüfe dein Internet und versuch es noch einmal.';
 }

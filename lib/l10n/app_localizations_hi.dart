@@ -722,4 +722,133 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get reminder7 =>
       'आज का वचन आपकी प्रतीक्षा कर रहा है। उसे पढ़िए, प्रार्थना कीजिए, और उनकी सुनिए।';
+
+  @override
+  String get circlesTitle => 'प्रार्थना मंडली';
+
+  @override
+  String get circlesHint =>
+      'परिवार और दोस्तों के साथ एक-दूसरे के लिए प्रार्थना करें';
+
+  @override
+  String get circlesIntro =>
+      'एक मंडली शुरू करें और उसका कोड उन लोगों को भेजें जिनके साथ आप प्रार्थना करते हैं, या किसी के भेजे कोड से मंडली में जुड़ें।';
+
+  @override
+  String get circleStart => 'मंडली शुरू करें';
+
+  @override
+  String get circleJoin => 'कोड से जुड़ें';
+
+  @override
+  String get circleName => 'मंडली का नाम';
+
+  @override
+  String get circleNameHint => 'जैसे परिवार, युवा संगति';
+
+  @override
+  String get circleYourName => 'आपका नाम';
+
+  @override
+  String get circleYourNameHint => 'जैसा दूसरे देखेंगे';
+
+  @override
+  String get circleCode => 'कोड';
+
+  @override
+  String circleMembers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count सदस्य',
+      one: '1 सदस्य',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleNew => 'नया';
+
+  @override
+  String get circleInvite => 'आमंत्रित करें';
+
+  @override
+  String get circleInviteCode => 'आमंत्रण कोड';
+
+  @override
+  String circleInviteText(String name, String code) {
+    return 'JesusAnswers पर मेरी प्रार्थना मंडली \"$name\" से जुड़िए, ताकि हम एक-दूसरे के लिए प्रार्थना कर सकें।\nऐप खोलें, प्रार्थना → प्रार्थना मंडली → कोड से जुड़ें पर टैप करें, और यह डालें: $code';
+  }
+
+  @override
+  String get circleAskHint => 'प्रार्थना निवेदन लिखें…';
+
+  @override
+  String get circleEmpty =>
+      'अभी कोई प्रार्थना निवेदन नहीं है। अपना लिखें, और दूसरे आपके लिए प्रार्थना करेंगे।';
+
+  @override
+  String get circleIPrayed => 'मैंने प्रार्थना की';
+
+  @override
+  String get circleAnswered => 'प्रार्थना का उत्तर मिला';
+
+  @override
+  String get circleMarkAnswered => 'परमेश्वर ने उत्तर दिया';
+
+  @override
+  String get circleDelete => 'हटाएँ';
+
+  @override
+  String get circleReport => 'रिपोर्ट करें';
+
+  @override
+  String get circleReported => 'रिपोर्ट हो गई। यह आपको फिर नहीं दिखेगा।';
+
+  @override
+  String get circleMembersTitle => 'सदस्य';
+
+  @override
+  String get circleOwner => 'मंडली शुरू की';
+
+  @override
+  String get circleYou => 'आप';
+
+  @override
+  String get circleRemoveMember => 'मंडली से हटाएँ';
+
+  @override
+  String circleRemoveConfirm(String name) {
+    return '$name को हटाएँ? उनके निवेदन मिट जाएँगे, और वे फिर से नहीं जुड़ पाएँगे।';
+  }
+
+  @override
+  String get circleLeave => 'मंडली छोड़ें';
+
+  @override
+  String get circleLeaveConfirm =>
+      'यह मंडली छोड़ें? इसमें आपके प्रार्थना निवेदन मिट जाएँगे।';
+
+  @override
+  String circleReachOut(String name) {
+    return '$name शायद बहुत कठिन समय से गुज़र रहे हैं। कृपया आज ही उन्हें फ़ोन करें या उनसे मिलें।';
+  }
+
+  @override
+  String get circleNotFound =>
+      'इस कोड की कोई मंडली नहीं है। कोड जाँचकर फिर कोशिश करें।';
+
+  @override
+  String get circleFull => 'यह मंडली भर चुकी है।';
+
+  @override
+  String get circleTooMany =>
+      'आप बहुत सारी मंडलियों में हैं। नई में जुड़ने के लिए एक छोड़ें।';
+
+  @override
+  String get circleNotAllowed => 'आप इस मंडली में ऐसा नहीं कर सकते।';
+
+  @override
+  String get circleOffline =>
+      'जुड़ नहीं पाए। अपना इंटरनेट जाँचें और फिर कोशिश करें।';
 }

@@ -728,4 +728,133 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get reminder7 =>
       'आजचे वचन तुमची वाट पाहत आहे. ते वाचा, प्रार्थना करा, आणि त्याचे ऐका.';
+
+  @override
+  String get circlesTitle => 'प्रार्थना मंडळ';
+
+  @override
+  String get circlesHint => 'कुटुंब आणि मित्रांसोबत एकमेकांसाठी प्रार्थना करा';
+
+  @override
+  String get circlesIntro =>
+      'एक मंडळ सुरू करा आणि तुमच्यासोबत प्रार्थना करणाऱ्यांना त्याचा कोड पाठवा, किंवा कोणी पाठवलेल्या कोडने मंडळात सामील व्हा.';
+
+  @override
+  String get circleStart => 'मंडळ सुरू करा';
+
+  @override
+  String get circleJoin => 'कोडने सामील व्हा';
+
+  @override
+  String get circleName => 'मंडळाचे नाव';
+
+  @override
+  String get circleNameHint => 'उदा. कुटुंब, युवक संगत';
+
+  @override
+  String get circleYourName => 'तुमचे नाव';
+
+  @override
+  String get circleYourNameHint => 'इतरांना दिसेल तसे';
+
+  @override
+  String get circleCode => 'कोड';
+
+  @override
+  String circleMembers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count सदस्य',
+      one: '1 सदस्य',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleNew => 'नवीन';
+
+  @override
+  String get circleInvite => 'आमंत्रित करा';
+
+  @override
+  String get circleInviteCode => 'आमंत्रण कोड';
+
+  @override
+  String circleInviteText(String name, String code) {
+    return 'JesusAnswers वर माझ्या प्रार्थना मंडळ \"$name\" मध्ये सामील व्हा, म्हणजे आपण एकमेकांसाठी प्रार्थना करू.\nॲप उघडा, प्रार्थना → प्रार्थना मंडळ → कोडने सामील व्हा वर टॅप करा, आणि हे टाका: $code';
+  }
+
+  @override
+  String get circleAskHint => 'प्रार्थना विनंती लिहा…';
+
+  @override
+  String get circleEmpty =>
+      'अजून प्रार्थना विनंत्या नाहीत. तुमची लिहा, आणि इतर तुमच्यासाठी प्रार्थना करतील.';
+
+  @override
+  String get circleIPrayed => 'मी प्रार्थना केली';
+
+  @override
+  String get circleAnswered => 'प्रार्थनेचे उत्तर मिळाले';
+
+  @override
+  String get circleMarkAnswered => 'देवाने उत्तर दिले';
+
+  @override
+  String get circleDelete => 'हटवा';
+
+  @override
+  String get circleReport => 'तक्रार करा';
+
+  @override
+  String get circleReported =>
+      'तक्रार नोंदवली. हे तुम्हाला पुन्हा दिसणार नाही.';
+
+  @override
+  String get circleMembersTitle => 'सदस्य';
+
+  @override
+  String get circleOwner => 'मंडळ सुरू केले';
+
+  @override
+  String get circleYou => 'तुम्ही';
+
+  @override
+  String get circleRemoveMember => 'मंडळातून काढा';
+
+  @override
+  String circleRemoveConfirm(String name) {
+    return '$name यांना काढायचे? त्यांच्या विनंत्या हटवल्या जातील, आणि ते पुन्हा सामील होऊ शकणार नाहीत.';
+  }
+
+  @override
+  String get circleLeave => 'मंडळ सोडा';
+
+  @override
+  String get circleLeaveConfirm =>
+      'हे मंडळ सोडायचे? यातील तुमच्या प्रार्थना विनंत्या हटवल्या जातील.';
+
+  @override
+  String circleReachOut(String name) {
+    return '$name कदाचित खूप कठीण काळातून जात आहेत. कृपया आजच त्यांना फोन करा किंवा भेटा.';
+  }
+
+  @override
+  String get circleNotFound =>
+      'या कोडचे कोणतेही मंडळ नाही. तपासून पुन्हा प्रयत्न करा.';
+
+  @override
+  String get circleFull => 'हे मंडळ भरले आहे.';
+
+  @override
+  String get circleTooMany =>
+      'तुम्ही खूप मंडळांमध्ये आहात. दुसऱ्यात सामील होण्यासाठी एक सोडा.';
+
+  @override
+  String get circleNotAllowed => 'या मंडळात तुम्ही ते करू शकत नाही.';
+
+  @override
+  String get circleOffline =>
+      'जोडता आले नाही. तुमचे इंटरनेट तपासा आणि पुन्हा प्रयत्न करा.';
 }

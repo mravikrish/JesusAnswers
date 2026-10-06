@@ -13,6 +13,15 @@ Spring Boot 4 · Java 21 · PostgreSQL · Claude (`claude-opus-5-5`) · Firebase
 | DELETE | `/v1/me` | required | Delete account + all entries |
 | POST | `/v1/reactions` | none (`X-Install-Id`) | Heart / unheart / prayed / listened for one prayer, story, chapter or saying |
 | GET | `/v1/counts` | none | Shared counts per item, plus how many people prayed today (worked out at most every 5 minutes) |
+| GET | `/v1/circles` | none (`X-Install-Id`) | The prayer circles this install is in |
+| POST | `/v1/circles` | none (`X-Install-Id`) | Start a circle `{name, memberName}`; answers with its invite code |
+| POST | `/v1/circles/join` | none (`X-Install-Id`) | Join with a code `{code, memberName}` (20 tries an hour) |
+| GET | `/v1/circles/{code}` | members | The circle: members and the last 60 days of requests |
+| POST | `/v1/circles/{code}/requests` | members | Share a prayer request `{text}` |
+| POST | `/v1/circles/{code}/requests/{id}/prayed` · `answered` · `report` | members | I prayed · God answered (asker only) · report |
+| DELETE | `/v1/circles/{code}/requests/{id}` | asker or owner | Delete a request |
+| DELETE | `/v1/circles/{code}/members/{id}` | owner | Remove a member, with their requests; they can't rejoin |
+| POST | `/v1/circles/{code}/leave` | members | Leave, taking your requests with you |
 | GET | `/v1/voice-sources` | none | Where the app downloads natural voices from (`VOICE_SOURCES`) |
 | GET | `/actuator/health` | none | Health check |
 
@@ -42,6 +51,9 @@ to trade quality for cost or speed. Measure on real questions in each language b
 - Only the Firebase uid is stored; no email or phone.
 - Shared counts store no account and no content: only the item, a day, and a salted hash of the app's random
   install id (`COMMUNITY_SALT`). Prayed / listened count once per install, item and day; reactions are rate-limited.
+- Prayer circles have no accounts either: a member is the same salted install-id hash, plus the name they chose.
+  Requests are encrypted like the journey, only members can read them, and they're deleted after 60 days, when
+  the asker leaves, or when 3 members (or half the others) report them. Non-members get 404 for any circle.
 - User messages and replies are **never logged**; only token counts are.
 - Host the database and API in an Indian region (e.g. GCP/AWS Mumbai) to keep data in India under the DPDP Act.
 

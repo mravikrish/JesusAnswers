@@ -730,4 +730,132 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get reminder7 =>
       'A Palavra de hoje espera por você. Leia, ore e ouça-O.';
+
+  @override
+  String get circlesTitle => 'Círculos de oração';
+
+  @override
+  String get circlesHint => 'Orem uns pelos outros com família e amigos';
+
+  @override
+  String get circlesIntro =>
+      'Comece um círculo e envie o código para as pessoas com quem você ora, ou entre num círculo com o código que alguém lhe enviou.';
+
+  @override
+  String get circleStart => 'Começar um círculo';
+
+  @override
+  String get circleJoin => 'Entrar com um código';
+
+  @override
+  String get circleName => 'Nome do círculo';
+
+  @override
+  String get circleNameHint => 'ex.: Família, Grupo de jovens';
+
+  @override
+  String get circleYourName => 'Seu nome';
+
+  @override
+  String get circleYourNameHint => 'Como os outros vão ver';
+
+  @override
+  String get circleCode => 'Código';
+
+  @override
+  String circleMembers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count membros',
+      one: '1 membro',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleNew => 'Novo';
+
+  @override
+  String get circleInvite => 'Convidar';
+
+  @override
+  String get circleInviteCode => 'Código de convite';
+
+  @override
+  String circleInviteText(String name, String code) {
+    return 'Entre no meu círculo de oração \"$name\" no JesusAnswers, para orarmos uns pelos outros.\nAbra o app, toque em Orar → Círculos de oração → Entrar com um código, e digite: $code';
+  }
+
+  @override
+  String get circleAskHint => 'Compartilhe um pedido de oração…';
+
+  @override
+  String get circleEmpty =>
+      'Ainda não há pedidos de oração. Compartilhe o seu, e os outros vão orar por você.';
+
+  @override
+  String get circleIPrayed => 'Orei';
+
+  @override
+  String get circleAnswered => 'Oração respondida';
+
+  @override
+  String get circleMarkAnswered => 'Deus respondeu isto';
+
+  @override
+  String get circleDelete => 'Excluir';
+
+  @override
+  String get circleReport => 'Denunciar';
+
+  @override
+  String get circleReported => 'Denunciado. Você não verá isto de novo.';
+
+  @override
+  String get circleMembersTitle => 'Membros';
+
+  @override
+  String get circleOwner => 'Começou o círculo';
+
+  @override
+  String get circleYou => 'Você';
+
+  @override
+  String get circleRemoveMember => 'Remover do círculo';
+
+  @override
+  String circleRemoveConfirm(String name) {
+    return 'Remover $name? Os pedidos dessa pessoa serão excluídos, e ela não poderá entrar de novo.';
+  }
+
+  @override
+  String get circleLeave => 'Sair do círculo';
+
+  @override
+  String get circleLeaveConfirm =>
+      'Sair deste círculo? Seus pedidos de oração nele serão excluídos.';
+
+  @override
+  String circleReachOut(String name) {
+    return '$name pode estar passando por algo muito difícil. Por favor, ligue ou faça uma visita hoje.';
+  }
+
+  @override
+  String get circleNotFound =>
+      'Não há nenhum círculo com este código. Confira e tente de novo.';
+
+  @override
+  String get circleFull => 'Este círculo está cheio.';
+
+  @override
+  String get circleTooMany =>
+      'Você está em círculos demais. Saia de um para entrar em outro.';
+
+  @override
+  String get circleNotAllowed => 'Você não pode fazer isso neste círculo.';
+
+  @override
+  String get circleOffline =>
+      'Não foi possível conectar. Verifique sua internet e tente de novo.';
 }

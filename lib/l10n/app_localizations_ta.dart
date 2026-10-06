@@ -737,4 +737,134 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get reminder7 =>
       'இன்றைய வார்த்தை உங்களுக்காகக் காத்திருக்கிறது. வாசியுங்கள், ஜெபியுங்கள், அவருக்குச் செவிகொடுங்கள்.';
+
+  @override
+  String get circlesTitle => 'ஜெப குழுக்கள்';
+
+  @override
+  String get circlesHint =>
+      'குடும்பத்தோடும் நண்பர்களோடும் ஒருவருக்காக ஒருவர் ஜெபியுங்கள்';
+
+  @override
+  String get circlesIntro =>
+      'ஒரு குழுவைத் தொடங்கி, உங்களுடன் ஜெபிப்பவர்களுக்கு அதன் குறியீட்டை அனுப்புங்கள், அல்லது யாராவது அனுப்பிய குறியீட்டால் ஒரு குழுவில் சேருங்கள்.';
+
+  @override
+  String get circleStart => 'குழுவைத் தொடங்கு';
+
+  @override
+  String get circleJoin => 'குறியீட்டால் சேர்';
+
+  @override
+  String get circleName => 'குழுவின் பெயர்';
+
+  @override
+  String get circleNameHint => 'எ.கா. குடும்பம், வாலிபர் ஐக்கியம்';
+
+  @override
+  String get circleYourName => 'உங்கள் பெயர்';
+
+  @override
+  String get circleYourNameHint => 'மற்றவர்கள் காண்பது போல';
+
+  @override
+  String get circleCode => 'குறியீடு';
+
+  @override
+  String circleMembers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count உறுப்பினர்கள்',
+      one: '1 உறுப்பினர்',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleNew => 'புதியது';
+
+  @override
+  String get circleInvite => 'அழை';
+
+  @override
+  String get circleInviteCode => 'அழைப்புக் குறியீடு';
+
+  @override
+  String circleInviteText(String name, String code) {
+    return 'JesusAnswers இல் என் ஜெப குழு \"$name\" இல் சேருங்கள், நாம் ஒருவருக்காக ஒருவர் ஜெபிப்போம்.\nஆப்பைத் திறந்து, ஜெபம் → ஜெப குழுக்கள் → குறியீட்டால் சேர் என்பதைத் தட்டி, இதை உள்ளிடுங்கள்: $code';
+  }
+
+  @override
+  String get circleAskHint => 'ஜெப விண்ணப்பத்தை எழுதுங்கள்…';
+
+  @override
+  String get circleEmpty =>
+      'இன்னும் ஜெப விண்ணப்பங்கள் இல்லை. உங்களுடையதை எழுதுங்கள், மற்றவர்கள் உங்களுக்காக ஜெபிப்பார்கள்.';
+
+  @override
+  String get circleIPrayed => 'நான் ஜெபித்தேன்';
+
+  @override
+  String get circleAnswered => 'ஜெபத்திற்குப் பதில் கிடைத்தது';
+
+  @override
+  String get circleMarkAnswered => 'தேவன் பதில் தந்தார்';
+
+  @override
+  String get circleDelete => 'நீக்கு';
+
+  @override
+  String get circleReport => 'புகார் செய்';
+
+  @override
+  String get circleReported =>
+      'புகார் செய்யப்பட்டது. இது இனி உங்களுக்குத் தெரியாது.';
+
+  @override
+  String get circleMembersTitle => 'உறுப்பினர்கள்';
+
+  @override
+  String get circleOwner => 'குழுவைத் தொடங்கியவர்';
+
+  @override
+  String get circleYou => 'நீங்கள்';
+
+  @override
+  String get circleRemoveMember => 'குழுவிலிருந்து நீக்கு';
+
+  @override
+  String circleRemoveConfirm(String name) {
+    return '$name ஐ நீக்கவா? அவர்களின் விண்ணப்பங்கள் நீக்கப்படும், அவர்களால் மீண்டும் சேர முடியாது.';
+  }
+
+  @override
+  String get circleLeave => 'குழுவை விட்டு வெளியேறு';
+
+  @override
+  String get circleLeaveConfirm =>
+      'இந்தக் குழுவை விட்டு வெளியேறவா? இதிலுள்ள உங்கள் ஜெப விண்ணப்பங்கள் நீக்கப்படும்.';
+
+  @override
+  String circleReachOut(String name) {
+    return '$name மிகவும் கடினமான நேரத்தைக் கடந்து கொண்டிருக்கலாம். தயவுசெய்து இன்றே அவர்களை அழையுங்கள் அல்லது சந்தியுங்கள்.';
+  }
+
+  @override
+  String get circleNotFound =>
+      'இந்தக் குறியீட்டில் எந்தக் குழுவும் இல்லை. சரிபார்த்து மீண்டும் முயலுங்கள்.';
+
+  @override
+  String get circleFull => 'இந்தக் குழு நிரம்பிவிட்டது.';
+
+  @override
+  String get circleTooMany =>
+      'நீங்கள் பல குழுக்களில் இருக்கிறீர்கள். புதியதில் சேர ஒன்றை விட்டு வெளியேறுங்கள்.';
+
+  @override
+  String get circleNotAllowed => 'இந்தக் குழுவில் அதை உங்களால் செய்ய முடியாது.';
+
+  @override
+  String get circleOffline =>
+      'இணைக்க முடியவில்லை. இணையத்தைச் சரிபார்த்து மீண்டும் முயலுங்கள்.';
 }

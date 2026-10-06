@@ -734,4 +734,133 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get reminder7 =>
       'ഇന്നത്തെ വചനം നിങ്ങൾക്കായി കാത്തിരിക്കുന്നു. വായിക്കൂ, പ്രാർത്ഥിക്കൂ, അവനെ കേൾക്കൂ.';
+
+  @override
+  String get circlesTitle => 'പ്രാർത്ഥനാ കൂട്ടങ്ങൾ';
+
+  @override
+  String get circlesHint =>
+      'കുടുംബത്തോടും കൂട്ടുകാരോടും ചേർന്ന് പരസ്പരം പ്രാർത്ഥിക്കൂ';
+
+  @override
+  String get circlesIntro =>
+      'ഒരു കൂട്ടം തുടങ്ങി, നിങ്ങളോടൊപ്പം പ്രാർത്ഥിക്കുന്നവർക്ക് അതിന്റെ കോഡ് അയയ്ക്കൂ, അല്ലെങ്കിൽ ആരെങ്കിലും അയച്ച കോഡ് ഉപയോഗിച്ച് ഒരു കൂട്ടത്തിൽ ചേരൂ.';
+
+  @override
+  String get circleStart => 'കൂട്ടം തുടങ്ങുക';
+
+  @override
+  String get circleJoin => 'കോഡ് ഉപയോഗിച്ച് ചേരുക';
+
+  @override
+  String get circleName => 'കൂട്ടത്തിന്റെ പേര്';
+
+  @override
+  String get circleNameHint => 'ഉദാ. കുടുംബം, യുവജന കൂട്ടായ്മ';
+
+  @override
+  String get circleYourName => 'നിങ്ങളുടെ പേര്';
+
+  @override
+  String get circleYourNameHint => 'മറ്റുള്ളവർ കാണുന്നതുപോലെ';
+
+  @override
+  String get circleCode => 'കോഡ്';
+
+  @override
+  String circleMembers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count അംഗങ്ങൾ',
+      one: '1 അംഗം',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleNew => 'പുതിയത്';
+
+  @override
+  String get circleInvite => 'ക്ഷണിക്കുക';
+
+  @override
+  String get circleInviteCode => 'ക്ഷണ കോഡ്';
+
+  @override
+  String circleInviteText(String name, String code) {
+    return 'JesusAnswers-ൽ എന്റെ പ്രാർത്ഥനാ കൂട്ടം \"$name\"-ൽ ചേരൂ, നമുക്ക് പരസ്പരം പ്രാർത്ഥിക്കാം.\nആപ്പ് തുറന്ന്, പ്രാർത്ഥന → പ്രാർത്ഥനാ കൂട്ടങ്ങൾ → കോഡ് ഉപയോഗിച്ച് ചേരുക എന്നതിൽ തൊട്ട്, ഇത് നൽകൂ: $code';
+  }
+
+  @override
+  String get circleAskHint => 'പ്രാർത്ഥനാ വിഷയം എഴുതൂ…';
+
+  @override
+  String get circleEmpty =>
+      'ഇതുവരെ പ്രാർത്ഥനാ വിഷയങ്ങളില്ല. നിങ്ങളുടേത് എഴുതൂ, മറ്റുള്ളവർ നിങ്ങൾക്കായി പ്രാർത്ഥിക്കും.';
+
+  @override
+  String get circleIPrayed => 'ഞാൻ പ്രാർത്ഥിച്ചു';
+
+  @override
+  String get circleAnswered => 'പ്രാർത്ഥനയ്ക്ക് മറുപടി ലഭിച്ചു';
+
+  @override
+  String get circleMarkAnswered => 'ദൈവം മറുപടി നൽകി';
+
+  @override
+  String get circleDelete => 'ഇല്ലാതാക്കുക';
+
+  @override
+  String get circleReport => 'റിപ്പോർട്ട് ചെയ്യുക';
+
+  @override
+  String get circleReported => 'റിപ്പോർട്ട് ചെയ്തു. ഇത് ഇനി നിങ്ങൾ കാണില്ല.';
+
+  @override
+  String get circleMembersTitle => 'അംഗങ്ങൾ';
+
+  @override
+  String get circleOwner => 'കൂട്ടം തുടങ്ങിയയാൾ';
+
+  @override
+  String get circleYou => 'നിങ്ങൾ';
+
+  @override
+  String get circleRemoveMember => 'കൂട്ടത്തിൽ നിന്ന് നീക്കുക';
+
+  @override
+  String circleRemoveConfirm(String name) {
+    return '$name-നെ നീക്കണോ? അവരുടെ വിഷയങ്ങൾ ഇല്ലാതാകും, അവർക്ക് വീണ്ടും ചേരാനാകില്ല.';
+  }
+
+  @override
+  String get circleLeave => 'കൂട്ടം വിടുക';
+
+  @override
+  String get circleLeaveConfirm =>
+      'ഈ കൂട്ടം വിടണോ? ഇതിലെ നിങ്ങളുടെ പ്രാർത്ഥനാ വിഷയങ്ങൾ ഇല്ലാതാകും.';
+
+  @override
+  String circleReachOut(String name) {
+    return '$name വളരെ പ്രയാസമേറിയ സമയത്തിലൂടെ കടന്നുപോകുന്നുണ്ടാകാം. ദയവായി ഇന്നുതന്നെ അവരെ വിളിക്കുകയോ സന്ദർശിക്കുകയോ ചെയ്യൂ.';
+  }
+
+  @override
+  String get circleNotFound =>
+      'ഈ കോഡിൽ ഒരു കൂട്ടവുമില്ല. പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കൂ.';
+
+  @override
+  String get circleFull => 'ഈ കൂട്ടം നിറഞ്ഞു.';
+
+  @override
+  String get circleTooMany =>
+      'നിങ്ങൾ വളരെയധികം കൂട്ടങ്ങളിലുണ്ട്. മറ്റൊന്നിൽ ചേരാൻ ഒന്ന് വിടൂ.';
+
+  @override
+  String get circleNotAllowed => 'ഈ കൂട്ടത്തിൽ നിങ്ങൾക്ക് അത് ചെയ്യാനാകില്ല.';
+
+  @override
+  String get circleOffline =>
+      'കണക്റ്റ് ചെയ്യാനായില്ല. ഇന്റർനെറ്റ് പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കൂ.';
 }
