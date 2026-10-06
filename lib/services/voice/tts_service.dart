@@ -312,19 +312,15 @@ class TtsService {
         await _musicPlayer?.stop();
         return;
       }
-      debugPrint('music: ${reading.name} ambient=$_ambient');
       final player = _musicPlayer ??= await _newMusicPlayer();
-      debugPrint('music: player ready');
       final track =
           idle ? welcomeTracks[_welcome % welcomeTracks.length] : (_role == VoiceRole.jesus ? 'music/pad.mp3' : 'music/hymn.mp3');
       if (track != _musicTrack) {
         // Reading starts or ends, or a reading with the other voice: change the music with it.
         await player.stop();
-        debugPrint('music: stopped for $track');
         _musicTrack = track;
       }
       await player.setVolume(idle ? _ambientVolume : _musicVolume);
-      debugPrint('music: volume set, state ${player.state}');
       if (reading == Playback.paused) {
         await player.pause();
       } else if (player.state == PlayerState.paused) {
@@ -332,9 +328,7 @@ class TtsService {
       } else if (player.state != PlayerState.playing) {
         // The welcome pieces play one after another; the music under a voice loops.
         await player.setReleaseMode(idle ? ReleaseMode.stop : ReleaseMode.loop);
-        debugPrint('music: playing $track');
         await player.play(AssetSource(track));
-        debugPrint('music: started ${player.state}');
       }
     } catch (e) {
       // Music is a nicety: if it can't play, the reading goes on without it.
