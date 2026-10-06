@@ -703,4 +703,35 @@ class AppLocalizationsTl extends AppLocalizations {
   String milestoneShare(int count) {
     return 'Nakasama ko si Hesus nang $count araw.';
   }
+
+  @override
+  String get reminderTitle => 'Oras kasama ang Diyos';
+
+  @override
+  String get reminder1 =>
+      'Hinihintay ni Hesus na marinig ka. Maglaan ngayon ng tahimik na sandali kasama Siya.';
+
+  @override
+  String get reminder2 =>
+      'Maglaan ngayon ng ilang minuto para sa Diyos. Kausapin Siya, at pakinggan Siya.';
+
+  @override
+  String get reminder3 =>
+      'Anuman ang mangyari ngayon, hindi ka nag-iisa. Halika, manalangin tayo.';
+
+  @override
+  String get reminder4 =>
+      'Tumahimik ka sandali. Malapit ang Diyos, at naririnig ka Niya.';
+
+  @override
+  String get reminder5 =>
+      'Sabihin mo kay Hesus ngayon ang nasa puso mo. Nakikinig Siya.';
+
+  @override
+  String get reminder6 =>
+      'Buksan mo ngayon ang Kanyang Salita at hayaan mong kausapin ka Niya.';
+
+  @override
+  String get reminder7 =>
+      'Naghihintay sa iyo ang Salita ngayong araw. Basahin ito, manalangin, at pakinggan Siya.';
 }

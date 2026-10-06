@@ -697,4 +697,34 @@ class AppLocalizationsSw extends AppLocalizations {
   String milestoneShare(int count) {
     return 'Nimekaa siku $count pamoja na Yesu.';
   }
+
+  @override
+  String get reminderTitle => 'Muda na Mungu';
+
+  @override
+  String get reminder1 =>
+      'Yesu anasubiri kukusikia. Tumia muda wa utulivu pamoja naye leo.';
+
+  @override
+  String get reminder2 =>
+      'Tenga dakika chache leo kwa ajili ya Mungu. Zungumza naye, na umsikilize.';
+
+  @override
+  String get reminder3 =>
+      'Lolote litakalotokea leo, hauko peke yako. Njoo tuombe.';
+
+  @override
+  String get reminder4 =>
+      'Tulia kwa muda mfupi. Mungu yu karibu, na anakusikia.';
+
+  @override
+  String get reminder5 =>
+      'Mwambie Yesu leo yaliyo moyoni mwako. Anakusikiliza.';
+
+  @override
+  String get reminder6 => 'Fungua Neno lake leo na umwache aseme nawe.';
+
+  @override
+  String get reminder7 =>
+      'Neno la leo linakusubiri. Lisome, omba, na umsikilize.';
 }

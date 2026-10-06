@@ -211,5 +211,13 @@
   "daysInARow": "{count} sunod-sunod na araw",
   "daysInAll": "{count} araw sa kabuuan",
   "milestoneTitle": "{count} araw kasama si Hesus",
-  "milestoneShare": "Nakasama ko si Hesus nang {count} araw."
+  "milestoneShare": "Nakasama ko si Hesus nang {count} araw.",
+  "reminderTitle": "Oras kasama ang Diyos",
+  "reminder1": "Hinihintay ni Hesus na marinig ka. Maglaan ngayon ng tahimik na sandali kasama Siya.",
+  "reminder2": "Maglaan ngayon ng ilang minuto para sa Diyos. Kausapin Siya, at pakinggan Siya.",
+  "reminder3": "Anuman ang mangyari ngayon, hindi ka nag-iisa. Halika, manalangin tayo.",
+  "reminder4": "Tumahimik ka sandali. Malapit ang Diyos, at naririnig ka Niya.",
+  "reminder5": "Sabihin mo kay Hesus ngayon ang nasa puso mo. Nakikinig Siya.",
+  "reminder6": "Buksan mo ngayon ang Kanyang Salita at hayaan mong kausapin ka Niya.",
+  "reminder7": "Naghihintay sa iyo ang Salita ngayong araw. Basahin ito, manalangin, at pakinggan Siya."
 }

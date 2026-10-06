@@ -27,6 +27,23 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   final _text = TextEditingController();
 
   @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _offerReminder());
+  }
+
+  /// The daily reminder to spend time with God is on unless turned off: the first time Home opens,
+  /// ask once for permission to send it, and set it for 7 in the morning (changeable in Profile).
+  Future<void> _offerReminder() async {
+    final prefs = ref.read(prefsProvider);
+    if (prefs.getBool('reminderOffered') ?? false) return;
+    await prefs.setBool('reminderOffered', true);
+    if (ref.read(settingsProvider).reminder != null) return;
+    if (!await ref.read(reminderServiceProvider).requestPermission()) return;
+    if (mounted) await ref.read(settingsProvider.notifier).setReminder(7 * 60);
+  }
+
+  @override
   void dispose() {
     _text.dispose();
     super.dispose();

@@ -1407,6 +1407,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'I have spent {count} days with Jesus.'**
   String milestoneShare(int count);
+
+  /// No description provided for @reminderTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Time with God'**
+  String get reminderTitle;
+
+  /// No description provided for @reminder1.
+  ///
+  /// In en, this message translates to:
+  /// **'Jesus is waiting to hear from you. Spend a quiet moment with Him today.'**
+  String get reminder1;
+
+  /// No description provided for @reminder2.
+  ///
+  /// In en, this message translates to:
+  /// **'Take a few minutes with God today. Talk with Him, and listen to Him.'**
+  String get reminder2;
+
+  /// No description provided for @reminder3.
+  ///
+  /// In en, this message translates to:
+  /// **'Whatever today holds, you don\'t face it alone. Come and pray.'**
+  String get reminder3;
+
+  /// No description provided for @reminder4.
+  ///
+  /// In en, this message translates to:
+  /// **'Be still for a moment. God is near, and He hears you.'**
+  String get reminder4;
+
+  /// No description provided for @reminder5.
+  ///
+  /// In en, this message translates to:
+  /// **'Tell Jesus what is on your heart today. He is listening.'**
+  String get reminder5;
+
+  /// No description provided for @reminder6.
+  ///
+  /// In en, this message translates to:
+  /// **'Open His Word today and let Him speak to you.'**
+  String get reminder6;
+
+  /// No description provided for @reminder7.
+  ///
+  /// In en, this message translates to:
+  /// **'Today\'s Word is waiting for you. Read it, pray, and listen to Him.'**
+  String get reminder7;
 }
 
 class _AppLocalizationsDelegate

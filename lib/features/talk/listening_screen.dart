@@ -23,13 +23,16 @@ class _ListeningScreenState extends ConsumerState<ListeningScreen> with WidgetsB
   double _level = 0;
   MicProblem? _problem;
   bool _done = false;
+  late final _tts = ref.read(ttsProvider);
   final _typed = TextEditingController();
 
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
-    ref.read(ttsProvider).stop();
+    _tts
+      ..stop()
+      ..setAmbient(false); // no music while the microphone listens
     _start();
   }
 
@@ -91,6 +94,7 @@ class _ListeningScreenState extends ConsumerState<ListeningScreen> with WidgetsB
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
     if (!_done) ref.read(speechProvider).cancel();
+    _tts.setAmbient(true);
     _typed.dispose();
     super.dispose();
   }

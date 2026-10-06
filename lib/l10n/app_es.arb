@@ -211,5 +211,13 @@
   "daysInARow": "{count} días seguidos",
   "daysInAll": "{count} días en total",
   "milestoneTitle": "{count} días con Jesús",
-  "milestoneShare": "He pasado {count} días con Jesús."
+  "milestoneShare": "He pasado {count} días con Jesús.",
+  "reminderTitle": "Tiempo con Dios",
+  "reminder1": "Jesús espera escucharte. Pasa hoy un momento de calma con Él.",
+  "reminder2": "Dedica hoy unos minutos a Dios. Habla con Él y escúchalo.",
+  "reminder3": "Pase lo que pase hoy, Dios está contigo. Ven a orar.",
+  "reminder4": "Quédate en calma un momento. Dios está cerca y te escucha.",
+  "reminder5": "Cuéntale hoy a Jesús lo que hay en tu corazón. Él te escucha.",
+  "reminder6": "Abre hoy Su Palabra y deja que te hable.",
+  "reminder7": "La Palabra de hoy te espera. Léela, ora y escúchalo."
 }

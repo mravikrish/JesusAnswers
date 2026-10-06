@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../services/voice/tts_service.dart';
+
 import '../../data/models/answer.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
@@ -19,9 +21,9 @@ class AppShell extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
-    final dark = shell.currentIndex <= 3; // Home, Word, Pray and Journey are night screens
-    final fg = dark ? Colors.white : AppColors.ink;
-    final bg = dark ? AppColors.midnight : AppColors.ivoryCard;
+    // Every tab is a night screen.
+    const fg = Colors.white;
+    const bg = AppColors.midnight;
 
     Widget item(int branch, IconData icon, IconData active, String label) {
       final selected = shell.currentIndex == branch;
@@ -47,7 +49,7 @@ class AppShell extends StatelessWidget {
 
     return Scaffold(
       extendBody: true,
-      body: shell,
+      body: _WelcomeMusic(child: shell),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           color: bg,
@@ -58,7 +60,7 @@ class AppShell extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              NowPlayingBar(dark: dark),
+              const NowPlayingBar(dark: true),
               SizedBox(
                 height: 68,
                 child: Row(
@@ -99,4 +101,38 @@ void ask(
     '/processing',
     extra: AnswerRequest(question: question.trim(), lang: lang, mood: mood, kind: kind, spoken: spoken),
   );
+}
+
+/// Soft music from the moment the app opens, across every screen, while the app is in front.
+class _WelcomeMusic extends ConsumerStatefulWidget {
+  const _WelcomeMusic({required this.child});
+  final Widget child;
+
+  @override
+  ConsumerState<_WelcomeMusic> createState() => _WelcomeMusicState();
+}
+
+class _WelcomeMusicState extends ConsumerState<_WelcomeMusic> {
+  late final TtsService _tts = ref.read(ttsProvider);
+  late final AppLifecycleListener _lifecycle;
+
+  @override
+  void initState() {
+    super.initState();
+    _tts.setAmbient(true);
+    _lifecycle = AppLifecycleListener(
+      onResume: () => _tts.setAmbient(true),
+      onHide: () => _tts.setAmbient(false),
+    );
+  }
+
+  @override
+  void dispose() {
+    _lifecycle.dispose();
+    _tts.setAmbient(false);
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) => widget.child;
 }

@@ -211,5 +211,13 @@
   "daysInARow": "Dni z rzędu: {count}",
   "daysInAll": "Dni łącznie: {count}",
   "milestoneTitle": "Dni z Jezusem: {count}",
-  "milestoneShare": "Dni spędzone z Jezusem: {count}."
+  "milestoneShare": "Dni spędzone z Jezusem: {count}.",
+  "reminderTitle": "Czas z Bogiem",
+  "reminder1": "Jezus czeka, by cię usłyszeć. Spędź dziś z Nim chwilę ciszy.",
+  "reminder2": "Poświęć dziś Bogu kilka minut. Porozmawiaj z Nim i posłuchaj Go.",
+  "reminder3": "Cokolwiek przyniesie ten dzień, Bóg jest z tobą. Przyjdź i pomódl się.",
+  "reminder4": "Wycisz się na chwilę. Bóg jest blisko i słyszy cię.",
+  "reminder5": "Powiedz dziś Jezusowi, co masz na sercu. On słucha.",
+  "reminder6": "Otwórz dziś Jego Słowo i pozwól Mu mówić do ciebie.",
+  "reminder7": "Dzisiejsze Słowo czeka na ciebie. Przeczytaj je, pomódl się i posłuchaj Go."
 }

@@ -211,5 +211,13 @@
   "daysInARow": "{count} jours d'affilée",
   "daysInAll": "{count} jours en tout",
   "milestoneTitle": "{count} jours avec Jésus",
-  "milestoneShare": "J'ai passé {count} jours avec Jésus."
+  "milestoneShare": "J'ai passé {count} jours avec Jésus.",
+  "reminderTitle": "Un temps avec Dieu",
+  "reminder1": "Jésus attend de vous entendre. Passez aujourd'hui un moment paisible avec Lui.",
+  "reminder2": "Prenez aujourd'hui quelques minutes avec Dieu. Parlez-Lui, et écoutez-Le.",
+  "reminder3": "Quoi qu'il arrive aujourd'hui, Dieu est avec vous. Venez prier.",
+  "reminder4": "Restez tranquille un instant. Dieu est proche, et Il vous entend.",
+  "reminder5": "Dites aujourd'hui à Jésus ce qui est dans votre cœur. Il vous écoute.",
+  "reminder6": "Ouvrez aujourd'hui Sa Parole et laissez-Le vous parler.",
+  "reminder7": "La Parole du jour vous attend. Lisez-la, priez, et écoutez-Le."
 }

@@ -698,4 +698,34 @@ class AppLocalizationsEs extends AppLocalizations {
   String milestoneShare(int count) {
     return 'He pasado $count días con Jesús.';
   }
+
+  @override
+  String get reminderTitle => 'Tiempo con Dios';
+
+  @override
+  String get reminder1 =>
+      'Jesús espera escucharte. Pasa hoy un momento de calma con Él.';
+
+  @override
+  String get reminder2 =>
+      'Dedica hoy unos minutos a Dios. Habla con Él y escúchalo.';
+
+  @override
+  String get reminder3 =>
+      'Pase lo que pase hoy, Dios está contigo. Ven a orar.';
+
+  @override
+  String get reminder4 =>
+      'Quédate en calma un momento. Dios está cerca y te escucha.';
+
+  @override
+  String get reminder5 =>
+      'Cuéntale hoy a Jesús lo que hay en tu corazón. Él te escucha.';
+
+  @override
+  String get reminder6 => 'Abre hoy Su Palabra y deja que te hable.';
+
+  @override
+  String get reminder7 =>
+      'La Palabra de hoy te espera. Léela, ora y escúchalo.';
 }

@@ -267,8 +267,11 @@ class _PictureViewerScreenState extends ConsumerState<PictureViewerScreen> {
                               onSelected: (v) => setState(() => _showVerse = v),
                               showCheckmark: true,
                               checkmarkColor: AppColors.midnight,
-                              selectedColor: AppColors.goldSoft,
-                              backgroundColor: Colors.white.withValues(alpha: 0.08),
+                              color: WidgetStateProperty.resolveWith(
+                                (states) => states.contains(WidgetState.selected)
+                                    ? AppColors.goldSoft
+                                    : Colors.white.withValues(alpha: 0.08),
+                              ),
                               labelStyle: TextStyle(color: _showVerse ? AppColors.midnight : Colors.white),
                               side: BorderSide(color: AppColors.goldSoft.withValues(alpha: 0.4)),
                             ),

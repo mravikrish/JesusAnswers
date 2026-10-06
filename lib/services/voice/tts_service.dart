@@ -80,6 +80,24 @@ class TtsService {
 
   /// How loud the music plays under the voice: quiet enough never to cover a word.
   static const _musicVolume = 0.14;
+
+  /// How loud the welcome music plays while nothing is being read.
+  static const _ambientVolume = 0.3;
+
+  /// Played softly in turn from the moment the app opens, while nothing is being read:
+  /// public-domain recordings by the U.S. Air Force Band's Strolling Strings (credited in About).
+  static const welcomeTracks = ['music/welcome_grace.mp3', 'music/welcome_canon.mp3'];
+  int _welcome = 0;
+
+  bool _ambient = false;
+
+  /// Music while nothing is read: on while the app is open and in front, off while it is
+  /// away or while the microphone listens. Follows [music] like the music under the voice.
+  Future<void> setAmbient(bool on) async {
+    if (_ambient == on) return;
+    _ambient = on;
+    await _syncMusic();
+  }
   static const _normalRate = 0.42, _slowRate = 0.32;
 
   int _session = 0;
@@ -268,33 +286,48 @@ class TtsService {
     await _syncMusic();
   }
 
-  /// The music follows the reading: plays while it plays, pauses with it, stops after it.
+  /// The music follows the reading: plays while it plays, pauses with it, and after it goes back
+  /// to the welcome music while the app is open.
   /// One change at a time, so quick pause/resume taps never start it twice.
   Future<void> _syncMusic() => _musicSync = _musicSync.then((_) => _applyMusic());
   Future<void> _musicSync = Future.value();
   String? _musicTrack;
 
+  /// The music player; when a welcome piece ends, the next one begins.
+  Future<AudioPlayer> _newMusicPlayer() async {
+    final player = await _newPlayer();
+    player.onPlayerComplete.listen((_) {
+      if (playback.value != Playback.idle) return;
+      _welcome++;
+      _syncMusic();
+    });
+    return player;
+  }
+
   Future<void> _applyMusic() async {
     try {
       final reading = playback.value;
-      if (!music.value || reading == Playback.idle) {
+      final idle = reading == Playback.idle;
+      if (!music.value || (idle && !_ambient)) {
         await _musicPlayer?.stop();
         return;
       }
-      final player = _musicPlayer ??= await _newPlayer();
-      final track = _role == VoiceRole.jesus ? 'music/pad.mp3' : 'music/hymn.mp3';
+      final player = _musicPlayer ??= await _newMusicPlayer();
+      final track =
+          idle ? welcomeTracks[_welcome % welcomeTracks.length] : (_role == VoiceRole.jesus ? 'music/pad.mp3' : 'music/hymn.mp3');
       if (track != _musicTrack) {
-        // A reading with the other voice: change the music with it.
+        // Reading starts or ends, or a reading with the other voice: change the music with it.
         await player.stop();
         _musicTrack = track;
       }
+      await player.setVolume(idle ? _ambientVolume : _musicVolume);
       if (reading == Playback.paused) {
         await player.pause();
       } else if (player.state == PlayerState.paused) {
         await player.resume();
       } else if (player.state != PlayerState.playing) {
-        await player.setReleaseMode(ReleaseMode.loop);
-        await player.setVolume(_musicVolume);
+        // The welcome pieces play one after another; the music under a voice loops.
+        await player.setReleaseMode(idle ? ReleaseMode.stop : ReleaseMode.loop);
         await player.play(AssetSource(track));
       }
     } catch (_) {

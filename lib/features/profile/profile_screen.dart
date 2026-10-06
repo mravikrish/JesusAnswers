@@ -6,139 +6,199 @@ import '../../core/device_settings.dart';
 import '../../core/languages.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/common.dart';
+import '../../core/widgets/night_background.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
 import '../../services/voice/natural_voices.dart';
+import '../bible/bible_screen.dart';
 import 'voice_picker_sheet.dart';
 
+/// Profile — under today's painting of Jesus in the night sky, as on Home.
 class ProfileScreen extends ConsumerWidget {
   const ProfileScreen({super.key});
+
+  /// Light text, icons and controls for everything on the night sky. Dialogs and sheets
+  /// open above this and keep the app's light theme.
+  static ThemeData _night(ThemeData base) => base.copyWith(
+        textTheme: base.textTheme.apply(bodyColor: Colors.white, displayColor: Colors.white),
+        iconTheme: const IconThemeData(color: AppColors.goldSoft),
+        listTileTheme: ListTileThemeData(
+          textColor: Colors.white,
+          iconColor: AppColors.goldSoft,
+          subtitleTextStyle: TextStyle(color: Colors.white.withValues(alpha: 0.7), fontSize: 13),
+        ),
+        dividerTheme: const DividerThemeData(color: Color(0x1FFFFFFF)),
+        textButtonTheme: TextButtonThemeData(style: TextButton.styleFrom(foregroundColor: AppColors.goldSoft)),
+        segmentedButtonTheme: SegmentedButtonThemeData(
+          style: SegmentedButton.styleFrom(
+            foregroundColor: Colors.white70,
+            selectedForegroundColor: Colors.white,
+            selectedBackgroundColor: AppColors.gold.withValues(alpha: 0.5),
+            side: const BorderSide(color: Colors.white38),
+          ),
+        ),
+      );
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
     final settings = ref.watch(settingsProvider);
+    final painting = ref.watch(dailyPaintingProvider).value;
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.profileTitle, style: AppText.serif(24, weight: FontWeight.w600))),
-      body: ListView(
-        padding: const EdgeInsets.fromLTRB(20, 8, 20, 120), // clear of the bottom bar
-        children: [
-          const Center(child: LogoMark(size: 84)),
-          const SizedBox(height: 12),
-          Center(
-            child: Text(settings.name.isEmpty ? l.friend : settings.name,
-                style: AppText.serif(28, weight: FontWeight.w600)),
-          ),
-          const SizedBox(height: 20),
-          SoftCard(
-            padding: EdgeInsets.zero,
-            child: Column(
-              children: [
-                ListTile(
-                  leading: const Icon(Icons.person_outline_rounded),
-                  title: Text(l.yourName),
-                  subtitle: settings.name.isEmpty ? null : Text(settings.name),
+      body: NightBackground(
+        child: Theme(
+          data: _night(Theme.of(context)),
+          child: ListView(
+            padding: const EdgeInsets.only(bottom: 120), // clear of the bottom bar
+            children: [
+              PaintingHero(
+                painting: painting,
+                height: MediaQuery.sizeOf(context).height * 0.32,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(l.profileTitle, style: AppText.serif(22, color: AppColors.goldSoft)),
+                    Text(settings.name.isEmpty ? l.friend : settings.name,
+                        style: AppText.serif(36, color: Colors.white, weight: FontWeight.w600, height: 1.05)),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Column(
+                  children: [
+                    const SizedBox(height: 16),
+                    GlassCard(
+                      padding: EdgeInsets.zero,
+                      child: Column(
+                        children: [
+                          ListTile(
+                            leading: const Icon(Icons.person_outline_rounded),
+                            title: Text(l.yourName),
+                            subtitle: settings.name.isEmpty ? null : Text(settings.name),
+                            trailing: const Icon(Icons.chevron_right_rounded),
+                            onTap: () => _editName(context, ref, settings.name),
+                          ),
+                          const Divider(height: 1),
+                          ListTile(
+                            leading: const Icon(Icons.phone_iphone_rounded),
+                            title: Text(l.mobileNumber),
+                            subtitle: settings.phone.isEmpty ? null : Text(settings.phone),
+                            trailing: const Icon(Icons.chevron_right_rounded),
+                            onTap: () => context.push('/signin'),
+                          ),
+                          const Divider(height: 1),
+                          ListTile(
+                            leading: const Icon(Icons.language_rounded),
+                            title: Text(l.language),
+                            trailing: Text(settings.language.nativeName, style: const TextStyle(color: Colors.white70)),
+                            onTap: () => _pickLanguage(context, ref, settings.lang),
+                          ),
+                          const Divider(height: 1),
+                          ListTile(
+                            leading: const Icon(Icons.record_voice_over_outlined),
+                            title: Text(l.voice),
+                            trailing: ConstrainedBox(
+                              constraints: const BoxConstraints(maxWidth: 160),
+                              child: Text(settings.voice.isEmpty ? l.voiceMale : settings.voice,
+                                  overflow: TextOverflow.ellipsis, style: const TextStyle(color: Colors.white70)),
+                            ),
+                            onTap: () => showModalBottomSheet<void>(
+                              context: context,
+                              isScrollControlled: true,
+                              showDragHandle: true,
+                              backgroundColor: AppColors.ivoryCard,
+                              builder: (_) => const VoicePickerSheet(),
+                            ),
+                          ),
+                          const _VoiceMissingNotice(),
+                          const _NaturalVoices(),
+                          const Divider(height: 1),
+                          ListTile(
+                            leading: const Icon(Icons.format_size_rounded),
+                            title: Text(l.textSize),
+                            trailing: SegmentedButton<double>(
+                              showSelectedIcon: false,
+                              style: const ButtonStyle(visualDensity: VisualDensity.compact),
+                              segments: [
+                                for (final (scale, size) in [(1.0, 13.0), (1.15, 16.0), (1.3, 19.0)])
+                                  ButtonSegment(value: scale, label: Text('A', style: TextStyle(fontSize: size))),
+                              ],
+                              selected: {settings.textScale},
+                              onSelectionChanged: (v) => ref.read(settingsProvider.notifier).setTextScale(v.first),
+                            ),
+                          ),
+                          const Divider(height: 1),
+                          ValueListenableBuilder(
+                            valueListenable: ref.watch(ttsProvider).music,
+                            builder: (_, on, _) => SwitchListTile(
+                              secondary: Icon(on ? Icons.music_note_rounded : Icons.music_off_rounded),
+                              title: Text(l.music),
+                              value: on,
+                              activeTrackColor: AppColors.gold,
+                              onChanged: ref.read(ttsProvider).setMusic,
+                            ),
+                          ),
+                          const Divider(height: 1),
+                          ListTile(
+                            leading: const Icon(Icons.notifications_none_rounded),
+                            title: Text(l.dailyReminder),
+                            subtitle: settings.reminder == null ? null : Text(_timeOf(settings.reminder!).format(context)),
+                            trailing: Switch(
+                              value: settings.reminder != null,
+                              activeTrackColor: AppColors.gold,
+                              onChanged: (on) => on
+                                  ? _pickReminder(context, ref, 7 * 60)
+                                  : ref.read(settingsProvider.notifier).setReminder(null),
+                            ),
+                            onTap: () => _pickReminder(context, ref, settings.reminder ?? 7 * 60),
+                          ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 16),
+              GlassCard(
+                padding: EdgeInsets.zero,
+                child: ListTile(
+                  leading: const Icon(Icons.rate_review_outlined),
+                  title: Text(l.sendFeedback),
+                  subtitle: Text(l.feedbackHint),
                   trailing: const Icon(Icons.chevron_right_rounded),
-                  onTap: () => _editName(context, ref, settings.name),
+                  onTap: () => context.push('/feedback'),
                 ),
-                const Divider(height: 1, color: AppColors.sand),
-                ListTile(
-                  leading: const Icon(Icons.phone_iphone_rounded),
-                  title: Text(l.mobileNumber),
-                  subtitle: settings.phone.isEmpty ? null : Text(settings.phone),
-                  trailing: const Icon(Icons.chevron_right_rounded),
-                  onTap: () => context.push('/signin'),
+              ),
+              const SizedBox(height: 16),
+              GlassCard(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(l.about, style: AppText.serif(20, weight: FontWeight.w700)),
+                    const SizedBox(height: 8),
+                    Text(l.aboutBody, style: const TextStyle(height: 1.45)),
+                    const SizedBox(height: 14),
+                    Text(l.scriptureSource, style: const TextStyle(fontWeight: FontWeight.w600)),
+                    const SizedBox(height: 4),
+                    FutureBuilder(
+                      future: ref.read(bibleProvider).attribution(settings.lang),
+                      builder: (_, snap) => Text(snap.data ?? '',
+                          style: const TextStyle(fontSize: 13, color: Colors.white70, height: 1.4)),
+                    ),
+                    const SizedBox(height: 10),
+                    const Text(
+                      'Music: “Amazing Grace” and Pachelbel’s Canon, performed by the Strolling Strings of the U.S. Air Force Band '
+                      '(public domain), and the app’s own soft music.',
+                      style: TextStyle(fontSize: 13, color: Colors.white70, height: 1.4),
+                    ),
+                  ],
                 ),
-                const Divider(height: 1, color: AppColors.sand),
-                ListTile(
-                  leading: const Icon(Icons.language_rounded),
-                  title: Text(l.language),
-                  trailing: Text(settings.language.nativeName, style: const TextStyle(color: AppColors.inkSoft)),
-                  onTap: () => _pickLanguage(context, ref, settings.lang),
+              ),
+                  ],
                 ),
-                const Divider(height: 1, color: AppColors.sand),
-                ListTile(
-                  leading: const Icon(Icons.record_voice_over_outlined),
-                  title: Text(l.voice),
-                  trailing: ConstrainedBox(
-                    constraints: const BoxConstraints(maxWidth: 160),
-                    child: Text(settings.voice.isEmpty ? l.voiceMale : settings.voice,
-                        overflow: TextOverflow.ellipsis, style: const TextStyle(color: AppColors.inkSoft)),
-                  ),
-                  onTap: () => showModalBottomSheet<void>(
-                    context: context,
-                    isScrollControlled: true,
-                    showDragHandle: true,
-                    backgroundColor: AppColors.ivoryCard,
-                    builder: (_) => const VoicePickerSheet(),
-                  ),
-                ),
-                const _VoiceMissingNotice(),
-                const _NaturalVoices(),
-                const Divider(height: 1, color: AppColors.sand),
-                ListTile(
-                  leading: const Icon(Icons.format_size_rounded),
-                  title: Text(l.textSize),
-                  trailing: SegmentedButton<double>(
-                    showSelectedIcon: false,
-                    style: const ButtonStyle(visualDensity: VisualDensity.compact),
-                    segments: [
-                      for (final (scale, size) in [(1.0, 13.0), (1.15, 16.0), (1.3, 19.0)])
-                        ButtonSegment(value: scale, label: Text('A', style: TextStyle(fontSize: size))),
-                    ],
-                    selected: {settings.textScale},
-                    onSelectionChanged: (v) => ref.read(settingsProvider.notifier).setTextScale(v.first),
-                  ),
-                ),
-                const Divider(height: 1, color: AppColors.sand),
-                ListTile(
-                  leading: const Icon(Icons.notifications_none_rounded),
-                  title: Text(l.dailyReminder),
-                  subtitle: settings.reminder == null ? null : Text(_timeOf(settings.reminder!).format(context)),
-                  trailing: Switch(
-                    value: settings.reminder != null,
-                    activeTrackColor: AppColors.gold,
-                    onChanged: (on) => on
-                        ? _pickReminder(context, ref, 7 * 60)
-                        : ref.read(settingsProvider.notifier).setReminder(null),
-                  ),
-                  onTap: () => _pickReminder(context, ref, settings.reminder ?? 7 * 60),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
-          const SizedBox(height: 16),
-          SoftCard(
-            padding: EdgeInsets.zero,
-            child: ListTile(
-              leading: const Icon(Icons.rate_review_outlined),
-              title: Text(l.sendFeedback),
-              subtitle: Text(l.feedbackHint),
-              trailing: const Icon(Icons.chevron_right_rounded),
-              onTap: () => context.push('/feedback'),
-            ),
-          ),
-          const SizedBox(height: 16),
-          SoftCard(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(l.about, style: AppText.serif(20, weight: FontWeight.w700)),
-                const SizedBox(height: 8),
-                Text(l.aboutBody, style: const TextStyle(height: 1.45)),
-                const SizedBox(height: 14),
-                Text(l.scriptureSource, style: const TextStyle(fontWeight: FontWeight.w600)),
-                const SizedBox(height: 4),
-                FutureBuilder(
-                  future: ref.read(bibleProvider).attribution(settings.lang),
-                  builder: (_, snap) => Text(snap.data ?? '',
-                      style: const TextStyle(fontSize: 13, color: AppColors.inkSoft, height: 1.4)),
-                ),
-              ],
-            ),
-          ),
-        ],
+        ),
       ),
     );
   }
@@ -280,12 +340,12 @@ class _NaturalVoices extends ConsumerWidget {
           children: [
             Text(l.naturalVoices, style: const TextStyle(fontWeight: FontWeight.w600)),
             const SizedBox(height: 2),
-            Text(l.naturalVoicesHint, style: const TextStyle(color: AppColors.inkSoft, fontSize: 13, height: 1.35)),
+            Text(l.naturalVoicesHint, style: const TextStyle(color: Colors.white70, fontSize: 13, height: 1.35)),
             for (final v in available) _NaturalVoiceRow(voice: v, store: store),
             Align(
               alignment: Alignment.centerLeft,
               child: TextButton(
-                style: TextButton.styleFrom(padding: EdgeInsets.zero, foregroundColor: AppColors.inkSoft),
+                style: TextButton.styleFrom(padding: EdgeInsets.zero, foregroundColor: Colors.white70),
                 onPressed: () => showModalBottomSheet<void>(
                   context: context,
                   showDragHandle: true,
@@ -321,10 +381,10 @@ class _NaturalVoiceRow extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(voice.role == VoiceRole.jesus ? l.voiceOfJesus : l.verseReader),
-                Text(voice.name, style: const TextStyle(color: AppColors.inkSoft, fontSize: 13)),
+                Text(voice.name, style: const TextStyle(color: Colors.white70, fontSize: 13)),
                 if (progress != null) ...[
                   const SizedBox(height: 6),
-                  LinearProgressIndicator(value: progress, color: AppColors.gold, backgroundColor: AppColors.sand),
+                  LinearProgressIndicator(value: progress, color: AppColors.gold, backgroundColor: Colors.white24),
                 ],
               ],
             ),

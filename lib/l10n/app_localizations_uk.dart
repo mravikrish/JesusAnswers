@@ -697,4 +697,34 @@ class AppLocalizationsUk extends AppLocalizations {
   String milestoneShare(int count) {
     return 'Днів, проведених з Ісусом: $count.';
   }
+
+  @override
+  String get reminderTitle => 'Час із Богом';
+
+  @override
+  String get reminder1 =>
+      'Ісус чекає, щоб почути вас. Проведіть сьогодні з Ним тиху хвилину.';
+
+  @override
+  String get reminder2 =>
+      'Присвятіть сьогодні кілька хвилин Богу. Говоріть з Ним і слухайте Його.';
+
+  @override
+  String get reminder3 =>
+      'Хоч би що приніс цей день, Бог з вами. Прийдіть і помоліться.';
+
+  @override
+  String get reminder4 => 'Зупиніться на мить. Бог поруч, і Він чує вас.';
+
+  @override
+  String get reminder5 =>
+      'Розкажіть сьогодні Ісусові, що у вас на серці. Він слухає.';
+
+  @override
+  String get reminder6 =>
+      'Відкрийте сьогодні Його Слово, і нехай Він говорить з вами.';
+
+  @override
+  String get reminder7 =>
+      'Слово на сьогодні чекає на вас. Прочитайте його, помоліться і послухайте Його.';
 }

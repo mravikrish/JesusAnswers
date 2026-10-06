@@ -693,4 +693,33 @@ class AppLocalizationsHi extends AppLocalizations {
   String milestoneShare(int count) {
     return 'मैंने यीशु के साथ $count दिन बिताए हैं।';
   }
+
+  @override
+  String get reminderTitle => 'परमेश्वर के साथ समय';
+
+  @override
+  String get reminder1 =>
+      'यीशु आपकी बात सुनने की प्रतीक्षा कर रहे हैं। आज उनके साथ कुछ शांत पल बिताइए।';
+
+  @override
+  String get reminder2 =>
+      'आज कुछ मिनट परमेश्वर के साथ बिताइए। उनसे बात कीजिए, और उनकी सुनिए।';
+
+  @override
+  String get reminder3 =>
+      'आज जो भी हो, आप अकेले नहीं हैं। आइए, प्रार्थना करें।';
+
+  @override
+  String get reminder4 =>
+      'एक पल के लिए शांत हो जाइए। परमेश्वर निकट हैं, और वे आपकी सुनते हैं।';
+
+  @override
+  String get reminder5 => 'आज अपने मन की बात यीशु को बताइए। वे सुन रहे हैं।';
+
+  @override
+  String get reminder6 => 'आज उनका वचन खोलिए और उन्हें आपसे बात करने दीजिए।';
+
+  @override
+  String get reminder7 =>
+      'आज का वचन आपकी प्रतीक्षा कर रहा है। उसे पढ़िए, प्रार्थना कीजिए, और उनकी सुनिए।';
 }

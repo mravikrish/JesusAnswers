@@ -315,5 +315,13 @@
         "type": "int"
       }
     }
-  }
+  },
+  "reminderTitle": "Time with God",
+  "reminder1": "Jesus is waiting to hear from you. Spend a quiet moment with Him today.",
+  "reminder2": "Take a few minutes with God today. Talk with Him, and listen to Him.",
+  "reminder3": "Whatever today holds, you don't face it alone. Come and pray.",
+  "reminder4": "Be still for a moment. God is near, and He hears you.",
+  "reminder5": "Tell Jesus what is on your heart today. He is listening.",
+  "reminder6": "Open His Word today and let Him speak to you.",
+  "reminder7": "Today's Word is waiting for you. Read it, pray, and listen to Him."
 }

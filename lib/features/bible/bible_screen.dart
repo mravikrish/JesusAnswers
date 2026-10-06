@@ -469,8 +469,11 @@ class _ChapterScreenState extends ConsumerState<ChapterScreen> {
                                 avatar: const Icon(Icons.format_quote_rounded, color: AppColors.redLetter, size: 18),
                                 showCheckmark: false,
                                 labelStyle: TextStyle(color: onlyHis ? AppColors.midnight : Colors.white),
-                                backgroundColor: Colors.white.withValues(alpha: 0.07),
-                                selectedColor: AppColors.redLetter,
+                                color: WidgetStateProperty.resolveWith(
+                                  (states) => states.contains(WidgetState.selected)
+                                      ? AppColors.redLetter
+                                      : Colors.white.withValues(alpha: 0.07),
+                                ),
                                 side: BorderSide(color: AppColors.redLetter.withValues(alpha: 0.5)),
                                 shape: const StadiumBorder(),
                               ),

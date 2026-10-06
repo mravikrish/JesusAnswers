@@ -210,18 +210,19 @@ class MusicToggle extends ConsumerWidget {
     final fg = dark ? Colors.white : AppColors.ink;
     return ValueListenableBuilder(
       valueListenable: tts.music,
-      builder: (_, on, _) => FilterChip(
+      // A plain button with every colour set by hand, like Slower: FilterChip took its
+      // fill from the theme, leaving white text on a cream chip.
+      builder: (_, on, _) => OutlinedButton.icon(
+        style: OutlinedButton.styleFrom(
+          backgroundColor: on ? AppColors.goldSoft : Colors.transparent,
+          foregroundColor: on ? AppColors.ink : fg,
+          iconColor: on ? AppColors.ink : fg,
+          side: BorderSide(color: on ? AppColors.goldSoft : (dark ? Colors.white54 : AppColors.sand)),
+          shape: const StadiumBorder(),
+        ),
+        onPressed: () => tts.setMusic(!on),
+        icon: Icon(on ? Icons.music_note_rounded : Icons.music_off_rounded, size: 18),
         label: Text(AppLocalizations.of(context).music),
-        avatar: Icon(on ? Icons.music_note_rounded : Icons.music_off_rounded,
-            size: 18, color: on ? AppColors.gold : fg.withValues(alpha: 0.7)),
-        selected: on,
-        showCheckmark: false,
-        onSelected: tts.setMusic,
-        labelStyle: TextStyle(color: fg),
-        backgroundColor: Colors.transparent,
-        selectedColor: AppColors.gold.withValues(alpha: 0.18),
-        side: BorderSide(color: fg.withValues(alpha: 0.3)),
-        shape: const StadiumBorder(),
       ),
     );
   }

@@ -697,4 +697,35 @@ class AppLocalizationsTe extends AppLocalizations {
   String milestoneShare(int count) {
     return 'నేను యేసుతో $count రోజులు గడిపాను.';
   }
+
+  @override
+  String get reminderTitle => 'దేవునితో సమయం';
+
+  @override
+  String get reminder1 =>
+      'యేసు మీ మాట వినడానికి ఎదురుచూస్తున్నారు. ఈ రోజు ఆయనతో కొంత నిశ్శబ్ద సమయం గడపండి.';
+
+  @override
+  String get reminder2 =>
+      'ఈ రోజు కొన్ని నిమిషాలు దేవునితో గడపండి. ఆయనతో మాట్లాడండి, ఆయన మాట వినండి.';
+
+  @override
+  String get reminder3 =>
+      'ఈ రోజు ఏది ఎదురైనా, మీరు ఒంటరి కారు. రండి, ప్రార్థిద్దాం.';
+
+  @override
+  String get reminder4 =>
+      'ఒక్క క్షణం నిశ్శబ్దంగా ఉండండి. దేవుడు దగ్గరే ఉన్నారు, ఆయన మీ మాట వింటారు.';
+
+  @override
+  String get reminder5 =>
+      'ఈ రోజు మీ హృదయంలో ఉన్నది యేసుతో చెప్పండి. ఆయన వింటున్నారు.';
+
+  @override
+  String get reminder6 =>
+      'ఈ రోజు ఆయన వాక్యాన్ని తెరిచి, ఆయన మీతో మాట్లాడనివ్వండి.';
+
+  @override
+  String get reminder7 =>
+      'ఈ రోజు వాక్యం మీ కోసం ఎదురుచూస్తోంది. చదవండి, ప్రార్థించండి, ఆయన మాట వినండి.';
 }

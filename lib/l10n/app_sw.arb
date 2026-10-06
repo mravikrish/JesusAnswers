@@ -211,5 +211,13 @@
   "daysInARow": "Siku {count} mfululizo",
   "daysInAll": "Siku {count} kwa jumla",
   "milestoneTitle": "Siku {count} pamoja na Yesu",
-  "milestoneShare": "Nimekaa siku {count} pamoja na Yesu."
+  "milestoneShare": "Nimekaa siku {count} pamoja na Yesu.",
+  "reminderTitle": "Muda na Mungu",
+  "reminder1": "Yesu anasubiri kukusikia. Tumia muda wa utulivu pamoja naye leo.",
+  "reminder2": "Tenga dakika chache leo kwa ajili ya Mungu. Zungumza naye, na umsikilize.",
+  "reminder3": "Lolote litakalotokea leo, hauko peke yako. Njoo tuombe.",
+  "reminder4": "Tulia kwa muda mfupi. Mungu yu karibu, na anakusikia.",
+  "reminder5": "Mwambie Yesu leo yaliyo moyoni mwako. Anakusikiliza.",
+  "reminder6": "Fungua Neno lake leo na umwache aseme nawe.",
+  "reminder7": "Neno la leo linakusubiri. Lisome, omba, na umsikilize."
 }

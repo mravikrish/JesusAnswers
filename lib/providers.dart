@@ -49,12 +49,23 @@ final daysProvider = Provider((ref) {
 final reminderServiceProvider = Provider((_) => ReminderService());
 final feedbackServiceProvider = Provider((_) => FeedbackService());
 
-/// Keeps the scheduled Daily Word reminder in step with its time and the app language.
+/// Keeps the daily reminder to spend time with God in step with its time and the app language.
 /// Watched by the app root, so it also re-schedules on every launch.
 final reminderSyncProvider = Provider<void>((ref) {
   final (lang, minute) = ref.watch(settingsProvider.select((s) => (s.lang, s.reminder)));
   final l = lookupAppLocalizations(Locale(lang));
-  ref.read(reminderServiceProvider).sync(minute, title: l.todaysWord, body: l.reminderBody).ignore();
+  ref
+      .read(reminderServiceProvider)
+      .sync(minute, title: l.reminderTitle, bodies: [
+        l.reminder1,
+        l.reminder2,
+        l.reminder3,
+        l.reminder4,
+        l.reminder5,
+        l.reminder6,
+        l.reminder7,
+      ])
+      .ignore();
 });
 
 final answerServiceProvider = Provider<AnswerService>((ref) {

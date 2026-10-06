@@ -3,7 +3,7 @@ import 'package:flutter_timezone/flutter_timezone.dart';
 import 'package:timezone/data/latest_all.dart' as tzdata;
 import 'package:timezone/timezone.dart' as tz;
 
-/// The Daily Word reminder: one local notification a day at the user's chosen time.
+/// The daily reminder to spend time with God: one local notification a day at the user's chosen time.
 /// Scheduled on the device, so it needs no server and works offline.
 class ReminderService {
   static const _id = 1;
@@ -41,28 +41,39 @@ class ReminderService {
         true;
   }
 
-  /// Schedules the reminder daily at [minuteOfDay] (e.g. 7:30 → 450), or cancels it when null.
-  Future<void> sync(int? minuteOfDay, {required String title, required String body}) async {
+  /// How many days ahead are scheduled; renewed each time the app opens.
+  static const _days = 30, _firstId = 100;
+
+  /// Schedules the reminder each day at [minuteOfDay] (e.g. 7:30 → 450), with a different one of
+  /// [bodies] each day, or cancels it when null. One notification per day lets the words change.
+  Future<void> sync(int? minuteOfDay, {required String title, required List<String> bodies}) async {
     await _init();
-    await _plugin.cancel(id: _id);
-    if (minuteOfDay == null) return;
+    await _plugin.cancel(id: _id); // the single repeating reminder of earlier versions
+    for (var i = 0; i < _days; i++) {
+      await _plugin.cancel(id: _firstId + i);
+    }
+    if (minuteOfDay == null || bodies.isEmpty) return;
 
     final now = tz.TZDateTime.now(tz.local);
-    var at = tz.TZDateTime(tz.local, now.year, now.month, now.day, minuteOfDay ~/ 60, minuteOfDay % 60);
-    if (!at.isAfter(now)) at = at.add(const Duration(days: 1));
+    var first = tz.TZDateTime(tz.local, now.year, now.month, now.day, minuteOfDay ~/ 60, minuteOfDay % 60);
+    if (!first.isAfter(now)) first = first.add(const Duration(days: 1));
 
-    await _plugin.zonedSchedule(
-      id: _id,
-      scheduledDate: at,
-      title: title,
-      body: body,
-      notificationDetails: const NotificationDetails(
-        android: AndroidNotificationDetails('daily_word', 'Daily Word', importance: Importance.defaultImportance),
-        iOS: DarwinNotificationDetails(),
-      ),
-      // Inexact is fine for a daily reminder and needs no "exact alarm" permission.
-      androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
-      matchDateTimeComponents: DateTimeComponents.time,
-    );
+    for (var i = 0; i < _days; i++) {
+      final at = tz.TZDateTime(tz.local, first.year, first.month, first.day + i, first.hour, first.minute);
+      // The same words on the same day of the week, whenever it was scheduled.
+      final day = DateTime.utc(at.year, at.month, at.day).millisecondsSinceEpoch ~/ Duration.millisecondsPerDay;
+      await _plugin.zonedSchedule(
+        id: _firstId + i,
+        scheduledDate: at,
+        title: title,
+        body: bodies[day % bodies.length],
+        notificationDetails: const NotificationDetails(
+          android: AndroidNotificationDetails('daily_word', 'Daily Word', importance: Importance.defaultImportance),
+          iOS: DarwinNotificationDetails(),
+        ),
+        // Inexact is fine for a daily reminder and needs no "exact alarm" permission.
+        androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
+      );
+    }
   }
 }
