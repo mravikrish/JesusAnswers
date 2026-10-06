@@ -2,8 +2,10 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 /// Who is speaking: His words take the male voice, everything else the female one.
 enum VoiceRole { jesus, verse }
@@ -34,10 +36,56 @@ class NaturalVoice {
   final double lengthScale;
   final String credit;
 
-  /// Ready-converted for sherpa-onnx and hosted by its authors on Hugging Face.
-  String get repo => 'csukuangfj/vits-piper-$id';
+  /// Where [name] (a file of this voice, or a shared `espeak-ng-data/…` file) is found at [source].
+  Uri file(String source, String name) => VoiceSources.url(source, id, name);
+}
 
-  Uri file(String name) => Uri.parse('https://huggingface.co/$repo/resolve/main/$name');
+/// Places voices can be downloaded from, tried in order until one works, so no
+/// one host is relied on. Each is a URL template; in it
+///   {id}   the voice id, e.g. "de_DE-thorsten-high"
+///   {name} the file as laid out in a sherpa-onnx voice repo: "tokens.txt", "{id}.onnx", "espeak-ng-data/en_dict"
+///   {path} the file in a mirror folder: "{id}/tokens.txt", "{id}/{id}.onnx", "espeak-ng-data/en_dict"
+///   {file} {path} with "/" as "--", for hosts without folders (GitHub release assets)
+/// The server can send a newer list (GET /v1/voice-sources); the [builtIn] ones are always tried after it.
+class VoiceSources {
+  VoiceSources(this._prefs, {this.baseUrl = '', http.Client? client}) : _client = client ?? http.Client();
+
+  final SharedPreferences _prefs;
+  final String baseUrl;
+  final http.Client _client;
+
+  static const builtIn = [
+    // Ready-converted for sherpa-onnx and hosted by its authors on Hugging Face.
+    'https://huggingface.co/csukuangfj/vits-piper-{id}/resolve/main/{name}',
+  ];
+
+  static const _key = 'voiceSources';
+
+  static Uri url(String source, String id, String name) {
+    final path = name.startsWith('espeak-ng-data/') ? name : '$id/$name';
+    return Uri.parse(source
+        .replaceAll('{id}', id)
+        .replaceAll('{name}', name)
+        .replaceAll('{path}', path)
+        .replaceAll('{file}', path.replaceAll('/', '--')));
+  }
+
+  /// The places to try, in order: the server's latest list, then the built-in ones.
+  List<String> get current => {...?_prefs.getStringList(_key), ...builtIn}.toList();
+
+  /// Asks the server for its latest list and saves it. Quietly keeps the saved one if it can't.
+  Future<void> refresh() async {
+    if (baseUrl.isEmpty) return;
+    try {
+      final r = await _client.get(Uri.parse('$baseUrl/v1/voice-sources')).timeout(const Duration(seconds: 8));
+      if (r.statusCode != 200) return;
+      final list = [
+        for (final s in (jsonDecode(r.body)['sources'] as List).cast<String>())
+          if (s.startsWith('https://')) s,
+      ];
+      await _prefs.setStringList(_key, list);
+    } catch (_) {}
+  }
 }
 
 /// The chosen voices. Languages and roles not listed use the phone's own voice.
@@ -76,17 +124,34 @@ const naturalVoicesCredit = 'Voices by the Piper project (rhasspy), run on the p
 NaturalVoice? naturalVoiceFor(String lang, VoiceRole role) =>
     naturalVoices.where((v) => v.lang == lang && v.role == role).firstOrNull;
 
-/// Downloads and removes natural voices, and says which are ready. Files come
-/// straight from Hugging Face, uncompressed, so nothing is unpacked on the phone:
+/// Downloads and removes natural voices, and says which are ready. Files come uncompressed
+/// from the first of [VoiceSources] that has them, so nothing is unpacked on the phone:
 /// one shared pronunciation folder (espeak-ng-data, 17 MB, the same for every
 /// voice) and, per voice, its model and tokens.
 class NaturalVoiceStore extends ChangeNotifier {
-  NaturalVoiceStore({Future<Directory> Function()? root, http.Client? client})
-      : _root = root ?? getApplicationSupportDirectory,
-        _client = client ?? http.Client();
+  NaturalVoiceStore({
+    Future<Directory> Function()? root,
+    http.Client? client,
+    this.sources,
+    Future<List<String>> Function()? espeakFiles,
+  })  : _root = root ?? getApplicationSupportDirectory,
+        _client = client ?? http.Client(),
+        _espeakFiles = espeakFiles ?? _bundledEspeakFiles;
 
   final Future<Directory> Function() _root;
   final http.Client _client;
+  /// Where to download from; null = only [VoiceSources.builtIn].
+  final VoiceSources? sources;
+  final Future<List<String>> Function() _espeakFiles;
+
+  /// The shared pronunciation files, listed in the app so any host can serve them.
+  static Future<List<String>> _bundledEspeakFiles() async => [
+        for (final l in (await rootBundle.loadString('assets/voices/espeak-ng-data.txt')).split('\n'))
+          if (l.trim().isNotEmpty) l.trim(),
+      ];
+
+  /// The source that last worked; tried first for the next file.
+  int _from = 0;
   final _installed = <String>{};
   bool _scanned = false;
 
@@ -129,26 +194,26 @@ class NaturalVoiceStore extends ChangeNotifier {
 
     try {
       final voices = await _voices();
-      final listing = jsonDecode((await _get(Uri.parse('https://huggingface.co/api/models/${v.repo}'))).body);
-      final names = [for (final f in listing['siblings'] as List) f['rfilename'] as String];
+      await this.sources?.refresh();
+      final sources = this.sources?.current ?? VoiceSources.builtIn;
 
       // Shared pronunciation files: about a sixth of a first download.
       final shared = Directory('$voices/espeak-ng-data');
       final sharedFirst = !await File('${shared.path}/.ready').exists();
       if (sharedFirst) {
-        final espeak = [for (final n in names) if (n.startsWith('espeak-ng-data/')) n];
+        final espeak = await _espeakFiles();
         var done = 0;
         await _inBatches(espeak, 8, (name) async {
-          await _save(v.file(name), File('$voices/$name'));
+          await _fetch(sources, v, name, File('$voices/$name'));
           progress(0.15 * ++done / espeak.length);
         });
         await File('${shared.path}/.ready').writeAsString('ok');
       }
 
       final dir = await _dir(v);
-      await _save(v.file('tokens.txt'), File('${dir.path}/tokens.txt'));
+      await _fetch(sources, v, 'tokens.txt', File('${dir.path}/tokens.txt'));
       final from = sharedFirst ? 0.15 : 0.0;
-      await _save(v.file('${v.id}.onnx'), File('${dir.path}/${v.id}.onnx'),
+      await _fetch(sources, v, '${v.id}.onnx', File('${dir.path}/${v.id}.onnx'),
           onProgress: (p) => progress(from + (1 - from) * p));
       await File('${dir.path}/.ready').writeAsString(v.id);
       _installed.add(v.id);
@@ -165,10 +230,22 @@ class NaturalVoiceStore extends ChangeNotifier {
     notifyListeners();
   }
 
-  Future<http.Response> _get(Uri url) async {
-    final r = await _client.get(url);
-    if (r.statusCode != 200) throw HttpException('${r.statusCode}', uri: url);
-    return r;
+  /// Saves [name] of [v] to [file] from the first of [sources] that has it, starting with the one
+  /// that last worked. Throws the last failure if none do.
+  Future<void> _fetch(List<String> sources, NaturalVoice v, String name, File file,
+      {void Function(double)? onProgress}) async {
+    Object? failure;
+    for (var i = 0; i < sources.length; i++) {
+      final at = (_from + i) % sources.length;
+      try {
+        await _save(v.file(sources[at], name), file, onProgress: onProgress);
+        _from = at;
+        return;
+      } catch (e) {
+        failure = e;
+      }
+    }
+    throw failure ?? const HttpException('No voice sources');
   }
 
   /// Streams [url] to [file] through a temporary name, so a broken download never looks finished.

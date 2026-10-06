@@ -15,6 +15,7 @@ import 'l10n/app_localizations.dart';
 import 'services/answer/answer_service.dart';
 import 'services/feedback/feedback_service.dart';
 import 'services/reminder_service.dart';
+import 'services/voice/natural_voices.dart';
 import 'services/voice/speech_service.dart';
 import 'services/voice/tts_service.dart';
 
@@ -24,7 +25,10 @@ const apiBaseUrl = String.fromEnvironment('API_BASE_URL');
 final prefsProvider = Provider<SharedPreferences>((_) => throw UnimplementedError('overridden in main'));
 
 final bibleProvider = Provider((_) => BibleRepository());
-final ttsProvider = Provider((ref) => TtsService(ref.read(prefsProvider)));
+final ttsProvider = Provider((ref) {
+  final prefs = ref.read(prefsProvider);
+  return TtsService(prefs, voices: NaturalVoiceStore(sources: VoiceSources(prefs, baseUrl: apiBaseUrl)));
+});
 final speechProvider = Provider((_) => SpeechService());
 final reminderServiceProvider = Provider((_) => ReminderService());
 final feedbackServiceProvider = Provider((_) => FeedbackService());

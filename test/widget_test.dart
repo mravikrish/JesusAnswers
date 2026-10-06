@@ -1,6 +1,10 @@
+import 'dart:io';
+
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:http/http.dart' as http;
+import 'package:http/testing.dart';
 import 'package:jesus_answers/core/languages.dart';
 import 'package:jesus_answers/data/bible/bible_repository.dart';
 import 'package:jesus_answers/data/models/answer.dart';
@@ -175,13 +179,68 @@ void main() {
       expect(v.id, startsWith(v.lang), reason: v.id);
       expect(v.credit, isNotEmpty, reason: v.id);
       expect(v.lengthScale, inInclusiveRange(1.0, 1.8), reason: v.id);
-      expect(v.file('${v.id}.onnx').toString(), 'https://huggingface.co/csukuangfj/vits-piper-${v.id}/resolve/main/${v.id}.onnx');
+      expect(v.file(VoiceSources.builtIn.first, '${v.id}.onnx').toString(),
+          'https://huggingface.co/csukuangfj/vits-piper-${v.id}/resolve/main/${v.id}.onnx');
     }
     // His words in a male voice, the rest in a female one; skipped languages keep the phone's voice.
     expect(naturalVoiceFor('de', VoiceRole.jesus)!.name, 'Thorsten');
     expect(naturalVoiceFor('de', VoiceRole.verse)!.name, 'Kerstin');
     expect(naturalVoiceFor('te', VoiceRole.jesus), isNull);
     expect(naturalVoiceFor('uk', VoiceRole.jesus), isNull);
+  });
+
+  test('voice files can come from any host: in folders, flat, or a voice repo', () {
+    const id = 'de_DE-thorsten-high';
+    expect(VoiceSources.url('https://cdn.example/voices/{path}', id, 'tokens.txt').toString(),
+        'https://cdn.example/voices/$id/tokens.txt');
+    expect(VoiceSources.url('https://cdn.example/voices/{path}', id, 'espeak-ng-data/lang/roa/fr').toString(),
+        'https://cdn.example/voices/espeak-ng-data/lang/roa/fr');
+    expect(VoiceSources.url('https://github.com/o/r/releases/download/v1/{file}', id, '$id.onnx').toString(),
+        'https://github.com/o/r/releases/download/v1/$id--$id.onnx');
+    expect(VoiceSources.url('https://github.com/o/r/releases/download/v1/{file}', id, 'espeak-ng-data/en_dict').toString(),
+        'https://github.com/o/r/releases/download/v1/espeak-ng-data--en_dict');
+  });
+
+  test('the server can name newer voice hosts; the built-in ones stay as a fallback', () async {
+    SharedPreferences.setMockInitialValues({});
+    final prefs = await SharedPreferences.getInstance();
+    final sources = VoiceSources(prefs, baseUrl: 'https://api.example', client: MockClient((r) async {
+      expect(r.url.toString(), 'https://api.example/v1/voice-sources');
+      return http.Response('{"sources":["https://new.example/{path}","http://insecure.example/{path}"]}', 200);
+    }));
+    expect(sources.current, VoiceSources.builtIn);
+    await sources.refresh();
+    expect(sources.current, ['https://new.example/{path}', ...VoiceSources.builtIn]);
+
+    // Server down: the last list it sent is kept.
+    final offline = VoiceSources(prefs, baseUrl: 'https://api.example', client: MockClient((_) async => http.Response('', 503)));
+    await offline.refresh();
+    expect(offline.current.first, 'https://new.example/{path}');
+  });
+
+  test('a voice still downloads when the first host is gone', () async {
+    SharedPreferences.setMockInitialValues({'voiceSources': ['https://gone.example/{path}']});
+    final prefs = await SharedPreferences.getInstance();
+    final root = await Directory.systemTemp.createTemp('voices');
+    addTearDown(() => root.delete(recursive: true));
+    final asked = <String>[];
+    final store = NaturalVoiceStore(
+      root: () async => root,
+      sources: VoiceSources(prefs),
+      espeakFiles: () async => ['espeak-ng-data/en_dict'],
+      client: MockClient((r) async {
+        asked.add(r.url.host);
+        return r.url.host == 'gone.example' ? http.Response('', 402) : http.Response('ok', 200);
+      }),
+    );
+    final v = naturalVoiceFor('de', VoiceRole.jesus)!;
+    await store.download(v);
+    expect(await store.isInstalled(v), isTrue);
+    expect(store.downloading, isEmpty);
+    // Tried the gone host once, then stayed with the one that worked.
+    expect(asked.where((h) => h == 'gone.example').length, 1);
+    expect(asked.where((h) => h == 'huggingface.co').length, 3);
+    expect(await File('${root.path}/voices/${v.id}/${v.id}.onnx').readAsString(), 'ok');
   });
 
   test('natural voices read a sentence at a time, without losing a word', () {

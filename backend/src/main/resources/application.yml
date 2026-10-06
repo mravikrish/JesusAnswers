@@ -32,3 +32,6 @@ jesusanswers:
     encryption-key: ${JOURNEY_ENCRYPTION_KEY}   # 32 random bytes, base64 — keep in a secret manager
   rate-limit:
     answers-per-hour: ${ANSWERS_PER_HOUR:30}
+  # Where the app downloads natural voices from, comma-separated, tried before its built-in hosts.
+  # e.g. https://github.com/<owner>/<repo>/releases/download/voices-v1/{file}
+  voice-sources: ${VOICE_SOURCES:}

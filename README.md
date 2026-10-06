@@ -103,6 +103,15 @@ Voice credits. Chosen voices: male Northern English, Ald (es), Faber (pt), Gille
 Darkman (pl), Denis (ru); female Cori (en), Daniela (es), Siwis (fr), Kerstin (de), Gosia (pl), Lada (uk).
 Telugu, Bengali, Marathi and Ukrainian male voices exist but aren't hosted in converted form yet.
 
+**Voice hosts.** No single host is relied on. The app tries a list of download places in order, sticking with
+the first that works: those the server names (`GET /v1/voice-sources`, set with the backend's
+`VOICE_SOURCES`, comma-separated), then the built-in Hugging Face copies. So if a host starts charging or
+goes away, set `VOICE_SOURCES` to another one; phones pick it up without an app update. Each place is a
+URL template: `{path}` for a folder mirror laid out as `<voice>/<voice>.onnx`, `<voice>/tokens.txt` and
+`espeak-ng-data/…` (e.g. Cloudflare R2), or `{file}`, the same path with `/` as `--`, for hosts without
+folders (e.g. GitHub release assets). The pronunciation file list is bundled in `assets/voices/espeak-ng-data.txt`.
+Voices already downloaded keep working offline whatever happens to a host.
+
 **Background music.** Soft music plays under anything read aloud: a strings pad under His words (the male
 voice) and "Amazing Grace" on piano (public domain tune) under everything else (the female voice). Both are
 composed by `tool/build_music.py` into `assets/music/`, so they are the app's own: no licence, no credit. A
