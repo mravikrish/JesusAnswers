@@ -1,0 +1,6 @@
+target
+.env
+deploy
+*.iml
+.idea
+.vscode

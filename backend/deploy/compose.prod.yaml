@@ -1,0 +1,47 @@
+# Production on one server: PostgreSQL + API + Caddy (automatic HTTPS).
+# Run from ~/jesusanswers/deploy on the server: docker compose -f compose.prod.yaml up -d --build
+# Secrets live in ~/jesusanswers/deploy/.env on the server only (made by setup-server.sh).
+services:
+  postgres:
+    image: postgres:18
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: jesusanswers
+      POSTGRES_USER: jesusanswers
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+    volumes:
+      - pgdata:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U jesusanswers -d jesusanswers"]
+      interval: 10s
+      retries: 10
+    # No ports: only the API can reach the database.
+
+  api:
+    build: ..
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_URL: jdbc:postgresql://postgres:5432/jesusanswers
+      DATABASE_USER: jesusanswers
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      API_DOMAIN: ${API_DOMAIN}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+    depends_on:
+      - api
+
+volumes:
+  pgdata:
+  caddy_data:

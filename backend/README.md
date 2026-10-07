@@ -81,6 +81,18 @@ The app talks to it with `flutter run --dart-define=API_BASE_URL=http://10.0.2.2
 **This PC runs Avast Web Shield**, which intercepts HTTPS. Java doesn't trust Avast's certificate, so prefix Maven
 with `MAVEN_OPTS="-Djavax.net.ssl.trustStoreType=Windows-ROOT"`. The running API needs the same flag for its calls to Claude.
 
+## Deploy (Oracle Cloud Always Free)
+
+One Ubuntu server runs PostgreSQL, the API and Caddy, which handles HTTPS ([deploy/](deploy/)). From Git Bash:
+
+```bash
+bash backend/deploy/deploy.sh ubuntu@<server-ip> <path-to-private-key>
+```
+
+The first run installs Docker, opens ports 80/443, writes the server's secrets to `~/jesusanswers/deploy/.env`
+(**back it up**), and schedules nightly backups to `~/backups`. The API's address is `https://<ip-with-dashes>.sslip.io`.
+Build the app against it with `--dart-define=API_BASE_URL=https://…sslip.io`. Run the same command again for each update.
+
 ## Tests
 
 ```bash

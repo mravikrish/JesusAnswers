@@ -34,3 +34,6 @@ build/
 
 ### Secrets ###
 .env
+
+### Local server run ###
+run/
