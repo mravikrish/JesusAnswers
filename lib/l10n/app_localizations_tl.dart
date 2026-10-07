@@ -863,4 +863,147 @@ class AppLocalizationsTl extends AppLocalizations {
   @override
   String get circleOffline =>
       'Hindi makakonekta. Suriin ang internet mo at subukang muli.';
+
+  @override
+  String get circleSharePrayer => 'Magbahagi ng handang panalangin';
+
+  @override
+  String get circlePickPrayer =>
+      'Pumili ng panalanging ipagdarasal nang sama-sama';
+
+  @override
+  String get circleNoteHint => 'Magdagdag ng ilang salita (opsyonal)';
+
+  @override
+  String get circlePrayTogether => 'Sama-sama nating ipanalangin ito';
+
+  @override
+  String get circleJoinPrayer => 'Sumali sa panalanging ito';
+
+  @override
+  String get circleJoined => 'Sumali na';
+
+  @override
+  String circleJoinedCount(String count) {
+    return '$count ang sumali';
+  }
+
+  @override
+  String get circleLove => 'Gusto ko ang panalanging ito';
+
+  @override
+  String get circleAnsweredThanks =>
+      'Purihin ang Diyos! Nakikita na ng lahat sa circle na sumagot Siya.';
+
+  @override
+  String get circleShortLabel => 'Circle';
+
+  @override
+  String get circleNone => 'Magsimula o sumali muna sa isang prayer circle.';
+
+  @override
+  String get circleChoose => 'Ibahagi sa aling circle?';
+
+  @override
+  String circleSharedTo(String name) {
+    return 'Naibahagi sa $name';
+  }
+
+  @override
+  String newsAsked(String name) {
+    return 'Humiling ng panalangin si $name';
+  }
+
+  @override
+  String newsShared(String name) {
+    return 'Inaanyayahan ka ni $name na manalangin';
+  }
+
+  @override
+  String newsPrayed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tao ang nanalangin para sa iyo',
+      one: '1 tao ang nanalangin para sa iyo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsJoinedPrayer(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tao ang sumali sa iyong panalangin',
+      one: '1 tao ang sumali sa iyong panalangin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsAnswered(String name) {
+    return 'Sinagot ng Diyos ang panalangin ni $name!';
+  }
+
+  @override
+  String newsJoined(String name) {
+    return 'Sumali si $name sa iyong circle';
+  }
+
+  @override
+  String get newsLater => 'Mamaya';
+
+  @override
+  String get newsOpen => 'Buksan ang circle';
+
+  @override
+  String get newsAmen => 'Amen';
+
+  @override
+  String get circleInfoTitle => 'Paano gumagana ang mga prayer circle';
+
+  @override
+  String circleInfoMembers(int max) {
+    return 'Hanggang $max tao sa bawat circle';
+  }
+
+  @override
+  String circleInfoCircles(int max) {
+    return 'Puwede kang sumali sa hanggang $max circle';
+  }
+
+  @override
+  String get circleInfoShare =>
+      'Magbahagi ng kahilingan sa panalangin o handang panalangin. Ita-tap ng iba ang \"Nanalangin ako\", o sasali at mananalangin kasama mo.';
+
+  @override
+  String get circleInfoPrivate =>
+      'Mga miyembro lang ang nakakakita ng mga kahilingan. Naka-encrypt ang mga ito, walang account, email o numero ng telepono.';
+
+  @override
+  String circleInfoDays(int days) {
+    return 'Binubura ang mga kahilingan pagkalipas ng $days araw.';
+  }
+
+  @override
+  String get circleInfoOwner =>
+      'Ang nagsimula ng circle ay puwedeng mag-alis ng miyembro. Hindi na makakabalik ang inalis.';
+
+  @override
+  String get circleInfoReport =>
+      'I-report ang anumang nakakasakit: agad itong itatago para sa iyo, at aalisin para sa lahat kapag sapat na miyembro ang nag-report.';
+
+  @override
+  String get circleInfoLeave =>
+      'Kapag umalis ka sa circle, mabubura ang iyong mga kahilingan doon.';
+
+  @override
+  String get circleInfoPopups =>
+      'Pagbukas mo ng app, lalabas ang mga bagong kahilingan, ibinahaging panalangin at sinagot na panalangin.';
+
+  @override
+  String circleMembersOf(int count, int max) {
+    return '$count sa $max miyembro';
+  }
 }

@@ -1,5 +1,7 @@
 package com.jesusanswers.api.circle;
 
+import java.time.Instant;
+import java.time.format.DateTimeParseException;
 import java.util.List;
 import java.util.regex.Pattern;
 
@@ -13,11 +15,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 import com.jesusanswers.api.answer.RateLimiter;
 import com.jesusanswers.api.circle.CircleService.Detail;
+import com.jesusanswers.api.circle.CircleService.NewsPage;
 import com.jesusanswers.api.circle.CircleService.Summary;
 import com.jesusanswers.api.community.CommunityService;
 
@@ -35,7 +39,8 @@ public class CircleController {
 
     public record Join(String code, String memberName) {}
 
-    public record NewRequest(String text) {}
+    /** A request in [text]; or a ready prayer, [prayerId], with [text] as an optional note. */
+    public record NewRequest(String text, String prayerId) {}
 
     private static final Pattern INSTALL_ID = Pattern.compile("[A-Za-z0-9-]{16,64}");
 
@@ -63,6 +68,21 @@ public class CircleController {
     @GetMapping
     public List<Summary> mine(@RequestHeader("X-Install-Id") String installId) {
         return circles.mine(device(installId));
+    }
+
+    /** What's new since [since] (ISO time from the last answer's `now`); none the first time. */
+    @GetMapping("/news")
+    public NewsPage news(@RequestHeader("X-Install-Id") String installId,
+                         @RequestParam(required = false) String since) {
+        Instant from = null;
+        if (since != null) {
+            try {
+                from = Instant.parse(since);
+            } catch (DateTimeParseException e) {
+                throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
+            }
+        }
+        return circles.news(device(installId), from);
     }
 
     @PostMapping
@@ -117,9 +137,32 @@ public class CircleController {
     public Detail addRequest(@RequestHeader("X-Install-Id") String installId, @PathVariable String code,
                              @RequestBody NewRequest body, HttpServletRequest http) {
         String device = device(installId);
-        String text = valid(CircleService.cleanText(body.text()));
+        String prayerId = null;
+        String text;
+        if (body.prayerId() != null) {
+            prayerId = valid(CircleService.cleanPrayerId(body.prayerId()));
+            text = body.text() == null || body.text().isBlank() ? "" : valid(CircleService.cleanText(body.text()));
+        } else {
+            text = valid(CircleService.cleanText(body.text()));
+        }
         limit(writes, installId, http);
-        return circles.addRequest(device, code(code), text);
+        return circles.addRequest(device, code(code), text, prayerId);
+    }
+
+    @PostMapping("/{code}/requests/{id}/heart")
+    public Detail heart(@RequestHeader("X-Install-Id") String installId, @PathVariable String code,
+                        @PathVariable long id, HttpServletRequest http) {
+        String device = device(installId);
+        limit(writes, installId, http);
+        return circles.heart(device, code(code), id, true);
+    }
+
+    @DeleteMapping("/{code}/requests/{id}/heart")
+    public Detail unheart(@RequestHeader("X-Install-Id") String installId, @PathVariable String code,
+                          @PathVariable long id, HttpServletRequest http) {
+        String device = device(installId);
+        limit(writes, installId, http);
+        return circles.heart(device, code(code), id, false);
     }
 
     @PostMapping("/{code}/requests/{id}/prayed")

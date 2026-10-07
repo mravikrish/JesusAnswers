@@ -857,4 +857,148 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get circleOffline =>
       'కనెక్ట్ కాలేదు. మీ ఇంటర్నెట్ చూసి మళ్ళీ ప్రయత్నించండి.';
+
+  @override
+  String get circleSharePrayer => 'సిద్ధమైన ప్రార్థనను పంచుకోండి';
+
+  @override
+  String get circlePickPrayer =>
+      'కలిసి ప్రార్థించడానికి ఒక ప్రార్థనను ఎంచుకోండి';
+
+  @override
+  String get circleNoteHint => 'కొన్ని మాటలు జోడించండి (ఐచ్ఛికం)';
+
+  @override
+  String get circlePrayTogether => 'రండి, ఈ ప్రార్థనను కలిసి చేద్దాం';
+
+  @override
+  String get circleJoinPrayer => 'ఈ ప్రార్థనలో చేరండి';
+
+  @override
+  String get circleJoined => 'చేరాను';
+
+  @override
+  String circleJoinedCount(String count) {
+    return '$count మంది చేరారు';
+  }
+
+  @override
+  String get circleLove => 'ఈ ప్రార్థన నచ్చింది';
+
+  @override
+  String get circleAnsweredThanks =>
+      'దేవునికి స్తోత్రం! ఆయన జవాబిచ్చాడని బృందంలో అందరూ ఇప్పుడు చూడగలరు.';
+
+  @override
+  String get circleShortLabel => 'బృందం';
+
+  @override
+  String get circleNone =>
+      'ముందుగా ఒక ప్రార్థనా బృందాన్ని ప్రారంభించండి లేదా అందులో చేరండి.';
+
+  @override
+  String get circleChoose => 'ఏ బృందంతో పంచుకోవాలి?';
+
+  @override
+  String circleSharedTo(String name) {
+    return '$nameతో పంచుకున్నారు';
+  }
+
+  @override
+  String newsAsked(String name) {
+    return '$name ప్రార్థన కోరారు';
+  }
+
+  @override
+  String newsShared(String name) {
+    return '$name మిమ్మల్ని ప్రార్థనకు ఆహ్వానిస్తున్నారు';
+  }
+
+  @override
+  String newsPrayed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count మంది మీ కోసం ప్రార్థించారు',
+      one: '1 వ్యక్తి మీ కోసం ప్రార్థించారు',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsJoinedPrayer(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count మంది మీ ప్రార్థనలో చేరారు',
+      one: '1 వ్యక్తి మీ ప్రార్థనలో చేరారు',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsAnswered(String name) {
+    return 'దేవుడు $name ప్రార్థనకు జవాబిచ్చాడు!';
+  }
+
+  @override
+  String newsJoined(String name) {
+    return '$name మీ బృందంలో చేరారు';
+  }
+
+  @override
+  String get newsLater => 'తర్వాత';
+
+  @override
+  String get newsOpen => 'బృందాన్ని తెరవండి';
+
+  @override
+  String get newsAmen => 'ఆమేన్';
+
+  @override
+  String get circleInfoTitle => 'ప్రార్థనా బృందాలు ఎలా పనిచేస్తాయి';
+
+  @override
+  String circleInfoMembers(int max) {
+    return 'ప్రతి బృందంలో గరిష్ఠంగా $max మంది';
+  }
+
+  @override
+  String circleInfoCircles(int max) {
+    return 'మీరు గరిష్ఠంగా $max బృందాల్లో ఉండవచ్చు';
+  }
+
+  @override
+  String get circleInfoShare =>
+      'ప్రార్థన విన్నపం లేదా సిద్ధమైన ప్రార్థనను పంచుకోండి. ఇతరులు \"నేను ప్రార్థించాను\" నొక్కుతారు, లేదా చేరి మీతో కలిసి ప్రార్థిస్తారు.';
+
+  @override
+  String get circleInfoPrivate =>
+      'సభ్యులు మాత్రమే విన్నపాలను చూడగలరు. ఖాతా, ఈమెయిల్ లేదా ఫోన్ నంబర్ లేకుండా, ఎన్‌క్రిప్ట్ చేసి భద్రపరుస్తాం.';
+
+  @override
+  String circleInfoDays(int days) {
+    return 'విన్నపాలు $days రోజుల తర్వాత తొలగించబడతాయి.';
+  }
+
+  @override
+  String get circleInfoOwner =>
+      'బృందాన్ని ప్రారంభించినవారు సభ్యులను తొలగించగలరు. తొలగించబడినవారు మళ్ళీ చేరలేరు.';
+
+  @override
+  String get circleInfoReport =>
+      'బాధ కలిగించేది ఏదైనా రిపోర్ట్ చేయండి: అది వెంటనే మీకు కనిపించదు, తగినంత మంది రిపోర్ట్ చేస్తే అందరికీ తొలగించబడుతుంది.';
+
+  @override
+  String get circleInfoLeave =>
+      'బృందం నుండి వెళ్ళిపోతే, అందులో మీ విన్నపాలు తొలగించబడతాయి.';
+
+  @override
+  String get circleInfoPopups =>
+      'యాప్ తెరిచినప్పుడు కొత్త విన్నపాలు, పంచుకున్న ప్రార్థనలు, జవాబు వచ్చిన ప్రార్థనలు పాపప్‌లో కనిపిస్తాయి.';
+
+  @override
+  String circleMembersOf(int count, int max) {
+    return '$maxలో $count మంది సభ్యులు';
+  }
 }

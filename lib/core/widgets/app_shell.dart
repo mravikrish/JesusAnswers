@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../../services/voice/tts_service.dart';
 
 import '../../data/models/answer.dart';
+import '../../features/circles/circle_news.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
 import '../theme/app_theme.dart';
@@ -49,7 +50,7 @@ class AppShell extends StatelessWidget {
 
     return Scaffold(
       extendBody: true,
-      body: _WelcomeMusic(child: shell),
+      body: CircleNewsPopups(child: _WelcomeMusic(child: shell)),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           color: bg,

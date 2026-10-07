@@ -1671,6 +1671,204 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Couldn\'t connect. Check your internet and try again.'**
   String get circleOffline;
+
+  /// No description provided for @circleSharePrayer.
+  ///
+  /// In en, this message translates to:
+  /// **'Share a ready prayer'**
+  String get circleSharePrayer;
+
+  /// No description provided for @circlePickPrayer.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a prayer to pray together'**
+  String get circlePickPrayer;
+
+  /// No description provided for @circleNoteHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a few words (optional)'**
+  String get circleNoteHint;
+
+  /// No description provided for @circlePrayTogether.
+  ///
+  /// In en, this message translates to:
+  /// **'Let\'s pray this together'**
+  String get circlePrayTogether;
+
+  /// No description provided for @circleJoinPrayer.
+  ///
+  /// In en, this message translates to:
+  /// **'Join this prayer'**
+  String get circleJoinPrayer;
+
+  /// No description provided for @circleJoined.
+  ///
+  /// In en, this message translates to:
+  /// **'Joined'**
+  String get circleJoined;
+
+  /// No description provided for @circleJoinedCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} joined'**
+  String circleJoinedCount(String count);
+
+  /// No description provided for @circleLove.
+  ///
+  /// In en, this message translates to:
+  /// **'Love this prayer'**
+  String get circleLove;
+
+  /// No description provided for @circleAnsweredThanks.
+  ///
+  /// In en, this message translates to:
+  /// **'Praise God! Everyone in the circle can now see that He answered.'**
+  String get circleAnsweredThanks;
+
+  /// No description provided for @circleShortLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Circle'**
+  String get circleShortLabel;
+
+  /// No description provided for @circleNone.
+  ///
+  /// In en, this message translates to:
+  /// **'Start or join a prayer circle first.'**
+  String get circleNone;
+
+  /// No description provided for @circleChoose.
+  ///
+  /// In en, this message translates to:
+  /// **'Share with which circle?'**
+  String get circleChoose;
+
+  /// No description provided for @circleSharedTo.
+  ///
+  /// In en, this message translates to:
+  /// **'Shared with {name}'**
+  String circleSharedTo(String name);
+
+  /// No description provided for @newsAsked.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} asked for prayer'**
+  String newsAsked(String name);
+
+  /// No description provided for @newsShared.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} invites you to pray'**
+  String newsShared(String name);
+
+  /// No description provided for @newsPrayed.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 person prayed for you} other{{count} people prayed for you}}'**
+  String newsPrayed(int count);
+
+  /// No description provided for @newsJoinedPrayer.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 person joined your prayer} other{{count} people joined your prayer}}'**
+  String newsJoinedPrayer(int count);
+
+  /// No description provided for @newsAnswered.
+  ///
+  /// In en, this message translates to:
+  /// **'God answered {name}\'s prayer!'**
+  String newsAnswered(String name);
+
+  /// No description provided for @newsJoined.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} joined your circle'**
+  String newsJoined(String name);
+
+  /// No description provided for @newsLater.
+  ///
+  /// In en, this message translates to:
+  /// **'Later'**
+  String get newsLater;
+
+  /// No description provided for @newsOpen.
+  ///
+  /// In en, this message translates to:
+  /// **'Open circle'**
+  String get newsOpen;
+
+  /// No description provided for @newsAmen.
+  ///
+  /// In en, this message translates to:
+  /// **'Amen'**
+  String get newsAmen;
+
+  /// No description provided for @circleInfoTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How prayer circles work'**
+  String get circleInfoTitle;
+
+  /// No description provided for @circleInfoMembers.
+  ///
+  /// In en, this message translates to:
+  /// **'Up to {max} people in each circle'**
+  String circleInfoMembers(int max);
+
+  /// No description provided for @circleInfoCircles.
+  ///
+  /// In en, this message translates to:
+  /// **'You can be in up to {max} circles'**
+  String circleInfoCircles(int max);
+
+  /// No description provided for @circleInfoShare.
+  ///
+  /// In en, this message translates to:
+  /// **'Share a prayer request or a ready prayer. The others tap \"I prayed\", or join and pray it with you.'**
+  String get circleInfoShare;
+
+  /// No description provided for @circleInfoPrivate.
+  ///
+  /// In en, this message translates to:
+  /// **'Only members can see the requests. They are stored encrypted, with no account, email or phone number.'**
+  String get circleInfoPrivate;
+
+  /// No description provided for @circleInfoDays.
+  ///
+  /// In en, this message translates to:
+  /// **'Requests are deleted after {days} days.'**
+  String circleInfoDays(int days);
+
+  /// No description provided for @circleInfoOwner.
+  ///
+  /// In en, this message translates to:
+  /// **'Whoever starts a circle can remove members. Someone removed can\'t join again.'**
+  String get circleInfoOwner;
+
+  /// No description provided for @circleInfoReport.
+  ///
+  /// In en, this message translates to:
+  /// **'Report anything hurtful: it is hidden for you at once, and removed for everyone when enough members report it.'**
+  String get circleInfoReport;
+
+  /// No description provided for @circleInfoLeave.
+  ///
+  /// In en, this message translates to:
+  /// **'If you leave a circle, your requests in it are deleted.'**
+  String get circleInfoLeave;
+
+  /// No description provided for @circleInfoPopups.
+  ///
+  /// In en, this message translates to:
+  /// **'When you open the app, new requests, shared prayers and answered prayers pop up.'**
+  String get circleInfoPopups;
+
+  /// No description provided for @circleMembersOf.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} of {max} members'**
+  String circleMembersOf(int count, int max);
 }
 
 class _AppLocalizationsDelegate

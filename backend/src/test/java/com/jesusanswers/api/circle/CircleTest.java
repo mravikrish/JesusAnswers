@@ -47,8 +47,8 @@ class CircleTest {
         }
 
         @Override
-        public Detail addRequest(String device, String code, String text) {
-            calls.add("ask " + code + " " + text);
+        public Detail addRequest(String device, String code, String text, String prayerId) {
+            calls.add(prayerId == null ? "ask " + code + " " + text : "share " + code + " " + prayerId + " [" + text + "]");
             return empty(code);
         }
     }
@@ -109,9 +109,22 @@ class CircleTest {
         var http = new MockHttpServletRequest();
         controller.create(INSTALL, new NewCircle(" Family ", "Ravi"), http);
         controller.join(INSTALL, new Join("k7p-3mx", "Ravi"), http);
-        controller.addRequest(INSTALL, "K7P3MX", new NewRequest("Pray for my exam"), http);
+        controller.addRequest(INSTALL, "K7P3MX", new NewRequest("Pray for my exam", null), http);
         assertThat(service.calls).containsExactly(
                 "create Family by Ravi", "join K7P3MX as Ravi", "ask K7P3MX Pray for my exam");
+    }
+
+    @Test
+    void sharesAReadyPrayerWithOrWithoutANote() {
+        var service = new Recording();
+        var controller = controller(service, 10);
+        var http = new MockHttpServletRequest();
+        controller.addRequest(INSTALL, "K7P3MX", new NewRequest(null, "psalm23"), http);
+        controller.addRequest(INSTALL, "K7P3MX", new NewRequest(" Let's pray this tonight ", "psalm23"), http);
+        assertThat(service.calls).containsExactly(
+                "share K7P3MX psalm23 []", "share K7P3MX psalm23 [Let's pray this tonight]");
+        assertThatThrownBy(() -> controller.addRequest(INSTALL, "K7P3MX", new NewRequest(null, "../etc"), http))
+                .isInstanceOf(ResponseStatusException.class).hasMessageContaining("BAD_REQUEST");
     }
 
     @Test
@@ -122,7 +135,7 @@ class CircleTest {
                 .isInstanceOf(ResponseStatusException.class).hasMessageContaining("BAD_REQUEST");
         assertThatThrownBy(() -> controller.create(INSTALL, new NewCircle("", "Ravi"), http))
                 .isInstanceOf(ResponseStatusException.class).hasMessageContaining("BAD_REQUEST");
-        assertThatThrownBy(() -> controller.addRequest(INSTALL, "K7P3MX", new NewRequest(" "), http))
+        assertThatThrownBy(() -> controller.addRequest(INSTALL, "K7P3MX", new NewRequest(" ", null), http))
                 .isInstanceOf(ResponseStatusException.class).hasMessageContaining("BAD_REQUEST");
         assertThatThrownBy(() -> controller.join(INSTALL, new Join("nope", "Ravi"), http))
                 .isInstanceOf(ResponseStatusException.class).hasMessageContaining("NOT_FOUND");

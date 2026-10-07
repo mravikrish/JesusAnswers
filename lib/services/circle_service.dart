@@ -56,6 +56,9 @@ class CircleRequest {
     this.prayed = 0,
     this.prayedByMe = false,
     this.mine = false,
+    this.prayerId,
+    this.hearts = 0,
+    this.heartedByMe = false,
   });
 
   factory CircleRequest.fromJson(Map<String, dynamic> j) => CircleRequest(
@@ -67,6 +70,9 @@ class CircleRequest {
     prayed: (j['prayed'] as num?)?.toInt() ?? 0,
     prayedByMe: j['prayedByMe'] == true,
     mine: j['mine'] == true,
+    prayerId: j['prayerId'] as String?,
+    hearts: (j['hearts'] as num?)?.toInt() ?? 0,
+    heartedByMe: j['heartedByMe'] == true,
   );
 
   final int id;
@@ -75,6 +81,11 @@ class CircleRequest {
   final bool answered;
   final int prayed;
   final bool prayedByMe, mine;
+
+  /// A ready prayer shared to pray together; [text] is then an optional note.
+  final String? prayerId;
+  final int hearts;
+  final bool heartedByMe;
 }
 
 class CircleDetail {
@@ -104,6 +115,54 @@ class CircleDetail {
   final List<CircleRequest> requests;
 }
 
+enum CircleNewsKind { request, prayer, prayed, answered, joined }
+
+/// Something new in one of the person's circles, shown as a popup when they open the app.
+class CircleNews {
+  const CircleNews({
+    required this.kind,
+    required this.circle,
+    required this.circleName,
+    this.requestId,
+    this.name = '',
+    this.text = '',
+    this.prayerId,
+    this.count = 0,
+  });
+
+  /// Null for a kind this version of the app doesn't know.
+  static CircleNews? fromJson(Map<String, dynamic> j) {
+    final kind = CircleNewsKind.values.where((k) => k.name == j['kind']).firstOrNull;
+    if (kind == null) return null;
+    return CircleNews(
+      kind: kind,
+      circle: j['circle'] as String,
+      circleName: j['circleName'] as String,
+      requestId: (j['requestId'] as num?)?.toInt(),
+      name: j['name'] as String? ?? '',
+      text: j['text'] as String? ?? '',
+      prayerId: j['prayerId'] as String?,
+      count: (j['count'] as num?)?.toInt() ?? 0,
+    );
+  }
+
+  final CircleNewsKind kind;
+
+  /// The circle's code and name.
+  final String circle, circleName;
+  final int? requestId;
+
+  /// Who asked, shared or joined.
+  final String name;
+
+  /// The request, or the note with a shared prayer.
+  final String text;
+  final String? prayerId;
+
+  /// How many prayed ([CircleNewsKind.prayed]).
+  final int count;
+}
+
 /// [notAllowed]: taken out of the circle, or not theirs to change.
 enum CircleProblem { offline, notFound, full, tooMany, notAllowed }
 
@@ -123,10 +182,13 @@ class CircleException implements Exception {
 ///   POST   /v1/circles/join       {code, memberName}  → CircleDetail
 ///   GET    /v1/circles/{code}                         → CircleDetail
 ///   POST   /v1/circles/{code}/requests {text}         → CircleDetail
+///   POST   /v1/circles/{code}/requests {prayerId, text?} → CircleDetail (a ready prayer, with a note)
+///   POST | DELETE /v1/circles/{code}/requests/{id}/heart → CircleDetail
 ///   POST   /v1/circles/{code}/requests/{id}/prayed | answered | report → CircleDetail
 ///   DELETE /v1/circles/{code}/requests/{id}           → CircleDetail
 ///   DELETE /v1/circles/{code}/members/{id}            → CircleDetail (owner only)
 ///   POST   /v1/circles/{code}/leave                   → 204
+///   GET    /v1/circles/news?since=…                   → {now, items: [CircleNews]}
 ///
 /// The list of circles is kept on the phone, so it still shows offline.
 class CircleService {
@@ -138,7 +200,11 @@ class CircleService {
   final String Function() installId;
   final http.Client _client;
 
+  /// The server's limits (backend CircleService), shown in "How prayer circles work".
+  static const maxMembers = 100, maxCircles = 20, keepDays = 60;
+
   static const _listKey = 'circles';
+  static const _newsKey = 'circleNewsSince';
   static String _seenKey(String code) => 'circleSeen:$code';
 
   /// "K7P3MX" → "K7P-3MX", easier to read out and type.
@@ -173,6 +239,19 @@ class CircleService {
     return list;
   }
 
+  /// What happened in the person's circles since they last asked, oldest first. The first time
+  /// there is nothing yet: it only notes where to start from.
+  Future<List<CircleNews>> news() async {
+    if (baseUrl.isEmpty || saved.isEmpty) return const [];
+    final since = _prefs.getString(_newsKey);
+    final page = await _call('GET', '/news${since == null ? '' : '?since=${Uri.encodeQueryComponent(since)}'}')
+        as Map<String, dynamic>;
+    await _prefs.setString(_newsKey, page['now'] as String);
+    return [
+      for (final n in page['items'] as List? ?? const []) ?CircleNews.fromJson(n as Map<String, dynamic>),
+    ];
+  }
+
   Future<CircleDetail> create(String name, String memberName) =>
       _detail('POST', '', {'name': name, 'memberName': memberName});
 
@@ -182,6 +261,12 @@ class CircleService {
   Future<CircleDetail> open(String code) => _detail('GET', '/$code');
 
   Future<CircleDetail> ask(String code, String text) => _detail('POST', '/$code/requests', {'text': text});
+
+  Future<CircleDetail> sharePrayer(String code, String prayerId, String note) =>
+      _detail('POST', '/$code/requests', {'prayerId': prayerId, 'text': note});
+
+  Future<CircleDetail> heart(String code, int request, {required bool on}) =>
+      _detail(on ? 'POST' : 'DELETE', '/$code/requests/$request/heart');
 
   Future<CircleDetail> prayed(String code, int request) => _detail('POST', '/$code/requests/$request/prayed');
 

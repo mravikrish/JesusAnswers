@@ -77,6 +77,7 @@ final routerProvider = Provider<GoRouter>((ref) {
         builder: (_, state) => PrayerReadScreen(
           id: state.pathParameters['id']!,
           forSomeone: state.uri.queryParameters['for'] == '1',
+          along: state.uri.queryParameters['along'] == '1',
         ),
       ),
       GoRoute(path: '/circles', builder: (_, _) => const CirclesScreen()),

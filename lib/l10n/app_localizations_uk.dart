@@ -857,4 +857,147 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get circleOffline =>
       'Не вдалося підключитися. Перевірте інтернет і спробуйте ще раз.';
+
+  @override
+  String get circleSharePrayer => 'Поділитися готовою молитвою';
+
+  @override
+  String get circlePickPrayer => 'Оберіть молитву, щоб молитися разом';
+
+  @override
+  String get circleNoteHint => 'Додайте кілька слів (необов\'язково)';
+
+  @override
+  String get circlePrayTogether => 'Помолімося разом';
+
+  @override
+  String get circleJoinPrayer => 'Приєднатися до молитви';
+
+  @override
+  String get circleJoined => 'Приєдналися';
+
+  @override
+  String circleJoinedCount(String count) {
+    return 'Приєдналися: $count';
+  }
+
+  @override
+  String get circleLove => 'Люблю цю молитву';
+
+  @override
+  String get circleAnsweredThanks =>
+      'Слава Богу! Тепер усе коло бачить, що Він відповів.';
+
+  @override
+  String get circleShortLabel => 'Коло';
+
+  @override
+  String get circleNone =>
+      'Спершу створіть молитовне коло або приєднайтеся до нього.';
+
+  @override
+  String get circleChoose => 'До якого кола надіслати?';
+
+  @override
+  String circleSharedTo(String name) {
+    return 'Надіслано в «$name»';
+  }
+
+  @override
+  String newsAsked(String name) {
+    return '$name просить про молитву';
+  }
+
+  @override
+  String newsShared(String name) {
+    return '$name запрошує вас помолитися';
+  }
+
+  @override
+  String newsPrayed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Помолилися за вас: $count',
+      one: '1 людина помолилася за вас',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsJoinedPrayer(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Приєдналися до вашої молитви: $count',
+      one: '1 людина приєдналася до вашої молитви',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsAnswered(String name) {
+    return 'Бог відповів на молитву: $name!';
+  }
+
+  @override
+  String newsJoined(String name) {
+    return '$name тепер у вашому колі';
+  }
+
+  @override
+  String get newsLater => 'Пізніше';
+
+  @override
+  String get newsOpen => 'Відкрити коло';
+
+  @override
+  String get newsAmen => 'Амінь';
+
+  @override
+  String get circleInfoTitle => 'Як працюють молитовні кола';
+
+  @override
+  String circleInfoMembers(int max) {
+    return 'До $max людей у кожному колі';
+  }
+
+  @override
+  String circleInfoCircles(int max) {
+    return 'Можна бути не більш ніж у $max колах';
+  }
+
+  @override
+  String get circleInfoShare =>
+      'Поділіться молитовним проханням або готовою молитвою. Інші натискають «Я молюся» або приєднуються й моляться разом із вами.';
+
+  @override
+  String get circleInfoPrivate =>
+      'Прохання бачать лише учасники. Вони зберігаються зашифрованими, без облікового запису, пошти й номера телефону.';
+
+  @override
+  String circleInfoDays(int days) {
+    return 'Прохання видаляються через $days днів.';
+  }
+
+  @override
+  String get circleInfoOwner =>
+      'Засновник кола може видаляти учасників. Видалений не зможе повернутися.';
+
+  @override
+  String get circleInfoReport =>
+      'Повідомляйте про те, що ранить: це одразу приховується для вас і видаляється для всіх, коли поскаржиться достатньо учасників.';
+
+  @override
+  String get circleInfoLeave =>
+      'Якщо ви вийдете з кола, ваші прохання в ньому видаляться.';
+
+  @override
+  String get circleInfoPopups =>
+      'Коли ви відкриваєте застосунок, з\'являються нові прохання, спільні та відповідені молитви.';
+
+  @override
+  String circleMembersOf(int count, int max) {
+    return 'Учасники: $count з $max';
+  }
 }

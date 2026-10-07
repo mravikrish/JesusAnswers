@@ -867,4 +867,148 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get circleOffline =>
       'இணைக்க முடியவில்லை. இணையத்தைச் சரிபார்த்து மீண்டும் முயலுங்கள்.';
+
+  @override
+  String get circleSharePrayer => 'ஒரு தயார் ஜெபத்தைப் பகிரவும்';
+
+  @override
+  String get circlePickPrayer =>
+      'சேர்ந்து ஜெபிக்க ஒரு ஜெபத்தைத் தேர்ந்தெடுக்கவும்';
+
+  @override
+  String get circleNoteHint => 'சில வார்த்தைகளைச் சேர்க்கவும் (விருப்பம்)';
+
+  @override
+  String get circlePrayTogether => 'வாருங்கள், இந்த ஜெபத்தை சேர்ந்து செய்வோம்';
+
+  @override
+  String get circleJoinPrayer => 'இந்த ஜெபத்தில் சேர்';
+
+  @override
+  String get circleJoined => 'சேர்ந்தேன்';
+
+  @override
+  String circleJoinedCount(String count) {
+    return '$count பேர் சேர்ந்தனர்';
+  }
+
+  @override
+  String get circleLove => 'இந்த ஜெபம் பிடித்தது';
+
+  @override
+  String get circleAnsweredThanks =>
+      'தேவனுக்கு ஸ்தோத்திரம்! அவர் பதில் அளித்ததைக் குழுவில் அனைவரும் இப்போது காணலாம்.';
+
+  @override
+  String get circleShortLabel => 'குழு';
+
+  @override
+  String get circleNone =>
+      'முதலில் ஒரு ஜெப குழுவைத் தொடங்கவும் அல்லது சேரவும்.';
+
+  @override
+  String get circleChoose => 'எந்தக் குழுவுடன் பகிர வேண்டும்?';
+
+  @override
+  String circleSharedTo(String name) {
+    return '$name உடன் பகிரப்பட்டது';
+  }
+
+  @override
+  String newsAsked(String name) {
+    return '$name ஜெபம் கேட்டார்';
+  }
+
+  @override
+  String newsShared(String name) {
+    return '$name உங்களை ஜெபிக்க அழைக்கிறார்';
+  }
+
+  @override
+  String newsPrayed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count பேர் உங்களுக்காக ஜெபித்தனர்',
+      one: '1 பேர் உங்களுக்காக ஜெபித்தார்',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsJoinedPrayer(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count பேர் உங்கள் ஜெபத்தில் சேர்ந்தனர்',
+      one: '1 பேர் உங்கள் ஜெபத்தில் சேர்ந்தார்',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsAnswered(String name) {
+    return 'தேவன் $name அவர்களின் ஜெபத்துக்குப் பதில் அளித்தார்!';
+  }
+
+  @override
+  String newsJoined(String name) {
+    return '$name உங்கள் குழுவில் சேர்ந்தார்';
+  }
+
+  @override
+  String get newsLater => 'பிறகு';
+
+  @override
+  String get newsOpen => 'குழுவைத் திற';
+
+  @override
+  String get newsAmen => 'ஆமென்';
+
+  @override
+  String get circleInfoTitle => 'ஜெப குழுக்கள் எப்படி இயங்குகின்றன';
+
+  @override
+  String circleInfoMembers(int max) {
+    return 'ஒவ்வொரு குழுவிலும் அதிகபட்சம் $max பேர்';
+  }
+
+  @override
+  String circleInfoCircles(int max) {
+    return 'நீங்கள் அதிகபட்சம் $max குழுக்களில் இருக்கலாம்';
+  }
+
+  @override
+  String get circleInfoShare =>
+      'ஒரு ஜெப வேண்டுகோள் அல்லது தயார் ஜெபத்தைப் பகிருங்கள். மற்றவர்கள் \"நான் ஜெபித்தேன்\" என்பதைத் தட்டுவார்கள், அல்லது சேர்ந்து உங்களுடன் ஜெபிப்பார்கள்.';
+
+  @override
+  String get circleInfoPrivate =>
+      'உறுப்பினர்கள் மட்டுமே வேண்டுகோள்களைக் காண முடியும். கணக்கு, மின்னஞ்சல், தொலைபேசி எண் இல்லாமல், குறியாக்கம் செய்து சேமிக்கப்படுகின்றன.';
+
+  @override
+  String circleInfoDays(int days) {
+    return 'வேண்டுகோள்கள் $days நாட்களுக்குப் பிறகு நீக்கப்படும்.';
+  }
+
+  @override
+  String get circleInfoOwner =>
+      'குழுவைத் தொடங்கியவர் உறுப்பினர்களை நீக்கலாம். நீக்கப்பட்டவர் மீண்டும் சேர முடியாது.';
+
+  @override
+  String get circleInfoReport =>
+      'புண்படுத்தும் எதையும் புகாரளியுங்கள்: அது உடனே உங்களுக்கு மறைக்கப்படும், போதுமான உறுப்பினர்கள் புகாரளித்தால் அனைவருக்கும் நீக்கப்படும்.';
+
+  @override
+  String get circleInfoLeave =>
+      'குழுவை விட்டு வெளியேறினால் அதில் உங்கள் வேண்டுகோள்கள் நீக்கப்படும்.';
+
+  @override
+  String get circleInfoPopups =>
+      'ஆப்பைத் திறக்கும்போது புதிய வேண்டுகோள்கள், பகிர்ந்த ஜெபங்கள், பதில் கிடைத்த ஜெபங்கள் தோன்றும்.';
+
+  @override
+  String circleMembersOf(int count, int max) {
+    return '$max இல் $count உறுப்பினர்கள்';
+  }
 }

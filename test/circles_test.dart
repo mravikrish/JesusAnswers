@@ -62,6 +62,68 @@ void main() {
     expect(c.requests.single.text, startsWith('Please pray'));
   });
 
+  test('shares a ready prayer with a note, and hearts it', () async {
+    final p = await prefs();
+    final sent = <String>[];
+    final shared = {
+      ...circle(),
+      'requests': [
+        {
+          'id': 11,
+          'memberId': 1,
+          'name': 'Ravi',
+          'text': 'Tonight at 9',
+          'at': '2026-10-06T09:00:00Z',
+          'prayerId': 'psalm23',
+          'hearts': 2,
+          'heartedByMe': true,
+          'mine': true,
+        },
+      ],
+    };
+    final circles = service(p, (r) async {
+      sent.add('${r.method} ${r.url.path} ${r.body}');
+      return http.Response(jsonEncode(shared), 200);
+    });
+    final c = await circles.sharePrayer('K7P3MX', 'psalm23', 'Tonight at 9');
+    await circles.heart('K7P3MX', 11, on: false);
+    expect(sent, [
+      'POST /v1/circles/K7P3MX/requests {"prayerId":"psalm23","text":"Tonight at 9"}',
+      'DELETE /v1/circles/K7P3MX/requests/11/heart ',
+    ]);
+    final r = c.requests.single;
+    expect((r.prayerId, r.hearts, r.heartedByMe), ('psalm23', 2, true));
+  });
+
+  test('news starts from the server time, then asks for what came after', () async {
+    final p = await prefs();
+    await p.setString('circles', jsonEncode([{'code': 'K7P3MX', 'name': 'Family', 'members': 2}]));
+    final asked = <String>[];
+    final circles = service(p, (r) async {
+      asked.add(r.url.query);
+      return http.Response(
+        jsonEncode({
+          'now': '2026-10-07T10:00:00Z',
+          'items': asked.length == 1
+              ? []
+              : [
+                  {'kind': 'request', 'circle': 'K7P3MX', 'circleName': 'Family', 'requestId': 10, 'name': 'Mary', 'text': 'Pray for my exam'},
+                  {'kind': 'prayed', 'circle': 'K7P3MX', 'circleName': 'Family', 'requestId': 11, 'count': 3},
+                  {'kind': 'something-new', 'circle': 'K7P3MX', 'circleName': 'Family'},
+                ],
+        }),
+        200,
+      );
+    });
+    expect(await circles.news(), isEmpty);
+    final news = await circles.news();
+    expect(asked, ['', 'since=2026-10-07T10%3A00%3A00Z']);
+    expect([for (final n in news) (n.kind, n.name, n.count)], [
+      (CircleNewsKind.request, 'Mary', 0),
+      (CircleNewsKind.prayed, '', 3),
+    ]);
+  });
+
   test('says why it could not join', () async {
     final p = await prefs();
     Future<CircleProblem> problem(int status) async {

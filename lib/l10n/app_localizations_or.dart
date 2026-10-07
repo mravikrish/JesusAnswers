@@ -858,4 +858,147 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get circleOffline =>
       'ସଂଯୋଗ ହେଲା ନାହିଁ। ଆପଣଙ୍କ ଇଣ୍ଟରନେଟ୍ ଯାଞ୍ଚ କରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।';
+
+  @override
+  String get circleSharePrayer => 'ଏକ ପ୍ରସ୍ତୁତ ପ୍ରାର୍ଥନା ସେୟାର କରନ୍ତୁ';
+
+  @override
+  String get circlePickPrayer => 'ଏକାଠି ପ୍ରାର୍ଥନା କରିବାକୁ ଏକ ପ୍ରାର୍ଥନା ବାଛନ୍ତୁ';
+
+  @override
+  String get circleNoteHint => 'କିଛି କଥା ଯୋଡନ୍ତୁ (ଇଚ୍ଛାଧୀନ)';
+
+  @override
+  String get circlePrayTogether => 'ଆସନ୍ତୁ ଏକାଠି ଏହି ପ୍ରାର୍ଥନା କରିବା';
+
+  @override
+  String get circleJoinPrayer => 'ଏହି ପ୍ରାର୍ଥନାରେ ଯୋଗ ଦିଅନ୍ତୁ';
+
+  @override
+  String get circleJoined => 'ଯୋଗ ଦେଲି';
+
+  @override
+  String circleJoinedCount(String count) {
+    return '$count ଜଣ ଯୋଗ ଦେଲେ';
+  }
+
+  @override
+  String get circleLove => 'ଏହି ପ୍ରାର୍ଥନା ଭଲ ଲାଗିଲା';
+
+  @override
+  String get circleAnsweredThanks =>
+      'ଈଶ୍ୱରଙ୍କ ପ୍ରଶଂସା ହେଉ! ସେ ଉତ୍ତର ଦେଲେ ବୋଲି ମଣ୍ଡଳୀର ସମସ୍ତେ ଏବେ ଦେଖିପାରିବେ।';
+
+  @override
+  String get circleShortLabel => 'ମଣ୍ଡଳୀ';
+
+  @override
+  String get circleNone =>
+      'ପ୍ରଥମେ ଏକ ପ୍ରାର୍ଥନା ମଣ୍ଡଳୀ ଆରମ୍ଭ କରନ୍ତୁ କିମ୍ବା ଯୋଗ ଦିଅନ୍ତୁ।';
+
+  @override
+  String get circleChoose => 'କେଉଁ ମଣ୍ଡଳୀ ସହ ସେୟାର କରିବେ?';
+
+  @override
+  String circleSharedTo(String name) {
+    return '$name ସହ ସେୟାର ହେଲା';
+  }
+
+  @override
+  String newsAsked(String name) {
+    return '$name ପ୍ରାର୍ଥନା ମାଗିଛନ୍ତି';
+  }
+
+  @override
+  String newsShared(String name) {
+    return '$name ଆପଣଙ୍କୁ ପ୍ରାର୍ଥନାକୁ ଡାକୁଛନ୍ତି';
+  }
+
+  @override
+  String newsPrayed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ଜଣ ଆପଣଙ୍କ ପାଇଁ ପ୍ରାର୍ଥନା କଲେ',
+      one: '1 ଜଣ ଆପଣଙ୍କ ପାଇଁ ପ୍ରାର୍ଥନା କଲେ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsJoinedPrayer(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ଜଣ ଆପଣଙ୍କ ପ୍ରାର୍ଥନାରେ ଯୋଗ ଦେଲେ',
+      one: '1 ଜଣ ଆପଣଙ୍କ ପ୍ରାର୍ଥନାରେ ଯୋଗ ଦେଲେ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsAnswered(String name) {
+    return 'ଈଶ୍ୱର $nameଙ୍କ ପ୍ରାର୍ଥନାର ଉତ୍ତର ଦେଲେ!';
+  }
+
+  @override
+  String newsJoined(String name) {
+    return '$name ଆପଣଙ୍କ ମଣ୍ଡଳୀରେ ଯୋଗ ଦେଲେ';
+  }
+
+  @override
+  String get newsLater => 'ପରେ';
+
+  @override
+  String get newsOpen => 'ମଣ୍ଡଳୀ ଖୋଲନ୍ତୁ';
+
+  @override
+  String get newsAmen => 'ଆମେନ୍';
+
+  @override
+  String get circleInfoTitle => 'ପ୍ରାର୍ଥନା ମଣ୍ଡଳୀ କିପରି କାମ କରେ';
+
+  @override
+  String circleInfoMembers(int max) {
+    return 'ପ୍ରତି ମଣ୍ଡଳୀରେ ସର୍ବାଧିକ $max ଜଣ';
+  }
+
+  @override
+  String circleInfoCircles(int max) {
+    return 'ଆପଣ ସର୍ବାଧିକ $maxଟି ମଣ୍ଡଳୀରେ ରହିପାରିବେ';
+  }
+
+  @override
+  String get circleInfoShare =>
+      'ପ୍ରାର୍ଥନା ଅନୁରୋଧ ବା ପ୍ରସ୍ତୁତ ପ୍ରାର୍ଥନା ସେୟାର କରନ୍ତୁ। ଅନ୍ୟମାନେ \"ମୁଁ ପ୍ରାର୍ଥନା କଲି\" ଦବାନ୍ତି, ବା ଯୋଗ ଦେଇ ଆପଣଙ୍କ ସହ ପ୍ରାର୍ଥନା କରନ୍ତି।';
+
+  @override
+  String get circleInfoPrivate =>
+      'କେବଳ ସଦସ୍ୟମାନେ ଅନୁରୋଧ ଦେଖିପାରନ୍ତି। ସେଗୁଡ଼ିକ ଏନକ୍ରିପ୍ଟ କରି ରଖାଯାଏ, କୌଣସି ଆକାଉଣ୍ଟ, ଇମେଲ ବା ଫୋନ ନମ୍ବର ବିନା।';
+
+  @override
+  String circleInfoDays(int days) {
+    return 'ଅନୁରୋଧଗୁଡ଼ିକ $days ଦିନ ପରେ ବିଲୋପ ହୁଏ।';
+  }
+
+  @override
+  String get circleInfoOwner =>
+      'ମଣ୍ଡଳୀ ଆରମ୍ଭକାରୀ ସଦସ୍ୟଙ୍କୁ ହଟାଇପାରିବେ। ହଟାଯାଇଥିବା ବ୍ୟକ୍ତି ପୁଣି ଯୋଗ ଦେଇପାରିବେ ନାହିଁ।';
+
+  @override
+  String get circleInfoReport =>
+      'କଷ୍ଟଦାୟକ କିଛି ରିପୋର୍ଟ କରନ୍ତୁ: ତାହା ତୁରନ୍ତ ଆପଣଙ୍କ ପାଇଁ ଲୁଚିଯାଏ, ଏବଂ ଯଥେଷ୍ଟ ସଦସ୍ୟ ରିପୋର୍ଟ କଲେ ସମସ୍ତଙ୍କ ପାଇଁ ହଟିଯାଏ।';
+
+  @override
+  String get circleInfoLeave =>
+      'ମଣ୍ଡଳୀ ଛାଡ଼ିଲେ ସେଥିରେ ଆପଣଙ୍କ ଅନୁରୋଧ ବିଲୋପ ହୁଏ।';
+
+  @override
+  String get circleInfoPopups =>
+      'ଆପ୍ ଖୋଲିଲେ ନୂଆ ଅନୁରୋଧ, ସେୟାର ହୋଇଥିବା ପ୍ରାର୍ଥନା ଓ ଉତ୍ତର ମିଳିଥିବା ପ୍ରାର୍ଥନା ପପଅପରେ ଦେଖାଯାଏ।';
+
+  @override
+  String circleMembersOf(int count, int max) {
+    return '$maxରୁ $count ସଦସ୍ୟ';
+  }
 }

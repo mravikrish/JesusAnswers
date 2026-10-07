@@ -856,4 +856,146 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get circleOffline =>
       'No se pudo conectar. Revisa tu internet e inténtalo de nuevo.';
+
+  @override
+  String get circleSharePrayer => 'Compartir una oración lista';
+
+  @override
+  String get circlePickPrayer => 'Elige una oración para orar juntos';
+
+  @override
+  String get circleNoteHint => 'Añade unas palabras (opcional)';
+
+  @override
+  String get circlePrayTogether => 'Oremos juntos esta oración';
+
+  @override
+  String get circleJoinPrayer => 'Unirme a esta oración';
+
+  @override
+  String get circleJoined => 'Me uní';
+
+  @override
+  String circleJoinedCount(String count) {
+    return '$count se unieron';
+  }
+
+  @override
+  String get circleLove => 'Me encanta esta oración';
+
+  @override
+  String get circleAnsweredThanks =>
+      '¡Gloria a Dios! Todos en el círculo ya pueden ver que Él respondió.';
+
+  @override
+  String get circleShortLabel => 'Círculo';
+
+  @override
+  String get circleNone => 'Primero crea un círculo de oración o únete a uno.';
+
+  @override
+  String get circleChoose => '¿Con qué círculo compartir?';
+
+  @override
+  String circleSharedTo(String name) {
+    return 'Compartida con $name';
+  }
+
+  @override
+  String newsAsked(String name) {
+    return '$name pidió oración';
+  }
+
+  @override
+  String newsShared(String name) {
+    return '$name te invita a orar';
+  }
+
+  @override
+  String newsPrayed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count personas oraron por ti',
+      one: '1 persona oró por ti',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsJoinedPrayer(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count personas se unieron a tu oración',
+      one: '1 persona se unió a tu oración',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsAnswered(String name) {
+    return '¡Dios respondió la oración de $name!';
+  }
+
+  @override
+  String newsJoined(String name) {
+    return '$name se unió a tu círculo';
+  }
+
+  @override
+  String get newsLater => 'Después';
+
+  @override
+  String get newsOpen => 'Abrir círculo';
+
+  @override
+  String get newsAmen => 'Amén';
+
+  @override
+  String get circleInfoTitle => 'Cómo funcionan los círculos de oración';
+
+  @override
+  String circleInfoMembers(int max) {
+    return 'Hasta $max personas en cada círculo';
+  }
+
+  @override
+  String circleInfoCircles(int max) {
+    return 'Puedes estar en hasta $max círculos';
+  }
+
+  @override
+  String get circleInfoShare =>
+      'Comparte una petición de oración o una oración lista. Los demás tocan \"Oré\", o se unen y la oran contigo.';
+
+  @override
+  String get circleInfoPrivate =>
+      'Solo los miembros ven las peticiones. Se guardan cifradas, sin cuenta, correo ni número de teléfono.';
+
+  @override
+  String circleInfoDays(int days) {
+    return 'Las peticiones se borran después de $days días.';
+  }
+
+  @override
+  String get circleInfoOwner =>
+      'Quien crea un círculo puede quitar miembros. Alguien quitado no puede volver a unirse.';
+
+  @override
+  String get circleInfoReport =>
+      'Reporta lo que hiera: se oculta para ti al instante y se quita para todos cuando suficientes miembros lo reportan.';
+
+  @override
+  String get circleInfoLeave =>
+      'Si sales de un círculo, se borran tus peticiones en él.';
+
+  @override
+  String get circleInfoPopups =>
+      'Al abrir la app, aparecen nuevas peticiones, oraciones compartidas y oraciones respondidas.';
+
+  @override
+  String circleMembersOf(int count, int max) {
+    return '$count de $max miembros';
+  }
 }

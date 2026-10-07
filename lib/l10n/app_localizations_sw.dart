@@ -855,4 +855,147 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get circleOffline =>
       'Imeshindwa kuunganisha. Kagua intaneti yako na ujaribu tena.';
+
+  @override
+  String get circleSharePrayer => 'Shiriki ombi lililo tayari';
+
+  @override
+  String get circlePickPrayer => 'Chagua ombi la kuomba pamoja';
+
+  @override
+  String get circleNoteHint => 'Ongeza maneno machache (si lazima)';
+
+  @override
+  String get circlePrayTogether => 'Tuombe ombi hili pamoja';
+
+  @override
+  String get circleJoinPrayer => 'Jiunge na ombi hili';
+
+  @override
+  String get circleJoined => 'Nimejiunga';
+
+  @override
+  String circleJoinedCount(String count) {
+    return '$count wamejiunga';
+  }
+
+  @override
+  String get circleLove => 'Napenda ombi hili';
+
+  @override
+  String get circleAnsweredThanks =>
+      'Asifiwe Mungu! Kila mtu kwenye kikundi sasa anaona kwamba amejibu.';
+
+  @override
+  String get circleShortLabel => 'Kikundi';
+
+  @override
+  String get circleNone =>
+      'Kwanza anzisha kikundi cha maombi au ujiunge na kimoja.';
+
+  @override
+  String get circleChoose => 'Shiriki na kikundi kipi?';
+
+  @override
+  String circleSharedTo(String name) {
+    return 'Imeshirikiwa na $name';
+  }
+
+  @override
+  String newsAsked(String name) {
+    return '$name ameomba maombi';
+  }
+
+  @override
+  String newsShared(String name) {
+    return '$name anakualika kuomba';
+  }
+
+  @override
+  String newsPrayed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Watu $count wamekuombea',
+      one: 'Mtu 1 amekuombea',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsJoinedPrayer(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Watu $count wamejiunga na ombi lako',
+      one: 'Mtu 1 amejiunga na ombi lako',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsAnswered(String name) {
+    return 'Mungu amejibu ombi la $name!';
+  }
+
+  @override
+  String newsJoined(String name) {
+    return '$name amejiunga na kikundi chako';
+  }
+
+  @override
+  String get newsLater => 'Baadaye';
+
+  @override
+  String get newsOpen => 'Fungua kikundi';
+
+  @override
+  String get newsAmen => 'Amina';
+
+  @override
+  String get circleInfoTitle => 'Jinsi vikundi vya maombi vinavyofanya kazi';
+
+  @override
+  String circleInfoMembers(int max) {
+    return 'Hadi watu $max katika kila kikundi';
+  }
+
+  @override
+  String circleInfoCircles(int max) {
+    return 'Unaweza kuwa katika hadi vikundi $max';
+  }
+
+  @override
+  String get circleInfoShare =>
+      'Shiriki ombi la maombi au ombi lililo tayari. Wengine hugusa \"Nimeomba\", au hujiunga na kuomba pamoja nawe.';
+
+  @override
+  String get circleInfoPrivate =>
+      'Wanachama pekee ndio wanaona maombi. Yanahifadhiwa kwa usimbaji fiche, bila akaunti, barua pepe wala namba ya simu.';
+
+  @override
+  String circleInfoDays(int days) {
+    return 'Maombi hufutwa baada ya siku $days.';
+  }
+
+  @override
+  String get circleInfoOwner =>
+      'Aliyeanzisha kikundi anaweza kuondoa wanachama. Aliyeondolewa hawezi kujiunga tena.';
+
+  @override
+  String get circleInfoReport =>
+      'Ripoti chochote kinachoumiza: kinafichwa kwako mara moja, na huondolewa kwa wote wanachama wa kutosha wakiripoti.';
+
+  @override
+  String get circleInfoLeave =>
+      'Ukiondoka kwenye kikundi, maombi yako humo hufutwa.';
+
+  @override
+  String get circleInfoPopups =>
+      'Unapofungua programu, maombi mapya, maombi yaliyoshirikiwa na yaliyojibiwa huonekana.';
+
+  @override
+  String circleMembersOf(int count, int max) {
+    return 'Wanachama $count kati ya $max';
+  }
 }

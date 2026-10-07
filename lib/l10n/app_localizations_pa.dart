@@ -854,4 +854,147 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get circleOffline =>
       'ਜੁੜ ਨਹੀਂ ਸਕੇ। ਆਪਣਾ ਇੰਟਰਨੈੱਟ ਜਾਂਚੋ ਅਤੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
+
+  @override
+  String get circleSharePrayer => 'ਇੱਕ ਤਿਆਰ ਪ੍ਰਾਰਥਨਾ ਸਾਂਝੀ ਕਰੋ';
+
+  @override
+  String get circlePickPrayer => 'ਇਕੱਠੇ ਪ੍ਰਾਰਥਨਾ ਕਰਨ ਲਈ ਇੱਕ ਪ੍ਰਾਰਥਨਾ ਚੁਣੋ';
+
+  @override
+  String get circleNoteHint => 'ਕੁਝ ਸ਼ਬਦ ਜੋੜੋ (ਚੋਣਵਾਂ)';
+
+  @override
+  String get circlePrayTogether => 'ਆਓ ਇਕੱਠੇ ਇਹ ਪ੍ਰਾਰਥਨਾ ਕਰੀਏ';
+
+  @override
+  String get circleJoinPrayer => 'ਇਸ ਪ੍ਰਾਰਥਨਾ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ';
+
+  @override
+  String get circleJoined => 'ਸ਼ਾਮਲ ਹੋਏ';
+
+  @override
+  String circleJoinedCount(String count) {
+    return '$count ਸ਼ਾਮਲ ਹੋਏ';
+  }
+
+  @override
+  String get circleLove => 'ਇਹ ਪ੍ਰਾਰਥਨਾ ਪਸੰਦ ਹੈ';
+
+  @override
+  String get circleAnsweredThanks =>
+      'ਪਰਮੇਸ਼ੁਰ ਦੀ ਉਸਤਤ ਹੋਵੇ! ਮੰਡਲੀ ਦੇ ਸਾਰੇ ਹੁਣ ਵੇਖ ਸਕਦੇ ਹਨ ਕਿ ਉਸ ਨੇ ਉੱਤਰ ਦਿੱਤਾ।';
+
+  @override
+  String get circleShortLabel => 'ਮੰਡਲੀ';
+
+  @override
+  String get circleNone =>
+      'ਪਹਿਲਾਂ ਪ੍ਰਾਰਥਨਾ ਮੰਡਲੀ ਸ਼ੁਰੂ ਕਰੋ ਜਾਂ ਉਸ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ।';
+
+  @override
+  String get circleChoose => 'ਕਿਸ ਮੰਡਲੀ ਨਾਲ ਸਾਂਝਾ ਕਰਨਾ ਹੈ?';
+
+  @override
+  String circleSharedTo(String name) {
+    return '$name ਨਾਲ ਸਾਂਝਾ ਕੀਤਾ';
+  }
+
+  @override
+  String newsAsked(String name) {
+    return '$name ਨੇ ਪ੍ਰਾਰਥਨਾ ਮੰਗੀ';
+  }
+
+  @override
+  String newsShared(String name) {
+    return '$name ਤੁਹਾਨੂੰ ਪ੍ਰਾਰਥਨਾ ਲਈ ਸੱਦਾ ਦੇ ਰਹੇ ਹਨ';
+  }
+
+  @override
+  String newsPrayed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਲੋਕਾਂ ਨੇ ਤੁਹਾਡੇ ਲਈ ਪ੍ਰਾਰਥਨਾ ਕੀਤੀ',
+      one: '1 ਵਿਅਕਤੀ ਨੇ ਤੁਹਾਡੇ ਲਈ ਪ੍ਰਾਰਥਨਾ ਕੀਤੀ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsJoinedPrayer(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਲੋਕ ਤੁਹਾਡੀ ਪ੍ਰਾਰਥਨਾ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਏ',
+      one: '1 ਵਿਅਕਤੀ ਤੁਹਾਡੀ ਪ੍ਰਾਰਥਨਾ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਇਆ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsAnswered(String name) {
+    return 'ਪਰਮੇਸ਼ੁਰ ਨੇ $name ਦੀ ਪ੍ਰਾਰਥਨਾ ਦਾ ਉੱਤਰ ਦਿੱਤਾ!';
+  }
+
+  @override
+  String newsJoined(String name) {
+    return '$name ਤੁਹਾਡੀ ਮੰਡਲੀ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਏ';
+  }
+
+  @override
+  String get newsLater => 'ਬਾਅਦ ਵਿੱਚ';
+
+  @override
+  String get newsOpen => 'ਮੰਡਲੀ ਖੋਲ੍ਹੋ';
+
+  @override
+  String get newsAmen => 'ਆਮੀਨ';
+
+  @override
+  String get circleInfoTitle => 'ਪ੍ਰਾਰਥਨਾ ਮੰਡਲੀ ਕਿਵੇਂ ਕੰਮ ਕਰਦੀ ਹੈ';
+
+  @override
+  String circleInfoMembers(int max) {
+    return 'ਹਰ ਮੰਡਲੀ ਵਿੱਚ ਵੱਧ ਤੋਂ ਵੱਧ $max ਲੋਕ';
+  }
+
+  @override
+  String circleInfoCircles(int max) {
+    return 'ਤੁਸੀਂ ਵੱਧ ਤੋਂ ਵੱਧ $max ਮੰਡਲੀਆਂ ਵਿੱਚ ਹੋ ਸਕਦੇ ਹੋ';
+  }
+
+  @override
+  String get circleInfoShare =>
+      'ਪ੍ਰਾਰਥਨਾ ਬੇਨਤੀ ਜਾਂ ਤਿਆਰ ਪ੍ਰਾਰਥਨਾ ਸਾਂਝੀ ਕਰੋ। ਬਾਕੀ \"ਮੈਂ ਪ੍ਰਾਰਥਨਾ ਕੀਤੀ\" ਦਬਾਉਂਦੇ ਹਨ, ਜਾਂ ਸ਼ਾਮਲ ਹੋ ਕੇ ਤੁਹਾਡੇ ਨਾਲ ਪ੍ਰਾਰਥਨਾ ਕਰਦੇ ਹਨ।';
+
+  @override
+  String get circleInfoPrivate =>
+      'ਸਿਰਫ਼ ਮੈਂਬਰ ਹੀ ਬੇਨਤੀਆਂ ਵੇਖ ਸਕਦੇ ਹਨ। ਇਹ ਖਾਤੇ, ਈਮੇਲ ਜਾਂ ਫ਼ੋਨ ਨੰਬਰ ਤੋਂ ਬਿਨਾਂ, ਇਨਕ੍ਰਿਪਟ ਕਰਕੇ ਰੱਖੀਆਂ ਜਾਂਦੀਆਂ ਹਨ।';
+
+  @override
+  String circleInfoDays(int days) {
+    return 'ਬੇਨਤੀਆਂ $days ਦਿਨਾਂ ਬਾਅਦ ਮਿਟਾ ਦਿੱਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ।';
+  }
+
+  @override
+  String get circleInfoOwner =>
+      'ਮੰਡਲੀ ਸ਼ੁਰੂ ਕਰਨ ਵਾਲਾ ਮੈਂਬਰਾਂ ਨੂੰ ਹਟਾ ਸਕਦਾ ਹੈ। ਹਟਾਇਆ ਗਿਆ ਵਿਅਕਤੀ ਮੁੜ ਸ਼ਾਮਲ ਨਹੀਂ ਹੋ ਸਕਦਾ।';
+
+  @override
+  String get circleInfoReport =>
+      'ਦੁੱਖ ਦੇਣ ਵਾਲੀ ਕੋਈ ਵੀ ਗੱਲ ਰਿਪੋਰਟ ਕਰੋ: ਉਹ ਤੁਰੰਤ ਤੁਹਾਡੇ ਲਈ ਲੁਕ ਜਾਂਦੀ ਹੈ, ਅਤੇ ਕਾਫ਼ੀ ਮੈਂਬਰਾਂ ਦੇ ਰਿਪੋਰਟ ਕਰਨ \'ਤੇ ਸਭ ਲਈ ਹਟ ਜਾਂਦੀ ਹੈ।';
+
+  @override
+  String get circleInfoLeave =>
+      'ਮੰਡਲੀ ਛੱਡਣ \'ਤੇ ਉਸ ਵਿੱਚ ਤੁਹਾਡੀਆਂ ਬੇਨਤੀਆਂ ਮਿਟ ਜਾਂਦੀਆਂ ਹਨ।';
+
+  @override
+  String get circleInfoPopups =>
+      'ਐਪ ਖੋਲ੍ਹਣ \'ਤੇ ਨਵੀਆਂ ਬੇਨਤੀਆਂ, ਸਾਂਝੀਆਂ ਪ੍ਰਾਰਥਨਾਵਾਂ ਅਤੇ ਉੱਤਰ ਮਿਲੀਆਂ ਪ੍ਰਾਰਥਨਾਵਾਂ ਪੌਪਅੱਪ ਵਿੱਚ ਦਿਸਦੀਆਂ ਹਨ।';
+
+  @override
+  String circleMembersOf(int count, int max) {
+    return '$max ਵਿੱਚੋਂ $count ਮੈਂਬਰ';
+  }
 }

@@ -856,4 +856,147 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get circleOffline =>
       'Keine Verbindung. Prüfe dein Internet und versuch es noch einmal.';
+
+  @override
+  String get circleSharePrayer => 'Ein fertiges Gebet teilen';
+
+  @override
+  String get circlePickPrayer => 'Wähle ein Gebet zum gemeinsamen Beten';
+
+  @override
+  String get circleNoteHint => 'Ein paar Worte hinzufügen (optional)';
+
+  @override
+  String get circlePrayTogether => 'Lasst uns das gemeinsam beten';
+
+  @override
+  String get circleJoinPrayer => 'Diesem Gebet anschließen';
+
+  @override
+  String get circleJoined => 'Dabei';
+
+  @override
+  String circleJoinedCount(String count) {
+    return '$count dabei';
+  }
+
+  @override
+  String get circleLove => 'Dieses Gebet lieben';
+
+  @override
+  String get circleAnsweredThanks =>
+      'Gott sei gelobt! Alle im Kreis sehen jetzt, dass er geantwortet hat.';
+
+  @override
+  String get circleShortLabel => 'Kreis';
+
+  @override
+  String get circleNone =>
+      'Starte zuerst einen Gebetskreis oder tritt einem bei.';
+
+  @override
+  String get circleChoose => 'Mit welchem Kreis teilen?';
+
+  @override
+  String circleSharedTo(String name) {
+    return 'Geteilt mit $name';
+  }
+
+  @override
+  String newsAsked(String name) {
+    return '$name bittet um Gebet';
+  }
+
+  @override
+  String newsShared(String name) {
+    return '$name lädt dich zum Beten ein';
+  }
+
+  @override
+  String newsPrayed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Personen haben für dich gebetet',
+      one: '1 Person hat für dich gebetet',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsJoinedPrayer(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Personen haben bei deinem Gebet mitgebetet',
+      one: '1 Person hat bei deinem Gebet mitgebetet',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsAnswered(String name) {
+    return 'Gott hat das Gebet von $name erhört!';
+  }
+
+  @override
+  String newsJoined(String name) {
+    return '$name ist deinem Kreis beigetreten';
+  }
+
+  @override
+  String get newsLater => 'Später';
+
+  @override
+  String get newsOpen => 'Kreis öffnen';
+
+  @override
+  String get newsAmen => 'Amen';
+
+  @override
+  String get circleInfoTitle => 'So funktionieren Gebetskreise';
+
+  @override
+  String circleInfoMembers(int max) {
+    return 'Bis zu $max Personen pro Kreis';
+  }
+
+  @override
+  String circleInfoCircles(int max) {
+    return 'Du kannst in bis zu $max Kreisen sein';
+  }
+
+  @override
+  String get circleInfoShare =>
+      'Teile ein Gebetsanliegen oder ein fertiges Gebet. Die anderen tippen auf „Ich habe gebetet“ oder beten es mit dir.';
+
+  @override
+  String get circleInfoPrivate =>
+      'Nur Mitglieder sehen die Anliegen. Sie werden verschlüsselt gespeichert, ohne Konto, E-Mail oder Telefonnummer.';
+
+  @override
+  String circleInfoDays(int days) {
+    return 'Anliegen werden nach $days Tagen gelöscht.';
+  }
+
+  @override
+  String get circleInfoOwner =>
+      'Wer einen Kreis startet, kann Mitglieder entfernen. Entfernte können nicht wieder beitreten.';
+
+  @override
+  String get circleInfoReport =>
+      'Melde Verletzendes: Es wird sofort für dich ausgeblendet und für alle entfernt, wenn genug Mitglieder es melden.';
+
+  @override
+  String get circleInfoLeave =>
+      'Wenn du einen Kreis verlässt, werden deine Anliegen darin gelöscht.';
+
+  @override
+  String get circleInfoPopups =>
+      'Wenn du die App öffnest, erscheinen neue Anliegen, geteilte und erhörte Gebete.';
+
+  @override
+  String circleMembersOf(int count, int max) {
+    return '$count von $max Mitgliedern';
+  }
 }

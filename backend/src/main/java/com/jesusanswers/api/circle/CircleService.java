@@ -3,8 +3,11 @@ package com.jesusanswers.api.circle;
 import java.security.SecureRandom;
 import java.sql.Timestamp;
 import java.time.Instant;
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
+import java.util.regex.Pattern;
 
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.http.HttpStatus;
@@ -38,10 +41,25 @@ public class CircleService {
 
     public record Member(long id, String name, boolean owner, boolean me) {}
 
+    /** [prayerId]: a shared ready prayer, with [text] as an optional note (may be empty). */
     public record Request(long id, long memberId, String name, String text, Instant at, boolean answered,
-                          long prayed, boolean prayedByMe, boolean mine) {}
+                          long prayed, boolean prayedByMe, boolean mine, String prayerId, long hearts,
+                          boolean heartedByMe) {}
 
     public record Detail(String code, String name, boolean owner, List<Member> members, List<Request> requests) {}
+
+    /**
+     * Something new in one of the person's circles, shown as a popup when they next open the app.
+     * [kind]: request (someone asked), prayer (someone shared a ready prayer), prayed ([count] people
+     * prayed for the person's own request), answered (God answered someone's request), joined (a new member).
+     */
+    public record News(String kind, String circle, String circleName, Long requestId, String name, String text,
+                       String prayerId, long count, Instant at) {}
+
+    /** [now]: the server's time, to send back as `since` next time. */
+    public record NewsPage(Instant now, List<News> items) {}
+
+    static final int MAX_NEWS = 20;
 
     private record Membership(long circleId, long memberId, boolean owner) {}
 
@@ -76,6 +94,13 @@ public class CircleService {
         if (input == null) return null;
         String name = input.replaceAll("\\p{Cc}", " ").replaceAll("\\s+", " ").strip();
         return name.isEmpty() || name.codePointCount(0, name.length()) > max ? null : name;
+    }
+
+    private static final Pattern PRAYER_ID = Pattern.compile("[a-z0-9_-]{1,64}");
+
+    /** A ready prayer's id as the app names it (e.g. "psalm23"); null when it can't be one. */
+    static String cleanPrayerId(String input) {
+        return input != null && PRAYER_ID.matcher(input).matches() ? input : null;
     }
 
     /** Request text keeps its line breaks; null when empty or too long. */
@@ -157,7 +182,9 @@ public class CircleService {
                 select r.id, m.id, m.name, r.text, r.created_at, r.answered_at is not null,
                        (select count(*) from circle_prayed p where p.request_id = r.id),
                        exists (select 1 from circle_prayed p where p.request_id = r.id and p.device = ?),
-                       r.device = ?
+                       r.device = ?, r.prayer_id,
+                       (select count(*) from circle_heart h where h.request_id = r.id),
+                       exists (select 1 from circle_heart h where h.request_id = r.id and h.device = ?)
                 from circle_request r
                 join circle_member m on m.circle_id = r.circle_id and m.device = r.device and not m.removed
                 where r.circle_id = ? and r.created_at > now() - make_interval(days => ?)
@@ -166,8 +193,9 @@ public class CircleService {
                 limit 100""",
                 (rs, i) -> new Request(rs.getLong(1), rs.getLong(2), rs.getString(3),
                         crypto.convertToEntityAttribute(rs.getString(4)), instant(rs.getTimestamp(5)),
-                        rs.getBoolean(6), rs.getLong(7), rs.getBoolean(8), rs.getBoolean(9)),
-                device, device, me.circleId(), KEEP_DAYS, device);
+                        rs.getBoolean(6), rs.getLong(7), rs.getBoolean(8), rs.getBoolean(9), rs.getString(10),
+                        rs.getLong(11), rs.getBoolean(12)),
+                device, device, device, me.circleId(), KEEP_DAYS, device);
         return new Detail(code, name, me.owner(), members, requests);
     }
 
@@ -198,13 +226,76 @@ public class CircleService {
         return detail(device, code);
     }
 
+    // ── News ────────────────────────────────────────────────────────────────
+
+    /**
+     * What happened in the person's circles after [since], oldest first, at most [MAX_NEWS] (the newest).
+     * With no [since] (first time) there is nothing to tell yet: only the time to start from.
+     */
+    public NewsPage news(String device, Instant since) {
+        Instant now = db.queryForObject("select now()", Timestamp.class).toInstant();
+        if (since == null) return new NewsPage(now, List.of());
+        // Away for long: only the last week, so opening the app isn't a wall of popups.
+        Instant from = since.isBefore(now.minusSeconds(7 * 86400)) ? now.minusSeconds(7 * 86400) : since;
+        Timestamp t = Timestamp.from(from);
+        var items = new ArrayList<News>();
+
+        // Asked or shared by someone else; answered by someone else.
+        String others = """
+                select c.code, c.name, r.id, m.name, r.text, r.prayer_id, %s
+                from circle_request r
+                join circle c on c.id = r.circle_id
+                join circle_member me on me.circle_id = r.circle_id and me.device = ? and not me.removed
+                join circle_member m on m.circle_id = r.circle_id and m.device = r.device and not m.removed
+                where r.device <> ? and %s > ?
+                  and not exists (select 1 from circle_report x where x.request_id = r.id and x.device = ?)""";
+        db.query(others.formatted("r.created_at", "r.created_at"), rs -> {
+            String prayerId = rs.getString(6);
+            items.add(new News(prayerId == null ? "request" : "prayer", rs.getString(1), rs.getString(2), rs.getLong(3),
+                    rs.getString(4), crypto.convertToEntityAttribute(rs.getString(5)), prayerId, 0,
+                    instant(rs.getTimestamp(7))));
+        }, device, device, t, device);
+        db.query(others.formatted("r.answered_at", "r.answered_at"), rs -> {
+            items.add(new News("answered", rs.getString(1), rs.getString(2), rs.getLong(3), rs.getString(4),
+                    crypto.convertToEntityAttribute(rs.getString(5)), rs.getString(6), 0, instant(rs.getTimestamp(7))));
+        }, device, device, t, device);
+
+        // Others who prayed for the person's own requests (or joined their shared prayer).
+        db.query("""
+                select c.code, c.name, r.id, r.text, r.prayer_id, count(*), max(p.at)
+                from circle_prayed p
+                join circle_request r on r.id = p.request_id
+                join circle c on c.id = r.circle_id
+                where r.device = ? and p.device <> ? and p.at > ?
+                group by c.code, c.name, r.id, r.text, r.prayer_id""", rs -> {
+            items.add(new News("prayed", rs.getString(1), rs.getString(2), rs.getLong(3), null,
+                    crypto.convertToEntityAttribute(rs.getString(4)), rs.getString(5), rs.getLong(6),
+                    instant(rs.getTimestamp(7))));
+        }, device, device, t);
+
+        // New members of circles the person was already in.
+        db.query("""
+                select c.code, c.name, m.name, m.joined_at
+                from circle_member m
+                join circle c on c.id = m.circle_id
+                join circle_member me on me.circle_id = m.circle_id and me.device = ? and not me.removed
+                where m.device <> ? and not m.removed and m.joined_at > ? and m.joined_at > me.joined_at""", rs -> {
+            items.add(new News("joined", rs.getString(1), rs.getString(2), null, rs.getString(3), null, null, 0,
+                    instant(rs.getTimestamp(4))));
+        }, device, device, t);
+
+        items.sort(Comparator.comparing(News::at));
+        List<News> newest = items.size() > MAX_NEWS ? items.subList(items.size() - MAX_NEWS, items.size()) : items;
+        return new NewsPage(now, List.copyOf(newest));
+    }
+
     // ── Requests ────────────────────────────────────────────────────────────
 
     @Transactional
-    public Detail addRequest(String device, String code, String text) {
+    public Detail addRequest(String device, String code, String text, String prayerId) {
         Membership me = membership(device, code);
-        db.update("insert into circle_request (circle_id, device, text) values (?, ?, ?)",
-                me.circleId(), device, crypto.convertToDatabaseColumn(text));
+        db.update("insert into circle_request (circle_id, device, text, prayer_id) values (?, ?, ?, ?)",
+                me.circleId(), device, crypto.convertToDatabaseColumn(text), prayerId);
         db.update("delete from circle_request where circle_id = ? and created_at < now() - make_interval(days => ?)",
                 me.circleId(), KEEP_DAYS);
         return detail(device, code);
@@ -214,6 +305,18 @@ public class CircleService {
         Membership me = membership(device, code);
         author(me, requestId);
         db.update("insert into circle_prayed (request_id, device) values (?, ?) on conflict do nothing", requestId, device);
+        return detail(device, code);
+    }
+
+    /** A heart on a shared prayer, or taking it back. */
+    public Detail heart(String device, String code, long requestId, boolean on) {
+        Membership me = membership(device, code);
+        author(me, requestId);
+        if (on) {
+            db.update("insert into circle_heart (request_id, device) values (?, ?) on conflict do nothing", requestId, device);
+        } else {
+            db.update("delete from circle_heart where request_id = ? and device = ?", requestId, device);
+        }
         return detail(device, code);
     }
 

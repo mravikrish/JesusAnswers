@@ -8,6 +8,7 @@ import '../../core/share.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/common.dart';
 import '../../core/widgets/community.dart';
+import '../../data/models/prayer.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
 import '../../services/answer/safety.dart';
@@ -24,6 +25,130 @@ String circleProblemText(AppLocalizations l, Object e) => switch (e) {
 void _say(BuildContext context, String text) => ScaffoldMessenger.of(context)
   ..hideCurrentSnackBar()
   ..showSnackBar(SnackBar(content: Text(text), behavior: SnackBarBehavior.floating));
+
+/// Asks for an optional note to go with [prayer]; null when cancelled.
+Future<String?> _askNote(BuildContext context, Prayer prayer) {
+  final l = AppLocalizations.of(context);
+  final note = TextEditingController();
+  return showDialog<String>(
+    context: context,
+    builder: (ctx) => AlertDialog(
+      icon: Icon(prayer.icon, color: AppColors.gold),
+      title: Text(prayer.title, textAlign: TextAlign.center),
+      content: TextField(
+        controller: note,
+        autofocus: true,
+        minLines: 1,
+        maxLines: 4,
+        maxLength: 300,
+        textCapitalization: TextCapitalization.sentences,
+        decoration: InputDecoration(hintText: l.circleNoteHint, counterText: ''),
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(ctx),
+          child: Text(MaterialLocalizations.of(ctx).cancelButtonLabel),
+        ),
+        FilledButton(onPressed: () => Navigator.pop(ctx, note.text.trim()), child: Text(l.share)),
+      ],
+    ),
+  ).whenComplete(note.dispose);
+}
+
+/// From a ready prayer: picks one of the person's circles, asks for a note, and shares it there.
+Future<void> sharePrayerToCircle(BuildContext context, WidgetRef ref, Prayer prayer) async {
+  final l = AppLocalizations.of(context);
+  final service = ref.read(circleServiceProvider);
+  var circles = service.saved;
+  try {
+    circles = await service.mine();
+  } catch (_) {}
+  if (!context.mounted) return;
+  if (circles.isEmpty) {
+    ScaffoldMessenger.of(context)
+      ..hideCurrentSnackBar()
+      ..showSnackBar(SnackBar(
+        content: Text(l.circleNone),
+        behavior: SnackBarBehavior.floating,
+        action: SnackBarAction(label: l.circlesTitle, onPressed: () => context.push('/circles')),
+      ));
+    return;
+  }
+  final circle = circles.length == 1
+      ? circles.single
+      : await showModalBottomSheet<CircleSummary>(
+          context: context,
+          showDragHandle: true,
+          backgroundColor: AppColors.ivoryCard,
+          builder: (ctx) => SafeArea(
+            child: ListView(
+              shrinkWrap: true,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(24, 0, 24, 8),
+                  child: Text(l.circleChoose, style: AppText.serif(22, weight: FontWeight.w700)),
+                ),
+                for (final c in circles)
+                  ListTile(
+                    leading: const CircleAvatar(
+                      backgroundColor: AppColors.sand,
+                      child: Icon(Icons.groups_rounded, color: AppColors.ember),
+                    ),
+                    title: Text(c.name, style: const TextStyle(fontWeight: FontWeight.w700)),
+                    subtitle: Text(l.circleMembers(c.members)),
+                    onTap: () => Navigator.pop(ctx, c),
+                  ),
+              ],
+            ),
+          ),
+        );
+  if (circle == null || !context.mounted) return;
+  final note = await _askNote(context, prayer);
+  if (note == null || !context.mounted) return;
+  try {
+    await service.sharePrayer(circle.code, prayer.id, note);
+    if (context.mounted) _say(context, l.circleSharedTo(circle.name));
+  } catch (e) {
+    if (context.mounted) _say(context, circleProblemText(l, e));
+  }
+}
+
+/// How prayer circles work: the limits and rules, so nobody is surprised by them.
+class CircleRules extends StatelessWidget {
+  const CircleRules({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final rules = [
+      (Icons.groups_rounded, l.circleInfoMembers(CircleService.maxMembers)),
+      (Icons.diversity_3_rounded, l.circleInfoCircles(CircleService.maxCircles)),
+      (Icons.volunteer_activism_rounded, l.circleInfoShare),
+      (Icons.lock_rounded, l.circleInfoPrivate),
+      (Icons.schedule_rounded, l.circleInfoDays(CircleService.keepDays)),
+      (Icons.person_remove_rounded, l.circleInfoOwner),
+      (Icons.flag_rounded, l.circleInfoReport),
+      (Icons.logout_rounded, l.circleInfoLeave),
+      (Icons.notifications_active_rounded, l.circleInfoPopups),
+    ];
+    return Column(
+      children: [
+        for (final (icon, text) in rules)
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 6),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Icon(icon, size: 20, color: AppColors.gold),
+                const SizedBox(width: 12),
+                Expanded(child: Text(text, style: const TextStyle(fontSize: 15, height: 1.4))),
+              ],
+            ),
+          ),
+      ],
+    );
+  }
+}
 
 /// Prayer Circles — the circles the person is in, and starting or joining one with a code.
 class CirclesScreen extends ConsumerStatefulWidget {
@@ -154,6 +279,22 @@ class _CirclesScreenState extends ConsumerState<CirclesScreen> {
                 ),
               ],
             ),
+            const SizedBox(height: 16),
+            SoftCard(
+              padding: EdgeInsets.zero,
+              child: Theme(
+                data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+                child: ExpansionTile(
+                  // Open for someone new to circles; one tap away after that.
+                  key: ValueKey(_circles.isEmpty),
+                  initiallyExpanded: _circles.isEmpty,
+                  leading: const Icon(Icons.info_outline_rounded, color: AppColors.gold),
+                  title: Text(l.circleInfoTitle, style: const TextStyle(fontWeight: FontWeight.w700)),
+                  childrenPadding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
+                  children: const [CircleRules()],
+                ),
+              ),
+            ),
             const SizedBox(height: 24),
             if (_offline && _circles.isEmpty)
               Text(l.circleOffline, textAlign: TextAlign.center, style: const TextStyle(color: AppColors.inkSoft)),
@@ -272,6 +413,64 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
     }
   }
 
+  /// Picks a ready prayer, with an optional note, to pray together.
+  Future<void> _sharePrayer() async {
+    final l = AppLocalizations.of(context);
+    final groups = await ref.read(prayerGroupsProvider.future);
+    if (!mounted) return;
+    final prayer = await showModalBottomSheet<Prayer>(
+      context: context,
+      showDragHandle: true,
+      isScrollControlled: true,
+      backgroundColor: AppColors.ivoryCard,
+      builder: (ctx) => SafeArea(
+        child: ConstrainedBox(
+          constraints: BoxConstraints(maxHeight: MediaQuery.sizeOf(ctx).height * 0.8),
+          child: ListView(
+            shrinkWrap: true,
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(24, 0, 24, 8),
+                child: Text(l.circlePickPrayer, style: AppText.serif(22, weight: FontWeight.w700)),
+              ),
+              for (final g in groups) ...[
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(24, 12, 24, 4),
+                  child: Text(g.title,
+                      style: const TextStyle(fontWeight: FontWeight.w700, color: AppColors.ember, fontSize: 13)),
+                ),
+                for (final p in g.prayers)
+                  // Prayers for someone in danger lead with helplines; they aren't for sharing.
+                  if (!p.crisis)
+                    ListTile(
+                      leading: Icon(p.icon, color: AppColors.gold),
+                      title: Text(p.title),
+                      onTap: () => Navigator.pop(ctx, p),
+                    ),
+              ],
+            ],
+          ),
+        ),
+      ),
+    );
+    if (prayer == null || !mounted) return;
+    final note = await _askNote(context, prayer);
+    if (note == null || !mounted) return;
+    await _change(() => _service.sharePrayer(widget.code, prayer.id, note));
+  }
+
+  /// Plays the prayer; only once it has been prayed to the end does it count as joined.
+  Future<void> _joinPrayer(CircleRequest r) async {
+    final done = await context.push<bool>('/prayers/${r.prayerId}?along=1');
+    if (done == true && mounted && !r.prayedByMe) await _change(() => _service.prayed(widget.code, r.id));
+  }
+
+  Future<void> _answered(CircleRequest r) async {
+    if (await _change(() => _service.answered(widget.code, r.id)) && mounted) {
+      _say(context, AppLocalizations.of(context).circleAnsweredThanks);
+    }
+  }
+
   void _invite(CircleDetail c) {
     final l = AppLocalizations.of(context);
     SharePlus.instance.share(
@@ -314,6 +513,30 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
     }
   }
 
+  void _rules() {
+    final l = AppLocalizations.of(context);
+    showModalBottomSheet<void>(
+      context: context,
+      showDragHandle: true,
+      isScrollControlled: true,
+      backgroundColor: AppColors.ivoryCard,
+      builder: (ctx) => SafeArea(
+        child: ConstrainedBox(
+          constraints: BoxConstraints(maxHeight: MediaQuery.sizeOf(ctx).height * 0.8),
+          child: ListView(
+            shrinkWrap: true,
+            padding: const EdgeInsets.fromLTRB(24, 0, 24, 16),
+            children: [
+              Text(l.circleInfoTitle, style: AppText.serif(22, weight: FontWeight.w700)),
+              const SizedBox(height: 8),
+              const CircleRules(),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
   void _members(CircleDetail c) {
     final l = AppLocalizations.of(context);
     showModalBottomSheet<void>(
@@ -329,7 +552,14 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
             children: [
               Padding(
                 padding: const EdgeInsets.fromLTRB(24, 0, 24, 8),
-                child: Text(l.circleMembersTitle, style: AppText.serif(22, weight: FontWeight.w700)),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(l.circleMembersTitle, style: AppText.serif(22, weight: FontWeight.w700)),
+                    Text(l.circleMembersOf(c.members.length, CircleService.maxMembers),
+                        style: const TextStyle(color: AppColors.inkSoft)),
+                  ],
+                ),
               ),
               for (final m in c.members)
                 ListTile(
@@ -369,9 +599,17 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
           if (c != null) ...[
             IconButton(tooltip: l.circleInvite, icon: const Icon(Icons.person_add_alt_1_rounded), onPressed: () => _invite(c)),
             PopupMenuButton<String>(
-              onSelected: (v) => v == 'members' ? _members(c) : _leave(),
+              onSelected: (v) => switch (v) {
+                'members' => _members(c),
+                'rules' => _rules(),
+                _ => _leave(),
+              },
               itemBuilder: (_) => [
-                PopupMenuItem(value: 'members', child: Text('${l.circleMembersTitle} (${c.members.length})')),
+                PopupMenuItem(
+                  value: 'members',
+                  child: Text('${l.circleMembersTitle} (${c.members.length}/${CircleService.maxMembers})'),
+                ),
+                PopupMenuItem(value: 'rules', child: Text(l.circleInfoTitle)),
                 PopupMenuItem(value: 'leave', child: Text(l.circleLeave)),
               ],
             ),
@@ -406,7 +644,7 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
               child: ListView(
                 padding: const EdgeInsets.fromLTRB(20, 4, 20, 32),
                 children: [
-                  _InviteCard(code: c.code, onInvite: () => _invite(c)),
+                  _InviteCard(code: c.code, members: c.members.length, onInvite: () => _invite(c)),
                   const SizedBox(height: 16),
                   TextField(
                     controller: _text,
@@ -425,7 +663,16 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 16),
+                  Align(
+                    alignment: AlignmentDirectional.centerStart,
+                    child: TextButton.icon(
+                      style: TextButton.styleFrom(foregroundColor: AppColors.ember),
+                      onPressed: _busy ? null : _sharePrayer,
+                      icon: const Icon(Icons.menu_book_rounded, color: AppColors.gold),
+                      label: Text(l.circleSharePrayer),
+                    ),
+                  ),
+                  const SizedBox(height: 8),
                   if (c.requests.isEmpty)
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 24),
@@ -437,8 +684,9 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
                       request: r,
                       owner: c.owner,
                       busy: _busy,
-                      onPrayed: () => _change(() => _service.prayed(c.code, r.id)),
-                      onAnswered: () => _change(() => _service.answered(c.code, r.id)),
+                      onPrayed: () => r.prayerId == null ? _change(() => _service.prayed(c.code, r.id)) : _joinPrayer(r),
+                      onHeart: () => _change(() => _service.heart(c.code, r.id, on: !r.heartedByMe)),
+                      onAnswered: () => _answered(r),
                       onDelete: () => _change(() => _service.deleteRequest(c.code, r.id)),
                       onReport: () async {
                         if (await _change(() => _service.report(c.code, r.id)) && context.mounted) {
@@ -456,8 +704,9 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
 }
 
 class _InviteCard extends StatelessWidget {
-  const _InviteCard({required this.code, required this.onInvite});
+  const _InviteCard({required this.code, required this.members, required this.onInvite});
   final String code;
+  final int members;
   final VoidCallback onInvite;
 
   @override
@@ -476,6 +725,8 @@ class _InviteCard extends StatelessWidget {
                   CircleService.showCode(code),
                   style: const TextStyle(fontSize: 26, fontWeight: FontWeight.w700, letterSpacing: 3),
                 ),
+                Text(l.circleMembersOf(members, CircleService.maxMembers),
+                    style: const TextStyle(fontSize: 13, color: AppColors.inkSoft)),
               ],
             ),
           ),
@@ -495,12 +746,13 @@ class _InviteCard extends StatelessWidget {
   }
 }
 
-class _RequestCard extends StatelessWidget {
+class _RequestCard extends ConsumerWidget {
   const _RequestCard({
     required this.request,
     required this.owner,
     required this.busy,
     required this.onPrayed,
+    required this.onHeart,
     required this.onAnswered,
     required this.onDelete,
     required this.onReport,
@@ -511,7 +763,7 @@ class _RequestCard extends StatelessWidget {
   /// The reader started the circle, so can remove any request.
   final bool owner;
   final bool busy;
-  final VoidCallback onPrayed, onAnswered, onDelete, onReport;
+  final VoidCallback onPrayed, onHeart, onAnswered, onDelete, onReport;
 
   String _when(BuildContext context) {
     final at = request.at;
@@ -526,16 +778,22 @@ class _RequestCard extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
     final r = request;
+    // A shared ready prayer, shown from the app's own copy in the reader's language.
+    final shared = r.prayerId != null;
+    final prayer = shared
+        ? ref.watch(prayerGroupsProvider).value?.expand((g) => g.prayers).where((p) => p.id == r.prayerId).firstOrNull
+        : null;
     final menu = [
-      if (r.mine && !r.answered) ('answered', l.circleMarkAnswered, onAnswered),
+      if (r.mine && !r.answered && !shared) ('answered', l.circleMarkAnswered, onAnswered),
       if (r.mine || owner) ('delete', l.circleDelete, onDelete),
       if (!r.mine) ('report', l.circleReport, onReport),
     ];
     return SoftCard(
       padding: const EdgeInsets.fromLTRB(16, 12, 8, 10),
+      color: r.answered ? const Color(0xFFFFF4D6) : null,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -562,10 +820,47 @@ class _RequestCard extends StatelessWidget {
                 ),
             ],
           ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(2, 8, 8, 4),
-            child: Text(r.text, style: const TextStyle(fontSize: 16, height: 1.45)),
-          ),
+          if (shared) ...[
+            if (r.text.isNotEmpty)
+              Padding(
+                padding: const EdgeInsets.fromLTRB(2, 8, 8, 0),
+                child: Text(r.text, style: const TextStyle(fontSize: 16, height: 1.45)),
+              ),
+            const SizedBox(height: 8),
+            InkWell(
+              borderRadius: BorderRadius.circular(16),
+              onTap: busy || prayer == null ? null : onPrayed,
+              child: Container(
+                width: double.infinity,
+                margin: const EdgeInsets.only(right: 8),
+                padding: const EdgeInsets.all(14),
+                decoration: BoxDecoration(
+                  color: AppColors.sand.withValues(alpha: 0.6),
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Row(
+                  children: [
+                    Icon(prayer?.icon ?? Icons.menu_book_rounded, color: AppColors.ember, size: 28),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(l.circlePrayTogether, style: const TextStyle(fontSize: 13, color: AppColors.inkSoft)),
+                          Text(prayer?.title ?? '…', style: AppText.serif(19, weight: FontWeight.w700)),
+                        ],
+                      ),
+                    ),
+                    const Icon(Icons.play_circle_fill_rounded, color: AppColors.gold, size: 32),
+                  ],
+                ),
+              ),
+            ),
+          ] else
+            Padding(
+              padding: const EdgeInsets.fromLTRB(2, 8, 8, 4),
+              child: Text(r.text, style: const TextStyle(fontSize: 16, height: 1.45)),
+            ),
           if (r.answered)
             Padding(
               padding: const EdgeInsets.only(top: 4),
@@ -584,39 +879,92 @@ class _RequestCard extends StatelessWidget {
           const SizedBox(height: 4),
           Row(
             children: [
-              r.prayedByMe
-                  ? FilledButton.icon(
-                      style: FilledButton.styleFrom(
-                        minimumSize: const Size(0, 40),
-                        backgroundColor: AppColors.sand,
-                        foregroundColor: AppColors.ink,
-                      ),
-                      onPressed: null,
-                      icon: const Icon(Icons.check_rounded, size: 18, color: AppColors.ember),
-                      label: Text(l.circleIPrayed),
-                    )
-                  : OutlinedButton.icon(
-                      style: OutlinedButton.styleFrom(
-                        minimumSize: const Size(0, 40),
-                        shape: const StadiumBorder(),
-                        foregroundColor: AppColors.ink,
-                        side: const BorderSide(color: AppColors.gold),
-                      ),
-                      onPressed: busy ? null : onPrayed,
-                      icon: const Icon(Icons.volunteer_activism_rounded, size: 18, color: AppColors.gold),
-                      label: Text(l.circleIPrayed),
-                    ),
+              if (shared)
+                _JoinButton(joined: r.prayedByMe, enabled: !busy && prayer != null, onPressed: onPrayed)
+              else if (r.prayedByMe)
+                FilledButton.icon(
+                  style: FilledButton.styleFrom(
+                    minimumSize: const Size(0, 40),
+                    backgroundColor: AppColors.sand,
+                    foregroundColor: AppColors.ink,
+                  ),
+                  onPressed: null,
+                  icon: const Icon(Icons.check_rounded, size: 18, color: AppColors.ember),
+                  label: Text(l.circleIPrayed),
+                )
+              else
+                OutlinedButton.icon(
+                  style: OutlinedButton.styleFrom(
+                    minimumSize: const Size(0, 40),
+                    shape: const StadiumBorder(),
+                    foregroundColor: AppColors.ink,
+                    side: const BorderSide(color: AppColors.gold),
+                  ),
+                  onPressed: busy ? null : onPrayed,
+                  icon: const Icon(Icons.volunteer_activism_rounded, size: 18, color: AppColors.gold),
+                  label: Text(l.circleIPrayed),
+                ),
               const SizedBox(width: 12),
               if (r.prayed > 0)
                 Flexible(
-                  child: Text(l.prayedCount(compactCount(context, r.prayed)),
+                  child: Text(
+                      shared
+                          ? l.circleJoinedCount(compactCount(context, r.prayed))
+                          : l.prayedCount(compactCount(context, r.prayed)),
                       style: const TextStyle(color: AppColors.inkSoft)),
                 ),
+              if (shared) ...[
+                const Spacer(),
+                IconButton(
+                  tooltip: l.circleLove,
+                  onPressed: busy ? null : onHeart,
+                  icon: Icon(r.heartedByMe ? Icons.favorite_rounded : Icons.favorite_border_rounded,
+                      color: AppColors.heart),
+                ),
+                if (r.hearts > 0)
+                  Padding(
+                    padding: const EdgeInsets.only(right: 8),
+                    child: Text(compactCount(context, r.hearts), style: const TextStyle(color: AppColors.inkSoft)),
+                  ),
+              ],
             ],
           ),
         ],
       ),
     );
+  }
+}
+
+/// Join a shared prayer: it plays, and counts once prayed to the end. Joined people can pray it again.
+class _JoinButton extends StatelessWidget {
+  const _JoinButton({required this.joined, required this.enabled, required this.onPressed});
+  final bool joined, enabled;
+  final VoidCallback onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    return joined
+        ? FilledButton.icon(
+            style: FilledButton.styleFrom(
+              minimumSize: const Size(0, 40),
+              backgroundColor: AppColors.sand,
+              foregroundColor: AppColors.ink,
+            ),
+            onPressed: enabled ? onPressed : null,
+            icon: const Icon(Icons.check_rounded, size: 18, color: AppColors.ember),
+            label: Text(l.circleJoined),
+          )
+        : FilledButton.icon(
+            style: FilledButton.styleFrom(
+              minimumSize: const Size(0, 40),
+              backgroundColor: AppColors.gold,
+              foregroundColor: AppColors.midnight,
+            ),
+            onPressed: enabled ? onPressed : null,
+            icon: const Icon(Icons.play_arrow_rounded, size: 20),
+            label: Text(l.circleJoinPrayer),
+          );
   }
 }
 

@@ -866,4 +866,146 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get circleOffline =>
       'Couldn\'t connect. Check your internet and try again.';
+
+  @override
+  String get circleSharePrayer => 'Share a ready prayer';
+
+  @override
+  String get circlePickPrayer => 'Choose a prayer to pray together';
+
+  @override
+  String get circleNoteHint => 'Add a few words (optional)';
+
+  @override
+  String get circlePrayTogether => 'Let\'s pray this together';
+
+  @override
+  String get circleJoinPrayer => 'Join this prayer';
+
+  @override
+  String get circleJoined => 'Joined';
+
+  @override
+  String circleJoinedCount(String count) {
+    return '$count joined';
+  }
+
+  @override
+  String get circleLove => 'Love this prayer';
+
+  @override
+  String get circleAnsweredThanks =>
+      'Praise God! Everyone in the circle can now see that He answered.';
+
+  @override
+  String get circleShortLabel => 'Circle';
+
+  @override
+  String get circleNone => 'Start or join a prayer circle first.';
+
+  @override
+  String get circleChoose => 'Share with which circle?';
+
+  @override
+  String circleSharedTo(String name) {
+    return 'Shared with $name';
+  }
+
+  @override
+  String newsAsked(String name) {
+    return '$name asked for prayer';
+  }
+
+  @override
+  String newsShared(String name) {
+    return '$name invites you to pray';
+  }
+
+  @override
+  String newsPrayed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count people prayed for you',
+      one: '1 person prayed for you',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsJoinedPrayer(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count people joined your prayer',
+      one: '1 person joined your prayer',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsAnswered(String name) {
+    return 'God answered $name\'s prayer!';
+  }
+
+  @override
+  String newsJoined(String name) {
+    return '$name joined your circle';
+  }
+
+  @override
+  String get newsLater => 'Later';
+
+  @override
+  String get newsOpen => 'Open circle';
+
+  @override
+  String get newsAmen => 'Amen';
+
+  @override
+  String get circleInfoTitle => 'How prayer circles work';
+
+  @override
+  String circleInfoMembers(int max) {
+    return 'Up to $max people in each circle';
+  }
+
+  @override
+  String circleInfoCircles(int max) {
+    return 'You can be in up to $max circles';
+  }
+
+  @override
+  String get circleInfoShare =>
+      'Share a prayer request or a ready prayer. The others tap \"I prayed\", or join and pray it with you.';
+
+  @override
+  String get circleInfoPrivate =>
+      'Only members can see the requests. They are stored encrypted, with no account, email or phone number.';
+
+  @override
+  String circleInfoDays(int days) {
+    return 'Requests are deleted after $days days.';
+  }
+
+  @override
+  String get circleInfoOwner =>
+      'Whoever starts a circle can remove members. Someone removed can\'t join again.';
+
+  @override
+  String get circleInfoReport =>
+      'Report anything hurtful: it is hidden for you at once, and removed for everyone when enough members report it.';
+
+  @override
+  String get circleInfoLeave =>
+      'If you leave a circle, your requests in it are deleted.';
+
+  @override
+  String get circleInfoPopups =>
+      'When you open the app, new requests, shared prayers and answered prayers pop up.';
+
+  @override
+  String circleMembersOf(int count, int max) {
+    return '$count of $max members';
+  }
 }

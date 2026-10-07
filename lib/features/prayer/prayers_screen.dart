@@ -17,7 +17,9 @@ import '../../data/models/prayer.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
 import '../../services/community_service.dart';
+import '../../services/voice/tts_service.dart' show Playback;
 import '../bible/bible_screen.dart';
+import '../circles/circles_screen.dart';
 import '../pictures/pictures_screen.dart';
 
 /// Ready Prayers — prayers for every day, every need and every occasion, by
@@ -312,9 +314,12 @@ class _ForWhomToggle extends StatelessWidget {
 /// prayed for someone takes their name, and any prayer can be sent on WhatsApp,
 /// as a WhatsApp Status picture, or anywhere.
 class PrayerReadScreen extends ConsumerStatefulWidget {
-  const PrayerReadScreen({super.key, required this.id, this.forSomeone = false});
+  const PrayerReadScreen({super.key, required this.id, this.forSomeone = false, this.along = false});
   final String id;
   final bool forSomeone;
+
+  /// Praying along with a circle: closes with true once the prayer has been heard to the end.
+  final bool along;
 
   @override
   ConsumerState<PrayerReadScreen> createState() => _PrayerReadScreenState();
@@ -334,10 +339,19 @@ class _PrayerReadScreenState extends ConsumerState<PrayerReadScreen> {
     super.initState();
     ref.read(daysProvider).mark(); // a day with Jesus
     _tts.warmUp(ref.read(settingsProvider).language, male: _tts.prayerMale.value);
+    if (widget.along) _tts.playback.addListener(_finished);
+  }
+
+  /// Read to the end (not stopped part-way): the circle counts it, and the prayer closes.
+  void _finished() {
+    if (_tts.playback.value != Playback.idle || _tts.progress.value < 1 || !mounted) return;
+    _tts.playback.removeListener(_finished);
+    context.pop(true);
   }
 
   @override
   void dispose() {
+    _tts.playback.removeListener(_finished);
     _tts.stop();
     _name.dispose();
     _nameFocus.dispose();
@@ -584,6 +598,19 @@ class _PrayerReadScreenState extends ConsumerState<PrayerReadScreen> {
                       Expanded(
                         child: _Action(icon: Icons.copy_rounded, label: l.copyText, onPressed: () => _copy(prayer, words, l)),
                       ),
+                      if (!prayer.crisis && !widget.along) ...[
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: _Action(
+                            icon: Icons.groups_rounded,
+                            label: l.circleShortLabel,
+                            onPressed: () {
+                              _tts.stop();
+                              sharePrayerToCircle(context, ref, prayer);
+                            },
+                          ),
+                        ),
+                      ],
                     ],
                   ),
                   if (words != null) ...[

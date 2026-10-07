@@ -857,4 +857,147 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get circleOffline =>
       'Impossibile connettersi. Controlla la connessione e riprova.';
+
+  @override
+  String get circleSharePrayer => 'Condividi una preghiera pronta';
+
+  @override
+  String get circlePickPrayer => 'Scegli una preghiera da pregare insieme';
+
+  @override
+  String get circleNoteHint => 'Aggiungi qualche parola (facoltativo)';
+
+  @override
+  String get circlePrayTogether => 'Preghiamo insieme questa preghiera';
+
+  @override
+  String get circleJoinPrayer => 'Unisciti a questa preghiera';
+
+  @override
+  String get circleJoined => 'Unito';
+
+  @override
+  String circleJoinedCount(String count) {
+    return '$count uniti';
+  }
+
+  @override
+  String get circleLove => 'Amo questa preghiera';
+
+  @override
+  String get circleAnsweredThanks =>
+      'Lode a Dio! Ora tutta la cerchia vede che Lui ha risposto.';
+
+  @override
+  String get circleShortLabel => 'Cerchia';
+
+  @override
+  String get circleNone =>
+      'Prima crea una cerchia di preghiera o entra in una.';
+
+  @override
+  String get circleChoose => 'Condividere con quale cerchia?';
+
+  @override
+  String circleSharedTo(String name) {
+    return 'Condivisa con $name';
+  }
+
+  @override
+  String newsAsked(String name) {
+    return '$name chiede preghiera';
+  }
+
+  @override
+  String newsShared(String name) {
+    return '$name ti invita a pregare';
+  }
+
+  @override
+  String newsPrayed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count persone hanno pregato per te',
+      one: '1 persona ha pregato per te',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsJoinedPrayer(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count persone si sono unite alla tua preghiera',
+      one: '1 persona si è unita alla tua preghiera',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsAnswered(String name) {
+    return 'Dio ha risposto alla preghiera di $name!';
+  }
+
+  @override
+  String newsJoined(String name) {
+    return '$name è entrato nella tua cerchia';
+  }
+
+  @override
+  String get newsLater => 'Più tardi';
+
+  @override
+  String get newsOpen => 'Apri cerchia';
+
+  @override
+  String get newsAmen => 'Amen';
+
+  @override
+  String get circleInfoTitle => 'Come funzionano le cerchie di preghiera';
+
+  @override
+  String circleInfoMembers(int max) {
+    return 'Fino a $max persone per cerchia';
+  }
+
+  @override
+  String circleInfoCircles(int max) {
+    return 'Puoi far parte di $max cerchie al massimo';
+  }
+
+  @override
+  String get circleInfoShare =>
+      'Condividi una richiesta di preghiera o una preghiera pronta. Gli altri toccano \"Ho pregato\", oppure si uniscono e la pregano con te.';
+
+  @override
+  String get circleInfoPrivate =>
+      'Solo i membri vedono le richieste. Sono salvate cifrate, senza account, email o numero di telefono.';
+
+  @override
+  String circleInfoDays(int days) {
+    return 'Le richieste vengono eliminate dopo $days giorni.';
+  }
+
+  @override
+  String get circleInfoOwner =>
+      'Chi crea una cerchia può rimuovere i membri. Chi viene rimosso non può rientrare.';
+
+  @override
+  String get circleInfoReport =>
+      'Segnala ciò che ferisce: viene nascosto subito per te e rimosso per tutti quando abbastanza membri lo segnalano.';
+
+  @override
+  String get circleInfoLeave =>
+      'Se lasci una cerchia, le tue richieste lì vengono eliminate.';
+
+  @override
+  String get circleInfoPopups =>
+      'Quando apri l\'app compaiono nuove richieste, preghiere condivise e preghiere esaudite.';
+
+  @override
+  String circleMembersOf(int count, int max) {
+    return '$count membri su $max';
+  }
 }
