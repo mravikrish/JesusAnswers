@@ -1066,4 +1066,212 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get circleScreenSteps =>
       'Changanua kwa kamera ya simu, au fungua JesusAnswers na uguse Omba → Vikundi vya Maombi → Jiunge kwa msimbo';
+
+  @override
+  String get circleTabPrayers => 'Maombi';
+
+  @override
+  String get circleTabPraise => 'Sifa';
+
+  @override
+  String get circleTabChains => 'Minyororo';
+
+  @override
+  String get circleTabGroups => 'Vikundi vidogo';
+
+  @override
+  String get circleWaitingLabel => 'Inasubiri idhini';
+
+  @override
+  String circleWaitingSent(String name) {
+    return 'Umeomba kujiunga na $name. Kiongozi atakuruhusu kuingia hivi karibuni.';
+  }
+
+  @override
+  String get circleStopWaiting => 'Acha kusubiri';
+
+  @override
+  String get circleApproval => 'Wanachama wapya wasubiri idhini';
+
+  @override
+  String get circleApprovalHint => 'Pale msimbo umeenea nje ya kanisa lako';
+
+  @override
+  String get circleWaitingTitle => 'Wanaosubiri kujiunga';
+
+  @override
+  String get circleApprove => 'Ruhusu';
+
+  @override
+  String get circleDecline => 'Kataa';
+
+  @override
+  String circleDeclineConfirm(String name) {
+    return 'Umkatae $name? Hataweza kuomba tena.';
+  }
+
+  @override
+  String get circleGroupsIntro =>
+      'Vikundi vidogo vya kanisa hili: vijana, ushirika, vikundi vya nyumbani. Jiunge na chochote kwa mguso mmoja.';
+
+  @override
+  String get circleAddGroup => 'Ongeza kikundi kidogo';
+
+  @override
+  String get circleGroupNameHint => 'k.m. Vijana, Ushirika wa wanawake';
+
+  @override
+  String get circleJoinGroup => 'Jiunge';
+
+  @override
+  String get circleNoGroups => 'Bado hakuna vikundi vidogo.';
+
+  @override
+  String get circleSharePraise => 'Shiriki ushuhuda wa sifa';
+
+  @override
+  String get circlePraiseHint =>
+      'Mungu amefanya nini? Shiriki ili kuwatia wote moyo.';
+
+  @override
+  String get circlePraiseEmpty =>
+      'Maombi yaliyojibiwa na shuhuda za sifa huonekana hapa, kuwatia wote moyo.';
+
+  @override
+  String get circlePraiseReport => 'Ushuhuda wa sifa';
+
+  @override
+  String get circleTestimonyTitle => 'Mungu alijibu vipi?';
+
+  @override
+  String get circleTestimonyHint =>
+      'Maneno machache kwa ukuta wa sifa (si lazima)';
+
+  @override
+  String get circlePraiseGod => 'Mungu asifiwe';
+
+  @override
+  String get circleChainsIntro =>
+      'Ombeni au fungeni kwa zamu, ili daima mtu awe anaomba.';
+
+  @override
+  String get circleNewChain => 'Anzisha mnyororo wa maombi';
+
+  @override
+  String get circleChainTitle => 'Kwa ajili ya nini';
+
+  @override
+  String get circleChainTitleHint => 'k.m. Saa 24 kwa ajili ya uamsho';
+
+  @override
+  String get circleChainHoursKind => 'Saa za maombi';
+
+  @override
+  String get circleChainDaysKind => 'Siku za kufunga';
+
+  @override
+  String get circleChainStarts => 'Inaanza';
+
+  @override
+  String circleChainHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'saa $count',
+      one: 'saa 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String circleChainDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'siku $count',
+      one: 'siku 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleChainPray => 'Nitaomba';
+
+  @override
+  String get circleChainFast => 'Nitafunga';
+
+  @override
+  String get circleChainGiveBack => 'Rudisha';
+
+  @override
+  String get circleChainNobody => 'Bado hakuna mtu';
+
+  @override
+  String get circleChainYourTurn => 'Zamu yako ya kuomba';
+
+  @override
+  String get circleChainYourFast => 'Siku yako ya kufunga';
+
+  @override
+  String get circleChainsEmpty => 'Bado hakuna mnyororo wa maombi.';
+
+  @override
+  String get circleChainEnded => 'Imeisha';
+
+  @override
+  String get circleShareVerse => 'Shiriki mstari wa Biblia';
+
+  @override
+  String get circleShareVerseHow =>
+      'Fungua sura, kisha bonyeza na ushikilie mstari ili kuushiriki.';
+
+  @override
+  String get shareToCircle => 'Shiriki na kikundi';
+
+  @override
+  String newsVerse(String name) {
+    return '$name ameshiriki mstari wa Biblia';
+  }
+
+  @override
+  String newsWaiting(int count, String name) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Watu $count wanasubiri kujiunga',
+      one: '$name anasubiri kujiunga',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsApproved(String name) {
+    return 'Umeingia! Karibu $name';
+  }
+
+  @override
+  String newsChain(String name) {
+    return '$name ameanzisha mnyororo wa maombi';
+  }
+
+  @override
+  String newsGroup(String name) {
+    return 'Kikundi kidogo kipya: $name';
+  }
+
+  @override
+  String get circleInfoGroups =>
+      'Kanisa linaweza kuwa na vikundi vidogo (vijana, ushirika, vikundi vya nyumbani); wanachama wake hujiunga kwa mguso mmoja.';
+
+  @override
+  String get circleInfoApproval =>
+      'Aliyeanzisha kikundi anaweza kuwafanya wanachama wapya wasubiri hadi kiongozi awaruhusu.';
+
+  @override
+  String get circleInfoPraise =>
+      'Maombi yaliyojibiwa na shuhuda za sifa hukaa kwenye ukuta wa sifa kwa mwaka mmoja.';
+
+  @override
+  String get circleInfoChains =>
+      'Viongozi wanaweza kuanzisha minyororo ya maombi na siku za kufunga. Chukua zamu, na simu yako itakukumbusha.';
 }

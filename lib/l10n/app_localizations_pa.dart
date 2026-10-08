@@ -1065,4 +1065,212 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get circleScreenSteps =>
       'ਫ਼ੋਨ ਦੇ ਕੈਮਰੇ ਨਾਲ ਸਕੈਨ ਕਰੋ, ਜਾਂ JesusAnswers ਖੋਲ੍ਹ ਕੇ ਪ੍ਰਾਰਥਨਾ → ਪ੍ਰਾਰਥਨਾ ਮੰਡਲੀ → ਕੋਡ ਨਾਲ ਸ਼ਾਮਲ ਹੋਵੋ \'ਤੇ ਟੈਪ ਕਰੋ';
+
+  @override
+  String get circleTabPrayers => 'ਪ੍ਰਾਰਥਨਾਵਾਂ';
+
+  @override
+  String get circleTabPraise => 'ਉਸਤਤ';
+
+  @override
+  String get circleTabChains => 'ਲੜੀ';
+
+  @override
+  String get circleTabGroups => 'ਟੋਲੀਆਂ';
+
+  @override
+  String get circleWaitingLabel => 'ਮਨਜ਼ੂਰੀ ਦੀ ਉਡੀਕ ਵਿੱਚ';
+
+  @override
+  String circleWaitingSent(String name) {
+    return 'ਤੁਸੀਂ $name ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਲਈ ਕਿਹਾ ਹੈ। ਜਲਦੀ ਹੀ ਕੋਈ ਆਗੂ ਤੁਹਾਨੂੰ ਸ਼ਾਮਲ ਕਰੇਗਾ।';
+  }
+
+  @override
+  String get circleStopWaiting => 'ਉਡੀਕ ਛੱਡੋ';
+
+  @override
+  String get circleApproval => 'ਨਵੇਂ ਮੈਂਬਰ ਮਨਜ਼ੂਰੀ ਦੀ ਉਡੀਕ ਕਰਨ';
+
+  @override
+  String get circleApprovalHint =>
+      'ਜਦੋਂ ਕੋਡ ਤੁਹਾਡੀ ਕਲੀਸਿਯਾ ਤੋਂ ਬਾਹਰ ਫੈਲ ਗਿਆ ਹੋਵੇ';
+
+  @override
+  String get circleWaitingTitle => 'ਸ਼ਾਮਲ ਹੋਣ ਦੀ ਉਡੀਕ ਵਿੱਚ';
+
+  @override
+  String get circleApprove => 'ਸ਼ਾਮਲ ਕਰੋ';
+
+  @override
+  String get circleDecline => 'ਨਾਂਹ ਕਰੋ';
+
+  @override
+  String circleDeclineConfirm(String name) {
+    return '$name ਨੂੰ ਨਾਂਹ ਕਰਨੀ ਹੈ? ਉਹ ਮੁੜ ਨਹੀਂ ਪੁੱਛ ਸਕਣਗੇ।';
+  }
+
+  @override
+  String get circleGroupsIntro =>
+      'ਇਸ ਕਲੀਸਿਯਾ ਦੀਆਂ ਟੋਲੀਆਂ: ਨੌਜਵਾਨ, ਸੰਗਤਾਂ, ਘਰੇਲੂ ਟੋਲੀਆਂ। ਇੱਕ ਟੈਪ ਨਾਲ ਕਿਸੇ ਵਿੱਚ ਵੀ ਸ਼ਾਮਲ ਹੋਵੋ।';
+
+  @override
+  String get circleAddGroup => 'ਟੋਲੀ ਜੋੜੋ';
+
+  @override
+  String get circleGroupNameHint => 'ਜਿਵੇਂ ਨੌਜਵਾਨ, ਔਰਤਾਂ ਦੀ ਸੰਗਤ';
+
+  @override
+  String get circleJoinGroup => 'ਸ਼ਾਮਲ ਹੋਵੋ';
+
+  @override
+  String get circleNoGroups => 'ਅਜੇ ਕੋਈ ਟੋਲੀ ਨਹੀਂ।';
+
+  @override
+  String get circleSharePraise => 'ਉਸਤਤ ਦੀ ਗਵਾਹੀ ਸਾਂਝੀ ਕਰੋ';
+
+  @override
+  String get circlePraiseHint =>
+      'ਪਰਮੇਸ਼ੁਰ ਨੇ ਕੀ ਕੀਤਾ ਹੈ? ਸਭ ਨੂੰ ਹੌਸਲਾ ਦੇਣ ਲਈ ਸਾਂਝਾ ਕਰੋ।';
+
+  @override
+  String get circlePraiseEmpty =>
+      'ਜਵਾਬ ਮਿਲੀਆਂ ਪ੍ਰਾਰਥਨਾਵਾਂ ਅਤੇ ਉਸਤਤ ਦੀਆਂ ਗਵਾਹੀਆਂ ਸਭ ਦੇ ਹੌਸਲੇ ਲਈ ਇੱਥੇ ਦਿਸਦੀਆਂ ਹਨ।';
+
+  @override
+  String get circlePraiseReport => 'ਉਸਤਤ ਦੀ ਗਵਾਹੀ';
+
+  @override
+  String get circleTestimonyTitle => 'ਪਰਮੇਸ਼ੁਰ ਨੇ ਕਿਵੇਂ ਜਵਾਬ ਦਿੱਤਾ?';
+
+  @override
+  String get circleTestimonyHint => 'ਉਸਤਤ ਦੀ ਕੰਧ ਲਈ ਕੁਝ ਸ਼ਬਦ (ਚੋਣਵਾਂ)';
+
+  @override
+  String get circlePraiseGod => 'ਪਰਮੇਸ਼ੁਰ ਦੀ ਉਸਤਤ ਹੋਵੇ';
+
+  @override
+  String get circleChainsIntro =>
+      'ਵਾਰੀ-ਵਾਰੀ ਪ੍ਰਾਰਥਨਾ ਜਾਂ ਵਰਤ ਰੱਖੋ, ਤਾਂ ਜੋ ਕੋਈ ਨਾ ਕੋਈ ਸਦਾ ਪ੍ਰਾਰਥਨਾ ਵਿੱਚ ਰਹੇ।';
+
+  @override
+  String get circleNewChain => 'ਪ੍ਰਾਰਥਨਾ ਲੜੀ ਸ਼ੁਰੂ ਕਰੋ';
+
+  @override
+  String get circleChainTitle => 'ਕਿਸ ਲਈ';
+
+  @override
+  String get circleChainTitleHint => 'ਜਿਵੇਂ ਜਾਗ੍ਰਿਤੀ ਲਈ 24 ਘੰਟੇ';
+
+  @override
+  String get circleChainHoursKind => 'ਪ੍ਰਾਰਥਨਾ ਦੇ ਘੰਟੇ';
+
+  @override
+  String get circleChainDaysKind => 'ਵਰਤ ਦੇ ਦਿਨ';
+
+  @override
+  String get circleChainStarts => 'ਸ਼ੁਰੂ';
+
+  @override
+  String circleChainHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਘੰਟੇ',
+      one: '1 ਘੰਟਾ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String circleChainDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਦਿਨ',
+      one: '1 ਦਿਨ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleChainPray => 'ਮੈਂ ਪ੍ਰਾਰਥਨਾ ਕਰਾਂ';
+
+  @override
+  String get circleChainFast => 'ਮੈਂ ਵਰਤ ਰੱਖਾਂ';
+
+  @override
+  String get circleChainGiveBack => 'ਵਾਪਸ ਦਿਓ';
+
+  @override
+  String get circleChainNobody => 'ਅਜੇ ਕੋਈ ਨਹੀਂ';
+
+  @override
+  String get circleChainYourTurn => 'ਤੁਹਾਡੀ ਪ੍ਰਾਰਥਨਾ ਦੀ ਵਾਰੀ';
+
+  @override
+  String get circleChainYourFast => 'ਤੁਹਾਡਾ ਵਰਤ ਦਾ ਦਿਨ';
+
+  @override
+  String get circleChainsEmpty => 'ਅਜੇ ਕੋਈ ਪ੍ਰਾਰਥਨਾ ਲੜੀ ਨਹੀਂ।';
+
+  @override
+  String get circleChainEnded => 'ਖ਼ਤਮ';
+
+  @override
+  String get circleShareVerse => 'ਬਾਈਬਲ ਦੀ ਆਇਤ ਸਾਂਝੀ ਕਰੋ';
+
+  @override
+  String get circleShareVerseHow =>
+      'ਕੋਈ ਅਧਿਆਇ ਖੋਲ੍ਹੋ, ਫਿਰ ਸਾਂਝਾ ਕਰਨ ਲਈ ਆਇਤ ਨੂੰ ਦਬਾ ਕੇ ਰੱਖੋ।';
+
+  @override
+  String get shareToCircle => 'ਮੰਡਲੀ ਨਾਲ ਸਾਂਝਾ ਕਰੋ';
+
+  @override
+  String newsVerse(String name) {
+    return '$name ਨੇ ਬਾਈਬਲ ਦੀ ਆਇਤ ਸਾਂਝੀ ਕੀਤੀ';
+  }
+
+  @override
+  String newsWaiting(int count, String name) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਲੋਕ ਸ਼ਾਮਲ ਹੋਣ ਦੀ ਉਡੀਕ ਵਿੱਚ ਹਨ',
+      one: '$name ਸ਼ਾਮਲ ਹੋਣ ਦੀ ਉਡੀਕ ਵਿੱਚ ਹਨ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsApproved(String name) {
+    return 'ਤੁਸੀਂ ਸ਼ਾਮਲ ਹੋ ਗਏ! $name ਵਿੱਚ ਜੀ ਆਇਆਂ ਨੂੰ';
+  }
+
+  @override
+  String newsChain(String name) {
+    return '$name ਨੇ ਪ੍ਰਾਰਥਨਾ ਲੜੀ ਸ਼ੁਰੂ ਕੀਤੀ';
+  }
+
+  @override
+  String newsGroup(String name) {
+    return 'ਨਵੀਂ ਟੋਲੀ: $name';
+  }
+
+  @override
+  String get circleInfoGroups =>
+      'ਕਲੀਸਿਯਾ ਦੀਆਂ ਟੋਲੀਆਂ ਹੋ ਸਕਦੀਆਂ ਹਨ (ਨੌਜਵਾਨ, ਸੰਗਤਾਂ, ਘਰੇਲੂ ਟੋਲੀਆਂ); ਇਸਦੇ ਮੈਂਬਰ ਇੱਕ ਟੈਪ ਨਾਲ ਸ਼ਾਮਲ ਹੁੰਦੇ ਹਨ।';
+
+  @override
+  String get circleInfoApproval =>
+      'ਮੰਡਲੀ ਸ਼ੁਰੂ ਕਰਨ ਵਾਲਾ, ਕਿਸੇ ਆਗੂ ਦੇ ਸ਼ਾਮਲ ਕਰਨ ਤੱਕ ਨਵੇਂ ਮੈਂਬਰਾਂ ਨੂੰ ਉਡੀਕ ਕਰਵਾ ਸਕਦਾ ਹੈ।';
+
+  @override
+  String get circleInfoPraise =>
+      'ਜਵਾਬ ਮਿਲੀਆਂ ਪ੍ਰਾਰਥਨਾਵਾਂ ਅਤੇ ਉਸਤਤ ਦੀਆਂ ਗਵਾਹੀਆਂ ਇੱਕ ਸਾਲ ਉਸਤਤ ਦੀ ਕੰਧ \'ਤੇ ਰਹਿੰਦੀਆਂ ਹਨ।';
+
+  @override
+  String get circleInfoChains =>
+      'ਆਗੂ ਪ੍ਰਾਰਥਨਾ ਲੜੀਆਂ ਅਤੇ ਵਰਤ ਦੇ ਦਿਨ ਸ਼ੁਰੂ ਕਰ ਸਕਦੇ ਹਨ। ਆਪਣੀ ਵਾਰੀ ਲਓ, ਸਮਾਂ ਆਉਣ \'ਤੇ ਫ਼ੋਨ ਯਾਦ ਕਰਾਏਗਾ।';
 }

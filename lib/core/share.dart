@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:share_plus/share_plus.dart';
 
 import '../data/models/verse.dart';
+import '../features/circles/circle_share.dart';
 import '../l10n/app_localizations.dart';
 import 'theme/app_theme.dart';
 
@@ -59,6 +60,15 @@ Future<void> showVerseActions(BuildContext context, Verse verse, {bool readChapt
             onTap: () {
               Navigator.pop(ctx);
               shareVerse(verse, l);
+            },
+          ),
+          // The week's sermon verse, say, for a prayer circle: each member reads it in their language.
+          ListTile(
+            leading: const Icon(Icons.groups_rounded),
+            title: Text(l.shareToCircle),
+            onTap: () {
+              Navigator.pop(ctx);
+              shareVerseToCircle(context, verse);
             },
           ),
           if (readChapter && at != null)

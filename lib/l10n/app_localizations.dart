@@ -1983,6 +1983,330 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Scan with your phone\'s camera, or open JesusAnswers and tap Pray → Prayer Circles → Join with a code'**
   String get circleScreenSteps;
+
+  /// No description provided for @circleTabPrayers.
+  ///
+  /// In en, this message translates to:
+  /// **'Prayers'**
+  String get circleTabPrayers;
+
+  /// No description provided for @circleTabPraise.
+  ///
+  /// In en, this message translates to:
+  /// **'Praise'**
+  String get circleTabPraise;
+
+  /// No description provided for @circleTabChains.
+  ///
+  /// In en, this message translates to:
+  /// **'Chains'**
+  String get circleTabChains;
+
+  /// No description provided for @circleTabGroups.
+  ///
+  /// In en, this message translates to:
+  /// **'Groups'**
+  String get circleTabGroups;
+
+  /// No description provided for @circleWaitingLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Waiting for approval'**
+  String get circleWaitingLabel;
+
+  /// No description provided for @circleWaitingSent.
+  ///
+  /// In en, this message translates to:
+  /// **'You asked to join {name}. A leader will let you in soon.'**
+  String circleWaitingSent(String name);
+
+  /// No description provided for @circleStopWaiting.
+  ///
+  /// In en, this message translates to:
+  /// **'Stop waiting'**
+  String get circleStopWaiting;
+
+  /// No description provided for @circleApproval.
+  ///
+  /// In en, this message translates to:
+  /// **'New members wait for approval'**
+  String get circleApproval;
+
+  /// No description provided for @circleApprovalHint.
+  ///
+  /// In en, this message translates to:
+  /// **'For when the code has spread beyond your church'**
+  String get circleApprovalHint;
+
+  /// No description provided for @circleWaitingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Waiting to join'**
+  String get circleWaitingTitle;
+
+  /// No description provided for @circleApprove.
+  ///
+  /// In en, this message translates to:
+  /// **'Let in'**
+  String get circleApprove;
+
+  /// No description provided for @circleDecline.
+  ///
+  /// In en, this message translates to:
+  /// **'Decline'**
+  String get circleDecline;
+
+  /// No description provided for @circleDeclineConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Decline {name}? They won\'t be able to ask again.'**
+  String circleDeclineConfirm(String name);
+
+  /// No description provided for @circleGroupsIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'This church\'s groups: youth, fellowships, home groups. Join any with one tap.'**
+  String get circleGroupsIntro;
+
+  /// No description provided for @circleAddGroup.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a group'**
+  String get circleAddGroup;
+
+  /// No description provided for @circleGroupNameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. Youth, Women\'s fellowship'**
+  String get circleGroupNameHint;
+
+  /// No description provided for @circleJoinGroup.
+  ///
+  /// In en, this message translates to:
+  /// **'Join'**
+  String get circleJoinGroup;
+
+  /// No description provided for @circleNoGroups.
+  ///
+  /// In en, this message translates to:
+  /// **'No groups yet.'**
+  String get circleNoGroups;
+
+  /// No description provided for @circleSharePraise.
+  ///
+  /// In en, this message translates to:
+  /// **'Share a praise report'**
+  String get circleSharePraise;
+
+  /// No description provided for @circlePraiseHint.
+  ///
+  /// In en, this message translates to:
+  /// **'What has God done? Share it to encourage everyone.'**
+  String get circlePraiseHint;
+
+  /// No description provided for @circlePraiseEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'Answered prayers and praise reports show here, to encourage everyone.'**
+  String get circlePraiseEmpty;
+
+  /// No description provided for @circlePraiseReport.
+  ///
+  /// In en, this message translates to:
+  /// **'Praise report'**
+  String get circlePraiseReport;
+
+  /// No description provided for @circleTestimonyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How did God answer?'**
+  String get circleTestimonyTitle;
+
+  /// No description provided for @circleTestimonyHint.
+  ///
+  /// In en, this message translates to:
+  /// **'A few words for the praise wall (optional)'**
+  String get circleTestimonyHint;
+
+  /// No description provided for @circlePraiseGod.
+  ///
+  /// In en, this message translates to:
+  /// **'Praise God'**
+  String get circlePraiseGod;
+
+  /// No description provided for @circleChainsIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Take turns to pray, or to fast, so someone is always praying.'**
+  String get circleChainsIntro;
+
+  /// No description provided for @circleNewChain.
+  ///
+  /// In en, this message translates to:
+  /// **'Start a prayer chain'**
+  String get circleNewChain;
+
+  /// No description provided for @circleChainTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'What for'**
+  String get circleChainTitle;
+
+  /// No description provided for @circleChainTitleHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. 24 hours for revival'**
+  String get circleChainTitleHint;
+
+  /// No description provided for @circleChainHoursKind.
+  ///
+  /// In en, this message translates to:
+  /// **'Hours of prayer'**
+  String get circleChainHoursKind;
+
+  /// No description provided for @circleChainDaysKind.
+  ///
+  /// In en, this message translates to:
+  /// **'Days of fasting'**
+  String get circleChainDaysKind;
+
+  /// No description provided for @circleChainStarts.
+  ///
+  /// In en, this message translates to:
+  /// **'Starts'**
+  String get circleChainStarts;
+
+  /// No description provided for @circleChainHours.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 hour} other{{count} hours}}'**
+  String circleChainHours(int count);
+
+  /// No description provided for @circleChainDays.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 day} other{{count} days}}'**
+  String circleChainDays(int count);
+
+  /// No description provided for @circleChainPray.
+  ///
+  /// In en, this message translates to:
+  /// **'I\'ll pray'**
+  String get circleChainPray;
+
+  /// No description provided for @circleChainFast.
+  ///
+  /// In en, this message translates to:
+  /// **'I\'ll fast'**
+  String get circleChainFast;
+
+  /// No description provided for @circleChainGiveBack.
+  ///
+  /// In en, this message translates to:
+  /// **'Give back'**
+  String get circleChainGiveBack;
+
+  /// No description provided for @circleChainNobody.
+  ///
+  /// In en, this message translates to:
+  /// **'Nobody yet'**
+  String get circleChainNobody;
+
+  /// No description provided for @circleChainYourTurn.
+  ///
+  /// In en, this message translates to:
+  /// **'Your turn to pray'**
+  String get circleChainYourTurn;
+
+  /// No description provided for @circleChainYourFast.
+  ///
+  /// In en, this message translates to:
+  /// **'Your day of fasting'**
+  String get circleChainYourFast;
+
+  /// No description provided for @circleChainsEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No prayer chains yet.'**
+  String get circleChainsEmpty;
+
+  /// No description provided for @circleChainEnded.
+  ///
+  /// In en, this message translates to:
+  /// **'Ended'**
+  String get circleChainEnded;
+
+  /// No description provided for @circleShareVerse.
+  ///
+  /// In en, this message translates to:
+  /// **'Share a Bible verse'**
+  String get circleShareVerse;
+
+  /// No description provided for @circleShareVerseHow.
+  ///
+  /// In en, this message translates to:
+  /// **'Open a chapter, then press and hold a verse to share it.'**
+  String get circleShareVerseHow;
+
+  /// No description provided for @shareToCircle.
+  ///
+  /// In en, this message translates to:
+  /// **'Share with a circle'**
+  String get shareToCircle;
+
+  /// No description provided for @newsVerse.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} shared a Bible verse'**
+  String newsVerse(String name);
+
+  /// No description provided for @newsWaiting.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{{name} is waiting to join} other{{count} people are waiting to join}}'**
+  String newsWaiting(int count, String name);
+
+  /// No description provided for @newsApproved.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'re in! Welcome to {name}'**
+  String newsApproved(String name);
+
+  /// No description provided for @newsChain.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} started a prayer chain'**
+  String newsChain(String name);
+
+  /// No description provided for @newsGroup.
+  ///
+  /// In en, this message translates to:
+  /// **'New group: {name}'**
+  String newsGroup(String name);
+
+  /// No description provided for @circleInfoGroups.
+  ///
+  /// In en, this message translates to:
+  /// **'A church can have groups (youth, fellowships, home groups); its members join them with one tap.'**
+  String get circleInfoGroups;
+
+  /// No description provided for @circleInfoApproval.
+  ///
+  /// In en, this message translates to:
+  /// **'The owner can have new members wait until a leader lets them in.'**
+  String get circleInfoApproval;
+
+  /// No description provided for @circleInfoPraise.
+  ///
+  /// In en, this message translates to:
+  /// **'Answered prayers and praise reports stay on the Praise wall for a year.'**
+  String get circleInfoPraise;
+
+  /// No description provided for @circleInfoChains.
+  ///
+  /// In en, this message translates to:
+  /// **'Leaders can start prayer chains and fasting days. Take a turn, and your phone reminds you when it comes.'**
+  String get circleInfoChains;
 }
 
 class _AppLocalizationsDelegate

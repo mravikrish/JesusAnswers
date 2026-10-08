@@ -1076,4 +1076,213 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get circleScreenSteps =>
       'Scan with your phone\'s camera, or open JesusAnswers and tap Pray → Prayer Circles → Join with a code';
+
+  @override
+  String get circleTabPrayers => 'Prayers';
+
+  @override
+  String get circleTabPraise => 'Praise';
+
+  @override
+  String get circleTabChains => 'Chains';
+
+  @override
+  String get circleTabGroups => 'Groups';
+
+  @override
+  String get circleWaitingLabel => 'Waiting for approval';
+
+  @override
+  String circleWaitingSent(String name) {
+    return 'You asked to join $name. A leader will let you in soon.';
+  }
+
+  @override
+  String get circleStopWaiting => 'Stop waiting';
+
+  @override
+  String get circleApproval => 'New members wait for approval';
+
+  @override
+  String get circleApprovalHint =>
+      'For when the code has spread beyond your church';
+
+  @override
+  String get circleWaitingTitle => 'Waiting to join';
+
+  @override
+  String get circleApprove => 'Let in';
+
+  @override
+  String get circleDecline => 'Decline';
+
+  @override
+  String circleDeclineConfirm(String name) {
+    return 'Decline $name? They won\'t be able to ask again.';
+  }
+
+  @override
+  String get circleGroupsIntro =>
+      'This church\'s groups: youth, fellowships, home groups. Join any with one tap.';
+
+  @override
+  String get circleAddGroup => 'Add a group';
+
+  @override
+  String get circleGroupNameHint => 'e.g. Youth, Women\'s fellowship';
+
+  @override
+  String get circleJoinGroup => 'Join';
+
+  @override
+  String get circleNoGroups => 'No groups yet.';
+
+  @override
+  String get circleSharePraise => 'Share a praise report';
+
+  @override
+  String get circlePraiseHint =>
+      'What has God done? Share it to encourage everyone.';
+
+  @override
+  String get circlePraiseEmpty =>
+      'Answered prayers and praise reports show here, to encourage everyone.';
+
+  @override
+  String get circlePraiseReport => 'Praise report';
+
+  @override
+  String get circleTestimonyTitle => 'How did God answer?';
+
+  @override
+  String get circleTestimonyHint =>
+      'A few words for the praise wall (optional)';
+
+  @override
+  String get circlePraiseGod => 'Praise God';
+
+  @override
+  String get circleChainsIntro =>
+      'Take turns to pray, or to fast, so someone is always praying.';
+
+  @override
+  String get circleNewChain => 'Start a prayer chain';
+
+  @override
+  String get circleChainTitle => 'What for';
+
+  @override
+  String get circleChainTitleHint => 'e.g. 24 hours for revival';
+
+  @override
+  String get circleChainHoursKind => 'Hours of prayer';
+
+  @override
+  String get circleChainDaysKind => 'Days of fasting';
+
+  @override
+  String get circleChainStarts => 'Starts';
+
+  @override
+  String circleChainHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hours',
+      one: '1 hour',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String circleChainDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count days',
+      one: '1 day',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleChainPray => 'I\'ll pray';
+
+  @override
+  String get circleChainFast => 'I\'ll fast';
+
+  @override
+  String get circleChainGiveBack => 'Give back';
+
+  @override
+  String get circleChainNobody => 'Nobody yet';
+
+  @override
+  String get circleChainYourTurn => 'Your turn to pray';
+
+  @override
+  String get circleChainYourFast => 'Your day of fasting';
+
+  @override
+  String get circleChainsEmpty => 'No prayer chains yet.';
+
+  @override
+  String get circleChainEnded => 'Ended';
+
+  @override
+  String get circleShareVerse => 'Share a Bible verse';
+
+  @override
+  String get circleShareVerseHow =>
+      'Open a chapter, then press and hold a verse to share it.';
+
+  @override
+  String get shareToCircle => 'Share with a circle';
+
+  @override
+  String newsVerse(String name) {
+    return '$name shared a Bible verse';
+  }
+
+  @override
+  String newsWaiting(int count, String name) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count people are waiting to join',
+      one: '$name is waiting to join',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsApproved(String name) {
+    return 'You\'re in! Welcome to $name';
+  }
+
+  @override
+  String newsChain(String name) {
+    return '$name started a prayer chain';
+  }
+
+  @override
+  String newsGroup(String name) {
+    return 'New group: $name';
+  }
+
+  @override
+  String get circleInfoGroups =>
+      'A church can have groups (youth, fellowships, home groups); its members join them with one tap.';
+
+  @override
+  String get circleInfoApproval =>
+      'The owner can have new members wait until a leader lets them in.';
+
+  @override
+  String get circleInfoPraise =>
+      'Answered prayers and praise reports stay on the Praise wall for a year.';
+
+  @override
+  String get circleInfoChains =>
+      'Leaders can start prayer chains and fasting days. Take a turn, and your phone reminds you when it comes.';
 }

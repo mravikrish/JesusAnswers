@@ -9,6 +9,7 @@ import '../../providers.dart';
 import '../../services/answer/safety.dart';
 import '../../services/circle_service.dart';
 import '../../services/voice/tts_service.dart' show Playback;
+import 'circle_share.dart';
 
 /// Shows what's new in the person's prayer circles as popups, one at a time, when the app opens or
 /// comes back to the front: a request to pray for, a prayer to join, who prayed for them, answered prayers.
@@ -90,15 +91,23 @@ class _CircleNewsPopupsState extends ConsumerState<CircleNewsPopups> with Widget
       CircleNewsKind.request => (Icons.volunteer_activism_rounded, l.newsAsked(who)),
       CircleNewsKind.prayer => (prayer!.icon, l.newsShared(n.name)),
       CircleNewsKind.prayed => (
-          Icons.favorite_rounded,
-          n.prayerId == null ? l.newsPrayed(n.count) : l.newsJoinedPrayer(n.count),
-        ),
+        Icons.favorite_rounded,
+        n.prayerId == null ? l.newsPrayed(n.count) : l.newsJoinedPrayer(n.count),
+      ),
       CircleNewsKind.answered => (Icons.check_circle_rounded, l.newsAnswered(who)),
       CircleNewsKind.joined => (
-          Icons.group_add_rounded,
-          n.count > 1 ? l.newsJoinedMany(n.name, n.count - 1) : l.newsJoined(n.name),
-        ),
+        Icons.group_add_rounded,
+        n.count > 1 ? l.newsJoinedMany(n.name, n.count - 1) : l.newsJoined(n.name),
+      ),
+      CircleNewsKind.verse => (Icons.menu_book_rounded, l.newsVerse(n.name)),
+      CircleNewsKind.waiting => (Icons.how_to_reg_rounded, l.newsWaiting(n.count, n.name)),
+      CircleNewsKind.approved => (Icons.celebration_rounded, l.newsApproved(n.circleName)),
+      CircleNewsKind.chain => (Icons.link_rounded, l.newsChain(n.name)),
+      CircleNewsKind.group => (Icons.diversity_3_rounded, l.newsGroup(n.name)),
     };
+    // A shared verse, from the reader's own Bible.
+    final verse = n.verse == null ? null : await ref.read(circleVerseProvider(n.verse!).future);
+    if (!mounted) return false;
 
     // (label, primary, what it does once the popup closes)
     final actions = <(String, bool, Future<void> Function()?)>[
@@ -108,18 +117,19 @@ class _CircleNewsPopupsState extends ConsumerState<CircleNewsPopups> with Widget
       ] else ...[
         switch (n.kind) {
           CircleNewsKind.request || CircleNewsKind.prayer => (l.newsLater, false, null),
+          // The new group, to join from its church's Groups.
           _ => (l.newsOpen, false, () async => context.push('/circles/${n.circle}')),
         },
         switch (n.kind) {
           CircleNewsKind.request => (l.circleIPrayed, true, () async => service.prayed(n.circle, id!)),
           CircleNewsKind.prayer => (
-              l.circleJoinPrayer,
-              true,
-              () async {
-                final done = await context.push<bool>('/prayers/${n.prayerId}?along=1');
-                if (done == true) await service.prayed(n.circle, id!);
-              },
-            ),
+            l.circleJoinPrayer,
+            true,
+            () async {
+              final done = await context.push<bool>('/prayers/${n.prayerId}?along=1');
+              if (done == true) await service.prayed(n.circle, id!);
+            },
+          ),
           _ => (l.newsAmen, true, null),
         },
       ],
@@ -135,11 +145,17 @@ class _CircleNewsPopupsState extends ConsumerState<CircleNewsPopups> with Widget
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
               decoration: BoxDecoration(color: AppColors.sand, borderRadius: BorderRadius.circular(12)),
-              child: Text(n.circleName,
-                  style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w700, color: AppColors.ember)),
+              child: Text(
+                n.circleName,
+                style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w700, color: AppColors.ember),
+              ),
             ),
             const SizedBox(height: 10),
-            Text(title, textAlign: TextAlign.center, style: AppText.serif(22, weight: FontWeight.w700)),
+            Text(
+              title,
+              textAlign: TextAlign.center,
+              style: AppText.serif(22, weight: FontWeight.w700),
+            ),
           ],
         ),
         content: SingleChildScrollView(
@@ -148,6 +164,28 @@ class _CircleNewsPopupsState extends ConsumerState<CircleNewsPopups> with Widget
             children: [
               if (n.text.isNotEmpty)
                 Text(n.text, textAlign: TextAlign.center, style: const TextStyle(fontSize: 16, height: 1.45)),
+              if (verse != null) ...[
+                if (n.text.isNotEmpty) const SizedBox(height: 12),
+                Text(
+                  '“${verse.text}”',
+                  textAlign: TextAlign.center,
+                  style: AppText.serif(19, weight: FontWeight.w600, height: 1.35),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  '— ${verse.reference}',
+                  style: const TextStyle(fontWeight: FontWeight.w700, color: AppColors.ember),
+                ),
+              ],
+              // How God answered.
+              if (n.testimony case final testimony?) ...[
+                const SizedBox(height: 12),
+                Text(
+                  testimony,
+                  textAlign: TextAlign.center,
+                  style: AppText.serif(19, weight: FontWeight.w600, height: 1.35),
+                ),
+              ],
               if (prayer != null) ...[
                 if (n.text.isNotEmpty) const SizedBox(height: 12),
                 Row(
@@ -155,15 +193,19 @@ class _CircleNewsPopupsState extends ConsumerState<CircleNewsPopups> with Widget
                   children: [
                     Icon(prayer.icon, color: AppColors.ember),
                     const SizedBox(width: 8),
-                    Flexible(child: Text(prayer.title, style: AppText.serif(19, weight: FontWeight.w700))),
+                    Flexible(
+                      child: Text(prayer.title, style: AppText.serif(19, weight: FontWeight.w700)),
+                    ),
                   ],
                 ),
               ],
               if (n.crisis || (n.kind == CircleNewsKind.request && Safety.isCrisis(n.text))) ...[
                 const SizedBox(height: 12),
-                Text(l.circleReachOut(who),
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(color: AppColors.heart, fontWeight: FontWeight.w600)),
+                Text(
+                  l.circleReachOut(who),
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(color: AppColors.heart, fontWeight: FontWeight.w600),
+                ),
               ],
             ],
           ),

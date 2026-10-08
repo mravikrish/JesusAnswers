@@ -76,4 +76,38 @@ class ReminderService {
       );
     }
   }
+
+  /// One reminder at [at] — a turn in a prayer chain, say — known by [key] to cancel it. None in the past.
+  Future<void> once(String key, DateTime at, {required String title, required String body}) async {
+    await _init();
+    await _plugin.cancel(id: _onceId(key));
+    if (!at.isAfter(DateTime.now())) return;
+    await _plugin.zonedSchedule(
+      id: _onceId(key),
+      scheduledDate: tz.TZDateTime.from(at, tz.local),
+      title: title,
+      body: body,
+      notificationDetails: const NotificationDetails(
+        android: AndroidNotificationDetails('prayer_chain', 'Prayer chain', importance: Importance.high),
+        iOS: DarwinNotificationDetails(),
+      ),
+      // A few minutes late is fine, and needs no "exact alarm" permission.
+      androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
+    );
+  }
+
+  Future<void> cancelOnce(String key) async {
+    await _init();
+    await _plugin.cancel(id: _onceId(key));
+  }
+
+  /// The same for [key] every time the app runs (String.hashCode isn't promised to be), and clear of
+  /// the daily reminder's ids (1, 100–129).
+  static int _onceId(String key) {
+    var hash = 0x811c9dc5;
+    for (final unit in key.codeUnits) {
+      hash = ((hash ^ unit) * 0x01000193) & 0x7fffffff;
+    }
+    return 1000 + hash % 1000000000;
+  }
 }

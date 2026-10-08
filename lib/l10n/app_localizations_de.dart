@@ -1067,4 +1067,213 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get circleScreenSteps =>
       'Scanne mit der Handykamera oder öffne JesusAnswers und tippe auf Beten → Gebetskreise → Mit Code beitreten';
+
+  @override
+  String get circleTabPrayers => 'Gebete';
+
+  @override
+  String get circleTabPraise => 'Lob';
+
+  @override
+  String get circleTabChains => 'Ketten';
+
+  @override
+  String get circleTabGroups => 'Gruppen';
+
+  @override
+  String get circleWaitingLabel => 'Wartet auf Freigabe';
+
+  @override
+  String circleWaitingSent(String name) {
+    return 'Du hast gebeten, $name beizutreten. Bald lässt dich jemand aus der Leitung herein.';
+  }
+
+  @override
+  String get circleStopWaiting => 'Nicht mehr warten';
+
+  @override
+  String get circleApproval => 'Neue Mitglieder warten auf Freigabe';
+
+  @override
+  String get circleApprovalHint =>
+      'Für den Fall, dass der Code über deine Gemeinde hinaus verbreitet wurde';
+
+  @override
+  String get circleWaitingTitle => 'Warten auf Aufnahme';
+
+  @override
+  String get circleApprove => 'Aufnehmen';
+
+  @override
+  String get circleDecline => 'Ablehnen';
+
+  @override
+  String circleDeclineConfirm(String name) {
+    return '$name ablehnen? Die Person kann dann nicht noch einmal fragen.';
+  }
+
+  @override
+  String get circleGroupsIntro =>
+      'Die Gruppen dieser Gemeinde: Jugend, Kreise, Hauskreise. Tritt jeder mit einem Tippen bei.';
+
+  @override
+  String get circleAddGroup => 'Gruppe hinzufügen';
+
+  @override
+  String get circleGroupNameHint => 'z. B. Jugend, Frauenkreis';
+
+  @override
+  String get circleJoinGroup => 'Beitreten';
+
+  @override
+  String get circleNoGroups => 'Noch keine Gruppen.';
+
+  @override
+  String get circleSharePraise => 'Einen Lobpreisbericht teilen';
+
+  @override
+  String get circlePraiseHint =>
+      'Was hat Gott getan? Teile es, um alle zu ermutigen.';
+
+  @override
+  String get circlePraiseEmpty =>
+      'Erhörte Gebete und Lobpreisberichte erscheinen hier, um alle zu ermutigen.';
+
+  @override
+  String get circlePraiseReport => 'Lobpreisbericht';
+
+  @override
+  String get circleTestimonyTitle => 'Wie hat Gott geantwortet?';
+
+  @override
+  String get circleTestimonyHint =>
+      'Ein paar Worte für die Lobwand (freiwillig)';
+
+  @override
+  String get circlePraiseGod => 'Gott sei Dank';
+
+  @override
+  String get circleChainsIntro =>
+      'Betet oder fastet abwechselnd, damit immer jemand betet.';
+
+  @override
+  String get circleNewChain => 'Gebetskette starten';
+
+  @override
+  String get circleChainTitle => 'Wofür';
+
+  @override
+  String get circleChainTitleHint => 'z. B. 24 Stunden für Erweckung';
+
+  @override
+  String get circleChainHoursKind => 'Gebetsstunden';
+
+  @override
+  String get circleChainDaysKind => 'Fastentage';
+
+  @override
+  String get circleChainStarts => 'Beginn';
+
+  @override
+  String circleChainHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Stunden',
+      one: '1 Stunde',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String circleChainDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Tage',
+      one: '1 Tag',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleChainPray => 'Ich bete';
+
+  @override
+  String get circleChainFast => 'Ich faste';
+
+  @override
+  String get circleChainGiveBack => 'Zurückgeben';
+
+  @override
+  String get circleChainNobody => 'Noch niemand';
+
+  @override
+  String get circleChainYourTurn => 'Deine Gebetszeit';
+
+  @override
+  String get circleChainYourFast => 'Dein Fastentag';
+
+  @override
+  String get circleChainsEmpty => 'Noch keine Gebetsketten.';
+
+  @override
+  String get circleChainEnded => 'Beendet';
+
+  @override
+  String get circleShareVerse => 'Einen Bibelvers teilen';
+
+  @override
+  String get circleShareVerseHow =>
+      'Öffne ein Kapitel und halte dann einen Vers gedrückt, um ihn zu teilen.';
+
+  @override
+  String get shareToCircle => 'Mit einem Kreis teilen';
+
+  @override
+  String newsVerse(String name) {
+    return '$name hat einen Bibelvers geteilt';
+  }
+
+  @override
+  String newsWaiting(int count, String name) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Personen warten auf Aufnahme',
+      one: '$name wartet auf Aufnahme',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsApproved(String name) {
+    return 'Du bist dabei! Willkommen in $name';
+  }
+
+  @override
+  String newsChain(String name) {
+    return '$name hat eine Gebetskette gestartet';
+  }
+
+  @override
+  String newsGroup(String name) {
+    return 'Neue Gruppe: $name';
+  }
+
+  @override
+  String get circleInfoGroups =>
+      'Eine Gemeinde kann Gruppen haben (Jugend, Kreise, Hauskreise); ihre Mitglieder treten mit einem Tippen bei.';
+
+  @override
+  String get circleInfoApproval =>
+      'Wer den Kreis gegründet hat, kann neue Mitglieder warten lassen, bis jemand aus der Leitung sie aufnimmt.';
+
+  @override
+  String get circleInfoPraise =>
+      'Erhörte Gebete und Lobpreisberichte bleiben ein Jahr an der Lobwand.';
+
+  @override
+  String get circleInfoChains =>
+      'Die Leitung kann Gebetsketten und Fastentage starten. Übernimm eine Zeit, und dein Handy erinnert dich daran.';
 }

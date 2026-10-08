@@ -1075,4 +1075,214 @@ class AppLocalizationsTl extends AppLocalizations {
   @override
   String get circleScreenSteps =>
       'I-scan gamit ang camera ng phone, o buksan ang JesusAnswers at i-tap ang Manalangin → Mga Prayer Circle → Sumali gamit ang code';
+
+  @override
+  String get circleTabPrayers => 'Mga panalangin';
+
+  @override
+  String get circleTabPraise => 'Papuri';
+
+  @override
+  String get circleTabChains => 'Chain';
+
+  @override
+  String get circleTabGroups => 'Mga grupo';
+
+  @override
+  String get circleWaitingLabel => 'Naghihintay ng pag-apruba';
+
+  @override
+  String circleWaitingSent(String name) {
+    return 'Humiling kang sumali sa $name. Papapasukin ka ng isang leader sa lalong madaling panahon.';
+  }
+
+  @override
+  String get circleStopWaiting => 'Huwag nang maghintay';
+
+  @override
+  String get circleApproval =>
+      'Maghihintay ng pag-apruba ang mga bagong miyembro';
+
+  @override
+  String get circleApprovalHint =>
+      'Kapag kumalat na ang code lampas sa iyong simbahan';
+
+  @override
+  String get circleWaitingTitle => 'Naghihintay na makasali';
+
+  @override
+  String get circleApprove => 'Papasukin';
+
+  @override
+  String get circleDecline => 'Tanggihan';
+
+  @override
+  String circleDeclineConfirm(String name) {
+    return 'Tanggihan si $name? Hindi na siya makakahiling muli.';
+  }
+
+  @override
+  String get circleGroupsIntro =>
+      'Mga grupo ng simbahang ito: kabataan, fellowship, home group. Sumali sa alinman sa isang tap.';
+
+  @override
+  String get circleAddGroup => 'Magdagdag ng grupo';
+
+  @override
+  String get circleGroupNameHint => 'hal. Kabataan, Women\'s fellowship';
+
+  @override
+  String get circleJoinGroup => 'Sumali';
+
+  @override
+  String get circleNoGroups => 'Wala pang grupo.';
+
+  @override
+  String get circleSharePraise => 'Magbahagi ng patotoo ng papuri';
+
+  @override
+  String get circlePraiseHint =>
+      'Ano ang ginawa ng Diyos? Ibahagi ito para palakasin ang loob ng lahat.';
+
+  @override
+  String get circlePraiseEmpty =>
+      'Dito makikita ang mga sinagot na panalangin at patotoo ng papuri, para palakasin ang loob ng lahat.';
+
+  @override
+  String get circlePraiseReport => 'Patotoo ng papuri';
+
+  @override
+  String get circleTestimonyTitle => 'Paano sumagot ang Diyos?';
+
+  @override
+  String get circleTestimonyHint =>
+      'Ilang salita para sa praise wall (opsyonal)';
+
+  @override
+  String get circlePraiseGod => 'Purihin ang Diyos';
+
+  @override
+  String get circleChainsIntro =>
+      'Magsalitan sa pananalangin o pag-aayuno, para laging may nananalangin.';
+
+  @override
+  String get circleNewChain => 'Magsimula ng prayer chain';
+
+  @override
+  String get circleChainTitle => 'Para saan';
+
+  @override
+  String get circleChainTitleHint => 'hal. 24 na oras para sa revival';
+
+  @override
+  String get circleChainHoursKind => 'Mga oras ng panalangin';
+
+  @override
+  String get circleChainDaysKind => 'Mga araw ng pag-aayuno';
+
+  @override
+  String get circleChainStarts => 'Magsisimula';
+
+  @override
+  String circleChainHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count oras',
+      one: '1 oras',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String circleChainDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count araw',
+      one: '1 araw',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleChainPray => 'Mananalangin ako';
+
+  @override
+  String get circleChainFast => 'Mag-aayuno ako';
+
+  @override
+  String get circleChainGiveBack => 'Ibalik';
+
+  @override
+  String get circleChainNobody => 'Wala pa';
+
+  @override
+  String get circleChainYourTurn => 'Oras mo nang manalangin';
+
+  @override
+  String get circleChainYourFast => 'Araw mo ng pag-aayuno';
+
+  @override
+  String get circleChainsEmpty => 'Wala pang prayer chain.';
+
+  @override
+  String get circleChainEnded => 'Tapos na';
+
+  @override
+  String get circleShareVerse => 'Magbahagi ng talata';
+
+  @override
+  String get circleShareVerseHow =>
+      'Magbukas ng kabanata, saka pindutin nang matagal ang isang talata para ibahagi.';
+
+  @override
+  String get shareToCircle => 'Ibahagi sa isang circle';
+
+  @override
+  String newsVerse(String name) {
+    return 'Nagbahagi si $name ng talata ng Biblia';
+  }
+
+  @override
+  String newsWaiting(int count, String name) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tao ang naghihintay na makasali',
+      one: 'Naghihintay si $name na makasali',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsApproved(String name) {
+    return 'Kasali ka na! Maligayang pagdating sa $name';
+  }
+
+  @override
+  String newsChain(String name) {
+    return 'Nagsimula si $name ng prayer chain';
+  }
+
+  @override
+  String newsGroup(String name) {
+    return 'Bagong grupo: $name';
+  }
+
+  @override
+  String get circleInfoGroups =>
+      'Puwedeng magkaroon ng mga grupo ang simbahan (kabataan, fellowship, home group); sumasali ang mga miyembro sa isang tap.';
+
+  @override
+  String get circleInfoApproval =>
+      'Puwedeng ipahintay ng nagsimula ng circle ang mga bagong miyembro hanggang papasukin sila ng isang leader.';
+
+  @override
+  String get circleInfoPraise =>
+      'Nananatili nang isang taon sa praise wall ang mga sinagot na panalangin at patotoo ng papuri.';
+
+  @override
+  String get circleInfoChains =>
+      'Puwedeng magsimula ang mga leader ng prayer chain at mga araw ng pag-aayuno. Kumuha ng oras, at ipapaalala ito ng phone mo.';
 }

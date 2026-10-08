@@ -1071,4 +1071,216 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get circleScreenSteps =>
       'Отсканируйте камерой телефона или откройте JesusAnswers и нажмите Молитва → Молитвенные круги → Войти по коду';
+
+  @override
+  String get circleTabPrayers => 'Молитвы';
+
+  @override
+  String get circleTabPraise => 'Хвала';
+
+  @override
+  String get circleTabChains => 'Цепи';
+
+  @override
+  String get circleTabGroups => 'Группы';
+
+  @override
+  String get circleWaitingLabel => 'Ждёт одобрения';
+
+  @override
+  String circleWaitingSent(String name) {
+    return 'Вы попросили войти в $name. Скоро лидер вас впустит.';
+  }
+
+  @override
+  String get circleStopWaiting => 'Не ждать';
+
+  @override
+  String get circleApproval => 'Новые участники ждут одобрения';
+
+  @override
+  String get circleApprovalHint => 'Если код разошёлся за пределы вашей церкви';
+
+  @override
+  String get circleWaitingTitle => 'Ждут, чтобы войти';
+
+  @override
+  String get circleApprove => 'Впустить';
+
+  @override
+  String get circleDecline => 'Отклонить';
+
+  @override
+  String circleDeclineConfirm(String name) {
+    return 'Отклонить $name? Этот человек не сможет попросить снова.';
+  }
+
+  @override
+  String get circleGroupsIntro =>
+      'Группы этой церкви: молодёжь, служения, домашние группы. Вступайте в любую одним касанием.';
+
+  @override
+  String get circleAddGroup => 'Добавить группу';
+
+  @override
+  String get circleGroupNameHint => 'напр. Молодёжь, Женское служение';
+
+  @override
+  String get circleJoinGroup => 'Вступить';
+
+  @override
+  String get circleNoGroups => 'Групп пока нет.';
+
+  @override
+  String get circleSharePraise => 'Поделиться свидетельством';
+
+  @override
+  String get circlePraiseHint =>
+      'Что сделал Бог? Поделитесь, чтобы ободрить всех.';
+
+  @override
+  String get circlePraiseEmpty =>
+      'Отвеченные молитвы и свидетельства появляются здесь, чтобы ободрить всех.';
+
+  @override
+  String get circlePraiseReport => 'Свидетельство';
+
+  @override
+  String get circleTestimonyTitle => 'Как ответил Бог?';
+
+  @override
+  String get circleTestimonyHint =>
+      'Несколько слов для стены хвалы (необязательно)';
+
+  @override
+  String get circlePraiseGod => 'Слава Богу';
+
+  @override
+  String get circleChainsIntro =>
+      'Молитесь или поститесь по очереди, чтобы кто-то всегда молился.';
+
+  @override
+  String get circleNewChain => 'Начать молитвенную цепь';
+
+  @override
+  String get circleChainTitle => 'О чём';
+
+  @override
+  String get circleChainTitleHint => 'напр. 24 часа о пробуждении';
+
+  @override
+  String get circleChainHoursKind => 'Часы молитвы';
+
+  @override
+  String get circleChainDaysKind => 'Дни поста';
+
+  @override
+  String get circleChainStarts => 'Начало';
+
+  @override
+  String circleChainHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count часа',
+      many: '$count часов',
+      few: '$count часа',
+      one: '$count час',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String circleChainDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count дня',
+      many: '$count дней',
+      few: '$count дня',
+      one: '$count день',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleChainPray => 'Я помолюсь';
+
+  @override
+  String get circleChainFast => 'Я буду поститься';
+
+  @override
+  String get circleChainGiveBack => 'Вернуть';
+
+  @override
+  String get circleChainNobody => 'Пока никого';
+
+  @override
+  String get circleChainYourTurn => 'Ваша очередь молиться';
+
+  @override
+  String get circleChainYourFast => 'Ваш день поста';
+
+  @override
+  String get circleChainsEmpty => 'Молитвенных цепей пока нет.';
+
+  @override
+  String get circleChainEnded => 'Завершена';
+
+  @override
+  String get circleShareVerse => 'Поделиться стихом';
+
+  @override
+  String get circleShareVerseHow =>
+      'Откройте главу и удерживайте стих, чтобы поделиться им.';
+
+  @override
+  String get shareToCircle => 'Поделиться с кругом';
+
+  @override
+  String newsVerse(String name) {
+    return '$name делится стихом из Библии';
+  }
+
+  @override
+  String newsWaiting(int count, String name) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ждут, чтобы войти: $count',
+      one: '$name ждёт, чтобы войти',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsApproved(String name) {
+    return 'Вы в круге! Добро пожаловать в $name';
+  }
+
+  @override
+  String newsChain(String name) {
+    return '$name начинает молитвенную цепь';
+  }
+
+  @override
+  String newsGroup(String name) {
+    return 'Новая группа: $name';
+  }
+
+  @override
+  String get circleInfoGroups =>
+      'У церкви могут быть группы (молодёжь, служения, домашние группы); её участники вступают одним касанием.';
+
+  @override
+  String get circleInfoApproval =>
+      'Создатель круга может сделать так, чтобы новые участники ждали, пока их впустит лидер.';
+
+  @override
+  String get circleInfoPraise =>
+      'Отвеченные молитвы и свидетельства остаются на стене хвалы год.';
+
+  @override
+  String get circleInfoChains =>
+      'Лидеры могут начинать молитвенные цепи и дни поста. Возьмите очередь, и телефон напомнит вам.';
 }

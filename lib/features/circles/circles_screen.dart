@@ -13,97 +13,20 @@ import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
 import '../../services/answer/safety.dart';
 import '../../services/circle_service.dart';
+import 'circle_chains.dart';
+import 'circle_groups.dart';
+import 'circle_praise.dart';
+import 'circle_share.dart';
 
-String circleProblemText(AppLocalizations l, Object e) => switch (e) {
-  CircleException(problem: CircleProblem.notFound) => l.circleNotFound,
-  CircleException(problem: CircleProblem.full) => l.circleFull,
-  CircleException(problem: CircleProblem.tooMany) => l.circleTooMany,
-  CircleException(problem: CircleProblem.notAllowed) => l.circleNotAllowed,
-  _ => l.circleOffline,
-};
-
-void _say(BuildContext context, String text) => ScaffoldMessenger.of(context)
-  ..hideCurrentSnackBar()
-  ..showSnackBar(SnackBar(content: Text(text), behavior: SnackBarBehavior.floating));
-
-/// Asks for an optional note to go with [prayer]; null when cancelled.
-Future<String?> _askNote(BuildContext context, Prayer prayer) {
-  final l = AppLocalizations.of(context);
-  final note = TextEditingController();
-  return showDialog<String>(
-    context: context,
-    builder: (ctx) => AlertDialog(
-      icon: Icon(prayer.icon, color: AppColors.gold),
-      title: Text(prayer.title, textAlign: TextAlign.center),
-      content: TextField(
-        controller: note,
-        autofocus: true,
-        minLines: 1,
-        maxLines: 4,
-        maxLength: 300,
-        textCapitalization: TextCapitalization.sentences,
-        decoration: InputDecoration(hintText: l.circleNoteHint, counterText: ''),
-      ),
-      actions: [
-        TextButton(
-          onPressed: () => Navigator.pop(ctx),
-          child: Text(MaterialLocalizations.of(ctx).cancelButtonLabel),
-        ),
-        FilledButton(onPressed: () => Navigator.pop(ctx, note.text.trim()), child: Text(l.share)),
-      ],
-    ),
-  ).whenComplete(note.dispose);
-}
+void _say(BuildContext context, String text) => sayInCircles(context, text);
 
 /// From a ready prayer: picks one of the person's circles, asks for a note, and shares it there.
 Future<void> sharePrayerToCircle(BuildContext context, WidgetRef ref, Prayer prayer) async {
   final l = AppLocalizations.of(context);
   final service = ref.read(circleServiceProvider);
-  var circles = service.saved;
-  try {
-    circles = await service.mine();
-  } catch (_) {}
-  if (!context.mounted) return;
-  if (circles.isEmpty) {
-    ScaffoldMessenger.of(context)
-      ..hideCurrentSnackBar()
-      ..showSnackBar(SnackBar(
-        content: Text(l.circleNone),
-        behavior: SnackBarBehavior.floating,
-        action: SnackBarAction(label: l.circlesTitle, onPressed: () => context.push('/circles')),
-      ));
-    return;
-  }
-  final circle = circles.length == 1
-      ? circles.single
-      : await showModalBottomSheet<CircleSummary>(
-          context: context,
-          showDragHandle: true,
-          backgroundColor: AppColors.ivoryCard,
-          builder: (ctx) => SafeArea(
-            child: ListView(
-              shrinkWrap: true,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(24, 0, 24, 8),
-                  child: Text(l.circleChoose, style: AppText.serif(22, weight: FontWeight.w700)),
-                ),
-                for (final c in circles)
-                  ListTile(
-                    leading: const CircleAvatar(
-                      backgroundColor: AppColors.sand,
-                      child: Icon(Icons.groups_rounded, color: AppColors.ember),
-                    ),
-                    title: Text(c.name, style: const TextStyle(fontWeight: FontWeight.w700)),
-                    subtitle: Text(l.circleMembers(c.members)),
-                    onTap: () => Navigator.pop(ctx, c),
-                  ),
-              ],
-            ),
-          ),
-        );
+  final circle = await pickCircle(context, service);
   if (circle == null || !context.mounted) return;
-  final note = await _askNote(context, prayer);
+  final note = await askCircleNote(context, prayer.icon, prayer.title);
   if (note == null || !context.mounted) return;
   try {
     await service.sharePrayer(circle.code, prayer.id, note);
@@ -129,6 +52,10 @@ class CircleRules extends StatelessWidget {
       (Icons.person_remove_rounded, l.circleInfoOwner),
       (Icons.push_pin_rounded, l.circleInfoLeaders),
       (Icons.visibility_off_rounded, l.circleInfoPrivateRequests),
+      (Icons.diversity_3_rounded, l.circleInfoGroups),
+      (Icons.how_to_reg_rounded, l.circleInfoApproval),
+      (Icons.celebration_rounded, l.circleInfoPraise),
+      (Icons.link_rounded, l.circleInfoChains),
       (Icons.flag_rounded, l.circleInfoReport),
       (Icons.logout_rounded, l.circleInfoLeave),
       (Icons.notifications_active_rounded, l.circleInfoPopups),
@@ -235,6 +162,12 @@ class _CirclesScreenState extends ConsumerState<CirclesScreen> {
       if (!mounted) return;
       final me = circle.members.where((m) => m.me).firstOrNull;
       if (me != null && ref.read(settingsProvider).name.isEmpty) ref.read(settingsProvider.notifier).setName(me.name);
+      if (circle.pending) {
+        // Asked to join: a leader lets them in.
+        _say(context, AppLocalizations.of(context).circleWaitingSent(circle.name));
+        await _load();
+        return;
+      }
       await _open(circle.code);
     } catch (e) {
       if (mounted) {
@@ -310,32 +243,58 @@ class _CirclesScreenState extends ConsumerState<CirclesScreen> {
             ),
             const SizedBox(height: 24),
             if (_offline && _circles.isEmpty)
-              Text(l.circleOffline, textAlign: TextAlign.center, style: const TextStyle(color: AppColors.inkSoft)),
+              Text(
+                l.circleOffline,
+                textAlign: TextAlign.center,
+                style: const TextStyle(color: AppColors.inkSoft),
+              ),
             for (final c in _circles) ...[
-              SoftCard(
-                padding: EdgeInsets.zero,
-                child: ListTile(
-                  contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
-                  leading: const CircleAvatar(
-                    backgroundColor: AppColors.sand,
-                    child: Icon(Icons.groups_rounded, color: AppColors.ember),
+              // A group sits under its church, when the person is in that too.
+              Padding(
+                padding: EdgeInsetsDirectional.only(
+                  start: c.parent != null && _circles.any((p) => p.name == c.parent && p.parent == null) ? 24 : 0,
+                ),
+                child: SoftCard(
+                  padding: EdgeInsets.zero,
+                  child: ListTile(
+                    contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                    leading: CircleAvatar(
+                      backgroundColor: AppColors.sand,
+                      child: Icon(
+                        c.pending ? Icons.hourglass_top_rounded : Icons.groups_rounded,
+                        color: AppColors.ember,
+                      ),
+                    ),
+                    title: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        if (c.parent != null)
+                          Text('${c.parent} ›', style: const TextStyle(fontSize: 13, color: AppColors.inkSoft)),
+                        Text(c.name, style: AppText.serif(20, weight: FontWeight.w700)),
+                      ],
+                    ),
+                    subtitle: Text(c.pending ? l.circleWaitingLabel : l.circleMembers(c.members)),
+                    trailing: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        if (!c.pending && service.hasNew(c))
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                            decoration: BoxDecoration(color: AppColors.gold, borderRadius: BorderRadius.circular(10)),
+                            child: Text(
+                              l.circleNew,
+                              style: const TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w700,
+                                color: AppColors.midnight,
+                              ),
+                            ),
+                          ),
+                        const Icon(Icons.chevron_right_rounded, color: AppColors.inkSoft),
+                      ],
+                    ),
+                    onTap: () => _open(c.code),
                   ),
-                  title: Text(c.name, style: AppText.serif(20, weight: FontWeight.w700)),
-                  subtitle: Text(l.circleMembers(c.members)),
-                  trailing: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      if (service.hasNew(c))
-                        Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                          decoration: BoxDecoration(color: AppColors.gold, borderRadius: BorderRadius.circular(10)),
-                          child: Text(l.circleNew,
-                              style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: AppColors.midnight)),
-                        ),
-                      const Icon(Icons.chevron_right_rounded, color: AppColors.inkSoft),
-                    ],
-                  ),
-                  onTap: () => _open(c.code),
                 ),
               ),
               const SizedBox(height: 12),
@@ -453,8 +412,10 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
               for (final g in groups) ...[
                 Padding(
                   padding: const EdgeInsets.fromLTRB(24, 12, 24, 4),
-                  child: Text(g.title,
-                      style: const TextStyle(fontWeight: FontWeight.w700, color: AppColors.ember, fontSize: 13)),
+                  child: Text(
+                    g.title,
+                    style: const TextStyle(fontWeight: FontWeight.w700, color: AppColors.ember, fontSize: 13),
+                  ),
                 ),
                 for (final p in g.prayers)
                   // Prayers for someone in danger lead with helplines; they aren't for sharing.
@@ -471,7 +432,7 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
       ),
     );
     if (prayer == null || !mounted) return;
-    final note = await _askNote(context, prayer);
+    final note = await askCircleNote(context, prayer.icon, prayer.title);
     if (note == null || !mounted) return;
     await _change(() => _service.sharePrayer(widget.code, prayer.id, note));
   }
@@ -482,10 +443,27 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
     if (done == true && mounted && !r.prayedByMe) await _change(() => _service.prayed(widget.code, r.id));
   }
 
+  /// With a few words, if they like, on how God answered: for the praise wall.
   Future<void> _answered(CircleRequest r) async {
-    if (await _change(() => _service.answered(widget.code, r.id)) && mounted) {
-      _say(context, AppLocalizations.of(context).circleAnsweredThanks);
+    final l = AppLocalizations.of(context);
+    final testimony = await askCircleText(
+      context,
+      title: l.circleTestimonyTitle,
+      hint: l.circleTestimonyHint,
+      action: l.circleMarkAnswered,
+      optional: true,
+      icon: Icons.check_circle_rounded,
+    );
+    if (testimony == null || !mounted) return;
+    if (await _change(() => _service.answered(widget.code, r.id, testimony: testimony)) && mounted) {
+      _say(context, l.circleAnsweredThanks);
     }
+  }
+
+  /// Verses are shared from the Bible itself: press and hold one there.
+  void _shareVerse() {
+    context.push('/bible');
+    _say(context, AppLocalizations.of(context).circleShareVerseHow);
   }
 
   void _showOnScreen(CircleDetail c) =>
@@ -576,20 +554,73 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(l.circleMembersTitle, style: AppText.serif(22, weight: FontWeight.w700)),
-                    Text(l.circleMembersOf(c.members.length, CircleService.maxMembers),
-                        style: const TextStyle(color: AppColors.inkSoft)),
+                    Text(
+                      l.circleMembersOf(c.members.length, CircleService.maxMembers),
+                      style: const TextStyle(color: AppColors.inkSoft),
+                    ),
                   ],
                 ),
               ),
+              if (c.owner)
+                SwitchListTile(
+                  secondary: const Icon(Icons.how_to_reg_rounded, color: AppColors.ember),
+                  title: Text(l.circleApproval),
+                  subtitle: Text(l.circleApprovalHint),
+                  value: c.approval,
+                  onChanged: (on) {
+                    Navigator.pop(ctx);
+                    _change(() => _service.setApproval(c.code, on: on));
+                  },
+                ),
+              // Who asked to join, for a leader to let in or turn away.
+              if (c.waiting.isNotEmpty) ...[
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(24, 12, 24, 4),
+                  child: Text(
+                    l.circleWaitingTitle,
+                    style: const TextStyle(fontWeight: FontWeight.w700, color: AppColors.ember),
+                  ),
+                ),
+                for (final w in c.waiting)
+                  ListTile(
+                    leading: CircleInitial(w.name),
+                    title: Text(w.name),
+                    trailing: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        TextButton(
+                          onPressed: () async {
+                            if (!await _confirm(l.circleDeclineConfirm(w.name), l.circleDecline)) return;
+                            if (ctx.mounted) Navigator.pop(ctx);
+                            await _change(() => _service.decline(c.code, w.id));
+                          },
+                          child: Text(l.circleDecline),
+                        ),
+                        FilledButton(
+                          style: FilledButton.styleFrom(minimumSize: const Size(0, 38)),
+                          onPressed: () {
+                            Navigator.pop(ctx);
+                            _change(() => _service.approve(c.code, w.id));
+                          },
+                          child: Text(l.circleApprove),
+                        ),
+                      ],
+                    ),
+                  ),
+                const Divider(indent: 24, endIndent: 24),
+              ],
               for (final m in c.members)
                 ListTile(
-                  leading: _Initial(m.name),
+                  leading: CircleInitial(m.name),
                   title: Text(m.me ? '${m.name} (${l.circleYou})' : m.name),
                   subtitle: m.owner
                       ? Text(l.circleOwner)
                       : m.leader
-                          ? Text(l.circleLeader, style: const TextStyle(color: AppColors.ember, fontWeight: FontWeight.w600))
-                          : null,
+                      ? Text(
+                          l.circleLeader,
+                          style: const TextStyle(color: AppColors.ember, fontWeight: FontWeight.w600),
+                        )
+                      : null,
                   trailing: _memberMenu(ctx, c, m),
                 ),
             ],
@@ -631,19 +662,214 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
     );
   }
 
+  /// Someone who asked to join and waits for a leader.
+  Widget _waitingView(CircleDetail c) {
+    final l = AppLocalizations.of(context);
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(32),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(Icons.hourglass_top_rounded, size: 48, color: AppColors.gold),
+            const SizedBox(height: 16),
+            Text(
+              l.circleWaitingSent(c.name),
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontSize: 17, height: 1.45),
+            ),
+            const SizedBox(height: 24),
+            OutlinedButton(
+              onPressed: _busy
+                  ? null
+                  : () async {
+                      setState(() => _busy = true);
+                      try {
+                        await _service.leave(widget.code);
+                        if (mounted) context.pop();
+                      } catch (e) {
+                        if (mounted) {
+                          setState(() => _busy = false);
+                          _say(context, circleProblemText(l, e));
+                        }
+                      }
+                    },
+              child: Text(l.circleStopWaiting),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  /// Prayer requests, shared prayers and verses: the circle's first page.
+  Widget _prayersTab(CircleDetail c) {
+    final l = AppLocalizations.of(context);
+    return RefreshIndicator(
+      onRefresh: _load,
+      child: ListView(
+        padding: const EdgeInsets.fromLTRB(20, 12, 20, 32),
+        children: [
+          _InviteCard(
+            code: c.code,
+            members: c.members.length,
+            onInvite: () => _invite(c),
+            onShow: () => _showOnScreen(c),
+          ),
+          const SizedBox(height: 16),
+          TextField(
+            controller: _text,
+            minLines: 2,
+            maxLines: 6,
+            maxLength: 1000,
+            textCapitalization: TextCapitalization.sentences,
+            onChanged: (_) => setState(() {}),
+            decoration: InputDecoration(
+              hintText: l.circleAskHint,
+              counterText: '',
+              suffixIcon: IconButton(
+                tooltip: l.send,
+                icon: const Icon(Icons.send_rounded, color: AppColors.gold),
+                onPressed: _busy || _text.text.trim().isEmpty ? null : _ask,
+              ),
+            ),
+          ),
+          // Some requests are too personal for the whole church.
+          Wrap(
+            spacing: 8,
+            children: [
+              FilterChip(
+                avatar: const Icon(Icons.lock_rounded, size: 18, color: AppColors.ember),
+                label: Text(l.circleOnlyLeaders),
+                selected: _forLeaders,
+                onSelected: (v) => setState(() => _forLeaders = v),
+              ),
+              FilterChip(
+                avatar: const Icon(Icons.visibility_off_rounded, size: 18, color: AppColors.ember),
+                label: Text(l.circleNoName),
+                selected: _anonymous,
+                onSelected: (v) => setState(() => _anonymous = v),
+              ),
+            ],
+          ),
+          Wrap(
+            children: [
+              TextButton.icon(
+                style: TextButton.styleFrom(foregroundColor: AppColors.ember),
+                onPressed: _busy ? null : _sharePrayer,
+                icon: const Icon(Icons.volunteer_activism_rounded, color: AppColors.gold),
+                label: Text(l.circleSharePrayer),
+              ),
+              TextButton.icon(
+                style: TextButton.styleFrom(foregroundColor: AppColors.ember),
+                onPressed: _busy ? null : _shareVerse,
+                icon: const Icon(Icons.menu_book_rounded, color: AppColors.gold),
+                label: Text(l.circleShareVerse),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          if (c.requests.isEmpty)
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 24),
+              child: Text(
+                l.circleEmpty,
+                textAlign: TextAlign.center,
+                style: const TextStyle(color: AppColors.inkSoft, height: 1.4),
+              ),
+            ),
+          for (final r in c.requests) ...[
+            _RequestCard(
+              request: r,
+              lead: c.leader,
+              busy: _busy,
+              onPin: () => _change(() => _service.pin(c.code, r.id, on: !r.pinned)),
+              onPrayed: () => r.prayerId == null ? _change(() => _service.prayed(c.code, r.id)) : _joinPrayer(r),
+              onHeart: () => _change(() => _service.heart(c.code, r.id, on: !r.heartedByMe)),
+              onAnswered: () => _answered(r),
+              onDelete: () => _change(() => _service.deleteRequest(c.code, r.id)),
+              onReport: () async {
+                if (await _change(() => _service.report(c.code, r.id)) && mounted) {
+                  _say(context, l.circleReported);
+                }
+              },
+            ),
+            const SizedBox(height: 12),
+          ],
+        ],
+      ),
+    );
+  }
+
+  /// Joins one of the church's groups under the name the person has in the church.
+  Future<void> _joinGroup(CircleDetail church, CircleGroup group) async {
+    final l = AppLocalizations.of(context);
+    final name = church.members.where((m) => m.me).firstOrNull?.name ?? ref.read(settingsProvider).name;
+    setState(() => _busy = true);
+    try {
+      final joined = await _service.join(group.code, name);
+      if (!mounted) return;
+      if (joined.pending) {
+        _say(context, l.circleWaitingSent(joined.name));
+      } else {
+        await context.push('/circles/${joined.code}');
+      }
+    } catch (e) {
+      if (mounted) _say(context, circleProblemText(l, e));
+    } finally {
+      if (mounted) setState(() => _busy = false);
+    }
+    await _load();
+  }
+
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     final c = _circle;
-    return Scaffold(
+    // A church's groups have a page of their own; a group can't have groups.
+    final groups = c != null && !c.isGroup && (c.groups.isNotEmpty || c.leader);
+    final tabs = c == null || c.pending
+        ? const <String>[]
+        : [l.circleTabPrayers, l.circleTabPraise, l.circleTabChains, if (groups) l.circleTabGroups];
+    final busy = _busy ? const LinearProgressIndicator(minHeight: 2) : const SizedBox(height: 2);
+
+    final scaffold = Scaffold(
       appBar: AppBar(
-        title: Text(c?.name ?? l.circlesTitle, style: AppText.serif(24, weight: FontWeight.w600)),
-        bottom: _busy
-            ? const PreferredSize(preferredSize: Size.fromHeight(2), child: LinearProgressIndicator(minHeight: 2))
-            : null,
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // A group: its church, one tap away for those in it.
+            if (c?.parentName != null)
+              GestureDetector(
+                onTap: c!.parentCode == null ? null : () => context.push('/circles/${c.parentCode}'),
+                child: Text('${c.parentName} ›', style: const TextStyle(fontSize: 13, color: AppColors.inkSoft)),
+              ),
+            Text(c?.name ?? l.circlesTitle, style: AppText.serif(24, weight: FontWeight.w600)),
+          ],
+        ),
+        bottom: PreferredSize(
+          preferredSize: Size.fromHeight(tabs.isEmpty ? 2 : 50),
+          child: Column(
+            children: [
+              if (tabs.isNotEmpty)
+                TabBar(
+                  isScrollable: true,
+                  tabAlignment: TabAlignment.start,
+                  labelColor: AppColors.ember,
+                  indicatorColor: AppColors.gold,
+                  tabs: [for (final label in tabs) Tab(height: 48, text: label)],
+                ),
+              busy,
+            ],
+          ),
+        ),
         actions: [
-          if (c != null) ...[
-            IconButton(tooltip: l.circleInvite, icon: const Icon(Icons.person_add_alt_1_rounded), onPressed: () => _invite(c)),
+          if (c != null && !c.pending) ...[
+            IconButton(
+              tooltip: l.circleInvite,
+              icon: const Icon(Icons.person_add_alt_1_rounded),
+              onPressed: () => _invite(c),
+            ),
             PopupMenuButton<String>(
               onSelected: (v) => switch (v) {
                 'members' => _members(c),
@@ -654,7 +880,11 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
               itemBuilder: (_) => [
                 PopupMenuItem(
                   value: 'members',
-                  child: Text('${l.circleMembersTitle} (${c.members.length}/${CircleService.maxMembers})'),
+                  child: Text(
+                    c.waiting.isEmpty
+                        ? '${l.circleMembersTitle} (${c.members.length}/${CircleService.maxMembers})'
+                        : '${l.circleMembersTitle} · ${l.circleWaitingTitle} (${c.waiting.length})',
+                  ),
                 ),
                 PopupMenuItem(value: 'screen', child: Text(l.circleShowScreen)),
                 PopupMenuItem(value: 'rules', child: Text(l.circleInfoTitle)),
@@ -687,91 +917,28 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
                       ),
                     ),
             )
-          : RefreshIndicator(
-              onRefresh: _load,
-              child: ListView(
-                padding: const EdgeInsets.fromLTRB(20, 4, 20, 32),
-                children: [
-                  _InviteCard(
-                    code: c.code,
-                    members: c.members.length,
-                    onInvite: () => _invite(c),
-                    onShow: () => _showOnScreen(c),
+          : c.pending
+          ? _waitingView(c)
+          : TabBarView(
+              children: [
+                _prayersTab(c),
+                CirclePraiseTab(circle: c, busy: _busy, change: _change, onRefresh: _load),
+                CircleChainsTab(circle: c, busy: _busy, change: _change, onRefresh: _load),
+                if (groups)
+                  CircleGroupsTab(
+                    circle: c,
+                    busy: _busy,
+                    change: _change,
+                    onRefresh: _load,
+                    onJoin: (g) => _joinGroup(c, g),
                   ),
-                  const SizedBox(height: 16),
-                  TextField(
-                    controller: _text,
-                    minLines: 2,
-                    maxLines: 6,
-                    maxLength: 1000,
-                    textCapitalization: TextCapitalization.sentences,
-                    onChanged: (_) => setState(() {}),
-                    decoration: InputDecoration(
-                      hintText: l.circleAskHint,
-                      counterText: '',
-                      suffixIcon: IconButton(
-                        tooltip: l.send,
-                        icon: const Icon(Icons.send_rounded, color: AppColors.gold),
-                        onPressed: _busy || _text.text.trim().isEmpty ? null : _ask,
-                      ),
-                    ),
-                  ),
-                  // Some requests are too personal for the whole church.
-                  Wrap(
-                    spacing: 8,
-                    children: [
-                      FilterChip(
-                        avatar: const Icon(Icons.lock_rounded, size: 18, color: AppColors.ember),
-                        label: Text(l.circleOnlyLeaders),
-                        selected: _forLeaders,
-                        onSelected: (v) => setState(() => _forLeaders = v),
-                      ),
-                      FilterChip(
-                        avatar: const Icon(Icons.visibility_off_rounded, size: 18, color: AppColors.ember),
-                        label: Text(l.circleNoName),
-                        selected: _anonymous,
-                        onSelected: (v) => setState(() => _anonymous = v),
-                      ),
-                    ],
-                  ),
-                  Align(
-                    alignment: AlignmentDirectional.centerStart,
-                    child: TextButton.icon(
-                      style: TextButton.styleFrom(foregroundColor: AppColors.ember),
-                      onPressed: _busy ? null : _sharePrayer,
-                      icon: const Icon(Icons.menu_book_rounded, color: AppColors.gold),
-                      label: Text(l.circleSharePrayer),
-                    ),
-                  ),
-                  const SizedBox(height: 8),
-                  if (c.requests.isEmpty)
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 24),
-                      child: Text(l.circleEmpty,
-                          textAlign: TextAlign.center, style: const TextStyle(color: AppColors.inkSoft, height: 1.4)),
-                    ),
-                  for (final r in c.requests) ...[
-                    _RequestCard(
-                      request: r,
-                      lead: c.leader,
-                      busy: _busy,
-                      onPin: () => _change(() => _service.pin(c.code, r.id, on: !r.pinned)),
-                      onPrayed: () => r.prayerId == null ? _change(() => _service.prayed(c.code, r.id)) : _joinPrayer(r),
-                      onHeart: () => _change(() => _service.heart(c.code, r.id, on: !r.heartedByMe)),
-                      onAnswered: () => _answered(r),
-                      onDelete: () => _change(() => _service.deleteRequest(c.code, r.id)),
-                      onReport: () async {
-                        if (await _change(() => _service.report(c.code, r.id)) && context.mounted) {
-                          _say(context, l.circleReported);
-                        }
-                      },
-                    ),
-                    const SizedBox(height: 12),
-                  ],
-                ],
-              ),
+              ],
             ),
     );
+    // The number of pages changes when a church gets its first group.
+    return tabs.isEmpty
+        ? scaffold
+        : DefaultTabController(key: ValueKey(tabs.length), length: tabs.length, child: scaffold);
   }
 }
 
@@ -797,8 +964,10 @@ class _InviteCard extends StatelessWidget {
                   CircleService.showCode(code),
                   style: const TextStyle(fontSize: 26, fontWeight: FontWeight.w700, letterSpacing: 3),
                 ),
-                Text(l.circleMembersOf(members, CircleService.maxMembers),
-                    style: const TextStyle(fontSize: 13, color: AppColors.inkSoft)),
+                Text(
+                  l.circleMembersOf(members, CircleService.maxMembers),
+                  style: const TextStyle(fontSize: 13, color: AppColors.inkSoft),
+                ),
               ],
             ),
           ),
@@ -864,9 +1033,17 @@ class _RequestCard extends ConsumerWidget {
     final prayer = shared
         ? ref.watch(prayerGroupsProvider).value?.expand((g) => g.prayers).where((p) => p.id == r.prayerId).firstOrNull
         : null;
+    // A shared Bible verse, likewise from the reader's own Bible.
+    final verseRef = r.verse;
+    final verse = verseRef == null ? null : ref.watch(circleVerseProvider(verseRef)).value;
+    void readChapter() {
+      final at = RegExp(r'^(\S+) (\d+):(\d+)$').firstMatch(verseRef!);
+      if (at != null) context.push('/bible/${at.group(1)}/${at.group(2)}?v=${at.group(3)}');
+    }
+
     final menu = [
       if (lead) ('pin', r.pinned ? l.circleUnpin : l.circlePin, onPin),
-      if (r.mine && !r.answered && !shared) ('answered', l.circleMarkAnswered, onAnswered),
+      if (r.mine && !r.answered && !shared && verseRef == null) ('answered', l.circleMarkAnswered, onAnswered),
       if (r.mine || lead) ('delete', l.circleDelete, onDelete),
       if (!r.mine) ('report', l.circleReport, onReport),
     ];
@@ -879,39 +1056,57 @@ class _RequestCard extends ConsumerWidget {
           if (r.pinned)
             Padding(
               padding: const EdgeInsets.only(bottom: 8),
-              child: Row(children: [
-                const Icon(Icons.push_pin_rounded, size: 16, color: AppColors.ember),
-                const SizedBox(width: 6),
-                Text(l.circlePinned.toUpperCase(),
+              child: Row(
+                children: [
+                  const Icon(Icons.push_pin_rounded, size: 16, color: AppColors.ember),
+                  const SizedBox(width: 6),
+                  Text(
+                    l.circlePinned.toUpperCase(),
                     style: const TextStyle(
-                        fontSize: 12, fontWeight: FontWeight.w800, letterSpacing: 1, color: AppColors.ember)),
-              ]),
+                      fontSize: 12,
+                      fontWeight: FontWeight.w800,
+                      letterSpacing: 1,
+                      color: AppColors.ember,
+                    ),
+                  ),
+                ],
+              ),
             ),
           Row(
             children: [
-              _Initial(r.nameHidden ? '?' : r.name),
+              CircleInitial(r.nameHidden ? '?' : r.name),
               const SizedBox(width: 10),
               Expanded(
                 child: Text.rich(
-                  TextSpan(children: [
-                    TextSpan(
-                      text: r.mine ? l.circleYou : (r.nameHidden ? l.circleSomeone : r.name),
-                      style: const TextStyle(fontWeight: FontWeight.w700),
-                    ),
-                    if (r.leader)
-                      WidgetSpan(
-                        alignment: PlaceholderAlignment.middle,
-                        child: Container(
-                          margin: const EdgeInsetsDirectional.only(start: 6),
-                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 1),
-                          decoration: BoxDecoration(color: AppColors.gold, borderRadius: BorderRadius.circular(8)),
-                          child: Text(l.circleLeader,
-                              style: const TextStyle(
-                                  fontSize: 11, fontWeight: FontWeight.w700, color: AppColors.midnight)),
-                        ),
+                  TextSpan(
+                    children: [
+                      TextSpan(
+                        text: r.mine ? l.circleYou : (r.nameHidden ? l.circleSomeone : r.name),
+                        style: const TextStyle(fontWeight: FontWeight.w700),
                       ),
-                    TextSpan(text: '  ·  ${_when(context)}', style: const TextStyle(color: AppColors.inkSoft, fontSize: 13)),
-                  ]),
+                      if (r.leader)
+                        WidgetSpan(
+                          alignment: PlaceholderAlignment.middle,
+                          child: Container(
+                            margin: const EdgeInsetsDirectional.only(start: 6),
+                            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 1),
+                            decoration: BoxDecoration(color: AppColors.gold, borderRadius: BorderRadius.circular(8)),
+                            child: Text(
+                              l.circleLeader,
+                              style: const TextStyle(
+                                fontSize: 11,
+                                fontWeight: FontWeight.w700,
+                                color: AppColors.midnight,
+                              ),
+                            ),
+                          ),
+                        ),
+                      TextSpan(
+                        text: '  ·  ${_when(context)}',
+                        style: const TextStyle(color: AppColors.inkSoft, fontSize: 13),
+                      ),
+                    ],
+                  ),
                 ),
               ),
               if (menu.isNotEmpty)
@@ -933,11 +1128,15 @@ class _RequestCard extends ConsumerWidget {
             if (show)
               Padding(
                 padding: const EdgeInsets.only(top: 6),
-                child: Row(children: [
-                  Icon(icon, size: 15, color: AppColors.inkSoft),
-                  const SizedBox(width: 6),
-                  Flexible(child: Text(text, style: const TextStyle(fontSize: 13, color: AppColors.inkSoft))),
-                ]),
+                child: Row(
+                  children: [
+                    Icon(icon, size: 15, color: AppColors.inkSoft),
+                    const SizedBox(width: 6),
+                    Flexible(
+                      child: Text(text, style: const TextStyle(fontSize: 13, color: AppColors.inkSoft)),
+                    ),
+                  ],
+                ),
               ),
           if (shared) ...[
             if (r.text.isNotEmpty)
@@ -975,6 +1174,40 @@ class _RequestCard extends ConsumerWidget {
                 ),
               ),
             ),
+          ] else if (verseRef != null) ...[
+            if (r.text.isNotEmpty)
+              Padding(
+                padding: const EdgeInsets.fromLTRB(2, 8, 8, 0),
+                child: Text(r.text, style: const TextStyle(fontSize: 16, height: 1.45)),
+              ),
+            const SizedBox(height: 8),
+            InkWell(
+              borderRadius: BorderRadius.circular(16),
+              onTap: readChapter,
+              child: Container(
+                width: double.infinity,
+                margin: const EdgeInsets.only(right: 8),
+                padding: const EdgeInsets.all(14),
+                decoration: BoxDecoration(
+                  color: AppColors.sand.withValues(alpha: 0.6),
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      verse == null ? '…' : '“${verse.text}”',
+                      style: AppText.serif(19, weight: FontWeight.w600, height: 1.35),
+                    ),
+                    const SizedBox(height: 6),
+                    Text(
+                      verse == null ? verseRef : '— ${verse.reference} (${verse.translation})',
+                      style: const TextStyle(fontWeight: FontWeight.w700, color: AppColors.ember),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ] else
             Padding(
               padding: const EdgeInsets.fromLTRB(2, 8, 8, 4),
@@ -983,22 +1216,41 @@ class _RequestCard extends ConsumerWidget {
           if (r.answered)
             Padding(
               padding: const EdgeInsets.only(top: 4),
-              child: Row(children: [
-                const Icon(Icons.check_circle_rounded, size: 18, color: AppColors.gold),
-                const SizedBox(width: 6),
-                Text(l.circleAnswered, style: const TextStyle(fontWeight: FontWeight.w600, color: AppColors.ember)),
-              ]),
+              child: Row(
+                children: [
+                  const Icon(Icons.check_circle_rounded, size: 18, color: AppColors.gold),
+                  const SizedBox(width: 6),
+                  Text(
+                    l.circleAnswered,
+                    style: const TextStyle(fontWeight: FontWeight.w600, color: AppColors.ember),
+                  ),
+                ],
+              ),
+            ),
+          if (r.testimony case final testimony?)
+            Padding(
+              padding: const EdgeInsets.fromLTRB(2, 6, 8, 0),
+              child: Text(testimony, style: AppText.serif(18, weight: FontWeight.w600, height: 1.35)),
             ),
           if (!r.mine && Safety.isCrisis(r.text))
             Padding(
               padding: const EdgeInsets.only(top: 6, right: 8),
-              child: Text(l.circleReachOut(r.nameHidden ? l.circleSomeone : r.name),
-                  style: const TextStyle(color: AppColors.heart, fontWeight: FontWeight.w600)),
+              child: Text(
+                l.circleReachOut(r.nameHidden ? l.circleSomeone : r.name),
+                style: const TextStyle(color: AppColors.heart, fontWeight: FontWeight.w600),
+              ),
             ),
           const SizedBox(height: 4),
           Row(
             children: [
-              if (shared)
+              if (verseRef != null)
+                TextButton.icon(
+                  style: TextButton.styleFrom(foregroundColor: AppColors.ember),
+                  onPressed: readChapter,
+                  icon: const Icon(Icons.menu_book_rounded, size: 18, color: AppColors.gold),
+                  label: Text(l.readChapter),
+                )
+              else if (shared)
                 _JoinButton(joined: r.prayedByMe, enabled: !busy && prayer != null, onPressed: onPrayed)
               else if (r.prayedByMe)
                 FilledButton.icon(
@@ -1024,21 +1276,24 @@ class _RequestCard extends ConsumerWidget {
                   label: Text(l.circleIPrayed),
                 ),
               const SizedBox(width: 12),
-              if (r.prayed > 0)
+              if (r.prayed > 0 && verseRef == null)
                 Flexible(
                   child: Text(
-                      shared
-                          ? l.circleJoinedCount(compactCount(context, r.prayed))
-                          : l.prayedCount(compactCount(context, r.prayed)),
-                      style: const TextStyle(color: AppColors.inkSoft)),
+                    shared
+                        ? l.circleJoinedCount(compactCount(context, r.prayed))
+                        : l.prayedCount(compactCount(context, r.prayed)),
+                    style: const TextStyle(color: AppColors.inkSoft),
+                  ),
                 ),
-              if (shared) ...[
+              if (shared || verseRef != null) ...[
                 const Spacer(),
                 IconButton(
                   tooltip: l.circleLove,
                   onPressed: busy ? null : onHeart,
-                  icon: Icon(r.heartedByMe ? Icons.favorite_rounded : Icons.favorite_border_rounded,
-                      color: AppColors.heart),
+                  icon: Icon(
+                    r.heartedByMe ? Icons.favorite_rounded : Icons.favorite_border_rounded,
+                    color: AppColors.heart,
+                  ),
                 ),
                 if (r.hearts > 0)
                   Padding(
@@ -1098,8 +1353,8 @@ class _JoinButton extends StatelessWidget {
   }
 }
 
-class _Initial extends StatelessWidget {
-  const _Initial(this.name);
+class CircleInitial extends StatelessWidget {
+  const CircleInitial(this.name, {super.key});
   final String name;
 
   @override

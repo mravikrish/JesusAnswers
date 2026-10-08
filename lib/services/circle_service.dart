@@ -3,9 +3,23 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
+DateTime? _time(Object? s) => DateTime.tryParse(s as String? ?? '')?.toLocal();
+
+List<T> _list<T>(Object? list, T Function(Map<String, dynamic>) read) => [
+  for (final x in list as List? ?? const []) read(x as Map<String, dynamic>),
+];
+
 /// A circle the person is in, as listed on the Prayer Circles screen.
 class CircleSummary {
-  const CircleSummary({required this.code, required this.name, required this.members, this.owner = false, this.latest});
+  const CircleSummary({
+    required this.code,
+    required this.name,
+    required this.members,
+    this.owner = false,
+    this.latest,
+    this.parent,
+    this.pending = false,
+  });
 
   factory CircleSummary.fromJson(Map<String, dynamic> j) => CircleSummary(
     code: j['code'] as String,
@@ -13,6 +27,8 @@ class CircleSummary {
     members: (j['members'] as num?)?.toInt() ?? 0,
     owner: j['owner'] == true,
     latest: DateTime.tryParse(j['latest'] as String? ?? ''),
+    parent: j['parent'] as String?,
+    pending: j['pending'] == true,
   );
 
   final String code, name;
@@ -22,12 +38,20 @@ class CircleSummary {
   /// When the newest request came in; null with none yet.
   final DateTime? latest;
 
+  /// For a group: its church's name.
+  final String? parent;
+
+  /// Asked to join, and waiting for a leader to let them in.
+  final bool pending;
+
   Map<String, dynamic> toJson() => {
     'code': code,
     'name': name,
     'members': members,
     'owner': owner,
     'latest': latest?.toIso8601String(),
+    'parent': parent,
+    'pending': pending,
   };
 }
 
@@ -66,13 +90,17 @@ class CircleRequest {
     this.pinned = false,
     this.forLeaders = false,
     this.anonymous = false,
+    this.praise = false,
+    this.testimony,
+    this.verse,
+    this.answeredAt,
   });
 
   factory CircleRequest.fromJson(Map<String, dynamic> j) => CircleRequest(
     id: (j['id'] as num).toInt(),
     name: j['name'] as String,
     text: j['text'] as String,
-    at: DateTime.tryParse(j['at'] as String? ?? '')?.toLocal() ?? DateTime.now(),
+    at: _time(j['at']) ?? DateTime.now(),
     answered: j['answered'] == true,
     prayed: (j['prayed'] as num?)?.toInt() ?? 0,
     prayedByMe: j['prayedByMe'] == true,
@@ -84,6 +112,10 @@ class CircleRequest {
     pinned: j['pinned'] == true,
     forLeaders: j['forLeaders'] == true,
     anonymous: j['anonymous'] == true,
+    praise: j['praise'] == true,
+    testimony: j['testimony'] as String?,
+    verse: j['verse'] as String?,
+    answeredAt: _time(j['answeredAt']),
   );
 
   final int id;
@@ -110,8 +142,97 @@ class CircleRequest {
   /// Asked without a name. For members [name] is then empty; the asker and leaders still see it.
   final bool anonymous;
 
+  /// A praise report, shared as such (never asked); [text] tells what God did.
+  final bool praise;
+
+  /// How God answered, added when it was marked answered.
+  final String? testimony;
+
+  /// A Bible verse shared ("JHN 3:16"), shown from the reader's own Bible; [text] is then an optional note.
+  final String? verse;
+  final DateTime? answeredAt;
+
   /// Who asked is hidden from the reader.
   bool get nameHidden => name.isEmpty;
+}
+
+/// A group of a church (Youth, a home group), as the church's members see it.
+class CircleGroup {
+  const CircleGroup({
+    required this.code,
+    required this.name,
+    this.members = 0,
+    this.joined = false,
+    this.pending = false,
+  });
+
+  factory CircleGroup.fromJson(Map<String, dynamic> j) => CircleGroup(
+    code: j['code'] as String,
+    name: j['name'] as String,
+    members: (j['members'] as num?)?.toInt() ?? 0,
+    joined: j['joined'] == true,
+    pending: j['pending'] == true,
+  );
+
+  final String code, name;
+  final int members;
+
+  /// The reader is in it, or waits to be let in.
+  final bool joined, pending;
+}
+
+/// A turn someone took in a prayer chain.
+class ChainTurn {
+  const ChainTurn({required this.slot, required this.name, this.mine = false});
+
+  factory ChainTurn.fromJson(Map<String, dynamic> j) =>
+      ChainTurn(slot: (j['slot'] as num).toInt(), name: j['name'] as String, mine: j['mine'] == true);
+
+  final int slot;
+  final String name;
+  final bool mine;
+}
+
+/// A prayer chain, or fasting days: [slots] turns of [slotMinutes] each, from [startsAt].
+class PrayerChain {
+  const PrayerChain({
+    required this.id,
+    required this.title,
+    required this.startsAt,
+    required this.slotMinutes,
+    required this.slots,
+    this.mine = false,
+    this.turns = const [],
+  });
+
+  factory PrayerChain.fromJson(Map<String, dynamic> j) => PrayerChain(
+    id: (j['id'] as num).toInt(),
+    title: j['title'] as String,
+    startsAt: _time(j['startsAt']) ?? DateTime.now(),
+    slotMinutes: (j['slotMinutes'] as num).toInt(),
+    slots: (j['slots'] as num).toInt(),
+    mine: j['mine'] == true,
+    turns: _list(j['turns'], ChainTurn.fromJson),
+  );
+
+  final int id;
+  final String title;
+  final DateTime startsAt;
+  final int slotMinutes, slots;
+
+  /// The reader started it.
+  final bool mine;
+  final List<ChainTurn> turns;
+
+  /// Turns of a day: fasting days, rather than hours of prayer.
+  bool get fasting => slotMinutes >= 1440;
+
+  DateTime slotStart(int slot) => startsAt.add(Duration(minutes: slotMinutes * slot));
+  DateTime get endsAt => slotStart(slots);
+  List<ChainTurn> turnsAt(int slot) => [
+    for (final t in turns)
+      if (t.slot == slot) t,
+  ];
 }
 
 class CircleDetail {
@@ -122,16 +243,35 @@ class CircleDetail {
     this.leader = false,
     this.members = const [],
     this.requests = const [],
+    this.pending = false,
+    this.approval = false,
+    this.waiting = const [],
+    this.parentCode,
+    this.parentName,
+    this.groups = const [],
+    this.praise = const [],
+    this.chains = const [],
   });
 
-  factory CircleDetail.fromJson(Map<String, dynamic> j) => CircleDetail(
-    code: j['code'] as String,
-    name: j['name'] as String,
-    owner: j['owner'] == true,
-    leader: j['leader'] == true,
-    members: [for (final m in j['members'] as List? ?? const []) CircleMember.fromJson(m as Map<String, dynamic>)],
-    requests: [for (final r in j['requests'] as List? ?? const []) CircleRequest.fromJson(r as Map<String, dynamic>)],
-  );
+  factory CircleDetail.fromJson(Map<String, dynamic> j) {
+    final parent = j['parent'] as Map<String, dynamic>?;
+    return CircleDetail(
+      code: j['code'] as String,
+      name: j['name'] as String,
+      owner: j['owner'] == true,
+      leader: j['leader'] == true,
+      members: _list(j['members'], CircleMember.fromJson),
+      requests: _list(j['requests'], CircleRequest.fromJson),
+      pending: j['pending'] == true,
+      approval: j['approval'] == true,
+      waiting: _list(j['waiting'], CircleMember.fromJson),
+      parentCode: parent?['code'] as String?,
+      parentName: parent?['name'] as String?,
+      groups: _list(j['groups'], CircleGroup.fromJson),
+      praise: _list(j['praise'], CircleRequest.fromJson),
+      chains: _list(j['chains'], PrayerChain.fromJson),
+    );
+  }
 
   final String code, name;
 
@@ -144,9 +284,31 @@ class CircleDetail {
 
   /// The pinned one first, then newest first.
   final List<CircleRequest> requests;
+
+  /// The person asked to join and waits for a leader; nothing else is filled in then.
+  final bool pending;
+
+  /// New members wait for a leader to let them in.
+  final bool approval;
+
+  /// Who waits to be let in (for the owner and leaders only).
+  final List<CircleMember> waiting;
+
+  /// For a group: its church. [parentCode] only when the person is in the church too.
+  final String? parentCode, parentName;
+
+  /// A church's groups (none for a group).
+  final List<CircleGroup> groups;
+
+  /// The praise wall: answered prayers and praise reports, the newest answer first.
+  final List<CircleRequest> praise;
+  final List<PrayerChain> chains;
+
+  /// A group of a church; it can't have groups of its own.
+  bool get isGroup => parentName != null;
 }
 
-enum CircleNewsKind { request, prayer, prayed, answered, joined }
+enum CircleNewsKind { request, prayer, verse, prayed, answered, joined, waiting, approved, chain, group }
 
 /// Something new in one of the person's circles, shown as a popup when they open the app.
 class CircleNews {
@@ -160,6 +322,9 @@ class CircleNews {
     this.prayerId,
     this.count = 0,
     this.crisis = false,
+    this.verse,
+    this.testimony,
+    this.group,
   });
 
   /// Null for a kind this version of the app doesn't know.
@@ -176,6 +341,9 @@ class CircleNews {
       prayerId: j['prayerId'] as String?,
       count: (j['count'] as num?)?.toInt() ?? 0,
       crisis: j['crisis'] == true,
+      verse: j['verse'] as String?,
+      testimony: j['testimony'] as String?,
+      group: j['group'] as String?,
     );
   }
 
@@ -183,20 +351,31 @@ class CircleNews {
 
   /// The circle's code and name.
   final String circle, circleName;
+
+  /// The request, or for [CircleNewsKind.chain] the chain.
   final int? requestId;
 
-  /// Who asked, shared or joined.
+  /// Who asked, shared or joined; for [CircleNewsKind.group], the new group.
   final String name;
 
-  /// The request, or the note with a shared prayer.
+  /// The request, the note with a shared prayer or verse, or a chain's title.
   final String text;
   final String? prayerId;
 
-  /// How many prayed ([CircleNewsKind.prayed]), or joined, the latest of them [name] ([CircleNewsKind.joined]).
+  /// How many prayed ([CircleNewsKind.prayed]), joined or wait, the latest of them [name].
   final int count;
 
   /// For a leader: whoever asked may be thinking of ending their life. Shown before anything else.
   final bool crisis;
+
+  /// A shared Bible verse ("JHN 3:16").
+  final String? verse;
+
+  /// How God answered ([CircleNewsKind.answered]).
+  final String? testimony;
+
+  /// A new group's code ([CircleNewsKind.group]).
+  final String? group;
 }
 
 /// [notAllowed]: taken out of the circle, or not theirs to change.
@@ -215,17 +394,25 @@ class CircleException implements Exception {
 /// Contract — {baseUrl}/v1/circles…, anonymous with the random install id (X-Install-Id), as for the counts:
 ///   GET    /v1/circles                                → [CircleSummary]
 ///   POST   /v1/circles            {name, memberName}  → CircleDetail
-///   POST   /v1/circles/join       {code, memberName}  → CircleDetail
+///   POST   /v1/circles/join       {code, memberName}  → CircleDetail (pending when approval is on)
 ///   GET    /v1/circles/{code}                         → CircleDetail
 ///   POST   /v1/circles/{code}/requests {text, forLeaders?, anonymous?} → CircleDetail
-///   POST   /v1/circles/{code}/requests {prayerId, text?} → CircleDetail (a ready prayer, with a note)
+///   POST   /v1/circles/{code}/requests {prayerId | verse, text?} → CircleDetail (a ready prayer or verse, with a note)
+///   POST   /v1/circles/{code}/requests {text, praise: true} → CircleDetail (a praise report)
 ///   POST | DELETE /v1/circles/{code}/requests/{id}/heart → CircleDetail
-///   POST   /v1/circles/{code}/requests/{id}/prayed | answered | report → CircleDetail
+///   POST   /v1/circles/{code}/requests/{id}/prayed | report → CircleDetail
+///   POST   /v1/circles/{code}/requests/{id}/answered {testimony?} → CircleDetail
 ///   POST | DELETE /v1/circles/{code}/requests/{id}/pin → CircleDetail (owner or leader)
 ///   DELETE /v1/circles/{code}/requests/{id}           → CircleDetail
 ///   DELETE /v1/circles/{code}/members/{id}            → CircleDetail (owner, or a leader for members)
 ///   POST | DELETE /v1/circles/{code}/members/{id}/leader → CircleDetail (owner only)
-///   POST   /v1/circles/{code}/leave                   → 204
+///   POST | DELETE /v1/circles/{code}/approval         → CircleDetail (owner only)
+///   POST   /v1/circles/{code}/waiting/{id}/approve, DELETE /v1/circles/{code}/waiting/{id} → CircleDetail
+///   POST   /v1/circles/{code}/groups {name}           → CircleDetail (the church; owner or leader)
+///   POST   /v1/circles/{code}/chains {title, startsAt, slotMinutes, slots} → CircleDetail (owner or leader)
+///   DELETE /v1/circles/{code}/chains/{id}             → CircleDetail
+///   POST | DELETE /v1/circles/{code}/chains/{id}/turns/{slot} → CircleDetail
+///   POST   /v1/circles/{code}/leave                   → 204 (also stops waiting)
 ///   GET    /v1/circles/news?since=…                   → {now, items: [CircleNews]}
 ///
 /// The list of circles is kept on the phone, so it still shows offline.
@@ -239,7 +426,7 @@ class CircleService {
   final http.Client _client;
 
   /// The server's limits (backend CircleService), shown in "How prayer circles work".
-  static const maxMembers = 500, maxCircles = 20, keepDays = 60;
+  static const maxMembers = 500, maxCircles = 20, keepDays = 60, keepPraiseDays = 365;
 
   static const _listKey = 'circles';
   static const _newsKey = 'circleNewsSince';
@@ -247,6 +434,9 @@ class CircleService {
 
   /// "K7P3MX" → "K7P-3MX", easier to read out and type.
   static String showCode(String code) => code.length == 6 ? '${code.substring(0, 3)}-${code.substring(3)}' : code;
+
+  /// What a QR code on the church's screen holds: scanned with a phone camera, it opens the app to join.
+  static String joinLink(String code) => 'jesusanswers://app/join/$code';
 
   /// The circles as last fetched.
   List<CircleSummary> get saved {
@@ -285,42 +475,52 @@ class CircleService {
   Future<List<CircleNews>> news() async {
     if (baseUrl.isEmpty || saved.isEmpty) return const [];
     final since = _prefs.getString(_newsKey);
-    final page = await _call('GET', '/news${since == null ? '' : '?since=${Uri.encodeQueryComponent(since)}'}')
-        as Map<String, dynamic>;
+    final page = await _call(
+      'GET',
+      '/news${since == null ? '' : '?since=${Uri.encodeQueryComponent(since)}'}',
+    ) as Map<String, dynamic>;
     await _prefs.setString(_newsKey, page['now'] as String);
-    return [
-      for (final n in page['items'] as List? ?? const []) ?CircleNews.fromJson(n as Map<String, dynamic>),
-    ];
+    return [for (final n in page['items'] as List? ?? const []) ?CircleNews.fromJson(n as Map<String, dynamic>)];
   }
 
   Future<CircleDetail> create(String name, String memberName) =>
       _detail('POST', '', {'name': name, 'memberName': memberName});
 
+  /// Joins; or with approval on, asks to join ([CircleDetail.pending]).
   Future<CircleDetail> join(String code, String memberName) =>
       _detail('POST', '/join', {'code': code, 'memberName': memberName});
 
   Future<CircleDetail> open(String code) => _detail('GET', '/$code');
 
   /// [forLeaders]: only the owner and leaders will see it. [anonymous]: members won't see who asked.
-  Future<CircleDetail> ask(String code, String text, {bool forLeaders = false, bool anonymous = false}) =>
-      _detail('POST', '/$code/requests', {
-        'text': text,
-        if (forLeaders) 'forLeaders': true,
-        if (anonymous) 'anonymous': true,
-      });
-
-  /// What a QR code on the church's screen holds: scanned with a phone camera, it opens the app to join.
-  static String joinLink(String code) => 'jesusanswers://app/join/$code';
+  Future<CircleDetail> ask(String code, String text, {bool forLeaders = false, bool anonymous = false}) => _detail(
+    'POST',
+    '/$code/requests',
+    {'text': text, if (forLeaders) 'forLeaders': true, if (anonymous) 'anonymous': true},
+  );
 
   Future<CircleDetail> sharePrayer(String code, String prayerId, String note) =>
       _detail('POST', '/$code/requests', {'prayerId': prayerId, 'text': note});
+
+  /// A Bible verse ("JHN 3:16"), with a note: the week's sermon, say.
+  Future<CircleDetail> shareVerse(String code, String verse, String note) =>
+      _detail('POST', '/$code/requests', {'verse': verse, 'text': note});
+
+  /// A praise report for the praise wall: what God did, never asked as a request.
+  Future<CircleDetail> praise(String code, String text) =>
+      _detail('POST', '/$code/requests', {'text': text, 'praise': true});
 
   Future<CircleDetail> heart(String code, int request, {required bool on}) =>
       _detail(on ? 'POST' : 'DELETE', '/$code/requests/$request/heart');
 
   Future<CircleDetail> prayed(String code, int request) => _detail('POST', '/$code/requests/$request/prayed');
 
-  Future<CircleDetail> answered(String code, int request) => _detail('POST', '/$code/requests/$request/answered');
+  /// [testimony]: how God answered, for the praise wall.
+  Future<CircleDetail> answered(String code, int request, {String? testimony}) => _detail(
+    'POST',
+    '/$code/requests/$request/answered',
+    testimony == null || testimony.trim().isEmpty ? null : {'testimony': testimony.trim()},
+  );
 
   Future<CircleDetail> report(String code, int request) => _detail('POST', '/$code/requests/$request/report');
 
@@ -334,10 +534,45 @@ class CircleService {
   Future<CircleDetail> setLeader(String code, int member, {required bool on}) =>
       _detail(on ? 'POST' : 'DELETE', '/$code/members/$member/leader');
 
+  Future<CircleDetail> setApproval(String code, {required bool on}) =>
+      _detail(on ? 'POST' : 'DELETE', '/$code/approval');
+
+  Future<CircleDetail> approve(String code, int waiting) => _detail('POST', '/$code/waiting/$waiting/approve');
+
+  Future<CircleDetail> decline(String code, int waiting) => _detail('DELETE', '/$code/waiting/$waiting');
+
+  /// Adds a group to a church; answers with the church.
+  Future<CircleDetail> createGroup(String code, String name) => _detail('POST', '/$code/groups', {'name': name});
+
+  Future<CircleDetail> createChain(
+    String code, {
+    required String title,
+    required DateTime startsAt,
+    required int slotMinutes,
+    required int slots,
+  }) => _detail('POST', '/$code/chains', {
+    'title': title,
+    'startsAt': startsAt.toUtc().toIso8601String(),
+    'slotMinutes': slotMinutes,
+    'slots': slots,
+  });
+
+  Future<CircleDetail> deleteChain(String code, int chain) => _detail('DELETE', '/$code/chains/$chain');
+
+  Future<CircleDetail> turn(String code, int chain, int slot, {required bool on}) =>
+      _detail(on ? 'POST' : 'DELETE', '/$code/chains/$chain/turns/$slot');
+
+  /// Leaves, or stops waiting to be let in.
   Future<void> leave(String code) async {
     await _call('POST', '/$code/leave');
     await _prefs.remove(_seenKey(code));
-    await _prefs.setString(_listKey, jsonEncode([for (final c in saved) if (c.code != code) c.toJson()]));
+    await _prefs.setString(
+      _listKey,
+      jsonEncode([
+        for (final c in saved)
+          if (c.code != code) c.toJson(),
+      ]),
+    );
   }
 
   Future<CircleDetail> _detail(String method, String path, [Map<String, dynamic>? body]) async =>

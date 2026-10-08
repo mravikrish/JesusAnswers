@@ -1066,4 +1066,213 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get circleScreenSteps =>
       'Escanea con la cámara de tu teléfono, o abre JesusAnswers y toca Orar → Círculos de oración → Unirme con un código';
+
+  @override
+  String get circleTabPrayers => 'Oraciones';
+
+  @override
+  String get circleTabPraise => 'Alabanza';
+
+  @override
+  String get circleTabChains => 'Cadenas';
+
+  @override
+  String get circleTabGroups => 'Grupos';
+
+  @override
+  String get circleWaitingLabel => 'Esperando aprobación';
+
+  @override
+  String circleWaitingSent(String name) {
+    return 'Pediste unirte a $name. Pronto un líder te dejará entrar.';
+  }
+
+  @override
+  String get circleStopWaiting => 'Dejar de esperar';
+
+  @override
+  String get circleApproval => 'Los nuevos miembros esperan aprobación';
+
+  @override
+  String get circleApprovalHint =>
+      'Para cuando el código se ha difundido fuera de tu iglesia';
+
+  @override
+  String get circleWaitingTitle => 'Esperando para unirse';
+
+  @override
+  String get circleApprove => 'Dejar entrar';
+
+  @override
+  String get circleDecline => 'Rechazar';
+
+  @override
+  String circleDeclineConfirm(String name) {
+    return '¿Rechazar a $name? No podrá volver a pedirlo.';
+  }
+
+  @override
+  String get circleGroupsIntro =>
+      'Los grupos de esta iglesia: jóvenes, ministerios, grupos en casas. Únete a cualquiera con un toque.';
+
+  @override
+  String get circleAddGroup => 'Añadir un grupo';
+
+  @override
+  String get circleGroupNameHint => 'p. ej. Jóvenes, Grupo de mujeres';
+
+  @override
+  String get circleJoinGroup => 'Unirme';
+
+  @override
+  String get circleNoGroups => 'Aún no hay grupos.';
+
+  @override
+  String get circleSharePraise => 'Compartir un testimonio de alabanza';
+
+  @override
+  String get circlePraiseHint =>
+      '¿Qué ha hecho Dios? Compártelo para animar a todos.';
+
+  @override
+  String get circlePraiseEmpty =>
+      'Las oraciones respondidas y los testimonios aparecen aquí, para animar a todos.';
+
+  @override
+  String get circlePraiseReport => 'Testimonio de alabanza';
+
+  @override
+  String get circleTestimonyTitle => '¿Cómo respondió Dios?';
+
+  @override
+  String get circleTestimonyHint =>
+      'Unas palabras para el muro de alabanza (opcional)';
+
+  @override
+  String get circlePraiseGod => 'Gloria a Dios';
+
+  @override
+  String get circleChainsIntro =>
+      'Túrnense para orar o ayunar, para que siempre haya alguien orando.';
+
+  @override
+  String get circleNewChain => 'Iniciar una cadena de oración';
+
+  @override
+  String get circleChainTitle => 'Por qué';
+
+  @override
+  String get circleChainTitleHint => 'p. ej. 24 horas por un avivamiento';
+
+  @override
+  String get circleChainHoursKind => 'Horas de oración';
+
+  @override
+  String get circleChainDaysKind => 'Días de ayuno';
+
+  @override
+  String get circleChainStarts => 'Empieza';
+
+  @override
+  String circleChainHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count horas',
+      one: '1 hora',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String circleChainDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count días',
+      one: '1 día',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleChainPray => 'Yo oraré';
+
+  @override
+  String get circleChainFast => 'Yo ayunaré';
+
+  @override
+  String get circleChainGiveBack => 'Devolver';
+
+  @override
+  String get circleChainNobody => 'Nadie aún';
+
+  @override
+  String get circleChainYourTurn => 'Tu turno de orar';
+
+  @override
+  String get circleChainYourFast => 'Tu día de ayuno';
+
+  @override
+  String get circleChainsEmpty => 'Aún no hay cadenas de oración.';
+
+  @override
+  String get circleChainEnded => 'Terminó';
+
+  @override
+  String get circleShareVerse => 'Compartir un versículo';
+
+  @override
+  String get circleShareVerseHow =>
+      'Abre un capítulo y mantén pulsado un versículo para compartirlo.';
+
+  @override
+  String get shareToCircle => 'Compartir con un círculo';
+
+  @override
+  String newsVerse(String name) {
+    return '$name compartió un versículo';
+  }
+
+  @override
+  String newsWaiting(int count, String name) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count personas esperan para unirse',
+      one: '$name espera para unirse',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String newsApproved(String name) {
+    return '¡Ya estás dentro! Bienvenido a $name';
+  }
+
+  @override
+  String newsChain(String name) {
+    return '$name inició una cadena de oración';
+  }
+
+  @override
+  String newsGroup(String name) {
+    return 'Nuevo grupo: $name';
+  }
+
+  @override
+  String get circleInfoGroups =>
+      'Una iglesia puede tener grupos (jóvenes, ministerios, grupos en casas); sus miembros se unen con un toque.';
+
+  @override
+  String get circleInfoApproval =>
+      'Quien crea el círculo puede hacer que los nuevos esperen hasta que un líder los deje entrar.';
+
+  @override
+  String get circleInfoPraise =>
+      'Las oraciones respondidas y los testimonios quedan un año en el muro de alabanza.';
+
+  @override
+  String get circleInfoChains =>
+      'Los líderes pueden iniciar cadenas de oración y días de ayuno. Toma un turno y tu teléfono te lo recordará.';
 }

@@ -15,10 +15,16 @@ Spring Boot 4 · Java 21 · PostgreSQL · Claude (`claude-opus-5-5`) · Firebase
 | GET | `/v1/counts` | none | Shared counts per item, plus how many people prayed today (worked out at most every 5 minutes) |
 | GET | `/v1/circles` | none (`X-Install-Id`) | The prayer circles this install is in |
 | POST | `/v1/circles` | none (`X-Install-Id`) | Start a circle `{name, memberName}`; answers with its invite code |
-| POST | `/v1/circles/join` | none (`X-Install-Id`) | Join with a code `{code, memberName}` (20 tries an hour) |
-| GET | `/v1/circles/{code}` | members | The circle: members and the last 60 days of requests |
-| POST | `/v1/circles/{code}/requests` | members | Share a prayer request `{text, forLeaders?, anonymous?}` |
-| POST | `/v1/circles/{code}/requests/{id}/prayed` · `answered` · `report` | members | I prayed · God answered (asker only) · report |
+| POST | `/v1/circles/join` | none (`X-Install-Id`) | Join with a code `{code, memberName}` (20 tries an hour); with approval on, wait to be let in |
+| GET | `/v1/circles/{code}` | members | The circle: members, the last 60 days of requests, the praise wall (a year), groups, prayer chains |
+| POST | `/v1/circles/{code}/requests` | members | Share a prayer request `{text, forLeaders?, anonymous?}`, a ready prayer `{prayerId, text?}`, a Bible verse `{verse, text?}` or a praise report `{text, praise: true}` |
+| POST | `/v1/circles/{code}/requests/{id}/prayed` · `answered` · `report` | members | I prayed · God answered, with `{testimony?}` (asker only) · report |
+| POST | `/v1/circles/{code}/groups` | owner or leader | Add a group `{name}` to a church's circle; its members join with the group's code, in one tap |
+| POST · DELETE | `/v1/circles/{code}/approval` | owner | New members wait to be let in · join straight away |
+| POST · DELETE | `/v1/circles/{code}/waiting/{id}` (`/approve`) | owner or leader | Let in · turn away (they can't ask again) |
+| POST | `/v1/circles/{code}/chains` | owner or leader | Start a prayer chain or fasting days `{title, startsAt, slotMinutes, slots}` |
+| DELETE | `/v1/circles/{code}/chains/{id}` | owner or leader | Delete a chain |
+| POST · DELETE | `/v1/circles/{code}/chains/{id}/turns/{slot}` | members | Take a turn · give it back (the app reminds its owner on the phone) |
 | POST · DELETE | `/v1/circles/{code}/requests/{id}/pin` | owner or leader | Pin as the circle's prayer focus (one at a time) · unpin |
 | DELETE | `/v1/circles/{code}/requests/{id}` | asker, owner or leader | Delete a request |
 | DELETE | `/v1/circles/{code}/members/{id}` | owner, or leader for members | Remove a member, with their requests; they can't rejoin |
