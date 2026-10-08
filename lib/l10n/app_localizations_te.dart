@@ -1001,4 +1001,72 @@ class AppLocalizationsTe extends AppLocalizations {
   String circleMembersOf(int count, int max) {
     return '$maxలో $count మంది సభ్యులు';
   }
+
+  @override
+  String get circleLeader => 'నాయకులు';
+
+  @override
+  String get circleMakeLeader => 'నాయకులుగా చేయండి';
+
+  @override
+  String get circleUnmakeLeader => 'నాయకత్వం తీసివేయండి';
+
+  @override
+  String get circlePin => 'ప్రార్థనాంశంగా పైన ఉంచండి';
+
+  @override
+  String get circleUnpin => 'పైనుండి తీసివేయండి';
+
+  @override
+  String get circlePinned => 'ప్రార్థనాంశం';
+
+  @override
+  String get circleInfoLeaders =>
+      'బృందాన్ని ప్రారంభించినవారు ఇతరులను నాయకులుగా చేయగలరు. నాయకులు ప్రార్థనాంశాన్ని పైన ఉంచగలరు, విన్నపాలను మరియు సభ్యులను తొలగించగలరు. నాయకులు పంచుకున్నవి రిపోర్ట్‌లతో తొలగించబడవు.';
+
+  @override
+  String newsJoinedMany(String name, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$name మరియు మరో $count మంది మీ బృందంలో చేరారు',
+      one: '$name మరియు మరొకరు మీ బృందంలో చేరారు',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleOnlyLeaders => 'నాయకులకు మాత్రమే';
+
+  @override
+  String get circleNoName => 'నా పేరు లేకుండా';
+
+  @override
+  String get circleSomeone => 'బృందంలో ఒకరు';
+
+  @override
+  String get circleForLeadersNote => 'దీన్ని నాయకులు మాత్రమే చూడగలరు';
+
+  @override
+  String get circleAnonymousNote => 'ఎవరు అడిగారో సభ్యులకు కనిపించదు';
+
+  @override
+  String get circleInfoPrivateRequests =>
+      'విన్నపాన్ని నాయకులతో మాత్రమే, లేదా మీ పేరు లేకుండా పంచుకోండి. మిమ్మల్ని చూసుకోవడానికి, ఎవరు అడిగారో నాయకులకు కనిపిస్తుంది.';
+
+  @override
+  String get newsCrisis => 'దయచేసి ఈరోజే సంప్రదించండి';
+
+  @override
+  String get newsReachOut => 'నేను సంప్రదిస్తాను';
+
+  @override
+  String get circleShowScreen => 'స్క్రీన్‌పై చూపించండి';
+
+  @override
+  String get circleScreenTitle => 'మా ప్రార్థనా బృందంలో చేరండి';
+
+  @override
+  String get circleScreenSteps =>
+      'ఫోన్ కెమెరాతో స్కాన్ చేయండి, లేదా JesusAnswers తెరిచి ప్రార్థన → ప్రార్థనా బృందాలు → కోడ్‌తో చేరండి నొక్కండి';
 }

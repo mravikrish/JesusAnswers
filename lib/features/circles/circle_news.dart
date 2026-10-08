@@ -57,7 +57,10 @@ class _CircleNewsPopupsState extends ConsumerState<CircleNewsPopups> with Widget
       final prayers = news.any((n) => n.prayerId != null)
           ? {for (final p in (await ref.read(prayerGroupsProvider.future)).expand((g) => g.prayers)) p.id: p}
           : const <String, Prayer>{};
-      for (final n in news.reversed.take(_maxPopups).toList().reversed) {
+      // A leader sees every crisis alert first, then the newest of the rest.
+      final crisis = news.where((n) => n.crisis);
+      final rest = news.where((n) => !n.crisis).toList().reversed.take(_maxPopups).toList().reversed;
+      for (final n in [...crisis, ...rest]) {
         if (!mounted) return;
         // Opened the circle: the rest is there to see.
         if (await _show(n, prayers[n.prayerId])) return;
@@ -79,43 +82,54 @@ class _CircleNewsPopupsState extends ConsumerState<CircleNewsPopups> with Widget
     final id = n.requestId;
     // A shared prayer this version of the app doesn't have: nothing to join.
     if (n.kind == CircleNewsKind.prayer && prayer == null) return false;
+    // Asked without a name.
+    final who = n.name.isEmpty ? l.circleSomeone : n.name;
 
     final (IconData icon, String title) = switch (n.kind) {
-      CircleNewsKind.request => (Icons.volunteer_activism_rounded, l.newsAsked(n.name)),
+      _ when n.crisis => (Icons.favorite_rounded, l.newsCrisis),
+      CircleNewsKind.request => (Icons.volunteer_activism_rounded, l.newsAsked(who)),
       CircleNewsKind.prayer => (prayer!.icon, l.newsShared(n.name)),
       CircleNewsKind.prayed => (
           Icons.favorite_rounded,
           n.prayerId == null ? l.newsPrayed(n.count) : l.newsJoinedPrayer(n.count),
         ),
-      CircleNewsKind.answered => (Icons.check_circle_rounded, l.newsAnswered(n.name)),
-      CircleNewsKind.joined => (Icons.group_add_rounded, l.newsJoined(n.name)),
+      CircleNewsKind.answered => (Icons.check_circle_rounded, l.newsAnswered(who)),
+      CircleNewsKind.joined => (
+          Icons.group_add_rounded,
+          n.count > 1 ? l.newsJoinedMany(n.name, n.count - 1) : l.newsJoined(n.name),
+        ),
     };
 
     // (label, primary, what it does once the popup closes)
     final actions = <(String, bool, Future<void> Function()?)>[
-      switch (n.kind) {
-        CircleNewsKind.request || CircleNewsKind.prayer => (l.newsLater, false, null),
-        _ => (l.newsOpen, false, () async => context.push('/circles/${n.circle}')),
-      },
-      switch (n.kind) {
-        CircleNewsKind.request => (l.circleIPrayed, true, () async => service.prayed(n.circle, id!)),
-        CircleNewsKind.prayer => (
-            l.circleJoinPrayer,
-            true,
-            () async {
-              final done = await context.push<bool>('/prayers/${n.prayerId}?along=1');
-              if (done == true) await service.prayed(n.circle, id!);
-            },
-          ),
-        _ => (l.newsAmen, true, null),
-      },
+      if (n.crisis) ...[
+        (l.newsOpen, false, () async => context.push('/circles/${n.circle}')),
+        (l.newsReachOut, true, null),
+      ] else ...[
+        switch (n.kind) {
+          CircleNewsKind.request || CircleNewsKind.prayer => (l.newsLater, false, null),
+          _ => (l.newsOpen, false, () async => context.push('/circles/${n.circle}')),
+        },
+        switch (n.kind) {
+          CircleNewsKind.request => (l.circleIPrayed, true, () async => service.prayed(n.circle, id!)),
+          CircleNewsKind.prayer => (
+              l.circleJoinPrayer,
+              true,
+              () async {
+                final done = await context.push<bool>('/prayers/${n.prayerId}?along=1');
+                if (done == true) await service.prayed(n.circle, id!);
+              },
+            ),
+          _ => (l.newsAmen, true, null),
+        },
+      ],
     ];
 
     final chosen = await showDialog<int>(
       context: context,
       builder: (ctx) => AlertDialog(
         backgroundColor: AppColors.ivoryCard,
-        icon: Icon(icon, color: AppColors.gold, size: 36),
+        icon: Icon(icon, color: n.crisis ? AppColors.heart : AppColors.gold, size: 36),
         title: Column(
           children: [
             Container(
@@ -145,9 +159,9 @@ class _CircleNewsPopupsState extends ConsumerState<CircleNewsPopups> with Widget
                   ],
                 ),
               ],
-              if (n.kind == CircleNewsKind.request && Safety.isCrisis(n.text)) ...[
+              if (n.crisis || (n.kind == CircleNewsKind.request && Safety.isCrisis(n.text))) ...[
                 const SizedBox(height: 12),
-                Text(l.circleReachOut(n.name),
+                Text(l.circleReachOut(who),
                     textAlign: TextAlign.center,
                     style: const TextStyle(color: AppColors.heart, fontWeight: FontWeight.w600)),
               ],

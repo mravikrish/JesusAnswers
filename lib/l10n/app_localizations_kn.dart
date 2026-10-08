@@ -999,4 +999,72 @@ class AppLocalizationsKn extends AppLocalizations {
   String circleMembersOf(int count, int max) {
     return '$max ರಲ್ಲಿ $count ಸದಸ್ಯರು';
   }
+
+  @override
+  String get circleLeader => 'ನಾಯಕರು';
+
+  @override
+  String get circleMakeLeader => 'ನಾಯಕರನ್ನಾಗಿ ಮಾಡಿ';
+
+  @override
+  String get circleUnmakeLeader => 'ನಾಯಕತ್ವ ತೆಗೆಯಿರಿ';
+
+  @override
+  String get circlePin => 'ಪ್ರಾರ್ಥನಾ ವಿಷಯವಾಗಿ ಮೇಲೆ ಇರಿಸಿ';
+
+  @override
+  String get circleUnpin => 'ಮೇಲಿನಿಂದ ತೆಗೆಯಿರಿ';
+
+  @override
+  String get circlePinned => 'ಪ್ರಾರ್ಥನಾ ವಿಷಯ';
+
+  @override
+  String get circleInfoLeaders =>
+      'ಗುಂಪನ್ನು ಪ್ರಾರಂಭಿಸಿದವರು ಇತರರನ್ನು ನಾಯಕರನ್ನಾಗಿ ಮಾಡಬಹುದು. ನಾಯಕರು ಪ್ರಾರ್ಥನಾ ವಿಷಯವನ್ನು ಮೇಲೆ ಇರಿಸಬಹುದು ಮತ್ತು ವಿನಂತಿಗಳನ್ನು ಹಾಗೂ ಸದಸ್ಯರನ್ನು ತೆಗೆದುಹಾಕಬಹುದು. ನಾಯಕರು ಹಂಚಿಕೊಂಡದ್ದು ವರದಿಗಳಿಂದ ತೆಗೆಯಲ್ಪಡುವುದಿಲ್ಲ.';
+
+  @override
+  String newsJoinedMany(String name, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$name ಮತ್ತು ಇನ್ನೂ $count ಜನ ನಿಮ್ಮ ಗುಂಪಿಗೆ ಸೇರಿದರು',
+      one: '$name ಮತ್ತು ಇನ್ನೂ 1 ಜನ ನಿಮ್ಮ ಗುಂಪಿಗೆ ಸೇರಿದರು',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleOnlyLeaders => 'ನಾಯಕರಿಗೆ ಮಾತ್ರ';
+
+  @override
+  String get circleNoName => 'ನನ್ನ ಹೆಸರಿಲ್ಲದೆ';
+
+  @override
+  String get circleSomeone => 'ಗುಂಪಿನ ಒಬ್ಬರು';
+
+  @override
+  String get circleForLeadersNote => 'ಇದನ್ನು ನಾಯಕರು ಮಾತ್ರ ನೋಡಬಹುದು';
+
+  @override
+  String get circleAnonymousNote => 'ಯಾರು ಕೇಳಿದರು ಎಂದು ಸದಸ್ಯರಿಗೆ ಕಾಣುವುದಿಲ್ಲ';
+
+  @override
+  String get circleInfoPrivateRequests =>
+      'ವಿನಂತಿಯನ್ನು ನಾಯಕರೊಂದಿಗೆ ಮಾತ್ರ, ಅಥವಾ ನಿಮ್ಮ ಹೆಸರಿಲ್ಲದೆ ಹಂಚಿಕೊಳ್ಳಿ. ನಿಮ್ಮನ್ನು ನೋಡಿಕೊಳ್ಳಲು, ಯಾರು ಕೇಳಿದರು ಎಂದು ನಾಯಕರಿಗೆ ಕಾಣುತ್ತದೆ.';
+
+  @override
+  String get newsCrisis => 'ದಯವಿಟ್ಟು ಇಂದೇ ಸಂಪರ್ಕಿಸಿ';
+
+  @override
+  String get newsReachOut => 'ನಾನು ಸಂಪರ್ಕಿಸುತ್ತೇನೆ';
+
+  @override
+  String get circleShowScreen => 'ಪರದೆಯ ಮೇಲೆ ತೋರಿಸಿ';
+
+  @override
+  String get circleScreenTitle => 'ನಮ್ಮ ಪ್ರಾರ್ಥನಾ ಗುಂಪಿಗೆ ಸೇರಿ';
+
+  @override
+  String get circleScreenSteps =>
+      'ಫೋನ್ ಕ್ಯಾಮೆರಾದಿಂದ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ, ಅಥವಾ JesusAnswers ತೆರೆದು ಪ್ರಾರ್ಥನೆ → ಪ್ರಾರ್ಥನಾ ಗುಂಪುಗಳು → ಕೋಡ್‌ನಿಂದ ಸೇರಿ ಒತ್ತಿ';
 }

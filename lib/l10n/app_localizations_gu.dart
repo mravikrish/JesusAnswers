@@ -992,4 +992,72 @@ class AppLocalizationsGu extends AppLocalizations {
   String circleMembersOf(int count, int max) {
     return '$maxમાંથી $count સભ્યો';
   }
+
+  @override
+  String get circleLeader => 'આગેવાન';
+
+  @override
+  String get circleMakeLeader => 'આગેવાન બનાવો';
+
+  @override
+  String get circleUnmakeLeader => 'આગેવાનપદ દૂર કરો';
+
+  @override
+  String get circlePin => 'પ્રાર્થના વિષય તરીકે ઉપર રાખો';
+
+  @override
+  String get circleUnpin => 'ઉપરથી હટાવો';
+
+  @override
+  String get circlePinned => 'પ્રાર્થના વિષય';
+
+  @override
+  String get circleInfoLeaders =>
+      'મંડળ શરૂ કરનાર બીજાઓને આગેવાન બનાવી શકે છે. આગેવાનો પ્રાર્થના વિષય ઉપર રાખી શકે છે અને વિનંતીઓ તથા સભ્યોને દૂર કરી શકે છે. આગેવાનોએ શેર કરેલું રિપોર્ટથી દૂર થતું નથી.';
+
+  @override
+  String newsJoinedMany(String name, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$name અને બીજા $count તમારા મંડળમાં જોડાયા',
+      one: '$name અને બીજા 1 તમારા મંડળમાં જોડાયા',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleOnlyLeaders => 'ફક્ત આગેવાનો';
+
+  @override
+  String get circleNoName => 'મારા નામ વગર';
+
+  @override
+  String get circleSomeone => 'મંડળમાંથી કોઈ';
+
+  @override
+  String get circleForLeadersNote => 'ફક્ત આગેવાનો આ જોઈ શકે છે';
+
+  @override
+  String get circleAnonymousNote => 'સભ્યો જોતા નથી કે કોણે માગ્યું';
+
+  @override
+  String get circleInfoPrivateRequests =>
+      'વિનંતી ફક્ત આગેવાનો સાથે, અથવા તમારા નામ વગર શેર કરો. આગેવાનો તો પણ જુએ છે કે કોણે માગ્યું, જેથી તેઓ તમારી સંભાળ રાખી શકે.';
+
+  @override
+  String get newsCrisis => 'કૃપા કરીને આજે જ સંપર્ક કરો';
+
+  @override
+  String get newsReachOut => 'હું સંપર્ક કરીશ';
+
+  @override
+  String get circleShowScreen => 'સ્ક્રીન પર બતાવો';
+
+  @override
+  String get circleScreenTitle => 'અમારા પ્રાર્થના મંડળમાં જોડાઓ';
+
+  @override
+  String get circleScreenSteps =>
+      'ફોનના કેમેરાથી સ્કેન કરો, અથવા JesusAnswers ખોલીને પ્રાર્થના → પ્રાર્થના મંડળ → કોડથી જોડાઓ પર ટેપ કરો';
 }

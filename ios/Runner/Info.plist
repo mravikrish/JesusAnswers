@@ -31,6 +31,18 @@
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>jesus_answers</string>
+	<!-- Prayer circle invites: jesusanswers://app/join/K7P3MX, from the QR code shown in church -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.jesusanswers.join</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>jesusanswers</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>

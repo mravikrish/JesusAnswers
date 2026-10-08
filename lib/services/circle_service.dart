@@ -32,18 +32,21 @@ class CircleSummary {
 }
 
 class CircleMember {
-  const CircleMember({required this.id, required this.name, this.owner = false, this.me = false});
+  const CircleMember({required this.id, required this.name, this.owner = false, this.leader = false, this.me = false});
 
   factory CircleMember.fromJson(Map<String, dynamic> j) => CircleMember(
     id: (j['id'] as num).toInt(),
     name: j['name'] as String,
     owner: j['owner'] == true,
+    leader: j['leader'] == true,
     me: j['me'] == true,
   );
 
   final int id;
   final String name;
-  final bool owner, me;
+
+  /// [leader]: made a leader by the owner (the owner isn't marked a leader).
+  final bool owner, leader, me;
 }
 
 class CircleRequest {
@@ -59,6 +62,10 @@ class CircleRequest {
     this.prayerId,
     this.hearts = 0,
     this.heartedByMe = false,
+    this.leader = false,
+    this.pinned = false,
+    this.forLeaders = false,
+    this.anonymous = false,
   });
 
   factory CircleRequest.fromJson(Map<String, dynamic> j) => CircleRequest(
@@ -73,6 +80,10 @@ class CircleRequest {
     prayerId: j['prayerId'] as String?,
     hearts: (j['hearts'] as num?)?.toInt() ?? 0,
     heartedByMe: j['heartedByMe'] == true,
+    leader: j['leader'] == true,
+    pinned: j['pinned'] == true,
+    forLeaders: j['forLeaders'] == true,
+    anonymous: j['anonymous'] == true,
   );
 
   final int id;
@@ -86,6 +97,21 @@ class CircleRequest {
   final String? prayerId;
   final int hearts;
   final bool heartedByMe;
+
+  /// Asked by the owner or a leader.
+  final bool leader;
+
+  /// The circle's prayer focus, shown first.
+  final bool pinned;
+
+  /// Only the owner and leaders see it (and the asker).
+  final bool forLeaders;
+
+  /// Asked without a name. For members [name] is then empty; the asker and leaders still see it.
+  final bool anonymous;
+
+  /// Who asked is hidden from the reader.
+  bool get nameHidden => name.isEmpty;
 }
 
 class CircleDetail {
@@ -93,6 +119,7 @@ class CircleDetail {
     required this.code,
     required this.name,
     this.owner = false,
+    this.leader = false,
     this.members = const [],
     this.requests = const [],
   });
@@ -101,6 +128,7 @@ class CircleDetail {
     code: j['code'] as String,
     name: j['name'] as String,
     owner: j['owner'] == true,
+    leader: j['leader'] == true,
     members: [for (final m in j['members'] as List? ?? const []) CircleMember.fromJson(m as Map<String, dynamic>)],
     requests: [for (final r in j['requests'] as List? ?? const []) CircleRequest.fromJson(r as Map<String, dynamic>)],
   );
@@ -109,9 +137,12 @@ class CircleDetail {
 
   /// The person started the circle (or it passed to them).
   final bool owner;
+
+  /// The person is the owner or a leader: can pin, delete requests and remove members.
+  final bool leader;
   final List<CircleMember> members;
 
-  /// Newest first.
+  /// The pinned one first, then newest first.
   final List<CircleRequest> requests;
 }
 
@@ -128,6 +159,7 @@ class CircleNews {
     this.text = '',
     this.prayerId,
     this.count = 0,
+    this.crisis = false,
   });
 
   /// Null for a kind this version of the app doesn't know.
@@ -143,6 +175,7 @@ class CircleNews {
       text: j['text'] as String? ?? '',
       prayerId: j['prayerId'] as String?,
       count: (j['count'] as num?)?.toInt() ?? 0,
+      crisis: j['crisis'] == true,
     );
   }
 
@@ -159,8 +192,11 @@ class CircleNews {
   final String text;
   final String? prayerId;
 
-  /// How many prayed ([CircleNewsKind.prayed]).
+  /// How many prayed ([CircleNewsKind.prayed]), or joined, the latest of them [name] ([CircleNewsKind.joined]).
   final int count;
+
+  /// For a leader: whoever asked may be thinking of ending their life. Shown before anything else.
+  final bool crisis;
 }
 
 /// [notAllowed]: taken out of the circle, or not theirs to change.
@@ -181,12 +217,14 @@ class CircleException implements Exception {
 ///   POST   /v1/circles            {name, memberName}  → CircleDetail
 ///   POST   /v1/circles/join       {code, memberName}  → CircleDetail
 ///   GET    /v1/circles/{code}                         → CircleDetail
-///   POST   /v1/circles/{code}/requests {text}         → CircleDetail
+///   POST   /v1/circles/{code}/requests {text, forLeaders?, anonymous?} → CircleDetail
 ///   POST   /v1/circles/{code}/requests {prayerId, text?} → CircleDetail (a ready prayer, with a note)
 ///   POST | DELETE /v1/circles/{code}/requests/{id}/heart → CircleDetail
 ///   POST   /v1/circles/{code}/requests/{id}/prayed | answered | report → CircleDetail
+///   POST | DELETE /v1/circles/{code}/requests/{id}/pin → CircleDetail (owner or leader)
 ///   DELETE /v1/circles/{code}/requests/{id}           → CircleDetail
-///   DELETE /v1/circles/{code}/members/{id}            → CircleDetail (owner only)
+///   DELETE /v1/circles/{code}/members/{id}            → CircleDetail (owner, or a leader for members)
+///   POST | DELETE /v1/circles/{code}/members/{id}/leader → CircleDetail (owner only)
 ///   POST   /v1/circles/{code}/leave                   → 204
 ///   GET    /v1/circles/news?since=…                   → {now, items: [CircleNews]}
 ///
@@ -201,7 +239,7 @@ class CircleService {
   final http.Client _client;
 
   /// The server's limits (backend CircleService), shown in "How prayer circles work".
-  static const maxMembers = 100, maxCircles = 20, keepDays = 60;
+  static const maxMembers = 500, maxCircles = 20, keepDays = 60;
 
   static const _listKey = 'circles';
   static const _newsKey = 'circleNewsSince';
@@ -229,7 +267,10 @@ class CircleService {
   }
 
   Future<void> markSeen(CircleDetail c) async {
-    final newest = c.requests.isEmpty ? null : c.requests.first.at.toUtc();
+    // Not simply the first: a pinned prayer focus comes first, however old.
+    final newest = c.requests.isEmpty
+        ? null
+        : c.requests.map((r) => r.at).reduce((a, b) => a.isAfter(b) ? a : b).toUtc();
     if (newest != null) await _prefs.setString(_seenKey(c.code), newest.toIso8601String());
   }
 
@@ -260,7 +301,16 @@ class CircleService {
 
   Future<CircleDetail> open(String code) => _detail('GET', '/$code');
 
-  Future<CircleDetail> ask(String code, String text) => _detail('POST', '/$code/requests', {'text': text});
+  /// [forLeaders]: only the owner and leaders will see it. [anonymous]: members won't see who asked.
+  Future<CircleDetail> ask(String code, String text, {bool forLeaders = false, bool anonymous = false}) =>
+      _detail('POST', '/$code/requests', {
+        'text': text,
+        if (forLeaders) 'forLeaders': true,
+        if (anonymous) 'anonymous': true,
+      });
+
+  /// What a QR code on the church's screen holds: scanned with a phone camera, it opens the app to join.
+  static String joinLink(String code) => 'jesusanswers://app/join/$code';
 
   Future<CircleDetail> sharePrayer(String code, String prayerId, String note) =>
       _detail('POST', '/$code/requests', {'prayerId': prayerId, 'text': note});
@@ -276,7 +326,13 @@ class CircleService {
 
   Future<CircleDetail> deleteRequest(String code, int request) => _detail('DELETE', '/$code/requests/$request');
 
+  Future<CircleDetail> pin(String code, int request, {required bool on}) =>
+      _detail(on ? 'POST' : 'DELETE', '/$code/requests/$request/pin');
+
   Future<CircleDetail> removeMember(String code, int member) => _detail('DELETE', '/$code/members/$member');
+
+  Future<CircleDetail> setLeader(String code, int member, {required bool on}) =>
+      _detail(on ? 'POST' : 'DELETE', '/$code/members/$member/leader');
 
   Future<void> leave(String code) async {
     await _call('POST', '/$code/leave');

@@ -997,4 +997,72 @@ class AppLocalizationsPa extends AppLocalizations {
   String circleMembersOf(int count, int max) {
     return '$max ਵਿੱਚੋਂ $count ਮੈਂਬਰ';
   }
+
+  @override
+  String get circleLeader => 'ਆਗੂ';
+
+  @override
+  String get circleMakeLeader => 'ਆਗੂ ਬਣਾਓ';
+
+  @override
+  String get circleUnmakeLeader => 'ਆਗੂ ਪਦ ਹਟਾਓ';
+
+  @override
+  String get circlePin => 'ਪ੍ਰਾਰਥਨਾ ਵਿਸ਼ੇ ਵਜੋਂ ਉੱਪਰ ਰੱਖੋ';
+
+  @override
+  String get circleUnpin => 'ਉੱਪਰੋਂ ਹਟਾਓ';
+
+  @override
+  String get circlePinned => 'ਪ੍ਰਾਰਥਨਾ ਵਿਸ਼ਾ';
+
+  @override
+  String get circleInfoLeaders =>
+      'ਮੰਡਲੀ ਸ਼ੁਰੂ ਕਰਨ ਵਾਲਾ ਹੋਰਾਂ ਨੂੰ ਆਗੂ ਬਣਾ ਸਕਦਾ ਹੈ। ਆਗੂ ਪ੍ਰਾਰਥਨਾ ਵਿਸ਼ਾ ਉੱਪਰ ਰੱਖ ਸਕਦੇ ਹਨ ਅਤੇ ਬੇਨਤੀਆਂ ਤੇ ਮੈਂਬਰਾਂ ਨੂੰ ਹਟਾ ਸਕਦੇ ਹਨ। ਆਗੂਆਂ ਦੀ ਸਾਂਝੀ ਕੀਤੀ ਗੱਲ ਰਿਪੋਰਟਾਂ ਨਾਲ ਨਹੀਂ ਹਟਦੀ।';
+
+  @override
+  String newsJoinedMany(String name, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$name ਅਤੇ $count ਹੋਰ ਤੁਹਾਡੀ ਮੰਡਲੀ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਏ',
+      one: '$name ਅਤੇ 1 ਹੋਰ ਤੁਹਾਡੀ ਮੰਡਲੀ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਏ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleOnlyLeaders => 'ਸਿਰਫ਼ ਆਗੂ';
+
+  @override
+  String get circleNoName => 'ਮੇਰੇ ਨਾਮ ਤੋਂ ਬਿਨਾਂ';
+
+  @override
+  String get circleSomeone => 'ਮੰਡਲੀ ਦਾ ਕੋਈ ਮੈਂਬਰ';
+
+  @override
+  String get circleForLeadersNote => 'ਇਹ ਸਿਰਫ਼ ਆਗੂ ਦੇਖ ਸਕਦੇ ਹਨ';
+
+  @override
+  String get circleAnonymousNote => 'ਮੈਂਬਰ ਨਹੀਂ ਦੇਖਦੇ ਕਿ ਕਿਸ ਨੇ ਮੰਗਿਆ';
+
+  @override
+  String get circleInfoPrivateRequests =>
+      'ਬੇਨਤੀ ਸਿਰਫ਼ ਆਗੂਆਂ ਨਾਲ, ਜਾਂ ਆਪਣੇ ਨਾਮ ਤੋਂ ਬਿਨਾਂ ਸਾਂਝੀ ਕਰੋ। ਆਗੂ ਫਿਰ ਵੀ ਦੇਖਦੇ ਹਨ ਕਿ ਕਿਸ ਨੇ ਮੰਗਿਆ, ਤਾਂ ਜੋ ਉਹ ਤੁਹਾਡੀ ਦੇਖਭਾਲ ਕਰ ਸਕਣ।';
+
+  @override
+  String get newsCrisis => 'ਕਿਰਪਾ ਕਰਕੇ ਅੱਜ ਹੀ ਸੰਪਰਕ ਕਰੋ';
+
+  @override
+  String get newsReachOut => 'ਜ਼ਰੂਰ';
+
+  @override
+  String get circleShowScreen => 'ਸਕ੍ਰੀਨ \'ਤੇ ਦਿਖਾਓ';
+
+  @override
+  String get circleScreenTitle => 'ਸਾਡੀ ਪ੍ਰਾਰਥਨਾ ਮੰਡਲੀ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ';
+
+  @override
+  String get circleScreenSteps =>
+      'ਫ਼ੋਨ ਦੇ ਕੈਮਰੇ ਨਾਲ ਸਕੈਨ ਕਰੋ, ਜਾਂ JesusAnswers ਖੋਲ੍ਹ ਕੇ ਪ੍ਰਾਰਥਨਾ → ਪ੍ਰਾਰਥਨਾ ਮੰਡਲੀ → ਕੋਡ ਨਾਲ ਸ਼ਾਮਲ ਹੋਵੋ \'ਤੇ ਟੈਪ ਕਰੋ';
 }

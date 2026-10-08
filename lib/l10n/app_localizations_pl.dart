@@ -997,4 +997,74 @@ class AppLocalizationsPl extends AppLocalizations {
   String circleMembersOf(int count, int max) {
     return 'Członkowie: $count z $max';
   }
+
+  @override
+  String get circleLeader => 'Lider';
+
+  @override
+  String get circleMakeLeader => 'Zrób liderem';
+
+  @override
+  String get circleUnmakeLeader => 'Odbierz rolę lidera';
+
+  @override
+  String get circlePin => 'Przypnij jako intencję modlitwy';
+
+  @override
+  String get circleUnpin => 'Odepnij';
+
+  @override
+  String get circlePinned => 'Intencja modlitwy';
+
+  @override
+  String get circleInfoLeaders =>
+      'Założyciel kręgu może wyznaczać liderów. Liderzy mogą przypiąć intencję modlitwy na górze oraz usuwać prośby i członków. Zgłoszenia nie usuwają tego, co udostępniają liderzy.';
+
+  @override
+  String newsJoinedMany(String name, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$name i $count innej osoby dołącza do twojego kręgu',
+      many: '$name i $count innych osób dołącza do twojego kręgu',
+      few: '$name i $count inne osoby dołączają do twojego kręgu',
+      one: '$name i 1 inna osoba dołączają do twojego kręgu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleOnlyLeaders => 'Tylko liderzy';
+
+  @override
+  String get circleNoName => 'Bez mojego imienia';
+
+  @override
+  String get circleSomeone => 'Ktoś z kręgu';
+
+  @override
+  String get circleForLeadersNote => 'Widzą to tylko liderzy';
+
+  @override
+  String get circleAnonymousNote => 'Członkowie nie widzą, kto prosi';
+
+  @override
+  String get circleInfoPrivateRequests =>
+      'Udostępnij prośbę tylko liderom albo bez swojego imienia. Liderzy i tak widzą, kto prosi, aby mogli się o ciebie zatroszczyć.';
+
+  @override
+  String get newsCrisis => 'Odezwij się dziś';
+
+  @override
+  String get newsReachOut => 'Odezwę się';
+
+  @override
+  String get circleShowScreen => 'Pokaż na ekranie';
+
+  @override
+  String get circleScreenTitle => 'Dołącz do naszego kręgu modlitwy';
+
+  @override
+  String get circleScreenSteps =>
+      'Zeskanuj aparatem telefonu albo otwórz JesusAnswers i stuknij Modlitwa → Kręgi modlitwy → Dołącz kodem';
 }

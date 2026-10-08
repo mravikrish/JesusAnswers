@@ -58,7 +58,8 @@ class SoftCard extends StatelessWidget {
           border: Border.all(color: AppColors.sand),
           boxShadow: const [BoxShadow(color: Color(0x0F000000), blurRadius: 16, offset: Offset(0, 6))],
         ),
-        child: child,
+        // So list tiles and buttons inside show their ripples on the card, not under it.
+        child: Material(type: MaterialType.transparency, child: child),
       );
 }
 

@@ -9,6 +9,7 @@ import 'core/widgets/app_shell.dart';
 import 'data/models/answer.dart';
 import 'features/answer/answer_screen.dart';
 import 'features/bible/bible_screen.dart';
+import 'features/circles/circle_show_screen.dart';
 import 'features/circles/circles_screen.dart';
 import 'features/daily_word/daily_word_screen.dart';
 import 'features/feedback/feedback_screen.dart';
@@ -82,6 +83,24 @@ final routerProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(path: '/circles', builder: (_, _) => const CirclesScreen()),
       GoRoute(path: '/circles/:code', builder: (_, state) => CircleScreen(code: state.pathParameters['code']!)),
+      // The invite on the church's screen: ?name= is the circle's name.
+      GoRoute(
+        path: '/circles/:code/screen',
+        builder: (_, state) => CircleShowScreen(
+          code: state.pathParameters['code']!,
+          name: state.uri.queryParameters['name'] ?? '',
+        ),
+      ),
+      // jesusanswers://app/join/K7P3MX, from the QR code on that screen: Join, with the code filled in.
+      // Someone who hasn't set up the app yet does that first.
+      GoRoute(
+        path: '/join/:code',
+        redirect: (_, _) {
+          final s = ref.read(settingsProvider);
+          return s.languageChosen && s.onboarded ? null : '/splash';
+        },
+        builder: (_, state) => CirclesScreen(joinCode: state.pathParameters['code']),
+      ),
       GoRoute(path: '/stories', builder: (_, _) => const StoriesScreen()),
       GoRoute(path: '/stories/:id', builder: (_, state) => StoryScreen(id: state.pathParameters['id']!)),
       GoRoute(path: '/jesus', builder: (_, _) => const JesusWordsScreen()),

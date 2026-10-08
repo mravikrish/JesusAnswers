@@ -1008,4 +1008,72 @@ class AppLocalizationsEn extends AppLocalizations {
   String circleMembersOf(int count, int max) {
     return '$count of $max members';
   }
+
+  @override
+  String get circleLeader => 'Leader';
+
+  @override
+  String get circleMakeLeader => 'Make a leader';
+
+  @override
+  String get circleUnmakeLeader => 'No longer a leader';
+
+  @override
+  String get circlePin => 'Pin as prayer focus';
+
+  @override
+  String get circleUnpin => 'Unpin';
+
+  @override
+  String get circlePinned => 'Prayer focus';
+
+  @override
+  String get circleInfoLeaders =>
+      'Whoever starts a circle can make others leaders. Leaders can pin a prayer focus to the top and remove requests and members. Reports can\'t remove what leaders share.';
+
+  @override
+  String newsJoinedMany(String name, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$name and $count others joined your circle',
+      one: '$name and 1 other joined your circle',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleOnlyLeaders => 'Only leaders';
+
+  @override
+  String get circleNoName => 'Without my name';
+
+  @override
+  String get circleSomeone => 'Someone in the circle';
+
+  @override
+  String get circleForLeadersNote => 'Only leaders can see this';
+
+  @override
+  String get circleAnonymousNote => 'Members don\'t see who asked';
+
+  @override
+  String get circleInfoPrivateRequests =>
+      'Share a request only with the leaders, or without your name. The leaders still see who asked, so they can care for you.';
+
+  @override
+  String get newsCrisis => 'Please reach out today';
+
+  @override
+  String get newsReachOut => 'I\'ll reach out';
+
+  @override
+  String get circleShowScreen => 'Show on a screen';
+
+  @override
+  String get circleScreenTitle => 'Join our prayer circle';
+
+  @override
+  String get circleScreenSteps =>
+      'Scan with your phone\'s camera, or open JesusAnswers and tap Pray → Prayer Circles → Join with a code';
 }

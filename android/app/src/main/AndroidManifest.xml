@@ -32,6 +32,13 @@
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+            <!-- Prayer circle invites: jesusanswers://app/join/K7P3MX, from the QR code shown in church -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="jesusanswers" android:host="app"/>
+            </intent-filter>
         </activity>
         <!-- flutter_local_notifications: deliver scheduled reminders and restore them after reboot -->
         <receiver android:exported="false" android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />

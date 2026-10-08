@@ -17,10 +17,12 @@ Spring Boot 4 · Java 21 · PostgreSQL · Claude (`claude-opus-5-5`) · Firebase
 | POST | `/v1/circles` | none (`X-Install-Id`) | Start a circle `{name, memberName}`; answers with its invite code |
 | POST | `/v1/circles/join` | none (`X-Install-Id`) | Join with a code `{code, memberName}` (20 tries an hour) |
 | GET | `/v1/circles/{code}` | members | The circle: members and the last 60 days of requests |
-| POST | `/v1/circles/{code}/requests` | members | Share a prayer request `{text}` |
+| POST | `/v1/circles/{code}/requests` | members | Share a prayer request `{text, forLeaders?, anonymous?}` |
 | POST | `/v1/circles/{code}/requests/{id}/prayed` · `answered` · `report` | members | I prayed · God answered (asker only) · report |
-| DELETE | `/v1/circles/{code}/requests/{id}` | asker or owner | Delete a request |
-| DELETE | `/v1/circles/{code}/members/{id}` | owner | Remove a member, with their requests; they can't rejoin |
+| POST · DELETE | `/v1/circles/{code}/requests/{id}/pin` | owner or leader | Pin as the circle's prayer focus (one at a time) · unpin |
+| DELETE | `/v1/circles/{code}/requests/{id}` | asker, owner or leader | Delete a request |
+| DELETE | `/v1/circles/{code}/members/{id}` | owner, or leader for members | Remove a member, with their requests; they can't rejoin |
+| POST · DELETE | `/v1/circles/{code}/members/{id}/leader` | owner | Make a member a leader · no longer a leader |
 | POST | `/v1/circles/{code}/leave` | members | Leave, taking your requests with you |
 | GET | `/v1/voice-sources` | none | Where the app downloads natural voices from (`VOICE_SOURCES`) |
 | GET | `/actuator/health` | none | Health check |
@@ -53,7 +55,13 @@ to trade quality for cost or speed. Measure on real questions in each language b
   install id (`COMMUNITY_SALT`). Prayed / listened count once per install, item and day; reactions are rate-limited.
 - Prayer circles have no accounts either: a member is the same salted install-id hash, plus the name they chose.
   Requests are encrypted like the journey, only members can read them, and they're deleted after 60 days, when
-  the asker leaves, or when 3 members (or half the others) report them. Non-members get 404 for any circle.
+  the asker leaves, or when 3 members (or half the others) report them — except the owner's and leaders', which
+  reports only hide for the reporter. Non-members get 404 for any circle. A request can be for the owner and
+  leaders only, or anonymous (members get no name; the owner and leaders still see who asked). Requests are
+  checked with `Safety.isCrisis` when shared, and the owner and leaders get a crisis alert in `/news` that is
+  never crowded out. Up to 500 members, so a whole church fits;
+  changes are limited per install (120 an hour), and only loosely per address (3,000), since a church's phones
+  share one address on its Wi-Fi.
 - User messages and replies are **never logged**; only token counts are.
 - Host the database and API in an Indian region (e.g. GCP/AWS Mumbai) to keep data in India under the DPDP Act.
 

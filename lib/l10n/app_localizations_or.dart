@@ -1001,4 +1001,72 @@ class AppLocalizationsOr extends AppLocalizations {
   String circleMembersOf(int count, int max) {
     return '$maxରୁ $count ସଦସ୍ୟ';
   }
+
+  @override
+  String get circleLeader => 'ନେତା';
+
+  @override
+  String get circleMakeLeader => 'ନେତା କରନ୍ତୁ';
+
+  @override
+  String get circleUnmakeLeader => 'ନେତା ପଦ ହଟାନ୍ତୁ';
+
+  @override
+  String get circlePin => 'ପ୍ରାର୍ଥନା ବିଷୟ ଭାବେ ଉପରେ ରଖନ୍ତୁ';
+
+  @override
+  String get circleUnpin => 'ଉପରୁ ହଟାନ୍ତୁ';
+
+  @override
+  String get circlePinned => 'ପ୍ରାର୍ଥନା ବିଷୟ';
+
+  @override
+  String get circleInfoLeaders =>
+      'ମଣ୍ଡଳୀ ଆରମ୍ଭକାରୀ ଅନ୍ୟମାନଙ୍କୁ ନେତା କରିପାରିବେ। ନେତାମାନେ ପ୍ରାର୍ଥନା ବିଷୟ ଉପରେ ରଖିପାରିବେ ଏବଂ ନିବେଦନ ଓ ସଦସ୍ୟଙ୍କୁ ହଟାଇପାରିବେ। ନେତାମାନେ ସେୟାର କରିଥିବା ରିପୋର୍ଟ ଦ୍ୱାରା ହଟେ ନାହିଁ।';
+
+  @override
+  String newsJoinedMany(String name, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$name ଓ ଆଉ $count ଜଣ ଆପଣଙ୍କ ମଣ୍ଡଳୀରେ ଯୋଗ ଦେଲେ',
+      one: '$name ଓ ଆଉ 1 ଜଣ ଆପଣଙ୍କ ମଣ୍ଡଳୀରେ ଯୋଗ ଦେଲେ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleOnlyLeaders => 'କେବଳ ନେତା';
+
+  @override
+  String get circleNoName => 'ମୋ ନାମ ବିନା';
+
+  @override
+  String get circleSomeone => 'ମଣ୍ଡଳୀର ଜଣେ';
+
+  @override
+  String get circleForLeadersNote => 'କେବଳ ନେତାମାନେ ଏହା ଦେଖିପାରିବେ';
+
+  @override
+  String get circleAnonymousNote => 'କିଏ ମାଗିଲେ ସଦସ୍ୟମାନେ ଦେଖନ୍ତି ନାହିଁ';
+
+  @override
+  String get circleInfoPrivateRequests =>
+      'ନିବେଦନ କେବଳ ନେତାମାନଙ୍କ ସହ, କିମ୍ବା ନାମ ବିନା ସେୟାର କରନ୍ତୁ। ଆପଣଙ୍କ ଯତ୍ନ ନେବା ପାଇଁ ନେତାମାନେ କିଏ ମାଗିଲେ ଦେଖିପାରନ୍ତି।';
+
+  @override
+  String get newsCrisis => 'ଦୟାକରି ଆଜି ହିଁ ଯୋଗାଯୋଗ କରନ୍ତୁ';
+
+  @override
+  String get newsReachOut => 'ମୁଁ ଯୋଗାଯୋଗ କରିବି';
+
+  @override
+  String get circleShowScreen => 'ସ୍କ୍ରିନରେ ଦେଖାନ୍ତୁ';
+
+  @override
+  String get circleScreenTitle => 'ଆମ ପ୍ରାର୍ଥନା ମଣ୍ଡଳୀରେ ଯୋଗ ଦିଅନ୍ତୁ';
+
+  @override
+  String get circleScreenSteps =>
+      'ଫୋନ୍ କ୍ୟାମେରାରେ ସ୍କାନ୍ କରନ୍ତୁ, କିମ୍ବା JesusAnswers ଖୋଲି ପ୍ରାର୍ଥନା → ପ୍ରାର୍ଥନା ମଣ୍ଡଳୀ → କୋଡ୍ ଦ୍ୱାରା ଯୋଗ ଦିଅନ୍ତୁ ଟ୍ୟାପ୍ କରନ୍ତୁ';
 }

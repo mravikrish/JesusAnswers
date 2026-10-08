@@ -997,4 +997,72 @@ class AppLocalizationsBn extends AppLocalizations {
   String circleMembersOf(int count, int max) {
     return '$max জনের মধ্যে $count জন সদস্য';
   }
+
+  @override
+  String get circleLeader => 'নেতা';
+
+  @override
+  String get circleMakeLeader => 'নেতা করুন';
+
+  @override
+  String get circleUnmakeLeader => 'নেতার পদ সরান';
+
+  @override
+  String get circlePin => 'প্রার্থনার বিষয় হিসেবে উপরে রাখুন';
+
+  @override
+  String get circleUnpin => 'উপর থেকে সরান';
+
+  @override
+  String get circlePinned => 'প্রার্থনার বিষয়';
+
+  @override
+  String get circleInfoLeaders =>
+      'যিনি দল শুরু করেন তিনি অন্যদের নেতা করতে পারেন। নেতারা প্রার্থনার বিষয় উপরে রাখতে এবং অনুরোধ ও সদস্য সরাতে পারেন। নেতাদের শেয়ার করা কিছু রিপোর্টে সরানো হয় না।';
+
+  @override
+  String newsJoinedMany(String name, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$name ও আরও $count জন আপনার দলে যোগ দিয়েছেন',
+      one: '$name ও আরও 1 জন আপনার দলে যোগ দিয়েছেন',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleOnlyLeaders => 'শুধু নেতারা';
+
+  @override
+  String get circleNoName => 'আমার নাম ছাড়া';
+
+  @override
+  String get circleSomeone => 'দলের একজন';
+
+  @override
+  String get circleForLeadersNote => 'শুধু নেতারা এটি দেখতে পান';
+
+  @override
+  String get circleAnonymousNote => 'সদস্যরা দেখেন না কে চেয়েছেন';
+
+  @override
+  String get circleInfoPrivateRequests =>
+      'অনুরোধ শুধু নেতাদের সাথে, বা নাম ছাড়া শেয়ার করুন। নেতারা তবুও দেখেন কে চেয়েছেন, যাতে তাঁরা আপনার যত্ন নিতে পারেন।';
+
+  @override
+  String get newsCrisis => 'আজই যোগাযোগ করুন';
+
+  @override
+  String get newsReachOut => 'আমি যোগাযোগ করব';
+
+  @override
+  String get circleShowScreen => 'স্ক্রিনে দেখান';
+
+  @override
+  String get circleScreenTitle => 'আমাদের প্রার্থনা দলে যোগ দিন';
+
+  @override
+  String get circleScreenSteps =>
+      'ফোনের ক্যামেরা দিয়ে স্ক্যান করুন, অথবা JesusAnswers খুলে প্রার্থনা → প্রার্থনা দল → কোড দিয়ে যোগ দিন-এ ট্যাপ করুন';
 }

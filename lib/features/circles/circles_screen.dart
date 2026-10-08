@@ -127,6 +127,8 @@ class CircleRules extends StatelessWidget {
       (Icons.lock_rounded, l.circleInfoPrivate),
       (Icons.schedule_rounded, l.circleInfoDays(CircleService.keepDays)),
       (Icons.person_remove_rounded, l.circleInfoOwner),
+      (Icons.push_pin_rounded, l.circleInfoLeaders),
+      (Icons.visibility_off_rounded, l.circleInfoPrivateRequests),
       (Icons.flag_rounded, l.circleInfoReport),
       (Icons.logout_rounded, l.circleInfoLeave),
       (Icons.notifications_active_rounded, l.circleInfoPopups),
@@ -152,7 +154,10 @@ class CircleRules extends StatelessWidget {
 
 /// Prayer Circles — the circles the person is in, and starting or joining one with a code.
 class CirclesScreen extends ConsumerStatefulWidget {
-  const CirclesScreen({super.key});
+  const CirclesScreen({super.key, this.joinCode});
+
+  /// Opened from an invite's QR code: asks to join this circle straight away.
+  final String? joinCode;
 
   @override
   ConsumerState<CirclesScreen> createState() => _CirclesScreenState();
@@ -167,6 +172,8 @@ class _CirclesScreenState extends ConsumerState<CirclesScreen> {
   void initState() {
     super.initState();
     _load();
+    final code = widget.joinCode;
+    if (code != null) WidgetsBinding.instance.addPostFrameCallback((_) => _join(code: code));
   }
 
   Future<void> _load() async {
@@ -204,12 +211,14 @@ class _CirclesScreenState extends ConsumerState<CirclesScreen> {
     await _run(() => ref.read(circleServiceProvider).create(answer.$1, answer.$2));
   }
 
-  Future<void> _join() async {
+  /// [code]: from an invite's QR code, filled in.
+  Future<void> _join({String? code}) async {
     final l = AppLocalizations.of(context);
     final answer = await _askTwo(
       context,
       title: l.circleJoin,
       first: (l.circleCode, 'K7P-3MX', 7, TextCapitalization.characters),
+      firstValue: code == null ? '' : CircleService.showCode(code.toUpperCase()),
       second: (l.circleYourName, l.circleYourNameHint, 40, TextCapitalization.words),
       secondValue: ref.read(settingsProvider).name,
       action: l.circleJoin,
@@ -241,6 +250,10 @@ class _CirclesScreenState extends ConsumerState<CirclesScreen> {
     final service = ref.read(circleServiceProvider);
     return Scaffold(
       appBar: AppBar(
+        // Opened straight from an invite link, with nothing to go back to.
+        leading: Navigator.of(context).canPop()
+            ? null
+            : IconButton(icon: const Icon(Icons.home_rounded), onPressed: () => context.go('/home')),
         title: Text(l.circlesTitle, style: AppText.serif(24, weight: FontWeight.w600)),
         bottom: _loading
             ? const PreferredSize(preferredSize: Size.fromHeight(2), child: LinearProgressIndicator(minHeight: 2))
@@ -349,6 +362,9 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
   Object? _error;
   bool _busy = false;
 
+  /// For the next request: only leaders will see it; members won't see who asked.
+  bool _forLeaders = false, _anonymous = false;
+
   CircleService get _service => ref.read(circleServiceProvider);
 
   @override
@@ -398,8 +414,9 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
     final text = _text.text.trim();
     if (text.isEmpty) return;
     FocusScope.of(context).unfocus();
-    if (!await _change(() => _service.ask(widget.code, text))) return;
+    if (!await _change(() => _service.ask(widget.code, text, forLeaders: _forLeaders, anonymous: _anonymous))) return;
     _text.clear();
+    setState(() => _forLeaders = _anonymous = false);
     // Helplines first for someone who may be at risk, as everywhere else in the app.
     if (Safety.isCrisis(text) && mounted) {
       await showDialog<void>(
@@ -470,6 +487,9 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
       _say(context, AppLocalizations.of(context).circleAnsweredThanks);
     }
   }
+
+  void _showOnScreen(CircleDetail c) =>
+      context.push('/circles/${c.code}/screen?name=${Uri.encodeQueryComponent(c.name)}');
 
   void _invite(CircleDetail c) {
     final l = AppLocalizations.of(context);
@@ -565,23 +585,49 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
                 ListTile(
                   leading: _Initial(m.name),
                   title: Text(m.me ? '${m.name} (${l.circleYou})' : m.name),
-                  subtitle: m.owner ? Text(l.circleOwner) : null,
-                  trailing: c.owner && !m.me
-                      ? IconButton(
-                          tooltip: l.circleRemoveMember,
-                          icon: const Icon(Icons.person_remove_rounded, color: AppColors.inkSoft),
-                          onPressed: () async {
-                            if (!await _confirm(l.circleRemoveConfirm(m.name), l.circleRemoveMember)) return;
-                            if (ctx.mounted) Navigator.pop(ctx);
-                            await _change(() => _service.removeMember(c.code, m.id));
-                          },
-                        )
-                      : null,
+                  subtitle: m.owner
+                      ? Text(l.circleOwner)
+                      : m.leader
+                          ? Text(l.circleLeader, style: const TextStyle(color: AppColors.ember, fontWeight: FontWeight.w600))
+                          : null,
+                  trailing: _memberMenu(ctx, c, m),
                 ),
             ],
           ),
         ),
       ),
+    );
+  }
+
+  /// What the reader may do to [m]: the owner can make or unmake leaders and remove anyone; a leader can
+  /// remove members who aren't the owner or another leader. Null when nothing.
+  Widget? _memberMenu(BuildContext sheet, CircleDetail c, CircleMember m) {
+    final l = AppLocalizations.of(context);
+    if (m.me || m.owner || !c.leader || (!c.owner && m.leader)) return null;
+    Future<void> remove() async {
+      if (!await _confirm(l.circleRemoveConfirm(m.name), l.circleRemoveMember)) return;
+      if (sheet.mounted) Navigator.pop(sheet);
+      await _change(() => _service.removeMember(c.code, m.id));
+    }
+
+    if (!c.owner) {
+      return IconButton(
+        tooltip: l.circleRemoveMember,
+        icon: const Icon(Icons.person_remove_rounded, color: AppColors.inkSoft),
+        onPressed: remove,
+      );
+    }
+    return PopupMenuButton<String>(
+      icon: const Icon(Icons.more_vert_rounded, color: AppColors.inkSoft),
+      onSelected: (v) async {
+        if (v == 'remove') return remove();
+        if (sheet.mounted) Navigator.pop(sheet);
+        await _change(() => _service.setLeader(c.code, m.id, on: !m.leader));
+      },
+      itemBuilder: (_) => [
+        PopupMenuItem(value: 'leader', child: Text(m.leader ? l.circleUnmakeLeader : l.circleMakeLeader)),
+        PopupMenuItem(value: 'remove', child: Text(l.circleRemoveMember)),
+      ],
     );
   }
 
@@ -601,6 +647,7 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
             PopupMenuButton<String>(
               onSelected: (v) => switch (v) {
                 'members' => _members(c),
+                'screen' => _showOnScreen(c),
                 'rules' => _rules(),
                 _ => _leave(),
               },
@@ -609,6 +656,7 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
                   value: 'members',
                   child: Text('${l.circleMembersTitle} (${c.members.length}/${CircleService.maxMembers})'),
                 ),
+                PopupMenuItem(value: 'screen', child: Text(l.circleShowScreen)),
                 PopupMenuItem(value: 'rules', child: Text(l.circleInfoTitle)),
                 PopupMenuItem(value: 'leave', child: Text(l.circleLeave)),
               ],
@@ -644,7 +692,12 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
               child: ListView(
                 padding: const EdgeInsets.fromLTRB(20, 4, 20, 32),
                 children: [
-                  _InviteCard(code: c.code, members: c.members.length, onInvite: () => _invite(c)),
+                  _InviteCard(
+                    code: c.code,
+                    members: c.members.length,
+                    onInvite: () => _invite(c),
+                    onShow: () => _showOnScreen(c),
+                  ),
                   const SizedBox(height: 16),
                   TextField(
                     controller: _text,
@@ -662,6 +715,24 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
                         onPressed: _busy || _text.text.trim().isEmpty ? null : _ask,
                       ),
                     ),
+                  ),
+                  // Some requests are too personal for the whole church.
+                  Wrap(
+                    spacing: 8,
+                    children: [
+                      FilterChip(
+                        avatar: const Icon(Icons.lock_rounded, size: 18, color: AppColors.ember),
+                        label: Text(l.circleOnlyLeaders),
+                        selected: _forLeaders,
+                        onSelected: (v) => setState(() => _forLeaders = v),
+                      ),
+                      FilterChip(
+                        avatar: const Icon(Icons.visibility_off_rounded, size: 18, color: AppColors.ember),
+                        label: Text(l.circleNoName),
+                        selected: _anonymous,
+                        onSelected: (v) => setState(() => _anonymous = v),
+                      ),
+                    ],
                   ),
                   Align(
                     alignment: AlignmentDirectional.centerStart,
@@ -682,8 +753,9 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
                   for (final r in c.requests) ...[
                     _RequestCard(
                       request: r,
-                      owner: c.owner,
+                      lead: c.leader,
                       busy: _busy,
+                      onPin: () => _change(() => _service.pin(c.code, r.id, on: !r.pinned)),
                       onPrayed: () => r.prayerId == null ? _change(() => _service.prayed(c.code, r.id)) : _joinPrayer(r),
                       onHeart: () => _change(() => _service.heart(c.code, r.id, on: !r.heartedByMe)),
                       onAnswered: () => _answered(r),
@@ -704,10 +776,10 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
 }
 
 class _InviteCard extends StatelessWidget {
-  const _InviteCard({required this.code, required this.members, required this.onInvite});
+  const _InviteCard({required this.code, required this.members, required this.onInvite, required this.onShow});
   final String code;
   final int members;
-  final VoidCallback onInvite;
+  final VoidCallback onInvite, onShow;
 
   @override
   Widget build(BuildContext context) {
@@ -730,6 +802,11 @@ class _InviteCard extends StatelessWidget {
               ],
             ),
           ),
+          IconButton(
+            tooltip: l.circleShowScreen,
+            icon: const Icon(Icons.qr_code_2_rounded, color: AppColors.ember, size: 30),
+            onPressed: onShow,
+          ),
           FilledButton.icon(
             style: FilledButton.styleFrom(
               minimumSize: const Size(0, 46),
@@ -749,8 +826,9 @@ class _InviteCard extends StatelessWidget {
 class _RequestCard extends ConsumerWidget {
   const _RequestCard({
     required this.request,
-    required this.owner,
+    required this.lead,
     required this.busy,
+    required this.onPin,
     required this.onPrayed,
     required this.onHeart,
     required this.onAnswered,
@@ -760,10 +838,10 @@ class _RequestCard extends ConsumerWidget {
 
   final CircleRequest request;
 
-  /// The reader started the circle, so can remove any request.
-  final bool owner;
+  /// The reader is the circle's owner or a leader, so can pin and remove any request.
+  final bool lead;
   final bool busy;
-  final VoidCallback onPrayed, onHeart, onAnswered, onDelete, onReport;
+  final VoidCallback onPin, onPrayed, onHeart, onAnswered, onDelete, onReport;
 
   String _when(BuildContext context) {
     final at = request.at;
@@ -787,24 +865,51 @@ class _RequestCard extends ConsumerWidget {
         ? ref.watch(prayerGroupsProvider).value?.expand((g) => g.prayers).where((p) => p.id == r.prayerId).firstOrNull
         : null;
     final menu = [
+      if (lead) ('pin', r.pinned ? l.circleUnpin : l.circlePin, onPin),
       if (r.mine && !r.answered && !shared) ('answered', l.circleMarkAnswered, onAnswered),
-      if (r.mine || owner) ('delete', l.circleDelete, onDelete),
+      if (r.mine || lead) ('delete', l.circleDelete, onDelete),
       if (!r.mine) ('report', l.circleReport, onReport),
     ];
-    return SoftCard(
+    final card = SoftCard(
       padding: const EdgeInsets.fromLTRB(16, 12, 8, 10),
       color: r.answered ? const Color(0xFFFFF4D6) : null,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          if (r.pinned)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: Row(children: [
+                const Icon(Icons.push_pin_rounded, size: 16, color: AppColors.ember),
+                const SizedBox(width: 6),
+                Text(l.circlePinned.toUpperCase(),
+                    style: const TextStyle(
+                        fontSize: 12, fontWeight: FontWeight.w800, letterSpacing: 1, color: AppColors.ember)),
+              ]),
+            ),
           Row(
             children: [
-              _Initial(r.name),
+              _Initial(r.nameHidden ? '?' : r.name),
               const SizedBox(width: 10),
               Expanded(
                 child: Text.rich(
                   TextSpan(children: [
-                    TextSpan(text: r.mine ? l.circleYou : r.name, style: const TextStyle(fontWeight: FontWeight.w700)),
+                    TextSpan(
+                      text: r.mine ? l.circleYou : (r.nameHidden ? l.circleSomeone : r.name),
+                      style: const TextStyle(fontWeight: FontWeight.w700),
+                    ),
+                    if (r.leader)
+                      WidgetSpan(
+                        alignment: PlaceholderAlignment.middle,
+                        child: Container(
+                          margin: const EdgeInsetsDirectional.only(start: 6),
+                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 1),
+                          decoration: BoxDecoration(color: AppColors.gold, borderRadius: BorderRadius.circular(8)),
+                          child: Text(l.circleLeader,
+                              style: const TextStyle(
+                                  fontSize: 11, fontWeight: FontWeight.w700, color: AppColors.midnight)),
+                        ),
+                      ),
                     TextSpan(text: '  ·  ${_when(context)}', style: const TextStyle(color: AppColors.inkSoft, fontSize: 13)),
                   ]),
                 ),
@@ -820,6 +925,20 @@ class _RequestCard extends ConsumerWidget {
                 ),
             ],
           ),
+          // Who can see this, for the asker and the leaders (members never see these).
+          for (final (show, icon, text) in [
+            (r.forLeaders, Icons.lock_rounded, l.circleForLeadersNote),
+            (r.anonymous && !r.nameHidden, Icons.visibility_off_rounded, l.circleAnonymousNote),
+          ])
+            if (show)
+              Padding(
+                padding: const EdgeInsets.only(top: 6),
+                child: Row(children: [
+                  Icon(icon, size: 15, color: AppColors.inkSoft),
+                  const SizedBox(width: 6),
+                  Flexible(child: Text(text, style: const TextStyle(fontSize: 13, color: AppColors.inkSoft))),
+                ]),
+              ),
           if (shared) ...[
             if (r.text.isNotEmpty)
               Padding(
@@ -873,7 +992,7 @@ class _RequestCard extends ConsumerWidget {
           if (!r.mine && Safety.isCrisis(r.text))
             Padding(
               padding: const EdgeInsets.only(top: 6, right: 8),
-              child: Text(l.circleReachOut(r.name),
+              child: Text(l.circleReachOut(r.nameHidden ? l.circleSomeone : r.name),
                   style: const TextStyle(color: AppColors.heart, fontWeight: FontWeight.w600)),
             ),
           const SizedBox(height: 4),
@@ -932,6 +1051,17 @@ class _RequestCard extends ConsumerWidget {
         ],
       ),
     );
+    // The circle's prayer focus stands out from the rest.
+    return r.pinned
+        ? DecoratedBox(
+            position: DecorationPosition.foreground,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              border: Border.all(color: AppColors.gold, width: 2),
+            ),
+            child: card,
+          )
+        : card;
   }
 }
 
@@ -989,10 +1119,11 @@ Future<(String, String)?> _askTwo(
   required String title,
   required (String, String, int, TextCapitalization) first,
   required (String, String, int, TextCapitalization) second,
+  String firstValue = '',
   String secondValue = '',
   required String action,
 }) {
-  final a = TextEditingController();
+  final a = TextEditingController(text: firstValue);
   final b = TextEditingController(text: secondValue);
   return showDialog<(String, String)>(
     context: context,

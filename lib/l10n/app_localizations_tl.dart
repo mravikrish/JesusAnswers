@@ -1006,4 +1006,73 @@ class AppLocalizationsTl extends AppLocalizations {
   String circleMembersOf(int count, int max) {
     return '$count sa $max miyembro';
   }
+
+  @override
+  String get circleLeader => 'Leader';
+
+  @override
+  String get circleMakeLeader => 'Gawing leader';
+
+  @override
+  String get circleUnmakeLeader => 'Alisin bilang leader';
+
+  @override
+  String get circlePin => 'I-pin bilang prayer focus';
+
+  @override
+  String get circleUnpin => 'I-unpin';
+
+  @override
+  String get circlePinned => 'Prayer focus';
+
+  @override
+  String get circleInfoLeaders =>
+      'Ang nagsimula ng circle ay puwedeng gumawa ng mga leader. Ang mga leader ay puwedeng mag-pin ng prayer focus sa itaas at mag-alis ng mga request at miyembro. Hindi naaalis ng mga report ang ibinahagi ng mga leader.';
+
+  @override
+  String newsJoinedMany(String name, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Sumali sa iyong circle si $name at $count pa',
+      one: 'Sumali sa iyong circle si $name at 1 pa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleOnlyLeaders => 'Mga leader lang';
+
+  @override
+  String get circleNoName => 'Nang walang pangalan ko';
+
+  @override
+  String get circleSomeone => 'Isang kasapi ng circle';
+
+  @override
+  String get circleForLeadersNote => 'Mga leader lang ang makakakita nito';
+
+  @override
+  String get circleAnonymousNote =>
+      'Hindi nakikita ng mga miyembro kung sino ang humiling';
+
+  @override
+  String get circleInfoPrivateRequests =>
+      'Ibahagi ang request sa mga leader lang, o nang walang pangalan mo. Nakikita pa rin ng mga leader kung sino ang humiling, para maalagaan ka nila.';
+
+  @override
+  String get newsCrisis => 'Pakiusap, kumustahin siya ngayon';
+
+  @override
+  String get newsReachOut => 'Kukumustahin ko';
+
+  @override
+  String get circleShowScreen => 'Ipakita sa screen';
+
+  @override
+  String get circleScreenTitle => 'Sumali sa aming prayer circle';
+
+  @override
+  String get circleScreenSteps =>
+      'I-scan gamit ang camera ng phone, o buksan ang JesusAnswers at i-tap ang Manalangin → Mga Prayer Circle → Sumali gamit ang code';
 }

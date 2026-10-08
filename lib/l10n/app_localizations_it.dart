@@ -1000,4 +1000,72 @@ class AppLocalizationsIt extends AppLocalizations {
   String circleMembersOf(int count, int max) {
     return '$count membri su $max';
   }
+
+  @override
+  String get circleLeader => 'Responsabile';
+
+  @override
+  String get circleMakeLeader => 'Nomina responsabile';
+
+  @override
+  String get circleUnmakeLeader => 'Togli il ruolo di responsabile';
+
+  @override
+  String get circlePin => 'Fissa come intenzione di preghiera';
+
+  @override
+  String get circleUnpin => 'Non fissare più';
+
+  @override
+  String get circlePinned => 'Intenzione di preghiera';
+
+  @override
+  String get circleInfoLeaders =>
+      'Chi crea una cerchia può nominare dei responsabili. I responsabili possono fissare in alto un\'intenzione di preghiera e rimuovere richieste e membri. Le segnalazioni non rimuovono ciò che condividono i responsabili.';
+
+  @override
+  String newsJoinedMany(String name, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$name e altre $count persone sono entrate nella tua cerchia',
+      one: '$name e un\'altra persona sono entrati nella tua cerchia',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleOnlyLeaders => 'Solo responsabili';
+
+  @override
+  String get circleNoName => 'Senza il mio nome';
+
+  @override
+  String get circleSomeone => 'Qualcuno della cerchia';
+
+  @override
+  String get circleForLeadersNote => 'Solo i responsabili possono vederla';
+
+  @override
+  String get circleAnonymousNote => 'I membri non vedono chi l\'ha chiesta';
+
+  @override
+  String get circleInfoPrivateRequests =>
+      'Condividi una richiesta solo con i responsabili, o senza il tuo nome. I responsabili vedono comunque chi l\'ha chiesta, per potersi prendere cura di te.';
+
+  @override
+  String get newsCrisis => 'Per favore, fatti sentire oggi';
+
+  @override
+  String get newsReachOut => 'Mi faccio sentire';
+
+  @override
+  String get circleShowScreen => 'Mostra su uno schermo';
+
+  @override
+  String get circleScreenTitle => 'Entra nella nostra cerchia di preghiera';
+
+  @override
+  String get circleScreenSteps =>
+      'Inquadra con la fotocamera del telefono, oppure apri JesusAnswers e tocca Prega → Cerchie di preghiera → Entra con un codice';
 }

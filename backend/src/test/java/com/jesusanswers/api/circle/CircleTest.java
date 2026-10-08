@@ -31,7 +31,7 @@ class CircleTest {
         }
 
         Detail empty(String code) {
-            return new Detail(code, "Family", true, List.of(), List.of());
+            return new Detail(code, "Family", true, true, List.of(), List.of());
         }
 
         @Override
@@ -47,15 +47,35 @@ class CircleTest {
         }
 
         @Override
-        public Detail addRequest(String device, String code, String text, String prayerId) {
-            calls.add(prayerId == null ? "ask " + code + " " + text : "share " + code + " " + prayerId + " [" + text + "]");
+        public Detail addRequest(String device, String code, String text, String prayerId, boolean forLeaders,
+                                 boolean anonymous) {
+            calls.add((prayerId == null ? "ask " + code + " " + text : "share " + code + " " + prayerId + " [" + text + "]")
+                    + (forLeaders ? " (leaders)" : "") + (anonymous ? " (anonymous)" : ""));
+            return empty(code);
+        }
+
+        @Override
+        public Detail prayed(String device, String code, long requestId) {
+            calls.add("prayed " + requestId);
+            return empty(code);
+        }
+
+        @Override
+        public Detail setLeader(String device, String code, long memberId, boolean on) {
+            calls.add((on ? "leader " : "not leader ") + memberId);
+            return empty(code);
+        }
+
+        @Override
+        public Detail pin(String device, String code, long requestId, boolean on) {
+            calls.add((on ? "pin " : "unpin ") + requestId);
             return empty(code);
         }
     }
 
     static CircleController controller(Recording service, int joinsPerHour) {
         return new CircleController(service, new CommunityService(null, "salt"), new RateLimiter(100),
-                new RateLimiter(joinsPerHour));
+                new RateLimiter(3000), new RateLimiter(joinsPerHour));
     }
 
     @Test
@@ -103,13 +123,86 @@ class CircleTest {
     }
 
     @Test
+    void leadersHelpTheOwnerLookAfterTheCircle() {
+        // The owner can remove anyone else, leaders included.
+        assertThat(CircleService.mayRemove(true, false, false, false)).isTrue();
+        assertThat(CircleService.mayRemove(true, false, false, true)).isTrue();
+        // A leader can remove members, but not the owner or another leader.
+        assertThat(CircleService.mayRemove(false, true, false, false)).isTrue();
+        assertThat(CircleService.mayRemove(false, true, false, true)).isFalse();
+        assertThat(CircleService.mayRemove(false, true, true, false)).isFalse();
+        // A member can't remove anyone.
+        assertThat(CircleService.mayRemove(false, false, false, false)).isFalse();
+    }
+
+    @Test
+    void makesLeadersAndPins() {
+        var service = new Recording();
+        var controller = controller(service, 10);
+        var http = new MockHttpServletRequest();
+        controller.makeLeader(INSTALL, "K7P3MX", 12, http);
+        controller.unmakeLeader(INSTALL, "K7P3MX", 12, http);
+        controller.pin(INSTALL, "K7P-3MX", 40, http);
+        controller.unpin(INSTALL, "K7P3MX", 40, http);
+        assertThat(service.calls).containsExactly("leader 12", "not leader 12", "pin 40", "unpin 40");
+    }
+
+    @Test
+    void aWholeChurchOnOneWifiIsNotBlocked() {
+        var service = new Recording();
+        var controller = controller(service, 10);
+        var http = new MockHttpServletRequest();   // every phone has the same address
+        for (int phone = 0; phone < 300; phone++) {
+            String install = "%08d-7b4d-4e8a-9f00-1234567890ab".formatted(phone);
+            controller.prayed(install, "K7P3MX", 1, http);
+        }
+        assertThat(service.calls).hasSize(300);
+    }
+
+    @Test
+    void privateRequestsGoToLeadersAndAnonymousOnesHideTheName() {
+        var service = new Recording();
+        var controller = controller(service, 10);
+        var http = new MockHttpServletRequest();
+        controller.addRequest(INSTALL, "K7P3MX", new NewRequest("My marriage is struggling", null, true, true), http);
+        controller.addRequest(INSTALL, "K7P3MX", new NewRequest("Pray for my exam", null, false, null), http);
+        // A shared prayer is always for everyone, with the sharer's name.
+        controller.addRequest(INSTALL, "K7P3MX", new NewRequest("", "psalm23", true, true), http);
+        assertThat(service.calls).containsExactly(
+                "ask K7P3MX My marriage is struggling (leaders) (anonymous)", "ask K7P3MX Pray for my exam",
+                "share K7P3MX psalm23 []");
+
+        // Who asked is hidden from other members, but never from the asker or the leaders.
+        assertThat(CircleService.hidesName(true, false, false)).isTrue();
+        assertThat(CircleService.hidesName(true, true, false)).isFalse();
+        assertThat(CircleService.hidesName(true, false, true)).isFalse();
+        assertThat(CircleService.hidesName(false, false, false)).isFalse();
+    }
+
+    @Test
+    void aCrisisAlertIsNeverCrowdedOut() {
+        var start = java.time.Instant.parse("2026-10-09T08:00:00Z");
+        var items = new ArrayList<CircleService.News>();
+        items.add(new CircleService.News("request", "K7P3MX", "Grace Church", 1L, "Anil", "I want to end my life",
+                null, 0, start, true));
+        for (int i = 1; i <= 30; i++) {
+            items.add(new CircleService.News("prayed", "K7P3MX", "Grace Church", 2L, null, "", null, i,
+                    start.plusSeconds(i * 60), false));
+        }
+        var kept = CircleService.newest(items);
+        assertThat(kept).hasSize(CircleService.MAX_NEWS);
+        assertThat(kept.getFirst().crisis()).isTrue();
+        assertThat(kept.getLast().count()).isEqualTo(30);
+    }
+
+    @Test
     void createsJoinsAndAsks() {
         var service = new Recording();
         var controller = controller(service, 10);
         var http = new MockHttpServletRequest();
         controller.create(INSTALL, new NewCircle(" Family ", "Ravi"), http);
         controller.join(INSTALL, new Join("k7p-3mx", "Ravi"), http);
-        controller.addRequest(INSTALL, "K7P3MX", new NewRequest("Pray for my exam", null), http);
+        controller.addRequest(INSTALL, "K7P3MX", new NewRequest("Pray for my exam", null, null, null), http);
         assertThat(service.calls).containsExactly(
                 "create Family by Ravi", "join K7P3MX as Ravi", "ask K7P3MX Pray for my exam");
     }
@@ -119,11 +212,11 @@ class CircleTest {
         var service = new Recording();
         var controller = controller(service, 10);
         var http = new MockHttpServletRequest();
-        controller.addRequest(INSTALL, "K7P3MX", new NewRequest(null, "psalm23"), http);
-        controller.addRequest(INSTALL, "K7P3MX", new NewRequest(" Let's pray this tonight ", "psalm23"), http);
+        controller.addRequest(INSTALL, "K7P3MX", new NewRequest(null, "psalm23", null, null), http);
+        controller.addRequest(INSTALL, "K7P3MX", new NewRequest(" Let's pray this tonight ", "psalm23", null, null), http);
         assertThat(service.calls).containsExactly(
                 "share K7P3MX psalm23 []", "share K7P3MX psalm23 [Let's pray this tonight]");
-        assertThatThrownBy(() -> controller.addRequest(INSTALL, "K7P3MX", new NewRequest(null, "../etc"), http))
+        assertThatThrownBy(() -> controller.addRequest(INSTALL, "K7P3MX", new NewRequest(null, "../etc", null, null), http))
                 .isInstanceOf(ResponseStatusException.class).hasMessageContaining("BAD_REQUEST");
     }
 
@@ -135,7 +228,7 @@ class CircleTest {
                 .isInstanceOf(ResponseStatusException.class).hasMessageContaining("BAD_REQUEST");
         assertThatThrownBy(() -> controller.create(INSTALL, new NewCircle("", "Ravi"), http))
                 .isInstanceOf(ResponseStatusException.class).hasMessageContaining("BAD_REQUEST");
-        assertThatThrownBy(() -> controller.addRequest(INSTALL, "K7P3MX", new NewRequest(" ", null), http))
+        assertThatThrownBy(() -> controller.addRequest(INSTALL, "K7P3MX", new NewRequest(" ", null, null, null), http))
                 .isInstanceOf(ResponseStatusException.class).hasMessageContaining("BAD_REQUEST");
         assertThatThrownBy(() -> controller.join(INSTALL, new Join("nope", "Ravi"), http))
                 .isInstanceOf(ResponseStatusException.class).hasMessageContaining("NOT_FOUND");

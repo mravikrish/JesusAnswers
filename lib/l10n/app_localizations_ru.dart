@@ -1001,4 +1001,74 @@ class AppLocalizationsRu extends AppLocalizations {
   String circleMembersOf(int count, int max) {
     return 'Участники: $count из $max';
   }
+
+  @override
+  String get circleLeader => 'Лидер';
+
+  @override
+  String get circleMakeLeader => 'Сделать лидером';
+
+  @override
+  String get circleUnmakeLeader => 'Больше не лидер';
+
+  @override
+  String get circlePin => 'Закрепить как молитвенную нужду';
+
+  @override
+  String get circleUnpin => 'Открепить';
+
+  @override
+  String get circlePinned => 'Молитвенная нужда';
+
+  @override
+  String get circleInfoLeaders =>
+      'Создатель круга может назначать лидеров. Лидеры могут закреплять молитвенную нужду сверху и удалять просьбы и участников. Жалобы не удаляют то, чем делятся лидеры.';
+
+  @override
+  String newsJoinedMany(String name, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$name и ещё $count человека теперь в вашем круге',
+      many: '$name и ещё $count человек теперь в вашем круге',
+      few: '$name и ещё $count человека теперь в вашем круге',
+      one: '$name и ещё $count человек теперь в вашем круге',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleOnlyLeaders => 'Только лидеры';
+
+  @override
+  String get circleNoName => 'Без моего имени';
+
+  @override
+  String get circleSomeone => 'Кто-то из круга';
+
+  @override
+  String get circleForLeadersNote => 'Это видят только лидеры';
+
+  @override
+  String get circleAnonymousNote => 'Участники не видят, кто просил';
+
+  @override
+  String get circleInfoPrivateRequests =>
+      'Поделитесь просьбой только с лидерами или без имени. Лидеры всё равно видят, кто просил, чтобы позаботиться о вас.';
+
+  @override
+  String get newsCrisis => 'Пожалуйста, свяжитесь сегодня';
+
+  @override
+  String get newsReachOut => 'Я свяжусь';
+
+  @override
+  String get circleShowScreen => 'Показать на экране';
+
+  @override
+  String get circleScreenTitle => 'Присоединяйтесь к нашему молитвенному кругу';
+
+  @override
+  String get circleScreenSteps =>
+      'Отсканируйте камерой телефона или откройте JesusAnswers и нажмите Молитва → Молитвенные круги → Войти по коду';
 }

@@ -998,4 +998,72 @@ class AppLocalizationsSw extends AppLocalizations {
   String circleMembersOf(int count, int max) {
     return 'Wanachama $count kati ya $max';
   }
+
+  @override
+  String get circleLeader => 'Kiongozi';
+
+  @override
+  String get circleMakeLeader => 'Fanya kiongozi';
+
+  @override
+  String get circleUnmakeLeader => 'Ondoa uongozi';
+
+  @override
+  String get circlePin => 'Bandika juu kama hitaji kuu la maombi';
+
+  @override
+  String get circleUnpin => 'Bandua';
+
+  @override
+  String get circlePinned => 'Hitaji kuu la maombi';
+
+  @override
+  String get circleInfoLeaders =>
+      'Aliyeanzisha kikundi anaweza kuwafanya wengine viongozi. Viongozi wanaweza kubandika hitaji kuu la maombi juu na kuondoa maombi na wanachama. Ripoti haziondoi kile viongozi wanachoshiriki.';
+
+  @override
+  String newsJoinedMany(String name, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$name na wengine $count wamejiunga na kikundi chako',
+      one: '$name na mwingine 1 wamejiunga na kikundi chako',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleOnlyLeaders => 'Viongozi tu';
+
+  @override
+  String get circleNoName => 'Bila jina langu';
+
+  @override
+  String get circleSomeone => 'Mtu wa kikundi';
+
+  @override
+  String get circleForLeadersNote => 'Viongozi tu wanaweza kuona hili';
+
+  @override
+  String get circleAnonymousNote => 'Wanachama hawaoni aliyeomba';
+
+  @override
+  String get circleInfoPrivateRequests =>
+      'Shiriki ombi na viongozi tu, au bila jina lako. Viongozi bado wanaona aliyeomba, ili wakutunze.';
+
+  @override
+  String get newsCrisis => 'Tafadhali wasiliana leo';
+
+  @override
+  String get newsReachOut => 'Nitawasiliana';
+
+  @override
+  String get circleShowScreen => 'Onyesha kwenye skrini';
+
+  @override
+  String get circleScreenTitle => 'Jiunge na kikundi chetu cha maombi';
+
+  @override
+  String get circleScreenSteps =>
+      'Changanua kwa kamera ya simu, au fungua JesusAnswers na uguse Omba → Vikundi vya Maombi → Jiunge kwa msimbo';
 }

@@ -5,10 +5,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
+import 'package:jesus_answers/features/circles/circle_show_screen.dart';
 import 'package:jesus_answers/features/circles/circles_screen.dart';
 import 'package:jesus_answers/l10n/app_localizations.dart';
 import 'package:jesus_answers/providers.dart';
 import 'package:jesus_answers/services/circle_service.dart';
+import 'package:qr_flutter/qr_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
@@ -95,6 +97,42 @@ void main() {
     expect((r.prayerId, r.hearts, r.heartedByMe), ('psalm23', 2, true));
   });
 
+  test('leaders pin a prayer focus, and the owner makes leaders', () async {
+    final p = await prefs();
+    final sent = <String>[];
+    final circles = service(p, (r) async {
+      sent.add('${r.method} ${r.url.path}');
+      return http.Response(jsonEncode({...circle(), 'leader': true}), 200);
+    });
+    final c = await circles.pin('K7P3MX', 10, on: true);
+    await circles.pin('K7P3MX', 10, on: false);
+    await circles.setLeader('K7P3MX', 2, on: true);
+    await circles.setLeader('K7P3MX', 2, on: false);
+    expect(sent, [
+      'POST /v1/circles/K7P3MX/requests/10/pin',
+      'DELETE /v1/circles/K7P3MX/requests/10/pin',
+      'POST /v1/circles/K7P3MX/members/2/leader',
+      'DELETE /v1/circles/K7P3MX/members/2/leader',
+    ]);
+    expect(c.leader, isTrue);
+  });
+
+  test('a request can go only to the leaders, or without a name', () async {
+    final p = await prefs();
+    final bodies = <Object?>[];
+    final circles = service(p, (r) async {
+      bodies.add(jsonDecode(r.body));
+      return http.Response(jsonEncode(circle()), 200);
+    });
+    await circles.ask('K7P3MX', 'My marriage is struggling', forLeaders: true, anonymous: true);
+    await circles.ask('K7P3MX', 'Pray for my exam');
+    expect(bodies, [
+      {'text': 'My marriage is struggling', 'forLeaders': true, 'anonymous': true},
+      {'text': 'Pray for my exam'},
+    ]);
+    expect(CircleService.joinLink('K7P3MX'), 'jesusanswers://app/join/K7P3MX');
+  });
+
   test('news starts from the server time, then asks for what came after', () async {
     final p = await prefs();
     await p.setString('circles', jsonEncode([{'code': 'K7P3MX', 'name': 'Family', 'members': 2}]));
@@ -110,6 +148,7 @@ void main() {
                   {'kind': 'request', 'circle': 'K7P3MX', 'circleName': 'Family', 'requestId': 10, 'name': 'Mary', 'text': 'Pray for my exam'},
                   {'kind': 'prayed', 'circle': 'K7P3MX', 'circleName': 'Family', 'requestId': 11, 'count': 3},
                   {'kind': 'something-new', 'circle': 'K7P3MX', 'circleName': 'Family'},
+                  {'kind': 'request', 'circle': 'K7P3MX', 'circleName': 'Family', 'requestId': 12, 'name': 'Anil', 'text': 'I cannot go on', 'crisis': true},
                 ],
         }),
         200,
@@ -118,9 +157,10 @@ void main() {
     expect(await circles.news(), isEmpty);
     final news = await circles.news();
     expect(asked, ['', 'since=2026-10-07T10%3A00%3A00Z']);
-    expect([for (final n in news) (n.kind, n.name, n.count)], [
-      (CircleNewsKind.request, 'Mary', 0),
-      (CircleNewsKind.prayed, '', 3),
+    expect([for (final n in news) (n.kind, n.name, n.count, n.crisis)], [
+      (CircleNewsKind.request, 'Mary', 0, false),
+      (CircleNewsKind.prayed, '', 3, false),
+      (CircleNewsKind.request, 'Anil', 0, true),
     ]);
   });
 
@@ -186,5 +226,133 @@ void main() {
     expect(sent, ['GET /v1/circles/K7P3MX', 'POST /v1/circles/K7P3MX/requests/10/prayed']);
     expect(find.text('1 prayed'), findsOneWidget);
     expect(find.byIcon(Icons.check_rounded), findsOneWidget);
+  });
+
+  testWidgets("the pastor's pinned prayer focus comes first, marked Leader", (tester) async {
+    final p = await tester.runAsync(prefs);
+    final church = {
+      'code': 'K7P3MX',
+      'name': 'Grace Church',
+      'owner': false,
+      'leader': false,
+      'members': [
+        {'id': 1, 'name': 'Pastor John', 'owner': true},
+        {'id': 2, 'name': 'Mary', 'me': true},
+      ],
+      'requests': [
+        {
+          'id': 20,
+          'name': 'Pastor John',
+          'text': 'This week we pray for the Sharma family.',
+          'at': '2026-10-05T09:00:00Z',
+          'leader': true,
+          'pinned': true,
+        },
+        {'id': 21, 'name': 'Mary', 'text': 'Pray for my exam', 'at': '2026-10-06T09:00:00Z', 'mine': true},
+      ],
+    };
+    final circles = service(p!, (_) async => http.Response(jsonEncode(church), 200));
+    await tester.pumpWidget(ProviderScope(
+      overrides: [prefsProvider.overrideWithValue(p), circleServiceProvider.overrideWithValue(circles)],
+      child: const MaterialApp(
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
+        home: CircleScreen(code: 'K7P3MX'),
+      ),
+    ));
+    await tester.pumpAndSettle();
+
+    expect(find.text('PRAYER FOCUS'), findsOneWidget);
+    expect(find.text('Leader'), findsOneWidget);
+    final focus = tester.getTopLeft(find.text('This week we pray for the Sharma family.'));
+    expect(focus.dy, lessThan(tester.getTopLeft(find.text('Pray for my exam')).dy));
+
+    // A member can report the pastor's post, but can't pin it or delete it.
+    await tester.tap(find.byIcon(Icons.more_vert_rounded).first);
+    await tester.pumpAndSettle();
+    expect(find.text('Report'), findsOneWidget);
+    expect(find.text('Pin as prayer focus'), findsNothing);
+    expect(find.text('Delete'), findsNothing);
+  });
+
+  Widget app(SharedPreferences p, CircleService circles, Widget home) => ProviderScope(
+    overrides: [prefsProvider.overrideWithValue(p), circleServiceProvider.overrideWithValue(circles)],
+    child: MaterialApp(
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
+      home: home,
+    ),
+  );
+
+  testWidgets('a request without a name hides who asked, and one can go only to the leaders', (tester) async {
+    final p = await tester.runAsync(prefs);
+    final sent = <Object?>[];
+    final church = {
+      'code': 'K7P3MX',
+      'name': 'Grace Church',
+      'members': [
+        {'id': 1, 'name': 'Pastor John', 'owner': true},
+        {'id': 2, 'name': 'Mary', 'me': true},
+      ],
+      'requests': [
+        // Someone else's, without a name: the server sends no name.
+        {'id': 30, 'name': '', 'text': 'Pray for my family', 'at': '2026-10-08T09:00:00Z', 'anonymous': true},
+        // Mary's own, for the leaders only and without her name: she is told who can see it.
+        {
+          'id': 31,
+          'name': 'Mary',
+          'text': 'I lost my job',
+          'at': '2026-10-07T09:00:00Z',
+          'mine': true,
+          'forLeaders': true,
+          'anonymous': true,
+        },
+      ],
+    };
+    final circles = service(p!, (r) async {
+      if (r.method == 'POST') sent.add(jsonDecode(r.body));
+      return http.Response(jsonEncode(church), 200);
+    });
+    await tester.pumpWidget(app(p, circles, const CircleScreen(code: 'K7P3MX')));
+    await tester.pumpAndSettle();
+
+    expect(find.textContaining('Someone in the circle'), findsOneWidget);
+    expect(find.text('Only leaders can see this'), findsOneWidget);
+    expect(find.text("Members don't see who asked"), findsOneWidget);
+
+    await tester.enterText(find.byType(TextField), 'Please pray for my health');
+    await tester.tap(find.text('Only leaders'));
+    await tester.pump();
+    await tester.tap(find.byTooltip('Send'));
+    await tester.pumpAndSettle();
+    expect(sent, [
+      {'text': 'Please pray for my health', 'forLeaders': true},
+    ]);
+    // Back to everyone for the next one.
+    expect(tester.widget<FilterChip>(find.widgetWithText(FilterChip, 'Only leaders')).selected, isFalse);
+  });
+
+  testWidgets("the church's screen shows the code and a QR code to join", (tester) async {
+    await tester.binding.setSurfaceSize(const Size(1280, 720));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    await tester.pumpWidget(const MaterialApp(
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
+      home: CircleShowScreen(code: 'K7P3MX', name: 'Grace Church'),
+    ));
+    await tester.pumpAndSettle();
+    expect(find.text('Grace Church'), findsOneWidget);
+    expect(find.text('K7P-3MX'), findsOneWidget);
+    expect(tester.widget<QrImageView>(find.byType(QrImageView)), isNotNull);
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('a QR code from church opens Join with the code filled in', (tester) async {
+    final p = await tester.runAsync(prefs);
+    final circles = service(p!, (_) async => http.Response('[]', 200));
+    await tester.pumpWidget(app(p, circles, const CirclesScreen(joinCode: 'K7P3MX')));
+    await tester.pumpAndSettle();
+    final code = tester.widgetList<TextField>(find.byType(TextField)).first;
+    expect(code.controller!.text, 'K7P-3MX');
   });
 }

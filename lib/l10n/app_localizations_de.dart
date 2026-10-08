@@ -999,4 +999,72 @@ class AppLocalizationsDe extends AppLocalizations {
   String circleMembersOf(int count, int max) {
     return '$count von $max Mitgliedern';
   }
+
+  @override
+  String get circleLeader => 'Leitung';
+
+  @override
+  String get circleMakeLeader => 'Zur Leitung machen';
+
+  @override
+  String get circleUnmakeLeader => 'Nicht mehr Leitung';
+
+  @override
+  String get circlePin => 'Als Gebetsanliegen oben anheften';
+
+  @override
+  String get circleUnpin => 'Nicht mehr anheften';
+
+  @override
+  String get circlePinned => 'Gebetsanliegen';
+
+  @override
+  String get circleInfoLeaders =>
+      'Wer einen Kreis startet, kann andere zur Leitung machen. Die Leitung kann ein Gebetsanliegen oben anheften und Anliegen und Mitglieder entfernen. Was die Leitung teilt, wird durch Meldungen nicht entfernt.';
+
+  @override
+  String newsJoinedMany(String name, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$name und $count weitere sind deinem Kreis beigetreten',
+      one: '$name und 1 weitere Person sind deinem Kreis beigetreten',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleOnlyLeaders => 'Nur Leitung';
+
+  @override
+  String get circleNoName => 'Ohne meinen Namen';
+
+  @override
+  String get circleSomeone => 'Jemand aus dem Kreis';
+
+  @override
+  String get circleForLeadersNote => 'Nur die Leitung sieht das';
+
+  @override
+  String get circleAnonymousNote => 'Mitglieder sehen nicht, wer gefragt hat';
+
+  @override
+  String get circleInfoPrivateRequests =>
+      'Teile ein Anliegen nur mit der Leitung oder ohne deinen Namen. Die Leitung sieht trotzdem, wer gefragt hat, damit sie für dich da sein kann.';
+
+  @override
+  String get newsCrisis => 'Bitte melde dich heute';
+
+  @override
+  String get newsReachOut => 'Ich melde mich';
+
+  @override
+  String get circleShowScreen => 'Auf einem Bildschirm zeigen';
+
+  @override
+  String get circleScreenTitle => 'Komm in unseren Gebetskreis';
+
+  @override
+  String get circleScreenSteps =>
+      'Scanne mit der Handykamera oder öffne JesusAnswers und tippe auf Beten → Gebetskreise → Mit Code beitreten';
 }

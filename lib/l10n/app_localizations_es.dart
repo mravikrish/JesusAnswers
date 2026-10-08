@@ -998,4 +998,72 @@ class AppLocalizationsEs extends AppLocalizations {
   String circleMembersOf(int count, int max) {
     return '$count de $max miembros';
   }
+
+  @override
+  String get circleLeader => 'Líder';
+
+  @override
+  String get circleMakeLeader => 'Hacer líder';
+
+  @override
+  String get circleUnmakeLeader => 'Quitar como líder';
+
+  @override
+  String get circlePin => 'Fijar como motivo de oración';
+
+  @override
+  String get circleUnpin => 'Dejar de fijar';
+
+  @override
+  String get circlePinned => 'Motivo de oración';
+
+  @override
+  String get circleInfoLeaders =>
+      'Quien crea un círculo puede nombrar líderes. Los líderes pueden fijar un motivo de oración arriba y quitar peticiones y miembros. Los reportes no quitan lo que comparten los líderes.';
+
+  @override
+  String newsJoinedMany(String name, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$name y $count personas más se unieron a tu círculo',
+      one: '$name y 1 persona más se unieron a tu círculo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleOnlyLeaders => 'Solo líderes';
+
+  @override
+  String get circleNoName => 'Sin mi nombre';
+
+  @override
+  String get circleSomeone => 'Alguien del círculo';
+
+  @override
+  String get circleForLeadersNote => 'Solo los líderes pueden ver esto';
+
+  @override
+  String get circleAnonymousNote => 'Los miembros no ven quién lo pidió';
+
+  @override
+  String get circleInfoPrivateRequests =>
+      'Comparte una petición solo con los líderes, o sin tu nombre. Los líderes sí ven quién la pidió, para poder cuidarte.';
+
+  @override
+  String get newsCrisis => 'Por favor, comunícate hoy';
+
+  @override
+  String get newsReachOut => 'Me comunicaré';
+
+  @override
+  String get circleShowScreen => 'Mostrar en una pantalla';
+
+  @override
+  String get circleScreenTitle => 'Únete a nuestro círculo de oración';
+
+  @override
+  String get circleScreenSteps =>
+      'Escanea con la cámara de tu teléfono, o abre JesusAnswers y toca Orar → Círculos de oración → Unirme con un código';
 }

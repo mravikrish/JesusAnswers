@@ -1001,4 +1001,72 @@ class AppLocalizationsMr extends AppLocalizations {
   String circleMembersOf(int count, int max) {
     return '$max पैकी $count सदस्य';
   }
+
+  @override
+  String get circleLeader => 'नेते';
+
+  @override
+  String get circleMakeLeader => 'नेते बनवा';
+
+  @override
+  String get circleUnmakeLeader => 'नेतेपद काढा';
+
+  @override
+  String get circlePin => 'प्रार्थना विषय म्हणून वर ठेवा';
+
+  @override
+  String get circleUnpin => 'वरून काढा';
+
+  @override
+  String get circlePinned => 'प्रार्थना विषय';
+
+  @override
+  String get circleInfoLeaders =>
+      'मंडळ सुरू करणारा इतरांना नेते बनवू शकतो. नेते प्रार्थना विषय वर ठेवू शकतात आणि विनंत्या व सदस्य काढू शकतात. नेत्यांनी शेअर केलेले रिपोर्टमुळे काढले जात नाही.';
+
+  @override
+  String newsJoinedMany(String name, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$name आणि आणखी $count जण तुमच्या मंडळात सामील झाले',
+      one: '$name आणि आणखी 1 जण तुमच्या मंडळात सामील झाले',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleOnlyLeaders => 'फक्त नेते';
+
+  @override
+  String get circleNoName => 'माझ्या नावाशिवाय';
+
+  @override
+  String get circleSomeone => 'मंडळातील कोणीतरी';
+
+  @override
+  String get circleForLeadersNote => 'हे फक्त नेते पाहू शकतात';
+
+  @override
+  String get circleAnonymousNote => 'कोणी मागितले हे सदस्यांना दिसत नाही';
+
+  @override
+  String get circleInfoPrivateRequests =>
+      'विनंती फक्त नेत्यांसोबत, किंवा तुमच्या नावाशिवाय शेअर करा. तुमची काळजी घेता यावी म्हणून कोणी मागितले हे नेत्यांना दिसते.';
+
+  @override
+  String get newsCrisis => 'कृपया आजच संपर्क करा';
+
+  @override
+  String get newsReachOut => 'मी संपर्क करेन';
+
+  @override
+  String get circleShowScreen => 'स्क्रीनवर दाखवा';
+
+  @override
+  String get circleScreenTitle => 'आमच्या प्रार्थना मंडळात सामील व्हा';
+
+  @override
+  String get circleScreenSteps =>
+      'फोनच्या कॅमेऱ्याने स्कॅन करा, किंवा JesusAnswers उघडून प्रार्थना → प्रार्थना मंडळ → कोडने सामील व्हा वर टॅप करा';
 }

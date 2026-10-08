@@ -39,29 +39,37 @@ public class CircleController {
 
     public record Join(String code, String memberName) {}
 
-    /** A request in [text]; or a ready prayer, [prayerId], with [text] as an optional note. */
-    public record NewRequest(String text, String prayerId) {}
+    /**
+     * A request in [text]; or a ready prayer, [prayerId], with [text] as an optional note.
+     * [forLeaders]: only the owner and leaders see it. [anonymous]: members don't see who asked.
+     * Both are for requests only, and may be left out (older apps).
+     */
+    public record NewRequest(String text, String prayerId, Boolean forLeaders, Boolean anonymous) {}
 
     private static final Pattern INSTALL_ID = Pattern.compile("[A-Za-z0-9-]{16,64}");
 
     private final CircleService circles;
     private final CommunityService community;
     private final RateLimiter writes;
+    private final RateLimiter addressWrites;
     private final RateLimiter joins;
 
     @Autowired
     public CircleController(CircleService circles, CommunityService community) {
-        this(circles, community, new RateLimiter(120), new RateLimiter(20));
+        this(circles, community, new RateLimiter(120), new RateLimiter(3000), new RateLimiter(20));
     }
 
     /**
-     * [writes]: changes per hour, plenty for a person. [joins]: tries per hour per install, so codes
-     * can't be guessed by trying them (there are about a billion).
+     * [writes]: changes per hour per install, plenty for a person. [addressWrites]: per internet address,
+     * far higher, because a whole church on its Wi-Fi shares one address on a Sunday. [joins]: tries per
+     * hour per install, so codes can't be guessed by trying them (there are about a billion).
      */
-    CircleController(CircleService circles, CommunityService community, RateLimiter writes, RateLimiter joins) {
+    CircleController(CircleService circles, CommunityService community, RateLimiter writes,
+                     RateLimiter addressWrites, RateLimiter joins) {
         this.circles = circles;
         this.community = community;
         this.writes = writes;
+        this.addressWrites = addressWrites;
         this.joins = joins;
     }
 
@@ -91,7 +99,7 @@ public class CircleController {
         String device = device(installId);
         String name = valid(CircleService.cleanName(body.name(), CircleService.MAX_CIRCLE_NAME));
         String member = valid(CircleService.cleanName(body.memberName(), CircleService.MAX_NAME));
-        limit(writes, installId, http);
+        limit(installId, http);
         return circles.create(device, name, member);
     }
 
@@ -99,7 +107,7 @@ public class CircleController {
     public Detail join(@RequestHeader("X-Install-Id") String installId, @RequestBody Join body, HttpServletRequest http) {
         String device = device(installId);
         String member = valid(CircleService.cleanName(body.memberName(), CircleService.MAX_NAME));
-        limit(writes, installId, http);
+        limit(installId, http);
         try {
             // Per install only: many phones can share one address on mobile networks.
             joins.check("install:" + installId);
@@ -120,7 +128,7 @@ public class CircleController {
     public ResponseEntity<Void> leave(@RequestHeader("X-Install-Id") String installId, @PathVariable String code,
                                       HttpServletRequest http) {
         String device = device(installId);
-        limit(writes, installId, http);
+        limit(installId, http);
         circles.leave(device, code(code));
         return ResponseEntity.noContent().build();
     }
@@ -129,8 +137,24 @@ public class CircleController {
     public Detail removeMember(@RequestHeader("X-Install-Id") String installId, @PathVariable String code,
                                @PathVariable long memberId, HttpServletRequest http) {
         String device = device(installId);
-        limit(writes, installId, http);
+        limit(installId, http);
         return circles.removeMember(device, code(code), memberId);
+    }
+
+    @PostMapping("/{code}/members/{memberId}/leader")
+    public Detail makeLeader(@RequestHeader("X-Install-Id") String installId, @PathVariable String code,
+                             @PathVariable long memberId, HttpServletRequest http) {
+        String device = device(installId);
+        limit(installId, http);
+        return circles.setLeader(device, code(code), memberId, true);
+    }
+
+    @DeleteMapping("/{code}/members/{memberId}/leader")
+    public Detail unmakeLeader(@RequestHeader("X-Install-Id") String installId, @PathVariable String code,
+                               @PathVariable long memberId, HttpServletRequest http) {
+        String device = device(installId);
+        limit(installId, http);
+        return circles.setLeader(device, code(code), memberId, false);
     }
 
     @PostMapping("/{code}/requests")
@@ -145,15 +169,18 @@ public class CircleController {
         } else {
             text = valid(CircleService.cleanText(body.text()));
         }
-        limit(writes, installId, http);
-        return circles.addRequest(device, code(code), text, prayerId);
+        // A shared prayer is for everyone to join, so always to all, with the sharer's name.
+        boolean forLeaders = prayerId == null && Boolean.TRUE.equals(body.forLeaders());
+        boolean anonymous = prayerId == null && Boolean.TRUE.equals(body.anonymous());
+        limit(installId, http);
+        return circles.addRequest(device, code(code), text, prayerId, forLeaders, anonymous);
     }
 
     @PostMapping("/{code}/requests/{id}/heart")
     public Detail heart(@RequestHeader("X-Install-Id") String installId, @PathVariable String code,
                         @PathVariable long id, HttpServletRequest http) {
         String device = device(installId);
-        limit(writes, installId, http);
+        limit(installId, http);
         return circles.heart(device, code(code), id, true);
     }
 
@@ -161,7 +188,7 @@ public class CircleController {
     public Detail unheart(@RequestHeader("X-Install-Id") String installId, @PathVariable String code,
                           @PathVariable long id, HttpServletRequest http) {
         String device = device(installId);
-        limit(writes, installId, http);
+        limit(installId, http);
         return circles.heart(device, code(code), id, false);
     }
 
@@ -169,7 +196,7 @@ public class CircleController {
     public Detail prayed(@RequestHeader("X-Install-Id") String installId, @PathVariable String code,
                          @PathVariable long id, HttpServletRequest http) {
         String device = device(installId);
-        limit(writes, installId, http);
+        limit(installId, http);
         return circles.prayed(device, code(code), id);
     }
 
@@ -177,15 +204,31 @@ public class CircleController {
     public Detail answered(@RequestHeader("X-Install-Id") String installId, @PathVariable String code,
                            @PathVariable long id, HttpServletRequest http) {
         String device = device(installId);
-        limit(writes, installId, http);
+        limit(installId, http);
         return circles.answered(device, code(code), id);
+    }
+
+    @PostMapping("/{code}/requests/{id}/pin")
+    public Detail pin(@RequestHeader("X-Install-Id") String installId, @PathVariable String code,
+                      @PathVariable long id, HttpServletRequest http) {
+        String device = device(installId);
+        limit(installId, http);
+        return circles.pin(device, code(code), id, true);
+    }
+
+    @DeleteMapping("/{code}/requests/{id}/pin")
+    public Detail unpin(@RequestHeader("X-Install-Id") String installId, @PathVariable String code,
+                        @PathVariable long id, HttpServletRequest http) {
+        String device = device(installId);
+        limit(installId, http);
+        return circles.pin(device, code(code), id, false);
     }
 
     @PostMapping("/{code}/requests/{id}/report")
     public Detail report(@RequestHeader("X-Install-Id") String installId, @PathVariable String code,
                          @PathVariable long id, HttpServletRequest http) {
         String device = device(installId);
-        limit(writes, installId, http);
+        limit(installId, http);
         return circles.report(device, code(code), id);
     }
 
@@ -193,7 +236,7 @@ public class CircleController {
     public Detail deleteRequest(@RequestHeader("X-Install-Id") String installId, @PathVariable String code,
                                 @PathVariable long id, HttpServletRequest http) {
         String device = device(installId);
-        limit(writes, installId, http);
+        limit(installId, http);
         return circles.deleteRequest(device, code(code), id);
     }
 
@@ -215,10 +258,10 @@ public class CircleController {
         return cleaned;
     }
 
-    private static void limit(RateLimiter limiter, String installId, HttpServletRequest http) {
+    private void limit(String installId, HttpServletRequest http) {
         try {
-            limiter.check("ip:" + http.getRemoteAddr());
-            limiter.check("install:" + installId);
+            addressWrites.check("ip:" + http.getRemoteAddr());
+            writes.check("install:" + installId);
         } catch (RateLimiter.LimitExceededException e) {
             throw new ResponseStatusException(HttpStatus.TOO_MANY_REQUESTS);
         }

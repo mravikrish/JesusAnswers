@@ -1011,4 +1011,73 @@ class AppLocalizationsTa extends AppLocalizations {
   String circleMembersOf(int count, int max) {
     return '$max இல் $count உறுப்பினர்கள்';
   }
+
+  @override
+  String get circleLeader => 'தலைவர்';
+
+  @override
+  String get circleMakeLeader => 'தலைவராக்கு';
+
+  @override
+  String get circleUnmakeLeader => 'தலைமையை நீக்கு';
+
+  @override
+  String get circlePin => 'ஜெபக் கருத்தாக மேலே வை';
+
+  @override
+  String get circleUnpin => 'மேலிருந்து நீக்கு';
+
+  @override
+  String get circlePinned => 'ஜெபக் கருத்து';
+
+  @override
+  String get circleInfoLeaders =>
+      'குழுவைத் தொடங்கியவர் மற்றவர்களைத் தலைவர்களாக்கலாம். தலைவர்கள் ஜெபக் கருத்தை மேலே வைக்கலாம், விண்ணப்பங்களையும் உறுப்பினர்களையும் நீக்கலாம். தலைவர்கள் பகிர்வது புகார்களால் நீக்கப்படாது.';
+
+  @override
+  String newsJoinedMany(String name, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$name மற்றும் இன்னும் $count பேர் உங்கள் குழுவில் சேர்ந்தனர்',
+      one: '$name மற்றும் இன்னொருவர் உங்கள் குழுவில் சேர்ந்தனர்',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleOnlyLeaders => 'தலைவர்கள் மட்டும்';
+
+  @override
+  String get circleNoName => 'என் பெயர் இல்லாமல்';
+
+  @override
+  String get circleSomeone => 'குழுவில் ஒருவர்';
+
+  @override
+  String get circleForLeadersNote => 'இதைத் தலைவர்கள் மட்டுமே பார்க்க முடியும்';
+
+  @override
+  String get circleAnonymousNote =>
+      'யார் கேட்டார் என்று உறுப்பினர்களுக்குத் தெரியாது';
+
+  @override
+  String get circleInfoPrivateRequests =>
+      'விண்ணப்பத்தைத் தலைவர்களுடன் மட்டும், அல்லது உங்கள் பெயர் இல்லாமல் பகிருங்கள். உங்களைக் கவனித்துக்கொள்ள, யார் கேட்டார் என்று தலைவர்களுக்குத் தெரியும்.';
+
+  @override
+  String get newsCrisis => 'தயவுசெய்து இன்றே தொடர்பு கொள்ளுங்கள்';
+
+  @override
+  String get newsReachOut => 'நான் தொடர்பு கொள்கிறேன்';
+
+  @override
+  String get circleShowScreen => 'திரையில் காட்டு';
+
+  @override
+  String get circleScreenTitle => 'எங்கள் ஜெப குழுவில் சேருங்கள்';
+
+  @override
+  String get circleScreenSteps =>
+      'போன் கேமராவால் ஸ்கேன் செய்யுங்கள், அல்லது JesusAnswers ஐத் திறந்து ஜெபம் → ஜெப குழுக்கள் → குறியீட்டால் சேர் என்பதைத் தட்டுங்கள்';
 }

@@ -1869,6 +1869,120 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count} of {max} members'**
   String circleMembersOf(int count, int max);
+
+  /// No description provided for @circleLeader.
+  ///
+  /// In en, this message translates to:
+  /// **'Leader'**
+  String get circleLeader;
+
+  /// No description provided for @circleMakeLeader.
+  ///
+  /// In en, this message translates to:
+  /// **'Make a leader'**
+  String get circleMakeLeader;
+
+  /// No description provided for @circleUnmakeLeader.
+  ///
+  /// In en, this message translates to:
+  /// **'No longer a leader'**
+  String get circleUnmakeLeader;
+
+  /// No description provided for @circlePin.
+  ///
+  /// In en, this message translates to:
+  /// **'Pin as prayer focus'**
+  String get circlePin;
+
+  /// No description provided for @circleUnpin.
+  ///
+  /// In en, this message translates to:
+  /// **'Unpin'**
+  String get circleUnpin;
+
+  /// No description provided for @circlePinned.
+  ///
+  /// In en, this message translates to:
+  /// **'Prayer focus'**
+  String get circlePinned;
+
+  /// No description provided for @circleInfoLeaders.
+  ///
+  /// In en, this message translates to:
+  /// **'Whoever starts a circle can make others leaders. Leaders can pin a prayer focus to the top and remove requests and members. Reports can\'t remove what leaders share.'**
+  String get circleInfoLeaders;
+
+  /// No description provided for @newsJoinedMany.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{{name} and 1 other joined your circle} other{{name} and {count} others joined your circle}}'**
+  String newsJoinedMany(String name, int count);
+
+  /// No description provided for @circleOnlyLeaders.
+  ///
+  /// In en, this message translates to:
+  /// **'Only leaders'**
+  String get circleOnlyLeaders;
+
+  /// No description provided for @circleNoName.
+  ///
+  /// In en, this message translates to:
+  /// **'Without my name'**
+  String get circleNoName;
+
+  /// No description provided for @circleSomeone.
+  ///
+  /// In en, this message translates to:
+  /// **'Someone in the circle'**
+  String get circleSomeone;
+
+  /// No description provided for @circleForLeadersNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Only leaders can see this'**
+  String get circleForLeadersNote;
+
+  /// No description provided for @circleAnonymousNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Members don\'t see who asked'**
+  String get circleAnonymousNote;
+
+  /// No description provided for @circleInfoPrivateRequests.
+  ///
+  /// In en, this message translates to:
+  /// **'Share a request only with the leaders, or without your name. The leaders still see who asked, so they can care for you.'**
+  String get circleInfoPrivateRequests;
+
+  /// No description provided for @newsCrisis.
+  ///
+  /// In en, this message translates to:
+  /// **'Please reach out today'**
+  String get newsCrisis;
+
+  /// No description provided for @newsReachOut.
+  ///
+  /// In en, this message translates to:
+  /// **'I\'ll reach out'**
+  String get newsReachOut;
+
+  /// No description provided for @circleShowScreen.
+  ///
+  /// In en, this message translates to:
+  /// **'Show on a screen'**
+  String get circleShowScreen;
+
+  /// No description provided for @circleScreenTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Join our prayer circle'**
+  String get circleScreenTitle;
+
+  /// No description provided for @circleScreenSteps.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan with your phone\'s camera, or open JesusAnswers and tap Pray → Prayer Circles → Join with a code'**
+  String get circleScreenSteps;
 }
 
 class _AppLocalizationsDelegate

@@ -994,4 +994,72 @@ class AppLocalizationsHi extends AppLocalizations {
   String circleMembersOf(int count, int max) {
     return '$max में से $count सदस्य';
   }
+
+  @override
+  String get circleLeader => 'अगुवा';
+
+  @override
+  String get circleMakeLeader => 'अगुवा बनाएँ';
+
+  @override
+  String get circleUnmakeLeader => 'अगुवा पद हटाएँ';
+
+  @override
+  String get circlePin => 'प्रार्थना विषय के रूप में ऊपर रखें';
+
+  @override
+  String get circleUnpin => 'ऊपर से हटाएँ';
+
+  @override
+  String get circlePinned => 'प्रार्थना विषय';
+
+  @override
+  String get circleInfoLeaders =>
+      'मंडली शुरू करने वाला दूसरों को अगुवा बना सकता है। अगुवे प्रार्थना विषय को ऊपर रख सकते हैं और निवेदन व सदस्य हटा सकते हैं। अगुवों की साझा की गई बातें रिपोर्ट से नहीं हटतीं।';
+
+  @override
+  String newsJoinedMany(String name, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$name और $count अन्य आपकी मंडली में जुड़े',
+      one: '$name और 1 अन्य आपकी मंडली में जुड़े',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get circleOnlyLeaders => 'केवल अगुवे';
+
+  @override
+  String get circleNoName => 'मेरे नाम के बिना';
+
+  @override
+  String get circleSomeone => 'मंडली का कोई सदस्य';
+
+  @override
+  String get circleForLeadersNote => 'इसे केवल अगुवे देख सकते हैं';
+
+  @override
+  String get circleAnonymousNote => 'सदस्य नहीं देखते कि किसने माँगा';
+
+  @override
+  String get circleInfoPrivateRequests =>
+      'निवेदन केवल अगुवों के साथ, या अपने नाम के बिना साझा करें। अगुवे फिर भी देखते हैं कि किसने माँगा, ताकि वे आपकी देखभाल कर सकें।';
+
+  @override
+  String get newsCrisis => 'कृपया आज ही संपर्क करें';
+
+  @override
+  String get newsReachOut => 'ज़रूर';
+
+  @override
+  String get circleShowScreen => 'स्क्रीन पर दिखाएँ';
+
+  @override
+  String get circleScreenTitle => 'हमारी प्रार्थना मंडली से जुड़िए';
+
+  @override
+  String get circleScreenSteps =>
+      'फ़ोन के कैमरे से स्कैन करें, या JesusAnswers खोलकर प्रार्थना → प्रार्थना मंडली → कोड से जुड़ें पर टैप करें';
 }
