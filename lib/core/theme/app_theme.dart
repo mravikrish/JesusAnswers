@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 abstract final class AppColors {
@@ -46,11 +47,14 @@ ThemeData buildTheme() {
   );
   return base.copyWith(
     textTheme: base.textTheme.apply(bodyColor: AppColors.ink, displayColor: AppColors.ink),
+    // Every app bar is part of the night sky (see NightPanel.appBar), so screens look alike.
     appBarTheme: const AppBarTheme(
-      backgroundColor: Colors.transparent,
+      backgroundColor: AppColors.midnight,
       elevation: 0,
       scrolledUnderElevation: 0,
-      foregroundColor: AppColors.ink,
+      surfaceTintColor: Colors.transparent,
+      foregroundColor: Colors.white,
+      systemOverlayStyle: SystemUiOverlayStyle.light,
       centerTitle: true,
     ),
     filledButtonTheme: FilledButtonThemeData(

@@ -1133,10 +1133,10 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
     final tabs = c == null || c.pending
         ? const <String>[]
         : [l.circleTabPrayers, l.circleTabPraise, l.circleTabChains, if (groups) l.circleTabGroups];
-    final busy = _busy ? const LinearProgressIndicator(minHeight: 2) : const SizedBox(height: 2);
+    final busy = _busy ? const LinearProgressIndicator(minHeight: 2, color: AppColors.gold) : const SizedBox(height: 2);
 
     final scaffold = Scaffold(
-      appBar: AppBar(
+      appBar: NightPanel.appBar(
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -1144,9 +1144,9 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
             if (c?.parentName != null)
               GestureDetector(
                 onTap: c!.parentCode == null ? null : () => context.push('/circles/${c.parentCode}'),
-                child: Text('${c.parentName} ›', style: const TextStyle(fontSize: 13, color: AppColors.inkSoft)),
+                child: Text('${c.parentName} ›', style: const TextStyle(fontSize: 13, color: AppColors.goldSoft)),
               ),
-            Text(c?.name ?? l.circlesTitle, style: AppText.serif(24, weight: FontWeight.w600)),
+            Text(c?.name ?? l.circlesTitle, style: AppText.serif(24, weight: FontWeight.w600, color: Colors.white)),
           ],
         ),
         bottom: PreferredSize(
@@ -1157,8 +1157,10 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
                 TabBar(
                   isScrollable: true,
                   tabAlignment: TabAlignment.start,
-                  labelColor: AppColors.ember,
+                  labelColor: AppColors.goldSoft,
+                  unselectedLabelColor: Colors.white70,
                   indicatorColor: AppColors.gold,
+                  dividerColor: Colors.transparent,
                   tabs: [for (final label in tabs) Tab(height: 48, text: label)],
                 ),
               busy,

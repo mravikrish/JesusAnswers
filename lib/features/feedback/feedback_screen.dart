@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/common.dart';
+import '../../core/widgets/night_background.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
 
@@ -55,7 +56,9 @@ class _FeedbackScreenState extends ConsumerState<FeedbackScreen> {
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     return Scaffold(
-      appBar: AppBar(title: Text(l.sendFeedback, style: AppText.serif(24, weight: FontWeight.w600))),
+      appBar: NightPanel.appBar(
+        title: Text(l.sendFeedback, style: AppText.serif(24, weight: FontWeight.w600, color: Colors.white)),
+      ),
       body: SafeArea(
         child: _sent ? _thanks(l) : _form(l),
       ),

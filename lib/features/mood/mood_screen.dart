@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/divine_light.dart';
 import '../../core/widgets/app_shell.dart';
+import '../../core/widgets/night_background.dart';
 import '../../data/models/mood.dart';
 import '../../l10n/app_localizations.dart';
 
@@ -14,7 +15,7 @@ class MoodScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     return Scaffold(
-      appBar: AppBar(),
+      appBar: NightPanel.appBar(title: const SizedBox()),
       body: Stack(
         children: [
           const Positioned.fill(

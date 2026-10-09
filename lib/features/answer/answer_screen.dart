@@ -9,6 +9,7 @@ import '../../core/theme/app_theme.dart';
 import '../../core/widgets/app_shell.dart';
 import '../../core/widgets/common.dart';
 import '../../core/widgets/divine_light.dart';
+import '../../core/widgets/night_background.dart';
 import '../../core/widgets/playback_controls.dart';
 import '../../data/models/answer.dart';
 import '../../l10n/app_localizations.dart';
@@ -94,7 +95,7 @@ class _AnswerScreenState extends ConsumerState<AnswerScreen> {
     final l = AppLocalizations.of(context);
     final answer = ref.watch(journeyProvider.select((list) => list.where((a) => a.id == widget.id).firstOrNull));
     if (answer == null) {
-      return Scaffold(appBar: AppBar(), body: Center(child: Text(l.errorGeneric)));
+      return Scaffold(appBar: NightPanel.appBar(title: const SizedBox()), body: Center(child: Text(l.errorGeneric)));
     }
     final isPrayer = answer.kind == AnswerKind.prayer;
     var step = 0;
@@ -102,15 +103,16 @@ class _AnswerScreenState extends ConsumerState<AnswerScreen> {
 
     return Scaffold(
       backgroundColor: AppColors.ivory,
-      appBar: AppBar(
-        title: Text(isPrayer ? l.aPrayerForYou : l.yourAnswer, style: AppText.serif(24, weight: FontWeight.w600)),
-        backgroundColor: const Color(0xF2F7E6C4),
+      appBar: NightPanel.appBar(
+        title: Text(
+          isPrayer ? l.aPrayerForYou : l.yourAnswer,
+          style: AppText.serif(24, weight: FontWeight.w600, color: Colors.white),
+        ),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back_rounded),
           onPressed: () => context.canPop() ? context.pop() : context.go('/home'),
         ),
       ),
-      extendBodyBehindAppBar: true,
       body: Stack(
         children: [
           const Positioned.fill(
@@ -129,7 +131,7 @@ class _AnswerScreenState extends ConsumerState<AnswerScreen> {
           SafeArea(
             bottom: false,
             child: ListView(
-              padding: const EdgeInsets.fromLTRB(16, kToolbarHeight + 8, 16, 24),
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
               children: [
                 if (answer.question.isNotEmpty) appear(_YouBubble(label: l.you, text: answer.question)),
                 if (answer.crisis) ...[const SizedBox(height: 16), appear(const CrisisCard())],
