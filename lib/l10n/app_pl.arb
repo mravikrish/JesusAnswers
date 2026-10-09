@@ -361,5 +361,20 @@
   "circleInfoGroups": "Kościół może mieć grupy (młodzież, wspólnoty, grupy domowe); jego członkowie dołączają jednym stuknięciem.",
   "circleInfoApproval": "Założyciel kręgu może sprawić, że nowi czekają, aż lider ich wpuści.",
   "circleInfoPraise": "Wysłuchane modlitwy i świadectwa zostają na ścianie uwielbienia przez rok.",
-  "circleInfoChains": "Liderzy mogą rozpoczynać łańcuchy modlitwy i dni postu. Weź swoją kolej, a telefon ci przypomni."
+  "circleInfoChains": "Liderzy mogą rozpoczynać łańcuchy modlitwy i dni postu. Weź swoją kolej, a telefon ci przypomni.",
+  "quizTitle": "Pytanie biblijne",
+  "quizToday": "Dzisiejsze pytanie biblijne",
+  "quizAnswerNow": "Odpowiedz",
+  "quizSeeWhy": "Zobacz, co mówi Biblia",
+  "quizRight": "Dobrze!",
+  "quizWrong": "Nie całkiem. Odpowiedź to: {answer}",
+  "quizFromBible": "Co mówi Biblia",
+  "quizThink": "Pomyśl o tym",
+  "quizReadStory": "Przeczytaj całą historię",
+  "quizAsk": "Zapytaj przyjaciela",
+  "quizShareText": "Czy odpowiesz na dzisiejsze pytanie biblijne?\n\n{question}\n\n{options}",
+  "quizTodayShort": "Dziś",
+  "quizScore": "{right} z {answered} dobrze",
+  "quizPick": "Wybierz odpowiedź",
+  "quizAbout": "O tej historii"
 }

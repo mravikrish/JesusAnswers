@@ -1273,4 +1273,55 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get circleInfoChains =>
       'ਆਗੂ ਪ੍ਰਾਰਥਨਾ ਲੜੀਆਂ ਅਤੇ ਵਰਤ ਦੇ ਦਿਨ ਸ਼ੁਰੂ ਕਰ ਸਕਦੇ ਹਨ। ਆਪਣੀ ਵਾਰੀ ਲਓ, ਸਮਾਂ ਆਉਣ \'ਤੇ ਫ਼ੋਨ ਯਾਦ ਕਰਾਏਗਾ।';
+
+  @override
+  String get quizTitle => 'ਬਾਈਬਲ ਪ੍ਰਸ਼ਨ';
+
+  @override
+  String get quizToday => 'ਅੱਜ ਦਾ ਬਾਈਬਲ ਪ੍ਰਸ਼ਨ';
+
+  @override
+  String get quizAnswerNow => 'ਜਵਾਬ ਦਿਓ';
+
+  @override
+  String get quizSeeWhy => 'ਵੇਖੋ ਬਾਈਬਲ ਕੀ ਕਹਿੰਦੀ ਹੈ';
+
+  @override
+  String get quizRight => 'ਸਹੀ!';
+
+  @override
+  String quizWrong(String answer) {
+    return 'ਪੂਰੀ ਤਰ੍ਹਾਂ ਨਹੀਂ। ਜਵਾਬ ਹੈ: $answer';
+  }
+
+  @override
+  String get quizFromBible => 'ਬਾਈਬਲ ਕੀ ਕਹਿੰਦੀ ਹੈ';
+
+  @override
+  String get quizThink => 'ਇਸ \'ਤੇ ਸੋਚੋ';
+
+  @override
+  String get quizReadStory => 'ਪੂਰੀ ਕਹਾਣੀ ਪੜ੍ਹੋ';
+
+  @override
+  String get quizAsk => 'ਕਿਸੇ ਦੋਸਤ ਤੋਂ ਪੁੱਛੋ';
+
+  @override
+  String quizShareText(String question, String options) {
+    return 'ਕੀ ਤੁਸੀਂ ਅੱਜ ਦੇ ਬਾਈਬਲ ਪ੍ਰਸ਼ਨ ਦਾ ਜਵਾਬ ਦੇ ਸਕਦੇ ਹੋ?\n\n$question\n\n$options';
+  }
+
+  @override
+  String get quizTodayShort => 'ਅੱਜ';
+
+  @override
+  String quizScore(String right, String answered) {
+    return '$answered ਵਿੱਚੋਂ $right ਸਹੀ';
+  }
+
+  @override
+  String get quizPick => 'ਆਪਣਾ ਜਵਾਬ ਚੁਣੋ';
+
+  @override
+  String get quizAbout => 'ਇਸ ਕਹਾਣੀ ਬਾਰੇ';
 }

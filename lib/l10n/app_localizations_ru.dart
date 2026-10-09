@@ -1283,4 +1283,55 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get circleInfoChains =>
       'Лидеры могут начинать молитвенные цепи и дни поста. Возьмите очередь, и телефон напомнит вам.';
+
+  @override
+  String get quizTitle => 'Вопрос по Библии';
+
+  @override
+  String get quizToday => 'Вопрос по Библии на сегодня';
+
+  @override
+  String get quizAnswerNow => 'Ответить';
+
+  @override
+  String get quizSeeWhy => 'Посмотреть, что говорит Библия';
+
+  @override
+  String get quizRight => 'Верно!';
+
+  @override
+  String quizWrong(String answer) {
+    return 'Не совсем. Ответ: $answer';
+  }
+
+  @override
+  String get quizFromBible => 'Что говорит Библия';
+
+  @override
+  String get quizThink => 'Подумайте об этом';
+
+  @override
+  String get quizReadStory => 'Прочитать всю историю';
+
+  @override
+  String get quizAsk => 'Спросить друга';
+
+  @override
+  String quizShareText(String question, String options) {
+    return 'Ответите на сегодняшний вопрос по Библии?\n\n$question\n\n$options';
+  }
+
+  @override
+  String get quizTodayShort => 'Сегодня';
+
+  @override
+  String quizScore(String right, String answered) {
+    return 'Верно: $right из $answered';
+  }
+
+  @override
+  String get quizPick => 'Выберите ответ';
+
+  @override
+  String get quizAbout => 'Об этой истории';
 }

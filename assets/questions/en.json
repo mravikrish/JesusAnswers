@@ -1,0 +1,992 @@
+{
+ "noah_ark": {
+  "question": "Who built an ark to save his family from the flood?",
+  "options": [
+   "Noah",
+   "Abraham",
+   "Moses",
+   "Jonah"
+  ],
+  "about": "The world had become full of violence, but Noah walked with God. God told him to build a huge boat, an ark, to save his family and the animals from the coming flood.",
+  "think": "Noah obeyed before a single drop of rain fell. What is God asking you to trust Him with today?"
+ },
+ "born_where": {
+  "question": "In which town was Jesus born?",
+  "options": [
+   "Bethlehem",
+   "Nazareth",
+   "Jerusalem",
+   "Capernaum"
+  ],
+  "about": "Joseph and Mary had to travel to Bethlehem, the town of King David, for a census. There Jesus was born, just as the prophet Micah had foretold.",
+  "think": "The King of kings was laid in a manger. God comes close to the humble places of your life."
+ },
+ "seventh_day": {
+  "question": "What did God do on the seventh day?",
+  "options": [
+   "He rested",
+   "He made man",
+   "He made the stars",
+   "He made the sea"
+  ],
+  "about": "In six days God made the heavens, the earth and everything in them. On the seventh day He rested and blessed that day, making it holy.",
+  "think": "Even God rested. Is there time this week to stop, rest and remember that He holds the world?"
+ },
+ "water_wine": {
+  "question": "What did Jesus turn water into at the wedding in Cana?",
+  "options": [
+   "Wine",
+   "Oil",
+   "Milk",
+   "Honey"
+  ],
+  "about": "At a wedding in Cana the wine ran out, which was a great shame for the family. This was the first of Jesus' miraculous signs, and His disciples believed in Him.",
+  "think": "The servants did whatever Jesus told them and saw a miracle. Is there a small step He is asking of you?"
+ },
+ "flood_days": {
+  "question": "For how many days and nights did it rain in the flood?",
+  "options": [
+   "40",
+   "7",
+   "12",
+   "100"
+  ],
+  "about": "God sent the flood because of the world's wickedness, but He kept Noah and his family safe in the ark. The rain fell for forty days and forty nights.",
+  "think": "Forty days felt endless, yet God remembered Noah. He has not forgotten you in your long season either."
+ },
+ "baptism": {
+  "question": "At Jesus' baptism, what came down on Him like a dove?",
+  "options": [
+   "The Spirit of God",
+   "A bright star",
+   "An angel",
+   "Fire from heaven"
+  ],
+  "about": "Jesus came to the Jordan River to be baptised by John. As He came up out of the water, heaven opened and the Father spoke His love over Him.",
+  "think": "The Father said, \"This is my beloved Son.\" In Christ, God calls you His beloved too."
+ },
+ "abraham_stars": {
+  "question": "God told Abraham to count what, to show how many his descendants would be?",
+  "options": [
+   "The stars",
+   "The trees",
+   "The mountains",
+   "The rivers"
+  ],
+  "about": "Abraham was old and had no children, yet God promised him a family. God took him outside and showed him the night sky.",
+  "think": "Abraham believed God, and it was counted to him as righteousness. Which promise of God will you hold on to today?"
+ },
+ "fishers": {
+  "question": "What were Peter and Andrew doing when Jesus called them to follow Him?",
+  "options": [
+   "Fishing",
+   "Farming",
+   "Collecting taxes",
+   "Building a house"
+  ],
+  "about": "Peter and his brother Andrew were fishermen on the Sea of Galilee. Jesus called them to follow Him and become fishers of people.",
+  "think": "They left their nets at once. What might Jesus be calling you to leave behind to follow Him?"
+ },
+ "ram": {
+  "question": "When Abraham was about to offer Isaac, what did God provide instead?",
+  "options": [
+   "A ram",
+   "A dove",
+   "A calf",
+   "A goat"
+  ],
+  "about": "God tested Abraham by asking him to offer his only son, Isaac. At the last moment God stopped him and provided a ram caught in a bush.",
+  "think": "Abraham called the place \"The LORD will provide.\" God sees what you need before you do."
+ },
+ "salt_light": {
+  "question": "Jesus said His followers are the salt of the earth and the … of the world?",
+  "options": [
+   "Light",
+   "Bread",
+   "Hope",
+   "Strength"
+  ],
+  "about": "In the Sermon on the Mount Jesus taught His followers how to live. Salt gives flavour and preserves; light shows the way to others.",
+  "think": "No one hides a lamp under a basket. Where can your light shine for someone this week?"
+ },
+ "jacob_ladder": {
+  "question": "What did Jacob see in his dream at Bethel?",
+  "options": [
+   "A ladder reaching to heaven",
+   "A burning bush",
+   "A great flood",
+   "Seven fat cows"
+  ],
+  "about": "Jacob was running away from his brother Esau, alone and afraid. That night God met him in a dream and promised to be with him.",
+  "think": "God told Jacob, \"I am with you and will keep you wherever you go.\" You are not alone on your journey."
+ },
+ "daily_bread": {
+  "question": "In the Lord's Prayer, what do we ask God to give us today?",
+  "options": [
+   "Our daily bread",
+   "Riches",
+   "A long life",
+   "Victory"
+  ],
+  "about": "The disciples asked Jesus to teach them to pray, and He gave them this prayer. Asking for daily bread means trusting God for each day's needs.",
+  "think": "Jesus taught us to ask for today's needs, one day at a time. What do you need from God today?"
+ },
+ "joseph_coat": {
+  "question": "What special gift did Jacob give his son Joseph?",
+  "options": [
+   "A coat of many colours",
+   "A golden ring",
+   "A sword",
+   "A flock of sheep"
+  ],
+  "about": "Jacob loved Joseph more than his other sons and showed it with a special robe. His brothers grew jealous and hated him.",
+  "think": "The gift stirred up his brothers' jealousy. Ask God to help you celebrate others instead of envying them."
+ },
+ "birds": {
+  "question": "Jesus said not to worry, because our heavenly Father feeds what?",
+  "options": [
+   "The birds of the air",
+   "The fish of the sea",
+   "The lions",
+   "The sheep"
+  ],
+  "about": "Many people worry about food, clothes and the future. Jesus pointed to the birds and flowers to show how faithfully the Father cares for His creation.",
+  "think": "If He feeds the birds, how much more will He care for you? Hand Him today's worry."
+ },
+ "joseph_sold": {
+  "question": "Who was sold by his brothers and later saved his family from famine in Egypt?",
+  "options": [
+   "Joseph",
+   "Benjamin",
+   "Reuben",
+   "Judah"
+  ],
+  "about": "Joseph's jealous brothers sold him as a slave into Egypt. Years later, as a ruler there, he forgave them and saved them from famine.",
+  "think": "Joseph said, \"It was not you who sent me here, but God.\" God can turn harm into good."
+ },
+ "ask_seek": {
+  "question": "\"Ask, and it will be given to you; seek, and you will find; …\" How does Jesus end it?",
+  "options": [
+   "Knock, and it will be opened to you",
+   "Wait, and you will receive",
+   "Work, and you will earn",
+   "Give, and you will be given"
+  ],
+  "about": "Jesus taught that God is a good Father who loves to give good gifts to His children. So we can keep praying and never give up.",
+  "think": "Jesus invites you to keep asking. What have you stopped praying about that you could bring to Him again?"
+ },
+ "baby_moses": {
+  "question": "Where did Moses' mother hide her baby to save him?",
+  "options": [
+   "In a basket among the reeds by the river",
+   "In a cave",
+   "In the palace",
+   "In a well"
+  ],
+  "about": "Pharaoh had ordered every Hebrew baby boy to be killed. Moses' mother hid him in a basket on the Nile, where Pharaoh's daughter found him.",
+  "think": "A mother's small act of faith became part of God's great plan. Your small faithfulness matters too."
+ },
+ "storm": {
+  "question": "What did Jesus calm with a word while His disciples were in the boat?",
+  "options": [
+   "A storm",
+   "A crowd",
+   "A fever",
+   "A fire"
+  ],
+  "about": "Jesus was asleep in the boat when a fierce storm broke over the lake. The frightened disciples woke Him, and He calmed the wind and the waves with a word.",
+  "think": "The disciples cried, \"Don't you care?\" He did, and He spoke peace. Bring Him the storm you are in."
+ },
+ "burning_bush": {
+  "question": "How did God first speak to Moses in the desert?",
+  "options": [
+   "From a burning bush",
+   "Through a dream",
+   "From a cloud",
+   "Through a prophet"
+  ],
+  "about": "Moses was looking after sheep in the desert when he saw a bush on fire that did not burn up. God spoke to him from it and sent him to free Israel.",
+  "think": "Moses was doing his everyday work when God called. Look for God in the ordinary places of your day."
+ },
+ "jairus": {
+  "question": "How old was Jairus' daughter when Jesus raised her to life?",
+  "options": [
+   "12",
+   "7",
+   "3",
+   "20"
+  ],
+  "about": "Jairus, a leader of the synagogue, begged Jesus to come to his dying daughter. Before Jesus arrived, word came that she had died.",
+  "think": "Jesus told Jairus, \"Don't be afraid; just believe.\" Hold on to Him when the news is bad."
+ },
+ "red_sea": {
+  "question": "How did Israel escape when Pharaoh's army chased them to the sea?",
+  "options": [
+   "They crossed on dry ground",
+   "They sailed in boats",
+   "They hid in the hills",
+   "They fought and won"
+  ],
+  "about": "Israel had just left slavery in Egypt when Pharaoh's army chased them to the Red Sea. God parted the waters so His people could walk through.",
+  "think": "When there seemed to be no way, God made one. Ask Him for a way through what blocks you."
+ },
+ "loaves": {
+  "question": "How many loaves did the boy have when Jesus fed the five thousand?",
+  "options": [
+   "5",
+   "2",
+   "7",
+   "12"
+  ],
+  "about": "A huge crowd had followed Jesus to a remote place, and there was nothing to eat. A boy offered his small lunch, and Jesus fed everyone with it.",
+  "think": "A boy's small lunch became a feast in Jesus' hands. Give Him what little you have."
+ },
+ "manna": {
+  "question": "What did God send each morning to feed Israel in the wilderness?",
+  "options": [
+   "Manna, bread from heaven",
+   "Fish",
+   "Fruit",
+   "Rice"
+  ],
+  "about": "In the wilderness Israel complained of hunger. God sent manna each morning, enough for each day, for forty years.",
+  "think": "Manna came fresh each day and could not be stored up. God gives grace for today; trust Him for tomorrow."
+ },
+ "walks_water": {
+  "question": "Who walked on the water toward Jesus, then began to sink?",
+  "options": [
+   "Peter",
+   "John",
+   "Thomas",
+   "Andrew"
+  ],
+  "about": "After feeding the crowd, Jesus sent His disciples across the lake and came to them in the night, walking on the water. Peter asked to come to Him.",
+  "think": "Peter sank when he looked at the wind, and Jesus caught him at once. Keep your eyes on Him."
+ },
+ "sinai": {
+  "question": "On which mountain did God give Moses the tablets of the law?",
+  "options": [
+   "Sinai",
+   "Carmel",
+   "Zion",
+   "Ararat"
+  ],
+  "about": "After leading Israel out of Egypt, Moses met God on Mount Sinai. There God gave him the law, written on two tablets of stone.",
+  "think": "God's law was written by His own finger. Which of His words do you need written on your heart today?"
+ },
+ "samaritan": {
+  "question": "In Jesus' story, who stopped to help the man beaten by robbers?",
+  "options": [
+   "A Samaritan",
+   "A priest",
+   "A Levite",
+   "A soldier"
+  ],
+  "about": "An expert in the law asked Jesus, \"Who is my neighbour?\" Jesus answered with a story in which the hero was a Samaritan, a man most Jews of the day looked down on.",
+  "think": "Jesus asked, \"Which of these was a neighbour?\" Who is lying by your road today?"
+ },
+ "jericho": {
+  "question": "What happened when Israel marched around Jericho, shouted and blew the trumpets?",
+  "options": [
+   "The walls fell down",
+   "It began to rain",
+   "The gates opened",
+   "The enemy ran away"
+  ],
+  "about": "Jericho was a strong walled city at the edge of the Promised Land. God told Joshua to march around it for seven days instead of attacking it.",
+  "think": "Israel won by obeying a plan that made no sense. Trust God's way, even when it looks strange."
+ },
+ "lost_sheep": {
+  "question": "In Jesus' story, how many sheep did the shepherd leave to look for the one that was lost?",
+  "options": [
+   "99",
+   "9",
+   "49",
+   "100"
+  ],
+  "about": "Religious leaders complained that Jesus welcomed sinners. He answered with stories of lost things that are searched for and found with great joy.",
+  "think": "Heaven rejoices over one who comes home. You are worth searching for."
+ },
+ "gideon": {
+  "question": "Who asked God for a sign with a fleece of wool?",
+  "options": [
+   "Gideon",
+   "Samson",
+   "Joshua",
+   "Barak"
+  ],
+  "about": "God called Gideon to rescue Israel from enemy raiders, but he felt weak and afraid. He asked God for signs, and God patiently gave them.",
+  "think": "God patiently answered Gideon's doubts. Bring Him your honest questions."
+ },
+ "prodigal": {
+  "question": "What did the father do when he saw his lost son coming home?",
+  "options": [
+   "He ran and embraced him",
+   "He sent him away",
+   "He made him a servant",
+   "He waited for an apology"
+  ],
+  "about": "A younger son took his share of the family wealth and wasted it far from home. When he was starving, he decided to go back to his father.",
+  "think": "The father ran. That is how God receives everyone who comes home."
+ },
+ "samson": {
+  "question": "Whose great strength was linked to his uncut hair?",
+  "options": [
+   "Samson",
+   "Gideon",
+   "David",
+   "Goliath"
+  ],
+  "about": "Samson was set apart to God from birth, and his long hair was the sign of that vow. When Delilah had it cut, his strength left him.",
+  "think": "Samson's strength was God's gift, not his own. Stay close to the Giver, not only His gifts."
+ },
+ "ten_lepers": {
+  "question": "How many of the ten healed lepers came back to thank Jesus?",
+  "options": [
+   "1",
+   "9",
+   "10",
+   "3"
+  ],
+  "about": "Ten men with leprosy called out to Jesus from a distance, and He sent them to the priests. On the way they were healed.",
+  "think": "Nine were healed; one came back to give thanks. Take a moment now to thank God."
+ },
+ "ruth": {
+  "question": "Who told Naomi, \"Where you go, I will go; your God will be my God\"?",
+  "options": [
+   "Ruth",
+   "Orpah",
+   "Esther",
+   "Rachel"
+  ],
+  "about": "After Naomi lost her husband and sons in a foreign land, she decided to return home. Her daughter-in-law Ruth, a Moabite, refused to leave her.",
+  "think": "Ruth chose faithful love when leaving was easier. Who needs your faithfulness this week?"
+ },
+ "zacchaeus": {
+  "question": "Who climbed a sycamore tree to see Jesus?",
+  "options": [
+   "Zacchæus",
+   "Bartimæus",
+   "Nicodemus",
+   "Lazarus"
+  ],
+  "about": "Zacchæus was a chief tax collector in Jericho, rich and disliked. He was short, so he climbed a tree to see Jesus passing by.",
+  "think": "Jesus went to Zacchæus' house before he had changed. He welcomes you just as you are."
+ },
+ "samuel": {
+  "question": "Which boy heard God call his name at night in the temple?",
+  "options": [
+   "Samuel",
+   "David",
+   "Isaac",
+   "Josiah"
+  ],
+  "about": "Samuel was a boy serving in the house of God under Eli the priest. God called him by name at night and began speaking to him.",
+  "think": "Samuel said, \"Speak, for your servant is listening.\" Take a quiet minute today just to listen."
+ },
+ "lazarus": {
+  "question": "Whom did Jesus raise from the dead after four days in the tomb?",
+  "options": [
+   "Lazarus",
+   "Stephen",
+   "Jairus",
+   "Joseph"
+  ],
+  "about": "Lazarus, the brother of Mary and Martha, had died, and Jesus arrived four days later. He called him out of the tomb, alive.",
+  "think": "Jesus wept before He raised Lazarus. He cares about your sorrow, not only the solution."
+ },
+ "goliath": {
+  "question": "Who killed the giant Goliath with a sling and a stone?",
+  "options": [
+   "David",
+   "Saul",
+   "Samson",
+   "Jonathan"
+  ],
+  "about": "The Philistine giant Goliath defied Israel's army for forty days, and everyone was afraid. Young David faced him, trusting in God.",
+  "think": "David came in the name of the LORD. Which giant in your life needs to meet that God?"
+ },
+ "bartimaeus": {
+  "question": "Which blind man shouted, \"Jesus, Son of David, have mercy on me!\"?",
+  "options": [
+   "Bartimæus",
+   "Zacchæus",
+   "Nicodemus",
+   "Lazarus"
+  ],
+  "about": "Bartimæus was a blind beggar sitting by the road outside Jericho. When he heard Jesus was passing, he cried out for mercy.",
+  "think": "When others told him to be quiet, he shouted louder. Don't stop calling out to Jesus."
+ },
+ "shepherd_boy": {
+  "question": "What was David doing when Samuel came to anoint him king?",
+  "options": [
+   "Looking after the sheep",
+   "Fishing",
+   "Fighting in the army",
+   "Serving in the temple"
+  ],
+  "about": "God sent the prophet Samuel to Jesse's family to anoint the next king. Jesse's youngest son, David, was out in the fields with the sheep.",
+  "think": "God looks at the heart, not at outward appearance. He sees what others overlook in you."
+ },
+ "children": {
+  "question": "When the disciples stopped people bringing children to Jesus, what did He do?",
+  "options": [
+   "He welcomed and blessed them",
+   "He sent them home",
+   "He told them to wait",
+   "He taught only the adults"
+  ],
+  "about": "People were bringing their children for Jesus to bless, and the disciples thought He was too busy. Jesus was displeased with the disciples.",
+  "think": "The kingdom belongs to those who come like children. Come to Him simply and trustingly."
+ },
+ "solomon": {
+  "question": "Which king asked God for wisdom instead of riches?",
+  "options": [
+   "Solomon",
+   "David",
+   "Saul",
+   "Hezekiah"
+  ],
+  "about": "When young Solomon became king, God told him to ask for whatever he wanted. Solomon asked for wisdom to rule God's people well.",
+  "think": "Solomon asked for wisdom to serve others well. Ask God for wisdom in what you face today."
+ },
+ "mary_martha": {
+  "question": "Which sister sat at Jesus' feet and listened while the other was busy serving?",
+  "options": [
+   "Mary",
+   "Martha",
+   "Anna",
+   "Elisabeth"
+  ],
+  "about": "Jesus was a guest at the home of the sisters Martha and Mary. Martha was busy serving while Mary sat listening to Him.",
+  "think": "Jesus said Mary chose the better part. Make time today simply to be with Him."
+ },
+ "ravens": {
+  "question": "Which prophet was fed by ravens beside a brook?",
+  "options": [
+   "Elijah",
+   "Elisha",
+   "Isaiah",
+   "Ezekiel"
+  ],
+  "about": "During a long drought in Israel, God sent the prophet Elijah to hide by a brook. Ravens brought him bread and meat each morning and evening.",
+  "think": "God provided for Elijah one day at a time. Trust Him for today's bread."
+ },
+ "great_catch": {
+  "question": "After a night of catching nothing, what happened when Peter let down the nets at Jesus' word?",
+  "options": [
+   "So many fish that the nets began to break",
+   "They caught one fish",
+   "The boat sank",
+   "A storm came"
+  ],
+  "about": "Peter and his partners had fished all night and caught nothing. When Jesus told them to try again, the catch was so great that Peter fell at His feet.",
+  "think": "Peter obeyed even when tired and doubtful. Try again where Jesus tells you to."
+ },
+ "carmel_fire": {
+  "question": "When Elijah prayed on Mount Carmel, how did God answer?",
+  "options": [
+   "Fire fell from heaven",
+   "Rain fell at once",
+   "An earthquake shook the mountain",
+   "A voice spoke from a cloud"
+  ],
+  "about": "Israel was worshipping the false god Baal. Elijah challenged its prophets on Mount Carmel to see which God would answer by fire.",
+  "think": "Elijah prayed simply, and God answered. The LORD is God; bring Him your prayer today."
+ },
+ "sower": {
+  "question": "In Jesus' parable of the sower, what does the seed stand for?",
+  "options": [
+   "The word of God",
+   "Money",
+   "Good works",
+   "Time"
+  ],
+  "about": "Jesus told a story about a farmer whose seed fell on different kinds of ground. Each kind of ground shows how people respond to God's word.",
+  "think": "Good soil hears the word, holds it fast and bears fruit with patience. Keep today's word in your heart."
+ },
+ "whisper": {
+  "question": "When God met Elijah on the mountain, how did He come?",
+  "options": [
+   "In a gentle whisper",
+   "In the wind",
+   "In the earthquake",
+   "In the fire"
+  ],
+  "about": "Elijah was afraid, exhausted and alone after Queen Jezebel threatened his life. God met him on the mountain, not in power, but in a gentle whisper.",
+  "think": "God was not in the noise but in the whisper. Find a quiet moment to hear Him today."
+ },
+ "good_shepherd": {
+  "question": "Jesus said, \"I am the good shepherd.\" What does the good shepherd do?",
+  "options": [
+   "He lays down his life for the sheep",
+   "He owns many flocks",
+   "He never sleeps",
+   "He lives in the hills"
+  ],
+  "about": "Jesus compared Himself to a shepherd, and His people to sheep. A good shepherd protects his sheep even at the cost of his own life.",
+  "think": "The Shepherd who gave His life for you knows you by name."
+ },
+ "naaman": {
+  "question": "Which army commander was healed of leprosy after washing seven times in the Jordan?",
+  "options": [
+   "Naaman",
+   "Goliath",
+   "Sisera",
+   "Abner"
+  ],
+  "about": "Naaman was a mighty commander of the Syrian army, but he had leprosy. The prophet Elisha told him to wash seven times in the Jordan River.",
+  "think": "Naaman almost missed his healing because it seemed too simple. Don't despise the simple things God asks."
+ },
+ "nicodemus": {
+  "question": "Who came to Jesus at night and heard that he must be born again?",
+  "options": [
+   "Nicodemus",
+   "Zacchæus",
+   "Lazarus",
+   "Joseph"
+  ],
+  "about": "Nicodemus was a Pharisee and a leader of the Jews. He came to Jesus at night, and Jesus told him he needed a new birth from God.",
+  "think": "Jesus spoke of new birth by the Spirit. It is never too late for a new beginning with God."
+ },
+ "furnace": {
+  "question": "What happened to Shadrach, Meshach and Abednego in the fiery furnace?",
+  "options": [
+   "The fire did not harm them",
+   "They escaped through a tunnel",
+   "The fire went out",
+   "They were badly burned"
+  ],
+  "about": "King Nebuchadnezzar ordered everyone to bow to his golden statue. Three young Jews refused, and they were thrown into a blazing furnace.",
+  "think": "God did not keep them out of the fire, but He was with them in it. You are not alone in yours."
+ },
+ "living_water": {
+  "question": "What did Jesus offer the Samaritan woman at the well?",
+  "options": [
+   "Living water",
+   "Bread",
+   "Money",
+   "A new home"
+  ],
+  "about": "Jesus spoke with a Samaritan woman at a well, though Jews and Samaritans did not usually mix. He offered her water that satisfies for ever.",
+  "think": "Jesus offers water that becomes a spring of eternal life. Bring Him your thirst."
+ },
+ "lions_den": {
+  "question": "Who was thrown into the lions' den for praying to God?",
+  "options": [
+   "Daniel",
+   "Joseph",
+   "Elijah",
+   "Jeremiah"
+  ],
+  "about": "Jealous officials tricked King Darius into a law that no one could pray to anyone but him for thirty days. Daniel kept praying to God.",
+  "think": "Daniel kept praying even when it was forbidden. What would faithfulness look like for you today?"
+ },
+ "cloak": {
+  "question": "A woman ill for twelve years was healed when she touched what?",
+  "options": [
+   "Jesus' clothes",
+   "Jesus' hand",
+   "The temple door",
+   "A holy stone"
+  ],
+  "about": "A woman had been bleeding for twelve years and had spent everything on doctors. She believed that if she just touched Jesus' clothes, she would be healed.",
+  "think": "Jesus told her, \"Your faith has made you well; go in peace.\" Reach out to Him in faith today."
+ },
+ "writing_wall": {
+  "question": "At whose feast did a hand appear and write on the wall?",
+  "options": [
+   "Belshazzar",
+   "Nebuchadnezzar",
+   "Pharaoh",
+   "Ahab"
+  ],
+  "about": "King Belshazzar of Babylon held a great feast and drank from cups taken from God's temple. Suddenly a hand appeared and wrote on the wall.",
+  "think": "The king was weighed and found wanting. Ask God to search your heart and set it right."
+ },
+ "transfiguration": {
+  "question": "Who appeared with Jesus on the mountain when His face shone like the sun?",
+  "options": [
+   "Moses and Elijah",
+   "Abraham and Isaac",
+   "David and Solomon",
+   "Peter and John"
+  ],
+  "about": "Jesus took Peter, James and John up a high mountain. There His glory was shown, and two great men of the Old Testament spoke with Him.",
+  "think": "The Father said, \"Listen to Him.\" What has Jesus been saying to you lately?"
+ },
+ "jonah": {
+  "question": "Who was swallowed by a great fish after running from God?",
+  "options": [
+   "Jonah",
+   "Peter",
+   "Elisha",
+   "Job"
+  ],
+  "about": "God told Jonah to go to Nineveh, but he boarded a ship going the other way. A great storm came, and the sailors threw him into the sea.",
+  "think": "Jonah ran from God, yet God came after him. It is never too late to turn back."
+ },
+ "widow": {
+  "question": "How many small coins did the poor widow give, whom Jesus praised?",
+  "options": [
+   "2",
+   "10",
+   "1",
+   "5"
+  ],
+  "about": "Jesus watched people putting money into the temple treasury. The rich gave large amounts, but a poor widow gave everything she had.",
+  "think": "She gave all she had. God looks at the heart behind the gift, not its size."
+ },
+ "nineveh": {
+  "question": "To which great city did God send Jonah to call the people to turn back?",
+  "options": [
+   "Nineveh",
+   "Babylon",
+   "Jerusalem",
+   "Tarshish"
+  ],
+  "about": "Nineveh was the great capital of Assyria, Israel's enemy. When Jonah finally preached there, the whole city turned to God.",
+  "think": "When Nineveh turned to God, He showed mercy. His mercy is wider than we expect."
+ },
+ "greatest": {
+  "question": "Which commandment did Jesus call the greatest?",
+  "options": [
+   "Love the Lord your God with all your heart",
+   "Keep the Sabbath holy",
+   "Do not steal",
+   "Give a tenth of all you earn"
+  ],
+  "about": "A teacher of the law asked Jesus which commandment was the most important. Jesus summed up all of God's law in two commands to love.",
+  "think": "All God's law hangs on love for God and neighbour. Whom can you love in a practical way today?"
+ },
+ "esther": {
+  "question": "Which queen risked her life, saying, \"If I perish, I perish\"?",
+  "options": [
+   "Esther",
+   "Jezebel",
+   "Vashti",
+   "Rachel"
+  ],
+  "about": "Esther, a Jewish woman, had become queen of Persia when a plot was made to destroy her people. To save them she had to go to the king uninvited.",
+  "think": "\"Who knows whether you have come for such a time as this?\" Where has God placed you to make a difference?"
+ },
+ "last_supper": {
+  "question": "At the Last Supper, what did Jesus give His disciples to remember Him by?",
+  "options": [
+   "The bread and the cup",
+   "A scroll",
+   "A ring",
+   "A lamb"
+  ],
+  "about": "On the night before He died, Jesus shared the Passover meal with His disciples. He gave them bread and wine as signs of His body and blood.",
+  "think": "\"Do this in remembrance of me.\" Remember today what Jesus gave for you."
+ },
+ "wall_days": {
+  "question": "In Nehemiah's day, how long did it take to rebuild Jerusalem's wall?",
+  "options": [
+   "52 days",
+   "7 years",
+   "40 days",
+   "1 year"
+  ],
+  "about": "Nehemiah, a Jew serving the Persian king, came to rebuild Jerusalem's broken walls. Despite enemies and threats, the people finished the work.",
+  "think": "Even their enemies saw that the work was done with God's help. Keep building what He has given you to do."
+ },
+ "feet": {
+  "question": "What did Jesus do for His disciples at the Last Supper to show them how to serve?",
+  "options": [
+   "He washed their feet",
+   "He gave them gold",
+   "He built them a house",
+   "He wrote them a letter"
+  ],
+  "about": "At their last meal together, Jesus took a towel and washed His disciples' feet, the work of a servant. He told them to serve one another the same way.",
+  "think": "The Lord of all knelt with a towel. Where can you serve quietly today?"
+ },
+ "job": {
+  "question": "Who lost everything, yet said, \"The LORD gave, and the LORD has taken away; blessed be the name of the LORD\"?",
+  "options": [
+   "Job",
+   "Jonah",
+   "Jeremiah",
+   "Joel"
+  ],
+  "about": "Job was a good man who suddenly lost his wealth and his children in one day. Yet in his grief he worshipped God.",
+  "think": "Job worshipped in his grief. You can bring God your sorrow and still trust Him."
+ },
+ "gethsemane": {
+  "question": "In the garden before His arrest, what did Jesus pray to His Father?",
+  "options": [
+   "Not my will, but yours be done",
+   "Take me to heaven now",
+   "Destroy my enemies",
+   "Make me king"
+  ],
+  "about": "After the Last Supper Jesus went to pray in the garden of Gethsemane. Knowing the suffering ahead, He prayed in deep anguish.",
+  "think": "Jesus placed His will in the Father's hands. What do you need to place there today?"
+ },
+ "psalm23": {
+  "question": "Psalm 23 begins, \"The LORD is my …\"?",
+  "options": [
+   "Shepherd",
+   "King",
+   "Rock",
+   "Light"
+  ],
+  "about": "David, who had been a shepherd himself, wrote this psalm. It describes God caring for us as a shepherd cares for his sheep.",
+  "think": "With the Shepherd you lack nothing, even in the darkest valley. Walk with Him today."
+ },
+ "denial": {
+  "question": "Who denied knowing Jesus three times before the rooster crowed?",
+  "options": [
+   "Peter",
+   "Judas",
+   "Thomas",
+   "James"
+  ],
+  "about": "Peter had promised he would never leave Jesus. That night, after Jesus' arrest, he was afraid and three times said he did not know Him.",
+  "think": "Jesus later restored Peter. Your failures are not the end of your story with Him."
+ },
+ "eagles": {
+  "question": "Those who wait on the LORD will rise up with wings like what?",
+  "options": [
+   "Eagles",
+   "Doves",
+   "Sparrows",
+   "Angels"
+  ],
+  "about": "Isaiah wrote to God's people when they felt forgotten and weary. He reminded them that God never grows tired and gives strength to the weak.",
+  "think": "He gives strength to the weary. Wait on Him, and let Him renew your strength today."
+ },
+ "paradise": {
+  "question": "What did Jesus promise the thief on the cross who asked Him to remember him?",
+  "options": [
+   "Today you will be with me in paradise",
+   "You will be set free",
+   "You will live long",
+   "You will be forgiven later"
+  ],
+  "about": "Two criminals were crucified with Jesus. One mocked Him, but the other turned to Him in faith.",
+  "think": "It was not too late for the thief, and it is not too late for anyone. Who needs to hear this?"
+ },
+ "plans": {
+  "question": "God said, \"I know the plans I have for you,\" plans to give you what?",
+  "options": [
+   "A future and a hope",
+   "Riches and fame",
+   "A long, easy life",
+   "Power over others"
+  ],
+  "about": "God's people had been taken into exile in Babylon. Jeremiah wrote a letter to tell them that God had not forgotten them.",
+  "think": "Even in exile, God had good plans for His people. Trust Him with your future."
+ },
+ "risen": {
+  "question": "What did the angel tell the women at the empty tomb?",
+  "options": [
+   "He is not here; He has risen",
+   "He has been taken away",
+   "Wait here for Him",
+   "Go home and mourn"
+  ],
+  "about": "On the first day of the week, women came to Jesus' tomb with spices. They found it empty, and an angel gave them the news.",
+  "think": "The tomb is empty and death is defeated. Live today in the hope of the risen Jesus."
+ },
+ "potter": {
+  "question": "In Jeremiah, God compares Himself to whom, shaping clay?",
+  "options": [
+   "A potter",
+   "A carpenter",
+   "A shepherd",
+   "A farmer"
+  ],
+  "about": "God sent Jeremiah to watch a potter at work. When a pot was spoiled, the potter reshaped it into something new.",
+  "think": "We are like clay in the potter's hands. Let Him reshape what is broken in you."
+ },
+ "thomas": {
+  "question": "Which disciple said he would not believe until he touched Jesus' wounds?",
+  "options": [
+   "Thomas",
+   "Peter",
+   "Philip",
+   "Matthew"
+  ],
+  "about": "Thomas was not with the other disciples when the risen Jesus appeared to them. A week later Jesus came again and showed Thomas His wounds.",
+  "think": "Jesus met Thomas in his doubt. Bring Him your questions; He is not afraid of them."
+ },
+ "image": {
+  "question": "In whose image did God create mankind?",
+  "options": [
+   "His own image",
+   "The angels'",
+   "The animals'",
+   "The stars'"
+  ],
+  "about": "In the beginning God created human beings, male and female. Of all creation, only they are made in His image.",
+  "think": "You bear God's image. So does every person you meet today."
+ },
+ "emmaus": {
+  "question": "On the road to Emmaus, when did the two disciples recognise Jesus?",
+  "options": [
+   "When He broke the bread",
+   "When He showed His hands",
+   "When He called their names",
+   "When He walked on water"
+  ],
+  "about": "Two disciples were walking home sad after Jesus' death. A stranger joined them and explained the Scriptures, and they did not know it was Jesus.",
+  "think": "Jesus walked with them before they knew it was Him. He may be closer than you think."
+ },
+ "babel": {
+  "question": "What did God do when people built the tower of Babel to reach the heavens?",
+  "options": [
+   "He confused their language",
+   "He sent a flood",
+   "He sent fire",
+   "He made them kings"
+  ],
+  "about": "After the flood, people settled together and began building a city with a great tower to make a name for themselves.",
+  "think": "Pride builds towers to make a name; God humbles the proud. Seek His name above your own."
+ },
+ "pentecost": {
+  "question": "At Pentecost, who filled the disciples, with tongues like fire?",
+  "options": [
+   "The Holy Spirit",
+   "Angels",
+   "The prophets",
+   "Moses and Elijah"
+  ],
+  "about": "Fifty days after Jesus rose, His followers were praying together in Jerusalem. Suddenly the Holy Spirit came upon them, as Jesus had promised.",
+  "think": "The Spirit came to fill ordinary people with power. Ask Him to fill you today."
+ },
+ "rock_water": {
+  "question": "What did God tell Moses to do so that water would come out of the rock?",
+  "options": [
+   "Strike the rock",
+   "Dig a well",
+   "Pray for rain",
+   "Pour oil on it"
+  ],
+  "about": "In the desert the people of Israel were thirsty and angry with Moses. God sent Moses to a rock at Horeb.",
+  "think": "God brought water from a rock in the desert. He can provide in your driest place."
+ },
+ "damascus": {
+  "question": "Who met Jesus in a bright light on the road to Damascus?",
+  "options": [
+   "Saul",
+   "Barnabas",
+   "Stephen",
+   "Silas"
+  ],
+  "about": "Saul hated the followers of Jesus and was travelling to Damascus to arrest them. On the way the risen Jesus appeared to him; he later became the apostle Paul.",
+  "think": "Jesus turned His fiercest enemy into His greatest messenger. No one is beyond His reach."
+ },
+ "rainbow": {
+  "question": "What sign did God give of His promise never again to destroy the earth by a flood?",
+  "options": [
+   "A rainbow",
+   "A dove",
+   "A star",
+   "A mountain"
+  ],
+  "about": "After the flood Noah and his family came out of the ark. God made a covenant with them and with every living thing.",
+  "think": "Every rainbow is a reminder that God keeps His promises."
+ },
+ "stephen": {
+  "question": "Who prayed for those who were stoning him, \"Lord, do not hold this sin against them\"?",
+  "options": [
+   "Stephen",
+   "James",
+   "Peter",
+   "Philip"
+  ],
+  "about": "Stephen was one of the first leaders chosen in the early church, full of faith and the Holy Spirit. He was stoned to death for preaching about Jesus.",
+  "think": "Stephen forgave as Jesus did. Is there someone you need to forgive today?"
+ },
+ "fruit": {
+  "question": "Which comes first in the fruit of the Spirit?",
+  "options": [
+   "Love",
+   "Patience",
+   "Self-control",
+   "Faithfulness"
+  ],
+  "about": "Paul wrote to the churches in Galatia about life in the Spirit. The fruit of the Spirit is the character God grows in those who belong to Him.",
+  "think": "Love comes first. Ask the Spirit to grow His fruit in you today."
+ },
+ "lots_wife": {
+  "question": "What happened to Lot's wife when she looked back at Sodom?",
+  "options": [
+   "She became a pillar of salt",
+   "She was struck blind",
+   "She turned to stone",
+   "She was carried away"
+  ],
+  "about": "God was about to destroy the wicked cities of Sodom and Gomorrah. Angels led Lot and his family out and told them not to look back.",
+  "think": "She looked back at what God was leading her out of. Is there something you need to stop looking back at?"
+ },
+ "greatest_love": {
+  "question": "Of faith, hope and love, which does Paul call the greatest?",
+  "options": [
+   "Love",
+   "Faith",
+   "Hope",
+   "None of them"
+  ],
+  "about": "Paul wrote to the church in Corinth, which was proud of its spiritual gifts. He showed them that without love, all of it is nothing.",
+  "think": "Love never fails. Where can you show that love today?"
+ },
+ "aaron": {
+  "question": "Who was the brother God gave Moses to speak for him?",
+  "options": [
+   "Aaron",
+   "Joshua",
+   "Caleb",
+   "Hur"
+  ],
+  "about": "When God sent Moses to Pharaoh, Moses said he was not a good speaker. God gave him his brother Aaron to speak for him.",
+  "think": "God gave Moses a helper for his weakness. He gives us one another too."
+ },
+ "sword": {
+  "question": "In the armour of God, what is the sword of the Spirit?",
+  "options": [
+   "The word of God",
+   "Faith",
+   "Prayer",
+   "Truth"
+  ],
+  "about": "Paul wrote from prison about the spiritual battle Christians face. He described the armour God gives, piece by piece, like a Roman soldier's.",
+  "think": "God's word is your weapon against fear and lies. Which verse will you carry with you today?"
+ },
+ "joshua": {
+  "question": "To whom did God say, \"Be strong and courageous… the LORD your God is with you wherever you go\"?",
+  "options": [
+   "Joshua",
+   "Moses",
+   "Gideon",
+   "Caleb"
+  ],
+  "about": "After Moses died, Joshua had to lead Israel into the Promised Land. God spoke to him to give him courage for the task.",
+  "think": "Courage comes from God's presence, not your own strength. Go into today knowing He is with you."
+ },
+ "thanksgiving": {
+  "question": "Paul wrote, \"Do not be anxious about anything, but in every situation, by prayer … present your requests to God,\" with what?",
+  "options": [
+   "Thanksgiving",
+   "Fasting",
+   "Tears",
+   "Silence"
+  ],
+  "about": "Paul wrote this from prison to the church in Philippi. Even in chains, he taught them how to find God's peace in place of worry.",
+  "think": "Thanksgiving and prayer open the way for God's peace. Thank Him now for three things."
+ },
+ "tears": {
+  "question": "In Revelation, what will God wipe away from every eye?",
+  "options": [
+   "Every tear",
+   "Every sin",
+   "Every memory",
+   "Every dream"
+  ],
+  "about": "In the last book of the Bible, John was given a vision of the new heaven and new earth. God Himself will live with His people for ever.",
+  "think": "One day there will be no more death or pain. Let that hope carry you through today."
+ }
+}

@@ -1282,4 +1282,55 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get circleInfoChains =>
       'Лідери можуть починати молитовні ланцюги та дні посту. Візьміть чергу, і телефон нагадає вам.';
+
+  @override
+  String get quizTitle => 'Біблійне питання';
+
+  @override
+  String get quizToday => 'Біблійне питання на сьогодні';
+
+  @override
+  String get quizAnswerNow => 'Відповісти';
+
+  @override
+  String get quizSeeWhy => 'Подивитися, що каже Біблія';
+
+  @override
+  String get quizRight => 'Правильно!';
+
+  @override
+  String quizWrong(String answer) {
+    return 'Не зовсім. Відповідь: $answer';
+  }
+
+  @override
+  String get quizFromBible => 'Що каже Біблія';
+
+  @override
+  String get quizThink => 'Подумайте про це';
+
+  @override
+  String get quizReadStory => 'Прочитати всю історію';
+
+  @override
+  String get quizAsk => 'Запитати друга';
+
+  @override
+  String quizShareText(String question, String options) {
+    return 'Чи відповісте на сьогоднішнє біблійне питання?\n\n$question\n\n$options';
+  }
+
+  @override
+  String get quizTodayShort => 'Сьогодні';
+
+  @override
+  String quizScore(String right, String answered) {
+    return 'Правильно: $right з $answered';
+  }
+
+  @override
+  String get quizPick => 'Оберіть відповідь';
+
+  @override
+  String get quizAbout => 'Про цю історію';
 }

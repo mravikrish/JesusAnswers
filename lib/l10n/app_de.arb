@@ -361,5 +361,20 @@
   "circleInfoGroups": "Eine Gemeinde kann Gruppen haben (Jugend, Kreise, Hauskreise); ihre Mitglieder treten mit einem Tippen bei.",
   "circleInfoApproval": "Wer den Kreis gegründet hat, kann neue Mitglieder warten lassen, bis jemand aus der Leitung sie aufnimmt.",
   "circleInfoPraise": "Erhörte Gebete und Lobpreisberichte bleiben ein Jahr an der Lobwand.",
-  "circleInfoChains": "Die Leitung kann Gebetsketten und Fastentage starten. Übernimm eine Zeit, und dein Handy erinnert dich daran."
+  "circleInfoChains": "Die Leitung kann Gebetsketten und Fastentage starten. Übernimm eine Zeit, und dein Handy erinnert dich daran.",
+  "quizTitle": "Bibelfrage",
+  "quizToday": "Die Bibelfrage für heute",
+  "quizAnswerNow": "Antworten",
+  "quizSeeWhy": "Sieh, was die Bibel sagt",
+  "quizRight": "Richtig!",
+  "quizWrong": "Nicht ganz. Die Antwort ist: {answer}",
+  "quizFromBible": "Was die Bibel sagt",
+  "quizThink": "Denk darüber nach",
+  "quizReadStory": "Die ganze Geschichte lesen",
+  "quizAsk": "Einen Freund fragen",
+  "quizShareText": "Kannst du die heutige Bibelfrage beantworten?\n\n{question}\n\n{options}",
+  "quizTodayShort": "Heute",
+  "quizScore": "{right} von {answered} richtig",
+  "quizPick": "Wähle deine Antwort",
+  "quizAbout": "Worum es geht"
 }

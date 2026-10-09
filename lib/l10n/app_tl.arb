@@ -361,5 +361,20 @@
   "circleInfoGroups": "Puwedeng magkaroon ng mga grupo ang simbahan (kabataan, fellowship, home group); sumasali ang mga miyembro sa isang tap.",
   "circleInfoApproval": "Puwedeng ipahintay ng nagsimula ng circle ang mga bagong miyembro hanggang papasukin sila ng isang leader.",
   "circleInfoPraise": "Nananatili nang isang taon sa praise wall ang mga sinagot na panalangin at patotoo ng papuri.",
-  "circleInfoChains": "Puwedeng magsimula ang mga leader ng prayer chain at mga araw ng pag-aayuno. Kumuha ng oras, at ipapaalala ito ng phone mo."
+  "circleInfoChains": "Puwedeng magsimula ang mga leader ng prayer chain at mga araw ng pag-aayuno. Kumuha ng oras, at ipapaalala ito ng phone mo.",
+  "quizTitle": "Tanong sa Biblia",
+  "quizToday": "Tanong sa Biblia ngayong araw",
+  "quizAnswerNow": "Sumagot",
+  "quizSeeWhy": "Tingnan ang sinasabi ng Biblia",
+  "quizRight": "Tama!",
+  "quizWrong": "Hindi pa. Ang sagot ay: {answer}",
+  "quizFromBible": "Ang sinasabi ng Biblia",
+  "quizThink": "Pag-isipan ito",
+  "quizReadStory": "Basahin ang buong kuwento",
+  "quizAsk": "Tanungin ang kaibigan",
+  "quizShareText": "Kaya mo bang sagutin ang tanong sa Biblia ngayong araw?\n\n{question}\n\n{options}",
+  "quizTodayShort": "Ngayon",
+  "quizScore": "{right} tama sa {answered}",
+  "quizPick": "Piliin ang sagot mo",
+  "quizAbout": "Tungkol sa kuwentong ito"
 }

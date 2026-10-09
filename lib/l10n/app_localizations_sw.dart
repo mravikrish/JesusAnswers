@@ -1274,4 +1274,55 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get circleInfoChains =>
       'Viongozi wanaweza kuanzisha minyororo ya maombi na siku za kufunga. Chukua zamu, na simu yako itakukumbusha.';
+
+  @override
+  String get quizTitle => 'Swali la Biblia';
+
+  @override
+  String get quizToday => 'Swali la Biblia la leo';
+
+  @override
+  String get quizAnswerNow => 'Jibu';
+
+  @override
+  String get quizSeeWhy => 'Ona Biblia inasema nini';
+
+  @override
+  String get quizRight => 'Sahihi!';
+
+  @override
+  String quizWrong(String answer) {
+    return 'Si kabisa. Jibu ni: $answer';
+  }
+
+  @override
+  String get quizFromBible => 'Biblia inasema nini';
+
+  @override
+  String get quizThink => 'Tafakari hili';
+
+  @override
+  String get quizReadStory => 'Soma hadithi nzima';
+
+  @override
+  String get quizAsk => 'Muulize rafiki';
+
+  @override
+  String quizShareText(String question, String options) {
+    return 'Unaweza kujibu swali la Biblia la leo?\n\n$question\n\n$options';
+  }
+
+  @override
+  String get quizTodayShort => 'Leo';
+
+  @override
+  String quizScore(String right, String answered) {
+    return '$right sahihi kati ya $answered';
+  }
+
+  @override
+  String get quizPick => 'Chagua jibu lako';
+
+  @override
+  String get quizAbout => 'Kuhusu hadithi hii';
 }

@@ -1285,4 +1285,55 @@ class AppLocalizationsTl extends AppLocalizations {
   @override
   String get circleInfoChains =>
       'Puwedeng magsimula ang mga leader ng prayer chain at mga araw ng pag-aayuno. Kumuha ng oras, at ipapaalala ito ng phone mo.';
+
+  @override
+  String get quizTitle => 'Tanong sa Biblia';
+
+  @override
+  String get quizToday => 'Tanong sa Biblia ngayong araw';
+
+  @override
+  String get quizAnswerNow => 'Sumagot';
+
+  @override
+  String get quizSeeWhy => 'Tingnan ang sinasabi ng Biblia';
+
+  @override
+  String get quizRight => 'Tama!';
+
+  @override
+  String quizWrong(String answer) {
+    return 'Hindi pa. Ang sagot ay: $answer';
+  }
+
+  @override
+  String get quizFromBible => 'Ang sinasabi ng Biblia';
+
+  @override
+  String get quizThink => 'Pag-isipan ito';
+
+  @override
+  String get quizReadStory => 'Basahin ang buong kuwento';
+
+  @override
+  String get quizAsk => 'Tanungin ang kaibigan';
+
+  @override
+  String quizShareText(String question, String options) {
+    return 'Kaya mo bang sagutin ang tanong sa Biblia ngayong araw?\n\n$question\n\n$options';
+  }
+
+  @override
+  String get quizTodayShort => 'Ngayon';
+
+  @override
+  String quizScore(String right, String answered) {
+    return '$right tama sa $answered';
+  }
+
+  @override
+  String get quizPick => 'Piliin ang sagot mo';
+
+  @override
+  String get quizAbout => 'Tungkol sa kuwentong ito';
 }

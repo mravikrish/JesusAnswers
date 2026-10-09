@@ -1276,4 +1276,55 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get circleInfoChains =>
       'नेते प्रार्थना साखळी आणि उपवासाचे दिवस सुरू करू शकतात. तुमची पाळी घ्या, वेळ आल्यावर फोन आठवण करून देईल.';
+
+  @override
+  String get quizTitle => 'बायबल प्रश्न';
+
+  @override
+  String get quizToday => 'आजचा बायबल प्रश्न';
+
+  @override
+  String get quizAnswerNow => 'उत्तर द्या';
+
+  @override
+  String get quizSeeWhy => 'बायबल काय म्हणते ते पाहा';
+
+  @override
+  String get quizRight => 'बरोबर!';
+
+  @override
+  String quizWrong(String answer) {
+    return 'पूर्णपणे नाही. उत्तर आहे: $answer';
+  }
+
+  @override
+  String get quizFromBible => 'बायबल काय म्हणते';
+
+  @override
+  String get quizThink => 'यावर विचार करा';
+
+  @override
+  String get quizReadStory => 'पूर्ण कथा वाचा';
+
+  @override
+  String get quizAsk => 'मित्राला विचारा';
+
+  @override
+  String quizShareText(String question, String options) {
+    return 'आजच्या बायबल प्रश्नाचे उत्तर तुम्ही देऊ शकता का?\n\n$question\n\n$options';
+  }
+
+  @override
+  String get quizTodayShort => 'आज';
+
+  @override
+  String quizScore(String right, String answered) {
+    return '$answered पैकी $right बरोबर';
+  }
+
+  @override
+  String get quizPick => 'तुमचे उत्तर निवडा';
+
+  @override
+  String get quizAbout => 'या कथेबद्दल';
 }

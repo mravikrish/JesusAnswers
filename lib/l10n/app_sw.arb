@@ -361,5 +361,20 @@
   "circleInfoGroups": "Kanisa linaweza kuwa na vikundi vidogo (vijana, ushirika, vikundi vya nyumbani); wanachama wake hujiunga kwa mguso mmoja.",
   "circleInfoApproval": "Aliyeanzisha kikundi anaweza kuwafanya wanachama wapya wasubiri hadi kiongozi awaruhusu.",
   "circleInfoPraise": "Maombi yaliyojibiwa na shuhuda za sifa hukaa kwenye ukuta wa sifa kwa mwaka mmoja.",
-  "circleInfoChains": "Viongozi wanaweza kuanzisha minyororo ya maombi na siku za kufunga. Chukua zamu, na simu yako itakukumbusha."
+  "circleInfoChains": "Viongozi wanaweza kuanzisha minyororo ya maombi na siku za kufunga. Chukua zamu, na simu yako itakukumbusha.",
+  "quizTitle": "Swali la Biblia",
+  "quizToday": "Swali la Biblia la leo",
+  "quizAnswerNow": "Jibu",
+  "quizSeeWhy": "Ona Biblia inasema nini",
+  "quizRight": "Sahihi!",
+  "quizWrong": "Si kabisa. Jibu ni: {answer}",
+  "quizFromBible": "Biblia inasema nini",
+  "quizThink": "Tafakari hili",
+  "quizReadStory": "Soma hadithi nzima",
+  "quizAsk": "Muulize rafiki",
+  "quizShareText": "Unaweza kujibu swali la Biblia la leo?\n\n{question}\n\n{options}",
+  "quizTodayShort": "Leo",
+  "quizScore": "{right} sahihi kati ya {answered}",
+  "quizPick": "Chagua jibu lako",
+  "quizAbout": "Kuhusu hadithi hii"
 }

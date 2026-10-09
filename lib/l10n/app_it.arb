@@ -361,5 +361,20 @@
   "circleInfoGroups": "Una chiesa può avere gruppi (giovani, comunità, gruppi in casa); i suoi membri entrano con un tocco.",
   "circleInfoApproval": "Chi crea la cerchia può far attendere i nuovi membri finché un responsabile non li fa entrare.",
   "circleInfoPraise": "Le preghiere esaudite e le testimonianze restano un anno sul muro della lode.",
-  "circleInfoChains": "I responsabili possono avviare catene di preghiera e giorni di digiuno. Prendi un turno e il telefono te lo ricorderà."
+  "circleInfoChains": "I responsabili possono avviare catene di preghiera e giorni di digiuno. Prendi un turno e il telefono te lo ricorderà.",
+  "quizTitle": "Domanda biblica",
+  "quizToday": "La domanda biblica di oggi",
+  "quizAnswerNow": "Rispondi",
+  "quizSeeWhy": "Vedi cosa dice la Bibbia",
+  "quizRight": "Giusto!",
+  "quizWrong": "Non proprio. La risposta è: {answer}",
+  "quizFromBible": "Cosa dice la Bibbia",
+  "quizThink": "Rifletti su questo",
+  "quizReadStory": "Leggi tutta la storia",
+  "quizAsk": "Chiedi a un amico",
+  "quizShareText": "Sai rispondere alla domanda biblica di oggi?\n\n{question}\n\n{options}",
+  "quizTodayShort": "Oggi",
+  "quizScore": "{right} giuste su {answered}",
+  "quizPick": "Scegli la tua risposta",
+  "quizAbout": "Di che cosa parla"
 }

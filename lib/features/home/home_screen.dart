@@ -12,6 +12,7 @@ import '../../core/widgets/night_background.dart';
 import '../../data/models/painting.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
+import '../question/question_screen.dart';
 import 'days_card.dart';
 
 /// Home — opens on today's painting of Jesus, as if coming into His presence,
@@ -104,6 +105,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                         ),
                       ),
                     ),
+                  const QuestionCard(),
                   const MilestoneCard(),
                   const DaysCard(),
                   const PrayedTodayLine(),

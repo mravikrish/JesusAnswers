@@ -361,5 +361,20 @@
   "circleInfoGroups": "Uma igreja pode ter grupos (jovens, ministérios, grupos nos lares); seus membros entram com um toque.",
   "circleInfoApproval": "Quem cria o círculo pode fazer os novos membros aguardarem até um líder deixá-los entrar.",
   "circleInfoPraise": "Orações respondidas e testemunhos ficam um ano no mural de louvor.",
-  "circleInfoChains": "Os líderes podem iniciar correntes de oração e dias de jejum. Pegue um horário e o celular vai lembrar você."
+  "circleInfoChains": "Os líderes podem iniciar correntes de oração e dias de jejum. Pegue um horário e o celular vai lembrar você.",
+  "quizTitle": "Pergunta bíblica",
+  "quizToday": "A pergunta bíblica de hoje",
+  "quizAnswerNow": "Responder",
+  "quizSeeWhy": "Veja o que a Bíblia diz",
+  "quizRight": "Certo!",
+  "quizWrong": "Não exatamente. A resposta é: {answer}",
+  "quizFromBible": "O que a Bíblia diz",
+  "quizThink": "Pense nisto",
+  "quizReadStory": "Ler a história completa",
+  "quizAsk": "Perguntar a um amigo",
+  "quizShareText": "Você consegue responder a pergunta bíblica de hoje?\n\n{question}\n\n{options}",
+  "quizTodayShort": "Hoje",
+  "quizScore": "{right} de {answered} certas",
+  "quizPick": "Escolha sua resposta",
+  "quizAbout": "Sobre esta história"
 }

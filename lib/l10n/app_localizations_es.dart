@@ -1275,4 +1275,55 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get circleInfoChains =>
       'Los líderes pueden iniciar cadenas de oración y días de ayuno. Toma un turno y tu teléfono te lo recordará.';
+
+  @override
+  String get quizTitle => 'Pregunta bíblica';
+
+  @override
+  String get quizToday => 'La pregunta bíblica de hoy';
+
+  @override
+  String get quizAnswerNow => 'Responder';
+
+  @override
+  String get quizSeeWhy => 'Ver lo que dice la Biblia';
+
+  @override
+  String get quizRight => '¡Correcto!';
+
+  @override
+  String quizWrong(String answer) {
+    return 'No del todo. La respuesta es: $answer';
+  }
+
+  @override
+  String get quizFromBible => 'Lo que dice la Biblia';
+
+  @override
+  String get quizThink => 'Piensa en esto';
+
+  @override
+  String get quizReadStory => 'Leer la historia completa';
+
+  @override
+  String get quizAsk => 'Preguntar a un amigo';
+
+  @override
+  String quizShareText(String question, String options) {
+    return '¿Puedes responder la pregunta bíblica de hoy?\n\n$question\n\n$options';
+  }
+
+  @override
+  String get quizTodayShort => 'Hoy';
+
+  @override
+  String quizScore(String right, String answered) {
+    return '$right de $answered correctas';
+  }
+
+  @override
+  String get quizPick => 'Elige tu respuesta';
+
+  @override
+  String get quizAbout => 'Sobre esta historia';
 }

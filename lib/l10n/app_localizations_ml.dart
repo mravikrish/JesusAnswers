@@ -1283,4 +1283,55 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get circleInfoChains =>
       'നേതാക്കൾക്ക് പ്രാർത്ഥനാ ശൃംഖലകളും ഉപവാസ ദിനങ്ങളും തുടങ്ങാം. ഒരു ഊഴം എടുക്കൂ, സമയമാകുമ്പോൾ ഫോൺ ഓർമിപ്പിക്കും.';
+
+  @override
+  String get quizTitle => 'ബൈബിൾ ചോദ്യം';
+
+  @override
+  String get quizToday => 'ഇന്നത്തെ ബൈബിൾ ചോദ്യം';
+
+  @override
+  String get quizAnswerNow => 'ഉത്തരം നൽകുക';
+
+  @override
+  String get quizSeeWhy => 'ബൈബിൾ എന്തു പറയുന്നു എന്ന് കാണുക';
+
+  @override
+  String get quizRight => 'ശരി!';
+
+  @override
+  String quizWrong(String answer) {
+    return 'പൂർണ്ണമായില്ല. ഉത്തരം: $answer';
+  }
+
+  @override
+  String get quizFromBible => 'ബൈബിൾ എന്തു പറയുന്നു';
+
+  @override
+  String get quizThink => 'ഇതിനെക്കുറിച്ച് ചിന്തിക്കുക';
+
+  @override
+  String get quizReadStory => 'മുഴുവൻ കഥയും വായിക്കുക';
+
+  @override
+  String get quizAsk => 'ഒരു സുഹൃത്തിനോട് ചോദിക്കുക';
+
+  @override
+  String quizShareText(String question, String options) {
+    return 'ഇന്നത്തെ ബൈബിൾ ചോദ്യത്തിന് ഉത്തരം പറയാമോ?\n\n$question\n\n$options';
+  }
+
+  @override
+  String get quizTodayShort => 'ഇന്ന്';
+
+  @override
+  String quizScore(String right, String answered) {
+    return '$answered-ൽ $right ശരി';
+  }
+
+  @override
+  String get quizPick => 'നിങ്ങളുടെ ഉത്തരം തിരഞ്ഞെടുക്കുക';
+
+  @override
+  String get quizAbout => 'ഈ കഥയെക്കുറിച്ച്';
 }

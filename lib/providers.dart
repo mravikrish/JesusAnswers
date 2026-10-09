@@ -9,6 +9,7 @@ import 'data/bible/bible_repository.dart';
 import 'data/models/answer.dart';
 import 'data/models/painting.dart';
 import 'data/models/prayer.dart';
+import 'data/models/question.dart';
 import 'data/models/story.dart';
 import 'data/models/verse.dart';
 import 'l10n/app_localizations.dart';
@@ -17,6 +18,7 @@ import 'services/circle_service.dart';
 import 'services/community_service.dart';
 import 'services/days_service.dart';
 import 'services/feedback/feedback_service.dart';
+import 'services/question_service.dart';
 import 'services/reminder_service.dart';
 import 'services/voice/natural_voices.dart';
 import 'services/voice/speech_service.dart';
@@ -52,6 +54,18 @@ final daysProvider = Provider((ref) {
   final days = DaysService(ref.read(prefsProvider));
   ref.onDispose(days.dispose);
   return days;
+});
+/// The daily Bible question's answers, kept on the phone.
+final questionServiceProvider = Provider((ref) {
+  final questions = QuestionService(ref.read(prefsProvider));
+  ref.onDispose(questions.dispose);
+  return questions;
+});
+
+/// The daily Bible questions, in turn, in the user's current language.
+final bibleQuestionsProvider = FutureProvider<List<BibleQuestion>>((ref) {
+  final lang = ref.watch(settingsProvider.select((s) => s.lang));
+  return ref.watch(bibleProvider).questions(lang);
 });
 final reminderServiceProvider = Provider((_) => ReminderService());
 final feedbackServiceProvider = Provider((_) => FeedbackService());

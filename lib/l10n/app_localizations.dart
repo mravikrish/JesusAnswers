@@ -2307,6 +2307,96 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Leaders can start prayer chains and fasting days. Take a turn, and your phone reminds you when it comes.'**
   String get circleInfoChains;
+
+  /// No description provided for @quizTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Bible Question'**
+  String get quizTitle;
+
+  /// No description provided for @quizToday.
+  ///
+  /// In en, this message translates to:
+  /// **'Today\'s Bible question'**
+  String get quizToday;
+
+  /// No description provided for @quizAnswerNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Answer'**
+  String get quizAnswerNow;
+
+  /// No description provided for @quizSeeWhy.
+  ///
+  /// In en, this message translates to:
+  /// **'See what the Bible says'**
+  String get quizSeeWhy;
+
+  /// No description provided for @quizRight.
+  ///
+  /// In en, this message translates to:
+  /// **'Right!'**
+  String get quizRight;
+
+  /// No description provided for @quizWrong.
+  ///
+  /// In en, this message translates to:
+  /// **'Not quite. The answer is: {answer}'**
+  String quizWrong(String answer);
+
+  /// No description provided for @quizFromBible.
+  ///
+  /// In en, this message translates to:
+  /// **'What the Bible says'**
+  String get quizFromBible;
+
+  /// No description provided for @quizThink.
+  ///
+  /// In en, this message translates to:
+  /// **'Think on this'**
+  String get quizThink;
+
+  /// No description provided for @quizReadStory.
+  ///
+  /// In en, this message translates to:
+  /// **'Read the whole story'**
+  String get quizReadStory;
+
+  /// No description provided for @quizAsk.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask a friend'**
+  String get quizAsk;
+
+  /// No description provided for @quizShareText.
+  ///
+  /// In en, this message translates to:
+  /// **'Can you answer today\'s Bible question?\n\n{question}\n\n{options}'**
+  String quizShareText(String question, String options);
+
+  /// No description provided for @quizTodayShort.
+  ///
+  /// In en, this message translates to:
+  /// **'Today'**
+  String get quizTodayShort;
+
+  /// No description provided for @quizScore.
+  ///
+  /// In en, this message translates to:
+  /// **'{right} right of {answered}'**
+  String quizScore(String right, String answered);
+
+  /// No description provided for @quizPick.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose your answer'**
+  String get quizPick;
+
+  /// No description provided for @quizAbout.
+  ///
+  /// In en, this message translates to:
+  /// **'About this story'**
+  String get quizAbout;
 }
 
 class _AppLocalizationsDelegate

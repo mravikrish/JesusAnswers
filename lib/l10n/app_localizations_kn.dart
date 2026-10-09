@@ -1274,4 +1274,55 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get circleInfoChains =>
       'ನಾಯಕರು ಪ್ರಾರ್ಥನಾ ಸರಪಳಿ ಮತ್ತು ಉಪವಾಸದ ದಿನಗಳನ್ನು ಆರಂಭಿಸಬಹುದು. ಒಂದು ಸರದಿ ತೆಗೆದುಕೊಳ್ಳಿ, ಸಮಯ ಬಂದಾಗ ಫೋನ್ ನೆನಪಿಸುತ್ತದೆ.';
+
+  @override
+  String get quizTitle => 'ಬೈಬಲ್ ಪ್ರಶ್ನೆ';
+
+  @override
+  String get quizToday => 'ಇಂದಿನ ಬೈಬಲ್ ಪ್ರಶ್ನೆ';
+
+  @override
+  String get quizAnswerNow => 'ಉತ್ತರಿಸಿ';
+
+  @override
+  String get quizSeeWhy => 'ಬೈಬಲ್ ಏನು ಹೇಳುತ್ತದೆ ನೋಡಿ';
+
+  @override
+  String get quizRight => 'ಸರಿ!';
+
+  @override
+  String quizWrong(String answer) {
+    return 'ಪೂರ್ತಿಯಾಗಿ ಅಲ್ಲ. ಉತ್ತರ: $answer';
+  }
+
+  @override
+  String get quizFromBible => 'ಬೈಬಲ್ ಏನು ಹೇಳುತ್ತದೆ';
+
+  @override
+  String get quizThink => 'ಇದರ ಬಗ್ಗೆ ಯೋಚಿಸಿ';
+
+  @override
+  String get quizReadStory => 'ಪೂರ್ಣ ಕಥೆ ಓದಿ';
+
+  @override
+  String get quizAsk => 'ಸ್ನೇಹಿತರನ್ನು ಕೇಳಿ';
+
+  @override
+  String quizShareText(String question, String options) {
+    return 'ಇಂದಿನ ಬೈಬಲ್ ಪ್ರಶ್ನೆಗೆ ನೀವು ಉತ್ತರಿಸಬಲ್ಲಿರಾ?\n\n$question\n\n$options';
+  }
+
+  @override
+  String get quizTodayShort => 'ಇಂದು';
+
+  @override
+  String quizScore(String right, String answered) {
+    return '$answered ರಲ್ಲಿ $right ಸರಿ';
+  }
+
+  @override
+  String get quizPick => 'ನಿಮ್ಮ ಉತ್ತರ ಆರಿಸಿ';
+
+  @override
+  String get quizAbout => 'ಈ ಕಥೆಯ ಬಗ್ಗೆ';
 }

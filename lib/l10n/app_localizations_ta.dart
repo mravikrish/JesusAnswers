@@ -1290,4 +1290,55 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get circleInfoChains =>
       'தலைவர்கள் ஜெபச் சங்கிலிகளையும் உபவாச நாட்களையும் தொடங்கலாம். ஒரு முறையை எடுங்கள், நேரம் வரும்போது போன் நினைவூட்டும்.';
+
+  @override
+  String get quizTitle => 'வேதாகமக் கேள்வி';
+
+  @override
+  String get quizToday => 'இன்றைய வேதாகமக் கேள்வி';
+
+  @override
+  String get quizAnswerNow => 'பதில் சொல்லுங்கள்';
+
+  @override
+  String get quizSeeWhy => 'வேதாகமம் என்ன சொல்கிறது என்று பாருங்கள்';
+
+  @override
+  String get quizRight => 'சரி!';
+
+  @override
+  String quizWrong(String answer) {
+    return 'முழுமையாக இல்லை. பதில்: $answer';
+  }
+
+  @override
+  String get quizFromBible => 'வேதாகமம் என்ன சொல்கிறது';
+
+  @override
+  String get quizThink => 'இதைச் சிந்தியுங்கள்';
+
+  @override
+  String get quizReadStory => 'முழுக் கதையையும் படியுங்கள்';
+
+  @override
+  String get quizAsk => 'நண்பரிடம் கேளுங்கள்';
+
+  @override
+  String quizShareText(String question, String options) {
+    return 'இன்றைய வேதாகமக் கேள்விக்கு உங்களால் பதில் சொல்ல முடியுமா?\n\n$question\n\n$options';
+  }
+
+  @override
+  String get quizTodayShort => 'இன்று';
+
+  @override
+  String quizScore(String right, String answered) {
+    return '$answered இல் $right சரி';
+  }
+
+  @override
+  String get quizPick => 'உங்கள் பதிலைத் தேர்ந்தெடுங்கள்';
+
+  @override
+  String get quizAbout => 'இந்தக் கதையைப் பற்றி';
 }

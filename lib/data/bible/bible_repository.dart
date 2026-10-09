@@ -7,6 +7,7 @@ import 'package:flutter/services.dart';
 
 import '../models/painting.dart';
 import '../models/prayer.dart';
+import '../models/question.dart';
 import '../models/story.dart';
 import '../models/verse.dart';
 
@@ -246,6 +247,31 @@ class BibleRepository {
               ),
           ],
         ),
+    ];
+  }
+
+  /// The daily Bible questions in [lang], in the order they come; only those with words in [lang]
+  /// (English where the language has none at all).
+  Future<List<BibleQuestion>> questions(String lang) async {
+    final index = jsonDecode(await _bundle.loadString('assets/questions/questions.json'))['questions'] as List;
+    Map<String, dynamic> words;
+    try {
+      words = jsonDecode(await _bundle.loadString('assets/questions/$lang.json')) as Map<String, dynamic>;
+    } catch (_) {
+      words = jsonDecode(await _bundle.loadString('assets/questions/en.json')) as Map<String, dynamic>;
+    }
+    return [
+      for (final q in index)
+        if (words[q['id']] case final Map<String, dynamic> w)
+          BibleQuestion(
+            id: q['id'] as String,
+            passage: q['passage'] as String,
+            story: q['story'] as String?,
+            question: w['question'] as String,
+            options: (w['options'] as List).cast<String>(),
+            about: w['about'] as String? ?? '',
+            think: w['think'] as String,
+          ),
     ];
   }
 

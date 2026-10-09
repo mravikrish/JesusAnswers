@@ -24,6 +24,7 @@ import 'features/player/player_screen.dart';
 import 'features/prayer/prayer_screen.dart';
 import 'features/prayer/prayers_screen.dart';
 import 'features/profile/profile_screen.dart';
+import 'features/question/question_screen.dart';
 import 'features/stories/stories_screen.dart';
 import 'features/talk/listening_screen.dart';
 import 'features/talk/processing_screen.dart';
@@ -101,6 +102,7 @@ final routerProvider = Provider<GoRouter>((ref) {
         },
         builder: (_, state) => CirclesScreen(joinCode: state.pathParameters['code']),
       ),
+      GoRoute(path: '/question', builder: (_, _) => const QuestionScreen()),
       GoRoute(path: '/stories', builder: (_, _) => const StoriesScreen()),
       GoRoute(path: '/stories/:id', builder: (_, state) => StoryScreen(id: state.pathParameters['id']!)),
       GoRoute(path: '/jesus', builder: (_, _) => const JesusWordsScreen()),
