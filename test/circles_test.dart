@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart' as http;
@@ -10,6 +11,7 @@ import 'package:jesus_answers/features/circles/circles_screen.dart';
 import 'package:jesus_answers/l10n/app_localizations.dart';
 import 'package:jesus_answers/providers.dart';
 import 'package:jesus_answers/services/circle_service.dart';
+import 'package:jesus_answers/services/community_service.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -44,6 +46,18 @@ void main() {
 
   CircleService service(SharedPreferences p, MockClientHandler handler) =>
       CircleService(p, baseUrl: 'https://api.example', installId: () => 'install-1234567890', client: MockClient(handler));
+
+  Widget app(SharedPreferences p, CircleService circles, Widget home) => ProviderScope(
+    overrides: [prefsProvider.overrideWithValue(p), circleServiceProvider.overrideWithValue(circles)],
+    child: MaterialApp(
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
+      home: home,
+    ),
+  );
+
+  /// The install id of the person's old phone.
+  const oldKey = '3f2a9c1e-7b4d-4e8a-9f00-1234567890ab';
 
   test('codes are shown in two halves', () {
     expect(CircleService.showCode('K7P3MX'), 'K7P-3MX');
@@ -130,7 +144,85 @@ void main() {
       {'text': 'My marriage is struggling', 'forLeaders': true, 'anonymous': true},
       {'text': 'Pray for my exam'},
     ]);
-    expect(CircleService.joinLink('K7P3MX'), 'jesusanswers://app/join/K7P3MX');
+  });
+
+  test("an invite is the server's web page for it, so phones without the app find it too", () {
+    expect(CircleService.joinLink('K7P3MX', baseUrl: 'https://api.example'), 'https://api.example/join/K7P3MX');
+    expect(CircleService.joinLink('K7P3MX'), 'jesusanswers://app/join/K7P3MX'); // no server
+    expect(CircleService.codeIn(' k7p-3mx '), 'K7P3MX');
+    expect([for (final t in ['Pray for me', 'K7P3M', 'K7P3MO', null]) CircleService.codeIn(t)], [null, null, null, null]);
+  });
+
+  test('a key from the old phone is its install id, as typed or pasted', () {
+    expect(CommunityService.keyIn(' 3F2A9C1E-7B4D-4E8A-9F00-1234567890AB '), '3f2a9c1e-7b4d-4e8a-9f00-1234567890ab');
+    expect(CommunityService.keyIn('K7P-3MX'), isNull);
+  });
+
+  testWidgets("Join fills in a code copied from an invite's web page", (tester) async {
+    tester.binding.defaultBinaryMessenger.setMockMethodCallHandler(SystemChannels.platform, (call) async {
+      return call.method == 'Clipboard.getData' ? {'text': 'K7P-3MX'} : null;
+    });
+    addTearDown(() => tester.binding.defaultBinaryMessenger.setMockMethodCallHandler(SystemChannels.platform, null));
+    final p = await tester.runAsync(prefs);
+    final circles = service(p!, (_) async => http.Response('[]', 200));
+    await tester.pumpWidget(app(p, circles, const CirclesScreen()));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Join with a code'));
+    await tester.pumpAndSettle();
+    expect(tester.widgetList<TextField>(find.byType(TextField)).first.controller!.text, 'K7P-3MX');
+  });
+
+  testWidgets("a new phone takes on the old phone's key, and with it the circles", (tester) async {
+    await tester.binding.setSurfaceSize(const Size(800, 1600));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    final p = await tester.runAsync(prefs);
+    final ids = <String?>[];
+    final community = CommunityService(p!, baseUrl: '');
+    final circles = CircleService(
+      p,
+      baseUrl: 'https://api.example',
+      installId: () => community.installId,
+      client: MockClient((r) async {
+        ids.add(r.headers['X-Install-Id']);
+        return http.Response(jsonEncode([if (r.headers['X-Install-Id'] == oldKey) {'code': 'K7P3MX', 'name': 'Grace Church', 'members': 120, 'church': true}]), 200);
+      }),
+    );
+    await tester.pumpWidget(ProviderScope(
+      overrides: [
+        prefsProvider.overrideWithValue(p),
+        communityProvider.overrideWithValue(community),
+        circleServiceProvider.overrideWithValue(circles),
+      ],
+      child: const MaterialApp(
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
+        home: CirclesScreen(),
+      ),
+    ));
+    await tester.pumpAndSettle();
+    expect(find.text('Grace Church'), findsNothing);
+    final mine = community.installId;
+
+    await tester.scrollUntilVisible(find.text('Move to a new phone'), 200);
+    await tester.tap(find.text('Move to a new phone'));
+    await tester.pumpAndSettle();
+    expect(find.text(mine), findsOneWidget); // this phone's key, to take to a new one
+    await tester.tap(find.text('I have a key from my old phone'));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField), 'not a key');
+    await tester.pump();
+    await tester.tap(find.text('Use this key'));
+    await tester.pumpAndSettle();
+    expect(find.text("That isn't a key from this app."), findsOneWidget);
+    await tester.enterText(find.byType(TextField), oldKey.toUpperCase());
+    await tester.pump();
+    await tester.tap(find.text('Use this key'));
+    await tester.pumpAndSettle();
+
+    expect(community.installId, oldKey);
+    expect(ids.last, oldKey);
+    await tester.scrollUntilVisible(find.text('Grace Church'), -200);
+    expect(find.text('Grace Church'), findsOneWidget);
   });
 
   test('news starts from the server time, then asks for what came after', () async {
@@ -274,15 +366,6 @@ void main() {
     expect(find.text('Pin as prayer focus'), findsNothing);
     expect(find.text('Delete'), findsNothing);
   });
-
-  Widget app(SharedPreferences p, CircleService circles, Widget home) => ProviderScope(
-    overrides: [prefsProvider.overrideWithValue(p), circleServiceProvider.overrideWithValue(circles)],
-    child: MaterialApp(
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
-      supportedLocales: AppLocalizations.supportedLocales,
-      home: home,
-    ),
-  );
 
   testWidgets('a request without a name hides who asked, and one can go only to the leaders', (tester) async {
     final p = await tester.runAsync(prefs);

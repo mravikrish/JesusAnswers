@@ -5,6 +5,7 @@ import 'package:wakelock_plus/wakelock_plus.dart';
 
 import '../../core/theme/app_theme.dart';
 import '../../l10n/app_localizations.dart';
+import '../../providers.dart';
 import '../../services/circle_service.dart';
 
 /// A circle's invite, large enough for the church's projector or TV: a QR code that phone cameras open
@@ -48,7 +49,7 @@ class _CircleShowScreenState extends State<CircleShowScreen> {
                 padding: EdgeInsets.all(qrSize * 0.06),
                 decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(24)),
                 child: QrImageView(
-                  data: CircleService.joinLink(widget.code),
+                  data: CircleService.joinLink(widget.code, baseUrl: apiBaseUrl),
                   size: qrSize,
                   padding: EdgeInsets.zero,
                   semanticsLabel: CircleService.showCode(widget.code),

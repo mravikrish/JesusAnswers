@@ -1173,6 +1173,39 @@ class AppLocalizationsTl extends AppLocalizations {
   String get circlesMyCircles => 'Aking mga circle';
 
   @override
+  String get circleMoveTitle => 'Ilipat sa bagong phone';
+
+  @override
+  String get circleMoveHint =>
+      'Nasa phone na ito ang iyong mga simbahan at circle. Para mailipat sa bagong phone, kopyahin ang key na ito at ilagay doon: Mga Prayer Circle → Ilipat sa bagong phone → May key ako.';
+
+  @override
+  String get circleMovePrivate =>
+      'Huwag itong ibahagi: sinumang may key na ito ay makikita ang iyong mga circle at makapagdarasal bilang ikaw.';
+
+  @override
+  String get circleMoveCopy => 'Kopyahin ang key';
+
+  @override
+  String get circleMoveCopied => 'Nakopya ang key';
+
+  @override
+  String get circleMoveHave => 'May key ako mula sa luma kong phone';
+
+  @override
+  String get circleMoveEnter => 'Key mula sa luma mong phone';
+
+  @override
+  String get circleMoveUse => 'Gamitin ang key na ito';
+
+  @override
+  String get circleMoveBad => 'Hindi iyan key mula sa app na ito.';
+
+  @override
+  String get circleMoveDone =>
+      'Nasa phone na ito na ang iyong mga simbahan at circle.';
+
+  @override
   String get circleSharePraise => 'Magbahagi ng patotoo ng papuri';
 
   @override

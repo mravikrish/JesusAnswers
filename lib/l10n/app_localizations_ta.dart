@@ -1178,6 +1178,39 @@ class AppLocalizationsTa extends AppLocalizations {
   String get circlesMyCircles => 'என் குழுக்கள்';
 
   @override
+  String get circleMoveTitle => 'புதிய போனுக்கு மாற்று';
+
+  @override
+  String get circleMoveHint =>
+      'உங்கள் சபைகளும் குழுக்களும் இந்தப் போனைச் சேர்ந்தவை. அவற்றைப் புதிய போனுக்குக் கொண்டு செல்ல இந்தச் சாவியை நகலெடுத்து அங்கே உள்ளிடுங்கள்: ஜெப குழுக்கள் → புதிய போனுக்கு மாற்று → என்னிடம் சாவி உள்ளது.';
+
+  @override
+  String get circleMovePrivate =>
+      'இதை இரகசியமாக வையுங்கள்: இந்தச் சாவி உள்ளவர் உங்கள் குழுக்களைப் பார்க்கவும் உங்கள் பெயரில் ஜெபிக்கவும் முடியும்.';
+
+  @override
+  String get circleMoveCopy => 'சாவியை நகலெடு';
+
+  @override
+  String get circleMoveCopied => 'சாவி நகலெடுக்கப்பட்டது';
+
+  @override
+  String get circleMoveHave => 'என்னிடம் பழைய போனின் சாவி உள்ளது';
+
+  @override
+  String get circleMoveEnter => 'பழைய போனின் சாவி';
+
+  @override
+  String get circleMoveUse => 'இந்தச் சாவியைப் பயன்படுத்து';
+
+  @override
+  String get circleMoveBad => 'இது இந்தச் செயலியின் சாவி அல்ல.';
+
+  @override
+  String get circleMoveDone =>
+      'உங்கள் சபைகளும் குழுக்களும் இப்போது இந்தப் போனில் உள்ளன.';
+
+  @override
   String get circleSharePraise => 'துதியின் சாட்சியைப் பகிருங்கள்';
 
   @override

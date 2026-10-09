@@ -1171,6 +1171,39 @@ class AppLocalizationsMl extends AppLocalizations {
   String get circlesMyCircles => 'എന്റെ കൂട്ടങ്ങൾ';
 
   @override
+  String get circleMoveTitle => 'പുതിയ ഫോണിലേക്ക് മാറ്റുക';
+
+  @override
+  String get circleMoveHint =>
+      'നിങ്ങളുടെ സഭകളും കൂട്ടങ്ങളും ഈ ഫോണിന്റേതാണ്. അവ പുതിയ ഫോണിലേക്ക് കൊണ്ടുപോകാൻ ഈ കീ പകർത്തി അവിടെ നൽകുക: പ്രാർത്ഥനാ കൂട്ടങ്ങൾ → പുതിയ ഫോണിലേക്ക് മാറ്റുക → എന്റെ കൈയിൽ കീ ഉണ്ട്.';
+
+  @override
+  String get circleMovePrivate =>
+      'ഇത് രഹസ്യമായി സൂക്ഷിക്കുക: ഈ കീ ഉള്ളവർക്ക് നിങ്ങളുടെ കൂട്ടങ്ങൾ കാണാനും നിങ്ങളുടെ പേരിൽ പ്രാർത്ഥിക്കാനും കഴിയും.';
+
+  @override
+  String get circleMoveCopy => 'കീ പകർത്തുക';
+
+  @override
+  String get circleMoveCopied => 'കീ പകർത്തി';
+
+  @override
+  String get circleMoveHave => 'എന്റെ പഴയ ഫോണിലെ കീ എന്റെ കൈയിലുണ്ട്';
+
+  @override
+  String get circleMoveEnter => 'പഴയ ഫോണിലെ കീ';
+
+  @override
+  String get circleMoveUse => 'ഈ കീ ഉപയോഗിക്കുക';
+
+  @override
+  String get circleMoveBad => 'ഇത് ഈ ആപ്പിന്റെ കീ അല്ല.';
+
+  @override
+  String get circleMoveDone =>
+      'നിങ്ങളുടെ സഭകളും കൂട്ടങ്ങളും ഇപ്പോൾ ഈ ഫോണിലാണ്.';
+
+  @override
   String get circleSharePraise => 'സ്തുതിയുടെ സാക്ഷ്യം പങ്കിടുക';
 
   @override

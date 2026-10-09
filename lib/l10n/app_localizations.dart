@@ -2158,6 +2158,66 @@ abstract class AppLocalizations {
   /// **'My circles'**
   String get circlesMyCircles;
 
+  /// No description provided for @circleMoveTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Move to a new phone'**
+  String get circleMoveTitle;
+
+  /// No description provided for @circleMoveHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Your churches and circles belong to this phone. To bring them to a new phone, copy this key and enter it there, under Prayer Circles → Move to a new phone → I have a key.'**
+  String get circleMoveHint;
+
+  /// No description provided for @circleMovePrivate.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep it private: anyone with this key can see your circles and pray as you.'**
+  String get circleMovePrivate;
+
+  /// No description provided for @circleMoveCopy.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy key'**
+  String get circleMoveCopy;
+
+  /// No description provided for @circleMoveCopied.
+  ///
+  /// In en, this message translates to:
+  /// **'Key copied'**
+  String get circleMoveCopied;
+
+  /// No description provided for @circleMoveHave.
+  ///
+  /// In en, this message translates to:
+  /// **'I have a key from my old phone'**
+  String get circleMoveHave;
+
+  /// No description provided for @circleMoveEnter.
+  ///
+  /// In en, this message translates to:
+  /// **'Key from your old phone'**
+  String get circleMoveEnter;
+
+  /// No description provided for @circleMoveUse.
+  ///
+  /// In en, this message translates to:
+  /// **'Use this key'**
+  String get circleMoveUse;
+
+  /// No description provided for @circleMoveBad.
+  ///
+  /// In en, this message translates to:
+  /// **'That isn\'t a key from this app.'**
+  String get circleMoveBad;
+
+  /// No description provided for @circleMoveDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Your churches and circles are on this phone now.'**
+  String get circleMoveDone;
+
   /// No description provided for @circleSharePraise.
   ///
   /// In en, this message translates to:

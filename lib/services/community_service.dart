@@ -81,6 +81,15 @@ class CommunityService extends ChangeNotifier {
     return id;
   }
 
+  /// A key from the person's old phone ([installId] there), as they typed or pasted it; null if it isn't one.
+  static String? keyIn(String text) {
+    final id = text.trim().toLowerCase();
+    return RegExp(r'^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$').hasMatch(id) ? id : null;
+  }
+
+  /// Carries on as the person's old phone, whose [installId] this was: their prayer circles come along.
+  Future<void> useInstallId(String id) => _prefs.setString(_installKey, id);
+
   bool loved(String item) => _hearts.contains(item);
 
   ItemCounts counts(String item) => _counts[item] ?? const ItemCounts();

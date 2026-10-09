@@ -447,8 +447,17 @@ class CircleService {
   /// "K7P3MX" → "K7P-3MX", easier to read out and type.
   static String showCode(String code) => code.length == 6 ? '${code.substring(0, 3)}-${code.substring(3)}' : code;
 
-  /// What a QR code on the church's screen holds: scanned with a phone camera, it opens the app to join.
-  static String joinLink(String code) => 'jesusanswers://app/join/$code';
+  /// What a QR code on the church's screen and a shared invite hold: the server's web page for the invite
+  /// ([baseUrl]/join/K7P3MX), which opens the app to join, or shows someone without the app where to get
+  /// it. Without a server, the app's own link (only for phones that have the app).
+  static String joinLink(String code, {String baseUrl = ''}) =>
+      baseUrl.isEmpty ? 'jesusanswers://app/join/$code' : '$baseUrl/join/$code';
+
+  /// A code as people type or copy it ("k7p-3mx", "K7P3MX"), or null when [text] isn't one.
+  static String? codeIn(String? text) {
+    final code = (text ?? '').trim().toUpperCase().replaceAll(RegExp(r'[\s-]'), '');
+    return RegExp(r'^[A-HJ-NP-Z2-9]{6}$').hasMatch(code) ? code : null;
+  }
 
   /// The circles as last fetched.
   List<CircleSummary> get saved {
@@ -474,6 +483,13 @@ class CircleService {
         ? null
         : c.requests.map((r) => r.at).reduce((a, b) => a.isAfter(b) ? a : b).toUtc();
     if (newest != null) await _prefs.setString(_seenKey(c.code), newest.toIso8601String());
+  }
+
+  /// After taking on the old phone's install id: forget this phone's own list, and start the news afresh
+  /// rather than bring everything that happened as popups.
+  Future<void> startOver() async {
+    await _prefs.remove(_listKey);
+    await _prefs.remove(_newsKey);
   }
 
   Future<List<CircleSummary>> mine() async {

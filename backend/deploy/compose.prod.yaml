@@ -38,6 +38,7 @@ services:
       API_DOMAIN: ${API_DOMAIN}
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./download:/srv/download:ro
       - caddy_data:/data
     depends_on:
       - api

@@ -1162,6 +1162,38 @@ class AppLocalizationsBn extends AppLocalizations {
   String get circlesMyCircles => 'আমার দলগুলি';
 
   @override
+  String get circleMoveTitle => 'নতুন ফোনে নিয়ে যান';
+
+  @override
+  String get circleMoveHint =>
+      'আপনার মণ্ডলী ও দলগুলি এই ফোনের সঙ্গে যুক্ত। নতুন ফোনে নিতে এই চাবিটি কপি করে সেখানে দিন: প্রার্থনা দল → নতুন ফোনে নিয়ে যান → আমার কাছে চাবি আছে।';
+
+  @override
+  String get circleMovePrivate =>
+      'এটি গোপন রাখুন: যার কাছে এই চাবি আছে সে আপনার দলগুলি দেখতে ও আপনার নামে প্রার্থনা করতে পারে।';
+
+  @override
+  String get circleMoveCopy => 'চাবি কপি করুন';
+
+  @override
+  String get circleMoveCopied => 'চাবি কপি হয়েছে';
+
+  @override
+  String get circleMoveHave => 'আমার কাছে পুরোনো ফোনের চাবি আছে';
+
+  @override
+  String get circleMoveEnter => 'পুরোনো ফোনের চাবি';
+
+  @override
+  String get circleMoveUse => 'এই চাবি ব্যবহার করুন';
+
+  @override
+  String get circleMoveBad => 'এটি এই অ্যাপের চাবি নয়।';
+
+  @override
+  String get circleMoveDone => 'আপনার মণ্ডলী ও দলগুলি এখন এই ফোনে।';
+
+  @override
   String get circleSharePraise => 'প্রশংসার খবর শেয়ার করুন';
 
   @override

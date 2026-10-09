@@ -37,3 +37,6 @@ jesusanswers:
   # Where the app downloads natural voices from, comma-separated, tried before its built-in hosts.
   # e.g. https://github.com/<owner>/<repo>/releases/download/voices-v1/{file}
   voice-sources: ${VOICE_SOURCES:}
+  # Where an invite's "Get the app" button goes, for someone who hasn't installed it yet. By default the
+  # APK served next to the API (upload it with deploy/upload-apk.sh); the Play Store listing once there.
+  app-download-url: ${APP_DOWNLOAD_URL:/download/ask-jesus.apk}

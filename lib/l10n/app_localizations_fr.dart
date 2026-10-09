@@ -1168,6 +1168,39 @@ class AppLocalizationsFr extends AppLocalizations {
   String get circlesMyCircles => 'Mes cercles';
 
   @override
+  String get circleMoveTitle => 'Passer à un nouveau téléphone';
+
+  @override
+  String get circleMoveHint =>
+      'Vos églises et cercles sont liés à ce téléphone. Pour les retrouver sur un nouveau téléphone, copiez cette clé et saisissez-la là-bas : Cercles de prière → Passer à un nouveau téléphone → J\'ai une clé.';
+
+  @override
+  String get circleMovePrivate =>
+      'Gardez-la secrète : toute personne qui a cette clé voit vos cercles et peut prier en votre nom.';
+
+  @override
+  String get circleMoveCopy => 'Copier la clé';
+
+  @override
+  String get circleMoveCopied => 'Clé copiée';
+
+  @override
+  String get circleMoveHave => 'J\'ai une clé de mon ancien téléphone';
+
+  @override
+  String get circleMoveEnter => 'Clé de votre ancien téléphone';
+
+  @override
+  String get circleMoveUse => 'Utiliser cette clé';
+
+  @override
+  String get circleMoveBad => 'Ce n\'est pas une clé de cette application.';
+
+  @override
+  String get circleMoveDone =>
+      'Vos églises et cercles sont maintenant sur ce téléphone.';
+
+  @override
   String get circleSharePraise => 'Partager un sujet de louange';
 
   @override

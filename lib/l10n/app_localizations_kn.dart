@@ -1163,6 +1163,38 @@ class AppLocalizationsKn extends AppLocalizations {
   String get circlesMyCircles => 'ನನ್ನ ಗುಂಪುಗಳು';
 
   @override
+  String get circleMoveTitle => 'ಹೊಸ ಫೋನ್‌ಗೆ ಸ್ಥಳಾಂತರಿಸಿ';
+
+  @override
+  String get circleMoveHint =>
+      'ನಿಮ್ಮ ಸಭೆಗಳು ಮತ್ತು ಗುಂಪುಗಳು ಈ ಫೋನ್‌ಗೆ ಸೇರಿವೆ. ಅವನ್ನು ಹೊಸ ಫೋನ್‌ಗೆ ಒಯ್ಯಲು ಈ ಕೀಲಿಯನ್ನು ನಕಲಿಸಿ ಅಲ್ಲಿ ನಮೂದಿಸಿ: ಪ್ರಾರ್ಥನಾ ಗುಂಪುಗಳು → ಹೊಸ ಫೋನ್‌ಗೆ ಸ್ಥಳಾಂತರಿಸಿ → ನನ್ನ ಬಳಿ ಕೀಲಿ ಇದೆ.';
+
+  @override
+  String get circleMovePrivate =>
+      'ಇದನ್ನು ರಹಸ್ಯವಾಗಿಡಿ: ಈ ಕೀಲಿ ಇರುವವರು ನಿಮ್ಮ ಗುಂಪುಗಳನ್ನು ನೋಡಬಹುದು ಮತ್ತು ನಿಮ್ಮ ಹೆಸರಿನಲ್ಲಿ ಪ್ರಾರ್ಥಿಸಬಹುದು.';
+
+  @override
+  String get circleMoveCopy => 'ಕೀಲಿ ನಕಲಿಸಿ';
+
+  @override
+  String get circleMoveCopied => 'ಕೀಲಿ ನಕಲಿಸಲಾಗಿದೆ';
+
+  @override
+  String get circleMoveHave => 'ನನ್ನ ಬಳಿ ಹಳೆಯ ಫೋನ್‌ನ ಕೀಲಿ ಇದೆ';
+
+  @override
+  String get circleMoveEnter => 'ಹಳೆಯ ಫೋನ್‌ನ ಕೀಲಿ';
+
+  @override
+  String get circleMoveUse => 'ಈ ಕೀಲಿ ಬಳಸಿ';
+
+  @override
+  String get circleMoveBad => 'ಇದು ಈ ಆ್ಯಪ್‌ನ ಕೀಲಿ ಅಲ್ಲ.';
+
+  @override
+  String get circleMoveDone => 'ನಿಮ್ಮ ಸಭೆಗಳು ಮತ್ತು ಗುಂಪುಗಳು ಈಗ ಈ ಫೋನ್‌ನಲ್ಲಿವೆ.';
+
+  @override
   String get circleSharePraise => 'ಸ್ತುತಿಯ ವರದಿ ಹಂಚಿಕೊಳ್ಳಿ';
 
   @override

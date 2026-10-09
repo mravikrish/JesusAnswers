@@ -1165,6 +1165,38 @@ class AppLocalizationsMr extends AppLocalizations {
   String get circlesMyCircles => 'माझी मंडळे';
 
   @override
+  String get circleMoveTitle => 'नवीन फोनवर न्या';
+
+  @override
+  String get circleMoveHint =>
+      'तुमच्या मंडळ्या आणि मंडळे या फोनशी जोडलेली आहेत. ती नवीन फोनवर नेण्यासाठी ही की कॉपी करा आणि तिथे टाका: प्रार्थना मंडळ → नवीन फोनवर न्या → माझ्याकडे की आहे.';
+
+  @override
+  String get circleMovePrivate =>
+      'ती गुप्त ठेवा: ज्याच्याकडे ही की आहे तो तुमची मंडळे पाहू शकतो आणि तुमच्या नावाने प्रार्थना करू शकतो.';
+
+  @override
+  String get circleMoveCopy => 'की कॉपी करा';
+
+  @override
+  String get circleMoveCopied => 'की कॉपी झाली';
+
+  @override
+  String get circleMoveHave => 'माझ्याकडे जुन्या फोनची की आहे';
+
+  @override
+  String get circleMoveEnter => 'जुन्या फोनची की';
+
+  @override
+  String get circleMoveUse => 'ही की वापरा';
+
+  @override
+  String get circleMoveBad => 'ही या ॲपची की नाही.';
+
+  @override
+  String get circleMoveDone => 'तुमच्या मंडळ्या आणि मंडळे आता या फोनवर आहेत.';
+
+  @override
   String get circleSharePraise => 'स्तुतीची साक्ष शेअर करा';
 
   @override

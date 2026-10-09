@@ -1167,6 +1167,38 @@ class AppLocalizationsRu extends AppLocalizations {
   String get circlesMyCircles => 'Мои круги';
 
   @override
+  String get circleMoveTitle => 'Перенести на новый телефон';
+
+  @override
+  String get circleMoveHint =>
+      'Ваши церкви и круги привязаны к этому телефону. Чтобы перенести их на новый телефон, скопируйте этот ключ и введите его там: Молитвенные круги → Перенести на новый телефон → У меня есть ключ.';
+
+  @override
+  String get circleMovePrivate =>
+      'Храните его в тайне: у кого есть этот ключ, тот видит ваши круги и может молиться от вашего имени.';
+
+  @override
+  String get circleMoveCopy => 'Копировать ключ';
+
+  @override
+  String get circleMoveCopied => 'Ключ скопирован';
+
+  @override
+  String get circleMoveHave => 'У меня есть ключ со старого телефона';
+
+  @override
+  String get circleMoveEnter => 'Ключ со старого телефона';
+
+  @override
+  String get circleMoveUse => 'Использовать ключ';
+
+  @override
+  String get circleMoveBad => 'Это не ключ из этого приложения.';
+
+  @override
+  String get circleMoveDone => 'Ваши церкви и круги теперь на этом телефоне.';
+
+  @override
   String get circleSharePraise => 'Поделиться свидетельством';
 
   @override

@@ -31,6 +31,7 @@ Spring Boot 4 · Java 21 · PostgreSQL · Claude (`claude-opus-5-5`) · Firebase
 | POST · DELETE | `/v1/circles/{code}/members/{id}/leader` | owner | Make a member a leader · no longer a leader |
 | POST | `/v1/circles/{code}/leave` | members | Leave, taking your requests with you |
 | GET | `/v1/voice-sources` | none | Where the app downloads natural voices from (`VOICE_SOURCES`) |
+| GET | `/join/{code}` | none | An invite as a web page (the QR code and shared invites): opens the app's Join with the code, or shows the code and "Get the app" (`APP_DOWNLOAD_URL`). It never looks the circle up |
 | GET | `/actuator/health` | none | Health check |
 
 Auth is a Firebase ID token: `Authorization: Bearer <token>`.
@@ -106,6 +107,18 @@ bash backend/deploy/deploy.sh ubuntu@<server-ip> <path-to-private-key>
 The first run installs Docker, opens ports 80/443, writes the server's secrets to `~/jesusanswers/deploy/.env`
 (**back it up**), and schedules nightly backups to `~/backups`. The API's address is `https://<ip-with-dashes>.sslip.io`.
 Build the app against it with `--dart-define=API_BASE_URL=https://…sslip.io`. Run the same command again for each update.
+
+**Without that `--dart-define`, the app has no server**: Prayer Circles say they can't connect, and invites fall
+back to an app-only link. Build releases with it every time.
+
+For invites to work on phones without the app, put the app on the server too (after each release build):
+
+```bash
+bash backend/deploy/upload-apk.sh ubuntu@<server-ip> <path-to-private-key>
+```
+
+It's then at `https://…sslip.io/download/ask-jesus.apk`, where an invite page's "Get the app" points. Once the app
+is on the Play Store, set `APP_DOWNLOAD_URL` in the server's `.env` to its listing instead.
 
 ## Tests
 

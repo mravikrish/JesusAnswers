@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
@@ -14,6 +15,7 @@ import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
 import '../../services/answer/safety.dart';
 import '../../services/circle_service.dart';
+import '../../services/community_service.dart';
 import 'circle_chains.dart';
 import 'circle_groups.dart';
 import 'circle_praise.dart';
@@ -145,8 +147,14 @@ class _CirclesScreenState extends ConsumerState<CirclesScreen> {
     await _run(() => ref.read(circleServiceProvider).create(answer.$1, answer.$2, church: church));
   }
 
-  /// [code]: from an invite's QR code, filled in.
+  /// [code]: from an invite's QR code, filled in; otherwise a code copied from an invite's web page.
   Future<void> _join({String? code}) async {
+    if (code == null) {
+      try {
+        code = CircleService.codeIn((await Clipboard.getData(Clipboard.kTextPlain))?.text);
+      } catch (_) {}
+      if (!mounted) return;
+    }
     final l = AppLocalizations.of(context);
     final answer = await _askTwo(
       context,
@@ -159,6 +167,80 @@ class _CirclesScreenState extends ConsumerState<CirclesScreen> {
     );
     if (answer == null || !mounted) return;
     await _run(() => ref.read(circleServiceProvider).join(answer.$1, answer.$2));
+  }
+
+  /// Moving to a new phone: this phone's key to enter there, or the old phone's key entered here.
+  Future<void> _move() async {
+    final l = AppLocalizations.of(context);
+    final community = ref.read(communityProvider);
+    final key = community.installId;
+    final have = await showModalBottomSheet<bool>(
+      context: context,
+      showDragHandle: true,
+      isScrollControlled: true,
+      backgroundColor: AppColors.ivory,
+      builder: (ctx) => SafeArea(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.fromLTRB(24, 0, 24, 20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(l.circleMoveTitle, style: AppText.serif(24, weight: FontWeight.w700)),
+              const SizedBox(height: 8),
+              Text(l.circleMoveHint, style: const TextStyle(fontSize: 15, height: 1.45, color: AppColors.inkSoft)),
+              const SizedBox(height: 16),
+              SoftCard(
+                child: SelectableText(
+                  key,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w700, letterSpacing: 0.5),
+                ),
+              ),
+              const SizedBox(height: 10),
+              Row(
+                children: [
+                  const Icon(Icons.lock_rounded, size: 16, color: AppColors.heart),
+                  const SizedBox(width: 6),
+                  Expanded(
+                    child: Text(l.circleMovePrivate, style: const TextStyle(fontSize: 13, color: AppColors.heart)),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 14),
+              FilledButton.icon(
+                style: FilledButton.styleFrom(minimumSize: const Size.fromHeight(48)),
+                onPressed: () async {
+                  await Clipboard.setData(ClipboardData(text: key));
+                  if (ctx.mounted) Navigator.pop(ctx);
+                  if (mounted) _say(context, l.circleMoveCopied);
+                },
+                icon: const Icon(Icons.copy_rounded),
+                label: Text(l.circleMoveCopy),
+              ),
+              const SizedBox(height: 6),
+              TextButton.icon(
+                style: TextButton.styleFrom(foregroundColor: AppColors.ember),
+                onPressed: () => Navigator.pop(ctx, true),
+                icon: const Icon(Icons.download_rounded, color: AppColors.gold),
+                label: Text(l.circleMoveHave),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+    if (have != true || !mounted) return;
+    final entered = await _askKey(context);
+    if (entered == null || !mounted) return;
+    if (entered == key) return;
+    await community.useInstallId(entered);
+    await ref.read(circleServiceProvider).startOver();
+    setState(() {
+      _circles = const [];
+      _loading = true;
+    });
+    await _load();
+    if (mounted) _say(context, l.circleMoveDone);
   }
 
   /// Creates or joins, remembers the name for next time, and opens the circle.
@@ -319,6 +401,16 @@ class _CirclesScreenState extends ConsumerState<CirclesScreen> {
                     children: const [CircleRules()],
                   ),
                 ),
+              ),
+            ),
+            // Circles belong to the phone, with no account: this brings them to a new one.
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20, 8, 20, 0),
+              child: TextButton.icon(
+                style: TextButton.styleFrom(foregroundColor: AppColors.ember),
+                onPressed: _loading ? null : _move,
+                icon: const Icon(Icons.phonelink_setup_rounded, color: AppColors.gold),
+                label: Text(l.circleMoveTitle),
               ),
             ),
           ],
@@ -648,7 +740,15 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
   void _invite(CircleDetail c) {
     final l = AppLocalizations.of(context);
     SharePlus.instance.share(
-      ShareParams(text: '${l.circleInviteText(c.name, CircleService.showCode(c.code))}\n\n${shareFooter(l)}'),
+      ShareParams(
+        text: [
+          l.circleInviteText(c.name, CircleService.showCode(c.code)),
+          // Opens the app to join, or shows where to get it.
+          if (apiBaseUrl.isNotEmpty) CircleService.joinLink(c.code, baseUrl: apiBaseUrl),
+          '',
+          shareFooter(l),
+        ].join('\n'),
+      ),
     );
   }
 
@@ -1543,6 +1643,69 @@ class CircleInitial extends StatelessWidget {
       style: const TextStyle(fontWeight: FontWeight.w700, color: AppColors.ember),
     ),
   );
+}
+
+/// The key from the person's old phone, checked; null when cancelled.
+Future<String?> _askKey(BuildContext context) => showDialog<String>(context: context, builder: (_) => const _KeyDialog());
+
+class _KeyDialog extends StatefulWidget {
+  const _KeyDialog();
+
+  @override
+  State<_KeyDialog> createState() => _KeyDialogState();
+}
+
+class _KeyDialogState extends State<_KeyDialog> {
+  final _key = TextEditingController();
+  bool _wrong = false;
+
+  @override
+  void dispose() {
+    _key.dispose();
+    super.dispose();
+  }
+
+  void _use() {
+    final id = CommunityService.keyIn(_key.text);
+    if (id == null) {
+      setState(() => _wrong = true);
+    } else {
+      Navigator.pop(context, id);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    return AlertDialog(
+      backgroundColor: AppColors.ivory,
+      title: Text(l.circleMoveHave, style: AppText.serif(22, weight: FontWeight.w700)),
+      content: TextField(
+        controller: _key,
+        autofocus: true,
+        maxLength: 40,
+        onChanged: (_) => setState(() => _wrong = false),
+        onSubmitted: (_) => _use(),
+        decoration: InputDecoration(
+          labelText: l.circleMoveEnter,
+          hintText: 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
+          counterText: '',
+          errorText: _wrong ? l.circleMoveBad : null,
+        ),
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(context),
+          child: Text(MaterialLocalizations.of(context).cancelButtonLabel),
+        ),
+        FilledButton(
+          style: FilledButton.styleFrom(minimumSize: const Size(0, 44)),
+          onPressed: _key.text.trim().isEmpty ? null : _use,
+          child: Text(l.circleMoveUse),
+        ),
+      ],
+    );
+  }
 }
 
 /// What to start: true for a church, false for a circle of family and friends; null when cancelled.

@@ -1161,6 +1161,39 @@ class AppLocalizationsSw extends AppLocalizations {
   String get circlesMyCircles => 'Vikundi vyangu';
 
   @override
+  String get circleMoveTitle => 'Hamia simu mpya';
+
+  @override
+  String get circleMoveHint =>
+      'Makanisa na vikundi vyako viko kwenye simu hii. Ili kuvihamishia simu mpya, nakili ufunguo huu na uuweke huko: Vikundi vya Maombi → Hamia simu mpya → Nina ufunguo.';
+
+  @override
+  String get circleMovePrivate =>
+      'Uweke siri: yeyote mwenye ufunguo huu anaona vikundi vyako na anaweza kuomba kama wewe.';
+
+  @override
+  String get circleMoveCopy => 'Nakili ufunguo';
+
+  @override
+  String get circleMoveCopied => 'Ufunguo umenakiliwa';
+
+  @override
+  String get circleMoveHave => 'Nina ufunguo kutoka simu yangu ya zamani';
+
+  @override
+  String get circleMoveEnter => 'Ufunguo kutoka simu ya zamani';
+
+  @override
+  String get circleMoveUse => 'Tumia ufunguo huu';
+
+  @override
+  String get circleMoveBad => 'Huo si ufunguo wa programu hii.';
+
+  @override
+  String get circleMoveDone =>
+      'Makanisa na vikundi vyako sasa viko kwenye simu hii.';
+
+  @override
   String get circleSharePraise => 'Shiriki ushuhuda wa sifa';
 
   @override

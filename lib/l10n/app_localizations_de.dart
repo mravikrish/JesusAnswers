@@ -1164,6 +1164,40 @@ class AppLocalizationsDe extends AppLocalizations {
   String get circlesMyCircles => 'Meine Kreise';
 
   @override
+  String get circleMoveTitle => 'Auf ein neues Handy umziehen';
+
+  @override
+  String get circleMoveHint =>
+      'Deine Gemeinden und Kreise gehören zu diesem Handy. Um sie auf ein neues Handy mitzunehmen, kopiere diesen Schlüssel und gib ihn dort ein: Gebetskreise → Auf ein neues Handy umziehen → Ich habe einen Schlüssel.';
+
+  @override
+  String get circleMovePrivate =>
+      'Halte ihn geheim: Wer diesen Schlüssel hat, sieht deine Kreise und kann als du beten.';
+
+  @override
+  String get circleMoveCopy => 'Schlüssel kopieren';
+
+  @override
+  String get circleMoveCopied => 'Schlüssel kopiert';
+
+  @override
+  String get circleMoveHave =>
+      'Ich habe einen Schlüssel von meinem alten Handy';
+
+  @override
+  String get circleMoveEnter => 'Schlüssel vom alten Handy';
+
+  @override
+  String get circleMoveUse => 'Diesen Schlüssel verwenden';
+
+  @override
+  String get circleMoveBad => 'Das ist kein Schlüssel aus dieser App.';
+
+  @override
+  String get circleMoveDone =>
+      'Deine Gemeinden und Kreise sind jetzt auf diesem Handy.';
+
+  @override
   String get circleSharePraise => 'Einen Lobpreisbericht teilen';
 
   @override

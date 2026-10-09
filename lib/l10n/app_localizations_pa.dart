@@ -728,23 +728,23 @@ class AppLocalizationsPa extends AppLocalizations {
       'ਅੱਜ ਦਾ ਬਚਨ ਤੁਹਾਡੀ ਉਡੀਕ ਕਰ ਰਿਹਾ ਹੈ। ਇਸਨੂੰ ਪੜ੍ਹੋ, ਪ੍ਰਾਰਥਨਾ ਕਰੋ, ਅਤੇ ਉਨ੍ਹਾਂ ਦੀ ਸੁਣੋ।';
 
   @override
-  String get circlesTitle => 'ਪ੍ਰਾਰਥਨਾ ਮੰਡਲੀ';
+  String get circlesTitle => 'ਪ੍ਰਾਰਥਨਾ ਟੋਲੀ';
 
   @override
   String get circlesHint => 'ਪਰਿਵਾਰ ਅਤੇ ਦੋਸਤਾਂ ਨਾਲ ਇੱਕ-ਦੂਜੇ ਲਈ ਪ੍ਰਾਰਥਨਾ ਕਰੋ';
 
   @override
   String get circlesIntro =>
-      'ਇੱਕ ਮੰਡਲੀ ਸ਼ੁਰੂ ਕਰੋ ਅਤੇ ਜਿਨ੍ਹਾਂ ਨਾਲ ਤੁਸੀਂ ਪ੍ਰਾਰਥਨਾ ਕਰਦੇ ਹੋ ਉਨ੍ਹਾਂ ਨੂੰ ਇਸਦਾ ਕੋਡ ਭੇਜੋ, ਜਾਂ ਕਿਸੇ ਦੇ ਭੇਜੇ ਕੋਡ ਨਾਲ ਮੰਡਲੀ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ।';
+      'ਇੱਕ ਟੋਲੀ ਸ਼ੁਰੂ ਕਰੋ ਅਤੇ ਜਿਨ੍ਹਾਂ ਨਾਲ ਤੁਸੀਂ ਪ੍ਰਾਰਥਨਾ ਕਰਦੇ ਹੋ ਉਨ੍ਹਾਂ ਨੂੰ ਇਸਦਾ ਕੋਡ ਭੇਜੋ, ਜਾਂ ਕਿਸੇ ਦੇ ਭੇਜੇ ਕੋਡ ਨਾਲ ਟੋਲੀ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ।';
 
   @override
-  String get circleStart => 'ਮੰਡਲੀ ਸ਼ੁਰੂ ਕਰੋ';
+  String get circleStart => 'ਟੋਲੀ ਸ਼ੁਰੂ ਕਰੋ';
 
   @override
   String get circleJoin => 'ਕੋਡ ਨਾਲ ਸ਼ਾਮਲ ਹੋਵੋ';
 
   @override
-  String get circleName => 'ਮੰਡਲੀ ਦਾ ਨਾਮ';
+  String get circleName => 'ਟੋਲੀ ਦਾ ਨਾਮ';
 
   @override
   String get circleNameHint => 'ਜਿਵੇਂ ਪਰਿਵਾਰ, ਦੋਸਤ';
@@ -780,7 +780,7 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String circleInviteText(String name, String code) {
-    return 'JesusAnswers \'ਤੇ ਮੇਰੀ ਪ੍ਰਾਰਥਨਾ ਮੰਡਲੀ \"$name\" ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ, ਤਾਂ ਜੋ ਅਸੀਂ ਇੱਕ-ਦੂਜੇ ਲਈ ਪ੍ਰਾਰਥਨਾ ਕਰ ਸਕੀਏ।\nਐਪ ਖੋਲ੍ਹੋ, ਪ੍ਰਾਰਥਨਾ → ਪ੍ਰਾਰਥਨਾ ਮੰਡਲੀ → ਕੋਡ ਨਾਲ ਸ਼ਾਮਲ ਹੋਵੋ \'ਤੇ ਟੈਪ ਕਰੋ, ਅਤੇ ਇਹ ਲਿਖੋ: $code';
+    return 'JesusAnswers \'ਤੇ ਮੇਰੀ ਪ੍ਰਾਰਥਨਾ ਟੋਲੀ \"$name\" ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ, ਤਾਂ ਜੋ ਅਸੀਂ ਇੱਕ-ਦੂਜੇ ਲਈ ਪ੍ਰਾਰਥਨਾ ਕਰ ਸਕੀਏ।\nਐਪ ਖੋਲ੍ਹੋ, ਪ੍ਰਾਰਥਨਾ → ਪ੍ਰਾਰਥਨਾ ਟੋਲੀ → ਕੋਡ ਨਾਲ ਸ਼ਾਮਲ ਹੋਵੋ \'ਤੇ ਟੈਪ ਕਰੋ, ਅਤੇ ਇਹ ਲਿਖੋ: $code';
   }
 
   @override
@@ -812,13 +812,13 @@ class AppLocalizationsPa extends AppLocalizations {
   String get circleMembersTitle => 'ਮੈਂਬਰ';
 
   @override
-  String get circleOwner => 'ਮੰਡਲੀ ਸ਼ੁਰੂ ਕੀਤੀ';
+  String get circleOwner => 'ਟੋਲੀ ਸ਼ੁਰੂ ਕੀਤੀ';
 
   @override
   String get circleYou => 'ਤੁਸੀਂ';
 
   @override
-  String get circleRemoveMember => 'ਮੰਡਲੀ ਵਿੱਚੋਂ ਹਟਾਓ';
+  String get circleRemoveMember => 'ਟੋਲੀ ਵਿੱਚੋਂ ਹਟਾਓ';
 
   @override
   String circleRemoveConfirm(String name) {
@@ -826,11 +826,11 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
-  String get circleLeave => 'ਮੰਡਲੀ ਛੱਡੋ';
+  String get circleLeave => 'ਟੋਲੀ ਛੱਡੋ';
 
   @override
   String get circleLeaveConfirm =>
-      'ਇਹ ਮੰਡਲੀ ਛੱਡਣੀ ਹੈ? ਇਸ ਵਿੱਚ ਤੁਹਾਡੀਆਂ ਪ੍ਰਾਰਥਨਾ ਬੇਨਤੀਆਂ ਮਿਟ ਜਾਣਗੀਆਂ।';
+      'ਇਹ ਟੋਲੀ ਛੱਡਣੀ ਹੈ? ਇਸ ਵਿੱਚ ਤੁਹਾਡੀਆਂ ਪ੍ਰਾਰਥਨਾ ਬੇਨਤੀਆਂ ਮਿਟ ਜਾਣਗੀਆਂ।';
 
   @override
   String circleReachOut(String name) {
@@ -839,17 +839,17 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get circleNotFound =>
-      'ਇਸ ਕੋਡ ਦੀ ਕੋਈ ਮੰਡਲੀ ਨਹੀਂ ਹੈ। ਜਾਂਚ ਕੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
+      'ਇਸ ਕੋਡ ਦੀ ਕੋਈ ਟੋਲੀ ਨਹੀਂ ਹੈ। ਜਾਂਚ ਕੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
 
   @override
-  String get circleFull => 'ਇਹ ਮੰਡਲੀ ਭਰ ਚੁੱਕੀ ਹੈ।';
+  String get circleFull => 'ਇਹ ਟੋਲੀ ਭਰ ਚੁੱਕੀ ਹੈ।';
 
   @override
   String get circleTooMany =>
-      'ਤੁਸੀਂ ਬਹੁਤ ਸਾਰੀਆਂ ਮੰਡਲੀਆਂ ਵਿੱਚ ਹੋ। ਹੋਰ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਲਈ ਇੱਕ ਛੱਡੋ।';
+      'ਤੁਸੀਂ ਬਹੁਤ ਸਾਰੀਆਂ ਟੋਲੀਆਂ ਵਿੱਚ ਹੋ। ਹੋਰ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਲਈ ਇੱਕ ਛੱਡੋ।';
 
   @override
-  String get circleNotAllowed => 'ਤੁਸੀਂ ਇਸ ਮੰਡਲੀ ਵਿੱਚ ਇਹ ਨਹੀਂ ਕਰ ਸਕਦੇ।';
+  String get circleNotAllowed => 'ਤੁਸੀਂ ਇਸ ਟੋਲੀ ਵਿੱਚ ਇਹ ਨਹੀਂ ਕਰ ਸਕਦੇ।';
 
   @override
   String get circleOffline =>
@@ -883,17 +883,17 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get circleAnsweredThanks =>
-      'ਪਰਮੇਸ਼ੁਰ ਦੀ ਉਸਤਤ ਹੋਵੇ! ਮੰਡਲੀ ਦੇ ਸਾਰੇ ਹੁਣ ਵੇਖ ਸਕਦੇ ਹਨ ਕਿ ਉਸ ਨੇ ਉੱਤਰ ਦਿੱਤਾ।';
+      'ਪਰਮੇਸ਼ੁਰ ਦੀ ਉਸਤਤ ਹੋਵੇ! ਟੋਲੀ ਦੇ ਸਾਰੇ ਹੁਣ ਵੇਖ ਸਕਦੇ ਹਨ ਕਿ ਉਸ ਨੇ ਉੱਤਰ ਦਿੱਤਾ।';
 
   @override
-  String get circleShortLabel => 'ਮੰਡਲੀ';
+  String get circleShortLabel => 'ਟੋਲੀ';
 
   @override
   String get circleNone =>
-      'ਪਹਿਲਾਂ ਪ੍ਰਾਰਥਨਾ ਮੰਡਲੀ ਸ਼ੁਰੂ ਕਰੋ ਜਾਂ ਉਸ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ।';
+      'ਪਹਿਲਾਂ ਪ੍ਰਾਰਥਨਾ ਟੋਲੀ ਸ਼ੁਰੂ ਕਰੋ ਜਾਂ ਉਸ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ।';
 
   @override
-  String get circleChoose => 'ਕਿਸ ਮੰਡਲੀ ਨਾਲ ਸਾਂਝਾ ਕਰਨਾ ਹੈ?';
+  String get circleChoose => 'ਕਿਸ ਟੋਲੀ ਨਾਲ ਸਾਂਝਾ ਕਰਨਾ ਹੈ?';
 
   @override
   String circleSharedTo(String name) {
@@ -939,29 +939,29 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String newsJoined(String name) {
-    return '$name ਤੁਹਾਡੀ ਮੰਡਲੀ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਏ';
+    return '$name ਤੁਹਾਡੀ ਟੋਲੀ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਏ';
   }
 
   @override
   String get newsLater => 'ਬਾਅਦ ਵਿੱਚ';
 
   @override
-  String get newsOpen => 'ਮੰਡਲੀ ਖੋਲ੍ਹੋ';
+  String get newsOpen => 'ਟੋਲੀ ਖੋਲ੍ਹੋ';
 
   @override
   String get newsAmen => 'ਆਮੀਨ';
 
   @override
-  String get circleInfoTitle => 'ਪ੍ਰਾਰਥਨਾ ਮੰਡਲੀ ਕਿਵੇਂ ਕੰਮ ਕਰਦੀ ਹੈ';
+  String get circleInfoTitle => 'ਪ੍ਰਾਰਥਨਾ ਟੋਲੀ ਕਿਵੇਂ ਕੰਮ ਕਰਦੀ ਹੈ';
 
   @override
   String circleInfoMembers(int max) {
-    return 'ਹਰ ਮੰਡਲੀ ਵਿੱਚ ਵੱਧ ਤੋਂ ਵੱਧ $max ਲੋਕ';
+    return 'ਹਰ ਟੋਲੀ ਵਿੱਚ ਵੱਧ ਤੋਂ ਵੱਧ $max ਲੋਕ';
   }
 
   @override
   String circleInfoCircles(int max) {
-    return 'ਤੁਸੀਂ ਵੱਧ ਤੋਂ ਵੱਧ $max ਮੰਡਲੀਆਂ ਵਿੱਚ ਹੋ ਸਕਦੇ ਹੋ';
+    return 'ਤੁਸੀਂ ਵੱਧ ਤੋਂ ਵੱਧ $max ਟੋਲੀਆਂ ਵਿੱਚ ਹੋ ਸਕਦੇ ਹੋ';
   }
 
   @override
@@ -979,7 +979,7 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get circleInfoOwner =>
-      'ਮੰਡਲੀ ਸ਼ੁਰੂ ਕਰਨ ਵਾਲਾ ਮੈਂਬਰਾਂ ਨੂੰ ਹਟਾ ਸਕਦਾ ਹੈ। ਹਟਾਇਆ ਗਿਆ ਵਿਅਕਤੀ ਮੁੜ ਸ਼ਾਮਲ ਨਹੀਂ ਹੋ ਸਕਦਾ।';
+      'ਟੋਲੀ ਸ਼ੁਰੂ ਕਰਨ ਵਾਲਾ ਮੈਂਬਰਾਂ ਨੂੰ ਹਟਾ ਸਕਦਾ ਹੈ। ਹਟਾਇਆ ਗਿਆ ਵਿਅਕਤੀ ਮੁੜ ਸ਼ਾਮਲ ਨਹੀਂ ਹੋ ਸਕਦਾ।';
 
   @override
   String get circleInfoReport =>
@@ -987,7 +987,7 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get circleInfoLeave =>
-      'ਮੰਡਲੀ ਛੱਡਣ \'ਤੇ ਉਸ ਵਿੱਚ ਤੁਹਾਡੀਆਂ ਬੇਨਤੀਆਂ ਮਿਟ ਜਾਂਦੀਆਂ ਹਨ।';
+      'ਟੋਲੀ ਛੱਡਣ \'ਤੇ ਉਸ ਵਿੱਚ ਤੁਹਾਡੀਆਂ ਬੇਨਤੀਆਂ ਮਿਟ ਜਾਂਦੀਆਂ ਹਨ।';
 
   @override
   String get circleInfoPopups =>
@@ -1018,15 +1018,15 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get circleInfoLeaders =>
-      'ਮੰਡਲੀ ਸ਼ੁਰੂ ਕਰਨ ਵਾਲਾ ਹੋਰਾਂ ਨੂੰ ਆਗੂ ਬਣਾ ਸਕਦਾ ਹੈ। ਆਗੂ ਪ੍ਰਾਰਥਨਾ ਵਿਸ਼ਾ ਉੱਪਰ ਰੱਖ ਸਕਦੇ ਹਨ ਅਤੇ ਬੇਨਤੀਆਂ ਤੇ ਮੈਂਬਰਾਂ ਨੂੰ ਹਟਾ ਸਕਦੇ ਹਨ। ਆਗੂਆਂ ਦੀ ਸਾਂਝੀ ਕੀਤੀ ਗੱਲ ਰਿਪੋਰਟਾਂ ਨਾਲ ਨਹੀਂ ਹਟਦੀ।';
+      'ਟੋਲੀ ਸ਼ੁਰੂ ਕਰਨ ਵਾਲਾ ਹੋਰਾਂ ਨੂੰ ਆਗੂ ਬਣਾ ਸਕਦਾ ਹੈ। ਆਗੂ ਪ੍ਰਾਰਥਨਾ ਵਿਸ਼ਾ ਉੱਪਰ ਰੱਖ ਸਕਦੇ ਹਨ ਅਤੇ ਬੇਨਤੀਆਂ ਤੇ ਮੈਂਬਰਾਂ ਨੂੰ ਹਟਾ ਸਕਦੇ ਹਨ। ਆਗੂਆਂ ਦੀ ਸਾਂਝੀ ਕੀਤੀ ਗੱਲ ਰਿਪੋਰਟਾਂ ਨਾਲ ਨਹੀਂ ਹਟਦੀ।';
 
   @override
   String newsJoinedMany(String name, int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$name ਅਤੇ $count ਹੋਰ ਤੁਹਾਡੀ ਮੰਡਲੀ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਏ',
-      one: '$name ਅਤੇ 1 ਹੋਰ ਤੁਹਾਡੀ ਮੰਡਲੀ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਏ',
+      other: '$name ਅਤੇ $count ਹੋਰ ਤੁਹਾਡੀ ਟੋਲੀ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਏ',
+      one: '$name ਅਤੇ 1 ਹੋਰ ਤੁਹਾਡੀ ਟੋਲੀ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਏ',
     );
     return '$_temp0';
   }
@@ -1038,7 +1038,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get circleNoName => 'ਮੇਰੇ ਨਾਮ ਤੋਂ ਬਿਨਾਂ';
 
   @override
-  String get circleSomeone => 'ਮੰਡਲੀ ਦਾ ਕੋਈ ਮੈਂਬਰ';
+  String get circleSomeone => 'ਟੋਲੀ ਦਾ ਕੋਈ ਮੈਂਬਰ';
 
   @override
   String get circleForLeadersNote => 'ਇਹ ਸਿਰਫ਼ ਆਗੂ ਦੇਖ ਸਕਦੇ ਹਨ';
@@ -1060,11 +1060,11 @@ class AppLocalizationsPa extends AppLocalizations {
   String get circleShowScreen => 'ਸਕ੍ਰੀਨ \'ਤੇ ਦਿਖਾਓ';
 
   @override
-  String get circleScreenTitle => 'ਸਾਡੀ ਪ੍ਰਾਰਥਨਾ ਮੰਡਲੀ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ';
+  String get circleScreenTitle => 'ਸਾਡੀ ਪ੍ਰਾਰਥਨਾ ਟੋਲੀ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ';
 
   @override
   String get circleScreenSteps =>
-      'ਫ਼ੋਨ ਦੇ ਕੈਮਰੇ ਨਾਲ ਸਕੈਨ ਕਰੋ, ਜਾਂ JesusAnswers ਖੋਲ੍ਹ ਕੇ ਪ੍ਰਾਰਥਨਾ → ਪ੍ਰਾਰਥਨਾ ਮੰਡਲੀ → ਕੋਡ ਨਾਲ ਸ਼ਾਮਲ ਹੋਵੋ \'ਤੇ ਟੈਪ ਕਰੋ';
+      'ਫ਼ੋਨ ਦੇ ਕੈਮਰੇ ਨਾਲ ਸਕੈਨ ਕਰੋ, ਜਾਂ JesusAnswers ਖੋਲ੍ਹ ਕੇ ਪ੍ਰਾਰਥਨਾ → ਪ੍ਰਾਰਥਨਾ ਟੋਲੀ → ਕੋਡ ਨਾਲ ਸ਼ਾਮਲ ਹੋਵੋ \'ਤੇ ਟੈਪ ਕਰੋ';
 
   @override
   String get circleTabPrayers => 'ਪ੍ਰਾਰਥਨਾਵਾਂ';
@@ -1076,7 +1076,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get circleTabChains => 'ਲੜੀ';
 
   @override
-  String get circleTabGroups => 'ਮੰਡਲੀਆਂ';
+  String get circleTabGroups => 'ਟੋਲੀਆਂ';
 
   @override
   String get circleWaitingLabel => 'ਮਨਜ਼ੂਰੀ ਦੀ ਉਡੀਕ ਵਿੱਚ';
@@ -1112,10 +1112,10 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get circleGroupsIntro =>
-      'ਇਸ ਕਲੀਸਿਯਾ ਦੀਆਂ ਮੰਡਲੀਆਂ: ਨੌਜਵਾਨ, ਸੰਗਤਾਂ, ਘਰੇਲੂ ਟੋਲੀਆਂ। ਇੱਕ ਟੈਪ ਨਾਲ ਕਿਸੇ ਵਿੱਚ ਵੀ ਸ਼ਾਮਲ ਹੋਵੋ।';
+      'ਇਸ ਕਲੀਸਿਯਾ ਦੀਆਂ ਟੋਲੀਆਂ: ਨੌਜਵਾਨ, ਸੰਗਤਾਂ, ਘਰੇਲੂ ਸਭਾਵਾਂ। ਇੱਕ ਟੈਪ ਨਾਲ ਕਿਸੇ ਵਿੱਚ ਵੀ ਸ਼ਾਮਲ ਹੋਵੋ।';
 
   @override
-  String get circleAddGroup => 'ਮੰਡਲੀ ਜੋੜੋ';
+  String get circleAddGroup => 'ਟੋਲੀ ਜੋੜੋ';
 
   @override
   String get circleGroupNameHint => 'ਜਿਵੇਂ ਨੌਜਵਾਨ, ਔਰਤਾਂ ਦੀ ਸੰਗਤ';
@@ -1124,7 +1124,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get circleJoinGroup => 'ਸ਼ਾਮਲ ਹੋਵੋ';
 
   @override
-  String get circleNoGroups => 'ਅਜੇ ਕੋਈ ਮੰਡਲੀ ਨਹੀਂ।';
+  String get circleNoGroups => 'ਅਜੇ ਕੋਈ ਟੋਲੀ ਨਹੀਂ।';
 
   @override
   String get circleStartButton => 'ਨਵਾਂ';
@@ -1146,10 +1146,10 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get circleStartChurchHint =>
-      'ਪੂਰੀ ਕਲੀਸਿਯਾ ਲਈ: ਸਭ ਲਈ ਇੱਕ ਪ੍ਰਾਰਥਨਾ ਕੰਧ, ਅਤੇ ਨੌਜਵਾਨਾਂ, ਸੰਗਤਾਂ ਤੇ ਘਰੇਲੂ ਟੋਲੀਆਂ ਲਈ ਮੰਡਲੀਆਂ। ਨਵੇਂ ਮੈਂਬਰ ਤਦ ਤੱਕ ਉਡੀਕਦੇ ਹਨ ਜਦ ਤੱਕ ਕੋਈ ਆਗੂ ਉਨ੍ਹਾਂ ਨੂੰ ਅੰਦਰ ਨਾ ਲਵੇ।';
+      'ਪੂਰੀ ਕਲੀਸਿਯਾ ਲਈ: ਸਭ ਲਈ ਇੱਕ ਪ੍ਰਾਰਥਨਾ ਕੰਧ, ਅਤੇ ਨੌਜਵਾਨਾਂ, ਸੰਗਤਾਂ ਤੇ ਘਰੇਲੂ ਸਭਾਵਾਂ ਲਈ ਟੋਲੀਆਂ। ਨਵੇਂ ਮੈਂਬਰ ਤਦ ਤੱਕ ਉਡੀਕਦੇ ਹਨ ਜਦ ਤੱਕ ਕੋਈ ਆਗੂ ਉਨ੍ਹਾਂ ਨੂੰ ਅੰਦਰ ਨਾ ਲਵੇ।';
 
   @override
-  String get circleStartCircle => 'ਇੱਕ ਮੰਡਲੀ';
+  String get circleStartCircle => 'ਇੱਕ ਟੋਲੀ';
 
   @override
   String get circleStartCircleHint =>
@@ -1159,7 +1159,40 @@ class AppLocalizationsPa extends AppLocalizations {
   String get circlesMyChurches => 'ਮੇਰੀਆਂ ਕਲੀਸਿਯਾਵਾਂ';
 
   @override
-  String get circlesMyCircles => 'ਮੇਰੀਆਂ ਮੰਡਲੀਆਂ';
+  String get circlesMyCircles => 'ਮੇਰੀਆਂ ਟੋਲੀਆਂ';
+
+  @override
+  String get circleMoveTitle => 'ਨਵੇਂ ਫ਼ੋਨ \'ਤੇ ਲੈ ਜਾਓ';
+
+  @override
+  String get circleMoveHint =>
+      'ਤੁਹਾਡੀਆਂ ਕਲੀਸਿਯਾਵਾਂ ਅਤੇ ਟੋਲੀਆਂ ਇਸ ਫ਼ੋਨ ਨਾਲ ਜੁੜੀਆਂ ਹਨ। ਉਨ੍ਹਾਂ ਨੂੰ ਨਵੇਂ ਫ਼ੋਨ \'ਤੇ ਲੈ ਜਾਣ ਲਈ ਇਹ ਕੁੰਜੀ ਕਾਪੀ ਕਰੋ ਅਤੇ ਉੱਥੇ ਦਰਜ ਕਰੋ: ਪ੍ਰਾਰਥਨਾ ਟੋਲੀ → ਨਵੇਂ ਫ਼ੋਨ \'ਤੇ ਲੈ ਜਾਓ → ਮੇਰੇ ਕੋਲ ਕੁੰਜੀ ਹੈ।';
+
+  @override
+  String get circleMovePrivate =>
+      'ਇਸਨੂੰ ਗੁਪਤ ਰੱਖੋ: ਜਿਸ ਕੋਲ ਇਹ ਕੁੰਜੀ ਹੈ ਉਹ ਤੁਹਾਡੀਆਂ ਟੋਲੀਆਂ ਦੇਖ ਸਕਦਾ ਹੈ ਅਤੇ ਤੁਹਾਡੇ ਨਾਮ \'ਤੇ ਪ੍ਰਾਰਥਨਾ ਕਰ ਸਕਦਾ ਹੈ।';
+
+  @override
+  String get circleMoveCopy => 'ਕੁੰਜੀ ਕਾਪੀ ਕਰੋ';
+
+  @override
+  String get circleMoveCopied => 'ਕੁੰਜੀ ਕਾਪੀ ਹੋ ਗਈ';
+
+  @override
+  String get circleMoveHave => 'ਮੇਰੇ ਕੋਲ ਪੁਰਾਣੇ ਫ਼ੋਨ ਦੀ ਕੁੰਜੀ ਹੈ';
+
+  @override
+  String get circleMoveEnter => 'ਪੁਰਾਣੇ ਫ਼ੋਨ ਦੀ ਕੁੰਜੀ';
+
+  @override
+  String get circleMoveUse => 'ਇਹ ਕੁੰਜੀ ਵਰਤੋ';
+
+  @override
+  String get circleMoveBad => 'ਇਹ ਇਸ ਐਪ ਦੀ ਕੁੰਜੀ ਨਹੀਂ ਹੈ।';
+
+  @override
+  String get circleMoveDone =>
+      'ਤੁਹਾਡੀਆਂ ਕਲੀਸਿਯਾਵਾਂ ਅਤੇ ਟੋਲੀਆਂ ਹੁਣ ਇਸ ਫ਼ੋਨ \'ਤੇ ਹਨ।';
 
   @override
   String get circleSharePraise => 'ਉਸਤਤ ਦੀ ਗਵਾਹੀ ਸਾਂਝੀ ਕਰੋ';
@@ -1260,7 +1293,7 @@ class AppLocalizationsPa extends AppLocalizations {
       'ਕੋਈ ਅਧਿਆਇ ਖੋਲ੍ਹੋ, ਫਿਰ ਸਾਂਝਾ ਕਰਨ ਲਈ ਆਇਤ ਨੂੰ ਦਬਾ ਕੇ ਰੱਖੋ।';
 
   @override
-  String get shareToCircle => 'ਮੰਡਲੀ ਨਾਲ ਸਾਂਝਾ ਕਰੋ';
+  String get shareToCircle => 'ਟੋਲੀ ਨਾਲ ਸਾਂਝਾ ਕਰੋ';
 
   @override
   String newsVerse(String name) {
@@ -1290,16 +1323,16 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String newsGroup(String name) {
-    return 'ਤੁਹਾਡੀ ਕਲੀਸਿਯਾ ਵਿੱਚ ਨਵੀਂ ਮੰਡਲੀ: $name';
+    return 'ਤੁਹਾਡੀ ਕਲੀਸਿਯਾ ਵਿੱਚ ਨਵੀਂ ਟੋਲੀ: $name';
   }
 
   @override
   String get circleInfoGroups =>
-      'ਕਲੀਸਿਯਾ ਦੀਆਂ ਆਪਣੀਆਂ ਮੰਡਲੀਆਂ ਹੁੰਦੀਆਂ ਹਨ (ਨੌਜਵਾਨ, ਸੰਗਤਾਂ, ਘਰੇਲੂ ਟੋਲੀਆਂ); ਇਸਦੇ ਮੈਂਬਰ ਇੱਕ ਟੈਪ ਨਾਲ ਸ਼ਾਮਲ ਹੁੰਦੇ ਹਨ।';
+      'ਕਲੀਸਿਯਾ ਦੀਆਂ ਆਪਣੀਆਂ ਟੋਲੀਆਂ ਹੁੰਦੀਆਂ ਹਨ (ਨੌਜਵਾਨ, ਸੰਗਤਾਂ, ਘਰੇਲੂ ਸਭਾਵਾਂ); ਇਸਦੇ ਮੈਂਬਰ ਇੱਕ ਟੈਪ ਨਾਲ ਸ਼ਾਮਲ ਹੁੰਦੇ ਹਨ।';
 
   @override
   String get circleInfoApproval =>
-      'ਮੰਡਲੀ ਸ਼ੁਰੂ ਕਰਨ ਵਾਲਾ, ਕਿਸੇ ਆਗੂ ਦੇ ਸ਼ਾਮਲ ਕਰਨ ਤੱਕ ਨਵੇਂ ਮੈਂਬਰਾਂ ਨੂੰ ਉਡੀਕ ਕਰਵਾ ਸਕਦਾ ਹੈ।';
+      'ਟੋਲੀ ਸ਼ੁਰੂ ਕਰਨ ਵਾਲਾ, ਕਿਸੇ ਆਗੂ ਦੇ ਸ਼ਾਮਲ ਕਰਨ ਤੱਕ ਨਵੇਂ ਮੈਂਬਰਾਂ ਨੂੰ ਉਡੀਕ ਕਰਵਾ ਸਕਦਾ ਹੈ।';
 
   @override
   String get circleInfoPraise =>

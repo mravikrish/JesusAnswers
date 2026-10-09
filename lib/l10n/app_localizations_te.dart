@@ -1115,7 +1115,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get circleGroupsIntro =>
-      'ఈ సంఘం బృందాలు: యువత, సహవాసాలు, ఇంటి గుంపులు. ఒక్క నొక్కుతో దేనిలోనైనా చేరండి.';
+      'ఈ సంఘంలోని బృందాలు: యువజన బృందాలు, సహవాస బృందాలు, గృహ ప్రార్థనా బృందాలు. ఒక్కసారి నొక్కడం ద్వారా మీకు నచ్చిన బృందంలో చేరండి.';
 
   @override
   String get circleAddGroup => 'బృందాన్ని జోడించండి';
@@ -1149,7 +1149,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get circleStartChurchHint =>
-      'మొత్తం సంఘం కోసం: అందరికీ ఒక ప్రార్థనా గోడ, మరియు యువత, సహవాసాలు, ఇంటి గుంపుల కోసం బృందాలు. ఒక నాయకుడు లోపలికి అనుమతించే వరకు కొత్త సభ్యులు వేచి ఉంటారు.';
+      'మొత్తం సంఘం కోసం: అందరూ తమ ప్రార్థనలను పంచుకునేలా ఒక సాధారణ ప్రార్థనా గోడ ఉంటుంది. యువత, సహవాసాలు, గృహ ప్రార్థనా సమూహాల కోసం ప్రత్యేక బృందాలు ఉంటాయి. కొత్త సభ్యులు సంఘంలో చేరాలంటే, నాయకుడు అనుమతి ఇచ్చే వరకు వేచి ఉండాలి.';
 
   @override
   String get circleStartCircle => 'ఒక బృందం';
@@ -1163,6 +1163,38 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get circlesMyCircles => 'నా బృందాలు';
+
+  @override
+  String get circleMoveTitle => 'కొత్త ఫోన్‌కు మార్చండి';
+
+  @override
+  String get circleMoveHint =>
+      'మీ సంఘాలు, బృందాలు ఈ ఫోన్‌కు లింక్ చేయబడ్డాయి. వాటిని కొత్త ఫోన్‌కు బదిలీ చేయడానికి, ఈ కీని కాపీ చేసి కొత్త ఫోన్‌లో నమోదు చేయండి.\nమార్గం: ప్రార్థనా బృందాలు → కొత్త ఫోన్‌కు మార్చండి → నా పాత ఫోన్‌కు సంబంధించిన కీ నా దగ్గర ఉంది.';
+
+  @override
+  String get circleMovePrivate =>
+      'ఈ కీని గోప్యంగా ఉంచండి. ఈ కీ ఉన్నవారు మీ బృందాలను చూడగలరు, అలాగే మీ తరఫున ప్రార్థనలు చేయగలరు.';
+
+  @override
+  String get circleMoveCopy => 'కీని కాపీ చేయండి';
+
+  @override
+  String get circleMoveCopied => 'కీ కాపీ అయింది';
+
+  @override
+  String get circleMoveHave => 'నా పాత ఫోన్‌కు సంబంధించిన కీ నా దగ్గర ఉంది';
+
+  @override
+  String get circleMoveEnter => 'పాత ఫోన్ నుంచి వచ్చిన కీ';
+
+  @override
+  String get circleMoveUse => 'ఈ కీని ఉపయోగించండి';
+
+  @override
+  String get circleMoveBad => 'ఇది ఈ యాప్ కీ కాదు.';
+
+  @override
+  String get circleMoveDone => 'మీ సంఘాలు, బృందాలు ఇప్పుడు ఈ ఫోన్‌లో ఉన్నాయి.';
 
   @override
   String get circleSharePraise => 'స్తుతి సాక్ష్యం పంచుకోండి';
@@ -1298,7 +1330,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get circleInfoGroups =>
-      'సంఘానికి సొంత బృందాలు ఉంటాయి (యువత, సహవాసాలు, ఇంటి గుంపులు); దాని సభ్యులు ఒక్క నొక్కుతో చేరతారు.';
+      'ప్రతి సంఘానికి యువజన బృందాలు, సహవాస బృందాలు, గృహ ప్రార్థనా బృందాలు వంటి ప్రత్యేక బృందాలు ఉంటాయి. సంఘ సభ్యులు ఒక్కసారి నొక్కడం ద్వారా తమకు నచ్చిన బృందంలో చేరవచ్చు.';
 
   @override
   String get circleInfoApproval =>

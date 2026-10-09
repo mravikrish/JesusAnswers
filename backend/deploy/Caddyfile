@@ -1,5 +1,13 @@
 # Caddy gets and renews the HTTPS certificate for API_DOMAIN by itself.
 {$API_DOMAIN} {
 	encode gzip
-	reverse_proxy api:8080
+	# The app itself, for an invite's "Get the app" (put there by upload-apk.sh).
+	handle /download/* {
+		root * /srv
+		header Content-Type application/vnd.android.package-archive
+		file_server
+	}
+	handle {
+		reverse_proxy api:8080
+	}
 }

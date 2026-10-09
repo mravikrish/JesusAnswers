@@ -724,7 +724,7 @@ class AppLocalizationsHi extends AppLocalizations {
       'आज का वचन आपकी प्रतीक्षा कर रहा है। उसे पढ़िए, प्रार्थना कीजिए, और उनकी सुनिए।';
 
   @override
-  String get circlesTitle => 'प्रार्थना मंडली';
+  String get circlesTitle => 'प्रार्थना टोली';
 
   @override
   String get circlesHint =>
@@ -732,16 +732,16 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get circlesIntro =>
-      'एक मंडली शुरू करें और उसका कोड उन लोगों को भेजें जिनके साथ आप प्रार्थना करते हैं, या किसी के भेजे कोड से मंडली में जुड़ें।';
+      'एक टोली शुरू करें और उसका कोड उन लोगों को भेजें जिनके साथ आप प्रार्थना करते हैं, या किसी के भेजे कोड से टोली में जुड़ें।';
 
   @override
-  String get circleStart => 'मंडली शुरू करें';
+  String get circleStart => 'टोली शुरू करें';
 
   @override
   String get circleJoin => 'कोड से जुड़ें';
 
   @override
-  String get circleName => 'मंडली का नाम';
+  String get circleName => 'टोली का नाम';
 
   @override
   String get circleNameHint => 'जैसे परिवार, मित्र';
@@ -777,7 +777,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String circleInviteText(String name, String code) {
-    return 'JesusAnswers पर मेरी प्रार्थना मंडली \"$name\" से जुड़िए, ताकि हम एक-दूसरे के लिए प्रार्थना कर सकें।\nऐप खोलें, प्रार्थना → प्रार्थना मंडली → कोड से जुड़ें पर टैप करें, और यह डालें: $code';
+    return 'JesusAnswers पर मेरी प्रार्थना टोली \"$name\" से जुड़िए, ताकि हम एक-दूसरे के लिए प्रार्थना कर सकें।\nऐप खोलें, प्रार्थना → प्रार्थना टोली → कोड से जुड़ें पर टैप करें, और यह डालें: $code';
   }
 
   @override
@@ -809,13 +809,13 @@ class AppLocalizationsHi extends AppLocalizations {
   String get circleMembersTitle => 'सदस्य';
 
   @override
-  String get circleOwner => 'मंडली शुरू की';
+  String get circleOwner => 'टोली शुरू की';
 
   @override
   String get circleYou => 'आप';
 
   @override
-  String get circleRemoveMember => 'मंडली से हटाएँ';
+  String get circleRemoveMember => 'टोली से हटाएँ';
 
   @override
   String circleRemoveConfirm(String name) {
@@ -823,11 +823,11 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get circleLeave => 'मंडली छोड़ें';
+  String get circleLeave => 'टोली छोड़ें';
 
   @override
   String get circleLeaveConfirm =>
-      'यह मंडली छोड़ें? इसमें आपके प्रार्थना निवेदन मिट जाएँगे।';
+      'यह टोली छोड़ें? इसमें आपके प्रार्थना निवेदन मिट जाएँगे।';
 
   @override
   String circleReachOut(String name) {
@@ -836,17 +836,17 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get circleNotFound =>
-      'इस कोड की कोई मंडली नहीं है। कोड जाँचकर फिर कोशिश करें।';
+      'इस कोड की कोई टोली नहीं है। कोड जाँचकर फिर कोशिश करें।';
 
   @override
-  String get circleFull => 'यह मंडली भर चुकी है।';
+  String get circleFull => 'यह टोली भर चुकी है।';
 
   @override
   String get circleTooMany =>
-      'आप बहुत सारी मंडलियों में हैं। नई में जुड़ने के लिए एक छोड़ें।';
+      'आप बहुत सारी टोलियों में हैं। नई में जुड़ने के लिए एक छोड़ें।';
 
   @override
-  String get circleNotAllowed => 'आप इस मंडली में ऐसा नहीं कर सकते।';
+  String get circleNotAllowed => 'आप इस टोली में ऐसा नहीं कर सकते।';
 
   @override
   String get circleOffline =>
@@ -881,16 +881,16 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get circleAnsweredThanks =>
-      'परमेश्वर की स्तुति हो! मंडली में सब अब देख सकते हैं कि उसने उत्तर दिया।';
+      'परमेश्वर की स्तुति हो! टोली में सब अब देख सकते हैं कि उसने उत्तर दिया।';
 
   @override
-  String get circleShortLabel => 'मंडली';
+  String get circleShortLabel => 'टोली';
 
   @override
-  String get circleNone => 'पहले एक प्रार्थना मंडली शुरू करें या उसमें जुड़ें।';
+  String get circleNone => 'पहले एक प्रार्थना टोली शुरू करें या उसमें जुड़ें।';
 
   @override
-  String get circleChoose => 'किस मंडली के साथ साझा करें?';
+  String get circleChoose => 'किस टोली के साथ साझा करें?';
 
   @override
   String circleSharedTo(String name) {
@@ -936,29 +936,29 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String newsJoined(String name) {
-    return '$name आपकी मंडली में जुड़े';
+    return '$name आपकी टोली में जुड़े';
   }
 
   @override
   String get newsLater => 'बाद में';
 
   @override
-  String get newsOpen => 'मंडली खोलें';
+  String get newsOpen => 'टोली खोलें';
 
   @override
   String get newsAmen => 'आमीन';
 
   @override
-  String get circleInfoTitle => 'प्रार्थना मंडली कैसे काम करती है';
+  String get circleInfoTitle => 'प्रार्थना टोली कैसे काम करती है';
 
   @override
   String circleInfoMembers(int max) {
-    return 'हर मंडली में अधिकतम $max लोग';
+    return 'हर टोली में अधिकतम $max लोग';
   }
 
   @override
   String circleInfoCircles(int max) {
-    return 'आप अधिकतम $max मंडलियों में रह सकते हैं';
+    return 'आप अधिकतम $max टोलियों में रह सकते हैं';
   }
 
   @override
@@ -976,7 +976,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get circleInfoOwner =>
-      'मंडली शुरू करने वाला सदस्यों को हटा सकता है। हटाया गया व्यक्ति दोबारा नहीं जुड़ सकता।';
+      'टोली शुरू करने वाला सदस्यों को हटा सकता है। हटाया गया व्यक्ति दोबारा नहीं जुड़ सकता।';
 
   @override
   String get circleInfoReport =>
@@ -984,7 +984,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get circleInfoLeave =>
-      'मंडली छोड़ने पर उसमें आपके निवेदन मिट जाते हैं।';
+      'टोली छोड़ने पर उसमें आपके निवेदन मिट जाते हैं।';
 
   @override
   String get circleInfoPopups =>
@@ -1015,15 +1015,15 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get circleInfoLeaders =>
-      'मंडली शुरू करने वाला दूसरों को अगुवा बना सकता है। अगुवे प्रार्थना विषय को ऊपर रख सकते हैं और निवेदन व सदस्य हटा सकते हैं। अगुवों की साझा की गई बातें रिपोर्ट से नहीं हटतीं।';
+      'टोली शुरू करने वाला दूसरों को अगुवा बना सकता है। अगुवे प्रार्थना विषय को ऊपर रख सकते हैं और निवेदन व सदस्य हटा सकते हैं। अगुवों की साझा की गई बातें रिपोर्ट से नहीं हटतीं।';
 
   @override
   String newsJoinedMany(String name, int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$name और $count अन्य आपकी मंडली में जुड़े',
-      one: '$name और 1 अन्य आपकी मंडली में जुड़े',
+      other: '$name और $count अन्य आपकी टोली में जुड़े',
+      one: '$name और 1 अन्य आपकी टोली में जुड़े',
     );
     return '$_temp0';
   }
@@ -1035,7 +1035,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get circleNoName => 'मेरे नाम के बिना';
 
   @override
-  String get circleSomeone => 'मंडली का कोई सदस्य';
+  String get circleSomeone => 'टोली का कोई सदस्य';
 
   @override
   String get circleForLeadersNote => 'इसे केवल अगुवे देख सकते हैं';
@@ -1057,11 +1057,11 @@ class AppLocalizationsHi extends AppLocalizations {
   String get circleShowScreen => 'स्क्रीन पर दिखाएँ';
 
   @override
-  String get circleScreenTitle => 'हमारी प्रार्थना मंडली से जुड़िए';
+  String get circleScreenTitle => 'हमारी प्रार्थना टोली से जुड़िए';
 
   @override
   String get circleScreenSteps =>
-      'फ़ोन के कैमरे से स्कैन करें, या JesusAnswers खोलकर प्रार्थना → प्रार्थना मंडली → कोड से जुड़ें पर टैप करें';
+      'फ़ोन के कैमरे से स्कैन करें, या JesusAnswers खोलकर प्रार्थना → प्रार्थना टोली → कोड से जुड़ें पर टैप करें';
 
   @override
   String get circleTabPrayers => 'प्रार्थनाएँ';
@@ -1073,7 +1073,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get circleTabChains => 'श्रृंखला';
 
   @override
-  String get circleTabGroups => 'मंडलियाँ';
+  String get circleTabGroups => 'टोलियाँ';
 
   @override
   String get circleWaitingLabel => 'स्वीकृति की प्रतीक्षा';
@@ -1108,10 +1108,10 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get circleGroupsIntro =>
-      'इस कलीसिया की मंडलियाँ: युवा, संगतियाँ, घरेलू समूह। किसी में भी एक टैप से जुड़ें।';
+      'इस कलीसिया की टोलियाँ: युवा, संगतियाँ, घरेलू समूह। किसी में भी एक टैप से जुड़ें।';
 
   @override
-  String get circleAddGroup => 'मंडली जोड़ें';
+  String get circleAddGroup => 'टोली जोड़ें';
 
   @override
   String get circleGroupNameHint => 'जैसे युवा, महिला संगति';
@@ -1120,7 +1120,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get circleJoinGroup => 'जुड़ें';
 
   @override
-  String get circleNoGroups => 'अभी कोई मंडली नहीं।';
+  String get circleNoGroups => 'अभी कोई टोली नहीं।';
 
   @override
   String get circleStartButton => 'नया';
@@ -1142,10 +1142,10 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get circleStartChurchHint =>
-      'पूरी कलीसिया के लिए: सबके लिए एक प्रार्थना दीवार, और युवा, संगतियों व घरेलू समूहों के लिए मंडलियाँ। नए सदस्य तब तक प्रतीक्षा करते हैं जब तक कोई अगुवा उन्हें अंदर न ले।';
+      'पूरी कलीसिया के लिए: सबके लिए एक प्रार्थना दीवार, और युवा, संगतियों व घरेलू समूहों के लिए टोलियाँ। नए सदस्य तब तक प्रतीक्षा करते हैं जब तक कोई अगुवा उन्हें अंदर न ले।';
 
   @override
-  String get circleStartCircle => 'एक मंडली';
+  String get circleStartCircle => 'एक टोली';
 
   @override
   String get circleStartCircleHint =>
@@ -1155,7 +1155,39 @@ class AppLocalizationsHi extends AppLocalizations {
   String get circlesMyChurches => 'मेरी कलीसियाएँ';
 
   @override
-  String get circlesMyCircles => 'मेरी मंडलियाँ';
+  String get circlesMyCircles => 'मेरी टोलियाँ';
+
+  @override
+  String get circleMoveTitle => 'नए फ़ोन पर ले जाएँ';
+
+  @override
+  String get circleMoveHint =>
+      'आपकी कलीसियाएँ और टोलियाँ इस फ़ोन से जुड़ी हैं। उन्हें नए फ़ोन पर ले जाने के लिए यह कुंजी कॉपी करें और वहाँ डालें: प्रार्थना टोली → नए फ़ोन पर ले जाएँ → मेरे पास कुंजी है।';
+
+  @override
+  String get circleMovePrivate =>
+      'इसे गुप्त रखें: जिसके पास यह कुंजी है, वह आपकी टोलियाँ देख सकता है और आपके नाम से प्रार्थना कर सकता है।';
+
+  @override
+  String get circleMoveCopy => 'कुंजी कॉपी करें';
+
+  @override
+  String get circleMoveCopied => 'कुंजी कॉपी हो गई';
+
+  @override
+  String get circleMoveHave => 'मेरे पास पुराने फ़ोन की कुंजी है';
+
+  @override
+  String get circleMoveEnter => 'पुराने फ़ोन की कुंजी';
+
+  @override
+  String get circleMoveUse => 'यह कुंजी इस्तेमाल करें';
+
+  @override
+  String get circleMoveBad => 'यह इस ऐप की कुंजी नहीं है।';
+
+  @override
+  String get circleMoveDone => 'आपकी कलीसियाएँ और टोलियाँ अब इस फ़ोन पर हैं।';
 
   @override
   String get circleSharePraise => 'स्तुति का समाचार साझा करें';
@@ -1257,7 +1289,7 @@ class AppLocalizationsHi extends AppLocalizations {
       'कोई अध्याय खोलें, फिर साझा करने के लिए किसी वचन को दबाकर रखें।';
 
   @override
-  String get shareToCircle => 'मंडली के साथ साझा करें';
+  String get shareToCircle => 'टोली के साथ साझा करें';
 
   @override
   String newsVerse(String name) {
@@ -1287,16 +1319,16 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String newsGroup(String name) {
-    return 'आपकी कलीसिया में नई मंडली: $name';
+    return 'आपकी कलीसिया में नई टोली: $name';
   }
 
   @override
   String get circleInfoGroups =>
-      'कलीसिया की अपनी मंडलियाँ होती हैं (युवा, संगतियाँ, घरेलू समूह); उसके सदस्य एक टैप से उनमें जुड़ते हैं।';
+      'कलीसिया की अपनी टोलियाँ होती हैं (युवा, संगतियाँ, घरेलू समूह); उसके सदस्य एक टैप से उनमें जुड़ते हैं।';
 
   @override
   String get circleInfoApproval =>
-      'मंडली शुरू करने वाला चाहे तो नए सदस्यों को तब तक रुकवा सकता है जब तक कोई अगुवा उन्हें न जोड़े।';
+      'टोली शुरू करने वाला चाहे तो नए सदस्यों को तब तक रुकवा सकता है जब तक कोई अगुवा उन्हें न जोड़े।';
 
   @override
   String get circleInfoPraise =>
