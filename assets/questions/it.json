@@ -1,0 +1,542 @@
+{
+ "noah_ark": {
+  "question": "Chi costruì un'arca per salvare la sua famiglia dal diluvio?",
+  "options": ["Noè", "Abrahamo", "Mosè", "Giona"],
+  "about": "Il mondo si era riempito di violenza, ma Noè camminava con Dio. Dio gli disse di costruire un'enorme imbarcazione, un'arca, per salvare la sua famiglia e gli animali dal diluvio che stava per venire.",
+  "think": "Noè ubbidì prima che cadesse una sola goccia di pioggia. In che cosa Dio ti chiede oggi di fidarti di lui?"
+ },
+ "born_where": {
+  "question": "In quale città nacque Gesù?",
+  "options": ["Betleem", "Nazaret", "Gerusalemme", "Capernaum"],
+  "about": "A causa di un censimento, Giuseppe e Maria dovettero recarsi a Betleem, la città del re Davide. Lì nacque Gesù, proprio come aveva predetto il profeta Michea.",
+  "think": "Il Re dei re fu posto in una mangiatoia. Dio si avvicina ai luoghi umili della tua vita."
+ },
+ "seventh_day": {
+  "question": "Che cosa fece Dio il settimo giorno?",
+  "options": ["Si riposò", "Creò l'uomo", "Creò le stelle", "Creò il mare"],
+  "about": "In sei giorni Dio fece i cieli, la terra e tutto ciò che contengono. Il settimo giorno si riposò, benedisse quel giorno e lo santificò.",
+  "think": "Persino Dio si riposò. C'è tempo questa settimana per fermarti, riposare e ricordare che è lui a reggere il mondo?"
+ },
+ "water_wine": {
+  "question": "In che cosa Gesù trasformò l'acqua alle nozze di Cana?",
+  "options": ["In vino", "In olio", "In latte", "In miele"],
+  "about": "A un matrimonio a Cana il vino finì, una grande vergogna per la famiglia. Fu il primo dei segni miracolosi di Gesù, e i suoi discepoli credettero in lui.",
+  "think": "I servitori fecero quello che Gesù disse e videro un miracolo. C'è un piccolo passo che lui ti sta chiedendo?"
+ },
+ "flood_days": {
+  "question": "Per quanti giorni e notti piovve durante il diluvio?",
+  "options": ["40", "7", "12", "100"],
+  "about": "Dio mandò il diluvio a causa della malvagità del mondo, ma tenne al sicuro Noè e la sua famiglia nell'arca. La pioggia cadde per quaranta giorni e quaranta notti.",
+  "think": "Quaranta giorni sembravano senza fine, eppure Dio si ricordò di Noè. Non ha dimenticato neppure te nel tuo lungo periodo difficile."
+ },
+ "baptism": {
+  "question": "Al battesimo di Gesù, che cosa scese su di lui come una colomba?",
+  "options": ["Lo Spirito di Dio", "Una stella luminosa", "Un angelo", "Fuoco dal cielo"],
+  "about": "Gesù venne al fiume Giordano per essere battezzato da Giovanni. Appena uscì dall'acqua, i cieli si aprirono e il Padre dichiarò il suo amore per lui.",
+  "think": "Il Padre disse: «Questo è il mio diletto Figliuolo». In Cristo, Dio chiama anche te suo amato."
+ },
+ "abraham_stars": {
+  "question": "Che cosa disse Dio ad Abrahamo di contare, per mostrargli quanto numerosa sarebbe stata la sua discendenza?",
+  "options": ["Le stelle", "Gli alberi", "I monti", "I fiumi"],
+  "about": "Abrahamo era vecchio e non aveva figli, eppure Dio gli promise una famiglia. Dio lo condusse fuori e gli mostrò il cielo notturno.",
+  "think": "Abrahamo credette all'Eterno, che gli contò questo come giustizia. A quale promessa di Dio ti aggrapperai oggi?"
+ },
+ "fishers": {
+  "question": "Che cosa stavano facendo Pietro e Andrea quando Gesù li chiamò a seguirlo?",
+  "options": ["Pescavano", "Lavoravano i campi", "Riscuotevano le tasse", "Costruivano una casa"],
+  "about": "Pietro e suo fratello Andrea erano pescatori sul mare di Galilea. Gesù li chiamò a seguirlo e a diventare pescatori di uomini.",
+  "think": "Lasciarono subito le reti. Che cosa potrebbe chiamarti Gesù a lasciare per seguirlo?"
+ },
+ "ram": {
+  "question": "Quando Abrahamo stava per offrire Isacco, che cosa provvide Dio al suo posto?",
+  "options": ["Un montone", "Una colomba", "Un vitello", "Un capro"],
+  "about": "Dio mise alla prova Abrahamo chiedendogli di offrire il suo unico figlio, Isacco. All'ultimo momento Dio lo fermò e provvide un montone impigliato in un cespuglio.",
+  "think": "Abrahamo chiamò quel luogo «l'Eterno provvederà». Dio vede ciò di cui hai bisogno prima di te."
+ },
+ "salt_light": {
+  "question": "Gesù disse che i suoi discepoli sono il sale della terra e la … del mondo?",
+  "options": ["Luce", "Pane", "Speranza", "Forza"],
+  "about": "Nel sermone sul monte Gesù insegnò ai suoi discepoli come vivere. Il sale dà sapore e conserva; la luce mostra la strada agli altri.",
+  "think": "Nessuno accende una lampada per metterla sotto il moggio. Dove può brillare la tua luce per qualcuno questa settimana?"
+ },
+ "jacob_ladder": {
+  "question": "Che cosa vide Giacobbe in sogno a Bethel?",
+  "options": ["Una scala che giungeva fino al cielo", "Un pruno ardente", "Un grande diluvio", "Sette vacche grasse"],
+  "about": "Giacobbe fuggiva da suo fratello Esaù, solo e pieno di paura. Quella notte Dio lo incontrò in sogno e gli promise di essere con lui.",
+  "think": "Dio disse a Giacobbe: «Ecco, io son teco, e ti guarderò dovunque tu andrai». Non sei solo nel tuo cammino."
+ },
+ "daily_bread": {
+  "question": "Nel Padre nostro, che cosa chiediamo a Dio di darci oggi?",
+  "options": ["Il nostro pane cotidiano", "Ricchezze", "Una lunga vita", "La vittoria"],
+  "about": "I discepoli chiesero a Gesù di insegnare loro a pregare, ed egli diede loro questa preghiera. Chiedere il pane quotidiano significa fidarsi di Dio per i bisogni di ogni giorno.",
+  "think": "Gesù ci ha insegnato a chiedere ciò che serve per oggi, un giorno alla volta. Di che cosa hai bisogno da Dio oggi?"
+ },
+ "joseph_coat": {
+  "question": "Quale dono speciale fece Giacobbe a suo figlio Giuseppe?",
+  "options": ["Una veste lunga con le maniche", "Un anello d'oro", "Una spada", "Un gregge di pecore"],
+  "about": "Giacobbe amava Giuseppe più degli altri figli e lo dimostrò con una veste speciale. I suoi fratelli divennero gelosi e lo odiarono.",
+  "think": "Il dono suscitò la gelosia dei fratelli. Chiedi a Dio di aiutarti a gioire per gli altri invece di invidiarli."
+ },
+ "birds": {
+  "question": "Gesù disse di non essere in ansia, perché il nostro Padre celeste nutre chi?",
+  "options": ["Gli uccelli del cielo", "I pesci del mare", "I leoni", "Le pecore"],
+  "about": "Molti si preoccupano del cibo, dei vestiti e del futuro. Gesù indicò gli uccelli e i fiori per mostrare con quanta fedeltà il Padre si prende cura della sua creazione.",
+  "think": "Se nutre gli uccelli, quanto più si prenderà cura di te? Affidagli la preoccupazione di oggi."
+ },
+ "joseph_sold": {
+  "question": "Chi fu venduto dai suoi fratelli e poi salvò la sua famiglia dalla carestia in Egitto?",
+  "options": ["Giuseppe", "Beniamino", "Ruben", "Giuda"],
+  "about": "I fratelli gelosi di Giuseppe lo vendettero come schiavo in Egitto. Anni dopo, diventato governatore del paese, li perdonò e li salvò dalla carestia.",
+  "think": "Giuseppe disse: «Non siete voi che m'avete mandato qua, ma è Dio». Dio può trasformare il male in bene."
+ },
+ "ask_seek": {
+  "question": "«Chiedete e vi sarà dato; cercate e troverete; …» Come conclude Gesù?",
+  "options": ["Picchiate e vi sarà aperto", "Aspettate e riceverete", "Lavorate e guadagnerete", "Date e vi sarà dato"],
+  "about": "Gesù insegnò che Dio è un Padre buono che ama dare cose buone ai suoi figli. Per questo possiamo continuare a pregare senza mai arrenderci.",
+  "think": "Gesù ti invita a continuare a chiedere. Per che cosa hai smesso di pregare e potresti portarglielo di nuovo?"
+ },
+ "baby_moses": {
+  "question": "Dove nascose la madre di Mosè il suo bambino per salvarlo?",
+  "options": ["In un canestro nel canneto del fiume", "In una grotta", "Nel palazzo", "In un pozzo"],
+  "about": "Faraone aveva ordinato di uccidere ogni neonato maschio degli Ebrei. La madre di Mosè lo nascose in un canestro sul Nilo, dove la figlia di Faraone lo trovò.",
+  "think": "Il piccolo atto di fede di una madre divenne parte del grande piano di Dio. Anche la tua piccola fedeltà conta."
+ },
+ "storm": {
+  "question": "Che cosa calmò Gesù con una parola mentre i discepoli erano nella barca?",
+  "options": ["Una tempesta", "Una folla", "Una febbre", "Un incendio"],
+  "about": "Gesù dormiva nella barca quando una violenta tempesta si abbatté sul lago. I discepoli spaventati lo svegliarono, ed egli calmò il vento e le onde con una parola.",
+  "think": "I discepoli gridarono: «Non ti curi tu che noi periamo?». Gli importava, e parlò pace. Portagli la tempesta in cui ti trovi."
+ },
+ "burning_bush": {
+  "question": "Come parlò Dio a Mosè per la prima volta nel deserto?",
+  "options": ["Da un pruno ardente", "In un sogno", "Da una nuvola", "Per mezzo di un profeta"],
+  "about": "Mosè pascolava le pecore nel deserto quando vide un pruno che ardeva senza consumarsi. Dio gli parlò di mezzo al pruno e lo mandò a liberare Israele.",
+  "think": "Mosè stava facendo il suo lavoro di ogni giorno quando Dio lo chiamò. Cerca Dio nei luoghi ordinari della tua giornata."
+ },
+ "jairus": {
+  "question": "Quanti anni aveva la figlia di Iairo quando Gesù la risuscitò?",
+  "options": ["12", "7", "3", "20"],
+  "about": "Iairo, un capo della sinagoga, supplicò Gesù di venire dalla sua figlia morente. Prima che Gesù arrivasse, giunse la notizia che era morta.",
+  "think": "Gesù disse a Iairo: «Non temere; solo abbi fede!». Tieniti stretto a lui quando le notizie sono cattive."
+ },
+ "red_sea": {
+  "question": "Come scampò Israele quando l'esercito di Faraone lo inseguì fino al mare?",
+  "options": ["Passarono sull'asciutto", "Partirono in barca", "Si nascosero sui monti", "Combatterono e vinsero"],
+  "about": "Israele era appena uscito dalla schiavitù d'Egitto quando l'esercito di Faraone lo inseguì fino al mar Rosso. Dio divise le acque perché il suo popolo potesse passare.",
+  "think": "Quando sembrava non esserci via d'uscita, Dio ne aprì una. Chiedigli una via attraverso ciò che ti blocca."
+ },
+ "loaves": {
+  "question": "Quanti pani aveva il ragazzo quando Gesù sfamò i cinquemila?",
+  "options": ["5", "2", "7", "12"],
+  "about": "Una grande folla aveva seguito Gesù in un luogo isolato, e non c'era nulla da mangiare. Un ragazzo offrì il suo piccolo pasto, e Gesù con esso sfamò tutti.",
+  "think": "Il piccolo pasto di un ragazzo divenne un banchetto nelle mani di Gesù. Dagli il poco che hai."
+ },
+ "manna": {
+  "question": "Che cosa mandava Dio ogni mattina per nutrire Israele nel deserto?",
+  "options": ["La manna, pane dal cielo", "Pesce", "Frutta", "Riso"],
+  "about": "Nel deserto Israele si lamentò per la fame. Dio mandò la manna ogni mattina, sufficiente per ogni giorno, per quarant'anni.",
+  "think": "La manna arrivava fresca ogni giorno e non si poteva conservare. Dio dà grazia per oggi; fidati di lui per domani."
+ },
+ "walks_water": {
+  "question": "Chi camminò sull'acqua verso Gesù e poi cominciò ad affondare?",
+  "options": ["Pietro", "Giovanni", "Toma", "Andrea"],
+  "about": "Dopo aver sfamato la folla, Gesù mandò i suoi discepoli all'altra riva e venne da loro di notte, camminando sul mare. Pietro gli chiese di poter andare da lui.",
+  "think": "Pietro affondò quando guardò il vento, e Gesù lo afferrò subito. Tieni gli occhi fissi su di lui."
+ },
+ "sinai": {
+  "question": "Su quale monte Dio diede a Mosè le tavole della legge?",
+  "options": ["Sinai", "Carmel", "Sion", "Ararat"],
+  "about": "Dopo aver fatto uscire Israele dall'Egitto, Mosè incontrò Dio sul monte Sinai. Lì Dio gli diede la legge, scritta su due tavole di pietra.",
+  "think": "La legge di Dio fu scritta dal suo stesso dito. Quale delle sue parole ha bisogno di essere scritta oggi nel tuo cuore?"
+ },
+ "samaritan": {
+  "question": "Nella storia di Gesù, chi si fermò ad aiutare l'uomo percosso dai ladroni?",
+  "options": ["Un Samaritano", "Un sacerdote", "Un Levita", "Un soldato"],
+  "about": "Un dottore della legge chiese a Gesù: «E chi è il mio prossimo?». Gesù rispose con una storia il cui eroe era un Samaritano, un uomo che la maggior parte dei Giudei del tempo disprezzava.",
+  "think": "Gesù chiese: «Quale di questi tre ti pare essere stato il prossimo?». Chi giace oggi lungo la tua strada?"
+ },
+ "jericho": {
+  "question": "Che cosa accadde quando Israele marciò intorno a Gerico, gridò e suonò le trombe?",
+  "options": ["Le mura crollarono", "Cominciò a piovere", "Le porte si aprirono", "Il nemico fuggì"],
+  "about": "Gerico era una città forte e cinta di mura al confine della Terra promessa. Dio disse a Giosuè di girarle intorno per sette giorni invece di attaccarla.",
+  "think": "Israele vinse ubbidendo a un piano che sembrava senza senso. Fidati della via di Dio, anche quando sembra strana."
+ },
+ "lost_sheep": {
+  "question": "Nella storia di Gesù, quante pecore lasciò il pastore per cercare quella smarrita?",
+  "options": ["99", "9", "49", "100"],
+  "about": "I capi religiosi mormoravano perché Gesù accoglieva i peccatori. Egli rispose con storie di cose perdute che vengono cercate e ritrovate con grande gioia.",
+  "think": "In cielo c'è gioia per uno solo che torna a casa. Vale la pena cercarti."
+ },
+ "gideon": {
+  "question": "Chi chiese a Dio un segno con un vello di lana?",
+  "options": ["Gedeone", "Sansone", "Giosuè", "Barak"],
+  "about": "Dio chiamò Gedeone a liberare Israele dai predoni nemici, ma egli si sentiva debole e aveva paura. Chiese a Dio dei segni, e Dio glieli diede con pazienza.",
+  "think": "Dio rispose con pazienza ai dubbi di Gedeone. Portagli le tue domande sincere."
+ },
+ "prodigal": {
+  "question": "Che cosa fece il padre quando vide il figlio perduto tornare a casa?",
+  "options": ["Gli corse incontro e lo abbracciò", "Lo mandò via", "Ne fece un servo", "Aspettò delle scuse"],
+  "about": "Un figlio minore prese la sua parte di eredità e la sperperò lontano da casa. Quando fu alla fame, decise di tornare da suo padre.",
+  "think": "Il padre corse. Così Dio accoglie chiunque torna a casa."
+ },
+ "samson": {
+  "question": "La grande forza di chi era legata ai suoi capelli mai tagliati?",
+  "options": ["Sansone", "Gedeone", "Davide", "Goliath"],
+  "about": "Sansone era consacrato a Dio fin dalla nascita, e i suoi lunghi capelli erano il segno di quel voto. Quando Delila glieli fece tagliare, la sua forza lo abbandonò.",
+  "think": "La forza di Sansone era un dono di Dio, non sua. Resta vicino al Donatore, non solo ai suoi doni."
+ },
+ "ten_lepers": {
+  "question": "Quanti dei dieci lebbrosi guariti tornarono a ringraziare Gesù?",
+  "options": ["1", "9", "10", "3"],
+  "about": "Dieci lebbrosi chiamarono Gesù da lontano, ed egli li mandò dai sacerdoti. Mentre andavano, furono mondati.",
+  "think": "Nove furono guariti; uno solo tornò a ringraziare. Prenditi ora un momento per ringraziare Dio."
+ },
+ "ruth": {
+  "question": "Chi disse a Naomi: «Dove andrai tu, andrò anch'io; il tuo Dio sarà il mio Dio»?",
+  "options": ["Ruth", "Orpa", "Ester", "Rachele"],
+  "about": "Dopo aver perso il marito e i figli in terra straniera, Naomi decise di tornare a casa. Sua nuora Ruth, una Moabita, si rifiutò di lasciarla.",
+  "think": "Ruth scelse l'amore fedele quando andarsene era più facile. Chi ha bisogno della tua fedeltà questa settimana?"
+ },
+ "zacchaeus": {
+  "question": "Chi salì su un sicomoro per vedere Gesù?",
+  "options": ["Zaccheo", "Bartimeo", "Nicodemo", "Lazzaro"],
+  "about": "Zaccheo era un capo dei pubblicani a Gerico, ricco e malvisto. Era piccolo di statura, così salì su un albero per vedere Gesù che passava.",
+  "think": "Gesù andò a casa di Zaccheo prima che lui cambiasse. Ti accoglie così come sei."
+ },
+ "samuel": {
+  "question": "Quale ragazzo udì Dio chiamarlo per nome di notte nella casa di Dio?",
+  "options": ["Samuele", "Davide", "Isacco", "Giosia"],
+  "about": "Samuele era un ragazzo che serviva nella casa di Dio sotto il sacerdote Eli. Dio lo chiamò per nome di notte e cominciò a parlargli.",
+  "think": "Samuele disse: «Parla, poiché il tuo servo ascolta». Prenditi oggi un minuto di silenzio solo per ascoltare."
+ },
+ "lazarus": {
+  "question": "Chi risuscitò Gesù dopo quattro giorni nel sepolcro?",
+  "options": ["Lazzaro", "Stefano", "Iairo", "Giuseppe"],
+  "about": "Lazzaro, il fratello di Maria e Marta, era morto, e Gesù arrivò quattro giorni dopo. Lo chiamò fuori dal sepolcro, vivo.",
+  "think": "Gesù pianse prima di risuscitare Lazzaro. Gli importa del tuo dolore, non solo della soluzione."
+ },
+ "goliath": {
+  "question": "Chi uccise il gigante Goliath con una fionda e una pietra?",
+  "options": ["Davide", "Saul", "Sansone", "Gionathan"],
+  "about": "Il gigante filisteo Goliath sfidò l'esercito d'Israele per quaranta giorni, e tutti avevano paura. Il giovane Davide lo affrontò, confidando in Dio.",
+  "think": "Davide venne nel nome dell'Eterno. Quale gigante nella tua vita ha bisogno di incontrare quel Dio?"
+ },
+ "bartimaeus": {
+  "question": "Quale cieco gridò: «Gesù, figliuol di Davide, abbi pietà di me!»?",
+  "options": ["Bartimeo", "Zaccheo", "Nicodemo", "Lazzaro"],
+  "about": "Bartimeo era un mendicante cieco seduto lungo la strada fuori Gerico. Quando sentì che Gesù passava, gridò chiedendo pietà.",
+  "think": "Quando altri volevano farlo tacere, gridò ancora più forte. Non smettere di gridare a Gesù."
+ },
+ "shepherd_boy": {
+  "question": "Che cosa stava facendo Davide quando Samuele venne a ungerlo re?",
+  "options": ["Pascolava le pecore", "Pescava", "Combatteva nell'esercito", "Serviva nel tempio"],
+  "about": "Dio mandò il profeta Samuele dalla famiglia di Isai per ungere il prossimo re. Davide, il figlio più giovane di Isai, era nei campi con le pecore.",
+  "think": "L'uomo riguarda all'apparenza, ma l'Eterno riguarda al cuore. Egli vede in te ciò che altri non notano."
+ },
+ "children": {
+  "question": "Quando i discepoli impedivano di portare i bambini a Gesù, che cosa fece lui?",
+  "options": ["Li accolse e li benedisse", "Li mandò a casa", "Disse loro di aspettare", "Insegnò solo agli adulti"],
+  "about": "La gente portava i bambini perché Gesù li benedicesse, e i discepoli pensavano che fosse troppo occupato. Gesù si indignò con i discepoli.",
+  "think": "Il regno appartiene a chi viene come un bambino. Vai a lui con semplicità e fiducia."
+ },
+ "solomon": {
+  "question": "Quale re chiese a Dio saggezza invece di ricchezze?",
+  "options": ["Salomone", "Davide", "Saul", "Ezechia"],
+  "about": "Quando il giovane Salomone divenne re, Dio gli disse di chiedere ciò che voleva. Salomone chiese saggezza per governare bene il popolo di Dio.",
+  "think": "Salomone chiese saggezza per servire bene gli altri. Chiedi a Dio saggezza per ciò che affronti oggi."
+ },
+ "mary_martha": {
+  "question": "Quale sorella sedette ai piedi di Gesù ad ascoltarlo, mentre l'altra era affaccendata a servire?",
+  "options": ["Maria", "Marta", "Anna", "Elisabetta"],
+  "about": "Gesù era ospite nella casa delle sorelle Marta e Maria. Marta era affaccendata nel servizio, mentre Maria sedeva ad ascoltarlo.",
+  "think": "Gesù disse che Maria aveva scelto la buona parte. Trova del tempo oggi semplicemente per stare con lui."
+ },
+ "ravens": {
+  "question": "Quale profeta fu nutrito dai corvi presso un torrente?",
+  "options": ["Elia", "Eliseo", "Isaia", "Ezechiele"],
+  "about": "Durante una lunga siccità in Israele, Dio mandò il profeta Elia a nascondersi presso un torrente. I corvi gli portavano pane e carne la mattina e la sera.",
+  "think": "Dio provvide a Elia giorno dopo giorno. Fidati di lui per il pane di oggi."
+ },
+ "great_catch": {
+  "question": "Dopo una notte senza prendere nulla, che cosa accadde quando Pietro gettò le reti sulla parola di Gesù?",
+  "options": ["Tanti pesci che le reti si rompevano", "Presero un solo pesce", "La barca affondò", "Venne una tempesta"],
+  "about": "Pietro e i suoi compagni avevano pescato tutta la notte senza prendere nulla. Quando Gesù disse loro di riprovare, la pesca fu così grande che Pietro cadde ai suoi piedi.",
+  "think": "Pietro ubbidì anche se era stanco e dubbioso. Riprova là dove Gesù te lo dice."
+ },
+ "carmel_fire": {
+  "question": "Quando Elia pregò sul monte Carmel, come rispose Dio?",
+  "options": ["Il fuoco cadde dal cielo", "Piovve subito", "Un terremoto scosse il monte", "Una voce parlò da una nuvola"],
+  "about": "Israele adorava il falso dio Baal. Elia sfidò i suoi profeti sul monte Carmel per vedere quale Dio avrebbe risposto con il fuoco.",
+  "think": "Elia pregò con semplicità, e Dio rispose. L'Eterno è Dio; portagli oggi la tua preghiera."
+ },
+ "sower": {
+  "question": "Nella parabola del seminatore, che cosa rappresenta il seme?",
+  "options": ["La Parola di Dio", "Il denaro", "Le opere buone", "Il tempo"],
+  "about": "Gesù raccontò di un seminatore il cui seme cadde su diversi tipi di terreno. Ogni terreno mostra come le persone rispondono alla Parola di Dio.",
+  "think": "Il buon terreno ascolta la Parola, la ritiene e porta frutto con perseveranza. Custodisci nel cuore la Parola di oggi."
+ },
+ "whisper": {
+  "question": "Quando Dio incontrò Elia sul monte, come venne?",
+  "options": ["In un suono dolce e sommesso", "Nel vento", "Nel terremoto", "Nel fuoco"],
+  "about": "Elia era impaurito, sfinito e solo dopo che la regina Izebel aveva minacciato la sua vita. Dio lo incontrò sul monte, non nella potenza, ma in un suono dolce e sommesso.",
+  "think": "Dio non era nel frastuono, ma nel sussurro. Trova oggi un momento di quiete per ascoltarlo."
+ },
+ "good_shepherd": {
+  "question": "Gesù disse: «Io sono il buon pastore». Che cosa fa il buon pastore?",
+  "options": ["Mette la sua vita per le pecore", "Possiede molte greggi", "Non dorme mai", "Vive sulle colline"],
+  "about": "Gesù paragonò se stesso a un pastore e il suo popolo a delle pecore. Un buon pastore protegge le sue pecore anche a costo della propria vita.",
+  "think": "Il Pastore che ha dato la vita per te ti conosce per nome."
+ },
+ "naaman": {
+  "question": "Quale capo dell'esercito fu guarito dalla lebbra dopo essersi lavato sette volte nel Giordano?",
+  "options": ["Naaman", "Goliath", "Sisera", "Abner"],
+  "about": "Naaman era un potente capo dell'esercito di Siria, ma era lebbroso. Il profeta Eliseo gli disse di lavarsi sette volte nel fiume Giordano.",
+  "think": "Naaman quasi perse la sua guarigione perché gli sembrava troppo semplice. Non disprezzare le cose semplici che Dio ti chiede."
+ },
+ "nicodemus": {
+  "question": "Chi venne da Gesù di notte e sentì che doveva nascere di nuovo?",
+  "options": ["Nicodemo", "Zaccheo", "Lazzaro", "Giuseppe"],
+  "about": "Nicodemo era un fariseo e un capo dei Giudei. Venne da Gesù di notte, e Gesù gli disse che aveva bisogno di una nuova nascita da Dio.",
+  "think": "Gesù parlò della nuova nascita per mezzo dello Spirito. Non è mai troppo tardi per un nuovo inizio con Dio."
+ },
+ "furnace": {
+  "question": "Che cosa accadde a Shadrac, Meshac e Abed-nego nella fornace ardente?",
+  "options": ["Il fuoco non fece loro alcun male", "Fuggirono da un tunnel", "Il fuoco si spense", "Rimasero gravemente ustionati"],
+  "about": "Il re Nebucadnetsar ordinò a tutti di inchinarsi davanti alla sua statua d'oro. Tre giovani Giudei si rifiutarono e furono gettati in una fornace ardente.",
+  "think": "Dio non li tenne fuori dal fuoco, ma fu con loro nel fuoco. Neanche tu sei solo nel tuo."
+ },
+ "living_water": {
+  "question": "Che cosa offrì Gesù alla donna samaritana presso il pozzo?",
+  "options": ["Acqua viva", "Pane", "Denaro", "Una nuova casa"],
+  "about": "Gesù parlò con una donna samaritana presso un pozzo, anche se Giudei e Samaritani di solito non avevano rapporti. Le offrì un'acqua che disseta per sempre.",
+  "think": "Gesù offre un'acqua che diventa una fonte di vita eterna. Portagli la tua sete."
+ },
+ "lions_den": {
+  "question": "Chi fu gettato nella fossa dei leoni perché pregava Dio?",
+  "options": ["Daniele", "Giuseppe", "Elia", "Geremia"],
+  "about": "Dei funzionari invidiosi spinsero il re Dario a firmare una legge: per trenta giorni nessuno poteva pregare altri che lui. Daniele continuò a pregare Dio.",
+  "think": "Daniele continuò a pregare anche quando era proibito. Che aspetto avrebbe oggi la fedeltà per te?"
+ },
+ "cloak": {
+  "question": "Una donna malata da dodici anni fu guarita toccando che cosa?",
+  "options": ["Le vesti di Gesù", "La mano di Gesù", "La porta del tempio", "Una pietra sacra"],
+  "about": "Una donna aveva un flusso di sangue da dodici anni e aveva speso tutto per i medici. Credeva che se avesse toccato anche solo le vesti di Gesù, sarebbe guarita.",
+  "think": "Gesù le disse: «Figliuola, la tua fede t'ha salvata; vattene in pace». Tendi oggi la mano verso di lui con fede."
+ },
+ "writing_wall": {
+  "question": "Al banchetto di chi apparve una mano che scrisse sul muro?",
+  "options": ["Belsatsar", "Nebucadnetsar", "Faraone", "Achab"],
+  "about": "Il re Belsatsar di Babilonia diede un grande banchetto e bevve nei vasi presi dal tempio di Dio. All'improvviso apparve una mano che scrisse sul muro.",
+  "think": "Il re fu pesato con la bilancia e trovato mancante. Chiedi a Dio di esaminare il tuo cuore e di rimetterlo in ordine."
+ },
+ "transfiguration": {
+  "question": "Chi apparve con Gesù sul monte quando il suo volto risplendette come il sole?",
+  "options": ["Mosè ed Elia", "Abrahamo e Isacco", "Davide e Salomone", "Pietro e Giovanni"],
+  "about": "Gesù prese con sé Pietro, Giacomo e Giovanni su un alto monte. Lì la sua gloria fu manifestata, e due grandi uomini dell'Antico Testamento parlarono con lui.",
+  "think": "Il Padre disse: «Ascoltatelo». Che cosa ti ha detto Gesù ultimamente?"
+ },
+ "jonah": {
+  "question": "Chi fu inghiottito da un grande pesce dopo essere fuggito da Dio?",
+  "options": ["Giona", "Pietro", "Eliseo", "Giobbe"],
+  "about": "Dio disse a Giona di andare a Ninive, ma egli si imbarcò su una nave diretta dalla parte opposta. Venne una grande tempesta, e i marinai lo gettarono in mare.",
+  "think": "Giona fuggì da Dio, eppure Dio lo inseguì. Non è mai troppo tardi per tornare."
+ },
+ "widow": {
+  "question": "Quante piccole monete diede la povera vedova lodata da Gesù?",
+  "options": ["2", "10", "1", "5"],
+  "about": "Gesù guardava la gente mettere denaro nella cassa delle offerte del tempio. I ricchi davano molto, ma una povera vedova diede tutto ciò che aveva.",
+  "think": "Diede tutto ciò che aveva. Dio guarda il cuore dietro il dono, non la sua grandezza."
+ },
+ "nineveh": {
+  "question": "In quale grande città Dio mandò Giona a chiamare il popolo al ravvedimento?",
+  "options": ["Ninive", "Babilonia", "Gerusalemme", "Tarsis"],
+  "about": "Ninive era la grande capitale dell'Assiria, nemica d'Israele. Quando finalmente Giona vi predicò, l'intera città si volse a Dio.",
+  "think": "Quando Ninive si volse a Dio, egli ebbe misericordia. La sua misericordia è più ampia di quanto immaginiamo."
+ },
+ "greatest": {
+  "question": "Quale comandamento Gesù chiamò il più grande?",
+  "options": ["Ama il Signore Iddio tuo con tutto il tuo cuore", "Santifica il giorno del sabato", "Non rubare", "Dai la decima di tutto ciò che guadagni"],
+  "about": "Un dottore della legge chiese a Gesù quale fosse il comandamento più importante. Gesù riassunse tutta la legge di Dio in due comandamenti d'amore.",
+  "think": "Tutta la legge di Dio dipende dall'amore per Dio e per il prossimo. Chi puoi amare in modo concreto oggi?"
+ },
+ "esther": {
+  "question": "Quale regina rischiò la vita dicendo: «S'io debbo perire, ch'io perisca!»?",
+  "options": ["Ester", "Izebel", "Vashti", "Rachele"],
+  "about": "Ester, una donna ebrea, era diventata regina di Persia quando fu ordito un complotto per sterminare il suo popolo. Per salvarlo dovette presentarsi al re senza essere chiamata.",
+  "think": "«Chi sa se non sei pervenuta ad esser regina appunto per un tempo come questo?». Dove ti ha messo Dio per fare la differenza?"
+ },
+ "last_supper": {
+  "question": "All'ultima cena, che cosa diede Gesù ai suoi discepoli perché si ricordassero di lui?",
+  "options": ["Il pane e il calice", "Un rotolo", "Un anello", "Un agnello"],
+  "about": "La notte prima di morire, Gesù condivise la cena della Pasqua con i suoi discepoli. Diede loro il pane e il vino come segni del suo corpo e del suo sangue.",
+  "think": "«Fate questo in memoria di me». Ricorda oggi ciò che Gesù ha dato per te."
+ },
+ "wall_days": {
+  "question": "Ai tempi di Neemia, quanto tempo ci volle per ricostruire le mura di Gerusalemme?",
+  "options": ["52 giorni", "7 anni", "40 giorni", "1 anno"],
+  "about": "Neemia, un Giudeo al servizio del re di Persia, venne a ricostruire le mura distrutte di Gerusalemme. Nonostante nemici e minacce, il popolo portò a termine l'opera.",
+  "think": "Perfino i nemici riconobbero che l'opera era stata compiuta con l'aiuto di Dio. Continua a costruire ciò che lui ti ha affidato."
+ },
+ "feet": {
+  "question": "Che cosa fece Gesù per i suoi discepoli all'ultima cena per mostrare loro come servire?",
+  "options": ["Lavò loro i piedi", "Diede loro dell'oro", "Costruì loro una casa", "Scrisse loro una lettera"],
+  "about": "Durante l'ultimo pasto insieme, Gesù prese un asciugatoio e lavò i piedi ai suoi discepoli, il lavoro di un servo. Disse loro di servirsi gli uni gli altri allo stesso modo.",
+  "think": "Il Signore di tutto si inginocchiò con un asciugatoio. Dove puoi servire in silenzio oggi?"
+ },
+ "job": {
+  "question": "Chi perse tutto e disse comunque: «L'Eterno ha dato, l'Eterno ha tolto; sia benedetto il nome dell'Eterno»?",
+  "options": ["Giobbe", "Giona", "Geremia", "Gioele"],
+  "about": "Giobbe era un uomo integro che all'improvviso, in un solo giorno, perse i suoi beni e i suoi figli. Eppure nel suo dolore adorò Dio.",
+  "think": "Giobbe adorò nel suo lutto. Puoi portare a Dio il tuo dolore e continuare a fidarti di lui."
+ },
+ "gethsemane": {
+  "question": "Nel giardino, prima dell'arresto, che cosa pregò Gesù al Padre?",
+  "options": ["Non la mia volontà, ma la tua sia fatta", "Portami in cielo adesso", "Distruggi i miei nemici", "Fammi re"],
+  "about": "Dopo l'ultima cena Gesù andò a pregare nel giardino di Getsemani. Sapendo la sofferenza che lo attendeva, pregò in profonda angoscia.",
+  "think": "Gesù mise la sua volontà nelle mani del Padre. Che cosa hai bisogno di mettervi oggi?"
+ },
+ "psalm23": {
+  "question": "Il Salmo 23 comincia così: «L'Eterno è il mio …»?",
+  "options": ["Pastore", "Re", "Rocca", "Luce"],
+  "about": "Davide, che era stato pastore lui stesso, scrisse questo salmo. Descrive come Dio si prende cura di noi come un pastore si prende cura delle sue pecore.",
+  "think": "Con il Pastore nulla ti mancherà, nemmeno nella valle più oscura. Cammina oggi con lui."
+ },
+ "denial": {
+  "question": "Chi rinnegò di conoscere Gesù tre volte prima che il gallo cantasse?",
+  "options": ["Pietro", "Giuda", "Toma", "Giacomo"],
+  "about": "Pietro aveva promesso che non avrebbe mai lasciato Gesù. Quella notte, dopo l'arresto di Gesù, ebbe paura e per tre volte disse di non conoscerlo.",
+  "think": "Più tardi Gesù rialzò Pietro. I tuoi fallimenti non sono la fine della tua storia con lui."
+ },
+ "eagles": {
+  "question": "Quelli che sperano nell'Eterno s'alzano a volo come chi?",
+  "options": ["Aquile", "Colombe", "Passeri", "Angeli"],
+  "about": "Isaia scrisse al popolo di Dio quando si sentiva dimenticato e stanco. Ricordò loro che Dio non si stanca mai e dà forza a chi è debole.",
+  "think": "Egli dà forza allo stanco. Spera in lui e lascia che oggi rinnovi le tue forze."
+ },
+ "paradise": {
+  "question": "Che cosa promise Gesù al malfattore sulla croce che gli chiese di ricordarsi di lui?",
+  "options": ["Oggi tu sarai meco in paradiso", "Sarai liberato", "Vivrai a lungo", "Sarai perdonato più tardi"],
+  "about": "Due malfattori furono crocifissi con Gesù. Uno lo insultava, ma l'altro si rivolse a lui con fede.",
+  "think": "Non era troppo tardi per il malfattore, e non è troppo tardi per nessuno. Chi ha bisogno di sentirlo?"
+ },
+ "plans": {
+  "question": "Dio disse: «Io so i pensieri che medito per voi», pensieri per darvi che cosa?",
+  "options": ["Un avvenire e una speranza", "Ricchezza e fama", "Una vita lunga e facile", "Potere sugli altri"],
+  "about": "Il popolo di Dio era stato deportato in esilio a Babilonia. Geremia scrisse loro una lettera per dire che Dio non li aveva dimenticati.",
+  "think": "Anche in esilio Dio aveva buoni pensieri per il suo popolo. Affidagli il tuo futuro."
+ },
+ "risen": {
+  "question": "Che cosa disse l'angelo alle donne presso il sepolcro vuoto?",
+  "options": ["Egli non è qui; è risuscitato", "L'hanno portato via", "Aspettatelo qui", "Tornate a casa e fate cordoglio"],
+  "about": "Il primo giorno della settimana alcune donne vennero al sepolcro di Gesù con degli aromi. Lo trovarono vuoto, e un angelo diede loro la notizia.",
+  "think": "Il sepolcro è vuoto e la morte è sconfitta. Vivi oggi nella speranza di Gesù risorto."
+ },
+ "potter": {
+  "question": "In Geremia, a chi si paragona Dio, che plasma l'argilla?",
+  "options": ["A un vasaio", "A un falegname", "A un pastore", "A un contadino"],
+  "about": "Dio mandò Geremia a guardare un vasaio al lavoro. Quando un vaso si guastava, il vasaio lo rifaceva in un vaso nuovo.",
+  "think": "Siamo come argilla nelle mani del vasaio. Lascia che rimodelli ciò che in te è rotto."
+ },
+ "thomas": {
+  "question": "Quale discepolo disse che non avrebbe creduto finché non avesse toccato le ferite di Gesù?",
+  "options": ["Toma", "Pietro", "Filippo", "Matteo"],
+  "about": "Toma non era con gli altri discepoli quando Gesù risorto apparve loro. Una settimana dopo Gesù venne di nuovo e mostrò a Toma le sue ferite.",
+  "think": "Gesù incontrò Toma nel suo dubbio. Portagli le tue domande; lui non ne ha paura."
+ },
+ "image": {
+  "question": "A immagine di chi Dio creò l'uomo?",
+  "options": ["A sua immagine", "A immagine degli angeli", "A immagine degli animali", "A immagine delle stelle"],
+  "about": "Nel principio Dio creò l'essere umano, maschio e femmina. Di tutta la creazione, solo loro sono fatti a sua immagine.",
+  "think": "Porti l'immagine di Dio. Così ogni persona che incontrerai oggi."
+ },
+ "emmaus": {
+  "question": "Sulla via di Emmaus, quando i due discepoli riconobbero Gesù?",
+  "options": ["Quando spezzò il pane", "Quando mostrò le mani", "Quando li chiamò per nome", "Quando camminò sull'acqua"],
+  "about": "Due discepoli tornavano tristi a casa dopo la morte di Gesù. Uno sconosciuto si unì a loro e spiegò le Scritture, e non sapevano che era Gesù.",
+  "think": "Gesù camminava con loro prima che lo riconoscessero. Potrebbe essere più vicino di quanto pensi."
+ },
+ "babel": {
+  "question": "Che cosa fece Dio quando gli uomini costruirono la torre di Babel per arrivare al cielo?",
+  "options": ["Confuse la loro lingua", "Mandò un diluvio", "Mandò il fuoco", "Li fece re"],
+  "about": "Dopo il diluvio gli uomini si stabilirono insieme e cominciarono a costruire una città con una grande torre per farsi un nome.",
+  "think": "L'orgoglio costruisce torri per farsi un nome; Dio abbassa i superbi. Cerca il suo nome più del tuo."
+ },
+ "pentecost": {
+  "question": "A Pentecoste, chi riempì i discepoli, con lingue come di fuoco?",
+  "options": ["Lo Spirito Santo", "Gli angeli", "I profeti", "Mosè ed Elia"],
+  "about": "Cinquanta giorni dopo la risurrezione di Gesù, i suoi seguaci pregavano insieme a Gerusalemme. All'improvviso lo Spirito Santo scese su di loro, come Gesù aveva promesso.",
+  "think": "Lo Spirito venne a riempire di potenza persone comuni. Chiedigli di riempirti oggi."
+ },
+ "rock_water": {
+  "question": "Che cosa disse Dio a Mosè di fare perché uscisse acqua dalla roccia?",
+  "options": ["Percuotere la roccia", "Scavare un pozzo", "Pregare per la pioggia", "Versarvi sopra dell'olio"],
+  "about": "Nel deserto il popolo d'Israele aveva sete ed era adirato con Mosè. Dio mandò Mosè a una roccia in Horeb.",
+  "think": "Dio fece uscire acqua da una roccia nel deserto. Può provvedere anche nel tuo luogo più arido."
+ },
+ "damascus": {
+  "question": "Chi incontrò Gesù in una luce sfolgorante sulla via di Damasco?",
+  "options": ["Saulo", "Barnaba", "Stefano", "Sila"],
+  "about": "Saulo odiava i seguaci di Gesù e andava a Damasco per arrestarli. Lungo la strada gli apparve Gesù risorto; più tardi divenne l'apostolo Paolo.",
+  "think": "Gesù fece del suo nemico più accanito il suo più grande messaggero. Nessuno è fuori dalla sua portata."
+ },
+ "rainbow": {
+  "question": "Quale segno diede Dio della sua promessa di non distruggere mai più la terra con un diluvio?",
+  "options": ["Un arcobaleno", "Una colomba", "Una stella", "Un monte"],
+  "about": "Dopo il diluvio Noè e la sua famiglia uscirono dall'arca. Dio fece un patto con loro e con ogni essere vivente.",
+  "think": "Ogni arcobaleno ricorda che Dio mantiene le sue promesse."
+ },
+ "stephen": {
+  "question": "Chi pregò per quelli che lo lapidavano: «Signore, non imputar loro questo peccato»?",
+  "options": ["Stefano", "Giacomo", "Pietro", "Filippo"],
+  "about": "Stefano fu uno dei primi responsabili scelti nella chiesa primitiva, pieno di fede e di Spirito Santo. Fu lapidato perché predicava Gesù.",
+  "think": "Stefano perdonò come Gesù perdonò. C'è qualcuno che devi perdonare oggi?"
+ },
+ "fruit": {
+  "question": "Che cosa viene per primo nel frutto dello Spirito?",
+  "options": ["Amore", "Longanimità", "Temperanza", "Fedeltà"],
+  "about": "Paolo scrisse alle chiese della Galazia sulla vita nello Spirito. Il frutto dello Spirito è il carattere che Dio fa crescere in quelli che gli appartengono.",
+  "think": "L'amore viene per primo. Chiedi allo Spirito di far crescere oggi il suo frutto in te."
+ },
+ "lots_wife": {
+  "question": "Che cosa accadde alla moglie di Lot quando si voltò a guardare Sodoma?",
+  "options": ["Diventò una statua di sale", "Divenne cieca", "Diventò di pietra", "Fu portata via"],
+  "about": "Dio stava per distruggere le città malvagie di Sodoma e Gomorra. Gli angeli condussero fuori Lot e la sua famiglia e dissero loro di non guardare indietro.",
+  "think": "Lei guardò indietro verso ciò da cui Dio la stava facendo uscire. C'è qualcosa verso cui devi smettere di guardare indietro?"
+ },
+ "greatest_love": {
+  "question": "Tra fede, speranza e carità, quale Paolo chiama la più grande?",
+  "options": ["La carità", "La fede", "La speranza", "Nessuna"],
+  "about": "Paolo scrisse alla chiesa di Corinto, che era orgogliosa dei suoi doni spirituali. Mostrò loro che senza amore tutto questo è niente.",
+  "think": "La carità non verrà mai meno. Dove puoi mostrare quell'amore oggi?"
+ },
+ "aaron": {
+  "question": "Quale fratello diede Dio a Mosè perché parlasse per lui?",
+  "options": ["Aaronne", "Giosuè", "Caleb", "Hur"],
+  "about": "Quando Dio mandò Mosè da Faraone, Mosè disse di non essere un buon parlatore. Dio gli diede suo fratello Aaronne perché parlasse per lui.",
+  "think": "Dio diede a Mosè un aiuto per la sua debolezza. Anche a noi dona gli uni gli altri."
+ },
+ "sword": {
+  "question": "Nell'armatura di Dio, che cos'è la spada dello Spirito?",
+  "options": ["La Parola di Dio", "La fede", "La preghiera", "La verità"],
+  "about": "Paolo scrisse dalla prigione della battaglia spirituale che i cristiani affrontano. Descrisse l'armatura che Dio dà, pezzo per pezzo, come quella di un soldato romano.",
+  "think": "La Parola di Dio è la tua arma contro la paura e la menzogna. Quale versetto porterai con te oggi?"
+ },
+ "joshua": {
+  "question": "A chi disse Dio: «Sii forte e fatti animo… l'Eterno, il tuo Dio, sarà teco dovunque andrai»?",
+  "options": ["Giosuè", "Mosè", "Gedeone", "Caleb"],
+  "about": "Dopo la morte di Mosè, Giosuè doveva guidare Israele nella Terra promessa. Dio gli parlò per dargli coraggio per questo compito.",
+  "think": "Il coraggio viene dalla presenza di Dio, non dalla tua forza. Entra in questa giornata sapendo che lui è con te."
+ },
+ "thanksgiving": {
+  "question": "Paolo scrisse: «Non siate con ansietà solleciti di cosa alcuna; ma in ogni cosa siano le vostre richieste rese note a Dio in preghiera e supplicazione», con che cosa?",
+  "options": ["Con azioni di grazie", "Con digiuni", "Con lacrime", "Con il silenzio"],
+  "about": "Paolo scrisse queste parole dalla prigione alla chiesa di Filippi. Anche in catene insegnò loro a trovare la pace di Dio al posto dell'ansia.",
+  "think": "Il ringraziamento e la preghiera aprono la strada alla pace di Dio. Ringrazialo ora per tre cose."
+ },
+ "tears": {
+  "question": "Nell'Apocalisse, che cosa asciugherà Dio dagli occhi di tutti?",
+  "options": ["Ogni lagrima", "Ogni peccato", "Ogni ricordo", "Ogni sogno"],
+  "about": "Nell'ultimo libro della Bibbia, Giovanni ricevette una visione del nuovo cielo e della nuova terra. Dio stesso abiterà con il suo popolo per sempre.",
+  "think": "Un giorno non ci sarà più morte né dolore. Lascia che questa speranza ti sostenga oggi."
+ }
+}

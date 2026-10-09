@@ -1,0 +1,542 @@
+{
+ "noah_ark": {
+  "question": "Wer baute eine Arche, um seine Familie vor der Sintflut zu retten?",
+  "options": ["Noah", "Abraham", "Mose", "Jona"],
+  "about": "Die Welt war voller Gewalt, doch Noah lebte mit Gott. Gott sagte ihm, er solle ein riesiges Schiff bauen, eine Arche, um seine Familie und die Tiere vor der kommenden Flut zu retten.",
+  "think": "Noah gehorchte, bevor ein einziger Regentropfen fiel. Worin bittet Gott dich heute, ihm zu vertrauen?"
+ },
+ "born_where": {
+  "question": "In welcher Stadt wurde Jesus geboren?",
+  "options": ["Bethlehem", "Nazareth", "Jerusalem", "Kapernaum"],
+  "about": "Wegen einer Volkszählung mussten Joseph und Maria nach Bethlehem reisen, in die Stadt von König David. Dort wurde Jesus geboren, wie es der Prophet Micha angekündigt hatte.",
+  "think": "Der König aller Könige wurde in eine Krippe gelegt. Gott kommt gerade in die einfachen Winkel deines Lebens."
+ },
+ "seventh_day": {
+  "question": "Was tat Gott am siebten Tag?",
+  "options": ["Er ruhte", "Er schuf den Menschen", "Er schuf die Sterne", "Er schuf das Meer"],
+  "about": "In sechs Tagen schuf Gott Himmel und Erde und alles, was darin ist. Am siebten Tag ruhte er, segnete diesen Tag und machte ihn heilig.",
+  "think": "Sogar Gott ruhte. Gibt es diese Woche Zeit, innezuhalten, zu ruhen und daran zu denken, dass er die Welt in seiner Hand hält?"
+ },
+ "water_wine": {
+  "question": "Worin verwandelte Jesus das Wasser bei der Hochzeit zu Kana?",
+  "options": ["Wein", "Öl", "Milch", "Honig"],
+  "about": "Bei einer Hochzeit in Kana ging der Wein aus, eine große Schande für die Familie. Das war das erste Zeichen, das Jesus tat, und seine Jünger glaubten an ihn.",
+  "think": "Die Diener taten, was Jesus ihnen sagte, und sahen ein Wunder. Gibt es einen kleinen Schritt, um den er dich bittet?"
+ },
+ "flood_days": {
+  "question": "Wie viele Tage und Nächte regnete es bei der Sintflut?",
+  "options": ["40", "7", "12", "100"],
+  "about": "Gott schickte die Flut wegen der Bosheit der Welt, doch er bewahrte Noah und seine Familie in der Arche. Der Regen fiel vierzig Tage und vierzig Nächte lang.",
+  "think": "Vierzig Tage schienen endlos, und doch gedachte Gott an Noah. Auch in deiner langen, schweren Zeit hat er dich nicht vergessen."
+ },
+ "baptism": {
+  "question": "Was kam bei der Taufe Jesu wie eine Taube auf ihn herab?",
+  "options": ["Der Geist Gottes", "Ein heller Stern", "Ein Engel", "Feuer vom Himmel"],
+  "about": "Jesus kam an den Jordan, um sich von Johannes taufen zu lassen. Als er aus dem Wasser stieg, öffnete sich der Himmel, und der Vater sprach seine Liebe über ihm aus.",
+  "think": "Der Vater sprach: „Dies ist mein lieber Sohn.“ In Christus nennt Gott auch dich sein geliebtes Kind."
+ },
+ "abraham_stars": {
+  "question": "Was sollte Abraham zählen, um zu sehen, wie zahlreich seine Nachkommen sein würden?",
+  "options": ["Die Sterne", "Die Bäume", "Die Berge", "Die Flüsse"],
+  "about": "Abraham war alt und hatte keine Kinder, und doch versprach Gott ihm eine Familie. Gott führte ihn hinaus und zeigte ihm den Nachthimmel.",
+  "think": "Abraham glaubte dem HERRN, und das rechnete er ihm zur Gerechtigkeit. An welcher Verheißung Gottes willst du heute festhalten?"
+ },
+ "fishers": {
+  "question": "Was taten Petrus und Andreas, als Jesus sie rief, ihm nachzufolgen?",
+  "options": ["Sie fischten", "Sie bestellten das Feld", "Sie trieben Steuern ein", "Sie bauten ein Haus"],
+  "about": "Petrus und sein Bruder Andreas waren Fischer am See Genezareth in Galiläa. Jesus rief sie, ihm zu folgen und Menschenfischer zu werden.",
+  "think": "Sie ließen ihre Netze sofort liegen. Was ruft Jesus dich vielleicht auf zurückzulassen, um ihm zu folgen?"
+ },
+ "ram": {
+  "question": "Was gab Gott anstelle von Isaak, als Abraham ihn opfern wollte?",
+  "options": ["Einen Widder", "Eine Taube", "Ein Kalb", "Eine Ziege"],
+  "about": "Gott prüfte Abraham und verlangte seinen einzigen Sohn Isaak als Opfer. Im letzten Moment hielt Gott ihn auf und gab ihm einen Widder, der sich in einer Hecke verfangen hatte.",
+  "think": "Abraham nannte den Ort „Der HERR sieht“. Gott sieht, was du brauchst, noch bevor du es siehst."
+ },
+ "salt_light": {
+  "question": "Jesus sagte, seine Jünger seien das Salz der Erde und das … der Welt?",
+  "options": ["Licht", "Brot", "Hoffnung", "Kraft"],
+  "about": "In der Bergpredigt lehrte Jesus seine Jünger, wie sie leben sollen. Salz gibt Geschmack und macht haltbar; Licht zeigt anderen den Weg.",
+  "think": "Niemand stellt ein Licht unter einen Scheffel. Wo kann dein Licht diese Woche für jemanden leuchten?"
+ },
+ "jacob_ladder": {
+  "question": "Was sah Jakob in Beth-El im Traum?",
+  "options": ["Eine Leiter, die bis in den Himmel reichte", "Einen brennenden Dornbusch", "Eine große Flut", "Sieben fette Kühe"],
+  "about": "Jakob war allein und voller Angst auf der Flucht vor seinem Bruder Esau. In jener Nacht begegnete Gott ihm im Traum und versprach, mit ihm zu sein.",
+  "think": "Gott sagte zu Jakob: „Siehe, ich bin mit dir und will dich behüten, wo du hin ziehst.“ Du bist auf deinem Weg nicht allein."
+ },
+ "daily_bread": {
+  "question": "Worum bitten wir Gott im Vaterunser für heute?",
+  "options": ["Unser tägliches Brot", "Reichtum", "Ein langes Leben", "Den Sieg"],
+  "about": "Die Jünger baten Jesus, sie beten zu lehren, und er gab ihnen dieses Gebet. Um das tägliche Brot zu bitten heißt, Gott für das zu vertrauen, was jeder Tag braucht.",
+  "think": "Jesus lehrte uns, um das zu bitten, was wir heute brauchen, Tag für Tag. Was brauchst du heute von Gott?"
+ },
+ "joseph_coat": {
+  "question": "Welches besondere Geschenk machte Jakob seinem Sohn Joseph?",
+  "options": ["Einen bunten Rock", "Einen goldenen Ring", "Ein Schwert", "Eine Schafherde"],
+  "about": "Jakob liebte Joseph mehr als seine anderen Söhne und zeigte es mit einem besonderen Gewand. Seine Brüder wurden eifersüchtig und hassten ihn.",
+  "think": "Das Geschenk weckte die Eifersucht der Brüder. Bitte Gott, dass du dich mit anderen freuen kannst, statt sie zu beneiden."
+ },
+ "birds": {
+  "question": "Jesus sagte, wir sollen nicht sorgen, denn unser himmlischer Vater ernährt wen?",
+  "options": ["Die Vögel unter dem Himmel", "Die Fische im Meer", "Die Löwen", "Die Schafe"],
+  "about": "Viele Menschen sorgen sich um Essen, Kleidung und die Zukunft. Jesus zeigte auf die Vögel und die Blumen, um zu zeigen, wie treu der Vater für seine Schöpfung sorgt.",
+  "think": "Wenn er die Vögel ernährt, wie viel mehr wird er für dich sorgen? Gib ihm deine Sorge von heute."
+ },
+ "joseph_sold": {
+  "question": "Wer wurde von seinen Brüdern verkauft und rettete später seine Familie in Ägypten vor der Hungersnot?",
+  "options": ["Joseph", "Benjamin", "Ruben", "Juda"],
+  "about": "Josephs eifersüchtige Brüder verkauften ihn als Sklaven nach Ägypten. Jahre später, als Herrscher dort, vergab er ihnen und rettete sie vor der Hungersnot.",
+  "think": "Joseph sagte: „Ihr habt mich nicht hergesandt, sondern Gott.“ Gott kann Böses in Gutes verwandeln."
+ },
+ "ask_seek": {
+  "question": "„Bittet, so wird euch gegeben; suchet, so werdet ihr finden; …“ Wie endet Jesus den Satz?",
+  "options": ["Klopfet an, so wird euch aufgetan", "Wartet, so werdet ihr empfangen", "Arbeitet, so werdet ihr verdienen", "Gebt, so wird euch gegeben"],
+  "about": "Jesus lehrte, dass Gott ein guter Vater ist, der seinen Kindern gern gute Gaben gibt. Darum können wir weiter beten und nie aufgeben.",
+  "think": "Jesus lädt dich ein, weiter zu bitten. Wofür hast du aufgehört zu beten, das du ihm wieder bringen könntest?"
+ },
+ "baby_moses": {
+  "question": "Wo versteckte die Mutter von Mose ihr Kind, um es zu retten?",
+  "options": ["In einem Kästchen im Schilf am Fluss", "In einer Höhle", "Im Palast", "In einem Brunnen"],
+  "about": "Der Pharao hatte befohlen, jeden hebräischen Jungen zu töten. Die Mutter von Mose versteckte ihn in einem Kästchen am Nil, wo die Tochter des Pharao ihn fand.",
+  "think": "Der kleine Glaubensschritt einer Mutter wurde Teil von Gottes großem Plan. Auch deine kleine Treue zählt."
+ },
+ "storm": {
+  "question": "Was stillte Jesus mit einem Wort, als seine Jünger im Boot waren?",
+  "options": ["Einen Sturm", "Eine Menschenmenge", "Ein Fieber", "Ein Feuer"],
+  "about": "Jesus schlief im Boot, als ein heftiger Sturm über den See kam. Die verängstigten Jünger weckten ihn, und er stillte Wind und Wellen mit einem Wort.",
+  "think": "Die Jünger riefen: „Fragst du nichts danach, dass wir umkommen?“ Er fragte danach und sprach Frieden. Bring ihm den Sturm, in dem du steckst."
+ },
+ "burning_bush": {
+  "question": "Wie sprach Gott in der Wüste zum ersten Mal zu Mose?",
+  "options": ["Aus einem brennenden Dornbusch", "In einem Traum", "Aus einer Wolke", "Durch einen Propheten"],
+  "about": "Mose hütete Schafe in der Wüste, als er einen Busch sah, der brannte und doch nicht verbrannte. Gott sprach aus ihm zu ihm und sandte ihn, Israel zu befreien.",
+  "think": "Mose ging seiner alltäglichen Arbeit nach, als Gott ihn rief. Halte Ausschau nach Gott an den gewöhnlichen Orten deines Tages."
+ },
+ "jairus": {
+  "question": "Wie alt war die Tochter des Jairus, als Jesus sie auferweckte?",
+  "options": ["12", "7", "3", "20"],
+  "about": "Jairus, ein Vorsteher der Synagoge, bat Jesus flehentlich, zu seiner sterbenden Tochter zu kommen. Bevor Jesus ankam, kam die Nachricht, dass sie gestorben war.",
+  "think": "Jesus sagte zu Jairus: „Fürchte dich nicht, glaube nur!“ Halte dich an ihm fest, wenn die Nachrichten schlecht sind."
+ },
+ "red_sea": {
+  "question": "Wie entkam Israel, als das Heer des Pharao es bis ans Meer verfolgte?",
+  "options": ["Sie gingen trockenen Fußes hindurch", "Sie fuhren mit Booten", "Sie versteckten sich in den Bergen", "Sie kämpften und siegten"],
+  "about": "Israel war gerade aus der Sklaverei in Ägypten gezogen, als das Heer des Pharao es bis ans Schilfmeer verfolgte. Gott teilte das Wasser, sodass sein Volk hindurchgehen konnte.",
+  "think": "Als es keinen Weg zu geben schien, schuf Gott einen. Bitte ihn um einen Weg durch das, was dir im Weg steht."
+ },
+ "loaves": {
+  "question": "Wie viele Brote hatte der Junge, als Jesus die Fünftausend speiste?",
+  "options": ["5", "2", "7", "12"],
+  "about": "Eine riesige Menge war Jesus an einen abgelegenen Ort gefolgt, und es gab nichts zu essen. Ein Junge gab sein kleines Essen her, und Jesus machte damit alle satt.",
+  "think": "Das kleine Essen eines Jungen wurde in Jesu Händen zum Festmahl. Gib ihm das Wenige, das du hast."
+ },
+ "manna": {
+  "question": "Was schickte Gott jeden Morgen, um Israel in der Wüste zu ernähren?",
+  "options": ["Manna, Brot vom Himmel", "Fisch", "Obst", "Reis"],
+  "about": "In der Wüste klagte Israel über Hunger. Gott schickte vierzig Jahre lang jeden Morgen Manna, genug für jeden Tag.",
+  "think": "Das Manna kam jeden Tag frisch und ließ sich nicht aufbewahren. Gott gibt Gnade für heute; vertraue ihm für morgen."
+ },
+ "walks_water": {
+  "question": "Wer ging auf dem Wasser Jesus entgegen und begann dann zu sinken?",
+  "options": ["Petrus", "Johannes", "Thomas", "Andreas"],
+  "about": "Nach der Speisung der Menge schickte Jesus seine Jünger über den See und kam in der Nacht auf dem Wasser zu ihnen. Petrus bat, zu ihm kommen zu dürfen.",
+  "think": "Petrus sank, als er auf den Wind sah, und Jesus fasste ihn sofort. Halte deinen Blick auf ihn gerichtet."
+ },
+ "sinai": {
+  "question": "Auf welchem Berg gab Gott Mose die Gesetzestafeln?",
+  "options": ["Sinai", "Karmel", "Zion", "Ararat"],
+  "about": "Nachdem Mose Israel aus Ägypten geführt hatte, begegnete er Gott auf dem Berg Sinai. Dort gab Gott ihm das Gesetz, geschrieben auf zwei steinerne Tafeln.",
+  "think": "Gottes Gesetz war mit seinem eigenen Finger geschrieben. Welches seiner Worte soll heute in dein Herz geschrieben werden?"
+ },
+ "samaritan": {
+  "question": "Wer hielt in der Geschichte Jesu an, um dem Mann zu helfen, der unter die Räuber gefallen war?",
+  "options": ["Ein Samariter", "Ein Priester", "Ein Levit", "Ein Soldat"],
+  "about": "Ein Schriftgelehrter fragte Jesus: „Wer ist denn mein Nächster?“ Jesus antwortete mit einer Geschichte, deren Held ein Samariter war, ein Mann, auf den die meisten Juden damals herabsahen.",
+  "think": "Jesus fragte: „Welcher ist der Nächste gewesen?“ Wer liegt heute an deinem Weg?"
+ },
+ "jericho": {
+  "question": "Was geschah, als Israel um Jericho zog, ein Feldgeschrei machte und die Posaunen blies?",
+  "options": ["Die Mauern fielen um", "Es begann zu regnen", "Die Tore öffneten sich", "Die Feinde flohen"],
+  "about": "Jericho war eine starke, ummauerte Stadt am Rand des verheißenen Landes. Gott sagte Josua, er solle sieben Tage lang um sie herumziehen, statt sie anzugreifen.",
+  "think": "Israel siegte, indem es einem Plan gehorchte, der keinen Sinn zu ergeben schien. Vertraue Gottes Weg, auch wenn er seltsam aussieht."
+ },
+ "lost_sheep": {
+  "question": "Wie viele Schafe ließ der Hirte in Jesu Gleichnis zurück, um das eine verlorene zu suchen?",
+  "options": ["99", "9", "49", "100"],
+  "about": "Die religiösen Führer beschwerten sich, dass Jesus Sünder annahm. Er antwortete mit Geschichten von Verlorenem, das gesucht und mit großer Freude gefunden wird.",
+  "think": "Im Himmel ist Freude über einen, der heimkommt. Du bist es wert, gesucht zu werden."
+ },
+ "gideon": {
+  "question": "Wer bat Gott um ein Zeichen mit einem Wollfell?",
+  "options": ["Gideon", "Simson", "Josua", "Barak"],
+  "about": "Gott rief Gideon, Israel von feindlichen Plünderern zu befreien, doch er fühlte sich schwach und hatte Angst. Er bat Gott um Zeichen, und Gott gab sie ihm geduldig.",
+  "think": "Gott ging geduldig auf Gideons Zweifel ein. Bring ihm deine ehrlichen Fragen."
+ },
+ "prodigal": {
+  "question": "Was tat der Vater, als er seinen verlorenen Sohn heimkommen sah?",
+  "options": ["Er lief ihm entgegen und umarmte ihn", "Er schickte ihn fort", "Er machte ihn zum Knecht", "Er wartete auf eine Entschuldigung"],
+  "about": "Ein jüngerer Sohn ließ sich seinen Anteil am Vermögen auszahlen und verprasste ihn weit weg von zu Hause. Als er Hunger litt, beschloss er, zu seinem Vater zurückzukehren.",
+  "think": "Der Vater lief. So nimmt Gott jeden auf, der heimkommt."
+ },
+ "samson": {
+  "question": "Wessen große Kraft hing mit seinem ungeschnittenen Haar zusammen?",
+  "options": ["Simson", "Gideon", "David", "Goliath"],
+  "about": "Simson war von Geburt an Gott geweiht, und sein langes Haar war das Zeichen dieses Gelübdes. Als Delila es abschneiden ließ, wich seine Kraft von ihm.",
+  "think": "Simsons Kraft war Gottes Geschenk, nicht seine eigene. Bleib nahe beim Geber, nicht nur bei seinen Gaben."
+ },
+ "ten_lepers": {
+  "question": "Wie viele der zehn geheilten Aussätzigen kamen zurück, um Jesus zu danken?",
+  "options": ["1", "9", "10", "3"],
+  "about": "Zehn aussätzige Männer riefen Jesus von Weitem an, und er schickte sie zu den Priestern. Unterwegs wurden sie rein.",
+  "think": "Neun wurden geheilt; einer kam zurück, um zu danken. Nimm dir jetzt einen Moment, um Gott zu danken."
+ },
+ "ruth": {
+  "question": "Wer sagte zu Naemi: „Wo du hin gehst, da will ich auch hin gehen; dein Gott ist mein Gott“?",
+  "options": ["Ruth", "Orpa", "Esther", "Rahel"],
+  "about": "Nachdem Naemi in einem fremden Land ihren Mann und ihre Söhne verloren hatte, beschloss sie heimzukehren. Ihre Schwiegertochter Ruth, eine Moabitin, weigerte sich, sie zu verlassen.",
+  "think": "Ruth wählte treue Liebe, als Gehen leichter gewesen wäre. Wer braucht diese Woche deine Treue?"
+ },
+ "zacchaeus": {
+  "question": "Wer stieg auf einen Maulbeerbaum, um Jesus zu sehen?",
+  "options": ["Zachäus", "Bartimäus", "Nikodemus", "Lazarus"],
+  "about": "Zachäus war ein Oberzöllner in Jericho, reich und unbeliebt. Er war klein, darum stieg er auf einen Baum, um Jesus vorbeigehen zu sehen.",
+  "think": "Jesus ging in das Haus des Zachäus, bevor dieser sich geändert hatte. Er nimmt dich an, so wie du bist."
+ },
+ "samuel": {
+  "question": "Welcher Junge hörte in der Nacht im Haus Gottes, wie Gott ihn beim Namen rief?",
+  "options": ["Samuel", "David", "Isaak", "Josia"],
+  "about": "Samuel war ein Junge, der unter dem Priester Eli im Haus Gottes diente. Gott rief ihn in der Nacht beim Namen und begann, zu ihm zu reden.",
+  "think": "Samuel sagte: „Rede, denn dein Knecht hört.“ Nimm dir heute eine stille Minute, nur um zuzuhören."
+ },
+ "lazarus": {
+  "question": "Wen erweckte Jesus von den Toten, nachdem er vier Tage im Grab gelegen hatte?",
+  "options": ["Lazarus", "Stephanus", "Jairus", "Joseph"],
+  "about": "Lazarus, der Bruder von Maria und Martha, war gestorben, und Jesus kam vier Tage später. Er rief ihn lebendig aus dem Grab heraus.",
+  "think": "Jesus weinte, bevor er Lazarus auferweckte. Ihm liegt an deinem Kummer, nicht nur an der Lösung."
+ },
+ "goliath": {
+  "question": "Wer tötete den Riesen Goliath mit Schleuder und Stein?",
+  "options": ["David", "Saul", "Simson", "Jonathan"],
+  "about": "Der philistäische Riese Goliath verhöhnte Israels Heer vierzig Tage lang, und alle hatten Angst. Der junge David trat ihm entgegen und vertraute auf Gott.",
+  "think": "David kam im Namen des HERRN. Welcher Riese in deinem Leben muss diesem Gott begegnen?"
+ },
+ "bartimaeus": {
+  "question": "Welcher Blinde schrie: „Jesu, du Sohn Davids, erbarme dich mein!“?",
+  "options": ["Bartimäus", "Zachäus", "Nikodemus", "Lazarus"],
+  "about": "Bartimäus war ein blinder Bettler, der vor Jericho am Weg saß. Als er hörte, dass Jesus vorüberging, schrie er um Erbarmen.",
+  "think": "Als andere ihn zum Schweigen bringen wollten, schrie er noch lauter. Hör nicht auf, zu Jesus zu rufen."
+ },
+ "shepherd_boy": {
+  "question": "Was tat David, als Samuel kam, um ihn zum König zu salben?",
+  "options": ["Er hütete die Schafe", "Er fischte", "Er kämpfte im Heer", "Er diente im Tempel"],
+  "about": "Gott sandte den Propheten Samuel zur Familie Isais, um den nächsten König zu salben. Isais jüngster Sohn David war draußen auf dem Feld bei den Schafen.",
+  "think": "Ein Mensch sieht, was vor Augen ist; der HERR aber sieht das Herz an. Er sieht, was andere an dir übersehen."
+ },
+ "children": {
+  "question": "Was tat Jesus, als die Jünger die Leute hinderten, Kinder zu ihm zu bringen?",
+  "options": ["Er nahm sie auf und segnete sie", "Er schickte sie nach Hause", "Er sagte, sie sollten warten", "Er lehrte nur die Erwachsenen"],
+  "about": "Die Leute brachten ihre Kinder zu Jesus, damit er sie segne, und die Jünger meinten, er habe keine Zeit. Jesus wurde über die Jünger unwillig.",
+  "think": "Das Reich Gottes gehört denen, die wie Kinder kommen. Komm einfach und voller Vertrauen zu ihm."
+ },
+ "solomon": {
+  "question": "Welcher König bat Gott um Weisheit statt um Reichtum?",
+  "options": ["Salomo", "David", "Saul", "Hiskia"],
+  "about": "Als der junge Salomo König wurde, sagte Gott ihm, er solle bitten, was er wolle. Salomo bat um Weisheit, um Gottes Volk gut zu regieren.",
+  "think": "Salomo bat um Weisheit, um anderen gut zu dienen. Bitte Gott um Weisheit für das, was heute vor dir liegt."
+ },
+ "mary_martha": {
+  "question": "Welche Schwester saß zu Jesu Füßen und hörte zu, während die andere mit dem Dienen beschäftigt war?",
+  "options": ["Maria", "Martha", "Hanna", "Elisabeth"],
+  "about": "Jesus war zu Gast bei den Schwestern Martha und Maria. Martha war mit der Bewirtung beschäftigt, während Maria dasaß und ihm zuhörte.",
+  "think": "Jesus sagte, Maria habe das gute Teil erwählt. Nimm dir heute Zeit, einfach bei ihm zu sein."
+ },
+ "ravens": {
+  "question": "Welcher Prophet wurde an einem Bach von Raben ernährt?",
+  "options": ["Elia", "Elisa", "Jesaja", "Hesekiel"],
+  "about": "Während einer langen Dürre in Israel schickte Gott den Propheten Elia, sich an einem Bach zu verbergen. Raben brachten ihm morgens und abends Brot und Fleisch.",
+  "think": "Gott versorgte Elia Tag für Tag. Vertraue ihm für das Brot von heute."
+ },
+ "great_catch": {
+  "question": "Was geschah nach einer Nacht ohne Fang, als Petrus auf Jesu Wort die Netze auswarf?",
+  "options": ["So viele Fische, dass die Netze zu reißen begannen", "Sie fingen einen Fisch", "Das Boot sank", "Ein Sturm zog auf"],
+  "about": "Petrus und seine Gefährten hatten die ganze Nacht gefischt und nichts gefangen. Als Jesus sie es noch einmal versuchen ließ, war der Fang so groß, dass Petrus ihm zu Füßen fiel.",
+  "think": "Petrus gehorchte, obwohl er müde und zweifelnd war. Versuche es noch einmal, wo Jesus es dir sagt."
+ },
+ "carmel_fire": {
+  "question": "Wie antwortete Gott, als Elia auf dem Berg Karmel betete?",
+  "options": ["Feuer fiel vom Himmel", "Sofort fiel Regen", "Ein Erdbeben erschütterte den Berg", "Eine Stimme sprach aus einer Wolke"],
+  "about": "Israel betete den falschen Gott Baal an. Elia forderte dessen Propheten auf dem Berg Karmel heraus, um zu sehen, welcher Gott mit Feuer antworten würde.",
+  "think": "Elia betete schlicht, und Gott antwortete. Der HERR ist Gott; bring ihm heute dein Gebet."
+ },
+ "sower": {
+  "question": "Wofür steht der Same in Jesu Gleichnis vom Sämann?",
+  "options": ["Für das Wort Gottes", "Für Geld", "Für gute Werke", "Für Zeit"],
+  "about": "Jesus erzählte von einem Bauern, dessen Same auf verschiedene Böden fiel. Jeder Boden zeigt, wie Menschen auf Gottes Wort antworten.",
+  "think": "Guter Boden hört das Wort, bewahrt es und bringt Frucht in Geduld. Bewahre das Wort von heute in deinem Herzen."
+ },
+ "whisper": {
+  "question": "Wie kam Gott, als er Elia auf dem Berg begegnete?",
+  "options": ["In einem stillen, sanften Sausen", "Im Wind", "Im Erdbeben", "Im Feuer"],
+  "about": "Elia hatte Angst, war erschöpft und allein, nachdem Königin Isebel ihm nach dem Leben trachtete. Gott begegnete ihm auf dem Berg, nicht in Macht, sondern in einem leisen Säuseln.",
+  "think": "Gott war nicht im Lärm, sondern im leisen Säuseln. Such dir heute einen stillen Moment, um ihn zu hören."
+ },
+ "good_shepherd": {
+  "question": "Jesus sagte: „Ich bin der gute Hirte.“ Was tut der gute Hirte?",
+  "options": ["Er lässt sein Leben für die Schafe", "Er besitzt viele Herden", "Er schläft nie", "Er wohnt in den Bergen"],
+  "about": "Jesus verglich sich mit einem Hirten und sein Volk mit Schafen. Ein guter Hirte beschützt seine Schafe, selbst wenn es ihn das eigene Leben kostet.",
+  "think": "Der Hirte, der sein Leben für dich gab, kennt dich beim Namen."
+ },
+ "naaman": {
+  "question": "Welcher Feldhauptmann wurde vom Aussatz geheilt, nachdem er sich siebenmal im Jordan gewaschen hatte?",
+  "options": ["Naeman", "Goliath", "Sisera", "Abner"],
+  "about": "Naeman war ein mächtiger Feldhauptmann des syrischen Heeres, doch er war aussätzig. Der Prophet Elisa sagte ihm, er solle sich siebenmal im Jordan waschen.",
+  "think": "Naeman hätte seine Heilung fast verpasst, weil sie ihm zu einfach schien. Verachte nicht die einfachen Dinge, um die Gott dich bittet."
+ },
+ "nicodemus": {
+  "question": "Wer kam bei Nacht zu Jesus und hörte, dass er von Neuem geboren werden muss?",
+  "options": ["Nikodemus", "Zachäus", "Lazarus", "Joseph"],
+  "about": "Nikodemus war ein Pharisäer und ein Oberster der Juden. Er kam bei Nacht zu Jesus, und Jesus sagte ihm, dass er eine neue Geburt von Gott brauche.",
+  "think": "Jesus sprach von der neuen Geburt durch den Geist. Für einen Neuanfang mit Gott ist es nie zu spät."
+ },
+ "furnace": {
+  "question": "Was geschah mit Sadrach, Mesach und Abed-Nego im glühenden Ofen?",
+  "options": ["Das Feuer schadete ihnen nicht", "Sie entkamen durch einen Tunnel", "Das Feuer ging aus", "Sie wurden schwer verbrannt"],
+  "about": "König Nebukadnezar befahl allen, sich vor seinem goldenen Bild niederzuwerfen. Drei junge Juden weigerten sich und wurden in einen glühenden Ofen geworfen.",
+  "think": "Gott hielt sie nicht aus dem Feuer heraus, aber er war mit ihnen darin. Auch in deinem Feuer bist du nicht allein."
+ },
+ "living_water": {
+  "question": "Was bot Jesus der Samariterin am Brunnen an?",
+  "options": ["Lebendiges Wasser", "Brot", "Geld", "Ein neues Zuhause"],
+  "about": "Jesus sprach mit einer Samariterin am Brunnen, obwohl Juden und Samariter normalerweise keinen Umgang miteinander hatten. Er bot ihr Wasser an, das für immer den Durst stillt.",
+  "think": "Jesus schenkt Wasser, das zu einer Quelle ewigen Lebens wird. Bring ihm deinen Durst."
+ },
+ "lions_den": {
+  "question": "Wer wurde in die Löwengrube geworfen, weil er zu Gott betete?",
+  "options": ["Daniel", "Joseph", "Elia", "Jeremia"],
+  "about": "Neidische Fürsten brachten König Darius dazu, ein Gesetz zu erlassen, dass dreißig Tage lang niemand zu jemand anderem als zu ihm beten dürfe. Daniel betete weiter zu Gott.",
+  "think": "Daniel betete weiter, auch als es verboten war. Wie würde Treue heute für dich aussehen?"
+ },
+ "cloak": {
+  "question": "Eine Frau, die zwölf Jahre krank war, wurde gesund, als sie was berührte?",
+  "options": ["Jesu Kleid", "Jesu Hand", "Die Tempeltür", "Einen heiligen Stein"],
+  "about": "Eine Frau hatte seit zwölf Jahren den Blutfluss und alles bei Ärzten ausgegeben. Sie glaubte: Wenn sie nur Jesu Kleid berührte, würde sie gesund.",
+  "think": "Jesus sagte zu ihr: „Dein Glaube hat dich gesund gemacht; gehe hin mit Frieden.“ Streck dich heute im Glauben nach ihm aus."
+ },
+ "writing_wall": {
+  "question": "Bei wessen Festmahl erschien eine Hand und schrieb an die Wand?",
+  "options": ["Belsazer", "Nebukadnezar", "Pharao", "Ahab"],
+  "about": "König Belsazer von Babel gab ein großes Festmahl und trank aus den Gefäßen, die aus Gottes Tempel geraubt worden waren. Plötzlich erschien eine Hand und schrieb an die Wand.",
+  "think": "Der König wurde gewogen und zu leicht gefunden. Bitte Gott, dein Herz zu erforschen und zurechtzubringen."
+ },
+ "transfiguration": {
+  "question": "Wer erschien mit Jesus auf dem Berg, als sein Angesicht leuchtete wie die Sonne?",
+  "options": ["Mose und Elia", "Abraham und Isaak", "David und Salomo", "Petrus und Johannes"],
+  "about": "Jesus nahm Petrus, Jakobus und Johannes mit auf einen hohen Berg. Dort wurde seine Herrlichkeit sichtbar, und zwei große Männer des Alten Testaments redeten mit ihm.",
+  "think": "Der Vater sprach: „Den sollt ihr hören!“ Was hat Jesus dir in letzter Zeit gesagt?"
+ },
+ "jonah": {
+  "question": "Wer wurde von einem großen Fisch verschlungen, nachdem er vor Gott geflohen war?",
+  "options": ["Jona", "Petrus", "Elisa", "Hiob"],
+  "about": "Gott sagte Jona, er solle nach Ninive gehen, doch er bestieg ein Schiff in die entgegengesetzte Richtung. Ein großer Sturm kam auf, und die Seeleute warfen ihn ins Meer.",
+  "think": "Jona floh vor Gott, und doch ging Gott ihm nach. Es ist nie zu spät umzukehren."
+ },
+ "widow": {
+  "question": "Wie viele kleine Münzen gab die arme Witwe, die Jesus lobte?",
+  "options": ["2", "10", "1", "5"],
+  "about": "Jesus sah zu, wie die Leute Geld in den Gotteskasten im Tempel legten. Die Reichen gaben viel, doch eine arme Witwe gab alles, was sie hatte.",
+  "think": "Sie gab alles, was sie hatte. Gott sieht auf das Herz hinter der Gabe, nicht auf ihre Größe."
+ },
+ "nineveh": {
+  "question": "In welche große Stadt sandte Gott Jona, um die Menschen zur Umkehr zu rufen?",
+  "options": ["Ninive", "Babel", "Jerusalem", "Tharsis"],
+  "about": "Ninive war die große Hauptstadt Assyriens, des Feindes Israels. Als Jona dort endlich predigte, kehrte die ganze Stadt zu Gott um.",
+  "think": "Als Ninive zu Gott umkehrte, erbarmte er sich. Seine Barmherzigkeit ist weiter, als wir denken."
+ },
+ "greatest": {
+  "question": "Welches Gebot nannte Jesus das größte?",
+  "options": ["Du sollst Gott, deinen Herrn, lieben von ganzem Herzen", "Halte den Sabbat heilig", "Du sollst nicht stehlen", "Gib den Zehnten von allem, was du verdienst"],
+  "about": "Ein Schriftgelehrter fragte Jesus, welches Gebot das wichtigste sei. Jesus fasste Gottes ganzes Gesetz in zwei Geboten der Liebe zusammen.",
+  "think": "Das ganze Gesetz hängt an der Liebe zu Gott und zum Nächsten. Wen kannst du heute ganz praktisch lieben?"
+ },
+ "esther": {
+  "question": "Welche Königin setzte ihr Leben aufs Spiel und sagte: „Komme ich um, so komme ich um“?",
+  "options": ["Esther", "Isebel", "Vasthi", "Rahel"],
+  "about": "Esther, eine Jüdin, war Königin von Persien geworden, als ein Plan geschmiedet wurde, ihr Volk zu vernichten. Um es zu retten, musste sie ungerufen vor den König treten.",
+  "think": "„Wer weiß, ob du nicht um dieser Zeit willen gekommen bist?“ Wo hat Gott dich hingestellt, um etwas zu bewirken?"
+ },
+ "last_supper": {
+  "question": "Was gab Jesus seinen Jüngern beim letzten Abendmahl zu seinem Gedächtnis?",
+  "options": ["Das Brot und den Kelch", "Eine Schriftrolle", "Einen Ring", "Ein Lamm"],
+  "about": "In der Nacht vor seinem Tod feierte Jesus mit seinen Jüngern das Passahmahl. Er gab ihnen Brot und Wein als Zeichen seines Leibes und seines Blutes.",
+  "think": "„Das tut zu meinem Gedächtnis.“ Denk heute daran, was Jesus für dich gegeben hat."
+ },
+ "wall_days": {
+  "question": "Wie lange dauerte es zur Zeit Nehemias, die Mauer Jerusalems wieder aufzubauen?",
+  "options": ["52 Tage", "7 Jahre", "40 Tage", "1 Jahr"],
+  "about": "Nehemia, ein Jude im Dienst des persischen Königs, kam, um die zerstörten Mauern Jerusalems wieder aufzubauen. Trotz Feinden und Drohungen vollendete das Volk das Werk.",
+  "think": "Sogar ihre Feinde erkannten, dass das Werk mit Gottes Hilfe geschehen war. Bau weiter an dem, was er dir aufgetragen hat."
+ },
+ "feet": {
+  "question": "Was tat Jesus beim letzten Abendmahl für seine Jünger, um ihnen zu zeigen, wie man dient?",
+  "options": ["Er wusch ihnen die Füße", "Er gab ihnen Gold", "Er baute ihnen ein Haus", "Er schrieb ihnen einen Brief"],
+  "about": "Bei ihrem letzten gemeinsamen Mahl nahm Jesus einen Schurz und wusch seinen Jüngern die Füße, die Arbeit eines Dieners. Er sagte ihnen, sie sollten einander ebenso dienen.",
+  "think": "Der Herr über alles kniete mit einem Tuch. Wo kannst du heute still dienen?"
+ },
+ "job": {
+  "question": "Wer verlor alles und sagte doch: „Der HERR hat's gegeben, der HERR hat's genommen; der Name des HERRN sei gelobt“?",
+  "options": ["Hiob", "Jona", "Jeremia", "Joel"],
+  "about": "Hiob war ein frommer Mann, der an einem einzigen Tag plötzlich seinen Besitz und seine Kinder verlor. Doch in seinem Schmerz betete er Gott an.",
+  "think": "Hiob betete in seiner Trauer an. Du kannst Gott deinen Kummer bringen und ihm trotzdem vertrauen."
+ },
+ "gethsemane": {
+  "question": "Was betete Jesus im Garten vor seiner Gefangennahme zu seinem Vater?",
+  "options": ["Nicht mein, sondern dein Wille geschehe", "Nimm mich jetzt in den Himmel", "Vernichte meine Feinde", "Mach mich zum König"],
+  "about": "Nach dem Abendmahl ging Jesus in den Garten Gethsemane, um zu beten. Er wusste, welches Leiden vor ihm lag, und betete in tiefer Angst.",
+  "think": "Jesus legte seinen Willen in die Hände des Vaters. Was musst du heute dort hineinlegen?"
+ },
+ "psalm23": {
+  "question": "Psalm 23 beginnt mit: „Der HERR ist mein …“?",
+  "options": ["Hirte", "König", "Fels", "Licht"],
+  "about": "David, der selbst Hirte gewesen war, schrieb diesen Psalm. Er beschreibt, wie Gott für uns sorgt, so wie ein Hirte für seine Schafe sorgt.",
+  "think": "Mit dem Hirten wird dir nichts mangeln, selbst im finsteren Tal. Geh heute mit ihm."
+ },
+ "denial": {
+  "question": "Wer verleugnete Jesus dreimal, bevor der Hahn krähte?",
+  "options": ["Petrus", "Judas", "Thomas", "Jakobus"],
+  "about": "Petrus hatte versprochen, Jesus niemals zu verlassen. In jener Nacht, nach Jesu Gefangennahme, bekam er Angst und sagte dreimal, er kenne ihn nicht.",
+  "think": "Später hat Jesus Petrus wieder aufgerichtet. Dein Versagen ist nicht das Ende deiner Geschichte mit ihm."
+ },
+ "eagles": {
+  "question": "Die auf den HERRN harren, fahren auf mit Flügeln wie wer?",
+  "options": ["Adler", "Tauben", "Sperlinge", "Engel"],
+  "about": "Jesaja schrieb an Gottes Volk, als es sich vergessen und müde fühlte. Er erinnerte es daran, dass Gott nie müde wird und den Schwachen Kraft gibt.",
+  "think": "Er gibt den Müden Kraft. Harre auf ihn und lass ihn heute deine Kraft erneuern."
+ },
+ "paradise": {
+  "question": "Was versprach Jesus dem Verbrecher am Kreuz, der ihn bat, an ihn zu denken?",
+  "options": ["Heute wirst du mit mir im Paradies sein", "Du wirst freigelassen", "Du wirst lange leben", "Dir wird später vergeben"],
+  "about": "Zwei Verbrecher wurden mit Jesus gekreuzigt. Einer verspottete ihn, doch der andere wandte sich ihm im Glauben zu.",
+  "think": "Für den Verbrecher war es nicht zu spät, und für niemanden ist es zu spät. Wer muss das heute hören?"
+ },
+ "plans": {
+  "question": "Gott sprach: „Ich weiß wohl, was ich für Gedanken über euch habe“ – Gedanken, euch was zu geben?",
+  "options": ["Zukunft und Hoffnung", "Reichtum und Ruhm", "Ein langes, bequemes Leben", "Macht über andere"],
+  "about": "Gottes Volk war in die Verbannung nach Babel geführt worden. Jeremia schrieb ihnen einen Brief, um ihnen zu sagen, dass Gott sie nicht vergessen hatte.",
+  "think": "Selbst in der Verbannung hatte Gott gute Gedanken über sein Volk. Vertraue ihm deine Zukunft an."
+ },
+ "risen": {
+  "question": "Was sagte der Engel den Frauen am leeren Grab?",
+  "options": ["Er ist nicht hier; er ist auferstanden", "Man hat ihn weggenommen", "Wartet hier auf ihn", "Geht heim und trauert"],
+  "about": "Am ersten Tag der Woche kamen Frauen mit wohlriechenden Ölen zum Grab Jesu. Sie fanden es leer, und ein Engel überbrachte ihnen die Nachricht.",
+  "think": "Das Grab ist leer, und der Tod ist besiegt. Lebe heute in der Hoffnung des auferstandenen Jesus."
+ },
+ "potter": {
+  "question": "Mit wem vergleicht sich Gott bei Jeremia, der Ton formt?",
+  "options": ["Mit einem Töpfer", "Mit einem Zimmermann", "Mit einem Hirten", "Mit einem Bauern"],
+  "about": "Gott schickte Jeremia, einem Töpfer bei der Arbeit zuzusehen. Als ein Gefäß misslang, formte der Töpfer es zu etwas Neuem um.",
+  "think": "Wir sind wie Ton in der Hand des Töpfers. Lass ihn neu formen, was in dir zerbrochen ist."
+ },
+ "thomas": {
+  "question": "Welcher Jünger sagte, er werde nicht glauben, bis er Jesu Wunden berührt habe?",
+  "options": ["Thomas", "Petrus", "Philippus", "Matthäus"],
+  "about": "Thomas war nicht bei den anderen Jüngern, als der auferstandene Jesus ihnen erschien. Eine Woche später kam Jesus wieder und zeigte Thomas seine Wunden.",
+  "think": "Jesus begegnete Thomas in seinem Zweifel. Bring ihm deine Fragen; er fürchtet sie nicht."
+ },
+ "image": {
+  "question": "Zu wessen Bild schuf Gott den Menschen?",
+  "options": ["Zu seinem eigenen Bild", "Zum Bild der Engel", "Zum Bild der Tiere", "Zum Bild der Sterne"],
+  "about": "Am Anfang schuf Gott den Menschen, als Mann und Frau. Von der ganzen Schöpfung sind nur sie zu seinem Bild geschaffen.",
+  "think": "Du trägst Gottes Ebenbild. Das tut auch jeder Mensch, dem du heute begegnest."
+ },
+ "emmaus": {
+  "question": "Wann erkannten die beiden Jünger auf dem Weg nach Emmaus Jesus?",
+  "options": ["Als er das Brot brach", "Als er seine Hände zeigte", "Als er sie beim Namen rief", "Als er auf dem Wasser ging"],
+  "about": "Zwei Jünger gingen nach Jesu Tod traurig nach Hause. Ein Fremder schloss sich ihnen an und legte ihnen die Schrift aus, und sie erkannten nicht, dass es Jesus war.",
+  "think": "Jesus ging mit ihnen, bevor sie ihn erkannten. Er ist dir vielleicht näher, als du denkst."
+ },
+ "babel": {
+  "question": "Was tat Gott, als die Menschen den Turm zu Babel bis an den Himmel bauten?",
+  "options": ["Er verwirrte ihre Sprache", "Er schickte eine Flut", "Er schickte Feuer", "Er machte sie zu Königen"],
+  "about": "Nach der Flut ließen sich die Menschen gemeinsam nieder und begannen, eine Stadt mit einem großen Turm zu bauen, um sich einen Namen zu machen.",
+  "think": "Stolz baut Türme, um sich einen Namen zu machen; Gott erniedrigt die Stolzen. Suche seinen Namen mehr als deinen eigenen."
+ },
+ "pentecost": {
+  "question": "Wer erfüllte die Jünger an Pfingsten, mit Zungen wie von Feuer?",
+  "options": ["Der Heilige Geist", "Engel", "Die Propheten", "Mose und Elia"],
+  "about": "Fünfzig Tage nach Jesu Auferstehung beteten seine Nachfolger gemeinsam in Jerusalem. Plötzlich kam der Heilige Geist auf sie, wie Jesus es versprochen hatte.",
+  "think": "Der Geist kam, um gewöhnliche Menschen mit Kraft zu erfüllen. Bitte ihn, dich heute zu erfüllen."
+ },
+ "rock_water": {
+  "question": "Was sollte Mose nach Gottes Wort tun, damit Wasser aus dem Felsen kam?",
+  "options": ["Den Felsen schlagen", "Einen Brunnen graben", "Um Regen beten", "Öl darauf gießen"],
+  "about": "In der Wüste hatte das Volk Israel Durst und war zornig auf Mose. Gott schickte Mose zu einem Felsen am Horeb.",
+  "think": "Gott ließ in der Wüste Wasser aus einem Felsen kommen. Er kann auch an deinem trockensten Ort versorgen."
+ },
+ "damascus": {
+  "question": "Wer begegnete Jesus in einem hellen Licht auf dem Weg nach Damaskus?",
+  "options": ["Saulus", "Barnabas", "Stephanus", "Silas"],
+  "about": "Saulus hasste die Nachfolger Jesu und war auf dem Weg nach Damaskus, um sie zu verhaften. Unterwegs erschien ihm der auferstandene Jesus; später wurde er der Apostel Paulus.",
+  "think": "Jesus machte seinen erbittertsten Feind zu seinem größten Boten. Niemand ist außerhalb seiner Reichweite."
+ },
+ "rainbow": {
+  "question": "Welches Zeichen gab Gott für sein Versprechen, die Erde nie wieder durch eine Flut zu verderben?",
+  "options": ["Einen Regenbogen", "Eine Taube", "Einen Stern", "Einen Berg"],
+  "about": "Nach der Flut kamen Noah und seine Familie aus der Arche. Gott schloss einen Bund mit ihnen und mit allem Lebendigen.",
+  "think": "Jeder Regenbogen erinnert daran, dass Gott seine Versprechen hält."
+ },
+ "stephen": {
+  "question": "Wer betete für die, die ihn steinigten: „HERR, behalte ihnen diese Sünde nicht!“?",
+  "options": ["Stephanus", "Jakobus", "Petrus", "Philippus"],
+  "about": "Stephanus war einer der ersten Leiter, die in der jungen Gemeinde gewählt wurden, voll Glauben und Heiligen Geistes. Er wurde gesteinigt, weil er von Jesus predigte.",
+  "think": "Stephanus vergab, wie Jesus vergab. Gibt es jemanden, dem du heute vergeben musst?"
+ },
+ "fruit": {
+  "question": "Was steht an erster Stelle in der Frucht des Geistes?",
+  "options": ["Liebe", "Geduld", "Selbstbeherrschung", "Treue"],
+  "about": "Paulus schrieb den Gemeinden in Galatien über das Leben im Geist. Die Frucht des Geistes ist der Charakter, den Gott in denen wachsen lässt, die zu ihm gehören.",
+  "think": "Die Liebe kommt zuerst. Bitte den Geist, heute seine Frucht in dir wachsen zu lassen."
+ },
+ "lots_wife": {
+  "question": "Was geschah mit Lots Frau, als sie nach Sodom zurückblickte?",
+  "options": ["Sie wurde zur Salzsäule", "Sie wurde blind", "Sie wurde zu Stein", "Sie wurde fortgetragen"],
+  "about": "Gott war dabei, die bösen Städte Sodom und Gomorra zu vernichten. Engel führten Lot und seine Familie hinaus und sagten ihnen, sie sollten nicht zurückblicken.",
+  "think": "Sie blickte zurück auf das, woraus Gott sie herausführte. Gibt es etwas, auf das du aufhören musst zurückzublicken?"
+ },
+ "greatest_love": {
+  "question": "Welche nennt Paulus von Glaube, Hoffnung und Liebe die größte?",
+  "options": ["Die Liebe", "Den Glauben", "Die Hoffnung", "Keine von ihnen"],
+  "about": "Paulus schrieb an die Gemeinde in Korinth, die stolz auf ihre geistlichen Gaben war. Er zeigte ihnen, dass all das ohne Liebe nichts ist.",
+  "think": "Die Liebe hört niemals auf. Wo kannst du diese Liebe heute zeigen?"
+ },
+ "aaron": {
+  "question": "Welchen Bruder gab Gott Mose, damit er für ihn redete?",
+  "options": ["Aaron", "Josua", "Kaleb", "Hur"],
+  "about": "Als Gott Mose zum Pharao sandte, sagte Mose, er sei kein guter Redner. Gott gab ihm seinen Bruder Aaron, der für ihn reden sollte.",
+  "think": "Gott gab Mose einen Helfer für seine Schwäche. Auch uns schenkt er einander."
+ },
+ "sword": {
+  "question": "Was ist in der Waffenrüstung Gottes das Schwert des Geistes?",
+  "options": ["Das Wort Gottes", "Der Glaube", "Das Gebet", "Die Wahrheit"],
+  "about": "Paulus schrieb aus dem Gefängnis über den geistlichen Kampf, dem Christen begegnen. Er beschrieb die Rüstung, die Gott gibt, Stück für Stück wie die eines römischen Soldaten.",
+  "think": "Gottes Wort ist deine Waffe gegen Angst und Lügen. Welchen Vers nimmst du heute mit?"
+ },
+ "joshua": {
+  "question": "Zu wem sprach Gott: „Sei getrost und freudig … der HERR, dein Gott, ist mit dir in allem, was du tun wirst“?",
+  "options": ["Josua", "Mose", "Gideon", "Kaleb"],
+  "about": "Nach dem Tod von Mose musste Josua Israel in das verheißene Land führen. Gott sprach zu ihm, um ihm Mut für diese Aufgabe zu geben.",
+  "think": "Mut kommt aus Gottes Gegenwart, nicht aus deiner eigenen Kraft. Geh in diesen Tag mit dem Wissen, dass er bei dir ist."
+ },
+ "thanksgiving": {
+  "question": "Paulus schrieb: „Sorget nichts! sondern in allen Dingen lasset eure Bitten im Gebet und Flehen … vor Gott kund werden“ – mit was?",
+  "options": ["Mit Danksagung", "Mit Fasten", "Mit Tränen", "Mit Schweigen"],
+  "about": "Paulus schrieb dies aus dem Gefängnis an die Gemeinde in Philippi. Selbst in Ketten lehrte er sie, wie man statt Sorge Gottes Frieden findet.",
+  "think": "Danksagung und Gebet öffnen den Weg für Gottes Frieden. Danke ihm jetzt für drei Dinge."
+ },
+ "tears": {
+  "question": "Was wird Gott nach der Offenbarung von allen Augen abwischen?",
+  "options": ["Alle Tränen", "Alle Sünden", "Alle Erinnerungen", "Alle Träume"],
+  "about": "Im letzten Buch der Bibel bekam Johannes eine Vision vom neuen Himmel und der neuen Erde. Gott selbst wird für immer bei seinem Volk wohnen.",
+  "think": "Eines Tages wird kein Tod und kein Schmerz mehr sein. Lass diese Hoffnung dich heute tragen."
+ }
+}

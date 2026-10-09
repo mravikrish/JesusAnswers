@@ -1,0 +1,542 @@
+{
+ "noah_ark": {
+  "question": "Sino ang gumawa ng arko para iligtas ang kaniyang pamilya mula sa baha?",
+  "options": ["Noe", "Abraham", "Moises", "Jonas"],
+  "about": "Napuno ng karahasan ang mundo, pero lumakad si Noe kasama ng Diyos. Sinabi ng Diyos sa kaniya na gumawa ng napakalaking sasakyang-dagat, isang arko, para iligtas ang kaniyang pamilya at ang mga hayop mula sa darating na baha.",
+  "think": "Sumunod si Noe bago pa pumatak ang kahit isang patak ng ulan. Sa ano ka hinihiling ng Diyos na magtiwala sa kaniya ngayon?"
+ },
+ "born_where": {
+  "question": "Saang bayan ipinanganak si Jesus?",
+  "options": ["Betlehem", "Nazaret", "Jerusalem", "Capernaum"],
+  "about": "Dahil sa isang sensus, kinailangang maglakbay nina Jose at Maria papuntang Betlehem, ang bayan ni Haring David. Doon ipinanganak si Jesus, gaya ng inihayag ng propetang si Mikas.",
+  "think": "Ang Hari ng mga hari ay inihiga sa sabsaban. Lumalapit ang Diyos sa mga abang bahagi ng iyong buhay."
+ },
+ "seventh_day": {
+  "question": "Ano ang ginawa ng Diyos sa ikapitong araw?",
+  "options": ["Nagpahinga siya", "Nilikha niya ang tao", "Nilikha niya ang mga bituin", "Nilikha niya ang dagat"],
+  "about": "Sa loob ng anim na araw, nilikha ng Diyos ang langit, ang lupa at ang lahat ng naroon. Sa ikapitong araw nagpahinga siya, at binasbasan niya ang araw na iyon at itinalagang banal.",
+  "think": "Kahit ang Diyos ay nagpahinga. May oras ka ba ngayong linggo para huminto, magpahinga at alalahaning siya ang may hawak ng mundo?"
+ },
+ "water_wine": {
+  "question": "Sa kasalan sa Cana, ginawang ano ni Jesus ang tubig?",
+  "options": ["Alak", "Langis", "Gatas", "Pulot"],
+  "about": "Sa isang kasalan sa Cana naubusan ng alak, na malaking kahihiyan para sa pamilya. Ito ang una sa mga tanda ni Jesus, at sumampalataya sa kaniya ang kaniyang mga alagad.",
+  "think": "Ginawa ng mga lingkod ang sinabi ni Jesus at nakakita sila ng himala. May maliit bang hakbang na hinihiling niya sa iyo?"
+ },
+ "flood_days": {
+  "question": "Ilang araw at gabi umulan noong baha?",
+  "options": ["40", "7", "12", "100"],
+  "about": "Ipinadala ng Diyos ang baha dahil sa kasamaan ng mundo, pero iningatan niya si Noe at ang kaniyang pamilya sa loob ng arko. Umulan nang apatnapung araw at apatnapung gabi.",
+  "think": "Parang walang katapusan ang apatnapung araw, pero inalala ng Diyos si Noe. Hindi ka rin niya nakalimutan sa iyong mahabang panahon ng pagsubok."
+ },
+ "baptism": {
+  "question": "Sa pagbabautismo kay Jesus, ano ang bumaba sa kaniya na parang kalapati?",
+  "options": ["Ang Espiritu ng Diyos", "Isang maliwanag na bituin", "Isang anghel", "Apoy mula sa langit"],
+  "about": "Pumunta si Jesus sa Ilog Jordan para magpabautismo kay Juan. Pag-ahon niya sa tubig, bumukas ang langit at ipinahayag ng Ama ang kaniyang pag-ibig sa kaniya.",
+  "think": "Sinabi ng Ama, “Ito ang pinakamamahal kong Anak.” Kay Cristo, tinatawag ka rin ng Diyos na kaniyang minamahal."
+ },
+ "abraham_stars": {
+  "question": "Ano ang ipinabilang ng Diyos kay Abraham para ipakita kung gaano karami ang kaniyang magiging lahi?",
+  "options": ["Ang mga bituin", "Ang mga puno", "Ang mga bundok", "Ang mga ilog"],
+  "about": "Matanda na si Abraham at wala siyang anak, pero nangako ang Diyos na bibigyan siya ng pamilya. Inilabas siya ng Diyos at ipinakita sa kaniya ang langit sa gabi.",
+  "think": "Sumampalataya si Abraham kay Yahweh, at itinuring itong katuwiran. Aling pangako ng Diyos ang panghahawakan mo ngayon?"
+ },
+ "fishers": {
+  "question": "Ano ang ginagawa nina Pedro at Andres nang tawagin sila ni Jesus na sumunod sa kaniya?",
+  "options": ["Nangingisda", "Nagsasaka", "Nangongolekta ng buwis", "Nagtatayo ng bahay"],
+  "about": "Mangingisda sina Pedro at ang kapatid niyang si Andres sa Dagat ng Galilea. Tinawag sila ni Jesus na sumunod sa kaniya at maging mga mangingisda ng tao.",
+  "think": "Iniwan nila agad ang kanilang mga lambat. Ano kaya ang tinatawag ni Jesus na iwan mo para sumunod sa kaniya?"
+ },
+ "ram": {
+  "question": "Nang ihahandog na ni Abraham si Isaac, ano ang ibinigay ng Diyos bilang kapalit?",
+  "options": ["Isang lalaking tupa", "Isang kalapati", "Isang guya", "Isang kambing"],
+  "about": "Sinubok ng Diyos si Abraham sa pamamagitan ng paghiling na ihandog ang nag-iisa niyang anak, si Isaac. Sa huling sandali pinigilan siya ng Diyos at nagbigay ng tupang sumabit sa kasukalan.",
+  "think": "Tinawag ni Abraham ang lugar na iyon na “Si Yahweh ang magbibigay.” Nakikita ng Diyos ang kailangan mo bago mo pa ito makita."
+ },
+ "salt_light": {
+  "question": "Sinabi ni Jesus na ang kaniyang mga tagasunod ay asin ng mundo at … ng mundo?",
+  "options": ["Ilaw", "Tinapay", "Pag-asa", "Lakas"],
+  "about": "Sa Sermon sa Bundok, tinuruan ni Jesus ang kaniyang mga tagasunod kung paano mamuhay. Ang asin ay nagbibigay ng lasa at nag-iingat; ang ilaw ay nagtuturo ng daan sa iba.",
+  "think": "Walang nagsisindi ng ilawan para takpan ito ng takalan. Saan maaaring magliwanag ang ilaw mo para sa isang tao ngayong linggo?"
+ },
+ "jacob_ladder": {
+  "question": "Ano ang nakita ni Jacob sa kaniyang panaginip sa Bethel?",
+  "options": ["Isang hagdan na umaabot sa langit", "Isang nagliliyab na mababang punongkahoy", "Isang malaking baha", "Pitong matatabang baka"],
+  "about": "Tumatakas si Jacob mula sa kaniyang kapatid na si Esau, nag-iisa at takot. Nang gabing iyon, nakipagtagpo sa kaniya ang Diyos sa panaginip at nangakong sasamahan siya.",
+  "think": "Sinabi ng Diyos kay Jacob, “Kasama mo ako, iingatan kita saan ka man magpunta.” Hindi ka nag-iisa sa iyong paglalakbay."
+ },
+ "daily_bread": {
+  "question": "Sa Panalangin ng Panginoon, ano ang hinihiling natin sa Diyos na ibigay sa atin ngayon?",
+  "options": ["Ang aming pang araw-araw na pagkain", "Kayamanan", "Mahabang buhay", "Tagumpay"],
+  "about": "Hiniling ng mga alagad kay Jesus na turuan silang manalangin, at ibinigay niya sa kanila ang panalanging ito. Ang paghingi ng pang araw-araw na pagkain ay pagtitiwala sa Diyos sa pangangailangan ng bawat araw.",
+  "think": "Tinuruan tayo ni Jesus na humingi ng kailangan ngayon, isang araw sa bawat pagkakataon. Ano ang kailangan mo mula sa Diyos ngayon?"
+ },
+ "joseph_coat": {
+  "question": "Anong espesyal na regalo ang ibinigay ni Jacob sa anak niyang si Jose?",
+  "options": ["Isang magandang damit", "Isang gintong singsing", "Isang espada", "Isang kawan ng tupa"],
+  "about": "Higit na minahal ni Jacob si Jose kaysa sa iba niyang mga anak at ipinakita niya ito sa isang espesyal na damit. Nainggit ang mga kapatid ni Jose at kinamuhian siya.",
+  "think": "Pinukaw ng regalong iyon ang inggit ng kaniyang mga kapatid. Hilingin sa Diyos na tulungan kang makigalak sa iba sa halip na mainggit sa kanila."
+ },
+ "birds": {
+  "question": "Sinabi ni Jesus na huwag mabalisa, dahil pinakakain ng ating Ama sa langit ang ano?",
+  "options": ["Ang mga ibon sa himpapawid", "Ang mga isda sa dagat", "Ang mga leon", "Ang mga tupa"],
+  "about": "Maraming tao ang nag-aalala tungkol sa pagkain, damit at kinabukasan. Itinuro ni Jesus ang mga ibon at mga bulaklak para ipakita kung gaano katapat ang Ama sa pag-aalaga sa kaniyang nilikha.",
+  "think": "Kung pinakakain niya ang mga ibon, gaano pa kaya ka niya aalagaan? Ipaubaya sa kaniya ang alalahanin mo ngayon."
+ },
+ "joseph_sold": {
+  "question": "Sino ang ipinagbili ng kaniyang mga kapatid at kalaunan ay nagligtas sa kaniyang pamilya mula sa taggutom sa Ehipto?",
+  "options": ["Jose", "Benjamin", "Ruben", "Juda"],
+  "about": "Ipinagbili si Jose ng kaniyang mga naiinggit na kapatid bilang alipin sa Ehipto. Makalipas ang maraming taon, bilang pinuno roon, pinatawad niya sila at iniligtas mula sa taggutom.",
+  "think": "Sinabi ni Jose, “Hindi kayo ang nagpadala sa akin dito kung hindi ang Diyos.” Kayang gawing mabuti ng Diyos ang masama."
+ },
+ "ask_seek": {
+  "question": "“Humingi kayo, at ito ay ibibigay sa inyo. Humanap kayo, at kayo ay makakatagpo. …” Paano ito tinapos ni Jesus?",
+  "options": ["Kumatok kayo, at bubuksan ito para sa inyo", "Maghintay kayo, at kayo ay tatanggap", "Magtrabaho kayo, at kayo ay kikita", "Magbigay kayo, at kayo ay bibigyan"],
+  "about": "Itinuro ni Jesus na ang Diyos ay mabuting Ama na gustong magbigay ng mabubuting bagay sa kaniyang mga anak. Kaya maaari tayong patuloy na manalangin at hindi kailanman sumuko.",
+  "think": "Inaanyayahan ka ni Jesus na patuloy na humingi. Ano ang tinigilan mong ipanalangin na maaari mong dalhin muli sa kaniya?"
+ },
+ "baby_moses": {
+  "question": "Saan itinago ng ina ni Moises ang kaniyang sanggol para iligtas ito?",
+  "options": ["Sa isang basket sa gitna ng mga tambo sa tabi ng ilog", "Sa isang kuweba", "Sa palasyo", "Sa isang balon"],
+  "about": "Iniutos ng Paraon na patayin ang bawat sanggol na lalaki ng mga Hebreo. Itinago ng ina ni Moises ang sanggol sa isang basket sa Ilog Nilo, kung saan siya natagpuan ng anak na babae ng Paraon.",
+  "think": "Ang maliit na gawa ng pananampalataya ng isang ina ay naging bahagi ng dakilang plano ng Diyos. Mahalaga rin ang maliit mong katapatan."
+ },
+ "storm": {
+  "question": "Ano ang pinatahimik ni Jesus sa isang salita habang nasa bangka ang kaniyang mga alagad?",
+  "options": ["Isang bagyo", "Isang maraming tao", "Isang lagnat", "Isang sunog"],
+  "about": "Natutulog si Jesus sa bangka nang sumiklab ang malakas na bagyo sa lawa. Ginising siya ng mga takot na alagad, at pinatahimik niya ang hangin at mga alon sa isang salita.",
+  "think": "Sumigaw ang mga alagad, “Guro, hindi ba kayo nababahala na malapit na tayong mamatay?” Nababahala siya, at nagsalita siya ng kapayapaan. Dalhin sa kaniya ang bagyong kinalalagyan mo."
+ },
+ "burning_bush": {
+  "question": "Paano unang nagsalita ang Diyos kay Moises sa ilang?",
+  "options": ["Mula sa nagliliyab na mababang punongkahoy", "Sa pamamagitan ng panaginip", "Mula sa isang ulap", "Sa pamamagitan ng isang propeta"],
+  "about": "Nagpapastol si Moises ng mga tupa sa ilang nang makakita siya ng mababang punongkahoy na nagliliyab pero hindi natutupok. Nagsalita sa kaniya ang Diyos mula roon at isinugo siya para palayain ang Israel.",
+  "think": "Ginagawa ni Moises ang kaniyang pang-araw-araw na trabaho nang tawagin siya ng Diyos. Hanapin ang Diyos sa mga karaniwang bahagi ng iyong araw."
+ },
+ "jairus": {
+  "question": "Ilang taon ang anak na babae ni Jairo nang buhayin siya ni Jesus?",
+  "options": ["12", "7", "3", "20"],
+  "about": "Nakiusap si Jairo, isang pinuno ng sinagoga, kay Jesus na puntahan ang kaniyang naghihingalong anak. Bago pa makarating si Jesus, dumating ang balitang patay na ito.",
+  "think": "Sinabi ni Jesus kay Jairo, “Huwag kang matakot, maniwala ka lang.” Kumapit ka sa kaniya kapag masama ang balita."
+ },
+ "red_sea": {
+  "question": "Paano nakatakas ang Israel nang habulin sila ng hukbo ng Paraon hanggang sa dagat?",
+  "options": ["Tumawid sila sa tuyong lupa", "Sumakay sila sa mga bangka", "Nagtago sila sa mga burol", "Lumaban sila at nanalo"],
+  "about": "Kalalabas lamang ng Israel mula sa pagkaalipin sa Ehipto nang habulin sila ng hukbo ng Paraon hanggang sa Dagat na Pula. Hinati ng Diyos ang tubig para makadaan ang kaniyang bayan.",
+  "think": "Nang tila wala nang daan, gumawa ang Diyos ng daan. Hilingin sa kaniya ang daan sa gitna ng humaharang sa iyo."
+ },
+ "loaves": {
+  "question": "Ilang tinapay ang dala ng batang lalaki nang pakainin ni Jesus ang limang libo?",
+  "options": ["5", "2", "7", "12"],
+  "about": "Sumunod kay Jesus ang napakaraming tao sa isang liblib na lugar, at walang makain. Ibinigay ng isang batang lalaki ang kaunti niyang baon, at pinakain ni Jesus ang lahat dito.",
+  "think": "Ang kaunting baon ng isang bata ay naging piging sa mga kamay ni Jesus. Ibigay sa kaniya ang kaunting mayroon ka."
+ },
+ "manna": {
+  "question": "Ano ang ipinadadala ng Diyos tuwing umaga para pakainin ang Israel sa ilang?",
+  "options": ["Mana, tinapay mula sa langit", "Isda", "Prutas", "Kanin"],
+  "about": "Sa ilang, nagreklamo ang Israel na sila ay gutom. Nagpadala ang Diyos ng mana tuwing umaga, sapat para sa bawat araw, sa loob ng apatnapung taon.",
+  "think": "Sariwa ang mana araw-araw at hindi maiipon. Nagbibigay ang Diyos ng biyaya para sa ngayon; magtiwala sa kaniya para sa bukas."
+ },
+ "walks_water": {
+  "question": "Sino ang lumakad sa tubig papunta kay Jesus, at pagkatapos ay nagsimulang lumubog?",
+  "options": ["Pedro", "Juan", "Tomas", "Andres"],
+  "about": "Pagkatapos pakainin ang maraming tao, pinauna ni Jesus ang kaniyang mga alagad sa kabila ng lawa at pinuntahan sila sa gabi, naglalakad sa tubig. Humiling si Pedro na makalapit sa kaniya.",
+  "think": "Lumubog si Pedro nang tumingin siya sa hangin, at agad siyang hinawakan ni Jesus. Panatilihin ang iyong mata sa kaniya."
+ },
+ "sinai": {
+  "question": "Sa aling bundok ibinigay ng Diyos kay Moises ang mga tapyas ng kautusan?",
+  "options": ["Sinai", "Carmel", "Sion", "Ararat"],
+  "about": "Matapos ilabas ang Israel mula sa Ehipto, nakipagtagpo si Moises sa Diyos sa Bundok ng Sinai. Doon ibinigay ng Diyos sa kaniya ang kautusan, na nakasulat sa dalawang tapyas na bato.",
+  "think": "Isinulat ang kautusan ng Diyos ng kaniyang sariling daliri. Alin sa kaniyang mga salita ang kailangang maisulat sa puso mo ngayon?"
+ },
+ "samaritan": {
+  "question": "Sa kuwento ni Jesus, sino ang huminto para tulungan ang lalaking binugbog ng mga magnanakaw?",
+  "options": ["Isang Samaritano", "Isang pari", "Isang Levita", "Isang sundalo"],
+  "about": "Tinanong si Jesus ng isang dalubhasa sa kautusan, “Sino ang aking kapwa?” Sumagot si Jesus sa isang kuwento na ang bayani ay isang Samaritano, isang taong minamaliit ng karamihan sa mga Judio noong panahong iyon.",
+  "think": "Tinanong ni Jesus, “Sino sa tatlong ito ang naging kapwa?” Sino ang nakahandusay sa tabi ng daan mo ngayon?"
+ },
+ "jericho": {
+  "question": "Ano ang nangyari nang paikutan ng Israel ang Jerico, sumigaw at hinipan ang mga trumpeta?",
+  "options": ["Gumuho ang pader", "Umulan", "Bumukas ang mga tarangkahan", "Tumakas ang mga kaaway"],
+  "about": "Ang Jerico ay isang matibay na lungsod na may pader sa bungad ng Lupang Pangako. Sinabi ng Diyos kay Josue na paikutan ito nang pitong araw sa halip na salakayin.",
+  "think": "Nanalo ang Israel sa pagsunod sa planong tila walang saysay. Magtiwala sa paraan ng Diyos, kahit tila kakaiba ito."
+ },
+ "lost_sheep": {
+  "question": "Sa kuwento ni Jesus, ilang tupa ang iniwan ng pastol para hanapin ang isang nawawala?",
+  "options": ["99", "9", "49", "100"],
+  "about": "Nagreklamo ang mga pinuno ng relihiyon na tinatanggap ni Jesus ang mga makasalanan. Sumagot siya sa mga kuwento ng mga nawawalang bagay na hinahanap at natatagpuan nang may malaking kagalakan.",
+  "think": "May kagalakan sa langit para sa isang umuuwi. Karapat-dapat kang hanapin."
+ },
+ "gideon": {
+  "question": "Sino ang humingi ng tanda sa Diyos gamit ang balahibo ng tupa?",
+  "options": ["Gideon", "Samson", "Josue", "Barak"],
+  "about": "Tinawag ng Diyos si Gideon para iligtas ang Israel mula sa mga mananalakay, pero pakiramdam niya ay mahina siya at takot. Humingi siya ng mga tanda sa Diyos, at matiyagang ibinigay ito ng Diyos.",
+  "think": "Matiyagang sinagot ng Diyos ang mga pag-aalinlangan ni Gideon. Dalhin sa kaniya ang iyong tapat na mga tanong."
+ },
+ "prodigal": {
+  "question": "Ano ang ginawa ng ama nang makita niyang pauwi ang kaniyang nawalang anak?",
+  "options": ["Tumakbo siya at niyakap ito", "Pinaalis niya ito", "Ginawa niya itong utusan", "Hinintay niyang humingi ito ng tawad"],
+  "about": "Kinuha ng nakababatang anak ang kaniyang bahagi sa mana at nilustay ito sa malayong lugar. Nang siya ay nagugutom na, nagpasya siyang umuwi sa kaniyang ama.",
+  "think": "Tumakbo ang ama. Ganiyan tinatanggap ng Diyos ang bawat umuuwi."
+ },
+ "samson": {
+  "question": "Kaninong malaking lakas ang nakaugnay sa kaniyang buhok na hindi ginugupitan?",
+  "options": ["Samson", "Gideon", "David", "Goliat"],
+  "about": "Itinalaga si Samson sa Diyos mula pa sa kapanganakan, at ang mahaba niyang buhok ang tanda ng panatang iyon. Nang ipagupit ito ni Delilah, iniwan siya ng kaniyang lakas.",
+  "think": "Ang lakas ni Samson ay kaloob ng Diyos, hindi kaniya. Manatiling malapit sa Nagbibigay, hindi lamang sa kaniyang mga kaloob."
+ },
+ "ten_lepers": {
+  "question": "Ilan sa sampung pinagaling na ketongin ang bumalik para magpasalamat kay Jesus?",
+  "options": ["1", "9", "10", "3"],
+  "about": "Sumigaw kay Jesus mula sa malayo ang sampung lalaking may ketong, at pinapunta niya sila sa mga pari. Habang naglalakad, sila ay nalinis.",
+  "think": "Siyam ang gumaling; isa ang bumalik para magpasalamat. Maglaan ng sandali ngayon para pasalamatan ang Diyos."
+ },
+ "ruth": {
+  "question": "Sino ang nagsabi kay Naomi, “Kung saan ka pupunta, doon ako pupunta; ang iyong Diyos ay magiging aking Diyos”?",
+  "options": ["Ruth", "Orpah", "Esther", "Raquel"],
+  "about": "Matapos mawalan ng asawa at mga anak sa ibang bayan, nagpasya si Naomi na umuwi. Tumanggi ang kaniyang manugang na si Ruth, isang Moabita, na iwan siya.",
+  "think": "Pinili ni Ruth ang tapat na pag-ibig kahit mas madaling umalis. Sino ang nangangailangan ng iyong katapatan ngayong linggo?"
+ },
+ "zacchaeus": {
+  "question": "Sino ang umakyat sa puno ng sikamoro para makita si Jesus?",
+  "options": ["Zaqueo", "Bartimeo", "Nicodemo", "Lazaro"],
+  "about": "Si Zaqueo ay pinuno ng mga maniningil ng buwis sa Jerico, mayaman at hindi gusto ng mga tao. Maliit siya, kaya umakyat siya sa puno para makita si Jesus na dumaraan.",
+  "think": "Pumunta si Jesus sa bahay ni Zaqueo bago pa siya nagbago. Tinatanggap ka niya kung ano ka."
+ },
+ "samuel": {
+  "question": "Aling batang lalaki ang nakarinig sa Diyos na tinatawag ang kaniyang pangalan sa gabi sa bahay ng Diyos?",
+  "options": ["Samuel", "David", "Isaac", "Josias"],
+  "about": "Si Samuel ay batang naglilingkod sa bahay ng Diyos sa ilalim ng paring si Eli. Tinawag siya ng Diyos sa kaniyang pangalan sa gabi at nagsimulang makipag-usap sa kaniya.",
+  "think": "Sinabi ni Samuel, “Magsalita ka, sapagka't nakikinig ang iyong lingkod.” Maglaan ngayon ng tahimik na sandali para lamang makinig."
+ },
+ "lazarus": {
+  "question": "Sino ang binuhay ni Jesus mula sa mga patay pagkatapos ng apat na araw sa libingan?",
+  "options": ["Lazaro", "Esteban", "Jairo", "Jose"],
+  "about": "Namatay si Lazaro, ang kapatid nina Maria at Marta, at dumating si Jesus makalipas ang apat na araw. Tinawag niya siyang lumabas sa libingan nang buhay.",
+  "think": "Umiyak si Jesus bago niya binuhay si Lazaro. Mahalaga sa kaniya ang iyong kalungkutan, hindi lamang ang solusyon."
+ },
+ "goliath": {
+  "question": "Sino ang pumatay sa higanteng si Goliat gamit ang tirador at bato?",
+  "options": ["David", "Saul", "Samson", "Jonatan"],
+  "about": "Hinamon ng Filisteong higante na si Goliat ang hukbo ng Israel sa loob ng apatnapung araw, at takot ang lahat. Hinarap siya ng batang si David, nagtitiwala sa Diyos.",
+  "think": "Dumating si David sa pangalan ni Yahweh. Aling higante sa buhay mo ang kailangang humarap sa Diyos na iyon?"
+ },
+ "bartimaeus": {
+  "question": "Aling bulag ang sumigaw, “Jesus, Anak ni David, maawa ka sa akin!”?",
+  "options": ["Bartimeo", "Zaqueo", "Nicodemo", "Lazaro"],
+  "about": "Si Bartimeo ay bulag na pulubing nakaupo sa tabi ng daan palabas ng Jerico. Nang marinig niyang dumaraan si Jesus, sumigaw siya para humingi ng awa.",
+  "think": "Nang patahimikin siya ng iba, lalo pa siyang sumigaw. Huwag tumigil sa pagtawag kay Jesus."
+ },
+ "shepherd_boy": {
+  "question": "Ano ang ginagawa ni David nang dumating si Samuel para pahiran siya ng langis bilang hari?",
+  "options": ["Nag-aalaga ng mga tupa", "Nangingisda", "Nakikipaglaban sa hukbo", "Naglilingkod sa templo"],
+  "about": "Isinugo ng Diyos ang propetang si Samuel sa pamilya ni Jesse para pahiran ng langis ang susunod na hari. Si David, ang bunsong anak ni Jesse, ay nasa bukid kasama ng mga tupa.",
+  "think": "Sa panlabas na anyo tumitingin ang tao, ngunit sa puso tumitingin si Yahweh. Nakikita niya sa iyo ang hindi napapansin ng iba."
+ },
+ "children": {
+  "question": "Nang pigilan ng mga alagad ang mga taong nagdadala ng mga bata kay Jesus, ano ang ginawa niya?",
+  "options": ["Tinanggap niya at binasbasan sila", "Pinauwi niya sila", "Sinabihan niya silang maghintay", "Tinuruan lamang niya ang matatanda"],
+  "about": "Dinadala ng mga tao ang kanilang mga anak para basbasan ni Jesus, at inakala ng mga alagad na masyado siyang abala. Nagalit si Jesus sa mga alagad.",
+  "think": "Ang kaharian ay para sa mga lumalapit na gaya ng mga bata. Lumapit sa kaniya nang payak at may pagtitiwala."
+ },
+ "solomon": {
+  "question": "Aling hari ang humingi sa Diyos ng karunungan sa halip na kayamanan?",
+  "options": ["Solomon", "David", "Saul", "Hezekias"],
+  "about": "Nang maging hari ang batang si Solomon, sinabi ng Diyos sa kaniya na humingi ng anumang gusto niya. Humingi si Solomon ng karunungan para mapamahalaan nang mabuti ang bayan ng Diyos.",
+  "think": "Humingi si Solomon ng karunungan para mapaglingkuran nang mabuti ang iba. Humingi sa Diyos ng karunungan sa hinaharap mo ngayon."
+ },
+ "mary_martha": {
+  "question": "Aling magkapatid ang naupo sa paanan ni Jesus at nakinig habang abala ang isa sa paglilingkod?",
+  "options": ["Maria", "Marta", "Ana", "Elisabet"],
+  "about": "Panauhin si Jesus sa bahay ng magkapatid na Marta at Maria. Abala si Marta sa paglilingkod habang nakaupo si Maria at nakikinig sa kaniya.",
+  "think": "Sinabi ni Jesus na pinili ni Maria ang pinakamabuti. Maglaan ng oras ngayon para lamang makasama siya."
+ },
+ "ravens": {
+  "question": "Aling propeta ang pinakain ng mga uwak sa tabi ng batis?",
+  "options": ["Elias", "Eliseo", "Isaias", "Ezekiel"],
+  "about": "Sa isang mahabang tagtuyot sa Israel, pinapunta ng Diyos ang propetang si Elias para magtago sa tabi ng isang batis. Dinadalhan siya ng mga uwak ng tinapay at karne tuwing umaga at gabi.",
+  "think": "Tinustusan ng Diyos si Elias araw-araw. Magtiwala sa kaniya para sa tinapay mo ngayon."
+ },
+ "great_catch": {
+  "question": "Matapos ang magdamag na walang nahuli, ano ang nangyari nang ihulog ni Pedro ang mga lambat ayon sa salita ni Jesus?",
+  "options": ["Napakaraming isda kaya nagsimulang mapunit ang mga lambat", "Nakahuli sila ng isang isda", "Lumubog ang bangka", "Dumating ang bagyo"],
+  "about": "Magdamag na nangisda si Pedro at ang kaniyang mga kasama pero walang nahuli. Nang sabihin ni Jesus na subukan muli, napakarami ng nahuli kaya lumuhod si Pedro sa kaniyang paanan.",
+  "think": "Sumunod si Pedro kahit pagod at nag-aalinlangan. Subukang muli kung saan ka sinasabihan ni Jesus."
+ },
+ "carmel_fire": {
+  "question": "Nang manalangin si Elias sa Bundok ng Carmel, paano sumagot ang Diyos?",
+  "options": ["Bumaba ang apoy mula sa langit", "Umulan agad", "Niyanig ng lindol ang bundok", "May tinig na nagsalita mula sa ulap"],
+  "about": "Sumasamba ang Israel sa huwad na diyos na si Baal. Hinamon ni Elias ang mga propeta nito sa Bundok ng Carmel para makita kung aling Diyos ang sasagot sa pamamagitan ng apoy.",
+  "think": "Payak ang panalangin ni Elias, at sumagot ang Diyos. Si Yahweh ang Diyos; dalhin sa kaniya ang iyong panalangin ngayon."
+ },
+ "sower": {
+  "question": "Sa talinghaga ni Jesus tungkol sa manghahasik, ano ang kinakatawan ng binhi?",
+  "options": ["Ang salita ng Diyos", "Pera", "Mabubuting gawa", "Oras"],
+  "about": "Ikinuwento ni Jesus ang isang manghahasik na ang binhi ay nahulog sa iba't ibang uri ng lupa. Ipinapakita ng bawat lupa kung paano tinatanggap ng mga tao ang salita ng Diyos.",
+  "think": "Ang mabuting lupa ay nakikinig sa salita, iniingatan ito at namumunga nang may pagtitiis. Ingatan sa puso ang salita ngayong araw."
+ },
+ "whisper": {
+  "question": "Nang makipagtagpo ang Diyos kay Elias sa bundok, paano siya dumating?",
+  "options": ["Sa isang maliit na boses", "Sa hangin", "Sa lindol", "Sa apoy"],
+  "about": "Takot, pagod at nag-iisa si Elias matapos pagbantaan ni Reyna Jezebel ang kaniyang buhay. Nakipagtagpo sa kaniya ang Diyos sa bundok, hindi sa kapangyarihan, kundi sa isang maliit na boses.",
+  "think": "Wala ang Diyos sa ingay kundi sa bulong. Maghanap ng tahimik na sandali para marinig siya ngayon."
+ },
+ "good_shepherd": {
+  "question": "Sinabi ni Jesus, “Ako ang mabuting pastol.” Ano ang ginagawa ng mabuting pastol?",
+  "options": ["Iniaalay niya ang kaniyang buhay para sa mga tupa", "Marami siyang kawan", "Hindi siya natutulog", "Nakatira siya sa mga burol"],
+  "about": "Inihambing ni Jesus ang sarili niya sa isang pastol, at ang kaniyang bayan sa mga tupa. Iniingatan ng mabuting pastol ang kaniyang mga tupa kahit kapalit ang sarili niyang buhay.",
+  "think": "Kilala ka sa pangalan ng Pastol na nag-alay ng buhay para sa iyo."
+ },
+ "naaman": {
+  "question": "Aling pinuno ng hukbo ang gumaling sa ketong matapos maligo nang pitong beses sa Jordan?",
+  "options": ["Naaman", "Goliat", "Sisera", "Abner"],
+  "about": "Si Naaman ay makapangyarihang pinuno ng hukbo ng Aram, pero may ketong siya. Sinabi sa kaniya ng propetang si Eliseo na maligo nang pitong beses sa Ilog Jordan.",
+  "think": "Muntik nang hindi gumaling si Naaman dahil tila napakasimple nito. Huwag maliitin ang mga simpleng bagay na hinihiling ng Diyos."
+ },
+ "nicodemus": {
+  "question": "Sino ang pumunta kay Jesus sa gabi at narinig na kailangan niyang ipanganak na muli?",
+  "options": ["Nicodemo", "Zaqueo", "Lazaro", "Jose"],
+  "about": "Si Nicodemo ay isang Pariseo at pinuno ng mga Judio. Pumunta siya kay Jesus sa gabi, at sinabi sa kaniya ni Jesus na kailangan niya ng bagong kapanganakan mula sa Diyos.",
+  "think": "Nagsalita si Jesus tungkol sa bagong kapanganakan sa Espiritu. Hindi pa huli ang lahat para sa isang bagong simula kasama ng Diyos."
+ },
+ "furnace": {
+  "question": "Ano ang nangyari kina Shadrac, Meshac at Abednego sa nagliliyab na pugon?",
+  "options": ["Hindi sila sinaktan ng apoy", "Tumakas sila sa isang lagusan", "Namatay ang apoy", "Malubha silang nasunog"],
+  "about": "Iniutos ni Haring Nebucadnezar na lahat ay yumukod sa kaniyang gintong imahen. Tumanggi ang tatlong batang Judio, kaya itinapon sila sa nagliliyab na pugon.",
+  "think": "Hindi sila inilayo ng Diyos sa apoy, pero kasama nila siya sa loob nito. Hindi ka rin nag-iisa sa iyong apoy."
+ },
+ "living_water": {
+  "question": "Ano ang inialok ni Jesus sa babaeng Samaritana sa balon?",
+  "options": ["Tubig na buhay", "Tinapay", "Pera", "Bagong tahanan"],
+  "about": "Nakipag-usap si Jesus sa isang babaeng Samaritana sa balon, kahit karaniwang hindi nakikisalamuha ang mga Judio sa mga Samaritano. Inalok niya ito ng tubig na pumapawi ng uhaw magpakailanman.",
+  "think": "Nag-aalok si Jesus ng tubig na nagiging bukal ng buhay na walang hanggan. Dalhin sa kaniya ang iyong pagkauhaw."
+ },
+ "lions_den": {
+  "question": "Sino ang itinapon sa yungib ng mga leon dahil nanalangin sa Diyos?",
+  "options": ["Daniel", "Jose", "Elias", "Jeremias"],
+  "about": "Nilinlang ng mga naiinggit na opisyal si Haring Dario na gumawa ng batas na sa loob ng tatlumpung araw ay walang mananalangin kaninuman maliban sa kaniya. Patuloy na nanalangin si Daniel sa Diyos.",
+  "think": "Patuloy na nanalangin si Daniel kahit ipinagbawal ito. Ano ang hitsura ng katapatan para sa iyo ngayon?"
+ },
+ "cloak": {
+  "question": "Gumaling ang isang babaeng labindalawang taon nang may sakit nang hawakan niya ang ano?",
+  "options": ["Ang damit ni Jesus", "Ang kamay ni Jesus", "Ang pinto ng templo", "Isang banal na bato"],
+  "about": "Labindalawang taon nang dinudugo ang isang babae at naubos na ang lahat ng kaniya sa mga manggagamot. Naniwala siya na kung mahawakan lamang niya ang damit ni Jesus, siya ay gagaling.",
+  "think": "Sinabi ni Jesus sa kaniya, “Anak, ang iyong pananampalataya ang nagpagaling sa iyo. Umuwi ka nang may kapayapaan.” Abutin siya nang may pananampalataya ngayon."
+ },
+ "writing_wall": {
+  "question": "Sa handaan ni sino lumitaw ang isang kamay at sumulat sa pader?",
+  "options": ["Belsazar", "Nebucadnezar", "Paraon", "Ahab"],
+  "about": "Nagdaos si Haring Belsazar ng Babilonia ng malaking handaan at uminom sa mga lalagyang kinuha mula sa templo ng Diyos. Biglang lumitaw ang isang kamay at sumulat sa pader.",
+  "think": "Tinimbang ang hari sa mga timbangan at nakitang nagkulang. Hilingin sa Diyos na suriin ang iyong puso at ituwid ito."
+ },
+ "transfiguration": {
+  "question": "Sino ang nagpakita kasama ni Jesus sa bundok nang magliwanag ang kaniyang mukha na parang araw?",
+  "options": ["Moises at Elias", "Abraham at Isaac", "David at Solomon", "Pedro at Juan"],
+  "about": "Isinama ni Jesus sina Pedro, Santiago at Juan sa isang mataas na bundok. Doon nahayag ang kaniyang kaluwalhatian, at nakipag-usap sa kaniya ang dalawang dakilang tao ng Lumang Tipan.",
+  "think": "Sinabi ng Ama, “Makinig kayo sa kaniya.” Ano ang sinasabi sa iyo ni Jesus nitong mga nakaraang araw?"
+ },
+ "jonah": {
+  "question": "Sino ang nilamon ng malaking isda matapos tumakas mula sa Diyos?",
+  "options": ["Jonas", "Pedro", "Eliseo", "Job"],
+  "about": "Sinabi ng Diyos kay Jonas na pumunta sa Nineve, pero sumakay siya sa barkong papunta sa kabilang direksyon. Dumating ang malakas na bagyo, at itinapon siya ng mga mandaragat sa dagat.",
+  "think": "Tumakas si Jonas mula sa Diyos, pero hinabol siya ng Diyos. Hindi pa huli ang lahat para bumalik."
+ },
+ "widow": {
+  "question": "Ilang maliliit na barya ang ibinigay ng mahirap na balong pinuri ni Jesus?",
+  "options": ["2", "10", "1", "5"],
+  "about": "Pinanood ni Jesus ang mga taong naglalagay ng pera sa kabang-yaman ng templo. Malaki ang ibinigay ng mga mayayaman, pero ibinigay ng isang mahirap na balo ang lahat ng mayroon siya.",
+  "think": "Ibinigay niya ang lahat ng mayroon siya. Tinitingnan ng Diyos ang puso sa likod ng handog, hindi ang laki nito."
+ },
+ "nineveh": {
+  "question": "Saang malaking lungsod isinugo ng Diyos si Jonas para tawagin ang mga tao na magsisi?",
+  "options": ["Nineve", "Babilonia", "Jerusalem", "Tarsis"],
+  "about": "Ang Nineve ang malaking kabisera ng Asiria, ang kaaway ng Israel. Nang sa wakas ay mangaral doon si Jonas, ang buong lungsod ay bumaling sa Diyos.",
+  "think": "Nang bumaling sa Diyos ang Nineve, nagpakita siya ng awa. Mas malawak ang kaniyang awa kaysa sa inaasahan natin."
+ },
+ "greatest": {
+  "question": "Aling utos ang tinawag ni Jesus na pinakadakila?",
+  "options": ["Ibigin mo ang Panginoon mong Diyos nang buong puso mo", "Panatilihing banal ang Araw ng Pamamahinga", "Huwag kang magnakaw", "Ibigay ang ikapu ng lahat ng iyong kinikita"],
+  "about": "Tinanong si Jesus ng isang guro ng kautusan kung aling utos ang pinakamahalaga. Ibinuod ni Jesus ang buong kautusan ng Diyos sa dalawang utos ng pag-ibig.",
+  "think": "Nakasalalay ang buong kautusan ng Diyos sa pag-ibig sa Diyos at sa kapwa. Sino ang maaari mong ibigin sa praktikal na paraan ngayon?"
+ },
+ "esther": {
+  "question": "Aling reyna ang nagsapanganib ng kaniyang buhay, na nagsasabing, “At kung ako ay mamatay, ako ay mamamatay”?",
+  "options": ["Esther", "Jezebel", "Vashti", "Raquel"],
+  "about": "Si Esther, isang babaeng Judio, ay naging reyna ng Persia nang may magbalak na lipulin ang kaniyang bayan. Para iligtas sila, kinailangan niyang humarap sa hari nang hindi ipinatatawag.",
+  "think": "“Sinong nakakaalam kung dumating ka sa maharlikang kalagayan para sa panahong tulad nito?” Saan ka inilagay ng Diyos para gumawa ng kaibhan?"
+ },
+ "last_supper": {
+  "question": "Sa Huling Hapunan, ano ang ibinigay ni Jesus sa kaniyang mga alagad para siya ay alalahanin?",
+  "options": ["Ang tinapay at ang tasa", "Isang balumbon", "Isang singsing", "Isang kordero"],
+  "about": "Noong gabi bago siya mamatay, nakisalo si Jesus sa hapunan ng Paskwa kasama ang kaniyang mga alagad. Ibinigay niya sa kanila ang tinapay at alak bilang tanda ng kaniyang katawan at dugo.",
+  "think": "“Gawin ninyo ito bilang pag-alaala sa akin.” Alalahanin ngayon ang ibinigay ni Jesus para sa iyo."
+ },
+ "wall_days": {
+  "question": "Noong panahon ni Nehemias, gaano katagal bago naitayong muli ang pader ng Jerusalem?",
+  "options": ["52 araw", "7 taon", "40 araw", "1 taon"],
+  "about": "Dumating si Nehemias, isang Judio na naglilingkod sa hari ng Persia, para itayong muli ang gumuhong mga pader ng Jerusalem. Sa kabila ng mga kaaway at banta, natapos ng bayan ang gawain.",
+  "think": "Kahit ang mga kaaway nila ay nakitang natapos ang gawain sa tulong ng Diyos. Ipagpatuloy ang pagtatayo ng ipinagkatiwala niya sa iyo."
+ },
+ "feet": {
+  "question": "Ano ang ginawa ni Jesus para sa kaniyang mga alagad sa Huling Hapunan para ipakita kung paano maglingkod?",
+  "options": ["Hinugasan niya ang kanilang mga paa", "Binigyan niya sila ng ginto", "Ipinagtayo niya sila ng bahay", "Sinulatan niya sila ng liham"],
+  "about": "Sa huli nilang hapunang magkakasama, kumuha si Jesus ng tuwalya at hinugasan ang mga paa ng kaniyang mga alagad, gawain ng isang utusan. Sinabi niya sa kanila na maglingkod din sila sa isa't isa sa ganoong paraan.",
+  "think": "Lumuhod na may tuwalya ang Panginoon ng lahat. Saan ka maaaring tahimik na maglingkod ngayon?"
+ },
+ "job": {
+  "question": "Sino ang nawalan ng lahat, pero nagsabi pa rin, “Si Yahweh ang nagbigay, si Yahweh rin ang babawi; ang pangalan nawa ng Diyos ang mapapurihan”?",
+  "options": ["Job", "Jonas", "Jeremias", "Joel"],
+  "about": "Si Job ay mabuting tao na biglang nawalan ng kayamanan at mga anak sa loob ng isang araw. Gayunman, sa gitna ng kaniyang dalamhati, sumamba siya sa Diyos.",
+  "think": "Sumamba si Job sa gitna ng kaniyang pagdadalamhati. Maaari mong dalhin sa Diyos ang iyong lungkot at patuloy pa ring magtiwala sa kaniya."
+ },
+ "gethsemane": {
+  "question": "Sa halamanan bago siya dakpin, ano ang ipinanalangin ni Jesus sa kaniyang Ama?",
+  "options": ["Hindi ang kalooban ko, kundi ang kalooban mo ang mangyari", "Dalhin mo na ako sa langit ngayon", "Lipulin mo ang aking mga kaaway", "Gawin mo akong hari"],
+  "about": "Pagkatapos ng Huling Hapunan, pumunta si Jesus sa halamanan ng Getsemani para manalangin. Alam ang paghihirap na darating, nanalangin siya nang may matinding pighati.",
+  "think": "Inilagay ni Jesus ang kaniyang kalooban sa mga kamay ng Ama. Ano ang kailangan mong ilagay doon ngayon?"
+ },
+ "psalm23": {
+  "question": "Nagsisimula ang Awit 23 sa, “Si Yahweh ang aking …”?",
+  "options": ["Pastol", "Hari", "Bato", "Ilaw"],
+  "about": "Isinulat ni David, na dating pastol, ang awit na ito. Inilalarawan nito kung paano tayo inaalagaan ng Diyos gaya ng pag-aalaga ng pastol sa kaniyang mga tupa.",
+  "think": "Kasama ang Pastol, hindi ka magkukulang, kahit sa pinakamadilim na lambak. Lumakad kasama niya ngayon."
+ },
+ "denial": {
+  "question": "Sino ang tatlong beses na nagkaila na kilala niya si Jesus bago tumilaok ang tandang?",
+  "options": ["Pedro", "Judas", "Tomas", "Santiago"],
+  "about": "Nangako si Pedro na hindi niya kailanman iiwan si Jesus. Nang gabing iyon, matapos dakpin si Jesus, natakot siya at tatlong beses na sinabing hindi niya ito kilala.",
+  "think": "Kalaunan ay ibinalik ni Jesus si Pedro. Ang iyong mga pagkabigo ay hindi ang wakas ng kuwento mo kasama niya."
+ },
+ "eagles": {
+  "question": "Ang mga naghihintay kay Yahweh ay papailanglang na may pakpak tulad ng ano?",
+  "options": ["Mga agila", "Mga kalapati", "Mga maya", "Mga anghel"],
+  "about": "Sumulat si Isaias sa bayan ng Diyos nang pakiramdam nila ay nakalimutan at pagod sila. Ipinaalala niya sa kanila na hindi napapagod ang Diyos at nagbibigay siya ng lakas sa mahihina.",
+  "think": "Binibigyan niya ng lakas ang pagod. Maghintay sa kaniya at hayaang panumbalikin niya ang lakas mo ngayon."
+ },
+ "paradise": {
+  "question": "Ano ang ipinangako ni Jesus sa magnanakaw sa krus na humiling na alalahanin siya?",
+  "options": ["Sa araw na ito, ikaw ay makakasama ko sa paraiso", "Ikaw ay palalayain", "Mabubuhay ka nang matagal", "Patatawarin ka balang-araw"],
+  "about": "Dalawang kriminal ang ipinako sa krus kasama ni Jesus. Kinutya siya ng isa, pero ang isa ay bumaling sa kaniya nang may pananampalataya.",
+  "think": "Hindi pa huli ang lahat para sa magnanakaw, at hindi pa huli para sa kahit sino. Sino ang kailangang makarinig nito?"
+ },
+ "plans": {
+  "question": "Sinabi ng Diyos, “Ako mismo ang nakakaalam ng mga plano na mayroon ako para sa inyo,” mga plano para bigyan kayo ng ano?",
+  "options": ["Isang kinabukasan at pag-asa", "Kayamanan at katanyagan", "Mahaba at madaling buhay", "Kapangyarihan sa iba"],
+  "about": "Dinala ang bayan ng Diyos bilang bihag sa Babilonia. Sumulat si Jeremias ng liham sa kanila para sabihing hindi sila nakalimutan ng Diyos.",
+  "think": "Kahit sa pagkabihag, may mabubuting plano ang Diyos para sa kaniyang bayan. Ipagkatiwala sa kaniya ang iyong kinabukasan."
+ },
+ "risen": {
+  "question": "Ano ang sinabi ng anghel sa mga babae sa walang lamang libingan?",
+  "options": ["Wala na siya dito; bumangon na siya", "Kinuha na siya", "Hintayin ninyo siya dito", "Umuwi kayo at magdalamhati"],
+  "about": "Sa unang araw ng linggo, pumunta ang mga babae sa libingan ni Jesus na may dalang mga pabango. Natagpuan nilang wala itong laman, at isang anghel ang nagbalita sa kanila.",
+  "think": "Walang laman ang libingan at natalo na ang kamatayan. Mabuhay ngayon sa pag-asa ng muling nabuhay na si Jesus."
+ },
+ "potter": {
+  "question": "Sa aklat ni Jeremias, inihambing ng Diyos ang kaniyang sarili sa kanino, na humuhubog ng luwad?",
+  "options": ["Isang magpapalayok", "Isang karpintero", "Isang pastol", "Isang magsasaka"],
+  "about": "Pinapunta ng Diyos si Jeremias para panoorin ang isang magpapalayok na nagtatrabaho. Nang masira ang isang sisidlan, hinubog itong muli ng magpapalayok sa bagong anyo.",
+  "think": "Tayo ay gaya ng luwad sa kamay ng magpapalayok. Hayaan siyang hubugin muli ang nasira sa iyo."
+ },
+ "thomas": {
+  "question": "Aling alagad ang nagsabing hindi siya maniniwala hangga't hindi niya nahahawakan ang mga sugat ni Jesus?",
+  "options": ["Tomas", "Pedro", "Felipe", "Mateo"],
+  "about": "Wala si Tomas kasama ng ibang mga alagad nang magpakita sa kanila ang muling nabuhay na si Jesus. Makalipas ang isang linggo, bumalik si Jesus at ipinakita kay Tomas ang kaniyang mga sugat.",
+  "think": "Hinarap ni Jesus si Tomas sa gitna ng kaniyang pagdududa. Dalhin sa kaniya ang iyong mga tanong; hindi siya natatakot sa mga ito."
+ },
+ "image": {
+  "question": "Sa wangis ni sino nilikha ng Diyos ang tao?",
+  "options": ["Sa sarili niyang wangis", "Sa wangis ng mga anghel", "Sa wangis ng mga hayop", "Sa wangis ng mga bituin"],
+  "about": "Sa simula, nilikha ng Diyos ang tao, lalaki at babae. Sa lahat ng nilikha, sila lamang ang ginawa ayon sa kaniyang wangis.",
+  "think": "Dala mo ang wangis ng Diyos. Gayundin ang bawat taong makakatagpo mo ngayon."
+ },
+ "emmaus": {
+  "question": "Sa daan papuntang Emaus, kailan nakilala ng dalawang alagad si Jesus?",
+  "options": ["Nang hatiin niya ang tinapay", "Nang ipakita niya ang kaniyang mga kamay", "Nang tawagin niya sila sa pangalan", "Nang lumakad siya sa tubig"],
+  "about": "Malungkot na pauwi ang dalawang alagad matapos mamatay si Jesus. Sumabay sa kanila ang isang estranghero at ipinaliwanag ang Kasulatan, at hindi nila alam na si Jesus iyon.",
+  "think": "Kasama na nila si Jesus bago pa nila siya nakilala. Maaaring mas malapit siya kaysa sa inaakala mo."
+ },
+ "babel": {
+  "question": "Ano ang ginawa ng Diyos nang itayo ng mga tao ang tore ng Babel para maabot ang langit?",
+  "options": ["Ginulo niya ang kanilang wika", "Nagpadala siya ng baha", "Nagpadala siya ng apoy", "Ginawa niya silang mga hari"],
+  "about": "Pagkatapos ng baha, nanirahan nang magkakasama ang mga tao at nagsimulang magtayo ng lungsod na may malaking tore para gumawa ng pangalan para sa kanilang sarili.",
+  "think": "Nagtatayo ng tore ang kapalaluan para magkapangalan; ibinababa ng Diyos ang mapagmataas. Hanapin ang kaniyang pangalan higit sa sarili mo."
+ },
+ "pentecost": {
+  "question": "Sa Pentecostes, sino ang pumuspos sa mga alagad, kasama ang mga dila na parang apoy?",
+  "options": ["Ang Banal na Espiritu", "Mga anghel", "Ang mga propeta", "Moises at Elias"],
+  "about": "Limampung araw matapos muling mabuhay si Jesus, magkakasamang nananalangin ang kaniyang mga tagasunod sa Jerusalem. Biglang bumaba sa kanila ang Banal na Espiritu, gaya ng ipinangako ni Jesus.",
+  "think": "Dumating ang Espiritu para puspusin ng kapangyarihan ang mga karaniwang tao. Hilingin sa kaniya na puspusin ka ngayon."
+ },
+ "rock_water": {
+  "question": "Ano ang sinabi ng Diyos kay Moises na gawin para lumabas ang tubig mula sa bato?",
+  "options": ["Hampasin ang bato", "Maghukay ng balon", "Manalangin para sa ulan", "Buhusan ito ng langis"],
+  "about": "Sa ilang, nauuhaw ang bayan ng Israel at galit kay Moises. Pinapunta ng Diyos si Moises sa isang bato sa Horeb.",
+  "think": "Nagpalabas ang Diyos ng tubig mula sa bato sa ilang. Kaya niyang magbigay kahit sa pinakatuyong bahagi ng buhay mo."
+ },
+ "damascus": {
+  "question": "Sino ang nakatagpo kay Jesus sa isang nakasisilaw na liwanag sa daan papuntang Damasco?",
+  "options": ["Saulo", "Bernabe", "Esteban", "Silas"],
+  "about": "Kinamumuhian ni Saulo ang mga tagasunod ni Jesus at papunta siya sa Damasco para dakpin sila. Sa daan, nagpakita sa kaniya ang muling nabuhay na si Jesus; kalaunan siya ay naging si apostol Pablo.",
+  "think": "Ginawa ni Jesus ang kaniyang pinakamabangis na kaaway na pinakadakila niyang mensahero. Walang sinumang hindi niya maaabot."
+ },
+ "rainbow": {
+  "question": "Anong tanda ang ibinigay ng Diyos sa kaniyang pangakong hindi na muling wawasakin ang mundo sa pamamagitan ng baha?",
+  "options": ["Isang bahaghari", "Isang kalapati", "Isang bituin", "Isang bundok"],
+  "about": "Pagkatapos ng baha, lumabas si Noe at ang kaniyang pamilya sa arko. Gumawa ang Diyos ng kasunduan sa kanila at sa bawat buhay na nilalang.",
+  "think": "Bawat bahaghari ay paalala na tinutupad ng Diyos ang kaniyang mga pangako."
+ },
+ "stephen": {
+  "question": "Sino ang nanalangin para sa mga bumabato sa kaniya, “Panginoon, huwag mong ipataw ang kasalanang ito laban sa kanila”?",
+  "options": ["Esteban", "Santiago", "Pedro", "Felipe"],
+  "about": "Si Esteban ay isa sa mga unang pinunong pinili sa unang iglesya, puspos ng pananampalataya at ng Banal na Espiritu. Binato siya hanggang mamatay dahil sa pangangaral tungkol kay Jesus.",
+  "think": "Nagpatawad si Esteban gaya ng pagpapatawad ni Jesus. May tao bang kailangan mong patawarin ngayon?"
+ },
+ "fruit": {
+  "question": "Ano ang nauuna sa bunga ng Espiritu?",
+  "options": ["Pag-ibig", "Katiyagaan", "Pagpipigil sa sarili", "Pananampalataya"],
+  "about": "Sumulat si Pablo sa mga iglesya sa Galacia tungkol sa buhay sa Espiritu. Ang bunga ng Espiritu ay ang ugaling pinalalago ng Diyos sa mga nabibilang sa kaniya.",
+  "think": "Nauuna ang pag-ibig. Hilingin sa Espiritu na palaguin ang kaniyang bunga sa iyo ngayon."
+ },
+ "lots_wife": {
+  "question": "Ano ang nangyari sa asawa ni Lot nang lumingon siya sa Sodoma?",
+  "options": ["Naging haligi siya ng asin", "Nabulag siya", "Naging bato siya", "Tinangay siya"],
+  "about": "Wawasakin na ng Diyos ang masasamang lungsod ng Sodoma at Gomora. Inilabas ng mga anghel si Lot at ang kaniyang pamilya at sinabihan silang huwag lilingon.",
+  "think": "Lumingon siya sa pinanggagalingan na inilalabas siya ng Diyos. May bagay ba na kailangan mo nang tigilang lingunin?"
+ },
+ "greatest_love": {
+  "question": "Sa pananampalataya, pag-asa at pag-ibig, alin ang tinawag ni Pablo na pinakadakila?",
+  "options": ["Pag-ibig", "Pananampalataya", "Pag-asa", "Wala sa mga ito"],
+  "about": "Sumulat si Pablo sa iglesya sa Corinto, na ipinagmamalaki ang kanilang mga espirituwal na kaloob. Ipinakita niya sa kanila na kung walang pag-ibig, wala ang lahat ng iyon.",
+  "think": "Ang pag-ibig ay hindi nagwawakas. Saan mo maipapakita ang pag-ibig na iyon ngayon?"
+ },
+ "aaron": {
+  "question": "Aling kapatid ang ibinigay ng Diyos kay Moises para magsalita para sa kaniya?",
+  "options": ["Aaron", "Josue", "Caleb", "Hur"],
+  "about": "Nang isugo ng Diyos si Moises sa Paraon, sinabi ni Moises na hindi siya mahusay magsalita. Ibinigay ng Diyos ang kapatid niyang si Aaron para magsalita para sa kaniya.",
+  "think": "Binigyan ng Diyos si Moises ng katulong sa kaniyang kahinaan. Ibinibigay rin niya tayo sa isa't isa."
+ },
+ "sword": {
+  "question": "Sa baluti ng Diyos, ano ang espada ng Espiritu?",
+  "options": ["Ang salita ng Diyos", "Pananampalataya", "Panalangin", "Katotohanan"],
+  "about": "Sumulat si Pablo mula sa bilangguan tungkol sa espirituwal na labanang hinaharap ng mga Kristiyano. Inilarawan niya ang baluting ibinibigay ng Diyos, isa-isa, gaya ng sa isang sundalong Romano.",
+  "think": "Ang salita ng Diyos ang sandata mo laban sa takot at kasinungalingan. Aling talata ang dadalhin mo ngayon?"
+ },
+ "joshua": {
+  "question": "Kanino sinabi ng Diyos, “Maging malakas at matapang!… Kasama mo si Yahweh na iyong Diyos saan ka man pupunta”?",
+  "options": ["Josue", "Moises", "Gideon", "Caleb"],
+  "about": "Matapos mamatay si Moises, kinailangang pangunahan ni Josue ang Israel papasok sa Lupang Pangako. Kinausap siya ng Diyos para bigyan siya ng tapang sa gawaing iyon.",
+  "think": "Ang tapang ay nagmumula sa presensiya ng Diyos, hindi sa sarili mong lakas. Harapin ang araw na ito nang alam mong kasama mo siya."
+ },
+ "thanksgiving": {
+  "question": "Isinulat ni Pablo, “Huwag mabalisa tungkol sa anumang bagay… hayaan ninyong malaman ng Panginoon ang inyong mga kahilingan sa lahat ng bagay sa pamamagitan ng panalanging” may ano?",
+  "options": ["Pasasalamat", "Pag-aayuno", "Luha", "Katahimikan"],
+  "about": "Isinulat ito ni Pablo mula sa bilangguan para sa iglesya sa Filipos. Kahit nakakadena, tinuruan niya sila kung paano makamit ang kapayapaan ng Diyos sa halip na pag-aalala.",
+  "think": "Binubuksan ng pasasalamat at panalangin ang daan para sa kapayapaan ng Diyos. Pasalamatan siya ngayon sa tatlong bagay."
+ },
+ "tears": {
+  "question": "Sa Pahayag, ano ang papahirin ng Diyos mula sa mata ng lahat?",
+  "options": ["Bawat luha", "Bawat kasalanan", "Bawat alaala", "Bawat pangarap"],
+  "about": "Sa huling aklat ng Biblia, binigyan si Juan ng pangitain tungkol sa bagong langit at bagong lupa. Ang Diyos mismo ay maninirahan kasama ng kaniyang bayan magpakailanman.",
+  "think": "Darating ang araw na wala nang kamatayan o sakit. Hayaang dalhin ka ng pag-asang iyon ngayon."
+ }
+}

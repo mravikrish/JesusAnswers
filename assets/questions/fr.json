@@ -1,0 +1,542 @@
+{
+ "noah_ark": {
+  "question": "Qui construisit une arche pour sauver sa famille du déluge ?",
+  "options": ["Noé", "Abraham", "Moïse", "Jonas"],
+  "about": "La terre était remplie de violence, mais Noé marchait avec Dieu. Dieu lui dit de construire un immense bateau, une arche, pour sauver sa famille et les animaux du déluge qui allait venir.",
+  "think": "Noé a obéi avant qu’une seule goutte de pluie ne tombe. Dans quoi Dieu te demande-t-il de lui faire confiance aujourd’hui ?"
+ },
+ "born_where": {
+  "question": "Dans quelle ville Jésus est-il né ?",
+  "options": ["Bethléhem", "Nazareth", "Jérusalem", "Capernaüm"],
+  "about": "À cause d’un recensement, Joseph et Marie durent se rendre à Bethléhem, la ville du roi David. C’est là que Jésus naquit, comme le prophète Michée l’avait annoncé.",
+  "think": "Le Roi des rois a été couché dans une crèche. Dieu s’approche des endroits humbles de ta vie."
+ },
+ "seventh_day": {
+  "question": "Que fit Dieu le septième jour ?",
+  "options": ["Il se reposa", "Il créa l’homme", "Il créa les étoiles", "Il créa la mer"],
+  "about": "En six jours, Dieu fit les cieux, la terre et tout ce qu’ils contiennent. Le septième jour, il se reposa, bénit ce jour et le sanctifia.",
+  "think": "Même Dieu s’est reposé. As-tu du temps cette semaine pour t’arrêter, te reposer et te souvenir qu’il tient le monde ?"
+ },
+ "water_wine": {
+  "question": "En quoi Jésus changea-t-il l’eau aux noces de Cana ?",
+  "options": ["En vin", "En huile", "En lait", "En miel"],
+  "about": "Aux noces de Cana, le vin vint à manquer, ce qui était une grande honte pour la famille. Ce fut le premier des miracles de Jésus, et ses disciples crurent en lui.",
+  "think": "Les serviteurs ont fait ce que Jésus leur disait et ont vu un miracle. Y a-t-il un petit pas qu’il te demande de faire ?"
+ },
+ "flood_days": {
+  "question": "Pendant combien de jours et de nuits la pluie tomba-t-elle lors du déluge ?",
+  "options": ["40", "7", "12", "100"],
+  "about": "Dieu envoya le déluge à cause de la méchanceté du monde, mais il garda Noé et sa famille en sécurité dans l’arche. La pluie tomba quarante jours et quarante nuits.",
+  "think": "Quarante jours semblaient interminables, et pourtant Dieu se souvint de Noé. Il ne t’a pas oublié non plus dans ta longue épreuve."
+ },
+ "baptism": {
+  "question": "Au baptême de Jésus, qu’est-ce qui descendit sur lui comme une colombe ?",
+  "options": ["L’Esprit de Dieu", "Une étoile brillante", "Un ange", "Du feu du ciel"],
+  "about": "Jésus vint au Jourdain pour être baptisé par Jean. Au moment où il sortait de l’eau, les cieux s’ouvrirent et le Père déclara son amour pour lui.",
+  "think": "Le Père a dit : « Celui-ci est mon Fils bien-aimé. » En Christ, Dieu t’appelle aussi son bien-aimé."
+ },
+ "abraham_stars": {
+  "question": "Que Dieu dit-il à Abraham de compter, pour montrer combien seraient ses descendants ?",
+  "options": ["Les étoiles", "Les arbres", "Les montagnes", "Les fleuves"],
+  "about": "Abraham était âgé et n’avait pas d’enfant, et pourtant Dieu lui promit une famille. Dieu le conduisit dehors et lui montra le ciel de la nuit.",
+  "think": "Abraham eut confiance en l’Éternel, qui le lui imputa à justice. À quelle promesse de Dieu vas-tu t’accrocher aujourd’hui ?"
+ },
+ "fishers": {
+  "question": "Que faisaient Pierre et André quand Jésus les appela à le suivre ?",
+  "options": ["Ils pêchaient", "Ils labouraient", "Ils percevaient les impôts", "Ils construisaient une maison"],
+  "about": "Pierre et son frère André étaient pêcheurs sur la mer de Galilée. Jésus les appela à le suivre et à devenir pêcheurs d’hommes.",
+  "think": "Ils laissèrent aussitôt leurs filets. Qu’est-ce que Jésus t’appelle peut-être à laisser pour le suivre ?"
+ },
+ "ram": {
+  "question": "Quand Abraham allait offrir Isaac, que Dieu donna-t-il à sa place ?",
+  "options": ["Un bélier", "Une colombe", "Un veau", "Un bouc"],
+  "about": "Dieu éprouva Abraham en lui demandant d’offrir son fils unique, Isaac. Au dernier moment, Dieu l’arrêta et pourvut un bélier retenu dans un buisson.",
+  "think": "Abraham appela ce lieu Jehova-Jiré : « l’Éternel pourvoira ». Dieu voit ce dont tu as besoin avant toi."
+ },
+ "salt_light": {
+  "question": "Jésus dit que ses disciples sont le sel de la terre et la … du monde ?",
+  "options": ["Lumière", "Pain", "Espérance", "Force"],
+  "about": "Dans le sermon sur la montagne, Jésus enseigna à ses disciples comment vivre. Le sel donne du goût et conserve ; la lumière montre le chemin aux autres.",
+  "think": "On n’allume pas une lampe pour la mettre sous le boisseau. Où ta lumière peut-elle briller pour quelqu’un cette semaine ?"
+ },
+ "jacob_ladder": {
+  "question": "Que vit Jacob en songe à Béthel ?",
+  "options": ["Une échelle qui touchait le ciel", "Un buisson ardent", "Un grand déluge", "Sept vaches grasses"],
+  "about": "Jacob fuyait son frère Ésaü, seul et effrayé. Cette nuit-là, Dieu le rencontra en songe et lui promit d’être avec lui.",
+  "think": "Dieu dit à Jacob : « Voici, je suis avec toi, je te garderai partout où tu iras. » Tu n’es pas seul sur ton chemin."
+ },
+ "daily_bread": {
+  "question": "Dans le Notre Père, que demandons-nous à Dieu de nous donner aujourd’hui ?",
+  "options": ["Notre pain quotidien", "La richesse", "Une longue vie", "La victoire"],
+  "about": "Les disciples demandèrent à Jésus de leur apprendre à prier, et il leur donna cette prière. Demander le pain quotidien, c’est faire confiance à Dieu pour les besoins de chaque jour.",
+  "think": "Jésus nous a appris à demander ce qu’il faut pour aujourd’hui, un jour à la fois. De quoi as-tu besoin de la part de Dieu aujourd’hui ?"
+ },
+ "joseph_coat": {
+  "question": "Quel cadeau spécial Jacob fit-il à son fils Joseph ?",
+  "options": ["Une tunique de plusieurs couleurs", "Une bague en or", "Une épée", "Un troupeau de brebis"],
+  "about": "Jacob aimait Joseph plus que ses autres fils et le montra par un vêtement spécial. Ses frères devinrent jaloux et le prirent en haine.",
+  "think": "Ce cadeau a réveillé la jalousie de ses frères. Demande à Dieu de t’aider à te réjouir pour les autres au lieu de les envier."
+ },
+ "birds": {
+  "question": "Jésus dit de ne pas nous inquiéter, car notre Père céleste nourrit qui ?",
+  "options": ["Les oiseaux du ciel", "Les poissons de la mer", "Les lions", "Les brebis"],
+  "about": "Beaucoup s’inquiètent de la nourriture, des vêtements et de l’avenir. Jésus montra les oiseaux et les fleurs pour faire voir avec quelle fidélité le Père prend soin de sa création.",
+  "think": "S’il nourrit les oiseaux, combien plus prendra-t-il soin de toi ? Remets-lui ton inquiétude d’aujourd’hui."
+ },
+ "joseph_sold": {
+  "question": "Qui fut vendu par ses frères et sauva plus tard sa famille de la famine en Égypte ?",
+  "options": ["Joseph", "Benjamin", "Ruben", "Juda"],
+  "about": "Les frères jaloux de Joseph le vendirent comme esclave en Égypte. Des années plus tard, devenu gouverneur du pays, il leur pardonna et les sauva de la famine.",
+  "think": "Joseph a dit : « Ce n’est pas vous qui m’avez envoyé ici, mais c’est Dieu. » Dieu peut changer le mal en bien."
+ },
+ "ask_seek": {
+  "question": "« Demandez, et l’on vous donnera ; cherchez, et vous trouverez ; … » Comment Jésus termine-t-il ?",
+  "options": ["Frappez, et l’on vous ouvrira", "Attendez, et vous recevrez", "Travaillez, et vous gagnerez", "Donnez, et l’on vous donnera"],
+  "about": "Jésus enseigna que Dieu est un bon Père qui aime donner de bonnes choses à ses enfants. Nous pouvons donc continuer à prier sans jamais abandonner.",
+  "think": "Jésus t’invite à continuer à demander. Pour quoi as-tu cessé de prier, que tu pourrais lui présenter de nouveau ?"
+ },
+ "baby_moses": {
+  "question": "Où la mère de Moïse cacha-t-elle son bébé pour le sauver ?",
+  "options": ["Dans une caisse parmi les roseaux du fleuve", "Dans une grotte", "Dans le palais", "Dans un puits"],
+  "about": "Pharaon avait ordonné de faire mourir tous les garçons hébreux. La mère de Moïse le cacha dans une caisse sur le Nil, où la fille de Pharaon le trouva.",
+  "think": "Le petit acte de foi d’une mère est devenu une partie du grand plan de Dieu. Ta petite fidélité compte aussi."
+ },
+ "storm": {
+  "question": "Qu’est-ce que Jésus calma d’une parole pendant que ses disciples étaient dans la barque ?",
+  "options": ["Une tempête", "Une foule", "Une fièvre", "Un incendie"],
+  "about": "Jésus dormait dans la barque quand une violente tempête s’abattit sur le lac. Les disciples effrayés le réveillèrent, et il calma le vent et les vagues d’une parole.",
+  "think": "Les disciples ont crié : « Ne t’inquiètes-tu pas de ce que nous périssons ? » Il s’en souciait, et il a parlé la paix. Apporte-lui la tempête que tu traverses."
+ },
+ "burning_bush": {
+  "question": "Comment Dieu parla-t-il à Moïse pour la première fois dans le désert ?",
+  "options": ["Du milieu d’un buisson ardent", "Dans un rêve", "Du milieu d’une nuée", "Par un prophète"],
+  "about": "Moïse faisait paître des brebis dans le désert quand il vit un buisson en feu qui ne se consumait pas. Dieu lui parla du milieu du buisson et l’envoya délivrer Israël.",
+  "think": "Moïse faisait son travail de tous les jours quand Dieu l’a appelé. Cherche Dieu dans les lieux ordinaires de ta journée."
+ },
+ "jairus": {
+  "question": "Quel âge avait la fille de Jaïrus quand Jésus la ramena à la vie ?",
+  "options": ["12", "7", "3", "20"],
+  "about": "Jaïrus, un chef de la synagogue, supplia Jésus de venir auprès de sa fille mourante. Avant que Jésus n’arrive, on vint dire qu’elle était morte.",
+  "think": "Jésus dit à Jaïrus : « Ne crains pas, crois seulement. » Tiens-toi à lui quand les nouvelles sont mauvaises."
+ },
+ "red_sea": {
+  "question": "Comment Israël échappa-t-il quand l’armée de Pharaon le poursuivit jusqu’à la mer ?",
+  "options": ["Ils passèrent à pied sec", "Ils partirent en bateau", "Ils se cachèrent dans les collines", "Ils combattirent et gagnèrent"],
+  "about": "Israël venait de sortir de l’esclavage en Égypte quand l’armée de Pharaon le poursuivit jusqu’à la mer Rouge. Dieu sépara les eaux pour que son peuple puisse passer.",
+  "think": "Quand il ne semblait y avoir aucune issue, Dieu en a ouvert une. Demande-lui un chemin à travers ce qui te bloque."
+ },
+ "loaves": {
+  "question": "Combien de pains avait le jeune garçon quand Jésus nourrit les cinq mille ?",
+  "options": ["5", "2", "7", "12"],
+  "about": "Une foule immense avait suivi Jésus dans un endroit isolé, et il n’y avait rien à manger. Un garçon offrit son petit repas, et Jésus nourrit tout le monde avec.",
+  "think": "Le petit repas d’un garçon est devenu un festin entre les mains de Jésus. Donne-lui le peu que tu as."
+ },
+ "manna": {
+  "question": "Qu’est-ce que Dieu envoyait chaque matin pour nourrir Israël dans le désert ?",
+  "options": ["La manne, le pain du ciel", "Du poisson", "Des fruits", "Du riz"],
+  "about": "Dans le désert, Israël se plaignit d’avoir faim. Dieu envoya la manne chaque matin, assez pour chaque jour, pendant quarante ans.",
+  "think": "La manne arrivait fraîche chaque jour et ne pouvait pas se garder. Dieu donne la grâce pour aujourd’hui ; fais-lui confiance pour demain."
+ },
+ "walks_water": {
+  "question": "Qui marcha sur les eaux vers Jésus, puis commença à enfoncer ?",
+  "options": ["Pierre", "Jean", "Thomas", "André"],
+  "about": "Après avoir nourri la foule, Jésus envoya ses disciples de l’autre côté du lac et vint à eux pendant la nuit, en marchant sur la mer. Pierre demanda à aller vers lui.",
+  "think": "Pierre a commencé à enfoncer quand il a regardé le vent, et Jésus l’a saisi aussitôt. Garde les yeux fixés sur lui."
+ },
+ "sinai": {
+  "question": "Sur quelle montagne Dieu donna-t-il à Moïse les tables de la loi ?",
+  "options": ["Sinaï", "Carmel", "Sion", "Ararat"],
+  "about": "Après avoir fait sortir Israël d’Égypte, Moïse rencontra Dieu sur le mont Sinaï. Là, Dieu lui donna la loi, écrite sur deux tables de pierre.",
+  "think": "La loi de Dieu fut écrite de son propre doigt. Laquelle de ses paroles a besoin d’être écrite sur ton cœur aujourd’hui ?"
+ },
+ "samaritan": {
+  "question": "Dans l’histoire de Jésus, qui s’arrêta pour aider l’homme battu par des brigands ?",
+  "options": ["Un Samaritain", "Un sacrificateur", "Un Lévite", "Un soldat"],
+  "about": "Un docteur de la loi demanda à Jésus : « Et qui est mon prochain ? » Jésus répondit par une histoire dont le héros était un Samaritain, un homme que la plupart des Juifs de l’époque méprisaient.",
+  "think": "Jésus a demandé : « Lequel de ces trois te semble avoir été le prochain ? » Qui est couché au bord de ta route aujourd’hui ?"
+ },
+ "jericho": {
+  "question": "Que se passa-t-il quand Israël fit le tour de Jéricho, poussa des cris et sonna des trompettes ?",
+  "options": ["La muraille s’écroula", "Il se mit à pleuvoir", "Les portes s’ouvrirent", "L’ennemi s’enfuit"],
+  "about": "Jéricho était une ville forte et entourée de murailles, à l’entrée de la Terre promise. Dieu dit à Josué d’en faire le tour pendant sept jours au lieu de l’attaquer.",
+  "think": "Israël a gagné en obéissant à un plan qui n’avait aucun sens. Fais confiance au chemin de Dieu, même quand il paraît étrange."
+ },
+ "lost_sheep": {
+  "question": "Dans l’histoire de Jésus, combien de brebis le berger laissa-t-il pour chercher celle qui était perdue ?",
+  "options": ["99", "9", "49", "100"],
+  "about": "Les chefs religieux se plaignaient que Jésus accueille les pécheurs. Il répondit par des histoires de choses perdues que l’on cherche et que l’on retrouve avec une grande joie.",
+  "think": "Il y a de la joie dans le ciel pour un seul qui revient. Tu vaux la peine d’être cherché."
+ },
+ "gideon": {
+  "question": "Qui demanda à Dieu un signe avec une toison de laine ?",
+  "options": ["Gédéon", "Samson", "Josué", "Barak"],
+  "about": "Dieu appela Gédéon à délivrer Israël de pillards ennemis, mais il se sentait faible et avait peur. Il demanda des signes à Dieu, et Dieu les lui donna avec patience.",
+  "think": "Dieu a répondu avec patience aux doutes de Gédéon. Apporte-lui tes questions sincères."
+ },
+ "prodigal": {
+  "question": "Que fit le père quand il vit son fils perdu revenir à la maison ?",
+  "options": ["Il courut le serrer dans ses bras", "Il le renvoya", "Il fit de lui un serviteur", "Il attendit des excuses"],
+  "about": "Un fils cadet prit sa part de l’héritage et la dissipa loin de chez lui. Quand il fut dans la misère, il décida de retourner vers son père.",
+  "think": "Le père a couru. C’est ainsi que Dieu accueille tous ceux qui reviennent à la maison."
+ },
+ "samson": {
+  "question": "La grande force de qui était liée à ses cheveux jamais coupés ?",
+  "options": ["Samson", "Gédéon", "David", "Goliath"],
+  "about": "Samson était consacré à Dieu dès sa naissance, et ses longs cheveux étaient le signe de ce vœu. Quand Delila les fit couper, sa force le quitta.",
+  "think": "La force de Samson était un don de Dieu, pas la sienne. Reste près du Donateur, pas seulement de ses dons."
+ },
+ "ten_lepers": {
+  "question": "Combien des dix lépreux guéris revinrent remercier Jésus ?",
+  "options": ["1", "9", "10", "3"],
+  "about": "Dix lépreux appelèrent Jésus de loin, et il les envoya vers les sacrificateurs. Pendant qu’ils y allaient, ils furent purifiés.",
+  "think": "Neuf ont été guéris ; un seul est revenu dire merci. Prends un moment maintenant pour remercier Dieu."
+ },
+ "ruth": {
+  "question": "Qui dit à Naomi : « Où tu iras j’irai ; ton Dieu sera mon Dieu » ?",
+  "options": ["Ruth", "Orpa", "Esther", "Rachel"],
+  "about": "Après avoir perdu son mari et ses fils dans un pays étranger, Naomi décida de rentrer chez elle. Sa belle-fille Ruth, une Moabite, refusa de la quitter.",
+  "think": "Ruth a choisi l’amour fidèle alors que partir était plus facile. Qui a besoin de ta fidélité cette semaine ?"
+ },
+ "zacchaeus": {
+  "question": "Qui monta sur un sycomore pour voir Jésus ?",
+  "options": ["Zachée", "Bartimée", "Nicodème", "Lazare"],
+  "about": "Zachée était chef des publicains à Jéricho, riche et mal aimé. Il était de petite taille, alors il monta sur un arbre pour voir Jésus passer.",
+  "think": "Jésus est allé chez Zachée avant que celui-ci ne change. Il t’accueille tel que tu es."
+ },
+ "samuel": {
+  "question": "Quel garçon entendit Dieu l’appeler par son nom, la nuit, dans la maison de Dieu ?",
+  "options": ["Samuel", "David", "Isaac", "Josias"],
+  "about": "Samuel était un jeune garçon qui servait dans la maison de Dieu auprès du sacrificateur Éli. Dieu l’appela par son nom pendant la nuit et commença à lui parler.",
+  "think": "Samuel a dit : « Parle, car ton serviteur écoute. » Prends aujourd’hui une minute de silence, juste pour écouter."
+ },
+ "lazarus": {
+  "question": "Qui Jésus ressuscita-t-il après quatre jours dans le tombeau ?",
+  "options": ["Lazare", "Étienne", "Jaïrus", "Joseph"],
+  "about": "Lazare, le frère de Marie et de Marthe, était mort, et Jésus arriva quatre jours plus tard. Il l’appela à sortir vivant du tombeau.",
+  "think": "Jésus a pleuré avant de ressusciter Lazare. Il se soucie de ta peine, pas seulement de la solution."
+ },
+ "goliath": {
+  "question": "Qui tua le géant Goliath avec une fronde et une pierre ?",
+  "options": ["David", "Saül", "Samson", "Jonathan"],
+  "about": "Le géant philistin Goliath défia l’armée d’Israël pendant quarante jours, et tous avaient peur. Le jeune David l’affronta en se confiant en Dieu.",
+  "think": "David est venu au nom de l’Éternel. Quel géant dans ta vie doit rencontrer ce Dieu-là ?"
+ },
+ "bartimaeus": {
+  "question": "Quel aveugle cria : « Fils de David, Jésus, aie pitié de moi ! » ?",
+  "options": ["Bartimée", "Zachée", "Nicodème", "Lazare"],
+  "about": "Bartimée était un mendiant aveugle assis au bord du chemin à la sortie de Jéricho. Quand il apprit que Jésus passait, il cria pour demander pitié.",
+  "think": "Quand d’autres voulaient le faire taire, il criait encore plus fort. Ne cesse pas de crier vers Jésus."
+ },
+ "shepherd_boy": {
+  "question": "Que faisait David quand Samuel vint l’oindre comme roi ?",
+  "options": ["Il gardait les brebis", "Il pêchait", "Il combattait dans l’armée", "Il servait au temple"],
+  "about": "Dieu envoya le prophète Samuel dans la famille d’Isaï pour oindre le prochain roi. David, le plus jeune fils d’Isaï, était aux champs avec les brebis.",
+  "think": "L’homme regarde à ce qui frappe les yeux, mais l’Éternel regarde au cœur. Il voit en toi ce que d’autres ne remarquent pas."
+ },
+ "children": {
+  "question": "Quand les disciples empêchèrent qu’on amène des enfants à Jésus, que fit-il ?",
+  "options": ["Il les accueillit et les bénit", "Il les renvoya chez eux", "Il leur dit d’attendre", "Il n’enseigna que les adultes"],
+  "about": "On amenait des enfants à Jésus pour qu’il les bénisse, et les disciples pensaient qu’il était trop occupé. Jésus fut indigné contre les disciples.",
+  "think": "Le royaume appartient à ceux qui viennent comme des enfants. Viens à lui simplement et avec confiance."
+ },
+ "solomon": {
+  "question": "Quel roi demanda à Dieu la sagesse plutôt que la richesse ?",
+  "options": ["Salomon", "David", "Saül", "Ézéchias"],
+  "about": "Quand le jeune Salomon devint roi, Dieu lui dit de demander ce qu’il voulait. Salomon demanda la sagesse pour bien gouverner le peuple de Dieu.",
+  "think": "Salomon a demandé la sagesse pour bien servir les autres. Demande à Dieu la sagesse pour ce que tu affrontes aujourd’hui."
+ },
+ "mary_martha": {
+  "question": "Quelle sœur s’assit aux pieds de Jésus pour l’écouter pendant que l’autre s’affairait au service ?",
+  "options": ["Marie", "Marthe", "Anne", "Élisabeth"],
+  "about": "Jésus était reçu chez les sœurs Marthe et Marie. Marthe était occupée au service pendant que Marie, assise, l’écoutait.",
+  "think": "Jésus a dit que Marie avait choisi la bonne part. Prends du temps aujourd’hui simplement pour être avec lui."
+ },
+ "ravens": {
+  "question": "Quel prophète fut nourri par des corbeaux près d’un torrent ?",
+  "options": ["Élie", "Élisée", "Ésaïe", "Ézéchiel"],
+  "about": "Pendant une longue sécheresse en Israël, Dieu envoya le prophète Élie se cacher près d’un torrent. Des corbeaux lui apportaient du pain et de la viande matin et soir.",
+  "think": "Dieu a pourvu aux besoins d’Élie jour après jour. Fais-lui confiance pour le pain d’aujourd’hui."
+ },
+ "great_catch": {
+  "question": "Après une nuit sans rien prendre, que se passa-t-il quand Pierre jeta les filets sur la parole de Jésus ?",
+  "options": ["Tant de poissons que les filets se rompaient", "Ils prirent un seul poisson", "La barque coula", "Une tempête se leva"],
+  "about": "Pierre et ses compagnons avaient pêché toute la nuit sans rien prendre. Quand Jésus leur dit de recommencer, la pêche fut si grande que Pierre tomba à ses pieds.",
+  "think": "Pierre a obéi alors qu’il était fatigué et qu’il doutait. Essaie encore là où Jésus te le dit."
+ },
+ "carmel_fire": {
+  "question": "Quand Élie pria sur le mont Carmel, comment Dieu répondit-il ?",
+  "options": ["Le feu tomba du ciel", "La pluie tomba aussitôt", "Un tremblement de terre secoua la montagne", "Une voix parla du milieu d’une nuée"],
+  "about": "Israël adorait le faux dieu Baal. Élie défia ses prophètes sur le mont Carmel pour voir quel Dieu répondrait par le feu.",
+  "think": "Élie a prié simplement, et Dieu a répondu. C’est l’Éternel qui est Dieu ; apporte-lui ta prière aujourd’hui."
+ },
+ "sower": {
+  "question": "Dans la parabole du semeur, que représente la semence ?",
+  "options": ["La parole de Dieu", "L’argent", "Les bonnes œuvres", "Le temps"],
+  "about": "Jésus raconta l’histoire d’un semeur dont la semence tomba sur différents terrains. Chaque terrain montre comment les gens accueillent la parole de Dieu.",
+  "think": "La bonne terre entend la parole, la retient et porte du fruit avec persévérance. Garde la parole d’aujourd’hui dans ton cœur."
+ },
+ "whisper": {
+  "question": "Quand Dieu rencontra Élie sur la montagne, comment vint-il ?",
+  "options": ["Dans un murmure doux et léger", "Dans le vent", "Dans le tremblement de terre", "Dans le feu"],
+  "about": "Élie avait peur, il était épuisé et seul après que la reine Jézabel eut menacé sa vie. Dieu le rencontra sur la montagne, non dans la puissance, mais dans un doux murmure.",
+  "think": "Dieu n’était pas dans le vacarme, mais dans le murmure. Trouve un moment de calme pour l’entendre aujourd’hui."
+ },
+ "good_shepherd": {
+  "question": "Jésus dit : « Je suis le bon berger. » Que fait le bon berger ?",
+  "options": ["Il donne sa vie pour ses brebis", "Il possède de nombreux troupeaux", "Il ne dort jamais", "Il vit dans les collines"],
+  "about": "Jésus se compara à un berger et son peuple à des brebis. Un bon berger protège ses brebis, même au prix de sa propre vie.",
+  "think": "Le Berger qui a donné sa vie pour toi te connaît par ton nom."
+ },
+ "naaman": {
+  "question": "Quel chef d’armée fut guéri de la lèpre après s’être plongé sept fois dans le Jourdain ?",
+  "options": ["Naaman", "Goliath", "Sisera", "Abner"],
+  "about": "Naaman était un puissant chef de l’armée de Syrie, mais il était lépreux. Le prophète Élisée lui dit de se plonger sept fois dans le Jourdain.",
+  "think": "Naaman a failli passer à côté de sa guérison parce qu’elle lui semblait trop simple. Ne méprise pas les choses simples que Dieu te demande."
+ },
+ "nicodemus": {
+  "question": "Qui vint trouver Jésus de nuit et entendit qu’il fallait naître de nouveau ?",
+  "options": ["Nicodème", "Zachée", "Lazare", "Joseph"],
+  "about": "Nicodème était un pharisien, un chef des Juifs. Il vint trouver Jésus de nuit, et Jésus lui dit qu’il avait besoin d’une nouvelle naissance venant de Dieu.",
+  "think": "Jésus a parlé d’une nouvelle naissance par l’Esprit. Il n’est jamais trop tard pour un nouveau départ avec Dieu."
+ },
+ "furnace": {
+  "question": "Qu’arriva-t-il à Schadrac, Méschac et Abed-Nego dans la fournaise ardente ?",
+  "options": ["Le feu ne leur fit aucun mal", "Ils s’échappèrent par un tunnel", "Le feu s’éteignit", "Ils furent gravement brûlés"],
+  "about": "Le roi Nebucadnetsar ordonna à tous de se prosterner devant sa statue d’or. Trois jeunes Juifs refusèrent, et ils furent jetés dans une fournaise ardente.",
+  "think": "Dieu ne les a pas gardés du feu, mais il était avec eux dans le feu. Tu n’es pas seul dans le tien."
+ },
+ "living_water": {
+  "question": "Qu’est-ce que Jésus offrit à la Samaritaine près du puits ?",
+  "options": ["De l’eau vive", "Du pain", "De l’argent", "Une nouvelle maison"],
+  "about": "Jésus parla avec une femme samaritaine près d’un puits, alors que Juifs et Samaritains n’avaient habituellement pas de relations. Il lui offrit une eau qui désaltère pour toujours.",
+  "think": "Jésus offre une eau qui devient une source de vie éternelle. Apporte-lui ta soif."
+ },
+ "lions_den": {
+  "question": "Qui fut jeté dans la fosse aux lions pour avoir prié Dieu ?",
+  "options": ["Daniel", "Joseph", "Élie", "Jérémie"],
+  "about": "Des hauts fonctionnaires jaloux amenèrent le roi Darius à signer une loi : pendant trente jours, personne ne devait prier quelqu’un d’autre que lui. Daniel continua de prier Dieu.",
+  "think": "Daniel a continué à prier même quand c’était interdit. À quoi ressemblerait la fidélité pour toi aujourd’hui ?"
+ },
+ "cloak": {
+  "question": "Une femme malade depuis douze ans fut guérie en touchant quoi ?",
+  "options": ["Le vêtement de Jésus", "La main de Jésus", "La porte du temple", "Une pierre sainte"],
+  "about": "Une femme avait une perte de sang depuis douze ans et avait dépensé tout son bien en médecins. Elle croyait que si elle touchait seulement le vêtement de Jésus, elle serait guérie.",
+  "think": "Jésus lui a dit : « Ma fille, ta foi t’a sauvée ; va en paix. » Tends-lui la main avec foi aujourd’hui."
+ },
+ "writing_wall": {
+  "question": "Au festin de qui une main apparut-elle pour écrire sur la muraille ?",
+  "options": ["Belschatsar", "Nebucadnetsar", "Pharaon", "Achab"],
+  "about": "Le roi Belschatsar de Babylone donna un grand festin et but dans les vases pris au temple de Dieu. Soudain, une main apparut et écrivit sur la muraille.",
+  "think": "Le roi a été pesé dans la balance et trouvé léger. Demande à Dieu de sonder ton cœur et de le remettre en ordre."
+ },
+ "transfiguration": {
+  "question": "Qui apparut avec Jésus sur la montagne quand son visage resplendit comme le soleil ?",
+  "options": ["Moïse et Élie", "Abraham et Isaac", "David et Salomon", "Pierre et Jean"],
+  "about": "Jésus emmena Pierre, Jacques et Jean sur une haute montagne. Là, sa gloire fut révélée, et deux grands hommes de l’Ancien Testament s’entretinrent avec lui.",
+  "think": "Le Père a dit : « Écoutez-le ! » Que t’a dit Jésus ces derniers temps ?"
+ },
+ "jonah": {
+  "question": "Qui fut avalé par un grand poisson après avoir fui loin de Dieu ?",
+  "options": ["Jonas", "Pierre", "Élisée", "Job"],
+  "about": "Dieu dit à Jonas d’aller à Ninive, mais il monta sur un navire qui partait dans la direction opposée. Une grande tempête survint, et les marins le jetèrent à la mer.",
+  "think": "Jonas a fui Dieu, et pourtant Dieu est venu le chercher. Il n’est jamais trop tard pour revenir."
+ },
+ "widow": {
+  "question": "Combien de petites pièces donna la pauvre veuve que Jésus loua ?",
+  "options": ["2", "10", "1", "5"],
+  "about": "Jésus regardait les gens mettre de l’argent dans le tronc du temple. Les riches mettaient beaucoup, mais une pauvre veuve donna tout ce qu’elle avait.",
+  "think": "Elle a donné tout ce qu’elle avait. Dieu regarde le cœur derrière le don, pas sa taille."
+ },
+ "nineveh": {
+  "question": "Dans quelle grande ville Dieu envoya-t-il Jonas pour appeler le peuple à revenir à lui ?",
+  "options": ["Ninive", "Babylone", "Jérusalem", "Tarsis"],
+  "about": "Ninive était la grande capitale de l’Assyrie, l’ennemie d’Israël. Quand Jonas y prêcha enfin, toute la ville se tourna vers Dieu.",
+  "think": "Quand Ninive s’est tournée vers Dieu, il a fait grâce. Sa miséricorde est plus large que nous ne le pensons."
+ },
+ "greatest": {
+  "question": "Quel commandement Jésus appela-t-il le plus grand ?",
+  "options": ["Tu aimeras le Seigneur, ton Dieu, de tout ton cœur", "Sanctifie le jour du sabbat", "Tu ne déroberas point", "Donne la dîme de tout ce que tu gagnes"],
+  "about": "Un docteur de la loi demanda à Jésus quel était le commandement le plus important. Jésus résuma toute la loi de Dieu en deux commandements d’amour.",
+  "think": "Toute la loi de Dieu dépend de l’amour de Dieu et du prochain. Qui peux-tu aimer concrètement aujourd’hui ?"
+ },
+ "esther": {
+  "question": "Quelle reine risqua sa vie en disant : « Si je dois périr, je périrai » ?",
+  "options": ["Esther", "Jézabel", "Vasthi", "Rachel"],
+  "about": "Esther, une femme juive, était devenue reine de Perse quand un complot fut tramé pour détruire son peuple. Pour le sauver, elle devait se présenter devant le roi sans y être appelée.",
+  "think": "« Qui sait si ce n’est pas pour un temps comme celui-ci que tu es parvenue à la royauté ? » Où Dieu t’a-t-il placé pour faire une différence ?"
+ },
+ "last_supper": {
+  "question": "Lors du dernier repas, que donna Jésus à ses disciples pour qu’ils se souviennent de lui ?",
+  "options": ["Le pain et la coupe", "Un rouleau", "Un anneau", "Un agneau"],
+  "about": "La nuit avant sa mort, Jésus partagea le repas de la Pâque avec ses disciples. Il leur donna le pain et le vin comme signes de son corps et de son sang.",
+  "think": "« Faites ceci en mémoire de moi. » Souviens-toi aujourd’hui de ce que Jésus a donné pour toi."
+ },
+ "wall_days": {
+  "question": "Au temps de Néhémie, combien de temps fallut-il pour rebâtir la muraille de Jérusalem ?",
+  "options": ["52 jours", "7 ans", "40 jours", "1 an"],
+  "about": "Néhémie, un Juif au service du roi de Perse, vint rebâtir les murailles en ruine de Jérusalem. Malgré les ennemis et les menaces, le peuple acheva l’ouvrage.",
+  "think": "Même leurs ennemis ont reconnu que l’ouvrage s’était fait par la volonté de Dieu. Continue de bâtir ce qu’il t’a confié."
+ },
+ "feet": {
+  "question": "Qu’est-ce que Jésus fit pour ses disciples lors du dernier repas pour leur montrer comment servir ?",
+  "options": ["Il leur lava les pieds", "Il leur donna de l’or", "Il leur bâtit une maison", "Il leur écrivit une lettre"],
+  "about": "Lors de leur dernier repas ensemble, Jésus prit un linge et lava les pieds de ses disciples, le travail d’un serviteur. Il leur dit de se servir les uns les autres de la même manière.",
+  "think": "Le Seigneur de tout s’est agenouillé avec un linge. Où peux-tu servir discrètement aujourd’hui ?"
+ },
+ "job": {
+  "question": "Qui perdit tout et dit pourtant : « L’Éternel a donné, et l’Éternel a ôté ; que le nom de l’Éternel soit béni ! » ?",
+  "options": ["Job", "Jonas", "Jérémie", "Joël"],
+  "about": "Job était un homme intègre qui perdit soudain ses biens et ses enfants en un seul jour. Pourtant, dans sa douleur, il adora Dieu.",
+  "think": "Job a adoré dans son deuil. Tu peux apporter ta peine à Dieu et continuer à lui faire confiance."
+ },
+ "gethsemane": {
+  "question": "Dans le jardin, avant son arrestation, que dit Jésus à son Père dans sa prière ?",
+  "options": ["Que ma volonté ne se fasse pas, mais la tienne", "Emmène-moi au ciel maintenant", "Détruis mes ennemis", "Fais de moi un roi"],
+  "about": "Après le dernier repas, Jésus alla prier dans le jardin de Gethsémané. Sachant les souffrances qui l’attendaient, il pria dans une profonde angoisse.",
+  "think": "Jésus a remis sa volonté entre les mains du Père. Que dois-tu y remettre aujourd’hui ?"
+ },
+ "psalm23": {
+  "question": "Le Psaume 23 commence par : « L’Éternel est mon … » ?",
+  "options": ["Berger", "Roi", "Rocher", "Lumière"],
+  "about": "David, qui avait lui-même été berger, écrivit ce psaume. Il décrit comment Dieu prend soin de nous comme un berger prend soin de ses brebis.",
+  "think": "Avec le Berger, tu ne manqueras de rien, même dans la vallée la plus sombre. Marche avec lui aujourd’hui."
+ },
+ "denial": {
+  "question": "Qui renia Jésus trois fois avant que le coq chante ?",
+  "options": ["Pierre", "Judas", "Thomas", "Jacques"],
+  "about": "Pierre avait promis qu’il n’abandonnerait jamais Jésus. Cette nuit-là, après l’arrestation de Jésus, il eut peur et dit trois fois qu’il ne le connaissait pas.",
+  "think": "Plus tard, Jésus a relevé Pierre. Tes échecs ne sont pas la fin de ton histoire avec lui."
+ },
+ "eagles": {
+  "question": "Ceux qui se confient en l’Éternel prennent le vol comme qui ?",
+  "options": ["Les aigles", "Les colombes", "Les passereaux", "Les anges"],
+  "about": "Ésaïe écrivit au peuple de Dieu alors qu’il se sentait oublié et fatigué. Il lui rappela que Dieu ne se lasse jamais et qu’il donne de la force à celui qui est faible.",
+  "think": "Il donne de la force à celui qui est fatigué. Confie-toi en lui et laisse-le renouveler ta force aujourd’hui."
+ },
+ "paradise": {
+  "question": "Que promit Jésus au malfaiteur sur la croix qui lui demanda de se souvenir de lui ?",
+  "options": ["Aujourd’hui tu seras avec moi dans le paradis", "Tu seras libéré", "Tu vivras longtemps", "Tu seras pardonné plus tard"],
+  "about": "Deux malfaiteurs furent crucifiés avec Jésus. L’un l’insultait, mais l’autre se tourna vers lui avec foi.",
+  "think": "Il n’était pas trop tard pour le malfaiteur, et il n’est trop tard pour personne. Qui a besoin d’entendre cela ?"
+ },
+ "plans": {
+  "question": "Dieu a dit : « Je connais les projets que j’ai formés sur vous », afin de vous donner quoi ?",
+  "options": ["Un avenir et de l’espérance", "La richesse et la gloire", "Une vie longue et facile", "Le pouvoir sur les autres"],
+  "about": "Le peuple de Dieu avait été emmené en exil à Babylone. Jérémie leur écrivit une lettre pour leur dire que Dieu ne les avait pas oubliés.",
+  "think": "Même en exil, Dieu avait de bons projets pour son peuple. Confie-lui ton avenir."
+ },
+ "risen": {
+  "question": "Que dit l’ange aux femmes devant le tombeau vide ?",
+  "options": ["Il n’est point ici ; il est ressuscité", "On l’a enlevé", "Attendez-le ici", "Rentrez chez vous et pleurez"],
+  "about": "Le premier jour de la semaine, des femmes vinrent au tombeau de Jésus avec des aromates. Elles le trouvèrent vide, et un ange leur annonça la nouvelle.",
+  "think": "Le tombeau est vide et la mort est vaincue. Vis aujourd’hui dans l’espérance de Jésus ressuscité."
+ },
+ "potter": {
+  "question": "Dans Jérémie, à qui Dieu se compare-t-il, lui qui façonne l’argile ?",
+  "options": ["À un potier", "À un charpentier", "À un berger", "À un laboureur"],
+  "about": "Dieu envoya Jérémie regarder un potier au travail. Quand un vase était manqué, le potier en refaisait un autre, tout neuf.",
+  "think": "Nous sommes comme l’argile dans la main du potier. Laisse-le refaçonner ce qui est brisé en toi."
+ },
+ "thomas": {
+  "question": "Quel disciple dit qu’il ne croirait pas avant d’avoir touché les blessures de Jésus ?",
+  "options": ["Thomas", "Pierre", "Philippe", "Matthieu"],
+  "about": "Thomas n’était pas avec les autres disciples quand Jésus ressuscité leur apparut. Une semaine plus tard, Jésus revint et montra ses blessures à Thomas.",
+  "think": "Jésus a rejoint Thomas dans son doute. Apporte-lui tes questions ; elles ne lui font pas peur."
+ },
+ "image": {
+  "question": "À l’image de qui Dieu créa-t-il l’homme ?",
+  "options": ["À sa propre image", "À l’image des anges", "À l’image des animaux", "À l’image des étoiles"],
+  "about": "Au commencement, Dieu créa l’être humain, homme et femme. De toute la création, eux seuls sont faits à son image.",
+  "think": "Tu portes l’image de Dieu. Chaque personne que tu rencontreras aujourd’hui la porte aussi."
+ },
+ "emmaus": {
+  "question": "Sur le chemin d’Emmaüs, quand les deux disciples reconnurent-ils Jésus ?",
+  "options": ["Quand il rompit le pain", "Quand il montra ses mains", "Quand il les appela par leur nom", "Quand il marcha sur l’eau"],
+  "about": "Deux disciples rentraient chez eux, tristes, après la mort de Jésus. Un inconnu les rejoignit et leur expliqua les Écritures, et ils ne savaient pas que c’était Jésus.",
+  "think": "Jésus marchait avec eux avant qu’ils le reconnaissent. Il est peut-être plus près que tu ne le penses."
+ },
+ "babel": {
+  "question": "Que fit Dieu quand les hommes bâtirent la tour de Babel pour atteindre le ciel ?",
+  "options": ["Il confondit leur langage", "Il envoya un déluge", "Il envoya le feu", "Il fit d’eux des rois"],
+  "about": "Après le déluge, les hommes s’établirent ensemble et commencèrent à bâtir une ville avec une grande tour pour se faire un nom.",
+  "think": "L’orgueil bâtit des tours pour se faire un nom ; Dieu abaisse les orgueilleux. Recherche son nom plus que le tien."
+ },
+ "pentecost": {
+  "question": "À la Pentecôte, qui remplit les disciples, avec des langues comme de feu ?",
+  "options": ["Le Saint-Esprit", "Des anges", "Les prophètes", "Moïse et Élie"],
+  "about": "Cinquante jours après la résurrection de Jésus, ses disciples priaient ensemble à Jérusalem. Soudain, le Saint-Esprit vint sur eux, comme Jésus l’avait promis.",
+  "think": "L’Esprit est venu remplir de puissance des gens ordinaires. Demande-lui de te remplir aujourd’hui."
+ },
+ "rock_water": {
+  "question": "Que Dieu dit-il à Moïse de faire pour que l’eau sorte du rocher ?",
+  "options": ["Frapper le rocher", "Creuser un puits", "Prier pour la pluie", "Verser de l’huile dessus"],
+  "about": "Dans le désert, le peuple d’Israël avait soif et s’en prenait à Moïse. Dieu envoya Moïse vers un rocher en Horeb.",
+  "think": "Dieu a fait jaillir de l’eau d’un rocher dans le désert. Il peut pourvoir jusque dans ton lieu le plus aride."
+ },
+ "damascus": {
+  "question": "Qui rencontra Jésus dans une lumière éclatante sur le chemin de Damas ?",
+  "options": ["Saul", "Barnabas", "Étienne", "Silas"],
+  "about": "Saul haïssait les disciples de Jésus et se rendait à Damas pour les arrêter. En chemin, Jésus ressuscité lui apparut ; il devint plus tard l’apôtre Paul.",
+  "think": "Jésus a fait de son ennemi le plus acharné son plus grand messager. Personne n’est hors de sa portée."
+ },
+ "rainbow": {
+  "question": "Quel signe Dieu donna-t-il de sa promesse de ne plus jamais détruire la terre par un déluge ?",
+  "options": ["Un arc-en-ciel", "Une colombe", "Une étoile", "Une montagne"],
+  "about": "Après le déluge, Noé et sa famille sortirent de l’arche. Dieu fit alliance avec eux et avec tout être vivant.",
+  "think": "Chaque arc-en-ciel rappelle que Dieu tient ses promesses."
+ },
+ "stephen": {
+  "question": "Qui pria pour ceux qui le lapidaient : « Seigneur, ne leur impute pas ce péché ! » ?",
+  "options": ["Étienne", "Jacques", "Pierre", "Philippe"],
+  "about": "Étienne fut l’un des premiers responsables choisis dans l’Église naissante, plein de foi et d’Esprit Saint. Il fut lapidé pour avoir annoncé Jésus.",
+  "think": "Étienne a pardonné comme Jésus a pardonné. Y a-t-il quelqu’un à qui tu dois pardonner aujourd’hui ?"
+ },
+ "fruit": {
+  "question": "Qu’est-ce qui vient en premier dans le fruit de l’Esprit ?",
+  "options": ["L’amour", "La patience", "La tempérance", "La fidélité"],
+  "about": "Paul écrivit aux Églises de Galatie au sujet de la vie par l’Esprit. Le fruit de l’Esprit est le caractère que Dieu fait grandir en ceux qui lui appartiennent.",
+  "think": "L’amour vient en premier. Demande à l’Esprit de faire grandir son fruit en toi aujourd’hui."
+ },
+ "lots_wife": {
+  "question": "Qu’arriva-t-il à la femme de Lot quand elle regarda en arrière vers Sodome ?",
+  "options": ["Elle devint une statue de sel", "Elle devint aveugle", "Elle fut changée en pierre", "Elle fut emportée"],
+  "about": "Dieu allait détruire les villes méchantes de Sodome et Gomorrhe. Des anges firent sortir Lot et sa famille et leur dirent de ne pas regarder en arrière.",
+  "think": "Elle a regardé en arrière vers ce dont Dieu la faisait sortir. Y a-t-il quelque chose vers quoi tu dois cesser de regarder en arrière ?"
+ },
+ "greatest_love": {
+  "question": "De la foi, l’espérance et la charité, laquelle Paul appelle-t-il la plus grande ?",
+  "options": ["La charité", "La foi", "L’espérance", "Aucune des trois"],
+  "about": "Paul écrivit à l’Église de Corinthe, qui était fière de ses dons spirituels. Il lui montra que sans l’amour, tout cela n’est rien.",
+  "think": "La charité ne périt jamais. Où peux-tu montrer cet amour aujourd’hui ?"
+ },
+ "aaron": {
+  "question": "Quel frère Dieu donna-t-il à Moïse pour parler à sa place ?",
+  "options": ["Aaron", "Josué", "Caleb", "Hur"],
+  "about": "Quand Dieu envoya Moïse vers Pharaon, Moïse dit qu’il n’avait pas la parole facile. Dieu lui donna son frère Aaron pour parler à sa place.",
+  "think": "Dieu a donné à Moïse un aide pour sa faiblesse. Il nous donne aussi les uns aux autres."
+ },
+ "sword": {
+  "question": "Dans l’armure de Dieu, qu’est-ce que l’épée de l’Esprit ?",
+  "options": ["La parole de Dieu", "La foi", "La prière", "La vérité"],
+  "about": "Paul écrivit depuis sa prison au sujet du combat spirituel que mènent les chrétiens. Il décrivit l’armure que Dieu donne, pièce par pièce, comme celle d’un soldat romain.",
+  "think": "La parole de Dieu est ton arme contre la peur et le mensonge. Quel verset emporteras-tu avec toi aujourd’hui ?"
+ },
+ "joshua": {
+  "question": "À qui Dieu dit-il : « Fortifie-toi et prends courage… l’Éternel, ton Dieu, est avec toi dans tout ce que tu entreprendras » ?",
+  "options": ["Josué", "Moïse", "Gédéon", "Caleb"],
+  "about": "Après la mort de Moïse, Josué devait conduire Israël dans la Terre promise. Dieu lui parla pour lui donner du courage pour cette tâche.",
+  "think": "Le courage vient de la présence de Dieu, pas de ta propre force. Entre dans cette journée en sachant qu’il est avec toi."
+ },
+ "thanksgiving": {
+  "question": "Paul a écrit : « Ne vous inquiétez de rien ; mais en toute chose faites connaître vos besoins à Dieu par des prières et des supplications », avec quoi ?",
+  "options": ["Des actions de grâces", "Des jeûnes", "Des larmes", "Le silence"],
+  "about": "Paul écrivit ces mots depuis sa prison à l’Église de Philippes. Même enchaîné, il leur apprit à trouver la paix de Dieu au lieu de l’inquiétude.",
+  "think": "Les actions de grâces et la prière ouvrent la voie à la paix de Dieu. Remercie-le maintenant pour trois choses."
+ },
+ "tears": {
+  "question": "Dans l’Apocalypse, qu’est-ce que Dieu essuiera de tous les yeux ?",
+  "options": ["Toute larme", "Tout péché", "Tout souvenir", "Tout rêve"],
+  "about": "Dans le dernier livre de la Bible, Jean reçut une vision du nouveau ciel et de la nouvelle terre. Dieu lui-même habitera avec son peuple pour toujours.",
+  "think": "Un jour, il n’y aura plus ni mort ni douleur. Laisse cette espérance te porter aujourd’hui."
+ }
+}

@@ -51,10 +51,18 @@ def same_letters(text):
     return text
 
 
+# Russian and Ukrainian names change their last letter with case (Синай → на горе Синае, Иона → Иону).
+SLAVIC_ENDINGS = set("аяоеиыйьуюіїє")
+
+
 def found(name, text):
     """[name] in [text], allowing for its ending to change, as names do when they are called out or
-    take a case ending (Tamil சிம்சோன் → சிம்சோனே, Telugu సౌలు → సౌలూ, Malayalam ലാസർ → ലാസറേ): the
-    name without its final vowel sign or virama, or with its final chillu as the plain consonant, is enough."""
+    take a case ending (Tamil சிம்சோன் → சிம்சோனே, Telugu సౌలు → సౌలూ, Malayalam ലാസർ → ലാസറേ,
+    Russian Синай → Синае): the name without its final vowel sign or virama, with its final chillu as
+    the plain consonant, or without a final Cyrillic vowel, й or ь, is enough. A name of several words
+    (Иисус Навин) is found when each word is."""
+    if " " in name:
+        return all(found(word, text) for word in name.split())
     name, text = same_letters(name), same_letters(text)
     if name in text:
         return True
@@ -64,6 +72,8 @@ def found(name, text):
     stems = [stem] if stem != name else []
     if name[-1:] in CHILLU:
         stems += [name[:-1] + base for base in CHILLU[name[-1]]]
+    if name[-1:].lower() in SLAVIC_ENDINGS and len(name) >= 4:
+        stems.append(name[:-1])
     return any(len(s) >= 2 and s in text for s in stems)
 
 

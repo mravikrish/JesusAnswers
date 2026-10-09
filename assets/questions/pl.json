@@ -1,0 +1,542 @@
+{
+ "noah_ark": {
+  "question": "Kto zbudował arkę, aby uratować swoją rodzinę przed potopem?",
+  "options": ["Noe", "Abraham", "Mojżesz", "Jonasz"],
+  "about": "Świat był pełen przemocy, ale Noe chodził z Bogiem. Bóg polecił mu zbudować ogromny statek, arkę, aby uratować jego rodzinę i zwierzęta przed nadchodzącym potopem.",
+  "think": "Noe usłuchał, zanim spadła choćby jedna kropla deszczu. W czym Bóg prosi cię dziś, abyś Mu zaufał?"
+ },
+ "born_where": {
+  "question": "W którym mieście urodził się Jezus?",
+  "options": ["Betlejem", "Nazaret", "Jerozolima", "Kafarnaum"],
+  "about": "Z powodu spisu ludności Józef i Maria musieli udać się do Betlejem, miasta króla Dawida. Tam urodził się Jezus, tak jak zapowiedział prorok Micheasz.",
+  "think": "Król królów został położony w żłobie. Bóg przychodzi blisko do pokornych miejsc twojego życia."
+ },
+ "seventh_day": {
+  "question": "Co uczynił Bóg siódmego dnia?",
+  "options": ["Odpoczął", "Stworzył człowieka", "Stworzył gwiazdy", "Stworzył morze"],
+  "about": "W ciągu sześciu dni Bóg uczynił niebo, ziemię i wszystko, co w nich jest. Siódmego dnia odpoczął, pobłogosławił ten dzień i uświęcił go.",
+  "think": "Nawet Bóg odpoczął. Czy znajdziesz w tym tygodniu czas, by się zatrzymać, odpocząć i pamiętać, że to On trzyma świat?"
+ },
+ "water_wine": {
+  "question": "W co Jezus przemienił wodę na weselu w Kanie?",
+  "options": ["W wino", "W oliwę", "W mleko", "W miód"],
+  "about": "Na weselu w Kanie zabrakło wina, co było wielkim wstydem dla rodziny. Był to pierwszy z cudów Jezusa, a Jego uczniowie uwierzyli w Niego.",
+  "think": "Słudzy zrobili to, co powiedział Jezus, i zobaczyli cud. Czy jest jakiś mały krok, o który On cię prosi?"
+ },
+ "flood_days": {
+  "question": "Przez ile dni i nocy padał deszcz w czasie potopu?",
+  "options": ["40", "7", "12", "100"],
+  "about": "Bóg zesłał potop z powodu nieprawości świata, ale zachował Noego i jego rodzinę bezpiecznych w arce. Deszcz padał przez czterdzieści dni i czterdzieści nocy.",
+  "think": "Czterdzieści dni wydawało się nie mieć końca, a jednak Bóg pamiętał o Noem. Nie zapomniał też o tobie w twoim długim, trudnym czasie."
+ },
+ "baptism": {
+  "question": "Co zstąpiło na Jezusa jak gołębica podczas Jego chrztu?",
+  "options": ["Duch Boży", "Jasna gwiazda", "Anioł", "Ogień z nieba"],
+  "about": "Jezus przyszedł nad Jordan, aby przyjąć chrzest od Jana. Gdy wychodził z wody, niebiosa się otworzyły, a Ojciec wypowiedział nad Nim swoją miłość.",
+  "think": "Ojciec powiedział: „To jest mój umiłowany Syn”. W Chrystusie Bóg nazywa umiłowanym także ciebie."
+ },
+ "abraham_stars": {
+  "question": "Co Bóg kazał policzyć Abrahamowi, aby pokazać, jak liczne będzie jego potomstwo?",
+  "options": ["Gwiazdy", "Drzewa", "Góry", "Rzeki"],
+  "about": "Abraham był stary i nie miał dzieci, a jednak Bóg obiecał mu rodzinę. Bóg wyprowadził go na zewnątrz i pokazał mu nocne niebo.",
+  "think": "Abraham uwierzył PANU, a On poczytał mu to za sprawiedliwość. Której Bożej obietnicy uchwycisz się dzisiaj?"
+ },
+ "fishers": {
+  "question": "Co robili Piotr i Andrzej, gdy Jezus powołał ich, by za Nim poszli?",
+  "options": ["Łowili ryby", "Uprawiali ziemię", "Pobierali podatki", "Budowali dom"],
+  "about": "Piotr i jego brat Andrzej byli rybakami nad Morzem Galilejskim. Jezus powołał ich, aby poszli za Nim i zostali rybakami ludzi.",
+  "think": "Natychmiast zostawili sieci. Co Jezus może cię wzywać, abyś zostawił, by pójść za Nim?"
+ },
+ "ram": {
+  "question": "Gdy Abraham miał złożyć w ofierze Izaaka, co Bóg dał w jego miejsce?",
+  "options": ["Barana", "Gołębicę", "Cielca", "Kozła"],
+  "about": "Bóg wystawił Abrahama na próbę, prosząc go o ofiarowanie jedynego syna, Izaaka. W ostatniej chwili Bóg go powstrzymał i dał mu barana uwikłanego w zaroślach.",
+  "think": "Abraham nazwał to miejsce „PAN upatrzy”. Bóg widzi, czego potrzebujesz, zanim ty to zobaczysz."
+ },
+ "salt_light": {
+  "question": "Jezus powiedział, że Jego naśladowcy są solą ziemi i … świata?",
+  "options": ["Światłem", "Chlebem", "Nadzieją", "Siłą"],
+  "about": "W Kazaniu na Górze Jezus uczył swoich naśladowców, jak żyć. Sól nadaje smak i chroni przed zepsuciem; światło pokazuje innym drogę.",
+  "think": "Nikt nie zapala lampy, aby postawić ją pod korcem. Gdzie twoje światło może w tym tygodniu zaświecić dla kogoś?"
+ },
+ "jacob_ladder": {
+  "question": "Co Jakub zobaczył we śnie w Betel?",
+  "options": ["Drabinę sięgającą nieba", "Płonący krzak", "Wielki potop", "Siedem tłustych krów"],
+  "about": "Jakub uciekał przed swoim bratem Ezawem, samotny i przestraszony. Tej nocy Bóg spotkał go we śnie i obiecał, że będzie z nim.",
+  "think": "Bóg powiedział Jakubowi: „Oto ja jestem z tobą i będę cię strzegł, gdziekolwiek pójdziesz”. Nie jesteś sam w swojej drodze."
+ },
+ "daily_bread": {
+  "question": "O co w modlitwie Ojcze nasz prosimy Boga na dzisiaj?",
+  "options": ["O nasz powszedni chleb", "O bogactwo", "O długie życie", "O zwycięstwo"],
+  "about": "Uczniowie poprosili Jezusa, by nauczył ich się modlić, a On dał im tę modlitwę. Prosić o chleb powszedni to ufać Bogu w potrzebach każdego dnia.",
+  "think": "Jezus nauczył nas prosić o to, co potrzebne na dziś, dzień po dniu. Czego potrzebujesz dziś od Boga?"
+ },
+ "joseph_coat": {
+  "question": "Jaki szczególny dar dał Jakub swojemu synowi Józefowi?",
+  "options": ["Szatę wielobarwną", "Złoty pierścień", "Miecz", "Stado owiec"],
+  "about": "Jakub kochał Józefa bardziej niż pozostałych synów i okazał to szczególną szatą. Jego bracia stali się zazdrośni i znienawidzili go.",
+  "think": "Ten dar rozbudził zazdrość braci. Proś Boga, aby pomógł ci cieszyć się z innymi zamiast im zazdrościć."
+ },
+ "birds": {
+  "question": "Jezus powiedział, abyśmy się nie troszczyli, bo nasz niebieski Ojciec karmi kogo?",
+  "options": ["Ptaki nieba", "Ryby w morzu", "Lwy", "Owce"],
+  "about": "Wielu ludzi martwi się o jedzenie, ubranie i przyszłość. Jezus wskazał na ptaki i kwiaty, aby pokazać, jak wiernie Ojciec troszczy się o swoje stworzenie.",
+  "think": "Skoro karmi ptaki, o ileż bardziej zatroszczy się o ciebie? Oddaj Mu dzisiejsze zmartwienie."
+ },
+ "joseph_sold": {
+  "question": "Kto został sprzedany przez braci, a później uratował swoją rodzinę przed głodem w Egipcie?",
+  "options": ["Józef", "Beniamin", "Ruben", "Juda"],
+  "about": "Zazdrośni bracia sprzedali Józefa jako niewolnika do Egiptu. Po latach, jako władca tego kraju, przebaczył im i uratował ich przed głodem.",
+  "think": "Józef powiedział: „Nie wy mnie tu posłaliście, ale Bóg”. Bóg potrafi obrócić zło w dobro."
+ },
+ "ask_seek": {
+  "question": "„Proście, a będzie wam dane, szukajcie, a znajdziecie, …” Jak Jezus kończy to zdanie?",
+  "options": ["Pukajcie, a będzie wam otworzone", "Czekajcie, a otrzymacie", "Pracujcie, a zarobicie", "Dawajcie, a będzie wam dane"],
+  "about": "Jezus uczył, że Bóg jest dobrym Ojcem, który chętnie daje swoim dzieciom dobre rzeczy. Dlatego możemy wciąż się modlić i nigdy się nie poddawać.",
+  "think": "Jezus zaprasza cię, abyś nie przestawał prosić. O co przestałeś się modlić, a co mógłbyś Mu znów przynieść?"
+ },
+ "baby_moses": {
+  "question": "Gdzie matka Mojżesza ukryła swoje dziecko, aby je ocalić?",
+  "options": ["W koszyku wśród trzcin nad rzeką", "W jaskini", "W pałacu", "W studni"],
+  "about": "Faraon rozkazał zabijać każdego hebrajskiego chłopca. Matka Mojżesza ukryła go w koszyku na Nilu, gdzie znalazła go córka faraona.",
+  "think": "Mały akt wiary matki stał się częścią wielkiego Bożego planu. Twoja mała wierność też ma znaczenie."
+ },
+ "storm": {
+  "question": "Co Jezus uciszył jednym słowem, gdy uczniowie byli w łodzi?",
+  "options": ["Burzę", "Tłum", "Gorączkę", "Pożar"],
+  "about": "Jezus spał w łodzi, gdy na jeziorze rozpętała się gwałtowna burza. Przerażeni uczniowie obudzili Go, a On jednym słowem uciszył wiatr i fale.",
+  "think": "Uczniowie wołali: „Nie obchodzi cię, że giniemy?”. Obchodziło Go, i przemówił pokojem. Przynieś Mu burzę, w której jesteś."
+ },
+ "burning_bush": {
+  "question": "Jak Bóg po raz pierwszy przemówił do Mojżesza na pustyni?",
+  "options": ["Z płonącego krzaka", "We śnie", "Z obłoku", "Przez proroka"],
+  "about": "Mojżesz pasł owce na pustyni, gdy zobaczył krzak, który płonął, a nie spalał się. Bóg przemówił do niego z krzaka i posłał go, aby uwolnił Izraela.",
+  "think": "Mojżesz wykonywał swoją codzienną pracę, gdy Bóg go powołał. Szukaj Boga w zwykłych miejscach swojego dnia."
+ },
+ "jairus": {
+  "question": "Ile lat miała córka Jaira, gdy Jezus przywrócił ją do życia?",
+  "options": ["12", "7", "3", "20"],
+  "about": "Jair, przełożony synagogi, błagał Jezusa, aby przyszedł do jego umierającej córki. Zanim Jezus dotarł, przyszła wiadomość, że umarła.",
+  "think": "Jezus powiedział Jairowi: „Nie bój się, tylko wierz!”. Trzymaj się Go, gdy wieści są złe."
+ },
+ "red_sea": {
+  "question": "Jak Izrael ocalał, gdy wojsko faraona ścigało go aż do morza?",
+  "options": ["Przeszli po suchym dnie", "Odpłynęli łodziami", "Ukryli się w górach", "Walczyli i zwyciężyli"],
+  "about": "Izrael dopiero co wyszedł z niewoli w Egipcie, gdy wojsko faraona ścigało go aż do Morza Czerwonego. Bóg rozdzielił wody, aby Jego lud mógł przejść.",
+  "think": "Gdy wydawało się, że nie ma wyjścia, Bóg je stworzył. Proś Go o drogę przez to, co cię blokuje."
+ },
+ "loaves": {
+  "question": "Ile chlebów miał chłopiec, gdy Jezus nakarmił pięć tysięcy ludzi?",
+  "options": ["5", "2", "7", "12"],
+  "about": "Ogromny tłum poszedł za Jezusem na odludne miejsce i nie było nic do jedzenia. Pewien chłopiec oddał swój mały posiłek, a Jezus nakarmił nim wszystkich.",
+  "think": "Mały posiłek chłopca stał się ucztą w rękach Jezusa. Daj Mu to niewiele, co masz."
+ },
+ "manna": {
+  "question": "Co Bóg zsyłał każdego ranka, aby karmić Izraela na pustyni?",
+  "options": ["Mannę, chleb z nieba", "Ryby", "Owoce", "Ryż"],
+  "about": "Na pustyni Izrael narzekał na głód. Bóg przez czterdzieści lat zsyłał każdego ranka mannę, wystarczającą na każdy dzień.",
+  "think": "Manna przychodziła świeża każdego dnia i nie można jej było przechować. Bóg daje łaskę na dziś; zaufaj Mu co do jutra."
+ },
+ "walks_water": {
+  "question": "Kto szedł po wodzie do Jezusa, a potem zaczął tonąć?",
+  "options": ["Piotr", "Jan", "Tomasz", "Andrzej"],
+  "about": "Po nakarmieniu tłumu Jezus wysłał uczniów na drugi brzeg jeziora i przyszedł do nich w nocy, idąc po wodzie. Piotr poprosił, by mógł przyjść do Niego.",
+  "think": "Piotr zaczął tonąć, gdy spojrzał na wiatr, a Jezus natychmiast go chwycił. Patrz na Niego."
+ },
+ "sinai": {
+  "question": "Na której górze Bóg dał Mojżeszowi tablice Prawa?",
+  "options": ["Synaj", "Karmel", "Syjon", "Ararat"],
+  "about": "Po wyprowadzeniu Izraela z Egiptu Mojżesz spotkał Boga na górze Synaj. Tam Bóg dał mu Prawo zapisane na dwóch kamiennych tablicach.",
+  "think": "Boże Prawo zostało zapisane Jego własnym palcem. Które z Jego słów potrzebujesz dziś zapisać w swoim sercu?"
+ },
+ "samaritan": {
+  "question": "Kto w opowieści Jezusa zatrzymał się, aby pomóc człowiekowi pobitemu przez bandytów?",
+  "options": ["Samarytanin", "Kapłan", "Lewita", "Żołnierz"],
+  "about": "Pewien znawca Prawa zapytał Jezusa: „A kto jest moim bliźnim?”. Jezus odpowiedział opowieścią, której bohaterem był Samarytanin, człowiek, na którego większość ówczesnych Żydów patrzyła z góry.",
+  "think": "Jezus zapytał: „Który z tych trzech był bliźnim?”. Kto leży dziś przy twojej drodze?"
+ },
+ "jericho": {
+  "question": "Co się stało, gdy Izrael obchodził Jerycho, wydał okrzyk i zadął w trąby?",
+  "options": ["Mury runęły", "Zaczął padać deszcz", "Bramy się otworzyły", "Wróg uciekł"],
+  "about": "Jerycho było silnym, otoczonym murami miastem na skraju Ziemi Obiecanej. Bóg polecił Jozuemu, aby przez siedem dni obchodził je dookoła, zamiast je atakować.",
+  "think": "Izrael zwyciężył, słuchając planu, który wydawał się bez sensu. Ufaj Bożej drodze, nawet gdy wydaje się dziwna."
+ },
+ "lost_sheep": {
+  "question": "Ile owiec zostawił pasterz w opowieści Jezusa, aby szukać tej jednej zagubionej?",
+  "options": ["99", "9", "49", "100"],
+  "about": "Przywódcy religijni szemrali, że Jezus przyjmuje grzeszników. On odpowiedział opowieściami o rzeczach zgubionych, których się szuka i które odnajduje się z wielką radością.",
+  "think": "W niebie jest radość z jednego, który wraca do domu. Warto cię szukać."
+ },
+ "gideon": {
+  "question": "Kto prosił Boga o znak za pomocą runa wełny?",
+  "options": ["Gedeon", "Samson", "Jozue", "Barak"],
+  "about": "Bóg powołał Gedeona, by uwolnił Izraela od wrogich najeźdźców, ale on czuł się słaby i bał się. Prosił Boga o znaki, a Bóg cierpliwie mu je dawał.",
+  "think": "Bóg cierpliwie odpowiadał na wątpliwości Gedeona. Przynieś Mu swoje szczere pytania."
+ },
+ "prodigal": {
+  "question": "Co zrobił ojciec, gdy zobaczył swojego zagubionego syna wracającego do domu?",
+  "options": ["Wybiegł mu naprzeciw i go objął", "Odprawił go", "Uczynił go sługą", "Czekał na przeprosiny"],
+  "about": "Młodszy syn wziął swoją część majątku i roztrwonił ją daleko od domu. Gdy cierpiał głód, postanowił wrócić do ojca.",
+  "think": "Ojciec pobiegł. Tak Bóg przyjmuje każdego, kto wraca do domu."
+ },
+ "samson": {
+  "question": "Czyja wielka siła była związana z nieobciętymi włosami?",
+  "options": ["Samson", "Gedeon", "Dawid", "Goliat"],
+  "about": "Samson od urodzenia był poświęcony Bogu, a jego długie włosy były znakiem tego ślubu. Gdy Dalila kazała je obciąć, opuściła go siła.",
+  "think": "Siła Samsona była darem Boga, nie jego własnością. Trzymaj się blisko Dawcy, nie tylko Jego darów."
+ },
+ "ten_lepers": {
+  "question": "Ilu z dziesięciu uzdrowionych trędowatych wróciło, aby podziękować Jezusowi?",
+  "options": ["1", "9", "10", "3"],
+  "about": "Dziesięciu trędowatych zawołało do Jezusa z daleka, a On posłał ich do kapłanów. Gdy szli, zostali oczyszczeni.",
+  "think": "Dziewięciu zostało uzdrowionych; jeden wrócił, by podziękować. Poświęć teraz chwilę, aby podziękować Bogu."
+ },
+ "ruth": {
+  "question": "Kto powiedział do Noemi: „Gdziekolwiek pójdziesz i ja pójdę; twój Bóg będzie moim Bogiem”?",
+  "options": ["Rut", "Orfa", "Estera", "Rachel"],
+  "about": "Po stracie męża i synów w obcym kraju Noemi postanowiła wrócić do domu. Jej synowa Rut, Moabitka, nie chciała jej opuścić.",
+  "think": "Rut wybrała wierną miłość, choć łatwiej było odejść. Kto potrzebuje twojej wierności w tym tygodniu?"
+ },
+ "zacchaeus": {
+  "question": "Kto wszedł na sykomorę, aby zobaczyć Jezusa?",
+  "options": ["Zacheusz", "Bartymeusz", "Nikodem", "Łazarz"],
+  "about": "Zacheusz był przełożonym celników w Jerychu, bogatym i nielubianym. Był niskiego wzrostu, więc wszedł na drzewo, aby zobaczyć przechodzącego Jezusa.",
+  "think": "Jezus poszedł do domu Zacheusza, zanim ten się zmienił. Przyjmuje cię takim, jaki jesteś."
+ },
+ "samuel": {
+  "question": "Który chłopiec usłyszał w nocy w domu Bożym, jak Bóg woła go po imieniu?",
+  "options": ["Samuel", "Dawid", "Izaak", "Jozjasz"],
+  "about": "Samuel był chłopcem, który służył w domu Bożym pod okiem kapłana Helego. Bóg zawołał go w nocy po imieniu i zaczął do niego mówić.",
+  "think": "Samuel powiedział: „Mów, bo twój sługa słucha”. Znajdź dziś cichą minutę tylko po to, by słuchać."
+ },
+ "lazarus": {
+  "question": "Kogo Jezus wskrzesił z martwych po czterech dniach w grobie?",
+  "options": ["Łazarz", "Szczepan", "Jair", "Józef"],
+  "about": "Łazarz, brat Marii i Marty, umarł, a Jezus przybył cztery dni później. Wywołał go z grobu żywego.",
+  "think": "Jezus zapłakał, zanim wskrzesił Łazarza. Obchodzi Go twój smutek, nie tylko rozwiązanie."
+ },
+ "goliath": {
+  "question": "Kto zabił olbrzyma Goliata procą i kamieniem?",
+  "options": ["Dawid", "Saul", "Samson", "Jonatan"],
+  "about": "Filistyński olbrzym Goliat przez czterdzieści dni urągał wojsku Izraela i wszyscy się bali. Młody Dawid stanął przeciw niemu, ufając Bogu.",
+  "think": "Dawid przyszedł w imię PANA. Który olbrzym w twoim życiu musi spotkać tego Boga?"
+ },
+ "bartimaeus": {
+  "question": "Który niewidomy wołał: „Jezusie, Synu Dawida, zmiłuj się nade mną!”?",
+  "options": ["Bartymeusz", "Zacheusz", "Nikodem", "Łazarz"],
+  "about": "Bartymeusz był niewidomym żebrakiem, który siedział przy drodze pod Jerychem. Gdy usłyszał, że przechodzi Jezus, zawołał o zmiłowanie.",
+  "think": "Gdy inni kazali mu milczeć, wołał jeszcze głośniej. Nie przestawaj wołać do Jezusa."
+ },
+ "shepherd_boy": {
+  "question": "Co robił Dawid, gdy Samuel przyszedł namaścić go na króla?",
+  "options": ["Pasł owce", "Łowił ryby", "Walczył w wojsku", "Służył w świątyni"],
+  "about": "Bóg posłał proroka Samuela do rodziny Jessego, aby namaścił następnego króla. Najmłodszy syn Jessego, Dawid, był na polu przy owcach.",
+  "think": "Człowiek patrzy na to, co jest przed oczami, ale PAN patrzy na serce. On widzi w tobie to, co inni przeoczają."
+ },
+ "children": {
+  "question": "Co zrobił Jezus, gdy uczniowie nie pozwalali przyprowadzać do Niego dzieci?",
+  "options": ["Przyjął je i pobłogosławił", "Odesłał je do domu", "Kazał im czekać", "Uczył tylko dorosłych"],
+  "about": "Ludzie przynosili dzieci, aby Jezus je pobłogosławił, a uczniowie uważali, że jest zbyt zajęty. Jezus oburzył się na uczniów.",
+  "think": "Królestwo należy do tych, którzy przychodzą jak dzieci. Przyjdź do Niego prosto i z ufnością."
+ },
+ "solomon": {
+  "question": "Który król prosił Boga o mądrość zamiast o bogactwo?",
+  "options": ["Salomon", "Dawid", "Saul", "Ezechiasz"],
+  "about": "Gdy młody Salomon został królem, Bóg powiedział mu, by prosił o cokolwiek chce. Salomon poprosił o mądrość, by dobrze rządzić ludem Bożym.",
+  "think": "Salomon prosił o mądrość, aby dobrze służyć innym. Proś Boga o mądrość w tym, z czym się dziś mierzysz."
+ },
+ "mary_martha": {
+  "question": "Która siostra siedziała u stóp Jezusa i słuchała, gdy druga była zajęta usługiwaniem?",
+  "options": ["Maria", "Marta", "Anna", "Elżbieta"],
+  "about": "Jezus był gościem w domu sióstr Marty i Marii. Marta była zajęta usługiwaniem, a Maria siedziała i Go słuchała.",
+  "think": "Jezus powiedział, że Maria wybrała dobrą cząstkę. Znajdź dziś czas, aby po prostu być z Nim."
+ },
+ "ravens": {
+  "question": "Którego proroka karmiły kruki nad potokiem?",
+  "options": ["Eliasz", "Elizeusz", "Izajasz", "Ezechiel"],
+  "about": "Podczas długiej suszy w Izraelu Bóg posłał proroka Eliasza, aby ukrył się nad potokiem. Kruki przynosiły mu chleb i mięso rano i wieczorem.",
+  "think": "Bóg troszczył się o Eliasza dzień po dniu. Zaufaj Mu co do dzisiejszego chleba."
+ },
+ "great_catch": {
+  "question": "Co się stało po nocy bez połowu, gdy Piotr na słowo Jezusa zarzucił sieci?",
+  "options": ["Tyle ryb, że sieci zaczęły się rwać", "Złowili jedną rybę", "Łódź zatonęła", "Nadeszła burza"],
+  "about": "Piotr i jego wspólnicy łowili całą noc i nic nie złowili. Gdy Jezus kazał im spróbować jeszcze raz, połów był tak wielki, że Piotr padł Mu do nóg.",
+  "think": "Piotr usłuchał, choć był zmęczony i pełen wątpliwości. Spróbuj jeszcze raz tam, gdzie mówi ci Jezus."
+ },
+ "carmel_fire": {
+  "question": "Jak Bóg odpowiedział, gdy Eliasz modlił się na górze Karmel?",
+  "options": ["Ogień spadł z nieba", "Od razu spadł deszcz", "Trzęsienie ziemi wstrząsnęło górą", "Głos przemówił z obłoku"],
+  "about": "Izrael oddawał cześć fałszywemu bogu Baalowi. Eliasz wezwał jego proroków na górę Karmel, aby zobaczyć, który Bóg odpowie ogniem.",
+  "think": "Eliasz modlił się prosto, a Bóg odpowiedział. PAN jest Bogiem; przynieś Mu dziś swoją modlitwę."
+ },
+ "sower": {
+  "question": "Co oznacza ziarno w przypowieści Jezusa o siewcy?",
+  "options": ["Słowo Boże", "Pieniądze", "Dobre uczynki", "Czas"],
+  "about": "Jezus opowiedział o siewcy, którego ziarno padło na różne rodzaje gleby. Każda gleba pokazuje, jak ludzie przyjmują Boże słowo.",
+  "think": "Dobra ziemia słucha słowa, zachowuje je i wydaje owoc w cierpliwości. Zachowaj w sercu dzisiejsze słowo."
+ },
+ "whisper": {
+  "question": "Gdy Bóg spotkał Eliasza na górze, jak przyszedł?",
+  "options": ["W cichym i delikatnym głosie", "W wichrze", "W trzęsieniu ziemi", "W ogniu"],
+  "about": "Eliasz był przestraszony, wyczerpany i samotny po tym, jak królowa Jezabel zagroziła mu śmiercią. Bóg spotkał go na górze nie w potędze, ale w cichym, delikatnym głosie.",
+  "think": "Boga nie było w hałasie, ale w cichym głosie. Znajdź dziś chwilę ciszy, aby Go usłyszeć."
+ },
+ "good_shepherd": {
+  "question": "Jezus powiedział: „Ja jestem dobrym pasterzem”. Co czyni dobry pasterz?",
+  "options": ["Oddaje swoje życie za owce", "Ma wiele stad", "Nigdy nie śpi", "Mieszka w górach"],
+  "about": "Jezus porównał siebie do pasterza, a swój lud do owiec. Dobry pasterz chroni swoje owce nawet za cenę własnego życia.",
+  "think": "Pasterz, który oddał za ciebie życie, zna cię po imieniu."
+ },
+ "naaman": {
+  "question": "Który dowódca wojska został uzdrowiony z trądu po siedmiokrotnym obmyciu się w Jordanie?",
+  "options": ["Naaman", "Goliat", "Sisera", "Abner"],
+  "about": "Naaman był potężnym dowódcą wojska syryjskiego, ale chorował na trąd. Prorok Elizeusz kazał mu siedem razy obmyć się w rzece Jordan.",
+  "think": "Naaman o mało nie przegapił uzdrowienia, bo wydawało mu się zbyt proste. Nie lekceważ prostych rzeczy, o które prosi Bóg."
+ },
+ "nicodemus": {
+  "question": "Kto przyszedł do Jezusa nocą i usłyszał, że musi się na nowo narodzić?",
+  "options": ["Nikodem", "Zacheusz", "Łazarz", "Józef"],
+  "about": "Nikodem był faryzeuszem i przywódcą Żydów. Przyszedł do Jezusa nocą, a Jezus powiedział mu, że potrzebuje nowego narodzenia od Boga.",
+  "think": "Jezus mówił o nowym narodzeniu z Ducha. Nigdy nie jest za późno na nowy początek z Bogiem."
+ },
+ "furnace": {
+  "question": "Co się stało z Szadrakiem, Meszakiem i Abed-Nego w rozpalonym piecu?",
+  "options": ["Ogień im nie zaszkodził", "Uciekli tunelem", "Ogień zgasł", "Zostali ciężko poparzeni"],
+  "about": "Król Nabuchodonozor rozkazał wszystkim kłaniać się jego złotemu posągowi. Trzej młodzi Żydzi odmówili i zostali wrzuceni do rozpalonego pieca.",
+  "think": "Bóg nie uchronił ich przed ogniem, ale był z nimi w ogniu. Ty też nie jesteś sam w swoim."
+ },
+ "living_water": {
+  "question": "Co Jezus zaofiarował Samarytance przy studni?",
+  "options": ["Wodę żywą", "Chleb", "Pieniądze", "Nowy dom"],
+  "about": "Jezus rozmawiał z Samarytanką przy studni, choć Żydzi i Samarytanie zwykle ze sobą nie obcowali. Zaofiarował jej wodę, która gasi pragnienie na zawsze.",
+  "think": "Jezus daje wodę, która staje się źródłem życia wiecznego. Przynieś Mu swoje pragnienie."
+ },
+ "lions_den": {
+  "question": "Kto został wrzucony do lwiej jamy za modlitwę do Boga?",
+  "options": ["Daniel", "Józef", "Eliasz", "Jeremiasz"],
+  "about": "Zazdrośni dostojnicy skłonili króla Dariusza do wydania prawa, że przez trzydzieści dni nikt nie może modlić się do nikogo poza nim. Daniel nadal modlił się do Boga.",
+  "think": "Daniel modlił się dalej, nawet gdy było to zakazane. Jak wyglądałaby dziś wierność w twoim życiu?"
+ },
+ "cloak": {
+  "question": "Kobieta chora od dwunastu lat została uzdrowiona, gdy dotknęła czego?",
+  "options": ["Szaty Jezusa", "Ręki Jezusa", "Drzwi świątyni", "Świętego kamienia"],
+  "about": "Pewna kobieta od dwunastu lat cierpiała na krwotok i wydała wszystko na lekarzy. Wierzyła, że jeśli tylko dotknie szaty Jezusa, zostanie uzdrowiona.",
+  "think": "Jezus powiedział do niej: „Córko, twoja wiara cię uzdrowiła, idź w pokoju”. Wyciągnij dziś do Niego rękę z wiarą."
+ },
+ "writing_wall": {
+  "question": "Na czyjej uczcie pojawiła się ręka, która pisała na ścianie?",
+  "options": ["Belszazar", "Nabuchodonozor", "Faraon", "Achab"],
+  "about": "Król Babilonu Belszazar wyprawił wielką ucztę i pił z naczyń zabranych ze świątyni Boga. Nagle pojawiła się ręka i zaczęła pisać na ścianie.",
+  "think": "Króla zważono na wadze i okazał się lekki. Proś Boga, aby zbadał twoje serce i je naprostował."
+ },
+ "transfiguration": {
+  "question": "Kto ukazał się z Jezusem na górze, gdy Jego twarz zajaśniała jak słońce?",
+  "options": ["Mojżesz i Eliasz", "Abraham i Izaak", "Dawid i Salomon", "Piotr i Jan"],
+  "about": "Jezus zabrał Piotra, Jakuba i Jana na wysoką górę. Tam objawiła się Jego chwała, a dwaj wielcy mężowie Starego Testamentu rozmawiali z Nim.",
+  "think": "Ojciec powiedział: „Jego słuchajcie”. Co Jezus mówił do ciebie ostatnio?"
+ },
+ "jonah": {
+  "question": "Kogo połknęła wielka ryba, gdy uciekał przed Bogiem?",
+  "options": ["Jonasz", "Piotr", "Elizeusz", "Hiob"],
+  "about": "Bóg kazał Jonaszowi iść do Niniwy, ale on wsiadł na statek płynący w przeciwną stronę. Rozpętała się wielka burza i żeglarze wrzucili go do morza.",
+  "think": "Jonasz uciekał przed Bogiem, a jednak Bóg poszedł za nim. Nigdy nie jest za późno, by zawrócić."
+ },
+ "widow": {
+  "question": "Ile drobnych monet wrzuciła uboga wdowa, którą pochwalił Jezus?",
+  "options": ["2", "10", "1", "5"],
+  "about": "Jezus patrzył, jak ludzie wrzucają pieniądze do skarbony w świątyni. Bogaci wrzucali dużo, ale uboga wdowa dała wszystko, co miała.",
+  "think": "Dała wszystko, co miała. Bóg patrzy na serce stojące za darem, a nie na jego wielkość."
+ },
+ "nineveh": {
+  "question": "Do którego wielkiego miasta Bóg posłał Jonasza, aby wezwał ludzi do nawrócenia?",
+  "options": ["Niniwa", "Babilon", "Jerozolima", "Tarszisz"],
+  "about": "Niniwa była wielką stolicą Asyrii, wroga Izraela. Gdy Jonasz w końcu tam głosił, całe miasto zwróciło się do Boga.",
+  "think": "Gdy Niniwa zwróciła się do Boga, On okazał miłosierdzie. Jego miłosierdzie jest szersze, niż się spodziewamy."
+ },
+ "greatest": {
+  "question": "Które przykazanie Jezus nazwał największym?",
+  "options": ["Będziesz miłował Pana, swego Boga, całym swym sercem", "Święć dzień szabatu", "Nie kradnij", "Dawaj dziesięcinę ze wszystkiego, co zarabiasz"],
+  "about": "Pewien znawca Prawa zapytał Jezusa, które przykazanie jest najważniejsze. Jezus streścił całe Boże Prawo w dwóch przykazaniach miłości.",
+  "think": "Całe Boże Prawo opiera się na miłości do Boga i bliźniego. Kogo możesz dziś pokochać w praktyczny sposób?"
+ },
+ "esther": {
+  "question": "Która królowa zaryzykowała życie, mówiąc: „A jeśli zginę, to zginę”?",
+  "options": ["Estera", "Jezabel", "Waszti", "Rachel"],
+  "about": "Estera, Żydówka, została królową Persji, gdy uknuto spisek, aby zniszczyć jej lud. Aby go ocalić, musiała wejść do króla bez wezwania.",
+  "think": "„Kto wie, czy nie na tę właśnie chwilę dostąpiłaś godności królestwa?”. Gdzie postawił cię Bóg, abyś coś zmienił?"
+ },
+ "last_supper": {
+  "question": "Co dał Jezus uczniom podczas ostatniej wieczerzy na swoją pamiątkę?",
+  "options": ["Chleb i kielich", "Zwój", "Pierścień", "Baranka"],
+  "about": "W noc przed śmiercią Jezus spożył z uczniami wieczerzę paschalną. Dał im chleb i wino jako znaki swojego ciała i krwi.",
+  "think": "„To czyńcie na moją pamiątkę”. Pamiętaj dziś, co Jezus dał za ciebie."
+ },
+ "wall_days": {
+  "question": "Ile czasu zajęła za czasów Nehemiasza odbudowa muru Jerozolimy?",
+  "options": ["52 dni", "7 lat", "40 dni", "1 rok"],
+  "about": "Nehemiasz, Żyd na służbie u króla Persji, przybył, aby odbudować zburzone mury Jerozolimy. Mimo wrogów i gróźb lud ukończył dzieło.",
+  "think": "Nawet wrogowie zobaczyli, że dzieło zostało wykonane z Bożą pomocą. Buduj dalej to, co On ci powierzył."
+ },
+ "feet": {
+  "question": "Co zrobił Jezus dla uczniów podczas ostatniej wieczerzy, aby pokazać im, jak służyć?",
+  "options": ["Umył im nogi", "Dał im złoto", "Zbudował im dom", "Napisał im list"],
+  "about": "Podczas ostatniego wspólnego posiłku Jezus wziął ręcznik i umył uczniom nogi, co było pracą sługi. Powiedział im, aby w ten sam sposób służyli sobie nawzajem.",
+  "think": "Pan wszystkiego uklęknął z ręcznikiem. Gdzie możesz dziś po cichu służyć?"
+ },
+ "job": {
+  "question": "Kto stracił wszystko, a jednak powiedział: „PAN dał, PAN też wziął, niech imię PANA będzie błogosławione”?",
+  "options": ["Hiob", "Jonasz", "Jeremiasz", "Joel"],
+  "about": "Hiob był prawym człowiekiem, który nagle, jednego dnia, stracił majątek i dzieci. A jednak w swoim bólu oddał Bogu cześć.",
+  "think": "Hiob oddawał cześć w żałobie. Możesz przynieść Bogu swój smutek i nadal Mu ufać."
+ },
+ "gethsemane": {
+  "question": "O co Jezus modlił się do Ojca w ogrodzie przed pojmaniem?",
+  "options": ["Nie moja wola, lecz twoja niech się stanie", "Zabierz mnie teraz do nieba", "Zniszcz moich wrogów", "Uczyń mnie królem"],
+  "about": "Po ostatniej wieczerzy Jezus poszedł modlić się w ogrodzie Getsemani. Wiedząc, jakie cierpienie Go czeka, modlił się w głębokiej udręce.",
+  "think": "Jezus złożył swoją wolę w ręce Ojca. Co ty musisz tam dziś złożyć?"
+ },
+ "psalm23": {
+  "question": "Psalm 23 zaczyna się słowami: „PAN jest moim …”?",
+  "options": ["Pasterzem", "Królem", "Skałą", "Światłem"],
+  "about": "Dawid, który sam był pasterzem, napisał ten psalm. Opisuje, jak Bóg troszczy się o nas tak, jak pasterz troszczy się o swoje owce.",
+  "think": "Z Pasterzem niczego ci nie zabraknie, nawet w najciemniejszej dolinie. Idź dziś z Nim."
+ },
+ "denial": {
+  "question": "Kto trzy razy zaparł się znajomości z Jezusem, zanim zapiał kogut?",
+  "options": ["Piotr", "Judasz", "Tomasz", "Jakub"],
+  "about": "Piotr obiecywał, że nigdy nie opuści Jezusa. Tej nocy, po pojmaniu Jezusa, przestraszył się i trzy razy powiedział, że Go nie zna.",
+  "think": "Później Jezus przywrócił Piotra. Twoje upadki nie są końcem twojej historii z Nim."
+ },
+ "eagles": {
+  "question": "Ci, którzy oczekują PANA, wzbiją się na skrzydłach jak kto?",
+  "options": ["Orły", "Gołębie", "Wróble", "Aniołowie"],
+  "about": "Izajasz pisał do ludu Bożego, gdy czuł się zapomniany i zmęczony. Przypomniał im, że Bóg nigdy się nie męczy i daje siłę słabym.",
+  "think": "On daje siłę zmęczonemu. Oczekuj Go i pozwól Mu dziś odnowić twoje siły."
+ },
+ "paradise": {
+  "question": "Co Jezus obiecał złoczyńcy na krzyżu, który prosił, by o nim pamiętał?",
+  "options": ["Dziś będziesz ze mną w raju", "Zostaniesz uwolniony", "Będziesz długo żył", "Później zostanie ci przebaczone"],
+  "about": "Razem z Jezusem ukrzyżowano dwóch złoczyńców. Jeden z Niego szydził, ale drugi zwrócił się do Niego z wiarą.",
+  "think": "Dla złoczyńcy nie było za późno i dla nikogo nie jest za późno. Kto potrzebuje to dziś usłyszeć?"
+ },
+ "plans": {
+  "question": "Bóg powiedział: „Ja znam myśli, które mam o was”, myśli, aby dać wam co?",
+  "options": ["Przyszłość i nadzieję", "Bogactwo i sławę", "Długie, łatwe życie", "Władzę nad innymi"],
+  "about": "Lud Boży został uprowadzony na wygnanie do Babilonu. Jeremiasz napisał do nich list, aby powiedzieć, że Bóg o nich nie zapomniał.",
+  "think": "Nawet na wygnaniu Bóg miał dobre myśli o swoim ludzie. Powierz Mu swoją przyszłość."
+ },
+ "risen": {
+  "question": "Co powiedział anioł kobietom przy pustym grobie?",
+  "options": ["Nie ma go tu; powstał", "Zabrano go", "Czekajcie tu na niego", "Idźcie do domu i płaczcie"],
+  "about": "Pierwszego dnia tygodnia kobiety przyszły do grobu Jezusa z wonnościami. Znalazły go pustym, a anioł przekazał im wieść.",
+  "think": "Grób jest pusty, a śmierć pokonana. Żyj dziś nadzieją zmartwychwstałego Jezusa."
+ },
+ "potter": {
+  "question": "Z kim porównuje się Bóg w Księdze Jeremiasza, kształtując glinę?",
+  "options": ["Z garncarzem", "Z cieślą", "Z pasterzem", "Z rolnikiem"],
+  "about": "Bóg posłał Jeremiasza, by przyglądał się garncarzowi przy pracy. Gdy naczynie się zepsuło, garncarz ulepił z niego coś nowego.",
+  "think": "Jesteśmy jak glina w ręku garncarza. Pozwól Mu na nowo ukształtować to, co w tobie złamane."
+ },
+ "thomas": {
+  "question": "Który uczeń powiedział, że nie uwierzy, dopóki nie dotknie ran Jezusa?",
+  "options": ["Tomasz", "Piotr", "Filip", "Mateusz"],
+  "about": "Tomasza nie było z innymi uczniami, gdy ukazał się im zmartwychwstały Jezus. Tydzień później Jezus przyszedł znowu i pokazał Tomaszowi swoje rany.",
+  "think": "Jezus spotkał Tomasza w jego wątpliwościach. Przynieś Mu swoje pytania; On się ich nie boi."
+ },
+ "image": {
+  "question": "Na czyj obraz Bóg stworzył człowieka?",
+  "options": ["Na swój obraz", "Na obraz aniołów", "Na obraz zwierząt", "Na obraz gwiazd"],
+  "about": "Na początku Bóg stworzył człowieka, mężczyznę i kobietę. Z całego stworzenia tylko oni zostali uczynieni na Jego obraz.",
+  "think": "Nosisz obraz Boga. Tak jak każdy człowiek, którego dziś spotkasz."
+ },
+ "emmaus": {
+  "question": "Kiedy dwaj uczniowie w drodze do Emmaus rozpoznali Jezusa?",
+  "options": ["Gdy łamał chleb", "Gdy pokazał ręce", "Gdy zawołał ich po imieniu", "Gdy szedł po wodzie"],
+  "about": "Dwaj uczniowie wracali smutni do domu po śmierci Jezusa. Przyłączył się do nich nieznajomy i wyjaśniał im Pisma, a oni nie wiedzieli, że to Jezus.",
+  "think": "Jezus szedł z nimi, zanim Go rozpoznali. Może być bliżej, niż myślisz."
+ },
+ "babel": {
+  "question": "Co zrobił Bóg, gdy ludzie budowali wieżę Babel, by sięgnąć nieba?",
+  "options": ["Pomieszał ich język", "Zesłał potop", "Zesłał ogień", "Uczynił ich królami"],
+  "about": "Po potopie ludzie osiedlili się razem i zaczęli budować miasto z wielką wieżą, aby uczynić sobie imię.",
+  "think": "Pycha buduje wieże, by zdobyć imię; Bóg poniża pysznych. Szukaj Jego imienia bardziej niż swojego."
+ },
+ "pentecost": {
+  "question": "Kto w dniu Pięćdziesiątnicy napełnił uczniów, z językami jakby z ognia?",
+  "options": ["Duch Święty", "Aniołowie", "Prorocy", "Mojżesz i Eliasz"],
+  "about": "Pięćdziesiąt dni po zmartwychwstaniu Jezusa Jego naśladowcy modlili się razem w Jerozolimie. Nagle zstąpił na nich Duch Święty, tak jak obiecał Jezus.",
+  "think": "Duch przyszedł, aby napełnić mocą zwyczajnych ludzi. Proś Go, by napełnił cię dziś."
+ },
+ "rock_water": {
+  "question": "Co Bóg kazał zrobić Mojżeszowi, aby ze skały wypłynęła woda?",
+  "options": ["Uderzyć w skałę", "Wykopać studnię", "Modlić się o deszcz", "Wylać na nią oliwę"],
+  "about": "Na pustyni lud Izraela cierpiał pragnienie i gniewał się na Mojżesza. Bóg posłał Mojżesza do skały na Horebie.",
+  "think": "Bóg wyprowadził wodę ze skały na pustyni. Może zaopatrzyć cię nawet w twoim najsuchszym miejscu."
+ },
+ "damascus": {
+  "question": "Kto spotkał Jezusa w jasnej światłości w drodze do Damaszku?",
+  "options": ["Saul", "Barnaba", "Szczepan", "Sylas"],
+  "about": "Saul nienawidził naśladowców Jezusa i szedł do Damaszku, aby ich aresztować. W drodze ukazał mu się zmartwychwstały Jezus; później stał się apostołem Pawłem.",
+  "think": "Jezus uczynił swojego najzaciętszego wroga swoim największym posłańcem. Nikt nie jest poza Jego zasięgiem."
+ },
+ "rainbow": {
+  "question": "Jaki znak dał Bóg na potwierdzenie obietnicy, że już nigdy nie zniszczy ziemi potopem?",
+  "options": ["Tęczę", "Gołębicę", "Gwiazdę", "Górę"],
+  "about": "Po potopie Noe i jego rodzina wyszli z arki. Bóg zawarł przymierze z nimi i z każdym żywym stworzeniem.",
+  "think": "Każda tęcza przypomina, że Bóg dotrzymuje obietnic."
+ },
+ "stephen": {
+  "question": "Kto modlił się za tych, którzy go kamienowali: „Panie, nie poczytaj im tego za grzech”?",
+  "options": ["Szczepan", "Jakub", "Piotr", "Filip"],
+  "about": "Szczepan był jednym z pierwszych przywódców wybranych w pierwotnym Kościele, pełen wiary i Ducha Świętego. Został ukamienowany za głoszenie Jezusa.",
+  "think": "Szczepan przebaczył tak, jak przebaczył Jezus. Czy jest ktoś, komu musisz dziś przebaczyć?"
+ },
+ "fruit": {
+  "question": "Co jest na pierwszym miejscu w owocu Ducha?",
+  "options": ["Miłość", "Cierpliwość", "Wstrzemięźliwość", "Wierność"],
+  "about": "Paweł pisał do zborów w Galacji o życiu w Duchu. Owoc Ducha to charakter, który Bóg rozwija w tych, którzy do Niego należą.",
+  "think": "Miłość jest pierwsza. Proś Ducha, aby dziś rozwijał w tobie swój owoc."
+ },
+ "lots_wife": {
+  "question": "Co stało się z żoną Lota, gdy obejrzała się na Sodomę?",
+  "options": ["Stała się słupem soli", "Oślepła", "Zamieniła się w kamień", "Została porwana"],
+  "about": "Bóg miał zniszczyć grzeszne miasta Sodomę i Gomorę. Aniołowie wyprowadzili Lota i jego rodzinę i powiedzieli im, by nie oglądali się za siebie.",
+  "think": "Obejrzała się na to, z czego Bóg ją wyprowadzał. Czy jest coś, za czym musisz przestać się oglądać?"
+ },
+ "greatest_love": {
+  "question": "Którą z trzech — wiarę, nadzieję i miłość — Paweł nazywa największą?",
+  "options": ["Miłość", "Wiarę", "Nadzieję", "Żadną z nich"],
+  "about": "Paweł pisał do zboru w Koryncie, który był dumny ze swoich duchowych darów. Pokazał im, że bez miłości wszystko to jest niczym.",
+  "think": "Miłość nigdy nie ustaje. Gdzie możesz dziś okazać tę miłość?"
+ },
+ "aaron": {
+  "question": "Którego brata Bóg dał Mojżeszowi, aby mówił w jego imieniu?",
+  "options": ["Aaron", "Jozue", "Kaleb", "Chur"],
+  "about": "Gdy Bóg posłał Mojżesza do faraona, Mojżesz powiedział, że nie jest wymowny. Bóg dał mu brata Aarona, aby mówił za niego.",
+  "think": "Bóg dał Mojżeszowi pomocnika w jego słabości. Nam także daje siebie nawzajem."
+ },
+ "sword": {
+  "question": "Czym jest miecz Ducha w Bożej zbroi?",
+  "options": ["Słowem Bożym", "Wiarą", "Modlitwą", "Prawdą"],
+  "about": "Paweł pisał z więzienia o duchowej walce, z którą mierzą się chrześcijanie. Opisał zbroję, którą daje Bóg, część po części, jak zbroję rzymskiego żołnierza.",
+  "think": "Słowo Boże jest twoją bronią przeciw lękowi i kłamstwu. Który werset zabierzesz dziś ze sobą?"
+ },
+ "joshua": {
+  "question": "Do kogo Bóg powiedział: „Wzmocnij się i bądź mężny… PAN, twój Bóg, jest z tobą, dokądkolwiek pójdziesz”?",
+  "options": ["Jozue", "Mojżesz", "Gedeon", "Kaleb"],
+  "about": "Po śmierci Mojżesza Jozue miał wprowadzić Izraela do Ziemi Obiecanej. Bóg przemówił do niego, aby dodać mu odwagi do tego zadania.",
+  "think": "Odwaga pochodzi z Bożej obecności, a nie z twojej siły. Wejdź w ten dzień, wiedząc, że On jest z tobą."
+ },
+ "thanksgiving": {
+  "question": "Paweł napisał: „Nie troszczcie się o nic, ale we wszystkim przez modlitwę i prośbę … niech wasze pragnienia będą znane Bogu” — z czym?",
+  "options": ["Z dziękczynieniem", "Z postem", "Ze łzami", "W milczeniu"],
+  "about": "Paweł napisał to z więzienia do zboru w Filippi. Nawet w kajdanach uczył ich, jak zamiast niepokoju znaleźć Boży pokój.",
+  "think": "Dziękczynienie i modlitwa otwierają drogę Bożemu pokojowi. Podziękuj Mu teraz za trzy rzeczy."
+ },
+ "tears": {
+  "question": "Co według Objawienia Bóg otrze z każdego oka?",
+  "options": ["Każdą łzę", "Każdy grzech", "Każde wspomnienie", "Każde marzenie"],
+  "about": "W ostatniej księdze Biblii Jan otrzymał wizję nowego nieba i nowej ziemi. Sam Bóg będzie mieszkał ze swoim ludem na zawsze.",
+  "think": "Pewnego dnia nie będzie już śmierci ani bólu. Niech ta nadzieja niesie cię dzisiaj."
+ }
+}

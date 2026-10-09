@@ -1,0 +1,542 @@
+{
+ "noah_ark": {
+  "question": "Ni nani aliyejenga safina ili kuiokoa familia yake kutoka kwa gharika?",
+  "options": ["Noa", "Abrahamu", "Mose", "Yona"],
+  "about": "Dunia ilikuwa imejaa ukatili, lakini Noa alitembea na Mungu. Mungu alimwambia ajenge chombo kikubwa sana, safina, ili kuokoa familia yake na wanyama kutoka kwa gharika iliyokuwa inakuja.",
+  "think": "Noa alitii kabla tone moja la mvua halijanyesha. Ni jambo gani Mungu anakuomba umwamini leo?"
+ },
+ "born_where": {
+  "question": "Yesu alizaliwa katika mji gani?",
+  "options": ["Bethlehemu", "Nazareti", "Yerusalemu", "Kapernaumu"],
+  "about": "Kwa sababu ya sensa, Yosefu na Maria walilazimika kusafiri hadi Bethlehemu, mji wa mfalme Daudi. Huko ndiko Yesu alikozaliwa, kama nabii Mika alivyokuwa ametabiri.",
+  "think": "Mfalme wa wafalme alilazwa horini. Mungu anakaribia hata sehemu za chini kabisa za maisha yako."
+ },
+ "seventh_day": {
+  "question": "Mungu alifanya nini siku ya saba?",
+  "options": ["Alipumzika", "Alimuumba mwanadamu", "Aliumba nyota", "Aliumba bahari"],
+  "about": "Kwa siku sita Mungu aliumba mbingu, dunia na vyote vilivyomo. Siku ya saba alipumzika, akaibariki siku hiyo na kuifanya takatifu.",
+  "think": "Hata Mungu alipumzika. Je, wiki hii kuna muda wa kusimama, kupumzika na kukumbuka kwamba yeye ndiye anayeushikilia ulimwengu?"
+ },
+ "water_wine": {
+  "question": "Kwenye harusi ya Kana, Yesu aligeuza maji kuwa nini?",
+  "options": ["Divai", "Mafuta", "Maziwa", "Asali"],
+  "about": "Kwenye harusi huko Kana divai iliisha, jambo ambalo lilikuwa aibu kubwa kwa familia. Hii ilikuwa ishara ya kwanza ya Yesu, na wanafunzi wake wakamwamini.",
+  "think": "Watumishi walifanya yale Yesu aliyowaambia na wakaona muujiza. Je, kuna hatua ndogo anayokuomba uichukue?"
+ },
+ "flood_days": {
+  "question": "Mvua ilinyesha kwa siku na usiku ngapi wakati wa gharika?",
+  "options": ["40", "7", "12", "100"],
+  "about": "Mungu alileta gharika kwa sababu ya uovu wa ulimwengu, lakini aliwalinda Noa na familia yake salama ndani ya safina. Mvua ilinyesha siku arobaini mchana na usiku.",
+  "think": "Siku arobaini zilionekana hazina mwisho, lakini Mungu alimkumbuka Noa. Hajakusahau wewe pia katika kipindi chako kirefu kigumu."
+ },
+ "baptism": {
+  "question": "Wakati wa ubatizo wa Yesu, ni nini kilichoshuka juu yake kama hua?",
+  "options": ["Roho wa Mungu", "Nyota inayong'aa", "Malaika", "Moto kutoka mbinguni"],
+  "about": "Yesu alikuja kwenye Mto Yordani ili abatizwe na Yohana. Alipotoka majini, mbingu zilifunguka na Baba akatangaza upendo wake kwake.",
+  "think": "Baba alisema, “Huyu ni Mwanangu mpendwa.” Ndani ya Kristo, Mungu anakuita wewe pia mpendwa wake."
+ },
+ "abraham_stars": {
+  "question": "Mungu alimwambia Abrahamu ahesabu nini, ili kuonyesha uzao wake ungekuwa mwingi kiasi gani?",
+  "options": ["Nyota", "Miti", "Milima", "Mito"],
+  "about": "Abrahamu alikuwa mzee na hakuwa na watoto, lakini Mungu alimwahidi familia. Mungu alimtoa nje na kumwonyesha anga la usiku.",
+  "think": "Abrahamu alimwamini Bwana, naye akamhesabia hilo kuwa haki. Ni ahadi gani ya Mungu utakayoishikilia leo?"
+ },
+ "fishers": {
+  "question": "Petro na Andrea walikuwa wakifanya nini Yesu alipowaita wamfuate?",
+  "options": ["Walikuwa wakivua samaki", "Walikuwa wakilima", "Walikuwa wakikusanya kodi", "Walikuwa wakijenga nyumba"],
+  "about": "Petro na ndugu yake Andrea walikuwa wavuvi katika Bahari ya Galilaya. Yesu aliwaita wamfuate na kuwa wavuvi wa watu.",
+  "think": "Waliacha nyavu zao mara moja. Ni nini Yesu anaweza kuwa anakuita uache ili umfuate?"
+ },
+ "ram": {
+  "question": "Abrahamu alipokuwa karibu kumtoa Isaki sadaka, Mungu alitoa nini badala yake?",
+  "options": ["Kondoo dume", "Hua", "Ndama", "Mbuzi"],
+  "about": "Mungu alimjaribu Abrahamu kwa kumwomba amtoe mwanawe wa pekee, Isaki. Dakika ya mwisho Mungu alimzuia na kumpa kondoo dume aliyekwama kichakani.",
+  "think": "Abrahamu aliita mahali pale Yehova-Yire, yaani Bwana atatoa. Mungu anaona unachohitaji kabla hujakiona."
+ },
+ "salt_light": {
+  "question": "Yesu alisema wafuasi wake ni chumvi ya dunia na … ya ulimwengu?",
+  "options": ["Nuru", "Mkate", "Tumaini", "Nguvu"],
+  "about": "Katika Mahubiri ya Mlimani, Yesu aliwafundisha wafuasi wake jinsi ya kuishi. Chumvi hutia ladha na huhifadhi; nuru huwaonyesha wengine njia.",
+  "think": "Hakuna anayewasha taa na kuifunika kwa pishi. Ni wapi nuru yako inaweza kumwangazia mtu wiki hii?"
+ },
+ "jacob_ladder": {
+  "question": "Yakobo aliona nini katika ndoto yake huko Betheli?",
+  "options": ["Ngazi iliyofika mbinguni", "Kichaka kinachowaka moto", "Gharika kubwa", "Ng'ombe saba wanono"],
+  "about": "Yakobo alikuwa akimkimbia kaka yake Esau, akiwa peke yake na mwenye hofu. Usiku ule Mungu alikutana naye katika ndoto na kuahidi kuwa pamoja naye.",
+  "think": "Mungu alimwambia Yakobo, “Niko pamoja nawe nami nitakulinda kila uendako.” Hauko peke yako katika safari yako."
+ },
+ "daily_bread": {
+  "question": "Katika Sala ya Bwana, tunamwomba Mungu atupe nini leo?",
+  "options": ["Riziki yetu ya kila siku", "Utajiri", "Maisha marefu", "Ushindi"],
+  "about": "Wanafunzi walimwomba Yesu awafundishe kuomba, naye akawapa sala hii. Kuomba riziki ya kila siku ni kumtegemea Mungu kwa mahitaji ya kila siku.",
+  "think": "Yesu alitufundisha kuomba mahitaji ya leo, siku moja baada ya nyingine. Unahitaji nini kutoka kwa Mungu leo?"
+ },
+ "joseph_coat": {
+  "question": "Yakobo alimpa mwanawe Yosefu zawadi gani maalum?",
+  "options": ["Joho lililorembwa vizuri", "Pete ya dhahabu", "Upanga", "Kundi la kondoo"],
+  "about": "Yakobo alimpenda Yosefu kuliko wanawe wengine na akaonyesha hivyo kwa joho la pekee. Kaka zake wakaona wivu na kumchukia.",
+  "think": "Zawadi hiyo iliamsha wivu wa kaka zake. Mwombe Mungu akusaidie kufurahia pamoja na wengine badala ya kuwaonea wivu."
+ },
+ "birds": {
+  "question": "Yesu alisema tusiwe na wasiwasi, kwa sababu Baba yetu wa mbinguni huwalisha nani?",
+  "options": ["Ndege wa angani", "Samaki wa baharini", "Simba", "Kondoo"],
+  "about": "Watu wengi huhangaika kuhusu chakula, mavazi na siku zijazo. Yesu aliwaonyesha ndege na maua ili kuonyesha jinsi Baba anavyoitunza viumbe vyake kwa uaminifu.",
+  "think": "Ikiwa anawalisha ndege, si zaidi sana atakutunza wewe? Mkabidhi wasiwasi wako wa leo."
+ },
+ "joseph_sold": {
+  "question": "Ni nani aliyeuzwa na kaka zake na baadaye akaiokoa familia yake kutoka kwa njaa huko Misri?",
+  "options": ["Yosefu", "Benyamini", "Reubeni", "Yuda"],
+  "about": "Kaka zake Yosefu wenye wivu walimuuza kama mtumwa huko Misri. Miaka mingi baadaye, akiwa mtawala huko, aliwasamehe na kuwaokoa kutoka kwa njaa.",
+  "think": "Yosefu alisema, “Si ninyi mlionileta huku, bali ni Mungu.” Mungu anaweza kugeuza ubaya kuwa wema."
+ },
+ "ask_seek": {
+  "question": "“Ombeni nanyi mtapewa; tafuteni nanyi mtapata; …” Yesu anamalizia vipi?",
+  "options": ["Bisheni nanyi mtafunguliwa mlango", "Subirini nanyi mtapokea", "Fanyeni kazi nanyi mtapata mshahara", "Toeni nanyi mtapewa"],
+  "about": "Yesu alifundisha kwamba Mungu ni Baba mwema anayependa kuwapa watoto wake vitu vyema. Kwa hiyo tunaweza kuendelea kuomba bila kukata tamaa.",
+  "think": "Yesu anakualika uendelee kuomba. Ni jambo gani uliloacha kuliombea ambalo unaweza kumletea tena?"
+ },
+ "baby_moses": {
+  "question": "Mama yake Mose alimficha mtoto wake wapi ili kumwokoa?",
+  "options": ["Ndani ya kisafina katikati ya matete kando ya mto", "Pangoni", "Ikulu", "Kisimani"],
+  "about": "Farao alikuwa ameamuru kila mtoto wa kiume wa Kiebrania auawe. Mama yake Mose alimficha ndani ya kisafina kwenye Mto Naili, ambako binti Farao alimpata.",
+  "think": "Tendo dogo la imani la mama mmoja likawa sehemu ya mpango mkuu wa Mungu. Uaminifu wako mdogo pia una maana."
+ },
+ "storm": {
+  "question": "Ni nini Yesu alikituliza kwa neno moja wanafunzi wake walipokuwa kwenye mashua?",
+  "options": ["Dhoruba", "Umati wa watu", "Homa", "Moto"],
+  "about": "Yesu alikuwa amelala ndani ya mashua wakati dhoruba kali ilipozuka ziwani. Wanafunzi waliojaa hofu walimwamsha, naye akatuliza upepo na mawimbi kwa neno moja.",
+  "think": "Wanafunzi walilia, “Mwalimu, hujali kama tunazama?” Alijali, na akanena amani. Mletee dhoruba unayopitia."
+ },
+ "burning_bush": {
+  "question": "Mungu alizungumza na Mose kwa mara ya kwanza jangwani kwa njia gani?",
+  "options": ["Kutoka kwenye kichaka kinachowaka moto", "Kwa ndoto", "Kutoka kwenye wingu", "Kupitia nabii"],
+  "about": "Mose alikuwa akichunga kondoo jangwani alipoona kichaka kinachowaka moto bila kuteketea. Mungu alisema naye kutoka ndani yake na kumtuma akawaokoe Israeli.",
+  "think": "Mose alikuwa akifanya kazi yake ya kila siku Mungu alipomwita. Mtafute Mungu katika sehemu za kawaida za siku yako."
+ },
+ "jairus": {
+  "question": "Binti yake Yairo alikuwa na umri gani Yesu alipomfufua?",
+  "options": ["12", "7", "3", "20"],
+  "about": "Yairo, kiongozi wa sinagogi, alimsihi Yesu aje kwa binti yake aliyekuwa karibu kufa. Kabla Yesu hajafika, habari ikaja kwamba amekwisha kufa.",
+  "think": "Yesu alimwambia Yairo, “Usiogope. Amini tu.” Mshikilie yeye habari zinapokuwa mbaya."
+ },
+ "red_sea": {
+  "question": "Israeli walitorokaje jeshi la Farao lilipowafuatia hadi baharini?",
+  "options": ["Walivuka katika nchi kavu", "Walisafiri kwa mashua", "Walijificha milimani", "Walipigana wakashinda"],
+  "about": "Israeli walikuwa wametoka utumwani Misri punde tu jeshi la Farao lilipowafuatia hadi Bahari ya Shamu. Mungu aligawanya maji ili watu wake wapite.",
+  "think": "Ilipoonekana hakuna njia, Mungu alifanya njia. Mwombe akupe njia ya kupita katika kile kinachokuzuia."
+ },
+ "loaves": {
+  "question": "Mvulana alikuwa na mikate mingapi Yesu alipowalisha watu elfu tano?",
+  "options": ["5", "2", "7", "12"],
+  "about": "Umati mkubwa ulikuwa umemfuata Yesu hadi mahali pasipo na watu, na hapakuwa na chakula. Mvulana mmoja alitoa chakula chake kidogo, na Yesu akawalisha wote kwa hicho.",
+  "think": "Chakula kidogo cha mvulana kikawa karamu mikononi mwa Yesu. Mpe kile kidogo ulicho nacho."
+ },
+ "manna": {
+  "question": "Mungu alileta nini kila asubuhi ili kuwalisha Israeli jangwani?",
+  "options": ["Mana, mkate kutoka mbinguni", "Samaki", "Matunda", "Mchele"],
+  "about": "Jangwani Israeli walilalamika kwa njaa. Mungu alileta mana kila asubuhi, ya kutosha kwa kila siku, kwa miaka arobaini.",
+  "think": "Mana ilikuja mpya kila siku na haikuweza kuwekwa akiba. Mungu anatoa neema ya leo; mwamini kwa ajili ya kesho."
+ },
+ "walks_water": {
+  "question": "Ni nani aliyetembea juu ya maji kwenda kwa Yesu, kisha akaanza kuzama?",
+  "options": ["Petro", "Yohana", "Tomaso", "Andrea"],
+  "about": "Baada ya kuwalisha umati, Yesu aliwatuma wanafunzi wake ng'ambo ya ziwa na akawajia usiku akitembea juu ya maji. Petro aliomba amjie.",
+  "think": "Petro alizama alipoutazama upepo, na Yesu akamshika mara moja. Endelea kumwangalia yeye."
+ },
+ "sinai": {
+  "question": "Ni juu ya mlima gani Mungu alimpa Mose vibao vya sheria?",
+  "options": ["Sinai", "Karmeli", "Sayuni", "Ararati"],
+  "about": "Baada ya kuwatoa Israeli Misri, Mose alikutana na Mungu juu ya Mlima Sinai. Huko Mungu alimpa sheria iliyoandikwa kwenye vibao viwili vya mawe.",
+  "think": "Sheria ya Mungu iliandikwa kwa kidole chake mwenyewe. Ni neno lipi lake linalohitaji kuandikwa moyoni mwako leo?"
+ },
+ "samaritan": {
+  "question": "Katika hadithi ya Yesu, ni nani aliyesimama kumsaidia mtu aliyepigwa na wanyang'anyi?",
+  "options": ["Msamaria", "Kuhani", "Mlawi", "Askari"],
+  "about": "Mtaalamu wa sheria alimuuliza Yesu, “Jirani yangu ni nani?” Yesu alijibu kwa hadithi ambayo shujaa wake alikuwa Msamaria, mtu ambaye Wayahudi wengi wa wakati huo walimdharau.",
+  "think": "Yesu aliuliza, “Ni yupi kati ya hawa watatu aliyekuwa jirani?” Ni nani aliyelala kando ya njia yako leo?"
+ },
+ "jericho": {
+  "question": "Nini kilitokea Israeli walipozunguka Yeriko, wakapiga kelele na kupiga tarumbeta?",
+  "options": ["Kuta zilianguka", "Mvua ilianza kunyesha", "Malango yalifunguka", "Adui walikimbia"],
+  "about": "Yeriko ulikuwa mji imara wenye kuta mpakani mwa Nchi ya Ahadi. Mungu alimwambia Yoshua auzunguke kwa siku saba badala ya kuushambulia.",
+  "think": "Israeli walishinda kwa kutii mpango ambao haukuonekana kuwa na maana. Uamini mpango wa Mungu, hata unapoonekana wa ajabu."
+ },
+ "lost_sheep": {
+  "question": "Katika hadithi ya Yesu, mchungaji aliwaacha kondoo wangapi ili kumtafuta mmoja aliyepotea?",
+  "options": ["99", "9", "49", "100"],
+  "about": "Viongozi wa dini walinung'unika kwamba Yesu anawakaribisha wenye dhambi. Alijibu kwa hadithi za vitu vilivyopotea vinavyotafutwa na kupatikana kwa furaha kubwa.",
+  "think": "Mbinguni kuna furaha kwa mmoja anayerudi nyumbani. Wewe unastahili kutafutwa."
+ },
+ "gideon": {
+  "question": "Ni nani aliyemwomba Mungu ishara kwa kutumia ngozi ya kondoo?",
+  "options": ["Gideoni", "Samsoni", "Yoshua", "Baraka"],
+  "about": "Mungu alimwita Gideoni awaokoe Israeli kutoka kwa wavamizi, lakini alijiona dhaifu na mwenye hofu. Alimwomba Mungu ishara, na Mungu akampa kwa uvumilivu.",
+  "think": "Mungu alijibu mashaka ya Gideoni kwa uvumilivu. Mletee maswali yako ya kweli."
+ },
+ "prodigal": {
+  "question": "Baba alifanya nini alipomwona mwanawe aliyepotea akirudi nyumbani?",
+  "options": ["Alikimbia akamkumbatia", "Alimfukuza", "Alimfanya mtumishi", "Alisubiri aombe msamaha"],
+  "about": "Mwana mdogo alichukua sehemu yake ya urithi na kuifuja mbali na nyumbani. Alipokuwa na njaa kali, aliamua kurudi kwa baba yake.",
+  "think": "Baba alikimbia. Ndivyo Mungu anavyompokea kila anayerudi nyumbani."
+ },
+ "samson": {
+  "question": "Nguvu nyingi za nani zilihusiana na nywele zake zisizonyolewa?",
+  "options": ["Samsoni", "Gideoni", "Daudi", "Goliathi"],
+  "about": "Samsoni aliwekwa wakfu kwa Mungu tangu kuzaliwa, na nywele zake ndefu zilikuwa ishara ya nadhiri hiyo. Delila alipozinyoa, nguvu zake zikamwacha.",
+  "think": "Nguvu za Samsoni zilikuwa zawadi ya Mungu, si zake mwenyewe. Kaa karibu na Mtoaji, si na zawadi zake tu."
+ },
+ "ten_lepers": {
+  "question": "Kati ya wenye ukoma kumi walioponywa, wangapi walirudi kumshukuru Yesu?",
+  "options": ["1", "9", "10", "3"],
+  "about": "Wanaume kumi wenye ukoma walimwita Yesu kwa mbali, naye akawatuma kwa makuhani. Walipokuwa njiani, wakatakasika.",
+  "think": "Tisa waliponywa; mmoja alirudi kushukuru. Chukua sasa muda mfupi kumshukuru Mungu."
+ },
+ "ruth": {
+  "question": "Ni nani aliyemwambia Naomi, “Utakakokwenda nami nitakwenda; Mungu wako atakuwa Mungu wangu”?",
+  "options": ["Ruthu", "Orpa", "Esta", "Raheli"],
+  "about": "Baada ya kumpoteza mume wake na wanawe katika nchi ya kigeni, Naomi aliamua kurudi nyumbani. Mkwe wake Ruthu, Mmoabu, alikataa kumwacha.",
+  "think": "Ruthu alichagua upendo wa uaminifu wakati kuondoka kulikuwa rahisi zaidi. Ni nani anayehitaji uaminifu wako wiki hii?"
+ },
+ "zacchaeus": {
+  "question": "Ni nani aliyepanda mkuyu ili amwone Yesu?",
+  "options": ["Zakayo", "Bartimayo", "Nikodemo", "Lazaro"],
+  "about": "Zakayo alikuwa mkuu wa watoza ushuru huko Yeriko, tajiri na asiyependwa. Alikuwa mfupi, kwa hiyo alipanda mti ili amwone Yesu akipita.",
+  "think": "Yesu alikwenda nyumbani kwa Zakayo kabla hajabadilika. Anakupokea jinsi ulivyo."
+ },
+ "samuel": {
+  "question": "Ni mvulana gani aliyesikia Mungu akimwita kwa jina usiku katika nyumba ya Mungu?",
+  "options": ["Samweli", "Daudi", "Isaki", "Yosia"],
+  "about": "Samweli alikuwa mvulana aliyetumika katika nyumba ya Mungu chini ya kuhani Eli. Mungu alimwita kwa jina usiku na akaanza kuzungumza naye.",
+  "think": "Samweli alisema, “Nena Bwana, kwa kuwa mtumishi wako anasikiliza.” Chukua dakika moja ya utulivu leo ili usikilize tu."
+ },
+ "lazarus": {
+  "question": "Ni nani Yesu alimfufua baada ya siku nne kaburini?",
+  "options": ["Lazaro", "Stefano", "Yairo", "Yosefu"],
+  "about": "Lazaro, kaka yake Maria na Martha, alikuwa amekufa, na Yesu alifika siku nne baadaye. Alimwita atoke kaburini akiwa hai.",
+  "think": "Yesu alilia kabla ya kumfufua Lazaro. Anajali huzuni yako, si suluhisho tu."
+ },
+ "goliath": {
+  "question": "Ni nani aliyemuua jitu Goliathi kwa kombeo na jiwe?",
+  "options": ["Daudi", "Sauli", "Samsoni", "Yonathani"],
+  "about": "Jitu la Kifilisti, Goliathi, lililitukana jeshi la Israeli kwa siku arobaini, na kila mtu aliogopa. Kijana Daudi alikabiliana naye akimtumainia Mungu.",
+  "think": "Daudi alikuja kwa jina la Bwana. Ni jitu gani maishani mwako linalohitaji kukutana na Mungu huyo?"
+ },
+ "bartimaeus": {
+  "question": "Ni kipofu gani aliyepaza sauti, “Yesu, Mwana wa Daudi, nihurumie!”?",
+  "options": ["Bartimayo", "Zakayo", "Nikodemo", "Lazaro"],
+  "about": "Bartimayo alikuwa ombaomba kipofu aliyeketi kando ya njia nje ya Yeriko. Aliposikia kwamba Yesu anapita, alilia akiomba rehema.",
+  "think": "Wengine walipomkemea anyamaze, alizidi kupaza sauti. Usiache kumlilia Yesu."
+ },
+ "shepherd_boy": {
+  "question": "Daudi alikuwa akifanya nini Samweli alipokuja kumtia mafuta awe mfalme?",
+  "options": ["Alikuwa akichunga kondoo", "Alikuwa akivua samaki", "Alikuwa akipigana jeshini", "Alikuwa akitumika hekaluni"],
+  "about": "Mungu alimtuma nabii Samweli kwa familia ya Yese ili amtie mafuta mfalme ajaye. Daudi, mwana mdogo wa Yese, alikuwa nje mashambani pamoja na kondoo.",
+  "think": "Mwanadamu hutazama sura ya nje, lakini Bwana hutazama moyoni. Anaona ndani yako kile ambacho wengine hukipuuza."
+ },
+ "children": {
+  "question": "Wanafunzi walipowazuia watu kuwaleta watoto kwa Yesu, yeye alifanya nini?",
+  "options": ["Aliwapokea na kuwabariki", "Aliwarudisha nyumbani", "Aliwaambia wasubiri", "Aliwafundisha watu wazima tu"],
+  "about": "Watu walikuwa wakiwaleta watoto wao ili Yesu awabariki, na wanafunzi walidhani yuko na shughuli nyingi mno. Yesu aliwakasirikia wanafunzi.",
+  "think": "Ufalme ni wa wale wanaokuja kama watoto. Mjie kwa unyenyekevu na kwa kumwamini."
+ },
+ "solomon": {
+  "question": "Ni mfalme gani aliyemwomba Mungu hekima badala ya utajiri?",
+  "options": ["Solomoni", "Daudi", "Sauli", "Hezekia"],
+  "about": "Solomoni alipokuwa mfalme akiwa bado kijana, Mungu alimwambia aombe chochote alichotaka. Solomoni aliomba hekima ili awaongoze watu wa Mungu vizuri.",
+  "think": "Solomoni aliomba hekima ili awatumikie wengine vizuri. Mwombe Mungu hekima kwa yale unayokabiliana nayo leo."
+ },
+ "mary_martha": {
+  "question": "Ni dada yupi aliyeketi miguuni mwa Yesu akisikiliza, wakati mwingine alikuwa akishughulika kuhudumia?",
+  "options": ["Maria", "Martha", "Ana", "Elizabeti"],
+  "about": "Yesu alikuwa mgeni nyumbani kwa dada wawili, Martha na Maria. Martha alikuwa akishughulika kuhudumia huku Maria akiketi akimsikiliza.",
+  "think": "Yesu alisema Maria amechagua kile kilicho bora. Tenga muda leo ili tu uwe pamoja naye."
+ },
+ "ravens": {
+  "question": "Ni nabii gani aliyelishwa na kunguru kando ya kijito?",
+  "options": ["Eliya", "Elisha", "Isaya", "Ezekieli"],
+  "about": "Wakati wa ukame mrefu katika Israeli, Mungu alimtuma nabii Eliya akajifiche kando ya kijito. Kunguru walimletea mkate na nyama asubuhi na jioni.",
+  "think": "Mungu alimtunza Eliya siku moja baada ya nyingine. Mwamini kwa ajili ya mkate wa leo."
+ },
+ "great_catch": {
+  "question": "Baada ya usiku mzima bila kupata kitu, nini kilitokea Petro aliposhusha nyavu kwa neno la Yesu?",
+  "options": ["Samaki wengi kiasi kwamba nyavu zilianza kukatika", "Walipata samaki mmoja", "Mashua ilizama", "Dhoruba ilitokea"],
+  "about": "Petro na wenzake walikuwa wamevua usiku kucha bila kupata kitu. Yesu alipowaambia wajaribu tena, samaki walikuwa wengi mno hata Petro akaanguka miguuni pake.",
+  "think": "Petro alitii hata alipokuwa amechoka na mwenye shaka. Jaribu tena pale Yesu anapokuambia."
+ },
+ "carmel_fire": {
+  "question": "Eliya alipoomba juu ya Mlima Karmeli, Mungu alijibuje?",
+  "options": ["Moto ulishuka kutoka mbinguni", "Mvua ilinyesha mara moja", "Tetemeko lilitikisa mlima", "Sauti ilisema kutoka kwenye wingu"],
+  "about": "Israeli walikuwa wakimwabudu mungu wa uongo Baali. Eliya aliwapa changamoto manabii wake juu ya Mlima Karmeli ili kuona ni Mungu yupi angejibu kwa moto.",
+  "think": "Eliya aliomba kwa unyenyekevu, na Mungu akajibu. Bwana ndiye Mungu; mletee maombi yako leo."
+ },
+ "sower": {
+  "question": "Katika mfano wa Yesu wa mpanzi, mbegu inawakilisha nini?",
+  "options": ["Neno la Mungu", "Pesa", "Matendo mema", "Muda"],
+  "about": "Yesu alisimulia hadithi ya mpanzi ambaye mbegu zake zilianguka kwenye aina tofauti za udongo. Kila udongo unaonyesha jinsi watu wanavyolipokea neno la Mungu.",
+  "think": "Udongo mzuri husikia neno, hulishika na kuzaa matunda kwa uvumilivu. Litunze neno la leo moyoni mwako."
+ },
+ "whisper": {
+  "question": "Mungu alipokutana na Eliya mlimani, alikuja kwa namna gani?",
+  "options": ["Katika sauti ya utulivu ya kunong'ona", "Katika upepo", "Katika tetemeko la nchi", "Katika moto"],
+  "about": "Eliya alikuwa na hofu, amechoka na yuko peke yake baada ya malkia Yezebeli kutishia maisha yake. Mungu alikutana naye mlimani, si kwa nguvu, bali kwa sauti ya utulivu.",
+  "think": "Mungu hakuwa katika kelele bali katika kunong'ona. Tafuta muda wa utulivu ili umsikie leo."
+ },
+ "good_shepherd": {
+  "question": "Yesu alisema, “Mimi ndimi mchungaji mwema.” Mchungaji mwema hufanya nini?",
+  "options": ["Huutoa uhai wake kwa ajili ya kondoo", "Ana makundi mengi", "Halali kamwe", "Anaishi milimani"],
+  "about": "Yesu alijifananisha na mchungaji, na watu wake na kondoo. Mchungaji mwema huwalinda kondoo wake hata kwa gharama ya uhai wake mwenyewe.",
+  "think": "Mchungaji aliyetoa uhai wake kwa ajili yako anakujua kwa jina."
+ },
+ "naaman": {
+  "question": "Ni jemadari gani aliyeponywa ukoma baada ya kujiosha mara saba katika Yordani?",
+  "options": ["Naamani", "Goliathi", "Sisera", "Abneri"],
+  "about": "Naamani alikuwa jemadari hodari wa jeshi la Shamu, lakini alikuwa na ukoma. Nabii Elisha alimwambia ajiose mara saba katika Mto Yordani.",
+  "think": "Naamani alikaribia kukosa uponyaji wake kwa sababu ulionekana rahisi mno. Usidharau mambo rahisi ambayo Mungu anakuomba."
+ },
+ "nicodemus": {
+  "question": "Ni nani aliyekuja kwa Yesu usiku na kusikia kwamba anapaswa kuzaliwa mara ya pili?",
+  "options": ["Nikodemo", "Zakayo", "Lazaro", "Yosefu"],
+  "about": "Nikodemo alikuwa Farisayo na kiongozi wa Wayahudi. Alikuja kwa Yesu usiku, naye Yesu akamwambia kwamba anahitaji kuzaliwa upya na Mungu.",
+  "think": "Yesu alizungumza juu ya kuzaliwa upya kwa Roho. Kamwe si kuchelewa kuanza upya na Mungu."
+ },
+ "furnace": {
+  "question": "Nini kiliwapata Shadraki, Meshaki na Abednego katika tanuru la moto?",
+  "options": ["Moto haukuwadhuru", "Walitoroka kupitia handaki", "Moto ulizimika", "Waliungua vibaya"],
+  "about": "Mfalme Nebukadneza aliamuru kila mtu asujudie sanamu yake ya dhahabu. Vijana watatu wa Kiyahudi walikataa, nao wakatupwa ndani ya tanuru la moto.",
+  "think": "Mungu hakuwaepusha na moto, lakini alikuwa pamoja nao ndani yake. Hauko peke yako katika moto wako."
+ },
+ "living_water": {
+  "question": "Yesu alimpa nini mwanamke Msamaria kisimani?",
+  "options": ["Maji ya uzima", "Mkate", "Pesa", "Nyumba mpya"],
+  "about": "Yesu alizungumza na mwanamke Msamaria kisimani, ingawa Wayahudi na Wasamaria hawakuchangamana. Alimpa maji yanayokata kiu milele.",
+  "think": "Yesu anatoa maji yanayokuwa chemchemi ya uzima wa milele. Mletee kiu yako."
+ },
+ "lions_den": {
+  "question": "Ni nani aliyetupwa katika tundu la simba kwa sababu ya kumwomba Mungu?",
+  "options": ["Danieli", "Yosefu", "Eliya", "Yeremia"],
+  "about": "Maafisa wenye wivu walimdanganya mfalme Dario atunge sheria kwamba kwa siku thelathini mtu yeyote asiombe kwa mwingine ila kwake. Danieli aliendelea kumwomba Mungu.",
+  "think": "Danieli aliendelea kuomba hata ilipokatazwa. Uaminifu ungeonekanaje kwako leo?"
+ },
+ "cloak": {
+  "question": "Mwanamke aliyekuwa mgonjwa kwa miaka kumi na mbili aliponywa alipogusa nini?",
+  "options": ["Vazi la Yesu", "Mkono wa Yesu", "Mlango wa hekalu", "Jiwe takatifu"],
+  "about": "Mwanamke mmoja alikuwa na tatizo la kutokwa damu kwa miaka kumi na mbili na alikuwa ametumia kila kitu kwa matabibu. Aliamini kwamba akigusa tu vazi la Yesu, angepona.",
+  "think": "Yesu alimwambia, “Binti, imani yako imekuponya. Nenda kwa amani.” Nyosha mkono wako kwake kwa imani leo."
+ },
+ "writing_wall": {
+  "question": "Katika karamu ya nani mkono ulitokea na kuandika ukutani?",
+  "options": ["Belshaza", "Nebukadneza", "Farao", "Ahabu"],
+  "about": "Mfalme Belshaza wa Babeli alifanya karamu kubwa na kunywea katika vyombo vilivyochukuliwa kutoka hekalu la Mungu. Ghafla mkono ulitokea na kuandika ukutani.",
+  "think": "Mfalme alipimwa katika mizani na akaonekana amepungua. Mwombe Mungu auchunguze moyo wako na kuunyoosha."
+ },
+ "transfiguration": {
+  "question": "Ni nani waliotokea pamoja na Yesu mlimani uso wake ulipong'aa kama jua?",
+  "options": ["Mose na Eliya", "Abrahamu na Isaki", "Daudi na Solomoni", "Petro na Yohana"],
+  "about": "Yesu aliwachukua Petro, Yakobo na Yohana juu ya mlima mrefu. Huko utukufu wake ulifunuliwa, na wanaume wawili wakuu wa Agano la Kale wakazungumza naye.",
+  "think": "Baba alisema, “Msikieni yeye.” Yesu amekuwa akikuambia nini siku hizi?"
+ },
+ "jonah": {
+  "question": "Ni nani aliyemezwa na samaki mkubwa baada ya kumkimbia Mungu?",
+  "options": ["Yona", "Petro", "Elisha", "Ayubu"],
+  "about": "Mungu alimwambia Yona aende Ninawi, lakini yeye alipanda meli iliyokuwa ikienda upande mwingine. Dhoruba kubwa ikatokea, na mabaharia wakamtupa baharini.",
+  "think": "Yona alimkimbia Mungu, lakini Mungu alimfuata. Kamwe si kuchelewa kurudi."
+ },
+ "widow": {
+  "question": "Mjane maskini ambaye Yesu alimsifu alitoa sarafu ndogo ngapi?",
+  "options": ["2", "10", "1", "5"],
+  "about": "Yesu alikuwa akiwatazama watu wakiweka fedha katika sanduku la sadaka hekaluni. Matajiri walitoa kiasi kikubwa, lakini mjane maskini alitoa kila kitu alichokuwa nacho.",
+  "think": "Alitoa kila kitu alichokuwa nacho. Mungu hutazama moyo ulio nyuma ya sadaka, si ukubwa wake."
+ },
+ "nineveh": {
+  "question": "Mungu alimtuma Yona katika mji gani mkubwa ili kuwaita watu watubu?",
+  "options": ["Ninawi", "Babeli", "Yerusalemu", "Tarshishi"],
+  "about": "Ninawi ulikuwa mji mkuu wa Ashuru, adui wa Israeli. Yona alipohubiri huko hatimaye, mji wote ulimgeukia Mungu.",
+  "think": "Ninawi ilipomgeukia Mungu, aliwahurumia. Rehema yake ni pana kuliko tunavyotarajia."
+ },
+ "greatest": {
+  "question": "Ni amri gani Yesu aliiita kuwa kuu kuliko zote?",
+  "options": ["Mpende Bwana Mungu wako kwa moyo wako wote", "Itakase siku ya Sabato", "Usiibe", "Toa fungu la kumi la mapato yako yote"],
+  "about": "Mwalimu wa sheria alimuuliza Yesu ni amri ipi iliyo muhimu kuliko zote. Yesu alifupisha sheria yote ya Mungu katika amri mbili za upendo.",
+  "think": "Sheria yote ya Mungu inategemea upendo kwa Mungu na kwa jirani. Ni nani unayeweza kumpenda kwa vitendo leo?"
+ },
+ "esther": {
+  "question": "Ni malkia yupi aliyehatarisha maisha yake akisema, “Ikiwa ni kuangamia na niangamie”?",
+  "options": ["Esta", "Yezebeli", "Vashti", "Raheli"],
+  "about": "Esta, mwanamke Myahudi, alikuwa amekuwa malkia wa Uajemi wakati njama ilipopangwa kuwaangamiza watu wake. Ili kuwaokoa, ilimbidi aende kwa mfalme bila kuitwa.",
+  "think": "“Nani ajuaye kwamba hukuja kwenye nafasi ya mamlaka kwa ajili ya wakati kama huu?” Mungu amekuweka wapi ili ulete tofauti?"
+ },
+ "last_supper": {
+  "question": "Katika Karamu ya Mwisho, Yesu aliwapa wanafunzi wake nini ili wamkumbuke?",
+  "options": ["Mkate na kikombe", "Kitabu cha kukunjwa", "Pete", "Mwana-kondoo"],
+  "about": "Usiku kabla ya kufa, Yesu alishiriki chakula cha Pasaka na wanafunzi wake. Aliwapa mkate na divai kama ishara za mwili wake na damu yake.",
+  "think": "“Fanyeni hivi kwa ukumbusho wangu.” Kumbuka leo kile Yesu alichotoa kwa ajili yako."
+ },
+ "wall_days": {
+  "question": "Wakati wa Nehemia, ilichukua muda gani kujenga upya ukuta wa Yerusalemu?",
+  "options": ["Siku 52", "Miaka 7", "Siku 40", "Mwaka 1"],
+  "about": "Nehemia, Myahudi aliyemtumikia mfalme wa Uajemi, alikuja kujenga upya kuta zilizobomoka za Yerusalemu. Licha ya maadui na vitisho, watu walimaliza kazi.",
+  "think": "Hata maadui zao waliona kwamba kazi ilifanyika kwa msaada wa Mungu. Endelea kujenga kile alichokukabidhi."
+ },
+ "feet": {
+  "question": "Yesu aliwafanyia nini wanafunzi wake katika Karamu ya Mwisho ili kuwaonyesha jinsi ya kutumikia?",
+  "options": ["Aliwaosha miguu", "Aliwapa dhahabu", "Aliwajengea nyumba", "Aliwaandikia barua"],
+  "about": "Katika mlo wao wa mwisho pamoja, Yesu alichukua kitambaa akawaosha wanafunzi wake miguu, kazi ya mtumishi. Aliwaambia watumikiane vivyo hivyo.",
+  "think": "Bwana wa wote alipiga magoti akiwa na kitambaa. Ni wapi unaweza kutumikia kimya kimya leo?"
+ },
+ "job": {
+  "question": "Ni nani aliyepoteza kila kitu, lakini akasema, “Bwana alinipa, naye Bwana ameviondoa, jina la Bwana litukuzwe”?",
+  "options": ["Ayubu", "Yona", "Yeremia", "Yoeli"],
+  "about": "Ayubu alikuwa mtu mwema aliyepoteza ghafla mali yake na watoto wake katika siku moja. Lakini katika huzuni yake alimwabudu Mungu.",
+  "think": "Ayubu aliabudu katika huzuni yake. Unaweza kumletea Mungu huzuni yako na bado ukamwamini."
+ },
+ "gethsemane": {
+  "question": "Bustanini kabla ya kukamatwa, Yesu alimwomba Baba yake nini?",
+  "options": ["Si kama nipendavyo, bali mapenzi yako yatendeke", "Unichukue mbinguni sasa", "Uwaangamize adui zangu", "Unifanye mfalme"],
+  "about": "Baada ya Karamu ya Mwisho, Yesu alikwenda kuomba katika bustani ya Gethsemane. Akijua mateso yaliyokuwa mbele yake, aliomba kwa uchungu mkubwa.",
+  "think": "Yesu aliweka mapenzi yake mikononi mwa Baba. Ni nini unahitaji kukiweka hapo leo?"
+ },
+ "psalm23": {
+  "question": "Zaburi ya 23 inaanza, “Bwana ndiye … wangu”?",
+  "options": ["Mchungaji", "Mfalme", "Mwamba", "Nuru"],
+  "about": "Daudi, ambaye mwenyewe alikuwa mchungaji, aliandika zaburi hii. Inaeleza jinsi Mungu anavyotutunza kama mchungaji anavyowatunza kondoo wake.",
+  "think": "Pamoja na Mchungaji hutapungukiwa na kitu, hata katika bonde lenye giza zaidi. Tembea naye leo."
+ },
+ "denial": {
+  "question": "Ni nani aliyekana kumjua Yesu mara tatu kabla jogoo hajawika?",
+  "options": ["Petro", "Yuda", "Tomaso", "Yakobo"],
+  "about": "Petro alikuwa ameahidi kwamba hatamwacha Yesu kamwe. Usiku ule, baada ya Yesu kukamatwa, aliogopa na mara tatu akasema hamjui.",
+  "think": "Baadaye Yesu alimrejesha Petro. Kushindwa kwako si mwisho wa hadithi yako pamoja naye."
+ },
+ "eagles": {
+  "question": "Wale wamtumainio Bwana watapaa juu kwa mbawa kama nani?",
+  "options": ["Tai", "Hua", "Shomoro", "Malaika"],
+  "about": "Isaya aliwaandikia watu wa Mungu walipojiona wamesahauliwa na wamechoka. Aliwakumbusha kwamba Mungu hachoki kamwe na huwapa nguvu walio dhaifu.",
+  "think": "Huwapa nguvu waliochoka. Mtumainie, umwache aifanye upya nguvu yako leo."
+ },
+ "paradise": {
+  "question": "Yesu alimwahidi nini mhalifu msalabani aliyemwomba amkumbuke?",
+  "options": ["Leo hii utakuwa pamoja nami Paradiso", "Utaachiliwa huru", "Utaishi muda mrefu", "Utasamehewa baadaye"],
+  "about": "Wahalifu wawili walisulubiwa pamoja na Yesu. Mmoja alimdhihaki, lakini mwingine alimgeukia kwa imani.",
+  "think": "Haikuwa kuchelewa kwa mhalifu yule, na si kuchelewa kwa yeyote. Ni nani anayehitaji kusikia hili?"
+ },
+ "plans": {
+  "question": "Mungu alisema, “Ninajua mipango niliyo nayo kwa ajili yenu,” mipango ya kuwapa nini?",
+  "options": ["Tumaini katika siku zijazo", "Utajiri na umaarufu", "Maisha marefu na rahisi", "Mamlaka juu ya wengine"],
+  "about": "Watu wa Mungu walikuwa wamechukuliwa uhamishoni Babeli. Yeremia aliwaandikia barua kuwaambia kwamba Mungu hakuwa amewasahau.",
+  "think": "Hata uhamishoni, Mungu alikuwa na mipango mizuri kwa watu wake. Mkabidhi siku zako zijazo."
+ },
+ "risen": {
+  "question": "Malaika aliwaambia nini wanawake kwenye kaburi tupu?",
+  "options": ["Hayupo hapa; amefufuka", "Wamemchukua", "Msubirini hapa", "Rudini nyumbani mkaomboleze"],
+  "about": "Siku ya kwanza ya juma, wanawake walikuja kwenye kaburi la Yesu wakiwa na manukato. Walilikuta tupu, na malaika akawapa habari.",
+  "think": "Kaburi ni tupu na mauti imeshindwa. Ishi leo katika tumaini la Yesu aliyefufuka."
+ },
+ "potter": {
+  "question": "Katika kitabu cha Yeremia, Mungu anajilinganisha na nani anayefinyanga udongo?",
+  "options": ["Mfinyanzi", "Fundi seremala", "Mchungaji", "Mkulima"],
+  "about": "Mungu alimtuma Yeremia akamtazame mfinyanzi akifanya kazi. Chombo kilipoharibika, mfinyanzi alikifinyanga upya kuwa kitu kipya.",
+  "think": "Sisi ni kama udongo mkononi mwa mfinyanzi. Mwache afinyange upya kile kilichovunjika ndani yako."
+ },
+ "thomas": {
+  "question": "Ni mwanafunzi gani aliyesema hataamini mpaka aguse majeraha ya Yesu?",
+  "options": ["Tomaso", "Petro", "Filipo", "Mathayo"],
+  "about": "Tomaso hakuwa pamoja na wanafunzi wengine Yesu aliyefufuka alipowatokea. Juma moja baadaye Yesu alikuja tena na kumwonyesha Tomaso majeraha yake.",
+  "think": "Yesu alikutana na Tomaso katika shaka yake. Mletee maswali yako; hayaogopi."
+ },
+ "image": {
+  "question": "Mungu alimuumba mwanadamu kwa mfano wa nani?",
+  "options": ["Kwa mfano wake mwenyewe", "Kwa mfano wa malaika", "Kwa mfano wa wanyama", "Kwa mfano wa nyota"],
+  "about": "Hapo mwanzo Mungu aliumba wanadamu, mwanaume na mwanamke. Kati ya viumbe vyote, ni wao tu walioumbwa kwa mfano wake.",
+  "think": "Wewe umebeba mfano wa Mungu. Vivyo hivyo kila mtu utakayekutana naye leo."
+ },
+ "emmaus": {
+  "question": "Katika njia ya Emau, wanafunzi wawili walimtambua Yesu lini?",
+  "options": ["Alipoumega mkate", "Alipowaonyesha mikono yake", "Alipowaita kwa majina", "Alipotembea juu ya maji"],
+  "about": "Wanafunzi wawili walikuwa wakirudi nyumbani wakiwa na huzuni baada ya kifo cha Yesu. Mgeni aliungana nao na kuwaeleza Maandiko, nao hawakujua kwamba ni Yesu.",
+  "think": "Yesu alitembea pamoja nao kabla hawajamtambua. Huenda yuko karibu kuliko unavyodhani."
+ },
+ "babel": {
+  "question": "Mungu alifanya nini watu walipojenga mnara wa Babeli ili kufika mbinguni?",
+  "options": ["Alivuruga lugha yao", "Alileta gharika", "Alileta moto", "Aliwafanya wafalme"],
+  "about": "Baada ya gharika, watu walikaa pamoja na kuanza kujenga mji wenye mnara mrefu ili wajipatie jina.",
+  "think": "Kiburi hujenga minara ili kujipatia jina; Mungu huwashusha wenye kiburi. Litafute jina lake kuliko lako."
+ },
+ "pentecost": {
+  "question": "Siku ya Pentekoste, ni nani aliyewajaza wanafunzi, pamoja na ndimi kama za moto?",
+  "options": ["Roho Mtakatifu", "Malaika", "Manabii", "Mose na Eliya"],
+  "about": "Siku hamsini baada ya Yesu kufufuka, wafuasi wake walikuwa wakiomba pamoja Yerusalemu. Ghafla Roho Mtakatifu aliwashukia, kama Yesu alivyoahidi.",
+  "think": "Roho alikuja kuwajaza watu wa kawaida nguvu. Mwombe akujaze leo."
+ },
+ "rock_water": {
+  "question": "Mungu alimwambia Mose afanye nini ili maji yatoke kwenye mwamba?",
+  "options": ["Aupige mwamba", "Achimbe kisima", "Aombe mvua", "Amwage mafuta juu yake"],
+  "about": "Jangwani watu wa Israeli walikuwa na kiu na walimkasirikia Mose. Mungu alimtuma Mose kwenye mwamba huko Horebu.",
+  "think": "Mungu alitoa maji kutoka kwenye mwamba jangwani. Anaweza kukupa hata mahali pako palipokauka zaidi."
+ },
+ "damascus": {
+  "question": "Ni nani aliyekutana na Yesu katika nuru angavu njiani kwenda Dameski?",
+  "options": ["Sauli", "Barnaba", "Stefano", "Sila"],
+  "about": "Sauli aliwachukia wafuasi wa Yesu na alikuwa akienda Dameski kuwakamata. Njiani Yesu aliyefufuka alimtokea; baadaye akawa mtume Paulo.",
+  "think": "Yesu alimgeuza adui yake mkali kuwa mjumbe wake mkuu. Hakuna aliye nje ya uwezo wake wa kumfikia."
+ },
+ "rainbow": {
+  "question": "Mungu alitoa ishara gani ya ahadi yake kwamba hataiangamiza dunia tena kwa gharika?",
+  "options": ["Upinde wa mvua", "Hua", "Nyota", "Mlima"],
+  "about": "Baada ya gharika, Noa na familia yake walitoka katika safina. Mungu alifanya Agano nao na kila kiumbe hai.",
+  "think": "Kila upinde wa mvua ni ukumbusho kwamba Mungu hutimiza ahadi zake."
+ },
+ "stephen": {
+  "question": "Ni nani aliyewaombea wale waliokuwa wakimpiga kwa mawe, “Bwana usiwahesabie dhambi hii”?",
+  "options": ["Stefano", "Yakobo", "Petro", "Filipo"],
+  "about": "Stefano alikuwa mmoja wa viongozi wa kwanza waliochaguliwa katika kanisa la kwanza, aliyejaa imani na Roho Mtakatifu. Alipigwa mawe hadi kufa kwa kuhubiri juu ya Yesu.",
+  "think": "Stefano alisamehe kama Yesu alivyosamehe. Je, kuna mtu unayehitaji kumsamehe leo?"
+ },
+ "fruit": {
+  "question": "Ni nini kinachokuja kwanza katika tunda la Roho?",
+  "options": ["Upendo", "Uvumilivu", "Kiasi", "Uaminifu"],
+  "about": "Paulo aliyaandikia makanisa ya Galatia kuhusu maisha katika Roho. Tunda la Roho ni tabia ambayo Mungu anaikuza ndani ya wale walio wake.",
+  "think": "Upendo unakuja kwanza. Mwombe Roho akuze tunda lake ndani yako leo."
+ },
+ "lots_wife": {
+  "question": "Nini kilimpata mke wa Loti alipotazama nyuma kuelekea Sodoma?",
+  "options": ["Akawa nguzo ya chumvi", "Akawa kipofu", "Akageuka jiwe", "Akachukuliwa mbali"],
+  "about": "Mungu alikuwa karibu kuiangamiza miji miovu ya Sodoma na Gomora. Malaika waliwatoa Loti na familia yake na kuwaambia wasitazame nyuma.",
+  "think": "Alitazama nyuma kwenye kile ambacho Mungu alikuwa akimtoa. Je, kuna kitu unachohitaji kuacha kukitazama nyuma?"
+ },
+ "greatest_love": {
+  "question": "Kati ya imani, tumaini na upendo, Paulo anasema kipi ni kikuu?",
+  "options": ["Upendo", "Imani", "Tumaini", "Hakuna kati ya hivyo"],
+  "about": "Paulo aliliandikia kanisa la Korintho, lililojivunia karama zake za kiroho. Aliwaonyesha kwamba bila upendo, hayo yote si kitu.",
+  "think": "Upendo haushindwi kamwe. Ni wapi unaweza kuonyesha upendo huo leo?"
+ },
+ "aaron": {
+  "question": "Mungu alimpa Mose ndugu gani ili azungumze badala yake?",
+  "options": ["Aroni", "Yoshua", "Kalebu", "Huri"],
+  "about": "Mungu alipomtuma Mose kwa Farao, Mose alisema yeye si msemaji mzuri. Mungu alimpa ndugu yake Aroni ili azungumze kwa niaba yake.",
+  "think": "Mungu alimpa Mose msaidizi kwa udhaifu wake. Anatupa sisi pia kila mmoja kwa mwenzake."
+ },
+ "sword": {
+  "question": "Katika silaha za Mungu, upanga wa Roho ni nini?",
+  "options": ["Neno la Mungu", "Imani", "Maombi", "Kweli"],
+  "about": "Paulo aliandika akiwa gerezani kuhusu vita vya kiroho ambavyo Wakristo hukabiliana navyo. Alieleza silaha ambazo Mungu hutoa, moja baada ya nyingine, kama za askari wa Kirumi.",
+  "think": "Neno la Mungu ni silaha yako dhidi ya hofu na uongo. Ni mstari gani utakaoubeba leo?"
+ },
+ "joshua": {
+  "question": "Mungu alimwambia nani, “Uwe hodari na shujaa… Bwana Mungu wako atakuwa pamoja nawe kokote uendako”?",
+  "options": ["Yoshua", "Mose", "Gideoni", "Kalebu"],
+  "about": "Baada ya Mose kufa, Yoshua alipaswa kuwaongoza Israeli kuingia Nchi ya Ahadi. Mungu alizungumza naye ili kumpa ujasiri kwa kazi hiyo.",
+  "think": "Ujasiri hutoka katika uwepo wa Mungu, si katika nguvu zako. Ingia katika siku hii ukijua kwamba yuko pamoja nawe."
+ },
+ "thanksgiving": {
+  "question": "Paulo aliandika, “Msijisumbue kwa jambo lolote, bali katika kila jambo kwa kuomba na kusihi … haja zenu na zijulikane na Mungu,” pamoja na nini?",
+  "options": ["Kushukuru", "Kufunga", "Machozi", "Kimya"],
+  "about": "Paulo aliandika haya akiwa gerezani kwa kanisa la Filipi. Hata akiwa katika minyororo, aliwafundisha jinsi ya kupata amani ya Mungu badala ya wasiwasi.",
+  "think": "Shukrani na maombi hufungua njia kwa amani ya Mungu. Mshukuru sasa kwa mambo matatu."
+ },
+ "tears": {
+  "question": "Katika Ufunuo, Mungu atafuta nini kutoka machoni mwa wote?",
+  "options": ["Kila chozi", "Kila dhambi", "Kila kumbukumbu", "Kila ndoto"],
+  "about": "Katika kitabu cha mwisho cha Biblia, Yohana alipewa maono ya mbingu mpya na nchi mpya. Mungu mwenyewe ataishi pamoja na watu wake milele.",
+  "think": "Siku moja hakutakuwa na kifo wala maumivu tena. Acha tumaini hilo likubebe leo."
+ }
+}
