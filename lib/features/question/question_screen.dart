@@ -7,6 +7,7 @@ import 'package:share_plus/share_plus.dart';
 import '../../core/share.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/common.dart';
+import '../../core/widgets/night_background.dart';
 import '../../data/models/question.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
@@ -119,8 +120,8 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
         final given = service.answerFor(_day);
         final answer = given != null && q != null && given.id == q.id ? given : null;
         return Scaffold(
-          appBar: AppBar(
-            title: Text(l.quizTitle, style: AppText.serif(24, weight: FontWeight.w600)),
+          appBar: NightPanel.appBar(
+            title: Text(l.quizTitle, style: AppText.serif(24, weight: FontWeight.w600, color: Colors.white)),
             actions: [
               if (q != null)
                 IconButton(
@@ -133,59 +134,116 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
           body: q == null
               ? const Center(child: CircularProgressIndicator())
               : ListView(
-                  padding: const EdgeInsets.fromLTRB(20, 4, 20, 40),
+                  padding: const EdgeInsets.only(bottom: 40),
                   children: [
-                    // This week's questions: a missed day can still be answered.
-                    SingleChildScrollView(
-                      scrollDirection: Axis.horizontal,
-                      child: Row(
+                    // The question under the night sky, as on Home; the reading part below stays light.
+                    NightPanel(
+                      padding: const EdgeInsets.fromLTRB(0, 4, 0, 30),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          for (final (i, d) in service.days.indexed)
-                            Padding(
-                              padding: const EdgeInsetsDirectional.only(end: 8),
-                              child: ChoiceChip(
-                                avatar: service.answerFor(d) == null
-                                    ? null
-                                    : const Icon(Icons.check_rounded, size: 16, color: AppColors.ember),
-                                label: Text(i == 0 ? l.quizTodayShort : _format(DateFormat.E, d)),
-                                selected: d == _day,
-                                onSelected: (_) => setState(() => _day = d),
-                              ),
+                          // This week's questions: a missed day can still be answered.
+                          SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            padding: const EdgeInsets.symmetric(horizontal: 20),
+                            child: Row(
+                              children: [
+                                for (final (i, d) in service.days.indexed)
+                                  Padding(
+                                    padding: const EdgeInsetsDirectional.only(end: 8),
+                                    child: _DayChip(
+                                      label: i == 0 ? l.quizTodayShort : _format(DateFormat.E, d),
+                                      answered: service.answerFor(d) != null,
+                                      selected: d == _day,
+                                      onTap: () => setState(() => _day = d),
+                                    ),
+                                  ),
+                              ],
                             ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 20),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                if (service.answered > 0)
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 10),
+                                    child: Text(l.quizScore('${service.right}', '${service.answered}'),
+                                        style: TextStyle(color: Colors.white.withValues(alpha: 0.7))),
+                                  ),
+                                const SizedBox(height: 18),
+                                Text(q.question,
+                                    style: AppText.serif(27, weight: FontWeight.w700, height: 1.25, color: Colors.white)),
+                                if (answer == null) ...[
+                                  const SizedBox(height: 8),
+                                  Text(l.quizPick, style: const TextStyle(color: AppColors.goldSoft)),
+                                ],
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ),
-                    if (service.answered > 0)
+                    const SizedBox(height: 20),
+                    for (final option in QuestionService.shuffled(q, _day))
                       Padding(
-                        padding: const EdgeInsets.only(top: 6),
-                        child: Text(l.quizScore('${service.right}', '${service.answered}'),
-                            style: const TextStyle(color: AppColors.inkSoft)),
+                        padding: const EdgeInsets.fromLTRB(20, 0, 20, 10),
+                        child: _Option(
+                          text: option,
+                          state: answer == null
+                              ? _OptionState.open
+                              : option == q.answer
+                                  ? _OptionState.right
+                                  : option == answer.choice
+                                      ? _OptionState.wrong
+                                      : _OptionState.other,
+                          onTap: () => _answer(q, option),
+                        ),
                       ),
-                    const SizedBox(height: 14),
-                    Text(q.question, style: AppText.serif(26, weight: FontWeight.w700, height: 1.25)),
-                    const SizedBox(height: 4),
-                    if (answer == null)
-                      Text(l.quizPick, style: const TextStyle(color: AppColors.inkSoft)),
-                    const SizedBox(height: 14),
-                    for (final option in QuestionService.shuffled(q, _day)) ...[
-                      _Option(
-                        text: option,
-                        state: answer == null
-                            ? _OptionState.open
-                            : option == q.answer
-                                ? _OptionState.right
-                                : option == answer.choice
-                                    ? _OptionState.wrong
-                                    : _OptionState.other,
-                        onTap: () => _answer(q, option),
+                    if (answer != null)
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 20),
+                        child: _Answer(question: q, right: answer.right, day: _day),
                       ),
-                      const SizedBox(height: 10),
-                    ],
-                    if (answer != null) _Answer(question: q, right: answer.right, day: _day),
                   ],
                 ),
         );
       },
+    );
+  }
+}
+
+/// A day of the week on the night sky: gold when it's the one shown, a tick once answered.
+class _DayChip extends StatelessWidget {
+  const _DayChip({required this.label, required this.answered, required this.selected, required this.onTap});
+  final String label;
+  final bool answered, selected;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final ink = selected ? AppColors.midnight : Colors.white;
+    return Material(
+      color: selected ? AppColors.gold : Colors.white.withValues(alpha: 0.08),
+      shape: StadiumBorder(side: BorderSide(color: selected ? AppColors.gold : Colors.white.withValues(alpha: 0.22))),
+      child: InkWell(
+        customBorder: const StadiumBorder(),
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 9),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              if (answered) ...[
+                Icon(Icons.check_rounded, size: 16, color: selected ? AppColors.midnight : AppColors.goldSoft),
+                const SizedBox(width: 6),
+              ],
+              Text(label, style: TextStyle(color: ink, fontWeight: selected ? FontWeight.w700 : FontWeight.w500)),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
@@ -278,35 +336,77 @@ class _Answer extends ConsumerWidget {
           ),
         ],
         const SizedBox(height: 12),
-        SoftCard(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(children: [
-                const Icon(Icons.menu_book_rounded, size: 18, color: AppColors.gold),
-                const SizedBox(width: 8),
-                Text(l.quizFromBible, style: const TextStyle(fontWeight: FontWeight.w700, color: AppColors.ember)),
-              ]),
-              const SizedBox(height: 10),
-              Text(passage?.text ?? '…', style: AppText.serif(19, height: 1.45)),
-              const SizedBox(height: 8),
-              Text('— ${passage?.reference ?? q.passage}', style: const TextStyle(fontWeight: FontWeight.w700)),
-            ],
+        // The passage, like a page of scripture: a gold margin and the words in the Bible's own type.
+        Container(
+          decoration: BoxDecoration(
+            color: AppColors.ivoryCard,
+            borderRadius: BorderRadius.circular(20),
+            border: Border.all(color: AppColors.sand),
+            boxShadow: const [BoxShadow(color: Color(0x0F000000), blurRadius: 16, offset: Offset(0, 6))],
+          ),
+          clipBehavior: Clip.antiAlias,
+          child: IntrinsicHeight(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Container(width: 5, color: AppColors.gold),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(18, 16, 18, 18),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(children: [
+                          const Icon(Icons.menu_book_rounded, size: 18, color: AppColors.gold),
+                          const SizedBox(width: 8),
+                          Text(l.quizFromBible,
+                              style: const TextStyle(fontWeight: FontWeight.w700, color: AppColors.ember)),
+                        ]),
+                        const SizedBox(height: 10),
+                        Text(passage?.text ?? '…', style: AppText.serif(20, height: 1.5)),
+                        const SizedBox(height: 10),
+                        Text('— ${passage?.reference ?? q.passage}',
+                            style: const TextStyle(fontWeight: FontWeight.w700, color: AppColors.ember)),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
         const SizedBox(height: 12),
-        SoftCard(
-          color: const Color(0xFFFFF4D6),
-          child: Column(
+        // The thought for the day: warm gold, the part to carry away.
+        Container(
+          padding: const EdgeInsets.all(18),
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [Color(0xFFFFF3D1), Color(0xFFF6DDA0)],
+            ),
+            borderRadius: BorderRadius.circular(20),
+            boxShadow: [BoxShadow(color: AppColors.gold.withValues(alpha: 0.25), blurRadius: 18, offset: const Offset(0, 6))],
+          ),
+          child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(children: [
-                const Icon(Icons.lightbulb_rounded, size: 18, color: AppColors.gold),
-                const SizedBox(width: 8),
-                Text(l.quizThink, style: const TextStyle(fontWeight: FontWeight.w700, color: AppColors.ember)),
-              ]),
-              const SizedBox(height: 8),
-              Text(q.think, style: const TextStyle(fontSize: 17, height: 1.45)),
+              Container(
+                padding: const EdgeInsets.all(8),
+                decoration: const BoxDecoration(color: AppColors.gold, shape: BoxShape.circle),
+                child: const Icon(Icons.lightbulb_rounded, size: 20, color: Colors.white),
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(l.quizThink, style: const TextStyle(fontWeight: FontWeight.w700, color: AppColors.ember)),
+                    const SizedBox(height: 6),
+                    Text(q.think, style: AppText.serif(19, weight: FontWeight.w600, height: 1.4, color: AppColors.ink)),
+                  ],
+                ),
+              ),
             ],
           ),
         ),

@@ -10,7 +10,13 @@ import '../theme/app_theme.dart';
 /// Purely decorative: wrap in [Positioned.fill] behind content. Slow on purpose
 /// (one full cycle is 40 s) so it calms rather than distracts.
 class DivineLight extends StatefulWidget {
-  const DivineLight({super.key, this.color = AppColors.goldSoft, this.intensity = 1, this.origin = const Alignment(0, -1.15)});
+  const DivineLight({
+    super.key,
+    this.color = AppColors.goldSoft,
+    this.intensity = 1,
+    this.origin = const Alignment(0, -1.15),
+    this.still = false,
+  });
 
   final Color color;
 
@@ -20,12 +26,21 @@ class DivineLight extends StatefulWidget {
   /// Where the light comes from.
   final Alignment origin;
 
+  /// Painted once, without moving: for a panel at the top of a page people read.
+  final bool still;
+
   @override
   State<DivineLight> createState() => _DivineLightState();
 }
 
 class _DivineLightState extends State<DivineLight> with SingleTickerProviderStateMixin {
-  late final _t = AnimationController(vsync: this, duration: const Duration(seconds: 40))..repeat();
+  late final _t = AnimationController(vsync: this, duration: const Duration(seconds: 40));
+
+  @override
+  void initState() {
+    super.initState();
+    if (!widget.still) _t.repeat();
+  }
 
   @override
   void dispose() {
@@ -35,7 +50,7 @@ class _DivineLightState extends State<DivineLight> with SingleTickerProviderStat
 
   @override
   Widget build(BuildContext context) {
-    if (MediaQuery.of(context).disableAnimations) {
+    if (widget.still || MediaQuery.of(context).disableAnimations) {
       return CustomPaint(painter: _LightPainter(0, widget.color, widget.intensity, widget.origin));
     }
     return RepaintBoundary(

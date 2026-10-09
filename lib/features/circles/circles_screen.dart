@@ -8,6 +8,7 @@ import '../../core/share.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/common.dart';
 import '../../core/widgets/community.dart';
+import '../../core/widgets/night_background.dart';
 import '../../data/models/prayer.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
@@ -182,124 +183,265 @@ class _CirclesScreenState extends ConsumerState<CirclesScreen> {
     final l = AppLocalizations.of(context);
     final service = ref.read(circleServiceProvider);
     return Scaffold(
-      appBar: AppBar(
+      appBar: NightPanel.appBar(
         // Opened straight from an invite link, with nothing to go back to.
         leading: Navigator.of(context).canPop()
             ? null
             : IconButton(icon: const Icon(Icons.home_rounded), onPressed: () => context.go('/home')),
-        title: Text(l.circlesTitle, style: AppText.serif(24, weight: FontWeight.w600)),
+        title: Text(
+          l.circlesTitle,
+          style: AppText.serif(24, weight: FontWeight.w600, color: Colors.white),
+        ),
         bottom: _loading
-            ? const PreferredSize(preferredSize: Size.fromHeight(2), child: LinearProgressIndicator(minHeight: 2))
+            ? const PreferredSize(
+                preferredSize: Size.fromHeight(2),
+                child: LinearProgressIndicator(
+                  minHeight: 2,
+                  color: AppColors.gold,
+                  backgroundColor: Colors.transparent,
+                ),
+              )
             : null,
       ),
       body: RefreshIndicator(
         onRefresh: _load,
         child: ListView(
-          padding: const EdgeInsets.fromLTRB(20, 8, 20, 32),
+          padding: const EdgeInsets.only(bottom: 32),
           children: [
-            Text(l.circlesIntro, style: const TextStyle(fontSize: 16, height: 1.45, color: AppColors.inkSoft)),
-            const SizedBox(height: 18),
-            Row(
-              children: [
-                Expanded(
-                  child: FilledButton.icon(
-                    style: FilledButton.styleFrom(minimumSize: const Size.fromHeight(52)),
-                    onPressed: _loading ? null : _start,
-                    icon: const Icon(Icons.add_rounded),
-                    label: Text(l.circleStart, textAlign: TextAlign.center),
+            // Praying together, under one sky: what a circle is, and the way in.
+            NightPanel(
+              padding: const EdgeInsets.fromLTRB(20, 6, 20, 28),
+              child: Column(
+                children: [
+                  const _CirclesEmblem(),
+                  const SizedBox(height: 16),
+                  Text(
+                    l.circlesIntro,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 16, height: 1.45, color: Colors.white.withValues(alpha: 0.88)),
                   ),
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: OutlinedButton.icon(
-                    style: OutlinedButton.styleFrom(
-                      minimumSize: const Size.fromHeight(52),
-                      shape: const StadiumBorder(),
-                      foregroundColor: AppColors.ink,
-                      side: const BorderSide(color: AppColors.gold),
-                    ),
-                    onPressed: _loading ? null : _join,
-                    icon: const Icon(Icons.group_add_rounded, color: AppColors.gold),
-                    label: Text(l.circleJoin, textAlign: TextAlign.center),
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 16),
-            SoftCard(
-              padding: EdgeInsets.zero,
-              child: Theme(
-                data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
-                child: ExpansionTile(
-                  // Open for someone new to circles; one tap away after that.
-                  key: ValueKey(_circles.isEmpty),
-                  initiallyExpanded: _circles.isEmpty,
-                  leading: const Icon(Icons.info_outline_rounded, color: AppColors.gold),
-                  title: Text(l.circleInfoTitle, style: const TextStyle(fontWeight: FontWeight.w700)),
-                  childrenPadding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
-                  children: const [CircleRules()],
-                ),
-              ),
-            ),
-            const SizedBox(height: 24),
-            if (_offline && _circles.isEmpty)
-              Text(
-                l.circleOffline,
-                textAlign: TextAlign.center,
-                style: const TextStyle(color: AppColors.inkSoft),
-              ),
-            for (final c in _circles) ...[
-              // A group sits under its church, when the person is in that too.
-              Padding(
-                padding: EdgeInsetsDirectional.only(
-                  start: c.parent != null && _circles.any((p) => p.name == c.parent && p.parent == null) ? 24 : 0,
-                ),
-                child: SoftCard(
-                  padding: EdgeInsets.zero,
-                  child: ListTile(
-                    contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
-                    leading: CircleAvatar(
-                      backgroundColor: AppColors.sand,
-                      child: Icon(
-                        c.pending ? Icons.hourglass_top_rounded : Icons.groups_rounded,
-                        color: AppColors.ember,
-                      ),
-                    ),
-                    title: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        if (c.parent != null)
-                          Text('${c.parent} ›', style: const TextStyle(fontSize: 13, color: AppColors.inkSoft)),
-                        Text(c.name, style: AppText.serif(20, weight: FontWeight.w700)),
-                      ],
-                    ),
-                    subtitle: Text(c.pending ? l.circleWaitingLabel : l.circleMembers(c.members)),
-                    trailing: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        if (!c.pending && service.hasNew(c))
-                          Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                            decoration: BoxDecoration(color: AppColors.gold, borderRadius: BorderRadius.circular(10)),
-                            child: Text(
-                              l.circleNew,
-                              style: const TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.w700,
-                                color: AppColors.midnight,
-                              ),
-                            ),
+                  const SizedBox(height: 20),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: FilledButton.icon(
+                          style: FilledButton.styleFrom(
+                            minimumSize: const Size.fromHeight(52),
+                            backgroundColor: AppColors.gold,
+                            foregroundColor: AppColors.midnight,
                           ),
-                        const Icon(Icons.chevron_right_rounded, color: AppColors.inkSoft),
-                      ],
-                    ),
-                    onTap: () => _open(c.code),
+                          onPressed: _loading ? null : _start,
+                          icon: const Icon(Icons.add_rounded),
+                          label: Text(l.circleStart, textAlign: TextAlign.center),
+                        ),
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: OutlinedButton.icon(
+                          style: OutlinedButton.styleFrom(
+                            minimumSize: const Size.fromHeight(52),
+                            shape: const StadiumBorder(),
+                            foregroundColor: Colors.white,
+                            side: BorderSide(color: Colors.white.withValues(alpha: 0.6)),
+                          ),
+                          onPressed: _loading ? null : _join,
+                          icon: const Icon(Icons.group_add_rounded, color: AppColors.goldSoft),
+                          label: Text(l.circleJoin, textAlign: TextAlign.center),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 20),
+            if (_circles.isNotEmpty) ...[
+              for (final c in _circles) ...[
+                // A group sits under its church, when the person is in that too.
+                Padding(
+                  padding: EdgeInsetsDirectional.only(
+                    start: c.parent != null && _circles.any((p) => p.name == c.parent && p.parent == null) ? 44 : 20,
+                    end: 20,
+                  ),
+                  child: _CircleCard(circle: c, hasNew: !c.pending && service.hasNew(c), onTap: () => _open(c.code)),
+                ),
+                const SizedBox(height: 12),
+              ],
+              const SizedBox(height: 8),
+            ],
+            if (_offline && _circles.isEmpty)
+              Padding(
+                padding: const EdgeInsets.fromLTRB(20, 0, 20, 16),
+                child: Text(
+                  l.circleOffline,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(color: AppColors.inkSoft),
+                ),
+              ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: SoftCard(
+                padding: EdgeInsets.zero,
+                child: Theme(
+                  data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+                  child: ExpansionTile(
+                    // Closed until the user opens it.
+                    leading: const Icon(Icons.info_outline_rounded, color: AppColors.gold),
+                    title: Text(l.circleInfoTitle, style: const TextStyle(fontWeight: FontWeight.w700)),
+                    childrenPadding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
+                    children: const [CircleRules()],
                   ),
                 ),
               ),
-              const SizedBox(height: 12),
-            ],
+            ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Three people around a light: the picture at the top of Prayer Circles.
+class _CirclesEmblem extends StatelessWidget {
+  const _CirclesEmblem();
+
+  @override
+  Widget build(BuildContext context) {
+    Widget person(double size, double alpha) => Container(
+      width: size,
+      height: size,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: Colors.white.withValues(alpha: alpha),
+        border: Border.all(color: AppColors.goldSoft.withValues(alpha: 0.5)),
+      ),
+      child: Icon(Icons.person_rounded, size: size * 0.6, color: AppColors.goldSoft),
+    );
+    return SizedBox(
+      width: 150,
+      height: 84,
+      child: Stack(
+        alignment: Alignment.center,
+        children: [
+          Positioned(left: 0, bottom: 4, child: person(46, 0.08)),
+          Positioned(right: 0, bottom: 4, child: person(46, 0.08)),
+          Container(
+            width: 68,
+            height: 68,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: AppColors.gold,
+              boxShadow: [BoxShadow(color: AppColors.gold.withValues(alpha: 0.55), blurRadius: 28, spreadRadius: 2)],
+            ),
+            child: const Icon(Icons.volunteer_activism_rounded, size: 34, color: AppColors.midnight),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// The circle's own colour, the same each time: from its code.
+Color _circleColor(String code) {
+  const colors = [
+    Color(0xFF3F5BA9), // blue
+    Color(0xFF9A6A45), // ember
+    Color(0xFF4E8C7A), // green
+    Color(0xFF8B5A9E), // purple
+    Color(0xFFC0794A), // amber
+    Color(0xFF3E7FA8), // sea
+    Color(0xFFB0545F), // rose
+  ];
+  return colors[code.codeUnits.fold(0, (a, b) => (a * 31 + b) & 0x7fffffff) % colors.length];
+}
+
+/// One of the person's circles: its initial in its own colour, how many pray in it, and whether there's
+/// something new.
+class _CircleCard extends StatelessWidget {
+  const _CircleCard({required this.circle, required this.hasNew, required this.onTap});
+  final CircleSummary circle;
+  final bool hasNew;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = circle;
+    final color = c.pending ? AppColors.inkSoft : _circleColor(c.code);
+    return Material(
+      color: AppColors.ivoryCard,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(20),
+        side: BorderSide(color: hasNew ? AppColors.gold : AppColors.sand, width: hasNew ? 1.5 : 1),
+      ),
+      elevation: 0,
+      shadowColor: Colors.transparent,
+      child: InkWell(
+        borderRadius: BorderRadius.circular(20),
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(14, 14, 10, 14),
+          child: Row(
+            children: [
+              Container(
+                width: 52,
+                height: 52,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(16),
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [color, Color.lerp(color, AppColors.midnight, 0.35)!],
+                  ),
+                ),
+                child: c.pending
+                    ? const Icon(Icons.hourglass_top_rounded, color: Colors.white)
+                    : Text(
+                        c.name.characters.firstOrNull?.toUpperCase() ?? '?',
+                        style: AppText.serif(26, weight: FontWeight.w700, color: Colors.white),
+                      ),
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    if (c.parent != null)
+                      Text('${c.parent} ›', style: const TextStyle(fontSize: 13, color: AppColors.inkSoft)),
+                    Text(c.name, style: AppText.serif(20, weight: FontWeight.w700)),
+                    const SizedBox(height: 2),
+                    Row(
+                      children: [
+                        Icon(
+                          c.pending ? Icons.schedule_rounded : Icons.groups_rounded,
+                          size: 16,
+                          color: AppColors.inkSoft,
+                        ),
+                        const SizedBox(width: 5),
+                        Flexible(
+                          child: Text(
+                            c.pending ? l.circleWaitingLabel : l.circleMembers(c.members),
+                            style: const TextStyle(color: AppColors.inkSoft),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              if (hasNew)
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                  decoration: BoxDecoration(color: AppColors.gold, borderRadius: BorderRadius.circular(10)),
+                  child: Text(
+                    l.circleNew,
+                    style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: AppColors.midnight),
+                  ),
+                ),
+              const Icon(Icons.chevron_right_rounded, color: AppColors.inkSoft),
+            ],
+          ),
         ),
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../theme/app_theme.dart';
 import 'divine_light.dart';
@@ -39,6 +40,54 @@ class NightBackground extends StatelessWidget {
       ),
     );
   }
+}
+
+/// The night sky as a panel at the top of an ivory screen, curving into the page below it: the
+/// app's signature look for a page people read. Its light is still, so it doesn't pull at the eye.
+/// Pair with [NightPanel.appBar] so the bar above it is part of the same sky.
+class NightPanel extends StatelessWidget {
+  const NightPanel({super.key, required this.child, this.padding = const EdgeInsets.fromLTRB(20, 4, 20, 30)});
+
+  final Widget child;
+  final EdgeInsets padding;
+
+  /// An app bar in the panel's colour, with light text and status bar icons.
+  static AppBar appBar({required Widget title, List<Widget>? actions, Widget? leading, PreferredSizeWidget? bottom}) =>
+      AppBar(
+        backgroundColor: AppColors.midnight,
+        foregroundColor: Colors.white,
+        surfaceTintColor: Colors.transparent,
+        systemOverlayStyle: SystemUiOverlayStyle.light,
+        leading: leading,
+        title: DefaultTextStyle.merge(
+          style: const TextStyle(color: Colors.white),
+          child: title,
+        ),
+        actions: actions,
+        bottom: bottom,
+      );
+
+  @override
+  Widget build(BuildContext context) => ClipRRect(
+    borderRadius: const BorderRadius.vertical(bottom: Radius.circular(32)),
+    child: DecoratedBox(
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [AppColors.midnight, AppColors.navy, AppColors.navyLight],
+          stops: [0, 0.6, 1],
+        ),
+      ),
+      child: Stack(
+        children: [
+          const Positioned.fill(child: DivineLight(still: true, intensity: 0.7, origin: Alignment(0, -1.3))),
+          const Positioned.fill(child: CustomPaint(painter: _MountainsPainter())),
+          Padding(padding: padding, child: child),
+        ],
+      ),
+    ),
+  );
 }
 
 class _MountainsPainter extends CustomPainter {
