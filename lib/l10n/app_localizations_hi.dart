@@ -744,7 +744,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get circleName => 'मंडली का नाम';
 
   @override
-  String get circleNameHint => 'जैसे परिवार, युवा संगति';
+  String get circleNameHint => 'जैसे परिवार, मित्र';
 
   @override
   String get circleYourName => 'आपका नाम';
@@ -1073,7 +1073,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get circleTabChains => 'श्रृंखला';
 
   @override
-  String get circleTabGroups => 'समूह';
+  String get circleTabGroups => 'मंडलियाँ';
 
   @override
   String get circleWaitingLabel => 'स्वीकृति की प्रतीक्षा';
@@ -1108,10 +1108,10 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get circleGroupsIntro =>
-      'इस कलीसिया के समूह: युवा, संगतियाँ, घरेलू समूह। किसी में भी एक टैप से जुड़ें।';
+      'इस कलीसिया की मंडलियाँ: युवा, संगतियाँ, घरेलू समूह। किसी में भी एक टैप से जुड़ें।';
 
   @override
-  String get circleAddGroup => 'समूह जोड़ें';
+  String get circleAddGroup => 'मंडली जोड़ें';
 
   @override
   String get circleGroupNameHint => 'जैसे युवा, महिला संगति';
@@ -1120,7 +1120,42 @@ class AppLocalizationsHi extends AppLocalizations {
   String get circleJoinGroup => 'जुड़ें';
 
   @override
-  String get circleNoGroups => 'अभी कोई समूह नहीं।';
+  String get circleNoGroups => 'अभी कोई मंडली नहीं।';
+
+  @override
+  String get circleStartButton => 'नया';
+
+  @override
+  String get churchStart => 'अपनी कलीसिया जोड़ें';
+
+  @override
+  String get churchName => 'कलीसिया का नाम';
+
+  @override
+  String get churchNameHint => 'जैसे अनुग्रह कलीसिया';
+
+  @override
+  String get circleStartTitle => 'आप क्या शुरू करना चाहते हैं?';
+
+  @override
+  String get circleStartChurch => 'मेरी कलीसिया';
+
+  @override
+  String get circleStartChurchHint =>
+      'पूरी कलीसिया के लिए: सबके लिए एक प्रार्थना दीवार, और युवा, संगतियों व घरेलू समूहों के लिए मंडलियाँ। नए सदस्य तब तक प्रतीक्षा करते हैं जब तक कोई अगुवा उन्हें अंदर न ले।';
+
+  @override
+  String get circleStartCircle => 'एक मंडली';
+
+  @override
+  String get circleStartCircleHint =>
+      'परिवार और मित्रों के लिए, एक-दूसरे के लिए प्रार्थना करने हेतु।';
+
+  @override
+  String get circlesMyChurches => 'मेरी कलीसियाएँ';
+
+  @override
+  String get circlesMyCircles => 'मेरी मंडलियाँ';
 
   @override
   String get circleSharePraise => 'स्तुति का समाचार साझा करें';
@@ -1252,12 +1287,12 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String newsGroup(String name) {
-    return 'नया समूह: $name';
+    return 'आपकी कलीसिया में नई मंडली: $name';
   }
 
   @override
   String get circleInfoGroups =>
-      'एक कलीसिया के समूह हो सकते हैं (युवा, संगतियाँ, घरेलू समूह); उसके सदस्य एक टैप से उनमें जुड़ते हैं।';
+      'कलीसिया की अपनी मंडलियाँ होती हैं (युवा, संगतियाँ, घरेलू समूह); उसके सदस्य एक टैप से उनमें जुड़ते हैं।';
 
   @override
   String get circleInfoApproval =>

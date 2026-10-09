@@ -748,7 +748,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get circleName => 'Назва кола';
 
   @override
-  String get circleNameHint => 'наприклад, Родина, Молодь';
+  String get circleNameHint => 'наприклад, Родина, Друзі';
 
   @override
   String get circleYourName => 'Ваше ім\'я';
@@ -1081,7 +1081,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get circleTabChains => 'Ланцюги';
 
   @override
-  String get circleTabGroups => 'Групи';
+  String get circleTabGroups => 'Кола';
 
   @override
   String get circleWaitingLabel => 'Чекає схвалення';
@@ -1116,10 +1116,10 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get circleGroupsIntro =>
-      'Групи цієї церкви: молодь, служіння, домашні групи. Приєднуйтеся до будь-якої одним дотиком.';
+      'Кола цієї церкви: молодь, служіння, домашні групи. Приєднуйтеся до будь-якого одним дотиком.';
 
   @override
-  String get circleAddGroup => 'Додати групу';
+  String get circleAddGroup => 'Додати коло';
 
   @override
   String get circleGroupNameHint => 'напр. Молодь, Жіноче служіння';
@@ -1128,7 +1128,42 @@ class AppLocalizationsUk extends AppLocalizations {
   String get circleJoinGroup => 'Приєднатися';
 
   @override
-  String get circleNoGroups => 'Груп поки немає.';
+  String get circleNoGroups => 'Кіл поки немає.';
+
+  @override
+  String get circleStartButton => 'Створити';
+
+  @override
+  String get churchStart => 'Додати вашу церкву';
+
+  @override
+  String get churchName => 'Назва церкви';
+
+  @override
+  String get churchNameHint => 'наприклад, Церква Благодаті';
+
+  @override
+  String get circleStartTitle => 'Що ви хочете створити?';
+
+  @override
+  String get circleStartChurch => 'Моя церква';
+
+  @override
+  String get circleStartChurchHint =>
+      'Для всієї вашої церкви: молитовна стіна для всіх і кола для молоді, служінь і домашніх груп. Нові учасники чекають, поки лідер їх впустить.';
+
+  @override
+  String get circleStartCircle => 'Коло';
+
+  @override
+  String get circleStartCircleHint =>
+      'Для родини й друзів, щоб молитися одне за одного.';
+
+  @override
+  String get circlesMyChurches => 'Мої церкви';
+
+  @override
+  String get circlesMyCircles => 'Мої кола';
 
   @override
   String get circleSharePraise => 'Поділитися свідченням';
@@ -1264,12 +1299,12 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String newsGroup(String name) {
-    return 'Нова група: $name';
+    return 'Нове коло у вашій церкві: $name';
   }
 
   @override
   String get circleInfoGroups =>
-      'Церква може мати групи (молодь, служіння, домашні групи); її учасники приєднуються одним дотиком.';
+      'Церква має власні кола (молодь, служіння, домашні групи); її учасники приєднуються одним дотиком.';
 
   @override
   String get circleInfoApproval =>

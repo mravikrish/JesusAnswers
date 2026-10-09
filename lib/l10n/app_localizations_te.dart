@@ -750,7 +750,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String get circleName => 'బృందం పేరు';
 
   @override
-  String get circleNameHint => 'ఉదా. కుటుంబం, యువజన సహవాసం';
+  String get circleNameHint => 'ఉదా. కుటుంబం, స్నేహితులు';
 
   @override
   String get circleYourName => 'మీ పేరు';
@@ -1080,7 +1080,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String get circleTabChains => 'గొలుసు';
 
   @override
-  String get circleTabGroups => 'గుంపులు';
+  String get circleTabGroups => 'బృందాలు';
 
   @override
   String get circleWaitingLabel => 'ఆమోదం కోసం వేచి ఉంది';
@@ -1115,10 +1115,10 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get circleGroupsIntro =>
-      'ఈ సంఘం గుంపులు: యువత, సహవాసాలు, ఇంటి గుంపులు. ఒక్క నొక్కుతో దేనిలోనైనా చేరండి.';
+      'ఈ సంఘం బృందాలు: యువత, సహవాసాలు, ఇంటి గుంపులు. ఒక్క నొక్కుతో దేనిలోనైనా చేరండి.';
 
   @override
-  String get circleAddGroup => 'గుంపును జోడించండి';
+  String get circleAddGroup => 'బృందాన్ని జోడించండి';
 
   @override
   String get circleGroupNameHint => 'ఉదా. యువత, మహిళా సహవాసం';
@@ -1127,7 +1127,42 @@ class AppLocalizationsTe extends AppLocalizations {
   String get circleJoinGroup => 'చేరండి';
 
   @override
-  String get circleNoGroups => 'ఇంకా గుంపులు లేవు.';
+  String get circleNoGroups => 'ఇంకా బృందాలు లేవు.';
+
+  @override
+  String get circleStartButton => 'కొత్తది';
+
+  @override
+  String get churchStart => 'మీ సంఘాన్ని జోడించండి';
+
+  @override
+  String get churchName => 'సంఘం పేరు';
+
+  @override
+  String get churchNameHint => 'ఉదా. కృప సంఘం';
+
+  @override
+  String get circleStartTitle => 'మీరు ఏమి ప్రారంభించాలనుకుంటున్నారు?';
+
+  @override
+  String get circleStartChurch => 'నా సంఘం';
+
+  @override
+  String get circleStartChurchHint =>
+      'మొత్తం సంఘం కోసం: అందరికీ ఒక ప్రార్థనా గోడ, మరియు యువత, సహవాసాలు, ఇంటి గుంపుల కోసం బృందాలు. ఒక నాయకుడు లోపలికి అనుమతించే వరకు కొత్త సభ్యులు వేచి ఉంటారు.';
+
+  @override
+  String get circleStartCircle => 'ఒక బృందం';
+
+  @override
+  String get circleStartCircleHint =>
+      'కుటుంబం, స్నేహితులు ఒకరి కోసం ఒకరు ప్రార్థించడానికి.';
+
+  @override
+  String get circlesMyChurches => 'నా సంఘాలు';
+
+  @override
+  String get circlesMyCircles => 'నా బృందాలు';
 
   @override
   String get circleSharePraise => 'స్తుతి సాక్ష్యం పంచుకోండి';
@@ -1258,12 +1293,12 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String newsGroup(String name) {
-    return 'కొత్త గుంపు: $name';
+    return 'మీ సంఘంలో కొత్త బృందం: $name';
   }
 
   @override
   String get circleInfoGroups =>
-      'సంఘానికి గుంపులు ఉండవచ్చు (యువత, సహవాసాలు, ఇంటి గుంపులు); దాని సభ్యులు ఒక్క నొక్కుతో చేరతారు.';
+      'సంఘానికి సొంత బృందాలు ఉంటాయి (యువత, సహవాసాలు, ఇంటి గుంపులు); దాని సభ్యులు ఒక్క నొక్కుతో చేరతారు.';
 
   @override
   String get circleInfoApproval =>

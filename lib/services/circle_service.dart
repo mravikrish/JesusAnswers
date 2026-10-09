@@ -19,6 +19,7 @@ class CircleSummary {
     this.latest,
     this.parent,
     this.pending = false,
+    this.church = false,
   });
 
   factory CircleSummary.fromJson(Map<String, dynamic> j) => CircleSummary(
@@ -29,6 +30,7 @@ class CircleSummary {
     latest: DateTime.tryParse(j['latest'] as String? ?? ''),
     parent: j['parent'] as String?,
     pending: j['pending'] == true,
+    church: j['church'] == true,
   );
 
   final String code, name;
@@ -38,11 +40,14 @@ class CircleSummary {
   /// When the newest request came in; null with none yet.
   final DateTime? latest;
 
-  /// For a group: its church's name.
+  /// For one of a church's circles: the church's name.
   final String? parent;
 
   /// Asked to join, and waiting for a leader to let them in.
   final bool pending;
+
+  /// A church: the home of its circles, with its own prayer wall.
+  final bool church;
 
   Map<String, dynamic> toJson() => {
     'code': code,
@@ -52,6 +57,7 @@ class CircleSummary {
     'latest': latest?.toIso8601String(),
     'parent': parent,
     'pending': pending,
+    'church': church,
   };
 }
 
@@ -251,6 +257,7 @@ class CircleDetail {
     this.groups = const [],
     this.praise = const [],
     this.chains = const [],
+    this.church = false,
   });
 
   factory CircleDetail.fromJson(Map<String, dynamic> j) {
@@ -270,6 +277,7 @@ class CircleDetail {
       groups: _list(j['groups'], CircleGroup.fromJson),
       praise: _list(j['praise'], CircleRequest.fromJson),
       chains: _list(j['chains'], PrayerChain.fromJson),
+      church: j['church'] == true,
     );
   }
 
@@ -294,17 +302,21 @@ class CircleDetail {
   /// Who waits to be let in (for the owner and leaders only).
   final List<CircleMember> waiting;
 
-  /// For a group: its church. [parentCode] only when the person is in the church too.
+  /// For one of a church's circles: its church. [parentCode] only when the person is in the church too.
   final String? parentCode, parentName;
 
-  /// A church's groups (none for a group).
+  /// A church's circles (none for a circle).
   final List<CircleGroup> groups;
 
   /// The praise wall: answered prayers and praise reports, the newest answer first.
   final List<CircleRequest> praise;
   final List<PrayerChain> chains;
 
-  /// A group of a church; it can't have groups of its own.
+  /// A church: the home of its circles, with a prayer wall for the whole church. Only a church holds
+  /// circles.
+  final bool church;
+
+  /// One of a church's circles.
   bool get isGroup => parentName != null;
 }
 
@@ -393,7 +405,7 @@ class CircleException implements Exception {
 ///
 /// Contract — {baseUrl}/v1/circles…, anonymous with the random install id (X-Install-Id), as for the counts:
 ///   GET    /v1/circles                                → [CircleSummary]
-///   POST   /v1/circles            {name, memberName}  → CircleDetail
+///   POST   /v1/circles            {name, memberName, church?} → CircleDetail (a church starts with approval on)
 ///   POST   /v1/circles/join       {code, memberName}  → CircleDetail (pending when approval is on)
 ///   GET    /v1/circles/{code}                         → CircleDetail
 ///   POST   /v1/circles/{code}/requests {text, forLeaders?, anonymous?} → CircleDetail
@@ -408,7 +420,7 @@ class CircleException implements Exception {
 ///   POST | DELETE /v1/circles/{code}/members/{id}/leader → CircleDetail (owner only)
 ///   POST | DELETE /v1/circles/{code}/approval         → CircleDetail (owner only)
 ///   POST   /v1/circles/{code}/waiting/{id}/approve, DELETE /v1/circles/{code}/waiting/{id} → CircleDetail
-///   POST   /v1/circles/{code}/groups {name}           → CircleDetail (the church; owner or leader)
+///   POST   /v1/circles/{code}/groups {name}           → CircleDetail (a circle in a church; the church's owner or a leader)
 ///   POST   /v1/circles/{code}/chains {title, startsAt, slotMinutes, slots} → CircleDetail (owner or leader)
 ///   DELETE /v1/circles/{code}/chains/{id}             → CircleDetail
 ///   POST | DELETE /v1/circles/{code}/chains/{id}/turns/{slot} → CircleDetail
@@ -483,8 +495,9 @@ class CircleService {
     return [for (final n in page['items'] as List? ?? const []) ?CircleNews.fromJson(n as Map<String, dynamic>)];
   }
 
-  Future<CircleDetail> create(String name, String memberName) =>
-      _detail('POST', '', {'name': name, 'memberName': memberName});
+  /// Starts a circle, or with [church] a church.
+  Future<CircleDetail> create(String name, String memberName, {bool church = false}) =>
+      _detail('POST', '', {'name': name, 'memberName': memberName, if (church) 'church': true});
 
   /// Joins; or with approval on, asks to join ([CircleDetail.pending]).
   Future<CircleDetail> join(String code, String memberName) =>

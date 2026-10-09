@@ -125,18 +125,24 @@ class _CirclesScreenState extends ConsumerState<CirclesScreen> {
     if (mounted) _load();
   }
 
+  /// A church, the home of its circles, or a circle for family and friends.
   Future<void> _start() async {
     final l = AppLocalizations.of(context);
+    final church = await _askChurchOrCircle(context);
+    if (church == null || !mounted) return;
+    final title = church ? l.churchStart : l.circleStart;
     final answer = await _askTwo(
       context,
-      title: l.circleStart,
-      first: (l.circleName, l.circleNameHint, 60, TextCapitalization.words),
+      title: title,
+      first: church
+          ? (l.churchName, l.churchNameHint, 60, TextCapitalization.words)
+          : (l.circleName, l.circleNameHint, 60, TextCapitalization.words),
       second: (l.circleYourName, l.circleYourNameHint, 40, TextCapitalization.words),
       secondValue: ref.read(settingsProvider).name,
-      action: l.circleStart,
+      action: title,
     );
     if (answer == null || !mounted) return;
-    await _run(() => ref.read(circleServiceProvider).create(answer.$1, answer.$2));
+    await _run(() => ref.read(circleServiceProvider).create(answer.$1, answer.$2, church: church));
   }
 
   /// [code]: from an invite's QR code, filled in.
@@ -182,6 +188,10 @@ class _CirclesScreenState extends ConsumerState<CirclesScreen> {
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     final service = ref.read(circleServiceProvider);
+    // The server lists each church followed by its circles; a church's circle the person is in without
+    // being in the church still belongs with the churches.
+    final churches = [for (final c in _circles) if (c.church || c.parent != null) c];
+    final own = [for (final c in _circles) if (!c.church && c.parent == null) c];
     return Scaffold(
       appBar: NightPanel.appBar(
         // Opened straight from an invite link, with nothing to go back to.
@@ -232,7 +242,7 @@ class _CirclesScreenState extends ConsumerState<CirclesScreen> {
                           ),
                           onPressed: _loading ? null : _start,
                           icon: const Icon(Icons.add_rounded),
-                          label: Text(l.circleStart, textAlign: TextAlign.center),
+                          label: Text(l.circleStartButton, textAlign: TextAlign.center),
                         ),
                       ),
                       const SizedBox(width: 12),
@@ -255,20 +265,37 @@ class _CirclesScreenState extends ConsumerState<CirclesScreen> {
               ),
             ),
             const SizedBox(height: 20),
-            if (_circles.isNotEmpty) ...[
-              for (final c in _circles) ...[
-                // A group sits under its church, when the person is in that too.
+            // Churches, each with its circles beneath it; then the person's own circles.
+            for (final (title, list) in [(l.circlesMyChurches, churches), (l.circlesMyCircles, own)])
+              if (list.isNotEmpty) ...[
                 Padding(
-                  padding: EdgeInsetsDirectional.only(
-                    start: c.parent != null && _circles.any((p) => p.name == c.parent && p.parent == null) ? 44 : 20,
-                    end: 20,
+                  padding: const EdgeInsets.fromLTRB(24, 4, 24, 10),
+                  child: Text(
+                    title.toUpperCase(),
+                    style: const TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w800,
+                      letterSpacing: 1.1,
+                      color: AppColors.ember,
+                    ),
                   ),
-                  child: _CircleCard(circle: c, hasNew: !c.pending && service.hasNew(c), onTap: () => _open(c.code)),
                 ),
+                for (final c in list) ...[
+                  Padding(
+                    padding: EdgeInsetsDirectional.only(
+                      start: c.parent != null && churches.any((p) => p.church && p.name == c.parent) ? 44 : 20,
+                      end: 20,
+                    ),
+                    child: _CircleCard(
+                      circle: c,
+                      hasNew: !c.pending && service.hasNew(c),
+                      onTap: () => _open(c.code),
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                ],
                 const SizedBox(height: 12),
               ],
-              const SizedBox(height: 8),
-            ],
             if (_offline && _circles.isEmpty)
               Padding(
                 padding: const EdgeInsets.fromLTRB(20, 0, 20, 16),
@@ -367,7 +394,12 @@ class _CircleCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     final c = circle;
-    final color = c.pending ? AppColors.inkSoft : _circleColor(c.code);
+    // A church under the night sky, with its cross; a circle in its own colour, with its initial.
+    final color = c.pending
+        ? AppColors.inkSoft
+        : c.church
+        ? AppColors.navyLight
+        : _circleColor(c.code);
     return Material(
       color: AppColors.ivoryCard,
       shape: RoundedRectangleBorder(
@@ -397,6 +429,8 @@ class _CircleCard extends StatelessWidget {
                 ),
                 child: c.pending
                     ? const Icon(Icons.hourglass_top_rounded, color: Colors.white)
+                    : c.church
+                    ? const Icon(Icons.church_rounded, color: AppColors.goldSoft, size: 28)
                     : Text(
                         c.name.characters.firstOrNull?.toUpperCase() ?? '?',
                         style: AppText.serif(26, weight: FontWeight.w700, color: Colors.white),
@@ -969,7 +1003,8 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
     final l = AppLocalizations.of(context);
     final c = _circle;
     // A church's groups have a page of their own; a group can't have groups.
-    final groups = c != null && !c.isGroup && (c.groups.isNotEmpty || c.leader);
+    // Only a church holds circles.
+    final groups = c != null && c.church;
     final tabs = c == null || c.pending
         ? const <String>[]
         : [l.circleTabPrayers, l.circleTabPraise, l.circleTabChains, if (groups) l.circleTabGroups];
@@ -1510,6 +1545,66 @@ class CircleInitial extends StatelessWidget {
   );
 }
 
+/// What to start: true for a church, false for a circle of family and friends; null when cancelled.
+Future<bool?> _askChurchOrCircle(BuildContext context) {
+  final l = AppLocalizations.of(context);
+  Widget choice(BuildContext ctx, bool church, IconData icon, String title, String hint) => SoftCard(
+    padding: EdgeInsets.zero,
+    child: InkWell(
+      borderRadius: BorderRadius.circular(20),
+      onTap: () => Navigator.pop(ctx, church),
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              padding: const EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: church ? AppColors.midnight : AppColors.sand,
+                borderRadius: BorderRadius.circular(14),
+              ),
+              child: Icon(icon, color: church ? AppColors.goldSoft : AppColors.ember),
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(title, style: AppText.serif(20, weight: FontWeight.w700)),
+                  const SizedBox(height: 4),
+                  Text(hint, style: const TextStyle(color: AppColors.inkSoft, height: 1.4)),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    ),
+  );
+  return showModalBottomSheet<bool>(
+    context: context,
+    showDragHandle: true,
+    isScrollControlled: true,
+    backgroundColor: AppColors.ivory,
+    builder: (ctx) => SafeArea(
+      child: SingleChildScrollView(
+        padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(l.circleStartTitle, style: AppText.serif(24, weight: FontWeight.w700)),
+            const SizedBox(height: 16),
+            choice(ctx, true, Icons.church_rounded, l.circleStartChurch, l.circleStartChurchHint),
+            const SizedBox(height: 12),
+            choice(ctx, false, Icons.diversity_1_rounded, l.circleStartCircle, l.circleStartCircleHint),
+          ],
+        ),
+      ),
+    ),
+  );
+}
+
 /// A dialog with two short fields; null when cancelled. [first] and [second] are (label, hint, max length, capitalization).
 Future<(String, String)?> _askTwo(
   BuildContext context, {
@@ -1519,49 +1614,80 @@ Future<(String, String)?> _askTwo(
   String firstValue = '',
   String secondValue = '',
   required String action,
-}) {
-  final a = TextEditingController(text: firstValue);
-  final b = TextEditingController(text: secondValue);
-  return showDialog<(String, String)>(
-    context: context,
-    builder: (ctx) => StatefulBuilder(
-      builder: (ctx, setState) {
-        final ready = a.text.trim().isNotEmpty && b.text.trim().isNotEmpty;
-        void done() => Navigator.pop(ctx, (a.text.trim(), b.text.trim()));
-        TextField field(TextEditingController c, (String, String, int, TextCapitalization) f, {bool last = false}) =>
-            TextField(
-              controller: c,
-              autofocus: !last,
-              maxLength: f.$3,
-              textCapitalization: f.$4,
-              textInputAction: last ? TextInputAction.done : TextInputAction.next,
-              onChanged: (_) => setState(() {}),
-              onSubmitted: last && ready ? (_) => done() : null,
-              decoration: InputDecoration(labelText: f.$1, hintText: f.$2, counterText: ''),
-            );
-        return AlertDialog(
-          backgroundColor: AppColors.ivory,
-          title: Text(title, style: AppText.serif(24, weight: FontWeight.w700)),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [field(a, first), const SizedBox(height: 12), field(b, second, last: true)],
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(ctx),
-              child: Text(MaterialLocalizations.of(ctx).cancelButtonLabel),
-            ),
-            FilledButton(
-              style: FilledButton.styleFrom(minimumSize: const Size(0, 44)),
-              onPressed: ready ? done : null,
-              child: Text(action),
-            ),
-          ],
-        );
-      },
-    ),
-  ).whenComplete(() {
-    a.dispose();
-    b.dispose();
+}) => showDialog<(String, String)>(
+  context: context,
+  builder: (_) => _TwoFields(
+    title: title,
+    first: first,
+    second: second,
+    firstValue: firstValue,
+    secondValue: secondValue,
+    action: action,
+  ),
+);
+
+/// The dialog of [_askTwo]. Its fields live as long as it does, through the closing animation too.
+class _TwoFields extends StatefulWidget {
+  const _TwoFields({
+    required this.title,
+    required this.first,
+    required this.second,
+    required this.firstValue,
+    required this.secondValue,
+    required this.action,
   });
+
+  final String title, firstValue, secondValue, action;
+  final (String, String, int, TextCapitalization) first, second;
+
+  @override
+  State<_TwoFields> createState() => _TwoFieldsState();
+}
+
+class _TwoFieldsState extends State<_TwoFields> {
+  late final _a = TextEditingController(text: widget.firstValue);
+  late final _b = TextEditingController(text: widget.secondValue);
+
+  @override
+  void dispose() {
+    _a.dispose();
+    _b.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final ready = _a.text.trim().isNotEmpty && _b.text.trim().isNotEmpty;
+    void done() => Navigator.pop(context, (_a.text.trim(), _b.text.trim()));
+    TextField field(TextEditingController c, (String, String, int, TextCapitalization) f, {bool last = false}) =>
+        TextField(
+          controller: c,
+          autofocus: !last,
+          maxLength: f.$3,
+          textCapitalization: f.$4,
+          textInputAction: last ? TextInputAction.done : TextInputAction.next,
+          onChanged: (_) => setState(() {}),
+          onSubmitted: last && ready ? (_) => done() : null,
+          decoration: InputDecoration(labelText: f.$1, hintText: f.$2, counterText: ''),
+        );
+    return AlertDialog(
+      backgroundColor: AppColors.ivory,
+      title: Text(widget.title, style: AppText.serif(24, weight: FontWeight.w700)),
+      content: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [field(_a, widget.first), const SizedBox(height: 12), field(_b, widget.second, last: true)],
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(context),
+          child: Text(MaterialLocalizations.of(context).cancelButtonLabel),
+        ),
+        FilledButton(
+          style: FilledButton.styleFrom(minimumSize: const Size(0, 44)),
+          onPressed: ready ? done : null,
+          child: Text(widget.action),
+        ),
+      ],
+    );
+  }
 }

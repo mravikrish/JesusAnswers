@@ -747,7 +747,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get circleName => 'ਮੰਡਲੀ ਦਾ ਨਾਮ';
 
   @override
-  String get circleNameHint => 'ਜਿਵੇਂ ਪਰਿਵਾਰ, ਨੌਜਵਾਨ ਸੰਗਤ';
+  String get circleNameHint => 'ਜਿਵੇਂ ਪਰਿਵਾਰ, ਦੋਸਤ';
 
   @override
   String get circleYourName => 'ਤੁਹਾਡਾ ਨਾਮ';
@@ -1076,7 +1076,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get circleTabChains => 'ਲੜੀ';
 
   @override
-  String get circleTabGroups => 'ਟੋਲੀਆਂ';
+  String get circleTabGroups => 'ਮੰਡਲੀਆਂ';
 
   @override
   String get circleWaitingLabel => 'ਮਨਜ਼ੂਰੀ ਦੀ ਉਡੀਕ ਵਿੱਚ';
@@ -1112,10 +1112,10 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get circleGroupsIntro =>
-      'ਇਸ ਕਲੀਸਿਯਾ ਦੀਆਂ ਟੋਲੀਆਂ: ਨੌਜਵਾਨ, ਸੰਗਤਾਂ, ਘਰੇਲੂ ਟੋਲੀਆਂ। ਇੱਕ ਟੈਪ ਨਾਲ ਕਿਸੇ ਵਿੱਚ ਵੀ ਸ਼ਾਮਲ ਹੋਵੋ।';
+      'ਇਸ ਕਲੀਸਿਯਾ ਦੀਆਂ ਮੰਡਲੀਆਂ: ਨੌਜਵਾਨ, ਸੰਗਤਾਂ, ਘਰੇਲੂ ਟੋਲੀਆਂ। ਇੱਕ ਟੈਪ ਨਾਲ ਕਿਸੇ ਵਿੱਚ ਵੀ ਸ਼ਾਮਲ ਹੋਵੋ।';
 
   @override
-  String get circleAddGroup => 'ਟੋਲੀ ਜੋੜੋ';
+  String get circleAddGroup => 'ਮੰਡਲੀ ਜੋੜੋ';
 
   @override
   String get circleGroupNameHint => 'ਜਿਵੇਂ ਨੌਜਵਾਨ, ਔਰਤਾਂ ਦੀ ਸੰਗਤ';
@@ -1124,7 +1124,42 @@ class AppLocalizationsPa extends AppLocalizations {
   String get circleJoinGroup => 'ਸ਼ਾਮਲ ਹੋਵੋ';
 
   @override
-  String get circleNoGroups => 'ਅਜੇ ਕੋਈ ਟੋਲੀ ਨਹੀਂ।';
+  String get circleNoGroups => 'ਅਜੇ ਕੋਈ ਮੰਡਲੀ ਨਹੀਂ।';
+
+  @override
+  String get circleStartButton => 'ਨਵਾਂ';
+
+  @override
+  String get churchStart => 'ਆਪਣੀ ਕਲੀਸਿਯਾ ਜੋੜੋ';
+
+  @override
+  String get churchName => 'ਕਲੀਸਿਯਾ ਦਾ ਨਾਮ';
+
+  @override
+  String get churchNameHint => 'ਜਿਵੇਂ ਕਿਰਪਾ ਕਲੀਸਿਯਾ';
+
+  @override
+  String get circleStartTitle => 'ਤੁਸੀਂ ਕੀ ਸ਼ੁਰੂ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?';
+
+  @override
+  String get circleStartChurch => 'ਮੇਰੀ ਕਲੀਸਿਯਾ';
+
+  @override
+  String get circleStartChurchHint =>
+      'ਪੂਰੀ ਕਲੀਸਿਯਾ ਲਈ: ਸਭ ਲਈ ਇੱਕ ਪ੍ਰਾਰਥਨਾ ਕੰਧ, ਅਤੇ ਨੌਜਵਾਨਾਂ, ਸੰਗਤਾਂ ਤੇ ਘਰੇਲੂ ਟੋਲੀਆਂ ਲਈ ਮੰਡਲੀਆਂ। ਨਵੇਂ ਮੈਂਬਰ ਤਦ ਤੱਕ ਉਡੀਕਦੇ ਹਨ ਜਦ ਤੱਕ ਕੋਈ ਆਗੂ ਉਨ੍ਹਾਂ ਨੂੰ ਅੰਦਰ ਨਾ ਲਵੇ।';
+
+  @override
+  String get circleStartCircle => 'ਇੱਕ ਮੰਡਲੀ';
+
+  @override
+  String get circleStartCircleHint =>
+      'ਪਰਿਵਾਰ ਅਤੇ ਦੋਸਤਾਂ ਲਈ, ਇੱਕ ਦੂਜੇ ਲਈ ਪ੍ਰਾਰਥਨਾ ਕਰਨ ਲਈ।';
+
+  @override
+  String get circlesMyChurches => 'ਮੇਰੀਆਂ ਕਲੀਸਿਯਾਵਾਂ';
+
+  @override
+  String get circlesMyCircles => 'ਮੇਰੀਆਂ ਮੰਡਲੀਆਂ';
 
   @override
   String get circleSharePraise => 'ਉਸਤਤ ਦੀ ਗਵਾਹੀ ਸਾਂਝੀ ਕਰੋ';
@@ -1255,12 +1290,12 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String newsGroup(String name) {
-    return 'ਨਵੀਂ ਟੋਲੀ: $name';
+    return 'ਤੁਹਾਡੀ ਕਲੀਸਿਯਾ ਵਿੱਚ ਨਵੀਂ ਮੰਡਲੀ: $name';
   }
 
   @override
   String get circleInfoGroups =>
-      'ਕਲੀਸਿਯਾ ਦੀਆਂ ਟੋਲੀਆਂ ਹੋ ਸਕਦੀਆਂ ਹਨ (ਨੌਜਵਾਨ, ਸੰਗਤਾਂ, ਘਰੇਲੂ ਟੋਲੀਆਂ); ਇਸਦੇ ਮੈਂਬਰ ਇੱਕ ਟੈਪ ਨਾਲ ਸ਼ਾਮਲ ਹੁੰਦੇ ਹਨ।';
+      'ਕਲੀਸਿਯਾ ਦੀਆਂ ਆਪਣੀਆਂ ਮੰਡਲੀਆਂ ਹੁੰਦੀਆਂ ਹਨ (ਨੌਜਵਾਨ, ਸੰਗਤਾਂ, ਘਰੇਲੂ ਟੋਲੀਆਂ); ਇਸਦੇ ਮੈਂਬਰ ਇੱਕ ਟੈਪ ਨਾਲ ਸ਼ਾਮਲ ਹੁੰਦੇ ਹਨ।';
 
   @override
   String get circleInfoApproval =>

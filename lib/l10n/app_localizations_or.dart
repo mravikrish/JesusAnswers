@@ -751,7 +751,7 @@ class AppLocalizationsOr extends AppLocalizations {
   String get circleName => 'ମଣ୍ଡଳୀର ନାମ';
 
   @override
-  String get circleNameHint => 'ଯେପରି ପରିବାର, ଯୁବ ସହଭାଗିତା';
+  String get circleNameHint => 'ଯେପରି ପରିବାର, ବନ୍ଧୁ';
 
   @override
   String get circleYourName => 'ଆପଣଙ୍କ ନାମ';
@@ -1116,7 +1116,7 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get circleGroupsIntro =>
-      'ଏହି ମଣ୍ଡଳୀର ଦଳ: ଯୁବ, ସହଭାଗିତା, ଘର-ଦଳ। ଗୋଟିଏ ଟ୍ୟାପ୍‌ରେ ଯେକୌଣସିରେ ଯୋଗ ଦିଅନ୍ତୁ।';
+      'ଏହି ଚର୍ଚ୍ଚର ଦଳ: ଯୁବ, ସହଭାଗିତା, ଘର-ଦଳ। ଗୋଟିଏ ଟ୍ୟାପ୍‌ରେ ଯେକୌଣସିରେ ଯୋଗ ଦିଅନ୍ତୁ।';
 
   @override
   String get circleAddGroup => 'ଦଳ ଯୋଡ଼ନ୍ତୁ';
@@ -1129,6 +1129,41 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get circleNoGroups => 'ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ଦଳ ନାହିଁ।';
+
+  @override
+  String get circleStartButton => 'ନୂଆ';
+
+  @override
+  String get churchStart => 'ଆପଣଙ୍କ ଚର୍ଚ୍ଚ ଯୋଡ଼ନ୍ତୁ';
+
+  @override
+  String get churchName => 'ଚର୍ଚ୍ଚର ନାମ';
+
+  @override
+  String get churchNameHint => 'ଯେପରି ଅନୁଗ୍ରହ ଚର୍ଚ୍ଚ';
+
+  @override
+  String get circleStartTitle => 'ଆପଣ କଅଣ ଆରମ୍ଭ କରିବାକୁ ଚାହାଁନ୍ତି?';
+
+  @override
+  String get circleStartChurch => 'ମୋ ଚର୍ଚ୍ଚ';
+
+  @override
+  String get circleStartChurchHint =>
+      'ସମଗ୍ର ଚର୍ଚ୍ଚ ପାଇଁ: ସମସ୍ତଙ୍କ ପାଇଁ ଏକ ପ୍ରାର୍ଥନା କାନ୍ଥ, ଏବଂ ଯୁବ, ସହଭାଗିତା ଓ ଘର-ଦଳ ପାଇଁ ଦଳ। ନୂଆ ସଦସ୍ୟମାନେ ଜଣେ ନେତା ସେମାନଙ୍କୁ ଭିତରକୁ ନେବା ପର୍ଯ୍ୟନ୍ତ ଅପେକ୍ଷା କରନ୍ତି।';
+
+  @override
+  String get circleStartCircle => 'ଏକ ମଣ୍ଡଳୀ';
+
+  @override
+  String get circleStartCircleHint =>
+      'ପରିବାର ଓ ବନ୍ଧୁମାନେ ପରସ୍ପର ପାଇଁ ପ୍ରାର୍ଥନା କରିବା ପାଇଁ।';
+
+  @override
+  String get circlesMyChurches => 'ମୋ ଚର୍ଚ୍ଚଗୁଡ଼ିକ';
+
+  @override
+  String get circlesMyCircles => 'ମୋ ମଣ୍ଡଳୀଗୁଡ଼ିକ';
 
   @override
   String get circleSharePraise => 'ସ୍ତୁତିର ସାକ୍ଷ୍ୟ ସେୟାର କରନ୍ତୁ';
@@ -1259,12 +1294,12 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String newsGroup(String name) {
-    return 'ନୂଆ ଦଳ: $name';
+    return 'ଆପଣଙ୍କ ଚର୍ଚ୍ଚରେ ନୂଆ ଦଳ: $name';
   }
 
   @override
   String get circleInfoGroups =>
-      'ଏକ ମଣ୍ଡଳୀର ଦଳ ରହିପାରେ (ଯୁବ, ସହଭାଗିତା, ଘର-ଦଳ); ଏହାର ସଦସ୍ୟମାନେ ଗୋଟିଏ ଟ୍ୟାପ୍‌ରେ ଯୋଗ ଦିଅନ୍ତି।';
+      'ଏକ ଚର୍ଚ୍ଚର ନିଜସ୍ୱ ଦଳ ଥାଏ (ଯୁବ, ସହଭାଗିତା, ଘର-ଦଳ); ଏହାର ସଦସ୍ୟମାନେ ଗୋଟିଏ ଟ୍ୟାପ୍‌ରେ ଯୋଗ ଦିଅନ୍ତି।';
 
   @override
   String get circleInfoApproval =>

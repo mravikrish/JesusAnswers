@@ -749,7 +749,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get circleName => 'Name des Kreises';
 
   @override
-  String get circleNameHint => 'z. B. Familie, Jugendgruppe';
+  String get circleNameHint => 'z. B. Familie, Freunde';
 
   @override
   String get circleYourName => 'Dein Name';
@@ -1078,7 +1078,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get circleTabChains => 'Ketten';
 
   @override
-  String get circleTabGroups => 'Gruppen';
+  String get circleTabGroups => 'Kreise';
 
   @override
   String get circleWaitingLabel => 'Wartet auf Freigabe';
@@ -1114,10 +1114,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get circleGroupsIntro =>
-      'Die Gruppen dieser Gemeinde: Jugend, Kreise, Hauskreise. Tritt jeder mit einem Tippen bei.';
+      'Die Kreise dieser Gemeinde: Jugend, Hauskreise, Gemeinschaften. Tritt jedem mit einem Tippen bei.';
 
   @override
-  String get circleAddGroup => 'Gruppe hinzufügen';
+  String get circleAddGroup => 'Kreis hinzufügen';
 
   @override
   String get circleGroupNameHint => 'z. B. Jugend, Frauenkreis';
@@ -1126,7 +1126,42 @@ class AppLocalizationsDe extends AppLocalizations {
   String get circleJoinGroup => 'Beitreten';
 
   @override
-  String get circleNoGroups => 'Noch keine Gruppen.';
+  String get circleNoGroups => 'Noch keine Kreise.';
+
+  @override
+  String get circleStartButton => 'Neu';
+
+  @override
+  String get churchStart => 'Gemeinde einrichten';
+
+  @override
+  String get churchName => 'Name der Gemeinde';
+
+  @override
+  String get churchNameHint => 'z. B. Gnadengemeinde';
+
+  @override
+  String get circleStartTitle => 'Was möchtest du einrichten?';
+
+  @override
+  String get circleStartChurch => 'Meine Gemeinde';
+
+  @override
+  String get circleStartChurchHint =>
+      'Für deine ganze Gemeinde: eine Gebetswand für alle und Kreise für Jugend, Hauskreise und Gemeinschaften. Neue Mitglieder warten, bis ein Leiter sie hereinlässt.';
+
+  @override
+  String get circleStartCircle => 'Einen Kreis';
+
+  @override
+  String get circleStartCircleHint =>
+      'Für Familie und Freunde, um füreinander zu beten.';
+
+  @override
+  String get circlesMyChurches => 'Meine Gemeinden';
+
+  @override
+  String get circlesMyCircles => 'Meine Kreise';
 
   @override
   String get circleSharePraise => 'Einen Lobpreisbericht teilen';
@@ -1258,12 +1293,12 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String newsGroup(String name) {
-    return 'Neue Gruppe: $name';
+    return 'Neuer Kreis in deiner Gemeinde: $name';
   }
 
   @override
   String get circleInfoGroups =>
-      'Eine Gemeinde kann Gruppen haben (Jugend, Kreise, Hauskreise); ihre Mitglieder treten mit einem Tippen bei.';
+      'Eine Gemeinde hat ihre eigenen Kreise (Jugend, Hauskreise, Gemeinschaften); ihre Mitglieder treten mit einem Tippen bei.';
 
   @override
   String get circleInfoApproval =>

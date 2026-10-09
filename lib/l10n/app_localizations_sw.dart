@@ -748,7 +748,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get circleName => 'Jina la kikundi';
 
   @override
-  String get circleNameHint => 'k.m. Familia, Kikundi cha vijana';
+  String get circleNameHint => 'k.m. Familia, Marafiki';
 
   @override
   String get circleYourName => 'Jina lako';
@@ -1077,7 +1077,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get circleTabChains => 'Minyororo';
 
   @override
-  String get circleTabGroups => 'Vikundi vidogo';
+  String get circleTabGroups => 'Vikundi';
 
   @override
   String get circleWaitingLabel => 'Inasubiri idhini';
@@ -1112,10 +1112,10 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get circleGroupsIntro =>
-      'Vikundi vidogo vya kanisa hili: vijana, ushirika, vikundi vya nyumbani. Jiunge na chochote kwa mguso mmoja.';
+      'Vikundi vya kanisa hili: vijana, ushirika, vikundi vya nyumbani. Jiunge na chochote kwa mguso mmoja.';
 
   @override
-  String get circleAddGroup => 'Ongeza kikundi kidogo';
+  String get circleAddGroup => 'Ongeza kikundi';
 
   @override
   String get circleGroupNameHint => 'k.m. Vijana, Ushirika wa wanawake';
@@ -1124,7 +1124,41 @@ class AppLocalizationsSw extends AppLocalizations {
   String get circleJoinGroup => 'Jiunge';
 
   @override
-  String get circleNoGroups => 'Bado hakuna vikundi vidogo.';
+  String get circleNoGroups => 'Bado hakuna vikundi.';
+
+  @override
+  String get circleStartButton => 'Mpya';
+
+  @override
+  String get churchStart => 'Ongeza kanisa lako';
+
+  @override
+  String get churchName => 'Jina la kanisa';
+
+  @override
+  String get churchNameHint => 'k.m. Kanisa la Neema';
+
+  @override
+  String get circleStartTitle => 'Ungependa kuanzisha nini?';
+
+  @override
+  String get circleStartChurch => 'Kanisa langu';
+
+  @override
+  String get circleStartChurchHint =>
+      'Kwa kanisa lako zima: ukuta wa maombi kwa wote, na vikundi vya vijana, ushirika na vikundi vya nyumbani. Wanachama wapya husubiri kiongozi awaruhusu kuingia.';
+
+  @override
+  String get circleStartCircle => 'Kikundi';
+
+  @override
+  String get circleStartCircleHint => 'Kwa familia na marafiki kuombeana.';
+
+  @override
+  String get circlesMyChurches => 'Makanisa yangu';
+
+  @override
+  String get circlesMyCircles => 'Vikundi vyangu';
 
   @override
   String get circleSharePraise => 'Shiriki ushuhuda wa sifa';
@@ -1256,12 +1290,12 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String newsGroup(String name) {
-    return 'Kikundi kidogo kipya: $name';
+    return 'Kikundi kipya katika kanisa lako: $name';
   }
 
   @override
   String get circleInfoGroups =>
-      'Kanisa linaweza kuwa na vikundi vidogo (vijana, ushirika, vikundi vya nyumbani); wanachama wake hujiunga kwa mguso mmoja.';
+      'Kanisa lina vikundi vyake (vijana, ushirika, vikundi vya nyumbani); wanachama wake hujiunga kwa mguso mmoja.';
 
   @override
   String get circleInfoApproval =>

@@ -52,10 +52,11 @@ public class CircleService {
     static final int MAX_CHAINS = 10, MAX_SLOTS = 168, MAX_CHAIN_DAYS = 40;
 
     /**
-     * [parent]: the church's name, for a group. [pending]: asked to join, waiting for a leader.
+     * [parent]: the church's name, for one of its circles. [pending]: asked to join, waiting for a leader.
+     * [church]: a church, the home of its circles.
      */
     public record Summary(String code, String name, int members, boolean owner, Instant latest, String parent,
-                          boolean pending) {}
+                          boolean pending, boolean church) {}
 
     /** [leader]: made a leader by the owner (the owner isn't marked a leader). */
     public record Member(long id, String name, boolean owner, boolean leader, boolean me) {}
@@ -90,15 +91,17 @@ public class CircleService {
      * [leader]: the reader is the owner or a leader, so can pin, delete requests and remove members.
      * [pending]: the reader asked to join and waits for a leader; nothing else is filled in then.
      * [approval]: new members wait for a leader. [waiting]: who waits (for the owner and leaders only).
-     * [groups]: a church's groups. [praise]: answered prayers, the newest answer first.
+     * [groups]: a church's circles. [praise]: answered prayers, the newest answer first.
+     * [church]: a church, the home of its circles.
      */
     public record Detail(String code, String name, boolean owner, boolean leader, List<Member> members,
                          List<Request> requests, boolean pending, boolean approval, List<Member> waiting,
-                         Parent parent, List<Group> groups, List<Request> praise, List<Chain> chains) {
+                         Parent parent, List<Group> groups, List<Request> praise, List<Chain> chains,
+                         boolean church) {
 
-        static Detail waitingFor(String code, String name, Parent parent) {
+        static Detail waitingFor(String code, String name, Parent parent, boolean church) {
             return new Detail(code, name, false, false, List.of(), List.of(), true, true, List.of(), parent,
-                    List.of(), List.of(), List.of());
+                    List.of(), List.of(), List.of(), church);
         }
     }
 
@@ -228,7 +231,7 @@ public class CircleService {
 
     // ── Circles ─────────────────────────────────────────────────────────────
 
-    /** The person's circles, each church followed by its groups; and those they wait to join. */
+    /** The person's churches and circles, each church followed by its circles; and those they wait to join. */
     public List<Summary> mine(String device) {
         return db.query("""
                 select c.code, c.name, m.owner,
@@ -236,42 +239,49 @@ public class CircleService {
                        (select max(r.created_at) from circle_request r where r.circle_id = c.id and not r.praise
                           and (not r.for_leaders or r.device = m.device or m.owner or m.leader)),
                        p.name, false, coalesce(c.parent_id, c.id) as family, c.parent_id is not null as child,
-                       m.joined_at as at
+                       m.joined_at as at, c.church
                 from circle c join circle_member m on m.circle_id = c.id
                 left join circle p on p.id = c.parent_id
                 where m.device = ? and not m.removed
                 union all
                 select c.code, c.name, false,
                        (select count(*) from circle_member o where o.circle_id = c.id and not o.removed),
-                       null, p.name, true, coalesce(c.parent_id, c.id), c.parent_id is not null, w.asked_at
+                       null, p.name, true, coalesce(c.parent_id, c.id), c.parent_id is not null, w.asked_at, c.church
                 from circle_waiting w join circle c on c.id = w.circle_id
                 left join circle p on p.id = c.parent_id
                 where w.device = ?
                 order by family, child, at""",
                 (rs, i) -> new Summary(rs.getString(1), rs.getString(2), rs.getInt(4), rs.getBoolean(3),
-                        instant(rs.getTimestamp(5)), rs.getString(6), rs.getBoolean(7)),
+                        instant(rs.getTimestamp(5)), rs.getString(6), rs.getBoolean(7), rs.getBoolean(11)),
                 device, device);
     }
 
+    /**
+     * Starts a circle, or with [church] a church: the home of the church's circles. A church lets new
+     * members in only once a leader approves, from the start, since its code is read out and shown on
+     * screens; the owner can turn that off.
+     */
     @Transactional
-    public Detail create(String device, String name, String memberName) {
+    public Detail create(String device, String name, String memberName, boolean church) {
         checkRoomForAnother(device);
         String code = newCircle(name, null);
+        if (church) db.update("update circle set church = true, approval = true where code = ?", code);
         db.update("insert into circle_member (circle_id, device, name, owner) select id, ?, ?, true from circle where code = ?",
                 device, memberName, code);
         return detail(device, code);
     }
 
     /**
-     * The owner or a leader of a church's circle adds a group to it, and starts it as its owner, under
-     * the name they have in the church. Answers with the church, its groups now including this one.
+     * The owner or a leader of a church adds a circle to it, and starts it as its owner, under the name
+     * they have in the church. Answers with the church, its circles now including this one. Only a
+     * church holds circles.
      */
     @Transactional
     public Detail createGroup(String device, String code, String name) {
         Membership me = membership(device, code);
         if (!me.leads()) throw status(HttpStatus.FORBIDDEN, "not-allowed");
-        Long parent = db.queryForObject("select parent_id from circle where id = ?", Long.class, me.circleId());
-        if (parent != null) throw status(HttpStatus.FORBIDDEN, "not-allowed");   // a group has no groups
+        Boolean church = db.queryForObject("select church from circle where id = ?", Boolean.class, me.circleId());
+        if (!Boolean.TRUE.equals(church)) throw status(HttpStatus.FORBIDDEN, "not-allowed");
         Long groups = db.queryForObject("select count(*) from circle where parent_id = ?", Long.class, me.circleId());
         if (groups != null && groups >= MAX_GROUPS) throw status(HttpStatus.CONFLICT, "full");
         checkRoomForAnother(device);
@@ -361,9 +371,10 @@ public class CircleService {
         Membership me = findMembership(device, code);
         if (me == null) return waitingDetail(device, code);
 
-        record Row(String name, boolean approval, Long parentId) {}
-        Row circle = db.queryForObject("select name, approval, parent_id from circle where id = ?",
-                (rs, i) -> new Row(rs.getString(1), rs.getBoolean(2), (Long) rs.getObject(3)), me.circleId());
+        record Row(String name, boolean approval, Long parentId, boolean church) {}
+        Row circle = db.queryForObject("select name, approval, parent_id, church from circle where id = ?",
+                (rs, i) -> new Row(rs.getString(1), rs.getBoolean(2), (Long) rs.getObject(3), rs.getBoolean(4)),
+                me.circleId());
 
         List<Member> members = db.query("""
                 select id, name, owner, leader, device = ? from circle_member
@@ -380,7 +391,7 @@ public class CircleService {
                                          and not m.removed) then p.code end, p.name
                 from circle p where p.id = ?""",
                 (rs, i) -> new Parent(rs.getString(1), rs.getString(2)), device, circle.parentId());
-        List<Group> groups = circle.parentId() != null ? List.of() : db.query("""
+        List<Group> groups = !circle.church() ? List.of() : db.query("""
                 select g.code, g.name,
                        (select count(*) from circle_member o where o.circle_id = g.id and not o.removed),
                        exists (select 1 from circle_member m where m.circle_id = g.id and m.device = ? and not m.removed),
@@ -396,17 +407,18 @@ public class CircleService {
                 "r.answered_at > now() - make_interval(days => ?)", "r.answered_at desc", 50, KEEP_PRAISE_DAYS);
 
         return new Detail(code, circle.name(), me.owner(), me.leads(), members, requests, false, circle.approval(),
-                waiting, parent, groups, praise, chains(device, me));
+                waiting, parent, groups, praise, chains(device, me), circle.church());
     }
 
     /** For someone who asked to join and waits; 404 for anyone else. */
     private Detail waitingDetail(String device, String code) {
         Detail d = db.query("""
-                select c.name, p.name from circle_waiting w join circle c on c.id = w.circle_id
+                select c.name, p.name, c.church from circle_waiting w join circle c on c.id = w.circle_id
                 left join circle p on p.id = c.parent_id
                 where c.code = ? and w.device = ?""",
                 rs -> rs.next()
-                        ? Detail.waitingFor(code, rs.getString(1), rs.getString(2) == null ? null : new Parent(null, rs.getString(2)))
+                        ? Detail.waitingFor(code, rs.getString(1),
+                                rs.getString(2) == null ? null : new Parent(null, rs.getString(2)), rs.getBoolean(3))
                         : null,
                 code, device);
         if (d == null) throw status(HttpStatus.NOT_FOUND, "no-circle");

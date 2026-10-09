@@ -759,7 +759,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get circleName => 'குழுவின் பெயர்';
 
   @override
-  String get circleNameHint => 'எ.கா. குடும்பம், வாலிபர் ஐக்கியம்';
+  String get circleNameHint => 'எ.கா. குடும்பம், நண்பர்கள்';
 
   @override
   String get circleYourName => 'உங்கள் பெயர்';
@@ -1091,7 +1091,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get circleTabChains => 'சங்கிலி';
 
   @override
-  String get circleTabGroups => 'சிறு குழுக்கள்';
+  String get circleTabGroups => 'குழுக்கள்';
 
   @override
   String get circleWaitingLabel => 'ஒப்புதலுக்காகக் காத்திருக்கிறது';
@@ -1128,10 +1128,10 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get circleGroupsIntro =>
-      'இந்தச் சபையின் சிறு குழுக்கள்: வாலிபர், ஐக்கியங்கள், வீட்டுக் குழுக்கள். ஒரே தொடுதலில் எதிலும் சேருங்கள்.';
+      'இந்தச் சபையின் குழுக்கள்: வாலிபர், ஐக்கியங்கள், வீட்டுக் குழுக்கள். ஒரே தொடுதலில் எதிலும் சேருங்கள்.';
 
   @override
-  String get circleAddGroup => 'சிறு குழுவைச் சேர்';
+  String get circleAddGroup => 'குழுவைச் சேர்';
 
   @override
   String get circleGroupNameHint => 'எ.கா. வாலிபர், பெண்கள் ஐக்கியம்';
@@ -1140,7 +1140,42 @@ class AppLocalizationsTa extends AppLocalizations {
   String get circleJoinGroup => 'சேர்';
 
   @override
-  String get circleNoGroups => 'இன்னும் சிறு குழுக்கள் இல்லை.';
+  String get circleNoGroups => 'இன்னும் குழுக்கள் இல்லை.';
+
+  @override
+  String get circleStartButton => 'புதியது';
+
+  @override
+  String get churchStart => 'உங்கள் சபையைச் சேர்';
+
+  @override
+  String get churchName => 'சபையின் பெயர்';
+
+  @override
+  String get churchNameHint => 'எ.கா. கிருபை சபை';
+
+  @override
+  String get circleStartTitle => 'நீங்கள் எதைத் தொடங்க விரும்புகிறீர்கள்?';
+
+  @override
+  String get circleStartChurch => 'என் சபை';
+
+  @override
+  String get circleStartChurchHint =>
+      'முழுச் சபைக்கும்: அனைவருக்கும் ஒரு ஜெபச் சுவர், வாலிபர், ஐக்கியங்கள், வீட்டுக் குழுக்களுக்குக் குழுக்கள். ஒரு தலைவர் உள்ளே அனுமதிக்கும் வரை புதிய உறுப்பினர்கள் காத்திருப்பார்கள்.';
+
+  @override
+  String get circleStartCircle => 'ஒரு குழு';
+
+  @override
+  String get circleStartCircleHint =>
+      'குடும்பமும் நண்பர்களும் ஒருவருக்காக ஒருவர் ஜெபிக்க.';
+
+  @override
+  String get circlesMyChurches => 'என் சபைகள்';
+
+  @override
+  String get circlesMyCircles => 'என் குழுக்கள்';
 
   @override
   String get circleSharePraise => 'துதியின் சாட்சியைப் பகிருங்கள்';
@@ -1272,12 +1307,12 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String newsGroup(String name) {
-    return 'புதிய சிறு குழு: $name';
+    return 'உங்கள் சபையில் புதிய குழு: $name';
   }
 
   @override
   String get circleInfoGroups =>
-      'ஒரு சபைக்குச் சிறு குழுக்கள் இருக்கலாம் (வாலிபர், ஐக்கியங்கள், வீட்டுக் குழுக்கள்); அதன் உறுப்பினர்கள் ஒரே தொடுதலில் சேர்கிறார்கள்.';
+      'ஒரு சபைக்குத் தனக்கென குழுக்கள் உண்டு (வாலிபர், ஐக்கியங்கள், வீட்டுக் குழுக்கள்); அதன் உறுப்பினர்கள் ஒரே தொடுதலில் சேர்கிறார்கள்.';
 
   @override
   String get circleInfoApproval =>

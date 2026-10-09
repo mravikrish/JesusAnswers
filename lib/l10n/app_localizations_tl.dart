@@ -756,7 +756,7 @@ class AppLocalizationsTl extends AppLocalizations {
   String get circleName => 'Pangalan ng circle';
 
   @override
-  String get circleNameHint => 'hal. Pamilya, Youth group';
+  String get circleNameHint => 'hal. Pamilya, Mga kaibigan';
 
   @override
   String get circleYourName => 'Pangalan mo';
@@ -1086,7 +1086,7 @@ class AppLocalizationsTl extends AppLocalizations {
   String get circleTabChains => 'Chain';
 
   @override
-  String get circleTabGroups => 'Mga grupo';
+  String get circleTabGroups => 'Mga circle';
 
   @override
   String get circleWaitingLabel => 'Naghihintay ng pag-apruba';
@@ -1123,10 +1123,10 @@ class AppLocalizationsTl extends AppLocalizations {
 
   @override
   String get circleGroupsIntro =>
-      'Mga grupo ng simbahang ito: kabataan, fellowship, home group. Sumali sa alinman sa isang tap.';
+      'Mga circle ng simbahang ito: kabataan, fellowship, home group. Sumali sa alinman sa isang tap.';
 
   @override
-  String get circleAddGroup => 'Magdagdag ng grupo';
+  String get circleAddGroup => 'Magdagdag ng circle';
 
   @override
   String get circleGroupNameHint => 'hal. Kabataan, Women\'s fellowship';
@@ -1135,7 +1135,42 @@ class AppLocalizationsTl extends AppLocalizations {
   String get circleJoinGroup => 'Sumali';
 
   @override
-  String get circleNoGroups => 'Wala pang grupo.';
+  String get circleNoGroups => 'Wala pang circle.';
+
+  @override
+  String get circleStartButton => 'Bago';
+
+  @override
+  String get churchStart => 'Idagdag ang iyong simbahan';
+
+  @override
+  String get churchName => 'Pangalan ng simbahan';
+
+  @override
+  String get churchNameHint => 'hal. Grace Church';
+
+  @override
+  String get circleStartTitle => 'Ano ang gusto mong simulan?';
+
+  @override
+  String get circleStartChurch => 'Aking simbahan';
+
+  @override
+  String get circleStartChurchHint =>
+      'Para sa buong simbahan: prayer wall para sa lahat, at mga circle para sa kabataan, fellowship at home group. Naghihintay ang mga bagong miyembro na papasukin sila ng isang leader.';
+
+  @override
+  String get circleStartCircle => 'Isang circle';
+
+  @override
+  String get circleStartCircleHint =>
+      'Para sa pamilya at mga kaibigan na magdasal para sa isa\'t isa.';
+
+  @override
+  String get circlesMyChurches => 'Aking mga simbahan';
+
+  @override
+  String get circlesMyCircles => 'Aking mga circle';
 
   @override
   String get circleSharePraise => 'Magbahagi ng patotoo ng papuri';
@@ -1267,12 +1302,12 @@ class AppLocalizationsTl extends AppLocalizations {
 
   @override
   String newsGroup(String name) {
-    return 'Bagong grupo: $name';
+    return 'Bagong circle sa iyong simbahan: $name';
   }
 
   @override
   String get circleInfoGroups =>
-      'Puwedeng magkaroon ng mga grupo ang simbahan (kabataan, fellowship, home group); sumasali ang mga miyembro sa isang tap.';
+      'May sariling mga circle ang simbahan (kabataan, fellowship, home group); sumasali ang mga miyembro sa isang tap.';
 
   @override
   String get circleInfoApproval =>

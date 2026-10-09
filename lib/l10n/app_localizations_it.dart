@@ -750,7 +750,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get circleName => 'Nome della cerchia';
 
   @override
-  String get circleNameHint => 'es. Famiglia, Gruppo giovani';
+  String get circleNameHint => 'es. Famiglia, Amici';
 
   @override
   String get circleYourName => 'Il tuo nome';
@@ -1079,7 +1079,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get circleTabChains => 'Catene';
 
   @override
-  String get circleTabGroups => 'Gruppi';
+  String get circleTabGroups => 'Cerchie';
 
   @override
   String get circleWaitingLabel => 'In attesa di approvazione';
@@ -1115,10 +1115,10 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get circleGroupsIntro =>
-      'I gruppi di questa chiesa: giovani, comunità, gruppi in casa. Entra in uno con un tocco.';
+      'Le cerchie di questa chiesa: giovani, comunità, gruppi in casa. Entra in una con un tocco.';
 
   @override
-  String get circleAddGroup => 'Aggiungi un gruppo';
+  String get circleAddGroup => 'Aggiungi una cerchia';
 
   @override
   String get circleGroupNameHint => 'es. Giovani, Gruppo donne';
@@ -1127,7 +1127,42 @@ class AppLocalizationsIt extends AppLocalizations {
   String get circleJoinGroup => 'Entra';
 
   @override
-  String get circleNoGroups => 'Ancora nessun gruppo.';
+  String get circleNoGroups => 'Ancora nessuna cerchia.';
+
+  @override
+  String get circleStartButton => 'Nuova';
+
+  @override
+  String get churchStart => 'Aggiungi la tua chiesa';
+
+  @override
+  String get churchName => 'Nome della chiesa';
+
+  @override
+  String get churchNameHint => 'es. Chiesa della Grazia';
+
+  @override
+  String get circleStartTitle => 'Che cosa vuoi creare?';
+
+  @override
+  String get circleStartChurch => 'La mia chiesa';
+
+  @override
+  String get circleStartChurchHint =>
+      'Per tutta la tua chiesa: un muro di preghiera per tutti e cerchie per giovani, comunità e gruppi in casa. I nuovi membri aspettano che un responsabile li faccia entrare.';
+
+  @override
+  String get circleStartCircle => 'Una cerchia';
+
+  @override
+  String get circleStartCircleHint =>
+      'Per famiglia e amici, per pregare gli uni per gli altri.';
+
+  @override
+  String get circlesMyChurches => 'Le mie chiese';
+
+  @override
+  String get circlesMyCircles => 'Le mie cerchie';
 
   @override
   String get circleSharePraise => 'Condividi una testimonianza di lode';
@@ -1259,12 +1294,12 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String newsGroup(String name) {
-    return 'Nuovo gruppo: $name';
+    return 'Nuova cerchia nella tua chiesa: $name';
   }
 
   @override
   String get circleInfoGroups =>
-      'Una chiesa può avere gruppi (giovani, comunità, gruppi in casa); i suoi membri entrano con un tocco.';
+      'Una chiesa ha le sue cerchie (giovani, comunità, gruppi in casa); i suoi membri entrano con un tocco.';
 
   @override
   String get circleInfoApproval =>

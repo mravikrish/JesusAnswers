@@ -34,12 +34,12 @@ class CircleTest {
 
         Detail empty(String code) {
             return new Detail(code, "Family", true, true, List.of(), List.of(), false, false, List.of(), null,
-                    List.of(), List.of(), List.of());
+                    List.of(), List.of(), List.of(), false);
         }
 
         @Override
-        public Detail create(String device, String name, String memberName) {
-            calls.add("create " + name + " by " + memberName);
+        public Detail create(String device, String name, String memberName, boolean church) {
+            calls.add((church ? "church " : "create ") + name + " by " + memberName);
             return empty("K7P3MX");
         }
 
@@ -300,6 +300,18 @@ class CircleTest {
         controller.addRequest(INSTALL, "K7P3MX", new NewRequest("Pray for my exam", null, null, null, null, null), http);
         assertThat(service.calls).containsExactly(
                 "create Family by Ravi", "join K7P3MX as Ravi", "ask K7P3MX Pray for my exam");
+    }
+
+    @Test
+    void startsAChurchOrACircle() {
+        var service = new Recording();
+        var controller = controller(service, 10);
+        var http = new MockHttpServletRequest();
+        controller.create(INSTALL, new NewCircle(" Grace Church ", "Pastor John", true), http);
+        controller.create(INSTALL, new NewCircle("Family", "Ravi", false), http);
+        controller.create(INSTALL, new NewCircle("Friends", "Ravi"), http);   // older apps: a circle
+        assertThat(service.calls).containsExactly(
+                "church Grace Church by Pastor John", "create Family by Ravi", "create Friends by Ravi");
     }
 
     @Test

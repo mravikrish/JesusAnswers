@@ -750,7 +750,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get circleName => 'ಗುಂಪಿನ ಹೆಸರು';
 
   @override
-  String get circleNameHint => 'ಉದಾ. ಕುಟುಂಬ, ಯುವಜನ ಅನ್ಯೋನ್ಯತೆ';
+  String get circleNameHint => 'ಉದಾ. ಕುಟುಂಬ, ಸ್ನೇಹಿತರು';
 
   @override
   String get circleYourName => 'ನಿಮ್ಮ ಹೆಸರು';
@@ -1078,7 +1078,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get circleTabChains => 'ಸರಪಳಿ';
 
   @override
-  String get circleTabGroups => 'ಉಪಗುಂಪುಗಳು';
+  String get circleTabGroups => 'ಗುಂಪುಗಳು';
 
   @override
   String get circleWaitingLabel => 'ಅನುಮೋದನೆಗಾಗಿ ಕಾಯುತ್ತಿದೆ';
@@ -1113,10 +1113,10 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get circleGroupsIntro =>
-      'ಈ ಸಭೆಯ ಉಪಗುಂಪುಗಳು: ಯುವಜನ, ಅನ್ಯೋನ್ಯತೆ, ಮನೆ ಗುಂಪುಗಳು. ಒಂದು ಸ್ಪರ್ಶದಲ್ಲಿ ಯಾವುದಕ್ಕಾದರೂ ಸೇರಿ.';
+      'ಈ ಸಭೆಯ ಗುಂಪುಗಳು: ಯುವಜನ, ಅನ್ಯೋನ್ಯತೆ, ಮನೆ ಗುಂಪುಗಳು. ಒಂದು ಸ್ಪರ್ಶದಲ್ಲಿ ಯಾವುದಕ್ಕಾದರೂ ಸೇರಿ.';
 
   @override
-  String get circleAddGroup => 'ಉಪಗುಂಪು ಸೇರಿಸಿ';
+  String get circleAddGroup => 'ಗುಂಪು ಸೇರಿಸಿ';
 
   @override
   String get circleGroupNameHint => 'ಉದಾ. ಯುವಜನ, ಮಹಿಳಾ ಅನ್ಯೋನ್ಯತೆ';
@@ -1125,7 +1125,42 @@ class AppLocalizationsKn extends AppLocalizations {
   String get circleJoinGroup => 'ಸೇರಿ';
 
   @override
-  String get circleNoGroups => 'ಇನ್ನೂ ಯಾವುದೇ ಉಪಗುಂಪು ಇಲ್ಲ.';
+  String get circleNoGroups => 'ಇನ್ನೂ ಯಾವುದೇ ಗುಂಪು ಇಲ್ಲ.';
+
+  @override
+  String get circleStartButton => 'ಹೊಸದು';
+
+  @override
+  String get churchStart => 'ನಿಮ್ಮ ಸಭೆಯನ್ನು ಸೇರಿಸಿ';
+
+  @override
+  String get churchName => 'ಸಭೆಯ ಹೆಸರು';
+
+  @override
+  String get churchNameHint => 'ಉದಾ. ಕೃಪಾ ಸಭೆ';
+
+  @override
+  String get circleStartTitle => 'ನೀವು ಏನನ್ನು ಆರಂಭಿಸಲು ಬಯಸುತ್ತೀರಿ?';
+
+  @override
+  String get circleStartChurch => 'ನನ್ನ ಸಭೆ';
+
+  @override
+  String get circleStartChurchHint =>
+      'ಇಡೀ ಸಭೆಗಾಗಿ: ಎಲ್ಲರಿಗೂ ಒಂದು ಪ್ರಾರ್ಥನಾ ಗೋಡೆ, ಮತ್ತು ಯುವಜನ, ಅನ್ಯೋನ್ಯತೆ, ಮನೆ ಗುಂಪುಗಳಿಗಾಗಿ ಗುಂಪುಗಳು. ಒಬ್ಬ ನಾಯಕರು ಒಳಗೆ ಬಿಡುವವರೆಗೆ ಹೊಸ ಸದಸ್ಯರು ಕಾಯುತ್ತಾರೆ.';
+
+  @override
+  String get circleStartCircle => 'ಒಂದು ಗುಂಪು';
+
+  @override
+  String get circleStartCircleHint =>
+      'ಕುಟುಂಬ ಮತ್ತು ಸ್ನೇಹಿತರು ಒಬ್ಬರಿಗೊಬ್ಬರು ಪ್ರಾರ್ಥಿಸಲು.';
+
+  @override
+  String get circlesMyChurches => 'ನನ್ನ ಸಭೆಗಳು';
+
+  @override
+  String get circlesMyCircles => 'ನನ್ನ ಗುಂಪುಗಳು';
 
   @override
   String get circleSharePraise => 'ಸ್ತುತಿಯ ವರದಿ ಹಂಚಿಕೊಳ್ಳಿ';
@@ -1256,12 +1291,12 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String newsGroup(String name) {
-    return 'ಹೊಸ ಉಪಗುಂಪು: $name';
+    return 'ನಿಮ್ಮ ಸಭೆಯಲ್ಲಿ ಹೊಸ ಗುಂಪು: $name';
   }
 
   @override
   String get circleInfoGroups =>
-      'ಸಭೆಗೆ ಉಪಗುಂಪುಗಳಿರಬಹುದು (ಯುವಜನ, ಅನ್ಯೋನ್ಯತೆ, ಮನೆ ಗುಂಪುಗಳು); ಅದರ ಸದಸ್ಯರು ಒಂದು ಸ್ಪರ್ಶದಲ್ಲಿ ಸೇರುತ್ತಾರೆ.';
+      'ಸಭೆಗೆ ತನ್ನದೇ ಗುಂಪುಗಳಿರುತ್ತವೆ (ಯುವಜನ, ಅನ್ಯೋನ್ಯತೆ, ಮನೆ ಗುಂಪುಗಳು); ಅದರ ಸದಸ್ಯರು ಒಂದು ಸ್ಪರ್ಶದಲ್ಲಿ ಸೇರುತ್ತಾರೆ.';
 
   @override
   String get circleInfoApproval =>

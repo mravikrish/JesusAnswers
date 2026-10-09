@@ -35,7 +35,12 @@ import jakarta.servlet.http.HttpServletRequest;
 @RequestMapping("/v1/circles")
 public class CircleController {
 
-    public record NewCircle(String name, String memberName) {}
+    /** [church]: a church, the home of its circles; a family or friends circle when left out. */
+    public record NewCircle(String name, String memberName, Boolean church) {
+        public NewCircle(String name, String memberName) {
+            this(name, memberName, null);
+        }
+    }
 
     public record Join(String code, String memberName) {}
 
@@ -110,7 +115,7 @@ public class CircleController {
         String name = valid(CircleService.cleanName(body.name(), CircleService.MAX_CIRCLE_NAME));
         String member = valid(CircleService.cleanName(body.memberName(), CircleService.MAX_NAME));
         limit(installId, http);
-        return circles.create(device, name, member);
+        return circles.create(device, name, member, Boolean.TRUE.equals(body.church()));
     }
 
     @PostMapping("/join")

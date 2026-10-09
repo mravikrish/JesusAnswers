@@ -14,12 +14,12 @@ Spring Boot 4 · Java 21 · PostgreSQL · Claude (`claude-opus-5-5`) · Firebase
 | POST | `/v1/reactions` | none (`X-Install-Id`) | Heart / unheart / prayed / listened for one prayer, story, chapter or saying |
 | GET | `/v1/counts` | none | Shared counts per item, plus how many people prayed today (worked out at most every 5 minutes) |
 | GET | `/v1/circles` | none (`X-Install-Id`) | The prayer circles this install is in |
-| POST | `/v1/circles` | none (`X-Install-Id`) | Start a circle `{name, memberName}`; answers with its invite code |
+| POST | `/v1/circles` | none (`X-Install-Id`) | Start a circle `{name, memberName}`, or a church `{…, church: true}` (it starts with approval on); answers with its invite code |
 | POST | `/v1/circles/join` | none (`X-Install-Id`) | Join with a code `{code, memberName}` (20 tries an hour); with approval on, wait to be let in |
 | GET | `/v1/circles/{code}` | members | The circle: members, the last 60 days of requests, the praise wall (a year), groups, prayer chains |
 | POST | `/v1/circles/{code}/requests` | members | Share a prayer request `{text, forLeaders?, anonymous?}`, a ready prayer `{prayerId, text?}`, a Bible verse `{verse, text?}` or a praise report `{text, praise: true}` |
 | POST | `/v1/circles/{code}/requests/{id}/prayed` · `answered` · `report` | members | I prayed · God answered, with `{testimony?}` (asker only) · report |
-| POST | `/v1/circles/{code}/groups` | owner or leader | Add a group `{name}` to a church's circle; its members join with the group's code, in one tap |
+| POST | `/v1/circles/{code}/groups` | owner or leader | Add a circle `{name}` to a church (only a church holds circles); its members join it in one tap |
 | POST · DELETE | `/v1/circles/{code}/approval` | owner | New members wait to be let in · join straight away |
 | POST · DELETE | `/v1/circles/{code}/waiting/{id}` (`/approve`) | owner or leader | Let in · turn away (they can't ask again) |
 | POST | `/v1/circles/{code}/chains` | owner or leader | Start a prayer chain or fasting days `{title, startsAt, slotMinutes, slots}` |

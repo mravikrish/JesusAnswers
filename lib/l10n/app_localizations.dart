@@ -1495,7 +1495,7 @@ abstract class AppLocalizations {
   /// No description provided for @circleNameHint.
   ///
   /// In en, this message translates to:
-  /// **'e.g. Family, Youth group'**
+  /// **'e.g. Family, Friends'**
   String get circleNameHint;
 
   /// No description provided for @circleYourName.
@@ -2005,7 +2005,7 @@ abstract class AppLocalizations {
   /// No description provided for @circleTabGroups.
   ///
   /// In en, this message translates to:
-  /// **'Groups'**
+  /// **'Circles'**
   String get circleTabGroups;
 
   /// No description provided for @circleWaitingLabel.
@@ -2065,13 +2065,13 @@ abstract class AppLocalizations {
   /// No description provided for @circleGroupsIntro.
   ///
   /// In en, this message translates to:
-  /// **'This church\'s groups: youth, fellowships, home groups. Join any with one tap.'**
+  /// **'This church\'s circles: youth, fellowships, home groups. Join any with one tap.'**
   String get circleGroupsIntro;
 
   /// No description provided for @circleAddGroup.
   ///
   /// In en, this message translates to:
-  /// **'Add a group'**
+  /// **'Add a circle'**
   String get circleAddGroup;
 
   /// No description provided for @circleGroupNameHint.
@@ -2089,8 +2089,74 @@ abstract class AppLocalizations {
   /// No description provided for @circleNoGroups.
   ///
   /// In en, this message translates to:
-  /// **'No groups yet.'**
+  /// **'No circles yet.'**
   String get circleNoGroups;
+
+  /// No description provided for @circleStartButton.
+  ///
+  /// In en, this message translates to:
+  /// **'New'**
+  String get circleStartButton;
+
+  /// No description provided for @churchStart.
+  ///
+  /// In en, this message translates to:
+  /// **'Set up your church'**
+  String get churchStart;
+
+  /// No description provided for @churchName.
+  ///
+  /// In en, this message translates to:
+  /// **'Church name'**
+  String get churchName;
+
+  /// No description provided for @churchNameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. Grace Church'**
+  String get churchNameHint;
+
+  /// No description provided for @circleStartTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'What would you like to set up?'**
+  String get circleStartTitle;
+
+  /// No description provided for @circleStartChurch.
+  ///
+  /// In en, this message translates to:
+  /// **'My church'**
+  String get circleStartChurch;
+
+  /// No description provided for @circleStartChurchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'For your whole church: a prayer wall for everyone, and circles for youth, fellowships and home groups. New members wait for a leader to let them in.'**
+  String get circleStartChurchHint;
+
+  /// No description provided for @circleStartCircle.
+  ///
+  /// In en, this message translates to:
+  /// **'A circle'**
+  String get circleStartCircle;
+
+  /// No description provided for @circleStartCircleHint.
+  ///
+  /// In en, this message translates to:
+  /// **'For family and friends to pray for each other.'**
+  String get circleStartCircleHint;
+
+  /// No description provided for @circlesMyChurches.
+  ///
+  /// In en, this message translates to:
+  /// **'My churches'**
+  String get circlesMyChurches;
+
+  /// No description provided for @circlesMyCircles.
+  ///
+  /// In en, this message translates to:
+  /// **'My circles'**
+  String get circlesMyCircles;
 
   /// No description provided for @circleSharePraise.
   ///
@@ -2281,13 +2347,13 @@ abstract class AppLocalizations {
   /// No description provided for @newsGroup.
   ///
   /// In en, this message translates to:
-  /// **'New group: {name}'**
+  /// **'New circle in your church: {name}'**
   String newsGroup(String name);
 
   /// No description provided for @circleInfoGroups.
   ///
   /// In en, this message translates to:
-  /// **'A church can have groups (youth, fellowships, home groups); its members join them with one tap.'**
+  /// **'A church holds its own circles (youth, fellowships, home groups); its members join them with one tap.'**
   String get circleInfoGroups;
 
   /// No description provided for @circleInfoApproval.

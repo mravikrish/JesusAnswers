@@ -749,7 +749,7 @@ class AppLocalizationsMr extends AppLocalizations {
   String get circleName => 'मंडळाचे नाव';
 
   @override
-  String get circleNameHint => 'उदा. कुटुंब, युवक संगत';
+  String get circleNameHint => 'उदा. कुटुंब, मित्र';
 
   @override
   String get circleYourName => 'तुमचे नाव';
@@ -1080,7 +1080,7 @@ class AppLocalizationsMr extends AppLocalizations {
   String get circleTabChains => 'साखळी';
 
   @override
-  String get circleTabGroups => 'गट';
+  String get circleTabGroups => 'मंडळे';
 
   @override
   String get circleWaitingLabel => 'मंजुरीच्या प्रतीक्षेत';
@@ -1115,10 +1115,10 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get circleGroupsIntro =>
-      'या मंडळीचे गट: युवक, सहभागिता, घर-गट. एका टॅपने कोणत्याही गटात सामील व्हा.';
+      'या मंडळीची मंडळे: युवक, सहभागिता, घर-गट. एका टॅपने कोणत्याही मंडळात सामील व्हा.';
 
   @override
-  String get circleAddGroup => 'गट जोडा';
+  String get circleAddGroup => 'मंडळ जोडा';
 
   @override
   String get circleGroupNameHint => 'उदा. युवक, महिला सहभागिता';
@@ -1127,7 +1127,42 @@ class AppLocalizationsMr extends AppLocalizations {
   String get circleJoinGroup => 'सामील व्हा';
 
   @override
-  String get circleNoGroups => 'अजून कोणताही गट नाही.';
+  String get circleNoGroups => 'अजून कोणतेही मंडळ नाही.';
+
+  @override
+  String get circleStartButton => 'नवीन';
+
+  @override
+  String get churchStart => 'तुमची मंडळी जोडा';
+
+  @override
+  String get churchName => 'मंडळीचे नाव';
+
+  @override
+  String get churchNameHint => 'उदा. कृपा मंडळी';
+
+  @override
+  String get circleStartTitle => 'तुम्हाला काय सुरू करायचे आहे?';
+
+  @override
+  String get circleStartChurch => 'माझी मंडळी';
+
+  @override
+  String get circleStartChurchHint =>
+      'संपूर्ण मंडळीसाठी: सर्वांसाठी एक प्रार्थना भिंत, आणि युवक, सहभागिता व घर-गटांसाठी मंडळे. नवीन सदस्य एखादा पुढारी त्यांना आत घेईपर्यंत थांबतात.';
+
+  @override
+  String get circleStartCircle => 'एक मंडळ';
+
+  @override
+  String get circleStartCircleHint =>
+      'कुटुंब आणि मित्रांनी एकमेकांसाठी प्रार्थना करण्यासाठी.';
+
+  @override
+  String get circlesMyChurches => 'माझ्या मंडळ्या';
+
+  @override
+  String get circlesMyCircles => 'माझी मंडळे';
 
   @override
   String get circleSharePraise => 'स्तुतीची साक्ष शेअर करा';
@@ -1258,12 +1293,12 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String newsGroup(String name) {
-    return 'नवीन गट: $name';
+    return 'तुमच्या मंडळीत नवीन मंडळ: $name';
   }
 
   @override
   String get circleInfoGroups =>
-      'मंडळीचे गट असू शकतात (युवक, सहभागिता, घर-गट); तिचे सदस्य एका टॅपने सामील होतात.';
+      'मंडळीची स्वतःची मंडळे असतात (युवक, सहभागिता, घर-गट); तिचे सदस्य एका टॅपने सामील होतात.';
 
   @override
   String get circleInfoApproval =>

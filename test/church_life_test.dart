@@ -84,6 +84,7 @@ void main() {
         'answeredAt': '2026-10-04T09:00:00Z',
       },
     ],
+    'church': true,
     'groups': [
       {'code': 'YTH234', 'name': 'Youth', 'members': 12, 'joined': false},
       {'code': 'HME567', 'name': 'Home group', 'members': 8, 'joined': true},
@@ -169,7 +170,7 @@ void main() {
     await tester.pumpWidget(app(p, circles, const CircleScreen(code: 'K7P3MX')));
     await tester.pumpAndSettle();
 
-    expect(find.text('Groups'), findsOneWidget);
+    expect(find.text('Circles'), findsOneWidget);
     await tester.tap(find.text('Praise'));
     await tester.pumpAndSettle();
     expect(find.text('I got the job!'), findsOneWidget);
@@ -205,6 +206,59 @@ void main() {
     expect(reminders.set, isEmpty);
   });
 
+  testWidgets('a circle of family and friends holds no circles of its own', (tester) async {
+    final p = await tester.runAsync(prefs);
+    final family = {...church(), 'name': 'Family', 'church': false, 'groups': <Object>[]};
+    final circles = service(p!, (_) async => http.Response(jsonEncode(family), 200));
+    await tester.pumpWidget(app(p, circles, const CircleScreen(code: 'K7P3MX')));
+    await tester.pumpAndSettle();
+    expect(find.text('Praise'), findsOneWidget);
+    expect(find.text('Circles'), findsNothing);
+  });
+
+  testWidgets('Prayer Circles lists churches, each with its circles, apart from family and friends', (tester) async {
+    await tester.binding.setSurfaceSize(const Size(800, 2000));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    final p = await tester.runAsync(prefs);
+    final circles = service(p!, (_) async => http.Response(jsonEncode([
+      {'code': 'K7P3MX', 'name': 'Grace Church', 'members': 120, 'church': true},
+      {'code': 'YTH234', 'name': 'Youth', 'members': 12, 'parent': 'Grace Church'},
+      {'code': 'FAM789', 'name': 'Family', 'members': 4},
+    ]), 200));
+    await tester.pumpWidget(app(p, circles, const CirclesScreen()));
+    await tester.pumpAndSettle();
+    final churches = tester.getTopLeft(find.text('MY CHURCHES')).dy;
+    final own = tester.getTopLeft(find.text('MY CIRCLES')).dy;
+    double y(String name) => tester.getTopLeft(find.text(name)).dy;
+    final top = [churches, y('Grace Church'), y('Youth'), own, y('Family')];
+    expect(top, orderedEquals([...top]..sort()));
+    // The church's circle sits under it.
+    expect(tester.getTopLeft(find.text('Youth')).dx, greaterThan(tester.getTopLeft(find.text('Grace Church')).dx));
+  });
+
+  testWidgets('starting a church asks for its name, and a circle for family and friends stays as before', (tester) async {
+    final p = await tester.runAsync(prefs);
+    final sent = <String>[];
+    final circles = service(p!, (r) async {
+      sent.add('${r.method} ${r.url.path} ${r.body}');
+      return http.Response(jsonEncode(r.method == 'GET' && r.url.path == '/v1/circles' ? [] : church()), 200);
+    });
+    await tester.pumpWidget(app(p, circles, const CirclesScreen()));
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.text('New'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('My church'));
+    await tester.pumpAndSettle();
+    expect(find.text('Set up your church'), findsWidgets);
+    await tester.enterText(find.widgetWithText(TextField, 'Church name'), 'Grace Church');
+    await tester.enterText(find.widgetWithText(TextField, 'Your name'), 'Pastor John');
+    await tester.pumpAndSettle();
+    await tester.tap(find.widgetWithText(FilledButton, 'Set up your church'));
+    await tester.pumpAndSettle();
+    expect(sent, contains('POST /v1/circles {"name":"Grace Church","memberName":"Pastor John","church":true}'));
+  });
+
   testWidgets("a church's members join its groups with one tap", (tester) async {
     final p = await tester.runAsync(prefs);
     final sent = <String>[];
@@ -217,7 +271,7 @@ void main() {
     });
     await tester.pumpWidget(app(p, circles, const CircleScreen(code: 'K7P3MX')));
     await tester.pumpAndSettle();
-    await tester.tap(find.text('Groups'));
+    await tester.tap(find.text('Circles'));
     await tester.pumpAndSettle();
 
     expect(find.text('Home group'), findsOneWidget);
