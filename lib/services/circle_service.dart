@@ -594,6 +594,16 @@ class CircleService {
   /// Leaves, or stops waiting to be let in.
   Future<void> leave(String code) async {
     await _call('POST', '/$code/leave');
+    await _forget(code);
+  }
+
+  /// Owner only: deletes the circle for everyone; a church with all its circles.
+  Future<void> delete(String code) async {
+    await _call('DELETE', '/$code');
+    await _forget(code);
+  }
+
+  Future<void> _forget(String code) async {
     await _prefs.remove(_seenKey(code));
     await _prefs.setString(
       _listKey,

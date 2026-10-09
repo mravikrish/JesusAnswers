@@ -17,6 +17,9 @@ abstract final class AppColors {
   static const inkSoft = Color(0xFF5C6475);
   static const heart = Color(0xFFD94A5A);
 
+  /// Cancel buttons: red, with white text that stays readable on it.
+  static const cancel = Color(0xFFC62828);
+
   /// Words of Jesus — red letters on the night sky, and on ivory cards.
   static const redLetter = Color(0xFFFF9E94);
   static const redLetterInk = Color(0xFFB3261E);

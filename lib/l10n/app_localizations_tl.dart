@@ -616,6 +616,13 @@ class AppLocalizationsTl extends AppLocalizations {
       'Mga panalangin para sa bawat araw at bawat pangangailangan. Pindutin ang isa para pakinggan.';
 
   @override
+  String get myPrayers => 'Aking mga panalangin';
+
+  @override
+  String get myPrayersHint =>
+      'Ang mga panalanging ginawa para sa iyo. Basahin o pakinggan muli.';
+
+  @override
   String get voiceMan => 'Boses ng lalaki';
 
   @override
@@ -836,6 +843,27 @@ class AppLocalizationsTl extends AppLocalizations {
 
   @override
   String get circleLeave => 'Umalis sa circle';
+
+  @override
+  String get churchDelete => 'Burahin ang simbahan';
+
+  @override
+  String get circleDeleteCircle => 'Burahin ang circle';
+
+  @override
+  String churchDeleteWarn(String name) {
+    return 'Burahin ang $name para sa lahat? Mabubura rin ang lahat ng circle nito, mga miyembro, kahilingan sa panalangin, patotoo ng papuri at prayer chain. Hindi na ito maibabalik.';
+  }
+
+  @override
+  String circleDeleteWarn(String name) {
+    return 'Burahin ang $name para sa lahat? Mabubura rin ang mga miyembro nito, kahilingan sa panalangin, patotoo ng papuri at prayer chain. Hindi na ito maibabalik.';
+  }
+
+  @override
+  String circleDeleted(String name) {
+    return 'Nabura na ang $name.';
+  }
 
   @override
   String get circleLeaveConfirm =>

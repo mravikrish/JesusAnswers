@@ -1264,6 +1264,18 @@ abstract class AppLocalizations {
   /// **'Prayers for every day and every need. Tap one to hear it.'**
   String get readyPrayersHint;
 
+  /// No description provided for @myPrayers.
+  ///
+  /// In en, this message translates to:
+  /// **'My prayers'**
+  String get myPrayers;
+
+  /// No description provided for @myPrayersHint.
+  ///
+  /// In en, this message translates to:
+  /// **'The prayers made for you. Read them or hear them again.'**
+  String get myPrayersHint;
+
   /// No description provided for @voiceMan.
   ///
   /// In en, this message translates to:
@@ -1629,6 +1641,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Leave circle'**
   String get circleLeave;
+
+  /// No description provided for @churchDelete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete church'**
+  String get churchDelete;
+
+  /// No description provided for @circleDeleteCircle.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete circle'**
+  String get circleDeleteCircle;
+
+  /// No description provided for @churchDeleteWarn.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete {name} for everyone? All its circles, members, prayer requests, praise reports and prayer chains will be deleted too. This can\'t be undone.'**
+  String churchDeleteWarn(String name);
+
+  /// No description provided for @circleDeleteWarn.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete {name} for everyone? Its members, prayer requests, praise reports and prayer chains will be deleted too. This can\'t be undone.'**
+  String circleDeleteWarn(String name);
+
+  /// No description provided for @circleDeleted.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} has been deleted.'**
+  String circleDeleted(String name);
 
   /// No description provided for @circleLeaveConfirm.
   ///

@@ -41,6 +41,19 @@ class LogoMark extends StatelessWidget {
       );
 }
 
+/// Every Cancel in the app: red, white text, so backing out is always easy to find.
+class CancelButton extends StatelessWidget {
+  const CancelButton({super.key, required this.onPressed});
+  final VoidCallback onPressed;
+
+  @override
+  Widget build(BuildContext context) => FilledButton(
+    onPressed: onPressed,
+    style: FilledButton.styleFrom(backgroundColor: AppColors.cancel, foregroundColor: Colors.white),
+    child: Text(MaterialLocalizations.of(context).cancelButtonLabel),
+  );
+}
+
 /// Light card used on ivory screens.
 class SoftCard extends StatelessWidget {
   const SoftCard({super.key, required this.child, this.padding = const EdgeInsets.all(18), this.color});

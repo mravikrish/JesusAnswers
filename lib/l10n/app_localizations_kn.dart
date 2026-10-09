@@ -611,6 +611,13 @@ class AppLocalizationsKn extends AppLocalizations {
       'ಪ್ರತಿದಿನಕ್ಕೂ ಪ್ರತಿ ಅಗತ್ಯಕ್ಕೂ ಪ್ರಾರ್ಥನೆಗಳು. ಕೇಳಲು ಒಂದನ್ನು ಒತ್ತಿ.';
 
   @override
+  String get myPrayers => 'ನನ್ನ ಪ್ರಾರ್ಥನೆಗಳು';
+
+  @override
+  String get myPrayersHint =>
+      'ನಿಮಗಾಗಿ ಮಾಡಿದ ಪ್ರಾರ್ಥನೆಗಳು. ಮತ್ತೆ ಓದಿ ಅಥವಾ ಕೇಳಿ.';
+
+  @override
   String get voiceMan => 'ಪುರುಷ ಧ್ವನಿ';
 
   @override
@@ -830,6 +837,27 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get circleLeave => 'ಗುಂಪಿನಿಂದ ಹೊರಬನ್ನಿ';
+
+  @override
+  String get churchDelete => 'ಸಭೆಯನ್ನು ಅಳಿಸಿ';
+
+  @override
+  String get circleDeleteCircle => 'ಗುಂಪನ್ನು ಅಳಿಸಿ';
+
+  @override
+  String churchDeleteWarn(String name) {
+    return '$name ಅನ್ನು ಎಲ್ಲರಿಗೂ ಅಳಿಸಬೇಕೆ? ಅದರ ಎಲ್ಲಾ ಗುಂಪುಗಳು, ಸದಸ್ಯರು, ಪ್ರಾರ್ಥನಾ ವಿನಂತಿಗಳು, ಸ್ತುತಿ ಸಾಕ್ಷಿಗಳು ಮತ್ತು ಪ್ರಾರ್ಥನಾ ಸರಪಳಿಗಳೂ ಅಳಿಸಿಹೋಗುತ್ತವೆ. ಇದನ್ನು ಮತ್ತೆ ಪಡೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ.';
+  }
+
+  @override
+  String circleDeleteWarn(String name) {
+    return '$name ಅನ್ನು ಎಲ್ಲರಿಗೂ ಅಳಿಸಬೇಕೆ? ಅದರ ಸದಸ್ಯರು, ಪ್ರಾರ್ಥನಾ ವಿನಂತಿಗಳು, ಸ್ತುತಿ ಸಾಕ್ಷಿಗಳು ಮತ್ತು ಪ್ರಾರ್ಥನಾ ಸರಪಳಿಗಳೂ ಅಳಿಸಿಹೋಗುತ್ತವೆ. ಇದನ್ನು ಮತ್ತೆ ಪಡೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ.';
+  }
+
+  @override
+  String circleDeleted(String name) {
+    return 'ಅಳಿಸಲಾಗಿದೆ: $name';
+  }
 
   @override
   String get circleLeaveConfirm =>

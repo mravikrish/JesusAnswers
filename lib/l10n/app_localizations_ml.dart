@@ -615,6 +615,13 @@ class AppLocalizationsMl extends AppLocalizations {
       'എല്ലാ ദിവസത്തിനും എല്ലാ ആവശ്യങ്ങൾക്കുമുള്ള പ്രാർത്ഥനകൾ. കേൾക്കാൻ ഒന്നിൽ തൊടുക.';
 
   @override
+  String get myPrayers => 'എന്റെ പ്രാർത്ഥനകൾ';
+
+  @override
+  String get myPrayersHint =>
+      'നിങ്ങൾക്കായി ഒരുക്കിയ പ്രാർത്ഥനകൾ. വീണ്ടും വായിക്കുക, അല്ലെങ്കിൽ കേൾക്കുക.';
+
+  @override
   String get voiceMan => 'പുരുഷ ശബ്ദം';
 
   @override
@@ -836,6 +843,27 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get circleLeave => 'കൂട്ടം വിടുക';
+
+  @override
+  String get churchDelete => 'സഭ ഇല്ലാതാക്കുക';
+
+  @override
+  String get circleDeleteCircle => 'കൂട്ടം ഇല്ലാതാക്കുക';
+
+  @override
+  String churchDeleteWarn(String name) {
+    return '$name എല്ലാവർക്കുമായി ഇല്ലാതാക്കണോ? അതിലെ എല്ലാ കൂട്ടങ്ങളും അംഗങ്ങളും പ്രാർത്ഥനാ അപേക്ഷകളും സ്തുതി സാക്ഷ്യങ്ങളും പ്രാർത്ഥനാ ശൃംഖലകളും ഇല്ലാതാകും. ഇത് തിരികെ കൊണ്ടുവരാൻ കഴിയില്ല.';
+  }
+
+  @override
+  String circleDeleteWarn(String name) {
+    return '$name എല്ലാവർക്കുമായി ഇല്ലാതാക്കണോ? അതിലെ അംഗങ്ങളും പ്രാർത്ഥനാ അപേക്ഷകളും സ്തുതി സാക്ഷ്യങ്ങളും പ്രാർത്ഥനാ ശൃംഖലകളും ഇല്ലാതാകും. ഇത് തിരികെ കൊണ്ടുവരാൻ കഴിയില്ല.';
+  }
+
+  @override
+  String circleDeleted(String name) {
+    return 'ഇല്ലാതാക്കി: $name';
+  }
 
   @override
   String get circleLeaveConfirm =>

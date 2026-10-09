@@ -5,7 +5,6 @@ import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
 import 'package:share_plus/share_plus.dart';
 
-import '../../core/share.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/common.dart';
 import '../../core/widgets/community.dart';
@@ -19,6 +18,7 @@ import '../../services/community_service.dart';
 import 'circle_chains.dart';
 import 'circle_groups.dart';
 import 'circle_praise.dart';
+import 'circle_show_screen.dart';
 import 'circle_share.dart';
 
 void _say(BuildContext context, String text) => sayInCircles(context, text);
@@ -737,20 +737,8 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
   void _showOnScreen(CircleDetail c) =>
       context.push('/circles/${c.code}/screen?name=${Uri.encodeQueryComponent(c.name)}');
 
-  void _invite(CircleDetail c) {
-    final l = AppLocalizations.of(context);
-    SharePlus.instance.share(
-      ShareParams(
-        text: [
-          l.circleInviteText(c.name, CircleService.showCode(c.code)),
-          // Opens the app to join, or shows where to get it.
-          if (apiBaseUrl.isNotEmpty) CircleService.joinLink(c.code, baseUrl: apiBaseUrl),
-          '',
-          shareFooter(l),
-        ].join('\n'),
-      ),
-    );
-  }
+  void _invite(CircleDetail c) =>
+      SharePlus.instance.share(ShareParams(text: inviteMessage(AppLocalizations.of(context), c.name, c.code)));
 
   Future<bool> _confirm(String text, String action) async =>
       await showDialog<bool>(
@@ -758,10 +746,7 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
         builder: (ctx) => AlertDialog(
           content: Text(text),
           actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(ctx, false),
-              child: Text(MaterialLocalizations.of(ctx).cancelButtonLabel),
-            ),
+            CancelButton(onPressed: () => Navigator.pop(ctx, false)),
             TextButton(
               onPressed: () => Navigator.pop(ctx, true),
               style: TextButton.styleFrom(foregroundColor: AppColors.heart),
@@ -771,6 +756,46 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
         ),
       ) ??
       false;
+
+  /// Owner only, after a plain warning: a church goes with all its circles, for everyone.
+  Future<void> _delete(CircleDetail c) async {
+    final l = AppLocalizations.of(context);
+    final action = c.church ? l.churchDelete : l.circleDeleteCircle;
+    final sure = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        icon: const Icon(Icons.warning_amber_rounded, color: AppColors.heart, size: 36),
+        title: Text(action),
+        content: Text(c.church ? l.churchDeleteWarn(c.name) : l.circleDeleteWarn(c.name)),
+        actions: [
+          CancelButton(onPressed: () => Navigator.pop(ctx, false)),
+          // Cancel is the bold one; deleting is outlined, so it is never pressed by habit.
+          OutlinedButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            style: OutlinedButton.styleFrom(
+              foregroundColor: AppColors.cancel,
+              side: const BorderSide(color: AppColors.cancel),
+            ),
+            child: Text(action),
+          ),
+        ],
+      ),
+    );
+    if (sure != true || !mounted) return;
+    setState(() => _busy = true);
+    try {
+      await _service.delete(widget.code);
+      if (!mounted) return;
+      final messenger = ScaffoldMessenger.of(context);
+      Navigator.of(context).maybePop();
+      messenger.showSnackBar(SnackBar(content: Text(l.circleDeleted(c.name))));
+    } catch (e) {
+      if (mounted) {
+        setState(() => _busy = false);
+        _say(context, circleProblemText(l, e));
+      }
+    }
+  }
 
   Future<void> _leave() async {
     final l = AppLocalizations.of(context);
@@ -1152,6 +1177,7 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
                 'members' => _members(c),
                 'screen' => _showOnScreen(c),
                 'rules' => _rules(),
+                'delete' => _delete(c),
                 _ => _leave(),
               },
               itemBuilder: (_) => [
@@ -1166,6 +1192,14 @@ class _CircleScreenState extends ConsumerState<CircleScreen> {
                 PopupMenuItem(value: 'screen', child: Text(l.circleShowScreen)),
                 PopupMenuItem(value: 'rules', child: Text(l.circleInfoTitle)),
                 PopupMenuItem(value: 'leave', child: Text(l.circleLeave)),
+                if (c.owner)
+                  PopupMenuItem(
+                    value: 'delete',
+                    child: Text(
+                      c.church ? l.churchDelete : l.circleDeleteCircle,
+                      style: const TextStyle(color: AppColors.heart),
+                    ),
+                  ),
               ],
             ),
           ],
@@ -1694,10 +1728,7 @@ class _KeyDialogState extends State<_KeyDialog> {
         ),
       ),
       actions: [
-        TextButton(
-          onPressed: () => Navigator.pop(context),
-          child: Text(MaterialLocalizations.of(context).cancelButtonLabel),
-        ),
+        CancelButton(onPressed: () => Navigator.pop(context)),
         FilledButton(
           style: FilledButton.styleFrom(minimumSize: const Size(0, 44)),
           onPressed: _key.text.trim().isEmpty ? null : _use,
@@ -1841,10 +1872,7 @@ class _TwoFieldsState extends State<_TwoFields> {
         children: [field(_a, widget.first), const SizedBox(height: 12), field(_b, widget.second, last: true)],
       ),
       actions: [
-        TextButton(
-          onPressed: () => Navigator.pop(context),
-          child: Text(MaterialLocalizations.of(context).cancelButtonLabel),
-        ),
+        CancelButton(onPressed: () => Navigator.pop(context)),
         FilledButton(
           style: FilledButton.styleFrom(minimumSize: const Size(0, 44)),
           onPressed: ready ? done : null,

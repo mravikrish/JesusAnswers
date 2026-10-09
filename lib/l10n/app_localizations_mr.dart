@@ -612,6 +612,13 @@ class AppLocalizationsMr extends AppLocalizations {
       'प्रत्येक दिवसासाठी आणि प्रत्येक गरजेसाठी प्रार्थना. ऐकण्यासाठी एकावर टॅप करा.';
 
   @override
+  String get myPrayers => 'माझ्या प्रार्थना';
+
+  @override
+  String get myPrayersHint =>
+      'तुमच्यासाठी तयार झालेल्या प्रार्थना. पुन्हा वाचा किंवा ऐका.';
+
+  @override
   String get voiceMan => 'पुरुष आवाज';
 
   @override
@@ -830,6 +837,27 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get circleLeave => 'मंडळ सोडा';
+
+  @override
+  String get churchDelete => 'मंडळी हटवा';
+
+  @override
+  String get circleDeleteCircle => 'मंडळ हटवा';
+
+  @override
+  String churchDeleteWarn(String name) {
+    return '$name सर्वांसाठी हटवायचे का? त्यातील सर्व मंडळे, सदस्य, प्रार्थना विनंत्या, स्तुतीच्या साक्षी आणि प्रार्थना साखळ्याही हटवल्या जातील. हे परत आणता येणार नाही.';
+  }
+
+  @override
+  String circleDeleteWarn(String name) {
+    return '$name सर्वांसाठी हटवायचे का? त्यातील सदस्य, प्रार्थना विनंत्या, स्तुतीच्या साक्षी आणि प्रार्थना साखळ्याही हटवल्या जातील. हे परत आणता येणार नाही.';
+  }
+
+  @override
+  String circleDeleted(String name) {
+    return 'हटवले: $name';
+  }
 
   @override
   String get circleLeaveConfirm =>

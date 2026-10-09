@@ -349,10 +349,7 @@ Future<_NewChain?> _askChain(BuildContext context) {
             ),
           ),
           actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(ctx),
-              child: Text(MaterialLocalizations.of(ctx).cancelButtonLabel),
-            ),
+            CancelButton(onPressed: () => Navigator.pop(ctx)),
             FilledButton(
               style: FilledButton.styleFrom(minimumSize: const Size(0, 44)),
               onPressed: ready

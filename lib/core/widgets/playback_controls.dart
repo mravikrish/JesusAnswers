@@ -8,6 +8,7 @@ import '../../services/voice/tts_service.dart';
 import '../device_settings.dart';
 import '../languages.dart';
 import '../theme/app_theme.dart';
+import 'common.dart';
 
 /// Reads [parts] aloud — His words ([VoiceRole.jesus]) in the male voice,
 /// everything else in the female one — or, if there is neither a natural voice
@@ -28,10 +29,7 @@ Future<void> readAloud(BuildContext context, List<String> parts, AppLanguage lan
       icon: const Icon(Icons.record_voice_over_outlined, color: AppColors.gold),
       content: Text(l.noVoice(lang.nativeName), textAlign: TextAlign.center),
       actions: [
-        TextButton(
-          onPressed: () => Navigator.pop(ctx, false),
-          child: Text(MaterialLocalizations.of(ctx).cancelButtonLabel),
-        ),
+        CancelButton(onPressed: () => Navigator.pop(ctx, false)),
         FilledButton.icon(
           onPressed: () => Navigator.pop(ctx, true),
           icon: const Icon(Icons.download_rounded),

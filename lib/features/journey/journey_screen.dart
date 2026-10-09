@@ -17,14 +17,17 @@ enum _Filter { all, questions, prayers, favorites }
 /// My Journey — a record of questions, Scriptures and prayers over time,
 /// under today's painting of Jesus in the night sky, as on Home.
 class JourneyScreen extends ConsumerStatefulWidget {
-  const JourneyScreen({super.key});
+  const JourneyScreen({super.key, this.prayersOnly = false});
+
+  /// Opens on the Prayers filter.
+  final bool prayersOnly;
 
   @override
   ConsumerState<JourneyScreen> createState() => _JourneyScreenState();
 }
 
 class _JourneyScreenState extends ConsumerState<JourneyScreen> {
-  _Filter _filter = _Filter.all;
+  late _Filter _filter = widget.prayersOnly ? _Filter.prayers : _Filter.all;
   Topic? _topic;
   bool _searching = false;
   final _search = TextEditingController();

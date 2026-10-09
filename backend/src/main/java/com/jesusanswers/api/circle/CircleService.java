@@ -504,6 +504,18 @@ public class CircleService {
         if (passed == 0) db.update("delete from circle where id = ?", me.circleId());
     }
 
+    /**
+     * Owner only: deletes the circle for everyone, with its members, requests, praise and prayer chains.
+     * A church takes its circles with it.
+     */
+    @Transactional
+    public void delete(String device, String code) {
+        Membership me = membership(device, code);
+        if (!me.owner()) throw status(HttpStatus.FORBIDDEN, "not-allowed");
+        db.update("delete from circle where parent_id = ?", me.circleId());
+        db.update("delete from circle where id = ?", me.circleId());
+    }
+
     /** The owner or a leader (see [mayRemove]): takes a member out, with their requests, and they can't join again. */
     @Transactional
     public Detail removeMember(String device, String code, long memberId) {

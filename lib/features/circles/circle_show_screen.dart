@@ -1,15 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
 
+import '../../core/picture_share.dart';
+import '../../core/share.dart';
 import '../../core/theme/app_theme.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
 import '../../services/circle_service.dart';
 
+/// The message that goes with an invite: the code, the link that opens the app to join, and where to get it.
+String inviteMessage(AppLocalizations l, String name, String code) => [
+      l.circleInviteText(name, CircleService.showCode(code)),
+      // Opens the app to join, or shows where to get it.
+      if (apiBaseUrl.isNotEmpty) CircleService.joinLink(code, baseUrl: apiBaseUrl),
+      '',
+      shareFooter(l),
+    ].join('\n');
+
 /// A circle's invite, large enough for the church's projector or TV: a QR code that phone cameras open
 /// straight into the app's Join, and the code itself for anyone typing it in. The screen stays on.
+/// Share sends the same card as a picture, for WhatsApp groups and church notices.
 class CircleShowScreen extends StatefulWidget {
   const CircleShowScreen({super.key, required this.code, required this.name});
   final String code, name;
@@ -19,6 +32,9 @@ class CircleShowScreen extends StatefulWidget {
 }
 
 class _CircleShowScreenState extends State<CircleShowScreen> {
+  final _card = GlobalKey();
+  bool _busy = false;
+
   @override
   void initState() {
     super.initState();
@@ -32,6 +48,18 @@ class _CircleShowScreenState extends State<CircleShowScreen> {
     WakelockPlus.disable().catchError((_) {});
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
     super.dispose();
+  }
+
+  Future<void> _share() async {
+    final l = AppLocalizations.of(context);
+    setState(() => _busy = true);
+    try {
+      final boundary = _card.currentContext?.findRenderObject() as RenderRepaintBoundary?;
+      if (boundary == null) return;
+      await PictureShare.share(await PictureShare.render(boundary), inviteMessage(l, widget.name, widget.code));
+    } finally {
+      if (mounted) setState(() => _busy = false);
+    }
   }
 
   @override
@@ -78,23 +106,30 @@ class _CircleShowScreenState extends State<CircleShowScreen> {
                       style: TextStyle(color: Colors.white.withValues(alpha: 0.75), fontSize: wide ? 20 : 16, height: 1.4)),
                 ],
               );
-              return Padding(
-                padding: const EdgeInsets.all(28),
-                child: Center(
-                  child: wide
-                      ? Row(mainAxisSize: MainAxisSize.min, children: [
-                          qr,
-                          const SizedBox(width: 48),
-                          Flexible(child: words),
-                        ])
-                      : SingleChildScrollView(
-                          child: Column(mainAxisSize: MainAxisSize.min, children: [
+              // The part that is shared as a picture, with its own background so it stands alone.
+              final card = RepaintBoundary(
+                key: _card,
+                child: ColoredBox(
+                  color: AppColors.midnight,
+                  child: Padding(
+                    padding: const EdgeInsets.all(20),
+                    child: wide
+                        ? Row(mainAxisSize: MainAxisSize.min, children: [
+                            qr,
+                            const SizedBox(width: 48),
+                            Flexible(child: words),
+                          ])
+                        : Column(mainAxisSize: MainAxisSize.min, children: [
                             words,
                             const SizedBox(height: 28),
                             qr,
                           ]),
-                        ),
+                  ),
                 ),
+              );
+              return Padding(
+                padding: const EdgeInsets.all(8),
+                child: Center(child: wide ? card : SingleChildScrollView(child: card)),
               );
             }),
             PositionedDirectional(
@@ -104,6 +139,15 @@ class _CircleShowScreenState extends State<CircleShowScreen> {
                 tooltip: MaterialLocalizations.of(context).closeButtonTooltip,
                 icon: Icon(Icons.close_rounded, color: Colors.white.withValues(alpha: 0.6)),
                 onPressed: () => Navigator.of(context).maybePop(),
+              ),
+            ),
+            PositionedDirectional(
+              top: 4,
+              end: 4,
+              child: IconButton(
+                tooltip: l.circleInvite,
+                icon: Icon(Icons.ios_share_rounded, color: Colors.white.withValues(alpha: _busy ? 0.3 : 0.8)),
+                onPressed: _busy ? null : _share,
               ),
             ),
           ],

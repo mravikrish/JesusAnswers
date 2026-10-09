@@ -7,6 +7,13 @@ $backend = Split-Path $PSScriptRoot -Parent
 $run = Join-Path $backend 'run'
 New-Item -ItemType Directory -Force $run | Out-Null
 
+# Only one copy can run: it holds port 8080 and the log file.
+$running = Get-NetTCPConnection -State Listen -LocalPort 8080 -ErrorAction SilentlyContinue | Select-Object -First 1
+if ($running) {
+    Write-Host "The API is already running (process $($running.OwningProcess)). To restart it: Stop-Process -Id $($running.OwningProcess), then run this again."
+    exit 0
+}
+
 # Run a copy, so rebuilding doesn't fight over a locked jar.
 $jar = Get-ChildItem (Join-Path $backend 'target\*.jar') | Sort-Object LastWriteTime | Select-Object -Last 1
 if (-not $jar) { throw 'No jar in backend\target. Build it first.' }

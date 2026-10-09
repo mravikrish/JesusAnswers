@@ -618,6 +618,13 @@ class AppLocalizationsTa extends AppLocalizations {
       'ஒவ்வொரு நாளுக்கும் ஒவ்வொரு தேவைக்கும் ஜெபங்கள். கேட்க ஒன்றைத் தொடுங்கள்.';
 
   @override
+  String get myPrayers => 'என் ஜெபங்கள்';
+
+  @override
+  String get myPrayersHint =>
+      'உங்களுக்காக உருவான ஜெபங்கள். மீண்டும் படியுங்கள் அல்லது கேளுங்கள்.';
+
+  @override
   String get voiceMan => 'ஆண் குரல்';
 
   @override
@@ -840,6 +847,27 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get circleLeave => 'குழுவை விட்டு வெளியேறு';
+
+  @override
+  String get churchDelete => 'சபையை நீக்கு';
+
+  @override
+  String get circleDeleteCircle => 'குழுவை நீக்கு';
+
+  @override
+  String churchDeleteWarn(String name) {
+    return '$name அனைவருக்கும் நீக்கப்பட வேண்டுமா? அதன் எல்லா குழுக்கள், உறுப்பினர்கள், ஜெப விண்ணப்பங்கள், துதி சாட்சிகள், ஜெப சங்கிலிகள் அனைத்தும் நீக்கப்படும். இதைத் திரும்பப் பெற முடியாது.';
+  }
+
+  @override
+  String circleDeleteWarn(String name) {
+    return '$name அனைவருக்கும் நீக்கப்பட வேண்டுமா? அதன் உறுப்பினர்கள், ஜெப விண்ணப்பங்கள், துதி சாட்சிகள், ஜெப சங்கிலிகள் அனைத்தும் நீக்கப்படும். இதைத் திரும்பப் பெற முடியாது.';
+  }
+
+  @override
+  String circleDeleted(String name) {
+    return 'நீக்கப்பட்டது: $name';
+  }
 
   @override
   String get circleLeaveConfirm =>

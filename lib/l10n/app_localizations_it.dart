@@ -611,6 +611,13 @@ class AppLocalizationsIt extends AppLocalizations {
       'Preghiere per ogni giorno e ogni bisogno. Toccane una per ascoltarla.';
 
   @override
+  String get myPrayers => 'Le mie preghiere';
+
+  @override
+  String get myPrayersHint =>
+      'Le preghiere fatte per te. Rileggile o riascoltale.';
+
+  @override
   String get voiceMan => 'Voce maschile';
 
   @override
@@ -830,6 +837,27 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get circleLeave => 'Esci dalla cerchia';
+
+  @override
+  String get churchDelete => 'Elimina chiesa';
+
+  @override
+  String get circleDeleteCircle => 'Elimina cerchia';
+
+  @override
+  String churchDeleteWarn(String name) {
+    return 'Eliminare $name per tutti? Verranno eliminati anche tutte le sue cerchie, i membri, le richieste di preghiera, le testimonianze di lode e le catene di preghiera. Non si può annullare.';
+  }
+
+  @override
+  String circleDeleteWarn(String name) {
+    return 'Eliminare $name per tutti? Verranno eliminati anche i membri, le richieste di preghiera, le testimonianze di lode e le catene di preghiera. Non si può annullare.';
+  }
+
+  @override
+  String circleDeleted(String name) {
+    return 'Eliminazione completata: $name';
+  }
 
   @override
   String get circleLeaveConfirm =>

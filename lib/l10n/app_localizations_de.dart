@@ -611,6 +611,13 @@ class AppLocalizationsDe extends AppLocalizations {
       'Gebete für jeden Tag und jedes Anliegen. Tippe eines an, um es zu hören.';
 
   @override
+  String get myPrayers => 'Meine Gebete';
+
+  @override
+  String get myPrayersHint =>
+      'Die Gebete, die für dich entstanden sind. Lies oder hör sie noch einmal.';
+
+  @override
   String get voiceMan => 'Männerstimme';
 
   @override
@@ -829,6 +836,27 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get circleLeave => 'Kreis verlassen';
+
+  @override
+  String get churchDelete => 'Gemeinde löschen';
+
+  @override
+  String get circleDeleteCircle => 'Kreis löschen';
+
+  @override
+  String churchDeleteWarn(String name) {
+    return '$name für alle löschen? Alle Kreise, Mitglieder, Gebetsanliegen, Lobberichte und Gebetsketten werden ebenfalls gelöscht. Das lässt sich nicht rückgängig machen.';
+  }
+
+  @override
+  String circleDeleteWarn(String name) {
+    return '$name für alle löschen? Alle Mitglieder, Gebetsanliegen, Lobberichte und Gebetsketten werden ebenfalls gelöscht. Das lässt sich nicht rückgängig machen.';
+  }
+
+  @override
+  String circleDeleted(String name) {
+    return '$name wurde gelöscht.';
+  }
 
   @override
   String get circleLeaveConfirm =>

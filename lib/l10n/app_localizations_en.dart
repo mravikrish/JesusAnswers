@@ -609,6 +609,13 @@ class AppLocalizationsEn extends AppLocalizations {
       'Prayers for every day and every need. Tap one to hear it.';
 
   @override
+  String get myPrayers => 'My prayers';
+
+  @override
+  String get myPrayersHint =>
+      'The prayers made for you. Read them or hear them again.';
+
+  @override
   String get voiceMan => 'Male voice';
 
   @override
@@ -839,6 +846,27 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get circleLeave => 'Leave circle';
+
+  @override
+  String get churchDelete => 'Delete church';
+
+  @override
+  String get circleDeleteCircle => 'Delete circle';
+
+  @override
+  String churchDeleteWarn(String name) {
+    return 'Delete $name for everyone? All its circles, members, prayer requests, praise reports and prayer chains will be deleted too. This can\'t be undone.';
+  }
+
+  @override
+  String circleDeleteWarn(String name) {
+    return 'Delete $name for everyone? Its members, prayer requests, praise reports and prayer chains will be deleted too. This can\'t be undone.';
+  }
+
+  @override
+  String circleDeleted(String name) {
+    return '$name has been deleted.';
+  }
 
   @override
   String get circleLeaveConfirm =>

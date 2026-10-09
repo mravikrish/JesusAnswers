@@ -610,6 +610,13 @@ class AppLocalizationsRu extends AppLocalizations {
       'Молитвы на каждый день и на всякую нужду. Нажмите на молитву, чтобы послушать.';
 
   @override
+  String get myPrayers => 'Мои молитвы';
+
+  @override
+  String get myPrayersHint =>
+      'Молитвы, составленные для вас. Перечитайте или послушайте их снова.';
+
+  @override
   String get voiceMan => 'Мужской голос';
 
   @override
@@ -831,6 +838,27 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get circleLeave => 'Выйти из круга';
+
+  @override
+  String get churchDelete => 'Удалить церковь';
+
+  @override
+  String get circleDeleteCircle => 'Удалить круг';
+
+  @override
+  String churchDeleteWarn(String name) {
+    return 'Удалить $name для всех? Вместе с ней исчезнут все её круги, участники, молитвенные просьбы, свидетельства хвалы и молитвенные цепи. Это нельзя отменить.';
+  }
+
+  @override
+  String circleDeleteWarn(String name) {
+    return 'Удалить $name для всех? Вместе с ним исчезнут участники, молитвенные просьбы, свидетельства хвалы и молитвенные цепи. Это нельзя отменить.';
+  }
+
+  @override
+  String circleDeleted(String name) {
+    return 'Удалено: $name';
+  }
 
   @override
   String get circleLeaveConfirm =>

@@ -72,6 +72,11 @@ class CircleTest {
         }
 
         @Override
+        public void delete(String device, String code) {
+            calls.add("delete " + code);
+        }
+
+        @Override
         public Detail createChain(String device, String code, String title, java.time.Instant startsAt,
                                   int slotMinutes, int slots) {
             calls.add("chain " + title + " " + slots + "x" + slotMinutes);
@@ -261,6 +266,15 @@ class CircleTest {
         assertThat(service.calls).containsExactly("group Youth in K7P3MX");
         assertThatThrownBy(() -> controller.createGroup(INSTALL, "K7P3MX", new CircleController.NewGroup(""), http))
                 .isInstanceOf(ResponseStatusException.class).hasMessageContaining("BAD_REQUEST");
+    }
+
+    @Test
+    void deletesACircleByItsCode() {
+        var service = new Recording();
+        var controller = controller(service, 10);
+        var http = new MockHttpServletRequest();
+        assertThat(controller.delete(INSTALL, "k7p-3mx", http).getStatusCode().value()).isEqualTo(204);
+        assertThat(service.calls).containsExactly("delete K7P3MX");
     }
 
     @Test

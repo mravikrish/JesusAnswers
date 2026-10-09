@@ -610,6 +610,13 @@ class AppLocalizationsSw extends AppLocalizations {
       'Maombi kwa kila siku na kila hitaji. Gusa moja ili kuisikiliza.';
 
   @override
+  String get myPrayers => 'Maombi yangu';
+
+  @override
+  String get myPrayersHint =>
+      'Maombi yaliyoandaliwa kwa ajili yako. Yasome au yasikilize tena.';
+
+  @override
   String get voiceMan => 'Sauti ya mwanamume';
 
   @override
@@ -828,6 +835,27 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get circleLeave => 'Toka kwenye kikundi';
+
+  @override
+  String get churchDelete => 'Futa kanisa';
+
+  @override
+  String get circleDeleteCircle => 'Futa kikundi';
+
+  @override
+  String churchDeleteWarn(String name) {
+    return 'Ufute $name kwa wote? Vikundi vyake vyote, wanachama, maombi, shuhuda za sifa na minyororo ya maombi vitafutwa pia. Hili haliwezi kutenduliwa.';
+  }
+
+  @override
+  String circleDeleteWarn(String name) {
+    return 'Ufute $name kwa wote? Wanachama wake, maombi, shuhuda za sifa na minyororo ya maombi vitafutwa pia. Hili haliwezi kutenduliwa.';
+  }
+
+  @override
+  String circleDeleted(String name) {
+    return '$name imefutwa.';
+  }
 
   @override
   String get circleLeaveConfirm =>

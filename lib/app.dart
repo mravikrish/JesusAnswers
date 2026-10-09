@@ -51,7 +51,14 @@ final routerProvider = Provider<GoRouter>((ref) {
           StatefulShellBranch(routes: [GoRoute(path: '/home', builder: (_, _) => const HomeScreen())]),
           StatefulShellBranch(routes: [GoRoute(path: '/word', builder: (_, _) => const DailyWordScreen())]),
           StatefulShellBranch(routes: [GoRoute(path: '/pray', builder: (_, _) => const PrayerScreen())]),
-          StatefulShellBranch(routes: [GoRoute(path: '/journey', builder: (_, _) => const JourneyScreen())]),
+          StatefulShellBranch(routes: [GoRoute(
+              path: '/journey',
+              // /journey?show=prayers: straight to the prayers made for them (from Pray's "My prayers").
+              builder: (_, state) => JourneyScreen(
+                key: ValueKey(state.uri.query),
+                prayersOnly: state.uri.queryParameters['show'] == 'prayers',
+              ),
+            ),]),
           StatefulShellBranch(routes: [GoRoute(path: '/profile', builder: (_, _) => const ProfileScreen())]),
         ],
       ),

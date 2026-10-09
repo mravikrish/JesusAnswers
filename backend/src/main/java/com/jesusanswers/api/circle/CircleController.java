@@ -148,6 +148,15 @@ public class CircleController {
         return ResponseEntity.noContent().build();
     }
 
+    @DeleteMapping("/{code}")
+    public ResponseEntity<Void> delete(@RequestHeader("X-Install-Id") String installId, @PathVariable String code,
+                                       HttpServletRequest http) {
+        String device = device(installId);
+        limit(installId, http);
+        circles.delete(device, code(code));
+        return ResponseEntity.noContent().build();
+    }
+
     @DeleteMapping("/{code}/members/{memberId}")
     public Detail removeMember(@RequestHeader("X-Install-Id") String installId, @PathVariable String code,
                                @PathVariable long memberId, HttpServletRequest http) {

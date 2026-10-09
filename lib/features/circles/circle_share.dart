@@ -7,6 +7,7 @@ import '../../data/models/verse.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers.dart';
 import '../../services/circle_service.dart';
+import '../../core/widgets/common.dart';
 
 /// Runs a change to a circle; the server answers with the circle as it now is. False when it failed
 /// (and the person was told why).
@@ -49,7 +50,7 @@ Future<String?> askCircleNote(BuildContext context, IconData icon, String title)
         decoration: InputDecoration(hintText: l.circleNoteHint, counterText: ''),
       ),
       actions: [
-        TextButton(onPressed: () => Navigator.pop(ctx), child: Text(MaterialLocalizations.of(ctx).cancelButtonLabel)),
+        CancelButton(onPressed: () => Navigator.pop(ctx)),
         FilledButton(onPressed: () => Navigator.pop(ctx, note.text.trim()), child: Text(l.share)),
       ],
     ),
@@ -93,10 +94,7 @@ Future<String?> askCircleText(
             decoration: InputDecoration(hintText: hint, counterText: ''),
           ),
           actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(ctx),
-              child: Text(MaterialLocalizations.of(ctx).cancelButtonLabel),
-            ),
+            CancelButton(onPressed: () => Navigator.pop(ctx)),
             FilledButton(
               style: FilledButton.styleFrom(minimumSize: const Size(0, 44)),
               onPressed: ready ? () => Navigator.pop(ctx, text.text.trim()) : null,

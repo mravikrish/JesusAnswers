@@ -47,6 +47,7 @@ class _PrayerScreenState extends ConsumerState<PrayerScreen> {
     final l = AppLocalizations.of(context);
     final painting = ref.watch(screenPaintingProvider(PaintingSpot.pray)).value;
     final soft = Colors.white.withValues(alpha: 0.75);
+    final hasPrayers = ref.watch(journeyProvider.select((all) => all.any((a) => a.kind == AnswerKind.prayer)));
     return Scaffold(
       body: NightBackground(
         warm: true,
@@ -112,6 +113,16 @@ class _PrayerScreenState extends ConsumerState<PrayerScreen> {
                     child: Text(l.generatePrayer),
                   ),
                   const SizedBox(height: 28),
+                  // The prayers made here before, to read and hear again (kept in My Journey).
+                  if (hasPrayers) ...[
+                    _Choice(
+                      icon: Icons.history_rounded,
+                      title: l.myPrayers,
+                      hint: l.myPrayersHint,
+                      onTap: () => context.go('/journey?show=prayers'),
+                    ),
+                    const SizedBox(height: 12),
+                  ],
                   // Or choose a ready prayer and hear it.
                   _Choice(
                     icon: Icons.menu_book_rounded,

@@ -236,6 +236,8 @@
   "music": "Music",
   "readyPrayers": "Ready Prayers",
   "readyPrayersHint": "Prayers for every day and every need. Tap one to hear it.",
+  "myPrayers": "My prayers",
+  "myPrayersHint": "The prayers made for you. Read them or hear them again.",
   "voiceMan": "Male voice",
   "voiceWoman": "Female voice",
   "sharePrayer": "Share prayer",
@@ -377,6 +379,14 @@
     }
   },
   "circleLeave": "Leave circle",
+  "churchDelete": "Delete church",
+  "circleDeleteCircle": "Delete circle",
+  "churchDeleteWarn": "Delete {name} for everyone? All its circles, members, prayer requests, praise reports and prayer chains will be deleted too. This can't be undone.",
+  "@churchDeleteWarn": {"placeholders": {"name": {"type": "String"}}},
+  "circleDeleteWarn": "Delete {name} for everyone? Its members, prayer requests, praise reports and prayer chains will be deleted too. This can't be undone.",
+  "@circleDeleteWarn": {"placeholders": {"name": {"type": "String"}}},
+  "circleDeleted": "{name} has been deleted.",
+  "@circleDeleted": {"placeholders": {"name": {"type": "String"}}},
   "circleLeaveConfirm": "Leave this circle? Your prayer requests in it will be deleted.",
   "circleReachOut": "{name} may be going through something very hard. Please call or visit them today.",
   "@circleReachOut": {

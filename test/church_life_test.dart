@@ -303,6 +303,50 @@ void main() {
     expect(sent.last, 'POST /v1/circles/K7P3MX/waiting/9/approve');
   });
 
+  testWidgets('the pastor can delete the church, only after a warning that its circles go too', (tester) async {
+    final p = await tester.runAsync(prefs);
+    final sent = <String>[];
+    final circles = service(p!, (r) async {
+      sent.add('${r.method} ${r.url.path}');
+      return r.method == 'DELETE' ? http.Response('', 204) : http.Response(jsonEncode(church()), 200);
+    });
+    await tester.pumpWidget(app(p, circles, const CircleScreen(code: 'K7P3MX')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byType(PopupMenuButton<String>));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Delete church'));
+    await tester.pumpAndSettle();
+
+    expect(find.textContaining('All its circles, members, prayer requests'), findsOneWidget);
+    // Cancel is red with white text, and backs out without deleting.
+    final cancel = tester.widget<FilledButton>(find.widgetWithText(FilledButton, 'Cancel'));
+    expect(cancel.style!.backgroundColor!.resolve({}), const Color(0xFFC62828));
+    await tester.tap(find.text('Cancel'));
+    await tester.pumpAndSettle();
+    expect(sent.where((s) => s.startsWith('DELETE')), isEmpty);
+
+    await tester.tap(find.byType(PopupMenuButton<String>));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Delete church'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.widgetWithText(OutlinedButton, 'Delete church'));
+    // Nothing to go back to here, so the busy spinner keeps turning: pump instead of settling.
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 100));
+    expect(sent.last, 'DELETE /v1/circles/K7P3MX');
+  });
+
+  testWidgets('only the owner is offered to delete', (tester) async {
+    final p = await tester.runAsync(prefs);
+    final circles = service(p!, (r) async => http.Response(jsonEncode({...church(), 'owner': false}), 200));
+    await tester.pumpWidget(app(p, circles, const CircleScreen(code: 'K7P3MX')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byType(PopupMenuButton<String>));
+    await tester.pumpAndSettle();
+    expect(find.text('Delete church'), findsNothing);
+    expect(find.text('Leave circle'), findsOneWidget);
+  });
+
   testWidgets('someone waiting to be let in sees so, and can stop waiting', (tester) async {
     final p = await tester.runAsync(prefs);
     final sent = <String>[];
